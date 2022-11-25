@@ -6,9 +6,13 @@ var utils = require('./src/utils');
 var repo = 'https://github.com/BretFisher/example-voting-app.git'
 
 utils.print(repo);
-var repoName = utils.cloneRepo(repo)
+utils.cloneRepo(repo, (repoName) => {
+    console.log(repoName)
+    var struct = utils.scanFolder(repoName)
+    utils.saveToFile(struct, 'test.json')
+})
 
-console.log(repoName)
+
 
 //var test = process.argv
 //utils.print(test);
