@@ -1,126 +1,238 @@
 {
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "example-voting-app.git/result/Dockerfile",
+        "example-voting-app.git/result/tests/Dockerfile",
+        "example-voting-app.git/seed-data/Dockerfile",
+        "example-voting-app.git/vote/Dockerfile",
+        "example-voting-app.git/worker/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 2,
+      "subFolderCount": 0,
+      "filepaths": [
+        "example-voting-app.git/docker-compose.seed.yml",
+        "example-voting-app.git/docker-compose.yml"
+      ]
+    }
+  },
   "struct": {
     ".git": {
-      "path": "./temp/example-voting-app.git/.git",
+      "name": ".git",
+      "path": "example-voting-app.git/.git",
       "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
       "children": {
         "HEAD": {
-          "path": "./temp/example-voting-app.git/.git/HEAD",
-          "isDir": false
+          "name": "HEAD",
+          "path": "example-voting-app.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "config": {
-          "path": "./temp/example-voting-app.git/.git/config",
-          "isDir": false
+          "name": "config",
+          "path": "example-voting-app.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "description": {
-          "path": "./temp/example-voting-app.git/.git/description",
-          "isDir": false
+          "name": "description",
+          "path": "example-voting-app.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "hooks": {
-          "path": "./temp/example-voting-app.git/.git/hooks",
+          "name": "hooks",
+          "path": "example-voting-app.git/.git/hooks",
           "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
           "children": {
             "applypatch-msg.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/applypatch-msg.sample",
-              "isDir": false
+              "name": "applypatch-msg.sample",
+              "path": "example-voting-app.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "commit-msg.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/commit-msg.sample",
-              "isDir": false
+              "name": "commit-msg.sample",
+              "path": "example-voting-app.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "fsmonitor-watchman.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/fsmonitor-watchman.sample",
-              "isDir": false
+              "name": "fsmonitor-watchman.sample",
+              "path": "example-voting-app.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "post-update.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/post-update.sample",
-              "isDir": false
+              "name": "post-update.sample",
+              "path": "example-voting-app.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "pre-applypatch.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/pre-applypatch.sample",
-              "isDir": false
+              "name": "pre-applypatch.sample",
+              "path": "example-voting-app.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "pre-commit.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/pre-commit.sample",
-              "isDir": false
+              "name": "pre-commit.sample",
+              "path": "example-voting-app.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "pre-merge-commit.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/pre-merge-commit.sample",
-              "isDir": false
+              "name": "pre-merge-commit.sample",
+              "path": "example-voting-app.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "pre-push.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/pre-push.sample",
-              "isDir": false
+              "name": "pre-push.sample",
+              "path": "example-voting-app.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "pre-rebase.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/pre-rebase.sample",
-              "isDir": false
+              "name": "pre-rebase.sample",
+              "path": "example-voting-app.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "pre-receive.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/pre-receive.sample",
-              "isDir": false
+              "name": "pre-receive.sample",
+              "path": "example-voting-app.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "prepare-commit-msg.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/prepare-commit-msg.sample",
-              "isDir": false
+              "name": "prepare-commit-msg.sample",
+              "path": "example-voting-app.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "push-to-checkout.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/push-to-checkout.sample",
-              "isDir": false
+              "name": "push-to-checkout.sample",
+              "path": "example-voting-app.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "update.sample": {
-              "path": "./temp/example-voting-app.git/.git/hooks/update.sample",
-              "isDir": false
+              "name": "update.sample",
+              "path": "example-voting-app.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             }
           }
         },
         "index": {
-          "path": "./temp/example-voting-app.git/.git/index",
-          "isDir": false
+          "name": "index",
+          "path": "example-voting-app.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "info": {
-          "path": "./temp/example-voting-app.git/.git/info",
+          "name": "info",
+          "path": "example-voting-app.git/.git/info",
           "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
           "children": {
             "exclude": {
-              "path": "./temp/example-voting-app.git/.git/info/exclude",
-              "isDir": false
+              "name": "exclude",
+              "path": "example-voting-app.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             }
           }
         },
         "logs": {
-          "path": "./temp/example-voting-app.git/.git/logs",
+          "name": "logs",
+          "path": "example-voting-app.git/.git/logs",
           "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
           "children": {
             "HEAD": {
-              "path": "./temp/example-voting-app.git/.git/logs/HEAD",
-              "isDir": false
+              "name": "HEAD",
+              "path": "example-voting-app.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "refs": {
-              "path": "./temp/example-voting-app.git/.git/logs/refs",
+              "name": "refs",
+              "path": "example-voting-app.git/.git/logs/refs",
               "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
               "children": {
                 "heads": {
-                  "path": "./temp/example-voting-app.git/.git/logs/refs/heads",
+                  "name": "heads",
+                  "path": "example-voting-app.git/.git/logs/refs/heads",
                   "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
                   "children": {
                     "main": {
-                      "path": "./temp/example-voting-app.git/.git/logs/refs/heads/main",
-                      "isDir": false
+                      "name": "main",
+                      "path": "example-voting-app.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
                     }
                   }
                 },
                 "remotes": {
-                  "path": "./temp/example-voting-app.git/.git/logs/refs/remotes",
+                  "name": "remotes",
+                  "path": "example-voting-app.git/.git/logs/refs/remotes",
                   "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
                   "children": {
                     "origin": {
-                      "path": "./temp/example-voting-app.git/.git/logs/refs/remotes/origin",
+                      "name": "origin",
+                      "path": "example-voting-app.git/.git/logs/refs/remotes/origin",
                       "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
                       "children": {
                         "HEAD": {
-                          "path": "./temp/example-voting-app.git/.git/logs/refs/remotes/origin/HEAD",
-                          "isDir": false
+                          "name": "HEAD",
+                          "path": "example-voting-app.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
                         }
                       }
                     }
@@ -131,67 +243,106 @@
           }
         },
         "objects": {
-          "path": "./temp/example-voting-app.git/.git/objects",
+          "name": "objects",
+          "path": "example-voting-app.git/.git/objects",
           "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
           "children": {
             "info": {
-              "path": "./temp/example-voting-app.git/.git/objects/info",
+              "name": "info",
+              "path": "example-voting-app.git/.git/objects/info",
               "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
               "children": {}
             },
             "pack": {
-              "path": "./temp/example-voting-app.git/.git/objects/pack",
+              "name": "pack",
+              "path": "example-voting-app.git/.git/objects/pack",
               "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
               "children": {
                 "pack-6345772d841e29aad37089aff06bae361cffa2e1.idx": {
-                  "path": "./temp/example-voting-app.git/.git/objects/pack/pack-6345772d841e29aad37089aff06bae361cffa2e1.idx",
-                  "isDir": false
+                  "name": "pack-6345772d841e29aad37089aff06bae361cffa2e1.idx",
+                  "path": "example-voting-app.git/.git/objects/pack/pack-6345772d841e29aad37089aff06bae361cffa2e1.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
                 },
                 "pack-6345772d841e29aad37089aff06bae361cffa2e1.pack": {
-                  "path": "./temp/example-voting-app.git/.git/objects/pack/pack-6345772d841e29aad37089aff06bae361cffa2e1.pack",
-                  "isDir": false
+                  "name": "pack-6345772d841e29aad37089aff06bae361cffa2e1.pack",
+                  "path": "example-voting-app.git/.git/objects/pack/pack-6345772d841e29aad37089aff06bae361cffa2e1.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
                 }
               }
             }
           }
         },
         "packed-refs": {
-          "path": "./temp/example-voting-app.git/.git/packed-refs",
-          "isDir": false
+          "name": "packed-refs",
+          "path": "example-voting-app.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "refs": {
-          "path": "./temp/example-voting-app.git/.git/refs",
+          "name": "refs",
+          "path": "example-voting-app.git/.git/refs",
           "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
           "children": {
             "heads": {
-              "path": "./temp/example-voting-app.git/.git/refs/heads",
+              "name": "heads",
+              "path": "example-voting-app.git/.git/refs/heads",
               "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
               "children": {
                 "main": {
-                  "path": "./temp/example-voting-app.git/.git/refs/heads/main",
-                  "isDir": false
+                  "name": "main",
+                  "path": "example-voting-app.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
                 }
               }
             },
             "remotes": {
-              "path": "./temp/example-voting-app.git/.git/refs/remotes",
+              "name": "remotes",
+              "path": "example-voting-app.git/.git/refs/remotes",
               "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
               "children": {
                 "origin": {
-                  "path": "./temp/example-voting-app.git/.git/refs/remotes/origin",
+                  "name": "origin",
+                  "path": "example-voting-app.git/.git/refs/remotes/origin",
                   "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
                   "children": {
                     "HEAD": {
-                      "path": "./temp/example-voting-app.git/.git/refs/remotes/origin/HEAD",
-                      "isDir": false
+                      "name": "HEAD",
+                      "path": "example-voting-app.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
                     }
                   }
                 }
               }
             },
             "tags": {
-              "path": "./temp/example-voting-app.git/.git/refs/tags",
+              "name": "tags",
+              "path": "example-voting-app.git/.git/refs/tags",
               "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
               "children": {}
             }
           }
@@ -199,230 +350,389 @@
       }
     },
     ".github": {
-      "path": "./temp/example-voting-app.git/.github",
+      "name": ".github",
+      "path": "example-voting-app.git/.github",
       "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
       "children": {
         "dependabot.yml": {
-          "path": "./temp/example-voting-app.git/.github/dependabot.yml",
-          "isDir": false
+          "name": "dependabot.yml",
+          "path": "example-voting-app.git/.github/dependabot.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "linters": {
-          "path": "./temp/example-voting-app.git/.github/linters",
+          "name": "linters",
+          "path": "example-voting-app.git/.github/linters",
           "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
           "children": {
             ".hadolint.yaml": {
-              "path": "./temp/example-voting-app.git/.github/linters/.hadolint.yaml",
-              "isDir": false
+              "name": ".hadolint.yaml",
+              "path": "example-voting-app.git/.github/linters/.hadolint.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             ".markdown-lint.yml": {
-              "path": "./temp/example-voting-app.git/.github/linters/.markdown-lint.yml",
-              "isDir": false
+              "name": ".markdown-lint.yml",
+              "path": "example-voting-app.git/.github/linters/.markdown-lint.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             ".yaml-lint.yml": {
-              "path": "./temp/example-voting-app.git/.github/linters/.yaml-lint.yml",
-              "isDir": false
+              "name": ".yaml-lint.yml",
+              "path": "example-voting-app.git/.github/linters/.yaml-lint.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             }
           }
         },
         "workflows": {
-          "path": "./temp/example-voting-app.git/.github/workflows",
+          "name": "workflows",
+          "path": "example-voting-app.git/.github/workflows",
           "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
           "children": {
             "call-docker-build-result.yaml": {
-              "path": "./temp/example-voting-app.git/.github/workflows/call-docker-build-result.yaml",
-              "isDir": false
+              "name": "call-docker-build-result.yaml",
+              "path": "example-voting-app.git/.github/workflows/call-docker-build-result.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "call-docker-build-vote.yaml": {
-              "path": "./temp/example-voting-app.git/.github/workflows/call-docker-build-vote.yaml",
-              "isDir": false
+              "name": "call-docker-build-vote.yaml",
+              "path": "example-voting-app.git/.github/workflows/call-docker-build-vote.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "call-docker-build-worker.yaml": {
-              "path": "./temp/example-voting-app.git/.github/workflows/call-docker-build-worker.yaml",
-              "isDir": false
+              "name": "call-docker-build-worker.yaml",
+              "path": "example-voting-app.git/.github/workflows/call-docker-build-worker.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "call-super-linter.yaml": {
-              "path": "./temp/example-voting-app.git/.github/workflows/call-super-linter.yaml",
-              "isDir": false
+              "name": "call-super-linter.yaml",
+              "path": "example-voting-app.git/.github/workflows/call-super-linter.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             }
           }
         }
       }
     },
     ".gitignore": {
-      "path": "./temp/example-voting-app.git/.gitignore",
-      "isDir": false
+      "name": ".gitignore",
+      "path": "example-voting-app.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
     },
     "ExampleVotingApp.sln": {
-      "path": "./temp/example-voting-app.git/ExampleVotingApp.sln",
-      "isDir": false
+      "name": "ExampleVotingApp.sln",
+      "path": "example-voting-app.git/ExampleVotingApp.sln",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
     },
     "LICENSE": {
-      "path": "./temp/example-voting-app.git/LICENSE",
-      "isDir": false
+      "name": "LICENSE",
+      "path": "example-voting-app.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
     },
     "MAINTAINERS": {
-      "path": "./temp/example-voting-app.git/MAINTAINERS",
-      "isDir": false
+      "name": "MAINTAINERS",
+      "path": "example-voting-app.git/MAINTAINERS",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
     },
     "README.md": {
-      "path": "./temp/example-voting-app.git/README.md",
-      "isDir": false
+      "name": "README.md",
+      "path": "example-voting-app.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
     },
     "architecture.png": {
-      "path": "./temp/example-voting-app.git/architecture.png",
-      "isDir": false
+      "name": "architecture.png",
+      "path": "example-voting-app.git/architecture.png",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
     },
     "docker-compose.seed.yml": {
-      "path": "./temp/example-voting-app.git/docker-compose.seed.yml",
-      "isDir": false
+      "name": "docker-compose.seed.yml",
+      "path": "example-voting-app.git/docker-compose.seed.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
     },
     "docker-compose.yml": {
-      "path": "./temp/example-voting-app.git/docker-compose.yml",
-      "isDir": false
+      "name": "docker-compose.yml",
+      "path": "example-voting-app.git/docker-compose.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
     },
     "docker-stack.yml": {
-      "path": "./temp/example-voting-app.git/docker-stack.yml",
-      "isDir": false
+      "name": "docker-stack.yml",
+      "path": "example-voting-app.git/docker-stack.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
     },
     "healthchecks": {
-      "path": "./temp/example-voting-app.git/healthchecks",
+      "name": "healthchecks",
+      "path": "example-voting-app.git/healthchecks",
       "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
       "children": {
         "postgres.sh": {
-          "path": "./temp/example-voting-app.git/healthchecks/postgres.sh",
-          "isDir": false
+          "name": "postgres.sh",
+          "path": "example-voting-app.git/healthchecks/postgres.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "redis.sh": {
-          "path": "./temp/example-voting-app.git/healthchecks/redis.sh",
-          "isDir": false
+          "name": "redis.sh",
+          "path": "example-voting-app.git/healthchecks/redis.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         }
       }
     },
     "k8s-specifications": {
-      "path": "./temp/example-voting-app.git/k8s-specifications",
+      "name": "k8s-specifications",
+      "path": "example-voting-app.git/k8s-specifications",
       "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
       "children": {
         "db-deployment.yaml": {
-          "path": "./temp/example-voting-app.git/k8s-specifications/db-deployment.yaml",
-          "isDir": false
+          "name": "db-deployment.yaml",
+          "path": "example-voting-app.git/k8s-specifications/db-deployment.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "db-service.yaml": {
-          "path": "./temp/example-voting-app.git/k8s-specifications/db-service.yaml",
-          "isDir": false
+          "name": "db-service.yaml",
+          "path": "example-voting-app.git/k8s-specifications/db-service.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "redis-deployment.yaml": {
-          "path": "./temp/example-voting-app.git/k8s-specifications/redis-deployment.yaml",
-          "isDir": false
+          "name": "redis-deployment.yaml",
+          "path": "example-voting-app.git/k8s-specifications/redis-deployment.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "redis-service.yaml": {
-          "path": "./temp/example-voting-app.git/k8s-specifications/redis-service.yaml",
-          "isDir": false
+          "name": "redis-service.yaml",
+          "path": "example-voting-app.git/k8s-specifications/redis-service.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "result-deployment.yaml": {
-          "path": "./temp/example-voting-app.git/k8s-specifications/result-deployment.yaml",
-          "isDir": false
+          "name": "result-deployment.yaml",
+          "path": "example-voting-app.git/k8s-specifications/result-deployment.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "result-service.yaml": {
-          "path": "./temp/example-voting-app.git/k8s-specifications/result-service.yaml",
-          "isDir": false
+          "name": "result-service.yaml",
+          "path": "example-voting-app.git/k8s-specifications/result-service.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "vote-deployment.yaml": {
-          "path": "./temp/example-voting-app.git/k8s-specifications/vote-deployment.yaml",
-          "isDir": false
+          "name": "vote-deployment.yaml",
+          "path": "example-voting-app.git/k8s-specifications/vote-deployment.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "vote-namespace.yml": {
-          "path": "./temp/example-voting-app.git/k8s-specifications/vote-namespace.yml",
-          "isDir": false
+          "name": "vote-namespace.yml",
+          "path": "example-voting-app.git/k8s-specifications/vote-namespace.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "vote-service.yaml": {
-          "path": "./temp/example-voting-app.git/k8s-specifications/vote-service.yaml",
-          "isDir": false
+          "name": "vote-service.yaml",
+          "path": "example-voting-app.git/k8s-specifications/vote-service.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "worker-deployment.yaml": {
-          "path": "./temp/example-voting-app.git/k8s-specifications/worker-deployment.yaml",
-          "isDir": false
+          "name": "worker-deployment.yaml",
+          "path": "example-voting-app.git/k8s-specifications/worker-deployment.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         }
       }
     },
     "result": {
-      "path": "./temp/example-voting-app.git/result",
+      "name": "result",
+      "path": "example-voting-app.git/result",
       "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
       "children": {
         ".dockerignore": {
-          "path": "./temp/example-voting-app.git/result/.dockerignore",
-          "isDir": false
+          "name": ".dockerignore",
+          "path": "example-voting-app.git/result/.dockerignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         ".vscode": {
-          "path": "./temp/example-voting-app.git/result/.vscode",
+          "name": ".vscode",
+          "path": "example-voting-app.git/result/.vscode",
           "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
           "children": {
             "launch.json": {
-              "path": "./temp/example-voting-app.git/result/.vscode/launch.json",
-              "isDir": false
+              "name": "launch.json",
+              "path": "example-voting-app.git/result/.vscode/launch.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             }
           }
         },
         "Dockerfile": {
-          "path": "./temp/example-voting-app.git/result/Dockerfile",
-          "isDir": false
+          "name": "Dockerfile",
+          "path": "example-voting-app.git/result/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
         },
         "package-lock.json": {
-          "path": "./temp/example-voting-app.git/result/package-lock.json",
-          "isDir": false
+          "name": "package-lock.json",
+          "path": "example-voting-app.git/result/package-lock.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "package.json": {
-          "path": "./temp/example-voting-app.git/result/package.json",
-          "isDir": false
+          "name": "package.json",
+          "path": "example-voting-app.git/result/package.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "server.js": {
-          "path": "./temp/example-voting-app.git/result/server.js",
-          "isDir": false
+          "name": "server.js",
+          "path": "example-voting-app.git/result/server.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "tests": {
-          "path": "./temp/example-voting-app.git/result/tests",
+          "name": "tests",
+          "path": "example-voting-app.git/result/tests",
           "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
           "children": {
             "Dockerfile": {
-              "path": "./temp/example-voting-app.git/result/tests/Dockerfile",
-              "isDir": false
+              "name": "Dockerfile",
+              "path": "example-voting-app.git/result/tests/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
             },
             "render.js": {
-              "path": "./temp/example-voting-app.git/result/tests/render.js",
-              "isDir": false
+              "name": "render.js",
+              "path": "example-voting-app.git/result/tests/render.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "tests.sh": {
-              "path": "./temp/example-voting-app.git/result/tests/tests.sh",
-              "isDir": false
+              "name": "tests.sh",
+              "path": "example-voting-app.git/result/tests/tests.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             }
           }
         },
         "views": {
-          "path": "./temp/example-voting-app.git/result/views",
+          "name": "views",
+          "path": "example-voting-app.git/result/views",
           "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
           "children": {
             "angular.min.js": {
-              "path": "./temp/example-voting-app.git/result/views/angular.min.js",
-              "isDir": false
+              "name": "angular.min.js",
+              "path": "example-voting-app.git/result/views/angular.min.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "app.js": {
-              "path": "./temp/example-voting-app.git/result/views/app.js",
-              "isDir": false
+              "name": "app.js",
+              "path": "example-voting-app.git/result/views/app.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "index.html": {
-              "path": "./temp/example-voting-app.git/result/views/index.html",
-              "isDir": false
+              "name": "index.html",
+              "path": "example-voting-app.git/result/views/index.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "socket.io.js": {
-              "path": "./temp/example-voting-app.git/result/views/socket.io.js",
-              "isDir": false
+              "name": "socket.io.js",
+              "path": "example-voting-app.git/result/views/socket.io.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             },
             "stylesheets": {
-              "path": "./temp/example-voting-app.git/result/views/stylesheets",
+              "name": "stylesheets",
+              "path": "example-voting-app.git/result/views/stylesheets",
               "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
               "children": {
                 "style.css": {
-                  "path": "./temp/example-voting-app.git/result/views/stylesheets/style.css",
-                  "isDir": false
+                  "name": "style.css",
+                  "path": "example-voting-app.git/result/views/stylesheets/style.css",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
                 }
               }
             }
@@ -431,90 +741,147 @@
       }
     },
     "seed-data": {
-      "path": "./temp/example-voting-app.git/seed-data",
+      "name": "seed-data",
+      "path": "example-voting-app.git/seed-data",
       "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
       "children": {
         "Dockerfile": {
-          "path": "./temp/example-voting-app.git/seed-data/Dockerfile",
-          "isDir": false
+          "name": "Dockerfile",
+          "path": "example-voting-app.git/seed-data/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
         },
         "generate-votes.sh": {
-          "path": "./temp/example-voting-app.git/seed-data/generate-votes.sh",
-          "isDir": false
+          "name": "generate-votes.sh",
+          "path": "example-voting-app.git/seed-data/generate-votes.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "make-data.py": {
-          "path": "./temp/example-voting-app.git/seed-data/make-data.py",
-          "isDir": false
+          "name": "make-data.py",
+          "path": "example-voting-app.git/seed-data/make-data.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "posta": {
-          "path": "./temp/example-voting-app.git/seed-data/posta",
-          "isDir": false
+          "name": "posta",
+          "path": "example-voting-app.git/seed-data/posta",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "postb": {
-          "path": "./temp/example-voting-app.git/seed-data/postb",
-          "isDir": false
+          "name": "postb",
+          "path": "example-voting-app.git/seed-data/postb",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         }
       }
     },
     "vote": {
-      "path": "./temp/example-voting-app.git/vote",
+      "name": "vote",
+      "path": "example-voting-app.git/vote",
       "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
       "children": {
         "Dockerfile": {
-          "path": "./temp/example-voting-app.git/vote/Dockerfile",
-          "isDir": false
+          "name": "Dockerfile",
+          "path": "example-voting-app.git/vote/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
         },
         "app.py": {
-          "path": "./temp/example-voting-app.git/vote/app.py",
-          "isDir": false
+          "name": "app.py",
+          "path": "example-voting-app.git/vote/app.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "requirements.txt": {
-          "path": "./temp/example-voting-app.git/vote/requirements.txt",
-          "isDir": false
+          "name": "requirements.txt",
+          "path": "example-voting-app.git/vote/requirements.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "static": {
-          "path": "./temp/example-voting-app.git/vote/static",
+          "name": "static",
+          "path": "example-voting-app.git/vote/static",
           "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
           "children": {
             "stylesheets": {
-              "path": "./temp/example-voting-app.git/vote/static/stylesheets",
+              "name": "stylesheets",
+              "path": "example-voting-app.git/vote/static/stylesheets",
               "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
               "children": {
                 "style.css": {
-                  "path": "./temp/example-voting-app.git/vote/static/stylesheets/style.css",
-                  "isDir": false
+                  "name": "style.css",
+                  "path": "example-voting-app.git/vote/static/stylesheets/style.css",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
                 }
               }
             }
           }
         },
         "templates": {
-          "path": "./temp/example-voting-app.git/vote/templates",
+          "name": "templates",
+          "path": "example-voting-app.git/vote/templates",
           "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
           "children": {
             "index.html": {
-              "path": "./temp/example-voting-app.git/vote/templates/index.html",
-              "isDir": false
+              "name": "index.html",
+              "path": "example-voting-app.git/vote/templates/index.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
             }
           }
         }
       }
     },
     "worker": {
-      "path": "./temp/example-voting-app.git/worker",
+      "name": "worker",
+      "path": "example-voting-app.git/worker",
       "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
       "children": {
         "Dockerfile": {
-          "path": "./temp/example-voting-app.git/worker/Dockerfile",
-          "isDir": false
+          "name": "Dockerfile",
+          "path": "example-voting-app.git/worker/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
         },
         "Program.cs": {
-          "path": "./temp/example-voting-app.git/worker/Program.cs",
-          "isDir": false
+          "name": "Program.cs",
+          "path": "example-voting-app.git/worker/Program.cs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         },
         "Worker.csproj": {
-          "path": "./temp/example-voting-app.git/worker/Worker.csproj",
-          "isDir": false
+          "name": "Worker.csproj",
+          "path": "example-voting-app.git/worker/Worker.csproj",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
         }
       }
     }
