@@ -1,4 +1,4 @@
-const INTERVAL = 5000 //5 seconds
+const INTERVAL = 100 //ms
 var semaphore = false
 var totalItems = 0
 var endCheck = null

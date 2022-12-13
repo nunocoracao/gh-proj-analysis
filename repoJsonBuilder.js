@@ -1,19 +1,43 @@
 require('dotenv-safe').config();
-const githubSearchRepos = require('github-search-repos');
+const githubSearchRepos = require('./src/ghCrawler.js');
 var utils = require('./src/utils');
 
 var searchQueries = [
     'javascript',
-    'go'
+    'go',
+    'java',
+    'rust',
+    'c',
+    'c++',
+    'html',
+    'css',
+    'typescript',
+    'python',
+    'sql',
+    'c#',
+    'php',
+    'kotlin',
+    'android',
+    'ios',
+    'dart',
+    'ruby',
+    'swift',
+    'scala',
+    'docker',
+    'compose',
+    'kubernetes',
+    'sample',
+    'api',
+    'ml'
 ]
 
 currentIndex = 0
 
-var results = []
+var results = {}
 
 var searchGH = (query, callback) => {
     console.log('Search using query: ' + query)
-    githubSearchRepos(query, { token: process.env.TOKEN, sort: 'stars' }).then(data => {
+    githubSearchRepos(query, { token: process.env.TOKEN, sort: 'stars' }, (data) => {
         callback(data.items);
     });
 }
@@ -41,7 +65,7 @@ var processResult = (items) => {
             watchers_count: items[i].watchers_count,
             language: items[i].language
         }
-        results.push(obj)
+        results[items[i].id] = obj //avoid duplicates
     }
 
     //run next
@@ -49,8 +73,12 @@ var processResult = (items) => {
     if(currentIndex < searchQueries.length){
         searchGH(searchQueries[currentIndex], processResult)
     } else {
-        console.log('Saving ' + results.length + ' entries to file')
-        utils.saveToFile(results, '../repos.json')
+
+        var res_array = []
+        for(var i in results)
+            res_array.push(results[i])
+        console.log('Saving ' + res_array.length + ' entries to file')
+        utils.saveToFile(res_array, '../repos.json')
     }
 }
 
