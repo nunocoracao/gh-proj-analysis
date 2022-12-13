@@ -31,6 +31,8 @@ module.exports = {
             fs.rmSync(path, { recursive: true })
         }
 
+        this.print('cloning ' + repoName)
+
         clone(repoUrl, path, (error) => {
             if (error)
                 console.log(error)
@@ -43,6 +45,9 @@ module.exports = {
         var path = TEMP_DIR+folder
         var struct = {}
         var files = fs.readdirSync(TEMP_DIR+folder, {withFileTypes:true})
+
+        this.print('scanning ' + path)
+
         for(var i in files){
             struct[files[i].name] = {}
             struct[files[i].name].path = path + "/" + files[i].name
@@ -54,7 +59,24 @@ module.exports = {
         return struct
     },
 
+    processStruct: function(struct) {
+        this.print('processing structure for important files')
+        var obj = {
+            struct : struct
+        }
+        return obj
+    },
+
+    processOverallResults: function () {
+        this.print('processing overall results')
+        fs.readdirSync(OUTPUT_DIR).forEach(file => {
+            console.log(file);
+        });
+        return {}
+    },
+
     saveToFile: function (data, filename) {
+        this.print('saving data to ' + filename)
         fs.writeFileSync(OUTPUT_DIR + filename, JSON.stringify(data, null, 2))
     }
 

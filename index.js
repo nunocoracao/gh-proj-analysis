@@ -1,20 +1,19 @@
 var utils = require('./src/utils');
 var smoother = require('./src/smoother')
 
-
 var repos = utils.readRepoFile()
 
 console.log(repos)
+console.log('Scanning ' + repos.length + ' repos')
 
 function buildStep(item) {
     return {
         repo: item,
         action: (endCB) => {
-            console.log(item)
             utils.cloneRepo(item, (repoName) => {
-                utils.print('cloning ' + repoName)
                 var struct = utils.scanFolder(repoName)
-                utils.saveToFile(struct, repoName+'.json')
+                var res = utils.processStruct(struct)
+                utils.saveToFile(res, repoName+'.json')
                 endCB()
             })
         }
@@ -27,11 +26,9 @@ for (var i in repos) {
     actionList.push(step)
 }
 
-console.log(actionList)
-
 smoother.start(actionList, () => {
-    //overall process
-    console.log(end)
+    var result = utils.processOverallResults()
+    utils.saveToFile(result, '../finalResults.json')
 })
 
 /*

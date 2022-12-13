@@ -1,4 +1,4 @@
-const INTERVAL = 1000 //1 seconds
+const INTERVAL = 5000 //5 seconds
 var semaphore = false
 var totalItems = 0
 var endCheck = null
@@ -33,7 +33,7 @@ module.exports = {
                 semaphore = !semaphore
             })
         } else {
-            this.print('waiting my turn - ' + item.repo)
+            //this.print('waiting my turn - ' + item.repo)
             setTimeout(() => this.nextStep(item), INTERVAL)
         }
     },
@@ -42,6 +42,7 @@ module.exports = {
         if (totalItems <= 0) {
             clearInterval(endCheck);
             this.print('end cycle invoking callback')
+            cb()
         }
     }
 
