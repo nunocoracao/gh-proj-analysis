@@ -1,5 +1,5 @@
-const INTERVAL = 5000 //2 seconds
-
+const INTERVAL = 1000 //1 seconds
+var semaphore = false
 var totalItems = 0
 var endCheck = null
 
@@ -13,8 +13,7 @@ module.exports = {
         var timeout = 0
         for (var i in list) {
             var item = list[i]
-            this.setTimer(item, timeout)
-            timeout += INTERVAL
+            this.setTimer(item, INTERVAL)
             totalItems++
         }
         endCheck = setInterval(() => this.end(cb), INTERVAL)
@@ -25,10 +24,18 @@ module.exports = {
     },
 
     nextStep: function (item) {
-        this.print('processing item - ' + item.repo)
-        item.action(() => {
-            totalItems--
-        })
+
+        if (!semaphore) {
+            semaphore = !semaphore
+            this.print('processing item - ' + item.repo)
+            item.action(() => {
+                totalItems--
+                semaphore = !semaphore
+            })
+        } else {
+            this.print('waiting my turn - ' + item.repo)
+            setTimeout(() => this.nextStep(item), INTERVAL)
+        }
     },
 
     end: function (cb) {

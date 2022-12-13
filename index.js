@@ -15,7 +15,7 @@ function buildStep(item) {
                 utils.print('cloning ' + repoName)
                 var struct = utils.scanFolder(repoName)
                 //per project process
-                utils.saveToFile(struct, 'test.json')
+                utils.saveToFile(struct, repoName+'.json')
                 endCB()
             })
         }
