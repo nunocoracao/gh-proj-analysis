@@ -3,16 +3,23 @@ const fs = require('fs');
 
 const TEMP_DIR = "./temp/"
 const OUTPUT_DIR = "./outputs/"
+const REPOS_FILE = "./repos.json"
+
 
 module.exports = {
 
 
-    print: function (params) {
-        console.log(params)
+    print: function (text) {
+        console.log('Utils > ' + text)
     },
 
     readRepoArgs: function (args) {
         return args[2]
+    },
+
+    readRepoFile: function () {
+        var repos = JSON.parse(fs.readFileSync(REPOS_FILE))
+        return repos
     },
 
     cloneRepo: function (repoUrl, callback) {
