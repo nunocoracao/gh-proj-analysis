@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const TEMP_DIR = "./temp/"
 const OUTPUT_DIR = "./outputs/"
-const REPOS_FILE = "./repos.json"
+const REPOS_FILE = "./oldrepos.json"
 
 
 module.exports = {

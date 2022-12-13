@@ -14,7 +14,6 @@ function buildStep(item) {
             utils.cloneRepo(item, (repoName) => {
                 utils.print('cloning ' + repoName)
                 var struct = utils.scanFolder(repoName)
-                //per project process
                 utils.saveToFile(struct, repoName+'.json')
                 endCB()
             })
@@ -24,7 +23,7 @@ function buildStep(item) {
 
 var actionList = []
 for (var i in repos) {
-    var step = buildStep(repos[i])
+    var step = buildStep(repos[i].clone_url)
     actionList.push(step)
 }
 
