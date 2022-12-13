@@ -1,29 +1,41 @@
-const { time } = require("console");
+const INTERVAL = 5000 //2 seconds
 
-const INTERVAL = 2000 //2 seconds
+var totalItems = 0
+var endCheck = null
 
 module.exports = {
 
-    print: function(text){
+    print: function (text) {
         console.log('Smoother > ' + text)
     },
 
-    start: function (list) {
+    start: function (list, cb) {
         var timeout = 0
-        for(var i in list){
-            setTimeout(() => this.nextStep(list[i]), timeout)
+        for (var i in list) {
+            var item = list[i]
+            this.setTimer(item, timeout)
             timeout += INTERVAL
+            totalItems++
         }
-        setTimeout(() => this.end(cb), timeout)
+        endCheck = setInterval(() => this.end(cb), INTERVAL)
+    },
+
+    setTimer: function (item, timeout) {
+        setTimeout(() => this.nextStep(item), timeout)
     },
 
     nextStep: function (item) {
-        this.print('processing item - ' + item.name)
-        item.action()
+        this.print('processing item - ' + item.repo)
+        item.action(() => {
+            totalItems--
+        })
     },
 
     end: function (cb) {
-        this.print('end cycle invoking callback')
+        if (totalItems <= 0) {
+            clearInterval(endCheck);
+            this.print('end cycle invoking callback')
+        }
     }
 
 };

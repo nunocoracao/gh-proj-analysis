@@ -6,39 +6,34 @@ var repos = utils.readRepoFile()
 
 console.log(repos)
 
-var actionList = []
-for(var repo in repos){
-    var obj = {
-        name : repos[repo],
-        action : function(){
-            console.log('yeah')
+function buildStep(item) {
+    return {
+        repo: item,
+        action: (endCB) => {
+            console.log(item)
+            utils.cloneRepo(item, (repoName) => {
+                utils.print('cloning ' + repoName)
+                var struct = utils.scanFolder(repoName)
+                //per project process
+                utils.saveToFile(struct, 'test.json')
+                endCB()
+            })
         }
     }
-    actionList.push(obj)
 }
 
-smoother.start(actionList)
+var actionList = []
+for (var i in repos) {
+    var step = buildStep(repos[i])
+    actionList.push(step)
+}
 
+console.log(actionList)
 
-//var repo = utils.readRepoArgs(process.argv)
-//var repo = 'https://github.com/BretFisher/example-voting-app.git'
-
-//this needs to be timout'd
-
-/*utils.print(repo);
-utils.cloneRepo(repo, (repoName) => {
-    console.log(repoName)
-    var struct = utils.scanFolder(repoName)
-    //process
-    utils.saveToFile(struct, 'test.json')
-})*/
-
-
-
-//var test = process.argv
-//utils.print(test);
-//utils.saveToFile(test, 'test.json');
-
+smoother.start(actionList, () => {
+    //overall process
+    console.log(end)
+})
 
 /*
 
