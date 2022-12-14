@@ -1,0 +1,2751 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/django/Dockerfile",
+        "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/docs/Dockerfile",
+        "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/node/Dockerfile",
+        "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/aws/Dockerfile",
+        "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/django/Dockerfile",
+        "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/postgres/Dockerfile",
+        "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/traefik/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".editorconfig": {
+      "name": ".editorconfig",
+      "path": "cookiecutter-django.git/.editorconfig",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "cookiecutter-django.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "cookiecutter-django.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "cookiecutter-django.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "cookiecutter-django.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "cookiecutter-django.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "cookiecutter-django.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "cookiecutter-django.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "cookiecutter-django.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "cookiecutter-django.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "cookiecutter-django.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "cookiecutter-django.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "cookiecutter-django.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "cookiecutter-django.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "cookiecutter-django.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "cookiecutter-django.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "cookiecutter-django.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "cookiecutter-django.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "cookiecutter-django.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "cookiecutter-django.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "cookiecutter-django.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "cookiecutter-django.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "cookiecutter-django.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "cookiecutter-django.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "cookiecutter-django.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "cookiecutter-django.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "cookiecutter-django.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "cookiecutter-django.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "cookiecutter-django.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "cookiecutter-django.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "cookiecutter-django.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "cookiecutter-django.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "cookiecutter-django.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-e791574e57db3b819d8254020c09bf3b9d71af74.idx": {
+                  "name": "pack-e791574e57db3b819d8254020c09bf3b9d71af74.idx",
+                  "path": "cookiecutter-django.git/.git/objects/pack/pack-e791574e57db3b819d8254020c09bf3b9d71af74.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-e791574e57db3b819d8254020c09bf3b9d71af74.pack": {
+                  "name": "pack-e791574e57db3b819d8254020c09bf3b9d71af74.pack",
+                  "path": "cookiecutter-django.git/.git/objects/pack/pack-e791574e57db3b819d8254020c09bf3b9d71af74.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "cookiecutter-django.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "cookiecutter-django.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "cookiecutter-django.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "cookiecutter-django.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "cookiecutter-django.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "cookiecutter-django.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "cookiecutter-django.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "cookiecutter-django.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "2022.12.13": {
+                  "name": "2022.12.13",
+                  "path": "cookiecutter-django.git/.git/refs/tags/2022.12.13",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "cookiecutter-django.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitattributes": {
+      "name": ".gitattributes",
+      "path": "cookiecutter-django.git/.gitattributes",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".github": {
+      "name": ".github",
+      "path": "cookiecutter-django.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CONTRIBUTORS-template.md": {
+          "name": "CONTRIBUTORS-template.md",
+          "path": "cookiecutter-django.git/.github/CONTRIBUTORS-template.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "FUNDING.yml": {
+          "name": "FUNDING.yml",
+          "path": "cookiecutter-django.git/.github/FUNDING.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "cookiecutter-django.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug.md": {
+              "name": "bug.md",
+              "path": "cookiecutter-django.git/.github/ISSUE_TEMPLATE/bug.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature.md": {
+              "name": "feature.md",
+              "path": "cookiecutter-django.git/.github/ISSUE_TEMPLATE/feature.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "paid-support.md": {
+              "name": "paid-support.md",
+              "path": "cookiecutter-django.git/.github/ISSUE_TEMPLATE/paid-support.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "question.md": {
+              "name": "question.md",
+              "path": "cookiecutter-django.git/.github/ISSUE_TEMPLATE/question.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "PULL_REQUEST_TEMPLATE.md": {
+          "name": "PULL_REQUEST_TEMPLATE.md",
+          "path": "cookiecutter-django.git/.github/PULL_REQUEST_TEMPLATE.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "changelog-template.md": {
+          "name": "changelog-template.md",
+          "path": "cookiecutter-django.git/.github/changelog-template.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "contributors.json": {
+          "name": "contributors.json",
+          "path": "cookiecutter-django.git/.github/contributors.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "dependabot.yml": {
+          "name": "dependabot.yml",
+          "path": "cookiecutter-django.git/.github/dependabot.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "cookiecutter-django.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ci.yml": {
+              "name": "ci.yml",
+              "path": "cookiecutter-django.git/.github/workflows/ci.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "django-issue-checker.yml": {
+              "name": "django-issue-checker.yml",
+              "path": "cookiecutter-django.git/.github/workflows/django-issue-checker.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "issue-manager.yml": {
+              "name": "issue-manager.yml",
+              "path": "cookiecutter-django.git/.github/workflows/issue-manager.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit-autoupdate.yml": {
+              "name": "pre-commit-autoupdate.yml",
+              "path": "cookiecutter-django.git/.github/workflows/pre-commit-autoupdate.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update-changelog.yml": {
+              "name": "update-changelog.yml",
+              "path": "cookiecutter-django.git/.github/workflows/update-changelog.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update-contributors.yml": {
+              "name": "update-contributors.yml",
+              "path": "cookiecutter-django.git/.github/workflows/update-contributors.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "cookiecutter-django.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".pre-commit-config.yaml": {
+      "name": ".pre-commit-config.yaml",
+      "path": "cookiecutter-django.git/.pre-commit-config.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".pyup.yml": {
+      "name": ".pyup.yml",
+      "path": "cookiecutter-django.git/.pyup.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".readthedocs.yaml": {
+      "name": ".readthedocs.yaml",
+      "path": "cookiecutter-django.git/.readthedocs.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CHANGELOG.md": {
+      "name": "CHANGELOG.md",
+      "path": "cookiecutter-django.git/CHANGELOG.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CODE_OF_CONDUCT.md": {
+      "name": "CODE_OF_CONDUCT.md",
+      "path": "cookiecutter-django.git/CODE_OF_CONDUCT.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "cookiecutter-django.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTORS.md": {
+      "name": "CONTRIBUTORS.md",
+      "path": "cookiecutter-django.git/CONTRIBUTORS.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "cookiecutter-django.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "cookiecutter-django.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "cookiecutter.json": {
+      "name": "cookiecutter.json",
+      "path": "cookiecutter-django.git/cookiecutter.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docs": {
+      "name": "docs",
+      "path": "cookiecutter-django.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Makefile": {
+          "name": "Makefile",
+          "path": "cookiecutter-django.git/docs/Makefile",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "__init__.py": {
+          "name": "__init__.py",
+          "path": "cookiecutter-django.git/docs/__init__.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "_static": {
+          "name": "_static",
+          "path": "cookiecutter-django.git/docs/_static",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".gitkeep": {
+              "name": ".gitkeep",
+              "path": "cookiecutter-django.git/docs/_static/.gitkeep",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "conf.py": {
+          "name": "conf.py",
+          "path": "cookiecutter-django.git/docs/conf.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "deployment-on-heroku.rst": {
+          "name": "deployment-on-heroku.rst",
+          "path": "cookiecutter-django.git/docs/deployment-on-heroku.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "deployment-on-pythonanywhere.rst": {
+          "name": "deployment-on-pythonanywhere.rst",
+          "path": "cookiecutter-django.git/docs/deployment-on-pythonanywhere.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "deployment-with-docker.rst": {
+          "name": "deployment-with-docker.rst",
+          "path": "cookiecutter-django.git/docs/deployment-with-docker.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "developing-locally-docker.rst": {
+          "name": "developing-locally-docker.rst",
+          "path": "cookiecutter-django.git/docs/developing-locally-docker.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "developing-locally.rst": {
+          "name": "developing-locally.rst",
+          "path": "cookiecutter-django.git/docs/developing-locally.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-postgres-backups.rst": {
+          "name": "docker-postgres-backups.rst",
+          "path": "cookiecutter-django.git/docs/docker-postgres-backups.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "document.rst": {
+          "name": "document.rst",
+          "path": "cookiecutter-django.git/docs/document.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "faq.rst": {
+          "name": "faq.rst",
+          "path": "cookiecutter-django.git/docs/faq.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "generate-project-block.rst": {
+          "name": "generate-project-block.rst",
+          "path": "cookiecutter-django.git/docs/generate-project-block.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "index.rst": {
+          "name": "index.rst",
+          "path": "cookiecutter-django.git/docs/index.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "linters.rst": {
+          "name": "linters.rst",
+          "path": "cookiecutter-django.git/docs/linters.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "mailgun.rst": {
+          "name": "mailgun.rst",
+          "path": "cookiecutter-django.git/docs/mailgun.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "make.bat": {
+          "name": "make.bat",
+          "path": "cookiecutter-django.git/docs/make.bat",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "project-generation-options.rst": {
+          "name": "project-generation-options.rst",
+          "path": "cookiecutter-django.git/docs/project-generation-options.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "requirements.txt": {
+          "name": "requirements.txt",
+          "path": "cookiecutter-django.git/docs/requirements.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "settings.rst": {
+          "name": "settings.rst",
+          "path": "cookiecutter-django.git/docs/settings.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "testing.rst": {
+          "name": "testing.rst",
+          "path": "cookiecutter-django.git/docs/testing.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "troubleshooting.rst": {
+          "name": "troubleshooting.rst",
+          "path": "cookiecutter-django.git/docs/troubleshooting.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "websocket.rst": {
+          "name": "websocket.rst",
+          "path": "cookiecutter-django.git/docs/websocket.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "hooks": {
+      "name": "hooks",
+      "path": "cookiecutter-django.git/hooks",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "post_gen_project.py": {
+          "name": "post_gen_project.py",
+          "path": "cookiecutter-django.git/hooks/post_gen_project.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pre_gen_project.py": {
+          "name": "pre_gen_project.py",
+          "path": "cookiecutter-django.git/hooks/pre_gen_project.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "pytest.ini": {
+      "name": "pytest.ini",
+      "path": "cookiecutter-django.git/pytest.ini",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "requirements.txt": {
+      "name": "requirements.txt",
+      "path": "cookiecutter-django.git/requirements.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "scripts": {
+      "name": "scripts",
+      "path": "cookiecutter-django.git/scripts",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "__init__.py": {
+          "name": "__init__.py",
+          "path": "cookiecutter-django.git/scripts/__init__.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "create_django_issue.py": {
+          "name": "create_django_issue.py",
+          "path": "cookiecutter-django.git/scripts/create_django_issue.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "update_changelog.py": {
+          "name": "update_changelog.py",
+          "path": "cookiecutter-django.git/scripts/update_changelog.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "update_contributors.py": {
+          "name": "update_contributors.py",
+          "path": "cookiecutter-django.git/scripts/update_contributors.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "setup.cfg": {
+      "name": "setup.cfg",
+      "path": "cookiecutter-django.git/setup.cfg",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "setup.py": {
+      "name": "setup.py",
+      "path": "cookiecutter-django.git/setup.py",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "tests": {
+      "name": "tests",
+      "path": "cookiecutter-django.git/tests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "__init__.py": {
+          "name": "__init__.py",
+          "path": "cookiecutter-django.git/tests/__init__.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_bare.sh": {
+          "name": "test_bare.sh",
+          "path": "cookiecutter-django.git/tests/test_bare.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_cookiecutter_generation.py": {
+          "name": "test_cookiecutter_generation.py",
+          "path": "cookiecutter-django.git/tests/test_cookiecutter_generation.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_docker.sh": {
+          "name": "test_docker.sh",
+          "path": "cookiecutter-django.git/tests/test_docker.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_hooks.py": {
+          "name": "test_hooks.py",
+          "path": "cookiecutter-django.git/tests/test_hooks.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "tox.ini": {
+      "name": "tox.ini",
+      "path": "cookiecutter-django.git/tox.ini",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "{{cookiecutter.project_slug}}": {
+      "name": "{{cookiecutter.project_slug}}",
+      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".dockerignore": {
+          "name": ".dockerignore",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.dockerignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".editorconfig": {
+          "name": ".editorconfig",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.editorconfig",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".envs": {
+          "name": ".envs",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.envs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".local": {
+              "name": ".local",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.envs/.local",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".django": {
+                  "name": ".django",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.envs/.local/.django",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                ".postgres": {
+                  "name": ".postgres",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.envs/.local/.postgres",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            ".production": {
+              "name": ".production",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.envs/.production",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".django": {
+                  "name": ".django",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.envs/.production/.django",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                ".postgres": {
+                  "name": ".postgres",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.envs/.production/.postgres",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        ".gitattributes": {
+          "name": ".gitattributes",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.gitattributes",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".github": {
+          "name": ".github",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.github",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "dependabot.yml": {
+              "name": "dependabot.yml",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.github/dependabot.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "workflows": {
+              "name": "workflows",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.github/workflows",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ci.yml": {
+                  "name": "ci.yml",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.github/workflows/ci.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".gitlab-ci.yml": {
+          "name": ".gitlab-ci.yml",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.gitlab-ci.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".idea": {
+          "name": ".idea",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "misc.xml": {
+              "name": "misc.xml",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/misc.xml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "modules.xml": {
+              "name": "modules.xml",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/modules.xml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "runConfigurations": {
+              "name": "runConfigurations",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/runConfigurations",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "docker_compose_up_django.xml": {
+                  "name": "docker_compose_up_django.xml",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/runConfigurations/docker_compose_up_django.xml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "docker_compose_up_docs.xml": {
+                  "name": "docker_compose_up_docs.xml",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/runConfigurations/docker_compose_up_docs.xml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "merge_production_dotenvs_in_dotenv.xml": {
+                  "name": "merge_production_dotenvs_in_dotenv.xml",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/runConfigurations/merge_production_dotenvs_in_dotenv.xml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "migrate.xml": {
+                  "name": "migrate.xml",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/runConfigurations/migrate.xml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pytest___.xml": {
+                  "name": "pytest___.xml",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/runConfigurations/pytest___.xml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pytest__users.xml": {
+                  "name": "pytest__users.xml",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/runConfigurations/pytest__users.xml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "runserver.xml": {
+                  "name": "runserver.xml",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/runConfigurations/runserver.xml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "runserver_plus.xml": {
+                  "name": "runserver_plus.xml",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/runConfigurations/runserver_plus.xml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "vcs.xml": {
+              "name": "vcs.xml",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/vcs.xml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "webResources.xml": {
+              "name": "webResources.xml",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/webResources.xml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "workspace.xml": {
+              "name": "workspace.xml",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/workspace.xml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "{{cookiecutter.project_slug}}.iml": {
+              "name": "{{cookiecutter.project_slug}}.iml",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.idea/{{cookiecutter.project_slug}}.iml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        ".pre-commit-config.yaml": {
+          "name": ".pre-commit-config.yaml",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.pre-commit-config.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".pylintrc": {
+          "name": ".pylintrc",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.pylintrc",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".readthedocs.yml": {
+          "name": ".readthedocs.yml",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.readthedocs.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".travis.yml": {
+          "name": ".travis.yml",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/.travis.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "CONTRIBUTORS.txt": {
+          "name": "CONTRIBUTORS.txt",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/CONTRIBUTORS.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "COPYING": {
+          "name": "COPYING",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/COPYING",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "LICENSE": {
+          "name": "LICENSE",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/LICENSE",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Procfile": {
+          "name": "Procfile",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/Procfile",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "bin": {
+          "name": "bin",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/bin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "post_compile": {
+              "name": "post_compile",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/bin/post_compile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "compose": {
+          "name": "compose",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "local": {
+              "name": "local",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "django": {
+                  "name": "django",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/django",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/django/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "celery": {
+                      "name": "celery",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/django/celery",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "beat": {
+                          "name": "beat",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/django/celery/beat",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "start": {
+                              "name": "start",
+                              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/django/celery/beat/start",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "flower": {
+                          "name": "flower",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/django/celery/flower",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "start": {
+                              "name": "start",
+                              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/django/celery/flower/start",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "worker": {
+                          "name": "worker",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/django/celery/worker",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "start": {
+                              "name": "start",
+                              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/django/celery/worker/start",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "start": {
+                      "name": "start",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/django/start",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "docs": {
+                  "name": "docs",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/docs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/docs/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "start": {
+                      "name": "start",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/docs/start",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "node": {
+                  "name": "node",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/node",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/local/node/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "production": {
+              "name": "production",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "aws": {
+                  "name": "aws",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/aws",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/aws/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "maintenance": {
+                      "name": "maintenance",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/aws/maintenance",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "download": {
+                          "name": "download",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/aws/maintenance/download",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "upload": {
+                          "name": "upload",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/aws/maintenance/upload",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "django": {
+                  "name": "django",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/django",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/django/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "celery": {
+                      "name": "celery",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/django/celery",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "beat": {
+                          "name": "beat",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/django/celery/beat",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "start": {
+                              "name": "start",
+                              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/django/celery/beat/start",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "flower": {
+                          "name": "flower",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/django/celery/flower",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "start": {
+                              "name": "start",
+                              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/django/celery/flower/start",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "worker": {
+                          "name": "worker",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/django/celery/worker",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "start": {
+                              "name": "start",
+                              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/django/celery/worker/start",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "entrypoint": {
+                      "name": "entrypoint",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/django/entrypoint",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "start": {
+                      "name": "start",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/django/start",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "postgres": {
+                  "name": "postgres",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/postgres",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/postgres/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "maintenance": {
+                      "name": "maintenance",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/postgres/maintenance",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "_sourced": {
+                          "name": "_sourced",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/postgres/maintenance/_sourced",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "constants.sh": {
+                              "name": "constants.sh",
+                              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/postgres/maintenance/_sourced/constants.sh",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "countdown.sh": {
+                              "name": "countdown.sh",
+                              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/postgres/maintenance/_sourced/countdown.sh",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "messages.sh": {
+                              "name": "messages.sh",
+                              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/postgres/maintenance/_sourced/messages.sh",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "yes_no.sh": {
+                              "name": "yes_no.sh",
+                              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/postgres/maintenance/_sourced/yes_no.sh",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "backup": {
+                          "name": "backup",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/postgres/maintenance/backup",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "backups": {
+                          "name": "backups",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/postgres/maintenance/backups",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "restore": {
+                          "name": "restore",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/postgres/maintenance/restore",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "traefik": {
+                  "name": "traefik",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/traefik",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/traefik/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "traefik.yml": {
+                      "name": "traefik.yml",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/compose/production/traefik/traefik.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "config": {
+          "name": "config",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "__init__.py": {
+              "name": "__init__.py",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/__init__.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "api_router.py": {
+              "name": "api_router.py",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/api_router.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "asgi.py": {
+              "name": "asgi.py",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/asgi.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "celery_app.py": {
+              "name": "celery_app.py",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/celery_app.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "settings": {
+              "name": "settings",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/settings",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "__init__.py": {
+                  "name": "__init__.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/settings/__init__.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "base.py": {
+                  "name": "base.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/settings/base.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "local.py": {
+                  "name": "local.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/settings/local.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "production.py": {
+                  "name": "production.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/settings/production.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "test.py": {
+                  "name": "test.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/settings/test.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "urls.py": {
+              "name": "urls.py",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/urls.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "websocket.py": {
+              "name": "websocket.py",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/websocket.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "wsgi.py": {
+              "name": "wsgi.py",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/config/wsgi.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "docs": {
+          "name": "docs",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "__init__.py": {
+              "name": "__init__.py",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/__init__.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "conf.py": {
+              "name": "conf.py",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/conf.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "howto.rst": {
+              "name": "howto.rst",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/howto.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "index.rst": {
+              "name": "index.rst",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/index.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "make.bat": {
+              "name": "make.bat",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/make.bat",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pycharm": {
+              "name": "pycharm",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "configuration.rst": {
+                  "name": "configuration.rst",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/configuration.rst",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "images": {
+                  "name": "images",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1.png": {
+                      "name": "1.png",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images/1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2.png": {
+                      "name": "2.png",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images/2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3.png": {
+                      "name": "3.png",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images/3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "4.png": {
+                      "name": "4.png",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images/4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "7.png": {
+                      "name": "7.png",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images/7.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "8.png": {
+                      "name": "8.png",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images/8.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "f1.png": {
+                      "name": "f1.png",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images/f1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "f2.png": {
+                      "name": "f2.png",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images/f2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "f3.png": {
+                      "name": "f3.png",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images/f3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "f4.png": {
+                      "name": "f4.png",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images/f4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "issue1.png": {
+                      "name": "issue1.png",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images/issue1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "issue2.png": {
+                      "name": "issue2.png",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/pycharm/images/issue2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "users.rst": {
+              "name": "users.rst",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/docs/users.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "gulpfile.js": {
+          "name": "gulpfile.js",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/gulpfile.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "local.yml": {
+          "name": "local.yml",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/local.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "locale": {
+          "name": "locale",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/locale",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.rst": {
+              "name": "README.rst",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/locale/README.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "manage.py": {
+          "name": "manage.py",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/manage.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "merge_production_dotenvs_in_dotenv.py": {
+          "name": "merge_production_dotenvs_in_dotenv.py",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/merge_production_dotenvs_in_dotenv.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "package.json": {
+          "name": "package.json",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/package.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "production.yml": {
+          "name": "production.yml",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/production.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pytest.ini": {
+          "name": "pytest.ini",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/pytest.ini",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "requirements": {
+          "name": "requirements",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/requirements",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "base.txt": {
+              "name": "base.txt",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/requirements/base.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "local.txt": {
+              "name": "local.txt",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/requirements/local.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "production.txt": {
+              "name": "production.txt",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/requirements/production.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "requirements.txt": {
+          "name": "requirements.txt",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/requirements.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "runtime.txt": {
+          "name": "runtime.txt",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/runtime.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "setup.cfg": {
+          "name": "setup.cfg",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/setup.cfg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "utility": {
+          "name": "utility",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/utility",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "install_os_dependencies.sh": {
+              "name": "install_os_dependencies.sh",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/utility/install_os_dependencies.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install_python_dependencies.sh": {
+              "name": "install_python_dependencies.sh",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/utility/install_python_dependencies.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "requirements-bionic.apt": {
+              "name": "requirements-bionic.apt",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/utility/requirements-bionic.apt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "requirements-bullseye.apt": {
+              "name": "requirements-bullseye.apt",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/utility/requirements-bullseye.apt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "requirements-buster.apt": {
+              "name": "requirements-buster.apt",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/utility/requirements-buster.apt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "requirements-focal.apt": {
+              "name": "requirements-focal.apt",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/utility/requirements-focal.apt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "requirements-jammy.apt": {
+              "name": "requirements-jammy.apt",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/utility/requirements-jammy.apt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "requirements-jessie.apt": {
+              "name": "requirements-jessie.apt",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/utility/requirements-jessie.apt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "requirements-stretch.apt": {
+              "name": "requirements-stretch.apt",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/utility/requirements-stretch.apt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "requirements-trusty.apt": {
+              "name": "requirements-trusty.apt",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/utility/requirements-trusty.apt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "requirements-xenial.apt": {
+              "name": "requirements-xenial.apt",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/utility/requirements-xenial.apt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "{{cookiecutter.project_slug}}": {
+          "name": "{{cookiecutter.project_slug}}",
+          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "__init__.py": {
+              "name": "__init__.py",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/__init__.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "conftest.py": {
+              "name": "conftest.py",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/conftest.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "contrib": {
+              "name": "contrib",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/contrib",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "__init__.py": {
+                  "name": "__init__.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/contrib/__init__.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sites": {
+                  "name": "sites",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/contrib/sites",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "__init__.py": {
+                      "name": "__init__.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/contrib/sites/__init__.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "migrations": {
+                      "name": "migrations",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/contrib/sites/migrations",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "0001_initial.py": {
+                          "name": "0001_initial.py",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/contrib/sites/migrations/0001_initial.py",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "0002_alter_domain_unique.py": {
+                          "name": "0002_alter_domain_unique.py",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/contrib/sites/migrations/0002_alter_domain_unique.py",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "0003_set_site_domain_and_name.py": {
+                          "name": "0003_set_site_domain_and_name.py",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/contrib/sites/migrations/0003_set_site_domain_and_name.py",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "0004_alter_options_ordering_domain.py": {
+                          "name": "0004_alter_options_ordering_domain.py",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/contrib/sites/migrations/0004_alter_options_ordering_domain.py",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "__init__.py": {
+                          "name": "__init__.py",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/contrib/sites/migrations/__init__.py",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "static": {
+              "name": "static",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "css": {
+                  "name": "css",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static/css",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "project.css": {
+                      "name": "project.css",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static/css/project.css",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "fonts": {
+                  "name": "fonts",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static/fonts",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    ".gitkeep": {
+                      "name": ".gitkeep",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static/fonts/.gitkeep",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "images": {
+                  "name": "images",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static/images",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "favicons": {
+                      "name": "favicons",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static/images/favicons",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "favicon.ico": {
+                          "name": "favicon.ico",
+                          "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static/images/favicons/favicon.ico",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "js": {
+                  "name": "js",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static/js",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "project.js": {
+                      "name": "project.js",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static/js/project.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "sass": {
+                  "name": "sass",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static/sass",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "custom_bootstrap_vars.scss": {
+                      "name": "custom_bootstrap_vars.scss",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static/sass/custom_bootstrap_vars.scss",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "project.scss": {
+                      "name": "project.scss",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/static/sass/project.scss",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "templates": {
+              "name": "templates",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "403.html": {
+                  "name": "403.html",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/403.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "404.html": {
+                  "name": "404.html",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/404.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "500.html": {
+                  "name": "500.html",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/500.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "account": {
+                  "name": "account",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "account_inactive.html": {
+                      "name": "account_inactive.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/account_inactive.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "base.html": {
+                      "name": "base.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/base.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "email.html": {
+                      "name": "email.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/email.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "email_confirm.html": {
+                      "name": "email_confirm.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/email_confirm.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "login.html": {
+                      "name": "login.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/login.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logout.html": {
+                      "name": "logout.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/logout.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "password_change.html": {
+                      "name": "password_change.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/password_change.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "password_reset.html": {
+                      "name": "password_reset.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/password_reset.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "password_reset_done.html": {
+                      "name": "password_reset_done.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/password_reset_done.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "password_reset_from_key.html": {
+                      "name": "password_reset_from_key.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/password_reset_from_key.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "password_reset_from_key_done.html": {
+                      "name": "password_reset_from_key_done.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/password_reset_from_key_done.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "password_set.html": {
+                      "name": "password_set.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/password_set.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "signup.html": {
+                      "name": "signup.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/signup.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "signup_closed.html": {
+                      "name": "signup_closed.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/signup_closed.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "verification_sent.html": {
+                      "name": "verification_sent.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/verification_sent.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "verified_email_required.html": {
+                      "name": "verified_email_required.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/account/verified_email_required.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "base.html": {
+                  "name": "base.html",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/base.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pages": {
+                  "name": "pages",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/pages",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "about.html": {
+                      "name": "about.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/pages/about.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "home.html": {
+                      "name": "home.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/pages/home.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "users": {
+                  "name": "users",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/users",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "user_detail.html": {
+                      "name": "user_detail.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/users/user_detail.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "user_form.html": {
+                      "name": "user_form.html",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/templates/users/user_form.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "users": {
+              "name": "users",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "__init__.py": {
+                  "name": "__init__.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/__init__.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "adapters.py": {
+                  "name": "adapters.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/adapters.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "admin.py": {
+                  "name": "admin.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/admin.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "api": {
+                  "name": "api",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/api",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "serializers.py": {
+                      "name": "serializers.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/api/serializers.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "views.py": {
+                      "name": "views.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/api/views.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "apps.py": {
+                  "name": "apps.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/apps.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "context_processors.py": {
+                  "name": "context_processors.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/context_processors.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "forms.py": {
+                  "name": "forms.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/forms.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "migrations": {
+                  "name": "migrations",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/migrations",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "0001_initial.py": {
+                      "name": "0001_initial.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/migrations/0001_initial.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "__init__.py": {
+                      "name": "__init__.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/migrations/__init__.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "models.py": {
+                  "name": "models.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/models.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tasks.py": {
+                  "name": "tasks.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tasks.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests": {
+                  "name": "tests",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tests",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "__init__.py": {
+                      "name": "__init__.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tests/__init__.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "factories.py": {
+                      "name": "factories.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tests/factories.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_admin.py": {
+                      "name": "test_admin.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tests/test_admin.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_drf_urls.py": {
+                      "name": "test_drf_urls.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tests/test_drf_urls.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_drf_views.py": {
+                      "name": "test_drf_views.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tests/test_drf_views.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_forms.py": {
+                      "name": "test_forms.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tests/test_forms.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_models.py": {
+                      "name": "test_models.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tests/test_models.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_swagger.py": {
+                      "name": "test_swagger.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tests/test_swagger.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_tasks.py": {
+                      "name": "test_tasks.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tests/test_tasks.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_urls.py": {
+                      "name": "test_urls.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tests/test_urls.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_views.py": {
+                      "name": "test_views.py",
+                      "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/tests/test_views.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "urls.py": {
+                  "name": "urls.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/urls.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "views.py": {
+                  "name": "views.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/users/views.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "utils": {
+              "name": "utils",
+              "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/utils",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "__init__.py": {
+                  "name": "__init__.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/utils/__init__.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "storages.py": {
+                  "name": "storages.py",
+                  "path": "cookiecutter-django.git/{{cookiecutter.project_slug}}/{{cookiecutter.project_slug}}/utils/storages.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 12115269,
+    "name": "cookiecutter-django",
+    "full_name": "cookiecutter/cookiecutter-django",
+    "owner": {
+      "login": "cookiecutter",
+      "html_url": "https://github.com/cookiecutter",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/cookiecutter/cookiecutter-django",
+    "description": "Cookiecutter Django is a framework for jumpstarting production-ready Django projects quickly.",
+    "url": "https://api.github.com/repos/cookiecutter/cookiecutter-django",
+    "clone_url": "https://github.com/cookiecutter/cookiecutter-django.git",
+    "homepage": "https://cookiecutter-django.readthedocs.io",
+    "size": 7207,
+    "stargazers_count": 9971,
+    "watchers_count": 9971,
+    "language": "Python"
+  }
+}

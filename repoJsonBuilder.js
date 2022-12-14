@@ -15,7 +15,7 @@ var searchQueries = [
     'ruby',
     'php',
     'sql',
-    'c#',
+    //'c#',
     'c++',
     'c',
     'dart',
@@ -40,7 +40,7 @@ var results = {}
 
 var searchGH = (query, callback) => {
     console.log('Search using query: ' + query)
-    githubSearchRepos(query, { token: process.env.TOKEN, sort: 'stars'  /* stars | forks | updated */ }, (data) => {
+    githubSearchRepos(query, { token: process.env.TOKEN, sort: 'forks'  /* stars | forks | updated */ }, (data) => {
         callback(data.items);
     });
 }

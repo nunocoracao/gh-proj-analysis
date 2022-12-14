@@ -41,6 +41,7 @@ var crawlLikeABoss = (query, opts, callback, preData, page) => {
             for(var i in response.data.items)
                 console.log(response.data.items[i].clone_url)
 
+            console.log(url)
             console.log(query)
 
             if (data.items.length < LIMIT_PER_REQUEST && data.items.length < data.total_count) {

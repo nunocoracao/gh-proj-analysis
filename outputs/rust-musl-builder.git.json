@@ -1,0 +1,730 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 1,
+      "subFolderCount": 4,
+      "filepaths": [
+        "rust-musl-builder.git/Dockerfile",
+        "rust-musl-builder.git/examples/adding-a-library/Dockerfile",
+        "rust-musl-builder.git/examples/linking-with-git2/Dockerfile",
+        "rust-musl-builder.git/examples/using-diesel/Dockerfile",
+        "rust-musl-builder.git/examples/using-sqlx/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "rust-musl-builder.git/examples/using-diesel/docker-compose.yml",
+        "rust-musl-builder.git/examples/using-sqlx/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "rust-musl-builder.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "rust-musl-builder.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "rust-musl-builder.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "rust-musl-builder.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "rust-musl-builder.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "rust-musl-builder.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "rust-musl-builder.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "rust-musl-builder.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "rust-musl-builder.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "rust-musl-builder.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "rust-musl-builder.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "rust-musl-builder.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "rust-musl-builder.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "rust-musl-builder.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "rust-musl-builder.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "rust-musl-builder.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "rust-musl-builder.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "rust-musl-builder.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "rust-musl-builder.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "rust-musl-builder.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "rust-musl-builder.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "rust-musl-builder.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "rust-musl-builder.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "rust-musl-builder.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "rust-musl-builder.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "rust-musl-builder.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "rust-musl-builder.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "rust-musl-builder.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "rust-musl-builder.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "rust-musl-builder.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "rust-musl-builder.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "rust-musl-builder.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "rust-musl-builder.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-d526a3efa1273a1d6aa58dea6ca31371958c3389.idx": {
+                  "name": "pack-d526a3efa1273a1d6aa58dea6ca31371958c3389.idx",
+                  "path": "rust-musl-builder.git/.git/objects/pack/pack-d526a3efa1273a1d6aa58dea6ca31371958c3389.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-d526a3efa1273a1d6aa58dea6ca31371958c3389.pack": {
+                  "name": "pack-d526a3efa1273a1d6aa58dea6ca31371958c3389.pack",
+                  "path": "rust-musl-builder.git/.git/objects/pack/pack-d526a3efa1273a1d6aa58dea6ca31371958c3389.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "rust-musl-builder.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "rust-musl-builder.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "rust-musl-builder.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "rust-musl-builder.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "rust-musl-builder.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "rust-musl-builder.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "rust-musl-builder.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "rust-musl-builder.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "rust-musl-builder.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "rust-musl-builder.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "rust-musl-builder.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug_report.md": {
+              "name": "bug_report.md",
+              "path": "rust-musl-builder.git/.github/ISSUE_TEMPLATE/bug_report.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build_request.md": {
+              "name": "build_request.md",
+              "path": "rust-musl-builder.git/.github/ISSUE_TEMPLATE/build_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature_request.md": {
+              "name": "feature_request.md",
+              "path": "rust-musl-builder.git/.github/ISSUE_TEMPLATE/feature_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "rust-musl-builder.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ci.yml": {
+              "name": "ci.yml",
+              "path": "rust-musl-builder.git/.github/workflows/ci.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "rust-musl-builder.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CHANGELOG.md": {
+      "name": "CHANGELOG.md",
+      "path": "rust-musl-builder.git/CHANGELOG.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "rust-musl-builder.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "LICENSE-APACHE.txt": {
+      "name": "LICENSE-APACHE.txt",
+      "path": "rust-musl-builder.git/LICENSE-APACHE.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE-MIT.txt": {
+      "name": "LICENSE-MIT.txt",
+      "path": "rust-musl-builder.git/LICENSE-MIT.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "rust-musl-builder.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "cargo-config.toml": {
+      "name": "cargo-config.toml",
+      "path": "rust-musl-builder.git/cargo-config.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "examples": {
+      "name": "examples",
+      "path": "rust-musl-builder.git/examples",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "adding-a-library": {
+          "name": "adding-a-library",
+          "path": "rust-musl-builder.git/examples/adding-a-library",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".dockerignore": {
+              "name": ".dockerignore",
+              "path": "rust-musl-builder.git/examples/adding-a-library/.dockerignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "rust-musl-builder.git/examples/adding-a-library/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "build-release": {
+          "name": "build-release",
+          "path": "rust-musl-builder.git/examples/build-release",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "linking-with-git2": {
+          "name": "linking-with-git2",
+          "path": "rust-musl-builder.git/examples/linking-with-git2",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".dockerignore": {
+              "name": ".dockerignore",
+              "path": "rust-musl-builder.git/examples/linking-with-git2/.dockerignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Cargo.lock": {
+              "name": "Cargo.lock",
+              "path": "rust-musl-builder.git/examples/linking-with-git2/Cargo.lock",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "rust-musl-builder.git/examples/linking-with-git2/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "rust-musl-builder.git/examples/linking-with-git2/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "rust-musl-builder.git/examples/linking-with-git2/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main.rs": {
+                  "name": "main.rs",
+                  "path": "rust-musl-builder.git/examples/linking-with-git2/src/main.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "using-diesel": {
+          "name": "using-diesel",
+          "path": "rust-musl-builder.git/examples/using-diesel",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".dockerignore": {
+              "name": ".dockerignore",
+              "path": "rust-musl-builder.git/examples/using-diesel/.dockerignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Cargo.lock": {
+              "name": "Cargo.lock",
+              "path": "rust-musl-builder.git/examples/using-diesel/Cargo.lock",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "rust-musl-builder.git/examples/using-diesel/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "rust-musl-builder.git/examples/using-diesel/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "rust-musl-builder.git/examples/using-diesel/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "src": {
+              "name": "src",
+              "path": "rust-musl-builder.git/examples/using-diesel/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main.rs": {
+                  "name": "main.rs",
+                  "path": "rust-musl-builder.git/examples/using-diesel/src/main.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "using-sqlx": {
+          "name": "using-sqlx",
+          "path": "rust-musl-builder.git/examples/using-sqlx",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".dockerignore": {
+              "name": ".dockerignore",
+              "path": "rust-musl-builder.git/examples/using-sqlx/.dockerignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Cargo.lock": {
+              "name": "Cargo.lock",
+              "path": "rust-musl-builder.git/examples/using-sqlx/Cargo.lock",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "rust-musl-builder.git/examples/using-sqlx/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "rust-musl-builder.git/examples/using-sqlx/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "rust-musl-builder.git/examples/using-sqlx/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "sqlx-data.json": {
+              "name": "sqlx-data.json",
+              "path": "rust-musl-builder.git/examples/using-sqlx/sqlx-data.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "rust-musl-builder.git/examples/using-sqlx/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main.rs": {
+                  "name": "main.rs",
+                  "path": "rust-musl-builder.git/examples/using-sqlx/src/main.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "git-credential-ghtoken": {
+      "name": "git-credential-ghtoken",
+      "path": "rust-musl-builder.git/git-credential-ghtoken",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "sudoers": {
+      "name": "sudoers",
+      "path": "rust-musl-builder.git/sudoers",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "test-image": {
+      "name": "test-image",
+      "path": "rust-musl-builder.git/test-image",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    }
+  },
+  "info": {
+    "id": 56430295,
+    "name": "rust-musl-builder",
+    "full_name": "emk/rust-musl-builder",
+    "owner": {
+      "login": "emk",
+      "html_url": "https://github.com/emk",
+      "type": "User"
+    },
+    "html_url": "https://github.com/emk/rust-musl-builder",
+    "description": "Docker images for compiling static Rust binaries using musl-libc and musl-gcc, with static versions of useful C libraries. Supports openssl and diesel crates.",
+    "url": "https://api.github.com/repos/emk/rust-musl-builder",
+    "clone_url": "https://github.com/emk/rust-musl-builder.git",
+    "homepage": "",
+    "size": 171,
+    "stargazers_count": 1313,
+    "watchers_count": 1313,
+    "language": "Dockerfile"
+  }
+}

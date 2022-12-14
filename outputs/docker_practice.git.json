@@ -1,0 +1,3254 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "docker_practice.git/.travis/Dockerfile",
+        "docker_practice.git/compose/demo/app/Dockerfile",
+        "docker_practice.git/compose/demo/django/Dockerfile",
+        "docker_practice.git/image/dockerfile",
+        "docker_practice.git/image/demo/buildkit/Dockerfile",
+        "docker_practice.git/image/demo/buildkit/Dockerfile.buildkit",
+        "docker_practice.git/image/demo/multi-arch/Dockerfile",
+        "docker_practice.git/image/demo/multistage-builds/Dockerfile",
+        "docker_practice.git/image/demo/multistage-builds/Dockerfile.build",
+        "docker_practice.git/image/demo/multistage-builds/Dockerfile.copy",
+        "docker_practice.git/image/demo/multistage-builds/Dockerfile.one",
+        "docker_practice.git/image/multistage-builds/example/laravel/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 1,
+      "subFolderCount": 8,
+      "filepaths": [
+        "docker_practice.git/docker-compose.yml",
+        "docker_practice.git/.travis/docker-compose.test.yml",
+        "docker_practice.git/cases/ci/drone/docker-compose.yml",
+        "docker_practice.git/compose/demo/app/docker-compose.yml",
+        "docker_practice.git/compose/demo/django/docker-compose.yml",
+        "docker_practice.git/compose/demo/wordpress/docker-compose.yml",
+        "docker_practice.git/etcd/demo/cluster/docker-compose.yml",
+        "docker_practice.git/repository/demo/docker-compose.yml",
+        "docker_practice.git/swarm_mode/demo/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".devcontainer": {
+      "name": ".devcontainer",
+      "path": "docker_practice.git/.devcontainer",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "devcontainer.json": {
+          "name": "devcontainer.json",
+          "path": "docker_practice.git/.devcontainer/devcontainer.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".docker": {
+      "name": ".docker",
+      "path": "docker_practice.git/.docker",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-entrypoint.sh": {
+          "name": "docker-entrypoint.sh",
+          "path": "docker_practice.git/.docker/docker-entrypoint.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".drone.yml": {
+      "name": ".drone.yml",
+      "path": "docker_practice.git/.drone.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".editorconfig": {
+      "name": ".editorconfig",
+      "path": "docker_practice.git/.editorconfig",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "docker_practice.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "docker_practice.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "docker_practice.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "docker_practice.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "docker_practice.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "docker_practice.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "docker_practice.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "docker_practice.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "docker_practice.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "docker_practice.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "docker_practice.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "docker_practice.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "docker_practice.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "docker_practice.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "docker_practice.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "docker_practice.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "docker_practice.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "docker_practice.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "docker_practice.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "docker_practice.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "docker_practice.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "docker_practice.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "docker_practice.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "docker_practice.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "docker_practice.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "docker_practice.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "docker_practice.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "docker_practice.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "docker_practice.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "docker_practice.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "docker_practice.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "docker_practice.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-193477a53392a244efd3f33c56a948958eab01c7.idx": {
+                  "name": "pack-193477a53392a244efd3f33c56a948958eab01c7.idx",
+                  "path": "docker_practice.git/.git/objects/pack/pack-193477a53392a244efd3f33c56a948958eab01c7.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-193477a53392a244efd3f33c56a948958eab01c7.pack": {
+                  "name": "pack-193477a53392a244efd3f33c56a948958eab01c7.pack",
+                  "path": "docker_practice.git/.git/objects/pack/pack-193477a53392a244efd3f33c56a948958eab01c7.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "docker_practice.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "docker_practice.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "docker_practice.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "docker_practice.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "docker_practice.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "docker_practice.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "docker_practice.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "docker_practice.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "docker_practice.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitattributes": {
+      "name": ".gitattributes",
+      "path": "docker_practice.git/.gitattributes",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".github": {
+      "name": ".github",
+      "path": "docker_practice.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CODEOWNERS": {
+          "name": "CODEOWNERS",
+          "path": "docker_practice.git/.github/CODEOWNERS",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "FUNDING.yml": {
+          "name": "FUNDING.yml",
+          "path": "docker_practice.git/.github/FUNDING.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "docker_practice.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Bug_report.md": {
+              "name": "Bug_report.md",
+              "path": "docker_practice.git/.github/ISSUE_TEMPLATE/Bug_report.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Custom.md": {
+              "name": "Custom.md",
+              "path": "docker_practice.git/.github/ISSUE_TEMPLATE/Custom.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Feature_request.md": {
+              "name": "Feature_request.md",
+              "path": "docker_practice.git/.github/ISSUE_TEMPLATE/Feature_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "PULL_REQUEST_TEMPLATE.md": {
+          "name": "PULL_REQUEST_TEMPLATE.md",
+          "path": "docker_practice.git/.github/PULL_REQUEST_TEMPLATE.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "docker_practice.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "check-link.yml": {
+              "name": "check-link.yml",
+              "path": "docker_practice.git/.github/workflows/check-link.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ci.yaml": {
+              "name": "ci.yaml",
+              "path": "docker_practice.git/.github/workflows/ci.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "docker_practice.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".travis": {
+      "name": ".travis",
+      "path": "docker_practice.git/.travis",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "docker_practice.git/.travis/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "book.json": {
+          "name": "book.json",
+          "path": "docker_practice.git/.travis/book.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conf.d": {
+          "name": "conf.d",
+          "path": "docker_practice.git/.travis/conf.d",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "nginx.conf": {
+              "name": "nginx.conf",
+              "path": "docker_practice.git/.travis/conf.d/nginx.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "docker-compose.test.yml": {
+          "name": "docker-compose.test.yml",
+          "path": "docker_practice.git/.travis/docker-compose.test.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "docker-entrypoint.sh": {
+          "name": "docker-entrypoint.sh",
+          "path": "docker_practice.git/.travis/docker-entrypoint.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "update.sh": {
+          "name": "update.sh",
+          "path": "docker_practice.git/.travis/update.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".vuepress": {
+      "name": ".vuepress",
+      "path": "docker_practice.git/.vuepress",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "docker_practice.git/.vuepress/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config.js": {
+          "name": "config.js",
+          "path": "docker_practice.git/.vuepress/config.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "CHANGELOG.md": {
+      "name": "CHANGELOG.md",
+      "path": "docker_practice.git/CHANGELOG.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "docker_practice.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "docker_practice.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "SUMMARY.md": {
+      "name": "SUMMARY.md",
+      "path": "docker_practice.git/SUMMARY.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "_config.yml": {
+      "name": "_config.yml",
+      "path": "docker_practice.git/_config.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "_images": {
+      "name": "_images",
+      "path": "docker_practice.git/_images",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "cover.jpg": {
+          "name": "cover.jpg",
+          "path": "docker_practice.git/_images/cover.jpg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cover.png": {
+          "name": "cover.png",
+          "path": "docker_practice.git/_images/cover.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cover.sketch": {
+          "name": "cover.sketch",
+          "path": "docker_practice.git/_images/cover.sketch",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cover_small.jpg": {
+          "name": "cover_small.jpg",
+          "path": "docker_practice.git/_images/cover_small.jpg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker_primer.png": {
+          "name": "docker_primer.png",
+          "path": "docker_practice.git/_images/docker_primer.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker_primer2.png": {
+          "name": "docker_primer2.png",
+          "path": "docker_practice.git/_images/docker_primer2.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker_primer3.png": {
+          "name": "docker_primer3.png",
+          "path": "docker_practice.git/_images/docker_primer3.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "donate.jpeg": {
+          "name": "donate.jpeg",
+          "path": "docker_practice.git/_images/donate.jpeg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "advanced_network": {
+      "name": "advanced_network",
+      "path": "docker_practice.git/advanced_network",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/advanced_network/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "_images": {
+          "name": "_images",
+          "path": "docker_practice.git/advanced_network/_images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "network.png": {
+              "name": "network.png",
+              "path": "docker_practice.git/advanced_network/_images/network.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "access_control.md": {
+          "name": "access_control.md",
+          "path": "docker_practice.git/advanced_network/access_control.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "bridge.md": {
+          "name": "bridge.md",
+          "path": "docker_practice.git/advanced_network/bridge.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config_file.md": {
+          "name": "config_file.md",
+          "path": "docker_practice.git/advanced_network/config_file.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker0.md": {
+          "name": "docker0.md",
+          "path": "docker_practice.git/advanced_network/docker0.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example.md": {
+          "name": "example.md",
+          "path": "docker_practice.git/advanced_network/example.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "how_connect.md": {
+          "name": "how_connect.md",
+          "path": "docker_practice.git/advanced_network/how_connect.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "port_mapping.md": {
+          "name": "port_mapping.md",
+          "path": "docker_practice.git/advanced_network/port_mapping.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ptp.md": {
+          "name": "ptp.md",
+          "path": "docker_practice.git/advanced_network/ptp.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "quick_guide.md": {
+          "name": "quick_guide.md",
+          "path": "docker_practice.git/advanced_network/quick_guide.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "appendix": {
+      "name": "appendix",
+      "path": "docker_practice.git/appendix",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/appendix/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "_images": {
+          "name": "_images",
+          "path": "docker_practice.git/appendix/_images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cmd_logic.dot": {
+              "name": "cmd_logic.dot",
+              "path": "docker_practice.git/appendix/_images/cmd_logic.dot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cmd_logic.dot.bak": {
+              "name": "cmd_logic.dot.bak",
+              "path": "docker_practice.git/appendix/_images/cmd_logic.dot.bak",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cmd_logic.graffle": {
+              "name": "cmd_logic.graffle",
+              "path": "docker_practice.git/appendix/_images/cmd_logic.graffle",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "data.plist": {
+                  "name": "data.plist",
+                  "path": "docker_practice.git/appendix/_images/cmd_logic.graffle/data.plist",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image10.pdf": {
+                  "name": "image10.pdf",
+                  "path": "docker_practice.git/appendix/_images/cmd_logic.graffle/image10.pdf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image11.pdf": {
+                  "name": "image11.pdf",
+                  "path": "docker_practice.git/appendix/_images/cmd_logic.graffle/image11.pdf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image12.pdf": {
+                  "name": "image12.pdf",
+                  "path": "docker_practice.git/appendix/_images/cmd_logic.graffle/image12.pdf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image13.pdf": {
+                  "name": "image13.pdf",
+                  "path": "docker_practice.git/appendix/_images/cmd_logic.graffle/image13.pdf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image4.pdf": {
+                  "name": "image4.pdf",
+                  "path": "docker_practice.git/appendix/_images/cmd_logic.graffle/image4.pdf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image5.pdf": {
+                  "name": "image5.pdf",
+                  "path": "docker_practice.git/appendix/_images/cmd_logic.graffle/image5.pdf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image6.pdf": {
+                  "name": "image6.pdf",
+                  "path": "docker_practice.git/appendix/_images/cmd_logic.graffle/image6.pdf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image7.pdf": {
+                  "name": "image7.pdf",
+                  "path": "docker_practice.git/appendix/_images/cmd_logic.graffle/image7.pdf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image9.pdf": {
+                  "name": "image9.pdf",
+                  "path": "docker_practice.git/appendix/_images/cmd_logic.graffle/image9.pdf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "cmd_logic.png": {
+              "name": "cmd_logic.png",
+              "path": "docker_practice.git/appendix/_images/cmd_logic.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "container_status.dot": {
+              "name": "container_status.dot",
+              "path": "docker_practice.git/appendix/_images/container_status.dot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "container_status.png": {
+              "name": "container_status.png",
+              "path": "docker_practice.git/appendix/_images/container_status.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "best_practices.md": {
+          "name": "best_practices.md",
+          "path": "docker_practice.git/appendix/best_practices.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "command": {
+          "name": "command",
+          "path": "docker_practice.git/appendix/command",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker_practice.git/appendix/command/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker.md": {
+              "name": "docker.md",
+              "path": "docker_practice.git/appendix/command/docker.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dockerd.md": {
+              "name": "dockerd.md",
+              "path": "docker_practice.git/appendix/command/dockerd.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "debug.md": {
+          "name": "debug.md",
+          "path": "docker_practice.git/appendix/debug.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "faq": {
+          "name": "faq",
+          "path": "docker_practice.git/appendix/faq",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker_practice.git/appendix/faq/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "repo": {
+          "name": "repo",
+          "path": "docker_practice.git/appendix/repo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker_practice.git/appendix/repo/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "centos.md": {
+              "name": "centos.md",
+              "path": "docker_practice.git/appendix/repo/centos.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "minio.md": {
+              "name": "minio.md",
+              "path": "docker_practice.git/appendix/repo/minio.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mongodb.md": {
+              "name": "mongodb.md",
+              "path": "docker_practice.git/appendix/repo/mongodb.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mysql.md": {
+              "name": "mysql.md",
+              "path": "docker_practice.git/appendix/repo/mysql.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nginx.md": {
+              "name": "nginx.md",
+              "path": "docker_practice.git/appendix/repo/nginx.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nodejs.md": {
+              "name": "nodejs.md",
+              "path": "docker_practice.git/appendix/repo/nodejs.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "php.md": {
+              "name": "php.md",
+              "path": "docker_practice.git/appendix/repo/php.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "redis.md": {
+              "name": "redis.md",
+              "path": "docker_practice.git/appendix/repo/redis.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ubuntu.md": {
+              "name": "ubuntu.md",
+              "path": "docker_practice.git/appendix/repo/ubuntu.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "wordpress.md": {
+              "name": "wordpress.md",
+              "path": "docker_practice.git/appendix/repo/wordpress.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "resources.md": {
+          "name": "resources.md",
+          "path": "docker_practice.git/appendix/resources.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "archive": {
+      "name": "archive",
+      "path": "docker_practice.git/archive",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/archive/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "basic_concept": {
+      "name": "basic_concept",
+      "path": "docker_practice.git/basic_concept",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/basic_concept/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "container.md": {
+          "name": "container.md",
+          "path": "docker_practice.git/basic_concept/container.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "image.md": {
+          "name": "image.md",
+          "path": "docker_practice.git/basic_concept/image.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "repository.md": {
+          "name": "repository.md",
+          "path": "docker_practice.git/basic_concept/repository.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "book.json": {
+      "name": "book.json",
+      "path": "docker_practice.git/book.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "buildx": {
+      "name": "buildx",
+      "path": "docker_practice.git/buildx",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/buildx/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "buildkit.md": {
+          "name": "buildkit.md",
+          "path": "docker_practice.git/buildx/buildkit.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "buildx.md": {
+          "name": "buildx.md",
+          "path": "docker_practice.git/buildx/buildx.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "multi-arch-images.md": {
+          "name": "multi-arch-images.md",
+          "path": "docker_practice.git/buildx/multi-arch-images.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "cases": {
+      "name": "cases",
+      "path": "docker_practice.git/cases",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ci": {
+          "name": "ci",
+          "path": "docker_practice.git/cases/ci",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker_practice.git/cases/ci/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "actions": {
+              "name": "actions",
+              "path": "docker_practice.git/cases/ci/actions",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "README.md": {
+                  "name": "README.md",
+                  "path": "docker_practice.git/cases/ci/actions/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "drone": {
+              "name": "drone",
+              "path": "docker_practice.git/cases/ci/drone",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".env.example": {
+                  "name": ".env.example",
+                  "path": "docker_practice.git/cases/ci/drone/.env.example",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                ".gitignore": {
+                  "name": ".gitignore",
+                  "path": "docker_practice.git/cases/ci/drone/.gitignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "README.md": {
+                  "name": "README.md",
+                  "path": "docker_practice.git/cases/ci/drone/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_images": {
+                  "name": "_images",
+                  "path": "docker_practice.git/cases/ci/drone/_images",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "drone-build.png": {
+                      "name": "drone-build.png",
+                      "path": "docker_practice.git/cases/ci/drone/_images/drone-build.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "demo": {
+                  "name": "demo",
+                  "path": "docker_practice.git/cases/ci/drone/demo",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    ".drone.yml": {
+                      "name": ".drone.yml",
+                      "path": "docker_practice.git/cases/ci/drone/demo/.drone.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "README.md": {
+                      "name": "README.md",
+                      "path": "docker_practice.git/cases/ci/drone/demo/README.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "app.go": {
+                      "name": "app.go",
+                      "path": "docker_practice.git/cases/ci/drone/demo/app.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "docker-compose.yml": {
+                  "name": "docker-compose.yml",
+                  "path": "docker_practice.git/cases/ci/drone/docker-compose.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": true
+                },
+                "install.md": {
+                  "name": "install.md",
+                  "path": "docker_practice.git/cases/ci/drone/install.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "os": {
+          "name": "os",
+          "path": "docker_practice.git/cases/os",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker_practice.git/cases/os/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "_images": {
+              "name": "_images",
+              "path": "docker_practice.git/cases/os/_images",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "alpinelinux-logo.png": {
+                  "name": "alpinelinux-logo.png",
+                  "path": "docker_practice.git/cases/os/_images/alpinelinux-logo.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "busybox-logo.png": {
+                  "name": "busybox-logo.png",
+                  "path": "docker_practice.git/cases/os/_images/busybox-logo.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "centos-logo.png": {
+                  "name": "centos-logo.png",
+                  "path": "docker_practice.git/cases/os/_images/centos-logo.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "coreos-login.png": {
+                  "name": "coreos-login.png",
+                  "path": "docker_practice.git/cases/os/_images/coreos-login.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "coreos-logo.jpg": {
+                  "name": "coreos-logo.jpg",
+                  "path": "docker_practice.git/cases/os/_images/coreos-logo.jpg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "coreos_crt.png": {
+                  "name": "coreos_crt.png",
+                  "path": "docker_practice.git/cases/os/_images/coreos_crt.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "coreos_list.png": {
+                  "name": "coreos_list.png",
+                  "path": "docker_practice.git/cases/os/_images/coreos_list.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "coreos_run_ip.png": {
+                  "name": "coreos_run_ip.png",
+                  "path": "docker_practice.git/cases/os/_images/coreos_run_ip.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "debian-logo.png": {
+                  "name": "debian-logo.png",
+                  "path": "docker_practice.git/cases/os/_images/debian-logo.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "docker_version.png": {
+                  "name": "docker_version.png",
+                  "path": "docker_practice.git/cases/os/_images/docker_version.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fedora-logo.png": {
+                  "name": "fedora-logo.png",
+                  "path": "docker_practice.git/cases/os/_images/fedora-logo.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "php_pulling.png": {
+                  "name": "php_pulling.png",
+                  "path": "docker_practice.git/cases/os/_images/php_pulling.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ubuntu-logo.jpg": {
+                  "name": "ubuntu-logo.jpg",
+                  "path": "docker_practice.git/cases/os/_images/ubuntu-logo.jpg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "vmware_coreos.png": {
+                  "name": "vmware_coreos.png",
+                  "path": "docker_practice.git/cases/os/_images/vmware_coreos.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "alpine.md": {
+              "name": "alpine.md",
+              "path": "docker_practice.git/cases/os/alpine.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "busybox.md": {
+              "name": "busybox.md",
+              "path": "docker_practice.git/cases/os/busybox.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "centos.md": {
+              "name": "centos.md",
+              "path": "docker_practice.git/cases/os/centos.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "debian.md": {
+              "name": "debian.md",
+              "path": "docker_practice.git/cases/os/debian.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "summary.md": {
+              "name": "summary.md",
+              "path": "docker_practice.git/cases/os/summary.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "cloud": {
+      "name": "cloud",
+      "path": "docker_practice.git/cloud",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/cloud/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "_images": {
+          "name": "_images",
+          "path": "docker_practice.git/cloud/_images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ECS.jpg": {
+              "name": "ECS.jpg",
+              "path": "docker_practice.git/cloud/_images/ECS.jpg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "aliyun-logo.png": {
+              "name": "aliyun-logo.png",
+              "path": "docker_practice.git/cloud/_images/aliyun-logo.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "aws-logo.jpg": {
+              "name": "aws-logo.jpg",
+              "path": "docker_practice.git/cloud/_images/aws-logo.jpg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "qcloud-logo.jpg": {
+              "name": "qcloud-logo.jpg",
+              "path": "docker_practice.git/cloud/_images/qcloud-logo.jpg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "alicloud.md": {
+          "name": "alicloud.md",
+          "path": "docker_practice.git/cloud/alicloud.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "aws.md": {
+          "name": "aws.md",
+          "path": "docker_practice.git/cloud/aws.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "intro.md": {
+          "name": "intro.md",
+          "path": "docker_practice.git/cloud/intro.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "summary.md": {
+          "name": "summary.md",
+          "path": "docker_practice.git/cloud/summary.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "tencentCloud.md": {
+          "name": "tencentCloud.md",
+          "path": "docker_practice.git/cloud/tencentCloud.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "compose": {
+      "name": "compose",
+      "path": "docker_practice.git/compose",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/compose/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "commands.md": {
+          "name": "commands.md",
+          "path": "docker_practice.git/compose/commands.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "compose_file.md": {
+          "name": "compose_file.md",
+          "path": "docker_practice.git/compose/compose_file.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "demo": {
+          "name": "demo",
+          "path": "docker_practice.git/compose/demo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "app": {
+              "name": "app",
+              "path": "docker_practice.git/compose/demo/app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "docker_practice.git/compose/demo/app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "app.py": {
+                  "name": "app.py",
+                  "path": "docker_practice.git/compose/demo/app/app.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "docker-compose.yml": {
+                  "name": "docker-compose.yml",
+                  "path": "docker_practice.git/compose/demo/app/docker-compose.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": true
+                }
+              }
+            },
+            "django": {
+              "name": "django",
+              "path": "docker_practice.git/compose/demo/django",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".gitignore": {
+                  "name": ".gitignore",
+                  "path": "docker_practice.git/compose/demo/django/.gitignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "docker_practice.git/compose/demo/django/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "docker-compose.yml": {
+                  "name": "docker-compose.yml",
+                  "path": "docker_practice.git/compose/demo/django/docker-compose.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": true
+                },
+                "requirements.txt": {
+                  "name": "requirements.txt",
+                  "path": "docker_practice.git/compose/demo/django/requirements.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "wordpress": {
+              "name": "wordpress",
+              "path": "docker_practice.git/compose/demo/wordpress",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "docker-compose.yml": {
+                  "name": "docker-compose.yml",
+                  "path": "docker_practice.git/compose/demo/wordpress/docker-compose.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": true
+                }
+              }
+            }
+          }
+        },
+        "django.md": {
+          "name": "django.md",
+          "path": "docker_practice.git/compose/django.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "install.md": {
+          "name": "install.md",
+          "path": "docker_practice.git/compose/install.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "introduction.md": {
+          "name": "introduction.md",
+          "path": "docker_practice.git/compose/introduction.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "lnmp.md": {
+          "name": "lnmp.md",
+          "path": "docker_practice.git/compose/lnmp.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rails.md": {
+          "name": "rails.md",
+          "path": "docker_practice.git/compose/rails.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "usage.md": {
+          "name": "usage.md",
+          "path": "docker_practice.git/compose/usage.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "v2.md": {
+          "name": "v2.md",
+          "path": "docker_practice.git/compose/v2.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "wordpress.md": {
+          "name": "wordpress.md",
+          "path": "docker_practice.git/compose/wordpress.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "container": {
+      "name": "container",
+      "path": "docker_practice.git/container",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/container/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "attach_exec.md": {
+          "name": "attach_exec.md",
+          "path": "docker_practice.git/container/attach_exec.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "daemon.md": {
+          "name": "daemon.md",
+          "path": "docker_practice.git/container/daemon.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "import_export.md": {
+          "name": "import_export.md",
+          "path": "docker_practice.git/container/import_export.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rm.md": {
+          "name": "rm.md",
+          "path": "docker_practice.git/container/rm.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "run.md": {
+          "name": "run.md",
+          "path": "docker_practice.git/container/run.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "stop.md": {
+          "name": "stop.md",
+          "path": "docker_practice.git/container/stop.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "coreos": {
+      "name": "coreos",
+      "path": "docker_practice.git/coreos",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/coreos/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "demo": {
+          "name": "demo",
+          "path": "docker_practice.git/coreos/demo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "example.fcc": {
+              "name": "example.fcc",
+              "path": "docker_practice.git/coreos/demo/example.fcc",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "install.md": {
+          "name": "install.md",
+          "path": "docker_practice.git/coreos/install.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "intro.md": {
+          "name": "intro.md",
+          "path": "docker_practice.git/coreos/intro.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "cover.jpg": {
+      "name": "cover.jpg",
+      "path": "docker_practice.git/cover.jpg",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "data_management": {
+      "name": "data_management",
+      "path": "docker_practice.git/data_management",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/data_management/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "_images": {
+          "name": "_images",
+          "path": "docker_practice.git/data_management/_images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "types-of-mounts.png": {
+              "name": "types-of-mounts.png",
+              "path": "docker_practice.git/data_management/_images/types-of-mounts.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "bind-mounts.md": {
+          "name": "bind-mounts.md",
+          "path": "docker_practice.git/data_management/bind-mounts.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "volume.md": {
+          "name": "volume.md",
+          "path": "docker_practice.git/data_management/volume.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "docker-compose.yml": {
+      "name": "docker-compose.yml",
+      "path": "docker_practice.git/docker-compose.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "etcd": {
+      "name": "etcd",
+      "path": "docker_practice.git/etcd",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/etcd/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "_images": {
+          "name": "_images",
+          "path": "docker_practice.git/etcd/_images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "etcd_logo.png": {
+              "name": "etcd_logo.png",
+              "path": "docker_practice.git/etcd/_images/etcd_logo.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "cluster.md": {
+          "name": "cluster.md",
+          "path": "docker_practice.git/etcd/cluster.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "demo": {
+          "name": "demo",
+          "path": "docker_practice.git/etcd/demo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cluster": {
+              "name": "cluster",
+              "path": "docker_practice.git/etcd/demo/cluster",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "docker-compose.yml": {
+                  "name": "docker-compose.yml",
+                  "path": "docker_practice.git/etcd/demo/cluster/docker-compose.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": true
+                }
+              }
+            }
+          }
+        },
+        "etcdctl-v2.md": {
+          "name": "etcdctl-v2.md",
+          "path": "docker_practice.git/etcd/etcdctl-v2.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "etcdctl.md": {
+          "name": "etcdctl.md",
+          "path": "docker_practice.git/etcd/etcdctl.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "install.md": {
+          "name": "install.md",
+          "path": "docker_practice.git/etcd/install.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "intro.md": {
+          "name": "intro.md",
+          "path": "docker_practice.git/etcd/intro.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "ide": {
+      "name": "ide",
+      "path": "docker_practice.git/ide",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/ide/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "vsCode.md": {
+          "name": "vsCode.md",
+          "path": "docker_practice.git/ide/vsCode.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "image": {
+      "name": "image",
+      "path": "docker_practice.git/image",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/image/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "_images": {
+          "name": "_images",
+          "path": "docker_practice.git/image/_images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "images-create-nginx-docker.png": {
+              "name": "images-create-nginx-docker.png",
+              "path": "docker_practice.git/image/_images/images-create-nginx-docker.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "images-mac-example-nginx.png": {
+              "name": "images-mac-example-nginx.png",
+              "path": "docker_practice.git/image/_images/images-mac-example-nginx.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "build.md": {
+          "name": "build.md",
+          "path": "docker_practice.git/image/build.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "commit.md": {
+          "name": "commit.md",
+          "path": "docker_practice.git/image/commit.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "demo": {
+          "name": "demo",
+          "path": "docker_practice.git/image/demo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "buildkit": {
+              "name": "buildkit",
+              "path": "docker_practice.git/image/demo/buildkit",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "docker_practice.git/image/demo/buildkit/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.buildkit": {
+                  "name": "Dockerfile.buildkit",
+                  "path": "docker_practice.git/image/demo/buildkit/Dockerfile.buildkit",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "aws.txt": {
+                  "name": "aws.txt",
+                  "path": "docker_practice.git/image/demo/buildkit/aws.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "package.json": {
+                  "name": "package.json",
+                  "path": "docker_practice.git/image/demo/buildkit/package.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "docker_practice.git/image/demo/buildkit/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "docker_practice.git/image/demo/buildkit/src/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "multi-arch": {
+              "name": "multi-arch",
+              "path": "docker_practice.git/image/demo/multi-arch",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "docker_practice.git/image/demo/multi-arch/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "multistage-builds": {
+              "name": "multistage-builds",
+              "path": "docker_practice.git/image/demo/multistage-builds",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".gitignore": {
+                  "name": ".gitignore",
+                  "path": "docker_practice.git/image/demo/multistage-builds/.gitignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "docker_practice.git/image/demo/multistage-builds/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.build": {
+                  "name": "Dockerfile.build",
+                  "path": "docker_practice.git/image/demo/multistage-builds/Dockerfile.build",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.copy": {
+                  "name": "Dockerfile.copy",
+                  "path": "docker_practice.git/image/demo/multistage-builds/Dockerfile.copy",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.one": {
+                  "name": "Dockerfile.one",
+                  "path": "docker_practice.git/image/demo/multistage-builds/Dockerfile.one",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "app.go": {
+                  "name": "app.go",
+                  "path": "docker_practice.git/image/demo/multistage-builds/app.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "build.sh": {
+                  "name": "build.sh",
+                  "path": "docker_practice.git/image/demo/multistage-builds/build.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "dockerfile": {
+          "name": "dockerfile",
+          "path": "docker_practice.git/image/dockerfile",
+          "isDir": true,
+          "isDockerfile": true,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker_practice.git/image/dockerfile/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "add.md": {
+              "name": "add.md",
+              "path": "docker_practice.git/image/dockerfile/add.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "arg.md": {
+              "name": "arg.md",
+              "path": "docker_practice.git/image/dockerfile/arg.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cmd.md": {
+              "name": "cmd.md",
+              "path": "docker_practice.git/image/dockerfile/cmd.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copy.md": {
+              "name": "copy.md",
+              "path": "docker_practice.git/image/dockerfile/copy.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "entrypoint.md": {
+              "name": "entrypoint.md",
+              "path": "docker_practice.git/image/dockerfile/entrypoint.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "env.md": {
+              "name": "env.md",
+              "path": "docker_practice.git/image/dockerfile/env.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "expose.md": {
+              "name": "expose.md",
+              "path": "docker_practice.git/image/dockerfile/expose.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "healthcheck.md": {
+              "name": "healthcheck.md",
+              "path": "docker_practice.git/image/dockerfile/healthcheck.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "label.md": {
+              "name": "label.md",
+              "path": "docker_practice.git/image/dockerfile/label.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "onbuild.md": {
+              "name": "onbuild.md",
+              "path": "docker_practice.git/image/dockerfile/onbuild.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "references.md": {
+              "name": "references.md",
+              "path": "docker_practice.git/image/dockerfile/references.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "shell.md": {
+              "name": "shell.md",
+              "path": "docker_practice.git/image/dockerfile/shell.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "user.md": {
+              "name": "user.md",
+              "path": "docker_practice.git/image/dockerfile/user.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volume.md": {
+              "name": "volume.md",
+              "path": "docker_practice.git/image/dockerfile/volume.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "workdir.md": {
+              "name": "workdir.md",
+              "path": "docker_practice.git/image/dockerfile/workdir.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "internal.md": {
+          "name": "internal.md",
+          "path": "docker_practice.git/image/internal.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "list.md": {
+          "name": "list.md",
+          "path": "docker_practice.git/image/list.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "manifest.md": {
+          "name": "manifest.md",
+          "path": "docker_practice.git/image/manifest.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "multistage-builds": {
+          "name": "multistage-builds",
+          "path": "docker_practice.git/image/multistage-builds",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker_practice.git/image/multistage-builds/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "example": {
+              "name": "example",
+              "path": "docker_practice.git/image/multistage-builds/example",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "laravel": {
+                  "name": "laravel",
+                  "path": "docker_practice.git/image/multistage-builds/example/laravel",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    ".dockerignore": {
+                      "name": ".dockerignore",
+                      "path": "docker_practice.git/image/multistage-builds/example/laravel/.dockerignore",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "docker_practice.git/image/multistage-builds/example/laravel/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "laravel.conf": {
+                      "name": "laravel.conf",
+                      "path": "docker_practice.git/image/multistage-builds/example/laravel/laravel.conf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "laravel.md": {
+              "name": "laravel.md",
+              "path": "docker_practice.git/image/multistage-builds/laravel.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "other.md": {
+          "name": "other.md",
+          "path": "docker_practice.git/image/other.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pull.md": {
+          "name": "pull.md",
+          "path": "docker_practice.git/image/pull.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rm.md": {
+          "name": "rm.md",
+          "path": "docker_practice.git/image/rm.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "install": {
+      "name": "install",
+      "path": "docker_practice.git/install",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/install/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "_images": {
+          "name": "_images",
+          "path": "docker_practice.git/install/_images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "image-20200412202617411.png": {
+              "name": "image-20200412202617411.png",
+              "path": "docker_practice.git/install/_images/image-20200412202617411.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install-mac-apps.png": {
+              "name": "install-mac-apps.png",
+              "path": "docker_practice.git/install/_images/install-mac-apps.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install-mac-dmg.png": {
+              "name": "install-mac-dmg.png",
+              "path": "docker_practice.git/install/_images/install-mac-dmg.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install-mac-example-nginx.png": {
+              "name": "install-mac-example-nginx.png",
+              "path": "docker_practice.git/install/_images/install-mac-example-nginx.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install-mac-menu.png": {
+              "name": "install-mac-menu.png",
+              "path": "docker_practice.git/install/_images/install-mac-menu.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install-mac-menubar.png": {
+              "name": "install-mac-menubar.png",
+              "path": "docker_practice.git/install/_images/install-mac-menubar.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install-win-docker-app-search.png": {
+              "name": "install-win-docker-app-search.png",
+              "path": "docker_practice.git/install/_images/install-win-docker-app-search.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install-win-taskbar-circle.png": {
+              "name": "install-win-taskbar-circle.png",
+              "path": "docker_practice.git/install/_images/install-win-taskbar-circle.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "centos.md": {
+          "name": "centos.md",
+          "path": "docker_practice.git/install/centos.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "debian.md": {
+          "name": "debian.md",
+          "path": "docker_practice.git/install/debian.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "experimental.md": {
+          "name": "experimental.md",
+          "path": "docker_practice.git/install/experimental.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "fedora.md": {
+          "name": "fedora.md",
+          "path": "docker_practice.git/install/fedora.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "mac.md": {
+          "name": "mac.md",
+          "path": "docker_practice.git/install/mac.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "mirror.md": {
+          "name": "mirror.md",
+          "path": "docker_practice.git/install/mirror.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "offline.md": {
+          "name": "offline.md",
+          "path": "docker_practice.git/install/offline.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "raspberry-pi.md": {
+          "name": "raspberry-pi.md",
+          "path": "docker_practice.git/install/raspberry-pi.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ubuntu.md": {
+          "name": "ubuntu.md",
+          "path": "docker_practice.git/install/ubuntu.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "windows.md": {
+          "name": "windows.md",
+          "path": "docker_practice.git/install/windows.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "introduction": {
+      "name": "introduction",
+      "path": "docker_practice.git/introduction",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/introduction/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "_images": {
+          "name": "_images",
+          "path": "docker_practice.git/introduction/_images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker.png": {
+              "name": "docker.png",
+              "path": "docker_practice.git/introduction/_images/docker.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "virtualization.png": {
+              "name": "virtualization.png",
+              "path": "docker_practice.git/introduction/_images/virtualization.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "what.md": {
+          "name": "what.md",
+          "path": "docker_practice.git/introduction/what.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "why.md": {
+          "name": "why.md",
+          "path": "docker_practice.git/introduction/why.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "kubernetes": {
+      "name": "kubernetes",
+      "path": "docker_practice.git/kubernetes",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/kubernetes/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "_images": {
+          "name": "_images",
+          "path": "docker_practice.git/kubernetes/_images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "k8s-singlenode-docker.png": {
+              "name": "k8s-singlenode-docker.png",
+              "path": "docker_practice.git/kubernetes/_images/k8s-singlenode-docker.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "k8s_architecture.png": {
+              "name": "k8s_architecture.png",
+              "path": "docker_practice.git/kubernetes/_images/k8s_architecture.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kube-proxy.png": {
+              "name": "kube-proxy.png",
+              "path": "docker_practice.git/kubernetes/_images/kube-proxy.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kubernetes_design.jpg": {
+              "name": "kubernetes_design.jpg",
+              "path": "docker_practice.git/kubernetes/_images/kubernetes_design.jpg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kubernetes_logo.png": {
+              "name": "kubernetes_logo.png",
+              "path": "docker_practice.git/kubernetes/_images/kubernetes_logo.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kubernetes_logo.svg": {
+              "name": "kubernetes_logo.svg",
+              "path": "docker_practice.git/kubernetes/_images/kubernetes_logo.svg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "advanced.md": {
+          "name": "advanced.md",
+          "path": "docker_practice.git/kubernetes/advanced.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "concepts.md": {
+          "name": "concepts.md",
+          "path": "docker_practice.git/kubernetes/concepts.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "design.md": {
+          "name": "design.md",
+          "path": "docker_practice.git/kubernetes/design.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "intro.md": {
+          "name": "intro.md",
+          "path": "docker_practice.git/kubernetes/intro.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kubectl": {
+          "name": "kubectl",
+          "path": "docker_practice.git/kubernetes/kubectl",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker_practice.git/kubernetes/kubectl/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "practice.md": {
+          "name": "practice.md",
+          "path": "docker_practice.git/kubernetes/practice.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "setup": {
+          "name": "setup",
+          "path": "docker_practice.git/kubernetes/setup",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker_practice.git/kubernetes/setup/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dashboard.md": {
+              "name": "dashboard.md",
+              "path": "docker_practice.git/kubernetes/setup/dashboard.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-desktop.md": {
+              "name": "docker-desktop.md",
+              "path": "docker_practice.git/kubernetes/setup/docker-desktop.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "k3s.md": {
+              "name": "k3s.md",
+              "path": "docker_practice.git/kubernetes/setup/k3s.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kind.md": {
+              "name": "kind.md",
+              "path": "docker_practice.git/kubernetes/setup/kind.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kubeadm-docker.md": {
+              "name": "kubeadm-docker.md",
+              "path": "docker_practice.git/kubernetes/setup/kubeadm-docker.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kubeadm.md": {
+              "name": "kubeadm.md",
+              "path": "docker_practice.git/kubernetes/setup/kubeadm.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "systemd.md": {
+              "name": "systemd.md",
+              "path": "docker_practice.git/kubernetes/setup/systemd.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "manifest": {
+      "name": "manifest",
+      "path": "docker_practice.git/manifest",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "network": {
+      "name": "network",
+      "path": "docker_practice.git/network",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/network/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "dns.md": {
+          "name": "dns.md",
+          "path": "docker_practice.git/network/dns.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "linking.md": {
+          "name": "linking.md",
+          "path": "docker_practice.git/network/linking.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "port_mapping.md": {
+          "name": "port_mapping.md",
+          "path": "docker_practice.git/network/port_mapping.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "package.json": {
+      "name": "package.json",
+      "path": "docker_practice.git/package.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "podman": {
+      "name": "podman",
+      "path": "docker_practice.git/podman",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/podman/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "repository": {
+      "name": "repository",
+      "path": "docker_practice.git/repository",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/repository/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "demo": {
+          "name": "demo",
+          "path": "docker_practice.git/repository/demo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "auth": {
+              "name": "auth",
+              "path": "docker_practice.git/repository/demo/auth",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "nginx.htpasswd": {
+                  "name": "nginx.htpasswd",
+                  "path": "docker_practice.git/repository/demo/auth/nginx.htpasswd",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "config.yml": {
+              "name": "config.yml",
+              "path": "docker_practice.git/repository/demo/config.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker_practice.git/repository/demo/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "root-ca.cnf": {
+              "name": "root-ca.cnf",
+              "path": "docker_practice.git/repository/demo/root-ca.cnf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "site.cnf": {
+              "name": "site.cnf",
+              "path": "docker_practice.git/repository/demo/site.cnf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ssl": {
+              "name": "ssl",
+              "path": "docker_practice.git/repository/demo/ssl",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "docker.domain.com.crt": {
+                  "name": "docker.domain.com.crt",
+                  "path": "docker_practice.git/repository/demo/ssl/docker.domain.com.crt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "docker.domain.com.key": {
+                  "name": "docker.domain.com.key",
+                  "path": "docker_practice.git/repository/demo/ssl/docker.domain.com.key",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "dockerhub.md": {
+          "name": "dockerhub.md",
+          "path": "docker_practice.git/repository/dockerhub.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "nexus3_registry.md": {
+          "name": "nexus3_registry.md",
+          "path": "docker_practice.git/repository/nexus3_registry.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "registry.md": {
+          "name": "registry.md",
+          "path": "docker_practice.git/repository/registry.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "registry_auth.md": {
+          "name": "registry_auth.md",
+          "path": "docker_practice.git/repository/registry_auth.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "security": {
+      "name": "security",
+      "path": "docker_practice.git/security",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/security/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "control_group.md": {
+          "name": "control_group.md",
+          "path": "docker_practice.git/security/control_group.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "daemon_sec.md": {
+          "name": "daemon_sec.md",
+          "path": "docker_practice.git/security/daemon_sec.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kernel_capability.md": {
+          "name": "kernel_capability.md",
+          "path": "docker_practice.git/security/kernel_capability.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kernel_ns.md": {
+          "name": "kernel_ns.md",
+          "path": "docker_practice.git/security/kernel_ns.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "other_feature.md": {
+          "name": "other_feature.md",
+          "path": "docker_practice.git/security/other_feature.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "summary.md": {
+          "name": "summary.md",
+          "path": "docker_practice.git/security/summary.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "swarm_mode": {
+      "name": "swarm_mode",
+      "path": "docker_practice.git/swarm_mode",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/swarm_mode/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config.md": {
+          "name": "config.md",
+          "path": "docker_practice.git/swarm_mode/config.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "create.md": {
+          "name": "create.md",
+          "path": "docker_practice.git/swarm_mode/create.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "demo": {
+          "name": "demo",
+          "path": "docker_practice.git/swarm_mode/demo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker_practice.git/swarm_mode/demo/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "deploy.md": {
+          "name": "deploy.md",
+          "path": "docker_practice.git/swarm_mode/deploy.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "image": {
+          "name": "image",
+          "path": "docker_practice.git/swarm_mode/image",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "wordpress.png": {
+              "name": "wordpress.png",
+              "path": "docker_practice.git/swarm_mode/image/wordpress.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "overview.md": {
+          "name": "overview.md",
+          "path": "docker_practice.git/swarm_mode/overview.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rolling_update.md": {
+          "name": "rolling_update.md",
+          "path": "docker_practice.git/swarm_mode/rolling_update.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "secret.md": {
+          "name": "secret.md",
+          "path": "docker_practice.git/swarm_mode/secret.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "stack.md": {
+          "name": "stack.md",
+          "path": "docker_practice.git/swarm_mode/stack.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "underly": {
+      "name": "underly",
+      "path": "docker_practice.git/underly",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker_practice.git/underly/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "_images": {
+          "name": "_images",
+          "path": "docker_practice.git/underly/_images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker_arch.png": {
+              "name": "docker_arch.png",
+              "path": "docker_practice.git/underly/_images/docker_arch.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "arch.md": {
+          "name": "arch.md",
+          "path": "docker_practice.git/underly/arch.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cgroups.md": {
+          "name": "cgroups.md",
+          "path": "docker_practice.git/underly/cgroups.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "container_format.md": {
+          "name": "container_format.md",
+          "path": "docker_practice.git/underly/container_format.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "namespace.md": {
+          "name": "namespace.md",
+          "path": "docker_practice.git/underly/namespace.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "network.md": {
+          "name": "network.md",
+          "path": "docker_practice.git/underly/network.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ufs.md": {
+          "name": "ufs.md",
+          "path": "docker_practice.git/underly/ufs.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 23689830,
+    "name": "docker_practice",
+    "full_name": "yeasy/docker_practice",
+    "owner": {
+      "login": "yeasy",
+      "html_url": "https://github.com/yeasy",
+      "type": "User"
+    },
+    "html_url": "https://github.com/yeasy/docker_practice",
+    "description": "Learn and understand Docker&Container technologies, with real DevOps practice!",
+    "url": "https://api.github.com/repos/yeasy/docker_practice",
+    "clone_url": "https://github.com/yeasy/docker_practice.git",
+    "homepage": "https://yeasy.gitbook.io/docker_practice/",
+    "size": 11849,
+    "stargazers_count": 21562,
+    "watchers_count": 21562,
+    "language": "Go"
+  }
+}
