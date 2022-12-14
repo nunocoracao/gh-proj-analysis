@@ -5,7 +5,7 @@ var repos = utils.readRepoFile()
 
 console.log('Scanning ' + repos.length + ' repos')
 
-function buildStep(item) {
+function buildStep(item, info) {
     return {
         repo: item,
         action: (endCB) => {
@@ -13,8 +13,9 @@ function buildStep(item) {
                 utils.cloneRepo(item, (repoName) => {
                     var struct = utils.scanFolder(repoName)
                     var res = utils.processStruct(struct)
+                    res.info = info
                     utils.saveToFile(res, repoName + '.json')
-                    //utils.deleteRepo(item) //delete repo after processing
+                    utils.deleteRepo(item) //delete repo after processing
                     endCB()
                 })
             } else {
@@ -26,7 +27,7 @@ function buildStep(item) {
 
 var actionList = []
 for (var i in repos) {
-    var step = buildStep(repos[i].clone_url)
+    var step = buildStep(repos[i].clone_url, repos[i])
     actionList.push(step)
 }
 
