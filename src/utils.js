@@ -43,7 +43,7 @@ module.exports = {
         })
     },
 
-    deleteRepo: function(repoUrl) {
+    deleteRepo: function (repoUrl) {
         var repoTokens = repoUrl.split("/")
         var repoName = repoTokens[repoTokens.length - 1]
         var path = TEMP_DIR + repoName
@@ -53,7 +53,7 @@ module.exports = {
         }
     },
 
-    alreadyProcessed: function(repoUrl) {
+    alreadyProcessed: function (repoUrl) {
         var repoTokens = repoUrl.split("/")
         var repoName = repoTokens[repoTokens.length - 1]
         var path = OUTPUT_DIR + repoName + '.json'
@@ -61,7 +61,7 @@ module.exports = {
         if (fs.existsSync(path)) {
             this.print('already processed ' + path)
             return true
-        }else{
+        } else {
             return false
         }
     },
@@ -153,9 +153,10 @@ module.exports = {
             totalRepos: 0,
             reposWithDockerfiles: 0,
             reposWithComposefiles: 0,
-            reposWithDockerfilesAndComposeFiles: 0
+            reposWithDockerfilesAndComposeFiles: 0,
             //define categories for file structure
             //define a way to backtrack to the project file
+            languages: {}
         }
 
         fs.readdirSync(OUTPUT_DIR).forEach(file => {
@@ -163,9 +164,23 @@ module.exports = {
             var data = JSON.parse(fs.readFileSync(OUTPUT_DIR + '/' + file))
 
             res.totalRepos++
-            res.reposWithDockerfiles += data.results.dockerfile.exist? 1 : 0
-            res.reposWithComposefiles += data.results.composefile.exist? 1 : 0
-            res.reposWithDockerfilesAndComposeFiles += data.results.dockerfile.exist && data.results.composefile.exist? 1 : 0
+            res.reposWithDockerfiles += data.results.dockerfile.exist ? 1 : 0
+            res.reposWithComposefiles += data.results.composefile.exist ? 1 : 0
+            res.reposWithDockerfilesAndComposeFiles += data.results.dockerfile.exist && data.results.composefile.exist ? 1 : 0
+
+            if (res.languages[data.info.language]) {
+                res.languages[data.info.language].totalRepos++
+                res.languages[data.info.language].reposWithDockerfiles += data.results.dockerfile.exist ? 1 : 0
+                res.languages[data.info.language].reposWithComposefiles += data.results.composefile.exist ? 1 : 0
+                res.languages[data.info.language].reposWithDockerfilesAndComposeFiles += data.results.dockerfile.exist && data.results.composefile.exist ? 1 : 0
+            } else {
+                res.languages[data.info.language] = {
+                    totalRepos: 1,
+                    reposWithDockerfiles: data.results.dockerfile.exist ? 1 : 0,
+                    reposWithComposefiles: data.results.composefile.exist ? 1 : 0,
+                    reposWithDockerfilesAndComposeFiles: data.results.dockerfile.exist && data.results.composefile.exist ? 1 : 0
+                }
+            }
 
             /*
             
