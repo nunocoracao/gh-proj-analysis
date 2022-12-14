@@ -1,0 +1,2504 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "kt-connect.git/build/docker/navigator/Dockerfile",
+        "kt-connect.git/build/docker/navigator/Dockerfile_base",
+        "kt-connect.git/build/docker/router/Dockerfile",
+        "kt-connect.git/build/docker/shadow/Dockerfile",
+        "kt-connect.git/build/docker/shadow/Dockerfile_base",
+        "kt-connect.git/build/docker/shadow/Dockerfile_dlv"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "kt-connect.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "kt-connect.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "kt-connect.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "kt-connect.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "kt-connect.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "kt-connect.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "kt-connect.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "kt-connect.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "kt-connect.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "kt-connect.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "kt-connect.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "kt-connect.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "kt-connect.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "kt-connect.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "kt-connect.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "kt-connect.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "kt-connect.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "kt-connect.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "kt-connect.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "kt-connect.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "kt-connect.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "kt-connect.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "kt-connect.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "kt-connect.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "kt-connect.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "kt-connect.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "kt-connect.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "kt-connect.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "kt-connect.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "kt-connect.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "kt-connect.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "kt-connect.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "kt-connect.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-cd03a7ac855e9aa2bba9d513a8bcad3dfb7e1c17.idx": {
+                  "name": "pack-cd03a7ac855e9aa2bba9d513a8bcad3dfb7e1c17.idx",
+                  "path": "kt-connect.git/.git/objects/pack/pack-cd03a7ac855e9aa2bba9d513a8bcad3dfb7e1c17.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-cd03a7ac855e9aa2bba9d513a8bcad3dfb7e1c17.pack": {
+                  "name": "pack-cd03a7ac855e9aa2bba9d513a8bcad3dfb7e1c17.pack",
+                  "path": "kt-connect.git/.git/objects/pack/pack-cd03a7ac855e9aa2bba9d513a8bcad3dfb7e1c17.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "kt-connect.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "kt-connect.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "kt-connect.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "kt-connect.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "kt-connect.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "kt-connect.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "kt-connect.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "kt-connect.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "kt-connect.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "kt-connect.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "kt-connect.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug_report.md": {
+              "name": "bug_report.md",
+              "path": "kt-connect.git/.github/ISSUE_TEMPLATE/bug_report.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature_request.md": {
+              "name": "feature_request.md",
+              "path": "kt-connect.git/.github/ISSUE_TEMPLATE/feature_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "kt-connect.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ci.yml": {
+              "name": "ci.yml",
+              "path": "kt-connect.git/.github/workflows/ci.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "release.yml": {
+              "name": "release.yml",
+              "path": "kt-connect.git/.github/workflows/release.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "kt-connect.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".golangci.yml": {
+      "name": ".golangci.yml",
+      "path": "kt-connect.git/.golangci.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".goreleaser.yml": {
+      "name": ".goreleaser.yml",
+      "path": "kt-connect.git/.goreleaser.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".pre-commit-config.yaml": {
+      "name": ".pre-commit-config.yaml",
+      "path": "kt-connect.git/.pre-commit-config.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "kt-connect.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "kt-connect.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Makefile": {
+      "name": "Makefile",
+      "path": "kt-connect.git/Makefile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "kt-connect.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README_CN.md": {
+      "name": "README_CN.md",
+      "path": "kt-connect.git/README_CN.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "build": {
+      "name": "build",
+      "path": "kt-connect.git/build",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker": {
+          "name": "docker",
+          "path": "kt-connect.git/build/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "navigator": {
+              "name": "navigator",
+              "path": "kt-connect.git/build/docker/navigator",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "kt-connect.git/build/docker/navigator/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile_base": {
+                  "name": "Dockerfile_base",
+                  "path": "kt-connect.git/build/docker/navigator/Dockerfile_base",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "setup_iptables.sh": {
+                  "name": "setup_iptables.sh",
+                  "path": "kt-connect.git/build/docker/navigator/setup_iptables.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sources.list": {
+                  "name": "sources.list",
+                  "path": "kt-connect.git/build/docker/navigator/sources.list",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "router": {
+              "name": "router",
+              "path": "kt-connect.git/build/docker/router",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "kt-connect.git/build/docker/router/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "nginx.conf": {
+                  "name": "nginx.conf",
+                  "path": "kt-connect.git/build/docker/router/nginx.conf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "shadow": {
+              "name": "shadow",
+              "path": "kt-connect.git/build/docker/shadow",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "kt-connect.git/build/docker/shadow/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile_base": {
+                  "name": "Dockerfile_base",
+                  "path": "kt-connect.git/build/docker/shadow/Dockerfile_base",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile_dlv": {
+                  "name": "Dockerfile_dlv",
+                  "path": "kt-connect.git/build/docker/shadow/Dockerfile_dlv",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "disconnect.sh": {
+                  "name": "disconnect.sh",
+                  "path": "kt-connect.git/build/docker/shadow/disconnect.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "run.sh": {
+                  "name": "run.sh",
+                  "path": "kt-connect.git/build/docker/shadow/run.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sshd_config": {
+                  "name": "sshd_config",
+                  "path": "kt-connect.git/build/docker/shadow/sshd_config",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "scripts": {
+          "name": "scripts",
+          "path": "kt-connect.git/build/scripts",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker.sh": {
+              "name": "docker.sh",
+              "path": "kt-connect.git/build/scripts/docker.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "wintun.sh": {
+              "name": "wintun.sh",
+              "path": "kt-connect.git/build/scripts/wintun.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "cmd": {
+      "name": "cmd",
+      "path": "kt-connect.git/cmd",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ktctl": {
+          "name": "ktctl",
+          "path": "kt-connect.git/cmd/ktctl",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "kt-connect.git/cmd/ktctl/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "navigator": {
+          "name": "navigator",
+          "path": "kt-connect.git/cmd/navigator",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "kt-connect.git/cmd/navigator/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "router": {
+          "name": "router",
+          "path": "kt-connect.git/cmd/router",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "kt-connect.git/cmd/router/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "shadow": {
+          "name": "shadow",
+          "path": "kt-connect.git/cmd/shadow",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "kt-connect.git/cmd/shadow/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "docs": {
+      "name": "docs",
+      "path": "kt-connect.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "deploy": {
+          "name": "deploy",
+          "path": "kt-connect.git/docs/deploy",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "rbac": {
+              "name": "rbac",
+              "path": "kt-connect.git/docs/deploy/rbac",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "all-commands-full.yaml": {
+                  "name": "all-commands-full.yaml",
+                  "path": "kt-connect.git/docs/deploy/rbac/all-commands-full.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "all-commands-mini.yaml": {
+                  "name": "all-commands-mini.yaml",
+                  "path": "kt-connect.git/docs/deploy/rbac/all-commands-mini.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "connect-only-full.yaml": {
+                  "name": "connect-only-full.yaml",
+                  "path": "kt-connect.git/docs/deploy/rbac/connect-only-full.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "connect-only-mini.yaml": {
+                  "name": "connect-only-mini.yaml",
+                  "path": "kt-connect.git/docs/deploy/rbac/connect-only-mini.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "en-us": {
+          "name": "en-us",
+          "path": "kt-connect.git/docs/en-us",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".nojekyll": {
+              "name": ".nojekyll",
+              "path": "kt-connect.git/docs/en-us/.nojekyll",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kt-connect.git/docs/en-us/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cli": {
+              "name": "cli",
+              "path": "kt-connect.git/docs/en-us/cli",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "birdseye.md": {
+                  "name": "birdseye.md",
+                  "path": "kt-connect.git/docs/en-us/cli/birdseye.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "clean.md": {
+                  "name": "clean.md",
+                  "path": "kt-connect.git/docs/en-us/cli/clean.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "completion.md": {
+                  "name": "completion.md",
+                  "path": "kt-connect.git/docs/en-us/cli/completion.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config.md": {
+                  "name": "config.md",
+                  "path": "kt-connect.git/docs/en-us/cli/config.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "connect.md": {
+                  "name": "connect.md",
+                  "path": "kt-connect.git/docs/en-us/cli/connect.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "exchange.md": {
+                  "name": "exchange.md",
+                  "path": "kt-connect.git/docs/en-us/cli/exchange.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "forward.md": {
+                  "name": "forward.md",
+                  "path": "kt-connect.git/docs/en-us/cli/forward.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "global.md": {
+                  "name": "global.md",
+                  "path": "kt-connect.git/docs/en-us/cli/global.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mesh.md": {
+                  "name": "mesh.md",
+                  "path": "kt-connect.git/docs/en-us/cli/mesh.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "preview.md": {
+                  "name": "preview.md",
+                  "path": "kt-connect.git/docs/en-us/cli/preview.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "recover.md": {
+                  "name": "recover.md",
+                  "path": "kt-connect.git/docs/en-us/cli/recover.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "coverpage.md": {
+              "name": "coverpage.md",
+              "path": "kt-connect.git/docs/en-us/coverpage.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "guide": {
+              "name": "guide",
+              "path": "kt-connect.git/docs/en-us/guide",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "downloads.md": {
+                  "name": "downloads.md",
+                  "path": "kt-connect.git/docs/en-us/guide/downloads.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "quickstart.md": {
+                  "name": "quickstart.md",
+                  "path": "kt-connect.git/docs/en-us/guide/quickstart.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "navbar.md": {
+              "name": "navbar.md",
+              "path": "kt-connect.git/docs/en-us/navbar.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "reference": {
+              "name": "reference",
+              "path": "kt-connect.git/docs/en-us/reference",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "authorization.md": {
+                  "name": "authorization.md",
+                  "path": "kt-connect.git/docs/en-us/reference/authorization.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "changelog.md": {
+                  "name": "changelog.md",
+                  "path": "kt-connect.git/docs/en-us/reference/changelog.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "customize.md": {
+                  "name": "customize.md",
+                  "path": "kt-connect.git/docs/en-us/reference/customize.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "faq.md": {
+                  "name": "faq.md",
+                  "path": "kt-connect.git/docs/en-us/reference/faq.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "manual_mesh.md": {
+                  "name": "manual_mesh.md",
+                  "path": "kt-connect.git/docs/en-us/reference/manual_mesh.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mechanism.md": {
+                  "name": "mechanism.md",
+                  "path": "kt-connect.git/docs/en-us/reference/mechanism.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "sidebar.md": {
+              "name": "sidebar.md",
+              "path": "kt-connect.git/docs/en-us/sidebar.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index.html": {
+          "name": "index.html",
+          "path": "kt-connect.git/docs/index.html",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "media": {
+          "name": "media",
+          "path": "kt-connect.git/docs/media",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "arch.png": {
+              "name": "arch.png",
+              "path": "kt-connect.git/docs/media/arch.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "bg.png": {
+              "name": "bg.png",
+              "path": "kt-connect.git/docs/media/bg.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "guide": {
+              "name": "guide",
+              "path": "kt-connect.git/docs/media/guide",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "demo-tomcat-7.png": {
+                  "name": "demo-tomcat-7.png",
+                  "path": "kt-connect.git/docs/media/guide/demo-tomcat-7.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "demo-tomcat-8.png": {
+                  "name": "demo-tomcat-8.png",
+                  "path": "kt-connect.git/docs/media/guide/demo-tomcat-8.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "demo-user-agent.png": {
+                  "name": "demo-user-agent.png",
+                  "path": "kt-connect.git/docs/media/guide/demo-user-agent.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "local-dev-01.png": {
+                  "name": "local-dev-01.png",
+                  "path": "kt-connect.git/docs/media/guide/local-dev-01.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "local-dev-02.png": {
+                  "name": "local-dev-02.png",
+                  "path": "kt-connect.git/docs/media/guide/local-dev-02.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "logo-large.png": {
+              "name": "logo-large.png",
+              "path": "kt-connect.git/docs/media/logo-large.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logo.png": {
+              "name": "logo.png",
+              "path": "kt-connect.git/docs/media/logo.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "zh-cn": {
+          "name": "zh-cn",
+          "path": "kt-connect.git/docs/zh-cn",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".nojekyll": {
+              "name": ".nojekyll",
+              "path": "kt-connect.git/docs/zh-cn/.nojekyll",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kt-connect.git/docs/zh-cn/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cli": {
+              "name": "cli",
+              "path": "kt-connect.git/docs/zh-cn/cli",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "birdseye.md": {
+                  "name": "birdseye.md",
+                  "path": "kt-connect.git/docs/zh-cn/cli/birdseye.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "clean.md": {
+                  "name": "clean.md",
+                  "path": "kt-connect.git/docs/zh-cn/cli/clean.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "completion.md": {
+                  "name": "completion.md",
+                  "path": "kt-connect.git/docs/zh-cn/cli/completion.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config.md": {
+                  "name": "config.md",
+                  "path": "kt-connect.git/docs/zh-cn/cli/config.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "connect.md": {
+                  "name": "connect.md",
+                  "path": "kt-connect.git/docs/zh-cn/cli/connect.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "exchange.md": {
+                  "name": "exchange.md",
+                  "path": "kt-connect.git/docs/zh-cn/cli/exchange.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "forward.md": {
+                  "name": "forward.md",
+                  "path": "kt-connect.git/docs/zh-cn/cli/forward.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "global.md": {
+                  "name": "global.md",
+                  "path": "kt-connect.git/docs/zh-cn/cli/global.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mesh.md": {
+                  "name": "mesh.md",
+                  "path": "kt-connect.git/docs/zh-cn/cli/mesh.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "preview.md": {
+                  "name": "preview.md",
+                  "path": "kt-connect.git/docs/zh-cn/cli/preview.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "recover.md": {
+                  "name": "recover.md",
+                  "path": "kt-connect.git/docs/zh-cn/cli/recover.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "coverpage.md": {
+              "name": "coverpage.md",
+              "path": "kt-connect.git/docs/zh-cn/coverpage.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "guide": {
+              "name": "guide",
+              "path": "kt-connect.git/docs/zh-cn/guide",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "downloads.md": {
+                  "name": "downloads.md",
+                  "path": "kt-connect.git/docs/zh-cn/guide/downloads.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "quickstart.md": {
+                  "name": "quickstart.md",
+                  "path": "kt-connect.git/docs/zh-cn/guide/quickstart.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "navbar.md": {
+              "name": "navbar.md",
+              "path": "kt-connect.git/docs/zh-cn/navbar.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "reference": {
+              "name": "reference",
+              "path": "kt-connect.git/docs/zh-cn/reference",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "authorization.md": {
+                  "name": "authorization.md",
+                  "path": "kt-connect.git/docs/zh-cn/reference/authorization.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "changelog.md": {
+                  "name": "changelog.md",
+                  "path": "kt-connect.git/docs/zh-cn/reference/changelog.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "comparison.md": {
+                  "name": "comparison.md",
+                  "path": "kt-connect.git/docs/zh-cn/reference/comparison.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "customize.md": {
+                  "name": "customize.md",
+                  "path": "kt-connect.git/docs/zh-cn/reference/customize.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "faq.md": {
+                  "name": "faq.md",
+                  "path": "kt-connect.git/docs/zh-cn/reference/faq.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "manual_mesh.md": {
+                  "name": "manual_mesh.md",
+                  "path": "kt-connect.git/docs/zh-cn/reference/manual_mesh.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mechanism.md": {
+                  "name": "mechanism.md",
+                  "path": "kt-connect.git/docs/zh-cn/reference/mechanism.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "todo.md": {
+                  "name": "todo.md",
+                  "path": "kt-connect.git/docs/zh-cn/reference/todo.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "update.md": {
+                  "name": "update.md",
+                  "path": "kt-connect.git/docs/zh-cn/reference/update.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "sidebar.md": {
+              "name": "sidebar.md",
+              "path": "kt-connect.git/docs/zh-cn/sidebar.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "kt-connect.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "kt-connect.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "hack": {
+      "name": "hack",
+      "path": "kt-connect.git/hack",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "customize.go": {
+          "name": "customize.go",
+          "path": "kt-connect.git/hack/customize.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kt": {
+          "name": "kt",
+          "path": "kt-connect.git/hack/kt",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config": {
+              "name": "config",
+              "path": "kt-connect.git/hack/kt/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "kube": {
+          "name": "kube",
+          "path": "kt-connect.git/hack/kube",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config": {
+              "name": "config",
+              "path": "kt-connect.git/hack/kube/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "pkg": {
+      "name": "pkg",
+      "path": "kt-connect.git/pkg",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "common": {
+          "name": "common",
+          "path": "kt-connect.git/pkg/common",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "const.go": {
+              "name": "const.go",
+              "path": "kt-connect.git/pkg/common/const.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dns_error.go": {
+              "name": "dns_error.go",
+              "path": "kt-connect.git/pkg/common/dns_error.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dns_util.go": {
+              "name": "dns_util.go",
+              "path": "kt-connect.git/pkg/common/dns_util.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "kt": {
+          "name": "kt",
+          "path": "kt-connect.git/pkg/kt",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "command": {
+              "name": "command",
+              "path": "kt-connect.git/pkg/kt/command",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "birdseye": {
+                  "name": "birdseye",
+                  "path": "kt-connect.git/pkg/kt/command/birdseye",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "common.go": {
+                      "name": "common.go",
+                      "path": "kt-connect.git/pkg/kt/command/birdseye/common.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sorter.go": {
+                      "name": "sorter.go",
+                      "path": "kt-connect.git/pkg/kt/command/birdseye/sorter.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sorter_test.go": {
+                      "name": "sorter_test.go",
+                      "path": "kt-connect.git/pkg/kt/command/birdseye/sorter_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "birdseye.go": {
+                  "name": "birdseye.go",
+                  "path": "kt-connect.git/pkg/kt/command/birdseye.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "clean": {
+                  "name": "clean",
+                  "path": "kt-connect.git/pkg/kt/command/clean",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "common.go": {
+                      "name": "common.go",
+                      "path": "kt-connect.git/pkg/kt/command/clean/common.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "common_test.go": {
+                      "name": "common_test.go",
+                      "path": "kt-connect.git/pkg/kt/command/clean/common_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "clean.go": {
+                  "name": "clean.go",
+                  "path": "kt-connect.git/pkg/kt/command/clean.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config": {
+                  "name": "config",
+                  "path": "kt-connect.git/pkg/kt/command/config",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "common.go": {
+                      "name": "common.go",
+                      "path": "kt-connect.git/pkg/kt/command/config/common.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "drop.go": {
+                      "name": "drop.go",
+                      "path": "kt-connect.git/pkg/kt/command/config/drop.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "get.go": {
+                      "name": "get.go",
+                      "path": "kt-connect.git/pkg/kt/command/config/get.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "list.go": {
+                      "name": "list.go",
+                      "path": "kt-connect.git/pkg/kt/command/config/list.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "load.go": {
+                      "name": "load.go",
+                      "path": "kt-connect.git/pkg/kt/command/config/load.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "reset.go": {
+                      "name": "reset.go",
+                      "path": "kt-connect.git/pkg/kt/command/config/reset.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "save.go": {
+                      "name": "save.go",
+                      "path": "kt-connect.git/pkg/kt/command/config/save.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "set.go": {
+                      "name": "set.go",
+                      "path": "kt-connect.git/pkg/kt/command/config/set.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "show.go": {
+                      "name": "show.go",
+                      "path": "kt-connect.git/pkg/kt/command/config/show.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "config.go": {
+                  "name": "config.go",
+                  "path": "kt-connect.git/pkg/kt/command/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "connect": {
+                  "name": "connect",
+                  "path": "kt-connect.git/pkg/kt/command/connect",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "common.go": {
+                      "name": "common.go",
+                      "path": "kt-connect.git/pkg/kt/command/connect/common.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sshuttle.go": {
+                      "name": "sshuttle.go",
+                      "path": "kt-connect.git/pkg/kt/command/connect/sshuttle.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tun2socks.go": {
+                      "name": "tun2socks.go",
+                      "path": "kt-connect.git/pkg/kt/command/connect/tun2socks.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "connect.go": {
+                  "name": "connect.go",
+                  "path": "kt-connect.git/pkg/kt/command/connect.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "exchange": {
+                  "name": "exchange",
+                  "path": "kt-connect.git/pkg/kt/command/exchange",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ephemeral.go": {
+                      "name": "ephemeral.go",
+                      "path": "kt-connect.git/pkg/kt/command/exchange/ephemeral.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scale.go": {
+                      "name": "scale.go",
+                      "path": "kt-connect.git/pkg/kt/command/exchange/scale.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "selector.go": {
+                      "name": "selector.go",
+                      "path": "kt-connect.git/pkg/kt/command/exchange/selector.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "exchange.go": {
+                  "name": "exchange.go",
+                  "path": "kt-connect.git/pkg/kt/command/exchange.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "forward": {
+                  "name": "forward",
+                  "path": "kt-connect.git/pkg/kt/command/forward",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "common.go": {
+                      "name": "common.go",
+                      "path": "kt-connect.git/pkg/kt/command/forward/common.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "forward.go": {
+                  "name": "forward.go",
+                  "path": "kt-connect.git/pkg/kt/command/forward.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "general": {
+                  "name": "general",
+                  "path": "kt-connect.git/pkg/kt/command/general",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "command.go": {
+                      "name": "command.go",
+                      "path": "kt-connect.git/pkg/kt/command/general/command.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "lock.go": {
+                      "name": "lock.go",
+                      "path": "kt-connect.git/pkg/kt/command/general/lock.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "resource.go": {
+                      "name": "resource.go",
+                      "path": "kt-connect.git/pkg/kt/command/general/resource.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "setup.go": {
+                      "name": "setup.go",
+                      "path": "kt-connect.git/pkg/kt/command/general/setup.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "teardown.go": {
+                      "name": "teardown.go",
+                      "path": "kt-connect.git/pkg/kt/command/general/teardown.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "usage.go": {
+                      "name": "usage.go",
+                      "path": "kt-connect.git/pkg/kt/command/general/usage.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "mesh": {
+                  "name": "mesh",
+                  "path": "kt-connect.git/pkg/kt/command/mesh",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "auto.go": {
+                      "name": "auto.go",
+                      "path": "kt-connect.git/pkg/kt/command/mesh/auto.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "auto_test.go": {
+                      "name": "auto_test.go",
+                      "path": "kt-connect.git/pkg/kt/command/mesh/auto_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "common.go": {
+                      "name": "common.go",
+                      "path": "kt-connect.git/pkg/kt/command/mesh/common.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "common_test.go": {
+                      "name": "common_test.go",
+                      "path": "kt-connect.git/pkg/kt/command/mesh/common_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "manual.go": {
+                      "name": "manual.go",
+                      "path": "kt-connect.git/pkg/kt/command/mesh/manual.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "mesh.go": {
+                  "name": "mesh.go",
+                  "path": "kt-connect.git/pkg/kt/command/mesh.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "options": {
+                  "name": "options",
+                  "path": "kt-connect.git/pkg/kt/command/options",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "birdseye.go": {
+                      "name": "birdseye.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/birdseye.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "clean.go": {
+                      "name": "clean.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/clean.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "common.go": {
+                      "name": "common.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/common.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "connect.go": {
+                      "name": "connect.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/connect.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "custom.go": {
+                      "name": "custom.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/custom.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "exchange.go": {
+                      "name": "exchange.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/exchange.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "forward.go": {
+                      "name": "forward.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/forward.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "global.go": {
+                      "name": "global.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/global.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mesh.go": {
+                      "name": "mesh.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/mesh.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "option_config.go": {
+                      "name": "option_config.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/option_config.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "options.go": {
+                      "name": "options.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/options.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "preview.go": {
+                      "name": "preview.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/preview.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "recover.go": {
+                      "name": "recover.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/recover.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "store.go": {
+                      "name": "store.go",
+                      "path": "kt-connect.git/pkg/kt/command/options/store.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "preview": {
+                  "name": "preview",
+                  "path": "kt-connect.git/pkg/kt/command/preview",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "expose.go": {
+                      "name": "expose.go",
+                      "path": "kt-connect.git/pkg/kt/command/preview/expose.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "preview.go": {
+                  "name": "preview.go",
+                  "path": "kt-connect.git/pkg/kt/command/preview.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "recover": {
+                  "name": "recover",
+                  "path": "kt-connect.git/pkg/kt/command/recover",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "common.go": {
+                      "name": "common.go",
+                      "path": "kt-connect.git/pkg/kt/command/recover/common.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "recover.go": {
+                  "name": "recover.go",
+                  "path": "kt-connect.git/pkg/kt/command/recover.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "service": {
+              "name": "service",
+              "path": "kt-connect.git/pkg/kt/service",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cluster": {
+                  "name": "cluster",
+                  "path": "kt-connect.git/pkg/kt/service/cluster",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "cidr.go": {
+                      "name": "cidr.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/cidr.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "cidr_test.go": {
+                      "name": "cidr_test.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/cidr_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "configmap.go": {
+                      "name": "configmap.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/configmap.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "deployment.go": {
+                      "name": "deployment.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/deployment.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "deployment_test.go": {
+                      "name": "deployment_test.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/deployment_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ephemeral_container.go": {
+                      "name": "ephemeral_container.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/ephemeral_container.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "extra_pod.go": {
+                      "name": "extra_pod.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/extra_pod.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "global.go": {
+                      "name": "global.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/global.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "heartbeat.go": {
+                      "name": "heartbeat.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/heartbeat.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "helper.go": {
+                      "name": "helper.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/helper.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "helper_test.go": {
+                      "name": "helper_test.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/helper_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "igress.go": {
+                      "name": "igress.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/igress.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "pod.go": {
+                      "name": "pod.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/pod.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "service.go": {
+                      "name": "service.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/service.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "service_test.go": {
+                      "name": "service_test.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/service_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "shadow_pod.go": {
+                      "name": "shadow_pod.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/shadow_pod.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "types.go": {
+                      "name": "types.go",
+                      "path": "kt-connect.git/pkg/kt/service/cluster/types.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "dns": {
+                  "name": "dns",
+                  "path": "kt-connect.git/pkg/kt/service/dns",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "dns_darwin.go": {
+                      "name": "dns_darwin.go",
+                      "path": "kt-connect.git/pkg/kt/service/dns/dns_darwin.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "dns_darwin_test.go": {
+                      "name": "dns_darwin_test.go",
+                      "path": "kt-connect.git/pkg/kt/service/dns/dns_darwin_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "dns_linux.go": {
+                      "name": "dns_linux.go",
+                      "path": "kt-connect.git/pkg/kt/service/dns/dns_linux.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "dns_unix.go": {
+                      "name": "dns_unix.go",
+                      "path": "kt-connect.git/pkg/kt/service/dns/dns_unix.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "dns_windows.go": {
+                      "name": "dns_windows.go",
+                      "path": "kt-connect.git/pkg/kt/service/dns/dns_windows.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "dnsserver.go": {
+                      "name": "dnsserver.go",
+                      "path": "kt-connect.git/pkg/kt/service/dns/dnsserver.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "dnsserver_test.go": {
+                      "name": "dnsserver_test.go",
+                      "path": "kt-connect.git/pkg/kt/service/dns/dnsserver_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "hosts.go": {
+                      "name": "hosts.go",
+                      "path": "kt-connect.git/pkg/kt/service/dns/hosts.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "hosts_test.go": {
+                      "name": "hosts_test.go",
+                      "path": "kt-connect.git/pkg/kt/service/dns/hosts_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "sshchannel": {
+                  "name": "sshchannel",
+                  "path": "kt-connect.git/pkg/kt/service/sshchannel",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ssh.go": {
+                      "name": "ssh.go",
+                      "path": "kt-connect.git/pkg/kt/service/sshchannel/ssh.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "types.go": {
+                      "name": "types.go",
+                      "path": "kt-connect.git/pkg/kt/service/sshchannel/types.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "sshuttle": {
+                  "name": "sshuttle",
+                  "path": "kt-connect.git/pkg/kt/service/sshuttle",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "sshuttle.go": {
+                      "name": "sshuttle.go",
+                      "path": "kt-connect.git/pkg/kt/service/sshuttle/sshuttle.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "types.go": {
+                      "name": "types.go",
+                      "path": "kt-connect.git/pkg/kt/service/sshuttle/types.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "tun": {
+                  "name": "tun",
+                  "path": "kt-connect.git/pkg/kt/service/tun",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "common.go": {
+                      "name": "common.go",
+                      "path": "kt-connect.git/pkg/kt/service/tun/common.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "common_test.go": {
+                      "name": "common_test.go",
+                      "path": "kt-connect.git/pkg/kt/service/tun/common_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "route_error.go": {
+                      "name": "route_error.go",
+                      "path": "kt-connect.git/pkg/kt/service/tun/route_error.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tun.go": {
+                      "name": "tun.go",
+                      "path": "kt-connect.git/pkg/kt/service/tun/tun.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tun_darwin.go": {
+                      "name": "tun_darwin.go",
+                      "path": "kt-connect.git/pkg/kt/service/tun/tun_darwin.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tun_linux.go": {
+                      "name": "tun_linux.go",
+                      "path": "kt-connect.git/pkg/kt/service/tun/tun_linux.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tun_windows.go": {
+                      "name": "tun_windows.go",
+                      "path": "kt-connect.git/pkg/kt/service/tun/tun_windows.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "types.go": {
+                      "name": "types.go",
+                      "path": "kt-connect.git/pkg/kt/service/tun/types.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "transmission": {
+              "name": "transmission",
+              "path": "kt-connect.git/pkg/kt/transmission",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "inbound.go": {
+                  "name": "inbound.go",
+                  "path": "kt-connect.git/pkg/kt/transmission/inbound.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "portforward.go": {
+                  "name": "portforward.go",
+                  "path": "kt-connect.git/pkg/kt/transmission/portforward.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "portforward_test.go": {
+                  "name": "portforward_test.go",
+                  "path": "kt-connect.git/pkg/kt/transmission/portforward_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "util": {
+              "name": "util",
+              "path": "kt-connect.git/pkg/kt/util",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "collection.go": {
+                  "name": "collection.go",
+                  "path": "kt-connect.git/pkg/kt/util/collection.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "collection_test.go": {
+                  "name": "collection_test.go",
+                  "path": "kt-connect.git/pkg/kt/util/collection_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "const.go": {
+                  "name": "const.go",
+                  "path": "kt-connect.git/pkg/kt/util/const.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "const_unix.go": {
+                  "name": "const_unix.go",
+                  "path": "kt-connect.git/pkg/kt/util/const_unix.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "const_windows.go": {
+                  "name": "const_windows.go",
+                  "path": "kt-connect.git/pkg/kt/util/const_windows.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "interpretable_reader.go": {
+                  "name": "interpretable_reader.go",
+                  "path": "kt-connect.git/pkg/kt/util/interpretable_reader.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logger.go": {
+                  "name": "logger.go",
+                  "path": "kt-connect.git/pkg/kt/util/logger.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "network.go": {
+                  "name": "network.go",
+                  "path": "kt-connect.git/pkg/kt/util/network.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "network_test.go": {
+                  "name": "network_test.go",
+                  "path": "kt-connect.git/pkg/kt/util/network_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "run.go": {
+                  "name": "run.go",
+                  "path": "kt-connect.git/pkg/kt/util/run.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ssh.go": {
+                  "name": "ssh.go",
+                  "path": "kt-connect.git/pkg/kt/util/ssh.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ssh_test.go": {
+                  "name": "ssh_test.go",
+                  "path": "kt-connect.git/pkg/kt/util/ssh_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "strings.go": {
+                  "name": "strings.go",
+                  "path": "kt-connect.git/pkg/kt/util/strings.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "strings_test.go": {
+                  "name": "strings_test.go",
+                  "path": "kt-connect.git/pkg/kt/util/strings_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "system.go": {
+                  "name": "system.go",
+                  "path": "kt-connect.git/pkg/kt/util/system.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "system_unix.go": {
+                  "name": "system_unix.go",
+                  "path": "kt-connect.git/pkg/kt/util/system_unix.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "system_windows.go": {
+                  "name": "system_windows.go",
+                  "path": "kt-connect.git/pkg/kt/util/system_windows.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "router": {
+          "name": "router",
+          "path": "kt-connect.git/pkg/router",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "nginx.go": {
+              "name": "nginx.go",
+              "path": "kt-connect.git/pkg/router/nginx.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "route.conf": {
+              "name": "route.conf",
+              "path": "kt-connect.git/pkg/router/route.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "route.go": {
+              "name": "route.go",
+              "path": "kt-connect.git/pkg/router/route.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "type.go": {
+              "name": "type.go",
+              "path": "kt-connect.git/pkg/router/type.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "shadow": {
+          "name": "shadow",
+          "path": "kt-connect.git/pkg/shadow",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "dnsserver": {
+              "name": "dnsserver",
+              "path": "kt-connect.git/pkg/shadow/dnsserver",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "dnsserver_unix.go": {
+                  "name": "dnsserver_unix.go",
+                  "path": "kt-connect.git/pkg/shadow/dnsserver/dnsserver_unix.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dnsserver_unix_test.go": {
+                  "name": "dnsserver_unix_test.go",
+                  "path": "kt-connect.git/pkg/shadow/dnsserver/dnsserver_unix_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "testing": {
+      "name": "testing",
+      "path": "kt-connect.git/testing",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "integration": {
+          "name": "integration",
+          "path": "kt-connect.git/testing/integration",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "go.sh": {
+              "name": "go.sh",
+              "path": "kt-connect.git/testing/integration/go.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "testdata": {
+              "name": "testdata",
+              "path": "kt-connect.git/testing/integration/testdata",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.yaml.enc": {
+                  "name": "config.yaml.enc",
+                  "path": "kt-connect.git/testing/integration/testdata/config.yaml.enc",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 195961934,
+    "name": "kt-connect",
+    "full_name": "alibaba/kt-connect",
+    "owner": {
+      "login": "alibaba",
+      "html_url": "https://github.com/alibaba",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/alibaba/kt-connect",
+    "description": "A toolkit for Integrating with your kubernetes dev environment more efficiently",
+    "url": "https://api.github.com/repos/alibaba/kt-connect",
+    "clone_url": "https://github.com/alibaba/kt-connect.git",
+    "homepage": "https://alibaba.github.io/kt-connect/#/",
+    "size": 23760,
+    "stargazers_count": 1049,
+    "watchers_count": 1049,
+    "language": "Go"
+  }
+}

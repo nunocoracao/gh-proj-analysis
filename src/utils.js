@@ -36,9 +36,10 @@ module.exports = {
         this.print('cloning ' + repoName)
 
         clone(repoUrl, path, { shallow: true }, (error) => {
-            if (error)
+            if (error){
                 console.log(error)
-            else
+                this.cloneRepo(repoUrl, callback)
+            } else
                 callback(repoName)
         })
     },
