@@ -1,0 +1,4248 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 14,
+      "rootCount": 0,
+      "subFolderCount": 14,
+      "filepaths": [
+        "cloud-provider-openstack.git/cluster/images/barbican-kms-plugin/Dockerfile",
+        "cloud-provider-openstack.git/cluster/images/barbican-kms-plugin/Dockerfile.build",
+        "cloud-provider-openstack.git/cluster/images/cinder-csi-plugin/Dockerfile",
+        "cloud-provider-openstack.git/cluster/images/cinder-csi-plugin/Dockerfile.build",
+        "cloud-provider-openstack.git/cluster/images/k8s-keystone-auth/Dockerfile",
+        "cloud-provider-openstack.git/cluster/images/k8s-keystone-auth/Dockerfile.build",
+        "cloud-provider-openstack.git/cluster/images/magnum-auto-healer/Dockerfile",
+        "cloud-provider-openstack.git/cluster/images/magnum-auto-healer/Dockerfile.build",
+        "cloud-provider-openstack.git/cluster/images/manila-csi-plugin/Dockerfile",
+        "cloud-provider-openstack.git/cluster/images/manila-csi-plugin/Dockerfile.build",
+        "cloud-provider-openstack.git/cluster/images/octavia-ingress-controller/Dockerfile",
+        "cloud-provider-openstack.git/cluster/images/octavia-ingress-controller/Dockerfile.build",
+        "cloud-provider-openstack.git/cluster/images/openstack-cloud-controller-manager/Dockerfile",
+        "cloud-provider-openstack.git/cluster/images/openstack-cloud-controller-manager/Dockerfile.build"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".git": {
+      "name": ".git",
+      "path": "cloud-provider-openstack.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "cloud-provider-openstack.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "cloud-provider-openstack.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "cloud-provider-openstack.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "cloud-provider-openstack.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "cloud-provider-openstack.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "cloud-provider-openstack.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "cloud-provider-openstack.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "cloud-provider-openstack.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "cloud-provider-openstack.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "cloud-provider-openstack.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "cloud-provider-openstack.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "cloud-provider-openstack.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "cloud-provider-openstack.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "cloud-provider-openstack.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "cloud-provider-openstack.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "cloud-provider-openstack.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "cloud-provider-openstack.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "cloud-provider-openstack.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "cloud-provider-openstack.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-f182361786691e462f6314842aeeaa2c4aca19e3.idx": {
+                  "name": "pack-f182361786691e462f6314842aeeaa2c4aca19e3.idx",
+                  "path": "cloud-provider-openstack.git/.git/objects/pack/pack-f182361786691e462f6314842aeeaa2c4aca19e3.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-f182361786691e462f6314842aeeaa2c4aca19e3.pack": {
+                  "name": "pack-f182361786691e462f6314842aeeaa2c4aca19e3.pack",
+                  "path": "cloud-provider-openstack.git/.git/objects/pack/pack-f182361786691e462f6314842aeeaa2c4aca19e3.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "cloud-provider-openstack.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "cloud-provider-openstack.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "cloud-provider-openstack.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "cloud-provider-openstack.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "cloud-provider-openstack.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "cloud-provider-openstack.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "cloud-provider-openstack.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "cloud-provider-openstack.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "cloud-provider-openstack.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "cloud-provider-openstack.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE.md": {
+          "name": "ISSUE_TEMPLATE.md",
+          "path": "cloud-provider-openstack.git/.github/ISSUE_TEMPLATE.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "PULL_REQUEST_TEMPLATE.md": {
+          "name": "PULL_REQUEST_TEMPLATE.md",
+          "path": "cloud-provider-openstack.git/.github/PULL_REQUEST_TEMPLATE.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "cloud-provider-openstack.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "pr.yaml": {
+              "name": "pr.yaml",
+              "path": "cloud-provider-openstack.git/.github/workflows/pr.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "release-cpo.yaml": {
+              "name": "release-cpo.yaml",
+              "path": "cloud-provider-openstack.git/.github/workflows/release-cpo.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "release.yaml": {
+              "name": "release.yaml",
+              "path": "cloud-provider-openstack.git/.github/workflows/release.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "cloud-provider-openstack.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".golangci.yaml": {
+      "name": ".golangci.yaml",
+      "path": "cloud-provider-openstack.git/.golangci.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "cloud-provider-openstack.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "cloud-provider-openstack.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Makefile": {
+      "name": "Makefile",
+      "path": "cloud-provider-openstack.git/Makefile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "OWNERS": {
+      "name": "OWNERS",
+      "path": "cloud-provider-openstack.git/OWNERS",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "cloud-provider-openstack.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "SECURITY.md": {
+      "name": "SECURITY.md",
+      "path": "cloud-provider-openstack.git/SECURITY.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "SECURITY_CONTACTS": {
+      "name": "SECURITY_CONTACTS",
+      "path": "cloud-provider-openstack.git/SECURITY_CONTACTS",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "bindep.txt": {
+      "name": "bindep.txt",
+      "path": "cloud-provider-openstack.git/bindep.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "charts": {
+      "name": "charts",
+      "path": "cloud-provider-openstack.git/charts",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "cinder-csi-plugin": {
+          "name": "cinder-csi-plugin",
+          "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".helmignore": {
+              "name": ".helmignore",
+              "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/.helmignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Chart.yaml": {
+              "name": "Chart.yaml",
+              "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/Chart.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "NOTES.txt": {
+                  "name": "NOTES.txt",
+                  "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/templates/NOTES.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers.tpl": {
+                  "name": "_helpers.tpl",
+                  "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/templates/_helpers.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cinder-csi-driver.yaml": {
+                  "name": "cinder-csi-driver.yaml",
+                  "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/templates/cinder-csi-driver.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerplugin-deployment.yaml": {
+                  "name": "controllerplugin-deployment.yaml",
+                  "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/templates/controllerplugin-deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerplugin-rbac.yaml": {
+                  "name": "controllerplugin-rbac.yaml",
+                  "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/templates/controllerplugin-rbac.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "custom_storageclass.yaml": {
+                  "name": "custom_storageclass.yaml",
+                  "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/templates/custom_storageclass.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nodeplugin-daemonset.yaml": {
+                  "name": "nodeplugin-daemonset.yaml",
+                  "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/templates/nodeplugin-daemonset.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nodeplugin-rbac.yaml": {
+                  "name": "nodeplugin-rbac.yaml",
+                  "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/templates/nodeplugin-rbac.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret.yaml": {
+                  "name": "secret.yaml",
+                  "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/templates/secret.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "storageclass.yaml": {
+                  "name": "storageclass.yaml",
+                  "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/templates/storageclass.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "values.yaml": {
+              "name": "values.yaml",
+              "path": "cloud-provider-openstack.git/charts/cinder-csi-plugin/values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "manila-csi-plugin": {
+          "name": "manila-csi-plugin",
+          "path": "cloud-provider-openstack.git/charts/manila-csi-plugin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Chart.yaml": {
+              "name": "Chart.yaml",
+              "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/Chart.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "_helpers.tpl": {
+                  "name": "_helpers.tpl",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/_helpers.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerplugin-clusterrole.yaml": {
+                  "name": "controllerplugin-clusterrole.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/controllerplugin-clusterrole.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerplugin-clusterrolebinding.yaml": {
+                  "name": "controllerplugin-clusterrolebinding.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/controllerplugin-clusterrolebinding.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerplugin-role.yaml": {
+                  "name": "controllerplugin-role.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/controllerplugin-role.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerplugin-rolebinding.yaml": {
+                  "name": "controllerplugin-rolebinding.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/controllerplugin-rolebinding.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerplugin-rules-clusterrole.yaml": {
+                  "name": "controllerplugin-rules-clusterrole.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/controllerplugin-rules-clusterrole.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerplugin-service.yaml": {
+                  "name": "controllerplugin-service.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/controllerplugin-service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerplugin-serviceaccount.yaml": {
+                  "name": "controllerplugin-serviceaccount.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/controllerplugin-serviceaccount.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerplugin-statefulset.yaml": {
+                  "name": "controllerplugin-statefulset.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/controllerplugin-statefulset.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "csidriver.yaml": {
+                  "name": "csidriver.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/csidriver.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nodeplugin-clusterrole.yaml": {
+                  "name": "nodeplugin-clusterrole.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/nodeplugin-clusterrole.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nodeplugin-clusterrolebinding.yaml": {
+                  "name": "nodeplugin-clusterrolebinding.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/nodeplugin-clusterrolebinding.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nodeplugin-daemonset.yaml": {
+                  "name": "nodeplugin-daemonset.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/nodeplugin-daemonset.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nodeplugin-rules-clusterrole.yaml": {
+                  "name": "nodeplugin-rules-clusterrole.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/nodeplugin-rules-clusterrole.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nodeplugin-serviceaccount.yaml": {
+                  "name": "nodeplugin-serviceaccount.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/nodeplugin-serviceaccount.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "runtimeconfig-cm.yaml": {
+                  "name": "runtimeconfig-cm.yaml",
+                  "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/runtimeconfig-cm.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "values.yaml": {
+              "name": "values.yaml",
+              "path": "cloud-provider-openstack.git/charts/manila-csi-plugin/values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "openstack-cloud-controller-manager": {
+          "name": "openstack-cloud-controller-manager",
+          "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Chart.yaml": {
+              "name": "Chart.yaml",
+              "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/Chart.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "_helpers.tpl": {
+                  "name": "_helpers.tpl",
+                  "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates/_helpers.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "clusterrole.yaml": {
+                  "name": "clusterrole.yaml",
+                  "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates/clusterrole.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "clusterrolebinding-sm.yaml": {
+                  "name": "clusterrolebinding-sm.yaml",
+                  "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates/clusterrolebinding-sm.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "clusterrolebinding.yaml": {
+                  "name": "clusterrolebinding.yaml",
+                  "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates/clusterrolebinding.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "daemonset.yaml": {
+                  "name": "daemonset.yaml",
+                  "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates/daemonset.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret.yaml": {
+                  "name": "secret.yaml",
+                  "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates/secret.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service-sm.yaml": {
+                  "name": "service-sm.yaml",
+                  "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates/service-sm.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "serviceaccount.yaml": {
+                  "name": "serviceaccount.yaml",
+                  "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates/serviceaccount.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "servicemonitor.yaml": {
+                  "name": "servicemonitor.yaml",
+                  "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates/servicemonitor.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "values.yaml": {
+              "name": "values.yaml",
+              "path": "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "cluster": {
+      "name": "cluster",
+      "path": "cloud-provider-openstack.git/cluster",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "images": {
+          "name": "images",
+          "path": "cloud-provider-openstack.git/cluster/images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "barbican-kms-plugin": {
+              "name": "barbican-kms-plugin",
+              "path": "cloud-provider-openstack.git/cluster/images/barbican-kms-plugin",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "cloud-provider-openstack.git/cluster/images/barbican-kms-plugin/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.build": {
+                  "name": "Dockerfile.build",
+                  "path": "cloud-provider-openstack.git/cluster/images/barbican-kms-plugin/Dockerfile.build",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "cinder-csi-plugin": {
+              "name": "cinder-csi-plugin",
+              "path": "cloud-provider-openstack.git/cluster/images/cinder-csi-plugin",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "cloud-provider-openstack.git/cluster/images/cinder-csi-plugin/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.build": {
+                  "name": "Dockerfile.build",
+                  "path": "cloud-provider-openstack.git/cluster/images/cinder-csi-plugin/Dockerfile.build",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "k8s-keystone-auth": {
+              "name": "k8s-keystone-auth",
+              "path": "cloud-provider-openstack.git/cluster/images/k8s-keystone-auth",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "cloud-provider-openstack.git/cluster/images/k8s-keystone-auth/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.build": {
+                  "name": "Dockerfile.build",
+                  "path": "cloud-provider-openstack.git/cluster/images/k8s-keystone-auth/Dockerfile.build",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "magnum-auto-healer": {
+              "name": "magnum-auto-healer",
+              "path": "cloud-provider-openstack.git/cluster/images/magnum-auto-healer",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "cloud-provider-openstack.git/cluster/images/magnum-auto-healer/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.build": {
+                  "name": "Dockerfile.build",
+                  "path": "cloud-provider-openstack.git/cluster/images/magnum-auto-healer/Dockerfile.build",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "manila-csi-plugin": {
+              "name": "manila-csi-plugin",
+              "path": "cloud-provider-openstack.git/cluster/images/manila-csi-plugin",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "cloud-provider-openstack.git/cluster/images/manila-csi-plugin/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.build": {
+                  "name": "Dockerfile.build",
+                  "path": "cloud-provider-openstack.git/cluster/images/manila-csi-plugin/Dockerfile.build",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "octavia-ingress-controller": {
+              "name": "octavia-ingress-controller",
+              "path": "cloud-provider-openstack.git/cluster/images/octavia-ingress-controller",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "cloud-provider-openstack.git/cluster/images/octavia-ingress-controller/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.build": {
+                  "name": "Dockerfile.build",
+                  "path": "cloud-provider-openstack.git/cluster/images/octavia-ingress-controller/Dockerfile.build",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "openstack-cloud-controller-manager": {
+              "name": "openstack-cloud-controller-manager",
+              "path": "cloud-provider-openstack.git/cluster/images/openstack-cloud-controller-manager",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "cloud-provider-openstack.git/cluster/images/openstack-cloud-controller-manager/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.build": {
+                  "name": "Dockerfile.build",
+                  "path": "cloud-provider-openstack.git/cluster/images/openstack-cloud-controller-manager/Dockerfile.build",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "cmd": {
+      "name": "cmd",
+      "path": "cloud-provider-openstack.git/cmd",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "barbican-kms-plugin": {
+          "name": "barbican-kms-plugin",
+          "path": "cloud-provider-openstack.git/cmd/barbican-kms-plugin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "cloud-provider-openstack.git/cmd/barbican-kms-plugin/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "cinder-csi-plugin": {
+          "name": "cinder-csi-plugin",
+          "path": "cloud-provider-openstack.git/cmd/cinder-csi-plugin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "cloud-provider-openstack.git/cmd/cinder-csi-plugin/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "client-keystone-auth": {
+          "name": "client-keystone-auth",
+          "path": "cloud-provider-openstack.git/cmd/client-keystone-auth",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "cloud-provider-openstack.git/cmd/client-keystone-auth/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "k8s-keystone-auth": {
+          "name": "k8s-keystone-auth",
+          "path": "cloud-provider-openstack.git/cmd/k8s-keystone-auth",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "cloud-provider-openstack.git/cmd/k8s-keystone-auth/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "magnum-auto-healer": {
+          "name": "magnum-auto-healer",
+          "path": "cloud-provider-openstack.git/cmd/magnum-auto-healer",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "cloud-provider-openstack.git/cmd/magnum-auto-healer/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "manila-csi-plugin": {
+          "name": "manila-csi-plugin",
+          "path": "cloud-provider-openstack.git/cmd/manila-csi-plugin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "cloud-provider-openstack.git/cmd/manila-csi-plugin/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "octavia-ingress-controller": {
+          "name": "octavia-ingress-controller",
+          "path": "cloud-provider-openstack.git/cmd/octavia-ingress-controller",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "cloud-provider-openstack.git/cmd/octavia-ingress-controller/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "openstack-cloud-controller-manager": {
+          "name": "openstack-cloud-controller-manager",
+          "path": "cloud-provider-openstack.git/cmd/openstack-cloud-controller-manager",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "cloud-provider-openstack.git/cmd/openstack-cloud-controller-manager/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "tests": {
+          "name": "tests",
+          "path": "cloud-provider-openstack.git/cmd/tests",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "manila-csi-e2e-suite": {
+              "name": "manila-csi-e2e-suite",
+              "path": "cloud-provider-openstack.git/cmd/tests/manila-csi-e2e-suite",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "manila_csi_e2e_suite_test.go": {
+                  "name": "manila_csi_e2e_suite_test.go",
+                  "path": "cloud-provider-openstack.git/cmd/tests/manila-csi-e2e-suite/manila_csi_e2e_suite_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "code-of-conduct.md": {
+      "name": "code-of-conduct.md",
+      "path": "cloud-provider-openstack.git/code-of-conduct.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docs": {
+      "name": "docs",
+      "path": "cloud-provider-openstack.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "barbican-kms-plugin": {
+          "name": "barbican-kms-plugin",
+          "path": "cloud-provider-openstack.git/docs/barbican-kms-plugin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "using-barbican-kms-plugin.md": {
+              "name": "using-barbican-kms-plugin.md",
+              "path": "cloud-provider-openstack.git/docs/barbican-kms-plugin/using-barbican-kms-plugin.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "cinder-csi-plugin": {
+          "name": "cinder-csi-plugin",
+          "path": "cloud-provider-openstack.git/docs/cinder-csi-plugin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "csc-tool.md": {
+              "name": "csc-tool.md",
+              "path": "cloud-provider-openstack.git/docs/cinder-csi-plugin/csc-tool.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "development.md": {
+              "name": "development.md",
+              "path": "cloud-provider-openstack.git/docs/cinder-csi-plugin/development.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "examples.md": {
+              "name": "examples.md",
+              "path": "cloud-provider-openstack.git/docs/cinder-csi-plugin/examples.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "features.md": {
+              "name": "features.md",
+              "path": "cloud-provider-openstack.git/docs/cinder-csi-plugin/features.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sidecarcompatibility.md": {
+              "name": "sidecarcompatibility.md",
+              "path": "cloud-provider-openstack.git/docs/cinder-csi-plugin/sidecarcompatibility.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "troubleshooting.md": {
+              "name": "troubleshooting.md",
+              "path": "cloud-provider-openstack.git/docs/cinder-csi-plugin/troubleshooting.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "using-cinder-csi-plugin.md": {
+              "name": "using-cinder-csi-plugin.md",
+              "path": "cloud-provider-openstack.git/docs/cinder-csi-plugin/using-cinder-csi-plugin.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "developers-guide.md": {
+          "name": "developers-guide.md",
+          "path": "cloud-provider-openstack.git/docs/developers-guide.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "keystone-auth": {
+          "name": "keystone-auth",
+          "path": "cloud-provider-openstack.git/docs/keystone-auth",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "using-auth-data-synchronization.md": {
+              "name": "using-auth-data-synchronization.md",
+              "path": "cloud-provider-openstack.git/docs/keystone-auth/using-auth-data-synchronization.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "using-client-keystone-auth.md": {
+              "name": "using-client-keystone-auth.md",
+              "path": "cloud-provider-openstack.git/docs/keystone-auth/using-client-keystone-auth.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "using-keystone-webhook-authenticator-and-authorizer.md": {
+              "name": "using-keystone-webhook-authenticator-and-authorizer.md",
+              "path": "cloud-provider-openstack.git/docs/keystone-auth/using-keystone-webhook-authenticator-and-authorizer.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "magnum-auto-healer": {
+          "name": "magnum-auto-healer",
+          "path": "cloud-provider-openstack.git/docs/magnum-auto-healer",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "using-magnum-auto-healer.md": {
+              "name": "using-magnum-auto-healer.md",
+              "path": "cloud-provider-openstack.git/docs/magnum-auto-healer/using-magnum-auto-healer.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "manila-csi-plugin": {
+          "name": "manila-csi-plugin",
+          "path": "cloud-provider-openstack.git/docs/manila-csi-plugin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "developers-csi-manila.md": {
+              "name": "developers-csi-manila.md",
+              "path": "cloud-provider-openstack.git/docs/manila-csi-plugin/developers-csi-manila.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "using-manila-csi-plugin.md": {
+              "name": "using-manila-csi-plugin.md",
+              "path": "cloud-provider-openstack.git/docs/manila-csi-plugin/using-manila-csi-plugin.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "metrics.md": {
+          "name": "metrics.md",
+          "path": "cloud-provider-openstack.git/docs/metrics.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "octavia-ingress-controller": {
+          "name": "octavia-ingress-controller",
+          "path": "cloud-provider-openstack.git/docs/octavia-ingress-controller",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "using-octavia-ingress-controller.md": {
+              "name": "using-octavia-ingress-controller.md",
+              "path": "cloud-provider-openstack.git/docs/octavia-ingress-controller/using-octavia-ingress-controller.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "openstack-cloud-controller-manager": {
+          "name": "openstack-cloud-controller-manager",
+          "path": "cloud-provider-openstack.git/docs/openstack-cloud-controller-manager",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "expose-applications-using-loadbalancer-type-service.md": {
+              "name": "expose-applications-using-loadbalancer-type-service.md",
+              "path": "cloud-provider-openstack.git/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "migrate-to-ccm-with-csimigration.md": {
+              "name": "migrate-to-ccm-with-csimigration.md",
+              "path": "cloud-provider-openstack.git/docs/openstack-cloud-controller-manager/migrate-to-ccm-with-csimigration.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "using-openstack-cloud-controller-manager.md": {
+              "name": "using-openstack-cloud-controller-manager.md",
+              "path": "cloud-provider-openstack.git/docs/openstack-cloud-controller-manager/using-openstack-cloud-controller-manager.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "examples": {
+      "name": "examples",
+      "path": "cloud-provider-openstack.git/examples",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "cinder-csi-plugin": {
+          "name": "cinder-csi-plugin",
+          "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "block": {
+              "name": "block",
+              "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/block",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "block.yaml": {
+                  "name": "block.yaml",
+                  "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/block/block.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "clone": {
+              "name": "clone",
+              "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/clone",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "example-clone.yaml": {
+                  "name": "example-clone.yaml",
+                  "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/clone/example-clone.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sc.yaml": {
+                  "name": "sc.yaml",
+                  "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/clone/sc.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "source-pvc.yaml": {
+                  "name": "source-pvc.yaml",
+                  "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/clone/source-pvc.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "ephemeral": {
+              "name": "ephemeral",
+              "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/ephemeral",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "csi-ephemeral-volumes-example.yaml": {
+                  "name": "csi-ephemeral-volumes-example.yaml",
+                  "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/ephemeral/csi-ephemeral-volumes-example.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "generic-ephemeral-volumes.yaml": {
+                  "name": "generic-ephemeral-volumes.yaml",
+                  "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/ephemeral/generic-ephemeral-volumes.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "nginx.yaml": {
+              "name": "nginx.yaml",
+              "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/nginx.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "resize": {
+              "name": "resize",
+              "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/resize",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "example.yaml": {
+                  "name": "example.yaml",
+                  "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/resize/example.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "snapshot": {
+              "name": "snapshot",
+              "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/snapshot",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "example.yaml": {
+                  "name": "example.yaml",
+                  "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/snapshot/example.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "snapshotcreate.yaml": {
+                  "name": "snapshotcreate.yaml",
+                  "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/snapshot/snapshotcreate.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "snapshotrestore.yaml": {
+                  "name": "snapshotrestore.yaml",
+                  "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/snapshot/snapshotrestore.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "topology": {
+              "name": "topology",
+              "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/topology",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "example.yaml": {
+                  "name": "example.yaml",
+                  "path": "cloud-provider-openstack.git/examples/cinder-csi-plugin/topology/example.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "loadbalancers": {
+          "name": "loadbalancers",
+          "path": "cloud-provider-openstack.git/examples/loadbalancers",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.MD": {
+              "name": "README.MD",
+              "path": "cloud-provider-openstack.git/examples/loadbalancers/README.MD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "external-http-nginx.yaml": {
+              "name": "external-http-nginx.yaml",
+              "path": "cloud-provider-openstack.git/examples/loadbalancers/external-http-nginx.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "internal-http-nginx.yaml": {
+              "name": "internal-http-nginx.yaml",
+              "path": "cloud-provider-openstack.git/examples/loadbalancers/internal-http-nginx.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "manila-csi-plugin": {
+          "name": "manila-csi-plugin",
+          "path": "cloud-provider-openstack.git/examples/manila-csi-plugin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "exec-bash.sh": {
+              "name": "exec-bash.sh",
+              "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/exec-bash.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logs.sh": {
+              "name": "logs.sh",
+              "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/logs.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nfs": {
+              "name": "nfs",
+              "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "dynamic-provisioning": {
+                  "name": "dynamic-provisioning",
+                  "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/dynamic-provisioning",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "pod.yaml": {
+                      "name": "pod.yaml",
+                      "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/dynamic-provisioning/pod.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "pvc.yaml": {
+                      "name": "pvc.yaml",
+                      "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/dynamic-provisioning/pvc.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "storageclass.yaml": {
+                      "name": "storageclass.yaml",
+                      "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/dynamic-provisioning/storageclass.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "secrets.yaml": {
+                  "name": "secrets.yaml",
+                  "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/secrets.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "snapshot": {
+                  "name": "snapshot",
+                  "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/snapshot",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "pod.yaml": {
+                      "name": "pod.yaml",
+                      "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/snapshot/pod.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "snapshotclass.yaml": {
+                      "name": "snapshotclass.yaml",
+                      "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/snapshot/snapshotclass.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "snapshotcreate.yaml": {
+                      "name": "snapshotcreate.yaml",
+                      "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/snapshot/snapshotcreate.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "snapshotrestore.yaml": {
+                      "name": "snapshotrestore.yaml",
+                      "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/snapshot/snapshotrestore.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "static-provisioning": {
+                  "name": "static-provisioning",
+                  "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/static-provisioning",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "pod.yaml": {
+                      "name": "pod.yaml",
+                      "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/static-provisioning/pod.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "preprovisioned-pvc.yaml": {
+                      "name": "preprovisioned-pvc.yaml",
+                      "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/static-provisioning/preprovisioned-pvc.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "topology-aware": {
+                  "name": "topology-aware",
+                  "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/topology-aware",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "pod.yaml": {
+                      "name": "pod.yaml",
+                      "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/topology-aware/pod.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "pvc.yaml": {
+                      "name": "pvc.yaml",
+                      "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/topology-aware/pvc.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "storageclass.yaml": {
+                      "name": "storageclass.yaml",
+                      "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/nfs/topology-aware/storageclass.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "runtimeconfig-cm.yaml": {
+              "name": "runtimeconfig-cm.yaml",
+              "path": "cloud-provider-openstack.git/examples/manila-csi-plugin/runtimeconfig-cm.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "webhook": {
+          "name": "webhook",
+          "path": "cloud-provider-openstack.git/examples/webhook",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "keystone-apiserver-webhook.yaml": {
+              "name": "keystone-apiserver-webhook.yaml",
+              "path": "cloud-provider-openstack.git/examples/webhook/keystone-apiserver-webhook.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "keystone-deployment.yaml": {
+              "name": "keystone-deployment.yaml",
+              "path": "cloud-provider-openstack.git/examples/webhook/keystone-deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "keystone-policy-configmap.yaml": {
+              "name": "keystone-policy-configmap.yaml",
+              "path": "cloud-provider-openstack.git/examples/webhook/keystone-policy-configmap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "keystone-rbac.yaml": {
+              "name": "keystone-rbac.yaml",
+              "path": "cloud-provider-openstack.git/examples/webhook/keystone-rbac.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "keystone-service.yaml": {
+              "name": "keystone-service.yaml",
+              "path": "cloud-provider-openstack.git/examples/webhook/keystone-service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "policy.json": {
+              "name": "policy.json",
+              "path": "cloud-provider-openstack.git/examples/webhook/policy.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "cloud-provider-openstack.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "cloud-provider-openstack.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "hack": {
+      "name": "hack",
+      "path": "cloud-provider-openstack.git/hack",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "make.sh": {
+          "name": "make.sh",
+          "path": "cloud-provider-openstack.git/hack/make.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "update-gofmt.sh": {
+          "name": "update-gofmt.sh",
+          "path": "cloud-provider-openstack.git/hack/update-gofmt.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "manifests": {
+      "name": "manifests",
+      "path": "cloud-provider-openstack.git/manifests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "barbican-kms": {
+          "name": "barbican-kms",
+          "path": "cloud-provider-openstack.git/manifests/barbican-kms",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "encryption-config.yaml": {
+              "name": "encryption-config.yaml",
+              "path": "cloud-provider-openstack.git/manifests/barbican-kms/encryption-config.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pod.yaml": {
+              "name": "pod.yaml",
+              "path": "cloud-provider-openstack.git/manifests/barbican-kms/pod.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "cinder-csi-plugin": {
+          "name": "cinder-csi-plugin",
+          "path": "cloud-provider-openstack.git/manifests/cinder-csi-plugin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cinder-csi-controllerplugin-rbac.yaml": {
+              "name": "cinder-csi-controllerplugin-rbac.yaml",
+              "path": "cloud-provider-openstack.git/manifests/cinder-csi-plugin/cinder-csi-controllerplugin-rbac.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cinder-csi-controllerplugin.yaml": {
+              "name": "cinder-csi-controllerplugin.yaml",
+              "path": "cloud-provider-openstack.git/manifests/cinder-csi-plugin/cinder-csi-controllerplugin.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cinder-csi-nodeplugin-rbac.yaml": {
+              "name": "cinder-csi-nodeplugin-rbac.yaml",
+              "path": "cloud-provider-openstack.git/manifests/cinder-csi-plugin/cinder-csi-nodeplugin-rbac.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cinder-csi-nodeplugin.yaml": {
+              "name": "cinder-csi-nodeplugin.yaml",
+              "path": "cloud-provider-openstack.git/manifests/cinder-csi-plugin/cinder-csi-nodeplugin.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "csi-cinder-driver.yaml": {
+              "name": "csi-cinder-driver.yaml",
+              "path": "cloud-provider-openstack.git/manifests/cinder-csi-plugin/csi-cinder-driver.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "csi-secret-cinderplugin.yaml": {
+              "name": "csi-secret-cinderplugin.yaml",
+              "path": "cloud-provider-openstack.git/manifests/cinder-csi-plugin/csi-secret-cinderplugin.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "controller-manager": {
+          "name": "controller-manager",
+          "path": "cloud-provider-openstack.git/manifests/controller-manager",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cloud-config": {
+              "name": "cloud-config",
+              "path": "cloud-provider-openstack.git/manifests/controller-manager/cloud-config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cloud-controller-manager-role-bindings.yaml": {
+              "name": "cloud-controller-manager-role-bindings.yaml",
+              "path": "cloud-provider-openstack.git/manifests/controller-manager/cloud-controller-manager-role-bindings.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cloud-controller-manager-roles.yaml": {
+              "name": "cloud-controller-manager-roles.yaml",
+              "path": "cloud-provider-openstack.git/manifests/controller-manager/cloud-controller-manager-roles.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kubeadm.conf": {
+              "name": "kubeadm.conf",
+              "path": "cloud-provider-openstack.git/manifests/controller-manager/kubeadm.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "openstack-cloud-controller-manager-ds.yaml": {
+              "name": "openstack-cloud-controller-manager-ds.yaml",
+              "path": "cloud-provider-openstack.git/manifests/controller-manager/openstack-cloud-controller-manager-ds.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "openstack-cloud-controller-manager-pod.yaml": {
+              "name": "openstack-cloud-controller-manager-pod.yaml",
+              "path": "cloud-provider-openstack.git/manifests/controller-manager/openstack-cloud-controller-manager-pod.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "magnum-auto-healer": {
+          "name": "magnum-auto-healer",
+          "path": "cloud-provider-openstack.git/manifests/magnum-auto-healer",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "magnum-auto-healer.yaml": {
+              "name": "magnum-auto-healer.yaml",
+              "path": "cloud-provider-openstack.git/manifests/magnum-auto-healer/magnum-auto-healer.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "manila-csi-plugin": {
+          "name": "manila-csi-plugin",
+          "path": "cloud-provider-openstack.git/manifests/manila-csi-plugin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "csi-controllerplugin-rbac.yaml": {
+              "name": "csi-controllerplugin-rbac.yaml",
+              "path": "cloud-provider-openstack.git/manifests/manila-csi-plugin/csi-controllerplugin-rbac.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "csi-controllerplugin.yaml": {
+              "name": "csi-controllerplugin.yaml",
+              "path": "cloud-provider-openstack.git/manifests/manila-csi-plugin/csi-controllerplugin.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "csi-nodeplugin-rbac.yaml": {
+              "name": "csi-nodeplugin-rbac.yaml",
+              "path": "cloud-provider-openstack.git/manifests/manila-csi-plugin/csi-nodeplugin-rbac.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "csi-nodeplugin.yaml": {
+              "name": "csi-nodeplugin.yaml",
+              "path": "cloud-provider-openstack.git/manifests/manila-csi-plugin/csi-nodeplugin.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "csidriver.yaml": {
+              "name": "csidriver.yaml",
+              "path": "cloud-provider-openstack.git/manifests/manila-csi-plugin/csidriver.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "pkg": {
+      "name": "pkg",
+      "path": "cloud-provider-openstack.git/pkg",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "autohealing": {
+          "name": "autohealing",
+          "path": "cloud-provider-openstack.git/pkg/autohealing",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "OWNERS": {
+              "name": "OWNERS",
+              "path": "cloud-provider-openstack.git/pkg/autohealing/OWNERS",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cloudprovider": {
+              "name": "cloudprovider",
+              "path": "cloud-provider-openstack.git/pkg/autohealing/cloudprovider",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cloudprovider.go": {
+                  "name": "cloudprovider.go",
+                  "path": "cloud-provider-openstack.git/pkg/autohealing/cloudprovider/cloudprovider.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "openstack": {
+                  "name": "openstack",
+                  "path": "cloud-provider-openstack.git/pkg/autohealing/cloudprovider/openstack",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "provider.go": {
+                      "name": "provider.go",
+                      "path": "cloud-provider-openstack.git/pkg/autohealing/cloudprovider/openstack/provider.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "register": {
+                  "name": "register",
+                  "path": "cloud-provider-openstack.git/pkg/autohealing/cloudprovider/register",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "register.go": {
+                      "name": "register.go",
+                      "path": "cloud-provider-openstack.git/pkg/autohealing/cloudprovider/register/register.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "cmd": {
+              "name": "cmd",
+              "path": "cloud-provider-openstack.git/pkg/autohealing/cmd",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "root.go": {
+                  "name": "root.go",
+                  "path": "cloud-provider-openstack.git/pkg/autohealing/cmd/root.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "config": {
+              "name": "config",
+              "path": "cloud-provider-openstack.git/pkg/autohealing/config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.go": {
+                  "name": "config.go",
+                  "path": "cloud-provider-openstack.git/pkg/autohealing/config/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "controller": {
+              "name": "controller",
+              "path": "cloud-provider-openstack.git/pkg/autohealing/controller",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "controller.go": {
+                  "name": "controller.go",
+                  "path": "cloud-provider-openstack.git/pkg/autohealing/controller/controller.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "healthcheck": {
+              "name": "healthcheck",
+              "path": "cloud-provider-openstack.git/pkg/autohealing/healthcheck",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "healthcheck.go": {
+                  "name": "healthcheck.go",
+                  "path": "cloud-provider-openstack.git/pkg/autohealing/healthcheck/healthcheck.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "plugin_endpoint.go": {
+                  "name": "plugin_endpoint.go",
+                  "path": "cloud-provider-openstack.git/pkg/autohealing/healthcheck/plugin_endpoint.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "plugin_nodecondition.go": {
+                  "name": "plugin_nodecondition.go",
+                  "path": "cloud-provider-openstack.git/pkg/autohealing/healthcheck/plugin_nodecondition.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "utils": {
+              "name": "utils",
+              "path": "cloud-provider-openstack.git/pkg/autohealing/utils",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "utils.go": {
+                  "name": "utils.go",
+                  "path": "cloud-provider-openstack.git/pkg/autohealing/utils/utils.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "client": {
+          "name": "client",
+          "path": "cloud-provider-openstack.git/pkg/client",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "client.go": {
+              "name": "client.go",
+              "path": "cloud-provider-openstack.git/pkg/client/client.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service.go": {
+              "name": "service.go",
+              "path": "cloud-provider-openstack.git/pkg/client/service.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "csi": {
+          "name": "csi",
+          "path": "cloud-provider-openstack.git/pkg/csi",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cinder": {
+              "name": "cinder",
+              "path": "cloud-provider-openstack.git/pkg/csi/cinder",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "controllerserver.go": {
+                  "name": "controllerserver.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/controllerserver.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerserver_test.go": {
+                  "name": "controllerserver_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/controllerserver_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "driver.go": {
+                  "name": "driver.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/driver.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "driver_test.go": {
+                  "name": "driver_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/driver_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "etc": {
+                  "name": "etc",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/etc",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "cloud.conf": {
+                      "name": "cloud.conf",
+                      "path": "cloud-provider-openstack.git/pkg/csi/cinder/etc/cloud.conf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "fake.go": {
+                  "name": "fake.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/fake.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "identityserver.go": {
+                  "name": "identityserver.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/identityserver.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "identityserver_test.go": {
+                  "name": "identityserver_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/identityserver_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nodeserver.go": {
+                  "name": "nodeserver.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/nodeserver.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nodeserver_test.go": {
+                  "name": "nodeserver_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/nodeserver_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "openstack": {
+                  "name": "openstack",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/openstack",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "fixtures": {
+                      "name": "fixtures",
+                      "path": "cloud-provider-openstack.git/pkg/csi/cinder/openstack/fixtures",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "clouds.yaml": {
+                          "name": "clouds.yaml",
+                          "path": "cloud-provider-openstack.git/pkg/csi/cinder/openstack/fixtures/clouds.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "openstack.go": {
+                      "name": "openstack.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/cinder/openstack/openstack.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "openstack_instances.go": {
+                      "name": "openstack_instances.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/cinder/openstack/openstack_instances.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "openstack_mock.go": {
+                      "name": "openstack_mock.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/cinder/openstack/openstack_mock.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "openstack_snapshots.go": {
+                      "name": "openstack_snapshots.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/cinder/openstack/openstack_snapshots.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "openstack_test.go": {
+                      "name": "openstack_test.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/cinder/openstack/openstack_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "openstack_volumes.go": {
+                      "name": "openstack_volumes.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/cinder/openstack/openstack_volumes.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "server.go": {
+                  "name": "server.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/server.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "utils.go": {
+                  "name": "utils.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/utils.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "utils_test.go": {
+                  "name": "utils_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/cinder/utils_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "manila": {
+              "name": "manila",
+              "path": "cloud-provider-openstack.git/pkg/csi/manila",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "OWNERS": {
+                  "name": "OWNERS",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/OWNERS",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "adapters.go": {
+                  "name": "adapters.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/adapters.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "capabilities": {
+                  "name": "capabilities",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/capabilities",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "manilacapabilities.go": {
+                      "name": "manilacapabilities.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/capabilities/manilacapabilities.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "compatibility": {
+                  "name": "compatibility",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/compatibility",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "compatibility.go": {
+                      "name": "compatibility.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/compatibility/compatibility.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "controllerserver.go": {
+                  "name": "controllerserver.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/controllerserver.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerserver_test.go": {
+                  "name": "controllerserver_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/controllerserver_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "csiclient": {
+                  "name": "csiclient",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/csiclient",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "builder.go": {
+                      "name": "builder.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/csiclient/builder.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "client.go": {
+                      "name": "client.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/csiclient/client.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "interface.go": {
+                      "name": "interface.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/csiclient/interface.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "csiclient.go": {
+                  "name": "csiclient.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/csiclient.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "driver.go": {
+                  "name": "driver.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/driver.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "identityserver.go": {
+                  "name": "identityserver.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/identityserver.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "manilaclient": {
+                  "name": "manilaclient",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/manilaclient",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "builder.go": {
+                      "name": "builder.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/manilaclient/builder.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "client.go": {
+                      "name": "client.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/manilaclient/client.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "interface.go": {
+                      "name": "interface.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/manilaclient/interface.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "nodeserver.go": {
+                  "name": "nodeserver.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/nodeserver.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "options": {
+                  "name": "options",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/options",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "compatibilityoptions.go": {
+                      "name": "compatibilityoptions.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/options/compatibilityoptions.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "openstackoptions.go": {
+                      "name": "openstackoptions.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/options/openstackoptions.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "shareoptions.go": {
+                      "name": "shareoptions.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/options/shareoptions.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "runtimeconfig": {
+                  "name": "runtimeconfig",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/runtimeconfig",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "nfsconfig.go": {
+                      "name": "nfsconfig.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/runtimeconfig/nfsconfig.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "runtimeconfig.go": {
+                      "name": "runtimeconfig.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/runtimeconfig/runtimeconfig.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "share.go": {
+                  "name": "share.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/share.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "shareadapters": {
+                  "name": "shareadapters",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/shareadapters",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "cephfs.go": {
+                      "name": "cephfs.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/shareadapters/cephfs.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nfs.go": {
+                      "name": "nfs.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/shareadapters/nfs.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "shareadapter.go": {
+                      "name": "shareadapter.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/shareadapters/shareadapter.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "util.go": {
+                      "name": "util.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/shareadapters/util.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "snapshot.go": {
+                  "name": "snapshot.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/snapshot.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "util": {
+                  "name": "util",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/util",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "exportlocation.go": {
+                      "name": "exportlocation.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/util/exportlocation.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "exportlocation_test.go": {
+                      "name": "exportlocation_test.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/util/exportlocation_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "util.go": {
+                  "name": "util.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/util.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "validator": {
+                  "name": "validator",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/validator",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "dependsexpr.go": {
+                      "name": "dependsexpr.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/validator/dependsexpr.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "identity.go": {
+                      "name": "identity.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/validator/identity.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "matchexpr.go": {
+                      "name": "matchexpr.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/validator/matchexpr.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "precludesexpr.go": {
+                      "name": "precludesexpr.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/validator/precludesexpr.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "util.go": {
+                      "name": "util.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/validator/util.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "validator.go": {
+                      "name": "validator.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/validator/validator.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "validator_test.go": {
+                      "name": "validator_test.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/validator/validator_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "valueexpr.go": {
+                      "name": "valueexpr.go",
+                      "path": "cloud-provider-openstack.git/pkg/csi/manila/validator/valueexpr.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "volumesource.go": {
+                  "name": "volumesource.go",
+                  "path": "cloud-provider-openstack.git/pkg/csi/manila/volumesource.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "identity": {
+          "name": "identity",
+          "path": "cloud-provider-openstack.git/pkg/identity",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "keystone": {
+              "name": "keystone",
+              "path": "cloud-provider-openstack.git/pkg/identity/keystone",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "authenticator.go": {
+                  "name": "authenticator.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/authenticator.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "authenticator_test.go": {
+                  "name": "authenticator_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/authenticator_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "authorizer.go": {
+                  "name": "authorizer.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/authorizer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "authorizer_test.go": {
+                  "name": "authorizer_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/authorizer_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "authorizer_test_policy.json": {
+                  "name": "authorizer_test_policy.json",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/authorizer_test_policy.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "authorizer_test_policy_version2.json": {
+                  "name": "authorizer_test_policy_version2.json",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/authorizer_test_policy_version2.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config.go": {
+                  "name": "config.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "keystone.go": {
+                  "name": "keystone.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/keystone.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "keystone_test.go": {
+                  "name": "keystone_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/keystone_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mock_IKeystone.go": {
+                  "name": "mock_IKeystone.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/mock_IKeystone.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "policy.go": {
+                  "name": "policy.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/policy.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync.go": {
+                  "name": "sync.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/sync.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync_test.go": {
+                  "name": "sync_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/sync_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync_test.yaml": {
+                  "name": "sync_test.yaml",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/sync_test.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "token_getter.go": {
+                  "name": "token_getter.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/token_getter.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "token_getter_test.go": {
+                  "name": "token_getter_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/identity/keystone/token_getter_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "ingress": {
+          "name": "ingress",
+          "path": "cloud-provider-openstack.git/pkg/ingress",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cmd": {
+              "name": "cmd",
+              "path": "cloud-provider-openstack.git/pkg/ingress/cmd",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "root.go": {
+                  "name": "root.go",
+                  "path": "cloud-provider-openstack.git/pkg/ingress/cmd/root.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "config": {
+              "name": "config",
+              "path": "cloud-provider-openstack.git/pkg/ingress/config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.go": {
+                  "name": "config.go",
+                  "path": "cloud-provider-openstack.git/pkg/ingress/config/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "controller": {
+              "name": "controller",
+              "path": "cloud-provider-openstack.git/pkg/ingress/controller",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "controller.go": {
+                  "name": "controller.go",
+                  "path": "cloud-provider-openstack.git/pkg/ingress/controller/controller.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "openstack": {
+                  "name": "openstack",
+                  "path": "cloud-provider-openstack.git/pkg/ingress/controller/openstack",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "client.go": {
+                      "name": "client.go",
+                      "path": "cloud-provider-openstack.git/pkg/ingress/controller/openstack/client.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "neutron.go": {
+                      "name": "neutron.go",
+                      "path": "cloud-provider-openstack.git/pkg/ingress/controller/openstack/neutron.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "octavia.go": {
+                      "name": "octavia.go",
+                      "path": "cloud-provider-openstack.git/pkg/ingress/controller/openstack/octavia.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "utils": {
+              "name": "utils",
+              "path": "cloud-provider-openstack.git/pkg/ingress/utils",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "utils.go": {
+                  "name": "utils.go",
+                  "path": "cloud-provider-openstack.git/pkg/ingress/utils/utils.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "kms": {
+          "name": "kms",
+          "path": "cloud-provider-openstack.git/pkg/kms",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "barbican": {
+              "name": "barbican",
+              "path": "cloud-provider-openstack.git/pkg/kms/barbican",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "barbican.go": {
+                  "name": "barbican.go",
+                  "path": "cloud-provider-openstack.git/pkg/kms/barbican/barbican.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fake_barbican.go": {
+                  "name": "fake_barbican.go",
+                  "path": "cloud-provider-openstack.git/pkg/kms/barbican/fake_barbican.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "client": {
+              "name": "client",
+              "path": "cloud-provider-openstack.git/pkg/kms/client",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "client.go": {
+                  "name": "client.go",
+                  "path": "cloud-provider-openstack.git/pkg/kms/client/client.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "encryption": {
+              "name": "encryption",
+              "path": "cloud-provider-openstack.git/pkg/kms/encryption",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "aescbc": {
+                  "name": "aescbc",
+                  "path": "cloud-provider-openstack.git/pkg/kms/encryption/aescbc",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "aescbc.go": {
+                      "name": "aescbc.go",
+                      "path": "cloud-provider-openstack.git/pkg/kms/encryption/aescbc/aescbc.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "aescbc_test.go": {
+                      "name": "aescbc_test.go",
+                      "path": "cloud-provider-openstack.git/pkg/kms/encryption/aescbc/aescbc_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "server": {
+              "name": "server",
+              "path": "cloud-provider-openstack.git/pkg/kms/server",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "server.go": {
+                  "name": "server.go",
+                  "path": "cloud-provider-openstack.git/pkg/kms/server/server.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "server_test.go": {
+                  "name": "server_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/kms/server/server_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "metrics": {
+          "name": "metrics",
+          "path": "cloud-provider-openstack.git/pkg/metrics",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "metrics.go": {
+              "name": "metrics.go",
+              "path": "cloud-provider-openstack.git/pkg/metrics/metrics.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metrics_api.go": {
+              "name": "metrics_api.go",
+              "path": "cloud-provider-openstack.git/pkg/metrics/metrics_api.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metrics_reconcile.go": {
+              "name": "metrics_reconcile.go",
+              "path": "cloud-provider-openstack.git/pkg/metrics/metrics_reconcile.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "openstack": {
+          "name": "openstack",
+          "path": "cloud-provider-openstack.git/pkg/openstack",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "OWNERS": {
+              "name": "OWNERS",
+              "path": "cloud-provider-openstack.git/pkg/openstack/OWNERS",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "doc.go": {
+              "name": "doc.go",
+              "path": "cloud-provider-openstack.git/pkg/openstack/doc.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "instances.go": {
+              "name": "instances.go",
+              "path": "cloud-provider-openstack.git/pkg/openstack/instances.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "instances_test.go": {
+              "name": "instances_test.go",
+              "path": "cloud-provider-openstack.git/pkg/openstack/instances_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "loadbalancer.go": {
+              "name": "loadbalancer.go",
+              "path": "cloud-provider-openstack.git/pkg/openstack/loadbalancer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "loadbalancer_test.go": {
+              "name": "loadbalancer_test.go",
+              "path": "cloud-provider-openstack.git/pkg/openstack/loadbalancer_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "openstack.go": {
+              "name": "openstack.go",
+              "path": "cloud-provider-openstack.git/pkg/openstack/openstack.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "openstack_loadbalancer_subnet_match_test.go": {
+              "name": "openstack_loadbalancer_subnet_match_test.go",
+              "path": "cloud-provider-openstack.git/pkg/openstack/openstack_loadbalancer_subnet_match_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "openstack_test.go": {
+              "name": "openstack_test.go",
+              "path": "cloud-provider-openstack.git/pkg/openstack/openstack_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "routes.go": {
+              "name": "routes.go",
+              "path": "cloud-provider-openstack.git/pkg/openstack/routes.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "routes_test.go": {
+              "name": "routes_test.go",
+              "path": "cloud-provider-openstack.git/pkg/openstack/routes_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "util": {
+          "name": "util",
+          "path": "cloud-provider-openstack.git/pkg/util",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "blockdevice": {
+              "name": "blockdevice",
+              "path": "cloud-provider-openstack.git/pkg/util/blockdevice",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "blockdevice_linux.go": {
+                  "name": "blockdevice_linux.go",
+                  "path": "cloud-provider-openstack.git/pkg/util/blockdevice/blockdevice_linux.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "blockdevice_unsupported.go": {
+                  "name": "blockdevice_unsupported.go",
+                  "path": "cloud-provider-openstack.git/pkg/util/blockdevice/blockdevice_unsupported.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "errors": {
+              "name": "errors",
+              "path": "cloud-provider-openstack.git/pkg/util/errors",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "errors.go": {
+                  "name": "errors.go",
+                  "path": "cloud-provider-openstack.git/pkg/util/errors/errors.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "metadata": {
+              "name": "metadata",
+              "path": "cloud-provider-openstack.git/pkg/util/metadata",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "metadata.go": {
+                  "name": "metadata.go",
+                  "path": "cloud-provider-openstack.git/pkg/util/metadata/metadata.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "metadata_mock.go": {
+                  "name": "metadata_mock.go",
+                  "path": "cloud-provider-openstack.git/pkg/util/metadata/metadata_mock.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "metadata_test.go": {
+                  "name": "metadata_test.go",
+                  "path": "cloud-provider-openstack.git/pkg/util/metadata/metadata_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mount": {
+              "name": "mount",
+              "path": "cloud-provider-openstack.git/pkg/util/mount",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "mount.go": {
+                  "name": "mount.go",
+                  "path": "cloud-provider-openstack.git/pkg/util/mount/mount.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mount_mock.go": {
+                  "name": "mount_mock.go",
+                  "path": "cloud-provider-openstack.git/pkg/util/mount/mount_mock.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "net": {
+              "name": "net",
+              "path": "cloud-provider-openstack.git/pkg/util/net",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "sets": {
+                  "name": "sets",
+                  "path": "cloud-provider-openstack.git/pkg/util/net/sets",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ipnet.go": {
+                      "name": "ipnet.go",
+                      "path": "cloud-provider-openstack.git/pkg/util/net/sets/ipnet.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "openstack": {
+              "name": "openstack",
+              "path": "cloud-provider-openstack.git/pkg/util/openstack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "keymanager.go": {
+                  "name": "keymanager.go",
+                  "path": "cloud-provider-openstack.git/pkg/util/openstack/keymanager.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "loadbalancer.go": {
+                  "name": "loadbalancer.go",
+                  "path": "cloud-provider-openstack.git/pkg/util/openstack/loadbalancer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "network.go": {
+                  "name": "network.go",
+                  "path": "cloud-provider-openstack.git/pkg/util/openstack/network.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "util.go": {
+              "name": "util.go",
+              "path": "cloud-provider-openstack.git/pkg/util/util.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "version": {
+          "name": "version",
+          "path": "cloud-provider-openstack.git/pkg/version",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "version.go": {
+              "name": "version.go",
+              "path": "cloud-provider-openstack.git/pkg/version/version.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "release-procedure.md": {
+      "name": "release-procedure.md",
+      "path": "cloud-provider-openstack.git/release-procedure.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "tests": {
+      "name": "tests",
+      "path": "cloud-provider-openstack.git/tests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ci-csi-cinder-e2e.sh": {
+          "name": "ci-csi-cinder-e2e.sh",
+          "path": "cloud-provider-openstack.git/tests/ci-csi-cinder-e2e.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ci-csi-manila-e2e.sh": {
+          "name": "ci-csi-manila-e2e.sh",
+          "path": "cloud-provider-openstack.git/tests/ci-csi-manila-e2e.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ci-keystone-e2e.sh": {
+          "name": "ci-keystone-e2e.sh",
+          "path": "cloud-provider-openstack.git/tests/ci-keystone-e2e.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ci-occm-e2e.sh": {
+          "name": "ci-occm-e2e.sh",
+          "path": "cloud-provider-openstack.git/tests/ci-occm-e2e.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "e2e": {
+          "name": "e2e",
+          "path": "cloud-provider-openstack.git/tests/e2e",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cloudprovider": {
+              "name": "cloudprovider",
+              "path": "cloud-provider-openstack.git/tests/e2e/cloudprovider",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "test-lb-service.sh": {
+                  "name": "test-lb-service.sh",
+                  "path": "cloud-provider-openstack.git/tests/e2e/cloudprovider/test-lb-service.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "csi": {
+              "name": "csi",
+              "path": "cloud-provider-openstack.git/tests/e2e/csi",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cinder": {
+                  "name": "cinder",
+                  "path": "cloud-provider-openstack.git/tests/e2e/csi/cinder",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "test-driver.yaml": {
+                      "name": "test-driver.yaml",
+                      "path": "cloud-provider-openstack.git/tests/e2e/csi/cinder/test-driver.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "manila": {
+                  "name": "manila",
+                  "path": "cloud-provider-openstack.git/tests/e2e/csi/manila",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "manilavolume.go": {
+                      "name": "manilavolume.go",
+                      "path": "cloud-provider-openstack.git/tests/e2e/csi/manila/manilavolume.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "testdriver.go": {
+                      "name": "testdriver.go",
+                      "path": "cloud-provider-openstack.git/tests/e2e/csi/manila/testdriver.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "testsuite.go": {
+                      "name": "testsuite.go",
+                      "path": "cloud-provider-openstack.git/tests/e2e/csi/manila/testsuite.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "k8s-keystone-auth": {
+              "name": "k8s-keystone-auth",
+              "path": "cloud-provider-openstack.git/tests/e2e/k8s-keystone-auth",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "test-authz.sh": {
+                  "name": "test-authz.sh",
+                  "path": "cloud-provider-openstack.git/tests/e2e/k8s-keystone-auth/test-authz.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "playbooks": {
+          "name": "playbooks",
+          "path": "cloud-provider-openstack.git/tests/playbooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "roles": {
+              "name": "roles",
+              "path": "cloud-provider-openstack.git/tests/playbooks/roles",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "install-cpo-occm": {
+                  "name": "install-cpo-occm",
+                  "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-cpo-occm",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "README.md": {
+                      "name": "README.md",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-cpo-occm/README.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "defaults": {
+                      "name": "defaults",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-cpo-occm/defaults",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yaml": {
+                          "name": "main.yaml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-cpo-occm/defaults/main.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "tasks": {
+                      "name": "tasks",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-cpo-occm/tasks",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yaml": {
+                          "name": "main.yaml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-cpo-occm/tasks/main.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "install-csi-cinder": {
+                  "name": "install-csi-cinder",
+                  "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-csi-cinder",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "README.md": {
+                      "name": "README.md",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-csi-cinder/README.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "defaults": {
+                      "name": "defaults",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-csi-cinder/defaults",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yaml": {
+                          "name": "main.yaml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-csi-cinder/defaults/main.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "tasks": {
+                      "name": "tasks",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-csi-cinder/tasks",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yaml": {
+                          "name": "main.yaml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-csi-cinder/tasks/main.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "install-csi-manila": {
+                  "name": "install-csi-manila",
+                  "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-csi-manila",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "README.md": {
+                      "name": "README.md",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-csi-manila/README.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "defaults": {
+                      "name": "defaults",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-csi-manila/defaults",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yaml": {
+                          "name": "main.yaml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-csi-manila/defaults/main.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "tasks": {
+                      "name": "tasks",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-csi-manila/tasks",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yaml": {
+                          "name": "main.yaml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-csi-manila/tasks/main.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "install-devstack": {
+                  "name": "install-devstack",
+                  "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-devstack",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "defaults": {
+                      "name": "defaults",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-devstack/defaults",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yaml": {
+                          "name": "main.yaml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-devstack/defaults/main.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "tasks": {
+                      "name": "tasks",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-devstack/tasks",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yml": {
+                          "name": "main.yml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-devstack/tasks/main.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "templates": {
+                      "name": "templates",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-devstack/templates",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "local.conf.j2": {
+                          "name": "local.conf.j2",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-devstack/templates/local.conf.j2",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "install-docker": {
+                  "name": "install-docker",
+                  "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "defaults": {
+                      "name": "defaults",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker/defaults",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yml": {
+                          "name": "main.yml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker/defaults/main.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "handlers": {
+                      "name": "handlers",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker/handlers",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yml": {
+                          "name": "main.yml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker/handlers/main.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "tasks": {
+                      "name": "tasks",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker/tasks",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yml": {
+                          "name": "main.yml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker/tasks/main.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "install-docker-registry": {
+                  "name": "install-docker-registry",
+                  "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker-registry",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "defaults": {
+                      "name": "defaults",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker-registry/defaults",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yaml": {
+                          "name": "main.yaml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker-registry/defaults/main.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "tasks": {
+                      "name": "tasks",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker-registry/tasks",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yml": {
+                          "name": "main.yml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker-registry/tasks/main.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "templates": {
+                      "name": "templates",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker-registry/templates",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "ca-config.json.j2": {
+                          "name": "ca-config.json.j2",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker-registry/templates/ca-config.json.j2",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ca-csr.json.j2": {
+                          "name": "ca-csr.json.j2",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-docker-registry/templates/ca-csr.json.j2",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "install-golang": {
+                  "name": "install-golang",
+                  "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-golang",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "defaults": {
+                      "name": "defaults",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-golang/defaults",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yml": {
+                          "name": "main.yml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-golang/defaults/main.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "tasks": {
+                      "name": "tasks",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-golang/tasks",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yml": {
+                          "name": "main.yml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-golang/tasks/main.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "install-helm": {
+                  "name": "install-helm",
+                  "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-helm",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "tasks": {
+                      "name": "tasks",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-helm/tasks",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yml": {
+                          "name": "main.yml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-helm/tasks/main.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "install-k3s": {
+                  "name": "install-k3s",
+                  "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-k3s",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "README.md": {
+                      "name": "README.md",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-k3s/README.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "defaults": {
+                      "name": "defaults",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-k3s/defaults",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yaml": {
+                          "name": "main.yaml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-k3s/defaults/main.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "tasks": {
+                      "name": "tasks",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-k3s/tasks",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yaml": {
+                          "name": "main.yaml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-k3s/tasks/main.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "install-k3s-bare-single": {
+                  "name": "install-k3s-bare-single",
+                  "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-k3s-bare-single",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "README.md": {
+                      "name": "README.md",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-k3s-bare-single/README.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "defaults": {
+                      "name": "defaults",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-k3s-bare-single/defaults",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yaml": {
+                          "name": "main.yaml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-k3s-bare-single/defaults/main.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "tasks": {
+                      "name": "tasks",
+                      "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-k3s-bare-single/tasks",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.yaml": {
+                          "name": "main.yaml",
+                          "path": "cloud-provider-openstack.git/tests/playbooks/roles/install-k3s-bare-single/tasks/main.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "test-csi-cinder-e2e.yaml": {
+              "name": "test-csi-cinder-e2e.yaml",
+              "path": "cloud-provider-openstack.git/tests/playbooks/test-csi-cinder-e2e.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test-csi-manila-e2e.yaml": {
+              "name": "test-csi-manila-e2e.yaml",
+              "path": "cloud-provider-openstack.git/tests/playbooks/test-csi-manila-e2e.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test-occm-e2e.yaml": {
+              "name": "test-occm-e2e.yaml",
+              "path": "cloud-provider-openstack.git/tests/playbooks/test-occm-e2e.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "sanity": {
+          "name": "sanity",
+          "path": "cloud-provider-openstack.git/tests/sanity",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cinder": {
+              "name": "cinder",
+              "path": "cloud-provider-openstack.git/tests/sanity/cinder",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "fakecloud.go": {
+                  "name": "fakecloud.go",
+                  "path": "cloud-provider-openstack.git/tests/sanity/cinder/fakecloud.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fakemetadata.go": {
+                  "name": "fakemetadata.go",
+                  "path": "cloud-provider-openstack.git/tests/sanity/cinder/fakemetadata.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fakemount.go": {
+                  "name": "fakemount.go",
+                  "path": "cloud-provider-openstack.git/tests/sanity/cinder/fakemount.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sanity_test.go": {
+                  "name": "sanity_test.go",
+                  "path": "cloud-provider-openstack.git/tests/sanity/cinder/sanity_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "manila": {
+              "name": "manila",
+              "path": "cloud-provider-openstack.git/tests/sanity/manila",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "fake-secrets.yaml": {
+                  "name": "fake-secrets.yaml",
+                  "path": "cloud-provider-openstack.git/tests/sanity/manila/fake-secrets.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fakecsiclient.go": {
+                  "name": "fakecsiclient.go",
+                  "path": "cloud-provider-openstack.git/tests/sanity/manila/fakecsiclient.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fakemanilaclient.go": {
+                  "name": "fakemanilaclient.go",
+                  "path": "cloud-provider-openstack.git/tests/sanity/manila/fakemanilaclient.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sanity_test.go": {
+                  "name": "sanity_test.go",
+                  "path": "cloud-provider-openstack.git/tests/sanity/manila/sanity_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "scripts": {
+          "name": "scripts",
+          "path": "cloud-provider-openstack.git/tests/scripts",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "boskos.py": {
+              "name": "boskos.py",
+              "path": "cloud-provider-openstack.git/tests/scripts/boskos.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "create-gce-vm.sh": {
+              "name": "create-gce-vm.sh",
+              "path": "cloud-provider-openstack.git/tests/scripts/create-gce-vm.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "tools": {
+      "name": "tools",
+      "path": "cloud-provider-openstack.git/tools",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "install-distro-packages.sh": {
+          "name": "install-distro-packages.sh",
+          "path": "cloud-provider-openstack.git/tools/install-distro-packages.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test-setup.sh": {
+          "name": "test-setup.sh",
+          "path": "cloud-provider-openstack.git/tools/test-setup.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 126135241,
+    "name": "cloud-provider-openstack",
+    "full_name": "kubernetes/cloud-provider-openstack",
+    "owner": {
+      "login": "kubernetes",
+      "html_url": "https://github.com/kubernetes",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/kubernetes/cloud-provider-openstack",
+    "description": null,
+    "url": "https://api.github.com/repos/kubernetes/cloud-provider-openstack",
+    "clone_url": "https://github.com/kubernetes/cloud-provider-openstack.git",
+    "homepage": null,
+    "size": 4924,
+    "stargazers_count": 489,
+    "watchers_count": 489,
+    "language": "Go"
+  }
+}

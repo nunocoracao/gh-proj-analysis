@@ -1,0 +1,3360 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "build-blockchain-insurance-app.git/cli/Dockerfile",
+        "build-blockchain-insurance-app.git/insuranceCA/Dockerfile",
+        "build-blockchain-insurance-app.git/insurancePeer/Dockerfile",
+        "build-blockchain-insurance-app.git/orderer/Dockerfile",
+        "build-blockchain-insurance-app.git/policeCA/Dockerfile",
+        "build-blockchain-insurance-app.git/policePeer/Dockerfile",
+        "build-blockchain-insurance-app.git/repairShopCA/Dockerfile",
+        "build-blockchain-insurance-app.git/repairShopPeer/Dockerfile",
+        "build-blockchain-insurance-app.git/shopCA/Dockerfile",
+        "build-blockchain-insurance-app.git/shopPeer/Dockerfile",
+        "build-blockchain-insurance-app.git/web/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 1,
+      "subFolderCount": 0,
+      "filepaths": [
+        "build-blockchain-insurance-app.git/docker-compose.yaml"
+      ]
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "build-blockchain-insurance-app.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "build-blockchain-insurance-app.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "build-blockchain-insurance-app.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "build-blockchain-insurance-app.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "build-blockchain-insurance-app.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "build-blockchain-insurance-app.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "build-blockchain-insurance-app.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "build-blockchain-insurance-app.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "build-blockchain-insurance-app.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "build-blockchain-insurance-app.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "build-blockchain-insurance-app.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "build-blockchain-insurance-app.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "build-blockchain-insurance-app.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "build-blockchain-insurance-app.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "build-blockchain-insurance-app.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "build-blockchain-insurance-app.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "build-blockchain-insurance-app.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "build-blockchain-insurance-app.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "build-blockchain-insurance-app.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "build-blockchain-insurance-app.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "build-blockchain-insurance-app.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-1008f64cc62e10855cfdf7828c5225478f137aa1.idx": {
+                  "name": "pack-1008f64cc62e10855cfdf7828c5225478f137aa1.idx",
+                  "path": "build-blockchain-insurance-app.git/.git/objects/pack/pack-1008f64cc62e10855cfdf7828c5225478f137aa1.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-1008f64cc62e10855cfdf7828c5225478f137aa1.pack": {
+                  "name": "pack-1008f64cc62e10855cfdf7828c5225478f137aa1.pack",
+                  "path": "build-blockchain-insurance-app.git/.git/objects/pack/pack-1008f64cc62e10855cfdf7828c5225478f137aa1.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "build-blockchain-insurance-app.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "build-blockchain-insurance-app.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "build-blockchain-insurance-app.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "build-blockchain-insurance-app.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "build-blockchain-insurance-app.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "build-blockchain-insurance-app.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "build-blockchain-insurance-app.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "build-blockchain-insurance-app.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "build-blockchain-insurance-app.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "build-blockchain-insurance-app.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "build-blockchain-insurance-app.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "build-blockchain-insurance-app.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "MAINTAINERS.md": {
+      "name": "MAINTAINERS.md",
+      "path": "build-blockchain-insurance-app.git/MAINTAINERS.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README-cn.md": {
+      "name": "README-cn.md",
+      "path": "build-blockchain-insurance-app.git/README-cn.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README-ja.md": {
+      "name": "README-ja.md",
+      "path": "build-blockchain-insurance-app.git/README-ja.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README-local.md": {
+      "name": "README-local.md",
+      "path": "build-blockchain-insurance-app.git/README-local.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README-vi.md": {
+      "name": "README-vi.md",
+      "path": "build-blockchain-insurance-app.git/README-vi.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "build-blockchain-insurance-app.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "binary_mac": {
+      "name": "binary_mac",
+      "path": "build-blockchain-insurance-app.git/binary_mac",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "configtxgen": {
+          "name": "configtxgen",
+          "path": "build-blockchain-insurance-app.git/binary_mac/configtxgen",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cryptogen": {
+          "name": "cryptogen",
+          "path": "build-blockchain-insurance-app.git/binary_mac/cryptogen",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "binary_ubuntu": {
+      "name": "binary_ubuntu",
+      "path": "build-blockchain-insurance-app.git/binary_ubuntu",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "configtxgen": {
+          "name": "configtxgen",
+          "path": "build-blockchain-insurance-app.git/binary_ubuntu/configtxgen",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cryptogen": {
+          "name": "cryptogen",
+          "path": "build-blockchain-insurance-app.git/binary_ubuntu/cryptogen",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "build_mac.sh": {
+      "name": "build_mac.sh",
+      "path": "build-blockchain-insurance-app.git/build_mac.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "build_ubuntu.sh": {
+      "name": "build_ubuntu.sh",
+      "path": "build-blockchain-insurance-app.git/build_ubuntu.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "ca-base.yaml": {
+      "name": "ca-base.yaml",
+      "path": "build-blockchain-insurance-app.git/ca-base.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "chaincodePackage": {
+      "name": "chaincodePackage",
+      "path": "build-blockchain-insurance-app.git/chaincodePackage",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "insurance@1.0.6.cds": {
+          "name": "insurance@1.0.6.cds",
+          "path": "build-blockchain-insurance-app.git/chaincodePackage/insurance@1.0.6.cds",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "clean.sh": {
+      "name": "clean.sh",
+      "path": "build-blockchain-insurance-app.git/clean.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "cli": {
+      "name": "cli",
+      "path": "build-blockchain-insurance-app.git/cli",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "build-blockchain-insurance-app.git/cli/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "script.sh": {
+          "name": "script.sh",
+          "path": "build-blockchain-insurance-app.git/cli/script.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "configtx.yaml": {
+      "name": "configtx.yaml",
+      "path": "build-blockchain-insurance-app.git/configtx.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "configtxgen": {
+      "name": "configtxgen",
+      "path": "build-blockchain-insurance-app.git/configtxgen",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "crypto-config.yaml": {
+      "name": "crypto-config.yaml",
+      "path": "build-blockchain-insurance-app.git/crypto-config.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "cryptogen": {
+      "name": "cryptogen",
+      "path": "build-blockchain-insurance-app.git/cryptogen",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docker-compose.yaml": {
+      "name": "docker-compose.yaml",
+      "path": "build-blockchain-insurance-app.git/docker-compose.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "docker-images.sh": {
+      "name": "docker-images.sh",
+      "path": "build-blockchain-insurance-app.git/docker-images.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "generate-certs.sh": {
+      "name": "generate-certs.sh",
+      "path": "build-blockchain-insurance-app.git/generate-certs.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "generate-cfgtx.sh": {
+      "name": "generate-cfgtx.sh",
+      "path": "build-blockchain-insurance-app.git/generate-cfgtx.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "ibm_fabric.sh": {
+      "name": "ibm_fabric.sh",
+      "path": "build-blockchain-insurance-app.git/ibm_fabric.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "images": {
+      "name": "images",
+      "path": "build-blockchain-insurance-app.git/images",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Picture1.png": {
+          "name": "Picture1.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture1.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture10.png": {
+          "name": "Picture10.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture10.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture11.png": {
+          "name": "Picture11.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture11.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture12.png": {
+          "name": "Picture12.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture12.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture13.png": {
+          "name": "Picture13.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture13.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture14.png": {
+          "name": "Picture14.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture14.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture15.png": {
+          "name": "Picture15.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture15.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture16.png": {
+          "name": "Picture16.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture16.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture17.png": {
+          "name": "Picture17.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture17.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture18.png": {
+          "name": "Picture18.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture18.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture19.png": {
+          "name": "Picture19.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture19.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture2.png": {
+          "name": "Picture2.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture2.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture20.png": {
+          "name": "Picture20.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture20.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture21.png": {
+          "name": "Picture21.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture21.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture3.png": {
+          "name": "Picture3.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture3.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture4.png": {
+          "name": "Picture4.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture4.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture5.png": {
+          "name": "Picture5.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture5.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture6.png": {
+          "name": "Picture6.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture6.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture61.png": {
+          "name": "Picture61.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture61.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture7.png": {
+          "name": "Picture7.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture7.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture8.png": {
+          "name": "Picture8.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture8.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Picture9.png": {
+          "name": "Picture9.png",
+          "path": "build-blockchain-insurance-app.git/images/Picture9.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "anchorPeer.png": {
+          "name": "anchorPeer.png",
+          "path": "build-blockchain-insurance-app.git/images/anchorPeer.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "app-arch.png": {
+          "name": "app-arch.png",
+          "path": "build-blockchain-insurance-app.git/images/app-arch.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "app-architecture2.0.png": {
+          "name": "app-architecture2.0.png",
+          "path": "build-blockchain-insurance-app.git/images/app-architecture2.0.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "arch-blockchain-insurance2.png": {
+          "name": "arch-blockchain-insurance2.png",
+          "path": "build-blockchain-insurance-app.git/images/arch-blockchain-insurance2.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "blocks.png": {
+          "name": "blocks.png",
+          "path": "build-blockchain-insurance-app.git/images/blocks.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "caSettings.png": {
+          "name": "caSettings.png",
+          "path": "build-blockchain-insurance-app.git/images/caSettings.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "channelDetails.png": {
+          "name": "channelDetails.png",
+          "path": "build-blockchain-insurance-app.git/images/channelDetails.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "gifs": {
+          "name": "gifs",
+          "path": "build-blockchain-insurance-app.git/images/gifs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "add-org-orderer.gif": {
+              "name": "add-org-orderer.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/add-org-orderer.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "addAnchorPeer.gif": {
+              "name": "addAnchorPeer.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/addAnchorPeer.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "addConsortium.gif": {
+              "name": "addConsortium.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/addConsortium.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "addInsurancePeer.gif": {
+              "name": "addInsurancePeer.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/addInsurancePeer.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "appAdmin.gif": {
+              "name": "appAdmin.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/appAdmin.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "buildApp.gif": {
+              "name": "buildApp.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/buildApp.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "connect-with-sdk.gif": {
+              "name": "connect-with-sdk.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/connect-with-sdk.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "create-channel.gif": {
+              "name": "create-channel.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/create-channel.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "create-ibm-blockchain-2-service.gif": {
+              "name": "create-ibm-blockchain-2-service.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/create-ibm-blockchain-2-service.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "create-ibm-kubernetes-service.gif": {
+              "name": "create-ibm-kubernetes-service.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/create-ibm-kubernetes-service.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "create-orderer.gif": {
+              "name": "create-orderer.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/create-orderer.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "create-peer-org1-ca.gif": {
+              "name": "create-peer-org1-ca.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/create-peer-org1-ca.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "create-peer.gif": {
+              "name": "create-peer.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/create-peer.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "createChannel.gif": {
+              "name": "createChannel.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/createChannel.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "createCluster.gif": {
+              "name": "createCluster.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/createCluster.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "createOrderer.gif": {
+              "name": "createOrderer.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/createOrderer.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "createOrdererNode.gif": {
+              "name": "createOrdererNode.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/createOrdererNode.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "deploy-blockchain-on-cluster.gif": {
+              "name": "deploy-blockchain-on-cluster.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/deploy-blockchain-on-cluster.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "downloadConnection.gif": {
+              "name": "downloadConnection.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/downloadConnection.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "enrollAdmin.gif": {
+              "name": "enrollAdmin.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/enrollAdmin.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "enrollShopAdmin.gif": {
+              "name": "enrollShopAdmin.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/enrollShopAdmin.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ibpConnection.gif": {
+              "name": "ibpConnection.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/ibpConnection.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install-smart-contract.gif": {
+              "name": "install-smart-contract.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/install-smart-contract.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "installSmartContract.gif": {
+              "name": "installSmartContract.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/installSmartContract.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "instantiate-smart-contract.gif": {
+              "name": "instantiate-smart-contract.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/instantiate-smart-contract.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "instantiateContract.gif": {
+              "name": "instantiateContract.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/instantiateContract.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "insuranceIBP2.gif": {
+              "name": "insuranceIBP2.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/insuranceIBP2.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "insuranceMSP.gif": {
+              "name": "insuranceMSP.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/insuranceMSP.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "join-channel.gif": {
+              "name": "join-channel.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/join-channel.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "joinChannel.gif": {
+              "name": "joinChannel.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/joinChannel.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "launch-ibm-blockchain.gif": {
+              "name": "launch-ibm-blockchain.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/launch-ibm-blockchain.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "orderer-ca-register-identities.gif": {
+              "name": "orderer-ca-register-identities.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/orderer-ca-register-identities.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "orderer-org-ca.gif": {
+              "name": "orderer-org-ca.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/orderer-org-ca.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "orderer-org-msp-def.gif": {
+              "name": "orderer-org-msp-def.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/orderer-org-msp-def.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ordererMSP.gif": {
+              "name": "ordererMSP.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/ordererMSP.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "org1-ca-register-identities.gif": {
+              "name": "org1-ca-register-identities.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/org1-ca-register-identities.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "peer-org-msp-def.gif": {
+              "name": "peer-org-msp-def.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/peer-org-msp-def.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "register-app-admin.gif": {
+              "name": "register-app-admin.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/register-app-admin.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "registerInsuranceAdminPeer.gif": {
+              "name": "registerInsuranceAdminPeer.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/registerInsuranceAdminPeer.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "runAppIBP.gif": {
+              "name": "runAppIBP.gif",
+              "path": "build-blockchain-insurance-app.git/images/gifs/runAppIBP.gif",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "home.png": {
+          "name": "home.png",
+          "path": "build-blockchain-insurance-app.git/images/home.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ibpConnection.png": {
+          "name": "ibpConnection.png",
+          "path": "build-blockchain-insurance-app.git/images/ibpConnection.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ibpConnectionCode.png": {
+          "name": "ibpConnectionCode.png",
+          "path": "build-blockchain-insurance-app.git/images/ibpConnectionCode.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "isCloud.png": {
+          "name": "isCloud.png",
+          "path": "build-blockchain-insurance-app.git/images/isCloud.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "isUbuntu.png": {
+          "name": "isUbuntu.png",
+          "path": "build-blockchain-insurance-app.git/images/isUbuntu.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "isUbuntuAndCloud.png": {
+          "name": "isUbuntuAndCloud.png",
+          "path": "build-blockchain-insurance-app.git/images/isUbuntuAndCloud.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kube32.png": {
+          "name": "kube32.png",
+          "path": "build-blockchain-insurance-app.git/images/kube32.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kubeLocation.png": {
+          "name": "kubeLocation.png",
+          "path": "build-blockchain-insurance-app.git/images/kubeLocation.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kubeWorker.png": {
+          "name": "kubeWorker.png",
+          "path": "build-blockchain-insurance-app.git/images/kubeWorker.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "part1.png": {
+          "name": "part1.png",
+          "path": "build-blockchain-insurance-app.git/images/part1.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "part2.png": {
+          "name": "part2.png",
+          "path": "build-blockchain-insurance-app.git/images/part2.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "part3.png": {
+          "name": "part3.png",
+          "path": "build-blockchain-insurance-app.git/images/part3.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflow.png": {
+          "name": "workflow.png",
+          "path": "build-blockchain-insurance-app.git/images/workflow.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "insuranceCA": {
+      "name": "insuranceCA",
+      "path": "build-blockchain-insurance-app.git/insuranceCA",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "build-blockchain-insurance-app.git/insuranceCA/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "fabric-ca-server-config.yaml": {
+          "name": "fabric-ca-server-config.yaml",
+          "path": "build-blockchain-insurance-app.git/insuranceCA/fabric-ca-server-config.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "insurancePeer": {
+      "name": "insurancePeer",
+      "path": "build-blockchain-insurance-app.git/insurancePeer",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "build-blockchain-insurance-app.git/insurancePeer/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        }
+      }
+    },
+    "orderer": {
+      "name": "orderer",
+      "path": "build-blockchain-insurance-app.git/orderer",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "build-blockchain-insurance-app.git/orderer/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        }
+      }
+    },
+    "patternTemplate.md": {
+      "name": "patternTemplate.md",
+      "path": "build-blockchain-insurance-app.git/patternTemplate.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "peer-base.yaml": {
+      "name": "peer-base.yaml",
+      "path": "build-blockchain-insurance-app.git/peer-base.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "policeCA": {
+      "name": "policeCA",
+      "path": "build-blockchain-insurance-app.git/policeCA",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "build-blockchain-insurance-app.git/policeCA/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "fabric-ca-server-config.yaml": {
+          "name": "fabric-ca-server-config.yaml",
+          "path": "build-blockchain-insurance-app.git/policeCA/fabric-ca-server-config.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "policePeer": {
+      "name": "policePeer",
+      "path": "build-blockchain-insurance-app.git/policePeer",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "build-blockchain-insurance-app.git/policePeer/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        }
+      }
+    },
+    "repairShopCA": {
+      "name": "repairShopCA",
+      "path": "build-blockchain-insurance-app.git/repairShopCA",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "build-blockchain-insurance-app.git/repairShopCA/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "fabric-ca-server-config.yaml": {
+          "name": "fabric-ca-server-config.yaml",
+          "path": "build-blockchain-insurance-app.git/repairShopCA/fabric-ca-server-config.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "repairShopPeer": {
+      "name": "repairShopPeer",
+      "path": "build-blockchain-insurance-app.git/repairShopPeer",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "build-blockchain-insurance-app.git/repairShopPeer/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        }
+      }
+    },
+    "shopCA": {
+      "name": "shopCA",
+      "path": "build-blockchain-insurance-app.git/shopCA",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "build-blockchain-insurance-app.git/shopCA/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "fabric-ca-server-config.yaml": {
+          "name": "fabric-ca-server-config.yaml",
+          "path": "build-blockchain-insurance-app.git/shopCA/fabric-ca-server-config.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "shopPeer": {
+      "name": "shopPeer",
+      "path": "build-blockchain-insurance-app.git/shopPeer",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "build-blockchain-insurance-app.git/shopPeer/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        }
+      }
+    },
+    "web": {
+      "name": "web",
+      "path": "build-blockchain-insurance-app.git/web",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".babelrc": {
+          "name": ".babelrc",
+          "path": "build-blockchain-insurance-app.git/web/.babelrc",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".dockerignore": {
+          "name": ".dockerignore",
+          "path": "build-blockchain-insurance-app.git/web/.dockerignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".editorconfig": {
+          "name": ".editorconfig",
+          "path": "build-blockchain-insurance-app.git/web/.editorconfig",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".env.sample": {
+          "name": ".env.sample",
+          "path": "build-blockchain-insurance-app.git/web/.env.sample",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".eslintignore": {
+          "name": ".eslintignore",
+          "path": "build-blockchain-insurance-app.git/web/.eslintignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".eslintrc": {
+          "name": ".eslintrc",
+          "path": "build-blockchain-insurance-app.git/web/.eslintrc",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "build-blockchain-insurance-app.git/web/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".npmrc": {
+          "name": ".npmrc",
+          "path": "build-blockchain-insurance-app.git/web/.npmrc",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "build-blockchain-insurance-app.git/web/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "LICENSE": {
+          "name": "LICENSE",
+          "path": "build-blockchain-insurance-app.git/web/LICENSE",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "chaincode": {
+          "name": "chaincode",
+          "path": "build-blockchain-insurance-app.git/web/chaincode",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "src": {
+              "name": "src",
+              "path": "build-blockchain-insurance-app.git/web/chaincode/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "bcins": {
+                  "name": "bcins",
+                  "path": "build-blockchain-insurance-app.git/web/chaincode/src/bcins",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "data.go": {
+                      "name": "data.go",
+                      "path": "build-blockchain-insurance-app.git/web/chaincode/src/bcins/data.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "invoke_insurance.go": {
+                      "name": "invoke_insurance.go",
+                      "path": "build-blockchain-insurance-app.git/web/chaincode/src/bcins/invoke_insurance.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "invoke_police.go": {
+                      "name": "invoke_police.go",
+                      "path": "build-blockchain-insurance-app.git/web/chaincode/src/bcins/invoke_police.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "invoke_repairshop.go": {
+                      "name": "invoke_repairshop.go",
+                      "path": "build-blockchain-insurance-app.git/web/chaincode/src/bcins/invoke_repairshop.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "invoke_shop.go": {
+                      "name": "invoke_shop.go",
+                      "path": "build-blockchain-insurance-app.git/web/chaincode/src/bcins/invoke_shop.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "main.go": {
+                      "name": "main.go",
+                      "path": "build-blockchain-insurance-app.git/web/chaincode/src/bcins/main.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "channel.tx": {
+          "name": "channel.tx",
+          "path": "build-blockchain-insurance-app.git/web/channel.tx",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "locales": {
+          "name": "locales",
+          "path": "build-blockchain-insurance-app.git/web/locales",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "de.json": {
+              "name": "de.json",
+              "path": "build-blockchain-insurance-app.git/web/locales/de.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "en.json": {
+              "name": "en.json",
+              "path": "build-blockchain-insurance-app.git/web/locales/en.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "manifest.yml": {
+          "name": "manifest.yml",
+          "path": "build-blockchain-insurance-app.git/web/manifest.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "package-lock.json": {
+          "name": "package-lock.json",
+          "path": "build-blockchain-insurance-app.git/web/package-lock.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "package.json": {
+          "name": "package.json",
+          "path": "build-blockchain-insurance-app.git/web/package.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "build-blockchain-insurance-app.git/web/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".babelrc": {
+              "name": ".babelrc",
+              "path": "build-blockchain-insurance-app.git/web/src/.babelrc",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "block-explorer": {
+              "name": "block-explorer",
+              "path": "build-blockchain-insurance-app.git/web/src/block-explorer",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "api.js": {
+                  "name": "api.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/block-explorer/api.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "components": {
+                  "name": "components",
+                  "path": "build-blockchain-insurance-app.git/web/src/block-explorer/components",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Block.js": {
+                      "name": "Block.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/block-explorer/components/Block.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Container.js": {
+                      "name": "Container.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/block-explorer/components/Container.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Transaction.js": {
+                      "name": "Transaction.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/block-explorer/components/Transaction.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/block-explorer/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "locales": {
+                  "name": "locales",
+                  "path": "build-blockchain-insurance-app.git/web/src/block-explorer/locales",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "de.json": {
+                      "name": "de.json",
+                      "path": "build-blockchain-insurance-app.git/web/src/block-explorer/locales/de.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "en.json": {
+                      "name": "en.json",
+                      "path": "build-blockchain-insurance-app.git/web/src/block-explorer/locales/en.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "style.scss": {
+                  "name": "style.scss",
+                  "path": "build-blockchain-insurance-app.git/web/src/block-explorer/style.scss",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "translations.js": {
+                  "name": "translations.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/block-explorer/translations.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "common.js": {
+              "name": "common.js",
+              "path": "build-blockchain-insurance-app.git/web/src/common.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "common.scss": {
+              "name": "common.scss",
+              "path": "build-blockchain-insurance-app.git/web/src/common.scss",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "insurance": {
+              "name": "insurance",
+              "path": "build-blockchain-insurance-app.git/web/src/insurance",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "actions": {
+                  "name": "actions",
+                  "path": "build-blockchain-insurance-app.git/web/src/insurance/actions",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "claimProcessingActionTypes.js": {
+                      "name": "claimProcessingActionTypes.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/actions/claimProcessingActionTypes.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "claimProcessingActions.js": {
+                      "name": "claimProcessingActions.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/actions/claimProcessingActions.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "contractTemplateActionTypes.js": {
+                      "name": "contractTemplateActionTypes.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/actions/contractTemplateActionTypes.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "contractTemplateActions.js": {
+                      "name": "contractTemplateActions.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/actions/contractTemplateActions.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "contractsActionTypes.js": {
+                      "name": "contractsActionTypes.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/actions/contractsActionTypes.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "contractsActions.js": {
+                      "name": "contractsActions.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/actions/contractsActions.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "userMgmtActionTypes.js": {
+                      "name": "userMgmtActionTypes.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/actions/userMgmtActionTypes.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "userMgmtActions.js": {
+                      "name": "userMgmtActions.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/actions/userMgmtActions.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "api.js": {
+                  "name": "api.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/insurance/api.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "components": {
+                  "name": "components",
+                  "path": "build-blockchain-insurance-app.git/web/src/insurance/components",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "App.js": {
+                      "name": "App.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/components/App.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "claim-processing": {
+                      "name": "claim-processing",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/components/claim-processing",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "ClaimComponent.js": {
+                          "name": "ClaimComponent.js",
+                          "path": "build-blockchain-insurance-app.git/web/src/insurance/components/claim-processing/ClaimComponent.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ClaimsPage.js": {
+                          "name": "ClaimsPage.js",
+                          "path": "build-blockchain-insurance-app.git/web/src/insurance/components/claim-processing/ClaimsPage.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "contract-management": {
+                      "name": "contract-management",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/components/contract-management",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "App.js": {
+                          "name": "App.js",
+                          "path": "build-blockchain-insurance-app.git/web/src/insurance/components/contract-management/App.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ContractTemplatesPage.js": {
+                          "name": "ContractTemplatesPage.js",
+                          "path": "build-blockchain-insurance-app.git/web/src/insurance/components/contract-management/ContractTemplatesPage.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "NewContractTemplatePage.js": {
+                          "name": "NewContractTemplatePage.js",
+                          "path": "build-blockchain-insurance-app.git/web/src/insurance/components/contract-management/NewContractTemplatePage.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "self-service": {
+                      "name": "self-service",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/components/self-service",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "App.js": {
+                          "name": "App.js",
+                          "path": "build-blockchain-insurance-app.git/web/src/insurance/components/self-service/App.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ClaimPage.js": {
+                          "name": "ClaimPage.js",
+                          "path": "build-blockchain-insurance-app.git/web/src/insurance/components/self-service/ClaimPage.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ContractClaimsPage.js": {
+                          "name": "ContractClaimsPage.js",
+                          "path": "build-blockchain-insurance-app.git/web/src/insurance/components/self-service/ContractClaimsPage.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ContractsPage.js": {
+                          "name": "ContractsPage.js",
+                          "path": "build-blockchain-insurance-app.git/web/src/insurance/components/self-service/ContractsPage.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "LoginPage.js": {
+                          "name": "LoginPage.js",
+                          "path": "build-blockchain-insurance-app.git/web/src/insurance/components/self-service/LoginPage.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/insurance/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "locales": {
+                  "name": "locales",
+                  "path": "build-blockchain-insurance-app.git/web/src/insurance/locales",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "de.json": {
+                      "name": "de.json",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/locales/de.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "en.json": {
+                      "name": "en.json",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/locales/en.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "reducers": {
+                  "name": "reducers",
+                  "path": "build-blockchain-insurance-app.git/web/src/insurance/reducers",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "claimProcessingReducer.js": {
+                      "name": "claimProcessingReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/reducers/claimProcessingReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "contractTemplatesReducer.js": {
+                      "name": "contractTemplatesReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/reducers/contractTemplatesReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "contractsReducer.js": {
+                      "name": "contractsReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/reducers/contractsReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "initialState.js": {
+                      "name": "initialState.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/reducers/initialState.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "rootReducer.js": {
+                      "name": "rootReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/reducers/rootReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "userMgmtReducer.js": {
+                      "name": "userMgmtReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/insurance/reducers/userMgmtReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "router.js": {
+                  "name": "router.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/insurance/router.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "store.js": {
+                  "name": "store.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/insurance/store.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "translations.js": {
+                  "name": "translations.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/insurance/translations.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "northstar-forms.css": {
+              "name": "northstar-forms.css",
+              "path": "build-blockchain-insurance-app.git/web/src/northstar-forms.css",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "northstar-tables.css": {
+              "name": "northstar-tables.css",
+              "path": "build-blockchain-insurance-app.git/web/src/northstar-tables.css",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "northstar.css": {
+              "name": "northstar.css",
+              "path": "build-blockchain-insurance-app.git/web/src/northstar.css",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "police": {
+              "name": "police",
+              "path": "build-blockchain-insurance-app.git/web/src/police",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "actions": {
+                  "name": "actions",
+                  "path": "build-blockchain-insurance-app.git/web/src/police/actions",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "policeActionTypes.js": {
+                      "name": "policeActionTypes.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/police/actions/policeActionTypes.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "policeActions.js": {
+                      "name": "policeActions.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/police/actions/policeActions.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "api.js": {
+                  "name": "api.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/police/api.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "components": {
+                  "name": "components",
+                  "path": "build-blockchain-insurance-app.git/web/src/police/components",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "App.js": {
+                      "name": "App.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/police/components/App.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "TheftClaimComponent.js": {
+                      "name": "TheftClaimComponent.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/police/components/TheftClaimComponent.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "TheftClaimsPage.js": {
+                      "name": "TheftClaimsPage.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/police/components/TheftClaimsPage.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/police/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "locales": {
+                  "name": "locales",
+                  "path": "build-blockchain-insurance-app.git/web/src/police/locales",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "de.json": {
+                      "name": "de.json",
+                      "path": "build-blockchain-insurance-app.git/web/src/police/locales/de.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "en.json": {
+                      "name": "en.json",
+                      "path": "build-blockchain-insurance-app.git/web/src/police/locales/en.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "reducers": {
+                  "name": "reducers",
+                  "path": "build-blockchain-insurance-app.git/web/src/police/reducers",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "initialState.js": {
+                      "name": "initialState.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/police/reducers/initialState.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "policeReducer.js": {
+                      "name": "policeReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/police/reducers/policeReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "rootReducer.js": {
+                      "name": "rootReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/police/reducers/rootReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "router.js": {
+                  "name": "router.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/police/router.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "store.js": {
+                  "name": "store.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/police/store.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "translations.js": {
+                  "name": "translations.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/police/translations.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "postcss.config.js": {
+              "name": "postcss.config.js",
+              "path": "build-blockchain-insurance-app.git/web/src/postcss.config.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "repair-shop": {
+              "name": "repair-shop",
+              "path": "build-blockchain-insurance-app.git/web/src/repair-shop",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "actions": {
+                  "name": "actions",
+                  "path": "build-blockchain-insurance-app.git/web/src/repair-shop/actions",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "repairShopActionTypes.js": {
+                      "name": "repairShopActionTypes.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/repair-shop/actions/repairShopActionTypes.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "repairShopActions.js": {
+                      "name": "repairShopActions.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/repair-shop/actions/repairShopActions.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "api.js": {
+                  "name": "api.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/repair-shop/api.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "components": {
+                  "name": "components",
+                  "path": "build-blockchain-insurance-app.git/web/src/repair-shop/components",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "App.js": {
+                      "name": "App.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/repair-shop/components/App.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "RepairOrderComponent.js": {
+                      "name": "RepairOrderComponent.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/repair-shop/components/RepairOrderComponent.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "RepairOrdersPage.js": {
+                      "name": "RepairOrdersPage.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/repair-shop/components/RepairOrdersPage.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/repair-shop/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "locales": {
+                  "name": "locales",
+                  "path": "build-blockchain-insurance-app.git/web/src/repair-shop/locales",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "de.json": {
+                      "name": "de.json",
+                      "path": "build-blockchain-insurance-app.git/web/src/repair-shop/locales/de.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "en.json": {
+                      "name": "en.json",
+                      "path": "build-blockchain-insurance-app.git/web/src/repair-shop/locales/en.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "reducers": {
+                  "name": "reducers",
+                  "path": "build-blockchain-insurance-app.git/web/src/repair-shop/reducers",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "initialState.js": {
+                      "name": "initialState.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/repair-shop/reducers/initialState.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "repairShopReducer.js": {
+                      "name": "repairShopReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/repair-shop/reducers/repairShopReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "rootReducer.js": {
+                      "name": "rootReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/repair-shop/reducers/rootReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "router.js": {
+                  "name": "router.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/repair-shop/router.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "store.js": {
+                  "name": "store.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/repair-shop/store.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "translations.js": {
+                  "name": "translations.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/repair-shop/translations.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "shared": {
+              "name": "shared",
+              "path": "build-blockchain-insurance-app.git/web/src/shared",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "DateInput.js": {
+                  "name": "DateInput.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/shared/DateInput.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Loading.js": {
+                  "name": "Loading.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/shared/Loading.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "NotFoundPage.js": {
+                  "name": "NotFoundPage.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/shared/NotFoundPage.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "SelectList.js": {
+                  "name": "SelectList.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/shared/SelectList.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "getLocale.js": {
+                  "name": "getLocale.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/shared/getLocale.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "shop": {
+              "name": "shop",
+              "path": "build-blockchain-insurance-app.git/web/src/shop",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "actions": {
+                  "name": "actions",
+                  "path": "build-blockchain-insurance-app.git/web/src/shop/actions",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "insuranceActionTypes.js": {
+                      "name": "insuranceActionTypes.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/actions/insuranceActionTypes.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "insuranceActions.js": {
+                      "name": "insuranceActions.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/actions/insuranceActions.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "paymentActionTypes.js": {
+                      "name": "paymentActionTypes.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/actions/paymentActionTypes.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "paymentActions.js": {
+                      "name": "paymentActions.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/actions/paymentActions.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "shopActionTypes.js": {
+                      "name": "shopActionTypes.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/actions/shopActionTypes.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "shopActions.js": {
+                      "name": "shopActions.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/actions/shopActions.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "userMgmtActionTypes.js": {
+                      "name": "userMgmtActionTypes.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/actions/userMgmtActionTypes.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "userMgmtActions.js": {
+                      "name": "userMgmtActions.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/actions/userMgmtActions.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "api.js": {
+                  "name": "api.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/shop/api.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "components": {
+                  "name": "components",
+                  "path": "build-blockchain-insurance-app.git/web/src/shop/components",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "App.js": {
+                      "name": "App.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/components/App.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ChooseInsurancePage.js": {
+                      "name": "ChooseInsurancePage.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/components/ChooseInsurancePage.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ChooseProductPage.js": {
+                      "name": "ChooseProductPage.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/components/ChooseProductPage.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "PaymentPage.js": {
+                      "name": "PaymentPage.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/components/PaymentPage.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ProductCarousel.js": {
+                      "name": "ProductCarousel.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/components/ProductCarousel.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "SummaryPage.js": {
+                      "name": "SummaryPage.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/components/SummaryPage.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/shop/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "locales": {
+                  "name": "locales",
+                  "path": "build-blockchain-insurance-app.git/web/src/shop/locales",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "de.json": {
+                      "name": "de.json",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/locales/de.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "en.json": {
+                      "name": "en.json",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/locales/en.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "products.js": {
+                  "name": "products.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/shop/products.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "reducers": {
+                  "name": "reducers",
+                  "path": "build-blockchain-insurance-app.git/web/src/shop/reducers",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "initialState.js": {
+                      "name": "initialState.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/reducers/initialState.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "insuranceReducer.js": {
+                      "name": "insuranceReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/reducers/insuranceReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "paymentReducer.js": {
+                      "name": "paymentReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/reducers/paymentReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "rootReducer.js": {
+                      "name": "rootReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/reducers/rootReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "shopReducer.js": {
+                      "name": "shopReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/reducers/shopReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "userMgmtReducer.js": {
+                      "name": "userMgmtReducer.js",
+                      "path": "build-blockchain-insurance-app.git/web/src/shop/reducers/userMgmtReducer.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "router.js": {
+                  "name": "router.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/shop/router.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "store.js": {
+                  "name": "store.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/shop/store.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "translations.js": {
+                  "name": "translations.js",
+                  "path": "build-blockchain-insurance-app.git/web/src/shop/translations.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "static": {
+          "name": "static",
+          "path": "build-blockchain-insurance-app.git/web/static",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "img": {
+              "name": "img",
+              "path": "build-blockchain-insurance-app.git/web/static/img",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "favicon": {
+                  "name": "favicon",
+                  "path": "build-blockchain-insurance-app.git/web/static/img/favicon",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "android-icon-144x144.png": {
+                      "name": "android-icon-144x144.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/android-icon-144x144.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "android-icon-192x192.png": {
+                      "name": "android-icon-192x192.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/android-icon-192x192.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "android-icon-36x36.png": {
+                      "name": "android-icon-36x36.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/android-icon-36x36.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "android-icon-48x48.png": {
+                      "name": "android-icon-48x48.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/android-icon-48x48.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "android-icon-72x72.png": {
+                      "name": "android-icon-72x72.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/android-icon-72x72.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "android-icon-96x96.png": {
+                      "name": "android-icon-96x96.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/android-icon-96x96.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apple-icon-114x114.png": {
+                      "name": "apple-icon-114x114.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/apple-icon-114x114.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apple-icon-120x120.png": {
+                      "name": "apple-icon-120x120.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/apple-icon-120x120.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apple-icon-144x144.png": {
+                      "name": "apple-icon-144x144.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/apple-icon-144x144.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apple-icon-152x152.png": {
+                      "name": "apple-icon-152x152.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/apple-icon-152x152.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apple-icon-180x180.png": {
+                      "name": "apple-icon-180x180.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/apple-icon-180x180.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apple-icon-57x57.png": {
+                      "name": "apple-icon-57x57.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/apple-icon-57x57.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apple-icon-60x60.png": {
+                      "name": "apple-icon-60x60.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/apple-icon-60x60.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apple-icon-72x72.png": {
+                      "name": "apple-icon-72x72.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/apple-icon-72x72.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apple-icon-76x76.png": {
+                      "name": "apple-icon-76x76.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/apple-icon-76x76.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apple-icon-precomposed.png": {
+                      "name": "apple-icon-precomposed.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/apple-icon-precomposed.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apple-icon.png": {
+                      "name": "apple-icon.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/apple-icon.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "browserconfig.xml": {
+                      "name": "browserconfig.xml",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/browserconfig.xml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "favicon-16x16.png": {
+                      "name": "favicon-16x16.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/favicon-16x16.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "favicon-32x32.png": {
+                      "name": "favicon-32x32.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/favicon-32x32.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "favicon-96x96.png": {
+                      "name": "favicon-96x96.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/favicon-96x96.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "favicon.ico": {
+                      "name": "favicon.ico",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/favicon.ico",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "manifest.json": {
+                      "name": "manifest.json",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/manifest.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ms-icon-144x144.png": {
+                      "name": "ms-icon-144x144.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/ms-icon-144x144.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ms-icon-150x150.png": {
+                      "name": "ms-icon-150x150.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/ms-icon-150x150.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ms-icon-310x310.png": {
+                      "name": "ms-icon-310x310.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/ms-icon-310x310.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ms-icon-70x70.png": {
+                      "name": "ms-icon-70x70.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/favicon/ms-icon-70x70.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "icons": {
+                  "name": "icons",
+                  "path": "build-blockchain-insurance-app.git/web/static/img/icons",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "bike shop.svg": {
+                      "name": "bike shop.svg",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/icons/bike shop.svg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "claim processing.svg": {
+                      "name": "claim processing.svg",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/icons/claim processing.svg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "claim self-service.svg": {
+                      "name": "claim self-service.svg",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/icons/claim self-service.svg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "contract management.svg": {
+                      "name": "contract management.svg",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/icons/contract management.svg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "insurance company.svg": {
+                      "name": "insurance company.svg",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/icons/insurance company.svg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "maximize_24.svg": {
+                      "name": "maximize_24.svg",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/icons/maximize_24.svg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "minimize_24.svg": {
+                      "name": "minimize_24.svg",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/icons/minimize_24.svg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "phone shop.svg": {
+                      "name": "phone shop.svg",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/icons/phone shop.svg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "police.svg": {
+                      "name": "police.svg",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/icons/police.svg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "repair service.svg": {
+                      "name": "repair service.svg",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/icons/repair service.svg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "shop.svg": {
+                      "name": "shop.svg",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/icons/shop.svg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ski shop.svg": {
+                      "name": "ski shop.svg",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/icons/ski shop.svg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "products": {
+                  "name": "products",
+                  "path": "build-blockchain-insurance-app.git/web/static/img/products",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "bike1.png": {
+                      "name": "bike1.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/products/bike1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "bike2.png": {
+                      "name": "bike2.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/products/bike2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "bike3.png": {
+                      "name": "bike3.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/products/bike3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "bike4.png": {
+                      "name": "bike4.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/products/bike4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ski1.png": {
+                      "name": "ski1.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/products/ski1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ski2.png": {
+                      "name": "ski2.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/products/ski2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ski3.png": {
+                      "name": "ski3.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/products/ski3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ski4.png": {
+                      "name": "ski4.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/products/ski4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "smartPhone1.png": {
+                      "name": "smartPhone1.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/products/smartPhone1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "smartPhone2.png": {
+                      "name": "smartPhone2.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/products/smartPhone2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "smartPhone3.png": {
+                      "name": "smartPhone3.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/products/smartPhone3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "smartPhone4.png": {
+                      "name": "smartPhone4.png",
+                      "path": "build-blockchain-insurance-app.git/web/static/img/products/smartPhone4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "js": {
+              "name": "js",
+              "path": "build-blockchain-insurance-app.git/web/static/js",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "masonry.js": {
+                  "name": "masonry.js",
+                  "path": "build-blockchain-insurance-app.git/web/static/js/masonry.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "northstar-forms.js": {
+                  "name": "northstar-forms.js",
+                  "path": "build-blockchain-insurance-app.git/web/static/js/northstar-forms.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "northstar-tables.js": {
+                  "name": "northstar-tables.js",
+                  "path": "build-blockchain-insurance-app.git/web/static/js/northstar-tables.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "northstar.js": {
+                  "name": "northstar.js",
+                  "path": "build-blockchain-insurance-app.git/web/static/js/northstar.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "tools": {
+          "name": "tools",
+          "path": "build-blockchain-insurance-app.git/web/tools",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "build.js": {
+              "name": "build.js",
+              "path": "build-blockchain-insurance-app.git/web/tools/build.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "views": {
+          "name": "views",
+          "path": "build-blockchain-insurance-app.git/web/views",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "_favicon.pug": {
+              "name": "_favicon.pug",
+              "path": "build-blockchain-insurance-app.git/web/views/_favicon.pug",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "_layout.pug": {
+              "name": "_layout.pug",
+              "path": "build-blockchain-insurance-app.git/web/views/_layout.pug",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "home.pug": {
+              "name": "home.pug",
+              "path": "build-blockchain-insurance-app.git/web/views/home.pug",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "insurance-main.pug": {
+              "name": "insurance-main.pug",
+              "path": "build-blockchain-insurance-app.git/web/views/insurance-main.pug",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "insurance.pug": {
+              "name": "insurance.pug",
+              "path": "build-blockchain-insurance-app.git/web/views/insurance.pug",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "police.pug": {
+              "name": "police.pug",
+              "path": "build-blockchain-insurance-app.git/web/views/police.pug",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "repair-shop.pug": {
+              "name": "repair-shop.pug",
+              "path": "build-blockchain-insurance-app.git/web/views/repair-shop.pug",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "shop-main.pug": {
+              "name": "shop-main.pug",
+              "path": "build-blockchain-insurance-app.git/web/views/shop-main.pug",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "shop.pug": {
+              "name": "shop.pug",
+              "path": "build-blockchain-insurance-app.git/web/views/shop.pug",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "webpack.config.dev.js": {
+          "name": "webpack.config.dev.js",
+          "path": "build-blockchain-insurance-app.git/web/webpack.config.dev.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "webpack.config.prod.js": {
+          "name": "webpack.config.prod.js",
+          "path": "build-blockchain-insurance-app.git/web/webpack.config.prod.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "www": {
+          "name": "www",
+          "path": "build-blockchain-insurance-app.git/web/www",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "app.js": {
+              "name": "app.js",
+              "path": "build-blockchain-insurance-app.git/web/www/app.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "blockchain": {
+              "name": "blockchain",
+              "path": "build-blockchain-insurance-app.git/web/www/blockchain",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.js": {
+                  "name": "config.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/blockchain/config.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config.json": {
+                  "name": "config.json",
+                  "path": "build-blockchain-insurance-app.git/web/www/blockchain/config.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "enrollAdmin.js": {
+                  "name": "enrollAdmin.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/blockchain/enrollAdmin.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ibpConnection.json": {
+                  "name": "ibpConnection.json",
+                  "path": "build-blockchain-insurance-app.git/web/www/blockchain/ibpConnection.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "insurancePeer.js": {
+                  "name": "insurancePeer.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/blockchain/insurancePeer.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "invoke.js": {
+                  "name": "invoke.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/blockchain/invoke.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "policePeer.js": {
+                  "name": "policePeer.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/blockchain/policePeer.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "registerUser.js": {
+                  "name": "registerUser.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/blockchain/registerUser.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "repairShopPeer.js": {
+                  "name": "repairShopPeer.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/blockchain/repairShopPeer.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "setup.js": {
+                  "name": "setup.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/blockchain/setup.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "shopPeer.js": {
+                  "name": "shopPeer.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/blockchain/shopPeer.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "utils.js": {
+                  "name": "utils.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/blockchain/utils.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "config": {
+              "name": "config",
+              "path": "build-blockchain-insurance-app.git/web/www/config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "express.js": {
+                  "name": "express.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/config/express.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "i18n.js": {
+                  "name": "i18n.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/config/i18n.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "security.js": {
+                  "name": "security.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/config/security.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "routers": {
+              "name": "routers",
+              "path": "build-blockchain-insurance-app.git/web/www/routers",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "insurance.router.js": {
+                  "name": "insurance.router.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/routers/insurance.router.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "police.router.js": {
+                  "name": "police.router.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/routers/police.router.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "repair-shop.router.js": {
+                  "name": "repair-shop.router.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/routers/repair-shop.router.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "shop.router.js": {
+                  "name": "shop.router.js",
+                  "path": "build-blockchain-insurance-app.git/web/www/routers/shop.router.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "server.js": {
+              "name": "server.js",
+              "path": "build-blockchain-insurance-app.git/web/www/server.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 108624313,
+    "name": "build-blockchain-insurance-app",
+    "full_name": "IBM/build-blockchain-insurance-app",
+    "owner": {
+      "login": "IBM",
+      "html_url": "https://github.com/IBM",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/IBM/build-blockchain-insurance-app",
+    "description": "Sample insurance application using Hyperledger Fabric",
+    "url": "https://api.github.com/repos/IBM/build-blockchain-insurance-app",
+    "clone_url": "https://github.com/IBM/build-blockchain-insurance-app.git",
+    "homepage": "https://developer.ibm.com/patterns/build-a-blockchain-insurance-app/",
+    "size": 173551,
+    "stargazers_count": 720,
+    "watchers_count": 720,
+    "language": "JavaScript"
+  }
+}

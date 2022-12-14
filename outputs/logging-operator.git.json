@@ -1,0 +1,4343 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 1,
+      "subFolderCount": 11,
+      "filepaths": [
+        "logging-operator.git/Dockerfile",
+        "logging-operator.git/drain-watch-image/Dockerfile",
+        "logging-operator.git/fluent-bit-image/v1.6/Dockerfile.windows",
+        "logging-operator.git/fluentd-image/e2e-test/Dockerfile",
+        "logging-operator.git/fluentd-image/v1.10/Dockerfile",
+        "logging-operator.git/fluentd-image/v1.11/Dockerfile",
+        "logging-operator.git/fluentd-image/v1.12/Dockerfile",
+        "logging-operator.git/fluentd-image/v1.13/Dockerfile",
+        "logging-operator.git/fluentd-image/v1.14/Dockerfile",
+        "logging-operator.git/fluentd-image/v1.7/Dockerfile",
+        "logging-operator.git/fluentd-image/v1.9/Dockerfile",
+        "logging-operator.git/node-exporter-image/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "logging-operator.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "logging-operator.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "logging-operator.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "logging-operator.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "logging-operator.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "logging-operator.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "logging-operator.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "logging-operator.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "logging-operator.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "logging-operator.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "logging-operator.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "logging-operator.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "logging-operator.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "logging-operator.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "logging-operator.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "logging-operator.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "logging-operator.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "logging-operator.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "logging-operator.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "logging-operator.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "logging-operator.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "logging-operator.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "logging-operator.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "logging-operator.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "logging-operator.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "logging-operator.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "logging-operator.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "logging-operator.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "logging-operator.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "logging-operator.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "logging-operator.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "logging-operator.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "logging-operator.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-7336d851c58ab68445b63235c8f12d9ec4c56d46.idx": {
+                  "name": "pack-7336d851c58ab68445b63235c8f12d9ec4c56d46.idx",
+                  "path": "logging-operator.git/.git/objects/pack/pack-7336d851c58ab68445b63235c8f12d9ec4c56d46.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-7336d851c58ab68445b63235c8f12d9ec4c56d46.pack": {
+                  "name": "pack-7336d851c58ab68445b63235c8f12d9ec4c56d46.pack",
+                  "path": "logging-operator.git/.git/objects/pack/pack-7336d851c58ab68445b63235c8f12d9ec4c56d46.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "logging-operator.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "logging-operator.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "logging-operator.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "logging-operator.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "logging-operator.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "logging-operator.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "logging-operator.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "logging-operator.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "logging-operator.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "logging-operator.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "logging-operator.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "---bug-report.md": {
+              "name": "---bug-report.md",
+              "path": "logging-operator.git/.github/ISSUE_TEMPLATE/---bug-report.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "--feature-request.md": {
+              "name": "--feature-request.md",
+              "path": "logging-operator.git/.github/ISSUE_TEMPLATE/--feature-request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "dependabot.yml": {
+          "name": "dependabot.yml",
+          "path": "logging-operator.git/.github/dependabot.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "logging-operator.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ci.yml": {
+              "name": "ci.yml",
+              "path": "logging-operator.git/.github/workflows/ci.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker.yml": {
+              "name": "docker.yml",
+              "path": "logging-operator.git/.github/workflows/docker.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker_fluentd.yml": {
+              "name": "docker_fluentd.yml",
+              "path": "logging-operator.git/.github/workflows/docker_fluentd.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "drain_watch_image.yml": {
+              "name": "drain_watch_image.yml",
+              "path": "logging-operator.git/.github/workflows/drain_watch_image.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "e2e.yml": {
+              "name": "e2e.yml",
+              "path": "logging-operator.git/.github/workflows/e2e.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "helm.yml": {
+              "name": "helm.yml",
+              "path": "logging-operator.git/.github/workflows/helm.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "node-exporter-image.yml": {
+              "name": "node-exporter-image.yml",
+              "path": "logging-operator.git/.github/workflows/node-exporter-image.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "trigger-submodule-update.yml": {
+              "name": "trigger-submodule-update.yml",
+              "path": "logging-operator.git/.github/workflows/trigger-submodule-update.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "logging-operator.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".golangci.yml": {
+      "name": ".golangci.yml",
+      "path": "logging-operator.git/.golangci.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".idea": {
+      "name": ".idea",
+      "path": "logging-operator.git/.idea",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "copyright": {
+          "name": "copyright",
+          "path": "logging-operator.git/.idea/copyright",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Banzai_Cloud.xml": {
+              "name": "Banzai_Cloud.xml",
+              "path": "logging-operator.git/.idea/copyright/Banzai_Cloud.xml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "profiles_settings.xml": {
+              "name": "profiles_settings.xml",
+              "path": "logging-operator.git/.idea/copyright/profiles_settings.xml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logging-operator.iml": {
+          "name": "logging-operator.iml",
+          "path": "logging-operator.git/.idea/logging-operator.iml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "modules.xml": {
+          "name": "modules.xml",
+          "path": "logging-operator.git/.idea/modules.xml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "vcs.xml": {
+          "name": "vcs.xml",
+          "path": "logging-operator.git/.idea/vcs.xml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".licensei.toml": {
+      "name": ".licensei.toml",
+      "path": "logging-operator.git/.licensei.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "ADOPTERS.md": {
+      "name": "ADOPTERS.md",
+      "path": "logging-operator.git/ADOPTERS.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "logging-operator.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "logging-operator.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Makefile": {
+      "name": "Makefile",
+      "path": "logging-operator.git/Makefile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "NOTICE": {
+      "name": "NOTICE",
+      "path": "logging-operator.git/NOTICE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "PROJECT": {
+      "name": "PROJECT",
+      "path": "logging-operator.git/PROJECT",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "logging-operator.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "charts": {
+      "name": "charts",
+      "path": "logging-operator.git/charts",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "helm_testing.yaml": {
+          "name": "helm_testing.yaml",
+          "path": "logging-operator.git/charts/helm_testing.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "logging-demo": {
+          "name": "logging-demo",
+          "path": "logging-operator.git/charts/logging-demo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".helmignore": {
+              "name": ".helmignore",
+              "path": "logging-operator.git/charts/logging-demo/.helmignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Chart.yaml": {
+              "name": "Chart.yaml",
+              "path": "logging-operator.git/charts/logging-demo/Chart.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "logging-operator.git/charts/logging-demo/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "charts": {
+              "name": "charts",
+              "path": "logging-operator.git/charts/logging-demo/charts",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "log-generator-0.1.5.tgz": {
+                  "name": "log-generator-0.1.5.tgz",
+                  "path": "logging-operator.git/charts/logging-demo/charts/log-generator-0.1.5.tgz",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "minio-8.0.9.tgz": {
+                  "name": "minio-8.0.9.tgz",
+                  "path": "logging-operator.git/charts/logging-demo/charts/minio-8.0.9.tgz",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "requirements.lock": {
+              "name": "requirements.lock",
+              "path": "logging-operator.git/charts/logging-demo/requirements.lock",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "requirements.yaml": {
+              "name": "requirements.yaml",
+              "path": "logging-operator.git/charts/logging-demo/requirements.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "logging-operator.git/charts/logging-demo/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "_helpers.tpl": {
+                  "name": "_helpers.tpl",
+                  "path": "logging-operator.git/charts/logging-demo/templates/_helpers.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "flow.yaml": {
+                  "name": "flow.yaml",
+                  "path": "logging-operator.git/charts/logging-demo/templates/flow.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging.yaml": {
+                  "name": "logging.yaml",
+                  "path": "logging-operator.git/charts/logging-demo/templates/logging.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "output_cloudwatch.yaml": {
+                  "name": "output_cloudwatch.yaml",
+                  "path": "logging-operator.git/charts/logging-demo/templates/output_cloudwatch.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "output_elasticsearch.yaml": {
+                  "name": "output_elasticsearch.yaml",
+                  "path": "logging-operator.git/charts/logging-demo/templates/output_elasticsearch.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "output_file.yaml": {
+                  "name": "output_file.yaml",
+                  "path": "logging-operator.git/charts/logging-demo/templates/output_file.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "output_kafka.yaml": {
+                  "name": "output_kafka.yaml",
+                  "path": "logging-operator.git/charts/logging-demo/templates/output_kafka.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "output_logdna.yaml": {
+                  "name": "output_logdna.yaml",
+                  "path": "logging-operator.git/charts/logging-demo/templates/output_logdna.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "output_loki.yaml": {
+                  "name": "output_loki.yaml",
+                  "path": "logging-operator.git/charts/logging-demo/templates/output_loki.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "output_minio.yaml": {
+                  "name": "output_minio.yaml",
+                  "path": "logging-operator.git/charts/logging-demo/templates/output_minio.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret_cloudwach.yaml": {
+                  "name": "secret_cloudwach.yaml",
+                  "path": "logging-operator.git/charts/logging-demo/templates/secret_cloudwach.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret_minio.yaml": {
+                  "name": "secret_minio.yaml",
+                  "path": "logging-operator.git/charts/logging-demo/templates/secret_minio.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret_tls.yaml": {
+                  "name": "secret_tls.yaml",
+                  "path": "logging-operator.git/charts/logging-demo/templates/secret_tls.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests": {
+                  "name": "tests",
+                  "path": "logging-operator.git/charts/logging-demo/templates/tests",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "test-minio.yaml": {
+                      "name": "test-minio.yaml",
+                      "path": "logging-operator.git/charts/logging-demo/templates/tests/test-minio.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "values.yaml": {
+              "name": "values.yaml",
+              "path": "logging-operator.git/charts/logging-demo/values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logging-operator": {
+          "name": "logging-operator",
+          "path": "logging-operator.git/charts/logging-operator",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".helmignore": {
+              "name": ".helmignore",
+              "path": "logging-operator.git/charts/logging-operator/.helmignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Chart.yaml": {
+              "name": "Chart.yaml",
+              "path": "logging-operator.git/charts/logging-operator/Chart.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "logging-operator.git/charts/logging-operator/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "crds": {
+              "name": "crds",
+              "path": "logging-operator.git/charts/logging-operator/crds",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "logging-extensions.banzaicloud.io_eventtailers.yaml": {
+                  "name": "logging-extensions.banzaicloud.io_eventtailers.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/crds/logging-extensions.banzaicloud.io_eventtailers.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging-extensions.banzaicloud.io_hosttailers.yaml": {
+                  "name": "logging-extensions.banzaicloud.io_hosttailers.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/crds/logging-extensions.banzaicloud.io_hosttailers.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging.banzaicloud.io_clusterflows.yaml": {
+                  "name": "logging.banzaicloud.io_clusterflows.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/crds/logging.banzaicloud.io_clusterflows.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging.banzaicloud.io_clusteroutputs.yaml": {
+                  "name": "logging.banzaicloud.io_clusteroutputs.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/crds/logging.banzaicloud.io_clusteroutputs.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging.banzaicloud.io_flows.yaml": {
+                  "name": "logging.banzaicloud.io_flows.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/crds/logging.banzaicloud.io_flows.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging.banzaicloud.io_loggings.yaml": {
+                  "name": "logging.banzaicloud.io_loggings.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/crds/logging.banzaicloud.io_loggings.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging.banzaicloud.io_outputs.yaml": {
+                  "name": "logging.banzaicloud.io_outputs.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/crds/logging.banzaicloud.io_outputs.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "templates": {
+              "name": "templates",
+              "path": "logging-operator.git/charts/logging-operator/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "NOTES.txt": {
+                  "name": "NOTES.txt",
+                  "path": "logging-operator.git/charts/logging-operator/templates/NOTES.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers.tpl": {
+                  "name": "_helpers.tpl",
+                  "path": "logging-operator.git/charts/logging-operator/templates/_helpers.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "clusterrole.yaml": {
+                  "name": "clusterrole.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/templates/clusterrole.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "clusterrolebinding.yaml": {
+                  "name": "clusterrolebinding.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/templates/clusterrolebinding.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "crds.yaml": {
+                  "name": "crds.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/templates/crds.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment.yaml": {
+                  "name": "deployment.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/templates/deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "psp.yaml": {
+                  "name": "psp.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/templates/psp.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.yaml": {
+                  "name": "service.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/templates/service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "serviceMonitor.yaml": {
+                  "name": "serviceMonitor.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/templates/serviceMonitor.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "serviceaccount.yaml": {
+                  "name": "serviceaccount.yaml",
+                  "path": "logging-operator.git/charts/logging-operator/templates/serviceaccount.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "values.yaml": {
+              "name": "values.yaml",
+              "path": "logging-operator.git/charts/logging-operator/values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logging-operator-logging": {
+          "name": "logging-operator-logging",
+          "path": "logging-operator.git/charts/logging-operator-logging",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".helmignore": {
+              "name": ".helmignore",
+              "path": "logging-operator.git/charts/logging-operator-logging/.helmignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Chart.yaml": {
+              "name": "Chart.yaml",
+              "path": "logging-operator.git/charts/logging-operator-logging/Chart.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "logging-operator.git/charts/logging-operator-logging/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "logging-operator.git/charts/logging-operator-logging/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "NOTES.txt": {
+                  "name": "NOTES.txt",
+                  "path": "logging-operator.git/charts/logging-operator-logging/templates/NOTES.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers.tpl": {
+                  "name": "_helpers.tpl",
+                  "path": "logging-operator.git/charts/logging-operator-logging/templates/_helpers.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "clusterflows.yaml": {
+                  "name": "clusterflows.yaml",
+                  "path": "logging-operator.git/charts/logging-operator-logging/templates/clusterflows.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "clusteroutputs.yaml": {
+                  "name": "clusteroutputs.yaml",
+                  "path": "logging-operator.git/charts/logging-operator-logging/templates/clusteroutputs.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "eventtailer.yaml": {
+                  "name": "eventtailer.yaml",
+                  "path": "logging-operator.git/charts/logging-operator-logging/templates/eventtailer.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "hosttailer.yaml": {
+                  "name": "hosttailer.yaml",
+                  "path": "logging-operator.git/charts/logging-operator-logging/templates/hosttailer.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging.yaml": {
+                  "name": "logging.yaml",
+                  "path": "logging-operator.git/charts/logging-operator-logging/templates/logging.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret.yaml": {
+                  "name": "secret.yaml",
+                  "path": "logging-operator.git/charts/logging-operator-logging/templates/secret.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "values.yaml": {
+              "name": "values.yaml",
+              "path": "logging-operator.git/charts/logging-operator-logging/values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "cmd": {
+      "name": "cmd",
+      "path": "logging-operator.git/cmd",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docs.go": {
+          "name": "docs.go",
+          "path": "logging-operator.git/cmd/docs.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "config": {
+      "name": "config",
+      "path": "logging-operator.git/config",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "certmanager": {
+          "name": "certmanager",
+          "path": "logging-operator.git/config/certmanager",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "certificate.yaml": {
+              "name": "certificate.yaml",
+              "path": "logging-operator.git/config/certmanager/certificate.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "logging-operator.git/config/certmanager/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomizeconfig.yaml": {
+              "name": "kustomizeconfig.yaml",
+              "path": "logging-operator.git/config/certmanager/kustomizeconfig.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "crd": {
+          "name": "crd",
+          "path": "logging-operator.git/config/crd",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bases": {
+              "name": "bases",
+              "path": "logging-operator.git/config/crd/bases",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "logging-extensions.banzaicloud.io_eventtailers.yaml": {
+                  "name": "logging-extensions.banzaicloud.io_eventtailers.yaml",
+                  "path": "logging-operator.git/config/crd/bases/logging-extensions.banzaicloud.io_eventtailers.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging-extensions.banzaicloud.io_hosttailers.yaml": {
+                  "name": "logging-extensions.banzaicloud.io_hosttailers.yaml",
+                  "path": "logging-operator.git/config/crd/bases/logging-extensions.banzaicloud.io_hosttailers.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging.banzaicloud.io_clusterflows.yaml": {
+                  "name": "logging.banzaicloud.io_clusterflows.yaml",
+                  "path": "logging-operator.git/config/crd/bases/logging.banzaicloud.io_clusterflows.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging.banzaicloud.io_clusteroutputs.yaml": {
+                  "name": "logging.banzaicloud.io_clusteroutputs.yaml",
+                  "path": "logging-operator.git/config/crd/bases/logging.banzaicloud.io_clusteroutputs.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging.banzaicloud.io_flows.yaml": {
+                  "name": "logging.banzaicloud.io_flows.yaml",
+                  "path": "logging-operator.git/config/crd/bases/logging.banzaicloud.io_flows.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging.banzaicloud.io_loggings.yaml": {
+                  "name": "logging.banzaicloud.io_loggings.yaml",
+                  "path": "logging-operator.git/config/crd/bases/logging.banzaicloud.io_loggings.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging.banzaicloud.io_outputs.yaml": {
+                  "name": "logging.banzaicloud.io_outputs.yaml",
+                  "path": "logging-operator.git/config/crd/bases/logging.banzaicloud.io_outputs.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "logging-operator.git/config/crd/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomizeconfig.yaml": {
+              "name": "kustomizeconfig.yaml",
+              "path": "logging-operator.git/config/crd/kustomizeconfig.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "patches": {
+              "name": "patches",
+              "path": "logging-operator.git/config/crd/patches",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cainjection_in_clusterflows.yaml": {
+                  "name": "cainjection_in_clusterflows.yaml",
+                  "path": "logging-operator.git/config/crd/patches/cainjection_in_clusterflows.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cainjection_in_clusteroutputs.yaml": {
+                  "name": "cainjection_in_clusteroutputs.yaml",
+                  "path": "logging-operator.git/config/crd/patches/cainjection_in_clusteroutputs.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cainjection_in_flows.yaml": {
+                  "name": "cainjection_in_flows.yaml",
+                  "path": "logging-operator.git/config/crd/patches/cainjection_in_flows.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cainjection_in_fluentbits.yaml": {
+                  "name": "cainjection_in_fluentbits.yaml",
+                  "path": "logging-operator.git/config/crd/patches/cainjection_in_fluentbits.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cainjection_in_fluentds.yaml": {
+                  "name": "cainjection_in_fluentds.yaml",
+                  "path": "logging-operator.git/config/crd/patches/cainjection_in_fluentds.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cainjection_in_loggings.yaml": {
+                  "name": "cainjection_in_loggings.yaml",
+                  "path": "logging-operator.git/config/crd/patches/cainjection_in_loggings.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cainjection_in_outputs.yaml": {
+                  "name": "cainjection_in_outputs.yaml",
+                  "path": "logging-operator.git/config/crd/patches/cainjection_in_outputs.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "webhook_in_clusterflows.yaml": {
+                  "name": "webhook_in_clusterflows.yaml",
+                  "path": "logging-operator.git/config/crd/patches/webhook_in_clusterflows.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "webhook_in_clusteroutputs.yaml": {
+                  "name": "webhook_in_clusteroutputs.yaml",
+                  "path": "logging-operator.git/config/crd/patches/webhook_in_clusteroutputs.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "webhook_in_flows.yaml": {
+                  "name": "webhook_in_flows.yaml",
+                  "path": "logging-operator.git/config/crd/patches/webhook_in_flows.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "webhook_in_fluentbits.yaml": {
+                  "name": "webhook_in_fluentbits.yaml",
+                  "path": "logging-operator.git/config/crd/patches/webhook_in_fluentbits.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "webhook_in_fluentds.yaml": {
+                  "name": "webhook_in_fluentds.yaml",
+                  "path": "logging-operator.git/config/crd/patches/webhook_in_fluentds.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "webhook_in_loggings.yaml": {
+                  "name": "webhook_in_loggings.yaml",
+                  "path": "logging-operator.git/config/crd/patches/webhook_in_loggings.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "webhook_in_outputs.yaml": {
+                  "name": "webhook_in_outputs.yaml",
+                  "path": "logging-operator.git/config/crd/patches/webhook_in_outputs.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "dashboards": {
+          "name": "dashboards",
+          "path": "logging-operator.git/config/dashboards",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "logging-dashboard.json": {
+              "name": "logging-dashboard.json",
+              "path": "logging-operator.git/config/dashboards/logging-dashboard.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "default": {
+          "name": "default",
+          "path": "logging-operator.git/config/default",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "logging-operator.git/config/default/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manager_auth_proxy_patch.yaml": {
+              "name": "manager_auth_proxy_patch.yaml",
+              "path": "logging-operator.git/config/default/manager_auth_proxy_patch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manager_image_patch.yaml": {
+              "name": "manager_image_patch.yaml",
+              "path": "logging-operator.git/config/default/manager_image_patch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manager_image_patch.yaml-e": {
+              "name": "manager_image_patch.yaml-e",
+              "path": "logging-operator.git/config/default/manager_image_patch.yaml-e",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manager_prometheus_metrics_patch.yaml": {
+              "name": "manager_prometheus_metrics_patch.yaml",
+              "path": "logging-operator.git/config/default/manager_prometheus_metrics_patch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manager_webhook_patch.yaml": {
+              "name": "manager_webhook_patch.yaml",
+              "path": "logging-operator.git/config/default/manager_webhook_patch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "webhookcainjection_patch.yaml": {
+              "name": "webhookcainjection_patch.yaml",
+              "path": "logging-operator.git/config/default/webhookcainjection_patch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "manager": {
+          "name": "manager",
+          "path": "logging-operator.git/config/manager",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "logging-operator.git/config/manager/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manager.yaml": {
+              "name": "manager.yaml",
+              "path": "logging-operator.git/config/manager/manager.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "rbac": {
+          "name": "rbac",
+          "path": "logging-operator.git/config/rbac",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "auth_proxy_role.yaml": {
+              "name": "auth_proxy_role.yaml",
+              "path": "logging-operator.git/config/rbac/auth_proxy_role.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "auth_proxy_role_binding.yaml": {
+              "name": "auth_proxy_role_binding.yaml",
+              "path": "logging-operator.git/config/rbac/auth_proxy_role_binding.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "auth_proxy_service.yaml": {
+              "name": "auth_proxy_service.yaml",
+              "path": "logging-operator.git/config/rbac/auth_proxy_service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "logging-operator.git/config/rbac/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "leader_election_role.yaml": {
+              "name": "leader_election_role.yaml",
+              "path": "logging-operator.git/config/rbac/leader_election_role.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "leader_election_role_binding.yaml": {
+              "name": "leader_election_role_binding.yaml",
+              "path": "logging-operator.git/config/rbac/leader_election_role_binding.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "role.yaml": {
+              "name": "role.yaml",
+              "path": "logging-operator.git/config/rbac/role.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "role_binding.yaml": {
+              "name": "role_binding.yaml",
+              "path": "logging-operator.git/config/rbac/role_binding.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "samples": {
+          "name": "samples",
+          "path": "logging-operator.git/config/samples",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "extensions": {
+              "name": "extensions",
+              "path": "logging-operator.git/config/samples/extensions",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "logging-extensions_v1alpha1_eventtailer_with_pvc.yaml": {
+                  "name": "logging-extensions_v1alpha1_eventtailer_with_pvc.yaml",
+                  "path": "logging-operator.git/config/samples/extensions/logging-extensions_v1alpha1_eventtailer_with_pvc.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging-extensions_v1alpha1_eventtailer_without_pvc.yaml": {
+                  "name": "logging-extensions_v1alpha1_eventtailer_without_pvc.yaml",
+                  "path": "logging-operator.git/config/samples/extensions/logging-extensions_v1alpha1_eventtailer_without_pvc.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging-extensions_v1alpha1_hosttailer.yaml": {
+                  "name": "logging-extensions_v1alpha1_hosttailer.yaml",
+                  "path": "logging-operator.git/config/samples/extensions/logging-extensions_v1alpha1_hosttailer.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logging-extensions_v1alpha1_webhook.yaml": {
+                  "name": "logging-extensions_v1alpha1_webhook.yaml",
+                  "path": "logging-operator.git/config/samples/extensions/logging-extensions_v1alpha1_webhook.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "testpod.yaml": {
+                  "name": "testpod.yaml",
+                  "path": "logging-operator.git/config/samples/extensions/testpod.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "testpod_annotated.yaml": {
+                  "name": "testpod_annotated.yaml",
+                  "path": "logging-operator.git/config/samples/extensions/testpod_annotated.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "testpod_annotated_multicontainer.yaml": {
+                  "name": "testpod_annotated_multicontainer.yaml",
+                  "path": "logging-operator.git/config/samples/extensions/testpod_annotated_multicontainer.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "logging_v1alpha2_cluster_output_custom.yaml": {
+              "name": "logging_v1alpha2_cluster_output_custom.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_cluster_output_custom.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_flow.yaml": {
+              "name": "logging_v1alpha2_flow.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_flow.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_flow_custom.yaml": {
+              "name": "logging_v1alpha2_flow_custom.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_flow_custom.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_logging_custom.yaml": {
+              "name": "logging_v1alpha2_logging_custom.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_logging_custom.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_logging_debug.yaml": {
+              "name": "logging_v1alpha2_logging_debug.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_logging_debug.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_logging_default.yaml": {
+              "name": "logging_v1alpha2_logging_default.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_logging_default.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_logging_disablelogrotate.yaml": {
+              "name": "logging_v1alpha2_logging_disablelogrotate.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_logging_disablelogrotate.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_logging_labels.yaml": {
+              "name": "logging_v1alpha2_logging_labels.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_logging_labels.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_logging_psp.yaml": {
+              "name": "logging_v1alpha2_logging_psp.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_logging_psp.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_logging_pvc.yaml": {
+              "name": "logging_v1alpha2_logging_pvc.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_logging_pvc.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_logging_tailer.yaml": {
+              "name": "logging_v1alpha2_logging_tailer.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_logging_tailer.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_multiflow.yaml": {
+              "name": "logging_v1alpha2_multiflow.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_multiflow.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_output.yaml": {
+              "name": "logging_v1alpha2_output.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_output.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_v1alpha2_output_custom.yaml": {
+              "name": "logging_v1alpha2_output_custom.yaml",
+              "path": "logging-operator.git/config/samples/logging_v1alpha2_output_custom.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "webhook": {
+          "name": "webhook",
+          "path": "logging-operator.git/config/webhook",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "logging-operator.git/config/webhook/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomizeconfig.yaml": {
+              "name": "kustomizeconfig.yaml",
+              "path": "logging-operator.git/config/webhook/kustomizeconfig.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service.yaml": {
+              "name": "service.yaml",
+              "path": "logging-operator.git/config/webhook/service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "controllers": {
+      "name": "controllers",
+      "path": "logging-operator.git/controllers",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "extensions": {
+          "name": "extensions",
+          "path": "logging-operator.git/controllers/extensions",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "eventtailer_controller.go": {
+              "name": "eventtailer_controller.go",
+              "path": "logging-operator.git/controllers/extensions/eventtailer_controller.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hosttailer_controller.go": {
+              "name": "hosttailer_controller.go",
+              "path": "logging-operator.git/controllers/extensions/hosttailer_controller.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "suite_test.go": {
+              "name": "suite_test.go",
+              "path": "logging-operator.git/controllers/extensions/suite_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logging": {
+          "name": "logging",
+          "path": "logging-operator.git/controllers/logging",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "logging_controller.go": {
+              "name": "logging_controller.go",
+              "path": "logging-operator.git/controllers/logging/logging_controller.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_controller_match_test.go": {
+              "name": "logging_controller_match_test.go",
+              "path": "logging-operator.git/controllers/logging/logging_controller_match_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging_controller_test.go": {
+              "name": "logging_controller_test.go",
+              "path": "logging-operator.git/controllers/logging/logging_controller_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "suite_test.go": {
+              "name": "suite_test.go",
+              "path": "logging-operator.git/controllers/logging/suite_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "docs": {
+      "name": "docs",
+      "path": "logging-operator.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Readme.md": {
+          "name": "Readme.md",
+          "path": "logging-operator.git/docs/Readme.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "img": {
+          "name": "img",
+          "path": "logging-operator.git/docs/img",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "lo.svg": {
+              "name": "lo.svg",
+              "path": "logging-operator.git/docs/img/lo.svg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "scaling.md": {
+          "name": "scaling.md",
+          "path": "logging-operator.git/docs/scaling.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "volume-drainer.md": {
+          "name": "volume-drainer.md",
+          "path": "logging-operator.git/docs/volume-drainer.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "drain-watch-image": {
+      "name": "drain-watch-image",
+      "path": "logging-operator.git/drain-watch-image",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "logging-operator.git/drain-watch-image/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "drain-watch.sh": {
+          "name": "drain-watch.sh",
+          "path": "logging-operator.git/drain-watch-image/drain-watch.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "e2e": {
+      "name": "e2e",
+      "path": "logging-operator.git/e2e",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "common": {
+          "name": "common",
+          "path": "logging-operator.git/e2e/common",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cluster.go": {
+              "name": "cluster.go",
+              "path": "logging-operator.git/e2e/common/cluster.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cond": {
+              "name": "cond",
+              "path": "logging-operator.git/e2e/common/cond",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "conditions.go": {
+                  "name": "conditions.go",
+                  "path": "logging-operator.git/e2e/common/cond/conditions.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kind": {
+              "name": "kind",
+              "path": "logging-operator.git/e2e/common/kind",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "commands.go": {
+                  "name": "commands.go",
+                  "path": "logging-operator.git/e2e/common/kind/commands.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kind.go": {
+              "name": "kind.go",
+              "path": "logging-operator.git/e2e/common/kind.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "panicobject.go": {
+              "name": "panicobject.go",
+              "path": "logging-operator.git/e2e/common/panicobject.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "resources.go": {
+              "name": "resources.go",
+              "path": "logging-operator.git/e2e/common/resources.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "setup": {
+              "name": "setup",
+              "path": "logging-operator.git/e2e/common/setup",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "logconsumer.go": {
+                  "name": "logconsumer.go",
+                  "path": "logging-operator.git/e2e/common/setup/logconsumer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "loggingoperator.go": {
+                  "name": "loggingoperator.go",
+                  "path": "logging-operator.git/e2e/common/setup/loggingoperator.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logproducer.go": {
+                  "name": "logproducer.go",
+                  "path": "logging-operator.git/e2e/common/setup/logproducer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "go.mod": {
+          "name": "go.mod",
+          "path": "logging-operator.git/e2e/go.mod",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "go.sum": {
+          "name": "go.sum",
+          "path": "logging-operator.git/e2e/go.sum",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "volumedrain": {
+          "name": "volumedrain",
+          "path": "logging-operator.git/e2e/volumedrain",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "volumedrain_test.go": {
+              "name": "volumedrain_test.go",
+              "path": "logging-operator.git/e2e/volumedrain/volumedrain_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "fluent-bit-image": {
+      "name": "fluent-bit-image",
+      "path": "logging-operator.git/fluent-bit-image",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "v1.6": {
+          "name": "v1.6",
+          "path": "logging-operator.git/fluent-bit-image/v1.6",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile.windows": {
+              "name": "Dockerfile.windows",
+              "path": "logging-operator.git/fluent-bit-image/v1.6/Dockerfile.windows",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "fluentd-image": {
+      "name": "fluentd-image",
+      "path": "logging-operator.git/fluentd-image",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "e2e-test": {
+          "name": "e2e-test",
+          "path": "logging-operator.git/fluentd-image/e2e-test",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "logging-operator.git/fluentd-image/e2e-test/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "entrypoint.sh": {
+              "name": "entrypoint.sh",
+              "path": "logging-operator.git/fluentd-image/e2e-test/entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fluent.conf": {
+              "name": "fluent.conf",
+              "path": "logging-operator.git/fluentd-image/e2e-test/fluent.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "healthy.sh": {
+              "name": "healthy.sh",
+              "path": "logging-operator.git/fluentd-image/e2e-test/healthy.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "v1.10": {
+          "name": "v1.10",
+          "path": "logging-operator.git/fluentd-image/v1.10",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "logging-operator.git/fluentd-image/v1.10/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "entrypoint.sh": {
+              "name": "entrypoint.sh",
+              "path": "logging-operator.git/fluentd-image/v1.10/entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fluent.conf": {
+              "name": "fluent.conf",
+              "path": "logging-operator.git/fluentd-image/v1.10/fluent.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "healthy.sh": {
+              "name": "healthy.sh",
+              "path": "logging-operator.git/fluentd-image/v1.10/healthy.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "v1.11": {
+          "name": "v1.11",
+          "path": "logging-operator.git/fluentd-image/v1.11",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "logging-operator.git/fluentd-image/v1.11/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "entrypoint.sh": {
+              "name": "entrypoint.sh",
+              "path": "logging-operator.git/fluentd-image/v1.11/entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fluent.conf": {
+              "name": "fluent.conf",
+              "path": "logging-operator.git/fluentd-image/v1.11/fluent.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "healthy.sh": {
+              "name": "healthy.sh",
+              "path": "logging-operator.git/fluentd-image/v1.11/healthy.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "v1.12": {
+          "name": "v1.12",
+          "path": "logging-operator.git/fluentd-image/v1.12",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "logging-operator.git/fluentd-image/v1.12/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "entrypoint.sh": {
+              "name": "entrypoint.sh",
+              "path": "logging-operator.git/fluentd-image/v1.12/entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fluent.conf": {
+              "name": "fluent.conf",
+              "path": "logging-operator.git/fluentd-image/v1.12/fluent.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "healthy.sh": {
+              "name": "healthy.sh",
+              "path": "logging-operator.git/fluentd-image/v1.12/healthy.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "v1.13": {
+          "name": "v1.13",
+          "path": "logging-operator.git/fluentd-image/v1.13",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "logging-operator.git/fluentd-image/v1.13/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "entrypoint.sh": {
+              "name": "entrypoint.sh",
+              "path": "logging-operator.git/fluentd-image/v1.13/entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fluent.conf": {
+              "name": "fluent.conf",
+              "path": "logging-operator.git/fluentd-image/v1.13/fluent.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "healthy.sh": {
+              "name": "healthy.sh",
+              "path": "logging-operator.git/fluentd-image/v1.13/healthy.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "v1.14": {
+          "name": "v1.14",
+          "path": "logging-operator.git/fluentd-image/v1.14",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "logging-operator.git/fluentd-image/v1.14/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "entrypoint.sh": {
+              "name": "entrypoint.sh",
+              "path": "logging-operator.git/fluentd-image/v1.14/entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fluent.conf": {
+              "name": "fluent.conf",
+              "path": "logging-operator.git/fluentd-image/v1.14/fluent.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "healthy.sh": {
+              "name": "healthy.sh",
+              "path": "logging-operator.git/fluentd-image/v1.14/healthy.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "v1.7": {
+          "name": "v1.7",
+          "path": "logging-operator.git/fluentd-image/v1.7",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "logging-operator.git/fluentd-image/v1.7/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "entrypoint.sh": {
+              "name": "entrypoint.sh",
+              "path": "logging-operator.git/fluentd-image/v1.7/entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fluent.conf": {
+              "name": "fluent.conf",
+              "path": "logging-operator.git/fluentd-image/v1.7/fluent.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "healthy.sh": {
+              "name": "healthy.sh",
+              "path": "logging-operator.git/fluentd-image/v1.7/healthy.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "v1.9": {
+          "name": "v1.9",
+          "path": "logging-operator.git/fluentd-image/v1.9",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "logging-operator.git/fluentd-image/v1.9/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "entrypoint.sh": {
+              "name": "entrypoint.sh",
+              "path": "logging-operator.git/fluentd-image/v1.9/entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fluent.conf": {
+              "name": "fluent.conf",
+              "path": "logging-operator.git/fluentd-image/v1.9/fluent.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "healthy.sh": {
+              "name": "healthy.sh",
+              "path": "logging-operator.git/fluentd-image/v1.9/healthy.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "logging-operator.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "logging-operator.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "hack": {
+      "name": "hack",
+      "path": "logging-operator.git/hack",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "boilerplate.go.txt": {
+          "name": "boilerplate.go.txt",
+          "path": "logging-operator.git/hack/boilerplate.go.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "clusterflow.yaml": {
+          "name": "clusterflow.yaml",
+          "path": "logging-operator.git/hack/clusterflow.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "clusteroutput.yaml": {
+          "name": "clusteroutput.yaml",
+          "path": "logging-operator.git/hack/clusteroutput.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "minio-mc.yaml": {
+          "name": "minio-mc.yaml",
+          "path": "logging-operator.git/hack/minio-mc.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "minio.yaml": {
+          "name": "minio.yaml",
+          "path": "logging-operator.git/hack/minio.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "secret.yaml": {
+          "name": "secret.yaml",
+          "path": "logging-operator.git/hack/secret.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test.sh": {
+          "name": "test.sh",
+          "path": "logging-operator.git/hack/test.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "main.go": {
+      "name": "main.go",
+      "path": "logging-operator.git/main.go",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "node-exporter-image": {
+      "name": "node-exporter-image",
+      "path": "logging-operator.git/node-exporter-image",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "logging-operator.git/node-exporter-image/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "buffer-size.sh": {
+          "name": "buffer-size.sh",
+          "path": "logging-operator.git/node-exporter-image/buffer-size.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "pkg": {
+      "name": "pkg",
+      "path": "logging-operator.git/pkg",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "compression": {
+          "name": "compression",
+          "path": "logging-operator.git/pkg/compression",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "compression.go": {
+              "name": "compression.go",
+              "path": "logging-operator.git/pkg/compression/compression.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "k8sutil": {
+          "name": "k8sutil",
+          "path": "logging-operator.git/pkg/k8sutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cache.go": {
+              "name": "cache.go",
+              "path": "logging-operator.git/pkg/k8sutil/cache.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "mirror": {
+          "name": "mirror",
+          "path": "logging-operator.git/pkg/mirror",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "struct_iter.go": {
+              "name": "struct_iter.go",
+              "path": "logging-operator.git/pkg/mirror/struct_iter.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "resources": {
+          "name": "resources",
+          "path": "logging-operator.git/pkg/resources",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "annotation": {
+              "name": "annotation",
+              "path": "logging-operator.git/pkg/resources/annotation",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "annotation.go": {
+                  "name": "annotation.go",
+                  "path": "logging-operator.git/pkg/resources/annotation/annotation.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "annotation_test.go": {
+                  "name": "annotation_test.go",
+                  "path": "logging-operator.git/pkg/resources/annotation/annotation_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "eventtailer": {
+              "name": "eventtailer",
+              "path": "logging-operator.git/pkg/resources/eventtailer",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "clusterrole.go": {
+                  "name": "clusterrole.go",
+                  "path": "logging-operator.git/pkg/resources/eventtailer/clusterrole.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "clusterrolebinding.go": {
+                  "name": "clusterrolebinding.go",
+                  "path": "logging-operator.git/pkg/resources/eventtailer/clusterrolebinding.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "configmap.go": {
+                  "name": "configmap.go",
+                  "path": "logging-operator.git/pkg/resources/eventtailer/configmap.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "eventtailer.go": {
+                  "name": "eventtailer.go",
+                  "path": "logging-operator.git/pkg/resources/eventtailer/eventtailer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helpers.go": {
+                  "name": "helpers.go",
+                  "path": "logging-operator.git/pkg/resources/eventtailer/helpers.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "serviceaccount.go": {
+                  "name": "serviceaccount.go",
+                  "path": "logging-operator.git/pkg/resources/eventtailer/serviceaccount.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "statefulset.go": {
+                  "name": "statefulset.go",
+                  "path": "logging-operator.git/pkg/resources/eventtailer/statefulset.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "fluentbit": {
+              "name": "fluentbit",
+              "path": "logging-operator.git/pkg/resources/fluentbit",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "buffervolumeprometheusrules.go": {
+                  "name": "buffervolumeprometheusrules.go",
+                  "path": "logging-operator.git/pkg/resources/fluentbit/buffervolumeprometheusrules.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config.go": {
+                  "name": "config.go",
+                  "path": "logging-operator.git/pkg/resources/fluentbit/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "configsecret.go": {
+                  "name": "configsecret.go",
+                  "path": "logging-operator.git/pkg/resources/fluentbit/configsecret.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "daemonset.go": {
+                  "name": "daemonset.go",
+                  "path": "logging-operator.git/pkg/resources/fluentbit/daemonset.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fluentbit.go": {
+                  "name": "fluentbit.go",
+                  "path": "logging-operator.git/pkg/resources/fluentbit/fluentbit.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "meta.go": {
+                  "name": "meta.go",
+                  "path": "logging-operator.git/pkg/resources/fluentbit/meta.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "prometheusrules.go": {
+                  "name": "prometheusrules.go",
+                  "path": "logging-operator.git/pkg/resources/fluentbit/prometheusrules.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "psp.go": {
+                  "name": "psp.go",
+                  "path": "logging-operator.git/pkg/resources/fluentbit/psp.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rbac.go": {
+                  "name": "rbac.go",
+                  "path": "logging-operator.git/pkg/resources/fluentbit/rbac.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.go": {
+                  "name": "service.go",
+                  "path": "logging-operator.git/pkg/resources/fluentbit/service.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "fluentd": {
+              "name": "fluentd",
+              "path": "logging-operator.git/pkg/resources/fluentd",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "appconfigmap.go": {
+                  "name": "appconfigmap.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/appconfigmap.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "buffervolumeprometheusrules.go": {
+                  "name": "buffervolumeprometheusrules.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/buffervolumeprometheusrules.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "component.go": {
+                  "name": "component.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/component.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config.go": {
+                  "name": "config.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "configsecret.go": {
+                  "name": "configsecret.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/configsecret.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dataprovider.go": {
+                  "name": "dataprovider.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/dataprovider.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "drainjob.go": {
+                  "name": "drainjob.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/drainjob.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fluentd.go": {
+                  "name": "fluentd.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/fluentd.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "meta.go": {
+                  "name": "meta.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/meta.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "outputsecret.go": {
+                  "name": "outputsecret.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/outputsecret.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "placeholderpod.go": {
+                  "name": "placeholderpod.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/placeholderpod.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "prometheusrules.go": {
+                  "name": "prometheusrules.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/prometheusrules.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "psp.go": {
+                  "name": "psp.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/psp.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rbac.go": {
+                  "name": "rbac.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/rbac.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.go": {
+                  "name": "service.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/service.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "statefulset.go": {
+                  "name": "statefulset.go",
+                  "path": "logging-operator.git/pkg/resources/fluentd/statefulset.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "fluentddataprovider": {
+              "name": "fluentddataprovider",
+              "path": "logging-operator.git/pkg/resources/fluentddataprovider",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "interface.go": {
+                  "name": "interface.go",
+                  "path": "logging-operator.git/pkg/resources/fluentddataprovider/interface.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "hosttailer": {
+              "name": "hosttailer",
+              "path": "logging-operator.git/pkg/resources/hosttailer",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "helpers.go": {
+                  "name": "helpers.go",
+                  "path": "logging-operator.git/pkg/resources/hosttailer/helpers.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "hosttailer.go": {
+                  "name": "hosttailer.go",
+                  "path": "logging-operator.git/pkg/resources/hosttailer/hosttailer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kubetool": {
+              "name": "kubetool",
+              "path": "logging-operator.git/pkg/resources/kubetool",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "volumebuilder.go": {
+                  "name": "volumebuilder.go",
+                  "path": "logging-operator.git/pkg/resources/kubetool/volumebuilder.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "volumebuilder_test.go": {
+                  "name": "volumebuilder_test.go",
+                  "path": "logging-operator.git/pkg/resources/kubetool/volumebuilder_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "volumemountbuilder.go": {
+                  "name": "volumemountbuilder.go",
+                  "path": "logging-operator.git/pkg/resources/kubetool/volumemountbuilder.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "volumemountbuilder_test.go": {
+                  "name": "volumemountbuilder_test.go",
+                  "path": "logging-operator.git/pkg/resources/kubetool/volumemountbuilder_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "model": {
+              "name": "model",
+              "path": "logging-operator.git/pkg/resources/model",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "reconciler.go": {
+                  "name": "reconciler.go",
+                  "path": "logging-operator.git/pkg/resources/model/reconciler.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "repository.go": {
+                  "name": "repository.go",
+                  "path": "logging-operator.git/pkg/resources/model/repository.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "resources.go": {
+                  "name": "resources.go",
+                  "path": "logging-operator.git/pkg/resources/model/resources.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "system.go": {
+                  "name": "system.go",
+                  "path": "logging-operator.git/pkg/resources/model/system.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "nodeagent": {
+              "name": "nodeagent",
+              "path": "logging-operator.git/pkg/resources/nodeagent",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.go": {
+                  "name": "config.go",
+                  "path": "logging-operator.git/pkg/resources/nodeagent/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "configsecret.go": {
+                  "name": "configsecret.go",
+                  "path": "logging-operator.git/pkg/resources/nodeagent/configsecret.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "daemonset.go": {
+                  "name": "daemonset.go",
+                  "path": "logging-operator.git/pkg/resources/nodeagent/daemonset.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "meta.go": {
+                  "name": "meta.go",
+                  "path": "logging-operator.git/pkg/resources/nodeagent/meta.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nodeagent.go": {
+                  "name": "nodeagent.go",
+                  "path": "logging-operator.git/pkg/resources/nodeagent/nodeagent.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "psp.go": {
+                  "name": "psp.go",
+                  "path": "logging-operator.git/pkg/resources/nodeagent/psp.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rbac.go": {
+                  "name": "rbac.go",
+                  "path": "logging-operator.git/pkg/resources/nodeagent/rbac.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.go": {
+                  "name": "service.go",
+                  "path": "logging-operator.git/pkg/resources/nodeagent/service.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "reconciler.go": {
+              "name": "reconciler.go",
+              "path": "logging-operator.git/pkg/resources/reconciler.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "logging-operator.git/pkg/resources/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "templates.go": {
+                  "name": "templates.go",
+                  "path": "logging-operator.git/pkg/resources/templates/templates.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "volumepath": {
+              "name": "volumepath",
+              "path": "logging-operator.git/pkg/resources/volumepath",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "volumepath.go": {
+                  "name": "volumepath.go",
+                  "path": "logging-operator.git/pkg/resources/volumepath/volumepath.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "volumepath_test.go": {
+                  "name": "volumepath_test.go",
+                  "path": "logging-operator.git/pkg/resources/volumepath/volumepath_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "sdk": {
+          "name": "sdk",
+          "path": "logging-operator.git/pkg/sdk",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "extensions": {
+              "name": "extensions",
+              "path": "logging-operator.git/pkg/sdk/extensions",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "api": {
+                  "name": "api",
+                  "path": "logging-operator.git/pkg/sdk/extensions/api",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "tailer": {
+                      "name": "tailer",
+                      "path": "logging-operator.git/pkg/sdk/extensions/api/tailer",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "tailer.go": {
+                          "name": "tailer.go",
+                          "path": "logging-operator.git/pkg/sdk/extensions/api/tailer/tailer.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "zz_generated.deepcopy.go": {
+                          "name": "zz_generated.deepcopy.go",
+                          "path": "logging-operator.git/pkg/sdk/extensions/api/tailer/zz_generated.deepcopy.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "v1alpha1": {
+                      "name": "v1alpha1",
+                      "path": "logging-operator.git/pkg/sdk/extensions/api/v1alpha1",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "eventtailer_types.go": {
+                          "name": "eventtailer_types.go",
+                          "path": "logging-operator.git/pkg/sdk/extensions/api/v1alpha1/eventtailer_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "filetailer.go": {
+                          "name": "filetailer.go",
+                          "path": "logging-operator.git/pkg/sdk/extensions/api/v1alpha1/filetailer.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "groupversion_info.go": {
+                          "name": "groupversion_info.go",
+                          "path": "logging-operator.git/pkg/sdk/extensions/api/v1alpha1/groupversion_info.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "hosttailer_types.go": {
+                          "name": "hosttailer_types.go",
+                          "path": "logging-operator.git/pkg/sdk/extensions/api/v1alpha1/hosttailer_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "systemdtailer.go": {
+                          "name": "systemdtailer.go",
+                          "path": "logging-operator.git/pkg/sdk/extensions/api/v1alpha1/systemdtailer.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "zz_generated.deepcopy.go": {
+                          "name": "zz_generated.deepcopy.go",
+                          "path": "logging-operator.git/pkg/sdk/extensions/api/v1alpha1/zz_generated.deepcopy.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "extensionsconfig": {
+                  "name": "extensionsconfig",
+                  "path": "logging-operator.git/pkg/sdk/extensions/extensionsconfig",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "config.go": {
+                      "name": "config.go",
+                      "path": "logging-operator.git/pkg/sdk/extensions/extensionsconfig/config.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "config_test.go": {
+                      "name": "config_test.go",
+                      "path": "logging-operator.git/pkg/sdk/extensions/extensionsconfig/config_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "go.mod": {
+              "name": "go.mod",
+              "path": "logging-operator.git/pkg/sdk/go.mod",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "go.sum": {
+              "name": "go.sum",
+              "path": "logging-operator.git/pkg/sdk/go.sum",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging": {
+              "name": "logging",
+              "path": "logging-operator.git/pkg/sdk/logging",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "api": {
+                  "name": "api",
+                  "path": "logging-operator.git/pkg/sdk/logging/api",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "v1alpha1": {
+                      "name": "v1alpha1",
+                      "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "clusterflow_conversion.go": {
+                          "name": "clusterflow_conversion.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/clusterflow_conversion.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "clusterflow_types.go": {
+                          "name": "clusterflow_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/clusterflow_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "clusteroutput_conversion.go": {
+                          "name": "clusteroutput_conversion.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/clusteroutput_conversion.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "clusteroutput_types.go": {
+                          "name": "clusteroutput_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/clusteroutput_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "conversion.go": {
+                          "name": "conversion.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/conversion.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "flow_conversion.go": {
+                          "name": "flow_conversion.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/flow_conversion.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "flow_types.go": {
+                          "name": "flow_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/flow_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "groupversion_info.go": {
+                          "name": "groupversion_info.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/groupversion_info.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "logging_conversion.go": {
+                          "name": "logging_conversion.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/logging_conversion.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "logging_types.go": {
+                          "name": "logging_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/logging_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "output_conversion.go": {
+                          "name": "output_conversion.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/output_conversion.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "output_types.go": {
+                          "name": "output_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/output_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "zz_generated.deepcopy.go": {
+                          "name": "zz_generated.deepcopy.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1alpha1/zz_generated.deepcopy.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "v1beta1": {
+                      "name": "v1beta1",
+                      "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "clusterflow_types.go": {
+                          "name": "clusterflow_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/clusterflow_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "clusterflow_types_test.go": {
+                          "name": "clusterflow_types_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/clusterflow_types_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "clusteroutput_types.go": {
+                          "name": "clusteroutput_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/clusteroutput_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "clusteroutput_types_test.go": {
+                          "name": "clusteroutput_types_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/clusteroutput_types_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "common_types.go": {
+                          "name": "common_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/common_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "conversion.go": {
+                          "name": "conversion.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/conversion.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "flow_types.go": {
+                          "name": "flow_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/flow_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "flow_types_test.go": {
+                          "name": "flow_types_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/flow_types_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "fluentbit_types.go": {
+                          "name": "fluentbit_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/fluentbit_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "fluentd_types.go": {
+                          "name": "fluentd_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/fluentd_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "groupversion_info.go": {
+                          "name": "groupversion_info.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/groupversion_info.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "logging_types.go": {
+                          "name": "logging_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/logging_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "node_agent_types.go": {
+                          "name": "node_agent_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/node_agent_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "output_types.go": {
+                          "name": "output_types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/output_types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "output_types_test.go": {
+                          "name": "output_types_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/output_types_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "suite_test.go": {
+                          "name": "suite_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/suite_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "zz_generated.deepcopy.go": {
+                          "name": "zz_generated.deepcopy.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/api/v1beta1/zz_generated.deepcopy.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "maps": {
+                  "name": "maps",
+                  "path": "logging-operator.git/pkg/sdk/logging/maps",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mapstrstr": {
+                      "name": "mapstrstr",
+                      "path": "logging-operator.git/pkg/sdk/logging/maps/mapstrstr",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "helpers.go": {
+                          "name": "helpers.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/maps/mapstrstr/helpers.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "model": {
+                  "name": "model",
+                  "path": "logging-operator.git/pkg/sdk/logging/model",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "common": {
+                      "name": "common",
+                      "path": "logging-operator.git/pkg/sdk/logging/model/common",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "security.go": {
+                          "name": "security.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/common/security.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "transport.go": {
+                          "name": "transport.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/common/transport.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "filter": {
+                      "name": "filter",
+                      "path": "logging-operator.git/pkg/sdk/logging/model/filter",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "concat.go": {
+                          "name": "concat.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/concat.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "concat_test.go": {
+                          "name": "concat_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/concat_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "dedot.go": {
+                          "name": "dedot.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/dedot.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "dedot_test.go": {
+                          "name": "dedot_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/dedot_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "detect_exceptions.go": {
+                          "name": "detect_exceptions.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/detect_exceptions.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "detect_exceptions_test.go": {
+                          "name": "detect_exceptions_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/detect_exceptions_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "elasticsearch_genid.go": {
+                          "name": "elasticsearch_genid.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/elasticsearch_genid.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "elasticsearch_genid_test.go": {
+                          "name": "elasticsearch_genid_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/elasticsearch_genid_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "enhance_k8s.go": {
+                          "name": "enhance_k8s.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/enhance_k8s.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "enhance_k8s_test.go": {
+                          "name": "enhance_k8s_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/enhance_k8s_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "geoip.go": {
+                          "name": "geoip.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/geoip.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "geoip_test.go": {
+                          "name": "geoip_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/geoip_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "grep.go": {
+                          "name": "grep.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/grep.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "grep_test.go": {
+                          "name": "grep_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/grep_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "kube_events_timestamp.go": {
+                          "name": "kube_events_timestamp.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/kube_events_timestamp.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "kube_events_timestamp_test.go": {
+                          "name": "kube_events_timestamp_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/kube_events_timestamp_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "parser.go": {
+                          "name": "parser.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/parser.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "parser_test.go": {
+                          "name": "parser_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/parser_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "prometheus.go": {
+                          "name": "prometheus.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/prometheus.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "prometheus_test.go": {
+                          "name": "prometheus_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/prometheus_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "record_modifier.go": {
+                          "name": "record_modifier.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/record_modifier.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "record_modifier_test.go": {
+                          "name": "record_modifier_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/record_modifier_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "record_transformer.go": {
+                          "name": "record_transformer.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/record_transformer.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "record_transformer_test.go": {
+                          "name": "record_transformer_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/record_transformer_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "stdout.go": {
+                          "name": "stdout.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/stdout.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "stdout_test.go": {
+                          "name": "stdout_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/stdout_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "sumologic.go": {
+                          "name": "sumologic.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/sumologic.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "sumologic_test.go": {
+                          "name": "sumologic_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/sumologic_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "tagnormaliser.go": {
+                          "name": "tagnormaliser.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/tagnormaliser.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "tagnormaliser_test.go": {
+                          "name": "tagnormaliser_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/tagnormaliser_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "throttle.go": {
+                          "name": "throttle.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/throttle.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "throttle_test.go": {
+                          "name": "throttle_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/throttle_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "zz_generated.deepcopy.go": {
+                          "name": "zz_generated.deepcopy.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/filter/zz_generated.deepcopy.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "input": {
+                      "name": "input",
+                      "path": "logging-operator.git/pkg/sdk/logging/model/input",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "forward.go": {
+                          "name": "forward.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/input/forward.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "tail.go": {
+                          "name": "tail.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/input/tail.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "zz_generated.deepcopy.go": {
+                          "name": "zz_generated.deepcopy.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/input/zz_generated.deepcopy.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "output": {
+                      "name": "output",
+                      "path": "logging-operator.git/pkg/sdk/logging/model/output",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "aws_elasticsearch.go": {
+                          "name": "aws_elasticsearch.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/aws_elasticsearch.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "aws_elasticsearch_test.go": {
+                          "name": "aws_elasticsearch_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/aws_elasticsearch_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "azurestore.go": {
+                          "name": "azurestore.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/azurestore.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "azurestore_test.go": {
+                          "name": "azurestore_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/azurestore_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "buffer.go": {
+                          "name": "buffer.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/buffer.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "cloudwatch.go": {
+                          "name": "cloudwatch.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/cloudwatch.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "cloudwatch_test.go": {
+                          "name": "cloudwatch_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/cloudwatch_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "datadog.go": {
+                          "name": "datadog.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/datadog.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "datadog_test.go": {
+                          "name": "datadog_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/datadog_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "elasticsearch.go": {
+                          "name": "elasticsearch.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/elasticsearch.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "elasticsearch_test.go": {
+                          "name": "elasticsearch_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/elasticsearch_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "file.go": {
+                          "name": "file.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/file.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "file_test.go": {
+                          "name": "file_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/file_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "format.go": {
+                          "name": "format.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/format.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "format_rfc5424.go": {
+                          "name": "format_rfc5424.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/format_rfc5424.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "format_test.go": {
+                          "name": "format_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/format_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "forward.go": {
+                          "name": "forward.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/forward.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "gcs.go": {
+                          "name": "gcs.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/gcs.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "gcs_test.go": {
+                          "name": "gcs_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/gcs_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "gelf.go": {
+                          "name": "gelf.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/gelf.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "gelf_test.go": {
+                          "name": "gelf_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/gelf_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "http.go": {
+                          "name": "http.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/http.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "http_test.go": {
+                          "name": "http_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/http_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "kafka.go": {
+                          "name": "kafka.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/kafka.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "kafka_test.go": {
+                          "name": "kafka_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/kafka_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "kinesis_firehose.go": {
+                          "name": "kinesis_firehose.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/kinesis_firehose.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "kinesis_firehose_test.go": {
+                          "name": "kinesis_firehose_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/kinesis_firehose_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "kinesis_stream.go": {
+                          "name": "kinesis_stream.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/kinesis_stream.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "kinesis_stream_test.go": {
+                          "name": "kinesis_stream_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/kinesis_stream_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "logdna.go": {
+                          "name": "logdna.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/logdna.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "logdna_test.go": {
+                          "name": "logdna_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/logdna_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "logz.go": {
+                          "name": "logz.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/logz.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "logz_test.go": {
+                          "name": "logz_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/logz_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "loki.go": {
+                          "name": "loki.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/loki.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "loki_test.go": {
+                          "name": "loki_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/loki_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "newrelic.go": {
+                          "name": "newrelic.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/newrelic.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "newrelic_test.go": {
+                          "name": "newrelic_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/newrelic_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "null.go": {
+                          "name": "null.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/null.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "opensearch.go": {
+                          "name": "opensearch.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/opensearch.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "opensearch_test.go": {
+                          "name": "opensearch_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/opensearch_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "oss.go": {
+                          "name": "oss.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/oss.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "oss_test.go": {
+                          "name": "oss_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/oss_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "redis.go": {
+                          "name": "redis.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/redis.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "redis_test.go": {
+                          "name": "redis_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/redis_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "s3.go": {
+                          "name": "s3.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/s3.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "s3_test.go": {
+                          "name": "s3_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/s3_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "splunk_hec.go": {
+                          "name": "splunk_hec.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/splunk_hec.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "splunk_hec_test.go": {
+                          "name": "splunk_hec_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/splunk_hec_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "sqs.go": {
+                          "name": "sqs.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/sqs.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "sqs_test.go": {
+                          "name": "sqs_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/sqs_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "sumologic.go": {
+                          "name": "sumologic.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/sumologic.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "sumologic_test.go": {
+                          "name": "sumologic_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/sumologic_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "syslog.go": {
+                          "name": "syslog.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/syslog.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "syslog_test.go": {
+                          "name": "syslog_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/syslog_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "zz_generated.deepcopy.go": {
+                          "name": "zz_generated.deepcopy.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/output/zz_generated.deepcopy.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "render": {
+                      "name": "render",
+                      "path": "logging-operator.git/pkg/sdk/logging/model/render",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "fluent.go": {
+                          "name": "fluent.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/render/fluent.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "fluent_test.go": {
+                          "name": "fluent_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/render/fluent_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "interface.go": {
+                          "name": "interface.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/render/interface.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "test_helper.go": {
+                          "name": "test_helper.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/render/test_helper.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "types": {
+                      "name": "types",
+                      "path": "logging-operator.git/pkg/sdk/logging/model/types",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "builder.go": {
+                          "name": "builder.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/types/builder.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "flow.go": {
+                          "name": "flow.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/types/flow.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "router.go": {
+                          "name": "router.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/types/router.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "stringmaps.go": {
+                          "name": "stringmaps.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/types/stringmaps.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "stringmaps_test.go": {
+                          "name": "stringmaps_test.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/types/stringmaps_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "types.go": {
+                          "name": "types.go",
+                          "path": "logging-operator.git/pkg/sdk/logging/model/types/types.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "plugins": {
+                  "name": "plugins",
+                  "path": "logging-operator.git/pkg/sdk/logging/plugins",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "plugin.go": {
+                      "name": "plugin.go",
+                      "path": "logging-operator.git/pkg/sdk/logging/plugins/plugin.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "resourcebuilder": {
+              "name": "resourcebuilder",
+              "path": "logging-operator.git/pkg/sdk/resourcebuilder",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "component.go": {
+                  "name": "component.go",
+                  "path": "logging-operator.git/pkg/sdk/resourcebuilder/component.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "webhooks.go": {
+                  "name": "webhooks.go",
+                  "path": "logging-operator.git/pkg/sdk/resourcebuilder/webhooks.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "zz_generated.deepcopy.go": {
+                  "name": "zz_generated.deepcopy.go",
+                  "path": "logging-operator.git/pkg/sdk/resourcebuilder/zz_generated.deepcopy.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "static": {
+              "name": "static",
+              "path": "logging-operator.git/pkg/sdk/static",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "gen": {
+                  "name": "gen",
+                  "path": "logging-operator.git/pkg/sdk/static/gen",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "crds": {
+                      "name": "crds",
+                      "path": "logging-operator.git/pkg/sdk/static/gen/crds",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "generated.go": {
+                          "name": "generated.go",
+                          "path": "logging-operator.git/pkg/sdk/static/gen/crds/generated.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "rbac": {
+                      "name": "rbac",
+                      "path": "logging-operator.git/pkg/sdk/static/gen/rbac",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "generated.go": {
+                          "name": "generated.go",
+                          "path": "logging-operator.git/pkg/sdk/static/gen/rbac/generated.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "main.go": {
+                  "name": "main.go",
+                  "path": "logging-operator.git/pkg/sdk/static/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "webhook": {
+          "name": "webhook",
+          "path": "logging-operator.git/pkg/webhook",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "podhandler": {
+              "name": "podhandler",
+              "path": "logging-operator.git/pkg/webhook/podhandler",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "helpers.go": {
+                  "name": "helpers.go",
+                  "path": "logging-operator.git/pkg/webhook/podhandler/helpers.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "podhandler.go": {
+                  "name": "podhandler.go",
+                  "path": "logging-operator.git/pkg/webhook/podhandler/podhandler.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "scripts": {
+      "name": "scripts",
+      "path": "logging-operator.git/scripts",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "check-header.sh": {
+          "name": "check-header.sh",
+          "path": "logging-operator.git/scripts/check-header.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "generate.sh": {
+          "name": "generate.sh",
+          "path": "logging-operator.git/scripts/generate.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "trigger-docs-update.sh": {
+          "name": "trigger-docs-update.sh",
+          "path": "logging-operator.git/scripts/trigger-docs-update.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 138716355,
+    "name": "logging-operator",
+    "full_name": "banzaicloud/logging-operator",
+    "owner": {
+      "login": "banzaicloud",
+      "html_url": "https://github.com/banzaicloud",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/banzaicloud/logging-operator",
+    "description": "Logging operator for Kubernetes based on Fluentd and Fluentbit",
+    "url": "https://api.github.com/repos/banzaicloud/logging-operator",
+    "clone_url": "https://github.com/banzaicloud/logging-operator.git",
+    "homepage": "https://banzaicloud.com/products/logging-operator/",
+    "size": 73713,
+    "stargazers_count": 1055,
+    "watchers_count": 1055,
+    "language": "Go"
+  }
+}
