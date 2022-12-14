@@ -409,13 +409,7 @@ module.exports = {
             //Language Stats
             if (!res.languages[data.info.language]) {
                 res.languages[data.info.language] = {
-                    total: 0,
-                    just_dockerfile: 0,
-                    just_compose: 0,
-                    just_dockerfile: 0,
-                    dockerfile_or_compose: 0,
-                    dockerfile_and_compose: 0,
-                    no_docker: 0,
+                    total_repos: 0,
                     dockerfile: {
                         only_in_root: 0,
                         only_in_subfolders: 0,
@@ -426,39 +420,81 @@ module.exports = {
                         only_in_subfolders: 0,
                         root_and_subfolders: 0,
                     },
-                    avg_dockerfile_per_repo: 0,
-                    n_dockerfiles_counter: {},
-                    avg_compose_per_repo: 0,
-                    n_compose_counter: {},
+                    just_dockerfile: {
+                        total: 0,
+                        dockerfile: {
+                            only_in_root: 0,
+                            only_in_subfolders: 0,
+                            root_and_subfolders: 0,
+                        },
+                        composefile: {
+                            only_in_root: 0,
+                            only_in_subfolders: 0,
+                            root_and_subfolders: 0,
+                        },
+                        avg_dockerfile_per_repo: 0,
+                        n_dockerfiles_counter: {},
+                        avg_compose_per_repo: 0,
+                        n_compose_counter: {},
+                    },
+                    just_compose: {
+                        total: 0,
+                        dockerfile: {
+                            only_in_root: 0,
+                            only_in_subfolders: 0,
+                            root_and_subfolders: 0,
+                        },
+                        composefile: {
+                            only_in_root: 0,
+                            only_in_subfolders: 0,
+                            root_and_subfolders: 0,
+                        },
+                        avg_dockerfile_per_repo: 0,
+                        n_dockerfiles_counter: {},
+                        avg_compose_per_repo: 0,
+                        n_compose_counter: {},
+                    },
+                    dockerfile_or_compose: {
+                        total: 0,
+                        dockerfile: {
+                            only_in_root: 0,
+                            only_in_subfolders: 0,
+                            root_and_subfolders: 0,
+                        },
+                        composefile: {
+                            only_in_root: 0,
+                            only_in_subfolders: 0,
+                            root_and_subfolders: 0,
+                        },
+                        avg_dockerfile_per_repo: 0,
+                        n_dockerfiles_counter: {},
+                        avg_compose_per_repo: 0,
+                        n_compose_counter: {},
+                    },
+                    dockerfile_and_compose: {
+                        total: 0,
+                        dockerfile: {
+                            only_in_root: 0,
+                            only_in_subfolders: 0,
+                            root_and_subfolders: 0,
+                        },
+                        composefile: {
+                            only_in_root: 0,
+                            only_in_subfolders: 0,
+                            root_and_subfolders: 0,
+                        },
+                        avg_dockerfile_per_repo: 0,
+                        n_dockerfiles_counter: {},
+                        avg_compose_per_repo: 0,
+                        n_compose_counter: {},
+                    },
+                    no_docker: {
+                        total: 0,
+                    }
                 }
             }
 
-            res.languages[data.info.language].total++
-
-            //Category: Just Dockerfile
-            if (data.results.dockerfile.exist && !data.results.composefile.exist) {
-                res.languages[data.info.language].just_dockerfile++
-            }
-
-            //Category: Just Compose
-            if (!data.results.dockerfile.exist && data.results.composefile.exist) {
-                res.languages[data.info.language].just_compose++
-            }
-
-            //Category: Dockerfile OR Compose
-            if (data.results.dockerfile.exist || data.results.composefile.exist) {
-                res.languages[data.info.language].dockerfile_or_compose++
-            }
-
-            //Category: Dockerfile AND Compose
-            if (data.results.dockerfile.exist && data.results.composefile.exist) {
-                res.languages[data.info.language].dockerfile_and_compose++
-            }
-
-            //Category: No Dockerfile NOR Compose
-            if (!data.results.dockerfile.exist && !data.results.composefile.exist) {
-                res.languages[data.info.language].no_docker++
-            }
+            res.languages[data.info.language].total_repos++
 
             //dockerifle stats
             if (data.results.dockerfile.rootCount > 0 && data.results.dockerfile.subFolderCount == 0)
@@ -476,18 +512,154 @@ module.exports = {
             if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount > 0)
                 res.languages[data.info.language].composefile.root_and_subfolders++
 
-            //Cummulative Averages
-            res.languages[data.info.language].avg_dockerfile_per_repo = res.languages[data.info.language].avg_dockerfile_per_repo + ((data.results.dockerfile.count - res.languages[data.info.language].avg_dockerfile_per_repo) / res.languages[data.info.language].total)
-            if (res.languages[data.info.language].n_dockerfiles_counter[data.results.dockerfile.count])
-                res.languages[data.info.language].n_dockerfiles_counter[data.results.dockerfile.count]++
-            else
-                res.languages[data.info.language].n_dockerfiles_counter[data.results.dockerfile.count] = 1
 
-            res.languages[data.info.language].avg_compose_per_repo = res.languages[data.info.language].avg_compose_per_repo + ((data.results.composefile.count - res.languages[data.info.language].avg_compose_per_repo) / res.languages[data.info.language].total)
-            if (res.languages[data.info.language].n_compose_counter[data.results.composefile.count])
-                res.languages[data.info.language].n_compose_counter[data.results.composefile.count]++
-            else
-                res.languages[data.info.language].n_compose_counter[data.results.composefile.count] = 1
+            //Category Stats
+
+            //Category: Just Dockerfile
+            if (data.results.dockerfile.exist && !data.results.composefile.exist) {
+                res.languages[data.info.language].just_dockerfile.total++
+
+                //dockerifle stats
+                if (data.results.dockerfile.rootCount > 0 && data.results.dockerfile.subFolderCount == 0)
+                    res.languages[data.info.language].just_dockerfile.dockerfile.only_in_root++
+                if (data.results.dockerfile.rootCount == 0 && data.results.dockerfile.subFolderCount > 0)
+                    res.languages[data.info.language].just_dockerfile.dockerfile.only_in_subfolders++
+                if (data.results.dockerfile.rootCount > 0 && data.results.dockerfile.subFolderCount > 0)
+                    res.languages[data.info.language].just_dockerfile.dockerfile.root_and_subfolders++
+
+                //composefile stats
+                if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount == 0)
+                    res.languages[data.info.language].just_dockerfile.composefile.only_in_root++
+                if (data.results.composefile.rootCount == 0 && data.results.composefile.subFolderCount > 0)
+                    res.languages[data.info.language].just_dockerfile.composefile.only_in_subfolders++
+                if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount > 0)
+                    res.languages[data.info.language].just_dockerfile.composefile.root_and_subfolders++
+
+
+                //Cummulative Averages
+                res.languages[data.info.language].just_dockerfile.avg_dockerfile_per_repo = res.languages[data.info.language].just_dockerfile.avg_dockerfile_per_repo + ((data.results.dockerfile.count - res.languages[data.info.language].just_dockerfile.avg_dockerfile_per_repo) / res.languages[data.info.language].just_dockerfile.total)
+                if (res.languages[data.info.language].just_dockerfile.n_dockerfiles_counter[data.results.dockerfile.count])
+                    res.languages[data.info.language].just_dockerfile.n_dockerfiles_counter[data.results.dockerfile.count]++
+                else
+                    res.languages[data.info.language].just_dockerfile.n_dockerfiles_counter[data.results.dockerfile.count] = 1
+
+                res.languages[data.info.language].just_dockerfile.avg_compose_per_repo = res.languages[data.info.language].just_dockerfile.avg_compose_per_repo + ((data.results.composefile.count - res.languages[data.info.language].just_dockerfile.avg_compose_per_repo) / res.languages[data.info.language].just_dockerfile.total)
+                if (res.languages[data.info.language].just_dockerfile.n_compose_counter[data.results.composefile.count])
+                    res.languages[data.info.language].just_dockerfile.n_compose_counter[data.results.composefile.count]++
+                else
+                    res.languages[data.info.language].just_dockerfile.n_compose_counter[data.results.composefile.count] = 1
+
+
+            }
+
+            //Category: Just Compose
+            if (!data.results.dockerfile.exist && data.results.composefile.exist) {
+                res.languages[data.info.language].just_compose.total++
+
+                //dockerifle stats
+                if (data.results.dockerfile.rootCount > 0 && data.results.dockerfile.subFolderCount == 0)
+                    res.languages[data.info.language].just_compose.dockerfile.only_in_root++
+                if (data.results.dockerfile.rootCount == 0 && data.results.dockerfile.subFolderCount > 0)
+                    res.languages[data.info.language].just_compose.dockerfile.only_in_subfolders++
+                if (data.results.dockerfile.rootCount > 0 && data.results.dockerfile.subFolderCount > 0)
+                    res.languages[data.info.language].just_compose.dockerfile.root_and_subfolders++
+
+                //composefile stats
+                if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount == 0)
+                    res.languages[data.info.language].just_compose.composefile.only_in_root++
+                if (data.results.composefile.rootCount == 0 && data.results.composefile.subFolderCount > 0)
+                    res.languages[data.info.language].just_compose.composefile.only_in_subfolders++
+                if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount > 0)
+                    res.languages[data.info.language].just_compose.composefile.root_and_subfolders++
+
+                //Cummulative Averages
+                res.languages[data.info.language].just_compose.avg_dockerfile_per_repo = res.languages[data.info.language].just_compose.avg_dockerfile_per_repo + ((data.results.dockerfile.count - res.languages[data.info.language].just_compose.avg_dockerfile_per_repo) / res.languages[data.info.language].just_compose.total)
+                if (res.languages[data.info.language].just_compose.n_dockerfiles_counter[data.results.dockerfile.count])
+                    res.languages[data.info.language].just_compose.n_dockerfiles_counter[data.results.dockerfile.count]++
+                else
+                    res.languages[data.info.language].just_compose.n_dockerfiles_counter[data.results.dockerfile.count] = 1
+
+                res.languages[data.info.language].just_compose.avg_compose_per_repo = res.languages[data.info.language].just_compose.avg_compose_per_repo + ((data.results.composefile.count - res.languages[data.info.language].just_compose.avg_compose_per_repo) / res.languages[data.info.language].just_compose.total)
+                if (res.languages[data.info.language].just_compose.n_compose_counter[data.results.composefile.count])
+                    res.languages[data.info.language].just_compose.n_compose_counter[data.results.composefile.count]++
+                else
+                    res.languages[data.info.language].just_compose.n_compose_counter[data.results.composefile.count] = 1
+
+            }
+
+            //Category: Dockerfile OR Compose
+            if (data.results.dockerfile.exist || data.results.composefile.exist) {
+                res.languages[data.info.language].dockerfile_or_compose.total++
+
+                //dockerifle stats
+                if (data.results.dockerfile.rootCount > 0 && data.results.dockerfile.subFolderCount == 0)
+                    res.languages[data.info.language].dockerfile_or_compose.dockerfile.only_in_root++
+                if (data.results.dockerfile.rootCount == 0 && data.results.dockerfile.subFolderCount > 0)
+                    res.languages[data.info.language].dockerfile_or_compose.dockerfile.only_in_subfolders++
+                if (data.results.dockerfile.rootCount > 0 && data.results.dockerfile.subFolderCount > 0)
+                    res.languages[data.info.language].dockerfile_or_compose.dockerfile.root_and_subfolders++
+
+                //composefile stats
+                if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount == 0)
+                    res.languages[data.info.language].dockerfile_or_compose.composefile.only_in_root++
+                if (data.results.composefile.rootCount == 0 && data.results.composefile.subFolderCount > 0)
+                    res.languages[data.info.language].dockerfile_or_compose.composefile.only_in_subfolders++
+                if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount > 0)
+                    res.languages[data.info.language].dockerfile_or_compose.composefile.root_and_subfolders++
+
+                //Cummulative Averages
+                res.languages[data.info.language].dockerfile_or_compose.avg_dockerfile_per_repo = res.languages[data.info.language].dockerfile_or_compose.avg_dockerfile_per_repo + ((data.results.dockerfile.count - res.languages[data.info.language].dockerfile_or_compose.avg_dockerfile_per_repo) / res.languages[data.info.language].dockerfile_or_compose.total)
+                if (res.languages[data.info.language].dockerfile_or_compose.n_dockerfiles_counter[data.results.dockerfile.count])
+                    res.languages[data.info.language].dockerfile_or_compose.n_dockerfiles_counter[data.results.dockerfile.count]++
+                else
+                    res.languages[data.info.language].dockerfile_or_compose.n_dockerfiles_counter[data.results.dockerfile.count] = 1
+
+                res.languages[data.info.language].dockerfile_or_compose.avg_compose_per_repo = res.languages[data.info.language].dockerfile_or_compose.avg_compose_per_repo + ((data.results.composefile.count - res.languages[data.info.language].dockerfile_or_compose.avg_compose_per_repo) / res.languages[data.info.language].dockerfile_or_compose.total)
+                if (res.languages[data.info.language].dockerfile_or_compose.n_compose_counter[data.results.composefile.count])
+                    res.languages[data.info.language].dockerfile_or_compose.n_compose_counter[data.results.composefile.count]++
+                else
+                    res.languages[data.info.language].dockerfile_or_compose.n_compose_counter[data.results.composefile.count] = 1
+            }
+
+            //Category: Dockerfile AND Compose
+            if (data.results.dockerfile.exist && data.results.composefile.exist) {
+                res.languages[data.info.language].dockerfile_and_compose.total++
+
+                //dockerifle stats
+                if (data.results.dockerfile.rootCount > 0 && data.results.dockerfile.subFolderCount == 0)
+                    res.languages[data.info.language].dockerfile_and_compose.dockerfile.only_in_root++
+                if (data.results.dockerfile.rootCount == 0 && data.results.dockerfile.subFolderCount > 0)
+                    res.languages[data.info.language].dockerfile_and_compose.dockerfile.only_in_subfolders++
+                if (data.results.dockerfile.rootCount > 0 && data.results.dockerfile.subFolderCount > 0)
+                    res.languages[data.info.language].dockerfile_and_compose.dockerfile.root_and_subfolders++
+
+                //composefile stats
+                if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount == 0)
+                    res.languages[data.info.language].dockerfile_and_compose.composefile.only_in_root++
+                if (data.results.composefile.rootCount == 0 && data.results.composefile.subFolderCount > 0)
+                    res.languages[data.info.language].dockerfile_and_compose.composefile.only_in_subfolders++
+                if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount > 0)
+                    res.languages[data.info.language].dockerfile_and_compose.composefile.root_and_subfolders++
+
+                //Cummulative Averages
+                res.languages[data.info.language].dockerfile_and_compose.avg_dockerfile_per_repo = res.languages[data.info.language].dockerfile_and_compose.avg_dockerfile_per_repo + ((data.results.dockerfile.count - res.languages[data.info.language].dockerfile_and_compose.avg_dockerfile_per_repo) / res.languages[data.info.language].dockerfile_and_compose.total)
+                if (res.languages[data.info.language].dockerfile_and_compose.n_dockerfiles_counter[data.results.dockerfile.count])
+                    res.languages[data.info.language].dockerfile_and_compose.n_dockerfiles_counter[data.results.dockerfile.count]++
+                else
+                    res.languages[data.info.language].dockerfile_and_compose.n_dockerfiles_counter[data.results.dockerfile.count] = 1
+
+                res.languages[data.info.language].dockerfile_and_compose.avg_compose_per_repo = res.languages[data.info.language].dockerfile_and_compose.avg_compose_per_repo + ((data.results.composefile.count - res.languages[data.info.language].dockerfile_and_compose.avg_compose_per_repo) / res.languages[data.info.language].dockerfile_and_compose.total)
+                if (res.languages[data.info.language].dockerfile_and_compose.n_compose_counter[data.results.composefile.count])
+                    res.languages[data.info.language].dockerfile_and_compose.n_compose_counter[data.results.composefile.count]++
+                else
+                    res.languages[data.info.language].dockerfile_and_compose.n_compose_counter[data.results.composefile.count] = 1
+
+            }
+
+            //Category: No Dockerfile NOR Compose
+            if (!data.results.dockerfile.exist && !data.results.composefile.exist) {
+                res.languages[data.info.language].no_docker.total++
+            }
 
         });
         return res

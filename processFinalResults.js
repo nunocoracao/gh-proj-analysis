@@ -1,4 +1,12 @@
 var utils = require('./src/utils');
 
 var result = utils.processOverallResults()
-utils.saveToFile(result, '../finalResults.json')
+
+var languages = result.languages
+delete result.languages
+
+utils.saveToFile(result, '../final/Final_Result_Overall.json')
+
+for(var lang in languages){
+    utils.saveToFile(languages[lang], '../final/Res_'+lang+'.json')
+}

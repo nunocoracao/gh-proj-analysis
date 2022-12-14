@@ -1,0 +1,660 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 1,
+      "subFolderCount": 0,
+      "filepaths": [
+        "Magento2.git/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 2,
+      "subFolderCount": 0,
+      "filepaths": [
+        "Magento2.git/docker-compose.elasticsearch.yml",
+        "Magento2.git/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".docker": {
+      "name": ".docker",
+      "path": "Magento2.git/.docker",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "bin": {
+          "name": "bin",
+          "path": "Magento2.git/.docker/bin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "fix-permission": {
+              "name": "fix-permission",
+              "path": "Magento2.git/.docker/bin/fix-permission",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install-magento2": {
+              "name": "install-magento2",
+              "path": "Magento2.git/.docker/bin/install-magento2",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "opcache": {
+              "name": "opcache",
+              "path": "Magento2.git/.docker/bin/opcache",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "redis-flush": {
+              "name": "redis-flush",
+              "path": "Magento2.git/.docker/bin/redis-flush",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "xdebug": {
+              "name": "xdebug",
+              "path": "Magento2.git/.docker/bin/xdebug",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "config": {
+          "name": "config",
+          "path": "Magento2.git/.docker/config",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "custom-xdebug.ini": {
+              "name": "custom-xdebug.ini",
+              "path": "Magento2.git/.docker/config/custom-xdebug.ini",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "magento.conf": {
+              "name": "magento.conf",
+              "path": "Magento2.git/.docker/config/magento.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "opcache.ini": {
+              "name": "opcache.ini",
+              "path": "Magento2.git/.docker/config/opcache.ini",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "php.ini": {
+              "name": "php.ini",
+              "path": "Magento2.git/.docker/config/php.ini",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "users": {
+          "name": "users",
+          "path": "Magento2.git/.docker/users",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".bashrc": {
+              "name": ".bashrc",
+              "path": "Magento2.git/.docker/users/.bashrc",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "env.sample.php": {
+              "name": "env.sample.php",
+              "path": "Magento2.git/.docker/users/env.sample.php",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".git": {
+      "name": ".git",
+      "path": "Magento2.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "Magento2.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "Magento2.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "Magento2.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "Magento2.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "Magento2.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "Magento2.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "Magento2.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "Magento2.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "Magento2.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "Magento2.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "Magento2.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "Magento2.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "Magento2.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "Magento2.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "Magento2.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "Magento2.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "Magento2.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "Magento2.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "Magento2.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "Magento2.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "Magento2.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "Magento2.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "Magento2.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "Magento2.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "Magento2.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "Magento2.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "Magento2.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "Magento2.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "Magento2.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "Magento2.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "Magento2.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-aaf06d9ff9f0cbe41d8aae70dddf1c7db2586b6b.idx": {
+                  "name": "pack-aaf06d9ff9f0cbe41d8aae70dddf1c7db2586b6b.idx",
+                  "path": "Magento2.git/.git/objects/pack/pack-aaf06d9ff9f0cbe41d8aae70dddf1c7db2586b6b.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-aaf06d9ff9f0cbe41d8aae70dddf1c7db2586b6b.pack": {
+                  "name": "pack-aaf06d9ff9f0cbe41d8aae70dddf1c7db2586b6b.pack",
+                  "path": "Magento2.git/.git/objects/pack/pack-aaf06d9ff9f0cbe41d8aae70dddf1c7db2586b6b.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "Magento2.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "Magento2.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "Magento2.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "Magento2.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "Magento2.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "Magento2.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "Magento2.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "Magento2.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "Magento2.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "Magento2.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".travis.yml": {
+      "name": ".travis.yml",
+      "path": "Magento2.git/.travis.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "Magento2.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "Magento2.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "Magento2.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "composer": {
+      "name": "composer",
+      "path": "Magento2.git/composer",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docker-compose.elasticsearch.yml": {
+      "name": "docker-compose.elasticsearch.yml",
+      "path": "Magento2.git/docker-compose.elasticsearch.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "docker-compose.yml": {
+      "name": "docker-compose.yml",
+      "path": "Magento2.git/docker-compose.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "elasticsearchdata": {
+      "name": "elasticsearchdata",
+      "path": "Magento2.git/elasticsearchdata",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "Magento2.git/elasticsearchdata/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "env.sample.php": {
+      "name": "env.sample.php",
+      "path": "Magento2.git/env.sample.php",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "grunt": {
+      "name": "grunt",
+      "path": "Magento2.git/grunt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "grunt-init": {
+      "name": "grunt-init",
+      "path": "Magento2.git/grunt-init",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "init": {
+      "name": "init",
+      "path": "Magento2.git/init",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "kill": {
+      "name": "kill",
+      "path": "Magento2.git/kill",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "magento": {
+      "name": "magento",
+      "path": "Magento2.git/magento",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "n98": {
+      "name": "n98",
+      "path": "Magento2.git/n98",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "opcache": {
+      "name": "opcache",
+      "path": "Magento2.git/opcache",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "shell": {
+      "name": "shell",
+      "path": "Magento2.git/shell",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "src": {
+      "name": "src",
+      "path": "Magento2.git/src",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "index.php": {
+          "name": "index.php",
+          "path": "Magento2.git/src/index.php",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "start": {
+      "name": "start",
+      "path": "Magento2.git/start",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "stop": {
+      "name": "stop",
+      "path": "Magento2.git/stop",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "xdebug": {
+      "name": "xdebug",
+      "path": "Magento2.git/xdebug",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    }
+  },
+  "info": {
+    "id": 55974160,
+    "name": "Magento2",
+    "full_name": "clean-docker/Magento2",
+    "owner": {
+      "login": "clean-docker",
+      "html_url": "https://github.com/clean-docker",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/clean-docker/Magento2",
+    "description": "Docker Image to Magento 2 local development in Mac, Linux and Windows",
+    "url": "https://api.github.com/repos/clean-docker/Magento2",
+    "clone_url": "https://github.com/clean-docker/Magento2.git",
+    "homepage": "https://hub.docker.com/r/rafaelcgstz/magento2/",
+    "size": 172,
+    "stargazers_count": 436,
+    "watchers_count": 436,
+    "language": "PHP"
+  }
+}

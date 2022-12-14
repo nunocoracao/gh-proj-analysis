@@ -1,0 +1,4593 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 1,
+      "subFolderCount": 3,
+      "filepaths": [
+        "koperator.git/Dockerfile",
+        "koperator.git/docs/benchmarks/loadgens/Dockerfile",
+        "koperator.git/docs/examples/springboot-kafka-avro/Dockerfile",
+        "koperator.git/hack/kafka-test-pod/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".editorconfig": {
+      "name": ".editorconfig",
+      "path": "koperator.git/.editorconfig",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "koperator.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "koperator.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "koperator.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "koperator.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "koperator.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "koperator.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "koperator.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "koperator.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "koperator.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "koperator.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "koperator.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "koperator.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "koperator.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "koperator.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "koperator.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "koperator.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "koperator.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "koperator.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "koperator.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "koperator.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "koperator.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "koperator.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "koperator.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "koperator.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "koperator.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "koperator.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "koperator.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "koperator.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "koperator.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "koperator.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "koperator.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "koperator.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-754fd73c89199ec6129193de8525ecb85c5da1d2.idx": {
+                  "name": "pack-754fd73c89199ec6129193de8525ecb85c5da1d2.idx",
+                  "path": "koperator.git/.git/objects/pack/pack-754fd73c89199ec6129193de8525ecb85c5da1d2.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-754fd73c89199ec6129193de8525ecb85c5da1d2.pack": {
+                  "name": "pack-754fd73c89199ec6129193de8525ecb85c5da1d2.pack",
+                  "path": "koperator.git/.git/objects/pack/pack-754fd73c89199ec6129193de8525ecb85c5da1d2.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "koperator.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "koperator.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "koperator.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "koperator.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "koperator.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "koperator.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "koperator.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "koperator.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "koperator.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "koperator.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CODEOWNERS": {
+          "name": "CODEOWNERS",
+          "path": "koperator.git/.github/CODEOWNERS",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "koperator.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug_report.md": {
+              "name": "bug_report.md",
+              "path": "koperator.git/.github/ISSUE_TEMPLATE/bug_report.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature_request.md": {
+              "name": "feature_request.md",
+              "path": "koperator.git/.github/ISSUE_TEMPLATE/feature_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "support_request.md": {
+              "name": "support_request.md",
+              "path": "koperator.git/.github/ISSUE_TEMPLATE/support_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "PULL_REQUEST_TEMPLATE.md": {
+          "name": "PULL_REQUEST_TEMPLATE.md",
+          "path": "koperator.git/.github/PULL_REQUEST_TEMPLATE.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "SUPPORT.md": {
+          "name": "SUPPORT.md",
+          "path": "koperator.git/.github/SUPPORT.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "support_issue.png": {
+          "name": "support_issue.png",
+          "path": "koperator.git/.github/support_issue.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "koperator.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ci.yml": {
+              "name": "ci.yml",
+              "path": "koperator.git/.github/workflows/ci.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker.yml": {
+              "name": "docker.yml",
+              "path": "koperator.git/.github/workflows/docker.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker_perf_test_load.yml": {
+              "name": "docker_perf_test_load.yml",
+              "path": "koperator.git/.github/workflows/docker_perf_test_load.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "helm.yml": {
+              "name": "helm.yml",
+              "path": "koperator.git/.github/workflows/helm.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "release.yml": {
+              "name": "release.yml",
+              "path": "koperator.git/.github/workflows/release.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "koperator.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".golangci.yml": {
+      "name": ".golangci.yml",
+      "path": "koperator.git/.golangci.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".idea": {
+      "name": ".idea",
+      "path": "koperator.git/.idea",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "copyright": {
+          "name": "copyright",
+          "path": "koperator.git/.idea/copyright",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Banzai_Cloud.xml": {
+              "name": "Banzai_Cloud.xml",
+              "path": "koperator.git/.idea/copyright/Banzai_Cloud.xml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "profiles_settings.xml": {
+              "name": "profiles_settings.xml",
+              "path": "koperator.git/.idea/copyright/profiles_settings.xml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "encodings.xml": {
+          "name": "encodings.xml",
+          "path": "koperator.git/.idea/encodings.xml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "externalDependencies.xml": {
+          "name": "externalDependencies.xml",
+          "path": "koperator.git/.idea/externalDependencies.xml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "go.imports.xml": {
+          "name": "go.imports.xml",
+          "path": "koperator.git/.idea/go.imports.xml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kafka-operator.iml": {
+          "name": "kafka-operator.iml",
+          "path": "koperator.git/.idea/kafka-operator.iml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "misc.xml": {
+          "name": "misc.xml",
+          "path": "koperator.git/.idea/misc.xml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "modules.xml": {
+          "name": "modules.xml",
+          "path": "koperator.git/.idea/modules.xml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "vcs.xml": {
+          "name": "vcs.xml",
+          "path": "koperator.git/.idea/vcs.xml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".licensei.toml": {
+      "name": ".licensei.toml",
+      "path": "koperator.git/.licensei.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "ADOPTERS.md": {
+      "name": "ADOPTERS.md",
+      "path": "koperator.git/ADOPTERS.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CODE_OF_CONDUCT.md": {
+      "name": "CODE_OF_CONDUCT.md",
+      "path": "koperator.git/CODE_OF_CONDUCT.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "koperator.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "koperator.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "koperator.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "MAINTAINERS.md": {
+      "name": "MAINTAINERS.md",
+      "path": "koperator.git/MAINTAINERS.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Makefile": {
+      "name": "Makefile",
+      "path": "koperator.git/Makefile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "NOTICE": {
+      "name": "NOTICE",
+      "path": "koperator.git/NOTICE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "PROJECT": {
+      "name": "PROJECT",
+      "path": "koperator.git/PROJECT",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "koperator.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "api": {
+      "name": "api",
+      "path": "koperator.git/api",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "assets": {
+          "name": "assets",
+          "path": "koperator.git/api/assets",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "assets.go": {
+              "name": "assets.go",
+              "path": "koperator.git/api/assets/assets.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cruisecontrol": {
+              "name": "cruisecontrol",
+              "path": "koperator.git/api/assets/cruisecontrol",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "jmx-exporter.yml": {
+                  "name": "jmx-exporter.yml",
+                  "path": "koperator.git/api/assets/cruisecontrol/jmx-exporter.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "log4j.properties": {
+                  "name": "log4j.properties",
+                  "path": "koperator.git/api/assets/cruisecontrol/log4j.properties",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kafka": {
+              "name": "kafka",
+              "path": "koperator.git/api/assets/kafka",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "jmx-exporter.yml": {
+                  "name": "jmx-exporter.yml",
+                  "path": "koperator.git/api/assets/kafka/jmx-exporter.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "go.mod": {
+          "name": "go.mod",
+          "path": "koperator.git/api/go.mod",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "go.sum": {
+          "name": "go.sum",
+          "path": "koperator.git/api/go.sum",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "util": {
+          "name": "util",
+          "path": "koperator.git/api/util",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "util.go": {
+              "name": "util.go",
+              "path": "koperator.git/api/util/util.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "util_test.go": {
+              "name": "util_test.go",
+              "path": "koperator.git/api/util/util_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "v1alpha1": {
+          "name": "v1alpha1",
+          "path": "koperator.git/api/v1alpha1",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "common_types.go": {
+              "name": "common_types.go",
+              "path": "koperator.git/api/v1alpha1/common_types.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cruisecontroloperation_types.go": {
+              "name": "cruisecontroloperation_types.go",
+              "path": "koperator.git/api/v1alpha1/cruisecontroloperation_types.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "groupversion_info.go": {
+              "name": "groupversion_info.go",
+              "path": "koperator.git/api/v1alpha1/groupversion_info.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkatopic_types.go": {
+              "name": "kafkatopic_types.go",
+              "path": "koperator.git/api/v1alpha1/kafkatopic_types.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkauser_types.go": {
+              "name": "kafkauser_types.go",
+              "path": "koperator.git/api/v1alpha1/kafkauser_types.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "zz_generated.deepcopy.go": {
+              "name": "zz_generated.deepcopy.go",
+              "path": "koperator.git/api/v1alpha1/zz_generated.deepcopy.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "v1beta1": {
+          "name": "v1beta1",
+          "path": "koperator.git/api/v1beta1",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "common_types.go": {
+              "name": "common_types.go",
+              "path": "koperator.git/api/v1beta1/common_types.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "groupversion_info.go": {
+              "name": "groupversion_info.go",
+              "path": "koperator.git/api/v1beta1/groupversion_info.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_types.go": {
+              "name": "kafkacluster_types.go",
+              "path": "koperator.git/api/v1beta1/kafkacluster_types.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_types_test.go": {
+              "name": "kafkacluster_types_test.go",
+              "path": "koperator.git/api/v1beta1/kafkacluster_types_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "zz_generated.deepcopy.go": {
+              "name": "zz_generated.deepcopy.go",
+              "path": "koperator.git/api/v1beta1/zz_generated.deepcopy.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "charts": {
+      "name": "charts",
+      "path": "koperator.git/charts",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "kafka-operator": {
+          "name": "kafka-operator",
+          "path": "koperator.git/charts/kafka-operator",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".helmignore": {
+              "name": ".helmignore",
+              "path": "koperator.git/charts/kafka-operator/.helmignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Chart.yaml": {
+              "name": "Chart.yaml",
+              "path": "koperator.git/charts/kafka-operator/Chart.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "koperator.git/charts/kafka-operator/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "koperator.git/charts/kafka-operator/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "_helpers.tpl": {
+                  "name": "_helpers.tpl",
+                  "path": "koperator.git/charts/kafka-operator/templates/_helpers.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "alertmanager-peerauthentication.yaml": {
+                  "name": "alertmanager-peerauthentication.yaml",
+                  "path": "koperator.git/charts/kafka-operator/templates/alertmanager-peerauthentication.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "alertmanager-service.yaml": {
+                  "name": "alertmanager-service.yaml",
+                  "path": "koperator.git/charts/kafka-operator/templates/alertmanager-service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "authproxy-rbac.yaml": {
+                  "name": "authproxy-rbac.yaml",
+                  "path": "koperator.git/charts/kafka-operator/templates/authproxy-rbac.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "authproxy-service.yaml": {
+                  "name": "authproxy-service.yaml",
+                  "path": "koperator.git/charts/kafka-operator/templates/authproxy-service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "crds.yaml": {
+                  "name": "crds.yaml",
+                  "path": "koperator.git/charts/kafka-operator/templates/crds.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "operator-deployment-with-webhook.yaml": {
+                  "name": "operator-deployment-with-webhook.yaml",
+                  "path": "koperator.git/charts/kafka-operator/templates/operator-deployment-with-webhook.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "operator-rbac.yaml": {
+                  "name": "operator-rbac.yaml",
+                  "path": "koperator.git/charts/kafka-operator/templates/operator-rbac.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "operator-service.yaml": {
+                  "name": "operator-service.yaml",
+                  "path": "koperator.git/charts/kafka-operator/templates/operator-service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "values.yaml": {
+              "name": "values.yaml",
+              "path": "koperator.git/charts/kafka-operator/values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "config": {
+      "name": "config",
+      "path": "koperator.git/config",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "base": {
+          "name": "base",
+          "path": "koperator.git/config/base",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "alertmanager": {
+              "name": "alertmanager",
+              "path": "koperator.git/config/base/alertmanager",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "service.yaml": {
+                  "name": "service.yaml",
+                  "path": "koperator.git/config/base/alertmanager/service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "crds": {
+              "name": "crds",
+              "path": "koperator.git/config/base/crds",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kafka.banzaicloud.io_cruisecontroloperations.yaml": {
+                  "name": "kafka.banzaicloud.io_cruisecontroloperations.yaml",
+                  "path": "koperator.git/config/base/crds/kafka.banzaicloud.io_cruisecontroloperations.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kafka.banzaicloud.io_kafkaclusters.yaml": {
+                  "name": "kafka.banzaicloud.io_kafkaclusters.yaml",
+                  "path": "koperator.git/config/base/crds/kafka.banzaicloud.io_kafkaclusters.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kafka.banzaicloud.io_kafkatopics.yaml": {
+                  "name": "kafka.banzaicloud.io_kafkatopics.yaml",
+                  "path": "koperator.git/config/base/crds/kafka.banzaicloud.io_kafkatopics.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kafka.banzaicloud.io_kafkausers.yaml": {
+                  "name": "kafka.banzaicloud.io_kafkausers.yaml",
+                  "path": "koperator.git/config/base/crds/kafka.banzaicloud.io_kafkausers.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "koperator.git/config/base/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manager": {
+              "name": "manager",
+              "path": "koperator.git/config/base/manager",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "manager.yaml": {
+                  "name": "manager.yaml",
+                  "path": "koperator.git/config/base/manager/manager.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "namespace.yaml": {
+                  "name": "namespace.yaml",
+                  "path": "koperator.git/config/base/manager/namespace.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "rbac": {
+              "name": "rbac",
+              "path": "koperator.git/config/base/rbac",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "leader_election_role.yaml": {
+                  "name": "leader_election_role.yaml",
+                  "path": "koperator.git/config/base/rbac/leader_election_role.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "leader_election_role_binding.yaml": {
+                  "name": "leader_election_role_binding.yaml",
+                  "path": "koperator.git/config/base/rbac/leader_election_role_binding.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "role.yaml": {
+                  "name": "role.yaml",
+                  "path": "koperator.git/config/base/rbac/role.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "role_binding.yaml": {
+                  "name": "role_binding.yaml",
+                  "path": "koperator.git/config/base/rbac/role_binding.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "webhook": {
+              "name": "webhook",
+              "path": "koperator.git/config/base/webhook",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "manifests.yaml": {
+                  "name": "manifests.yaml",
+                  "path": "koperator.git/config/base/webhook/manifests.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.yaml": {
+                  "name": "service.yaml",
+                  "path": "koperator.git/config/base/webhook/service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "webhook_in_kafkatopics.yaml": {
+                  "name": "webhook_in_kafkatopics.yaml",
+                  "path": "koperator.git/config/base/webhook/webhook_in_kafkatopics.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "kustomization.yaml": {
+          "name": "kustomization.yaml",
+          "path": "koperator.git/config/kustomization.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "overlays": {
+          "name": "overlays",
+          "path": "koperator.git/config/overlays",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "auth-proxy-enabled": {
+              "name": "auth-proxy-enabled",
+              "path": "koperator.git/config/overlays/auth-proxy-enabled",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "koperator.git/config/overlays/auth-proxy-enabled/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "manager_auth_proxy_patch.yaml": {
+                  "name": "manager_auth_proxy_patch.yaml",
+                  "path": "koperator.git/config/overlays/auth-proxy-enabled/manager_auth_proxy_patch.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rbac": {
+                  "name": "rbac",
+                  "path": "koperator.git/config/overlays/auth-proxy-enabled/rbac",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "auth_proxy_role.yaml": {
+                      "name": "auth_proxy_role.yaml",
+                      "path": "koperator.git/config/overlays/auth-proxy-enabled/rbac/auth_proxy_role.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "auth_proxy_role_binding.yaml": {
+                      "name": "auth_proxy_role_binding.yaml",
+                      "path": "koperator.git/config/overlays/auth-proxy-enabled/rbac/auth_proxy_role_binding.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "auth_proxy_service.yaml": {
+                      "name": "auth_proxy_service.yaml",
+                      "path": "koperator.git/config/overlays/auth-proxy-enabled/rbac/auth_proxy_service.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "basic": {
+              "name": "basic",
+              "path": "koperator.git/config/overlays/basic",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "certificate.yaml": {
+                  "name": "certificate.yaml",
+                  "path": "koperator.git/config/overlays/basic/certificate.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "koperator.git/config/overlays/basic/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "manager_webhook_patch.yaml": {
+                  "name": "manager_webhook_patch.yaml",
+                  "path": "koperator.git/config/overlays/basic/manager_webhook_patch.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "webhookcainjection_patch.yaml": {
+                  "name": "webhookcainjection_patch.yaml",
+                  "path": "koperator.git/config/overlays/basic/webhookcainjection_patch.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "certmanager-enabled": {
+              "name": "certmanager-enabled",
+              "path": "koperator.git/config/overlays/certmanager-enabled",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "certificate.yaml": {
+                  "name": "certificate.yaml",
+                  "path": "koperator.git/config/overlays/certmanager-enabled/certificate.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "koperator.git/config/overlays/certmanager-enabled/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomizeconfig.yaml": {
+                  "name": "kustomizeconfig.yaml",
+                  "path": "koperator.git/config/overlays/certmanager-enabled/kustomizeconfig.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "manager_webhook_patch.yaml": {
+                  "name": "manager_webhook_patch.yaml",
+                  "path": "koperator.git/config/overlays/certmanager-enabled/manager_webhook_patch.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "webhookcainjection_patch.yaml": {
+                  "name": "webhookcainjection_patch.yaml",
+                  "path": "koperator.git/config/overlays/certmanager-enabled/webhookcainjection_patch.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "certmanager-with-auth-proxy": {
+              "name": "certmanager-with-auth-proxy",
+              "path": "koperator.git/config/overlays/certmanager-with-auth-proxy",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "auth-proxy": {
+                  "name": "auth-proxy",
+                  "path": "koperator.git/config/overlays/certmanager-with-auth-proxy/auth-proxy",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "manager_auth_proxy_patch.yaml": {
+                      "name": "manager_auth_proxy_patch.yaml",
+                      "path": "koperator.git/config/overlays/certmanager-with-auth-proxy/auth-proxy/manager_auth_proxy_patch.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "rbac": {
+                      "name": "rbac",
+                      "path": "koperator.git/config/overlays/certmanager-with-auth-proxy/auth-proxy/rbac",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "auth_proxy_role.yaml": {
+                          "name": "auth_proxy_role.yaml",
+                          "path": "koperator.git/config/overlays/certmanager-with-auth-proxy/auth-proxy/rbac/auth_proxy_role.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "auth_proxy_role_binding.yaml": {
+                          "name": "auth_proxy_role_binding.yaml",
+                          "path": "koperator.git/config/overlays/certmanager-with-auth-proxy/auth-proxy/rbac/auth_proxy_role_binding.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "auth_proxy_service.yaml": {
+                          "name": "auth_proxy_service.yaml",
+                          "path": "koperator.git/config/overlays/certmanager-with-auth-proxy/auth-proxy/rbac/auth_proxy_service.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "certmanager": {
+                  "name": "certmanager",
+                  "path": "koperator.git/config/overlays/certmanager-with-auth-proxy/certmanager",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "certificate.yaml": {
+                      "name": "certificate.yaml",
+                      "path": "koperator.git/config/overlays/certmanager-with-auth-proxy/certmanager/certificate.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "manager_webhook_patch.yaml": {
+                      "name": "manager_webhook_patch.yaml",
+                      "path": "koperator.git/config/overlays/certmanager-with-auth-proxy/certmanager/manager_webhook_patch.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "webhookcainjection_patch.yaml": {
+                      "name": "webhookcainjection_patch.yaml",
+                      "path": "koperator.git/config/overlays/certmanager-with-auth-proxy/certmanager/webhookcainjection_patch.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "koperator.git/config/overlays/certmanager-with-auth-proxy/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomizeconfig.yaml": {
+                  "name": "kustomizeconfig.yaml",
+                  "path": "koperator.git/config/overlays/certmanager-with-auth-proxy/kustomizeconfig.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "prometheus-scraping-enabled": {
+              "name": "prometheus-scraping-enabled",
+              "path": "koperator.git/config/overlays/prometheus-scraping-enabled",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "koperator.git/config/overlays/prometheus-scraping-enabled/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "manager_prometheus_metrics_patch.yaml": {
+                  "name": "manager_prometheus_metrics_patch.yaml",
+                  "path": "koperator.git/config/overlays/prometheus-scraping-enabled/manager_prometheus_metrics_patch.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "specific-manager-version": {
+              "name": "specific-manager-version",
+              "path": "koperator.git/config/overlays/specific-manager-version",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "koperator.git/config/overlays/specific-manager-version/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "samples": {
+          "name": "samples",
+          "path": "koperator.git/config/samples",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "banzaicloud_v1beta1_kafkacluster.yaml": {
+              "name": "banzaicloud_v1beta1_kafkacluster.yaml",
+              "path": "koperator.git/config/samples/banzaicloud_v1beta1_kafkacluster.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "example-cruisecontroloperation.yaml": {
+              "name": "example-cruisecontroloperation.yaml",
+              "path": "koperator.git/config/samples/example-cruisecontroloperation.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "example-secret.yaml": {
+              "name": "example-secret.yaml",
+              "path": "koperator.git/config/samples/example-secret.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "example-topic.yaml": {
+              "name": "example-topic.yaml",
+              "path": "koperator.git/config/samples/example-topic.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "example-user-with-k8scsr.yaml": {
+              "name": "example-user-with-k8scsr.yaml",
+              "path": "koperator.git/config/samples/example-user-with-k8scsr.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "example-user-with-pkibackend.yaml": {
+              "name": "example-user-with-pkibackend.yaml",
+              "path": "koperator.git/config/samples/example-user-with-pkibackend.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "example-user.yaml": {
+              "name": "example-user.yaml",
+              "path": "koperator.git/config/samples/example-user.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster-prometheus.yaml": {
+              "name": "kafkacluster-prometheus.yaml",
+              "path": "koperator.git/config/samples/kafkacluster-prometheus.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster-with-istio.yaml": {
+              "name": "kafkacluster-with-istio.yaml",
+              "path": "koperator.git/config/samples/kafkacluster-with-istio.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_with_external_ssl.yaml": {
+              "name": "kafkacluster_with_external_ssl.yaml",
+              "path": "koperator.git/config/samples/kafkacluster_with_external_ssl.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_with_external_ssl_customcert.yaml": {
+              "name": "kafkacluster_with_external_ssl_customcert.yaml",
+              "path": "koperator.git/config/samples/kafkacluster_with_external_ssl_customcert.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_with_ssl_groups.yaml": {
+              "name": "kafkacluster_with_ssl_groups.yaml",
+              "path": "koperator.git/config/samples/kafkacluster_with_ssl_groups.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_with_ssl_groups_customcert.yaml": {
+              "name": "kafkacluster_with_ssl_groups_customcert.yaml",
+              "path": "koperator.git/config/samples/kafkacluster_with_ssl_groups_customcert.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_with_ssl_hybrid_customcert.yaml": {
+              "name": "kafkacluster_with_ssl_hybrid_customcert.yaml",
+              "path": "koperator.git/config/samples/kafkacluster_with_ssl_hybrid_customcert.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_without_ssl.yaml": {
+              "name": "kafkacluster_without_ssl.yaml",
+              "path": "koperator.git/config/samples/kafkacluster_without_ssl.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_without_ssl_groups.yaml": {
+              "name": "kafkacluster_without_ssl_groups.yaml",
+              "path": "koperator.git/config/samples/kafkacluster_without_ssl_groups.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "simplekafkacluster-with-brokerbindings.yaml": {
+              "name": "simplekafkacluster-with-brokerbindings.yaml",
+              "path": "koperator.git/config/samples/simplekafkacluster-with-brokerbindings.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "simplekafkacluster-with-nodeport-external.yaml": {
+              "name": "simplekafkacluster-with-nodeport-external.yaml",
+              "path": "koperator.git/config/samples/simplekafkacluster-with-nodeport-external.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "simplekafkacluster.yaml": {
+              "name": "simplekafkacluster.yaml",
+              "path": "koperator.git/config/samples/simplekafkacluster.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "simplekafkacluster_affinity.yaml": {
+              "name": "simplekafkacluster_affinity.yaml",
+              "path": "koperator.git/config/samples/simplekafkacluster_affinity.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "simplekafkacluster_ebs_csi.yaml": {
+              "name": "simplekafkacluster_ebs_csi.yaml",
+              "path": "koperator.git/config/samples/simplekafkacluster_ebs_csi.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "simplekafkacluster_ssl.yaml": {
+              "name": "simplekafkacluster_ssl.yaml",
+              "path": "koperator.git/config/samples/simplekafkacluster_ssl.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "simplekafkacluster_with_k8s_provided_nodeport.yaml": {
+              "name": "simplekafkacluster_with_k8s_provided_nodeport.yaml",
+              "path": "koperator.git/config/samples/simplekafkacluster_with_k8s_provided_nodeport.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "simplekafkacluster_with_sasl.yaml": {
+              "name": "simplekafkacluster_with_sasl.yaml",
+              "path": "koperator.git/config/samples/simplekafkacluster_with_sasl.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "test": {
+          "name": "test",
+          "path": "koperator.git/config/test",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "crd": {
+              "name": "crd",
+              "path": "koperator.git/config/test/crd",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cert-manager": {
+                  "name": "cert-manager",
+                  "path": "koperator.git/config/test/crd/cert-manager",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "acme.cert-manager.io_challanges.yaml": {
+                      "name": "acme.cert-manager.io_challanges.yaml",
+                      "path": "koperator.git/config/test/crd/cert-manager/acme.cert-manager.io_challanges.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "acme.cert-manager.io_orders.yaml": {
+                      "name": "acme.cert-manager.io_orders.yaml",
+                      "path": "koperator.git/config/test/crd/cert-manager/acme.cert-manager.io_orders.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "cert-manager.io_certificaterequests.yaml": {
+                      "name": "cert-manager.io_certificaterequests.yaml",
+                      "path": "koperator.git/config/test/crd/cert-manager/cert-manager.io_certificaterequests.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "cert-manager.io_certificates.yaml": {
+                      "name": "cert-manager.io_certificates.yaml",
+                      "path": "koperator.git/config/test/crd/cert-manager/cert-manager.io_certificates.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "cert-manager.io_clusterissuers.yaml": {
+                      "name": "cert-manager.io_clusterissuers.yaml",
+                      "path": "koperator.git/config/test/crd/cert-manager/cert-manager.io_clusterissuers.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "cert-manager.io_issuers.yaml": {
+                      "name": "cert-manager.io_issuers.yaml",
+                      "path": "koperator.git/config/test/crd/cert-manager/cert-manager.io_issuers.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "istio": {
+                  "name": "istio",
+                  "path": "koperator.git/config/test/crd/istio",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "istio.banzaicloud.io_istiomeshgateways.yaml": {
+                      "name": "istio.banzaicloud.io_istiomeshgateways.yaml",
+                      "path": "koperator.git/config/test/crd/istio/istio.banzaicloud.io_istiomeshgateways.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "networking.istio.io_gateway.yaml": {
+                      "name": "networking.istio.io_gateway.yaml",
+                      "path": "koperator.git/config/test/crd/istio/networking.istio.io_gateway.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "networking.istio.io_virtualservice.yaml": {
+                      "name": "networking.istio.io_virtualservice.yaml",
+                      "path": "koperator.git/config/test/crd/istio/networking.istio.io_virtualservice.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "controllers": {
+      "name": "controllers",
+      "path": "koperator.git/controllers",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "alertmanager_controller.go": {
+          "name": "alertmanager_controller.go",
+          "path": "koperator.git/controllers/alertmanager_controller.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "controller_common.go": {
+          "name": "controller_common.go",
+          "path": "koperator.git/controllers/controller_common.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "controller_common_test.go": {
+          "name": "controller_common_test.go",
+          "path": "koperator.git/controllers/controller_common_test.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cruisecontroloperation_controller.go": {
+          "name": "cruisecontroloperation_controller.go",
+          "path": "koperator.git/controllers/cruisecontroloperation_controller.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cruisecontroloperation_controller_test.go": {
+          "name": "cruisecontroloperation_controller_test.go",
+          "path": "koperator.git/controllers/cruisecontroloperation_controller_test.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cruisecontroloperation_ttl_controller.go": {
+          "name": "cruisecontroloperation_ttl_controller.go",
+          "path": "koperator.git/controllers/cruisecontroloperation_ttl_controller.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cruisecontroltask_controller.go": {
+          "name": "cruisecontroltask_controller.go",
+          "path": "koperator.git/controllers/cruisecontroltask_controller.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cruisecontroltask_controller_test.go": {
+          "name": "cruisecontroltask_controller_test.go",
+          "path": "koperator.git/controllers/cruisecontroltask_controller_test.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cruisecontroltask_types.go": {
+          "name": "cruisecontroltask_types.go",
+          "path": "koperator.git/controllers/cruisecontroltask_types.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kafkacluster_controller.go": {
+          "name": "kafkacluster_controller.go",
+          "path": "koperator.git/controllers/kafkacluster_controller.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kafkatopic_controller.go": {
+          "name": "kafkatopic_controller.go",
+          "path": "koperator.git/controllers/kafkatopic_controller.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kafkauser_controller.go": {
+          "name": "kafkauser_controller.go",
+          "path": "koperator.git/controllers/kafkauser_controller.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "tests": {
+          "name": "tests",
+          "path": "koperator.git/controllers/tests",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "clusterregistry": {
+              "name": "clusterregistry",
+              "path": "koperator.git/controllers/tests/clusterregistry",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "common_test.go": {
+                  "name": "common_test.go",
+                  "path": "koperator.git/controllers/tests/clusterregistry/common_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cruisecontroltask_controller_test.go": {
+                  "name": "cruisecontroltask_controller_test.go",
+                  "path": "koperator.git/controllers/tests/clusterregistry/cruisecontroltask_controller_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kafkacluster_controller_test.go": {
+                  "name": "kafkacluster_controller_test.go",
+                  "path": "koperator.git/controllers/tests/clusterregistry/kafkacluster_controller_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kafkatopic_controller_test.go": {
+                  "name": "kafkatopic_controller_test.go",
+                  "path": "koperator.git/controllers/tests/clusterregistry/kafkatopic_controller_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kafkauser_controller_test.go": {
+                  "name": "kafkauser_controller_test.go",
+                  "path": "koperator.git/controllers/tests/clusterregistry/kafkauser_controller_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "suite_test.go": {
+                  "name": "suite_test.go",
+                  "path": "koperator.git/controllers/tests/clusterregistry/suite_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "common_test.go": {
+              "name": "common_test.go",
+              "path": "koperator.git/controllers/tests/common_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cruisecontroloperation_controller_test.go": {
+              "name": "cruisecontroloperation_controller_test.go",
+              "path": "koperator.git/controllers/tests/cruisecontroloperation_controller_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cruisecontroloperation_ttl_controller_test.go": {
+              "name": "cruisecontroloperation_ttl_controller_test.go",
+              "path": "koperator.git/controllers/tests/cruisecontroloperation_ttl_controller_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cruisecontroltask_controller_test.go": {
+              "name": "cruisecontroltask_controller_test.go",
+              "path": "koperator.git/controllers/tests/cruisecontroltask_controller_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_controller_cruisecontrol_test.go": {
+              "name": "kafkacluster_controller_cruisecontrol_test.go",
+              "path": "koperator.git/controllers/tests/kafkacluster_controller_cruisecontrol_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_controller_envoy_test.go": {
+              "name": "kafkacluster_controller_envoy_test.go",
+              "path": "koperator.git/controllers/tests/kafkacluster_controller_envoy_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_controller_externallistenerbindings_test.go": {
+              "name": "kafkacluster_controller_externallistenerbindings_test.go",
+              "path": "koperator.git/controllers/tests/kafkacluster_controller_externallistenerbindings_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_controller_externalnodeport_test.go": {
+              "name": "kafkacluster_controller_externalnodeport_test.go",
+              "path": "koperator.git/controllers/tests/kafkacluster_controller_externalnodeport_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_controller_istioingress_test.go": {
+              "name": "kafkacluster_controller_istioingress_test.go",
+              "path": "koperator.git/controllers/tests/kafkacluster_controller_istioingress_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_controller_kafka_test.go": {
+              "name": "kafkacluster_controller_kafka_test.go",
+              "path": "koperator.git/controllers/tests/kafkacluster_controller_kafka_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_controller_test.go": {
+              "name": "kafkacluster_controller_test.go",
+              "path": "koperator.git/controllers/tests/kafkacluster_controller_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkatopic_controller_test.go": {
+              "name": "kafkatopic_controller_test.go",
+              "path": "koperator.git/controllers/tests/kafkatopic_controller_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkauser_controller_test.go": {
+              "name": "kafkauser_controller_test.go",
+              "path": "koperator.git/controllers/tests/kafkauser_controller_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "suite_test.go": {
+              "name": "suite_test.go",
+              "path": "koperator.git/controllers/tests/suite_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "docs": {
+      "name": "docs",
+      "path": "koperator.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "benchmarks": {
+          "name": "benchmarks",
+          "path": "koperator.git/docs/benchmarks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "koperator.git/docs/benchmarks/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "infrastructure": {
+              "name": "infrastructure",
+              "path": "koperator.git/docs/benchmarks/infrastructure",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cluster_eks.json": {
+                  "name": "cluster_eks.json",
+                  "path": "koperator.git/docs/benchmarks/infrastructure/cluster_eks.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cluster_eks_202001.json": {
+                  "name": "cluster_eks_202001.json",
+                  "path": "koperator.git/docs/benchmarks/infrastructure/cluster_eks_202001.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cluster_gke.json": {
+                  "name": "cluster_gke.json",
+                  "path": "koperator.git/docs/benchmarks/infrastructure/cluster_gke.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cluster_pke.json": {
+                  "name": "cluster_pke.json",
+                  "path": "koperator.git/docs/benchmarks/infrastructure/cluster_pke.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kafka.yaml": {
+                  "name": "kafka.yaml",
+                  "path": "koperator.git/docs/benchmarks/infrastructure/kafka.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kafka_202001_3brokers.yaml": {
+                  "name": "kafka_202001_3brokers.yaml",
+                  "path": "koperator.git/docs/benchmarks/infrastructure/kafka_202001_3brokers.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "loadgens": {
+              "name": "loadgens",
+              "path": "koperator.git/docs/benchmarks/loadgens",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "koperator.git/docs/benchmarks/loadgens/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "results": {
+              "name": "results",
+              "path": "koperator.git/docs/benchmarks/results",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "eks-istio-mtls-on-off": {
+                  "name": "eks-istio-mtls-on-off",
+                  "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker-2.png": {
+                      "name": "1broker-2.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/1broker-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1broker-mtls-off.png": {
+                      "name": "1broker-mtls-off.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/1broker-mtls-off.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1broker-mtls-on.png": {
+                      "name": "1broker-mtls-on.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/1broker-mtls-on.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker-2.png": {
+                      "name": "2broker-2.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/2broker-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker-mtls-off.png": {
+                      "name": "2broker-mtls-off.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/2broker-mtls-off.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker-mtls-on.png": {
+                      "name": "2broker-mtls-on.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/2broker-mtls-on.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker-3.png": {
+                      "name": "3broker-3.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/3broker-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker-mtls-off.png": {
+                      "name": "3broker-mtls-off.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/3broker-mtls-off.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker-mtls-on.png": {
+                      "name": "3broker-mtls-on.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/3broker-mtls-on.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-mtls-on-off/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "eks-istio-multi-1": {
+                  "name": "eks-istio-multi-1",
+                  "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3client.png": {
+                      "name": "3client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1/3client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "eks-istio-multi-1ack": {
+                  "name": "eks-istio-multi-1ack",
+                  "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1ack",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1ack/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1ack/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1ack/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1ack/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1ack/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3client.png": {
+                      "name": "3client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-1ack/3client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "eks-istio-multi-2": {
+                  "name": "eks-istio-multi-2",
+                  "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-2",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-2/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-2/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-2/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-2/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-2/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3client.png": {
+                      "name": "3client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-istio-multi-2/3client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "eks-noistio-tls": {
+                  "name": "eks-noistio-tls",
+                  "path": "koperator.git/docs/benchmarks/results/eks-noistio-tls",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-noistio-tls/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-noistio-tls/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-noistio-tls/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-noistio-tls/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/eks-noistio-tls/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "gke-eks-multi": {
+                  "name": "gke-eks-multi",
+                  "path": "koperator.git/docs/benchmarks/results/gke-eks-multi",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-eks-multi/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-eks-multi/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-eks-multi/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "gke-istio": {
+                  "name": "gke-istio",
+                  "path": "koperator.git/docs/benchmarks/results/gke-istio",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3client.png": {
+                      "name": "3client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio/3client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "4client.png": {
+                      "name": "4client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio/4client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "gke-istio-mtls": {
+                  "name": "gke-istio-mtls",
+                  "path": "koperator.git/docs/benchmarks/results/gke-istio-mtls",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-mtls/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-mtls/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-mtls/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-mtls/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-mtls/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3client.png": {
+                      "name": "3client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-mtls/3client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "4client.png": {
+                      "name": "4client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-mtls/4client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "gke-istio-multi-1": {
+                  "name": "gke-istio-multi-1",
+                  "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-1",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-1/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-1/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-1/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-1/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-1/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3client.png": {
+                      "name": "3client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-1/3client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "4client.png": {
+                      "name": "4client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-1/4client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "gke-istio-multi-2": {
+                  "name": "gke-istio-multi-2",
+                  "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-2",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-2/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-2/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-2/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-2/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-2/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3client.png": {
+                      "name": "3client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-2/3client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "4client.png": {
+                      "name": "4client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-2/4client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "gke-istio-multi-3": {
+                  "name": "gke-istio-multi-3",
+                  "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-3",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-3/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-3/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-3/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-3/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-3/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3client.png": {
+                      "name": "3client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-3/3client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "4client.png": {
+                      "name": "4client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-multi-3/4client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "gke-istio-of-mtls": {
+                  "name": "gke-istio-of-mtls",
+                  "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1broker2.png": {
+                      "name": "1broker2.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/1broker2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client2.png": {
+                      "name": "1client2.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/1client2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker2.png": {
+                      "name": "2broker2.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/2broker2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client2.png": {
+                      "name": "2client2.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/2client2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker2.png": {
+                      "name": "3broker2.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/3broker2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3client.png": {
+                      "name": "3client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/3client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3client2.png": {
+                      "name": "3client2.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/3client2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "4client.png": {
+                      "name": "4client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/4client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "4client2.png": {
+                      "name": "4client2.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-istio-of-mtls/4client2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "gke-noistio": {
+                  "name": "gke-noistio",
+                  "path": "koperator.git/docs/benchmarks/results/gke-noistio",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-noistio/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-noistio/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-noistio/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-noistio/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-noistio/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3client.png": {
+                      "name": "3client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-noistio/3client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "4client.png": {
+                      "name": "4client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-noistio/4client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "gke-noistio-tls": {
+                  "name": "gke-noistio-tls",
+                  "path": "koperator.git/docs/benchmarks/results/gke-noistio-tls",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "1broker.png": {
+                      "name": "1broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-noistio-tls/1broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "1client.png": {
+                      "name": "1client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-noistio-tls/1client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2broker.png": {
+                      "name": "2broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-noistio-tls/2broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "2client.png": {
+                      "name": "2client.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-noistio-tls/2client.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "3broker.png": {
+                      "name": "3broker.png",
+                      "path": "koperator.git/docs/benchmarks/results/gke-noistio-tls/3broker.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "developer.md": {
+          "name": "developer.md",
+          "path": "koperator.git/docs/developer.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "examples": {
+          "name": "examples",
+          "path": "koperator.git/docs/examples",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "springboot-kafka-avro": {
+              "name": "springboot-kafka-avro",
+              "path": "koperator.git/docs/examples/springboot-kafka-avro",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "koperator.git/docs/examples/springboot-kafka-avro/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "README.md": {
+                  "name": "README.md",
+                  "path": "koperator.git/docs/examples/springboot-kafka-avro/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "manifest.yaml": {
+                  "name": "manifest.yaml",
+                  "path": "koperator.git/docs/examples/springboot-kafka-avro/manifest.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mvnw": {
+                  "name": "mvnw",
+                  "path": "koperator.git/docs/examples/springboot-kafka-avro/mvnw",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mvnw.cmd": {
+                  "name": "mvnw.cmd",
+                  "path": "koperator.git/docs/examples/springboot-kafka-avro/mvnw.cmd",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pom.xml": {
+                  "name": "pom.xml",
+                  "path": "koperator.git/docs/examples/springboot-kafka-avro/pom.xml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "koperator.git/docs/examples/springboot-kafka-avro/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "avro": {
+                          "name": "avro",
+                          "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/avro",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "user.avsc": {
+                              "name": "user.avsc",
+                              "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/avro/user.avsc",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "java": {
+                          "name": "java",
+                          "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/java",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "io": {
+                              "name": "io",
+                              "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/java/io",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "banzaicloud": {
+                                  "name": "banzaicloud",
+                                  "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/java/io/banzaicloud",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "blog": {
+                                      "name": "blog",
+                                      "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/java/io/banzaicloud/blog",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "spring": {
+                                          "name": "spring",
+                                          "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/java/io/banzaicloud/blog/spring",
+                                          "isDir": true,
+                                          "isDockerfile": false,
+                                          "isComposefile": false,
+                                          "children": {
+                                            "avro": {
+                                              "name": "avro",
+                                              "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/java/io/banzaicloud/blog/spring/avro",
+                                              "isDir": true,
+                                              "isDockerfile": false,
+                                              "isComposefile": false,
+                                              "children": {
+                                                "Consumer.java": {
+                                                  "name": "Consumer.java",
+                                                  "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/java/io/banzaicloud/blog/spring/avro/Consumer.java",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                },
+                                                "KafkaController.java": {
+                                                  "name": "KafkaController.java",
+                                                  "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/java/io/banzaicloud/blog/spring/avro/KafkaController.java",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                },
+                                                "Producer.java": {
+                                                  "name": "Producer.java",
+                                                  "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/java/io/banzaicloud/blog/spring/avro/Producer.java",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                },
+                                                "SpringAvroApplication.java": {
+                                                  "name": "SpringAvroApplication.java",
+                                                  "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/java/io/banzaicloud/blog/spring/avro/SpringAvroApplication.java",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "resources": {
+                          "name": "resources",
+                          "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/resources",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "application-outside.yaml": {
+                              "name": "application-outside.yaml",
+                              "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/resources/application-outside.yaml",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "application.yaml": {
+                              "name": "application.yaml",
+                              "path": "koperator.git/docs/examples/springboot-kafka-avro/src/main/resources/application.yaml",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "features.md": {
+          "name": "features.md",
+          "path": "koperator.git/docs/features.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "img": {
+          "name": "img",
+          "path": "koperator.git/docs/img",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "kafka-external.png": {
+              "name": "kafka-external.png",
+              "path": "koperator.git/docs/img/kafka-external.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafka-operator-arch.png": {
+              "name": "kafka-operator-arch.png",
+              "path": "koperator.git/docs/img/kafka-operator-arch.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafka-ssl.png": {
+              "name": "kafka-ssl.png",
+              "path": "koperator.git/docs/img/kafka-ssl.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafka_operator_logo.png": {
+              "name": "kafka_operator_logo.png",
+              "path": "koperator.git/docs/img/kafka_operator_logo.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "monitoring.md": {
+          "name": "monitoring.md",
+          "path": "koperator.git/docs/monitoring.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "roadmap.md": {
+          "name": "roadmap.md",
+          "path": "koperator.git/docs/roadmap.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "scenarios.md": {
+          "name": "scenarios.md",
+          "path": "koperator.git/docs/scenarios.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ssl.md": {
+          "name": "ssl.md",
+          "path": "koperator.git/docs/ssl.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test.md": {
+          "name": "test.md",
+          "path": "koperator.git/docs/test.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "topics.md": {
+          "name": "topics.md",
+          "path": "koperator.git/docs/topics.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "koperator.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "koperator.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "hack": {
+      "name": "hack",
+      "path": "koperator.git/hack",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "boilerplate.go.txt": {
+          "name": "boilerplate.go.txt",
+          "path": "koperator.git/hack/boilerplate.go.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kafka-test-pod": {
+          "name": "kafka-test-pod",
+          "path": "koperator.git/hack/kafka-test-pod",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "koperator.git/hack/kafka-test-pod/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "koperator.git/hack/kafka-test-pod/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest_certmanager.yaml": {
+              "name": "manifest_certmanager.yaml",
+              "path": "koperator.git/hack/kafka-test-pod/manifest_certmanager.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "internal": {
+      "name": "internal",
+      "path": "koperator.git/internal",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "alertmanager": {
+          "name": "alertmanager",
+          "path": "koperator.git/internal/alertmanager",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "app.go": {
+              "name": "app.go",
+              "path": "koperator.git/internal/alertmanager/app.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "currentalert": {
+              "name": "currentalert",
+              "path": "koperator.git/internal/alertmanager/currentalert",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "addpvc_validator.go": {
+                  "name": "addpvc_validator.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/addpvc_validator.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "addpvc_validator_test.go": {
+                  "name": "addpvc_validator_test.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/addpvc_validator_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "alert_validator.go": {
+                  "name": "alert_validator.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/alert_validator.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "alert_validator_test.go": {
+                  "name": "alert_validator_test.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/alert_validator_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "current_alerts.go": {
+                  "name": "current_alerts.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/current_alerts.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "current_alerts_test.go": {
+                  "name": "current_alerts_test.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/current_alerts_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "downscale_validator.go": {
+                  "name": "downscale_validator.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/downscale_validator.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "downscale_validator_test.go": {
+                  "name": "downscale_validator_test.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/downscale_validator_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "process.go": {
+                  "name": "process.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/process.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "process_test.go": {
+                  "name": "process_test.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/process_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "resizepvc_validator.go": {
+                  "name": "resizepvc_validator.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/resizepvc_validator.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "resizepvc_validator_test.go": {
+                  "name": "resizepvc_validator_test.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/resizepvc_validator_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "upscale_validator.go": {
+                  "name": "upscale_validator.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/upscale_validator.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "upscale_validator_test.go": {
+                  "name": "upscale_validator_test.go",
+                  "path": "koperator.git/internal/alertmanager/currentalert/upscale_validator_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "dispatcher": {
+              "name": "dispatcher",
+              "path": "koperator.git/internal/alertmanager/dispatcher",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "dispatcher.go": {
+                  "name": "dispatcher.go",
+                  "path": "koperator.git/internal/alertmanager/dispatcher/dispatcher.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dispatcher_test.go": {
+                  "name": "dispatcher_test.go",
+                  "path": "koperator.git/internal/alertmanager/dispatcher/dispatcher_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "receiver": {
+              "name": "receiver",
+              "path": "koperator.git/internal/alertmanager/receiver",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "http_handler.go": {
+                  "name": "http_handler.go",
+                  "path": "koperator.git/internal/alertmanager/receiver/http_handler.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "receiver.go": {
+                  "name": "receiver.go",
+                  "path": "koperator.git/internal/alertmanager/receiver/receiver.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "main.go": {
+      "name": "main.go",
+      "path": "koperator.git/main.go",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "pkg": {
+      "name": "pkg",
+      "path": "koperator.git/pkg",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "errorfactory": {
+          "name": "errorfactory",
+          "path": "koperator.git/pkg/errorfactory",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "errorfactory.go": {
+              "name": "errorfactory.go",
+              "path": "koperator.git/pkg/errorfactory/errorfactory.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "errorfactory_test.go": {
+              "name": "errorfactory_test.go",
+              "path": "koperator.git/pkg/errorfactory/errorfactory_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "jmxextractor": {
+          "name": "jmxextractor",
+          "path": "koperator.git/pkg/jmxextractor",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "extractor.go": {
+              "name": "extractor.go",
+              "path": "koperator.git/pkg/jmxextractor/extractor.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mock_extractor.go": {
+              "name": "mock_extractor.go",
+              "path": "koperator.git/pkg/jmxextractor/mock_extractor.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "k8sutil": {
+          "name": "k8sutil",
+          "path": "koperator.git/pkg/k8sutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cache.go": {
+              "name": "cache.go",
+              "path": "koperator.git/pkg/k8sutil/cache.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cr.go": {
+              "name": "cr.go",
+              "path": "koperator.git/pkg/k8sutil/cr.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cr_test.go": {
+              "name": "cr_test.go",
+              "path": "koperator.git/pkg/k8sutil/cr_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lookup.go": {
+              "name": "lookup.go",
+              "path": "koperator.git/pkg/k8sutil/lookup.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "resource.go": {
+              "name": "resource.go",
+              "path": "koperator.git/pkg/k8sutil/resource.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "status.go": {
+              "name": "status.go",
+              "path": "koperator.git/pkg/k8sutil/status.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "zoneandregion.go": {
+              "name": "zoneandregion.go",
+              "path": "koperator.git/pkg/k8sutil/zoneandregion.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "kafkaclient": {
+          "name": "kafkaclient",
+          "path": "koperator.git/pkg/kafkaclient",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "client.go": {
+              "name": "client.go",
+              "path": "koperator.git/pkg/kafkaclient/client.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_test.go": {
+              "name": "client_test.go",
+              "path": "koperator.git/pkg/kafkaclient/client_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config.go": {
+              "name": "config.go",
+              "path": "koperator.git/pkg/kafkaclient/config.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config_test.go": {
+              "name": "config_test.go",
+              "path": "koperator.git/pkg/kafkaclient/config_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dynamicConfig.go": {
+              "name": "dynamicConfig.go",
+              "path": "koperator.git/pkg/kafkaclient/dynamicConfig.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "healthcheck.go": {
+              "name": "healthcheck.go",
+              "path": "koperator.git/pkg/kafkaclient/healthcheck.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mock_client.go": {
+              "name": "mock_client.go",
+              "path": "koperator.git/pkg/kafkaclient/mock_client.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "provider.go": {
+              "name": "provider.go",
+              "path": "koperator.git/pkg/kafkaclient/provider.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "topics.go": {
+              "name": "topics.go",
+              "path": "koperator.git/pkg/kafkaclient/topics.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "topics_test.go": {
+              "name": "topics_test.go",
+              "path": "koperator.git/pkg/kafkaclient/topics_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "users.go": {
+              "name": "users.go",
+              "path": "koperator.git/pkg/kafkaclient/users.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "users_test.go": {
+              "name": "users_test.go",
+              "path": "koperator.git/pkg/kafkaclient/users_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "pki": {
+          "name": "pki",
+          "path": "koperator.git/pkg/pki",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "certmanagerpki": {
+              "name": "certmanagerpki",
+              "path": "koperator.git/pkg/pki/certmanagerpki",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "certmanager.go": {
+                  "name": "certmanager.go",
+                  "path": "koperator.git/pkg/pki/certmanagerpki/certmanager.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "certmanager_pki.go": {
+                  "name": "certmanager_pki.go",
+                  "path": "koperator.git/pkg/pki/certmanagerpki/certmanager_pki.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "certmanager_pki_test.go": {
+                  "name": "certmanager_pki_test.go",
+                  "path": "koperator.git/pkg/pki/certmanagerpki/certmanager_pki_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "certmanager_test.go": {
+                  "name": "certmanager_test.go",
+                  "path": "koperator.git/pkg/pki/certmanagerpki/certmanager_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "certmanager_tls_config.go": {
+                  "name": "certmanager_tls_config.go",
+                  "path": "koperator.git/pkg/pki/certmanagerpki/certmanager_tls_config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "certmanager_tls_config_test.go": {
+                  "name": "certmanager_tls_config_test.go",
+                  "path": "koperator.git/pkg/pki/certmanagerpki/certmanager_tls_config_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "certmanager_user.go": {
+                  "name": "certmanager_user.go",
+                  "path": "koperator.git/pkg/pki/certmanagerpki/certmanager_user.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "certmanager_user_test.go": {
+                  "name": "certmanager_user_test.go",
+                  "path": "koperator.git/pkg/pki/certmanagerpki/certmanager_user_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "reconcile.go": {
+                  "name": "reconcile.go",
+                  "path": "koperator.git/pkg/pki/certmanagerpki/reconcile.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "k8scsrpki": {
+              "name": "k8scsrpki",
+              "path": "koperator.git/pkg/pki/k8scsrpki",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "k8scsr.go": {
+                  "name": "k8scsr.go",
+                  "path": "koperator.git/pkg/pki/k8scsrpki/k8scsr.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "k8scsr_pki.go": {
+                  "name": "k8scsr_pki.go",
+                  "path": "koperator.git/pkg/pki/k8scsrpki/k8scsr_pki.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "k8scsr_test.go": {
+                  "name": "k8scsr_test.go",
+                  "path": "koperator.git/pkg/pki/k8scsrpki/k8scsr_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "k8scsr_tls.go": {
+                  "name": "k8scsr_tls.go",
+                  "path": "koperator.git/pkg/pki/k8scsrpki/k8scsr_tls.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "k8scsr_user.go": {
+                  "name": "k8scsr_user.go",
+                  "path": "koperator.git/pkg/pki/k8scsrpki/k8scsr_user.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "k8scsr_user_test.go": {
+                  "name": "k8scsr_user_test.go",
+                  "path": "koperator.git/pkg/pki/k8scsrpki/k8scsr_user_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pki_manager.go": {
+              "name": "pki_manager.go",
+              "path": "koperator.git/pkg/pki/pki_manager.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pki_manager_test.go": {
+              "name": "pki_manager_test.go",
+              "path": "koperator.git/pkg/pki/pki_manager_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "resources": {
+          "name": "resources",
+          "path": "koperator.git/pkg/resources",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cruisecontrol": {
+              "name": "cruisecontrol",
+              "path": "koperator.git/pkg/resources/cruisecontrol",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "configmap.go": {
+                  "name": "configmap.go",
+                  "path": "koperator.git/pkg/resources/cruisecontrol/configmap.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "configmap_test.go": {
+                  "name": "configmap_test.go",
+                  "path": "koperator.git/pkg/resources/cruisecontrol/configmap_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cruisecontrol.go": {
+                  "name": "cruisecontrol.go",
+                  "path": "koperator.git/pkg/resources/cruisecontrol/cruisecontrol.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment.go": {
+                  "name": "deployment.go",
+                  "path": "koperator.git/pkg/resources/cruisecontrol/deployment.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.go": {
+                  "name": "service.go",
+                  "path": "koperator.git/pkg/resources/cruisecontrol/service.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "topicManager.go": {
+                  "name": "topicManager.go",
+                  "path": "koperator.git/pkg/resources/cruisecontrol/topicManager.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "cruisecontrolmonitoring": {
+              "name": "cruisecontrolmonitoring",
+              "path": "koperator.git/pkg/resources/cruisecontrolmonitoring",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "configmap.go": {
+                  "name": "configmap.go",
+                  "path": "koperator.git/pkg/resources/cruisecontrolmonitoring/configmap.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cruisecontrol_monitoring.go": {
+                  "name": "cruisecontrol_monitoring.go",
+                  "path": "koperator.git/pkg/resources/cruisecontrolmonitoring/cruisecontrol_monitoring.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "envoy": {
+              "name": "envoy",
+              "path": "koperator.git/pkg/resources/envoy",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "configmap.go": {
+                  "name": "configmap.go",
+                  "path": "koperator.git/pkg/resources/envoy/configmap.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment.go": {
+                  "name": "deployment.go",
+                  "path": "koperator.git/pkg/resources/envoy/deployment.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "envoy.go": {
+                  "name": "envoy.go",
+                  "path": "koperator.git/pkg/resources/envoy/envoy.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "poddisruptionbudget.go": {
+                  "name": "poddisruptionbudget.go",
+                  "path": "koperator.git/pkg/resources/envoy/poddisruptionbudget.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.go": {
+                  "name": "service.go",
+                  "path": "koperator.git/pkg/resources/envoy/service.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "istioingress": {
+              "name": "istioingress",
+              "path": "koperator.git/pkg/resources/istioingress",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "gateway.go": {
+                  "name": "gateway.go",
+                  "path": "koperator.git/pkg/resources/istioingress/gateway.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "istioingress.go": {
+                  "name": "istioingress.go",
+                  "path": "koperator.git/pkg/resources/istioingress/istioingress.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "meshgateway.go": {
+                  "name": "meshgateway.go",
+                  "path": "koperator.git/pkg/resources/istioingress/meshgateway.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "virtualservice.go": {
+                  "name": "virtualservice.go",
+                  "path": "koperator.git/pkg/resources/istioingress/virtualservice.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kafka": {
+              "name": "kafka",
+              "path": "koperator.git/pkg/resources/kafka",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "allBrokerService.go": {
+                  "name": "allBrokerService.go",
+                  "path": "koperator.git/pkg/resources/kafka/allBrokerService.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "configmap.go": {
+                  "name": "configmap.go",
+                  "path": "koperator.git/pkg/resources/kafka/configmap.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "configmap_test.go": {
+                  "name": "configmap_test.go",
+                  "path": "koperator.git/pkg/resources/kafka/configmap_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "configs.go": {
+                  "name": "configs.go",
+                  "path": "koperator.git/pkg/resources/kafka/configs.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "configs_test.go": {
+                  "name": "configs_test.go",
+                  "path": "koperator.git/pkg/resources/kafka/configs_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "headlessService.go": {
+                  "name": "headlessService.go",
+                  "path": "koperator.git/pkg/resources/kafka/headlessService.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kafka.go": {
+                  "name": "kafka.go",
+                  "path": "koperator.git/pkg/resources/kafka/kafka.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kafka_test.go": {
+                  "name": "kafka_test.go",
+                  "path": "koperator.git/pkg/resources/kafka/kafka_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mocks": {
+                  "name": "mocks",
+                  "path": "koperator.git/pkg/resources/kafka/mocks",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Client.go": {
+                      "name": "Client.go",
+                      "path": "koperator.git/pkg/resources/kafka/mocks/Client.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "pod.go": {
+                  "name": "pod.go",
+                  "path": "koperator.git/pkg/resources/kafka/pod.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pod_test.go": {
+                  "name": "pod_test.go",
+                  "path": "koperator.git/pkg/resources/kafka/pod_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "poddisruptionbudget.go": {
+                  "name": "poddisruptionbudget.go",
+                  "path": "koperator.git/pkg/resources/kafka/poddisruptionbudget.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pvc.go": {
+                  "name": "pvc.go",
+                  "path": "koperator.git/pkg/resources/kafka/pvc.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pvc_test.go": {
+                  "name": "pvc_test.go",
+                  "path": "koperator.git/pkg/resources/kafka/pvc_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.go": {
+                  "name": "service.go",
+                  "path": "koperator.git/pkg/resources/kafka/service.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "wait-for-envoy-sidecar.sh": {
+                  "name": "wait-for-envoy-sidecar.sh",
+                  "path": "koperator.git/pkg/resources/kafka/wait-for-envoy-sidecar.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kafkamonitoring": {
+              "name": "kafkamonitoring",
+              "path": "koperator.git/pkg/resources/kafkamonitoring",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "configmap.go": {
+                  "name": "configmap.go",
+                  "path": "koperator.git/pkg/resources/kafkamonitoring/configmap.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kafka_monitoring.go": {
+                  "name": "kafka_monitoring.go",
+                  "path": "koperator.git/pkg/resources/kafkamonitoring/kafka_monitoring.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "nodeportexternalaccess": {
+              "name": "nodeportexternalaccess",
+              "path": "koperator.git/pkg/resources/nodeportexternalaccess",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "nodeportExternalAccess.go": {
+                  "name": "nodeportExternalAccess.go",
+                  "path": "koperator.git/pkg/resources/nodeportexternalaccess/nodeportExternalAccess.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.go": {
+                  "name": "service.go",
+                  "path": "koperator.git/pkg/resources/nodeportexternalaccess/service.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "reconciler.go": {
+              "name": "reconciler.go",
+              "path": "koperator.git/pkg/resources/reconciler.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "koperator.git/pkg/resources/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "templates.go": {
+                  "name": "templates.go",
+                  "path": "koperator.git/pkg/resources/templates/templates.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "scale": {
+          "name": "scale",
+          "path": "koperator.git/pkg/scale",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "alias.go": {
+              "name": "alias.go",
+              "path": "koperator.git/pkg/scale/alias.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mock_scale.go": {
+              "name": "mock_scale.go",
+              "path": "koperator.git/pkg/scale/mock_scale.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "scale.go": {
+              "name": "scale.go",
+              "path": "koperator.git/pkg/scale/scale.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "types.go": {
+              "name": "types.go",
+              "path": "koperator.git/pkg/scale/types.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "utils.go": {
+              "name": "utils.go",
+              "path": "koperator.git/pkg/scale/utils.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "util": {
+          "name": "util",
+          "path": "koperator.git/pkg/util",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cert": {
+              "name": "cert",
+              "path": "koperator.git/pkg/util/cert",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "certutil.go": {
+                  "name": "certutil.go",
+                  "path": "koperator.git/pkg/util/cert/certutil.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "certutil_test.go": {
+                  "name": "certutil_test.go",
+                  "path": "koperator.git/pkg/util/cert/certutil_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "client": {
+              "name": "client",
+              "path": "koperator.git/pkg/util/client",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "common.go": {
+                  "name": "common.go",
+                  "path": "koperator.git/pkg/util/client/common.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "common_test.go": {
+                  "name": "common_test.go",
+                  "path": "koperator.git/pkg/util/client/common_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "cruisecontrol": {
+              "name": "cruisecontrol",
+              "path": "koperator.git/pkg/util/cruisecontrol",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "common.go": {
+                  "name": "common.go",
+                  "path": "koperator.git/pkg/util/cruisecontrol/common.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "envoy": {
+              "name": "envoy",
+              "path": "koperator.git/pkg/util/envoy",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "common.go": {
+                  "name": "common.go",
+                  "path": "koperator.git/pkg/util/envoy/common.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "istioingress": {
+              "name": "istioingress",
+              "path": "koperator.git/pkg/util/istioingress",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "common.go": {
+                  "name": "common.go",
+                  "path": "koperator.git/pkg/util/istioingress/common.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kafka": {
+              "name": "kafka",
+              "path": "koperator.git/pkg/util/kafka",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "common.go": {
+                  "name": "common.go",
+                  "path": "koperator.git/pkg/util/kafka/common.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "common_test.go": {
+                  "name": "common_test.go",
+                  "path": "koperator.git/pkg/util/kafka/common_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pki": {
+              "name": "pki",
+              "path": "koperator.git/pkg/util/pki",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "common.go": {
+                  "name": "common.go",
+                  "path": "koperator.git/pkg/util/pki/common.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pki_common_test.go": {
+                  "name": "pki_common_test.go",
+                  "path": "koperator.git/pkg/util/pki/pki_common_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "util.go": {
+              "name": "util.go",
+              "path": "koperator.git/pkg/util/util.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "util_test.go": {
+              "name": "util_test.go",
+              "path": "koperator.git/pkg/util/util_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "zookeeper": {
+              "name": "zookeeper",
+              "path": "koperator.git/pkg/util/zookeeper",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "common.go": {
+                  "name": "common.go",
+                  "path": "koperator.git/pkg/util/zookeeper/common.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "webhooks": {
+          "name": "webhooks",
+          "path": "koperator.git/pkg/webhooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "errors.go": {
+              "name": "errors.go",
+              "path": "koperator.git/pkg/webhooks/errors.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "errors_test.go": {
+              "name": "errors_test.go",
+              "path": "koperator.git/pkg/webhooks/errors_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_validator.go": {
+              "name": "kafkacluster_validator.go",
+              "path": "koperator.git/pkg/webhooks/kafkacluster_validator.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkacluster_validator_test.go": {
+              "name": "kafkacluster_validator_test.go",
+              "path": "koperator.git/pkg/webhooks/kafkacluster_validator_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkatopic_validator.go": {
+              "name": "kafkatopic_validator.go",
+              "path": "koperator.git/pkg/webhooks/kafkatopic_validator.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kafkatopic_validator_test.go": {
+              "name": "kafkatopic_validator_test.go",
+              "path": "koperator.git/pkg/webhooks/kafkatopic_validator_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "properties": {
+      "name": "properties",
+      "path": "koperator.git/properties",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "go.mod": {
+          "name": "go.mod",
+          "path": "koperator.git/properties/go.mod",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "go.sum": {
+          "name": "go.sum",
+          "path": "koperator.git/properties/go.sum",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "internal": {
+          "name": "internal",
+          "path": "koperator.git/properties/internal",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "utils": {
+              "name": "utils",
+              "path": "koperator.git/properties/internal/utils",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "struct.go": {
+                  "name": "struct.go",
+                  "path": "koperator.git/properties/internal/utils/struct.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "struct_test.go": {
+                  "name": "struct_test.go",
+                  "path": "koperator.git/properties/internal/utils/struct_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "pkg": {
+          "name": "pkg",
+          "path": "koperator.git/properties/pkg",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "decode.go": {
+              "name": "decode.go",
+              "path": "koperator.git/properties/pkg/decode.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "decode_test.go": {
+              "name": "decode_test.go",
+              "path": "koperator.git/properties/pkg/decode_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "encode.go": {
+              "name": "encode.go",
+              "path": "koperator.git/properties/pkg/encode.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "encode_test.go": {
+              "name": "encode_test.go",
+              "path": "koperator.git/properties/pkg/encode_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "properties.go": {
+              "name": "properties.go",
+              "path": "koperator.git/properties/pkg/properties.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "properties_test.go": {
+              "name": "properties_test.go",
+              "path": "koperator.git/properties/pkg/properties_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "property.go": {
+              "name": "property.go",
+              "path": "koperator.git/properties/pkg/property.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "property_test.go": {
+              "name": "property_test.go",
+              "path": "koperator.git/properties/pkg/property_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "utils.go": {
+              "name": "utils.go",
+              "path": "koperator.git/properties/pkg/utils.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "utils_test.go": {
+              "name": "utils_test.go",
+              "path": "koperator.git/properties/pkg/utils_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "scripts": {
+      "name": "scripts",
+      "path": "koperator.git/scripts",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "check-header.sh": {
+          "name": "check-header.sh",
+          "path": "koperator.git/scripts/check-header.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "image_patch.sh": {
+          "name": "image_patch.sh",
+          "path": "koperator.git/scripts/image_patch.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "increment_version.sh": {
+          "name": "increment_version.sh",
+          "path": "koperator.git/scripts/increment_version.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "install_kustomize.sh": {
+          "name": "install_kustomize.sh",
+          "path": "koperator.git/scripts/install_kustomize.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 135042369,
+    "name": "koperator",
+    "full_name": "banzaicloud/koperator",
+    "owner": {
+      "login": "banzaicloud",
+      "html_url": "https://github.com/banzaicloud",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/banzaicloud/koperator",
+    "description": "Oh no! Yet another Apache Kafka operator for Kubernetes",
+    "url": "https://api.github.com/repos/banzaicloud/koperator",
+    "clone_url": "https://github.com/banzaicloud/koperator.git",
+    "homepage": "",
+    "size": 37062,
+    "stargazers_count": 661,
+    "watchers_count": 661,
+    "language": "Go"
+  }
+}
