@@ -1,0 +1,2838 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 1,
+      "subFolderCount": 6,
+      "filepaths": [
+        "kamus.git/Dockerfile",
+        "kamus.git/cli/Dockerfile",
+        "kamus.git/example/app/Dockerfile",
+        "kamus.git/init-container/Dockerfile",
+        "kamus.git/init-container/tests/Wiremock/Dockerfile",
+        "kamus.git/tests/blackbox/Dockerfile",
+        "kamus.git/tests/blackbox/Wiremock/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "kamus.git/init-container/tests/docker-compose.yaml",
+        "kamus.git/tests/blackbox/compose/docker-compose.ci.yaml",
+        "kamus.git/tests/blackbox/compose/docker-compose.local.yaml",
+        "kamus.git/tests/blackbox/compose/docker-compose.yaml"
+      ]
+    }
+  },
+  "struct": {
+    ".circleci": {
+      "name": ".circleci",
+      "path": "kamus.git/.circleci",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "config.yml": {
+          "name": "config.yml",
+          "path": "kamus.git/.circleci/config.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "kamus.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "kamus.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "kamus.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "kamus.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "kamus.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "kamus.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "kamus.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "kamus.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "kamus.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "kamus.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "kamus.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "kamus.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "kamus.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "kamus.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "kamus.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "kamus.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "kamus.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "kamus.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "kamus.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "kamus.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "kamus.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "kamus.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "kamus.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "kamus.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "kamus.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "kamus.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "kamus.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "kamus.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "kamus.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "kamus.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "kamus.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "kamus.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "kamus.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-164775f1fb2f9215628762935befbc9fae34c11c.idx": {
+                  "name": "pack-164775f1fb2f9215628762935befbc9fae34c11c.idx",
+                  "path": "kamus.git/.git/objects/pack/pack-164775f1fb2f9215628762935befbc9fae34c11c.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-164775f1fb2f9215628762935befbc9fae34c11c.pack": {
+                  "name": "pack-164775f1fb2f9215628762935befbc9fae34c11c.pack",
+                  "path": "kamus.git/.git/objects/pack/pack-164775f1fb2f9215628762935befbc9fae34c11c.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "kamus.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "kamus.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "kamus.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "kamus.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "kamus.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "kamus.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "kamus.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "kamus.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cli-docker-0.3.6": {
+                  "name": "cli-docker-0.3.6",
+                  "path": "kamus.git/.git/refs/tags/cli-docker-0.3.6",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "kamus.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "kamus.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "kamus.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug_report.md": {
+              "name": "bug_report.md",
+              "path": "kamus.git/.github/ISSUE_TEMPLATE/bug_report.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature_request.md": {
+              "name": "feature_request.md",
+              "path": "kamus.git/.github/ISSUE_TEMPLATE/feature_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "kamus.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".grenrc.json": {
+      "name": ".grenrc.json",
+      "path": "kamus.git/.grenrc.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "kamus.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "kamus.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "kamus.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "ci": {
+      "name": "ci",
+      "path": "kamus.git/ci",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "version_to_deploy.sh": {
+          "name": "version_to_deploy.sh",
+          "path": "kamus.git/ci/version_to_deploy.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "version_to_deploy_cli_docker.sh": {
+          "name": "version_to_deploy_cli_docker.sh",
+          "path": "kamus.git/ci/version_to_deploy_cli_docker.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "version_to_deploy_init.sh": {
+          "name": "version_to_deploy_init.sh",
+          "path": "kamus.git/ci/version_to_deploy_init.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "cli": {
+      "name": "cli",
+      "path": "kamus.git/cli",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".dockerignore": {
+          "name": ".dockerignore",
+          "path": "kamus.git/cli/.dockerignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".eslintrc": {
+          "name": ".eslintrc",
+          "path": "kamus.git/cli/.eslintrc",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "kamus.git/cli/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".snyk": {
+          "name": ".snyk",
+          "path": "kamus.git/cli/.snyk",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "kamus.git/cli/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "kamus.git/cli/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "lib": {
+          "name": "lib",
+          "path": "kamus.git/cli/lib",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "actions": {
+              "name": "actions",
+              "path": "kamus.git/cli/lib/actions",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "encrypt.js": {
+                  "name": "encrypt.js",
+                  "path": "kamus.git/cli/lib/actions/encrypt.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "index.js": {
+              "name": "index.js",
+              "path": "kamus.git/cli/lib/index.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "is-docker.js": {
+              "name": "is-docker.js",
+              "path": "kamus.git/cli/lib/is-docker.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "package.json": {
+          "name": "package.json",
+          "path": "kamus.git/cli/package.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test": {
+          "name": "test",
+          "path": "kamus.git/cli/test",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "encrypt.spec.js": {
+              "name": "encrypt.spec.js",
+              "path": "kamus.git/cli/test/encrypt.spec.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "yarn.lock": {
+          "name": "yarn.lock",
+          "path": "kamus.git/cli/yarn.lock",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "example": {
+      "name": "example",
+      "path": "kamus.git/example",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "kamus.git/example/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "app": {
+          "name": "app",
+          "path": "kamus.git/example/app",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kamus.git/example/app/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "config.json": {
+              "name": "config.json",
+              "path": "kamus.git/example/app/config.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "index.php": {
+              "name": "index.php",
+              "path": "kamus.git/example/app/index.php",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "deployment-kamus": {
+          "name": "deployment-kamus",
+          "path": "kamus.git/example/deployment-kamus",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "configmap.yaml": {
+              "name": "configmap.yaml",
+              "path": "kamus.git/example/deployment-kamus/configmap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kamus.git/example/deployment-kamus/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service-account.yaml": {
+              "name": "service-account.yaml",
+              "path": "kamus.git/example/deployment-kamus/service-account.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "deployment-secret": {
+          "name": "deployment-secret",
+          "path": "kamus.git/example/deployment-secret",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kamus.git/example/deployment-secret/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "secret.yaml": {
+              "name": "secret.yaml",
+              "path": "kamus.git/example/deployment-secret/secret.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "glue": {
+      "name": "glue",
+      "path": "kamus.git/glue",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "glue.json": {
+          "name": "glue.json",
+          "path": "kamus.git/glue/glue.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "images": {
+      "name": "images",
+      "path": "kamus.git/images",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "logo.png": {
+          "name": "logo.png",
+          "path": "kamus.git/images/logo.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "init-container": {
+      "name": "init-container",
+      "path": "kamus.git/init-container",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".dockerignore": {
+          "name": ".dockerignore",
+          "path": "kamus.git/init-container/.dockerignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "kamus.git/init-container/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "CONTRIBUTING.md": {
+          "name": "CONTRIBUTING.md",
+          "path": "kamus.git/init-container/CONTRIBUTING.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "kamus.git/init-container/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "kamus.git/init-container/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "encrypted": {
+          "name": "encrypted",
+          "path": "kamus.git/init-container/encrypted",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "key": {
+              "name": "key",
+              "path": "kamus.git/init-container/encrypted/key",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index.js": {
+          "name": "index.js",
+          "path": "kamus.git/init-container/index.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "package.json": {
+          "name": "package.json",
+          "path": "kamus.git/init-container/package.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "templates": {
+          "name": "templates",
+          "path": "kamus.git/init-container/templates",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cfg-strict.ejs": {
+              "name": "cfg-strict.ejs",
+              "path": "kamus.git/init-container/templates/cfg-strict.ejs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cfg.ejs": {
+              "name": "cfg.ejs",
+              "path": "kamus.git/init-container/templates/cfg.ejs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "json.ejs": {
+              "name": "json.ejs",
+              "path": "kamus.git/init-container/templates/json.ejs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "tests": {
+          "name": "tests",
+          "path": "kamus.git/init-container/tests",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Wiremock": {
+              "name": "Wiremock",
+              "path": "kamus.git/init-container/tests/Wiremock",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "kamus.git/init-container/tests/Wiremock/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "mappings": {
+                  "name": "mappings",
+                  "path": "kamus.git/init-container/tests/Wiremock/mappings",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "api_v1_decrypt-c5291391-7520-4d8d-a39a-9466ceb759e4.json": {
+                      "name": "api_v1_decrypt-c5291391-7520-4d8d-a39a-9466ceb759e4.json",
+                      "path": "kamus.git/init-container/tests/Wiremock/mappings/api_v1_decrypt-c5291391-7520-4d8d-a39a-9466ceb759e4.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "api_v2_decrypt-c5291391-7520-4d8d-a39a-9466ceb759e4.json": {
+                      "name": "api_v2_decrypt-c5291391-7520-4d8d-a39a-9466ceb759e4.json",
+                      "path": "kamus.git/init-container/tests/Wiremock/mappings/api_v2_decrypt-c5291391-7520-4d8d-a39a-9466ceb759e4.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "api_v3_decrypt-c5291391-7520-4d8d-a39a-9466ceb759e4.json": {
+                      "name": "api_v3_decrypt-c5291391-7520-4d8d-a39a-9466ceb759e4.json",
+                      "path": "kamus.git/init-container/tests/Wiremock/mappings/api_v3_decrypt-c5291391-7520-4d8d-a39a-9466ceb759e4.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "api_v4_decrypt-c5291391-7520-4d8d-a39a-9466ceb759e4.json": {
+                      "name": "api_v4_decrypt-c5291391-7520-4d8d-a39a-9466ceb759e4.json",
+                      "path": "kamus.git/init-container/tests/Wiremock/mappings/api_v4_decrypt-c5291391-7520-4d8d-a39a-9466ceb759e4.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "kamus.git/init-container/tests/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "encrypted": {
+              "name": "encrypted",
+              "path": "kamus.git/init-container/tests/encrypted",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "key-newlines.json": {
+                  "name": "key-newlines.json",
+                  "path": "kamus.git/init-container/tests/encrypted/key-newlines.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "key.json": {
+                  "name": "key.json",
+                  "path": "kamus.git/init-container/tests/encrypted/key.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "key1": {
+                  "name": "key1",
+                  "path": "kamus.git/init-container/tests/encrypted/key1",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "key2": {
+                  "name": "key2",
+                  "path": "kamus.git/init-container/tests/encrypted/key2",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "expected-custom.txt": {
+              "name": "expected-custom.txt",
+              "path": "kamus.git/init-container/tests/expected-custom.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "expected-strict.cfg": {
+              "name": "expected-strict.cfg",
+              "path": "kamus.git/init-container/tests/expected-strict.cfg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "expected.cfg": {
+              "name": "expected.cfg",
+              "path": "kamus.git/init-container/tests/expected.cfg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "expected.json": {
+              "name": "expected.json",
+              "path": "kamus.git/init-container/tests/expected.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_test.sh": {
+              "name": "run_test.sh",
+              "path": "kamus.git/init-container/tests/run_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "kamus.git/init-container/tests/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "template.ejs": {
+                  "name": "template.ejs",
+                  "path": "kamus.git/init-container/tests/templates/template.ejs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "token": {
+              "name": "token",
+              "path": "kamus.git/init-container/tests/token",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "yarn.lock": {
+          "name": "yarn.lock",
+          "path": "kamus.git/init-container/yarn.lock",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "kamus.sln": {
+      "name": "kamus.sln",
+      "path": "kamus.git/kamus.sln",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "package.json": {
+      "name": "package.json",
+      "path": "kamus.git/package.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "release_management.md": {
+      "name": "release_management.md",
+      "path": "kamus.git/release_management.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "renovate.json": {
+      "name": "renovate.json",
+      "path": "kamus.git/renovate.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "scripts": {
+      "name": "scripts",
+      "path": "kamus.git/scripts",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "run_security_tests.sh": {
+          "name": "run_security_tests.sh",
+          "path": "kamus.git/scripts/run_security_tests.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "run_tests.sh": {
+          "name": "run_tests.sh",
+          "path": "kamus.git/scripts/run_tests.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "teardown_tests.sh": {
+          "name": "teardown_tests.sh",
+          "path": "kamus.git/scripts/teardown_tests.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "security": {
+      "name": "security",
+      "path": "kamus.git/security",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "smime.p7m": {
+          "name": "smime.p7m",
+          "path": "kamus.git/security/smime.p7m",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "security.md": {
+      "name": "security.md",
+      "path": "kamus.git/security.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "site": {
+      "name": "site",
+      "path": "kamus.git/site",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "kamus.git/site/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "LICENSE": {
+          "name": "LICENSE",
+          "path": "kamus.git/site/LICENSE",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Makefile": {
+          "name": "Makefile",
+          "path": "kamus.git/site/Makefile",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "kamus.git/site/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "assets": {
+          "name": "assets",
+          "path": "kamus.git/site/assets",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "css": {
+              "name": "css",
+              "path": "kamus.git/site/assets/css",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "inline.css": {
+                  "name": "inline.css",
+                  "path": "kamus.git/site/assets/css/inline.css",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "js": {
+              "name": "js",
+              "path": "kamus.git/site/assets/js",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "inline.js": {
+                  "name": "inline.js",
+                  "path": "kamus.git/site/assets/js/inline.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "config.toml": {
+          "name": "config.toml",
+          "path": "kamus.git/site/config.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "content": {
+          "name": "content",
+          "path": "kamus.git/site/content",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "_index.md": {
+              "name": "_index.md",
+              "path": "kamus.git/site/content/_index.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docs": {
+              "name": "docs",
+              "path": "kamus.git/site/content/docs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "_index.md": {
+                  "name": "_index.md",
+                  "path": "kamus.git/site/content/docs/_index.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "contributing": {
+                  "name": "contributing",
+                  "path": "kamus.git/site/content/docs/contributing",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "getting-started.md": {
+                      "name": "getting-started.md",
+                      "path": "kamus.git/site/content/docs/contributing/getting-started.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "roadmap.md": {
+                      "name": "roadmap.md",
+                      "path": "kamus.git/site/content/docs/contributing/roadmap.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "images": {
+                  "name": "images",
+                  "path": "kamus.git/site/content/docs/images",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "diagram.png": {
+                      "name": "diagram.png",
+                      "path": "kamus.git/site/content/docs/images/diagram.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "threatmodeling": {
+                  "name": "threatmodeling",
+                  "path": "kamus.git/site/content/docs/threatmodeling",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "architecture.md": {
+                      "name": "architecture.md",
+                      "path": "kamus.git/site/content/docs/threatmodeling/architecture.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "controls": {
+                      "name": "controls",
+                      "path": "kamus.git/site/content/docs/threatmodeling/controls",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "KMS": {
+                          "name": "KMS",
+                          "path": "kamus.git/site/content/docs/threatmodeling/controls/KMS",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "firewall_protection.md": {
+                              "name": "firewall_protection.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/KMS/firewall_protection.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "hardening_credentials.md": {
+                              "name": "hardening_credentials.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/KMS/hardening_credentials.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "obfuscate_key_names.md": {
+                              "name": "obfuscate_key_names.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/KMS/obfuscate_key_names.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "use_hsm.md": {
+                              "name": "use_hsm.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/KMS/use_hsm.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "decryption": {
+                          "name": "decryption",
+                          "path": "kamus.git/site/content/docs/threatmodeling/controls/decryption",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "deny_default_sa.md": {
+                              "name": "deny_default_sa.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/decryption/deny_default_sa.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "deny_secret_view.md": {
+                              "name": "deny_secret_view.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/decryption/deny_secret_view.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "k8s_api_tls.md": {
+                              "name": "k8s_api_tls.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/decryption/k8s_api_tls.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "kamus_in_cluster_tls.md": {
+                              "name": "kamus_in_cluster_tls.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/decryption/kamus_in_cluster_tls.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "opa_pods_secrets.md": {
+                              "name": "opa_pods_secrets.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/decryption/opa_pods_secrets.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "encryption": {
+                          "name": "encryption",
+                          "path": "kamus.git/site/content/docs/threatmodeling/controls/encryption",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "block_internet_access.md": {
+                              "name": "block_internet_access.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/encryption/block_internet_access.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "certificate_pinning.md": {
+                              "name": "certificate_pinning.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/encryption/certificate_pinning.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "client_side_encryption.md": {
+                              "name": "client_side_encryption.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/encryption/client_side_encryption.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "deny_default_sa.md": {
+                              "name": "deny_default_sa.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/encryption/deny_default_sa.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "ip_throttling.md": {
+                              "name": "ip_throttling.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/controls/encryption/ip_throttling.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "images": {
+                      "name": "images",
+                      "path": "kamus.git/site/content/docs/threatmodeling/images",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "diagram-crd.png": {
+                          "name": "diagram-crd.png",
+                          "path": "kamus.git/site/content/docs/threatmodeling/images/diagram-crd.png",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "diagram-crd.pu": {
+                          "name": "diagram-crd.pu",
+                          "path": "kamus.git/site/content/docs/threatmodeling/images/diagram-crd.pu",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "diagram.png": {
+                          "name": "diagram.png",
+                          "path": "kamus.git/site/content/docs/threatmodeling/images/diagram.png",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "diagram.pu": {
+                          "name": "diagram.pu",
+                          "path": "kamus.git/site/content/docs/threatmodeling/images/diagram.pu",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "kamus-pod.png": {
+                          "name": "kamus-pod.png",
+                          "path": "kamus.git/site/content/docs/threatmodeling/images/kamus-pod.png",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "security.md": {
+                      "name": "security.md",
+                      "path": "kamus.git/site/content/docs/threatmodeling/security.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "threats": {
+                      "name": "threats",
+                      "path": "kamus.git/site/content/docs/threatmodeling/threats",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "decryption": {
+                          "name": "decryption",
+                          "path": "kamus.git/site/content/docs/threatmodeling/threats/decryption",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "leveraging_crd.md": {
+                              "name": "leveraging_crd.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/threats/decryption/leveraging_crd.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "pod_impersonation.md": {
+                              "name": "pod_impersonation.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/threats/decryption/pod_impersonation.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "sniffing_tampering.md": {
+                              "name": "sniffing_tampering.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/threats/decryption/sniffing_tampering.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "encryption": {
+                          "name": "encryption",
+                          "path": "kamus.git/site/content/docs/threatmodeling/threats/encryption",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "denial_of_service.md": {
+                              "name": "denial_of_service.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/threats/encryption/denial_of_service.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "namespace_enumeration.md": {
+                              "name": "namespace_enumeration.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/threats/encryption/namespace_enumeration.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "sniffing_user_traffic.md": {
+                              "name": "sniffing_user_traffic.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/threats/encryption/sniffing_user_traffic.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "kms": {
+                          "name": "kms",
+                          "path": "kamus.git/site/content/docs/threatmodeling/threats/kms",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "leaked_credentials.md": {
+                              "name": "leaked_credentials.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/threats/kms/leaked_credentials.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "quantom_computing.md": {
+                              "name": "quantom_computing.md",
+                              "path": "kamus.git/site/content/docs/threatmodeling/threats/kms/quantom_computing.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "threats_controls.md": {
+                      "name": "threats_controls.md",
+                      "path": "kamus.git/site/content/docs/threatmodeling/threats_controls.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "user": {
+                  "name": "user",
+                  "path": "kamus.git/site/content/docs/user",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "CHANGELOG.md": {
+                      "name": "CHANGELOG.md",
+                      "path": "kamus.git/site/content/docs/user/CHANGELOG.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "crd.md": {
+                      "name": "crd.md",
+                      "path": "kamus.git/site/content/docs/user/crd.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "install.md": {
+                      "name": "install.md",
+                      "path": "kamus.git/site/content/docs/user/install.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "known-issues.md": {
+                      "name": "known-issues.md",
+                      "path": "kamus.git/site/content/docs/user/known-issues.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "quick-start.md": {
+                      "name": "quick-start.md",
+                      "path": "kamus.git/site/content/docs/user/quick-start.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "data": {
+          "name": "data",
+          "path": "kamus.git/site/data",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "apiVersions.yaml": {
+              "name": "apiVersions.yaml",
+              "path": "kamus.git/site/data/apiVersions.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "layouts": {
+          "name": "layouts",
+          "path": "kamus.git/site/layouts",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docs": {
+              "name": "docs",
+              "path": "kamus.git/site/layouts/docs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.html": {
+                  "name": "index.html",
+                  "path": "kamus.git/site/layouts/docs/index.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "section.html": {
+                  "name": "section.html",
+                  "path": "kamus.git/site/layouts/docs/section.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "single.html": {
+                  "name": "single.html",
+                  "path": "kamus.git/site/layouts/docs/single.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "index.html": {
+              "name": "index.html",
+              "path": "kamus.git/site/layouts/index.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "index.redirects": {
+              "name": "index.redirects",
+              "path": "kamus.git/site/layouts/index.redirects",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "partials": {
+              "name": "partials",
+              "path": "kamus.git/site/layouts/partials",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "fancymarkdown.html": {
+                  "name": "fancymarkdown.html",
+                  "path": "kamus.git/site/layouts/partials/fancymarkdown.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "footer.html": {
+                  "name": "footer.html",
+                  "path": "kamus.git/site/layouts/partials/footer.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "header.html": {
+                  "name": "header.html",
+                  "path": "kamus.git/site/layouts/partials/header.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "inlinecss.html": {
+                  "name": "inlinecss.html",
+                  "path": "kamus.git/site/layouts/partials/inlinecss.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "inlinescript.html": {
+                  "name": "inlinescript.html",
+                  "path": "kamus.git/site/layouts/partials/inlinescript.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "navbar.html": {
+                  "name": "navbar.html",
+                  "path": "kamus.git/site/layouts/partials/navbar.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sidebar.html": {
+                  "name": "sidebar.html",
+                  "path": "kamus.git/site/layouts/partials/sidebar.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "robots.txt": {
+              "name": "robots.txt",
+              "path": "kamus.git/site/layouts/robots.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "package.json": {
+          "name": "package.json",
+          "path": "kamus.git/site/package.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "static": {
+          "name": "static",
+          "path": "kamus.git/site/static",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "CNAME": {
+              "name": "CNAME",
+              "path": "kamus.git/site/static/CNAME",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "apple-touch-icon.png": {
+              "name": "apple-touch-icon.png",
+              "path": "kamus.git/site/static/apple-touch-icon.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "browserconfig.xml": {
+              "name": "browserconfig.xml",
+              "path": "kamus.git/site/static/browserconfig.xml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "favicon-16x16.png": {
+              "name": "favicon-16x16.png",
+              "path": "kamus.git/site/static/favicon-16x16.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "favicon-32x32.png": {
+              "name": "favicon-32x32.png",
+              "path": "kamus.git/site/static/favicon-32x32.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "favicon.ico": {
+              "name": "favicon.ico",
+              "path": "kamus.git/site/static/favicon.ico",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logo": {
+              "name": "logo",
+              "path": "kamus.git/site/static/logo",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "LICENSE": {
+                  "name": "LICENSE",
+                  "path": "kamus.git/site/static/logo/LICENSE",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logo.png": {
+                  "name": "logo.png",
+                  "path": "kamus.git/site/static/logo/logo.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "safari-pinned-tab.svg": {
+              "name": "safari-pinned-tab.svg",
+              "path": "kamus.git/site/static/safari-pinned-tab.svg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "site.webmanifest": {
+              "name": "site.webmanifest",
+              "path": "kamus.git/site/static/site.webmanifest",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "third_party": {
+              "name": "third_party",
+              "path": "kamus.git/site/static/third_party",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "GitHub-Mark-120px-plus.png": {
+                  "name": "GitHub-Mark-120px-plus.png",
+                  "path": "kamus.git/site/static/third_party/GitHub-Mark-120px-plus.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "yarn.lock": {
+          "name": "yarn.lock",
+          "path": "kamus.git/site/yarn.lock",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "src": {
+      "name": "src",
+      "path": "kamus.git/src",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "crd-controller": {
+          "name": "crd-controller",
+          "path": "kamus.git/src/crd-controller",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Controllers": {
+              "name": "Controllers",
+              "path": "kamus.git/src/crd-controller/Controllers",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "MonitoringController.cs": {
+                  "name": "MonitoringController.cs",
+                  "path": "kamus.git/src/crd-controller/Controllers/MonitoringController.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "HealthChecks": {
+              "name": "HealthChecks",
+              "path": "kamus.git/src/crd-controller/HealthChecks",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "KubernetesPermissionsHelthCheck.cs": {
+                  "name": "KubernetesPermissionsHelthCheck.cs",
+                  "path": "kamus.git/src/crd-controller/HealthChecks/KubernetesPermissionsHelthCheck.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "HostedServices": {
+              "name": "HostedServices",
+              "path": "kamus.git/src/crd-controller/HostedServices",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "V1Alpha2Controller.cs": {
+                  "name": "V1Alpha2Controller.cs",
+                  "path": "kamus.git/src/crd-controller/HostedServices/V1Alpha2Controller.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "LoggingMiddleware.cs": {
+              "name": "LoggingMiddleware.cs",
+              "path": "kamus.git/src/crd-controller/LoggingMiddleware.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Models": {
+              "name": "Models",
+              "path": "kamus.git/src/crd-controller/Models",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "V1Alpha2": {
+                  "name": "V1Alpha2",
+                  "path": "kamus.git/src/crd-controller/Models/V1Alpha2",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "KamusSecret.cs": {
+                      "name": "KamusSecret.cs",
+                      "path": "kamus.git/src/crd-controller/Models/V1Alpha2/KamusSecret.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "Program.cs": {
+              "name": "Program.cs",
+              "path": "kamus.git/src/crd-controller/Program.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Properties": {
+              "name": "Properties",
+              "path": "kamus.git/src/crd-controller/Properties",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "launchSettings.json": {
+                  "name": "launchSettings.json",
+                  "path": "kamus.git/src/crd-controller/Properties/launchSettings.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "Startup.cs": {
+              "name": "Startup.cs",
+              "path": "kamus.git/src/crd-controller/Startup.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "appsettings.Development.json": {
+              "name": "appsettings.Development.json",
+              "path": "kamus.git/src/crd-controller/appsettings.Development.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "appsettings.json": {
+              "name": "appsettings.json",
+              "path": "kamus.git/src/crd-controller/appsettings.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "crd-controller.csproj": {
+              "name": "crd-controller.csproj",
+              "path": "kamus.git/src/crd-controller/crd-controller.csproj",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metrics": {
+              "name": "metrics",
+              "path": "kamus.git/src/crd-controller/metrics",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Counters.cs": {
+                  "name": "Counters.cs",
+                  "path": "kamus.git/src/crd-controller/metrics/Counters.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "utils": {
+              "name": "utils",
+              "path": "kamus.git/src/crd-controller/utils",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "KeyManagementExtensions.cs": {
+                  "name": "KeyManagementExtensions.cs",
+                  "path": "kamus.git/src/crd-controller/utils/KeyManagementExtensions.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "KubernetesExtensions.cs": {
+                  "name": "KubernetesExtensions.cs",
+                  "path": "kamus.git/src/crd-controller/utils/KubernetesExtensions.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "LoggingExtensions.cs": {
+                  "name": "LoggingExtensions.cs",
+                  "path": "kamus.git/src/crd-controller/utils/LoggingExtensions.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "decrypt-api": {
+          "name": "decrypt-api",
+          "path": "kamus.git/src/decrypt-api",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Controllers": {
+              "name": "Controllers",
+              "path": "kamus.git/src/decrypt-api/Controllers",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "DecryptController.cs": {
+                  "name": "DecryptController.cs",
+                  "path": "kamus.git/src/decrypt-api/Controllers/DecryptController.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "MonitoringController.cs": {
+                  "name": "MonitoringController.cs",
+                  "path": "kamus.git/src/decrypt-api/Controllers/MonitoringController.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "ErrorHandlingMiddleware.cs": {
+              "name": "ErrorHandlingMiddleware.cs",
+              "path": "kamus.git/src/decrypt-api/ErrorHandlingMiddleware.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Extensions": {
+              "name": "Extensions",
+              "path": "kamus.git/src/decrypt-api/Extensions",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "LoggingExtensions.cs": {
+                  "name": "LoggingExtensions.cs",
+                  "path": "kamus.git/src/decrypt-api/Extensions/LoggingExtensions.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "KubernetesAuthentication": {
+              "name": "KubernetesAuthentication",
+              "path": "kamus.git/src/decrypt-api/KubernetesAuthentication",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "KubernetesAuthenticationHandler.cs": {
+                  "name": "KubernetesAuthenticationHandler.cs",
+                  "path": "kamus.git/src/decrypt-api/KubernetesAuthentication/KubernetesAuthenticationHandler.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "KubernetesAuthenticationOptions.cs": {
+                  "name": "KubernetesAuthenticationOptions.cs",
+                  "path": "kamus.git/src/decrypt-api/KubernetesAuthentication/KubernetesAuthenticationOptions.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "Models": {
+              "name": "Models",
+              "path": "kamus.git/src/decrypt-api/Models",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "DecryptRequest.cs": {
+                  "name": "DecryptRequest.cs",
+                  "path": "kamus.git/src/decrypt-api/Models/DecryptRequest.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "Program.cs": {
+              "name": "Program.cs",
+              "path": "kamus.git/src/decrypt-api/Program.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Properties": {
+              "name": "Properties",
+              "path": "kamus.git/src/decrypt-api/Properties",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "launchSettings.json": {
+                  "name": "launchSettings.json",
+                  "path": "kamus.git/src/decrypt-api/Properties/launchSettings.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "Startup.cs": {
+              "name": "Startup.cs",
+              "path": "kamus.git/src/decrypt-api/Startup.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "appsettings.Development.json": {
+              "name": "appsettings.Development.json",
+              "path": "kamus.git/src/decrypt-api/appsettings.Development.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "appsettings.json": {
+              "name": "appsettings.json",
+              "path": "kamus.git/src/decrypt-api/appsettings.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "decrypt-api.csproj": {
+              "name": "decrypt-api.csproj",
+              "path": "kamus.git/src/decrypt-api/decrypt-api.csproj",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "encrypt-api": {
+          "name": "encrypt-api",
+          "path": "kamus.git/src/encrypt-api",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Controllers": {
+              "name": "Controllers",
+              "path": "kamus.git/src/encrypt-api/Controllers",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "EncryptController.cs": {
+                  "name": "EncryptController.cs",
+                  "path": "kamus.git/src/encrypt-api/Controllers/EncryptController.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "MonitoringController.cs": {
+                  "name": "MonitoringController.cs",
+                  "path": "kamus.git/src/encrypt-api/Controllers/MonitoringController.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "ErrorHandlingMiddleware.cs": {
+              "name": "ErrorHandlingMiddleware.cs",
+              "path": "kamus.git/src/encrypt-api/ErrorHandlingMiddleware.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Extensions": {
+              "name": "Extensions",
+              "path": "kamus.git/src/encrypt-api/Extensions",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "LoggingExtensions.cs": {
+                  "name": "LoggingExtensions.cs",
+                  "path": "kamus.git/src/encrypt-api/Extensions/LoggingExtensions.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "Models": {
+              "name": "Models",
+              "path": "kamus.git/src/encrypt-api/Models",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "EncryptRequest.cs": {
+                  "name": "EncryptRequest.cs",
+                  "path": "kamus.git/src/encrypt-api/Models/EncryptRequest.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "Program.cs": {
+              "name": "Program.cs",
+              "path": "kamus.git/src/encrypt-api/Program.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Properties": {
+              "name": "Properties",
+              "path": "kamus.git/src/encrypt-api/Properties",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "launchSettings.json": {
+                  "name": "launchSettings.json",
+                  "path": "kamus.git/src/encrypt-api/Properties/launchSettings.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "Startup.cs": {
+              "name": "Startup.cs",
+              "path": "kamus.git/src/encrypt-api/Startup.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "appsettings.Development.json": {
+              "name": "appsettings.Development.json",
+              "path": "kamus.git/src/encrypt-api/appsettings.Development.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "appsettings.json": {
+              "name": "appsettings.json",
+              "path": "kamus.git/src/encrypt-api/appsettings.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "encrypt-api.csproj": {
+              "name": "encrypt-api.csproj",
+              "path": "kamus.git/src/encrypt-api/encrypt-api.csproj",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "key-managment": {
+          "name": "key-managment",
+          "path": "kamus.git/src/key-managment",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "AwsKeyManagement.cs": {
+              "name": "AwsKeyManagement.cs",
+              "path": "kamus.git/src/key-managment/AwsKeyManagement.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "AzureKeyVaultKeyManagement.cs": {
+              "name": "AzureKeyVaultKeyManagement.cs",
+              "path": "kamus.git/src/key-managment/AzureKeyVaultKeyManagement.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "EnvelopeEncryptionDecorator.cs": {
+              "name": "EnvelopeEncryptionDecorator.cs",
+              "path": "kamus.git/src/key-managment/EnvelopeEncryptionDecorator.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "EnvelopeEncryptionUtils.cs": {
+              "name": "EnvelopeEncryptionUtils.cs",
+              "path": "kamus.git/src/key-managment/EnvelopeEncryptionUtils.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "GoogleCloudKeyManagement.cs": {
+              "name": "GoogleCloudKeyManagement.cs",
+              "path": "kamus.git/src/key-managment/GoogleCloudKeyManagement.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "IKeyManagement.cs": {
+              "name": "IKeyManagement.cs",
+              "path": "kamus.git/src/key-managment/IKeyManagement.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "KeyIdCreator.cs": {
+              "name": "KeyIdCreator.cs",
+              "path": "kamus.git/src/key-managment/KeyIdCreator.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "RijndaelUtils.cs": {
+              "name": "RijndaelUtils.cs",
+              "path": "kamus.git/src/key-managment/RijndaelUtils.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ServiceCollectionExtensions.cs": {
+              "name": "ServiceCollectionExtensions.cs",
+              "path": "kamus.git/src/key-managment/ServiceCollectionExtensions.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "SymmetricKeyManagement.cs": {
+              "name": "SymmetricKeyManagement.cs",
+              "path": "kamus.git/src/key-managment/SymmetricKeyManagement.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "key-managment.csproj": {
+              "name": "key-managment.csproj",
+              "path": "kamus.git/src/key-managment/key-managment.csproj",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "tests": {
+      "name": "tests",
+      "path": "kamus.git/tests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "blackbox": {
+          "name": "blackbox",
+          "path": "kamus.git/tests/blackbox",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kamus.git/tests/blackbox/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "EncryptControllerTests.cs": {
+              "name": "EncryptControllerTests.cs",
+              "path": "kamus.git/tests/blackbox/EncryptControllerTests.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "MonitoringControllerTests.cs": {
+              "name": "MonitoringControllerTests.cs",
+              "path": "kamus.git/tests/blackbox/MonitoringControllerTests.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Utils": {
+              "name": "Utils",
+              "path": "kamus.git/tests/blackbox/Utils",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ConfigurationProvider.cs": {
+                  "name": "ConfigurationProvider.cs",
+                  "path": "kamus.git/tests/blackbox/Utils/ConfigurationProvider.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "HttpClientProvider.cs": {
+                  "name": "HttpClientProvider.cs",
+                  "path": "kamus.git/tests/blackbox/Utils/HttpClientProvider.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "baerer": {
+                  "name": "baerer",
+                  "path": "kamus.git/tests/blackbox/Utils/baerer",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "JwtProvider.cs": {
+                      "name": "JwtProvider.cs",
+                      "path": "kamus.git/tests/blackbox/Utils/baerer/JwtProvider.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "JwtSignInHandler.cs": {
+                      "name": "JwtSignInHandler.cs",
+                      "path": "kamus.git/tests/blackbox/Utils/baerer/JwtSignInHandler.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "Wiremock": {
+              "name": "Wiremock",
+              "path": "kamus.git/tests/blackbox/Wiremock",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "kamus.git/tests/blackbox/Wiremock/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "mappings": {
+                  "name": "mappings",
+                  "path": "kamus.git/tests/blackbox/Wiremock/mappings",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "api_v1_namespaces_default_serviceaccounts_default-223d2c84-2e62-451a-a352-829107a55828.json": {
+                      "name": "api_v1_namespaces_default_serviceaccounts_default-223d2c84-2e62-451a-a352-829107a55828.json",
+                      "path": "kamus.git/tests/blackbox/Wiremock/mappings/api_v1_namespaces_default_serviceaccounts_default-223d2c84-2e62-451a-a352-829107a55828.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apis_authenticationk8sio_v1_tokenreviews-ff46d3b4-0aad-422d-8215-e99cff8f3188.json": {
+                      "name": "apis_authenticationk8sio_v1_tokenreviews-ff46d3b4-0aad-422d-8215-e99cff8f3188.json",
+                      "path": "kamus.git/tests/blackbox/Wiremock/mappings/apis_authenticationk8sio_v1_tokenreviews-ff46d3b4-0aad-422d-8215-e99cff8f3188.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "apis_authorizationk8sio_v1_selfsubjectaccessreviews-b94a1942-1c74-40cd-9136-0df1d2217e77.json": {
+                      "name": "apis_authorizationk8sio_v1_selfsubjectaccessreviews-b94a1942-1c74-40cd-9136-0df1d2217e77.json",
+                      "path": "kamus.git/tests/blackbox/Wiremock/mappings/apis_authorizationk8sio_v1_selfsubjectaccessreviews-b94a1942-1c74-40cd-9136-0df1d2217e77.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "appsettings.json": {
+              "name": "appsettings.json",
+              "path": "kamus.git/tests/blackbox/appsettings.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "blackbox.csproj": {
+              "name": "blackbox.csproj",
+              "path": "kamus.git/tests/blackbox/blackbox.csproj",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose": {
+              "name": "compose",
+              "path": "kamus.git/tests/blackbox/compose",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "docker-compose.ci.yaml": {
+                  "name": "docker-compose.ci.yaml",
+                  "path": "kamus.git/tests/blackbox/compose/docker-compose.ci.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": true
+                },
+                "docker-compose.local.yaml": {
+                  "name": "docker-compose.local.yaml",
+                  "path": "kamus.git/tests/blackbox/compose/docker-compose.local.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": true
+                },
+                "docker-compose.yaml": {
+                  "name": "docker-compose.yaml",
+                  "path": "kamus.git/tests/blackbox/compose/docker-compose.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": true
+                },
+                "glue": {
+                  "name": "glue",
+                  "path": "kamus.git/tests/blackbox/compose/glue",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "glue.json": {
+                      "name": "glue.json",
+                      "path": "kamus.git/tests/blackbox/compose/glue/glue.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "reports": {
+                  "name": "reports",
+                  "path": "kamus.git/tests/blackbox/compose/reports",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "glue.json": {
+                      "name": "glue.json",
+                      "path": "kamus.git/tests/blackbox/compose/reports/glue.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "run_test.sh": {
+              "name": "run_test.sh",
+              "path": "kamus.git/tests/blackbox/run_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "crd-controller": {
+          "name": "crd-controller",
+          "path": "kamus.git/tests/crd-controller",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".vscode": {
+              "name": ".vscode",
+              "path": "kamus.git/tests/crd-controller/.vscode",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "settings.json": {
+                  "name": "settings.json",
+                  "path": "kamus.git/tests/crd-controller/.vscode/settings.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "FlowTest.cs": {
+              "name": "FlowTest.cs",
+              "path": "kamus.git/tests/crd-controller/FlowTest.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "crd-controller.csproj": {
+              "name": "crd-controller.csproj",
+              "path": "kamus.git/tests/crd-controller/crd-controller.csproj",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "crd.yaml": {
+              "name": "crd.yaml",
+              "path": "kamus.git/tests/crd-controller/crd.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kamus.git/tests/crd-controller/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "key.crt": {
+              "name": "key.crt",
+              "path": "kamus.git/tests/crd-controller/key.crt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kind-config.yaml": {
+              "name": "kind-config.yaml",
+              "path": "kamus.git/tests/crd-controller/kind-config.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "requirements.txt": {
+              "name": "requirements.txt",
+              "path": "kamus.git/tests/crd-controller/requirements.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run-tests.sh": {
+              "name": "run-tests.sh",
+              "path": "kamus.git/tests/crd-controller/run-tests.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service-account.yaml": {
+              "name": "service-account.yaml",
+              "path": "kamus.git/tests/crd-controller/service-account.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tls-KamusSecretV1Alpha2-with-annotations.yaml": {
+              "name": "tls-KamusSecretV1Alpha2-with-annotations.yaml",
+              "path": "kamus.git/tests/crd-controller/tls-KamusSecretV1Alpha2-with-annotations.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tls-KamusSecretV1Alpha2.yaml": {
+              "name": "tls-KamusSecretV1Alpha2.yaml",
+              "path": "kamus.git/tests/crd-controller/tls-KamusSecretV1Alpha2.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tls-Secret.yaml": {
+              "name": "tls-Secret.yaml",
+              "path": "kamus.git/tests/crd-controller/tls-Secret.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "updated-tls-KamusSecretV1Alpha2.yaml": {
+              "name": "updated-tls-KamusSecretV1Alpha2.yaml",
+              "path": "kamus.git/tests/crd-controller/updated-tls-KamusSecretV1Alpha2.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "integration": {
+          "name": "integration",
+          "path": "kamus.git/tests/integration",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "AwsKeyManagementTests.cs": {
+              "name": "AwsKeyManagementTests.cs",
+              "path": "kamus.git/tests/integration/AwsKeyManagementTests.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "AzureKeyVaultIntegrationTests.cs": {
+              "name": "AzureKeyVaultIntegrationTests.cs",
+              "path": "kamus.git/tests/integration/AzureKeyVaultIntegrationTests.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "EnvelopeDecoratorIntegrationTests.cs": {
+              "name": "EnvelopeDecoratorIntegrationTests.cs",
+              "path": "kamus.git/tests/integration/EnvelopeDecoratorIntegrationTests.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "GoogleCloudKeyManagementTests.cs": {
+              "name": "GoogleCloudKeyManagementTests.cs",
+              "path": "kamus.git/tests/integration/GoogleCloudKeyManagementTests.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Utils.cs": {
+              "name": "Utils.cs",
+              "path": "kamus.git/tests/integration/Utils.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "integration.csproj": {
+              "name": "integration.csproj",
+              "path": "kamus.git/tests/integration/integration.csproj",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "settings.json": {
+              "name": "settings.json",
+              "path": "kamus.git/tests/integration/settings.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "unit": {
+          "name": "unit",
+          "path": "kamus.git/tests/unit",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "KeyManagment": {
+              "name": "KeyManagment",
+              "path": "kamus.git/tests/unit/KeyManagment",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "SymmetricKeyManagmentTests.cs": {
+                  "name": "SymmetricKeyManagmentTests.cs",
+                  "path": "kamus.git/tests/unit/KeyManagment/SymmetricKeyManagmentTests.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "unit.csproj": {
+              "name": "unit.csproj",
+              "path": "kamus.git/tests/unit/unit.csproj",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 137323485,
+    "name": "kamus",
+    "full_name": "Soluto/kamus",
+    "owner": {
+      "login": "Soluto",
+      "html_url": "https://github.com/Soluto",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/Soluto/kamus",
+    "description": " An open source, git-ops, zero-trust secret encryption and decryption solution for Kubernetes applications",
+    "url": "https://api.github.com/repos/Soluto/kamus",
+    "clone_url": "https://github.com/Soluto/kamus.git",
+    "homepage": "https://kamus.soluto.io",
+    "size": 4210,
+    "stargazers_count": 866,
+    "watchers_count": 866,
+    "language": "C#"
+  }
+}

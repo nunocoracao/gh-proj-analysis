@@ -1,0 +1,3281 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 38,
+      "rootCount": 3,
+      "subFolderCount": 35,
+      "filepaths": [
+        "starter.git/Dockerfile",
+        "starter.git/Dockerfile.crosscompile",
+        "starter.git/Dockerfile.production",
+        "starter.git/packs/dockerfile-context-base.go",
+        "starter.git/packs/dockerfile-writer-base.go",
+        "starter.git/packs/node/dockerfile-context.go",
+        "starter.git/packs/node/dockerfile-writer.go",
+        "starter.git/packs/php/dockerfile-context.go",
+        "starter.git/packs/php/dockerfile-writer.go",
+        "starter.git/packs/python/dockerfile-context.go",
+        "starter.git/packs/python/dockerfile-writer.go",
+        "starter.git/packs/ruby/dockerfile-context.go",
+        "starter.git/packs/ruby/dockerfile-writer.go",
+        "starter.git/templates/node.dockerfile.template",
+        "starter.git/templates/php.dockerfile.template",
+        "starter.git/templates/python.dockerfile.template",
+        "starter.git/templates/ruby.dockerfile.template",
+        "starter.git/test/node/Dockerfile.base",
+        "starter.git/test/node/express_bare/expected/Dockerfile",
+        "starter.git/test/node/express_bare_mongo/expected/Dockerfile",
+        "starter.git/test/node/express_bare_mysql/expected/Dockerfile",
+        "starter.git/test/node/express_mongodb/expected/Dockerfile",
+        "starter.git/test/node/express_mongodb_procfile/expected/Dockerfile",
+        "starter.git/test/node/express_mongodb_redis/expected/Dockerfile",
+        "starter.git/test/node/express_mysql_pg/expected/Dockerfile",
+        "starter.git/test/node/express_no_git/expected/Dockerfile",
+        "starter.git/test/node/express_pg_procfile/expected/Dockerfile",
+        "starter.git/test/node/express_procfile/expected/Dockerfile",
+        "starter.git/test/node/express_rethinkdb/expected/Dockerfile",
+        "starter.git/test/php/Dockerfile.base",
+        "starter.git/test/php/laravel_bare_mysql/expected/Dockerfile",
+        "starter.git/test/ruby/Dockerfile.base",
+        "starter.git/test/ruby/rails_jobs_mysql_redis_postgrespl/expected/Dockerfile",
+        "starter.git/test/ruby/rails_jobs_unicorn_redis_postgresql/expected/Dockerfile",
+        "starter.git/test/ruby/rails_mysql/expected/Dockerfile",
+        "starter.git/test/ruby/rails_mysql/expected/api/Dockerfile",
+        "starter.git/test/ruby/rails_unicorn_mysql/expected/Dockerfile",
+        "starter.git/test/ruby/sinatra_mongo/expected/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 30,
+      "rootCount": 1,
+      "subFolderCount": 29,
+      "filepaths": [
+        "starter.git/docker-compose.yml",
+        "starter.git/packs/compose-to-service-yml",
+        "starter.git/packs/docker-compose-yaml-context-base.go",
+        "starter.git/packs/docker-compose-yaml-writer-base.go",
+        "starter.git/packs/node/docker-compose-yaml-context.go",
+        "starter.git/packs/node/docker-compose-yaml-writer.go",
+        "starter.git/packs/php/docker-compose-yaml-context.go",
+        "starter.git/packs/php/docker-compose-yaml-writer.go",
+        "starter.git/packs/ruby/docker-compose-yaml-context.go",
+        "starter.git/packs/ruby/docker-compose-yaml-writer.go",
+        "starter.git/templates/docker-compose.yml.template",
+        "starter.git/test/docker_compose/just_compose/src/docker-compose.yml",
+        "starter.git/test/docker_compose/just_compose_2/src/docker-compose.yml",
+        "starter.git/test/node/express_bare/expected/docker-compose.yml",
+        "starter.git/test/node/express_bare_mongo/expected/docker-compose.yml",
+        "starter.git/test/node/express_bare_mysql/expected/docker-compose.yml",
+        "starter.git/test/node/express_mongodb/expected/docker-compose.yml",
+        "starter.git/test/node/express_mongodb_procfile/expected/docker-compose.yml",
+        "starter.git/test/node/express_mongodb_redis/expected/docker-compose.yml",
+        "starter.git/test/node/express_mysql_pg/expected/docker-compose.yml",
+        "starter.git/test/node/express_no_git/expected/docker-compose.yml",
+        "starter.git/test/node/express_pg_procfile/expected/docker-compose.yml",
+        "starter.git/test/node/express_procfile/expected/docker-compose.yml",
+        "starter.git/test/php/laravel_bare_mysql/expected/docker-compose.yml",
+        "starter.git/test/ruby/rails_jobs_mysql_redis_postgrespl/expected/docker-compose.yml",
+        "starter.git/test/ruby/rails_jobs_unicorn_redis_postgresql/expected/docker-compose.yml",
+        "starter.git/test/ruby/rails_mysql/expected/docker-compose.yml",
+        "starter.git/test/ruby/rails_mysql/expected/api/docker-compose.yml",
+        "starter.git/test/ruby/rails_unicorn_mysql/expected/docker-compose.yml",
+        "starter.git/test/ruby/sinatra_mongo/expected/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".git": {
+      "name": ".git",
+      "path": "starter.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "starter.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "starter.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "starter.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "starter.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "starter.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "starter.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "starter.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "starter.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "starter.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "starter.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "starter.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "starter.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "starter.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "starter.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "starter.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "starter.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "starter.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "starter.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "starter.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "starter.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "starter.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "starter.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "starter.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "starter.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "starter.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "starter.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "starter.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "starter.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "starter.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "starter.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "starter.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-f0deda02d6fd5cc59412003b963217556d134ef1.idx": {
+                  "name": "pack-f0deda02d6fd5cc59412003b963217556d134ef1.idx",
+                  "path": "starter.git/.git/objects/pack/pack-f0deda02d6fd5cc59412003b963217556d134ef1.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-f0deda02d6fd5cc59412003b963217556d134ef1.pack": {
+                  "name": "pack-f0deda02d6fd5cc59412003b963217556d134ef1.pack",
+                  "path": "starter.git/.git/objects/pack/pack-f0deda02d6fd5cc59412003b963217556d134ef1.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "starter.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "starter.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "starter.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "starter.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "starter.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "starter.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "starter.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "starter.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "starter.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "starter.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CHANGELOG.md": {
+      "name": "CHANGELOG.md",
+      "path": "starter.git/CHANGELOG.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "starter.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile.crosscompile": {
+      "name": "Dockerfile.crosscompile",
+      "path": "starter.git/Dockerfile.crosscompile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile.production": {
+      "name": "Dockerfile.production",
+      "path": "starter.git/Dockerfile.production",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "starter.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "starter.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "api.go": {
+      "name": "api.go",
+      "path": "starter.git/api.go",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "api_test.go": {
+      "name": "api_test.go",
+      "path": "starter.git/api_test.go",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "build.sh": {
+      "name": "build.sh",
+      "path": "starter.git/build.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "build.yml": {
+      "name": "build.yml",
+      "path": "starter.git/build.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "bundle": {
+      "name": "bundle",
+      "path": "starter.git/bundle",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "bundle_writer.go": {
+          "name": "bundle_writer.go",
+          "path": "starter.git/bundle/bundle_writer.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "bundle_writer_test.go": {
+          "name": "bundle_writer_test.go",
+          "path": "starter.git/bundle/bundle_writer_test.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "bundles": {
+          "name": "bundles",
+          "path": "starter.git/bundle/bundles",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "base-template.go": {
+              "name": "base-template.go",
+              "path": "starter.git/bundle/bundles/base-template.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "bundle.go": {
+              "name": "bundle.go",
+              "path": "starter.git/bundle/bundles/bundle.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "filter.go": {
+              "name": "filter.go",
+              "path": "starter.git/bundle/bundles/filter.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "helm-release.go": {
+              "name": "helm-release.go",
+              "path": "starter.git/bundle/bundles/helm-release.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metadata.go": {
+              "name": "metadata.go",
+              "path": "starter.git/bundle/bundles/metadata.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "policy.go": {
+              "name": "policy.go",
+              "path": "starter.git/bundle/bundles/policy.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stencil.go": {
+              "name": "stencil.go",
+              "path": "starter.git/bundle/bundles/stencil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tranformation.go": {
+              "name": "tranformation.go",
+              "path": "starter.git/bundle/bundles/tranformation.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "workflow.go": {
+              "name": "workflow.go",
+              "path": "starter.git/bundle/bundles/workflow.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "templates": {
+          "name": "templates",
+          "path": "starter.git/bundle/templates",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "filter.go": {
+              "name": "filter.go",
+              "path": "starter.git/bundle/templates/filter.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "helm-release.go": {
+              "name": "helm-release.go",
+              "path": "starter.git/bundle/templates/helm-release.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "modifier.go": {
+              "name": "modifier.go",
+              "path": "starter.git/bundle/templates/modifier.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "policy.go": {
+              "name": "policy.go",
+              "path": "starter.git/bundle/templates/policy.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stencil.go": {
+              "name": "stencil.go",
+              "path": "starter.git/bundle/templates/stencil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "template-interface.go": {
+              "name": "template-interface.go",
+              "path": "starter.git/bundle/templates/template-interface.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "template.go": {
+              "name": "template.go",
+              "path": "starter.git/bundle/templates/template.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates.go": {
+              "name": "templates.go",
+              "path": "starter.git/bundle/templates/templates.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "transformation.go": {
+              "name": "transformation.go",
+              "path": "starter.git/bundle/templates/transformation.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "workflow.go": {
+              "name": "workflow.go",
+              "path": "starter.git/bundle/templates/workflow.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "cli_test.go": {
+      "name": "cli_test.go",
+      "path": "starter.git/cli_test.go",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "cloudbuild.json": {
+      "name": "cloudbuild.json",
+      "path": "starter.git/cloudbuild.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "common": {
+      "name": "common",
+      "path": "starter.git/common",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "database.go": {
+          "name": "database.go",
+          "path": "starter.git/common/database.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "env-var.go": {
+          "name": "env-var.go",
+          "path": "starter.git/common/env-var.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "lister.go": {
+          "name": "lister.go",
+          "path": "starter.git/common/lister.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "port-mapping.go": {
+          "name": "port-mapping.go",
+          "path": "starter.git/common/port-mapping.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "service.go": {
+          "name": "service.go",
+          "path": "starter.git/common/service.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "utils-git.go": {
+          "name": "utils-git.go",
+          "path": "starter.git/common/utils-git.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "utils-node.go": {
+          "name": "utils-node.go",
+          "path": "starter.git/common/utils-node.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "utils-php.go": {
+          "name": "utils-php.go",
+          "path": "starter.git/common/utils-php.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "utils-python.go": {
+          "name": "utils-python.go",
+          "path": "starter.git/common/utils-python.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "utils-ruby.go": {
+          "name": "utils-ruby.go",
+          "path": "starter.git/common/utils-ruby.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "utils-template.go": {
+          "name": "utils-template.go",
+          "path": "starter.git/common/utils-template.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "utils.go": {
+          "name": "utils.go",
+          "path": "starter.git/common/utils.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "compile.sh": {
+      "name": "compile.sh",
+      "path": "starter.git/compile.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "config.go": {
+      "name": "config.go",
+      "path": "starter.git/config.go",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "definitions": {
+      "name": "definitions",
+      "path": "starter.git/definitions",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "definition-interface.go": {
+          "name": "definition-interface.go",
+          "path": "starter.git/definitions/definition-interface.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose": {
+          "name": "docker-compose",
+          "path": "starter.git/definitions/docker-compose",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "DnsSearch.go": {
+              "name": "DnsSearch.go",
+              "path": "starter.git/definitions/docker-compose/DnsSearch.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "aliases.go": {
+              "name": "aliases.go",
+              "path": "starter.git/definitions/docker-compose/aliases.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build.go": {
+              "name": "build.go",
+              "path": "starter.git/definitions/docker-compose/build.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "command.go": {
+              "name": "command.go",
+              "path": "starter.git/definitions/docker-compose/command.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cpus-mem.go": {
+              "name": "cpus-mem.go",
+              "path": "starter.git/definitions/docker-compose/cpus-mem.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "custom-yaml-unmarshaler.go": {
+              "name": "custom-yaml-unmarshaler.go",
+              "path": "starter.git/definitions/docker-compose/custom-yaml-unmarshaler.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "deploy.go": {
+              "name": "deploy.go",
+              "path": "starter.git/definitions/docker-compose/deploy.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dns.go": {
+              "name": "dns.go",
+              "path": "starter.git/definitions/docker-compose/dns.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-base.go": {
+              "name": "docker-compose-base.go",
+              "path": "starter.git/definitions/docker-compose/docker-compose-base.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "entrypoint.go": {
+              "name": "entrypoint.go",
+              "path": "starter.git/definitions/docker-compose/entrypoint.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "env-file.go": {
+              "name": "env-file.go",
+              "path": "starter.git/definitions/docker-compose/env-file.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "environment.go": {
+              "name": "environment.go",
+              "path": "starter.git/definitions/docker-compose/environment.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "healthcheck.go": {
+              "name": "healthcheck.go",
+              "path": "starter.git/definitions/docker-compose/healthcheck.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "limits.go": {
+              "name": "limits.go",
+              "path": "starter.git/definitions/docker-compose/limits.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging.go": {
+              "name": "logging.go",
+              "path": "starter.git/definitions/docker-compose/logging.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "networks.go": {
+              "name": "networks.go",
+              "path": "starter.git/definitions/docker-compose/networks.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "placement.go": {
+              "name": "placement.go",
+              "path": "starter.git/definitions/docker-compose/placement.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "port.go": {
+              "name": "port.go",
+              "path": "starter.git/definitions/docker-compose/port.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "resources.go": {
+              "name": "resources.go",
+              "path": "starter.git/definitions/docker-compose/resources.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "restart-policy.go": {
+              "name": "restart-policy.go",
+              "path": "starter.git/definitions/docker-compose/restart-policy.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "secrets.go": {
+              "name": "secrets.go",
+              "path": "starter.git/definitions/docker-compose/secrets.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service.go": {
+              "name": "service.go",
+              "path": "starter.git/definitions/docker-compose/service.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tmpfs.go": {
+              "name": "tmpfs.go",
+              "path": "starter.git/definitions/docker-compose/tmpfs.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ulimits.go": {
+              "name": "ulimits.go",
+              "path": "starter.git/definitions/docker-compose/ulimits.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update-config.go": {
+              "name": "update-config.go",
+              "path": "starter.git/definitions/docker-compose/update-config.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "utils.go": {
+              "name": "utils.go",
+              "path": "starter.git/definitions/docker-compose/utils.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volumes.go": {
+              "name": "volumes.go",
+              "path": "starter.git/definitions/docker-compose/volumes.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "kubernetes": {
+          "name": "kubernetes",
+          "path": "starter.git/definitions/kubernetes",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "containers.go": {
+              "name": "containers.go",
+              "path": "starter.git/definitions/kubernetes/containers.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "deployment.go": {
+              "name": "deployment.go",
+              "path": "starter.git/definitions/kubernetes/deployment.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "env-vars.go": {
+              "name": "env-vars.go",
+              "path": "starter.git/definitions/kubernetes/env-vars.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "exec.go": {
+              "name": "exec.go",
+              "path": "starter.git/definitions/kubernetes/exec.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "handler.go": {
+              "name": "handler.go",
+              "path": "starter.git/definitions/kubernetes/handler.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kubernetes-base.go": {
+              "name": "kubernetes-base.go",
+              "path": "starter.git/definitions/kubernetes/kubernetes-base.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lifecycle.go": {
+              "name": "lifecycle.go",
+              "path": "starter.git/definitions/kubernetes/lifecycle.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "limits.go": {
+              "name": "limits.go",
+              "path": "starter.git/definitions/kubernetes/limits.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metadata.go": {
+              "name": "metadata.go",
+              "path": "starter.git/definitions/kubernetes/metadata.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ports.go": {
+              "name": "ports.go",
+              "path": "starter.git/definitions/kubernetes/ports.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "resources.go": {
+              "name": "resources.go",
+              "path": "starter.git/definitions/kubernetes/resources.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "security-context.go": {
+              "name": "security-context.go",
+              "path": "starter.git/definitions/kubernetes/security-context.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service.go": {
+              "name": "service.go",
+              "path": "starter.git/definitions/kubernetes/service.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "spec.go": {
+              "name": "spec.go",
+              "path": "starter.git/definitions/kubernetes/spec.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "template.go": {
+              "name": "template.go",
+              "path": "starter.git/definitions/kubernetes/template.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "utils.go": {
+              "name": "utils.go",
+              "path": "starter.git/definitions/kubernetes/utils.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volume-mounts.go": {
+              "name": "volume-mounts.go",
+              "path": "starter.git/definitions/kubernetes/volume-mounts.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "service-yml": {
+          "name": "service-yml",
+          "path": "starter.git/definitions/service-yml",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "constraints.go": {
+              "name": "constraints.go",
+              "path": "starter.git/definitions/service-yml/constraints.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "custom-yaml-unmarsahler.go": {
+              "name": "custom-yaml-unmarsahler.go",
+              "path": "starter.git/definitions/service-yml/custom-yaml-unmarsahler.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "port.go": {
+              "name": "port.go",
+              "path": "starter.git/definitions/service-yml/port.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service-yml-base.go": {
+              "name": "service-yml-base.go",
+              "path": "starter.git/definitions/service-yml/service-yml-base.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service-yml-resources.go": {
+              "name": "service-yml-resources.go",
+              "path": "starter.git/definitions/service-yml/service-yml-resources.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service.go": {
+              "name": "service.go",
+              "path": "starter.git/definitions/service-yml/service.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "traffic-matches.go": {
+              "name": "traffic-matches.go",
+              "path": "starter.git/definitions/service-yml/traffic-matches.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "utils.go": {
+              "name": "utils.go",
+              "path": "starter.git/definitions/service-yml/utils.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "detect.go": {
+      "name": "detect.go",
+      "path": "starter.git/detect.go",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docker-compose.yml": {
+      "name": "docker-compose.yml",
+      "path": "starter.git/docker-compose.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "starter.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "starter.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "main.go": {
+      "name": "main.go",
+      "path": "starter.git/main.go",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "output_test.go": {
+      "name": "output_test.go",
+      "path": "starter.git/output_test.go",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "packs": {
+      "name": "packs",
+      "path": "starter.git/packs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "analysis-base.go": {
+          "name": "analysis-base.go",
+          "path": "starter.git/packs/analysis-base.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "analyzer-base.go": {
+          "name": "analyzer-base.go",
+          "path": "starter.git/packs/analyzer-base.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "analyzer-interface.go": {
+          "name": "analyzer-interface.go",
+          "path": "starter.git/packs/analyzer-interface.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "compose-to-service-yml": {
+          "name": "compose-to-service-yml",
+          "path": "starter.git/packs/compose-to-service-yml",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": true,
+          "children": {
+            "analysis.go": {
+              "name": "analysis.go",
+              "path": "starter.git/packs/compose-to-service-yml/analysis.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "analyzer.go": {
+              "name": "analyzer.go",
+              "path": "starter.git/packs/compose-to-service-yml/analyzer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "detector.go": {
+              "name": "detector.go",
+              "path": "starter.git/packs/compose-to-service-yml/detector.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pack.go": {
+              "name": "pack.go",
+              "path": "starter.git/packs/compose-to-service-yml/pack.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "detector-interface.go": {
+          "name": "detector-interface.go",
+          "path": "starter.git/packs/detector-interface.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose-yaml-context-base.go": {
+          "name": "docker-compose-yaml-context-base.go",
+          "path": "starter.git/packs/docker-compose-yaml-context-base.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "docker-compose-yaml-writer-base.go": {
+          "name": "docker-compose-yaml-writer-base.go",
+          "path": "starter.git/packs/docker-compose-yaml-writer-base.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "dockerfile-context-base.go": {
+          "name": "dockerfile-context-base.go",
+          "path": "starter.git/packs/dockerfile-context-base.go",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "dockerfile-writer-base.go": {
+          "name": "dockerfile-writer-base.go",
+          "path": "starter.git/packs/dockerfile-writer-base.go",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "node": {
+          "name": "node",
+          "path": "starter.git/packs/node",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "analysis.go": {
+              "name": "analysis.go",
+              "path": "starter.git/packs/node/analysis.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "analyzer.go": {
+              "name": "analyzer.go",
+              "path": "starter.git/packs/node/analyzer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "detector.go": {
+              "name": "detector.go",
+              "path": "starter.git/packs/node/detector.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-yaml-context.go": {
+              "name": "docker-compose-yaml-context.go",
+              "path": "starter.git/packs/node/docker-compose-yaml-context.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "docker-compose-yaml-writer.go": {
+              "name": "docker-compose-yaml-writer.go",
+              "path": "starter.git/packs/node/docker-compose-yaml-writer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "dockerfile-context.go": {
+              "name": "dockerfile-context.go",
+              "path": "starter.git/packs/node/dockerfile-context.go",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "dockerfile-writer.go": {
+              "name": "dockerfile-writer.go",
+              "path": "starter.git/packs/node/dockerfile-writer.go",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "pack.go": {
+              "name": "pack.go",
+              "path": "starter.git/packs/node/pack.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service-yaml-context.go": {
+              "name": "service-yaml-context.go",
+              "path": "starter.git/packs/node/service-yaml-context.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service-yaml-writer.go": {
+              "name": "service-yaml-writer.go",
+              "path": "starter.git/packs/node/service-yaml-writer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "pack-base.go": {
+          "name": "pack-base.go",
+          "path": "starter.git/packs/pack-base.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pack-element.go": {
+          "name": "pack-element.go",
+          "path": "starter.git/packs/pack-element.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pack-interface.go": {
+          "name": "pack-interface.go",
+          "path": "starter.git/packs/pack-interface.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "php": {
+          "name": "php",
+          "path": "starter.git/packs/php",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "analysis.go": {
+              "name": "analysis.go",
+              "path": "starter.git/packs/php/analysis.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "analyzer.go": {
+              "name": "analyzer.go",
+              "path": "starter.git/packs/php/analyzer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "detector.go": {
+              "name": "detector.go",
+              "path": "starter.git/packs/php/detector.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-yaml-context.go": {
+              "name": "docker-compose-yaml-context.go",
+              "path": "starter.git/packs/php/docker-compose-yaml-context.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "docker-compose-yaml-writer.go": {
+              "name": "docker-compose-yaml-writer.go",
+              "path": "starter.git/packs/php/docker-compose-yaml-writer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "dockerfile-context.go": {
+              "name": "dockerfile-context.go",
+              "path": "starter.git/packs/php/dockerfile-context.go",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "dockerfile-writer.go": {
+              "name": "dockerfile-writer.go",
+              "path": "starter.git/packs/php/dockerfile-writer.go",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "pack.go": {
+              "name": "pack.go",
+              "path": "starter.git/packs/php/pack.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service-yaml-context.go": {
+              "name": "service-yaml-context.go",
+              "path": "starter.git/packs/php/service-yaml-context.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service-yaml-writer.go": {
+              "name": "service-yaml-writer.go",
+              "path": "starter.git/packs/php/service-yaml-writer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "python": {
+          "name": "python",
+          "path": "starter.git/packs/python",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "analysis.go": {
+              "name": "analysis.go",
+              "path": "starter.git/packs/python/analysis.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "analyzer.go": {
+              "name": "analyzer.go",
+              "path": "starter.git/packs/python/analyzer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "detector.go": {
+              "name": "detector.go",
+              "path": "starter.git/packs/python/detector.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dockerfile-context.go": {
+              "name": "dockerfile-context.go",
+              "path": "starter.git/packs/python/dockerfile-context.go",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "dockerfile-writer.go": {
+              "name": "dockerfile-writer.go",
+              "path": "starter.git/packs/python/dockerfile-writer.go",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "pack.go": {
+              "name": "pack.go",
+              "path": "starter.git/packs/python/pack.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service-yaml-context.go": {
+              "name": "service-yaml-context.go",
+              "path": "starter.git/packs/python/service-yaml-context.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service-yaml-writer.go": {
+              "name": "service-yaml-writer.go",
+              "path": "starter.git/packs/python/service-yaml-writer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "webservers": {
+              "name": "webservers",
+              "path": "starter.git/packs/python/webservers",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "gunicorn.go": {
+                  "name": "gunicorn.go",
+                  "path": "starter.git/packs/python/webservers/gunicorn.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "ruby": {
+          "name": "ruby",
+          "path": "starter.git/packs/ruby",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "analysis.go": {
+              "name": "analysis.go",
+              "path": "starter.git/packs/ruby/analysis.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "analyzer.go": {
+              "name": "analyzer.go",
+              "path": "starter.git/packs/ruby/analyzer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "detector.go": {
+              "name": "detector.go",
+              "path": "starter.git/packs/ruby/detector.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-yaml-context.go": {
+              "name": "docker-compose-yaml-context.go",
+              "path": "starter.git/packs/ruby/docker-compose-yaml-context.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "docker-compose-yaml-writer.go": {
+              "name": "docker-compose-yaml-writer.go",
+              "path": "starter.git/packs/ruby/docker-compose-yaml-writer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "dockerfile-context.go": {
+              "name": "dockerfile-context.go",
+              "path": "starter.git/packs/ruby/dockerfile-context.go",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "dockerfile-writer.go": {
+              "name": "dockerfile-writer.go",
+              "path": "starter.git/packs/ruby/dockerfile-writer.go",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "pack.go": {
+              "name": "pack.go",
+              "path": "starter.git/packs/ruby/pack.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service-yaml-context.go": {
+              "name": "service-yaml-context.go",
+              "path": "starter.git/packs/ruby/service-yaml-context.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service-yaml-writer.go": {
+              "name": "service-yaml-writer.go",
+              "path": "starter.git/packs/ruby/service-yaml-writer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "webservers": {
+              "name": "webservers",
+              "path": "starter.git/packs/ruby/webservers",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "thin.go": {
+                  "name": "thin.go",
+                  "path": "starter.git/packs/ruby/webservers/thin.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "unicorn.go": {
+                  "name": "unicorn.go",
+                  "path": "starter.git/packs/ruby/webservers/unicorn.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "service-yaml-context-base.go": {
+          "name": "service-yaml-context-base.go",
+          "path": "starter.git/packs/service-yaml-context-base.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "service-yaml-writer-base.go": {
+          "name": "service-yaml-writer-base.go",
+          "path": "starter.git/packs/service-yaml-writer-base.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "service-yml-to-kubes": {
+          "name": "service-yml-to-kubes",
+          "path": "starter.git/packs/service-yml-to-kubes",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "analysis.go": {
+              "name": "analysis.go",
+              "path": "starter.git/packs/service-yml-to-kubes/analysis.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "analyzer.go": {
+              "name": "analyzer.go",
+              "path": "starter.git/packs/service-yml-to-kubes/analyzer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "detector.go": {
+              "name": "detector.go",
+              "path": "starter.git/packs/service-yml-to-kubes/detector.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pack.go": {
+              "name": "pack.go",
+              "path": "starter.git/packs/service-yml-to-kubes/pack.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "template-writer-base.go": {
+          "name": "template-writer-base.go",
+          "path": "starter.git/packs/template-writer-base.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "web-server-base.go": {
+          "name": "web-server-base.go",
+          "path": "starter.git/packs/web-server-base.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "web-server-interface.go": {
+          "name": "web-server-interface.go",
+          "path": "starter.git/packs/web-server-interface.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "publish.sh": {
+      "name": "publish.sh",
+      "path": "starter.git/publish.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "service.yml": {
+      "name": "service.yml",
+      "path": "starter.git/service.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "starter_suite_test.go": {
+      "name": "starter_suite_test.go",
+      "path": "starter.git/starter_suite_test.go",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "templates": {
+      "name": "templates",
+      "path": "starter.git/templates",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose.yml.template": {
+          "name": "docker-compose.yml.template",
+          "path": "starter.git/templates/docker-compose.yml.template",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "node.dockerfile.template": {
+          "name": "node.dockerfile.template",
+          "path": "starter.git/templates/node.dockerfile.template",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "php.dockerfile.template": {
+          "name": "php.dockerfile.template",
+          "path": "starter.git/templates/php.dockerfile.template",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "python.dockerfile.template": {
+          "name": "python.dockerfile.template",
+          "path": "starter.git/templates/python.dockerfile.template",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "ruby.dockerfile.template": {
+          "name": "ruby.dockerfile.template",
+          "path": "starter.git/templates/ruby.dockerfile.template",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "service.yml.template": {
+          "name": "service.yml.template",
+          "path": "starter.git/templates/service.yml.template",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "templates.json": {
+          "name": "templates.json",
+          "path": "starter.git/templates/templates.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "test": {
+      "name": "test",
+      "path": "starter.git/test",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker_compose": {
+          "name": "docker_compose",
+          "path": "starter.git/test/docker_compose",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "just_compose": {
+              "name": "just_compose",
+              "path": "starter.git/test/docker_compose/just_compose",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/docker_compose/just_compose/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/docker_compose/just_compose/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/docker_compose/just_compose/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/docker_compose/just_compose/src/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                }
+              }
+            },
+            "just_compose_2": {
+              "name": "just_compose_2",
+              "path": "starter.git/test/docker_compose/just_compose_2",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/docker_compose/just_compose_2/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/docker_compose/just_compose_2/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/docker_compose/just_compose_2/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/docker_compose/just_compose_2/src/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "env.env": {
+                      "name": "env.env",
+                      "path": "starter.git/test/docker_compose/just_compose_2/src/env.env",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "settings.env": {
+                      "name": "settings.env",
+                      "path": "starter.git/test/docker_compose/just_compose_2/src/settings.env",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "node": {
+          "name": "node",
+          "path": "starter.git/test/node",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile.base": {
+              "name": "Dockerfile.base",
+              "path": "starter.git/test/node/Dockerfile.base",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "express_bare": {
+              "name": "express_bare",
+              "path": "starter.git/test/node/express_bare",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/node/express_bare/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/node/express_bare/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/node/express_bare/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/node/express_bare/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/node/express_bare/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "package.json": {
+                      "name": "package.json",
+                      "path": "starter.git/test/node/express_bare/src/package.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "express_bare_mongo": {
+              "name": "express_bare_mongo",
+              "path": "starter.git/test/node/express_bare_mongo",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/node/express_bare_mongo/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/node/express_bare_mongo/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/node/express_bare_mongo/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/node/express_bare_mongo/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/node/express_bare_mongo/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "package.json": {
+                      "name": "package.json",
+                      "path": "starter.git/test/node/express_bare_mongo/src/package.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "express_bare_mysql": {
+              "name": "express_bare_mysql",
+              "path": "starter.git/test/node/express_bare_mysql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/node/express_bare_mysql/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/node/express_bare_mysql/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/node/express_bare_mysql/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/node/express_bare_mysql/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/node/express_bare_mysql/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "package.json": {
+                      "name": "package.json",
+                      "path": "starter.git/test/node/express_bare_mysql/src/package.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "express_mongodb": {
+              "name": "express_mongodb",
+              "path": "starter.git/test/node/express_mongodb",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/node/express_mongodb/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/node/express_mongodb/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/node/express_mongodb/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/node/express_mongodb/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/node/express_mongodb/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "package.json": {
+                      "name": "package.json",
+                      "path": "starter.git/test/node/express_mongodb/src/package.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "express_mongodb_procfile": {
+              "name": "express_mongodb_procfile",
+              "path": "starter.git/test/node/express_mongodb_procfile",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/node/express_mongodb_procfile/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/node/express_mongodb_procfile/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/node/express_mongodb_procfile/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/node/express_mongodb_procfile/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/node/express_mongodb_procfile/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Procfile": {
+                      "name": "Procfile",
+                      "path": "starter.git/test/node/express_mongodb_procfile/src/Procfile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "package.json": {
+                      "name": "package.json",
+                      "path": "starter.git/test/node/express_mongodb_procfile/src/package.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "express_mongodb_redis": {
+              "name": "express_mongodb_redis",
+              "path": "starter.git/test/node/express_mongodb_redis",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/node/express_mongodb_redis/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/node/express_mongodb_redis/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/node/express_mongodb_redis/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/node/express_mongodb_redis/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/node/express_mongodb_redis/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "package.json": {
+                      "name": "package.json",
+                      "path": "starter.git/test/node/express_mongodb_redis/src/package.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "express_mysql_pg": {
+              "name": "express_mysql_pg",
+              "path": "starter.git/test/node/express_mysql_pg",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/node/express_mysql_pg/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/node/express_mysql_pg/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/node/express_mysql_pg/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/node/express_mysql_pg/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/node/express_mysql_pg/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "package.json": {
+                      "name": "package.json",
+                      "path": "starter.git/test/node/express_mysql_pg/src/package.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "express_no_git": {
+              "name": "express_no_git",
+              "path": "starter.git/test/node/express_no_git",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/node/express_no_git/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/node/express_no_git/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/node/express_no_git/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/node/express_no_git/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/node/express_no_git/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "package.json": {
+                      "name": "package.json",
+                      "path": "starter.git/test/node/express_no_git/src/package.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "express_pg_procfile": {
+              "name": "express_pg_procfile",
+              "path": "starter.git/test/node/express_pg_procfile",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/node/express_pg_procfile/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/node/express_pg_procfile/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/node/express_pg_procfile/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/node/express_pg_procfile/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/node/express_pg_procfile/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Procfile": {
+                      "name": "Procfile",
+                      "path": "starter.git/test/node/express_pg_procfile/src/Procfile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "package.json": {
+                      "name": "package.json",
+                      "path": "starter.git/test/node/express_pg_procfile/src/package.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "express_procfile": {
+              "name": "express_procfile",
+              "path": "starter.git/test/node/express_procfile",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/node/express_procfile/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/node/express_procfile/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/node/express_procfile/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/node/express_procfile/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/node/express_procfile/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Procfile": {
+                      "name": "Procfile",
+                      "path": "starter.git/test/node/express_procfile/src/Procfile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "package.json": {
+                      "name": "package.json",
+                      "path": "starter.git/test/node/express_procfile/src/package.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "express_rethinkdb": {
+              "name": "express_rethinkdb",
+              "path": "starter.git/test/node/express_rethinkdb",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/node/express_rethinkdb/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/node/express_rethinkdb/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/node/express_rethinkdb/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/node/express_rethinkdb/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "package.json": {
+                      "name": "package.json",
+                      "path": "starter.git/test/node/express_rethinkdb/src/package.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "php": {
+          "name": "php",
+          "path": "starter.git/test/php",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile.base": {
+              "name": "Dockerfile.base",
+              "path": "starter.git/test/php/Dockerfile.base",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "laravel_bare_mysql": {
+              "name": "laravel_bare_mysql",
+              "path": "starter.git/test/php/laravel_bare_mysql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/php/laravel_bare_mysql/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/php/laravel_bare_mysql/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/php/laravel_bare_mysql/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/php/laravel_bare_mysql/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/php/laravel_bare_mysql/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "composer.json": {
+                      "name": "composer.json",
+                      "path": "starter.git/test/php/laravel_bare_mysql/src/composer.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ruby": {
+          "name": "ruby",
+          "path": "starter.git/test/ruby",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile.base": {
+              "name": "Dockerfile.base",
+              "path": "starter.git/test/ruby/Dockerfile.base",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "rails_jobs_mysql_redis_postgrespl": {
+              "name": "rails_jobs_mysql_redis_postgrespl",
+              "path": "starter.git/test/ruby/rails_jobs_mysql_redis_postgrespl",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/ruby/rails_jobs_mysql_redis_postgrespl/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/ruby/rails_jobs_mysql_redis_postgrespl/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/ruby/rails_jobs_mysql_redis_postgrespl/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/ruby/rails_jobs_mysql_redis_postgrespl/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/ruby/rails_jobs_mysql_redis_postgrespl/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Gemfile": {
+                      "name": "Gemfile",
+                      "path": "starter.git/test/ruby/rails_jobs_mysql_redis_postgrespl/src/Gemfile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Procfile": {
+                      "name": "Procfile",
+                      "path": "starter.git/test/ruby/rails_jobs_mysql_redis_postgrespl/src/Procfile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "config": {
+                      "name": "config",
+                      "path": "starter.git/test/ruby/rails_jobs_mysql_redis_postgrespl/src/config",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "database.yml": {
+                          "name": "database.yml",
+                          "path": "starter.git/test/ruby/rails_jobs_mysql_redis_postgrespl/src/config/database.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "rails_jobs_unicorn_redis_postgresql": {
+              "name": "rails_jobs_unicorn_redis_postgresql",
+              "path": "starter.git/test/ruby/rails_jobs_unicorn_redis_postgresql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/ruby/rails_jobs_unicorn_redis_postgresql/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/ruby/rails_jobs_unicorn_redis_postgresql/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/ruby/rails_jobs_unicorn_redis_postgresql/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/ruby/rails_jobs_unicorn_redis_postgresql/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/ruby/rails_jobs_unicorn_redis_postgresql/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Gemfile": {
+                      "name": "Gemfile",
+                      "path": "starter.git/test/ruby/rails_jobs_unicorn_redis_postgresql/src/Gemfile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Procfile": {
+                      "name": "Procfile",
+                      "path": "starter.git/test/ruby/rails_jobs_unicorn_redis_postgresql/src/Procfile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "config": {
+                      "name": "config",
+                      "path": "starter.git/test/ruby/rails_jobs_unicorn_redis_postgresql/src/config",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "database.yml": {
+                          "name": "database.yml",
+                          "path": "starter.git/test/ruby/rails_jobs_unicorn_redis_postgresql/src/config/database.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "rails_mysql": {
+              "name": "rails_mysql",
+              "path": "starter.git/test/ruby/rails_mysql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/ruby/rails_mysql/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/ruby/rails_mysql/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "api": {
+                      "name": "api",
+                      "path": "starter.git/test/ruby/rails_mysql/expected/api",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Dockerfile": {
+                          "name": "Dockerfile",
+                          "path": "starter.git/test/ruby/rails_mysql/expected/api/Dockerfile",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "docker-compose.yml": {
+                          "name": "docker-compose.yml",
+                          "path": "starter.git/test/ruby/rails_mysql/expected/api/docker-compose.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": true
+                        },
+                        "service.yml": {
+                          "name": "service.yml",
+                          "path": "starter.git/test/ruby/rails_mysql/expected/api/service.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/ruby/rails_mysql/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/ruby/rails_mysql/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/ruby/rails_mysql/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Gemfile": {
+                      "name": "Gemfile",
+                      "path": "starter.git/test/ruby/rails_mysql/src/Gemfile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Procfile": {
+                      "name": "Procfile",
+                      "path": "starter.git/test/ruby/rails_mysql/src/Procfile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "config": {
+                      "name": "config",
+                      "path": "starter.git/test/ruby/rails_mysql/src/config",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "database.yml": {
+                          "name": "database.yml",
+                          "path": "starter.git/test/ruby/rails_mysql/src/config/database.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "source.zip": {
+                      "name": "source.zip",
+                      "path": "starter.git/test/ruby/rails_mysql/src/source.zip",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "rails_unicorn_mysql": {
+              "name": "rails_unicorn_mysql",
+              "path": "starter.git/test/ruby/rails_unicorn_mysql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/ruby/rails_unicorn_mysql/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/ruby/rails_unicorn_mysql/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/ruby/rails_unicorn_mysql/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/ruby/rails_unicorn_mysql/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/ruby/rails_unicorn_mysql/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Gemfile": {
+                      "name": "Gemfile",
+                      "path": "starter.git/test/ruby/rails_unicorn_mysql/src/Gemfile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Procfile": {
+                      "name": "Procfile",
+                      "path": "starter.git/test/ruby/rails_unicorn_mysql/src/Procfile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "config": {
+                      "name": "config",
+                      "path": "starter.git/test/ruby/rails_unicorn_mysql/src/config",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "database.yml": {
+                          "name": "database.yml",
+                          "path": "starter.git/test/ruby/rails_unicorn_mysql/src/config/database.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "sinatra_mongo": {
+              "name": "sinatra_mongo",
+              "path": "starter.git/test/ruby/sinatra_mongo",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/ruby/sinatra_mongo/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "starter.git/test/ruby/sinatra_mongo/expected/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "starter.git/test/ruby/sinatra_mongo/expected/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/ruby/sinatra_mongo/expected/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/ruby/sinatra_mongo/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Gemfile": {
+                      "name": "Gemfile",
+                      "path": "starter.git/test/ruby/sinatra_mongo/src/Gemfile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "service_yml": {
+          "name": "service_yml",
+          "path": "starter.git/test/service_yml",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "service_to_kubes_1": {
+              "name": "service_to_kubes_1",
+              "path": "starter.git/test/service_yml/service_to_kubes_1",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/service_yml/service_to_kubes_1/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "kubernetes.yml": {
+                      "name": "kubernetes.yml",
+                      "path": "starter.git/test/service_yml/service_to_kubes_1/expected/kubernetes.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/service_yml/service_to_kubes_1/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/service_yml/service_to_kubes_1/src/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "service_to_kubes_2": {
+              "name": "service_to_kubes_2",
+              "path": "starter.git/test/service_yml/service_to_kubes_2",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "expected": {
+                  "name": "expected",
+                  "path": "starter.git/test/service_yml/service_to_kubes_2/expected",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "kubernetes.yml": {
+                      "name": "kubernetes.yml",
+                      "path": "starter.git/test/service_yml/service_to_kubes_2/expected/kubernetes.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "src": {
+                  "name": "src",
+                  "path": "starter.git/test/service_yml/service_to_kubes_2/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "service.yml": {
+                      "name": "service.yml",
+                      "path": "starter.git/test/service_yml/service_to_kubes_2/src/service.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "transform": {
+      "name": "transform",
+      "path": "starter.git/transform",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose-transformer.go": {
+          "name": "docker-compose-transformer.go",
+          "path": "starter.git/transform/docker-compose-transformer.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-utils.go": {
+          "name": "docker-utils.go",
+          "path": "starter.git/transform/docker-utils.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kubes-transformer.go": {
+          "name": "kubes-transformer.go",
+          "path": "starter.git/transform/kubes-transformer.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "service-yml-transformer.go": {
+          "name": "service-yml-transformer.go",
+          "path": "starter.git/transform/service-yml-transformer.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "service-yml-utils.go": {
+          "name": "service-yml-utils.go",
+          "path": "starter.git/transform/service-yml-utils.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "transformer-interface.go": {
+          "name": "transformer-interface.go",
+          "path": "starter.git/transform/transformer-interface.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "utils": {
+      "name": "utils",
+      "path": "starter.git/utils",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "update.go": {
+          "name": "update.go",
+          "path": "starter.git/utils/update.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "version.go": {
+          "name": "version.go",
+          "path": "starter.git/utils/version.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 34743746,
+    "name": "starter",
+    "full_name": "cloud66-oss/starter",
+    "owner": {
+      "login": "cloud66-oss",
+      "html_url": "https://github.com/cloud66-oss",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/cloud66-oss/starter",
+    "description": "Helping you get started with containerized apps.",
+    "url": "https://api.github.com/repos/cloud66-oss/starter",
+    "clone_url": "https://github.com/cloud66-oss/starter.git",
+    "homepage": "https://help.cloud66.com/starter/",
+    "size": 2926,
+    "stargazers_count": 258,
+    "watchers_count": 258,
+    "language": "Go"
+  }
+}

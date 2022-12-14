@@ -1,0 +1,4547 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 7,
+      "subFolderCount": 0,
+      "filepaths": [
+        "subspace.git/Dockerfile-bootstrap-node",
+        "subspace.git/Dockerfile-bootstrap-node.aarch64",
+        "subspace.git/Dockerfile-farmer",
+        "subspace.git/Dockerfile-farmer.aarch64",
+        "subspace.git/Dockerfile-node",
+        "subspace.git/Dockerfile-node.aarch64",
+        "subspace.git/Dockerfile-runtime"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "subspace.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "subspace.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "subspace.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "subspace.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "subspace.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "subspace.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "subspace.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "subspace.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "subspace.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "subspace.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "subspace.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "subspace.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "subspace.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "subspace.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "subspace.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "subspace.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "subspace.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "subspace.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "subspace.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "subspace.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "subspace.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "subspace.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "subspace.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "subspace.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "subspace.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "subspace.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "subspace.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "subspace.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "subspace.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "subspace.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "subspace.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "subspace.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "subspace.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-2f47e2b1e036424f6063ca8dc20dc57364fc0c08.idx": {
+                  "name": "pack-2f47e2b1e036424f6063ca8dc20dc57364fc0c08.idx",
+                  "path": "subspace.git/.git/objects/pack/pack-2f47e2b1e036424f6063ca8dc20dc57364fc0c08.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-2f47e2b1e036424f6063ca8dc20dc57364fc0c08.pack": {
+                  "name": "pack-2f47e2b1e036424f6063ca8dc20dc57364fc0c08.pack",
+                  "path": "subspace.git/.git/objects/pack/pack-2f47e2b1e036424f6063ca8dc20dc57364fc0c08.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "subspace.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "subspace.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "subspace.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "subspace.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "subspace.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "subspace.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "subspace.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "subspace.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "subspace.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "subspace.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CODEOWNERS": {
+          "name": "CODEOWNERS",
+          "path": "subspace.git/.github/CODEOWNERS",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "subspace.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config.yml": {
+              "name": "config.yml",
+              "path": "subspace.git/.github/ISSUE_TEMPLATE/config.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "pull_request_template.md": {
+          "name": "pull_request_template.md",
+          "path": "subspace.git/.github/pull_request_template.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "subspace.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Entitlements.plist": {
+              "name": "Entitlements.plist",
+              "path": "subspace.git/.github/workflows/Entitlements.plist",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "chain-spec-snapshot-build.yml": {
+              "name": "chain-spec-snapshot-build.yml",
+              "path": "subspace.git/.github/workflows/chain-spec-snapshot-build.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "runtime-snapshot-build.yml": {
+              "name": "runtime-snapshot-build.yml",
+              "path": "subspace.git/.github/workflows/runtime-snapshot-build.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rust.yaml": {
+              "name": "rust.yaml",
+              "path": "subspace.git/.github/workflows/rust.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rustdoc.yml": {
+              "name": "rustdoc.yml",
+              "path": "subspace.git/.github/workflows/rustdoc.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "snapshot-build.yml": {
+              "name": "snapshot-build.yml",
+              "path": "subspace.git/.github/workflows/snapshot-build.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "subspace.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "subspace.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Cargo.lock": {
+      "name": "Cargo.lock",
+      "path": "subspace.git/Cargo.lock",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Cargo.toml": {
+      "name": "Cargo.toml",
+      "path": "subspace.git/Cargo.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile-bootstrap-node": {
+      "name": "Dockerfile-bootstrap-node",
+      "path": "subspace.git/Dockerfile-bootstrap-node",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile-bootstrap-node.aarch64": {
+      "name": "Dockerfile-bootstrap-node.aarch64",
+      "path": "subspace.git/Dockerfile-bootstrap-node.aarch64",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile-farmer": {
+      "name": "Dockerfile-farmer",
+      "path": "subspace.git/Dockerfile-farmer",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile-farmer.aarch64": {
+      "name": "Dockerfile-farmer.aarch64",
+      "path": "subspace.git/Dockerfile-farmer.aarch64",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile-node": {
+      "name": "Dockerfile-node",
+      "path": "subspace.git/Dockerfile-node",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile-node.aarch64": {
+      "name": "Dockerfile-node.aarch64",
+      "path": "subspace.git/Dockerfile-node.aarch64",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile-runtime": {
+      "name": "Dockerfile-runtime",
+      "path": "subspace.git/Dockerfile-runtime",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "subspace.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "crates": {
+      "name": "crates",
+      "path": "subspace.git/crates",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "pallet-domains": {
+          "name": "pallet-domains",
+          "path": "subspace.git/crates/pallet-domains",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/pallet-domains/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/pallet-domains/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/pallet-domains/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests.rs": {
+                  "name": "tests.rs",
+                  "path": "subspace.git/crates/pallet-domains/src/tests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "pallet-feeds": {
+          "name": "pallet-feeds",
+          "path": "subspace.git/crates/pallet-feeds",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/pallet-feeds/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/pallet-feeds/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/pallet-feeds/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "feed_processor.rs": {
+                  "name": "feed_processor.rs",
+                  "path": "subspace.git/crates/pallet-feeds/src/feed_processor.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/pallet-feeds/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mock.rs": {
+                  "name": "mock.rs",
+                  "path": "subspace.git/crates/pallet-feeds/src/mock.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests.rs": {
+                  "name": "tests.rs",
+                  "path": "subspace.git/crates/pallet-feeds/src/tests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "pallet-grandpa-finality-verifier": {
+          "name": "pallet-grandpa-finality-verifier",
+          "path": "subspace.git/crates/pallet-grandpa-finality-verifier",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/pallet-grandpa-finality-verifier/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/pallet-grandpa-finality-verifier/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/pallet-grandpa-finality-verifier/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "chain.rs": {
+                  "name": "chain.rs",
+                  "path": "subspace.git/crates/pallet-grandpa-finality-verifier/src/chain.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "grandpa.rs": {
+                  "name": "grandpa.rs",
+                  "path": "subspace.git/crates/pallet-grandpa-finality-verifier/src/grandpa.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/pallet-grandpa-finality-verifier/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests": {
+                  "name": "tests",
+                  "path": "subspace.git/crates/pallet-grandpa-finality-verifier/src/tests",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "justification.rs": {
+                      "name": "justification.rs",
+                      "path": "subspace.git/crates/pallet-grandpa-finality-verifier/src/tests/justification.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "keyring.rs": {
+                      "name": "keyring.rs",
+                      "path": "subspace.git/crates/pallet-grandpa-finality-verifier/src/tests/keyring.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mock.rs": {
+                      "name": "mock.rs",
+                      "path": "subspace.git/crates/pallet-grandpa-finality-verifier/src/tests/mock.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "subspace.git/crates/pallet-grandpa-finality-verifier/src/tests/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pallet-object-store": {
+          "name": "pallet-object-store",
+          "path": "subspace.git/crates/pallet-object-store",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/pallet-object-store/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/pallet-object-store/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/pallet-object-store/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/pallet-object-store/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mock.rs": {
+                  "name": "mock.rs",
+                  "path": "subspace.git/crates/pallet-object-store/src/mock.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests.rs": {
+                  "name": "tests.rs",
+                  "path": "subspace.git/crates/pallet-object-store/src/tests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "pallet-offences-subspace": {
+          "name": "pallet-offences-subspace",
+          "path": "subspace.git/crates/pallet-offences-subspace",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/pallet-offences-subspace/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/pallet-offences-subspace/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/pallet-offences-subspace/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/pallet-offences-subspace/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mock.rs": {
+                  "name": "mock.rs",
+                  "path": "subspace.git/crates/pallet-offences-subspace/src/mock.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests.rs": {
+                  "name": "tests.rs",
+                  "path": "subspace.git/crates/pallet-offences-subspace/src/tests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "pallet-rewards": {
+          "name": "pallet-rewards",
+          "path": "subspace.git/crates/pallet-rewards",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/pallet-rewards/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/pallet-rewards/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/pallet-rewards/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "default_weights.rs": {
+                  "name": "default_weights.rs",
+                  "path": "subspace.git/crates/pallet-rewards/src/default_weights.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/pallet-rewards/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "pallet-runtime-configs": {
+          "name": "pallet-runtime-configs",
+          "path": "subspace.git/crates/pallet-runtime-configs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/pallet-runtime-configs/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/pallet-runtime-configs/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/pallet-runtime-configs/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "pallet-subspace": {
+          "name": "pallet-subspace",
+          "path": "subspace.git/crates/pallet-subspace",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/pallet-subspace/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/pallet-subspace/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/pallet-subspace/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "default_weights.rs": {
+                  "name": "default_weights.rs",
+                  "path": "subspace.git/crates/pallet-subspace/src/default_weights.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "equivocation.rs": {
+                  "name": "equivocation.rs",
+                  "path": "subspace.git/crates/pallet-subspace/src/equivocation.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/pallet-subspace/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mock.rs": {
+                  "name": "mock.rs",
+                  "path": "subspace.git/crates/pallet-subspace/src/mock.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests.rs": {
+                  "name": "tests.rs",
+                  "path": "subspace.git/crates/pallet-subspace/src/tests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "pallet-transaction-fees": {
+          "name": "pallet-transaction-fees",
+          "path": "subspace.git/crates/pallet-transaction-fees",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/pallet-transaction-fees/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/pallet-transaction-fees/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/pallet-transaction-fees/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "default_weights.rs": {
+                  "name": "default_weights.rs",
+                  "path": "subspace.git/crates/pallet-transaction-fees/src/default_weights.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/pallet-transaction-fees/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "sc-consensus-fraud-proof": {
+          "name": "sc-consensus-fraud-proof",
+          "path": "subspace.git/crates/sc-consensus-fraud-proof",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/sc-consensus-fraud-proof/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/sc-consensus-fraud-proof/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/sc-consensus-fraud-proof/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "sc-consensus-subspace": {
+          "name": "sc-consensus-subspace",
+          "path": "subspace.git/crates/sc-consensus-subspace",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/sc-consensus-subspace/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/sc-consensus-subspace/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/sc-consensus-subspace/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "archiver.rs": {
+                  "name": "archiver.rs",
+                  "path": "subspace.git/crates/sc-consensus-subspace/src/archiver.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "aux_schema.rs": {
+                  "name": "aux_schema.rs",
+                  "path": "subspace.git/crates/sc-consensus-subspace/src/aux_schema.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/sc-consensus-subspace/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "notification.rs": {
+                  "name": "notification.rs",
+                  "path": "subspace.git/crates/sc-consensus-subspace/src/notification.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "slot_worker.rs": {
+                  "name": "slot_worker.rs",
+                  "path": "subspace.git/crates/sc-consensus-subspace/src/slot_worker.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests.rs": {
+                  "name": "tests.rs",
+                  "path": "subspace.git/crates/sc-consensus-subspace/src/tests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "sc-consensus-subspace-rpc": {
+          "name": "sc-consensus-subspace-rpc",
+          "path": "subspace.git/crates/sc-consensus-subspace-rpc",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/sc-consensus-subspace-rpc/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/sc-consensus-subspace-rpc/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/sc-consensus-subspace-rpc/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/sc-consensus-subspace-rpc/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "sc-subspace-chain-specs": {
+          "name": "sc-subspace-chain-specs",
+          "path": "subspace.git/crates/sc-subspace-chain-specs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/sc-subspace-chain-specs/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/sc-subspace-chain-specs/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/sc-subspace-chain-specs/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "utils.rs": {
+                  "name": "utils.rs",
+                  "path": "subspace.git/crates/sc-subspace-chain-specs/src/utils.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "sp-consensus-subspace": {
+          "name": "sp-consensus-subspace",
+          "path": "subspace.git/crates/sp-consensus-subspace",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/sp-consensus-subspace/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/sp-consensus-subspace/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/sp-consensus-subspace/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "digests.rs": {
+                  "name": "digests.rs",
+                  "path": "subspace.git/crates/sp-consensus-subspace/src/digests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "inherents.rs": {
+                  "name": "inherents.rs",
+                  "path": "subspace.git/crates/sp-consensus-subspace/src/inherents.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/sp-consensus-subspace/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "offence.rs": {
+                  "name": "offence.rs",
+                  "path": "subspace.git/crates/sp-consensus-subspace/src/offence.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests.rs": {
+                  "name": "tests.rs",
+                  "path": "subspace.git/crates/sp-consensus-subspace/src/tests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "sp-domains": {
+          "name": "sp-domains",
+          "path": "subspace.git/crates/sp-domains",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/sp-domains/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/sp-domains/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "bundle_election.rs": {
+                  "name": "bundle_election.rs",
+                  "path": "subspace.git/crates/sp-domains/src/bundle_election.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fraud_proof.rs": {
+                  "name": "fraud_proof.rs",
+                  "path": "subspace.git/crates/sp-domains/src/fraud_proof.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/sp-domains/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "transaction.rs": {
+                  "name": "transaction.rs",
+                  "path": "subspace.git/crates/sp-domains/src/transaction.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "sp-lightclient": {
+          "name": "sp-lightclient",
+          "path": "subspace.git/crates/sp-lightclient",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/sp-lightclient/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/sp-lightclient/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/sp-lightclient/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/sp-lightclient/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mock.rs": {
+                  "name": "mock.rs",
+                  "path": "subspace.git/crates/sp-lightclient/src/mock.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests.rs": {
+                  "name": "tests.rs",
+                  "path": "subspace.git/crates/sp-lightclient/src/tests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "sp-objects": {
+          "name": "sp-objects",
+          "path": "subspace.git/crates/sp-objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/sp-objects/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/sp-objects/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/sp-objects/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-archiving": {
+          "name": "subspace-archiving",
+          "path": "subspace.git/crates/subspace-archiving",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-archiving/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/subspace-archiving/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "benches": {
+              "name": "benches",
+              "path": "subspace.git/crates/subspace-archiving/benches",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "archiving.rs": {
+                  "name": "archiving.rs",
+                  "path": "subspace.git/crates/subspace-archiving/benches/archiving.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-archiving/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "archiver": {
+                  "name": "archiver",
+                  "path": "subspace.git/crates/subspace-archiving/src/archiver",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "record_shards.rs": {
+                      "name": "record_shards.rs",
+                      "path": "subspace.git/crates/subspace-archiving/src/archiver/record_shards.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "archiver.rs": {
+                  "name": "archiver.rs",
+                  "path": "subspace.git/crates/subspace-archiving/src/archiver.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-archiving/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "reconstructor.rs": {
+                  "name": "reconstructor.rs",
+                  "path": "subspace.git/crates/subspace-archiving/src/reconstructor.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "utils.rs": {
+                  "name": "utils.rs",
+                  "path": "subspace.git/crates/subspace-archiving/src/utils.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "tests": {
+              "name": "tests",
+              "path": "subspace.git/crates/subspace-archiving/tests",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "integration": {
+                  "name": "integration",
+                  "path": "subspace.git/crates/subspace-archiving/tests/integration",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "archiver.rs": {
+                      "name": "archiver.rs",
+                      "path": "subspace.git/crates/subspace-archiving/tests/integration/archiver.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "main.rs": {
+                      "name": "main.rs",
+                      "path": "subspace.git/crates/subspace-archiving/tests/integration/main.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "reconstructor.rs": {
+                      "name": "reconstructor.rs",
+                      "path": "subspace.git/crates/subspace-archiving/tests/integration/reconstructor.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "subspace-core-primitives": {
+          "name": "subspace-core-primitives",
+          "path": "subspace.git/crates/subspace-core-primitives",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-core-primitives/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/subspace-core-primitives/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "benches": {
+              "name": "benches",
+              "path": "subspace.git/crates/subspace-core-primitives/benches",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kzg.rs": {
+                  "name": "kzg.rs",
+                  "path": "subspace.git/crates/subspace-core-primitives/benches/kzg.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-core-primitives/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "crypto": {
+                  "name": "crypto",
+                  "path": "subspace.git/crates/subspace-core-primitives/src/crypto",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "kzg": {
+                      "name": "kzg",
+                      "path": "subspace.git/crates/subspace-core-primitives/src/crypto/kzg",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "serde.rs": {
+                          "name": "serde.rs",
+                          "path": "subspace.git/crates/subspace-core-primitives/src/crypto/kzg/serde.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "test-public-parameters.bin": {
+                          "name": "test-public-parameters.bin",
+                          "path": "subspace.git/crates/subspace-core-primitives/src/crypto/kzg/test-public-parameters.bin",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "tests.rs": {
+                          "name": "tests.rs",
+                          "path": "subspace.git/crates/subspace-core-primitives/src/crypto/kzg/tests.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "kzg.rs": {
+                      "name": "kzg.rs",
+                      "path": "subspace.git/crates/subspace-core-primitives/src/crypto/kzg.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "crypto.rs": {
+                  "name": "crypto.rs",
+                  "path": "subspace.git/crates/subspace-core-primitives/src/crypto.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-core-primitives/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "objects.rs": {
+                  "name": "objects.rs",
+                  "path": "subspace.git/crates/subspace-core-primitives/src/objects.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sector_codec": {
+                  "name": "sector_codec",
+                  "path": "subspace.git/crates/subspace-core-primitives/src/sector_codec",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "tests.rs": {
+                      "name": "tests.rs",
+                      "path": "subspace.git/crates/subspace-core-primitives/src/sector_codec/tests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "sector_codec.rs": {
+                  "name": "sector_codec.rs",
+                  "path": "subspace.git/crates/subspace-core-primitives/src/sector_codec.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests.rs": {
+                  "name": "tests.rs",
+                  "path": "subspace.git/crates/subspace-core-primitives/src/tests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-farmer": {
+          "name": "subspace-farmer",
+          "path": "subspace.git/crates/subspace-farmer",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-farmer/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/subspace-farmer/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-farmer/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "bin": {
+                  "name": "bin",
+                  "path": "subspace.git/crates/subspace-farmer/src/bin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "subspace-farmer": {
+                      "name": "subspace-farmer",
+                      "path": "subspace.git/crates/subspace-farmer/src/bin/subspace-farmer",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "commands": {
+                          "name": "commands",
+                          "path": "subspace.git/crates/subspace-farmer/src/bin/subspace-farmer/commands",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "farm.rs": {
+                              "name": "farm.rs",
+                              "path": "subspace.git/crates/subspace-farmer/src/bin/subspace-farmer/commands/farm.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "info.rs": {
+                              "name": "info.rs",
+                              "path": "subspace.git/crates/subspace-farmer/src/bin/subspace-farmer/commands/info.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "commands.rs": {
+                          "name": "commands.rs",
+                          "path": "subspace.git/crates/subspace-farmer/src/bin/subspace-farmer/commands.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "main.rs": {
+                          "name": "main.rs",
+                          "path": "subspace.git/crates/subspace-farmer/src/bin/subspace-farmer/main.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ss58.rs": {
+                          "name": "ss58.rs",
+                          "path": "subspace.git/crates/subspace-farmer/src/bin/subspace-farmer/ss58.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "utils.rs": {
+                          "name": "utils.rs",
+                          "path": "subspace.git/crates/subspace-farmer/src/bin/subspace-farmer/utils.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "identity.rs": {
+                  "name": "identity.rs",
+                  "path": "subspace.git/crates/subspace-farmer/src/identity.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-farmer/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "object_mappings": {
+                  "name": "object_mappings",
+                  "path": "subspace.git/crates/subspace-farmer/src/object_mappings",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "tests.rs": {
+                      "name": "tests.rs",
+                      "path": "subspace.git/crates/subspace-farmer/src/object_mappings/tests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "object_mappings.rs": {
+                  "name": "object_mappings.rs",
+                  "path": "subspace.git/crates/subspace-farmer/src/object_mappings.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "reward_signing.rs": {
+                  "name": "reward_signing.rs",
+                  "path": "subspace.git/crates/subspace-farmer/src/reward_signing.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rpc_client": {
+                  "name": "rpc_client",
+                  "path": "subspace.git/crates/subspace-farmer/src/rpc_client",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "node_rpc_client.rs": {
+                      "name": "node_rpc_client.rs",
+                      "path": "subspace.git/crates/subspace-farmer/src/rpc_client/node_rpc_client.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "rpc_client.rs": {
+                  "name": "rpc_client.rs",
+                  "path": "subspace.git/crates/subspace-farmer/src/rpc_client.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "single_disk_plot": {
+                  "name": "single_disk_plot",
+                  "path": "subspace.git/crates/subspace-farmer/src/single_disk_plot",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "piece_publisher.rs": {
+                      "name": "piece_publisher.rs",
+                      "path": "subspace.git/crates/subspace-farmer/src/single_disk_plot/piece_publisher.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "piece_reader.rs": {
+                      "name": "piece_reader.rs",
+                      "path": "subspace.git/crates/subspace-farmer/src/single_disk_plot/piece_reader.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "piece_receiver.rs": {
+                      "name": "piece_receiver.rs",
+                      "path": "subspace.git/crates/subspace-farmer/src/single_disk_plot/piece_receiver.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "single_disk_plot.rs": {
+                  "name": "single_disk_plot.rs",
+                  "path": "subspace.git/crates/subspace-farmer/src/single_disk_plot.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "utils.rs": {
+                  "name": "utils.rs",
+                  "path": "subspace.git/crates/subspace-farmer/src/utils.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ws_rpc_server.rs": {
+                  "name": "ws_rpc_server.rs",
+                  "path": "subspace.git/crates/subspace-farmer/src/ws_rpc_server.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-farmer-components": {
+          "name": "subspace-farmer-components",
+          "path": "subspace.git/crates/subspace-farmer-components",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-farmer-components/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/subspace-farmer-components/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "benches": {
+              "name": "benches",
+              "path": "subspace.git/crates/subspace-farmer-components/benches",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "auditing.rs": {
+                  "name": "auditing.rs",
+                  "path": "subspace.git/crates/subspace-farmer-components/benches/auditing.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "plotting.rs": {
+                  "name": "plotting.rs",
+                  "path": "subspace.git/crates/subspace-farmer-components/benches/plotting.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "proving.rs": {
+                  "name": "proving.rs",
+                  "path": "subspace.git/crates/subspace-farmer-components/benches/proving.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "utils": {
+                  "name": "utils",
+                  "path": "subspace.git/crates/subspace-farmer-components/benches/utils",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "subspace.git/crates/subspace-farmer-components/benches/utils/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-farmer-components/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "farming.rs": {
+                  "name": "farming.rs",
+                  "path": "subspace.git/crates/subspace-farmer-components/src/farming.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "file_ext.rs": {
+                  "name": "file_ext.rs",
+                  "path": "subspace.git/crates/subspace-farmer-components/src/file_ext.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-farmer-components/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "plotting.rs": {
+                  "name": "plotting.rs",
+                  "path": "subspace.git/crates/subspace-farmer-components/src/plotting.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-fraud-proof": {
+          "name": "subspace-fraud-proof",
+          "path": "subspace.git/crates/subspace-fraud-proof",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-fraud-proof/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-fraud-proof/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-fraud-proof/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests.rs": {
+                  "name": "tests.rs",
+                  "path": "subspace.git/crates/subspace-fraud-proof/src/tests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-networking": {
+          "name": "subspace-networking",
+          "path": "subspace.git/crates/subspace-networking",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-networking/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "examples": {
+              "name": "examples",
+              "path": "subspace.git/crates/subspace-networking/examples",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "announce-piece-complex.rs": {
+                  "name": "announce-piece-complex.rs",
+                  "path": "subspace.git/crates/subspace-networking/examples/announce-piece-complex.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "announce-piece.rs": {
+                  "name": "announce-piece.rs",
+                  "path": "subspace.git/crates/subspace-networking/examples/announce-piece.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "get-peers-complex.rs": {
+                  "name": "get-peers-complex.rs",
+                  "path": "subspace.git/crates/subspace-networking/examples/get-peers-complex.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "get-peers.rs": {
+                  "name": "get-peers.rs",
+                  "path": "subspace.git/crates/subspace-networking/examples/get-peers.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "networking.rs": {
+                  "name": "networking.rs",
+                  "path": "subspace.git/crates/subspace-networking/examples/networking.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "requests.rs": {
+                  "name": "requests.rs",
+                  "path": "subspace.git/crates/subspace-networking/examples/requests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-networking/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "behavior": {
+                  "name": "behavior",
+                  "path": "subspace.git/crates/subspace-networking/src/behavior",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "custom_record_store.rs": {
+                      "name": "custom_record_store.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/behavior/custom_record_store.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "persistent_parameters.rs": {
+                      "name": "persistent_parameters.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/behavior/persistent_parameters.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "record_binary_heap.rs": {
+                      "name": "record_binary_heap.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/behavior/record_binary_heap.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tests.rs": {
+                      "name": "tests.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/behavior/tests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "behavior.rs": {
+                  "name": "behavior.rs",
+                  "path": "subspace.git/crates/subspace-networking/src/behavior.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "bin": {
+                  "name": "bin",
+                  "path": "subspace.git/crates/subspace-networking/src/bin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "subspace-bootstrap-node": {
+                      "name": "subspace-bootstrap-node",
+                      "path": "subspace.git/crates/subspace-networking/src/bin/subspace-bootstrap-node",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "main.rs": {
+                          "name": "main.rs",
+                          "path": "subspace.git/crates/subspace-networking/src/bin/subspace-bootstrap-node/main.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "create.rs": {
+                  "name": "create.rs",
+                  "path": "subspace.git/crates/subspace-networking/src/create.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-networking/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "node.rs": {
+                  "name": "node.rs",
+                  "path": "subspace.git/crates/subspace-networking/src/node.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "node_runner.rs": {
+                  "name": "node_runner.rs",
+                  "path": "subspace.git/crates/subspace-networking/src/node_runner.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "request_handlers": {
+                  "name": "request_handlers",
+                  "path": "subspace.git/crates/subspace-networking/src/request_handlers",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "generic_request_handler.rs": {
+                      "name": "generic_request_handler.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/request_handlers/generic_request_handler.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "object_mappings.rs": {
+                      "name": "object_mappings.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/request_handlers/object_mappings.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "peer_info.rs": {
+                      "name": "peer_info.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/request_handlers/peer_info.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "piece_by_key.rs": {
+                      "name": "piece_by_key.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/request_handlers/piece_by_key.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "pieces_by_range.rs": {
+                      "name": "pieces_by_range.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/request_handlers/pieces_by_range.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "request_handlers.rs": {
+                  "name": "request_handlers.rs",
+                  "path": "subspace.git/crates/subspace-networking/src/request_handlers.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "request_responses": {
+                  "name": "request_responses",
+                  "path": "subspace.git/crates/subspace-networking/src/request_responses",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "tests.rs": {
+                      "name": "tests.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/request_responses/tests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "request_responses.rs": {
+                  "name": "request_responses.rs",
+                  "path": "subspace.git/crates/subspace-networking/src/request_responses.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "shared.rs": {
+                  "name": "shared.rs",
+                  "path": "subspace.git/crates/subspace-networking/src/shared.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "utils": {
+                  "name": "utils",
+                  "path": "subspace.git/crates/subspace-networking/src/utils",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "multihash.rs": {
+                      "name": "multihash.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/utils/multihash.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "prometheus.rs": {
+                      "name": "prometheus.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/utils/prometheus.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tests.rs": {
+                      "name": "tests.rs",
+                      "path": "subspace.git/crates/subspace-networking/src/utils/tests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "utils.rs": {
+                  "name": "utils.rs",
+                  "path": "subspace.git/crates/subspace-networking/src/utils.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-node": {
+          "name": "subspace-node",
+          "path": "subspace.git/crates/subspace-node",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-node/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/subspace-node/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build.rs": {
+              "name": "build.rs",
+              "path": "subspace.git/crates/subspace-node/build.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "res": {
+              "name": "res",
+              "path": "subspace.git/crates/subspace-node/res",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "chain-spec-raw-gemini-3a.json": {
+                  "name": "chain-spec-raw-gemini-3a.json",
+                  "path": "subspace.git/crates/subspace-node/res/chain-spec-raw-gemini-3a.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "chain-spec-raw-x-net-2.json": {
+                  "name": "chain-spec-raw-x-net-2.json",
+                  "path": "subspace.git/crates/subspace-node/res/chain-spec-raw-x-net-2.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-node/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "bin": {
+                  "name": "bin",
+                  "path": "subspace.git/crates/subspace-node/src/bin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "subspace-node.rs": {
+                      "name": "subspace-node.rs",
+                      "path": "subspace.git/crates/subspace-node/src/bin/subspace-node.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "chain_spec.rs": {
+                  "name": "chain_spec.rs",
+                  "path": "subspace.git/crates/subspace-node/src/chain_spec.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "chain_spec_utils.rs": {
+                  "name": "chain_spec_utils.rs",
+                  "path": "subspace.git/crates/subspace-node/src/chain_spec_utils.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "core_domain": {
+                  "name": "core_domain",
+                  "path": "subspace.git/crates/subspace-node/src/core_domain",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "cli.rs": {
+                      "name": "cli.rs",
+                      "path": "subspace.git/crates/subspace-node/src/core_domain/cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "core_payments_chain_spec.rs": {
+                      "name": "core_payments_chain_spec.rs",
+                      "path": "subspace.git/crates/subspace-node/src/core_domain/core_payments_chain_spec.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "core_domain.rs": {
+                  "name": "core_domain.rs",
+                  "path": "subspace.git/crates/subspace-node/src/core_domain.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "import_blocks_from_dsn.rs": {
+                  "name": "import_blocks_from_dsn.rs",
+                  "path": "subspace.git/crates/subspace-node/src/import_blocks_from_dsn.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-node/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secondary_chain": {
+                  "name": "secondary_chain",
+                  "path": "subspace.git/crates/subspace-node/src/secondary_chain",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "chain_spec.rs": {
+                      "name": "chain_spec.rs",
+                      "path": "subspace.git/crates/subspace-node/src/secondary_chain/chain_spec.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "cli.rs": {
+                      "name": "cli.rs",
+                      "path": "subspace.git/crates/subspace-node/src/secondary_chain/cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "secondary_chain.rs": {
+                  "name": "secondary_chain.rs",
+                  "path": "subspace.git/crates/subspace-node/src/secondary_chain.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-rpc-primitives": {
+          "name": "subspace-rpc-primitives",
+          "path": "subspace.git/crates/subspace-rpc-primitives",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-rpc-primitives/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-rpc-primitives/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-rpc-primitives/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-runtime": {
+          "name": "subspace-runtime",
+          "path": "subspace.git/crates/subspace-runtime",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-runtime/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build.rs": {
+              "name": "build.rs",
+              "path": "subspace.git/crates/subspace-runtime/build.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-runtime/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "domains.rs": {
+                  "name": "domains.rs",
+                  "path": "subspace.git/crates/subspace-runtime/src/domains.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "feed_processor.rs": {
+                  "name": "feed_processor.rs",
+                  "path": "subspace.git/crates/subspace-runtime/src/feed_processor.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fees.rs": {
+                  "name": "fees.rs",
+                  "path": "subspace.git/crates/subspace-runtime/src/fees.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-runtime/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "object_mapping.rs": {
+                  "name": "object_mapping.rs",
+                  "path": "subspace.git/crates/subspace-runtime/src/object_mapping.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "signed_extensions.rs": {
+                  "name": "signed_extensions.rs",
+                  "path": "subspace.git/crates/subspace-runtime/src/signed_extensions.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "weights": {
+                  "name": "weights",
+                  "path": "subspace.git/crates/subspace-runtime/src/weights",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "subspace.rs": {
+                      "name": "subspace.rs",
+                      "path": "subspace.git/crates/subspace-runtime/src/weights/subspace.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "weights.rs": {
+                  "name": "weights.rs",
+                  "path": "subspace.git/crates/subspace-runtime/src/weights.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "tests": {
+              "name": "tests",
+              "path": "subspace.git/crates/subspace-runtime/tests",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "integration": {
+                  "name": "integration",
+                  "path": "subspace.git/crates/subspace-runtime/tests/integration",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main.rs": {
+                      "name": "main.rs",
+                      "path": "subspace.git/crates/subspace-runtime/tests/integration/main.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "object_mapping.rs": {
+                      "name": "object_mapping.rs",
+                      "path": "subspace.git/crates/subspace-runtime/tests/integration/object_mapping.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "subspace-runtime-primitives": {
+          "name": "subspace-runtime-primitives",
+          "path": "subspace.git/crates/subspace-runtime-primitives",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-runtime-primitives/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-runtime-primitives/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-runtime-primitives/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-service": {
+          "name": "subspace-service",
+          "path": "subspace.git/crates/subspace-service",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-service/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-service/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "dsn.rs": {
+                  "name": "dsn.rs",
+                  "path": "subspace.git/crates/subspace-service/src/dsn.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-service/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "piece_cache": {
+                  "name": "piece_cache",
+                  "path": "subspace.git/crates/subspace-service/src/piece_cache",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "tests.rs": {
+                      "name": "tests.rs",
+                      "path": "subspace.git/crates/subspace-service/src/piece_cache/tests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "piece_cache.rs": {
+                  "name": "piece_cache.rs",
+                  "path": "subspace.git/crates/subspace-service/src/piece_cache.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pool.rs": {
+                  "name": "pool.rs",
+                  "path": "subspace.git/crates/subspace-service/src/pool.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rpc.rs": {
+                  "name": "rpc.rs",
+                  "path": "subspace.git/crates/subspace-service/src/rpc.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-solving": {
+          "name": "subspace-solving",
+          "path": "subspace.git/crates/subspace-solving",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-solving/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/subspace-solving/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-solving/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-solving/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-verification": {
+          "name": "subspace-verification",
+          "path": "subspace.git/crates/subspace-verification",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-verification/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/crates/subspace-verification/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-verification/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-verification/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-wasm-tools": {
+          "name": "subspace-wasm-tools",
+          "path": "subspace.git/crates/subspace-wasm-tools",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/crates/subspace-wasm-tools/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/crates/subspace-wasm-tools/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/crates/subspace-wasm-tools/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "docs": {
+      "name": "docs",
+      "path": "subspace.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "development.md": {
+          "name": "development.md",
+          "path": "subspace.git/docs/development.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "farming.md": {
+          "name": "farming.md",
+          "path": "subspace.git/docs/farming.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "domains": {
+      "name": "domains",
+      "path": "subspace.git/domains",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "subspace.git/domains/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "client": {
+          "name": "client",
+          "path": "subspace.git/domains/client",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "block-builder": {
+              "name": "block-builder",
+              "path": "subspace.git/domains/client/block-builder",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/client/block-builder/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "README.md": {
+                  "name": "README.md",
+                  "path": "subspace.git/domains/client/block-builder/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/client/block-builder/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/client/block-builder/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "consensus-relay-chain": {
+              "name": "consensus-relay-chain",
+              "path": "subspace.git/domains/client/consensus-relay-chain",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/client/consensus-relay-chain/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/client/consensus-relay-chain/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "import_queue.rs": {
+                      "name": "import_queue.rs",
+                      "path": "subspace.git/domains/client/consensus-relay-chain/src/import_queue.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/client/consensus-relay-chain/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "cross-domain-message-gossip": {
+              "name": "cross-domain-message-gossip",
+              "path": "subspace.git/domains/client/cross-domain-message-gossip",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/client/cross-domain-message-gossip/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/client/cross-domain-message-gossip/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "gossip_worker.rs": {
+                      "name": "gossip_worker.rs",
+                      "path": "subspace.git/domains/client/cross-domain-message-gossip/src/gossip_worker.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/client/cross-domain-message-gossip/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "message_listener.rs": {
+                      "name": "message_listener.rs",
+                      "path": "subspace.git/domains/client/cross-domain-message-gossip/src/message_listener.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "domain-executor": {
+              "name": "domain-executor",
+              "path": "subspace.git/domains/client/domain-executor",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/client/domain-executor/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "README.md": {
+                  "name": "README.md",
+                  "path": "subspace.git/domains/client/domain-executor/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/client/domain-executor/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "aux_schema.rs": {
+                      "name": "aux_schema.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/aux_schema.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "bundle_election_solver.rs": {
+                      "name": "bundle_election_solver.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/bundle_election_solver.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "core_bundle_processor.rs": {
+                      "name": "core_bundle_processor.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/core_bundle_processor.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "core_bundle_producer.rs": {
+                      "name": "core_bundle_producer.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/core_bundle_producer.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "core_domain_worker.rs": {
+                      "name": "core_domain_worker.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/core_domain_worker.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "core_executor.rs": {
+                      "name": "core_executor.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/core_executor.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "core_gossip_message_validator.rs": {
+                      "name": "core_gossip_message_validator.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/core_gossip_message_validator.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "domain_block_processor.rs": {
+                      "name": "domain_block_processor.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/domain_block_processor.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "domain_bundle_producer.rs": {
+                      "name": "domain_bundle_producer.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/domain_bundle_producer.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "domain_bundle_proposer.rs": {
+                      "name": "domain_bundle_proposer.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/domain_bundle_proposer.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "domain_worker.rs": {
+                      "name": "domain_worker.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/domain_worker.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "fraud_proof.rs": {
+                      "name": "fraud_proof.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/fraud_proof.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "gossip_message_validator.rs": {
+                      "name": "gossip_message_validator.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/gossip_message_validator.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "merkle_tree.rs": {
+                      "name": "merkle_tree.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/merkle_tree.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "system_bundle_processor.rs": {
+                      "name": "system_bundle_processor.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/system_bundle_processor.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "system_bundle_producer.rs": {
+                      "name": "system_bundle_producer.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/system_bundle_producer.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "system_domain_worker.rs": {
+                      "name": "system_domain_worker.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/system_domain_worker.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "system_executor.rs": {
+                      "name": "system_executor.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/system_executor.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "system_gossip_message_validator.rs": {
+                      "name": "system_gossip_message_validator.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/system_gossip_message_validator.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tests.rs": {
+                      "name": "tests.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/tests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils.rs": {
+                      "name": "utils.rs",
+                      "path": "subspace.git/domains/client/domain-executor/src/utils.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "executor-gossip": {
+              "name": "executor-gossip",
+              "path": "subspace.git/domains/client/executor-gossip",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/client/executor-gossip/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/client/executor-gossip/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/client/executor-gossip/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "worker.rs": {
+                      "name": "worker.rs",
+                      "path": "subspace.git/domains/client/executor-gossip/src/worker.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "relayer": {
+              "name": "relayer",
+              "path": "subspace.git/domains/client/relayer",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/client/relayer/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/client/relayer/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/client/relayer/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "worker.rs": {
+                      "name": "worker.rs",
+                      "path": "subspace.git/domains/client/relayer/src/worker.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pallets": {
+          "name": "pallets",
+          "path": "subspace.git/domains/pallets",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "domain-registry": {
+              "name": "domain-registry",
+              "path": "subspace.git/domains/pallets/domain-registry",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/pallets/domain-registry/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/pallets/domain-registry/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/pallets/domain-registry/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tests.rs": {
+                      "name": "tests.rs",
+                      "path": "subspace.git/domains/pallets/domain-registry/src/tests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "domain-tracker": {
+              "name": "domain-tracker",
+              "path": "subspace.git/domains/pallets/domain-tracker",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/pallets/domain-tracker/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "README.md": {
+                  "name": "README.md",
+                  "path": "subspace.git/domains/pallets/domain-tracker/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/pallets/domain-tracker/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/pallets/domain-tracker/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mock.rs": {
+                      "name": "mock.rs",
+                      "path": "subspace.git/domains/pallets/domain-tracker/src/mock.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tests.rs": {
+                      "name": "tests.rs",
+                      "path": "subspace.git/domains/pallets/domain-tracker/src/tests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "executive": {
+              "name": "executive",
+              "path": "subspace.git/domains/pallets/executive",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/pallets/executive/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/pallets/executive/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/pallets/executive/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "executor-registry": {
+              "name": "executor-registry",
+              "path": "subspace.git/domains/pallets/executor-registry",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/pallets/executor-registry/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/pallets/executor-registry/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/pallets/executor-registry/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tests.rs": {
+                      "name": "tests.rs",
+                      "path": "subspace.git/domains/pallets/executor-registry/src/tests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "messenger": {
+              "name": "messenger",
+              "path": "subspace.git/domains/pallets/messenger",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/pallets/messenger/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "README.md": {
+                  "name": "README.md",
+                  "path": "subspace.git/domains/pallets/messenger/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/pallets/messenger/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "fees.rs": {
+                      "name": "fees.rs",
+                      "path": "subspace.git/domains/pallets/messenger/src/fees.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/pallets/messenger/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "messages.rs": {
+                      "name": "messages.rs",
+                      "path": "subspace.git/domains/pallets/messenger/src/messages.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mock.rs": {
+                      "name": "mock.rs",
+                      "path": "subspace.git/domains/pallets/messenger/src/mock.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "relayer.rs": {
+                      "name": "relayer.rs",
+                      "path": "subspace.git/domains/pallets/messenger/src/relayer.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tests.rs": {
+                      "name": "tests.rs",
+                      "path": "subspace.git/domains/pallets/messenger/src/tests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "verification.rs": {
+                      "name": "verification.rs",
+                      "path": "subspace.git/domains/pallets/messenger/src/verification.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "transporter": {
+              "name": "transporter",
+              "path": "subspace.git/domains/pallets/transporter",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/pallets/transporter/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "README.md": {
+                  "name": "README.md",
+                  "path": "subspace.git/domains/pallets/transporter/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/pallets/transporter/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/pallets/transporter/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mock.rs": {
+                      "name": "mock.rs",
+                      "path": "subspace.git/domains/pallets/transporter/src/mock.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tests.rs": {
+                      "name": "tests.rs",
+                      "path": "subspace.git/domains/pallets/transporter/src/tests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "primitives": {
+          "name": "primitives",
+          "path": "subspace.git/domains/primitives",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "digests": {
+              "name": "digests",
+              "path": "subspace.git/domains/primitives/digests",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/primitives/digests/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/primitives/digests/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/primitives/digests/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "domain-tracker": {
+              "name": "domain-tracker",
+              "path": "subspace.git/domains/primitives/domain-tracker",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/primitives/domain-tracker/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/primitives/domain-tracker/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/primitives/domain-tracker/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "executor-registry": {
+              "name": "executor-registry",
+              "path": "subspace.git/domains/primitives/executor-registry",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/primitives/executor-registry/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/primitives/executor-registry/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/primitives/executor-registry/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "messenger": {
+              "name": "messenger",
+              "path": "subspace.git/domains/primitives/messenger",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/primitives/messenger/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/primitives/messenger/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "endpoint.rs": {
+                      "name": "endpoint.rs",
+                      "path": "subspace.git/domains/primitives/messenger/src/endpoint.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/primitives/messenger/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "messages.rs": {
+                      "name": "messages.rs",
+                      "path": "subspace.git/domains/primitives/messenger/src/messages.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "runtime": {
+              "name": "runtime",
+              "path": "subspace.git/domains/primitives/runtime",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/primitives/runtime/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/primitives/runtime/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/primitives/runtime/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "system-runtime": {
+              "name": "system-runtime",
+              "path": "subspace.git/domains/primitives/system-runtime",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/primitives/system-runtime/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/primitives/system-runtime/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/primitives/system-runtime/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "runtime": {
+          "name": "runtime",
+          "path": "subspace.git/domains/runtime",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "core-payments": {
+              "name": "core-payments",
+              "path": "subspace.git/domains/runtime/core-payments",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/runtime/core-payments/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "build.rs": {
+                  "name": "build.rs",
+                  "path": "subspace.git/domains/runtime/core-payments/build.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/runtime/core-payments/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/runtime/core-payments/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "runtime.rs": {
+                      "name": "runtime.rs",
+                      "path": "subspace.git/domains/runtime/core-payments/src/runtime.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "system": {
+              "name": "system",
+              "path": "subspace.git/domains/runtime/system",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/runtime/system/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "build.rs": {
+                  "name": "build.rs",
+                  "path": "subspace.git/domains/runtime/system/build.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/runtime/system/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/runtime/system/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "runtime.rs": {
+                      "name": "runtime.rs",
+                      "path": "subspace.git/domains/runtime/system/src/runtime.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "service": {
+          "name": "service",
+          "path": "subspace.git/domains/service",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/domains/service/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/domains/service/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build.rs": {
+              "name": "build.rs",
+              "path": "subspace.git/domains/service/build.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/domains/service/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "core_domain.rs": {
+                  "name": "core_domain.rs",
+                  "path": "subspace.git/domains/service/src/core_domain.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/domains/service/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rpc.rs": {
+                  "name": "rpc.rs",
+                  "path": "subspace.git/domains/service/src/rpc.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "system_domain.rs": {
+                  "name": "system_domain.rs",
+                  "path": "subspace.git/domains/service/src/system_domain.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "test": {
+          "name": "test",
+          "path": "subspace.git/domains/test",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "runtime": {
+              "name": "runtime",
+              "path": "subspace.git/domains/test/runtime",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/test/runtime/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "build.rs": {
+                  "name": "build.rs",
+                  "path": "subspace.git/domains/test/runtime/build.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/test/runtime/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/test/runtime/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "runtime.rs": {
+                      "name": "runtime.rs",
+                      "path": "subspace.git/domains/test/runtime/src/runtime.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "service": {
+              "name": "service",
+              "path": "subspace.git/domains/test/service",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Cargo.toml": {
+                  "name": "Cargo.toml",
+                  "path": "subspace.git/domains/test/service/Cargo.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "subspace.git/domains/test/service/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "chain_spec.rs": {
+                      "name": "chain_spec.rs",
+                      "path": "subspace.git/domains/test/service/src/chain_spec.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "lib.rs": {
+                      "name": "lib.rs",
+                      "path": "subspace.git/domains/test/service/src/lib.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "orml": {
+      "name": "orml",
+      "path": "subspace.git/orml",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "subspace.git/orml/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "vesting": {
+          "name": "vesting",
+          "path": "subspace.git/orml/vesting",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/orml/vesting/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "subspace.git/orml/vesting/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/orml/vesting/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "default_weight.rs": {
+                  "name": "default_weight.rs",
+                  "path": "subspace.git/orml/vesting/src/default_weight.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/orml/vesting/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mock.rs": {
+                  "name": "mock.rs",
+                  "path": "subspace.git/orml/vesting/src/mock.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests.rs": {
+                  "name": "tests.rs",
+                  "path": "subspace.git/orml/vesting/src/tests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "weights.rs": {
+                  "name": "weights.rs",
+                  "path": "subspace.git/orml/vesting/src/weights.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rust-toolchain.toml": {
+      "name": "rust-toolchain.toml",
+      "path": "subspace.git/rust-toolchain.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "rustfmt.toml": {
+      "name": "rustfmt.toml",
+      "path": "subspace.git/rustfmt.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "substrate": {
+      "name": "substrate",
+      "path": "subspace.git/substrate",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "subspace.git/substrate/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "sc-network-test": {
+          "name": "sc-network-test",
+          "path": "subspace.git/substrate/sc-network-test",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/substrate/sc-network-test/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/substrate/sc-network-test/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "block_import.rs": {
+                  "name": "block_import.rs",
+                  "path": "subspace.git/substrate/sc-network-test/src/block_import.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/substrate/sc-network-test/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync.rs": {
+                  "name": "sync.rs",
+                  "path": "subspace.git/substrate/sc-network-test/src/sync.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "substrate-test-runtime": {
+          "name": "substrate-test-runtime",
+          "path": "subspace.git/substrate/substrate-test-runtime",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/substrate/substrate-test-runtime/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build.rs": {
+              "name": "build.rs",
+              "path": "subspace.git/substrate/substrate-test-runtime/build.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/substrate/substrate-test-runtime/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "genesismap.rs": {
+                  "name": "genesismap.rs",
+                  "path": "subspace.git/substrate/substrate-test-runtime/src/genesismap.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/substrate/substrate-test-runtime/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "system.rs": {
+                  "name": "system.rs",
+                  "path": "subspace.git/substrate/substrate-test-runtime/src/system.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "substrate-test-runtime-client": {
+          "name": "substrate-test-runtime-client",
+          "path": "subspace.git/substrate/substrate-test-runtime-client",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/substrate/substrate-test-runtime-client/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/substrate/substrate-test-runtime-client/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "block_builder_ext.rs": {
+                  "name": "block_builder_ext.rs",
+                  "path": "subspace.git/substrate/substrate-test-runtime-client/src/block_builder_ext.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/substrate/substrate-test-runtime-client/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "trait_tests.rs": {
+                  "name": "trait_tests.rs",
+                  "path": "subspace.git/substrate/substrate-test-runtime-client/src/trait_tests.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "substrate-test-runtime-transaction-pool": {
+          "name": "substrate-test-runtime-transaction-pool",
+          "path": "subspace.git/substrate/substrate-test-runtime-transaction-pool",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/substrate/substrate-test-runtime-transaction-pool/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/substrate/substrate-test-runtime-transaction-pool/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/substrate/substrate-test-runtime-transaction-pool/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "test": {
+      "name": "test",
+      "path": "subspace.git/test",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "subspace-test-client": {
+          "name": "subspace-test-client",
+          "path": "subspace.git/test/subspace-test-client",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/test/subspace-test-client/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/test/subspace-test-client/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "chain_spec.rs": {
+                  "name": "chain_spec.rs",
+                  "path": "subspace.git/test/subspace-test-client/src/chain_spec.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/test/subspace-test-client/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-test-runtime": {
+          "name": "subspace-test-runtime",
+          "path": "subspace.git/test/subspace-test-runtime",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/test/subspace-test-runtime/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build.rs": {
+              "name": "build.rs",
+              "path": "subspace.git/test/subspace-test-runtime/build.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/test/subspace-test-runtime/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/test/subspace-test-runtime/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "subspace-test-service": {
+          "name": "subspace-test-service",
+          "path": "subspace.git/test/subspace-test-service",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "subspace.git/test/subspace-test-service/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "subspace.git/test/subspace-test-service/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "subspace.git/test/subspace-test-service/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 398849559,
+    "name": "subspace",
+    "full_name": "subspace/subspace",
+    "owner": {
+      "login": "subspace",
+      "html_url": "https://github.com/subspace",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/subspace/subspace",
+    "description": "Subspace Network reference implementation",
+    "url": "https://api.github.com/repos/subspace/subspace",
+    "clone_url": "https://github.com/subspace/subspace.git",
+    "homepage": "https://subspace.network",
+    "size": 107157,
+    "stargazers_count": 183,
+    "watchers_count": 183,
+    "language": "Rust"
+  }
+}

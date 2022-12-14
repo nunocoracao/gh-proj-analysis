@@ -1,0 +1,4165 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 1,
+      "subFolderCount": 0,
+      "filepaths": [
+        "mayastor.git/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "mayastor.git/test/python/cross-grpc-version/nexus/docker-compose.yml",
+        "mayastor.git/test/python/cross-grpc-version/pool/docker-compose.yml",
+        "mayastor.git/test/python/cross-grpc-version/rebuild/docker-compose.yml",
+        "mayastor.git/test/python/cross-grpc-version/replica/docker-compose.yml",
+        "mayastor.git/test/python/pool/docker-compose.yml",
+        "mayastor.git/test/python/tests/ana_client/docker-compose.yml",
+        "mayastor.git/test/python/tests/cli_controller/docker-compose.yml",
+        "mayastor.git/test/python/tests/nexus/docker-compose.yml",
+        "mayastor.git/test/python/tests/nexus_multipath/docker-compose.yml",
+        "mayastor.git/test/python/tests/publish/docker-compose.yml",
+        "mayastor.git/test/python/tests/rebuild/docker-compose.yml",
+        "mayastor.git/test/python/tests/replica/docker-compose.yml",
+        "mayastor.git/test/python/tests/replica_uuid/docker-compose.yml",
+        "mayastor.git/test/python/tests/rpc/docker-compose.yml",
+        "mayastor.git/test/python/v1/nexus/docker-compose.yml",
+        "mayastor.git/test/python/v1/pool/docker-compose.yml",
+        "mayastor.git/test/python/v1/rebuild/docker-compose.yml",
+        "mayastor.git/test/python/v1/replica/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".cargo": {
+      "name": ".cargo",
+      "path": "mayastor.git/.cargo",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "config": {
+          "name": "config",
+          "path": "mayastor.git/.cargo/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "mayastor.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "mayastor.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "mayastor.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "mayastor.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "mayastor.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "mayastor.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "mayastor.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "mayastor.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "mayastor.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "mayastor.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "mayastor.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "mayastor.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "mayastor.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "mayastor.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "mayastor.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "mayastor.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "mayastor.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "mayastor.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "mayastor.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "mayastor.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "mayastor.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "mayastor.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "mayastor.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "mayastor.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "mayastor.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "mayastor.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "develop": {
+                      "name": "develop",
+                      "path": "mayastor.git/.git/logs/refs/heads/develop",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "mayastor.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "mayastor.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "mayastor.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "mayastor.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "mayastor.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "mayastor.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-0f993a5b49a160060b864a6372455fe10ea38a13.idx": {
+                  "name": "pack-0f993a5b49a160060b864a6372455fe10ea38a13.idx",
+                  "path": "mayastor.git/.git/objects/pack/pack-0f993a5b49a160060b864a6372455fe10ea38a13.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-0f993a5b49a160060b864a6372455fe10ea38a13.pack": {
+                  "name": "pack-0f993a5b49a160060b864a6372455fe10ea38a13.pack",
+                  "path": "mayastor.git/.git/objects/pack/pack-0f993a5b49a160060b864a6372455fe10ea38a13.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "mayastor.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "mayastor.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "mayastor.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "develop": {
+                  "name": "develop",
+                  "path": "mayastor.git/.git/refs/heads/develop",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "mayastor.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "mayastor.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "mayastor.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "mayastor.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "mayastor.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "mayastor.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "mayastor.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug_report.md": {
+              "name": "bug_report.md",
+              "path": "mayastor.git/.github/ISSUE_TEMPLATE/bug_report.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "documentation.md": {
+              "name": "documentation.md",
+              "path": "mayastor.git/.github/ISSUE_TEMPLATE/documentation.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature_request.md": {
+              "name": "feature_request.md",
+              "path": "mayastor.git/.github/ISSUE_TEMPLATE/feature_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "auto_assign.yml": {
+          "name": "auto_assign.yml",
+          "path": "mayastor.git/.github/auto_assign.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "mayastor.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "pr-commitlint.yml": {
+              "name": "pr-commitlint.yml",
+              "path": "mayastor.git/.github/workflows/pr-commitlint.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "mayastor.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".gitmodules": {
+      "name": ".gitmodules",
+      "path": "mayastor.git/.gitmodules",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".pre-commit-config.yaml": {
+      "name": ".pre-commit-config.yaml",
+      "path": "mayastor.git/.pre-commit-config.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".rustfmt.toml": {
+      "name": ".rustfmt.toml",
+      "path": "mayastor.git/.rustfmt.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CODE_OF_CONDUCT.md": {
+      "name": "CODE_OF_CONDUCT.md",
+      "path": "mayastor.git/CODE_OF_CONDUCT.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "mayastor.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Cargo.lock": {
+      "name": "Cargo.lock",
+      "path": "mayastor.git/Cargo.lock",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Cargo.toml": {
+      "name": "Cargo.toml",
+      "path": "mayastor.git/Cargo.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "mayastor.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Jenkinsfile": {
+      "name": "Jenkinsfile",
+      "path": "mayastor.git/Jenkinsfile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "mayastor.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "mayastor.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "bors.toml": {
+      "name": "bors.toml",
+      "path": "mayastor.git/bors.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "ci.nix": {
+      "name": "ci.nix",
+      "path": "mayastor.git/ci.nix",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "commitlint.config.js": {
+      "name": "commitlint.config.js",
+      "path": "mayastor.git/commitlint.config.js",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "default.nix": {
+      "name": "default.nix",
+      "path": "mayastor.git/default.nix",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "doc": {
+      "name": "doc",
+      "path": "mayastor.git/doc",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "FAQ.md": {
+          "name": "FAQ.md",
+          "path": "mayastor.git/doc/FAQ.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build.md": {
+          "name": "build.md",
+          "path": "mayastor.git/doc/build.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "csi.md": {
+          "name": "csi.md",
+          "path": "mayastor.git/doc/csi.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "errors.md": {
+          "name": "errors.md",
+          "path": "mayastor.git/doc/errors.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "etc": {
+          "name": "etc",
+          "path": "mayastor.git/doc/etc",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.adoc": {
+              "name": "README.adoc",
+              "path": "mayastor.git/doc/etc/README.adoc",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus.conf": {
+              "name": "nexus.conf",
+              "path": "mayastor.git/doc/etc/nexus.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "target.conf": {
+              "name": "target.conf",
+              "path": "mayastor.git/doc/etc/target.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "mayastor-client.md": {
+          "name": "mayastor-client.md",
+          "path": "mayastor.git/doc/mayastor-client.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "microk8s.md": {
+          "name": "microk8s.md",
+          "path": "mayastor.git/doc/microk8s.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "run.md": {
+          "name": "run.md",
+          "path": "mayastor.git/doc/run.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test.md": {
+          "name": "test.md",
+          "path": "mayastor.git/doc/test.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "io-engine": {
+      "name": "io-engine",
+      "path": "mayastor.git/io-engine",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".cargo": {
+          "name": ".cargo",
+          "path": "mayastor.git/io-engine/.cargo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config": {
+              "name": "config",
+              "path": "mayastor.git/io-engine/.cargo/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "runner.sh": {
+              "name": "runner.sh",
+              "path": "mayastor.git/io-engine/.cargo/runner.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "mayastor.git/io-engine/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "mayastor.git/io-engine/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build.rs": {
+          "name": "build.rs",
+          "path": "mayastor.git/io-engine/build.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "gpt_primary_test_data.bin": {
+          "name": "gpt_primary_test_data.bin",
+          "path": "mayastor.git/io-engine/gpt_primary_test_data.bin",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "gpt_secondary_test_data.bin": {
+          "name": "gpt_secondary_test_data.bin",
+          "path": "mayastor.git/io-engine/gpt_secondary_test_data.bin",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "mayastor.git/io-engine/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bdev": {
+              "name": "bdev",
+              "path": "mayastor.git/io-engine/src/bdev",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "aio.rs": {
+                  "name": "aio.rs",
+                  "path": "mayastor.git/io-engine/src/bdev/aio.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dev.rs": {
+                  "name": "dev.rs",
+                  "path": "mayastor.git/io-engine/src/bdev/dev.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "device.rs": {
+                  "name": "device.rs",
+                  "path": "mayastor.git/io-engine/src/bdev/device.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "loopback.rs": {
+                  "name": "loopback.rs",
+                  "path": "mayastor.git/io-engine/src/bdev/loopback.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "malloc.rs": {
+                  "name": "malloc.rs",
+                  "path": "mayastor.git/io-engine/src/bdev/malloc.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "mayastor.git/io-engine/src/bdev/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nexus": {
+                  "name": "nexus",
+                  "path": "mayastor.git/io-engine/src/bdev/nexus",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_bdev.rs": {
+                      "name": "nexus_bdev.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_bdev.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_bdev_children.rs": {
+                      "name": "nexus_bdev_children.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_bdev_children.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_bdev_error.rs": {
+                      "name": "nexus_bdev_error.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_bdev_error.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_bdev_rebuild.rs": {
+                      "name": "nexus_bdev_rebuild.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_bdev_rebuild.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_bdev_snapshot.rs": {
+                      "name": "nexus_bdev_snapshot.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_bdev_snapshot.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_channel.rs": {
+                      "name": "nexus_channel.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_channel.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_child.rs": {
+                      "name": "nexus_child.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_child.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_injection.rs": {
+                      "name": "nexus_injection.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_injection.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_io.rs": {
+                      "name": "nexus_io.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_io.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_io_subsystem.rs": {
+                      "name": "nexus_io_subsystem.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_io_subsystem.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_iter.rs": {
+                      "name": "nexus_iter.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_iter.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_module.rs": {
+                      "name": "nexus_module.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_module.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_nbd.rs": {
+                      "name": "nexus_nbd.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_nbd.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_persistence.rs": {
+                      "name": "nexus_persistence.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_persistence.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_share.rs": {
+                      "name": "nexus_share.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nexus/nexus_share.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "null_bdev.rs": {
+                  "name": "null_bdev.rs",
+                  "path": "mayastor.git/io-engine/src/bdev/null_bdev.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "null_ng.rs": {
+                  "name": "null_ng.rs",
+                  "path": "mayastor.git/io-engine/src/bdev/null_ng.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nvme.rs": {
+                  "name": "nvme.rs",
+                  "path": "mayastor.git/io-engine/src/bdev/nvme.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nvmf.rs": {
+                  "name": "nvmf.rs",
+                  "path": "mayastor.git/io-engine/src/bdev/nvmf.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nvmx": {
+                  "name": "nvmx",
+                  "path": "mayastor.git/io-engine/src/bdev/nvmx",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "channel.rs": {
+                      "name": "channel.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nvmx/channel.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "controller.rs": {
+                      "name": "controller.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nvmx/controller.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "controller_inner.rs": {
+                      "name": "controller_inner.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nvmx/controller_inner.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "controller_state.rs": {
+                      "name": "controller_state.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nvmx/controller_state.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "device.rs": {
+                      "name": "device.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nvmx/device.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "handle.rs": {
+                      "name": "handle.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nvmx/handle.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nvmx/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "namespace.rs": {
+                      "name": "namespace.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nvmx/namespace.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "uri.rs": {
+                      "name": "uri.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nvmx/uri.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils.rs": {
+                      "name": "utils.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/nvmx/utils.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "uring.rs": {
+                  "name": "uring.rs",
+                  "path": "mayastor.git/io-engine/src/bdev/uring.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "util": {
+                  "name": "util",
+                  "path": "mayastor.git/io-engine/src/bdev/util",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/util/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "uri.rs": {
+                      "name": "uri.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/util/uri.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "uring.rs": {
+                      "name": "uring.rs",
+                      "path": "mayastor.git/io-engine/src/bdev/util/uring.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "bdev_api.rs": {
+              "name": "bdev_api.rs",
+              "path": "mayastor.git/io-engine/src/bdev_api.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "bin": {
+              "name": "bin",
+              "path": "mayastor.git/io-engine/src/bin",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "casperf.rs": {
+                  "name": "casperf.rs",
+                  "path": "mayastor.git/io-engine/src/bin/casperf.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "initiator.rs": {
+                  "name": "initiator.rs",
+                  "path": "mayastor.git/io-engine/src/bin/initiator.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "io-engine-client": {
+                  "name": "io-engine-client",
+                  "path": "mayastor.git/io-engine/src/bin/io-engine-client",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "bdev_cli.rs": {
+                      "name": "bdev_cli.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/bdev_cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "context.rs": {
+                      "name": "context.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/context.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "controller_cli.rs": {
+                      "name": "controller_cli.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/controller_cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "device_cli.rs": {
+                      "name": "device_cli.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/device_cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "jsonrpc_cli.rs": {
+                      "name": "jsonrpc_cli.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/jsonrpc_cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "main.rs": {
+                      "name": "main.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/main.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_child_cli.rs": {
+                      "name": "nexus_child_cli.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/nexus_child_cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_cli.rs": {
+                      "name": "nexus_cli.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/nexus_cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "perf_cli.rs": {
+                      "name": "perf_cli.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/perf_cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "pool_cli.rs": {
+                      "name": "pool_cli.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/pool_cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "rebuild_cli.rs": {
+                      "name": "rebuild_cli.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/rebuild_cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "replica_cli.rs": {
+                      "name": "replica_cli.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/replica_cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "snapshot_cli.rs": {
+                      "name": "snapshot_cli.rs",
+                      "path": "mayastor.git/io-engine/src/bin/io-engine-client/snapshot_cli.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "io-engine.rs": {
+                  "name": "io-engine.rs",
+                  "path": "mayastor.git/io-engine/src/bin/io-engine.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "jsonrpc.rs": {
+                  "name": "jsonrpc.rs",
+                  "path": "mayastor.git/io-engine/src/bin/jsonrpc.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nvmet.rs": {
+                  "name": "nvmet.rs",
+                  "path": "mayastor.git/io-engine/src/bin/nvmet.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "spdk.rs": {
+                  "name": "spdk.rs",
+                  "path": "mayastor.git/io-engine/src/bin/spdk.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "uring-support.rs": {
+                  "name": "uring-support.rs",
+                  "path": "mayastor.git/io-engine/src/bin/uring-support.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "constants.rs": {
+              "name": "constants.rs",
+              "path": "mayastor.git/io-engine/src/constants.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "core": {
+              "name": "core",
+              "path": "mayastor.git/io-engine/src/core",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "bdev.rs": {
+                  "name": "bdev.rs",
+                  "path": "mayastor.git/io-engine/src/core/bdev.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "block_device.rs": {
+                  "name": "block_device.rs",
+                  "path": "mayastor.git/io-engine/src/core/block_device.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "descriptor.rs": {
+                  "name": "descriptor.rs",
+                  "path": "mayastor.git/io-engine/src/core/descriptor.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "device_events.rs": {
+                  "name": "device_events.rs",
+                  "path": "mayastor.git/io-engine/src/core/device_events.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "device_monitor.rs": {
+                  "name": "device_monitor.rs",
+                  "path": "mayastor.git/io-engine/src/core/device_monitor.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "diagnostics.rs": {
+                  "name": "diagnostics.rs",
+                  "path": "mayastor.git/io-engine/src/core/diagnostics.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "env.rs": {
+                  "name": "env.rs",
+                  "path": "mayastor.git/io-engine/src/core/env.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "handle.rs": {
+                  "name": "handle.rs",
+                  "path": "mayastor.git/io-engine/src/core/handle.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "io_device.rs": {
+                  "name": "io_device.rs",
+                  "path": "mayastor.git/io-engine/src/core/io_device.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "io_driver.rs": {
+                  "name": "io_driver.rs",
+                  "path": "mayastor.git/io-engine/src/core/io_driver.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lock.rs": {
+                  "name": "lock.rs",
+                  "path": "mayastor.git/io-engine/src/core/lock.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mempool.rs": {
+                  "name": "mempool.rs",
+                  "path": "mayastor.git/io-engine/src/core/mempool.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "mayastor.git/io-engine/src/core/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nic.rs": {
+                  "name": "nic.rs",
+                  "path": "mayastor.git/io-engine/src/core/nic.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "partition.rs": {
+                  "name": "partition.rs",
+                  "path": "mayastor.git/io-engine/src/core/partition.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "reactor.rs": {
+                  "name": "reactor.rs",
+                  "path": "mayastor.git/io-engine/src/core/reactor.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "runtime.rs": {
+                  "name": "runtime.rs",
+                  "path": "mayastor.git/io-engine/src/core/runtime.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "share.rs": {
+                  "name": "share.rs",
+                  "path": "mayastor.git/io-engine/src/core/share.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "thread.rs": {
+                  "name": "thread.rs",
+                  "path": "mayastor.git/io-engine/src/core/thread.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "work_queue.rs": {
+                  "name": "work_queue.rs",
+                  "path": "mayastor.git/io-engine/src/core/work_queue.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "delay.rs": {
+              "name": "delay.rs",
+              "path": "mayastor.git/io-engine/src/delay.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grpc": {
+              "name": "grpc",
+              "path": "mayastor.git/io-engine/src/grpc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "controller_grpc.rs": {
+                  "name": "controller_grpc.rs",
+                  "path": "mayastor.git/io-engine/src/grpc/controller_grpc.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "mayastor.git/io-engine/src/grpc/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "server.rs": {
+                  "name": "server.rs",
+                  "path": "mayastor.git/io-engine/src/grpc/server.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "v0": {
+                  "name": "v0",
+                  "path": "mayastor.git/io-engine/src/grpc/v0",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "bdev_grpc.rs": {
+                      "name": "bdev_grpc.rs",
+                      "path": "mayastor.git/io-engine/src/grpc/v0/bdev_grpc.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "json_grpc.rs": {
+                      "name": "json_grpc.rs",
+                      "path": "mayastor.git/io-engine/src/grpc/v0/json_grpc.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mayastor_grpc.rs": {
+                      "name": "mayastor_grpc.rs",
+                      "path": "mayastor.git/io-engine/src/grpc/v0/mayastor_grpc.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus_grpc.rs": {
+                      "name": "nexus_grpc.rs",
+                      "path": "mayastor.git/io-engine/src/grpc/v0/nexus_grpc.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "v1": {
+                  "name": "v1",
+                  "path": "mayastor.git/io-engine/src/grpc/v1",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "bdev.rs": {
+                      "name": "bdev.rs",
+                      "path": "mayastor.git/io-engine/src/grpc/v1/bdev.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "host.rs": {
+                      "name": "host.rs",
+                      "path": "mayastor.git/io-engine/src/grpc/v1/host.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "json.rs": {
+                      "name": "json.rs",
+                      "path": "mayastor.git/io-engine/src/grpc/v1/json.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "nexus.rs": {
+                      "name": "nexus.rs",
+                      "path": "mayastor.git/io-engine/src/grpc/v1/nexus.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "pool.rs": {
+                      "name": "pool.rs",
+                      "path": "mayastor.git/io-engine/src/grpc/v1/pool.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "replica.rs": {
+                      "name": "replica.rs",
+                      "path": "mayastor.git/io-engine/src/grpc/v1/replica.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "host": {
+              "name": "host",
+              "path": "mayastor.git/io-engine/src/host",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "blk_device.rs": {
+                  "name": "blk_device.rs",
+                  "path": "mayastor.git/io-engine/src/host/blk_device.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "mayastor.git/io-engine/src/host/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "resource.rs": {
+                  "name": "resource.rs",
+                  "path": "mayastor.git/io-engine/src/host/resource.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "jsonrpc.rs": {
+              "name": "jsonrpc.rs",
+              "path": "mayastor.git/io-engine/src/jsonrpc.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lib.rs": {
+              "name": "lib.rs",
+              "path": "mayastor.git/io-engine/src/lib.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logger.rs": {
+              "name": "logger.rs",
+              "path": "mayastor.git/io-engine/src/logger.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lvs": {
+              "name": "lvs",
+              "path": "mayastor.git/io-engine/src/lvs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lvs_bdev.rs": {
+                  "name": "lvs_bdev.rs",
+                  "path": "mayastor.git/io-engine/src/lvs/lvs_bdev.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lvs_error.rs": {
+                  "name": "lvs_error.rs",
+                  "path": "mayastor.git/io-engine/src/lvs/lvs_error.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lvs_iter.rs": {
+                  "name": "lvs_iter.rs",
+                  "path": "mayastor.git/io-engine/src/lvs/lvs_iter.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lvs_lvol.rs": {
+                  "name": "lvs_lvol.rs",
+                  "path": "mayastor.git/io-engine/src/lvs/lvs_lvol.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lvs_store.rs": {
+                  "name": "lvs_store.rs",
+                  "path": "mayastor.git/io-engine/src/lvs/lvs_store.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "mayastor.git/io-engine/src/lvs/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "persistent_store.rs": {
+              "name": "persistent_store.rs",
+              "path": "mayastor.git/io-engine/src/persistent_store.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pool_backend.rs": {
+              "name": "pool_backend.rs",
+              "path": "mayastor.git/io-engine/src/pool_backend.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rebuild": {
+              "name": "rebuild",
+              "path": "mayastor.git/io-engine/src/rebuild",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "mayastor.git/io-engine/src/rebuild/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rebuild_error.rs": {
+                  "name": "rebuild_error.rs",
+                  "path": "mayastor.git/io-engine/src/rebuild/rebuild_error.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rebuild_job.rs": {
+                  "name": "rebuild_job.rs",
+                  "path": "mayastor.git/io-engine/src/rebuild/rebuild_job.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rebuild_state.rs": {
+                  "name": "rebuild_state.rs",
+                  "path": "mayastor.git/io-engine/src/rebuild/rebuild_state.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rebuild_task.rs": {
+                  "name": "rebuild_task.rs",
+                  "path": "mayastor.git/io-engine/src/rebuild/rebuild_task.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "sleep.rs": {
+              "name": "sleep.rs",
+              "path": "mayastor.git/io-engine/src/sleep.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "store": {
+              "name": "store",
+              "path": "mayastor.git/io-engine/src/store",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "etcd.rs": {
+                  "name": "etcd.rs",
+                  "path": "mayastor.git/io-engine/src/store/etcd.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "mayastor.git/io-engine/src/store/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "store_defs.rs": {
+                  "name": "store_defs.rs",
+                  "path": "mayastor.git/io-engine/src/store/store_defs.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "subsys": {
+              "name": "subsys",
+              "path": "mayastor.git/io-engine/src/subsys",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config": {
+                  "name": "config",
+                  "path": "mayastor.git/io-engine/src/subsys/config",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "mayastor.git/io-engine/src/subsys/config/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "opts.rs": {
+                      "name": "opts.rs",
+                      "path": "mayastor.git/io-engine/src/subsys/config/opts.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "pool.rs": {
+                      "name": "pool.rs",
+                      "path": "mayastor.git/io-engine/src/subsys/config/pool.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "mayastor.git/io-engine/src/subsys/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nvmf": {
+                  "name": "nvmf",
+                  "path": "mayastor.git/io-engine/src/subsys/nvmf",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "admin_cmd.rs": {
+                      "name": "admin_cmd.rs",
+                      "path": "mayastor.git/io-engine/src/subsys/nvmf/admin_cmd.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "mayastor.git/io-engine/src/subsys/nvmf/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "poll_groups.rs": {
+                      "name": "poll_groups.rs",
+                      "path": "mayastor.git/io-engine/src/subsys/nvmf/poll_groups.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "subsystem.rs": {
+                      "name": "subsystem.rs",
+                      "path": "mayastor.git/io-engine/src/subsys/nvmf/subsystem.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "target.rs": {
+                      "name": "target.rs",
+                      "path": "mayastor.git/io-engine/src/subsys/nvmf/target.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "transport.rs": {
+                      "name": "transport.rs",
+                      "path": "mayastor.git/io-engine/src/subsys/nvmf/transport.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "registration": {
+                  "name": "registration",
+                  "path": "mayastor.git/io-engine/src/subsys/registration",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "mayastor.git/io-engine/src/subsys/registration/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "registration_grpc.rs": {
+                      "name": "registration_grpc.rs",
+                      "path": "mayastor.git/io-engine/src/subsys/registration/registration_grpc.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "target": {
+              "name": "target",
+              "path": "mayastor.git/io-engine/src/target",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "mayastor.git/io-engine/src/target/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nvmf.rs": {
+                  "name": "nvmf.rs",
+                  "path": "mayastor.git/io-engine/src/target/nvmf.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "tests": {
+          "name": "tests",
+          "path": "mayastor.git/io-engine/tests",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "add_child.rs": {
+              "name": "add_child.rs",
+              "path": "mayastor.git/io-engine/tests/add_child.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "block_device_nvmf.rs": {
+              "name": "block_device_nvmf.rs",
+              "path": "mayastor.git/io-engine/tests/block_device_nvmf.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "child_size.rs": {
+              "name": "child_size.rs",
+              "path": "mayastor.git/io-engine/tests/child_size.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "common.rs": {
+              "name": "common.rs",
+              "path": "mayastor.git/io-engine/tests/common.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "core.rs": {
+              "name": "core.rs",
+              "path": "mayastor.git/io-engine/tests/core.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fault_child.rs": {
+              "name": "fault_child.rs",
+              "path": "mayastor.git/io-engine/tests/fault_child.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "io.rs": {
+              "name": "io.rs",
+              "path": "mayastor.git/io-engine/tests/io.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lock.rs": {
+              "name": "lock.rs",
+              "path": "mayastor.git/io-engine/tests/lock.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lock_lba_range.rs": {
+              "name": "lock_lba_range.rs",
+              "path": "mayastor.git/io-engine/tests/lock_lba_range.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lvs_pool.rs": {
+              "name": "lvs_pool.rs",
+              "path": "mayastor.git/io-engine/tests/lvs_pool.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "malloc_bdev.rs": {
+              "name": "malloc_bdev.rs",
+              "path": "mayastor.git/io-engine/tests/malloc_bdev.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mayastor_compose_basic.rs": {
+              "name": "mayastor_compose_basic.rs",
+              "path": "mayastor.git/io-engine/tests/mayastor_compose_basic.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "memory_pool.rs": {
+              "name": "memory_pool.rs",
+              "path": "mayastor.git/io-engine/tests/memory_pool.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mount_fs.rs": {
+              "name": "mount_fs.rs",
+              "path": "mayastor.git/io-engine/tests/mount_fs.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus_add_remove.rs": {
+              "name": "nexus_add_remove.rs",
+              "path": "mayastor.git/io-engine/tests/nexus_add_remove.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus_child_location.rs": {
+              "name": "nexus_child_location.rs",
+              "path": "mayastor.git/io-engine/tests/nexus_child_location.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus_children_add_remove.rs": {
+              "name": "nexus_children_add_remove.rs",
+              "path": "mayastor.git/io-engine/tests/nexus_children_add_remove.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus_create_destroy.rs": {
+              "name": "nexus_create_destroy.rs",
+              "path": "mayastor.git/io-engine/tests/nexus_create_destroy.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus_io.rs": {
+              "name": "nexus_io.rs",
+              "path": "mayastor.git/io-engine/tests/nexus_io.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus_rebuild.rs": {
+              "name": "nexus_rebuild.rs",
+              "path": "mayastor.git/io-engine/tests/nexus_rebuild.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus_share.rs": {
+              "name": "nexus_share.rs",
+              "path": "mayastor.git/io-engine/tests/nexus_share.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus_thin.rs": {
+              "name": "nexus_thin.rs",
+              "path": "mayastor.git/io-engine/tests/nexus_thin.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus_thin_no_space.rs": {
+              "name": "nexus_thin_no_space.rs",
+              "path": "mayastor.git/io-engine/tests/nexus_thin_no_space.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus_thin_rebuild.rs": {
+              "name": "nexus_thin_rebuild.rs",
+              "path": "mayastor.git/io-engine/tests/nexus_thin_rebuild.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus_with_local.rs": {
+              "name": "nexus_with_local.rs",
+              "path": "mayastor.git/io-engine/tests/nexus_with_local.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nvme_device_timeout.rs": {
+              "name": "nvme_device_timeout.rs",
+              "path": "mayastor.git/io-engine/tests/nvme_device_timeout.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nvmf.rs": {
+              "name": "nvmf.rs",
+              "path": "mayastor.git/io-engine/tests/nvmf.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "persistence.rs": {
+              "name": "persistence.rs",
+              "path": "mayastor.git/io-engine/tests/persistence.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "poller.rs": {
+              "name": "poller.rs",
+              "path": "mayastor.git/io-engine/tests/poller.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "reactor.rs": {
+              "name": "reactor.rs",
+              "path": "mayastor.git/io-engine/tests/reactor.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "reactor_block_on.rs": {
+              "name": "reactor_block_on.rs",
+              "path": "mayastor.git/io-engine/tests/reactor_block_on.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "replica_snapshot.rs": {
+              "name": "replica_snapshot.rs",
+              "path": "mayastor.git/io-engine/tests/replica_snapshot.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "replica_thin.rs": {
+              "name": "replica_thin.rs",
+              "path": "mayastor.git/io-engine/tests/replica_thin.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "replica_timeout.rs": {
+              "name": "replica_timeout.rs",
+              "path": "mayastor.git/io-engine/tests/replica_timeout.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "replica_uri.rs": {
+              "name": "replica_uri.rs",
+              "path": "mayastor.git/io-engine/tests/replica_uri.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "reset.rs": {
+              "name": "reset.rs",
+              "path": "mayastor.git/io-engine/tests/reset.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "thread.rs": {
+              "name": "thread.rs",
+              "path": "mayastor.git/io-engine/tests/thread.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "io-engine-bench": {
+      "name": "io-engine-bench",
+      "path": "mayastor.git/io-engine-bench",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".cargo": {
+          "name": ".cargo",
+          "path": "mayastor.git/io-engine-bench/.cargo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config": {
+              "name": "config",
+              "path": "mayastor.git/io-engine-bench/.cargo/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "runner.sh": {
+              "name": "runner.sh",
+              "path": "mayastor.git/io-engine-bench/.cargo/runner.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "mayastor.git/io-engine-bench/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "mayastor.git/io-engine-bench/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build.rs": {
+          "name": "build.rs",
+          "path": "mayastor.git/io-engine-bench/build.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "mayastor.git/io-engine-bench/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "common.rs": {
+              "name": "common.rs",
+              "path": "mayastor.git/io-engine-bench/src/common.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lib.rs": {
+              "name": "lib.rs",
+              "path": "mayastor.git/io-engine-bench/src/lib.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus.rs": {
+              "name": "nexus.rs",
+              "path": "mayastor.git/io-engine-bench/src/nexus.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "io-engine-tests": {
+      "name": "io-engine-tests",
+      "path": "mayastor.git/io-engine-tests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "mayastor.git/io-engine-tests/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "mayastor.git/io-engine-tests/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bdev.rs": {
+              "name": "bdev.rs",
+              "path": "mayastor.git/io-engine-tests/src/bdev.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "bdev_io.rs": {
+              "name": "bdev_io.rs",
+              "path": "mayastor.git/io-engine-tests/src/bdev_io.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cli_tools.rs": {
+              "name": "cli_tools.rs",
+              "path": "mayastor.git/io-engine-tests/src/cli_tools.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose": {
+              "name": "compose",
+              "path": "mayastor.git/io-engine-tests/src/compose",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "mayastor.git/io-engine-tests/src/compose/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rpc": {
+                  "name": "rpc",
+                  "path": "mayastor.git/io-engine-tests/src/compose/rpc",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "mayastor.git/io-engine-tests/src/compose/rpc/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "v0.rs": {
+                      "name": "v0.rs",
+                      "path": "mayastor.git/io-engine-tests/src/compose/rpc/v0.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "v1.rs": {
+                      "name": "v1.rs",
+                      "path": "mayastor.git/io-engine-tests/src/compose/rpc/v1.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "error_bdev.rs": {
+              "name": "error_bdev.rs",
+              "path": "mayastor.git/io-engine-tests/src/error_bdev.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "file_io.rs": {
+              "name": "file_io.rs",
+              "path": "mayastor.git/io-engine-tests/src/file_io.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lib.rs": {
+              "name": "lib.rs",
+              "path": "mayastor.git/io-engine-tests/src/lib.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nexus.rs": {
+              "name": "nexus.rs",
+              "path": "mayastor.git/io-engine-tests/src/nexus.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nvme.rs": {
+              "name": "nvme.rs",
+              "path": "mayastor.git/io-engine-tests/src/nvme.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nvmf.rs": {
+              "name": "nvmf.rs",
+              "path": "mayastor.git/io-engine-tests/src/nvmf.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pool.rs": {
+              "name": "pool.rs",
+              "path": "mayastor.git/io-engine-tests/src/pool.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "replica.rs": {
+              "name": "replica.rs",
+              "path": "mayastor.git/io-engine-tests/src/replica.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "jsonrpc": {
+      "name": "jsonrpc",
+      "path": "mayastor.git/jsonrpc",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "mayastor.git/jsonrpc/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "mayastor.git/jsonrpc/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "mayastor.git/jsonrpc/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "error.rs": {
+              "name": "error.rs",
+              "path": "mayastor.git/jsonrpc/src/error.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lib.rs": {
+              "name": "lib.rs",
+              "path": "mayastor.git/jsonrpc/src/lib.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.rs": {
+              "name": "test.rs",
+              "path": "mayastor.git/jsonrpc/src/test.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "libnvme-rs": {
+      "name": "libnvme-rs",
+      "path": "mayastor.git/libnvme-rs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "mayastor.git/libnvme-rs/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build.rs": {
+          "name": "build.rs",
+          "path": "mayastor.git/libnvme-rs/build.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "mayastor.git/libnvme-rs/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "error.rs": {
+              "name": "error.rs",
+              "path": "mayastor.git/libnvme-rs/src/error.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lib.rs": {
+              "name": "lib.rs",
+              "path": "mayastor.git/libnvme-rs/src/lib.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nvme_device.rs": {
+              "name": "nvme_device.rs",
+              "path": "mayastor.git/libnvme-rs/src/nvme_device.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nvme_tree.rs": {
+              "name": "nvme_tree.rs",
+              "path": "mayastor.git/libnvme-rs/src/nvme_tree.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nvme_uri.rs": {
+              "name": "nvme_uri.rs",
+              "path": "mayastor.git/libnvme-rs/src/nvme_uri.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "wrapper.h": {
+          "name": "wrapper.h",
+          "path": "mayastor.git/libnvme-rs/wrapper.h",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "nix": {
+      "name": "nix",
+      "path": "mayastor.git/nix",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "mayastor.git/nix/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "configuration": {
+          "name": "configuration",
+          "path": "mayastor.git/nix/configuration",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "iscsid.nix": {
+              "name": "iscsid.nix",
+              "path": "mayastor.git/nix/configuration/iscsid.nix",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "lib": {
+          "name": "lib",
+          "path": "mayastor.git/nix/lib",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "mkContainerEnv.nix": {
+              "name": "mkContainerEnv.nix",
+              "path": "mayastor.git/nix/lib/mkContainerEnv.nix",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rust.nix": {
+              "name": "rust.nix",
+              "path": "mayastor.git/nix/lib/rust.nix",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "version.nix": {
+              "name": "version.nix",
+              "path": "mayastor.git/nix/lib/version.nix",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "overlay.nix": {
+          "name": "overlay.nix",
+          "path": "mayastor.git/nix/overlay.nix",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pkgs": {
+          "name": "pkgs",
+          "path": "mayastor.git/nix/pkgs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "fio": {
+              "name": "fio",
+              "path": "mayastor.git/nix/pkgs/fio",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "default.nix": {
+                  "name": "default.nix",
+                  "path": "mayastor.git/nix/pkgs/fio/default.nix",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "images": {
+              "name": "images",
+              "path": "mayastor.git/nix/pkgs/images",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "default.nix": {
+                  "name": "default.nix",
+                  "path": "mayastor.git/nix/pkgs/images/default.nix",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "io-engine": {
+              "name": "io-engine",
+              "path": "mayastor.git/nix/pkgs/io-engine",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cargo-package.nix": {
+                  "name": "cargo-package.nix",
+                  "path": "mayastor.git/nix/pkgs/io-engine/cargo-package.nix",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "default.nix": {
+                  "name": "default.nix",
+                  "path": "mayastor.git/nix/pkgs/io-engine/default.nix",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "units.nix": {
+                  "name": "units.nix",
+                  "path": "mayastor.git/nix/pkgs/io-engine/units.nix",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "libnvme": {
+              "name": "libnvme",
+              "path": "mayastor.git/nix/pkgs/libnvme",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "default.nix": {
+                  "name": "default.nix",
+                  "path": "mayastor.git/nix/pkgs/libnvme/default.nix",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "libspdk": {
+              "name": "libspdk",
+              "path": "mayastor.git/nix/pkgs/libspdk",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "default.nix": {
+                  "name": "default.nix",
+                  "path": "mayastor.git/nix/pkgs/libspdk/default.nix",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "ms-buildenv": {
+              "name": "ms-buildenv",
+              "path": "mayastor.git/nix/pkgs/ms-buildenv",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "default.nix": {
+                  "name": "default.nix",
+                  "path": "mayastor.git/nix/pkgs/ms-buildenv/default.nix",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "root": {
+                  "name": "root",
+                  "path": "mayastor.git/nix/pkgs/ms-buildenv/root",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "etc": {
+                      "name": "etc",
+                      "path": "mayastor.git/nix/pkgs/ms-buildenv/root/etc",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "bashrc": {
+                          "name": "bashrc",
+                          "path": "mayastor.git/nix/pkgs/ms-buildenv/root/etc/bashrc",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "group": {
+                          "name": "group",
+                          "path": "mayastor.git/nix/pkgs/ms-buildenv/root/etc/group",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "nsswitch.conf": {
+                          "name": "nsswitch.conf",
+                          "path": "mayastor.git/nix/pkgs/ms-buildenv/root/etc/nsswitch.conf",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "pam.d": {
+                          "name": "pam.d",
+                          "path": "mayastor.git/nix/pkgs/ms-buildenv/root/etc/pam.d",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "other": {
+                              "name": "other",
+                              "path": "mayastor.git/nix/pkgs/ms-buildenv/root/etc/pam.d/other",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "passwd": {
+                          "name": "passwd",
+                          "path": "mayastor.git/nix/pkgs/ms-buildenv/root/etc/passwd",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "shadow": {
+                          "name": "shadow",
+                          "path": "mayastor.git/nix/pkgs/ms-buildenv/root/etc/shadow",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "sudoers": {
+                          "name": "sudoers",
+                          "path": "mayastor.git/nix/pkgs/ms-buildenv/root/etc/sudoers",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "nvmet-cli": {
+              "name": "nvmet-cli",
+              "path": "mayastor.git/nix/pkgs/nvmet-cli",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "default.nix": {
+                  "name": "default.nix",
+                  "path": "mayastor.git/nix/pkgs/nvmet-cli/default.nix",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "sources.json": {
+          "name": "sources.json",
+          "path": "mayastor.git/nix/sources.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "sources.nix": {
+          "name": "sources.nix",
+          "path": "mayastor.git/nix/sources.nix",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "rpc": {
+      "name": "rpc",
+      "path": "mayastor.git/rpc",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "mayastor-api": {
+          "name": "mayastor-api",
+          "path": "mayastor.git/rpc/mayastor-api",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {}
+        }
+      }
+    },
+    "scripts": {
+      "name": "scripts",
+      "path": "mayastor.git/scripts",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "block_devs.sh": {
+          "name": "block_devs.sh",
+          "path": "mayastor.git/scripts/block_devs.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cargo-test.sh": {
+          "name": "cargo-test.sh",
+          "path": "mayastor.git/scripts/cargo-test.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "check-coredumps.sh": {
+          "name": "check-coredumps.sh",
+          "path": "mayastor.git/scripts/check-coredumps.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "clean-cargo-tests.sh": {
+          "name": "clean-cargo-tests.sh",
+          "path": "mayastor.git/scripts/clean-cargo-tests.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "e2e_check_pod_restarts.sh": {
+          "name": "e2e_check_pod_restarts.sh",
+          "path": "mayastor.git/scripts/e2e_check_pod_restarts.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "generate-deploy-yamls.sh": {
+          "name": "generate-deploy-yamls.sh",
+          "path": "mayastor.git/scripts/generate-deploy-yamls.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "grpc-test.sh": {
+          "name": "grpc-test.sh",
+          "path": "mayastor.git/scripts/grpc-test.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "js-check.sh": {
+          "name": "js-check.sh",
+          "path": "mayastor.git/scripts/js-check.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "nvmx-test.sh": {
+          "name": "nvmx-test.sh",
+          "path": "mayastor.git/scripts/nvmx-test.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pytest-tests.sh": {
+          "name": "pytest-tests.sh",
+          "path": "mayastor.git/scripts/pytest-tests.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "reclaim-space.sh": {
+          "name": "reclaim-space.sh",
+          "path": "mayastor.git/scripts/reclaim-space.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "release.sh": {
+          "name": "release.sh",
+          "path": "mayastor.git/scripts/release.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rust-linter-env.sh": {
+          "name": "rust-linter-env.sh",
+          "path": "mayastor.git/scripts/rust-linter-env.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rust-linter.sh": {
+          "name": "rust-linter.sh",
+          "path": "mayastor.git/scripts/rust-linter.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rust-style.sh": {
+          "name": "rust-style.sh",
+          "path": "mayastor.git/scripts/rust-style.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "shell.nix": {
+      "name": "shell.nix",
+      "path": "mayastor.git/shell.nix",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "spdk-rs": {
+      "name": "spdk-rs",
+      "path": "mayastor.git/spdk-rs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {}
+    },
+    "sysfs": {
+      "name": "sysfs",
+      "path": "mayastor.git/sysfs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "mayastor.git/sysfs/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "mayastor.git/sysfs/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "lib.rs": {
+              "name": "lib.rs",
+              "path": "mayastor.git/sysfs/src/lib.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "terraform": {
+      "name": "terraform",
+      "path": "mayastor.git/terraform",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.adoc": {
+          "name": "README.adoc",
+          "path": "mayastor.git/terraform/README.adoc",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "aws-linux": {
+          "name": "aws-linux",
+          "path": "mayastor.git/terraform/aws-linux",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "mayastor.git/terraform/aws-linux/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.tf": {
+              "name": "main.tf",
+              "path": "mayastor.git/terraform/aws-linux/main.tf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "meta-data.yaml": {
+              "name": "meta-data.yaml",
+              "path": "mayastor.git/terraform/aws-linux/meta-data.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "user-data.yaml": {
+              "name": "user-data.yaml",
+              "path": "mayastor.git/terraform/aws-linux/user-data.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "main.tf": {
+          "name": "main.tf",
+          "path": "mayastor.git/terraform/main.tf",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "mod": {
+          "name": "mod",
+          "path": "mayastor.git/terraform/mod",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "k8s": {
+              "name": "k8s",
+              "path": "mayastor.git/terraform/mod/k8s",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kubeadm_config.yaml": {
+                  "name": "kubeadm_config.yaml",
+                  "path": "mayastor.git/terraform/mod/k8s/kubeadm_config.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.tf": {
+                  "name": "main.tf",
+                  "path": "mayastor.git/terraform/mod/k8s/main.tf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "master.sh": {
+                  "name": "master.sh",
+                  "path": "mayastor.git/terraform/mod/k8s/master.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "node.sh": {
+                  "name": "node.sh",
+                  "path": "mayastor.git/terraform/mod/k8s/node.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "repo.sh": {
+                  "name": "repo.sh",
+                  "path": "mayastor.git/terraform/mod/k8s/repo.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "libvirt": {
+              "name": "libvirt",
+              "path": "mayastor.git/terraform/mod/libvirt",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cloud_init.tmpl": {
+                  "name": "cloud_init.tmpl",
+                  "path": "mayastor.git/terraform/mod/libvirt/cloud_init.tmpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.tf": {
+                  "name": "main.tf",
+                  "path": "mayastor.git/terraform/mod/libvirt/main.tf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "network_config.cfg": {
+                  "name": "network_config.cfg",
+                  "path": "mayastor.git/terraform/mod/libvirt/network_config.cfg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "lxd": {
+              "name": "lxd",
+              "path": "mayastor.git/terraform/mod/lxd",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cloud_init.tmpl": {
+                  "name": "cloud_init.tmpl",
+                  "path": "mayastor.git/terraform/mod/lxd/cloud_init.tmpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.tf": {
+                  "name": "main.tf",
+                  "path": "mayastor.git/terraform/mod/lxd/main.tf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "network_config.cfg": {
+                  "name": "network_config.cfg",
+                  "path": "mayastor.git/terraform/mod/lxd/network_config.cfg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "shell.nix": {
+          "name": "shell.nix",
+          "path": "mayastor.git/terraform/shell.nix",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "variables.tf": {
+          "name": "variables.tf",
+          "path": "mayastor.git/terraform/variables.tf",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "test": {
+      "name": "test",
+      "path": "mayastor.git/test",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "grpc": {
+          "name": "grpc",
+          "path": "mayastor.git/test/grpc",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".gitignore": {
+              "name": ".gitignore",
+              "path": "mayastor.git/test/grpc/.gitignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "mayastor.git/test/grpc/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grpc_enums.js": {
+              "name": "grpc_enums.js",
+              "path": "mayastor.git/test/grpc/grpc_enums.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "multi_reporter.js": {
+              "name": "multi_reporter.js",
+              "path": "mayastor.git/test/grpc/multi_reporter.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package-lock.json": {
+              "name": "package-lock.json",
+              "path": "mayastor.git/test/grpc/package-lock.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package.json": {
+              "name": "package.json",
+              "path": "mayastor.git/test/grpc/package.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sudo.js": {
+              "name": "sudo.js",
+              "path": "mayastor.git/test/grpc/sudo.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_cli.js": {
+              "name": "test_cli.js",
+              "path": "mayastor.git/test/grpc/test_cli.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_common.js": {
+              "name": "test_common.js",
+              "path": "mayastor.git/test/grpc/test_common.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_nexus.js": {
+              "name": "test_nexus.js",
+              "path": "mayastor.git/test/grpc/test_nexus.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_rebuild.js": {
+              "name": "test_rebuild.js",
+              "path": "mayastor.git/test/grpc/test_rebuild.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_replica.js": {
+              "name": "test_replica.js",
+              "path": "mayastor.git/test/grpc/test_replica.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "python": {
+          "name": "python",
+          "path": "mayastor.git/test/python",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "mayastor.git/test/python/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "common": {
+              "name": "common",
+              "path": "mayastor.git/test/python/common",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "command.py": {
+                  "name": "command.py",
+                  "path": "mayastor.git/test/python/common/command.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "csi_hdl.py": {
+                  "name": "csi_hdl.py",
+                  "path": "mayastor.git/test/python/common/csi_hdl.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fio.py": {
+                  "name": "fio.py",
+                  "path": "mayastor.git/test/python/common/fio.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fio_spdk.py": {
+                  "name": "fio_spdk.py",
+                  "path": "mayastor.git/test/python/common/fio_spdk.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "hdl.py": {
+                  "name": "hdl.py",
+                  "path": "mayastor.git/test/python/common/hdl.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mayastor.py": {
+                  "name": "mayastor.py",
+                  "path": "mayastor.git/test/python/common/mayastor.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msclient.py": {
+                  "name": "msclient.py",
+                  "path": "mayastor.git/test/python/common/msclient.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nvme.py": {
+                  "name": "nvme.py",
+                  "path": "mayastor.git/test/python/common/nvme.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "util.py": {
+                  "name": "util.py",
+                  "path": "mayastor.git/test/python/common/util.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "volume.py": {
+                  "name": "volume.py",
+                  "path": "mayastor.git/test/python/common/volume.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "cross-grpc-version": {
+              "name": "cross-grpc-version",
+              "path": "mayastor.git/test/python/cross-grpc-version",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "nexus": {
+                  "name": "nexus",
+                  "path": "mayastor.git/test/python/cross-grpc-version/nexus",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/cross-grpc-version/nexus/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/cross-grpc-version/nexus/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "nexus.feature": {
+                          "name": "nexus.feature",
+                          "path": "mayastor.git/test/python/cross-grpc-version/nexus/features/nexus.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_bdd_nexus.py": {
+                      "name": "test_bdd_nexus.py",
+                      "path": "mayastor.git/test/python/cross-grpc-version/nexus/test_bdd_nexus.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "pool": {
+                  "name": "pool",
+                  "path": "mayastor.git/test/python/cross-grpc-version/pool",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/cross-grpc-version/pool/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/cross-grpc-version/pool/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "pool.feature": {
+                          "name": "pool.feature",
+                          "path": "mayastor.git/test/python/cross-grpc-version/pool/features/pool.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_bdd_pool.py": {
+                      "name": "test_bdd_pool.py",
+                      "path": "mayastor.git/test/python/cross-grpc-version/pool/test_bdd_pool.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "rebuild": {
+                  "name": "rebuild",
+                  "path": "mayastor.git/test/python/cross-grpc-version/rebuild",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/cross-grpc-version/rebuild/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/cross-grpc-version/rebuild/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "rebuild.feature": {
+                          "name": "rebuild.feature",
+                          "path": "mayastor.git/test/python/cross-grpc-version/rebuild/features/rebuild.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_bdd_rebuild.py": {
+                      "name": "test_bdd_rebuild.py",
+                      "path": "mayastor.git/test/python/cross-grpc-version/rebuild/test_bdd_rebuild.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "replica": {
+                  "name": "replica",
+                  "path": "mayastor.git/test/python/cross-grpc-version/replica",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/cross-grpc-version/replica/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/cross-grpc-version/replica/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "replica.feature": {
+                          "name": "replica.feature",
+                          "path": "mayastor.git/test/python/cross-grpc-version/replica/features/replica.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_bdd_replica.py": {
+                      "name": "test_bdd_replica.py",
+                      "path": "mayastor.git/test/python/cross-grpc-version/replica/test_bdd_replica.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "k8s": {
+              "name": "k8s",
+              "path": "mayastor.git/test/python/k8s",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "fio.yaml": {
+                  "name": "fio.yaml",
+                  "path": "mayastor.git/test/python/k8s/fio.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "test_pvc.py": {
+                  "name": "test_pvc.py",
+                  "path": "mayastor.git/test/python/k8s/test_pvc.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pool": {
+              "name": "pool",
+              "path": "mayastor.git/test/python/pool",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "docker-compose.yml": {
+                  "name": "docker-compose.yml",
+                  "path": "mayastor.git/test/python/pool/docker-compose.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": true
+                },
+                "test_unmap.py": {
+                  "name": "test_unmap.py",
+                  "path": "mayastor.git/test/python/pool/test_unmap.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pytest.ini": {
+              "name": "pytest.ini",
+              "path": "mayastor.git/test/python/pytest.ini",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "requirements.txt": {
+              "name": "requirements.txt",
+              "path": "mayastor.git/test/python/requirements.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "setup.sh": {
+              "name": "setup.sh",
+              "path": "mayastor.git/test/python/setup.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_common.py": {
+              "name": "test_common.py",
+              "path": "mayastor.git/test/python/test_common.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_config.ini": {
+              "name": "test_config.ini",
+              "path": "mayastor.git/test/python/test_config.ini",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tests": {
+              "name": "tests",
+              "path": "mayastor.git/test/python/tests",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ana_client": {
+                  "name": "ana_client",
+                  "path": "mayastor.git/test/python/tests/ana_client",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/tests/ana_client/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "test_ana_client.py": {
+                      "name": "test_ana_client.py",
+                      "path": "mayastor.git/test/python/tests/ana_client/test_ana_client.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "cli_controller": {
+                  "name": "cli_controller",
+                  "path": "mayastor.git/test/python/tests/cli_controller",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/tests/cli_controller/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "test_cli_controller.py": {
+                      "name": "test_cli_controller.py",
+                      "path": "mayastor.git/test/python/tests/cli_controller/test_cli_controller.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "nexus": {
+                  "name": "nexus",
+                  "path": "mayastor.git/test/python/tests/nexus",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/tests/nexus/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/tests/nexus/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "shutdown.feature": {
+                          "name": "shutdown.feature",
+                          "path": "mayastor.git/test/python/tests/nexus/features/shutdown.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_multi_nexus.py": {
+                      "name": "test_multi_nexus.py",
+                      "path": "mayastor.git/test/python/tests/nexus/test_multi_nexus.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_nexus.py": {
+                      "name": "test_nexus.py",
+                      "path": "mayastor.git/test/python/tests/nexus/test_nexus.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_nexus_shutdown.py": {
+                      "name": "test_nexus_shutdown.py",
+                      "path": "mayastor.git/test/python/tests/nexus/test_nexus_shutdown.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_null_nexus.py": {
+                      "name": "test_null_nexus.py",
+                      "path": "mayastor.git/test/python/tests/nexus/test_null_nexus.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_remote_only.py": {
+                      "name": "test_remote_only.py",
+                      "path": "mayastor.git/test/python/tests/nexus/test_remote_only.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "nexus_multipath": {
+                  "name": "nexus_multipath",
+                  "path": "mayastor.git/test/python/tests/nexus_multipath",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/tests/nexus_multipath/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/tests/nexus_multipath/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "nexus-multipath.feature": {
+                          "name": "nexus-multipath.feature",
+                          "path": "mayastor.git/test/python/tests/nexus_multipath/features/nexus-multipath.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_bdd_nexus_multipath.py": {
+                      "name": "test_bdd_nexus_multipath.py",
+                      "path": "mayastor.git/test/python/tests/nexus_multipath/test_bdd_nexus_multipath.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_nexus_multipath.py": {
+                      "name": "test_nexus_multipath.py",
+                      "path": "mayastor.git/test/python/tests/nexus_multipath/test_nexus_multipath.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "publish": {
+                  "name": "publish",
+                  "path": "mayastor.git/test/python/tests/publish",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/tests/publish/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/tests/publish/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "nexus.feature": {
+                          "name": "nexus.feature",
+                          "path": "mayastor.git/test/python/tests/publish/features/nexus.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_bdd_nexus.py": {
+                      "name": "test_bdd_nexus.py",
+                      "path": "mayastor.git/test/python/tests/publish/test_bdd_nexus.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_nexus_publish.py": {
+                      "name": "test_nexus_publish.py",
+                      "path": "mayastor.git/test/python/tests/publish/test_nexus_publish.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "rebuild": {
+                  "name": "rebuild",
+                  "path": "mayastor.git/test/python/tests/rebuild",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/tests/rebuild/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/tests/rebuild/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "rebuild.feature": {
+                          "name": "rebuild.feature",
+                          "path": "mayastor.git/test/python/tests/rebuild/features/rebuild.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_bdd_rebuild.py": {
+                      "name": "test_bdd_rebuild.py",
+                      "path": "mayastor.git/test/python/tests/rebuild/test_bdd_rebuild.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "replica": {
+                  "name": "replica",
+                  "path": "mayastor.git/test/python/tests/replica",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/tests/replica/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/tests/replica/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "pool.feature": {
+                          "name": "pool.feature",
+                          "path": "mayastor.git/test/python/tests/replica/features/pool.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "replica.feature": {
+                          "name": "replica.feature",
+                          "path": "mayastor.git/test/python/tests/replica/features/replica.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_bdd_pool.py": {
+                      "name": "test_bdd_pool.py",
+                      "path": "mayastor.git/test/python/tests/replica/test_bdd_pool.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_bdd_replica.py": {
+                      "name": "test_bdd_replica.py",
+                      "path": "mayastor.git/test/python/tests/replica/test_bdd_replica.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "replica_uuid": {
+                  "name": "replica_uuid",
+                  "path": "mayastor.git/test/python/tests/replica_uuid",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/tests/replica_uuid/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/tests/replica_uuid/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "replica-guid.feature": {
+                          "name": "replica-guid.feature",
+                          "path": "mayastor.git/test/python/tests/replica_uuid/features/replica-guid.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_replica_uuid.py": {
+                      "name": "test_replica_uuid.py",
+                      "path": "mayastor.git/test/python/tests/replica_uuid/test_replica_uuid.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "rpc": {
+                  "name": "rpc",
+                  "path": "mayastor.git/test/python/tests/rpc",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/tests/rpc/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "test_rpc.py": {
+                      "name": "test_rpc.py",
+                      "path": "mayastor.git/test/python/tests/rpc/test_rpc.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "v1": {
+              "name": "v1",
+              "path": "mayastor.git/test/python/v1",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "hdl.py": {
+                  "name": "hdl.py",
+                  "path": "mayastor.git/test/python/v1/hdl.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mayastor.py": {
+                  "name": "mayastor.py",
+                  "path": "mayastor.git/test/python/v1/mayastor.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nexus": {
+                  "name": "nexus",
+                  "path": "mayastor.git/test/python/v1/nexus",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/v1/nexus/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "test_multi_nexus.py": {
+                      "name": "test_multi_nexus.py",
+                      "path": "mayastor.git/test/python/v1/nexus/test_multi_nexus.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_nexus.py": {
+                      "name": "test_nexus.py",
+                      "path": "mayastor.git/test/python/v1/nexus/test_nexus.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_null_nexus.py": {
+                      "name": "test_null_nexus.py",
+                      "path": "mayastor.git/test/python/v1/nexus/test_null_nexus.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_remote_only.py": {
+                      "name": "test_remote_only.py",
+                      "path": "mayastor.git/test/python/v1/nexus/test_remote_only.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "pool": {
+                  "name": "pool",
+                  "path": "mayastor.git/test/python/v1/pool",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/v1/pool/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/v1/pool/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "pool.feature": {
+                          "name": "pool.feature",
+                          "path": "mayastor.git/test/python/v1/pool/features/pool.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_bdd_pool.py": {
+                      "name": "test_bdd_pool.py",
+                      "path": "mayastor.git/test/python/v1/pool/test_bdd_pool.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "rebuild": {
+                  "name": "rebuild",
+                  "path": "mayastor.git/test/python/v1/rebuild",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/v1/rebuild/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/v1/rebuild/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "rebuild.feature": {
+                          "name": "rebuild.feature",
+                          "path": "mayastor.git/test/python/v1/rebuild/features/rebuild.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_bdd_rebuild.py": {
+                      "name": "test_bdd_rebuild.py",
+                      "path": "mayastor.git/test/python/v1/rebuild/test_bdd_rebuild.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "replica": {
+                  "name": "replica",
+                  "path": "mayastor.git/test/python/v1/replica",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docker-compose.yml": {
+                      "name": "docker-compose.yml",
+                      "path": "mayastor.git/test/python/v1/replica/docker-compose.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "mayastor.git/test/python/v1/replica/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "replica.feature": {
+                          "name": "replica.feature",
+                          "path": "mayastor.git/test/python/v1/replica/features/replica.feature",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_bdd_replica.py": {
+                      "name": "test_bdd_replica.py",
+                      "path": "mayastor.git/test/python/v1/replica/test_bdd_replica.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "volume.py": {
+                  "name": "volume.py",
+                  "path": "mayastor.git/test/python/v1/volume.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "utils": {
+      "name": "utils",
+      "path": "mayastor.git/utils",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "io-engine-dependencies": {
+          "name": "io-engine-dependencies",
+          "path": "mayastor.git/utils/io-engine-dependencies",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {}
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 204673264,
+    "name": "mayastor",
+    "full_name": "openebs/mayastor",
+    "owner": {
+      "login": "openebs",
+      "html_url": "https://github.com/openebs",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/openebs/mayastor",
+    "description": "A cloud native declarative data plane in containers for containers",
+    "url": "https://api.github.com/repos/openebs/mayastor",
+    "clone_url": "https://github.com/openebs/mayastor.git",
+    "homepage": "",
+    "size": 7787,
+    "stargazers_count": 426,
+    "watchers_count": 426,
+    "language": "Rust"
+  }
+}

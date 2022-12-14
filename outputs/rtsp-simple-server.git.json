@@ -1,0 +1,2316 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "rtsp-simple-server.git/bench/proxy/Dockerfile",
+        "rtsp-simple-server.git/bench/publish/Dockerfile",
+        "rtsp-simple-server.git/bench/read/Dockerfile",
+        "rtsp-simple-server.git/internal/highleveltests/images/ffmpeg/Dockerfile",
+        "rtsp-simple-server.git/internal/highleveltests/images/gstreamer/Dockerfile",
+        "rtsp-simple-server.git/internal/highleveltests/images/vlc/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "rtsp-simple-server.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "rtsp-simple-server.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "rtsp-simple-server.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "rtsp-simple-server.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "rtsp-simple-server.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "rtsp-simple-server.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "rtsp-simple-server.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "rtsp-simple-server.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "rtsp-simple-server.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "rtsp-simple-server.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "rtsp-simple-server.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "rtsp-simple-server.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "rtsp-simple-server.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "rtsp-simple-server.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "rtsp-simple-server.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "rtsp-simple-server.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "rtsp-simple-server.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "rtsp-simple-server.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "rtsp-simple-server.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "rtsp-simple-server.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "rtsp-simple-server.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-508a2702acbb1775a55937ceb7160eade8d9f806.idx": {
+                  "name": "pack-508a2702acbb1775a55937ceb7160eade8d9f806.idx",
+                  "path": "rtsp-simple-server.git/.git/objects/pack/pack-508a2702acbb1775a55937ceb7160eade8d9f806.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-508a2702acbb1775a55937ceb7160eade8d9f806.pack": {
+                  "name": "pack-508a2702acbb1775a55937ceb7160eade8d9f806.pack",
+                  "path": "rtsp-simple-server.git/.git/objects/pack/pack-508a2702acbb1775a55937ceb7160eade8d9f806.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "rtsp-simple-server.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "rtsp-simple-server.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "rtsp-simple-server.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "rtsp-simple-server.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "rtsp-simple-server.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "rtsp-simple-server.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "rtsp-simple-server.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "rtsp-simple-server.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "rtsp-simple-server.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "rtsp-simple-server.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "FUNDING.yml": {
+          "name": "FUNDING.yml",
+          "path": "rtsp-simple-server.git/.github/FUNDING.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "rtsp-simple-server.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug.md": {
+              "name": "bug.md",
+              "path": "rtsp-simple-server.git/.github/ISSUE_TEMPLATE/bug.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config.yml": {
+              "name": "config.yml",
+              "path": "rtsp-simple-server.git/.github/ISSUE_TEMPLATE/config.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature.md": {
+              "name": "feature.md",
+              "path": "rtsp-simple-server.git/.github/ISSUE_TEMPLATE/feature.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "rtsp-simple-server.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "issues.yml": {
+              "name": "issues.yml",
+              "path": "rtsp-simple-server.git/.github/workflows/issues.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lint.yml": {
+              "name": "lint.yml",
+              "path": "rtsp-simple-server.git/.github/workflows/lint.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "release.yml": {
+              "name": "release.yml",
+              "path": "rtsp-simple-server.git/.github/workflows/release.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.yml": {
+              "name": "test.yml",
+              "path": "rtsp-simple-server.git/.github/workflows/test.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "rtsp-simple-server.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".golangci.yml": {
+      "name": ".golangci.yml",
+      "path": "rtsp-simple-server.git/.golangci.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "rtsp-simple-server.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Makefile": {
+      "name": "Makefile",
+      "path": "rtsp-simple-server.git/Makefile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "rtsp-simple-server.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "apidocs": {
+      "name": "apidocs",
+      "path": "rtsp-simple-server.git/apidocs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "openapi.yaml": {
+          "name": "openapi.yaml",
+          "path": "rtsp-simple-server.git/apidocs/openapi.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "bench": {
+      "name": "bench",
+      "path": "rtsp-simple-server.git/bench",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "proxy": {
+          "name": "proxy",
+          "path": "rtsp-simple-server.git/bench/proxy",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "rtsp-simple-server.git/bench/proxy/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "start.sh": {
+              "name": "start.sh",
+              "path": "rtsp-simple-server.git/bench/proxy/start.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "publish": {
+          "name": "publish",
+          "path": "rtsp-simple-server.git/bench/publish",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "rtsp-simple-server.git/bench/publish/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "start.sh": {
+              "name": "start.sh",
+              "path": "rtsp-simple-server.git/bench/publish/start.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "read": {
+          "name": "read",
+          "path": "rtsp-simple-server.git/bench/read",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "rtsp-simple-server.git/bench/read/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "start.sh": {
+              "name": "start.sh",
+              "path": "rtsp-simple-server.git/bench/read/start.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "rtsp-simple-server.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "rtsp-simple-server.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "internal": {
+      "name": "internal",
+      "path": "rtsp-simple-server.git/internal",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "conf": {
+          "name": "conf",
+          "path": "rtsp-simple-server.git/internal/conf",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "authmethod.go": {
+              "name": "authmethod.go",
+              "path": "rtsp-simple-server.git/internal/conf/authmethod.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "conf.go": {
+              "name": "conf.go",
+              "path": "rtsp-simple-server.git/internal/conf/conf.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "conf_test.go": {
+              "name": "conf_test.go",
+              "path": "rtsp-simple-server.git/internal/conf/conf_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "credential.go": {
+              "name": "credential.go",
+              "path": "rtsp-simple-server.git/internal/conf/credential.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "encryption.go": {
+              "name": "encryption.go",
+              "path": "rtsp-simple-server.git/internal/conf/encryption.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "env.go": {
+              "name": "env.go",
+              "path": "rtsp-simple-server.git/internal/conf/env.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "env_test.go": {
+              "name": "env_test.go",
+              "path": "rtsp-simple-server.git/internal/conf/env_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hlsvariant.go": {
+              "name": "hlsvariant.go",
+              "path": "rtsp-simple-server.git/internal/conf/hlsvariant.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ipsorcidrs.go": {
+              "name": "ipsorcidrs.go",
+              "path": "rtsp-simple-server.git/internal/conf/ipsorcidrs.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logdestination.go": {
+              "name": "logdestination.go",
+              "path": "rtsp-simple-server.git/internal/conf/logdestination.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "loglevel.go": {
+              "name": "loglevel.go",
+              "path": "rtsp-simple-server.git/internal/conf/loglevel.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "path.go": {
+              "name": "path.go",
+              "path": "rtsp-simple-server.git/internal/conf/path.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "protocol.go": {
+              "name": "protocol.go",
+              "path": "rtsp-simple-server.git/internal/conf/protocol.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sourceprotocol.go": {
+              "name": "sourceprotocol.go",
+              "path": "rtsp-simple-server.git/internal/conf/sourceprotocol.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stringduration.go": {
+              "name": "stringduration.go",
+              "path": "rtsp-simple-server.git/internal/conf/stringduration.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stringsize.go": {
+              "name": "stringsize.go",
+              "path": "rtsp-simple-server.git/internal/conf/stringsize.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "confwatcher": {
+          "name": "confwatcher",
+          "path": "rtsp-simple-server.git/internal/confwatcher",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "confwatcher.go": {
+              "name": "confwatcher.go",
+              "path": "rtsp-simple-server.git/internal/confwatcher/confwatcher.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "confwatcher_test.go": {
+              "name": "confwatcher_test.go",
+              "path": "rtsp-simple-server.git/internal/confwatcher/confwatcher_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "core": {
+          "name": "core",
+          "path": "rtsp-simple-server.git/internal/core",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "api.go": {
+              "name": "api.go",
+              "path": "rtsp-simple-server.git/internal/core/api.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "api_test.go": {
+              "name": "api_test.go",
+              "path": "rtsp-simple-server.git/internal/core/api_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "core.go": {
+              "name": "core.go",
+              "path": "rtsp-simple-server.git/internal/core/core.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "core_test.go": {
+              "name": "core_test.go",
+              "path": "rtsp-simple-server.git/internal/core/core_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "data.go": {
+              "name": "data.go",
+              "path": "rtsp-simple-server.git/internal/core/data.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "externalauth.go": {
+              "name": "externalauth.go",
+              "path": "rtsp-simple-server.git/internal/core/externalauth.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "formatprocessor.go": {
+              "name": "formatprocessor.go",
+              "path": "rtsp-simple-server.git/internal/core/formatprocessor.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "formatprocessor_generic.go": {
+              "name": "formatprocessor_generic.go",
+              "path": "rtsp-simple-server.git/internal/core/formatprocessor_generic.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "formatprocessor_h264.go": {
+              "name": "formatprocessor_h264.go",
+              "path": "rtsp-simple-server.git/internal/core/formatprocessor_h264.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "formatprocessor_h265.go": {
+              "name": "formatprocessor_h265.go",
+              "path": "rtsp-simple-server.git/internal/core/formatprocessor_h265.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "formatprocessor_mpeg4audio.go": {
+              "name": "formatprocessor_mpeg4audio.go",
+              "path": "rtsp-simple-server.git/internal/core/formatprocessor_mpeg4audio.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "formatprocessor_opus.go": {
+              "name": "formatprocessor_opus.go",
+              "path": "rtsp-simple-server.git/internal/core/formatprocessor_opus.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hls_muxer.go": {
+              "name": "hls_muxer.go",
+              "path": "rtsp-simple-server.git/internal/core/hls_muxer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hls_server.go": {
+              "name": "hls_server.go",
+              "path": "rtsp-simple-server.git/internal/core/hls_server.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hls_server_test.go": {
+              "name": "hls_server_test.go",
+              "path": "rtsp-simple-server.git/internal/core/hls_server_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hls_source.go": {
+              "name": "hls_source.go",
+              "path": "rtsp-simple-server.git/internal/core/hls_source.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hls_source_test.go": {
+              "name": "hls_source_test.go",
+              "path": "rtsp-simple-server.git/internal/core/hls_source_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "httplogwriter.go": {
+              "name": "httplogwriter.go",
+              "path": "rtsp-simple-server.git/internal/core/httplogwriter.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ip.go": {
+              "name": "ip.go",
+              "path": "rtsp-simple-server.git/internal/core/ip.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metrics.go": {
+              "name": "metrics.go",
+              "path": "rtsp-simple-server.git/internal/core/metrics.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metrics_test.go": {
+              "name": "metrics_test.go",
+              "path": "rtsp-simple-server.git/internal/core/metrics_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "path.go": {
+              "name": "path.go",
+              "path": "rtsp-simple-server.git/internal/core/path.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "path_manager.go": {
+              "name": "path_manager.go",
+              "path": "rtsp-simple-server.git/internal/core/path_manager.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pprof.go": {
+              "name": "pprof.go",
+              "path": "rtsp-simple-server.git/internal/core/pprof.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "publisher.go": {
+              "name": "publisher.go",
+              "path": "rtsp-simple-server.git/internal/core/publisher.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "reader.go": {
+              "name": "reader.go",
+              "path": "rtsp-simple-server.git/internal/core/reader.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rpicamera_source.go": {
+              "name": "rpicamera_source.go",
+              "path": "rtsp-simple-server.git/internal/core/rpicamera_source.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rtmp_conn.go": {
+              "name": "rtmp_conn.go",
+              "path": "rtsp-simple-server.git/internal/core/rtmp_conn.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rtmp_server.go": {
+              "name": "rtmp_server.go",
+              "path": "rtsp-simple-server.git/internal/core/rtmp_server.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rtmp_server_test.go": {
+              "name": "rtmp_server_test.go",
+              "path": "rtsp-simple-server.git/internal/core/rtmp_server_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rtmp_source.go": {
+              "name": "rtmp_source.go",
+              "path": "rtsp-simple-server.git/internal/core/rtmp_source.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rtmp_source_test.go": {
+              "name": "rtmp_source_test.go",
+              "path": "rtsp-simple-server.git/internal/core/rtmp_source_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rtsp_conn.go": {
+              "name": "rtsp_conn.go",
+              "path": "rtsp-simple-server.git/internal/core/rtsp_conn.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rtsp_server.go": {
+              "name": "rtsp_server.go",
+              "path": "rtsp-simple-server.git/internal/core/rtsp_server.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rtsp_server_test.go": {
+              "name": "rtsp_server_test.go",
+              "path": "rtsp-simple-server.git/internal/core/rtsp_server_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rtsp_session.go": {
+              "name": "rtsp_session.go",
+              "path": "rtsp-simple-server.git/internal/core/rtsp_session.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rtsp_source.go": {
+              "name": "rtsp_source.go",
+              "path": "rtsp-simple-server.git/internal/core/rtsp_source.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rtsp_source_test.go": {
+              "name": "rtsp_source_test.go",
+              "path": "rtsp-simple-server.git/internal/core/rtsp_source_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "source.go": {
+              "name": "source.go",
+              "path": "rtsp-simple-server.git/internal/core/source.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "source_redirect.go": {
+              "name": "source_redirect.go",
+              "path": "rtsp-simple-server.git/internal/core/source_redirect.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "source_static.go": {
+              "name": "source_static.go",
+              "path": "rtsp-simple-server.git/internal/core/source_static.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stream.go": {
+              "name": "stream.go",
+              "path": "rtsp-simple-server.git/internal/core/stream.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "streamformat.go": {
+              "name": "streamformat.go",
+              "path": "rtsp-simple-server.git/internal/core/streamformat.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "streammedia.go": {
+              "name": "streammedia.go",
+              "path": "rtsp-simple-server.git/internal/core/streammedia.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "externalcmd": {
+          "name": "externalcmd",
+          "path": "rtsp-simple-server.git/internal/externalcmd",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cmd.go": {
+              "name": "cmd.go",
+              "path": "rtsp-simple-server.git/internal/externalcmd/cmd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cmd_unix.go": {
+              "name": "cmd_unix.go",
+              "path": "rtsp-simple-server.git/internal/externalcmd/cmd_unix.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cmd_win.go": {
+              "name": "cmd_win.go",
+              "path": "rtsp-simple-server.git/internal/externalcmd/cmd_win.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pool.go": {
+              "name": "pool.go",
+              "path": "rtsp-simple-server.git/internal/externalcmd/pool.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "highleveltests": {
+          "name": "highleveltests",
+          "path": "rtsp-simple-server.git/internal/highleveltests",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "build_images_test.go": {
+              "name": "build_images_test.go",
+              "path": "rtsp-simple-server.git/internal/highleveltests/build_images_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hls_server_test.go": {
+              "name": "hls_server_test.go",
+              "path": "rtsp-simple-server.git/internal/highleveltests/hls_server_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "images": {
+              "name": "images",
+              "path": "rtsp-simple-server.git/internal/highleveltests/images",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ffmpeg": {
+                  "name": "ffmpeg",
+                  "path": "rtsp-simple-server.git/internal/highleveltests/images/ffmpeg",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "rtsp-simple-server.git/internal/highleveltests/images/ffmpeg/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "emptyvideo.mkv": {
+                      "name": "emptyvideo.mkv",
+                      "path": "rtsp-simple-server.git/internal/highleveltests/images/ffmpeg/emptyvideo.mkv",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "emptyvideoaudio.mkv": {
+                      "name": "emptyvideoaudio.mkv",
+                      "path": "rtsp-simple-server.git/internal/highleveltests/images/ffmpeg/emptyvideoaudio.mkv",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "start.sh": {
+                      "name": "start.sh",
+                      "path": "rtsp-simple-server.git/internal/highleveltests/images/ffmpeg/start.sh",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "gstreamer": {
+                  "name": "gstreamer",
+                  "path": "rtsp-simple-server.git/internal/highleveltests/images/gstreamer",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "rtsp-simple-server.git/internal/highleveltests/images/gstreamer/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "emptyvideo.mkv": {
+                      "name": "emptyvideo.mkv",
+                      "path": "rtsp-simple-server.git/internal/highleveltests/images/gstreamer/emptyvideo.mkv",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "exitafterframe.c": {
+                      "name": "exitafterframe.c",
+                      "path": "rtsp-simple-server.git/internal/highleveltests/images/gstreamer/exitafterframe.c",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "start.sh": {
+                      "name": "start.sh",
+                      "path": "rtsp-simple-server.git/internal/highleveltests/images/gstreamer/start.sh",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "vlc": {
+                  "name": "vlc",
+                  "path": "rtsp-simple-server.git/internal/highleveltests/images/vlc",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "rtsp-simple-server.git/internal/highleveltests/images/vlc/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "start.sh": {
+                      "name": "start.sh",
+                      "path": "rtsp-simple-server.git/internal/highleveltests/images/vlc/start.sh",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "rtsp_server_test.go": {
+              "name": "rtsp_server_test.go",
+              "path": "rtsp-simple-server.git/internal/highleveltests/rtsp_server_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tests_test.go": {
+              "name": "tests_test.go",
+              "path": "rtsp-simple-server.git/internal/highleveltests/tests_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "hls": {
+          "name": "hls",
+          "path": "rtsp-simple-server.git/internal/hls",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "client.go": {
+              "name": "client.go",
+              "path": "rtsp-simple-server.git/internal/hls/client.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_downloader_primary.go": {
+              "name": "client_downloader_primary.go",
+              "path": "rtsp-simple-server.git/internal/hls/client_downloader_primary.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_downloader_stream.go": {
+              "name": "client_downloader_stream.go",
+              "path": "rtsp-simple-server.git/internal/hls/client_downloader_stream.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_processor_fmp4.go": {
+              "name": "client_processor_fmp4.go",
+              "path": "rtsp-simple-server.git/internal/hls/client_processor_fmp4.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_processor_fmp4_track.go": {
+              "name": "client_processor_fmp4_track.go",
+              "path": "rtsp-simple-server.git/internal/hls/client_processor_fmp4_track.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_processor_mpegts.go": {
+              "name": "client_processor_mpegts.go",
+              "path": "rtsp-simple-server.git/internal/hls/client_processor_mpegts.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_processor_mpegts_track.go": {
+              "name": "client_processor_mpegts_track.go",
+              "path": "rtsp-simple-server.git/internal/hls/client_processor_mpegts_track.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_routine_pool.go": {
+              "name": "client_routine_pool.go",
+              "path": "rtsp-simple-server.git/internal/hls/client_routine_pool.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_segment_queue.go": {
+              "name": "client_segment_queue.go",
+              "path": "rtsp-simple-server.git/internal/hls/client_segment_queue.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_test.go": {
+              "name": "client_test.go",
+              "path": "rtsp-simple-server.git/internal/hls/client_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_timesync_fmp4.go": {
+              "name": "client_timesync_fmp4.go",
+              "path": "rtsp-simple-server.git/internal/hls/client_timesync_fmp4.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_timesync_mpegts.go": {
+              "name": "client_timesync_mpegts.go",
+              "path": "rtsp-simple-server.git/internal/hls/client_timesync_mpegts.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fmp4": {
+              "name": "fmp4",
+              "path": "rtsp-simple-server.git/internal/hls/fmp4",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "fmp4.go": {
+                  "name": "fmp4.go",
+                  "path": "rtsp-simple-server.git/internal/hls/fmp4/fmp4.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "init.go": {
+                  "name": "init.go",
+                  "path": "rtsp-simple-server.git/internal/hls/fmp4/init.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "init_test.go": {
+                  "name": "init_test.go",
+                  "path": "rtsp-simple-server.git/internal/hls/fmp4/init_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "init_track.go": {
+                  "name": "init_track.go",
+                  "path": "rtsp-simple-server.git/internal/hls/fmp4/init_track.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mp4_writer.go": {
+                  "name": "mp4_writer.go",
+                  "path": "rtsp-simple-server.git/internal/hls/fmp4/mp4_writer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "part.go": {
+                  "name": "part.go",
+                  "path": "rtsp-simple-server.git/internal/hls/fmp4/part.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "part_test.go": {
+                  "name": "part_test.go",
+                  "path": "rtsp-simple-server.git/internal/hls/fmp4/part_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "part_track.go": {
+                  "name": "part_track.go",
+                  "path": "rtsp-simple-server.git/internal/hls/fmp4/part_track.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "m3u8": {
+              "name": "m3u8",
+              "path": "rtsp-simple-server.git/internal/hls/m3u8",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "m3u8.go": {
+                  "name": "m3u8.go",
+                  "path": "rtsp-simple-server.git/internal/hls/m3u8/m3u8.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mpegts": {
+              "name": "mpegts",
+              "path": "rtsp-simple-server.git/internal/hls/mpegts",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "tracks.go": {
+                  "name": "tracks.go",
+                  "path": "rtsp-simple-server.git/internal/hls/mpegts/tracks.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "writer.go": {
+                  "name": "writer.go",
+                  "path": "rtsp-simple-server.git/internal/hls/mpegts/writer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "writer_test.go": {
+                  "name": "writer_test.go",
+                  "path": "rtsp-simple-server.git/internal/hls/mpegts/writer_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mpegtstimedec": {
+              "name": "mpegtstimedec",
+              "path": "rtsp-simple-server.git/internal/hls/mpegtstimedec",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "decoder.go": {
+                  "name": "decoder.go",
+                  "path": "rtsp-simple-server.git/internal/hls/mpegtstimedec/decoder.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "decoder_test.go": {
+                  "name": "decoder_test.go",
+                  "path": "rtsp-simple-server.git/internal/hls/mpegtstimedec/decoder_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "muxer.go": {
+              "name": "muxer.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "muxer_primary_playlist.go": {
+              "name": "muxer_primary_playlist.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer_primary_playlist.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "muxer_test.go": {
+              "name": "muxer_test.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "muxer_variant.go": {
+              "name": "muxer_variant.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer_variant.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "muxer_variant_fmp4.go": {
+              "name": "muxer_variant_fmp4.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer_variant_fmp4.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "muxer_variant_fmp4_part.go": {
+              "name": "muxer_variant_fmp4_part.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer_variant_fmp4_part.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "muxer_variant_fmp4_playlist.go": {
+              "name": "muxer_variant_fmp4_playlist.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer_variant_fmp4_playlist.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "muxer_variant_fmp4_segment.go": {
+              "name": "muxer_variant_fmp4_segment.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer_variant_fmp4_segment.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "muxer_variant_fmp4_segmenter.go": {
+              "name": "muxer_variant_fmp4_segmenter.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer_variant_fmp4_segmenter.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "muxer_variant_mpegts.go": {
+              "name": "muxer_variant_mpegts.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer_variant_mpegts.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "muxer_variant_mpegts_playlist.go": {
+              "name": "muxer_variant_mpegts_playlist.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer_variant_mpegts_playlist.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "muxer_variant_mpegts_segment.go": {
+              "name": "muxer_variant_mpegts_segment.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer_variant_mpegts_segment.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "muxer_variant_mpegts_segmenter.go": {
+              "name": "muxer_variant_mpegts_segmenter.go",
+              "path": "rtsp-simple-server.git/internal/hls/muxer_variant_mpegts_segmenter.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logger": {
+          "name": "logger",
+          "path": "rtsp-simple-server.git/internal/logger",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "logger.go": {
+              "name": "logger.go",
+              "path": "rtsp-simple-server.git/internal/logger/logger.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "syslog_unix.go": {
+              "name": "syslog_unix.go",
+              "path": "rtsp-simple-server.git/internal/logger/syslog_unix.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "syslog_win.go": {
+              "name": "syslog_win.go",
+              "path": "rtsp-simple-server.git/internal/logger/syslog_win.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "rlimit": {
+          "name": "rlimit",
+          "path": "rtsp-simple-server.git/internal/rlimit",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "rlimit_unix.go": {
+              "name": "rlimit_unix.go",
+              "path": "rtsp-simple-server.git/internal/rlimit/rlimit_unix.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rlimit_win.go": {
+              "name": "rlimit_win.go",
+              "path": "rtsp-simple-server.git/internal/rlimit/rlimit_win.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "rpicamera": {
+          "name": "rpicamera",
+          "path": "rtsp-simple-server.git/internal/rpicamera",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "embeddedexe.go": {
+              "name": "embeddedexe.go",
+              "path": "rtsp-simple-server.git/internal/rpicamera/embeddedexe.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "exe": {
+              "name": "exe",
+              "path": "rtsp-simple-server.git/internal/rpicamera/exe",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Makefile": {
+                  "name": "Makefile",
+                  "path": "rtsp-simple-server.git/internal/rpicamera/exe/Makefile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "camera.cpp": {
+                  "name": "camera.cpp",
+                  "path": "rtsp-simple-server.git/internal/rpicamera/exe/camera.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "camera.h": {
+                  "name": "camera.h",
+                  "path": "rtsp-simple-server.git/internal/rpicamera/exe/camera.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "encoder.c": {
+                  "name": "encoder.c",
+                  "path": "rtsp-simple-server.git/internal/rpicamera/exe/encoder.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "encoder.h": {
+                  "name": "encoder.h",
+                  "path": "rtsp-simple-server.git/internal/rpicamera/exe/encoder.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.c": {
+                  "name": "main.c",
+                  "path": "rtsp-simple-server.git/internal/rpicamera/exe/main.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "parameters.c": {
+                  "name": "parameters.c",
+                  "path": "rtsp-simple-server.git/internal/rpicamera/exe/parameters.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "parameters.h": {
+                  "name": "parameters.h",
+                  "path": "rtsp-simple-server.git/internal/rpicamera/exe/parameters.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "roi.c": {
+                  "name": "roi.c",
+                  "path": "rtsp-simple-server.git/internal/rpicamera/exe/roi.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "roi.h": {
+                  "name": "roi.h",
+                  "path": "rtsp-simple-server.git/internal/rpicamera/exe/roi.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sensor_mode.c": {
+                  "name": "sensor_mode.c",
+                  "path": "rtsp-simple-server.git/internal/rpicamera/exe/sensor_mode.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sensor_mode.h": {
+                  "name": "sensor_mode.h",
+                  "path": "rtsp-simple-server.git/internal/rpicamera/exe/sensor_mode.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "params.go": {
+              "name": "params.go",
+              "path": "rtsp-simple-server.git/internal/rpicamera/params.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pipe.go": {
+              "name": "pipe.go",
+              "path": "rtsp-simple-server.git/internal/rpicamera/pipe.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rpicamera.go": {
+              "name": "rpicamera.go",
+              "path": "rtsp-simple-server.git/internal/rpicamera/rpicamera.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rpicamera_disabled.go": {
+              "name": "rpicamera_disabled.go",
+              "path": "rtsp-simple-server.git/internal/rpicamera/rpicamera_disabled.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "rtmp": {
+          "name": "rtmp",
+          "path": "rtsp-simple-server.git/internal/rtmp",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bytecounter": {
+              "name": "bytecounter",
+              "path": "rtsp-simple-server.git/internal/rtmp/bytecounter",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "reader.go": {
+                  "name": "reader.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/bytecounter/reader.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "reader_test.go": {
+                  "name": "reader_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/bytecounter/reader_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "readwriter.go": {
+                  "name": "readwriter.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/bytecounter/readwriter.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "writer.go": {
+                  "name": "writer.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/bytecounter/writer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "writer_test.go": {
+                  "name": "writer_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/bytecounter/writer_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "chunk": {
+              "name": "chunk",
+              "path": "rtsp-simple-server.git/internal/rtmp/chunk",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "chunk.go": {
+                  "name": "chunk.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/chunk/chunk.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "chunk0.go": {
+                  "name": "chunk0.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/chunk/chunk0.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "chunk0_test.go": {
+                  "name": "chunk0_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/chunk/chunk0_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "chunk1.go": {
+                  "name": "chunk1.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/chunk/chunk1.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "chunk1_test.go": {
+                  "name": "chunk1_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/chunk/chunk1_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "chunk2.go": {
+                  "name": "chunk2.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/chunk/chunk2.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "chunk2_test.go": {
+                  "name": "chunk2_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/chunk/chunk2_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "chunk3.go": {
+                  "name": "chunk3.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/chunk/chunk3.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "chunk3_test.go": {
+                  "name": "chunk3_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/chunk/chunk3_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "messagetype.go": {
+                  "name": "messagetype.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/chunk/messagetype.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "conn.go": {
+              "name": "conn.go",
+              "path": "rtsp-simple-server.git/internal/rtmp/conn.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "conn_test.go": {
+              "name": "conn_test.go",
+              "path": "rtsp-simple-server.git/internal/rtmp/conn_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "h264conf": {
+              "name": "h264conf",
+              "path": "rtsp-simple-server.git/internal/rtmp/h264conf",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "h264conf.go": {
+                  "name": "h264conf.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/h264conf/h264conf.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "h264conf_test.go": {
+                  "name": "h264conf_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/h264conf/h264conf_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "handshake": {
+              "name": "handshake",
+              "path": "rtsp-simple-server.git/internal/rtmp/handshake",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "c0s0.go": {
+                  "name": "c0s0.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/handshake/c0s0.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "c0s0_test.go": {
+                  "name": "c0s0_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/handshake/c0s0_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "c1s1.go": {
+                  "name": "c1s1.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/handshake/c1s1.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "c1s1_test.go": {
+                  "name": "c1s1_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/handshake/c1s1_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "c2s2.go": {
+                  "name": "c2s2.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/handshake/c2s2.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "c2s2_test.go": {
+                  "name": "c2s2_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/handshake/c2s2_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "handshake.go": {
+                  "name": "handshake.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/handshake/handshake.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "handshake_test.go": {
+                  "name": "handshake_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/handshake/handshake_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "message": {
+              "name": "message",
+              "path": "rtsp-simple-server.git/internal/rtmp/message",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "message.go": {
+                  "name": "message.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/message.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_acknowledge.go": {
+                  "name": "msg_acknowledge.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_acknowledge.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_audio.go": {
+                  "name": "msg_audio.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_audio.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_command_amf0.go": {
+                  "name": "msg_command_amf0.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_command_amf0.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_data_amf0.go": {
+                  "name": "msg_data_amf0.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_data_amf0.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_setchunksize.go": {
+                  "name": "msg_setchunksize.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_setchunksize.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_setpeerbandwidth.go": {
+                  "name": "msg_setpeerbandwidth.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_setpeerbandwidth.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_setwindowacksize.go": {
+                  "name": "msg_setwindowacksize.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_setwindowacksize.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_usercontrol.go": {
+                  "name": "msg_usercontrol.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_usercontrol.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_usercontrol_pingrequest.go": {
+                  "name": "msg_usercontrol_pingrequest.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_usercontrol_pingrequest.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_usercontrol_pingresponse.go": {
+                  "name": "msg_usercontrol_pingresponse.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_usercontrol_pingresponse.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_usercontrol_setbufferlength.go": {
+                  "name": "msg_usercontrol_setbufferlength.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_usercontrol_setbufferlength.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_usercontrol_streambegin.go": {
+                  "name": "msg_usercontrol_streambegin.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_usercontrol_streambegin.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_usercontrol_streamdry.go": {
+                  "name": "msg_usercontrol_streamdry.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_usercontrol_streamdry.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_usercontrol_streameof.go": {
+                  "name": "msg_usercontrol_streameof.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_usercontrol_streameof.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_usercontrol_streamisrecorded.go": {
+                  "name": "msg_usercontrol_streamisrecorded.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_usercontrol_streamisrecorded.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_video.go": {
+                  "name": "msg_video.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/msg_video.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "reader.go": {
+                  "name": "reader.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/reader.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "reader_test.go": {
+                  "name": "reader_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/reader_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "readwriter.go": {
+                  "name": "readwriter.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/readwriter.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "readwriter_test.go": {
+                  "name": "readwriter_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/readwriter_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "writer.go": {
+                  "name": "writer.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/writer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "writer_test.go": {
+                  "name": "writer_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/message/writer_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "rawmessage": {
+              "name": "rawmessage",
+              "path": "rtsp-simple-server.git/internal/rtmp/rawmessage",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "message.go": {
+                  "name": "message.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/rawmessage/message.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "reader.go": {
+                  "name": "reader.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/rawmessage/reader.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "reader_test.go": {
+                  "name": "reader_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/rawmessage/reader_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "writer.go": {
+                  "name": "writer.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/rawmessage/writer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "writer_test.go": {
+                  "name": "writer_test.go",
+                  "path": "rtsp-simple-server.git/internal/rtmp/rawmessage/writer_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "logo.png": {
+      "name": "logo.png",
+      "path": "rtsp-simple-server.git/logo.png",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "main.go": {
+      "name": "main.go",
+      "path": "rtsp-simple-server.git/main.go",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "rtsp-simple-server.yml": {
+      "name": "rtsp-simple-server.yml",
+      "path": "rtsp-simple-server.git/rtsp-simple-server.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "scripts": {
+      "name": "scripts",
+      "path": "rtsp-simple-server.git/scripts",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "apidocs.mk": {
+          "name": "apidocs.mk",
+          "path": "rtsp-simple-server.git/scripts/apidocs.mk",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "bench.mk": {
+          "name": "bench.mk",
+          "path": "rtsp-simple-server.git/scripts/bench.mk",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "binaries.mk": {
+          "name": "binaries.mk",
+          "path": "rtsp-simple-server.git/scripts/binaries.mk",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "dockerhub.mk": {
+          "name": "dockerhub.mk",
+          "path": "rtsp-simple-server.git/scripts/dockerhub.mk",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "format.mk": {
+          "name": "format.mk",
+          "path": "rtsp-simple-server.git/scripts/format.mk",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "lint.mk": {
+          "name": "lint.mk",
+          "path": "rtsp-simple-server.git/scripts/lint.mk",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "mod-tidy.mk": {
+          "name": "mod-tidy.mk",
+          "path": "rtsp-simple-server.git/scripts/mod-tidy.mk",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "run.mk": {
+          "name": "run.mk",
+          "path": "rtsp-simple-server.git/scripts/run.mk",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test-highlevel.mk": {
+          "name": "test-highlevel.mk",
+          "path": "rtsp-simple-server.git/scripts/test-highlevel.mk",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test.mk": {
+          "name": "test.mk",
+          "path": "rtsp-simple-server.git/scripts/test.mk",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 230660669,
+    "name": "rtsp-simple-server",
+    "full_name": "aler9/rtsp-simple-server",
+    "owner": {
+      "login": "aler9",
+      "html_url": "https://github.com/aler9",
+      "type": "User"
+    },
+    "html_url": "https://github.com/aler9/rtsp-simple-server",
+    "description": "ready-to-use RTSP / RTMP / LL-HLS server and proxy that allows to read, publish and proxy video and audio streams",
+    "url": "https://api.github.com/repos/aler9/rtsp-simple-server",
+    "clone_url": "https://github.com/aler9/rtsp-simple-server.git",
+    "homepage": "",
+    "size": 3992,
+    "stargazers_count": 4472,
+    "watchers_count": 4472,
+    "language": "Go"
+  }
+}

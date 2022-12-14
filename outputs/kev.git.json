@@ -1,0 +1,3251 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kev.git/examples/node-app/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 59,
+      "rootCount": 0,
+      "subFolderCount": 59,
+      "filepaths": [
+        "kev.git/e2e/wordpress-mysql/docker-compose.yaml",
+        "kev.git/examples/node-app/docker-compose.yaml",
+        "kev.git/examples/wordpress-mysql/docker-compose.env.dev.yaml",
+        "kev.git/examples/wordpress-mysql/docker-compose.env.local.yaml",
+        "kev.git/examples/wordpress-mysql/docker-compose.env.stage.yaml",
+        "kev.git/examples/wordpress-mysql/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/detect-secrets/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/detect-secrets/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/in-cluster-wordpress/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/in-cluster-wordpress/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/init-default/compose-yaml",
+        "kev.git/pkg/kev/testdata/init-default/compose-yaml-src-ext",
+        "kev.git/pkg/kev/testdata/init-default/compose-yml",
+        "kev.git/pkg/kev/testdata/init-default/docker-compose-yaml",
+        "kev.git/pkg/kev/testdata/init-default/docker-compose-yml",
+        "kev.git/pkg/kev/testdata/init-default/docker-compose-override/docker-compose.override.yaml",
+        "kev.git/pkg/kev/testdata/init-default/docker-compose-override/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/init-default/skaffold/compose.yaml",
+        "kev.git/pkg/kev/testdata/merge/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/merge/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-env-var-override/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-env-var-override/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-env-var-removal/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-env-var-removal/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-env-var-unassigned/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-env-var-unassigned/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-healthcheck-http/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-healthcheck-http/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-healthcheck-tcp/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-healthcheck-tcp/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-image-name-override/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-image-name-override/docker-compose.env.stage.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-image-name-override/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-override-keep/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-override-keep/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-override-rollback/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-override-rollback/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-service-basic/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-service-basic/docker-compose.env.stage.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-service-basic/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-service-deploy/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-service-deploy/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-service-edit/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-service-edit/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-service-healthcheck/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-service-healthcheck/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-service-removal/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-service-removal/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-version/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-version/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-volume-add/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-volume-add/docker-compose.env.stage.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-volume-add/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-volume-edit/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-volume-edit/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-volume-removal/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/reconcile-volume-removal/docker-compose.yaml",
+        "kev.git/pkg/kev/testdata/validation/docker-compose.env.dev.yaml",
+        "kev.git/pkg/kev/testdata/validation/docker-compose.yaml"
+      ]
+    }
+  },
+  "struct": {
+    ".circleci": {
+      "name": ".circleci",
+      "path": "kev.git/.circleci",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "config.yml": {
+          "name": "config.yml",
+          "path": "kev.git/.circleci/config.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".git": {
+      "name": ".git",
+      "path": "kev.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "kev.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "kev.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "kev.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "kev.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "kev.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "kev.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "kev.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "kev.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "kev.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "kev.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "kev.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "kev.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "kev.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "kev.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "kev.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "kev.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "kev.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "kev.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "kev.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "kev.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "kev.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "kev.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "kev.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "kev.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "kev.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "kev.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "kev.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "kev.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "kev.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "kev.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "kev.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-b0ea1a66c409c0aeca0e230452063dcc58188dd1.idx": {
+                  "name": "pack-b0ea1a66c409c0aeca0e230452063dcc58188dd1.idx",
+                  "path": "kev.git/.git/objects/pack/pack-b0ea1a66c409c0aeca0e230452063dcc58188dd1.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-b0ea1a66c409c0aeca0e230452063dcc58188dd1.pack": {
+                  "name": "pack-b0ea1a66c409c0aeca0e230452063dcc58188dd1.pack",
+                  "path": "kev.git/.git/objects/pack/pack-b0ea1a66c409c0aeca0e230452063dcc58188dd1.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "kev.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "kev.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "kev.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "kev.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "kev.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "kev.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "kev.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "kev.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "kev.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "kev.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "kev.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug_report.md": {
+              "name": "bug_report.md",
+              "path": "kev.git/.github/ISSUE_TEMPLATE/bug_report.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature_request.md": {
+              "name": "feature_request.md",
+              "path": "kev.git/.github/ISSUE_TEMPLATE/feature_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "dependabot.yml": {
+          "name": "dependabot.yml",
+          "path": "kev.git/.github/dependabot.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "kev.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CODE_OF_CONDUCT.md": {
+      "name": "CODE_OF_CONDUCT.md",
+      "path": "kev.git/CODE_OF_CONDUCT.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "kev.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "kev.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Makefile": {
+      "name": "Makefile",
+      "path": "kev.git/Makefile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "kev.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "SECURITY.md": {
+      "name": "SECURITY.md",
+      "path": "kev.git/SECURITY.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "cmd": {
+      "name": "cmd",
+      "path": "kev.git/cmd",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "kev": {
+          "name": "kev",
+          "path": "kev.git/cmd/kev",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cmd": {
+              "name": "cmd",
+              "path": "kev.git/cmd/kev/cmd",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "dev.go": {
+                  "name": "dev.go",
+                  "path": "kev.git/cmd/kev/cmd/dev.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "init.go": {
+                  "name": "init.go",
+                  "path": "kev.git/cmd/kev/cmd/init.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "render.go": {
+                  "name": "render.go",
+                  "path": "kev.git/cmd/kev/cmd/render.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "root.go": {
+                  "name": "root.go",
+                  "path": "kev.git/cmd/kev/cmd/root.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "version.go": {
+                  "name": "version.go",
+                  "path": "kev.git/cmd/kev/cmd/version.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "kev.git/cmd/kev/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "codeql-analysis.yml": {
+      "name": "codeql-analysis.yml",
+      "path": "kev.git/codeql-analysis.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docs": {
+      "name": "docs",
+      "path": "kev.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "cli": {
+          "name": "cli",
+          "path": "kev.git/docs/cli",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "kev.md": {
+              "name": "kev.md",
+              "path": "kev.git/docs/cli/kev.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kev_dev.md": {
+              "name": "kev_dev.md",
+              "path": "kev.git/docs/cli/kev_dev.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kev_init.md": {
+              "name": "kev_init.md",
+              "path": "kev.git/docs/cli/kev_init.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kev_render.md": {
+              "name": "kev_render.md",
+              "path": "kev.git/docs/cli/kev_render.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kev_version.md": {
+              "name": "kev_version.md",
+              "path": "kev.git/docs/cli/kev_version.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "images": {
+          "name": "images",
+          "path": "kev.git/docs/images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "kev-with-skaffold.svg": {
+              "name": "kev-with-skaffold.svg",
+              "path": "kev.git/docs/images/kev-with-skaffold.svg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "misc": {
+          "name": "misc",
+          "path": "kev.git/docs/misc",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "reconcile.md": {
+              "name": "reconcile.md",
+              "path": "kev.git/docs/misc/reconcile.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "proposal.md": {
+          "name": "proposal.md",
+          "path": "kev.git/docs/proposal.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "reference": {
+          "name": "reference",
+          "path": "kev.git/docs/reference",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config-example.md": {
+              "name": "config-example.md",
+              "path": "kev.git/docs/reference/config-example.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config-params.md": {
+              "name": "config-params.md",
+              "path": "kev.git/docs/reference/config-params.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "tutorials": {
+          "name": "tutorials",
+          "path": "kev.git/docs/tutorials",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "getting-started-with-kev.md": {
+              "name": "getting-started-with-kev.md",
+              "path": "kev.git/docs/tutorials/getting-started-with-kev.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "how-kev-differs-from-kompose.md": {
+              "name": "how-kev-differs-from-kompose.md",
+              "path": "kev.git/docs/tutorials/how-kev-differs-from-kompose.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kev-dev-with-skaffold.md": {
+              "name": "kev-dev-with-skaffold.md",
+              "path": "kev.git/docs/tutorials/kev-dev-with-skaffold.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "quickstart-guide.md": {
+              "name": "quickstart-guide.md",
+              "path": "kev.git/docs/tutorials/quickstart-guide.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "simple-nodejs-app-ci-workflow.md": {
+              "name": "simple-nodejs-app-ci-workflow.md",
+              "path": "kev.git/docs/tutorials/simple-nodejs-app-ci-workflow.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "simple-nodejs-app-workflow.md": {
+              "name": "simple-nodejs-app-workflow.md",
+              "path": "kev.git/docs/tutorials/simple-nodejs-app-workflow.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "e2e": {
+      "name": "e2e",
+      "path": "kev.git/e2e",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "bin": {
+          "name": "bin",
+          "path": "kev.git/e2e/bin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "e2e.sh": {
+              "name": "e2e.sh",
+              "path": "kev.git/e2e/bin/e2e.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "helper.bash": {
+          "name": "helper.bash",
+          "path": "kev.git/e2e/helper.bash",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "tmp": {
+          "name": "tmp",
+          "path": "kev.git/e2e/tmp",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".gitignore": {
+              "name": ".gitignore",
+              "path": "kev.git/e2e/tmp/.gitignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "wordpress-mysql": {
+          "name": "wordpress-mysql",
+          "path": "kev.git/e2e/wordpress-mysql",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "kev.git/e2e/wordpress-mysql/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "wordpress-mysql.bats": {
+              "name": "wordpress-mysql.bats",
+              "path": "kev.git/e2e/wordpress-mysql/wordpress-mysql.bats",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "examples": {
+      "name": "examples",
+      "path": "kev.git/examples",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "node-app": {
+          "name": "node-app",
+          "path": "kev.git/examples/node-app",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".circleci": {
+              "name": ".circleci",
+              "path": "kev.git/examples/node-app/.circleci",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.yaml": {
+                  "name": "config.yaml",
+                  "path": "kev.git/examples/node-app/.circleci/config.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kev.git/examples/node-app/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kev.git/examples/node-app/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "kev.git/examples/node-app/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "package.json": {
+              "name": "package.json",
+              "path": "kev.git/examples/node-app/package.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "server.js": {
+              "name": "server.js",
+              "path": "kev.git/examples/node-app/server.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "wordpress-mysql": {
+          "name": "wordpress-mysql",
+          "path": "kev.git/examples/wordpress-mysql",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "kev.git/examples/wordpress-mysql/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "appmeta.yaml": {
+              "name": "appmeta.yaml",
+              "path": "kev.git/examples/wordpress-mysql/appmeta.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.env.dev.yaml": {
+              "name": "docker-compose.env.dev.yaml",
+              "path": "kev.git/examples/wordpress-mysql/docker-compose.env.dev.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "docker-compose.env.local.yaml": {
+              "name": "docker-compose.env.local.yaml",
+              "path": "kev.git/examples/wordpress-mysql/docker-compose.env.local.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "docker-compose.env.stage.yaml": {
+              "name": "docker-compose.env.stage.yaml",
+              "path": "kev.git/examples/wordpress-mysql/docker-compose.env.stage.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "kev.git/examples/wordpress-mysql/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        }
+      }
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "kev.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "kev.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "hack": {
+      "name": "hack",
+      "path": "kev.git/hack",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "boilerplate.go.txt": {
+          "name": "boilerplate.go.txt",
+          "path": "kev.git/hack/boilerplate.go.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "doc-gen": {
+          "name": "doc-gen",
+          "path": "kev.git/hack/doc-gen",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cli": {
+              "name": "cli",
+              "path": "kev.git/hack/doc-gen/cli",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "generate.sh": {
+                  "name": "generate.sh",
+                  "path": "kev.git/hack/doc-gen/cli/generate.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kev.go": {
+                  "name": "kev.go",
+                  "path": "kev.git/hack/doc-gen/cli/kev.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "verify.sh": {
+                  "name": "verify.sh",
+                  "path": "kev.git/hack/doc-gen/cli/verify.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "static-web": {
+              "name": "static-web",
+              "path": "kev.git/hack/doc-gen/static-web",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".gitignore": {
+                  "name": ".gitignore",
+                  "path": "kev.git/hack/doc-gen/static-web/.gitignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "assets": {
+                  "name": "assets",
+                  "path": "kev.git/hack/doc-gen/static-web/assets",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "scss": {
+                      "name": "scss",
+                      "path": "kev.git/hack/doc-gen/static-web/assets/scss",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "slate": {
+                          "name": "slate",
+                          "path": "kev.git/hack/doc-gen/static-web/assets/scss/slate",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "docuapi_overrides.scss": {
+                              "name": "docuapi_overrides.scss",
+                              "path": "kev.git/hack/doc-gen/static-web/assets/scss/slate/docuapi_overrides.scss",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "config.toml": {
+                  "name": "config.toml",
+                  "path": "kev.git/hack/doc-gen/static-web/config.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "generate.sh": {
+                  "name": "generate.sh",
+                  "path": "kev.git/hack/doc-gen/static-web/generate.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "go.mod": {
+                  "name": "go.mod",
+                  "path": "kev.git/hack/doc-gen/static-web/go.mod",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "go.sum": {
+                  "name": "go.sum",
+                  "path": "kev.git/hack/doc-gen/static-web/go.sum",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "layouts": {
+                  "name": "layouts",
+                  "path": "kev.git/hack/doc-gen/static-web/layouts",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "partials": {
+                      "name": "partials",
+                      "path": "kev.git/hack/doc-gen/static-web/layouts/partials",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "hook_head_end.html": {
+                          "name": "hook_head_end.html",
+                          "path": "kev.git/hack/doc-gen/static-web/layouts/partials/hook_head_end.html",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "hook_left_sidebar_end.html": {
+                          "name": "hook_left_sidebar_end.html",
+                          "path": "kev.git/hack/doc-gen/static-web/layouts/partials/hook_left_sidebar_end.html",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "hook_left_sidebar_logo.html": {
+                          "name": "hook_left_sidebar_logo.html",
+                          "path": "kev.git/hack/doc-gen/static-web/layouts/partials/hook_left_sidebar_logo.html",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "package-lock.json": {
+                  "name": "package-lock.json",
+                  "path": "kev.git/hack/doc-gen/static-web/package-lock.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "package.json": {
+                  "name": "package.json",
+                  "path": "kev.git/hack/doc-gen/static-web/package.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "postcss.config.js": {
+                  "name": "postcss.config.js",
+                  "path": "kev.git/hack/doc-gen/static-web/postcss.config.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "resources": {
+                  "name": "resources",
+                  "path": "kev.git/hack/doc-gen/static-web/resources",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "_gen": {
+                      "name": "_gen",
+                      "path": "kev.git/hack/doc-gen/static-web/resources/_gen",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "assets": {
+                          "name": "assets",
+                          "path": "kev.git/hack/doc-gen/static-web/resources/_gen/assets",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "scss": {
+                              "name": "scss",
+                              "path": "kev.git/hack/doc-gen/static-web/resources/_gen/assets/scss",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "scss": {
+                                  "name": "scss",
+                                  "path": "kev.git/hack/doc-gen/static-web/resources/_gen/assets/scss/scss",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "slate": {
+                                      "name": "slate",
+                                      "path": "kev.git/hack/doc-gen/static-web/resources/_gen/assets/scss/scss/slate",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "print.css.scss_4d6fc974321eb52898bc355a5b78e82a.content": {
+                                          "name": "print.css.scss_4d6fc974321eb52898bc355a5b78e82a.content",
+                                          "path": "kev.git/hack/doc-gen/static-web/resources/_gen/assets/scss/scss/slate/print.css.scss_4d6fc974321eb52898bc355a5b78e82a.content",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "print.css.scss_4d6fc974321eb52898bc355a5b78e82a.json": {
+                                          "name": "print.css.scss_4d6fc974321eb52898bc355a5b78e82a.json",
+                                          "path": "kev.git/hack/doc-gen/static-web/resources/_gen/assets/scss/scss/slate/print.css.scss_4d6fc974321eb52898bc355a5b78e82a.json",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "screen.css.scss_fe796b7df7e1e728a06156d33b338445.content": {
+                                          "name": "screen.css.scss_fe796b7df7e1e728a06156d33b338445.content",
+                                          "path": "kev.git/hack/doc-gen/static-web/resources/_gen/assets/scss/scss/slate/screen.css.scss_fe796b7df7e1e728a06156d33b338445.content",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "screen.css.scss_fe796b7df7e1e728a06156d33b338445.json": {
+                                          "name": "screen.css.scss_fe796b7df7e1e728a06156d33b338445.json",
+                                          "path": "kev.git/hack/doc-gen/static-web/resources/_gen/assets/scss/scss/slate/screen.css.scss_fe796b7df7e1e728a06156d33b338445.json",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "static": {
+                  "name": "static",
+                  "path": "kev.git/hack/doc-gen/static-web/static",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    ".gitkeep": {
+                      "name": ".gitkeep",
+                      "path": "kev.git/hack/doc-gen/static-web/static/.gitkeep",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "_headers": {
+                      "name": "_headers",
+                      "path": "kev.git/hack/doc-gen/static-web/static/_headers",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "images": {
+                      "name": "images",
+                      "path": "kev.git/hack/doc-gen/static-web/static/images",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "logo.svg": {
+                          "name": "logo.svg",
+                          "path": "kev.git/hack/doc-gen/static-web/static/images/logo.svg",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "themes": {
+                  "name": "themes",
+                  "path": "kev.git/hack/doc-gen/static-web/themes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docuapi": {
+                      "name": "docuapi",
+                      "path": "kev.git/hack/doc-gen/static-web/themes/docuapi",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        ".github": {
+                          "name": ".github",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/.github",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "FUNDING.yml": {
+                              "name": "FUNDING.yml",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/.github/FUNDING.yml",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        ".gitignore": {
+                          "name": ".gitignore",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/.gitignore",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "LICENSE.md": {
+                          "name": "LICENSE.md",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/LICENSE.md",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Makefile": {
+                          "name": "Makefile",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/Makefile",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "README.md": {
+                          "name": "README.md",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/README.md",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "archetypes": {
+                          "name": "archetypes",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/archetypes",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "default.md": {
+                              "name": "default.md",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/archetypes/default.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "assets": {
+                          "name": "assets",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/assets",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "js": {
+                              "name": "js",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/assets/js",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "slate": {
+                                  "name": "slate",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/assets/js/slate",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "app": {
+                                      "name": "app",
+                                      "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/assets/js/slate/app",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "_lang.js": {
+                                          "name": "_lang.js",
+                                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/assets/js/slate/app/_lang.js",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "_search.js": {
+                                          "name": "_search.js",
+                                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/assets/js/slate/app/_search.js",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "scss": {
+                              "name": "scss",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/assets/scss",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "slate": {
+                                  "name": "slate",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/assets/scss/slate",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "_icon-font.scss": {
+                                      "name": "_icon-font.scss",
+                                      "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/assets/scss/slate/_icon-font.scss",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "_variables.scss": {
+                                      "name": "_variables.scss",
+                                      "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/assets/scss/slate/_variables.scss",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "docuapi_overrides.scss": {
+                                      "name": "docuapi_overrides.scss",
+                                      "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/assets/scss/slate/docuapi_overrides.scss",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "config.toml": {
+                          "name": "config.toml",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/config.toml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "go.mod": {
+                          "name": "go.mod",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/go.mod",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "go.sum": {
+                          "name": "go.sum",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/go.sum",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "i18n": {
+                          "name": "i18n",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/i18n",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "en.yaml": {
+                              "name": "en.yaml",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/i18n/en.yaml",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "fr.yaml": {
+                              "name": "fr.yaml",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/i18n/fr.yaml",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "nn.yaml": {
+                              "name": "nn.yaml",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/i18n/nn.yaml",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "images": {
+                          "name": "images",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/images",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "screenshot.png": {
+                              "name": "screenshot.png",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/images/screenshot.png",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "tn.png": {
+                              "name": "tn.png",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/images/tn.png",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "layouts": {
+                          "name": "layouts",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "404.html": {
+                              "name": "404.html",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/404.html",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "_default": {
+                              "name": "_default",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/_default",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "baseof.html": {
+                                  "name": "baseof.html",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/_default/baseof.html",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "list.html": {
+                                  "name": "list.html",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/_default/list.html",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "single.html": {
+                                  "name": "single.html",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/_default/single.html",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "partials": {
+                              "name": "partials",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "funcs": {
+                                  "name": "funcs",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials/funcs",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "extract_js_requirements.html": {
+                                      "name": "extract_js_requirements.html",
+                                      "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials/funcs/extract_js_requirements.html",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "get_and_concat.html": {
+                                      "name": "get_and_concat.html",
+                                      "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials/funcs/get_and_concat.html",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "toc_from_pages.html": {
+                                      "name": "toc_from_pages.html",
+                                      "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials/funcs/toc_from_pages.html",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    }
+                                  }
+                                },
+                                "hook_body_end.html": {
+                                  "name": "hook_body_end.html",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials/hook_body_end.html",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "hook_head_end.html": {
+                                  "name": "hook_head_end.html",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials/hook_head_end.html",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "hook_left_sidebar_end.html": {
+                                  "name": "hook_left_sidebar_end.html",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials/hook_left_sidebar_end.html",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "hook_left_sidebar_logo.html": {
+                                  "name": "hook_left_sidebar_logo.html",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials/hook_left_sidebar_logo.html",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "hook_left_sidebar_start.html": {
+                                  "name": "hook_left_sidebar_start.html",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials/hook_left_sidebar_start.html",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "js.html": {
+                                  "name": "js.html",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials/js.html",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "styles.html": {
+                                  "name": "styles.html",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials/styles.html",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "translations.html": {
+                                  "name": "translations.html",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/layouts/partials/translations.html",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "netlify.toml": {
+                          "name": "netlify.toml",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/netlify.toml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "package-lock.json": {
+                          "name": "package-lock.json",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/package-lock.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "package.json": {
+                          "name": "package.json",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/package.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "postcss.config.js": {
+                          "name": "postcss.config.js",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/postcss.config.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "resources": {
+                          "name": "resources",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "_gen": {
+                              "name": "_gen",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "assets": {
+                                  "name": "assets",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen/assets",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "scss": {
+                                      "name": "scss",
+                                      "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen/assets/scss",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "scss": {
+                                          "name": "scss",
+                                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen/assets/scss/scss",
+                                          "isDir": true,
+                                          "isDockerfile": false,
+                                          "isComposefile": false,
+                                          "children": {
+                                            "slate": {
+                                              "name": "slate",
+                                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen/assets/scss/scss/slate",
+                                              "isDir": true,
+                                              "isDockerfile": false,
+                                              "isComposefile": false,
+                                              "children": {
+                                                "print.css.scss_5dd6ed06fcdb1b31f4227a8bc8ee5817.content": {
+                                                  "name": "print.css.scss_5dd6ed06fcdb1b31f4227a8bc8ee5817.content",
+                                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen/assets/scss/scss/slate/print.css.scss_5dd6ed06fcdb1b31f4227a8bc8ee5817.content",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                },
+                                                "print.css.scss_5dd6ed06fcdb1b31f4227a8bc8ee5817.json": {
+                                                  "name": "print.css.scss_5dd6ed06fcdb1b31f4227a8bc8ee5817.json",
+                                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen/assets/scss/scss/slate/print.css.scss_5dd6ed06fcdb1b31f4227a8bc8ee5817.json",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                },
+                                                "print.css.scss_c14439616ffbc3ae1827507340d6c08b.content": {
+                                                  "name": "print.css.scss_c14439616ffbc3ae1827507340d6c08b.content",
+                                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen/assets/scss/scss/slate/print.css.scss_c14439616ffbc3ae1827507340d6c08b.content",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                },
+                                                "print.css.scss_c14439616ffbc3ae1827507340d6c08b.json": {
+                                                  "name": "print.css.scss_c14439616ffbc3ae1827507340d6c08b.json",
+                                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen/assets/scss/scss/slate/print.css.scss_c14439616ffbc3ae1827507340d6c08b.json",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                },
+                                                "screen.css.scss_25de00e0b01e33889c4074c07bff24ed.content": {
+                                                  "name": "screen.css.scss_25de00e0b01e33889c4074c07bff24ed.content",
+                                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen/assets/scss/scss/slate/screen.css.scss_25de00e0b01e33889c4074c07bff24ed.content",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                },
+                                                "screen.css.scss_25de00e0b01e33889c4074c07bff24ed.json": {
+                                                  "name": "screen.css.scss_25de00e0b01e33889c4074c07bff24ed.json",
+                                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen/assets/scss/scss/slate/screen.css.scss_25de00e0b01e33889c4074c07bff24ed.json",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                },
+                                                "screen.css.scss_d18af36970f1f09b308ef20ee65e3a03.content": {
+                                                  "name": "screen.css.scss_d18af36970f1f09b308ef20ee65e3a03.content",
+                                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen/assets/scss/scss/slate/screen.css.scss_d18af36970f1f09b308ef20ee65e3a03.content",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                },
+                                                "screen.css.scss_d18af36970f1f09b308ef20ee65e3a03.json": {
+                                                  "name": "screen.css.scss_d18af36970f1f09b308ef20ee65e3a03.json",
+                                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/resources/_gen/assets/scss/scss/slate/screen.css.scss_d18af36970f1f09b308ef20ee65e3a03.json",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "static": {
+                          "name": "static",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/static",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "images": {
+                              "name": "images",
+                              "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/static/images",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "logo.png": {
+                                  "name": "logo.png",
+                                  "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/static/images/logo.png",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "theme.toml": {
+                          "name": "theme.toml",
+                          "path": "kev.git/hack/doc-gen/static-web/themes/docuapi/theme.toml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "e2e": {
+          "name": "e2e",
+          "path": "kev.git/hack/e2e",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "kubeconfig": {
+              "name": "kubeconfig",
+              "path": "kev.git/hack/e2e/kubeconfig",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "setup-kind.sh": {
+              "name": "setup-kind.sh",
+              "path": "kev.git/hack/e2e/setup-kind.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "verify-licence.sh": {
+          "name": "verify-licence.sh",
+          "path": "kev.git/hack/verify-licence.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "pkg": {
+      "name": "pkg",
+      "path": "kev.git/pkg",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "kev": {
+          "name": "kev",
+          "path": "kev.git/pkg/kev",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "changeset.go": {
+              "name": "changeset.go",
+              "path": "kev.git/pkg/kev/changeset.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose.go": {
+              "name": "compose.go",
+              "path": "kev.git/pkg/kev/compose.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config": {
+              "name": "config",
+              "path": "kev.git/pkg/kev/config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "app.go": {
+                  "name": "app.go",
+                  "path": "kev.git/pkg/kev/config/app.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config_suite_test.go": {
+                  "name": "config_suite_test.go",
+                  "path": "kev.git/pkg/kev/config/config_suite_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "defaults.go": {
+                  "name": "defaults.go",
+                  "path": "kev.git/pkg/kev/config/defaults.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "extopts.go": {
+                  "name": "extopts.go",
+                  "path": "kev.git/pkg/kev/config/extopts.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "minify.go": {
+                  "name": "minify.go",
+                  "path": "kev.git/pkg/kev/config/minify.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "probes.go": {
+                  "name": "probes.go",
+                  "path": "kev.git/pkg/kev/config/probes.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "restart.go": {
+                  "name": "restart.go",
+                  "path": "kev.git/pkg/kev/config/restart.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secrets.go": {
+                  "name": "secrets.go",
+                  "path": "kev.git/pkg/kev/config/secrets.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.go": {
+                  "name": "service.go",
+                  "path": "kev.git/pkg/kev/config/service.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svcext.go": {
+                  "name": "svcext.go",
+                  "path": "kev.git/pkg/kev/config/svcext.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svcext_test.go": {
+                  "name": "svcext_test.go",
+                  "path": "kev.git/pkg/kev/config/svcext_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "volext.go": {
+                  "name": "volext.go",
+                  "path": "kev.git/pkg/kev/config/volext.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "volext_test.go": {
+                  "name": "volext_test.go",
+                  "path": "kev.git/pkg/kev/config/volext_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "workload.go": {
+                  "name": "workload.go",
+                  "path": "kev.git/pkg/kev/config/workload.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "converter": {
+              "name": "converter",
+              "path": "kev.git/pkg/kev/converter",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "converter.go": {
+                  "name": "converter.go",
+                  "path": "kev.git/pkg/kev/converter/converter.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dummy": {
+                  "name": "dummy",
+                  "path": "kev.git/pkg/kev/converter/dummy",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "converter.go": {
+                      "name": "converter.go",
+                      "path": "kev.git/pkg/kev/converter/dummy/converter.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "kubernetes": {
+                  "name": "kubernetes",
+                  "path": "kev.git/pkg/kev/converter/kubernetes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "converter.go": {
+                      "name": "converter.go",
+                      "path": "kev.git/pkg/kev/converter/kubernetes/converter.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "helpers_test.go": {
+                      "name": "helpers_test.go",
+                      "path": "kev.git/pkg/kev/converter/kubernetes/helpers_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "kubernetes_suite_test.go": {
+                      "name": "kubernetes_suite_test.go",
+                      "path": "kev.git/pkg/kev/converter/kubernetes/kubernetes_suite_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "probes.go": {
+                      "name": "probes.go",
+                      "path": "kev.git/pkg/kev/converter/kubernetes/probes.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "project_service.go": {
+                      "name": "project_service.go",
+                      "path": "kev.git/pkg/kev/converter/kubernetes/project_service.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "project_service_test.go": {
+                      "name": "project_service_test.go",
+                      "path": "kev.git/pkg/kev/converter/kubernetes/project_service_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "transform.go": {
+                      "name": "transform.go",
+                      "path": "kev.git/pkg/kev/converter/kubernetes/transform.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "transform_test.go": {
+                      "name": "transform_test.go",
+                      "path": "kev.git/pkg/kev/converter/kubernetes/transform_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "types.go": {
+                      "name": "types.go",
+                      "path": "kev.git/pkg/kev/converter/kubernetes/types.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils.go": {
+                      "name": "utils.go",
+                      "path": "kev.git/pkg/kev/converter/kubernetes/utils.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils_test.go": {
+                      "name": "utils_test.go",
+                      "path": "kev.git/pkg/kev/converter/kubernetes/utils_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "dev.go": {
+              "name": "dev.go",
+              "path": "kev.git/pkg/kev/dev.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "envs.go": {
+              "name": "envs.go",
+              "path": "kev.git/pkg/kev/envs.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "envs_test.go": {
+              "name": "envs_test.go",
+              "path": "kev.git/pkg/kev/envs_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "events.go": {
+              "name": "events.go",
+              "path": "kev.git/pkg/kev/events.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "events_test.go": {
+              "name": "events_test.go",
+              "path": "kev.git/pkg/kev/events_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "init.go": {
+              "name": "init.go",
+              "path": "kev.git/pkg/kev/init.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "init_errors.go": {
+              "name": "init_errors.go",
+              "path": "kev.git/pkg/kev/init_errors.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "init_test.go": {
+              "name": "init_test.go",
+              "path": "kev.git/pkg/kev/init_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "init_ui_test.go": {
+              "name": "init_ui_test.go",
+              "path": "kev.git/pkg/kev/init_ui_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kev.go": {
+              "name": "kev.go",
+              "path": "kev.git/pkg/kev/kev.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kev_reconcile_test.go": {
+              "name": "kev_reconcile_test.go",
+              "path": "kev.git/pkg/kev/kev_reconcile_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kev_suite_test.go": {
+              "name": "kev_suite_test.go",
+              "path": "kev.git/pkg/kev/kev_suite_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kev_test.go": {
+              "name": "kev_test.go",
+              "path": "kev.git/pkg/kev/kev_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "log": {
+              "name": "log",
+              "path": "kev.git/pkg/kev/log",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "log.go": {
+                  "name": "log.go",
+                  "path": "kev.git/pkg/kev/log/log.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "manifest.go": {
+              "name": "manifest.go",
+              "path": "kev.git/pkg/kev/manifest.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest_test.go": {
+              "name": "manifest_test.go",
+              "path": "kev.git/pkg/kev/manifest_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "marshal.go": {
+              "name": "marshal.go",
+              "path": "kev.git/pkg/kev/marshal.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "override.go": {
+              "name": "override.go",
+              "path": "kev.git/pkg/kev/override.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "project.go": {
+              "name": "project.go",
+              "path": "kev.git/pkg/kev/project.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "render.go": {
+              "name": "render.go",
+              "path": "kev.git/pkg/kev/render.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "render_errors.go": {
+              "name": "render_errors.go",
+              "path": "kev.git/pkg/kev/render_errors.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "render_ui_test.go": {
+              "name": "render_ui_test.go",
+              "path": "kev.git/pkg/kev/render_ui_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "services.go": {
+              "name": "services.go",
+              "path": "kev.git/pkg/kev/services.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "skaffold.go": {
+              "name": "skaffold.go",
+              "path": "kev.git/pkg/kev/skaffold.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "skaffold_test.go": {
+              "name": "skaffold_test.go",
+              "path": "kev.git/pkg/kev/skaffold_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sources.go": {
+              "name": "sources.go",
+              "path": "kev.git/pkg/kev/sources.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "testdata": {
+              "name": "testdata",
+              "path": "kev.git/pkg/kev/testdata",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "converter": {
+                  "name": "converter",
+                  "path": "kev.git/pkg/kev/testdata/converter",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "kubernetes": {
+                      "name": "kubernetes",
+                      "path": "kev.git/pkg/kev/testdata/converter/kubernetes",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "configmaps": {
+                          "name": "configmaps",
+                          "path": "kev.git/pkg/kev/testdata/converter/kubernetes/configmaps",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "config-a": {
+                              "name": "config-a",
+                              "path": "kev.git/pkg/kev/testdata/converter/kubernetes/configmaps/config-a",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "config-b": {
+                              "name": "config-b",
+                              "path": "kev.git/pkg/kev/testdata/converter/kubernetes/configmaps/config-b",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "env_file": {
+                          "name": "env_file",
+                          "path": "kev.git/pkg/kev/testdata/converter/kubernetes/env_file",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "secrets": {
+                          "name": "secrets",
+                          "path": "kev.git/pkg/kev/testdata/converter/kubernetes/secrets",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "secret_file": {
+                              "name": "secret_file",
+                              "path": "kev.git/pkg/kev/testdata/converter/kubernetes/secrets/secret_file",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "detect-secrets": {
+                  "name": "detect-secrets",
+                  "path": "kev.git/pkg/kev/testdata/detect-secrets",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/detect-secrets/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/detect-secrets/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/detect-secrets/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "in-cluster-wordpress": {
+                  "name": "in-cluster-wordpress",
+                  "path": "kev.git/pkg/kev/testdata/in-cluster-wordpress",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/in-cluster-wordpress/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/in-cluster-wordpress/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/in-cluster-wordpress/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "init-default": {
+                  "name": "init-default",
+                  "path": "kev.git/pkg/kev/testdata/init-default",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "compose-yaml": {
+                      "name": "compose-yaml",
+                      "path": "kev.git/pkg/kev/testdata/init-default/compose-yaml",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": true,
+                      "children": {
+                        "compose.yaml": {
+                          "name": "compose.yaml",
+                          "path": "kev.git/pkg/kev/testdata/init-default/compose-yaml/compose.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": true
+                        },
+                        "output.yaml": {
+                          "name": "output.yaml",
+                          "path": "kev.git/pkg/kev/testdata/init-default/compose-yaml/output.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "compose-yaml-src-ext": {
+                      "name": "compose-yaml-src-ext",
+                      "path": "kev.git/pkg/kev/testdata/init-default/compose-yaml-src-ext",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": true,
+                      "children": {
+                        "compose.yaml": {
+                          "name": "compose.yaml",
+                          "path": "kev.git/pkg/kev/testdata/init-default/compose-yaml-src-ext/compose.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": true
+                        },
+                        "output.yaml": {
+                          "name": "output.yaml",
+                          "path": "kev.git/pkg/kev/testdata/init-default/compose-yaml-src-ext/output.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "compose-yml": {
+                      "name": "compose-yml",
+                      "path": "kev.git/pkg/kev/testdata/init-default/compose-yml",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": true,
+                      "children": {
+                        "compose.yml": {
+                          "name": "compose.yml",
+                          "path": "kev.git/pkg/kev/testdata/init-default/compose-yml/compose.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": true
+                        }
+                      }
+                    },
+                    "docker-compose-override": {
+                      "name": "docker-compose-override",
+                      "path": "kev.git/pkg/kev/testdata/init-default/docker-compose-override",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "docker-compose.override.yaml": {
+                          "name": "docker-compose.override.yaml",
+                          "path": "kev.git/pkg/kev/testdata/init-default/docker-compose-override/docker-compose.override.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": true
+                        },
+                        "docker-compose.yaml": {
+                          "name": "docker-compose.yaml",
+                          "path": "kev.git/pkg/kev/testdata/init-default/docker-compose-override/docker-compose.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": true
+                        }
+                      }
+                    },
+                    "docker-compose-yaml": {
+                      "name": "docker-compose-yaml",
+                      "path": "kev.git/pkg/kev/testdata/init-default/docker-compose-yaml",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": true,
+                      "children": {
+                        "docker-compose.yaml": {
+                          "name": "docker-compose.yaml",
+                          "path": "kev.git/pkg/kev/testdata/init-default/docker-compose-yaml/docker-compose.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": true
+                        }
+                      }
+                    },
+                    "docker-compose-yml": {
+                      "name": "docker-compose-yml",
+                      "path": "kev.git/pkg/kev/testdata/init-default/docker-compose-yml",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": true,
+                      "children": {
+                        "docker-compose.yml": {
+                          "name": "docker-compose.yml",
+                          "path": "kev.git/pkg/kev/testdata/init-default/docker-compose-yml/docker-compose.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": true
+                        }
+                      }
+                    },
+                    "skaffold": {
+                      "name": "skaffold",
+                      "path": "kev.git/pkg/kev/testdata/init-default/skaffold",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "compose.yaml": {
+                          "name": "compose.yaml",
+                          "path": "kev.git/pkg/kev/testdata/init-default/skaffold/compose.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": true
+                        },
+                        "skaffold.yaml": {
+                          "name": "skaffold.yaml",
+                          "path": "kev.git/pkg/kev/testdata/init-default/skaffold/skaffold.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "merge": {
+                  "name": "merge",
+                  "path": "kev.git/pkg/kev/testdata/merge",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/merge/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/merge/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/merge/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-env-var-override": {
+                  "name": "reconcile-env-var-override",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-env-var-override",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-env-var-override/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-env-var-override/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-env-var-override/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-env-var-removal": {
+                  "name": "reconcile-env-var-removal",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-env-var-removal",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-env-var-removal/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-env-var-removal/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-env-var-removal/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-env-var-unassigned": {
+                  "name": "reconcile-env-var-unassigned",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-env-var-unassigned",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-env-var-unassigned/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-env-var-unassigned/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-env-var-unassigned/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-healthcheck-http": {
+                  "name": "reconcile-healthcheck-http",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-healthcheck-http",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-healthcheck-http/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-healthcheck-http/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-healthcheck-http/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-healthcheck-tcp": {
+                  "name": "reconcile-healthcheck-tcp",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-healthcheck-tcp",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-healthcheck-tcp/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-healthcheck-tcp/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-healthcheck-tcp/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-image-name-override": {
+                  "name": "reconcile-image-name-override",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-image-name-override",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-image-name-override/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-image-name-override/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.env.stage.yaml": {
+                      "name": "docker-compose.env.stage.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-image-name-override/docker-compose.env.stage.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-image-name-override/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-override-keep": {
+                  "name": "reconcile-override-keep",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-override-keep",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-override-keep/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-override-keep/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-override-keep/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-override-rollback": {
+                  "name": "reconcile-override-rollback",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-override-rollback",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-override-rollback/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-override-rollback/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-override-rollback/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-service-basic": {
+                  "name": "reconcile-service-basic",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-service-basic",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-basic/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-basic/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.env.stage.yaml": {
+                      "name": "docker-compose.env.stage.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-basic/docker-compose.env.stage.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-basic/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-service-deploy": {
+                  "name": "reconcile-service-deploy",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-service-deploy",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-deploy/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-deploy/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-deploy/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-service-edit": {
+                  "name": "reconcile-service-edit",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-service-edit",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-edit/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-edit/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-edit/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-service-healthcheck": {
+                  "name": "reconcile-service-healthcheck",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-service-healthcheck",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-healthcheck/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-healthcheck/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-healthcheck/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-service-removal": {
+                  "name": "reconcile-service-removal",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-service-removal",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-removal/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-removal/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-service-removal/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-version": {
+                  "name": "reconcile-version",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-version",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-version/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-version/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-version/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-volume-add": {
+                  "name": "reconcile-volume-add",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-volume-add",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-volume-add/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-volume-add/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.env.stage.yaml": {
+                      "name": "docker-compose.env.stage.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-volume-add/docker-compose.env.stage.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-volume-add/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-volume-edit": {
+                  "name": "reconcile-volume-edit",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-volume-edit",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-volume-edit/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-volume-edit/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-volume-edit/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "reconcile-volume-removal": {
+                  "name": "reconcile-volume-removal",
+                  "path": "kev.git/pkg/kev/testdata/reconcile-volume-removal",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-volume-removal/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-volume-removal/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/reconcile-volume-removal/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                },
+                "validation": {
+                  "name": "validation",
+                  "path": "kev.git/pkg/kev/testdata/validation",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "appmeta.yaml": {
+                      "name": "appmeta.yaml",
+                      "path": "kev.git/pkg/kev/testdata/validation/appmeta.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.env.dev.yaml": {
+                      "name": "docker-compose.env.dev.yaml",
+                      "path": "kev.git/pkg/kev/testdata/validation/docker-compose.env.dev.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    },
+                    "docker-compose.yaml": {
+                      "name": "docker-compose.yaml",
+                      "path": "kev.git/pkg/kev/testdata/validation/docker-compose.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": true
+                    }
+                  }
+                }
+              }
+            },
+            "testutil": {
+              "name": "testutil",
+              "path": "kev.git/pkg/kev/testutil",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "testutil.go": {
+                  "name": "testutil.go",
+                  "path": "kev.git/pkg/kev/testutil/testutil.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "transform.go": {
+              "name": "transform.go",
+              "path": "kev.git/pkg/kev/transform.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "types.go": {
+              "name": "types.go",
+              "path": "kev.git/pkg/kev/types.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "utils.go": {
+              "name": "utils.go",
+              "path": "kev.git/pkg/kev/utils.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volumes.go": {
+              "name": "volumes.go",
+              "path": "kev.git/pkg/kev/volumes.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "writables.go": {
+              "name": "writables.go",
+              "path": "kev.git/pkg/kev/writables.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 248173400,
+    "name": "kev",
+    "full_name": "appvia/kev",
+    "owner": {
+      "login": "appvia",
+      "html_url": "https://github.com/appvia",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/appvia/kev",
+    "description": "Develop Kubernetes apps iteratively with Docker-Compose",
+    "url": "https://api.github.com/repos/appvia/kev",
+    "clone_url": "https://github.com/appvia/kev.git",
+    "homepage": "",
+    "size": 15367,
+    "stargazers_count": 62,
+    "watchers_count": 62,
+    "language": "Go"
+  }
+}

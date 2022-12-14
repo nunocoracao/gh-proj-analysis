@@ -1,0 +1,2191 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 4,
+      "subFolderCount": 0,
+      "filepaths": [
+        "docker-registry-ui.git/Dockerfile",
+        "docker-registry-ui.git/arm32v7.dockerfile",
+        "docker-registry-ui.git/arm64v8.dockerfile",
+        "docker-registry-ui.git/debian.dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "docker-registry-ui.git/examples/issue-116/docker-compose.yml",
+        "docker-registry-ui.git/examples/issue-20/docker-compose.yml",
+        "docker-registry-ui.git/examples/issue-73/docker-compose.yml",
+        "docker-registry-ui.git/examples/issue-75/docker-compose.yml",
+        "docker-registry-ui.git/examples/issue-88/docker-compose.yml",
+        "docker-registry-ui.git/examples/pr-219/docker-compose.yml",
+        "docker-registry-ui.git/examples/proxy-headers/docker-compose.yml",
+        "docker-registry-ui.git/examples/read-only-auth/docker-compose.yml",
+        "docker-registry-ui.git/examples/token-auth-keycloak/docker-compose.yml",
+        "docker-registry-ui.git/examples/traefik/docker-compose-swarm.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "docker-registry-ui.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "docker-registry-ui.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "docker-registry-ui.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "docker-registry-ui.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "docker-registry-ui.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "docker-registry-ui.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "docker-registry-ui.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "docker-registry-ui.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "docker-registry-ui.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "docker-registry-ui.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "docker-registry-ui.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "docker-registry-ui.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "docker-registry-ui.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "docker-registry-ui.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "docker-registry-ui.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "docker-registry-ui.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "docker-registry-ui.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "docker-registry-ui.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "docker-registry-ui.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "docker-registry-ui.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "docker-registry-ui.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "docker-registry-ui.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "docker-registry-ui.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "docker-registry-ui.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "docker-registry-ui.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "docker-registry-ui.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "docker-registry-ui.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "docker-registry-ui.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "docker-registry-ui.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "docker-registry-ui.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "docker-registry-ui.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "docker-registry-ui.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "docker-registry-ui.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-30091f81a7b7b42b2fd30fdb0a08b6b14d06d1d4.idx": {
+                  "name": "pack-30091f81a7b7b42b2fd30fdb0a08b6b14d06d1d4.idx",
+                  "path": "docker-registry-ui.git/.git/objects/pack/pack-30091f81a7b7b42b2fd30fdb0a08b6b14d06d1d4.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-30091f81a7b7b42b2fd30fdb0a08b6b14d06d1d4.pack": {
+                  "name": "pack-30091f81a7b7b42b2fd30fdb0a08b6b14d06d1d4.pack",
+                  "path": "docker-registry-ui.git/.git/objects/pack/pack-30091f81a7b7b42b2fd30fdb0a08b6b14d06d1d4.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "docker-registry-ui.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "docker-registry-ui.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "docker-registry-ui.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "docker-registry-ui.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "docker-registry-ui.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "docker-registry-ui.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "docker-registry-ui.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "docker-registry-ui.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "2.3.3": {
+                  "name": "2.3.3",
+                  "path": "docker-registry-ui.git/.git/refs/tags/2.3.3",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "docker-registry-ui.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "docker-registry-ui.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "docker-registry-ui.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug_report.md": {
+              "name": "bug_report.md",
+              "path": "docker-registry-ui.git/.github/ISSUE_TEMPLATE/bug_report.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "custom.md": {
+              "name": "custom.md",
+              "path": "docker-registry-ui.git/.github/ISSUE_TEMPLATE/custom.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature_request.md": {
+              "name": "feature_request.md",
+              "path": "docker-registry-ui.git/.github/ISSUE_TEMPLATE/feature_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "docker-registry-ui.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.yml": {
+              "name": "main.yml",
+              "path": "docker-registry-ui.git/.github/workflows/main.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "release.yml": {
+              "name": "release.yml",
+              "path": "docker-registry-ui.git/.github/workflows/release.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "docker-registry-ui.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".prettierrc": {
+      "name": ".prettierrc",
+      "path": "docker-registry-ui.git/.prettierrc",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CODE_OF_CONDUCT.md": {
+      "name": "CODE_OF_CONDUCT.md",
+      "path": "docker-registry-ui.git/CODE_OF_CONDUCT.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "docker-registry-ui.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTORS.md": {
+      "name": "CONTRIBUTORS.md",
+      "path": "docker-registry-ui.git/CONTRIBUTORS.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "docker-registry-ui.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "docker-registry-ui.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "docker-registry-ui.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "_config.yml": {
+      "name": "_config.yml",
+      "path": "docker-registry-ui.git/_config.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "arm32v7.dockerfile": {
+      "name": "arm32v7.dockerfile",
+      "path": "docker-registry-ui.git/arm32v7.dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "arm64v8.dockerfile": {
+      "name": "arm64v8.dockerfile",
+      "path": "docker-registry-ui.git/arm64v8.dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "bin": {
+      "name": "bin",
+      "path": "docker-registry-ui.git/bin",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "90-docker-registry-ui.sh": {
+          "name": "90-docker-registry-ui.sh",
+          "path": "docker-registry-ui.git/bin/90-docker-registry-ui.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "fill-registry": {
+          "name": "fill-registry",
+          "path": "docker-registry-ui.git/bin/fill-registry",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "debian.dockerfile": {
+      "name": "debian.dockerfile",
+      "path": "docker-registry-ui.git/debian.dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "demo": {
+      "name": "demo",
+      "path": "docker-registry-ui.git/demo",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "index.html": {
+          "name": "index.html",
+          "path": "docker-registry-ui.git/demo/index.html",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "dist": {
+      "name": "dist",
+      "path": "docker-registry-ui.git/dist",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-registry-ui.css": {
+          "name": "docker-registry-ui.css",
+          "path": "docker-registry-ui.git/dist/docker-registry-ui.css",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-registry-ui.js": {
+          "name": "docker-registry-ui.js",
+          "path": "docker-registry-ui.git/dist/docker-registry-ui.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "fonts": {
+          "name": "fonts",
+          "path": "docker-registry-ui.git/dist/fonts",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "MaterialIcons-Regular.eot": {
+              "name": "MaterialIcons-Regular.eot",
+              "path": "docker-registry-ui.git/dist/fonts/MaterialIcons-Regular.eot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "MaterialIcons-Regular.svg": {
+              "name": "MaterialIcons-Regular.svg",
+              "path": "docker-registry-ui.git/dist/fonts/MaterialIcons-Regular.svg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "MaterialIcons-Regular.ttf": {
+              "name": "MaterialIcons-Regular.ttf",
+              "path": "docker-registry-ui.git/dist/fonts/MaterialIcons-Regular.ttf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "MaterialIcons-Regular.woff": {
+              "name": "MaterialIcons-Regular.woff",
+              "path": "docker-registry-ui.git/dist/fonts/MaterialIcons-Regular.woff",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "MaterialIcons-Regular.woff2": {
+              "name": "MaterialIcons-Regular.woff2",
+              "path": "docker-registry-ui.git/dist/fonts/MaterialIcons-Regular.woff2",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Bold.ttf": {
+              "name": "Roboto-Bold.ttf",
+              "path": "docker-registry-ui.git/dist/fonts/Roboto-Bold.ttf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Bold.woff": {
+              "name": "Roboto-Bold.woff",
+              "path": "docker-registry-ui.git/dist/fonts/Roboto-Bold.woff",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Bold.woff2": {
+              "name": "Roboto-Bold.woff2",
+              "path": "docker-registry-ui.git/dist/fonts/Roboto-Bold.woff2",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Light.ttf": {
+              "name": "Roboto-Light.ttf",
+              "path": "docker-registry-ui.git/dist/fonts/Roboto-Light.ttf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Light.woff": {
+              "name": "Roboto-Light.woff",
+              "path": "docker-registry-ui.git/dist/fonts/Roboto-Light.woff",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Light.woff2": {
+              "name": "Roboto-Light.woff2",
+              "path": "docker-registry-ui.git/dist/fonts/Roboto-Light.woff2",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Regular.eot": {
+              "name": "Roboto-Regular.eot",
+              "path": "docker-registry-ui.git/dist/fonts/Roboto-Regular.eot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Regular.ttf": {
+              "name": "Roboto-Regular.ttf",
+              "path": "docker-registry-ui.git/dist/fonts/Roboto-Regular.ttf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Regular.woff": {
+              "name": "Roboto-Regular.woff",
+              "path": "docker-registry-ui.git/dist/fonts/Roboto-Regular.woff",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Regular.woff2": {
+              "name": "Roboto-Regular.woff2",
+              "path": "docker-registry-ui.git/dist/fonts/Roboto-Regular.woff2",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "RobotoMono-Regular.eot": {
+              "name": "RobotoMono-Regular.eot",
+              "path": "docker-registry-ui.git/dist/fonts/RobotoMono-Regular.eot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "RobotoMono-Regular.ttf": {
+              "name": "RobotoMono-Regular.ttf",
+              "path": "docker-registry-ui.git/dist/fonts/RobotoMono-Regular.ttf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "RobotoMono-Regular.woff": {
+              "name": "RobotoMono-Regular.woff",
+              "path": "docker-registry-ui.git/dist/fonts/RobotoMono-Regular.woff",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "RobotoMono-Regular.woff2": {
+              "name": "RobotoMono-Regular.woff2",
+              "path": "docker-registry-ui.git/dist/fonts/RobotoMono-Regular.woff2",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "images": {
+          "name": "images",
+          "path": "docker-registry-ui.git/dist/images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-logo.svg": {
+              "name": "docker-logo.svg",
+              "path": "docker-registry-ui.git/dist/images/docker-logo.svg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index.html": {
+          "name": "index.html",
+          "path": "docker-registry-ui.git/dist/index.html",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "docker-registry-ui.gif": {
+      "name": "docker-registry-ui.gif",
+      "path": "docker-registry-ui.git/docker-registry-ui.gif",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "examples": {
+      "name": "examples",
+      "path": "docker-registry-ui.git/examples",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "docker-registry-ui.git/examples/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "electron": {
+          "name": "electron",
+          "path": "docker-registry-ui.git/examples/electron",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".gitignore": {
+              "name": ".gitignore",
+              "path": "docker-registry-ui.git/examples/electron/.gitignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "docker-registry-ui.git/examples/electron/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "authentication": {
+              "name": "authentication",
+              "path": "docker-registry-ui.git/examples/electron/authentication",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.html": {
+                  "name": "index.html",
+                  "path": "docker-registry-ui.git/examples/electron/authentication/index.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "index.tsx": {
+                  "name": "index.tsx",
+                  "path": "docker-registry-ui.git/examples/electron/authentication/index.tsx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "doc": {
+              "name": "doc",
+              "path": "docker-registry-ui.git/examples/electron/doc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "assets": {
+                  "name": "assets",
+                  "path": "docker-registry-ui.git/examples/electron/doc/assets",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "authentication.gif": {
+                      "name": "authentication.gif",
+                      "path": "docker-registry-ui.git/examples/electron/doc/assets/authentication.gif",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "index.js": {
+              "name": "index.js",
+              "path": "docker-registry-ui.git/examples/electron/index.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package.json": {
+              "name": "package.json",
+              "path": "docker-registry-ui.git/examples/electron/package.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "helm": {
+          "name": "helm",
+          "path": "docker-registry-ui.git/examples/helm",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-registry-ui": {
+              "name": "docker-registry-ui",
+              "path": "docker-registry-ui.git/examples/helm/docker-registry-ui",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "README.md": {
+                  "name": "README.md",
+                  "path": "docker-registry-ui.git/examples/helm/docker-registry-ui/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "issue-116": {
+          "name": "issue-116",
+          "path": "docker-registry-ui.git/examples/issue-116",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-registry-ui.git/examples/issue-116/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "htpasswd": {
+              "name": "htpasswd",
+              "path": "docker-registry-ui.git/examples/issue-116/htpasswd",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "issue-20": {
+          "name": "issue-20",
+          "path": "docker-registry-ui.git/examples/issue-20",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker-registry-ui.git/examples/issue-20/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-registry-ui.git/examples/issue-20/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "nginx": {
+              "name": "nginx",
+              "path": "docker-registry-ui.git/examples/issue-20/nginx",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "fullchain.pem": {
+                  "name": "fullchain.pem",
+                  "path": "docker-registry-ui.git/examples/issue-20/nginx/fullchain.pem",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nginx.conf": {
+                  "name": "nginx.conf",
+                  "path": "docker-registry-ui.git/examples/issue-20/nginx/nginx.conf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "privkey.pem": {
+                  "name": "privkey.pem",
+                  "path": "docker-registry-ui.git/examples/issue-20/nginx/privkey.pem",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "issue-73": {
+          "name": "issue-73",
+          "path": "docker-registry-ui.git/examples/issue-73",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-registry-ui.git/examples/issue-73/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "nginx.conf": {
+              "name": "nginx.conf",
+              "path": "docker-registry-ui.git/examples/issue-73/nginx.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "issue-75": {
+          "name": "issue-75",
+          "path": "docker-registry-ui.git/examples/issue-75",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker-registry-ui.git/examples/issue-75/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-registry-ui.git/examples/issue-75/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "registry-config": {
+              "name": "registry-config",
+              "path": "docker-registry-ui.git/examples/issue-75/registry-config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.yml": {
+                  "name": "config.yml",
+                  "path": "docker-registry-ui.git/examples/issue-75/registry-config/config.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "s3-server-cmd": {
+              "name": "s3-server-cmd",
+              "path": "docker-registry-ui.git/examples/issue-75/s3-server-cmd",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "issue-88": {
+          "name": "issue-88",
+          "path": "docker-registry-ui.git/examples/issue-88",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker-registry-ui.git/examples/issue-88/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config.yml": {
+              "name": "config.yml",
+              "path": "docker-registry-ui.git/examples/issue-88/config.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-registry-ui.git/examples/issue-88/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "kubernetes": {
+          "name": "kubernetes",
+          "path": "docker-registry-ui.git/examples/kubernetes",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker-registry-ui.git/examples/kubernetes/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "registry-configmap.yaml": {
+              "name": "registry-configmap.yaml",
+              "path": "docker-registry-ui.git/examples/kubernetes/registry-configmap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "registry-deployment.yaml": {
+              "name": "registry-deployment.yaml",
+              "path": "docker-registry-ui.git/examples/kubernetes/registry-deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "registry-pvc.yaml": {
+              "name": "registry-pvc.yaml",
+              "path": "docker-registry-ui.git/examples/kubernetes/registry-pvc.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "registry-service.yaml": {
+              "name": "registry-service.yaml",
+              "path": "docker-registry-ui.git/examples/kubernetes/registry-service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ui-deployment.yaml": {
+              "name": "ui-deployment.yaml",
+              "path": "docker-registry-ui.git/examples/kubernetes/ui-deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ui-service.yaml": {
+              "name": "ui-service.yaml",
+              "path": "docker-registry-ui.git/examples/kubernetes/ui-service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "populate-registry": {
+          "name": "populate-registry",
+          "path": "docker-registry-ui.git/examples/populate-registry",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pr-219": {
+          "name": "pr-219",
+          "path": "docker-registry-ui.git/examples/pr-219",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker-registry-ui.git/examples/pr-219/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-registry-ui.git/examples/pr-219/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "proxy-headers": {
+          "name": "proxy-headers",
+          "path": "docker-registry-ui.git/examples/proxy-headers",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker-registry-ui.git/examples/proxy-headers/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-registry-ui.git/examples/proxy-headers/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "nginx.env": {
+              "name": "nginx.env",
+              "path": "docker-registry-ui.git/examples/proxy-headers/nginx.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "registry-config": {
+              "name": "registry-config",
+              "path": "docker-registry-ui.git/examples/proxy-headers/registry-config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "credentials.yml": {
+                  "name": "credentials.yml",
+                  "path": "docker-registry-ui.git/examples/proxy-headers/registry-config/credentials.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "htpasswd": {
+                  "name": "htpasswd",
+                  "path": "docker-registry-ui.git/examples/proxy-headers/registry-config/htpasswd",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "read-only-auth": {
+          "name": "read-only-auth",
+          "path": "docker-registry-ui.git/examples/read-only-auth",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker-registry-ui.git/examples/read-only-auth/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-registry-ui.git/examples/read-only-auth/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "nginx.conf": {
+              "name": "nginx.conf",
+              "path": "docker-registry-ui.git/examples/read-only-auth/nginx.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "read-only.htpasswd": {
+              "name": "read-only.htpasswd",
+              "path": "docker-registry-ui.git/examples/read-only-auth/read-only.htpasswd",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "read-write.htpasswd": {
+              "name": "read-write.htpasswd",
+              "path": "docker-registry-ui.git/examples/read-only-auth/read-write.htpasswd",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "registry.yml": {
+              "name": "registry.yml",
+              "path": "docker-registry-ui.git/examples/read-only-auth/registry.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "token-auth-keycloak": {
+          "name": "token-auth-keycloak",
+          "path": "docker-registry-ui.git/examples/token-auth-keycloak",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".gitignore": {
+              "name": ".gitignore",
+              "path": "docker-registry-ui.git/examples/token-auth-keycloak/.gitignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "docker-registry-ui.git/examples/token-auth-keycloak/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "conf": {
+              "name": "conf",
+              "path": "docker-registry-ui.git/examples/token-auth-keycloak/conf",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "proxy": {
+                  "name": "proxy",
+                  "path": "docker-registry-ui.git/examples/token-auth-keycloak/conf/proxy",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "nginx.conf": {
+                      "name": "nginx.conf",
+                      "path": "docker-registry-ui.git/examples/token-auth-keycloak/conf/proxy/nginx.conf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "registry": {
+                  "name": "registry",
+                  "path": "docker-registry-ui.git/examples/token-auth-keycloak/conf/registry",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "config.yml": {
+                      "name": "config.yml",
+                      "path": "docker-registry-ui.git/examples/token-auth-keycloak/conf/registry/config.yml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "localhost.crt": {
+                      "name": "localhost.crt",
+                      "path": "docker-registry-ui.git/examples/token-auth-keycloak/conf/registry/localhost.crt",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "localhost.key": {
+                      "name": "localhost.key",
+                      "path": "docker-registry-ui.git/examples/token-auth-keycloak/conf/registry/localhost.key",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "localhost_trust_chain.pem": {
+                      "name": "localhost_trust_chain.pem",
+                      "path": "docker-registry-ui.git/examples/token-auth-keycloak/conf/registry/localhost_trust_chain.pem",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "data": {
+              "name": "data",
+              "path": "docker-registry-ui.git/examples/token-auth-keycloak/data",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "keycloak": {
+                  "name": "keycloak",
+                  "path": "docker-registry-ui.git/examples/token-auth-keycloak/data/keycloak",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "kernel": {
+                      "name": "kernel",
+                      "path": "docker-registry-ui.git/examples/token-auth-keycloak/data/keycloak/kernel",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "process-uuid": {
+                          "name": "process-uuid",
+                          "path": "docker-registry-ui.git/examples/token-auth-keycloak/data/keycloak/kernel/process-uuid",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "keycloak.mv.db": {
+                      "name": "keycloak.mv.db",
+                      "path": "docker-registry-ui.git/examples/token-auth-keycloak/data/keycloak/keycloak.mv.db",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "keycloak.trace.db": {
+                      "name": "keycloak.trace.db",
+                      "path": "docker-registry-ui.git/examples/token-auth-keycloak/data/keycloak/keycloak.trace.db",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tx-object-store": {
+                      "name": "tx-object-store",
+                      "path": "docker-registry-ui.git/examples/token-auth-keycloak/data/keycloak/tx-object-store",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "ShadowNoFileLockStore": {
+                          "name": "ShadowNoFileLockStore",
+                          "path": "docker-registry-ui.git/examples/token-auth-keycloak/data/keycloak/tx-object-store/ShadowNoFileLockStore",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "defaultStore": {
+                              "name": "defaultStore",
+                              "path": "docker-registry-ui.git/examples/token-auth-keycloak/data/keycloak/tx-object-store/ShadowNoFileLockStore/defaultStore",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "EISNAME": {
+                                  "name": "EISNAME",
+                                  "path": "docker-registry-ui.git/examples/token-auth-keycloak/data/keycloak/tx-object-store/ShadowNoFileLockStore/defaultStore/EISNAME",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "0_ffffac1a0002_78ce3dfd_60133e0e_1b": {
+                                      "name": "0_ffffac1a0002_78ce3dfd_60133e0e_1b",
+                                      "path": "docker-registry-ui.git/examples/token-auth-keycloak/data/keycloak/tx-object-store/ShadowNoFileLockStore/defaultStore/EISNAME/0_ffffac1a0002_78ce3dfd_60133e0e_1b",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-registry-ui.git/examples/token-auth-keycloak/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "images": {
+              "name": "images",
+              "path": "docker-registry-ui.git/examples/token-auth-keycloak/images",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "01-keycloak-home.png": {
+                  "name": "01-keycloak-home.png",
+                  "path": "docker-registry-ui.git/examples/token-auth-keycloak/images/01-keycloak-home.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "02-keycloak-signin.png": {
+                  "name": "02-keycloak-signin.png",
+                  "path": "docker-registry-ui.git/examples/token-auth-keycloak/images/02-keycloak-signin.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "03-keycloak-to-clients.png": {
+                  "name": "03-keycloak-to-clients.png",
+                  "path": "docker-registry-ui.git/examples/token-auth-keycloak/images/03-keycloak-to-clients.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "04-keycloak-create-client.png": {
+                  "name": "04-keycloak-create-client.png",
+                  "path": "docker-registry-ui.git/examples/token-auth-keycloak/images/04-keycloak-create-client.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "05-keycloak-new-client.png": {
+                  "name": "05-keycloak-new-client.png",
+                  "path": "docker-registry-ui.git/examples/token-auth-keycloak/images/05-keycloak-new-client.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "06-keycloak-download.png": {
+                  "name": "06-keycloak-download.png",
+                  "path": "docker-registry-ui.git/examples/token-auth-keycloak/images/06-keycloak-download.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "traefik": {
+          "name": "traefik",
+          "path": "docker-registry-ui.git/examples/traefik",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker-registry-ui.git/examples/traefik/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "acme.json": {
+              "name": "acme.json",
+              "path": "docker-registry-ui.git/examples/traefik/acme.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-swarm.yml": {
+              "name": "docker-compose-swarm.yml",
+              "path": "docker-registry-ui.git/examples/traefik/docker-compose-swarm.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "run-swarm.sh": {
+              "name": "run-swarm.sh",
+              "path": "docker-registry-ui.git/examples/traefik/run-swarm.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "ui-as-proxy": {
+          "name": "ui-as-proxy",
+          "path": "docker-registry-ui.git/examples/ui-as-proxy",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker-registry-ui.git/examples/ui-as-proxy/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "credentials.yml": {
+              "name": "credentials.yml",
+              "path": "docker-registry-ui.git/examples/ui-as-proxy/credentials.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "populate.sh": {
+              "name": "populate.sh",
+              "path": "docker-registry-ui.git/examples/ui-as-proxy/populate.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "registry-config": {
+              "name": "registry-config",
+              "path": "docker-registry-ui.git/examples/ui-as-proxy/registry-config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "credentials.yml": {
+                  "name": "credentials.yml",
+                  "path": "docker-registry-ui.git/examples/ui-as-proxy/registry-config/credentials.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "htpasswd": {
+                  "name": "htpasswd",
+                  "path": "docker-registry-ui.git/examples/ui-as-proxy/registry-config/htpasswd",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "simple.yml": {
+              "name": "simple.yml",
+              "path": "docker-registry-ui.git/examples/ui-as-proxy/simple.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "ui-as-standalone": {
+          "name": "ui-as-standalone",
+          "path": "docker-registry-ui.git/examples/ui-as-standalone",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "docker-registry-ui.git/examples/ui-as-standalone/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "credentials.yml": {
+              "name": "credentials.yml",
+              "path": "docker-registry-ui.git/examples/ui-as-standalone/credentials.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "populate.sh": {
+              "name": "populate.sh",
+              "path": "docker-registry-ui.git/examples/ui-as-standalone/populate.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "registry-config": {
+              "name": "registry-config",
+              "path": "docker-registry-ui.git/examples/ui-as-standalone/registry-config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "credentials.yml": {
+                  "name": "credentials.yml",
+                  "path": "docker-registry-ui.git/examples/ui-as-standalone/registry-config/credentials.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "htpasswd": {
+                  "name": "htpasswd",
+                  "path": "docker-registry-ui.git/examples/ui-as-standalone/registry-config/htpasswd",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "simple.yml": {
+                  "name": "simple.yml",
+                  "path": "docker-registry-ui.git/examples/ui-as-standalone/registry-config/simple.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "simple.yml": {
+              "name": "simple.yml",
+              "path": "docker-registry-ui.git/examples/ui-as-standalone/simple.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "favicon.ico": {
+      "name": "favicon.ico",
+      "path": "docker-registry-ui.git/favicon.ico",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "index.md": {
+      "name": "index.md",
+      "path": "docker-registry-ui.git/index.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "nginx": {
+      "name": "nginx",
+      "path": "docker-registry-ui.git/nginx",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "default.conf": {
+          "name": "default.conf",
+          "path": "docker-registry-ui.git/nginx/default.conf",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "package.json": {
+      "name": "package.json",
+      "path": "docker-registry-ui.git/package.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "rollup": {
+      "name": "rollup",
+      "path": "docker-registry-ui.git/rollup",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "check-output.js": {
+          "name": "check-output.js",
+          "path": "docker-registry-ui.git/rollup/check-output.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "copy-transform.js": {
+          "name": "copy-transform.js",
+          "path": "docker-registry-ui.git/rollup/copy-transform.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "html-useref.js": {
+          "name": "html-useref.js",
+          "path": "docker-registry-ui.git/rollup/html-useref.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "license.js": {
+          "name": "license.js",
+          "path": "docker-registry-ui.git/rollup/license.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "rollup.config.js": {
+      "name": "rollup.config.js",
+      "path": "docker-registry-ui.git/rollup.config.js",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "screenshot.png": {
+      "name": "screenshot.png",
+      "path": "docker-registry-ui.git/screenshot.png",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "src": {
+      "name": "src",
+      "path": "docker-registry-ui.git/src",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "components": {
+          "name": "components",
+          "path": "docker-registry-ui.git/src/components",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "catalog": {
+              "name": "catalog",
+              "path": "docker-registry-ui.git/src/components/catalog",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "catalog-element.riot": {
+                  "name": "catalog-element.riot",
+                  "path": "docker-registry-ui.git/src/components/catalog/catalog-element.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "catalog.riot": {
+                  "name": "catalog.riot",
+                  "path": "docker-registry-ui.git/src/components/catalog/catalog.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "dialogs": {
+              "name": "dialogs",
+              "path": "docker-registry-ui.git/src/components/dialogs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "add-registry-url.riot": {
+                  "name": "add-registry-url.riot",
+                  "path": "docker-registry-ui.git/src/components/dialogs/add-registry-url.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "change-registry-url.riot": {
+                  "name": "change-registry-url.riot",
+                  "path": "docker-registry-ui.git/src/components/dialogs/change-registry-url.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "confirm-delete-image.riot": {
+                  "name": "confirm-delete-image.riot",
+                  "path": "docker-registry-ui.git/src/components/dialogs/confirm-delete-image.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dialogs-menu.riot": {
+                  "name": "dialogs-menu.riot",
+                  "path": "docker-registry-ui.git/src/components/dialogs/dialogs-menu.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "remove-registry-url.riot": {
+                  "name": "remove-registry-url.riot",
+                  "path": "docker-registry-ui.git/src/components/dialogs/remove-registry-url.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "docker-registry-ui.riot": {
+              "name": "docker-registry-ui.riot",
+              "path": "docker-registry-ui.git/src/components/docker-registry-ui.riot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "search-bar.riot": {
+              "name": "search-bar.riot",
+              "path": "docker-registry-ui.git/src/components/search-bar.riot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tag-history": {
+              "name": "tag-history",
+              "path": "docker-registry-ui.git/src/components/tag-history",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "tag-history-element.riot": {
+                  "name": "tag-history-element.riot",
+                  "path": "docker-registry-ui.git/src/components/tag-history/tag-history-element.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tag-history.riot": {
+                  "name": "tag-history.riot",
+                  "path": "docker-registry-ui.git/src/components/tag-history/tag-history.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "tag-list": {
+              "name": "tag-list",
+              "path": "docker-registry-ui.git/src/components/tag-list",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "copy-to-clipboard.riot": {
+                  "name": "copy-to-clipboard.riot",
+                  "path": "docker-registry-ui.git/src/components/tag-list/copy-to-clipboard.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image-content-digest.riot": {
+                  "name": "image-content-digest.riot",
+                  "path": "docker-registry-ui.git/src/components/tag-list/image-content-digest.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image-date.riot": {
+                  "name": "image-date.riot",
+                  "path": "docker-registry-ui.git/src/components/tag-list/image-date.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image-size.riot": {
+                  "name": "image-size.riot",
+                  "path": "docker-registry-ui.git/src/components/tag-list/image-size.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image-tag.riot": {
+                  "name": "image-tag.riot",
+                  "path": "docker-registry-ui.git/src/components/tag-list/image-tag.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pagination.riot": {
+                  "name": "pagination.riot",
+                  "path": "docker-registry-ui.git/src/components/tag-list/pagination.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "remove-image.riot": {
+                  "name": "remove-image.riot",
+                  "path": "docker-registry-ui.git/src/components/tag-list/remove-image.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tag-history-button.riot": {
+                  "name": "tag-history-button.riot",
+                  "path": "docker-registry-ui.git/src/components/tag-list/tag-history-button.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tag-list.riot": {
+                  "name": "tag-list.riot",
+                  "path": "docker-registry-ui.git/src/components/tag-list/tag-list.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tag-table.riot": {
+                  "name": "tag-table.riot",
+                  "path": "docker-registry-ui.git/src/components/tag-list/tag-table.riot",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "fonts": {
+          "name": "fonts",
+          "path": "docker-registry-ui.git/src/fonts",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "MaterialIcons-Regular.eot": {
+              "name": "MaterialIcons-Regular.eot",
+              "path": "docker-registry-ui.git/src/fonts/MaterialIcons-Regular.eot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "MaterialIcons-Regular.svg": {
+              "name": "MaterialIcons-Regular.svg",
+              "path": "docker-registry-ui.git/src/fonts/MaterialIcons-Regular.svg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "MaterialIcons-Regular.ttf": {
+              "name": "MaterialIcons-Regular.ttf",
+              "path": "docker-registry-ui.git/src/fonts/MaterialIcons-Regular.ttf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "MaterialIcons-Regular.woff": {
+              "name": "MaterialIcons-Regular.woff",
+              "path": "docker-registry-ui.git/src/fonts/MaterialIcons-Regular.woff",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "MaterialIcons-Regular.woff2": {
+              "name": "MaterialIcons-Regular.woff2",
+              "path": "docker-registry-ui.git/src/fonts/MaterialIcons-Regular.woff2",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Bold.ttf": {
+              "name": "Roboto-Bold.ttf",
+              "path": "docker-registry-ui.git/src/fonts/Roboto-Bold.ttf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Bold.woff": {
+              "name": "Roboto-Bold.woff",
+              "path": "docker-registry-ui.git/src/fonts/Roboto-Bold.woff",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Bold.woff2": {
+              "name": "Roboto-Bold.woff2",
+              "path": "docker-registry-ui.git/src/fonts/Roboto-Bold.woff2",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Light.ttf": {
+              "name": "Roboto-Light.ttf",
+              "path": "docker-registry-ui.git/src/fonts/Roboto-Light.ttf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Light.woff": {
+              "name": "Roboto-Light.woff",
+              "path": "docker-registry-ui.git/src/fonts/Roboto-Light.woff",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Light.woff2": {
+              "name": "Roboto-Light.woff2",
+              "path": "docker-registry-ui.git/src/fonts/Roboto-Light.woff2",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Regular.eot": {
+              "name": "Roboto-Regular.eot",
+              "path": "docker-registry-ui.git/src/fonts/Roboto-Regular.eot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Regular.ttf": {
+              "name": "Roboto-Regular.ttf",
+              "path": "docker-registry-ui.git/src/fonts/Roboto-Regular.ttf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Regular.woff": {
+              "name": "Roboto-Regular.woff",
+              "path": "docker-registry-ui.git/src/fonts/Roboto-Regular.woff",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Roboto-Regular.woff2": {
+              "name": "Roboto-Regular.woff2",
+              "path": "docker-registry-ui.git/src/fonts/Roboto-Regular.woff2",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "RobotoMono-Regular.eot": {
+              "name": "RobotoMono-Regular.eot",
+              "path": "docker-registry-ui.git/src/fonts/RobotoMono-Regular.eot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "RobotoMono-Regular.ttf": {
+              "name": "RobotoMono-Regular.ttf",
+              "path": "docker-registry-ui.git/src/fonts/RobotoMono-Regular.ttf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "RobotoMono-Regular.woff": {
+              "name": "RobotoMono-Regular.woff",
+              "path": "docker-registry-ui.git/src/fonts/RobotoMono-Regular.woff",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "RobotoMono-Regular.woff2": {
+              "name": "RobotoMono-Regular.woff2",
+              "path": "docker-registry-ui.git/src/fonts/RobotoMono-Regular.woff2",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "images": {
+          "name": "images",
+          "path": "docker-registry-ui.git/src/images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-logo.svg": {
+              "name": "docker-logo.svg",
+              "path": "docker-registry-ui.git/src/images/docker-logo.svg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index.html": {
+          "name": "index.html",
+          "path": "docker-registry-ui.git/src/index.html",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "index.js": {
+          "name": "index.js",
+          "path": "docker-registry-ui.git/src/index.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "material-icons.scss": {
+          "name": "material-icons.scss",
+          "path": "docker-registry-ui.git/src/material-icons.scss",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "roboto.scss": {
+          "name": "roboto.scss",
+          "path": "docker-registry-ui.git/src/roboto.scss",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "scripts": {
+          "name": "scripts",
+          "path": "docker-registry-ui.git/src/scripts",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-image.js": {
+              "name": "docker-image.js",
+              "path": "docker-registry-ui.git/src/scripts/docker-image.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "http.js": {
+              "name": "http.js",
+              "path": "docker-registry-ui.git/src/scripts/http.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "router.js": {
+              "name": "router.js",
+              "path": "docker-registry-ui.git/src/scripts/router.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "utils.js": {
+              "name": "utils.js",
+              "path": "docker-registry-ui.git/src/scripts/utils.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "style.scss": {
+          "name": "style.scss",
+          "path": "docker-registry-ui.git/src/style.scss",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 55863512,
+    "name": "docker-registry-ui",
+    "full_name": "Joxit/docker-registry-ui",
+    "owner": {
+      "login": "Joxit",
+      "html_url": "https://github.com/Joxit",
+      "type": "User"
+    },
+    "html_url": "https://github.com/Joxit/docker-registry-ui",
+    "description": "The simplest and most complete UI for your private registry",
+    "url": "https://api.github.com/repos/Joxit/docker-registry-ui",
+    "clone_url": "https://github.com/Joxit/docker-registry-ui.git",
+    "homepage": "https://joxit.dev/docker-registry-ui/",
+    "size": 5788,
+    "stargazers_count": 1484,
+    "watchers_count": 1484,
+    "language": "Riot"
+  }
+}

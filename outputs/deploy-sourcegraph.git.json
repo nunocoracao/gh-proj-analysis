@@ -1,0 +1,2982 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".buildkite": {
+      "name": ".buildkite",
+      "path": "deploy-sourcegraph.git/.buildkite",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "check-image-names.sh": {
+          "name": "check-image-names.sh",
+          "path": "deploy-sourcegraph.git/.buildkite/check-image-names.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ci-checkov.sh": {
+          "name": "ci-checkov.sh",
+          "path": "deploy-sourcegraph.git/.buildkite/ci-checkov.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cleanup-disks.sh": {
+          "name": "cleanup-disks.sh",
+          "path": "deploy-sourcegraph.git/.buildkite/cleanup-disks.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "deploy-sourcegraph.git/.buildkite/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "pre-command": {
+              "name": "pre-command",
+              "path": "deploy-sourcegraph.git/.buildkite/hooks/pre-command",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "install-yj.sh": {
+          "name": "install-yj.sh",
+          "path": "deploy-sourcegraph.git/.buildkite/install-yj.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "integration-restricted-test.sh": {
+          "name": "integration-restricted-test.sh",
+          "path": "deploy-sourcegraph.git/.buildkite/integration-restricted-test.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "integration-test.sh": {
+          "name": "integration-test.sh",
+          "path": "deploy-sourcegraph.git/.buildkite/integration-test.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pipeline.yaml": {
+          "name": "pipeline.yaml",
+          "path": "deploy-sourcegraph.git/.buildkite/pipeline.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "prettier-check.sh": {
+          "name": "prettier-check.sh",
+          "path": "deploy-sourcegraph.git/.buildkite/prettier-check.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rbac.jq": {
+          "name": "rbac.jq",
+          "path": "deploy-sourcegraph.git/.buildkite/rbac.jq",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "shfmt.sh": {
+          "name": "shfmt.sh",
+          "path": "deploy-sourcegraph.git/.buildkite/shfmt.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "verify-label.sh": {
+          "name": "verify-label.sh",
+          "path": "deploy-sourcegraph.git/.buildkite/verify-label.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "verify-overlays.sh": {
+          "name": "verify-overlays.sh",
+          "path": "deploy-sourcegraph.git/.buildkite/verify-overlays.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "verify-rbac-labels.sh": {
+          "name": "verify-rbac-labels.sh",
+          "path": "deploy-sourcegraph.git/.buildkite/verify-rbac-labels.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "verify-release": {
+          "name": "verify-release",
+          "path": "deploy-sourcegraph.git/.buildkite/verify-release",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "go.mod": {
+              "name": "go.mod",
+              "path": "deploy-sourcegraph.git/.buildkite/verify-release/go.mod",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "go.sum": {
+              "name": "go.sum",
+              "path": "deploy-sourcegraph.git/.buildkite/verify-release/go.sum",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "verify-release.go": {
+              "name": "verify-release.go",
+              "path": "deploy-sourcegraph.git/.buildkite/verify-release/verify-release.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "verify-release.sh": {
+              "name": "verify-release.sh",
+              "path": "deploy-sourcegraph.git/.buildkite/verify-release/verify-release.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "verify-yaml.sh": {
+          "name": "verify-yaml.sh",
+          "path": "deploy-sourcegraph.git/.buildkite/verify-yaml.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".editorconfig": {
+      "name": ".editorconfig",
+      "path": "deploy-sourcegraph.git/.editorconfig",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "deploy-sourcegraph.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "deploy-sourcegraph.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "deploy-sourcegraph.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "deploy-sourcegraph.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "deploy-sourcegraph.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "deploy-sourcegraph.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "deploy-sourcegraph.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "deploy-sourcegraph.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "deploy-sourcegraph.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "deploy-sourcegraph.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "deploy-sourcegraph.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "deploy-sourcegraph.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "deploy-sourcegraph.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "deploy-sourcegraph.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "deploy-sourcegraph.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "deploy-sourcegraph.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "deploy-sourcegraph.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "deploy-sourcegraph.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "deploy-sourcegraph.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "deploy-sourcegraph.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-b0f7ef0b7bae50d65771b4ea2e4f33d6e37ba4ee.idx": {
+                  "name": "pack-b0f7ef0b7bae50d65771b4ea2e4f33d6e37ba4ee.idx",
+                  "path": "deploy-sourcegraph.git/.git/objects/pack/pack-b0f7ef0b7bae50d65771b4ea2e4f33d6e37ba4ee.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-b0f7ef0b7bae50d65771b4ea2e4f33d6e37ba4ee.pack": {
+                  "name": "pack-b0f7ef0b7bae50d65771b4ea2e4f33d6e37ba4ee.pack",
+                  "path": "deploy-sourcegraph.git/.git/objects/pack/pack-b0f7ef0b7bae50d65771b4ea2e4f33d6e37ba4ee.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "deploy-sourcegraph.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "deploy-sourcegraph.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "deploy-sourcegraph.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "deploy-sourcegraph.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "deploy-sourcegraph.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "deploy-sourcegraph.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "deploy-sourcegraph.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "deploy-sourcegraph.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "deploy-sourcegraph.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "deploy-sourcegraph.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "deploy-sourcegraph.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "stop--do-not-file-issues-here.md": {
+              "name": "stop--do-not-file-issues-here.md",
+              "path": "deploy-sourcegraph.git/.github/ISSUE_TEMPLATE/stop--do-not-file-issues-here.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "PULL_REQUEST_TEMPLATE.md": {
+          "name": "PULL_REQUEST_TEMPLATE.md",
+          "path": "deploy-sourcegraph.git/.github/PULL_REQUEST_TEMPLATE.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "deploy-sourcegraph.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "automerge.yml": {
+              "name": "automerge.yml",
+              "path": "deploy-sourcegraph.git/.github/workflows/automerge.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dispatch-update.yml.bk": {
+              "name": "dispatch-update.yml.bk",
+              "path": "deploy-sourcegraph.git/.github/workflows/dispatch-update.yml.bk",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lsif.yml": {
+              "name": "lsif.yml",
+              "path": "deploy-sourcegraph.git/.github/workflows/lsif.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pr-auditor.yml": {
+              "name": "pr-auditor.yml",
+              "path": "deploy-sourcegraph.git/.github/workflows/pr-auditor.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update-tags.yml": {
+              "name": "update-tags.yml",
+              "path": "deploy-sourcegraph.git/.github/workflows/update-tags.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "deploy-sourcegraph.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".nvmrc": {
+      "name": ".nvmrc",
+      "path": "deploy-sourcegraph.git/.nvmrc",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".tool-versions": {
+      "name": ".tool-versions",
+      "path": "deploy-sourcegraph.git/.tool-versions",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".vscode": {
+      "name": ".vscode",
+      "path": "deploy-sourcegraph.git/.vscode",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "extensions.json": {
+          "name": "extensions.json",
+          "path": "deploy-sourcegraph.git/.vscode/extensions.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "settings.json": {
+          "name": "settings.json",
+          "path": "deploy-sourcegraph.git/.vscode/settings.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "tags": {
+          "name": "tags",
+          "path": "deploy-sourcegraph.git/.vscode/tags",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "deploy-sourcegraph.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.dev.md": {
+      "name": "README.dev.md",
+      "path": "deploy-sourcegraph.git/README.dev.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "deploy-sourcegraph.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "base": {
+      "name": "base",
+      "path": "deploy-sourcegraph.git/base",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "blobstore": {
+          "name": "blobstore",
+          "path": "deploy-sourcegraph.git/base/blobstore",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "blobstore.Deployment.yaml": {
+              "name": "blobstore.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/blobstore/blobstore.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "blobstore.PersistentVolumeClaim.yaml": {
+              "name": "blobstore.PersistentVolumeClaim.yaml",
+              "path": "deploy-sourcegraph.git/base/blobstore/blobstore.PersistentVolumeClaim.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "blobstore.Service.yaml": {
+              "name": "blobstore.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/blobstore/blobstore.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "cadvisor": {
+          "name": "cadvisor",
+          "path": "deploy-sourcegraph.git/base/cadvisor",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/base/cadvisor/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cadvisor.DaemonSet.yaml": {
+              "name": "cadvisor.DaemonSet.yaml",
+              "path": "deploy-sourcegraph.git/base/cadvisor/cadvisor.DaemonSet.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cadvisor.ServiceAccount.yaml": {
+              "name": "cadvisor.ServiceAccount.yaml",
+              "path": "deploy-sourcegraph.git/base/cadvisor/cadvisor.ServiceAccount.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "codeinsights-db": {
+          "name": "codeinsights-db",
+          "path": "deploy-sourcegraph.git/base/codeinsights-db",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "codeinsights-db.ConfigMap.yaml": {
+              "name": "codeinsights-db.ConfigMap.yaml",
+              "path": "deploy-sourcegraph.git/base/codeinsights-db/codeinsights-db.ConfigMap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "codeinsights-db.Deployment.yaml": {
+              "name": "codeinsights-db.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/codeinsights-db/codeinsights-db.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "codeinsights-db.PersistentVolumeClaim.yaml": {
+              "name": "codeinsights-db.PersistentVolumeClaim.yaml",
+              "path": "deploy-sourcegraph.git/base/codeinsights-db/codeinsights-db.PersistentVolumeClaim.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "codeinsights-db.Service.yaml": {
+              "name": "codeinsights-db.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/codeinsights-db/codeinsights-db.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "codeintel-db": {
+          "name": "codeintel-db",
+          "path": "deploy-sourcegraph.git/base/codeintel-db",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "codeintel-db.ConfigMap.yaml": {
+              "name": "codeintel-db.ConfigMap.yaml",
+              "path": "deploy-sourcegraph.git/base/codeintel-db/codeintel-db.ConfigMap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "codeintel-db.Deployment.yaml": {
+              "name": "codeintel-db.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/codeintel-db/codeintel-db.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "codeintel-db.PersistentVolumeClaim.yaml": {
+              "name": "codeintel-db.PersistentVolumeClaim.yaml",
+              "path": "deploy-sourcegraph.git/base/codeintel-db/codeintel-db.PersistentVolumeClaim.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "codeintel-db.Service.yaml": {
+              "name": "codeintel-db.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/codeintel-db/codeintel-db.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "frontend": {
+          "name": "frontend",
+          "path": "deploy-sourcegraph.git/base/frontend",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "sourcegraph-frontend-internal.Service.yaml": {
+              "name": "sourcegraph-frontend-internal.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/frontend/sourcegraph-frontend-internal.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sourcegraph-frontend.Deployment.yaml": {
+              "name": "sourcegraph-frontend.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/frontend/sourcegraph-frontend.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sourcegraph-frontend.Ingress.yaml": {
+              "name": "sourcegraph-frontend.Ingress.yaml",
+              "path": "deploy-sourcegraph.git/base/frontend/sourcegraph-frontend.Ingress.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sourcegraph-frontend.Role.yaml": {
+              "name": "sourcegraph-frontend.Role.yaml",
+              "path": "deploy-sourcegraph.git/base/frontend/sourcegraph-frontend.Role.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sourcegraph-frontend.RoleBinding.yaml": {
+              "name": "sourcegraph-frontend.RoleBinding.yaml",
+              "path": "deploy-sourcegraph.git/base/frontend/sourcegraph-frontend.RoleBinding.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sourcegraph-frontend.Service.yaml": {
+              "name": "sourcegraph-frontend.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/frontend/sourcegraph-frontend.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sourcegraph-frontend.ServiceAccount.yaml": {
+              "name": "sourcegraph-frontend.ServiceAccount.yaml",
+              "path": "deploy-sourcegraph.git/base/frontend/sourcegraph-frontend.ServiceAccount.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "github-proxy": {
+          "name": "github-proxy",
+          "path": "deploy-sourcegraph.git/base/github-proxy",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "github-proxy.Deployment.yaml": {
+              "name": "github-proxy.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/github-proxy/github-proxy.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "github-proxy.Service.yaml": {
+              "name": "github-proxy.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/github-proxy/github-proxy.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "gitserver": {
+          "name": "gitserver",
+          "path": "deploy-sourcegraph.git/base/gitserver",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "gitserver.Service.yaml": {
+              "name": "gitserver.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/gitserver/gitserver.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "gitserver.StatefulSet.yaml": {
+              "name": "gitserver.StatefulSet.yaml",
+              "path": "deploy-sourcegraph.git/base/gitserver/gitserver.StatefulSet.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "grafana": {
+          "name": "grafana",
+          "path": "deploy-sourcegraph.git/base/grafana",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/base/grafana/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grafana.ConfigMap.yaml": {
+              "name": "grafana.ConfigMap.yaml",
+              "path": "deploy-sourcegraph.git/base/grafana/grafana.ConfigMap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grafana.Service.yaml": {
+              "name": "grafana.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/grafana/grafana.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grafana.ServiceAccount.yaml": {
+              "name": "grafana.ServiceAccount.yaml",
+              "path": "deploy-sourcegraph.git/base/grafana/grafana.ServiceAccount.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grafana.StatefulSet.yaml": {
+              "name": "grafana.StatefulSet.yaml",
+              "path": "deploy-sourcegraph.git/base/grafana/grafana.StatefulSet.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "indexed-search": {
+          "name": "indexed-search",
+          "path": "deploy-sourcegraph.git/base/indexed-search",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "indexed-search.IndexerService.yaml": {
+              "name": "indexed-search.IndexerService.yaml",
+              "path": "deploy-sourcegraph.git/base/indexed-search/indexed-search.IndexerService.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "indexed-search.Service.yaml": {
+              "name": "indexed-search.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/indexed-search/indexed-search.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "indexed-search.StatefulSet.yaml": {
+              "name": "indexed-search.StatefulSet.yaml",
+              "path": "deploy-sourcegraph.git/base/indexed-search/indexed-search.StatefulSet.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "node-exporter": {
+          "name": "node-exporter",
+          "path": "deploy-sourcegraph.git/base/node-exporter",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "node-exporter.DaemonSet.yaml": {
+              "name": "node-exporter.DaemonSet.yaml",
+              "path": "deploy-sourcegraph.git/base/node-exporter/node-exporter.DaemonSet.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "node-exporter.Service.yaml": {
+              "name": "node-exporter.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/node-exporter/node-exporter.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "otel-collector": {
+          "name": "otel-collector",
+          "path": "deploy-sourcegraph.git/base/otel-collector",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "otel-agent.ConfigMap.yaml": {
+              "name": "otel-agent.ConfigMap.yaml",
+              "path": "deploy-sourcegraph.git/base/otel-collector/otel-agent.ConfigMap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "otel-agent.DaemonSet.yaml": {
+              "name": "otel-agent.DaemonSet.yaml",
+              "path": "deploy-sourcegraph.git/base/otel-collector/otel-agent.DaemonSet.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "otel-collector.ConfigMap.yaml": {
+              "name": "otel-collector.ConfigMap.yaml",
+              "path": "deploy-sourcegraph.git/base/otel-collector/otel-collector.ConfigMap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "otel-collector.Deployment.yaml": {
+              "name": "otel-collector.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/otel-collector/otel-collector.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "otel-collector.Service.yaml": {
+              "name": "otel-collector.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/otel-collector/otel-collector.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "pgsql": {
+          "name": "pgsql",
+          "path": "deploy-sourcegraph.git/base/pgsql",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "pgsql.ConfigMap.yaml": {
+              "name": "pgsql.ConfigMap.yaml",
+              "path": "deploy-sourcegraph.git/base/pgsql/pgsql.ConfigMap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgsql.Deployment.yaml": {
+              "name": "pgsql.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/pgsql/pgsql.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgsql.PersistentVolumeClaim.yaml": {
+              "name": "pgsql.PersistentVolumeClaim.yaml",
+              "path": "deploy-sourcegraph.git/base/pgsql/pgsql.PersistentVolumeClaim.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgsql.Service.yaml": {
+              "name": "pgsql.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/pgsql/pgsql.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "precise-code-intel": {
+          "name": "precise-code-intel",
+          "path": "deploy-sourcegraph.git/base/precise-code-intel",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "worker.Deployment.yaml": {
+              "name": "worker.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/precise-code-intel/worker.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "worker.Service.yaml": {
+              "name": "worker.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/precise-code-intel/worker.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "prometheus": {
+          "name": "prometheus",
+          "path": "deploy-sourcegraph.git/base/prometheus",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/base/prometheus/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prometheus.ClusterRole.yaml": {
+              "name": "prometheus.ClusterRole.yaml",
+              "path": "deploy-sourcegraph.git/base/prometheus/prometheus.ClusterRole.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prometheus.ClusterRoleBinding.yaml": {
+              "name": "prometheus.ClusterRoleBinding.yaml",
+              "path": "deploy-sourcegraph.git/base/prometheus/prometheus.ClusterRoleBinding.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prometheus.ConfigMap.yaml": {
+              "name": "prometheus.ConfigMap.yaml",
+              "path": "deploy-sourcegraph.git/base/prometheus/prometheus.ConfigMap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prometheus.Deployment.yaml": {
+              "name": "prometheus.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/prometheus/prometheus.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prometheus.PersistentVolumeClaim.yaml": {
+              "name": "prometheus.PersistentVolumeClaim.yaml",
+              "path": "deploy-sourcegraph.git/base/prometheus/prometheus.PersistentVolumeClaim.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prometheus.Service.yaml": {
+              "name": "prometheus.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/prometheus/prometheus.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prometheus.ServiceAccount.yaml": {
+              "name": "prometheus.ServiceAccount.yaml",
+              "path": "deploy-sourcegraph.git/base/prometheus/prometheus.ServiceAccount.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "redis": {
+          "name": "redis",
+          "path": "deploy-sourcegraph.git/base/redis",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "redis-cache.Deployment.yaml": {
+              "name": "redis-cache.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/redis/redis-cache.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "redis-cache.PersistentVolumeClaim.yaml": {
+              "name": "redis-cache.PersistentVolumeClaim.yaml",
+              "path": "deploy-sourcegraph.git/base/redis/redis-cache.PersistentVolumeClaim.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "redis-cache.Service.yaml": {
+              "name": "redis-cache.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/redis/redis-cache.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "redis-store.Deployment.yaml": {
+              "name": "redis-store.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/redis/redis-store.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "redis-store.PersistentVolumeClaim.yaml": {
+              "name": "redis-store.PersistentVolumeClaim.yaml",
+              "path": "deploy-sourcegraph.git/base/redis/redis-store.PersistentVolumeClaim.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "redis-store.Service.yaml": {
+              "name": "redis-store.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/redis/redis-store.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "repo-updater": {
+          "name": "repo-updater",
+          "path": "deploy-sourcegraph.git/base/repo-updater",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "repo-updater.Deployment.yaml": {
+              "name": "repo-updater.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/repo-updater/repo-updater.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "repo-updater.Service.yaml": {
+              "name": "repo-updater.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/repo-updater/repo-updater.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "searcher": {
+          "name": "searcher",
+          "path": "deploy-sourcegraph.git/base/searcher",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "searcher.Deployment.yaml": {
+              "name": "searcher.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/searcher/searcher.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "searcher.Service.yaml": {
+              "name": "searcher.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/searcher/searcher.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "symbols": {
+          "name": "symbols",
+          "path": "deploy-sourcegraph.git/base/symbols",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "symbols.Deployment.yaml": {
+              "name": "symbols.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/symbols/symbols.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "symbols.Service.yaml": {
+              "name": "symbols.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/symbols/symbols.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "syntect-server": {
+          "name": "syntect-server",
+          "path": "deploy-sourcegraph.git/base/syntect-server",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "syntect-server.Deployment.yaml": {
+              "name": "syntect-server.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/syntect-server/syntect-server.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "syntect-server.Service.yaml": {
+              "name": "syntect-server.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/syntect-server/syntect-server.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "worker": {
+          "name": "worker",
+          "path": "deploy-sourcegraph.git/base/worker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "worker-executors.Service.yaml": {
+              "name": "worker-executors.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/worker/worker-executors.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "worker.Deployment.yaml": {
+              "name": "worker.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/base/worker/worker.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "worker.Service.yaml": {
+              "name": "worker.Service.yaml",
+              "path": "deploy-sourcegraph.git/base/worker/worker.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "configure": {
+      "name": "configure",
+      "path": "deploy-sourcegraph.git/configure",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ingress-nginx": {
+          "name": "ingress-nginx",
+          "path": "deploy-sourcegraph.git/configure/ingress-nginx",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/configure/ingress-nginx/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cloud-generic.yaml": {
+              "name": "cloud-generic.yaml",
+              "path": "deploy-sourcegraph.git/configure/ingress-nginx/cloud-generic.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install.sh": {
+              "name": "install.sh",
+              "path": "deploy-sourcegraph.git/configure/ingress-nginx/install.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mandatory.yaml": {
+              "name": "mandatory.yaml",
+              "path": "deploy-sourcegraph.git/configure/ingress-nginx/mandatory.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "jaeger": {
+          "name": "jaeger",
+          "path": "deploy-sourcegraph.git/configure/jaeger",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/configure/jaeger/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "migrator": {
+          "name": "migrator",
+          "path": "deploy-sourcegraph.git/configure/migrator",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "migrator.Job.yaml": {
+              "name": "migrator.Job.yaml",
+              "path": "deploy-sourcegraph.git/configure/migrator/migrator.Job.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "ssd": {
+          "name": "ssd",
+          "path": "deploy-sourcegraph.git/configure/ssd",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/configure/ssd/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pod-tmp-gc.ClusterRole.yaml": {
+              "name": "pod-tmp-gc.ClusterRole.yaml",
+              "path": "deploy-sourcegraph.git/configure/ssd/pod-tmp-gc.ClusterRole.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pod-tmp-gc.ClusterRoleBinding.yaml": {
+              "name": "pod-tmp-gc.ClusterRoleBinding.yaml",
+              "path": "deploy-sourcegraph.git/configure/ssd/pod-tmp-gc.ClusterRoleBinding.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pod-tmp-gc.DaemonSet.yaml": {
+              "name": "pod-tmp-gc.DaemonSet.yaml",
+              "path": "deploy-sourcegraph.git/configure/ssd/pod-tmp-gc.DaemonSet.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pod-tmp-gc.ServiceAccount.yaml": {
+              "name": "pod-tmp-gc.ServiceAccount.yaml",
+              "path": "deploy-sourcegraph.git/configure/ssd/pod-tmp-gc.ServiceAccount.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "create-new-cluster.sh": {
+      "name": "create-new-cluster.sh",
+      "path": "deploy-sourcegraph.git/create-new-cluster.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docs": {
+      "name": "docs",
+      "path": "deploy-sourcegraph.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "configure.md": {
+          "name": "configure.md",
+          "path": "deploy-sourcegraph.git/docs/configure.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "install.md": {
+          "name": "install.md",
+          "path": "deploy-sourcegraph.git/docs/install.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "k8s.azure.md": {
+          "name": "k8s.azure.md",
+          "path": "deploy-sourcegraph.git/docs/k8s.azure.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "k8s.eks.md": {
+          "name": "k8s.eks.md",
+          "path": "deploy-sourcegraph.git/docs/k8s.eks.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "k8s.md": {
+          "name": "k8s.md",
+          "path": "deploy-sourcegraph.git/docs/k8s.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "migrate.md": {
+          "name": "migrate.md",
+          "path": "deploy-sourcegraph.git/docs/migrate.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "scale.md": {
+          "name": "scale.md",
+          "path": "deploy-sourcegraph.git/docs/scale.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "troubleshoot.md": {
+          "name": "troubleshoot.md",
+          "path": "deploy-sourcegraph.git/docs/troubleshoot.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "update.md": {
+          "name": "update.md",
+          "path": "deploy-sourcegraph.git/docs/update.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "deploy-sourcegraph.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "deploy-sourcegraph.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "kubectl-apply-all.sh": {
+      "name": "kubectl-apply-all.sh",
+      "path": "deploy-sourcegraph.git/kubectl-apply-all.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "overlay-generate-cluster.sh": {
+      "name": "overlay-generate-cluster.sh",
+      "path": "deploy-sourcegraph.git/overlay-generate-cluster.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "overlays": {
+      "name": "overlays",
+      "path": "deploy-sourcegraph.git/overlays",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "deploy-sourcegraph.git/overlays/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "bases": {
+          "name": "bases",
+          "path": "deploy-sourcegraph.git/overlays/bases",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployments": {
+              "name": "deployments",
+              "path": "deploy-sourcegraph.git/overlays/bases/deployments",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/bases/deployments/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pvcs": {
+              "name": "pvcs",
+              "path": "deploy-sourcegraph.git/overlays/bases/pvcs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/bases/pvcs/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "rbac-roles": {
+              "name": "rbac-roles",
+              "path": "deploy-sourcegraph.git/overlays/bases/rbac-roles",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/bases/rbac-roles/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "envoy": {
+          "name": "envoy",
+          "path": "deploy-sourcegraph.git/overlays/envoy",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/overlays/envoy/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "gitserver.EnvoyFilter.yaml": {
+              "name": "gitserver.EnvoyFilter.yaml",
+              "path": "deploy-sourcegraph.git/overlays/envoy/gitserver.EnvoyFilter.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "deploy-sourcegraph.git/overlays/envoy/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "jaeger": {
+          "name": "jaeger",
+          "path": "deploy-sourcegraph.git/overlays/jaeger",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/overlays/jaeger/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grafana.ConfigMap.yaml": {
+              "name": "grafana.ConfigMap.yaml",
+              "path": "deploy-sourcegraph.git/overlays/jaeger/grafana.ConfigMap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "jaeger-collector.Service.yaml": {
+              "name": "jaeger-collector.Service.yaml",
+              "path": "deploy-sourcegraph.git/overlays/jaeger/jaeger-collector.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "jaeger-query.Service.yaml": {
+              "name": "jaeger-query.Service.yaml",
+              "path": "deploy-sourcegraph.git/overlays/jaeger/jaeger-query.Service.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "jaeger.Deployment.yaml": {
+              "name": "jaeger.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/overlays/jaeger/jaeger.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "deploy-sourcegraph.git/overlays/jaeger/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "otel-collector.Deployment.yaml": {
+              "name": "otel-collector.Deployment.yaml",
+              "path": "deploy-sourcegraph.git/overlays/jaeger/otel-collector.Deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "low-resource": {
+          "name": "low-resource",
+          "path": "deploy-sourcegraph.git/overlays/low-resource",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "LimitRange.yaml": {
+              "name": "LimitRange.yaml",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/LimitRange.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cadvisor": {
+              "name": "cadvisor",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/cadvisor",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "delete-Daemonset.yaml": {
+                  "name": "delete-Daemonset.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/low-resource/cadvisor/delete-Daemonset.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete-ServiceAccount.yaml": {
+                  "name": "delete-ServiceAccount.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/low-resource/cadvisor/delete-ServiceAccount.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "delete-resources-2.yaml": {
+              "name": "delete-resources-2.yaml",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/delete-resources-2.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "delete-resources-3.yaml": {
+              "name": "delete-resources-3.yaml",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/delete-resources-3.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "delete-resources-4.yaml": {
+              "name": "delete-resources-4.yaml",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/delete-resources-4.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "delete-resources.yaml": {
+              "name": "delete-resources.yaml",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/delete-resources.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "gitserver-patch.yaml": {
+              "name": "gitserver-patch.yaml",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/gitserver-patch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grafana-patch.yaml": {
+              "name": "grafana-patch.yaml",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/grafana-patch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "indexed-search-patch.yaml": {
+              "name": "indexed-search-patch.yaml",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/indexed-search-patch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "node-exporter": {
+              "name": "node-exporter",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/node-exporter",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "delete-Daemonset.yaml": {
+                  "name": "delete-Daemonset.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/low-resource/node-exporter/delete-Daemonset.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete-Service.yaml": {
+                  "name": "delete-Service.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/low-resource/node-exporter/delete-Service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "otel-agent-patch.yaml": {
+              "name": "otel-agent-patch.yaml",
+              "path": "deploy-sourcegraph.git/overlays/low-resource/otel-agent-patch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "migrate-to-nonprivileged": {
+          "name": "migrate-to-nonprivileged",
+          "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "blobstore": {
+              "name": "blobstore",
+              "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/blobstore",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "blobstore.Deployment.yaml": {
+                  "name": "blobstore.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/blobstore/blobstore.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "gitserver": {
+              "name": "gitserver",
+              "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/gitserver",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "gitserver.StatefulSet.yaml": {
+                  "name": "gitserver.StatefulSet.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/gitserver/gitserver.StatefulSet.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "grafana": {
+              "name": "grafana",
+              "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/grafana",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "grafana.StatefulSet.yaml": {
+                  "name": "grafana.StatefulSet.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/grafana/grafana.StatefulSet.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "indexed-search": {
+              "name": "indexed-search",
+              "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/indexed-search",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "indexed-search.StatefulSet.yaml": {
+                  "name": "indexed-search.StatefulSet.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/indexed-search/indexed-search.StatefulSet.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prometheus": {
+              "name": "prometheus",
+              "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/prometheus",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "prometheus.Deployment.yaml": {
+                  "name": "prometheus.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/prometheus/prometheus.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "redis": {
+              "name": "redis",
+              "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/redis",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "redis-cache.Deployment.yaml": {
+                  "name": "redis-cache.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/redis/redis-cache.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "redis-store.Deployment.yaml": {
+                  "name": "redis-store.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/redis/redis-store.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "searcher": {
+              "name": "searcher",
+              "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/searcher",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "searcher.Deployment.yaml": {
+                  "name": "searcher.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/migrate-to-nonprivileged/searcher/searcher.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "minikube": {
+          "name": "minikube",
+          "path": "deploy-sourcegraph.git/overlays/minikube",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/overlays/minikube/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "delete-resources-2.yaml": {
+              "name": "delete-resources-2.yaml",
+              "path": "deploy-sourcegraph.git/overlays/minikube/delete-resources-2.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "delete-resources.yaml": {
+              "name": "delete-resources.yaml",
+              "path": "deploy-sourcegraph.git/overlays/minikube/delete-resources.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "gitserver-patch.yaml": {
+              "name": "gitserver-patch.yaml",
+              "path": "deploy-sourcegraph.git/overlays/minikube/gitserver-patch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grafana-patch.yaml": {
+              "name": "grafana-patch.yaml",
+              "path": "deploy-sourcegraph.git/overlays/minikube/grafana-patch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "indexed-search-patch.yaml": {
+              "name": "indexed-search-patch.yaml",
+              "path": "deploy-sourcegraph.git/overlays/minikube/indexed-search-patch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "deploy-sourcegraph.git/overlays/minikube/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prometheus": {
+              "name": "prometheus",
+              "path": "deploy-sourcegraph.git/overlays/minikube/prometheus",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "prometheus.ClusterRoleBinding.yaml": {
+                  "name": "prometheus.ClusterRoleBinding.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/minikube/prometheus/prometheus.ClusterRoleBinding.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "namespaced": {
+          "name": "namespaced",
+          "path": "deploy-sourcegraph.git/overlays/namespaced",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/overlays/namespaced/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "deploy-sourcegraph.git/overlays/namespaced/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prometheus": {
+              "name": "prometheus",
+              "path": "deploy-sourcegraph.git/overlays/namespaced/prometheus",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "prometheus.ClusterRoleBinding.yaml": {
+                  "name": "prometheus.ClusterRoleBinding.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/namespaced/prometheus/prometheus.ClusterRoleBinding.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "prometheus.ConfigMap.yaml": {
+                  "name": "prometheus.ConfigMap.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/namespaced/prometheus/prometheus.ConfigMap.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "non-privileged": {
+          "name": "non-privileged",
+          "path": "deploy-sourcegraph.git/overlays/non-privileged",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "blobstore": {
+              "name": "blobstore",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/blobstore",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "blobstore.Deployment.yaml": {
+                  "name": "blobstore.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/blobstore/blobstore.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "codeinsights-db": {
+              "name": "codeinsights-db",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/codeinsights-db",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "codeinsights-db.Deployment.yaml": {
+                  "name": "codeinsights-db.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/codeinsights-db/codeinsights-db.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "codeintel-db": {
+              "name": "codeintel-db",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/codeintel-db",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "codeintel-db.Deployment.yaml": {
+                  "name": "codeintel-db.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/codeintel-db/codeintel-db.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "frontend": {
+              "name": "frontend",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/frontend",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "sourcegraph-frontend.Deployment.yaml": {
+                  "name": "sourcegraph-frontend.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/frontend/sourcegraph-frontend.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sourcegraph-frontend.RoleBinding.yaml": {
+                  "name": "sourcegraph-frontend.RoleBinding.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/frontend/sourcegraph-frontend.RoleBinding.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "github-proxy": {
+              "name": "github-proxy",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/github-proxy",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "github-proxy.Deployment.yaml": {
+                  "name": "github-proxy.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/github-proxy/github-proxy.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "gitserver": {
+              "name": "gitserver",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/gitserver",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "gitserver.StatefulSet.yaml": {
+                  "name": "gitserver.StatefulSet.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/gitserver/gitserver.StatefulSet.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "grafana": {
+              "name": "grafana",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/grafana",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "grafana.StatefulSet.yaml": {
+                  "name": "grafana.StatefulSet.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/grafana/grafana.StatefulSet.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "indexed-search": {
+              "name": "indexed-search",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/indexed-search",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "indexed-search.StatefulSet.yaml": {
+                  "name": "indexed-search.StatefulSet.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/indexed-search/indexed-search.StatefulSet.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "otel-collector": {
+              "name": "otel-collector",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/otel-collector",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "otel-agent.DaemonSet.yaml": {
+                  "name": "otel-agent.DaemonSet.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/otel-collector/otel-agent.DaemonSet.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "otel-collector.Deployment.yaml": {
+                  "name": "otel-collector.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/otel-collector/otel-collector.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pgsql": {
+              "name": "pgsql",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/pgsql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pgsql.Deployment.yaml": {
+                  "name": "pgsql.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/pgsql/pgsql.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "precise-code-intel": {
+              "name": "precise-code-intel",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/precise-code-intel",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "worker.Deployment.yaml": {
+                  "name": "worker.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/precise-code-intel/worker.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "prometheus": {
+              "name": "prometheus",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/prometheus",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "prometheus.ConfigMap.yaml": {
+                  "name": "prometheus.ConfigMap.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/prometheus/prometheus.ConfigMap.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "prometheus.Deployment.yaml": {
+                  "name": "prometheus.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/prometheus/prometheus.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "prometheus.RoleBinding.yaml": {
+                  "name": "prometheus.RoleBinding.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/prometheus/prometheus.RoleBinding.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "redis": {
+              "name": "redis",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/redis",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "redis-cache.Deployment.yaml": {
+                  "name": "redis-cache.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/redis/redis-cache.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "redis-store.Deployment.yaml": {
+                  "name": "redis-store.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/redis/redis-store.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "repo-updater": {
+              "name": "repo-updater",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/repo-updater",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "repo-updater.Deployment.yaml": {
+                  "name": "repo-updater.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/repo-updater/repo-updater.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "searcher": {
+              "name": "searcher",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/searcher",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "searcher.Deployment.yaml": {
+                  "name": "searcher.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/searcher/searcher.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "symbols": {
+              "name": "symbols",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/symbols",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "symbols.Deployment.yaml": {
+                  "name": "symbols.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/symbols/symbols.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "syntect-server": {
+              "name": "syntect-server",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/syntect-server",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "syntect-server.Deployment.yaml": {
+                  "name": "syntect-server.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/syntect-server/syntect-server.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "worker": {
+              "name": "worker",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged/worker",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "worker.Deployment.yaml": {
+                  "name": "worker.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged/worker/worker.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "non-privileged-create-cluster": {
+          "name": "non-privileged-create-cluster",
+          "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "blobstore": {
+              "name": "blobstore",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/blobstore",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "blobstore.Deployment.yaml": {
+                  "name": "blobstore.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/blobstore/blobstore.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "codeinsights-db": {
+              "name": "codeinsights-db",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/codeinsights-db",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "codeinsights-db.Deployment.yaml": {
+                  "name": "codeinsights-db.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/codeinsights-db/codeinsights-db.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "codeintel-db": {
+              "name": "codeintel-db",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/codeintel-db",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "codeintel-db.Deployment.yaml": {
+                  "name": "codeintel-db.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/codeintel-db/codeintel-db.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "gitserver": {
+              "name": "gitserver",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/gitserver",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "gitserver.StatefulSet.yaml": {
+                  "name": "gitserver.StatefulSet.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/gitserver/gitserver.StatefulSet.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "grafana": {
+              "name": "grafana",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/grafana",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "grafana.StatefulSet.yaml": {
+                  "name": "grafana.StatefulSet.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/grafana/grafana.StatefulSet.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "indexed-search": {
+              "name": "indexed-search",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/indexed-search",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "indexed-search.StatefulSet.yaml": {
+                  "name": "indexed-search.StatefulSet.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/indexed-search/indexed-search.StatefulSet.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgsql": {
+              "name": "pgsql",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/pgsql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pgsql.Deployment.yaml": {
+                  "name": "pgsql.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/pgsql/pgsql.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "prometheus": {
+              "name": "prometheus",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/prometheus",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "prometheus.Deployment.yaml": {
+                  "name": "prometheus.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/prometheus/prometheus.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "redis": {
+              "name": "redis",
+              "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/redis",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "redis-cache.Deployment.yaml": {
+                  "name": "redis-cache.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/redis/redis-cache.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "redis-store.Deployment.yaml": {
+                  "name": "redis-store.Deployment.yaml",
+                  "path": "deploy-sourcegraph.git/overlays/non-privileged-create-cluster/redis/redis-store.Deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "resources-update": {
+          "name": "resources-update",
+          "path": "deploy-sourcegraph.git/overlays/resources-update",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/overlays/resources-update/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "deploy-sourcegraph.git/overlays/resources-update/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "resources.yaml": {
+              "name": "resources.yaml",
+              "path": "deploy-sourcegraph.git/overlays/resources-update/resources.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "storageclass": {
+          "name": "storageclass",
+          "path": "deploy-sourcegraph.git/overlays/storageclass",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "deploy-sourcegraph.git/overlays/storageclass/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "deploy-sourcegraph.git/overlays/storageclass/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "replace-storageclass-name-pvc.yaml": {
+              "name": "replace-storageclass-name-pvc.yaml",
+              "path": "deploy-sourcegraph.git/overlays/storageclass/replace-storageclass-name-pvc.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "replace-storageclass-name-sts.yaml": {
+              "name": "replace-storageclass-name-sts.yaml",
+              "path": "deploy-sourcegraph.git/overlays/storageclass/replace-storageclass-name-sts.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "renovate.json": {
+      "name": "renovate.json",
+      "path": "deploy-sourcegraph.git/renovate.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "tests": {
+      "name": "tests",
+      "path": "deploy-sourcegraph.git/tests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "integration": {
+          "name": "integration",
+          "path": "deploy-sourcegraph.git/tests/integration",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "fresh": {
+              "name": "fresh",
+              "path": "deploy-sourcegraph.git/tests/integration/fresh",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "fresh_test.go": {
+                  "name": "fresh_test.go",
+                  "path": "deploy-sourcegraph.git/tests/integration/fresh/fresh_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "step1": {
+                  "name": "step1",
+                  "path": "deploy-sourcegraph.git/tests/integration/fresh/step1",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    ".nvrmc": {
+                      "name": ".nvrmc",
+                      "path": "deploy-sourcegraph.git/tests/integration/fresh/step1/.nvrmc",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    ".tool-versions": {
+                      "name": ".tool-versions",
+                      "path": "deploy-sourcegraph.git/tests/integration/fresh/step1/.tool-versions",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Pulumi.yaml": {
+                      "name": "Pulumi.yaml",
+                      "path": "deploy-sourcegraph.git/tests/integration/fresh/step1/Pulumi.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "cluster.ts": {
+                      "name": "cluster.ts",
+                      "path": "deploy-sourcegraph.git/tests/integration/fresh/step1/cluster.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "config.ts": {
+                      "name": "config.ts",
+                      "path": "deploy-sourcegraph.git/tests/integration/fresh/step1/config.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "index.ts": {
+                      "name": "index.ts",
+                      "path": "deploy-sourcegraph.git/tests/integration/fresh/step1/index.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "package.json": {
+                      "name": "package.json",
+                      "path": "deploy-sourcegraph.git/tests/integration/fresh/step1/package.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "prettier.config.js": {
+                      "name": "prettier.config.js",
+                      "path": "deploy-sourcegraph.git/tests/integration/fresh/step1/prettier.config.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "yarn.lock": {
+                      "name": "yarn.lock",
+                      "path": "deploy-sourcegraph.git/tests/integration/fresh/step1/yarn.lock",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "yarn.lock": {
+                  "name": "yarn.lock",
+                  "path": "deploy-sourcegraph.git/tests/integration/fresh/yarn.lock",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "restricted": {
+              "name": "restricted",
+              "path": "deploy-sourcegraph.git/tests/integration/restricted",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "install-src.sh": {
+                  "name": "install-src.sh",
+                  "path": "deploy-sourcegraph.git/tests/integration/restricted/install-src.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nonroot-policy.yaml": {
+                  "name": "nonroot-policy.yaml",
+                  "path": "deploy-sourcegraph.git/tests/integration/restricted/nonroot-policy.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sourcegraph.StorageClass.yaml": {
+                  "name": "sourcegraph.StorageClass.yaml",
+                  "path": "deploy-sourcegraph.git/tests/integration/restricted/sourcegraph.StorageClass.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "test.sh": {
+                  "name": "test.sh",
+                  "path": "deploy-sourcegraph.git/tests/integration/restricted/test.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "validate.json": {
+                  "name": "validate.json",
+                  "path": "deploy-sourcegraph.git/tests/integration/restricted/validate.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tools": {
+      "name": "tools",
+      "path": "deploy-sourcegraph.git/tools",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "check-image-names": {
+          "name": "check-image-names",
+          "path": "deploy-sourcegraph.git/tools/check-image-names",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "check-image-names.go": {
+              "name": "check-image-names.go",
+              "path": "deploy-sourcegraph.git/tools/check-image-names/check-image-names.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "check-image-names_test.go": {
+              "name": "check-image-names_test.go",
+              "path": "deploy-sourcegraph.git/tools/check-image-names/check-image-names_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tests": {
+              "name": "tests",
+              "path": "deploy-sourcegraph.git/tools/check-image-names/tests",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "enforce-tags": {
+          "name": "enforce-tags",
+          "path": "deploy-sourcegraph.git/tools/enforce-tags",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "deploy-sourcegraph.git/tools/enforce-tags/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "tools.go": {
+          "name": "tools.go",
+          "path": "deploy-sourcegraph.git/tools/tools.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "update-docker-tags.sh": {
+          "name": "update-docker-tags.sh",
+          "path": "deploy-sourcegraph.git/tools/update-docker-tags.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "yarn.lock": {
+      "name": "yarn.lock",
+      "path": "deploy-sourcegraph.git/yarn.lock",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    }
+  },
+  "info": {
+    "id": 132192726,
+    "name": "deploy-sourcegraph",
+    "full_name": "sourcegraph/deploy-sourcegraph",
+    "owner": {
+      "login": "sourcegraph",
+      "html_url": "https://github.com/sourcegraph",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/sourcegraph/deploy-sourcegraph",
+    "description": "Deploy Sourcegraph to a Kubernetes cluster for large-scale code search and intelligence",
+    "url": "https://api.github.com/repos/sourcegraph/deploy-sourcegraph",
+    "clone_url": "https://github.com/sourcegraph/deploy-sourcegraph.git",
+    "homepage": "https://about.sourcegraph.com",
+    "size": 32445,
+    "stargazers_count": 103,
+    "watchers_count": 103,
+    "language": "Shell"
+  }
+}

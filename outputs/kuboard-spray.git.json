@@ -1,0 +1,4125 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 1,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kuboard-spray.git/Dockerfile",
+        "kuboard-spray.git/docs/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".docker": {
+      "name": ".docker",
+      "path": "kuboard-spray.git/.docker",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ansible-patch": {
+          "name": "ansible-patch",
+          "path": "kuboard-spray.git/.docker/ansible-patch",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config": {
+              "name": "config",
+              "path": "kuboard-spray.git/.docker/ansible-patch/config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "base.yml": {
+                  "name": "base.yml",
+                  "path": "kuboard-spray.git/.docker/ansible-patch/config/base.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "plugins_action": {
+              "name": "plugins_action",
+              "path": "kuboard-spray.git/.docker/ansible-patch/plugins_action",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "raw.py": {
+                  "name": "raw.py",
+                  "path": "kuboard-spray.git/.docker/ansible-patch/plugins_action/raw.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "plugins_callback": {
+              "name": "plugins_callback",
+              "path": "kuboard-spray.git/.docker/ansible-patch/plugins_callback",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "__init__.py": {
+                  "name": "__init__.py",
+                  "path": "kuboard-spray.git/.docker/ansible-patch/plugins_callback/__init__.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "default.py": {
+                  "name": "default.py",
+                  "path": "kuboard-spray.git/.docker/ansible-patch/plugins_callback/default.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "pip.conf": {
+          "name": "pip.conf",
+          "path": "kuboard-spray.git/.docker/pip.conf",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "kuboard-spray.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "kuboard-spray.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "kuboard-spray.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "kuboard-spray.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "kuboard-spray.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "kuboard-spray.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "kuboard-spray.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "kuboard-spray.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "kuboard-spray.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "kuboard-spray.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "kuboard-spray.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "kuboard-spray.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "kuboard-spray.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "kuboard-spray.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "kuboard-spray.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "kuboard-spray.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "kuboard-spray.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "kuboard-spray.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "kuboard-spray.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "kuboard-spray.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "kuboard-spray.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "kuboard-spray.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "kuboard-spray.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "kuboard-spray.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "kuboard-spray.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "kuboard-spray.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "kuboard-spray.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "kuboard-spray.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "kuboard-spray.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "kuboard-spray.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "kuboard-spray.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "kuboard-spray.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "kuboard-spray.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-432d1560a437ccb2e8ee870dd0805e81fe2451b5.idx": {
+                  "name": "pack-432d1560a437ccb2e8ee870dd0805e81fe2451b5.idx",
+                  "path": "kuboard-spray.git/.git/objects/pack/pack-432d1560a437ccb2e8ee870dd0805e81fe2451b5.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-432d1560a437ccb2e8ee870dd0805e81fe2451b5.pack": {
+                  "name": "pack-432d1560a437ccb2e8ee870dd0805e81fe2451b5.pack",
+                  "path": "kuboard-spray.git/.git/objects/pack/pack-432d1560a437ccb2e8ee870dd0805e81fe2451b5.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "kuboard-spray.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "kuboard-spray.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "kuboard-spray.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "kuboard-spray.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "kuboard-spray.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "kuboard-spray.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "kuboard-spray.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "kuboard-spray.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "kuboard-spray.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "kuboard-spray.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".gitmodules": {
+      "name": ".gitmodules",
+      "path": "kuboard-spray.git/.gitmodules",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "kuboard-spray.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "kuboard-spray.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "kuboard-spray.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "admin": {
+      "name": "admin",
+      "path": "kuboard-spray.git/admin",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "kuboard-spray.git/admin/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cmd": {
+          "name": "cmd",
+          "path": "kuboard-spray.git/admin/cmd",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "logrus-formatter.go": {
+              "name": "logrus-formatter.go",
+              "path": "kuboard-spray.git/admin/cmd/logrus-formatter.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "reset-password.go": {
+              "name": "reset-password.go",
+              "path": "kuboard-spray.git/admin/cmd/reset-password.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "root.go": {
+              "name": "root.go",
+              "path": "kuboard-spray.git/admin/cmd/root.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "go.mod": {
+          "name": "go.mod",
+          "path": "kuboard-spray.git/admin/go.mod",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "go.sum": {
+          "name": "go.sum",
+          "path": "kuboard-spray.git/admin/go.sum",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kuboard-spray-admin.go": {
+          "name": "kuboard-spray-admin.go",
+          "path": "kuboard-spray.git/admin/kuboard-spray-admin.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "build.sh": {
+      "name": "build.sh",
+      "path": "kuboard-spray.git/build.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docs": {
+      "name": "docs",
+      "path": "kuboard-spray.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".docker": {
+          "name": ".docker",
+          "path": "kuboard-spray.git/docs/.docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "nginx.80.conf": {
+              "name": "nginx.80.conf",
+              "path": "kuboard-spray.git/docs/.docker/nginx.80.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nginx.conf": {
+              "name": "nginx.conf",
+              "path": "kuboard-spray.git/docs/.docker/nginx.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        ".dockerignore": {
+          "name": ".dockerignore",
+          "path": "kuboard-spray.git/docs/.dockerignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "kuboard-spray.git/docs/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".vuepress": {
+          "name": ".vuepress",
+          "path": "kuboard-spray.git/docs/.vuepress",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "comp": {
+              "name": "comp",
+              "path": "kuboard-spray.git/docs/.vuepress/comp",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "CopyToClipBoard.vue": {
+                  "name": "CopyToClipBoard.vue",
+                  "path": "kuboard-spray.git/docs/.vuepress/comp/CopyToClipBoard.vue",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "InstallAddon.vue": {
+                  "name": "InstallAddon.vue",
+                  "path": "kuboard-spray.git/docs/.vuepress/comp/InstallAddon.vue",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "KuboardDemo.vue": {
+                  "name": "KuboardDemo.vue",
+                  "path": "kuboard-spray.git/docs/.vuepress/comp/KuboardDemo.vue",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "kuboard-spray.git/docs/.vuepress/comp/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kuboard-spray": {
+                  "name": "kuboard-spray",
+                  "path": "kuboard-spray.git/docs/.vuepress/comp/kuboard-spray",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "PackageContentField.vue": {
+                      "name": "PackageContentField.vue",
+                      "path": "kuboard-spray.git/docs/.vuepress/comp/kuboard-spray/PackageContentField.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ResourceDetails.vue": {
+                      "name": "ResourceDetails.vue",
+                      "path": "kuboard-spray.git/docs/.vuepress/comp/kuboard-spray/ResourceDetails.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ResourceOffline.vue": {
+                      "name": "ResourceOffline.vue",
+                      "path": "kuboard-spray.git/docs/.vuepress/comp/kuboard-spray/ResourceOffline.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Resources.vue": {
+                      "name": "Resources.vue",
+                      "path": "kuboard-spray.git/docs/.vuepress/comp/kuboard-spray/Resources.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "config.js": {
+              "name": "config.js",
+              "path": "kuboard-spray.git/docs/.vuepress/config.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "enhanceApp.js": {
+              "name": "enhanceApp.js",
+              "path": "kuboard-spray.git/docs/.vuepress/enhanceApp.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "styles": {
+              "name": "styles",
+              "path": "kuboard-spray.git/docs/.vuepress/styles",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.styl": {
+                  "name": "index.styl",
+                  "path": "kuboard-spray.git/docs/.vuepress/styles/index.styl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "palette.styl": {
+                  "name": "palette.styl",
+                  "path": "kuboard-spray.git/docs/.vuepress/styles/palette.styl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "kuboard-spray.git/docs/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "kuboard-spray.git/docs/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build.sh": {
+          "name": "build.sh",
+          "path": "kuboard-spray.git/docs/build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "guide": {
+          "name": "guide",
+          "path": "kuboard-spray.git/docs/guide",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "addons": {
+              "name": "addons",
+              "path": "kuboard-spray.git/docs/guide/addons",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "install_addon.assets": {
+                  "name": "install_addon.assets",
+                  "path": "kuboard-spray.git/docs/guide/addons/install_addon.assets",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "install-addon-01.png": {
+                      "name": "install-addon-01.png",
+                      "path": "kuboard-spray.git/docs/guide/addons/install_addon.assets/install-addon-01.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "install-addon-02.png": {
+                      "name": "install-addon-02.png",
+                      "path": "kuboard-spray.git/docs/guide/addons/install_addon.assets/install-addon-02.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "install-addon-03.png": {
+                      "name": "install-addon-03.png",
+                      "path": "kuboard-spray.git/docs/guide/addons/install_addon.assets/install-addon-03.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "install-addon-04.png": {
+                      "name": "install-addon-04.png",
+                      "path": "kuboard-spray.git/docs/guide/addons/install_addon.assets/install-addon-04.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove-addon-01.png": {
+                      "name": "remove-addon-01.png",
+                      "path": "kuboard-spray.git/docs/guide/addons/install_addon.assets/remove-addon-01.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "install_addon.md": {
+                  "name": "install_addon.md",
+                  "path": "kuboard-spray.git/docs/guide/addons/install_addon.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kuboard.assets": {
+                  "name": "kuboard.assets",
+                  "path": "kuboard-spray.git/docs/guide/addons/kuboard.assets",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "kuboard-access.png": {
+                      "name": "kuboard-access.png",
+                      "path": "kuboard-spray.git/docs/guide/addons/kuboard.assets/kuboard-access.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "kuboard.png": {
+                      "name": "kuboard.png",
+                      "path": "kuboard-spray.git/docs/guide/addons/kuboard.assets/kuboard.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "kuboard.md": {
+                  "name": "kuboard.md",
+                  "path": "kuboard-spray.git/docs/guide/addons/kuboard.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "metrics_server.md": {
+                  "name": "metrics_server.md",
+                  "path": "kuboard-spray.git/docs/guide/addons/metrics_server.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "netchecker.md": {
+                  "name": "netchecker.md",
+                  "path": "kuboard-spray.git/docs/guide/addons/netchecker.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nodelocaldns.md": {
+                  "name": "nodelocaldns.md",
+                  "path": "kuboard-spray.git/docs/guide/addons/nodelocaldns.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "cis-scan": {
+              "name": "cis-scan",
+              "path": "kuboard-spray.git/docs/guide/cis-scan",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kube-bench.md": {
+                  "name": "kube-bench.md",
+                  "path": "kuboard-spray.git/docs/guide/cis-scan/kube-bench.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "extra": {
+              "name": "extra",
+              "path": "kuboard-spray.git/docs/guide/extra",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "speedup.md": {
+                  "name": "speedup.md",
+                  "path": "kuboard-spray.git/docs/guide/extra/speedup.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "websocket.assets": {
+                  "name": "websocket.assets",
+                  "path": "kuboard-spray.git/docs/guide/extra/websocket.assets",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "websocket-error.png": {
+                      "name": "websocket-error.png",
+                      "path": "kuboard-spray.git/docs/guide/extra/websocket.assets/websocket-error.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "websocket.md": {
+                  "name": "websocket.md",
+                  "path": "kuboard-spray.git/docs/guide/extra/websocket.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "install-k8s.assets": {
+              "name": "install-k8s.assets",
+              "path": "kuboard-spray.git/docs/guide/install-k8s.assets",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kuboard-spray-01.png": {
+                  "name": "kuboard-spray-01.png",
+                  "path": "kuboard-spray.git/docs/guide/install-k8s.assets/kuboard-spray-01.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kuboard-spray-02.png": {
+                  "name": "kuboard-spray-02.png",
+                  "path": "kuboard-spray.git/docs/guide/install-k8s.assets/kuboard-spray-02.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kuboard-spray-03.png": {
+                  "name": "kuboard-spray-03.png",
+                  "path": "kuboard-spray.git/docs/guide/install-k8s.assets/kuboard-spray-03.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kuboard-spray-04.png": {
+                  "name": "kuboard-spray-04.png",
+                  "path": "kuboard-spray.git/docs/guide/install-k8s.assets/kuboard-spray-04.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kuboard-spray-05.png": {
+                  "name": "kuboard-spray-05.png",
+                  "path": "kuboard-spray.git/docs/guide/install-k8s.assets/kuboard-spray-05.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kuboard-spray-06.png": {
+                  "name": "kuboard-spray-06.png",
+                  "path": "kuboard-spray.git/docs/guide/install-k8s.assets/kuboard-spray-06.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "install-k8s.md": {
+              "name": "install-k8s.md",
+              "path": "kuboard-spray.git/docs/guide/install-k8s.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "maintain": {
+              "name": "maintain",
+              "path": "kuboard-spray.git/docs/guide/maintain",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "add-replace-node.assets": {
+                  "name": "add-replace-node.assets",
+                  "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "add-control-plane-01.png": {
+                      "name": "add-control-plane-01.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/add-control-plane-01.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "add-control-plane-03.png": {
+                      "name": "add-control-plane-03.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/add-control-plane-03.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "add-control-plane-04.png": {
+                      "name": "add-control-plane-04.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/add-control-plane-04.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "add-etcd-01.png": {
+                      "name": "add-etcd-01.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/add-etcd-01.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "add-etcd-02.png": {
+                      "name": "add-etcd-02.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/add-etcd-02.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "add-etcd-03.png": {
+                      "name": "add-etcd-03.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/add-etcd-03.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "add-etcd-04.png": {
+                      "name": "add-etcd-04.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/add-etcd-04.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "add-node-01.png": {
+                      "name": "add-node-01.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/add-node-01.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "add-node-02.png": {
+                      "name": "add-node-02.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/add-node-02.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "add-node-03.png": {
+                      "name": "add-node-03.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/add-node-03.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove-control-plane-01.png": {
+                      "name": "remove-control-plane-01.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/remove-control-plane-01.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove-control-plane-02.png": {
+                      "name": "remove-control-plane-02.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/remove-control-plane-02.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove-control-plane-03.png": {
+                      "name": "remove-control-plane-03.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/remove-control-plane-03.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove-control-plane-04.png": {
+                      "name": "remove-control-plane-04.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/remove-control-plane-04.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove-etcd-01.png": {
+                      "name": "remove-etcd-01.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/remove-etcd-01.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove-etcd-02.png": {
+                      "name": "remove-etcd-02.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/remove-etcd-02.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove-etcd-03.png": {
+                      "name": "remove-etcd-03.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/remove-etcd-03.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove-etcd-04.png": {
+                      "name": "remove-etcd-04.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/remove-etcd-04.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove-node-01.png": {
+                      "name": "remove-node-01.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/remove-node-01.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove-node-02.png": {
+                      "name": "remove-node-02.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.assets/remove-node-02.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "add-replace-node.md": {
+                  "name": "add-replace-node.md",
+                  "path": "kuboard-spray.git/docs/guide/maintain/add-replace-node.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "backup.md": {
+                  "name": "backup.md",
+                  "path": "kuboard-spray.git/docs/guide/maintain/backup.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ha-mode.assets": {
+                  "name": "ha-mode.assets",
+                  "path": "kuboard-spray.git/docs/guide/maintain/ha-mode.assets",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "loadbalancer_localhost.png": {
+                      "name": "loadbalancer_localhost.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/ha-mode.assets/loadbalancer_localhost.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "ha-mode.md": {
+                  "name": "ha-mode.md",
+                  "path": "kuboard-spray.git/docs/guide/maintain/ha-mode.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "upgrade.assets": {
+                  "name": "upgrade.assets",
+                  "path": "kuboard-spray.git/docs/guide/maintain/upgrade.assets",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "upgrade-01.png": {
+                      "name": "upgrade-01.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/upgrade.assets/upgrade-01.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "upgrade-02.png": {
+                      "name": "upgrade-02.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/upgrade.assets/upgrade-02.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "upgrade-03.png": {
+                      "name": "upgrade-03.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/upgrade.assets/upgrade-03.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "upgrade-05.png": {
+                      "name": "upgrade-05.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/upgrade.assets/upgrade-05.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "upgrade-06.png": {
+                      "name": "upgrade-06.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/upgrade.assets/upgrade-06.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "upgrade-07.png": {
+                      "name": "upgrade-07.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/upgrade.assets/upgrade-07.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "upgrade-08.png": {
+                      "name": "upgrade-08.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/upgrade.assets/upgrade-08.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "upgrade-09.png": {
+                      "name": "upgrade-09.png",
+                      "path": "kuboard-spray.git/docs/guide/maintain/upgrade.assets/upgrade-09.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "upgrade.md": {
+                  "name": "upgrade.md",
+                  "path": "kuboard-spray.git/docs/guide/maintain/upgrade.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "network-plugin": {
+              "name": "network-plugin",
+              "path": "kuboard-spray.git/docs/guide/network-plugin",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "calico.md": {
+                  "name": "calico.md",
+                  "path": "kuboard-spray.git/docs/guide/network-plugin/calico.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "flannel.md": {
+                  "name": "flannel.md",
+                  "path": "kuboard-spray.git/docs/guide/network-plugin/flannel.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "options": {
+              "name": "options",
+              "path": "kuboard-spray.git/docs/guide/options",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "admission-plugins.md": {
+                  "name": "admission-plugins.md",
+                  "path": "kuboard-spray.git/docs/guide/options/admission-plugins.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "insecure-registry.assets": {
+                  "name": "insecure-registry.assets",
+                  "path": "kuboard-spray.git/docs/guide/options/insecure-registry.assets",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "01.png": {
+                      "name": "01.png",
+                      "path": "kuboard-spray.git/docs/guide/options/insecure-registry.assets/01.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "02.png": {
+                      "name": "02.png",
+                      "path": "kuboard-spray.git/docs/guide/options/insecure-registry.assets/02.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "03.png": {
+                      "name": "03.png",
+                      "path": "kuboard-spray.git/docs/guide/options/insecure-registry.assets/03.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "04.png": {
+                      "name": "04.png",
+                      "path": "kuboard-spray.git/docs/guide/options/insecure-registry.assets/04.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "11.png": {
+                      "name": "11.png",
+                      "path": "kuboard-spray.git/docs/guide/options/insecure-registry.assets/11.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "12.png": {
+                      "name": "12.png",
+                      "path": "kuboard-spray.git/docs/guide/options/insecure-registry.assets/12.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "13.png": {
+                      "name": "13.png",
+                      "path": "kuboard-spray.git/docs/guide/options/insecure-registry.assets/13.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "insecure-registry.md": {
+                  "name": "insecure-registry.md",
+                  "path": "kuboard-spray.git/docs/guide/options/insecure-registry.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "resource-package": {
+              "name": "resource-package",
+              "path": "kuboard-spray.git/docs/guide/resource-package",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "make.md": {
+                  "name": "make.md",
+                  "path": "kuboard-spray.git/docs/guide/resource-package/make.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "repo.md": {
+                  "name": "repo.md",
+                  "path": "kuboard-spray.git/docs/guide/resource-package/repo.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "kuboard-spray": {
+          "name": "kuboard-spray",
+          "path": "kuboard-spray.git/docs/kuboard-spray",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "backup.md": {
+              "name": "backup.md",
+              "path": "kuboard-spray.git/docs/kuboard-spray/backup.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "reset-password.md": {
+              "name": "reset-password.md",
+              "path": "kuboard-spray.git/docs/kuboard-spray/reset-password.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "package.json": {
+          "name": "package.json",
+          "path": "kuboard-spray.git/docs/package.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "setup-dev": {
+          "name": "setup-dev",
+          "path": "kuboard-spray.git/docs/setup-dev",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "dev.assets": {
+              "name": "dev.assets",
+              "path": "kuboard-spray.git/docs/setup-dev/dev.assets",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "iShot_2022-08-06_20.07.52.png": {
+                  "name": "iShot_2022-08-06_20.07.52.png",
+                  "path": "kuboard-spray.git/docs/setup-dev/dev.assets/iShot_2022-08-06_20.07.52.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "iShot_2022-08-06_20.21.03.png": {
+                  "name": "iShot_2022-08-06_20.21.03.png",
+                  "path": "kuboard-spray.git/docs/setup-dev/dev.assets/iShot_2022-08-06_20.21.03.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "iShot_2022-08-13_17.10.26.png": {
+                  "name": "iShot_2022-08-13_17.10.26.png",
+                  "path": "kuboard-spray.git/docs/setup-dev/dev.assets/iShot_2022-08-13_17.10.26.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "dev.md": {
+              "name": "dev.md",
+              "path": "kuboard-spray.git/docs/setup-dev/dev.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "support": {
+          "name": "support",
+          "path": "kuboard-spray.git/docs/support",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "kuboard-spray.git/docs/support/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "change-log": {
+              "name": "change-log",
+              "path": "kuboard-spray.git/docs/support/change-log",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "v1-in-progress.md": {
+                  "name": "v1-in-progress.md",
+                  "path": "kuboard-spray.git/docs/support/change-log/v1-in-progress.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "v1.md": {
+                  "name": "v1.md",
+                  "path": "kuboard-spray.git/docs/support/change-log/v1.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "yarn.lock": {
+          "name": "yarn.lock",
+          "path": "kuboard-spray.git/docs/yarn.lock",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "go-yaml": {
+      "name": "go-yaml",
+      "path": "kuboard-spray.git/go-yaml",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {}
+    },
+    "go.work": {
+      "name": "go.work",
+      "path": "kuboard-spray.git/go.work",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.work.sum": {
+      "name": "go.work.sum",
+      "path": "kuboard-spray.git/go.work.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "requirements.txt": {
+      "name": "requirements.txt",
+      "path": "kuboard-spray.git/requirements.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "server": {
+      "name": "server",
+      "path": "kuboard-spray.git/server",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "kuboard-spray.git/server/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ansible-rpc": {
+          "name": "ansible-rpc",
+          "path": "kuboard-spray.git/server/ansible-rpc",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ansible.cfg": {
+              "name": "ansible.cfg",
+              "path": "kuboard-spray.git/server/ansible-rpc/ansible.cfg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.json": {
+              "name": "test.json",
+              "path": "kuboard-spray.git/server/ansible-rpc/test.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.yaml": {
+              "name": "test.yaml",
+              "path": "kuboard-spray.git/server/ansible-rpc/test.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "ansible-script": {
+          "name": "ansible-script",
+          "path": "kuboard-spray.git/server/ansible-script",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ansible.cfg": {
+              "name": "ansible.cfg",
+              "path": "kuboard-spray.git/server/ansible-script/ansible.cfg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mirror_ubuntu.yaml": {
+              "name": "mirror_ubuntu.yaml",
+              "path": "kuboard-spray.git/server/ansible-script/mirror_ubuntu.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "roles": {
+              "name": "roles",
+              "path": "kuboard-spray.git/server/ansible-script/roles",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ansible-apache2": {
+                  "name": "ansible-apache2",
+                  "path": "kuboard-spray.git/server/ansible-script/roles/ansible-apache2",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {}
+                },
+                "ansible-apt-mirror": {
+                  "name": "ansible-apt-mirror",
+                  "path": "kuboard-spray.git/server/ansible-script/roles/ansible-apt-mirror",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {}
+                },
+                "ansible-offline-yum-repo": {
+                  "name": "ansible-offline-yum-repo",
+                  "path": "kuboard-spray.git/server/ansible-script/roles/ansible-offline-yum-repo",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {}
+                }
+              }
+            }
+          }
+        },
+        "api": {
+          "name": "api",
+          "path": "kuboard-spray.git/server/api",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ansible_rpc": {
+              "name": "ansible_rpc",
+              "path": "kuboard-spray.git/server/api/ansible_rpc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ansible_ad_hoc.go": {
+                  "name": "ansible_ad_hoc.go",
+                  "path": "kuboard-spray.git/server/api/ansible_rpc/ansible_ad_hoc.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ansible_rpc_result.go": {
+                  "name": "ansible_rpc_result.go",
+                  "path": "kuboard-spray.git/server/api/ansible_rpc/ansible_rpc_result.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ansible_shell.go": {
+                  "name": "ansible_shell.go",
+                  "path": "kuboard-spray.git/server/api/ansible_rpc/ansible_shell.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ansible_shell_abort_on_first_success.go": {
+                  "name": "ansible_shell_abort_on_first_success.go",
+                  "path": "kuboard-spray.git/server/api/ansible_rpc/ansible_shell_abort_on_first_success.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "cluster": {
+              "name": "cluster",
+              "path": "kuboard-spray.git/server/api/cluster",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "backup": {
+                  "name": "backup",
+                  "path": "kuboard-spray.git/server/api/cluster/backup",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "list_backup.go": {
+                      "name": "list_backup.go",
+                      "path": "kuboard-spray.git/server/api/cluster/backup/list_backup.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove_backup.go": {
+                      "name": "remove_backup.go",
+                      "path": "kuboard-spray.git/server/api/cluster/backup/remove_backup.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "change_resource_package_version.go": {
+                  "name": "change_resource_package_version.go",
+                  "path": "kuboard-spray.git/server/api/cluster/change_resource_package_version.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cis_scan": {
+                  "name": "cis_scan",
+                  "path": "kuboard-spray.git/server/api/cluster/cis_scan",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "cis_scan.go": {
+                      "name": "cis_scan.go",
+                      "path": "kuboard-spray.git/server/api/cluster/cis_scan/cis_scan.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils.go": {
+                      "name": "utils.go",
+                      "path": "kuboard-spray.git/server/api/cluster/cis_scan/utils.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "cluster_access": {
+                  "name": "cluster_access",
+                  "path": "kuboard-spray.git/server/api/cluster/cluster_access",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "get_kubeconfig.go": {
+                      "name": "get_kubeconfig.go",
+                      "path": "kuboard-spray.git/server/api/cluster/cluster_access/get_kubeconfig.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "cluster_common": {
+                  "name": "cluster_common",
+                  "path": "kuboard-spray.git/server/api/cluster/cluster_common",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "cluster_meta_data.go": {
+                      "name": "cluster_meta_data.go",
+                      "path": "kuboard-spray.git/server/api/cluster/cluster_common/cluster_meta_data.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "save_inventory.go": {
+                      "name": "save_inventory.go",
+                      "path": "kuboard-spray.git/server/api/cluster/cluster_common/save_inventory.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils.go": {
+                      "name": "utils.go",
+                      "path": "kuboard-spray.git/server/api/cluster/cluster_common/utils.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "create_cluster.go": {
+                  "name": "create_cluster.go",
+                  "path": "kuboard-spray.git/server/api/cluster/create_cluster.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete_cluster.go": {
+                  "name": "delete_cluster.go",
+                  "path": "kuboard-spray.git/server/api/cluster/delete_cluster.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "get_cluster.go": {
+                  "name": "get_cluster.go",
+                  "path": "kuboard-spray.git/server/api/cluster/get_cluster.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "health_check": {
+                  "name": "health_check",
+                  "path": "kuboard-spray.git/server/api/cluster/health_check",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "check_connectivity.go": {
+                      "name": "check_connectivity.go",
+                      "path": "kuboard-spray.git/server/api/cluster/health_check/check_connectivity.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "check_connectivity_details.go": {
+                      "name": "check_connectivity_details.go",
+                      "path": "kuboard-spray.git/server/api/cluster/health_check/check_connectivity_details.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "list_cluster.go": {
+                  "name": "list_cluster.go",
+                  "path": "kuboard-spray.git/server/api/cluster/list_cluster.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "modify_cluster.go": {
+                  "name": "modify_cluster.go",
+                  "path": "kuboard-spray.git/server/api/cluster/modify_cluster.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "operation": {
+                  "name": "operation",
+                  "path": "kuboard-spray.git/server/api/cluster/operation",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "add_node.go": {
+                      "name": "add_node.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/add_node.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "backup_etcd.go": {
+                      "name": "backup_etcd.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/backup_etcd.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "common_processing_inventory.go": {
+                      "name": "common_processing_inventory.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/common_processing_inventory.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "download_binaries.go": {
+                      "name": "download_binaries.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/download_binaries.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "drain_node.go": {
+                      "name": "drain_node.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/drain_node.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "install_addon.go": {
+                      "name": "install_addon.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/install_addon.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "install_cluster.go": {
+                      "name": "install_cluster.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/install_cluster.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove_addon.go": {
+                      "name": "remove_addon.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/remove_addon.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "remove_node.go": {
+                      "name": "remove_node.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/remove_node.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "renew_cert.go": {
+                      "name": "renew_cert.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/renew_cert.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "restore_backup.go": {
+                      "name": "restore_backup.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/restore_backup.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sync_container_engine_params.go": {
+                      "name": "sync_container_engine_params.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/sync_container_engine_params.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sync_etcd_address.go": {
+                      "name": "sync_etcd_address.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/sync_etcd_address.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sync_nginx_config.go": {
+                      "name": "sync_nginx_config.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/sync_nginx_config.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "uncordon_node.go": {
+                      "name": "uncordon_node.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/uncordon_node.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "upgrade_cluster.go": {
+                      "name": "upgrade_cluster.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/upgrade_cluster.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils.go": {
+                      "name": "utils.go",
+                      "path": "kuboard-spray.git/server/api/cluster/operation/utils.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "rename_cluster.go": {
+                  "name": "rename_cluster.go",
+                  "path": "kuboard-spray.git/server/api/cluster/rename_cluster.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "state": {
+                  "name": "state",
+                  "path": "kuboard-spray.git/server/api/cluster/state",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "addon_check_status.go": {
+                      "name": "addon_check_status.go",
+                      "path": "kuboard-spray.git/server/api/cluster/state/addon_check_status.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "check_cert_expiration.go": {
+                      "name": "check_cert_expiration.go",
+                      "path": "kuboard-spray.git/server/api/cluster/state/check_cert_expiration.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "check_cluster_version.go": {
+                      "name": "check_cluster_version.go",
+                      "path": "kuboard-spray.git/server/api/cluster/state/check_cluster_version.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "etcd_member_health.go": {
+                      "name": "etcd_member_health.go",
+                      "path": "kuboard-spray.git/server/api/cluster/state/etcd_member_health.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "get_nodes.go": {
+                      "name": "get_nodes.go",
+                      "path": "kuboard-spray.git/server/api/cluster/state/get_nodes.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "node_pods_no_node.go": {
+                      "name": "node_pods_no_node.go",
+                      "path": "kuboard-spray.git/server/api/cluster/state/node_pods_no_node.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ping_pong.go": {
+                      "name": "ping_pong.go",
+                      "path": "kuboard-spray.git/server/api/cluster/state/ping_pong.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "command": {
+              "name": "command",
+              "path": "kuboard-spray.git/server/api/command",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "execute.go": {
+                  "name": "execute.go",
+                  "path": "kuboard-spray.git/server/api/command/execute.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "execute_kill.go": {
+                  "name": "execute_kill.go",
+                  "path": "kuboard-spray.git/server/api/command/execute_kill.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lock_owner.go": {
+                  "name": "lock_owner.go",
+                  "path": "kuboard-spray.git/server/api/command/lock_owner.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "read_task_status.go": {
+                  "name": "read_task_status.go",
+                  "path": "kuboard-spray.git/server/api/command/read_task_status.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "run.go": {
+                  "name": "run.go",
+                  "path": "kuboard-spray.git/server/api/command/run.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "success_tasks.go": {
+                  "name": "success_tasks.go",
+                  "path": "kuboard-spray.git/server/api/command/success_tasks.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tail.go": {
+                  "name": "tail.go",
+                  "path": "kuboard-spray.git/server/api/command/tail.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "fact": {
+              "name": "fact",
+              "path": "kuboard-spray.git/server/api/fact",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "facts.go": {
+                  "name": "facts.go",
+                  "path": "kuboard-spray.git/server/api/fact/facts.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "facts_cached.go": {
+                  "name": "facts_cached.go",
+                  "path": "kuboard-spray.git/server/api/fact/facts_cached.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "os_mirror": {
+              "name": "os_mirror",
+              "path": "kuboard-spray.git/server/api/os_mirror",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "create_os_mirror.go": {
+                  "name": "create_os_mirror.go",
+                  "path": "kuboard-spray.git/server/api/os_mirror/create_os_mirror.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete_os_mirror.go": {
+                  "name": "delete_os_mirror.go",
+                  "path": "kuboard-spray.git/server/api/os_mirror/delete_os_mirror.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "get_os_mirror.go": {
+                  "name": "get_os_mirror.go",
+                  "path": "kuboard-spray.git/server/api/os_mirror/get_os_mirror.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "install_os_mirror.go": {
+                  "name": "install_os_mirror.go",
+                  "path": "kuboard-spray.git/server/api/os_mirror/install_os_mirror.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "list_os_mirror.go": {
+                  "name": "list_os_mirror.go",
+                  "path": "kuboard-spray.git/server/api/os_mirror/list_os_mirror.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "modify_os_mirror.go": {
+                  "name": "modify_os_mirror.go",
+                  "path": "kuboard-spray.git/server/api/os_mirror/modify_os_mirror.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "private_key": {
+              "name": "private_key",
+              "path": "kuboard-spray.git/server/api/private_key",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "delete_private_key.go": {
+                  "name": "delete_private_key.go",
+                  "path": "kuboard-spray.git/server/api/private_key/delete_private_key.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "get_private_key.go": {
+                  "name": "get_private_key.go",
+                  "path": "kuboard-spray.git/server/api/private_key/get_private_key.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "list_private_key.go": {
+                  "name": "list_private_key.go",
+                  "path": "kuboard-spray.git/server/api/private_key/list_private_key.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "upload_private_key.go": {
+                  "name": "upload_private_key.go",
+                  "path": "kuboard-spray.git/server/api/private_key/upload_private_key.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "resource": {
+              "name": "resource",
+              "path": "kuboard-spray.git/server/api/resource",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "delete_resource.go": {
+                  "name": "delete_resource.go",
+                  "path": "kuboard-spray.git/server/api/resource/delete_resource.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "download_resource.go": {
+                  "name": "download_resource.go",
+                  "path": "kuboard-spray.git/server/api/resource/download_resource.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "get_resource.go": {
+                  "name": "get_resource.go",
+                  "path": "kuboard-spray.git/server/api/resource/get_resource.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "get_resource_release_note.go": {
+                  "name": "get_resource_release_note.go",
+                  "path": "kuboard-spray.git/server/api/resource/get_resource_release_note.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "list_resource.go": {
+                  "name": "list_resource.go",
+                  "path": "kuboard-spray.git/server/api/resource/list_resource.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "ssh": {
+              "name": "ssh",
+              "path": "kuboard-spray.git/server/api/ssh",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "connection.go": {
+                  "name": "connection.go",
+                  "path": "kuboard-spray.git/server/api/ssh/connection.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "models.go": {
+                  "name": "models.go",
+                  "path": "kuboard-spray.git/server/api/ssh/models.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "shell.go": {
+                  "name": "shell.go",
+                  "path": "kuboard-spray.git/server/api/ssh/shell.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "common": {
+          "name": "common",
+          "path": "kuboard-spray.git/server/common",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "KuboardSprayResponse.go": {
+              "name": "KuboardSprayResponse.go",
+              "path": "kuboard-spray.git/server/common/KuboardSprayResponse.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "error.go": {
+              "name": "error.go",
+              "path": "kuboard-spray.git/server/common/error.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "map_utils.go": {
+              "name": "map_utils.go",
+              "path": "kuboard-spray.git/server/common/map_utils.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "path.go": {
+              "name": "path.go",
+              "path": "kuboard-spray.git/server/common/path.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "populate_kuboardspray_vars.go": {
+              "name": "populate_kuboardspray_vars.go",
+              "path": "kuboard-spray.git/server/common/populate_kuboardspray_vars.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "radmon_string.go": {
+              "name": "radmon_string.go",
+              "path": "kuboard-spray.git/server/common/radmon_string.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "yaml_file.go": {
+              "name": "yaml_file.go",
+              "path": "kuboard-spray.git/server/common/yaml_file.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "constants": {
+          "name": "constants",
+          "path": "kuboard-spray.git/server/constants",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "constants.go": {
+              "name": "constants.go",
+              "path": "kuboard-spray.git/server/constants/constants.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "go.mod": {
+          "name": "go.mod",
+          "path": "kuboard-spray.git/server/go.mod",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "go.sum": {
+          "name": "go.sum",
+          "path": "kuboard-spray.git/server/go.sum",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kuboard-spray.go": {
+          "name": "kuboard-spray.go",
+          "path": "kuboard-spray.git/server/kuboard-spray.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "log": {
+          "name": "log",
+          "path": "kuboard-spray.git/server/log",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "logrus_formatter.go": {
+              "name": "logrus_formatter.go",
+              "path": "kuboard-spray.git/server/log/logrus_formatter.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "login": {
+          "name": "login",
+          "path": "kuboard-spray.git/server/login",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "jwt_utils.go": {
+              "name": "jwt_utils.go",
+              "path": "kuboard-spray.git/server/login/jwt_utils.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "login.go": {
+              "name": "login.go",
+              "path": "kuboard-spray.git/server/login/login.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "middleware.go": {
+              "name": "middleware.go",
+              "path": "kuboard-spray.git/server/login/middleware.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "profile.go": {
+              "name": "profile.go",
+              "path": "kuboard-spray.git/server/login/profile.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "validate_password.go": {
+              "name": "validate_password.go",
+              "path": "kuboard-spray.git/server/login/validate_password.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "pull-resource-package.sh": {
+          "name": "pull-resource-package.sh",
+          "path": "kuboard-spray.git/server/pull-resource-package.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "vue": {
+          "name": "vue",
+          "path": "kuboard-spray.git/server/vue",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "vue.go": {
+              "name": "vue.go",
+              "path": "kuboard-spray.git/server/vue/vue.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "web": {
+      "name": "web",
+      "path": "kuboard-spray.git/web",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".dockerignore": {
+          "name": ".dockerignore",
+          "path": "kuboard-spray.git/web/.dockerignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "kuboard-spray.git/web/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "kuboard-spray.git/web/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "babel.config.js": {
+          "name": "babel.config.js",
+          "path": "kuboard-spray.git/web/babel.config.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build": {
+          "name": "build",
+          "path": "kuboard-spray.git/web/build",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "jsconfig.json": {
+          "name": "jsconfig.json",
+          "path": "kuboard-spray.git/web/jsconfig.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "package.json": {
+          "name": "package.json",
+          "path": "kuboard-spray.git/web/package.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "public": {
+          "name": "public",
+          "path": "kuboard-spray.git/web/public",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".gitignore": {
+              "name": ".gitignore",
+              "path": "kuboard-spray.git/web/public/.gitignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "index.html": {
+              "name": "index.html",
+              "path": "kuboard-spray.git/web/public/index.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "version-amd64.json": {
+              "name": "version-amd64.json",
+              "path": "kuboard-spray.git/web/public/version-amd64.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "version-arm64.json": {
+              "name": "version-arm64.json",
+              "path": "kuboard-spray.git/web/public/version-arm64.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "src": {
+          "name": "src",
+          "path": "kuboard-spray.git/web/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "App.vue": {
+              "name": "App.vue",
+              "path": "kuboard-spray.git/web/src/App.vue",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "components": {
+              "name": "components",
+              "path": "kuboard-spray.git/web/src/components",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ConfigSection.vue": {
+                  "name": "ConfigSection.vue",
+                  "path": "kuboard-spray.git/web/src/components/ConfigSection.vue",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "IframeAdapter.vue": {
+                  "name": "IframeAdapter.vue",
+                  "path": "kuboard-spray.git/web/src/components/IframeAdapter.vue",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "KuboardSprayLink.vue": {
+                  "name": "KuboardSprayLink.vue",
+                  "path": "kuboard-spray.git/web/src/components/KuboardSprayLink.vue",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "KuboardSprayTime.vue": {
+                  "name": "KuboardSprayTime.vue",
+                  "path": "kuboard-spray.git/web/src/components/KuboardSprayTime.vue",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "KuboardStringArrayEdit.vue": {
+                  "name": "KuboardStringArrayEdit.vue",
+                  "path": "kuboard-spray.git/web/src/components/KuboardStringArrayEdit.vue",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "PreviewYaml.vue": {
+                  "name": "PreviewYaml.vue",
+                  "path": "kuboard-spray.git/web/src/components/PreviewYaml.vue",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "clipboard": {
+                  "name": "clipboard",
+                  "path": "kuboard-spray.git/web/src/components/clipboard",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "CopyToClipBoard.vue": {
+                      "name": "CopyToClipBoard.vue",
+                      "path": "kuboard-spray.git/web/src/components/clipboard/CopyToClipBoard.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "fields": {
+                  "name": "fields",
+                  "path": "kuboard-spray.git/web/src/components/fields",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "FieldArray.vue": {
+                      "name": "FieldArray.vue",
+                      "path": "kuboard-spray.git/web/src/components/fields/FieldArray.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "FieldBool.vue": {
+                      "name": "FieldBool.vue",
+                      "path": "kuboard-spray.git/web/src/components/fields/FieldBool.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "FieldCommon.vue": {
+                      "name": "FieldCommon.vue",
+                      "path": "kuboard-spray.git/web/src/components/fields/FieldCommon.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "FieldNumber.vue": {
+                      "name": "FieldNumber.vue",
+                      "path": "kuboard-spray.git/web/src/components/fields/FieldNumber.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "FieldRadio.vue": {
+                      "name": "FieldRadio.vue",
+                      "path": "kuboard-spray.git/web/src/components/fields/FieldRadio.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "FieldSelect.vue": {
+                      "name": "FieldSelect.vue",
+                      "path": "kuboard-spray.git/web/src/components/fields/FieldSelect.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "FieldString.vue": {
+                      "name": "FieldString.vue",
+                      "path": "kuboard-spray.git/web/src/components/fields/FieldString.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "compute_placeholder_mixin.js": {
+                      "name": "compute_placeholder_mixin.js",
+                      "path": "kuboard-spray.git/web/src/components/fields/compute_placeholder_mixin.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "kuboard-spray.git/web/src/components/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "layout": {
+                  "name": "layout",
+                  "path": "kuboard-spray.git/web/src/components/layout",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "GithubStar.js": {
+                      "name": "GithubStar.js",
+                      "path": "kuboard-spray.git/web/src/components/layout/GithubStar.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Header.vue": {
+                      "name": "Header.vue",
+                      "path": "kuboard-spray.git/web/src/components/layout/Header.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "HeaderBreadCrumb.vue": {
+                      "name": "HeaderBreadCrumb.vue",
+                      "path": "kuboard-spray.git/web/src/components/layout/HeaderBreadCrumb.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "KbButton.vue": {
+                      "name": "KbButton.vue",
+                      "path": "kuboard-spray.git/web/src/components/layout/KbButton.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Layout.vue": {
+                      "name": "Layout.vue",
+                      "path": "kuboard-spray.git/web/src/components/layout/Layout.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "LoginInfo.vue": {
+                      "name": "LoginInfo.vue",
+                      "path": "kuboard-spray.git/web/src/components/layout/LoginInfo.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Menu.vue": {
+                      "name": "Menu.vue",
+                      "path": "kuboard-spray.git/web/src/components/layout/Menu.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "images": {
+                      "name": "images",
+                      "path": "kuboard-spray.git/web/src/components/layout/images",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "menu.png": {
+                          "name": "menu.png",
+                          "path": "kuboard-spray.git/web/src/components/layout/images/menu.png",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "round-1.png": {
+                          "name": "round-1.png",
+                          "path": "kuboard-spray.git/web/src/components/layout/images/round-1.png",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "round.png": {
+                          "name": "round.png",
+                          "path": "kuboard-spray.git/web/src/components/layout/images/round.png",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "menu.scss": {
+                      "name": "menu.scss",
+                      "path": "kuboard-spray.git/web/src/components/layout/menu.scss",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "page": {
+                  "name": "page",
+                  "path": "kuboard-spray.git/web/src/components/page",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ConfirmButton.vue": {
+                      "name": "ConfirmButton.vue",
+                      "path": "kuboard-spray.git/web/src/components/page/ConfirmButton.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ControlBar.vue": {
+                      "name": "ControlBar.vue",
+                      "path": "kuboard-spray.git/web/src/components/page/ControlBar.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "i18n": {
+              "name": "i18n",
+              "path": "kuboard-spray.git/web/src/i18n",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "field.js": {
+                  "name": "field.js",
+                  "path": "kuboard-spray.git/web/src/i18n/field.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "kuboard-spray.git/web/src/i18n/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pkg.js": {
+                  "name": "pkg.js",
+                  "path": "kuboard-spray.git/web/src/i18n/pkg.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "main.js": {
+              "name": "main.js",
+              "path": "kuboard-spray.git/web/src/main.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "micro-front-end.js": {
+              "name": "micro-front-end.js",
+              "path": "kuboard-spray.git/web/src/micro-front-end.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mixins": {
+              "name": "mixins",
+              "path": "kuboard-spray.git/web/src/mixins",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "mixin.js": {
+                  "name": "mixin.js",
+                  "path": "kuboard-spray.git/web/src/mixins/mixin.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "router": {
+              "name": "router",
+              "path": "kuboard-spray.git/web/src/router",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.js": {
+                  "name": "index.js",
+                  "path": "kuboard-spray.git/web/src/router/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "store": {
+              "name": "store",
+              "path": "kuboard-spray.git/web/src/store",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.js": {
+                  "name": "index.js",
+                  "path": "kuboard-spray.git/web/src/store/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "modules": {
+                  "name": "modules",
+                  "path": "kuboard-spray.git/web/src/store/modules",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "header.js": {
+                      "name": "header.js",
+                      "path": "kuboard-spray.git/web/src/store/modules/header.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "styles": {
+              "name": "styles",
+              "path": "kuboard-spray.git/web/src/styles",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "el-icons.js": {
+                  "name": "el-icons.js",
+                  "path": "kuboard-spray.git/web/src/styles/el-icons.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "element-ui.css": {
+                  "name": "element-ui.css",
+                  "path": "kuboard-spray.git/web/src/styles/element-ui.css",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "element-variables.scss": {
+                  "name": "element-variables.scss",
+                  "path": "kuboard-spray.git/web/src/styles/element-variables.scss",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "theme-variables.scss": {
+                  "name": "theme-variables.scss",
+                  "path": "kuboard-spray.git/web/src/styles/theme-variables.scss",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "transition.scss": {
+                  "name": "transition.scss",
+                  "path": "kuboard-spray.git/web/src/styles/transition.scss",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "utils": {
+              "name": "utils",
+              "path": "kuboard-spray.git/web/src/utils",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "axios.js": {
+                  "name": "axios.js",
+                  "path": "kuboard-spray.git/web/src/utils/axios.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "open-in-blank.js": {
+                  "name": "open-in-blank.js",
+                  "path": "kuboard-spray.git/web/src/utils/open-in-blank.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "validators.js": {
+                  "name": "validators.js",
+                  "path": "kuboard-spray.git/web/src/utils/validators.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "version-checker.js": {
+                  "name": "version-checker.js",
+                  "path": "kuboard-spray.git/web/src/utils/version-checker.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "views": {
+              "name": "views",
+              "path": "kuboard-spray.git/web/src/views",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "clusters": {
+                  "name": "clusters",
+                  "path": "kuboard-spray.git/web/src/views/clusters",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Cluster.vue": {
+                      "name": "Cluster.vue",
+                      "path": "kuboard-spray.git/web/src/views/clusters/Cluster.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ClusterStateNodes.vue": {
+                      "name": "ClusterStateNodes.vue",
+                      "path": "kuboard-spray.git/web/src/views/clusters/ClusterStateNodes.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ClusterStateNodesItem.vue": {
+                      "name": "ClusterStateNodesItem.vue",
+                      "path": "kuboard-spray.git/web/src/views/clusters/ClusterStateNodesItem.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Clusters.vue": {
+                      "name": "Clusters.vue",
+                      "path": "kuboard-spray.git/web/src/views/clusters/Clusters.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "access": {
+                      "name": "access",
+                      "path": "kuboard-spray.git/web/src/views/clusters/access",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Access.vue": {
+                          "name": "Access.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/access/Access.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "backup": {
+                      "name": "backup",
+                      "path": "kuboard-spray.git/web/src/views/clusters/backup",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Backup.vue": {
+                          "name": "Backup.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/backup/Backup.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "BackupTask.vue": {
+                          "name": "BackupTask.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/backup/BackupTask.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "RestoreTask.vue": {
+                          "name": "RestoreTask.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/backup/RestoreTask.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "cis_scan": {
+                      "name": "cis_scan",
+                      "path": "kuboard-spray.git/web/src/views/clusters/cis_scan",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "CIS.vue": {
+                          "name": "CIS.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/cis_scan/CIS.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "create": {
+                      "name": "create",
+                      "path": "kuboard-spray.git/web/src/views/clusters/create",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "ClustersRename.vue": {
+                          "name": "ClustersRename.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/create/ClustersRename.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "CreateCluster.vue": {
+                          "name": "CreateCluster.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/create/CreateCluster.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "health_check": {
+                      "name": "health_check",
+                      "path": "kuboard-spray.git/web/src/views/clusters/health_check",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "CertExpirationCheck.vue": {
+                          "name": "CertExpirationCheck.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/health_check/CertExpirationCheck.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "CertRenew.vue": {
+                          "name": "CertRenew.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/health_check/CertRenew.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ClusterHealthCheck.vue": {
+                          "name": "ClusterHealthCheck.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/health_check/ClusterHealthCheck.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ConnectivityCheck.vue": {
+                          "name": "ConnectivityCheck.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/health_check/ConnectivityCheck.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "operation": {
+                      "name": "operation",
+                      "path": "kuboard-spray.git/web/src/views/clusters/operation",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "ClusterProcessing.vue": {
+                          "name": "ClusterProcessing.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/operation/ClusterProcessing.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "cluster": {
+                          "name": "cluster",
+                          "path": "kuboard-spray.git/web/src/views/clusters/operation/cluster",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "add_node.vue": {
+                              "name": "add_node.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/operation/cluster/add_node.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "install_cluster.vue": {
+                              "name": "install_cluster.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/operation/cluster/install_cluster.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "remove_node.vue": {
+                              "name": "remove_node.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/operation/cluster/remove_node.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "sync_etcd_address.vue": {
+                              "name": "sync_etcd_address.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/operation/cluster/sync_etcd_address.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "sync_nginx_config.vue": {
+                              "name": "sync_nginx_config.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/operation/cluster/sync_nginx_config.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "utils.js": {
+                              "name": "utils.js",
+                              "path": "kuboard-spray.git/web/src/views/clusters/operation/cluster/utils.js",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "plan": {
+                      "name": "plan",
+                      "path": "kuboard-spray.git/web/src/views/clusters/plan",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Node.vue": {
+                          "name": "Node.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/plan/Node.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Plan.vue": {
+                          "name": "Plan.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/plan/Plan.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "addons": {
+                          "name": "addons",
+                          "path": "kuboard-spray.git/web/src/views/clusters/plan/addons",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "AddonSection.vue": {
+                              "name": "AddonSection.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/addons/AddonSection.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "ConfigAddons.vue": {
+                              "name": "ConfigAddons.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/addons/ConfigAddons.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "addons": {
+                              "name": "addons",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/addons/addons",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "kuboard.vue": {
+                                  "name": "kuboard.vue",
+                                  "path": "kuboard-spray.git/web/src/views/clusters/plan/addons/addons/kuboard.vue",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "metrics_server.vue": {
+                                  "name": "metrics_server.vue",
+                                  "path": "kuboard-spray.git/web/src/views/clusters/plan/addons/addons/metrics_server.vue",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "netchecker.vue": {
+                                  "name": "netchecker.vue",
+                                  "path": "kuboard-spray.git/web/src/views/clusters/plan/addons/addons/netchecker.vue",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "nodelocaldns.vue": {
+                                  "name": "nodelocaldns.vue",
+                                  "path": "kuboard-spray.git/web/src/views/clusters/plan/addons/addons/nodelocaldns.vue",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "common": {
+                          "name": "common",
+                          "path": "kuboard-spray.git/web/src/views/clusters/plan/common",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "AddNode.vue": {
+                              "name": "AddNode.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/common/AddNode.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "NodeRoleTag.vue": {
+                              "name": "NodeRoleTag.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/common/NodeRoleTag.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "PackageContentField.vue": {
+                              "name": "PackageContentField.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/common/PackageContentField.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "SshParamsCluster.vue": {
+                              "name": "SshParamsCluster.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/common/SshParamsCluster.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "SshParamsNode.vue": {
+                              "name": "SshParamsNode.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/common/SshParamsNode.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "config-tab-mixin.js": {
+                          "name": "config-tab-mixin.js",
+                          "path": "kuboard-spray.git/web/src/views/clusters/plan/config-tab-mixin.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "etcd": {
+                          "name": "etcd",
+                          "path": "kuboard-spray.git/web/src/views/clusters/plan/etcd",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "ConfigEtcd.vue": {
+                              "name": "ConfigEtcd.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/etcd/ConfigEtcd.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "global": {
+                          "name": "global",
+                          "path": "kuboard-spray.git/web/src/views/clusters/plan/global",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "ConfigGlobal.vue": {
+                              "name": "ConfigGlobal.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/global/ConfigGlobal.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "ContainerManager.vue": {
+                              "name": "ContainerManager.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/global/ContainerManager.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "ContainerMangerIrCnd.vue": {
+                              "name": "ContainerMangerIrCnd.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/global/ContainerMangerIrCnd.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "ContainerMangerSyncParamsTask.vue": {
+                              "name": "ContainerMangerSyncParamsTask.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/global/ContainerMangerSyncParamsTask.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "HttpProxy.vue": {
+                              "name": "HttpProxy.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/global/HttpProxy.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "OsMirror.vue": {
+                              "name": "OsMirror.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/global/OsMirror.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "OsMirrorSelectRepo.vue": {
+                              "name": "OsMirrorSelectRepo.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/global/OsMirrorSelectRepo.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "SshParamsBastion.vue": {
+                              "name": "SshParamsBastion.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/global/SshParamsBastion.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "k8s_cluster": {
+                          "name": "k8s_cluster",
+                          "path": "kuboard-spray.git/web/src/views/clusters/plan/k8s_cluster",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "AuditLog.vue": {
+                              "name": "AuditLog.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/k8s_cluster/AuditLog.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "ConfigK8sCluster.vue": {
+                              "name": "ConfigK8sCluster.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/k8s_cluster/ConfigK8sCluster.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "K8sCluster.vue": {
+                              "name": "K8sCluster.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/k8s_cluster/K8sCluster.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "K8sClusterEvictionHard.vue": {
+                              "name": "K8sClusterEvictionHard.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/k8s_cluster/K8sClusterEvictionHard.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "NetworkPlugin.vue": {
+                              "name": "NetworkPlugin.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/k8s_cluster/NetworkPlugin.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "Networking.vue": {
+                              "name": "Networking.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/k8s_cluster/Networking.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "RotateCertificate.vue": {
+                              "name": "RotateCertificate.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/k8s_cluster/RotateCertificate.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "network_plugin": {
+                              "name": "network_plugin",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/k8s_cluster/network_plugin",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "Calico.vue": {
+                                  "name": "Calico.vue",
+                                  "path": "kuboard-spray.git/web/src/views/clusters/plan/k8s_cluster/network_plugin/Calico.vue",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "kuboardspray": {
+                          "name": "kuboardspray",
+                          "path": "kuboard-spray.git/web/src/views/clusters/plan/kuboardspray",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "ConfigKuboardSpray.vue": {
+                              "name": "ConfigKuboardSpray.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/kuboardspray/ConfigKuboardSpray.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "node": {
+                          "name": "node",
+                          "path": "kuboard-spray.git/web/src/views/clusters/plan/node",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "ConfigNode.vue": {
+                              "name": "ConfigNode.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/node/ConfigNode.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "CopyGapNodeToInventory.vue": {
+                              "name": "CopyGapNodeToInventory.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/node/CopyGapNodeToInventory.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "StateNode.vue": {
+                              "name": "StateNode.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/node/StateNode.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "StateNodeCondition.vue": {
+                              "name": "StateNodeCondition.vue",
+                              "path": "kuboard-spray.git/web/src/views/clusters/plan/node/StateNodeCondition.vue",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "upgrade": {
+                      "name": "upgrade",
+                      "path": "kuboard-spray.git/web/src/views/clusters/upgrade",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "ChooseNewResourcePackage.vue": {
+                          "name": "ChooseNewResourcePackage.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/upgrade/ChooseNewResourcePackage.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ComparePackage.vue": {
+                          "name": "ComparePackage.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/upgrade/ComparePackage.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ComparePackageTable.vue": {
+                          "name": "ComparePackageTable.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/upgrade/ComparePackageTable.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "CompareVersion.vue": {
+                          "name": "CompareVersion.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/upgrade/CompareVersion.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Upgrade.vue": {
+                          "name": "Upgrade.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/upgrade/Upgrade.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "UpgradeTask.vue": {
+                          "name": "UpgradeTask.vue",
+                          "path": "kuboard-spray.git/web/src/views/clusters/upgrade/UpgradeTask.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "compare_mixin.js": {
+                          "name": "compare_mixin.js",
+                          "path": "kuboard-spray.git/web/src/views/clusters/upgrade/compare_mixin.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "common": {
+                  "name": "common",
+                  "path": "kuboard-spray.git/web/src/views/common",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "fact": {
+                      "name": "fact",
+                      "path": "kuboard-spray.git/web/src/views/common/fact",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "NodeFact.vue": {
+                          "name": "NodeFact.vue",
+                          "path": "kuboard-spray.git/web/src/views/common/fact/NodeFact.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "NodeFactField.vue": {
+                          "name": "NodeFactField.vue",
+                          "path": "kuboard-spray.git/web/src/views/common/fact/NodeFactField.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "task": {
+                      "name": "task",
+                      "path": "kuboard-spray.git/web/src/views/common/task",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "ClusterTask.vue": {
+                          "name": "ClusterTask.vue",
+                          "path": "kuboard-spray.git/web/src/views/common/task/ClusterTask.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ExecuteTask.vue": {
+                          "name": "ExecuteTask.vue",
+                          "path": "kuboard-spray.git/web/src/views/common/task/ExecuteTask.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "home": {
+                  "name": "home",
+                  "path": "kuboard-spray.git/web/src/views/home",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Home.vue": {
+                      "name": "Home.vue",
+                      "path": "kuboard-spray.git/web/src/views/home/Home.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "images": {
+                      "name": "images",
+                      "path": "kuboard-spray.git/web/src/views/home/images",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "icon.js": {
+                          "name": "icon.js",
+                          "path": "kuboard-spray.git/web/src/views/home/images/icon.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "kubernetes.png": {
+                          "name": "kubernetes.png",
+                          "path": "kuboard-spray.git/web/src/views/home/images/kubernetes.png",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "kuboard": {
+                  "name": "kuboard",
+                  "path": "kuboard-spray.git/web/src/views/kuboard",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Kuboard.vue": {
+                      "name": "Kuboard.vue",
+                      "path": "kuboard-spray.git/web/src/views/kuboard/Kuboard.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "login": {
+                  "name": "login",
+                  "path": "kuboard-spray.git/web/src/views/login",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Login.vue": {
+                      "name": "Login.vue",
+                      "path": "kuboard-spray.git/web/src/views/login/Login.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Profile.vue": {
+                      "name": "Profile.vue",
+                      "path": "kuboard-spray.git/web/src/views/login/Profile.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "login.png": {
+                      "name": "login.png",
+                      "path": "kuboard-spray.git/web/src/views/login/login.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "logs": {
+                  "name": "logs",
+                  "path": "kuboard-spray.git/web/src/views/logs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ChangeColor.vue": {
+                      "name": "ChangeColor.vue",
+                      "path": "kuboard-spray.git/web/src/views/logs/ChangeColor.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ChangeFontSize.vue": {
+                      "name": "ChangeFontSize.vue",
+                      "path": "kuboard-spray.git/web/src/views/logs/ChangeFontSize.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Find.vue": {
+                      "name": "Find.vue",
+                      "path": "kuboard-spray.git/web/src/views/logs/Find.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "K8sTerminalErrorHint.vue": {
+                      "name": "K8sTerminalErrorHint.vue",
+                      "path": "kuboard-spray.git/web/src/views/logs/K8sTerminalErrorHint.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Ssh.vue": {
+                      "name": "Ssh.vue",
+                      "path": "kuboard-spray.git/web/src/views/logs/Ssh.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "SshQuickCommand.vue": {
+                      "name": "SshQuickCommand.vue",
+                      "path": "kuboard-spray.git/web/src/views/logs/SshQuickCommand.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "SshQuickCommands.vue": {
+                      "name": "SshQuickCommands.vue",
+                      "path": "kuboard-spray.git/web/src/views/logs/SshQuickCommands.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "TailFile.vue": {
+                      "name": "TailFile.vue",
+                      "path": "kuboard-spray.git/web/src/views/logs/TailFile.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "svg": {
+                      "name": "svg",
+                      "path": "kuboard-spray.git/web/src/views/logs/svg",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "icon-case-sensitive.svg": {
+                          "name": "icon-case-sensitive.svg",
+                          "path": "kuboard-spray.git/web/src/views/logs/svg/icon-case-sensitive.svg",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "icon-hit.svg": {
+                          "name": "icon-hit.svg",
+                          "path": "kuboard-spray.git/web/src/views/logs/svg/icon-hit.svg",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "icon-left.svg": {
+                          "name": "icon-left.svg",
+                          "path": "kuboard-spray.git/web/src/views/logs/svg/icon-left.svg",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "icon-regex.svg": {
+                          "name": "icon-regex.svg",
+                          "path": "kuboard-spray.git/web/src/views/logs/svg/icon-regex.svg",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "icon-right.svg": {
+                          "name": "icon-right.svg",
+                          "path": "kuboard-spray.git/web/src/views/logs/svg/icon-right.svg",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "icon-whole-word.svg": {
+                          "name": "icon-whole-word.svg",
+                          "path": "kuboard-spray.git/web/src/views/logs/svg/icon-whole-word.svg",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "os_mirror": {
+                  "name": "os_mirror",
+                  "path": "kuboard-spray.git/web/src/views/os_mirror",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Mirror.vue": {
+                      "name": "Mirror.vue",
+                      "path": "kuboard-spray.git/web/src/views/os_mirror/Mirror.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "MirrorCreate.vue": {
+                      "name": "MirrorCreate.vue",
+                      "path": "kuboard-spray.git/web/src/views/os_mirror/MirrorCreate.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "MirrorProcessing.vue": {
+                      "name": "MirrorProcessing.vue",
+                      "path": "kuboard-spray.git/web/src/views/os_mirror/MirrorProcessing.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Mirrors.vue": {
+                      "name": "Mirrors.vue",
+                      "path": "kuboard-spray.git/web/src/views/os_mirror/Mirrors.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mirror_options.js": {
+                      "name": "mirror_options.js",
+                      "path": "kuboard-spray.git/web/src/views/os_mirror/mirror_options.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "params": {
+                      "name": "params",
+                      "path": "kuboard-spray.git/web/src/views/os_mirror/params",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Params.vue": {
+                          "name": "Params.vue",
+                          "path": "kuboard-spray.git/web/src/views/os_mirror/params/Params.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "sync_params.js": {
+                          "name": "sync_params.js",
+                          "path": "kuboard-spray.git/web/src/views/os_mirror/params/sync_params.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "provision": {
+                      "name": "provision",
+                      "path": "kuboard-spray.git/web/src/views/os_mirror/provision",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Provision.vue": {
+                          "name": "Provision.vue",
+                          "path": "kuboard-spray.git/web/src/views/os_mirror/provision/Provision.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ProvisionUbuntu.vue": {
+                          "name": "ProvisionUbuntu.vue",
+                          "path": "kuboard-spray.git/web/src/views/os_mirror/provision/ProvisionUbuntu.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "SshParams.vue": {
+                          "name": "SshParams.vue",
+                          "path": "kuboard-spray.git/web/src/views/os_mirror/provision/SshParams.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "private_key": {
+                  "name": "private_key",
+                  "path": "kuboard-spray.git/web/src/views/private_key",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "SshAddPrivateKey.vue": {
+                      "name": "SshAddPrivateKey.vue",
+                      "path": "kuboard-spray.git/web/src/views/private_key/SshAddPrivateKey.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "resources": {
+                  "name": "resources",
+                  "path": "kuboard-spray.git/web/src/views/resources",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Resource.vue": {
+                      "name": "Resource.vue",
+                      "path": "kuboard-spray.git/web/src/views/resources/Resource.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ResourceDownload.vue": {
+                      "name": "ResourceDownload.vue",
+                      "path": "kuboard-spray.git/web/src/views/resources/ResourceDownload.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ResourceOnAir.vue": {
+                      "name": "ResourceOnAir.vue",
+                      "path": "kuboard-spray.git/web/src/views/resources/ResourceOnAir.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Resources.vue": {
+                      "name": "Resources.vue",
+                      "path": "kuboard-spray.git/web/src/views/resources/Resources.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ResourcesCreateOffline.vue": {
+                      "name": "ResourcesCreateOffline.vue",
+                      "path": "kuboard-spray.git/web/src/views/resources/ResourcesCreateOffline.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ResourcesListPage.vue": {
+                      "name": "ResourcesListPage.vue",
+                      "path": "kuboard-spray.git/web/src/views/resources/ResourcesListPage.vue",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "details": {
+                      "name": "details",
+                      "path": "kuboard-spray.git/web/src/views/resources/details",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "PackageContentField.vue": {
+                          "name": "PackageContentField.vue",
+                          "path": "kuboard-spray.git/web/src/views/resources/details/PackageContentField.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ResourceDetails.vue": {
+                          "name": "ResourceDetails.vue",
+                          "path": "kuboard-spray.git/web/src/views/resources/details/ResourceDetails.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ResourcePackage.vue": {
+                          "name": "ResourcePackage.vue",
+                          "path": "kuboard-spray.git/web/src/views/resources/details/ResourcePackage.vue",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "repository_prefix.js": {
+                      "name": "repository_prefix.js",
+                      "path": "kuboard-spray.git/web/src/views/resources/repository_prefix.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "vue.config.js": {
+          "name": "vue.config.js",
+          "path": "kuboard-spray.git/web/vue.config.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "yarn.lock": {
+          "name": "yarn.lock",
+          "path": "kuboard-spray.git/web/yarn.lock",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 443931978,
+    "name": "kuboard-spray",
+    "full_name": "eip-work/kuboard-spray",
+    "owner": {
+      "login": "eip-work",
+      "html_url": "https://github.com/eip-work",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/eip-work/kuboard-spray",
+    "description": "使用图形化的界面离线安装、维护、升级高可用的 K8S 集群",
+    "url": "https://api.github.com/repos/eip-work/kuboard-spray",
+    "clone_url": "https://github.com/eip-work/kuboard-spray.git",
+    "homepage": "https://kuboard-spray.cn",
+    "size": 20344,
+    "stargazers_count": 760,
+    "watchers_count": 760,
+    "language": "Vue"
+  }
+}

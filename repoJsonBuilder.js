@@ -4,6 +4,15 @@ const githubSearchRepos = require('./src/ghCrawler.js');
 var utils = require('./src/utils');
 
 var searchQueries = [
+    'database',
+    'cms',
+    'memory',
+    'model',
+    'ai',
+    'crypto',
+    'web3',
+    'decentralized',
+    'node',
     'javascript',
     'typescript',
     'java',
@@ -40,7 +49,7 @@ var results = {}
 
 var searchGH = (query, callback) => {
     console.log('Search using query: ' + query)
-    githubSearchRepos(query, { token: process.env.TOKEN, sort: 'forks'  /* stars | forks | updated */ }, (data) => {
+    githubSearchRepos(query, { token: process.env.TOKEN, sort: 'stars'  /* stars | forks | updated */ }, (data) => {
         callback(data.items);
     });
 }
