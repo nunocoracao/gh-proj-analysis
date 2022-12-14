@@ -1,0 +1,2020 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "go-coffeeshop.git/.devcontainer/Dockerfile-dev",
+        "go-coffeeshop.git/docker/Dockerfile-barista",
+        "go-coffeeshop.git/docker/Dockerfile-counter",
+        "go-coffeeshop.git/docker/Dockerfile-kitchen",
+        "go-coffeeshop.git/docker/Dockerfile-product",
+        "go-coffeeshop.git/docker/Dockerfile-proxy",
+        "go-coffeeshop.git/docker/Dockerfile-web"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 2,
+      "subFolderCount": 0,
+      "filepaths": [
+        "go-coffeeshop.git/docker-compose-full.yaml",
+        "go-coffeeshop.git/docker-compose.yaml"
+      ]
+    }
+  },
+  "struct": {
+    ".devcontainer": {
+      "name": ".devcontainer",
+      "path": "go-coffeeshop.git/.devcontainer",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile-dev": {
+          "name": "Dockerfile-dev",
+          "path": "go-coffeeshop.git/.devcontainer/Dockerfile-dev",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "core-libs.sh": {
+          "name": "core-libs.sh",
+          "path": "go-coffeeshop.git/.devcontainer/core-libs.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "devcontainer.json": {
+          "name": "devcontainer.json",
+          "path": "go-coffeeshop.git/.devcontainer/devcontainer.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "go-coffeeshop.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "go-coffeeshop.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "go-coffeeshop.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "go-coffeeshop.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "go-coffeeshop.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "go-coffeeshop.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "go-coffeeshop.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "go-coffeeshop.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "go-coffeeshop.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "go-coffeeshop.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "go-coffeeshop.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "go-coffeeshop.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "go-coffeeshop.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "go-coffeeshop.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "go-coffeeshop.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "go-coffeeshop.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "go-coffeeshop.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "go-coffeeshop.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "go-coffeeshop.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "go-coffeeshop.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "go-coffeeshop.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "go-coffeeshop.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "go-coffeeshop.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "go-coffeeshop.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "go-coffeeshop.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "go-coffeeshop.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "go-coffeeshop.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "go-coffeeshop.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "go-coffeeshop.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "go-coffeeshop.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "go-coffeeshop.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "go-coffeeshop.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "go-coffeeshop.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-cf599be195d1b273747813a2067b84b52bee61eb.idx": {
+                  "name": "pack-cf599be195d1b273747813a2067b84b52bee61eb.idx",
+                  "path": "go-coffeeshop.git/.git/objects/pack/pack-cf599be195d1b273747813a2067b84b52bee61eb.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-cf599be195d1b273747813a2067b84b52bee61eb.pack": {
+                  "name": "pack-cf599be195d1b273747813a2067b84b52bee61eb.pack",
+                  "path": "go-coffeeshop.git/.git/objects/pack/pack-cf599be195d1b273747813a2067b84b52bee61eb.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "go-coffeeshop.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "go-coffeeshop.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "go-coffeeshop.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "go-coffeeshop.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "go-coffeeshop.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "go-coffeeshop.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "go-coffeeshop.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "go-coffeeshop.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "go-coffeeshop.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".golangci.yml": {
+      "name": ".golangci.yml",
+      "path": "go-coffeeshop.git/.golangci.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "go-coffeeshop.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Makefile": {
+      "name": "Makefile",
+      "path": "go-coffeeshop.git/Makefile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "go-coffeeshop.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "buf.gen.yaml": {
+      "name": "buf.gen.yaml",
+      "path": "go-coffeeshop.git/buf.gen.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "buf.work.yaml": {
+      "name": "buf.work.yaml",
+      "path": "go-coffeeshop.git/buf.work.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "build": {
+      "name": "build",
+      "path": "go-coffeeshop.git/build",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "go-coffeeshop.git/build/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "local": {
+          "name": "local",
+          "path": "go-coffeeshop.git/build/local",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "etc": {
+              "name": "etc",
+              "path": "go-coffeeshop.git/build/local/etc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "consul.hcl": {
+                  "name": "consul.hcl",
+                  "path": "go-coffeeshop.git/build/local/etc/consul.hcl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nomad.hcl": {
+                  "name": "nomad.hcl",
+                  "path": "go-coffeeshop.git/build/local/etc/nomad.hcl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "start.sh": {
+              "name": "start.sh",
+              "path": "go-coffeeshop.git/build/local/start.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "nomad": {
+          "name": "nomad",
+          "path": "go-coffeeshop.git/build/nomad",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".terraform.lock.hcl": {
+              "name": ".terraform.lock.hcl",
+              "path": "go-coffeeshop.git/build/nomad/.terraform.lock.hcl",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "jobs": {
+              "name": "jobs",
+              "path": "go-coffeeshop.git/build/nomad/jobs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "barista-api.nomad.hcl": {
+                  "name": "barista-api.nomad.hcl",
+                  "path": "go-coffeeshop.git/build/nomad/jobs/barista-api.nomad.hcl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "counter-api.nomad.hcl": {
+                  "name": "counter-api.nomad.hcl",
+                  "path": "go-coffeeshop.git/build/nomad/jobs/counter-api.nomad.hcl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "grpc-gw.nomad.hcl": {
+                  "name": "grpc-gw.nomad.hcl",
+                  "path": "go-coffeeshop.git/build/nomad/jobs/grpc-gw.nomad.hcl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kitchen-api.nomad.hcl": {
+                  "name": "kitchen-api.nomad.hcl",
+                  "path": "go-coffeeshop.git/build/nomad/jobs/kitchen-api.nomad.hcl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "postgresdb.nomad.hcl": {
+                  "name": "postgresdb.nomad.hcl",
+                  "path": "go-coffeeshop.git/build/nomad/jobs/postgresdb.nomad.hcl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "product-api.nomad.hcl": {
+                  "name": "product-api.nomad.hcl",
+                  "path": "go-coffeeshop.git/build/nomad/jobs/product-api.nomad.hcl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rabbitmq.nomad.hcl": {
+                  "name": "rabbitmq.nomad.hcl",
+                  "path": "go-coffeeshop.git/build/nomad/jobs/rabbitmq.nomad.hcl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "traefik.nomad.hcl": {
+                  "name": "traefik.nomad.hcl",
+                  "path": "go-coffeeshop.git/build/nomad/jobs/traefik.nomad.hcl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "web.nomad.hcl": {
+                  "name": "web.nomad.hcl",
+                  "path": "go-coffeeshop.git/build/nomad/jobs/web.nomad.hcl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "nomad.tf": {
+              "name": "nomad.tf",
+              "path": "go-coffeeshop.git/build/nomad/nomad.tf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "client.http": {
+      "name": "client.http",
+      "path": "go-coffeeshop.git/client.http",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "client_nomad.http": {
+      "name": "client_nomad.http",
+      "path": "go-coffeeshop.git/client_nomad.http",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "cmd": {
+      "name": "cmd",
+      "path": "go-coffeeshop.git/cmd",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "barista": {
+          "name": "barista",
+          "path": "go-coffeeshop.git/cmd/barista",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config": {
+              "name": "config",
+              "path": "go-coffeeshop.git/cmd/barista/config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.go": {
+                  "name": "config.go",
+                  "path": "go-coffeeshop.git/cmd/barista/config/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "config.yml": {
+              "name": "config.yml",
+              "path": "go-coffeeshop.git/cmd/barista/config.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "go-coffeeshop.git/cmd/barista/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "counter": {
+          "name": "counter",
+          "path": "go-coffeeshop.git/cmd/counter",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config": {
+              "name": "config",
+              "path": "go-coffeeshop.git/cmd/counter/config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.go": {
+                  "name": "config.go",
+                  "path": "go-coffeeshop.git/cmd/counter/config/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "config.yml": {
+              "name": "config.yml",
+              "path": "go-coffeeshop.git/cmd/counter/config.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "go-coffeeshop.git/cmd/counter/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "kitchen": {
+          "name": "kitchen",
+          "path": "go-coffeeshop.git/cmd/kitchen",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config": {
+              "name": "config",
+              "path": "go-coffeeshop.git/cmd/kitchen/config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.go": {
+                  "name": "config.go",
+                  "path": "go-coffeeshop.git/cmd/kitchen/config/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "config.yml": {
+              "name": "config.yml",
+              "path": "go-coffeeshop.git/cmd/kitchen/config.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "go-coffeeshop.git/cmd/kitchen/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "product": {
+          "name": "product",
+          "path": "go-coffeeshop.git/cmd/product",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config": {
+              "name": "config",
+              "path": "go-coffeeshop.git/cmd/product/config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.go": {
+                  "name": "config.go",
+                  "path": "go-coffeeshop.git/cmd/product/config/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "config.yml": {
+              "name": "config.yml",
+              "path": "go-coffeeshop.git/cmd/product/config.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "go-coffeeshop.git/cmd/product/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "proxy": {
+          "name": "proxy",
+          "path": "go-coffeeshop.git/cmd/proxy",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config": {
+              "name": "config",
+              "path": "go-coffeeshop.git/cmd/proxy/config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.go": {
+                  "name": "config.go",
+                  "path": "go-coffeeshop.git/cmd/proxy/config/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "config.yml": {
+              "name": "config.yml",
+              "path": "go-coffeeshop.git/cmd/proxy/config.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "go-coffeeshop.git/cmd/proxy/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "web": {
+          "name": "web",
+          "path": "go-coffeeshop.git/cmd/web",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "app": {
+              "name": "app",
+              "path": "go-coffeeshop.git/cmd/web/app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "css": {
+                  "name": "css",
+                  "path": "go-coffeeshop.git/cmd/web/app/css",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "style.css": {
+                      "name": "style.css",
+                      "path": "go-coffeeshop.git/cmd/web/app/css/style.css",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "data": {
+                  "name": "data",
+                  "path": "go-coffeeshop.git/cmd/web/app/data",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "sample.json": {
+                      "name": "sample.json",
+                      "path": "go-coffeeshop.git/cmd/web/app/data/sample.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "favicon.ico": {
+                  "name": "favicon.ico",
+                  "path": "go-coffeeshop.git/cmd/web/app/favicon.ico",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "img": {
+                  "name": "img",
+                  "path": "go-coffeeshop.git/cmd/web/app/img",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "CAKEPOP.png": {
+                      "name": "CAKEPOP.png",
+                      "path": "go-coffeeshop.git/cmd/web/app/img/CAKEPOP.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "CAPPUCCINO.png": {
+                      "name": "CAPPUCCINO.png",
+                      "path": "go-coffeeshop.git/cmd/web/app/img/CAPPUCCINO.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "COFFEE_BLACK.png": {
+                      "name": "COFFEE_BLACK.png",
+                      "path": "go-coffeeshop.git/cmd/web/app/img/COFFEE_BLACK.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "COFFEE_WITH_ROOM.png": {
+                      "name": "COFFEE_WITH_ROOM.png",
+                      "path": "go-coffeeshop.git/cmd/web/app/img/COFFEE_WITH_ROOM.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "CROISSANT.png": {
+                      "name": "CROISSANT.png",
+                      "path": "go-coffeeshop.git/cmd/web/app/img/CROISSANT.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "CROISSANT_CHOCOLATE.png": {
+                      "name": "CROISSANT_CHOCOLATE.png",
+                      "path": "go-coffeeshop.git/cmd/web/app/img/CROISSANT_CHOCOLATE.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ESPRESSO.png": {
+                      "name": "ESPRESSO.png",
+                      "path": "go-coffeeshop.git/cmd/web/app/img/ESPRESSO.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ESPRESSO_DOUBLE.png": {
+                      "name": "ESPRESSO_DOUBLE.png",
+                      "path": "go-coffeeshop.git/cmd/web/app/img/ESPRESSO_DOUBLE.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "LATTE.png": {
+                      "name": "LATTE.png",
+                      "path": "go-coffeeshop.git/cmd/web/app/img/LATTE.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "MUFFIN.png": {
+                      "name": "MUFFIN.png",
+                      "path": "go-coffeeshop.git/cmd/web/app/img/MUFFIN.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "receipt-logo.png": {
+                      "name": "receipt-logo.png",
+                      "path": "go-coffeeshop.git/cmd/web/app/img/receipt-logo.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "index.html": {
+                  "name": "index.html",
+                  "path": "go-coffeeshop.git/cmd/web/app/index.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "js": {
+                  "name": "js",
+                  "path": "go-coffeeshop.git/cmd/web/app/js",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "script.js": {
+                      "name": "script.js",
+                      "path": "go-coffeeshop.git/cmd/web/app/js/script.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "sound": {
+                  "name": "sound",
+                  "path": "go-coffeeshop.git/cmd/web/app/sound",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "beep-29.mp3": {
+                      "name": "beep-29.mp3",
+                      "path": "go-coffeeshop.git/cmd/web/app/sound/beep-29.mp3",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "button-21.mp3": {
+                      "name": "button-21.mp3",
+                      "path": "go-coffeeshop.git/cmd/web/app/sound/button-21.mp3",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "go-coffeeshop.git/cmd/web/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "db": {
+      "name": "db",
+      "path": "go-coffeeshop.git/db",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "migrations": {
+          "name": "migrations",
+          "path": "go-coffeeshop.git/db/migrations",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "000001_init_counterdb.down.sql": {
+              "name": "000001_init_counterdb.down.sql",
+              "path": "go-coffeeshop.git/db/migrations/000001_init_counterdb.down.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "000001_init_counterdb.up.sql": {
+              "name": "000001_init_counterdb.up.sql",
+              "path": "go-coffeeshop.git/db/migrations/000001_init_counterdb.up.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "000002_init_baristadb.down.sql": {
+              "name": "000002_init_baristadb.down.sql",
+              "path": "go-coffeeshop.git/db/migrations/000002_init_baristadb.down.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "000002_init_baristadb.up.sql": {
+              "name": "000002_init_baristadb.up.sql",
+              "path": "go-coffeeshop.git/db/migrations/000002_init_baristadb.up.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "000003_init_kitchendb.down.sql": {
+              "name": "000003_init_kitchendb.down.sql",
+              "path": "go-coffeeshop.git/db/migrations/000003_init_kitchendb.down.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "000003_init_kitchendb.up.sql": {
+              "name": "000003_init_kitchendb.up.sql",
+              "path": "go-coffeeshop.git/db/migrations/000003_init_kitchendb.up.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "docker": {
+      "name": "docker",
+      "path": "go-coffeeshop.git/docker",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile-barista": {
+          "name": "Dockerfile-barista",
+          "path": "go-coffeeshop.git/docker/Dockerfile-barista",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "Dockerfile-counter": {
+          "name": "Dockerfile-counter",
+          "path": "go-coffeeshop.git/docker/Dockerfile-counter",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "Dockerfile-kitchen": {
+          "name": "Dockerfile-kitchen",
+          "path": "go-coffeeshop.git/docker/Dockerfile-kitchen",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "Dockerfile-product": {
+          "name": "Dockerfile-product",
+          "path": "go-coffeeshop.git/docker/Dockerfile-product",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "Dockerfile-proxy": {
+          "name": "Dockerfile-proxy",
+          "path": "go-coffeeshop.git/docker/Dockerfile-proxy",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "Dockerfile-web": {
+          "name": "Dockerfile-web",
+          "path": "go-coffeeshop.git/docker/Dockerfile-web",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        }
+      }
+    },
+    "docker-compose-full.yaml": {
+      "name": "docker-compose-full.yaml",
+      "path": "go-coffeeshop.git/docker-compose-full.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "docker-compose.yaml": {
+      "name": "docker-compose.yaml",
+      "path": "go-coffeeshop.git/docker-compose.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "docs": {
+      "name": "docs",
+      "path": "go-coffeeshop.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "coffeeshop.svg": {
+          "name": "coffeeshop.svg",
+          "path": "go-coffeeshop.git/docs/coffeeshop.svg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "coffeeshop_hashicorp.svg": {
+          "name": "coffeeshop_hashicorp.svg",
+          "path": "go-coffeeshop.git/docs/coffeeshop_hashicorp.svg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "diagrams": {
+          "name": "diagrams",
+          "path": "go-coffeeshop.git/docs/diagrams",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "coffeeshop-flow-hashicorp.excalidraw": {
+              "name": "coffeeshop-flow-hashicorp.excalidraw",
+              "path": "go-coffeeshop.git/docs/diagrams/coffeeshop-flow-hashicorp.excalidraw",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "coffeeshop-flow.excalidraw": {
+              "name": "coffeeshop-flow.excalidraw",
+              "path": "go-coffeeshop.git/docs/diagrams/coffeeshop-flow.excalidraw",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "home_screen.png": {
+          "name": "home_screen.png",
+          "path": "go-coffeeshop.git/docs/home_screen.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "order_list_screen.png": {
+          "name": "order_list_screen.png",
+          "path": "go-coffeeshop.git/docs/order_list_screen.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "payment_screen.png": {
+          "name": "payment_screen.png",
+          "path": "go-coffeeshop.git/docs/payment_screen.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "readme.md": {
+          "name": "readme.md",
+          "path": "go-coffeeshop.git/docs/readme.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "go-coffeeshop.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "go-coffeeshop.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "internal": {
+      "name": "internal",
+      "path": "go-coffeeshop.git/internal",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "barista": {
+          "name": "barista",
+          "path": "go-coffeeshop.git/internal/barista",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "app": {
+              "name": "app",
+              "path": "go-coffeeshop.git/internal/barista/app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "app.go": {
+                  "name": "app.go",
+                  "path": "go-coffeeshop.git/internal/barista/app/app.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "migrate.go": {
+                  "name": "migrate.go",
+                  "path": "go-coffeeshop.git/internal/barista/app/migrate.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "domain": {
+              "name": "domain",
+              "path": "go-coffeeshop.git/internal/barista/domain",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "interfaces.go": {
+                  "name": "interfaces.go",
+                  "path": "go-coffeeshop.git/internal/barista/domain/interfaces.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "order.go": {
+                  "name": "order.go",
+                  "path": "go-coffeeshop.git/internal/barista/domain/order.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "features": {
+              "name": "features",
+              "path": "go-coffeeshop.git/internal/barista/features",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "orders": {
+                  "name": "orders",
+                  "path": "go-coffeeshop.git/internal/barista/features/orders",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "eventhandlers": {
+                      "name": "eventhandlers",
+                      "path": "go-coffeeshop.git/internal/barista/features/orders/eventhandlers",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "barista_ordered.go": {
+                          "name": "barista_ordered.go",
+                          "path": "go-coffeeshop.git/internal/barista/features/orders/eventhandlers/barista_ordered.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "repo": {
+                      "name": "repo",
+                      "path": "go-coffeeshop.git/internal/barista/features/orders/repo",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "orders_postgres.go": {
+                          "name": "orders_postgres.go",
+                          "path": "go-coffeeshop.git/internal/barista/features/orders/repo/orders_postgres.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "counter": {
+          "name": "counter",
+          "path": "go-coffeeshop.git/internal/counter",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "app": {
+              "name": "app",
+              "path": "go-coffeeshop.git/internal/counter/app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "app.go": {
+                  "name": "app.go",
+                  "path": "go-coffeeshop.git/internal/counter/app/app.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "migrate.go": {
+                  "name": "migrate.go",
+                  "path": "go-coffeeshop.git/internal/counter/app/migrate.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "domain": {
+              "name": "domain",
+              "path": "go-coffeeshop.git/internal/counter/domain",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "interfaces.go": {
+                  "name": "interfaces.go",
+                  "path": "go-coffeeshop.git/internal/counter/domain/interfaces.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "line_item.go": {
+                  "name": "line_item.go",
+                  "path": "go-coffeeshop.git/internal/counter/domain/line_item.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "model": {
+                  "name": "model",
+                  "path": "go-coffeeshop.git/internal/counter/domain/model",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "results.go": {
+                      "name": "results.go",
+                      "path": "go-coffeeshop.git/internal/counter/domain/model/results.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "order.go": {
+                  "name": "order.go",
+                  "path": "go-coffeeshop.git/internal/counter/domain/order.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "features": {
+              "name": "features",
+              "path": "go-coffeeshop.git/internal/counter/features",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "orders": {
+                  "name": "orders",
+                  "path": "go-coffeeshop.git/internal/counter/features/orders",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "eventhandlers": {
+                      "name": "eventhandlers",
+                      "path": "go-coffeeshop.git/internal/counter/features/orders/eventhandlers",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "barista_order_updated.go": {
+                          "name": "barista_order_updated.go",
+                          "path": "go-coffeeshop.git/internal/counter/features/orders/eventhandlers/barista_order_updated.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "repo": {
+                      "name": "repo",
+                      "path": "go-coffeeshop.git/internal/counter/features/orders/repo",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "orders_postgres.go": {
+                          "name": "orders_postgres.go",
+                          "path": "go-coffeeshop.git/internal/counter/features/orders/repo/orders_postgres.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "grpc": {
+              "name": "grpc",
+              "path": "go-coffeeshop.git/internal/counter/grpc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "counter_server.go": {
+                  "name": "counter_server.go",
+                  "path": "go-coffeeshop.git/internal/counter/grpc/counter_server.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "product_client.go": {
+                  "name": "product_client.go",
+                  "path": "go-coffeeshop.git/internal/counter/grpc/product_client.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "kitchen": {
+          "name": "kitchen",
+          "path": "go-coffeeshop.git/internal/kitchen",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "app": {
+              "name": "app",
+              "path": "go-coffeeshop.git/internal/kitchen/app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "app.go": {
+                  "name": "app.go",
+                  "path": "go-coffeeshop.git/internal/kitchen/app/app.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "migrate.go": {
+                  "name": "migrate.go",
+                  "path": "go-coffeeshop.git/internal/kitchen/app/migrate.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "domain": {
+              "name": "domain",
+              "path": "go-coffeeshop.git/internal/kitchen/domain",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "interfaces.go": {
+                  "name": "interfaces.go",
+                  "path": "go-coffeeshop.git/internal/kitchen/domain/interfaces.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "order.go": {
+                  "name": "order.go",
+                  "path": "go-coffeeshop.git/internal/kitchen/domain/order.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "features": {
+              "name": "features",
+              "path": "go-coffeeshop.git/internal/kitchen/features",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "orders": {
+                  "name": "orders",
+                  "path": "go-coffeeshop.git/internal/kitchen/features/orders",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "eventhandlers": {
+                      "name": "eventhandlers",
+                      "path": "go-coffeeshop.git/internal/kitchen/features/orders/eventhandlers",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "kitchen_ordered.go": {
+                          "name": "kitchen_ordered.go",
+                          "path": "go-coffeeshop.git/internal/kitchen/features/orders/eventhandlers/kitchen_ordered.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "repo": {
+                      "name": "repo",
+                      "path": "go-coffeeshop.git/internal/kitchen/features/orders/repo",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "orders_postgres.go": {
+                          "name": "orders_postgres.go",
+                          "path": "go-coffeeshop.git/internal/kitchen/features/orders/repo/orders_postgres.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "product": {
+          "name": "product",
+          "path": "go-coffeeshop.git/internal/product",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "app": {
+              "name": "app",
+              "path": "go-coffeeshop.git/internal/product/app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "app.go": {
+                  "name": "app.go",
+                  "path": "go-coffeeshop.git/internal/product/app/app.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "domain": {
+              "name": "domain",
+              "path": "go-coffeeshop.git/internal/product/domain",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "interfaces.go": {
+                  "name": "interfaces.go",
+                  "path": "go-coffeeshop.git/internal/product/domain/interfaces.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "models.go": {
+                  "name": "models.go",
+                  "path": "go-coffeeshop.git/internal/product/domain/models.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "features": {
+              "name": "features",
+              "path": "go-coffeeshop.git/internal/product/features",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "products": {
+                  "name": "products",
+                  "path": "go-coffeeshop.git/internal/product/features/products",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "repo": {
+                      "name": "repo",
+                      "path": "go-coffeeshop.git/internal/product/features/products/repo",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "products_postgres.go": {
+                          "name": "products_postgres.go",
+                          "path": "go-coffeeshop.git/internal/product/features/products/repo/products_postgres.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "grpc": {
+              "name": "grpc",
+              "path": "go-coffeeshop.git/internal/product/grpc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "product_server.go": {
+                  "name": "product_server.go",
+                  "path": "go-coffeeshop.git/internal/product/grpc/product_server.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "pkg": {
+      "name": "pkg",
+      "path": "go-coffeeshop.git/pkg",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "config": {
+          "name": "config",
+          "path": "go-coffeeshop.git/pkg/config",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "configs.go": {
+              "name": "configs.go",
+              "path": "go-coffeeshop.git/pkg/config/configs.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "event": {
+          "name": "event",
+          "path": "go-coffeeshop.git/pkg/event",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "events.go": {
+              "name": "events.go",
+              "path": "go-coffeeshop.git/pkg/event/events.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logger": {
+          "name": "logger",
+          "path": "go-coffeeshop.git/pkg/logger",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "logger.go": {
+              "name": "logger.go",
+              "path": "go-coffeeshop.git/pkg/logger/logger.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "postgres": {
+          "name": "postgres",
+          "path": "go-coffeeshop.git/pkg/postgres",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "options.go": {
+              "name": "options.go",
+              "path": "go-coffeeshop.git/pkg/postgres/options.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "postgres.go": {
+              "name": "postgres.go",
+              "path": "go-coffeeshop.git/pkg/postgres/postgres.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "rabbitmq": {
+          "name": "rabbitmq",
+          "path": "go-coffeeshop.git/pkg/rabbitmq",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "consumer": {
+              "name": "consumer",
+              "path": "go-coffeeshop.git/pkg/rabbitmq/consumer",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "consumer.go": {
+                  "name": "consumer.go",
+                  "path": "go-coffeeshop.git/pkg/rabbitmq/consumer/consumer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "options.go": {
+                  "name": "options.go",
+                  "path": "go-coffeeshop.git/pkg/rabbitmq/consumer/options.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "publisher": {
+              "name": "publisher",
+              "path": "go-coffeeshop.git/pkg/rabbitmq/publisher",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "options.go": {
+                  "name": "options.go",
+                  "path": "go-coffeeshop.git/pkg/rabbitmq/publisher/options.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "publisher.go": {
+                  "name": "publisher.go",
+                  "path": "go-coffeeshop.git/pkg/rabbitmq/publisher/publisher.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "rabbitmq.go": {
+              "name": "rabbitmq.go",
+              "path": "go-coffeeshop.git/pkg/rabbitmq/rabbitmq.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "utils": {
+          "name": "utils",
+          "path": "go-coffeeshop.git/pkg/utils",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "utils.go": {
+              "name": "utils.go",
+              "path": "go-coffeeshop.git/pkg/utils/utils.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "proto": {
+      "name": "proto",
+      "path": "go-coffeeshop.git/proto",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "buf.lock": {
+          "name": "buf.lock",
+          "path": "go-coffeeshop.git/proto/buf.lock",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "buf.yaml": {
+          "name": "buf.yaml",
+          "path": "go-coffeeshop.git/proto/buf.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "common.proto": {
+          "name": "common.proto",
+          "path": "go-coffeeshop.git/proto/common.proto",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "counter.proto": {
+          "name": "counter.proto",
+          "path": "go-coffeeshop.git/proto/counter.proto",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "gen": {
+          "name": "gen",
+          "path": "go-coffeeshop.git/proto/gen",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "common.pb.go": {
+              "name": "common.pb.go",
+              "path": "go-coffeeshop.git/proto/gen/common.pb.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "counter.pb.go": {
+              "name": "counter.pb.go",
+              "path": "go-coffeeshop.git/proto/gen/counter.pb.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "counter.pb.gw.go": {
+              "name": "counter.pb.gw.go",
+              "path": "go-coffeeshop.git/proto/gen/counter.pb.gw.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "counter_grpc.pb.go": {
+              "name": "counter_grpc.pb.go",
+              "path": "go-coffeeshop.git/proto/gen/counter_grpc.pb.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "product.pb.go": {
+              "name": "product.pb.go",
+              "path": "go-coffeeshop.git/proto/gen/product.pb.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "product.pb.gw.go": {
+              "name": "product.pb.gw.go",
+              "path": "go-coffeeshop.git/proto/gen/product.pb.gw.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "product_grpc.pb.go": {
+              "name": "product_grpc.pb.go",
+              "path": "go-coffeeshop.git/proto/gen/product_grpc.pb.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "product.proto": {
+          "name": "product.proto",
+          "path": "go-coffeeshop.git/proto/product.proto",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "third_party": {
+      "name": "third_party",
+      "path": "go-coffeeshop.git/third_party",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "OpenAPI": {
+          "name": "OpenAPI",
+          "path": "go-coffeeshop.git/third_party/OpenAPI",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "common.swagger.json": {
+              "name": "common.swagger.json",
+              "path": "go-coffeeshop.git/third_party/OpenAPI/common.swagger.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "counter.swagger.json": {
+              "name": "counter.swagger.json",
+              "path": "go-coffeeshop.git/third_party/OpenAPI/counter.swagger.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "product.swagger.json": {
+              "name": "product.swagger.json",
+              "path": "go-coffeeshop.git/third_party/OpenAPI/product.swagger.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "tools": {
+      "name": "tools",
+      "path": "go-coffeeshop.git/tools",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "tools.go": {
+          "name": "tools.go",
+          "path": "go-coffeeshop.git/tools/tools.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 538130130,
+    "name": "go-coffeeshop",
+    "full_name": "thangchung/go-coffeeshop",
+    "owner": {
+      "login": "thangchung",
+      "html_url": "https://github.com/thangchung",
+      "type": "User"
+    },
+    "html_url": "https://github.com/thangchung/go-coffeeshop",
+    "description": "☕ A practical event-driven microservices demo built with Golang. Nomad, Consul Connect, Vault, and Terraform for deployment",
+    "url": "https://api.github.com/repos/thangchung/go-coffeeshop",
+    "clone_url": "https://github.com/thangchung/go-coffeeshop.git",
+    "homepage": "",
+    "size": 2022,
+    "stargazers_count": 2603,
+    "watchers_count": 2603,
+    "language": "Go"
+  }
+}
