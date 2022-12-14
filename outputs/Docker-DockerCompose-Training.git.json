@@ -1,0 +1,2733 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 32,
+      "rootCount": 3,
+      "subFolderCount": 29,
+      "filepaths": [
+        "Docker-DockerCompose-Training.git/recipe-mysql-dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-mysql-no-dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-postgresql-dockerfile",
+        "Docker-DockerCompose-Training.git/docker-python-flask-redis/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-1/docker/app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-2-0/docker/express-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-2-0/docker/react-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-2-1/docker/express-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-2-1/docker/mysql/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-2-1/docker/react-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-2-2/docker/express-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-2-2/docker/mysql/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-2-2/docker/react-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-2.5/docker/express-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-2.5/docker/mysql/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-2.5/docker/react-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker/api/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker/nginx/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-express-socketio-redis/docker/express-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/express-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/mysql/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/nginx/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/react-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/express-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/mysql/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/nginx/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/react-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/docker/flask/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-rails-postgresql/docker/postgresql/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-rails-postgresql/docker/rails/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-volume-share/docker/express-app/Dockerfile",
+        "Docker-DockerCompose-Training.git/recipe-volume-share/docker/nginx/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "Docker-DockerCompose-Training.git/docker-python-flask-redis/docker-compose.yml",
+        "Docker-DockerCompose-Training.git/recipe-1/docker-compose.yml",
+        "Docker-DockerCompose-Training.git/recipe-2-0/docker-compose.yml",
+        "Docker-DockerCompose-Training.git/recipe-2-1/docker-compose.yml",
+        "Docker-DockerCompose-Training.git/recipe-2-2/docker-compose.yml",
+        "Docker-DockerCompose-Training.git/recipe-2.5/docker-compose.yml",
+        "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker-compose.yml",
+        "Docker-DockerCompose-Training.git/recipe-express-socketio-redis/docker-compose.yml",
+        "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker-compose.yml",
+        "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker-compose.yml",
+        "Docker-DockerCompose-Training.git/recipe-rails-postgresql/docker-compose.yml",
+        "Docker-DockerCompose-Training.git/recipe-volume-share/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".git": {
+      "name": ".git",
+      "path": "Docker-DockerCompose-Training.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "Docker-DockerCompose-Training.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "Docker-DockerCompose-Training.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "Docker-DockerCompose-Training.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "Docker-DockerCompose-Training.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "Docker-DockerCompose-Training.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "Docker-DockerCompose-Training.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "Docker-DockerCompose-Training.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "Docker-DockerCompose-Training.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "Docker-DockerCompose-Training.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "Docker-DockerCompose-Training.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "Docker-DockerCompose-Training.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "Docker-DockerCompose-Training.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "Docker-DockerCompose-Training.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "Docker-DockerCompose-Training.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "Docker-DockerCompose-Training.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "Docker-DockerCompose-Training.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "Docker-DockerCompose-Training.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "Docker-DockerCompose-Training.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "Docker-DockerCompose-Training.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-e504ed15805250967909cb4541b60b94ae292ba2.idx": {
+                  "name": "pack-e504ed15805250967909cb4541b60b94ae292ba2.idx",
+                  "path": "Docker-DockerCompose-Training.git/.git/objects/pack/pack-e504ed15805250967909cb4541b60b94ae292ba2.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-e504ed15805250967909cb4541b60b94ae292ba2.pack": {
+                  "name": "pack-e504ed15805250967909cb4541b60b94ae292ba2.pack",
+                  "path": "Docker-DockerCompose-Training.git/.git/objects/pack/pack-e504ed15805250967909cb4541b60b94ae292ba2.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "Docker-DockerCompose-Training.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "Docker-DockerCompose-Training.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "Docker-DockerCompose-Training.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "Docker-DockerCompose-Training.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "Docker-DockerCompose-Training.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "Docker-DockerCompose-Training.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "Docker-DockerCompose-Training.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "Docker-DockerCompose-Training.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "Docker-DockerCompose-Training.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".prettierrc": {
+      "name": ".prettierrc",
+      "path": "Docker-DockerCompose-Training.git/.prettierrc",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "Docker-DockerCompose-Training.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docker-python-flask-redis": {
+      "name": "docker-python-flask-redis",
+      "path": "Docker-DockerCompose-Training.git/docker-python-flask-redis",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "Docker-DockerCompose-Training.git/docker-python-flask-redis/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "Docker-DockerCompose-Training.git/docker-python-flask-redis/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/docker-python-flask-redis/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "app.py": {
+          "name": "app.py",
+          "path": "Docker-DockerCompose-Training.git/docker-python-flask-redis/app.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "Docker-DockerCompose-Training.git/docker-python-flask-redis/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "requirements.txt": {
+          "name": "requirements.txt",
+          "path": "Docker-DockerCompose-Training.git/docker-python-flask-redis/requirements.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "templates": {
+          "name": "templates",
+          "path": "Docker-DockerCompose-Training.git/docker-python-flask-redis/templates",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "index.html": {
+              "name": "index.html",
+              "path": "Docker-DockerCompose-Training.git/docker-python-flask-redis/templates/index.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "recipe-1": {
+      "name": "recipe-1",
+      "path": "Docker-DockerCompose-Training.git/recipe-1",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-1/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-1/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "app": {
+              "name": "app",
+              "path": "Docker-DockerCompose-Training.git/recipe-1/docker/app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-1/docker/app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "Docker-DockerCompose-Training.git/recipe-1/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "images": {
+          "name": "images",
+          "path": "Docker-DockerCompose-Training.git/recipe-1/images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-01.png": {
+              "name": "docker-01.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-1/images/docker-01.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-02.png": {
+              "name": "docker-02.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-1/images/docker-02.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-01.png": {
+              "name": "docker-compose-01.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-1/images/docker-compose-01.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-02.png": {
+              "name": "docker-compose-02.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-1/images/docker-compose-02.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-03.png": {
+              "name": "docker-compose-03.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-1/images/docker-compose-03.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-04.png": {
+              "name": "docker-compose-04.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-1/images/docker-compose-04.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-05.png": {
+              "name": "docker-compose-05.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-1/images/docker-compose-05.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-06.png": {
+              "name": "docker-compose-06.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-1/images/docker-compose-06.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "recipe-2-0": {
+      "name": "recipe-2-0",
+      "path": "Docker-DockerCompose-Training.git/recipe-2-0",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-0/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-0/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/docker/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-0/docker/express-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "react-app": {
+              "name": "react-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/docker/react-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-0/docker/react-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-0/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "images": {
+          "name": "images",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-0/images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-01.png": {
+              "name": "docker-01.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-01.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-02.png": {
+              "name": "docker-02.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-02.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-03.png": {
+              "name": "docker-03.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-03.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-04.png": {
+              "name": "docker-04.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-04.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-05.png": {
+              "name": "docker-05.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-05.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-06.png": {
+              "name": "docker-06.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-06.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-07.png": {
+              "name": "docker-07.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-07.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-08.png": {
+              "name": "docker-08.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-08.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-09.png": {
+              "name": "docker-09.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-09.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-10.png": {
+              "name": "docker-10.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-10.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-01.png": {
+              "name": "docker-compose-01.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-compose-01.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-02.png": {
+              "name": "docker-compose-02.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-compose-02.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-03.png": {
+              "name": "docker-compose-03.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-compose-03.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-04.png": {
+              "name": "docker-compose-04.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-compose-04.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-05.png": {
+              "name": "docker-compose-05.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-compose-05.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose-06.png": {
+              "name": "docker-compose-06.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/images/docker-compose-06.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "sample": {
+          "name": "sample",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-0/sample",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/sample/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "example.js": {
+                  "name": "example.js",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-0/sample/express-app/example.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-0/sample/express-app/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "views": {
+                  "name": "views",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-0/sample/express-app/views",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.pug": {
+                      "name": "index.pug",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-0/sample/express-app/views/index.pug",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "react-app": {
+              "name": "react-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-0/sample/react-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Index.js": {
+                  "name": "Index.js",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-0/sample/react-app/Index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "components": {
+                  "name": "components",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-0/sample/react-app/components",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "App.js": {
+                      "name": "App.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-0/sample/react-app/components/App.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Example.js": {
+                      "name": "Example.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-0/sample/react-app/components/Example.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "recipe-2-1": {
+      "name": "recipe-2-1",
+      "path": "Docker-DockerCompose-Training.git/recipe-2-1",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-1/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-1/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-1/docker/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-1/docker/express-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mysql": {
+              "name": "mysql",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-1/docker/mysql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-1/docker/mysql/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "conf.d": {
+                  "name": "conf.d",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-1/docker/mysql/conf.d",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "my.cnf": {
+                      "name": "my.cnf",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-1/docker/mysql/conf.d/my.cnf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "react-app": {
+              "name": "react-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-1/docker/react-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-1/docker/react-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-1/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "sample": {
+          "name": "sample",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config": {
+                  "name": "config",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/express-app/config",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "db.js": {
+                      "name": "db.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/express-app/config/db.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/express-app/config/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/express-app/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "router": {
+                  "name": "router",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/express-app/router",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "api": {
+                      "name": "api",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/express-app/router/api",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "users.js": {
+                          "name": "users.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/express-app/router/api/users.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "views": {
+                  "name": "views",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/express-app/views",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.pug": {
+                      "name": "index.pug",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/express-app/views/index.pug",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "react-app": {
+              "name": "react-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/react-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Index.js": {
+                  "name": "Index.js",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/react-app/Index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "components": {
+                  "name": "components",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/react-app/components",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "App.js": {
+                      "name": "App.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-1/sample/react-app/components/App.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "recipe-2-2": {
+      "name": "recipe-2-2",
+      "path": "Docker-DockerCompose-Training.git/recipe-2-2",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-2/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-2/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-2/docker/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-2/docker/express-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mysql": {
+              "name": "mysql",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-2/docker/mysql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-2/docker/mysql/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "conf.d": {
+                  "name": "conf.d",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-2/docker/mysql/conf.d",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "my.cnf": {
+                      "name": "my.cnf",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/docker/mysql/conf.d/my.cnf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "react-app": {
+              "name": "react-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-2/docker/react-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-2/docker/react-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-2/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "sample": {
+          "name": "sample",
+          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "api": {
+                  "name": "api",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/api",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "csrfToken.js": {
+                      "name": "csrfToken.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/api/csrfToken.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "login.js": {
+                      "name": "login.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/api/login.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logout.js": {
+                      "name": "logout.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/api/logout.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tasks.js": {
+                      "name": "tasks.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/api/tasks.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "users.js": {
+                      "name": "users.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/api/users.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "config": {
+                  "name": "config",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/config",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "db.js": {
+                      "name": "db.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/config/db.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/config/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "jwt.config.js": {
+                      "name": "jwt.config.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/config/jwt.config.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "middlewares": {
+                  "name": "middlewares",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/middlewares",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "validator.js": {
+                      "name": "validator.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/middlewares/validator.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "verifyToken.js": {
+                      "name": "verifyToken.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/middlewares/verifyToken.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "package.json": {
+                  "name": "package.json",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/package.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "views": {
+                  "name": "views",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/views",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.pug": {
+                      "name": "index.pug",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/express-app/views/index.pug",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "react-app": {
+              "name": "react-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "src": {
+                  "name": "src",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Index.js": {
+                      "name": "Index.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/Index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "app": {
+                      "name": "app",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/app",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "store.js": {
+                          "name": "store.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/app/store.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "components": {
+                      "name": "components",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "App.js": {
+                          "name": "App.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components/App.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Footer.js": {
+                          "name": "Footer.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components/Footer.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Header.js": {
+                          "name": "Header.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components/Header.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Layout.js": {
+                          "name": "Layout.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components/Layout.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Login.js": {
+                          "name": "Login.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components/Login.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Main.js": {
+                          "name": "Main.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components/Main.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Modal.js": {
+                          "name": "Modal.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components/Modal.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "SignUp.js": {
+                          "name": "SignUp.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components/SignUp.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Task.js": {
+                          "name": "Task.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components/Task.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "TaskDeleteModal.js": {
+                          "name": "TaskDeleteModal.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components/TaskDeleteModal.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "TaskInsertModal.js": {
+                          "name": "TaskInsertModal.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components/TaskInsertModal.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "TaskUpdateModal.js": {
+                          "name": "TaskUpdateModal.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/components/TaskUpdateModal.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "config": {
+                      "name": "config",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/config",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "index.js": {
+                          "name": "index.js",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/config/index.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "features": {
+                      "name": "features",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/features",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "auth": {
+                          "name": "auth",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/features/auth",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "authSlice.js": {
+                              "name": "authSlice.js",
+                              "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/features/auth/authSlice.js",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "tasks": {
+                          "name": "tasks",
+                          "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/features/tasks",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "tasksSlice.js": {
+                              "name": "tasksSlice.js",
+                              "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/features/tasks/tasksSlice.js",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "index.css": {
+                      "name": "index.css",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2-2/sample/react-app/src/index.css",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "recipe-2.5": {
+      "name": "recipe-2.5",
+      "path": "Docker-DockerCompose-Training.git/recipe-2.5",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-2.5/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-2.5/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2.5/docker/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2.5/docker/express-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mysql": {
+              "name": "mysql",
+              "path": "Docker-DockerCompose-Training.git/recipe-2.5/docker/mysql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2.5/docker/mysql/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "conf.d": {
+                  "name": "conf.d",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2.5/docker/mysql/conf.d",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "my.cnf": {
+                      "name": "my.cnf",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2.5/docker/mysql/conf.d/my.cnf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "react-app": {
+              "name": "react-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2.5/docker/react-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2.5/docker/react-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "Docker-DockerCompose-Training.git/recipe-2.5/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "sample": {
+          "name": "sample",
+          "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "api": {
+                  "name": "api",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/express-app/api",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "login.js": {
+                      "name": "login.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/express-app/api/login.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "users.js": {
+                      "name": "users.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/express-app/api/users.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "config": {
+                  "name": "config",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/express-app/config",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "jwt.config.js": {
+                      "name": "jwt.config.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/express-app/config/jwt.config.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/express-app/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "middlewares": {
+                  "name": "middlewares",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/express-app/middlewares",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "verifyToken.js": {
+                      "name": "verifyToken.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/express-app/middlewares/verifyToken.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "react-app": {
+              "name": "react-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/react-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Index.js": {
+                  "name": "Index.js",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/react-app/Index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "components": {
+                  "name": "components",
+                  "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/react-app/components",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "App.js": {
+                      "name": "App.js",
+                      "path": "Docker-DockerCompose-Training.git/recipe-2.5/sample/react-app/components/App.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "recipe-docker-nginx-express": {
+      "name": "recipe-docker-nginx-express",
+      "path": "Docker-DockerCompose-Training.git/recipe-docker-nginx-express",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "api": {
+              "name": "api",
+              "path": "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker/api",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker/api/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker/api/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "package.json": {
+                  "name": "package.json",
+                  "path": "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker/api/package.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "nginx": {
+              "name": "nginx",
+              "path": "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker/nginx",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker/nginx/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "conf.d": {
+                  "name": "conf.d",
+                  "path": "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker/nginx/conf.d",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "default.conf": {
+                      "name": "default.conf",
+                      "path": "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker/nginx/conf.d/default.conf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "Docker-DockerCompose-Training.git/recipe-docker-nginx-express/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "recipe-express-socketio-redis": {
+      "name": "recipe-express-socketio-redis",
+      "path": "Docker-DockerCompose-Training.git/recipe-express-socketio-redis",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-express-socketio-redis/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "demo.gif": {
+          "name": "demo.gif",
+          "path": "Docker-DockerCompose-Training.git/recipe-express-socketio-redis/demo.gif",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-express-socketio-redis/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-express-socketio-redis/docker/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-express-socketio-redis/docker/express-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "index.html": {
+                  "name": "index.html",
+                  "path": "Docker-DockerCompose-Training.git/recipe-express-socketio-redis/docker/express-app/index.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.js": {
+                  "name": "main.js",
+                  "path": "Docker-DockerCompose-Training.git/recipe-express-socketio-redis/docker/express-app/main.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "Docker-DockerCompose-Training.git/recipe-express-socketio-redis/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "recipe-https-nginx-typescript-react-express-mysql": {
+      "name": "recipe-https-nginx-typescript-react-express-mysql",
+      "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/express-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mysql": {
+              "name": "mysql",
+              "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/mysql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/mysql/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "conf.d": {
+                  "name": "conf.d",
+                  "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/mysql/conf.d",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "my.cnf": {
+                      "name": "my.cnf",
+                      "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/mysql/conf.d/my.cnf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "nginx": {
+              "name": "nginx",
+              "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/nginx",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/nginx/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "conf.d": {
+                  "name": "conf.d",
+                  "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/nginx/conf.d",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "default.conf": {
+                      "name": "default.conf",
+                      "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/nginx/conf.d/default.conf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "react-app": {
+              "name": "react-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/react-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker/react-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "sample": {
+          "name": "sample",
+          "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/sample",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/sample/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.ts": {
+                  "name": "index.ts",
+                  "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/sample/express-app/index.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "react-app": {
+              "name": "react-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/sample/react-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "App.tsx": {
+                  "name": "App.tsx",
+                  "path": "Docker-DockerCompose-Training.git/recipe-https-nginx-typescript-react-express-mysql/sample/react-app/App.tsx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "recipe-mysql-dockerfile": {
+      "name": "recipe-mysql-dockerfile",
+      "path": "Docker-DockerCompose-Training.git/recipe-mysql-dockerfile",
+      "isDir": true,
+      "isDockerfile": true,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-mysql-dockerfile/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-mysql-dockerfile/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "mysql": {
+              "name": "mysql",
+              "path": "Docker-DockerCompose-Training.git/recipe-mysql-dockerfile/docker/mysql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-mysql-dockerfile/docker/mysql/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "conf.d": {
+                  "name": "conf.d",
+                  "path": "Docker-DockerCompose-Training.git/recipe-mysql-dockerfile/docker/mysql/conf.d",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "my.cnf": {
+                      "name": "my.cnf",
+                      "path": "Docker-DockerCompose-Training.git/recipe-mysql-dockerfile/docker/mysql/conf.d/my.cnf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "recipe-mysql-no-dockerfile": {
+      "name": "recipe-mysql-no-dockerfile",
+      "path": "Docker-DockerCompose-Training.git/recipe-mysql-no-dockerfile",
+      "isDir": true,
+      "isDockerfile": true,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-mysql-no-dockerfile/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "recipe-nginx-react-express-mysql": {
+      "name": "recipe-nginx-react-express-mysql",
+      "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/express-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mysql": {
+              "name": "mysql",
+              "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/mysql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/mysql/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "conf.d": {
+                  "name": "conf.d",
+                  "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/mysql/conf.d",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "my.cnf": {
+                      "name": "my.cnf",
+                      "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/mysql/conf.d/my.cnf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "nginx": {
+              "name": "nginx",
+              "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/nginx",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/nginx/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "conf.d": {
+                  "name": "conf.d",
+                  "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/nginx/conf.d",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "default.conf": {
+                      "name": "default.conf",
+                      "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/nginx/conf.d/default.conf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "react-app": {
+              "name": "react-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/react-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker/react-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "Docker-DockerCompose-Training.git/recipe-nginx-react-express-mysql/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "recipe-postgresql-dockerfile": {
+      "name": "recipe-postgresql-dockerfile",
+      "path": "Docker-DockerCompose-Training.git/recipe-postgresql-dockerfile",
+      "isDir": true,
+      "isDockerfile": true,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-postgresql-dockerfile/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-postgresql-dockerfile/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "postgresql": {
+              "name": "postgresql",
+              "path": "Docker-DockerCompose-Training.git/recipe-postgresql-dockerfile/docker/postgresql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-postgresql-dockerfile/docker/postgresql/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "recipe-python-flask-blueprint": {
+      "name": "recipe-python-flask-blueprint",
+      "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "flask": {
+              "name": "flask",
+              "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/docker/flask",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/docker/flask/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "requirements.txt": {
+                  "name": "requirements.txt",
+                  "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/docker/flask/requirements.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "sample": {
+          "name": "sample",
+          "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/sample",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "app": {
+              "name": "app",
+              "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/sample/app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "__init__.py": {
+                  "name": "__init__.py",
+                  "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/sample/app/__init__.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "api": {
+                  "name": "api",
+                  "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/sample/app/api",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "__init__.py": {
+                      "name": "__init__.py",
+                      "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/sample/app/api/__init__.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "users.py": {
+                      "name": "users.py",
+                      "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/sample/app/api/users.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "templates": {
+                  "name": "templates",
+                  "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/sample/app/templates",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "base.html": {
+                      "name": "base.html",
+                      "path": "Docker-DockerCompose-Training.git/recipe-python-flask-blueprint/sample/app/templates/base.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "recipe-rails-postgresql": {
+      "name": "recipe-rails-postgresql",
+      "path": "Docker-DockerCompose-Training.git/recipe-rails-postgresql",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-rails-postgresql/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-rails-postgresql/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "postgresql": {
+              "name": "postgresql",
+              "path": "Docker-DockerCompose-Training.git/recipe-rails-postgresql/docker/postgresql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-rails-postgresql/docker/postgresql/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "rails": {
+              "name": "rails",
+              "path": "Docker-DockerCompose-Training.git/recipe-rails-postgresql/docker/rails",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-rails-postgresql/docker/rails/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Gemfile": {
+                  "name": "Gemfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-rails-postgresql/docker/rails/Gemfile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Gemfile.lock": {
+                  "name": "Gemfile.lock",
+                  "path": "Docker-DockerCompose-Training.git/recipe-rails-postgresql/docker/rails/Gemfile.lock",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "database.yml": {
+                  "name": "database.yml",
+                  "path": "Docker-DockerCompose-Training.git/recipe-rails-postgresql/docker/rails/database.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "Docker-DockerCompose-Training.git/recipe-rails-postgresql/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "recipe-volume-share": {
+      "name": "recipe-volume-share",
+      "path": "Docker-DockerCompose-Training.git/recipe-volume-share",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-volume-share/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "Docker-DockerCompose-Training.git/recipe-volume-share/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "express-app": {
+              "name": "express-app",
+              "path": "Docker-DockerCompose-Training.git/recipe-volume-share/docker/express-app",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-volume-share/docker/express-app/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "Docker-DockerCompose-Training.git/recipe-volume-share/docker/express-app/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "package.json": {
+                  "name": "package.json",
+                  "path": "Docker-DockerCompose-Training.git/recipe-volume-share/docker/express-app/package.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "nginx": {
+              "name": "nginx",
+              "path": "Docker-DockerCompose-Training.git/recipe-volume-share/docker/nginx",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "Docker-DockerCompose-Training.git/recipe-volume-share/docker/nginx/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "conf.d": {
+                  "name": "conf.d",
+                  "path": "Docker-DockerCompose-Training.git/recipe-volume-share/docker/nginx/conf.d",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "default.conf": {
+                      "name": "default.conf",
+                      "path": "Docker-DockerCompose-Training.git/recipe-volume-share/docker/nginx/conf.d/default.conf",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "Docker-DockerCompose-Training.git/recipe-volume-share/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "recipe-vscode-git-github-https": {
+      "name": "recipe-vscode-git-github-https",
+      "path": "Docker-DockerCompose-Training.git/recipe-vscode-git-github-https",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/recipe-vscode-git-github-https/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "images": {
+          "name": "images",
+          "path": "Docker-DockerCompose-Training.git/recipe-vscode-git-github-https/images",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "git-00.png": {
+              "name": "git-00.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-vscode-git-github-https/images/git-00.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "git-01.png": {
+              "name": "git-01.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-vscode-git-github-https/images/git-01.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "git-02.png": {
+              "name": "git-02.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-vscode-git-github-https/images/git-02.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "git-03.png": {
+              "name": "git-03.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-vscode-git-github-https/images/git-03.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "git-04.png": {
+              "name": "git-04.png",
+              "path": "Docker-DockerCompose-Training.git/recipe-vscode-git-github-https/images/git-04.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "tips": {
+      "name": "tips",
+      "path": "Docker-DockerCompose-Training.git/tips",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "Docker-DockerCompose-Training.git/tips/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "mysql-backup-restore": {
+          "name": "mysql-backup-restore",
+          "path": "Docker-DockerCompose-Training.git/tips/mysql-backup-restore",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "Docker-DockerCompose-Training.git/tips/mysql-backup-restore/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "network-node-mysql": {
+          "name": "network-node-mysql",
+          "path": "Docker-DockerCompose-Training.git/tips/network-node-mysql",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "Docker-DockerCompose-Training.git/tips/network-node-mysql/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 336988805,
+    "name": "Docker-DockerCompose-Training",
+    "full_name": "hironomiu/Docker-DockerCompose-Training",
+    "owner": {
+      "login": "hironomiu",
+      "html_url": "https://github.com/hironomiu",
+      "type": "User"
+    },
+    "html_url": "https://github.com/hironomiu/Docker-DockerCompose-Training",
+    "description": "Docker,DockerComposeのレシピ集",
+    "url": "https://api.github.com/repos/hironomiu/Docker-DockerCompose-Training",
+    "clone_url": "https://github.com/hironomiu/Docker-DockerCompose-Training.git",
+    "homepage": "",
+    "size": 3747,
+    "stargazers_count": 34,
+    "watchers_count": 34,
+    "language": "JavaScript"
+  }
+}

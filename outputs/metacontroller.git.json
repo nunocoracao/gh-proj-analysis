@@ -1,0 +1,3726 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 4,
+      "subFolderCount": 2,
+      "filepaths": [
+        "metacontroller.git/Dockerfile",
+        "metacontroller.git/Dockerfile.debug",
+        "metacontroller.git/Dockerfile.distroless",
+        "metacontroller.git/Dockerfile.distroless-debug",
+        "metacontroller.git/examples/jsonnetd/Dockerfile",
+        "metacontroller.git/examples/nodejs/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "metacontroller.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "metacontroller.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "metacontroller.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "metacontroller.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "metacontroller.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "metacontroller.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "metacontroller.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "metacontroller.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "metacontroller.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "metacontroller.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "metacontroller.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "metacontroller.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "metacontroller.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "metacontroller.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "metacontroller.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "metacontroller.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "metacontroller.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "metacontroller.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "metacontroller.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "metacontroller.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "metacontroller.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "metacontroller.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "metacontroller.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "metacontroller.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "metacontroller.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "metacontroller.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "metacontroller.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "metacontroller.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "metacontroller.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "metacontroller.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "metacontroller.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "metacontroller.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "metacontroller.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-3a035ddf22cdb85ab6fb5fe267a094f36ce50bcb.idx": {
+                  "name": "pack-3a035ddf22cdb85ab6fb5fe267a094f36ce50bcb.idx",
+                  "path": "metacontroller.git/.git/objects/pack/pack-3a035ddf22cdb85ab6fb5fe267a094f36ce50bcb.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-3a035ddf22cdb85ab6fb5fe267a094f36ce50bcb.pack": {
+                  "name": "pack-3a035ddf22cdb85ab6fb5fe267a094f36ce50bcb.pack",
+                  "path": "metacontroller.git/.git/objects/pack/pack-3a035ddf22cdb85ab6fb5fe267a094f36ce50bcb.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "metacontroller.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "metacontroller.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "metacontroller.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "metacontroller.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "metacontroller.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "metacontroller.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "metacontroller.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "metacontroller.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "metacontroller.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "PULL_REQUEST_TEMPLATE.md": {
+          "name": "PULL_REQUEST_TEMPLATE.md",
+          "path": "metacontroller.git/.github/PULL_REQUEST_TEMPLATE.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "metacontroller.git/.github/config",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "chart-testing": {
+              "name": "chart-testing",
+              "path": "metacontroller.git/.github/config/chart-testing",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "etc": {
+                  "name": "etc",
+                  "path": "metacontroller.git/.github/config/chart-testing/etc",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "chart_schema.yaml": {
+                      "name": "chart_schema.yaml",
+                      "path": "metacontroller.git/.github/config/chart-testing/etc/chart_schema.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "lintconf.yaml": {
+                      "name": "lintconf.yaml",
+                      "path": "metacontroller.git/.github/config/chart-testing/etc/lintconf.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "kind-matrix-config.json": {
+              "name": "kind-matrix-config.json",
+              "path": "metacontroller.git/.github/config/kind-matrix-config.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "semantic.yml": {
+          "name": "semantic.yml",
+          "path": "metacontroller.git/.github/semantic.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "metacontroller.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "documentation.yaml": {
+              "name": "documentation.yaml",
+              "path": "metacontroller.git/.github/workflows/documentation.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "helm_release.yaml": {
+              "name": "helm_release.yaml",
+              "path": "metacontroller.git/.github/workflows/helm_release.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "master-static.yaml": {
+              "name": "master-static.yaml",
+              "path": "metacontroller.git/.github/workflows/master-static.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "static.yaml": {
+              "name": "static.yaml",
+              "path": "metacontroller.git/.github/workflows/static.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_release.yaml": {
+              "name": "test_release.yaml",
+              "path": "metacontroller.git/.github/workflows/test_release.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "metacontroller.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".golangci.yaml": {
+      "name": ".golangci.yaml",
+      "path": "metacontroller.git/.golangci.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".goreleaser.yaml": {
+      "name": ".goreleaser.yaml",
+      "path": "metacontroller.git/.goreleaser.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".release.sh": {
+      "name": ".release.sh",
+      "path": "metacontroller.git/.release.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CHANGELOG.md": {
+      "name": "CHANGELOG.md",
+      "path": "metacontroller.git/CHANGELOG.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "metacontroller.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "DOCKERHUB-README.md": {
+      "name": "DOCKERHUB-README.md",
+      "path": "metacontroller.git/DOCKERHUB-README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "metacontroller.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile.debug": {
+      "name": "Dockerfile.debug",
+      "path": "metacontroller.git/Dockerfile.debug",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile.distroless": {
+      "name": "Dockerfile.distroless",
+      "path": "metacontroller.git/Dockerfile.distroless",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile.distroless-debug": {
+      "name": "Dockerfile.distroless-debug",
+      "path": "metacontroller.git/Dockerfile.distroless-debug",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "metacontroller.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Makefile": {
+      "name": "Makefile",
+      "path": "metacontroller.git/Makefile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "metacontroller.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "code-of-conduct.md": {
+      "name": "code-of-conduct.md",
+      "path": "metacontroller.git/code-of-conduct.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "codecov.yml": {
+      "name": "codecov.yml",
+      "path": "metacontroller.git/codecov.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "deploy": {
+      "name": "deploy",
+      "path": "metacontroller.git/deploy",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "helm": {
+          "name": "helm",
+          "path": "metacontroller.git/deploy/helm",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".gitignore": {
+              "name": ".gitignore",
+              "path": "metacontroller.git/deploy/helm/.gitignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metacontroller": {
+              "name": "metacontroller",
+              "path": "metacontroller.git/deploy/helm/metacontroller",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".helmignore": {
+                  "name": ".helmignore",
+                  "path": "metacontroller.git/deploy/helm/metacontroller/.helmignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Chart.yaml": {
+                  "name": "Chart.yaml",
+                  "path": "metacontroller.git/deploy/helm/metacontroller/Chart.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ci": {
+                  "name": "ci",
+                  "path": "metacontroller.git/deploy/helm/metacontroller/ci",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "command-args-values.yaml": {
+                      "name": "command-args-values.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/ci/command-args-values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "debug-values.yaml": {
+                      "name": "debug-values.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/ci/debug-values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "leader-election-values.yaml": {
+                      "name": "leader-election-values.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/ci/leader-election-values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "rbac-aggregation-rule-values.yaml": {
+                      "name": "rbac-aggregation-rule-values.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/ci/rbac-aggregation-rule-values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "rbac-rules-values.yaml": {
+                      "name": "rbac-rules-values.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/ci/rbac-rules-values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "security-context-values.yaml": {
+                      "name": "security-context-values.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/ci/security-context-values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "service-values.yaml": {
+                      "name": "service-values.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/ci/service-values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "crds": {
+                  "name": "crds",
+                  "path": "metacontroller.git/deploy/helm/metacontroller/crds",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "metacontroller-crds-v1.yaml": {
+                      "name": "metacontroller-crds-v1.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/crds/metacontroller-crds-v1.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "templates": {
+                  "name": "templates",
+                  "path": "metacontroller.git/deploy/helm/metacontroller/templates",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "_helpers.tpl": {
+                      "name": "_helpers.tpl",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/templates/_helpers.tpl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "clusterrole-aggregate-edit.yaml": {
+                      "name": "clusterrole-aggregate-edit.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/templates/clusterrole-aggregate-edit.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "clusterrole-aggregate-view.yaml": {
+                      "name": "clusterrole-aggregate-view.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/templates/clusterrole-aggregate-view.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "clusterrole.yaml": {
+                      "name": "clusterrole.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/templates/clusterrole.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "clusterrolebinding.yaml": {
+                      "name": "clusterrolebinding.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/templates/clusterrolebinding.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "pdb.yaml": {
+                      "name": "pdb.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/templates/pdb.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "service.yaml": {
+                      "name": "service.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/templates/service.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "serviceaccount.yaml": {
+                      "name": "serviceaccount.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/templates/serviceaccount.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "statefulset.yaml": {
+                      "name": "statefulset.yaml",
+                      "path": "metacontroller.git/deploy/helm/metacontroller/templates/statefulset.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "values.yaml": {
+                  "name": "values.yaml",
+                  "path": "metacontroller.git/deploy/helm/metacontroller/values.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "docs": {
+      "name": "docs",
+      "path": "metacontroller.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "book.toml": {
+          "name": "book.toml",
+          "path": "metacontroller.git/docs/book.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "metacontroller.git/docs/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "404.md": {
+              "name": "404.md",
+              "path": "metacontroller.git/docs/src/404.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "SUMMARY.md": {
+              "name": "SUMMARY.md",
+              "path": "metacontroller.git/docs/src/SUMMARY.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "api": {
+              "name": "api",
+              "path": "metacontroller.git/docs/src/api",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "apply.md": {
+                  "name": "apply.md",
+                  "path": "metacontroller.git/docs/src/api/apply.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "compositecontroller.md": {
+                  "name": "compositecontroller.md",
+                  "path": "metacontroller.git/docs/src/api/compositecontroller.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controllerrevision.md": {
+                  "name": "controllerrevision.md",
+                  "path": "metacontroller.git/docs/src/api/controllerrevision.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "customize.md": {
+                  "name": "customize.md",
+                  "path": "metacontroller.git/docs/src/api/customize.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "decoratorcontroller.md": {
+                  "name": "decoratorcontroller.md",
+                  "path": "metacontroller.git/docs/src/api/decoratorcontroller.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "hook.md": {
+                  "name": "hook.md",
+                  "path": "metacontroller.git/docs/src/api/hook.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "api.md": {
+              "name": "api.md",
+              "path": "metacontroller.git/docs/src/api.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "concepts.md": {
+              "name": "concepts.md",
+              "path": "metacontroller.git/docs/src/concepts.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "contrib": {
+              "name": "contrib",
+              "path": "metacontroller.git/docs/src/contrib",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "build.md": {
+                  "name": "build.md",
+                  "path": "metacontroller.git/docs/src/contrib/build.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "debug.md": {
+                  "name": "debug.md",
+                  "path": "metacontroller.git/docs/src/contrib/debug.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "contrib.md": {
+              "name": "contrib.md",
+              "path": "metacontroller.git/docs/src/contrib.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "design": {
+              "name": "design",
+              "path": "metacontroller.git/docs/src/design",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "map-controller.md": {
+                  "name": "map-controller.md",
+                  "path": "metacontroller.git/docs/src/design/map-controller.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "design.md": {
+              "name": "design.md",
+              "path": "metacontroller.git/docs/src/design.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "examples.md": {
+              "name": "examples.md",
+              "path": "metacontroller.git/docs/src/examples.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "faq.md": {
+              "name": "faq.md",
+              "path": "metacontroller.git/docs/src/faq.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "features.md": {
+              "name": "features.md",
+              "path": "metacontroller.git/docs/src/features.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "guide": {
+              "name": "guide",
+              "path": "metacontroller.git/docs/src/guide",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "best-practices.md": {
+                  "name": "best-practices.md",
+                  "path": "metacontroller.git/docs/src/guide/best-practices.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "configuration.md": {
+                  "name": "configuration.md",
+                  "path": "metacontroller.git/docs/src/guide/configuration.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create.md": {
+                  "name": "create.md",
+                  "path": "metacontroller.git/docs/src/guide/create.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-install.md": {
+                  "name": "helm-install.md",
+                  "path": "metacontroller.git/docs/src/guide/helm-install.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "install.md": {
+                  "name": "install.md",
+                  "path": "metacontroller.git/docs/src/guide/install.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "troubleshooting.md": {
+                  "name": "troubleshooting.md",
+                  "path": "metacontroller.git/docs/src/guide/troubleshooting.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "guide.md": {
+              "name": "guide.md",
+              "path": "metacontroller.git/docs/src/guide.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "intro.md": {
+              "name": "intro.md",
+              "path": "metacontroller.git/docs/src/intro.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pronunciation.md": {
+              "name": "pronunciation.md",
+              "path": "metacontroller.git/docs/src/pronunciation.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "examples": {
+      "name": "examples",
+      "path": "metacontroller.git/examples",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "metacontroller.git/examples/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "bluegreen": {
+          "name": "bluegreen",
+          "path": "metacontroller.git/examples/bluegreen",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "metacontroller.git/examples/bluegreen/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/bluegreen/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "api": {
+              "name": "api",
+              "path": "metacontroller.git/examples/bluegreen/api",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "types.go": {
+                  "name": "types.go",
+                  "path": "metacontroller.git/examples/bluegreen/api/types.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/bluegreen/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "bluegreen-controller.yaml": {
+                  "name": "bluegreen-controller.yaml",
+                  "path": "metacontroller.git/examples/bluegreen/manifest/bluegreen-controller.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/bluegreen/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync.js": {
+                  "name": "sync.js",
+                  "path": "metacontroller.git/examples/bluegreen/manifest/sync.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "my-bluegreen.yaml": {
+              "name": "my-bluegreen.yaml",
+              "path": "metacontroller.git/examples/bluegreen/my-bluegreen.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/bluegreen/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "v1": {
+              "name": "v1",
+              "path": "metacontroller.git/examples/bluegreen/v1",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "crdv1.yaml": {
+                  "name": "crdv1.yaml",
+                  "path": "metacontroller.git/examples/bluegreen/v1/crdv1.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/bluegreen/v1/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "catset": {
+          "name": "catset",
+          "path": "metacontroller.git/examples/catset",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "metacontroller.git/examples/catset/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/catset/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "api": {
+              "name": "api",
+              "path": "metacontroller.git/examples/catset/api",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "types.go": {
+                  "name": "types.go",
+                  "path": "metacontroller.git/examples/catset/api/types.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/catset/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "catset-controller.yaml": {
+                  "name": "catset-controller.yaml",
+                  "path": "metacontroller.git/examples/catset/manifest/catset-controller.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/catset/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync.js": {
+                  "name": "sync.js",
+                  "path": "metacontroller.git/examples/catset/manifest/sync.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "my-catset.yaml": {
+              "name": "my-catset.yaml",
+              "path": "metacontroller.git/examples/catset/my-catset.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/catset/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "v1": {
+              "name": "v1",
+              "path": "metacontroller.git/examples/catset/v1",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "crdv1.yaml": {
+                  "name": "crdv1.yaml",
+                  "path": "metacontroller.git/examples/catset/v1/crdv1.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/catset/v1/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "clusteredparent": {
+          "name": "clusteredparent",
+          "path": "metacontroller.git/examples/clusteredparent",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/clusteredparent/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/clusteredparent/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cluster-parent.yaml": {
+                  "name": "cluster-parent.yaml",
+                  "path": "metacontroller.git/examples/clusteredparent/manifest/cluster-parent.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/clusteredparent/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync.py": {
+                  "name": "sync.py",
+                  "path": "metacontroller.git/examples/clusteredparent/manifest/sync.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "my-clusterrole.yaml": {
+              "name": "my-clusterrole.yaml",
+              "path": "metacontroller.git/examples/clusteredparent/my-clusterrole.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sync.py": {
+              "name": "sync.py",
+              "path": "metacontroller.git/examples/clusteredparent/sync.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/clusteredparent/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "configmappropagation": {
+          "name": "configmappropagation",
+          "path": "metacontroller.git/examples/configmappropagation",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "metacontroller.git/examples/configmappropagation/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/configmappropagation/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "api": {
+              "name": "api",
+              "path": "metacontroller.git/examples/configmappropagation/api",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "types.go": {
+                  "name": "types.go",
+                  "path": "metacontroller.git/examples/configmappropagation/api/types.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "example-configmap.yaml": {
+              "name": "example-configmap.yaml",
+              "path": "metacontroller.git/examples/configmappropagation/example-configmap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/configmappropagation/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "configmap-propagation.yaml": {
+                  "name": "configmap-propagation.yaml",
+                  "path": "metacontroller.git/examples/configmappropagation/manifest/configmap-propagation.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/configmappropagation/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync.py": {
+                  "name": "sync.py",
+                  "path": "metacontroller.git/examples/configmappropagation/manifest/sync.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/configmappropagation/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "v1": {
+              "name": "v1",
+              "path": "metacontroller.git/examples/configmappropagation/v1",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "crdv1.yaml": {
+                  "name": "crdv1.yaml",
+                  "path": "metacontroller.git/examples/configmappropagation/v1/crdv1.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/configmappropagation/v1/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "crd-roles": {
+          "name": "crd-roles",
+          "path": "metacontroller.git/examples/crd-roles",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/crd-roles/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/crd-roles/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "crd-role-controller.yaml": {
+                  "name": "crd-role-controller.yaml",
+                  "path": "metacontroller.git/examples/crd-roles/manifest/crd-role-controller.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/crd-roles/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync.py": {
+                  "name": "sync.py",
+                  "path": "metacontroller.git/examples/crd-roles/manifest/sync.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/crd-roles/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "v1": {
+              "name": "v1",
+              "path": "metacontroller.git/examples/crd-roles/v1",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "controller.yaml": {
+                  "name": "controller.yaml",
+                  "path": "metacontroller.git/examples/crd-roles/v1/controller.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/crd-roles/v1/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "my-crd.yaml": {
+                  "name": "my-crd.yaml",
+                  "path": "metacontroller.git/examples/crd-roles/v1/my-crd.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "daemonjob": {
+          "name": "daemonjob",
+          "path": "metacontroller.git/examples/daemonjob",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/daemonjob/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/daemonjob/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "daemonjob-controller.yaml": {
+                  "name": "daemonjob-controller.yaml",
+                  "path": "metacontroller.git/examples/daemonjob/manifest/daemonjob-controller.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/daemonjob/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync.py": {
+                  "name": "sync.py",
+                  "path": "metacontroller.git/examples/daemonjob/manifest/sync.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "my-daemonjob.yaml": {
+              "name": "my-daemonjob.yaml",
+              "path": "metacontroller.git/examples/daemonjob/my-daemonjob.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/daemonjob/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "v1": {
+              "name": "v1",
+              "path": "metacontroller.git/examples/daemonjob/v1",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "crdv1.yaml": {
+                  "name": "crdv1.yaml",
+                  "path": "metacontroller.git/examples/daemonjob/v1/crdv1.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/daemonjob/v1/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "globalconfigmap": {
+          "name": "globalconfigmap",
+          "path": "metacontroller.git/examples/globalconfigmap",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/globalconfigmap/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "example-globalconfigmap.yaml": {
+              "name": "example-globalconfigmap.yaml",
+              "path": "metacontroller.git/examples/globalconfigmap/example-globalconfigmap.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/globalconfigmap/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "globalconfigmap.yaml": {
+                  "name": "globalconfigmap.yaml",
+                  "path": "metacontroller.git/examples/globalconfigmap/manifest/globalconfigmap.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/globalconfigmap/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync.py": {
+                  "name": "sync.py",
+                  "path": "metacontroller.git/examples/globalconfigmap/manifest/sync.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/globalconfigmap/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "v1": {
+              "name": "v1",
+              "path": "metacontroller.git/examples/globalconfigmap/v1",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "crdv1.yaml": {
+                  "name": "crdv1.yaml",
+                  "path": "metacontroller.git/examples/globalconfigmap/v1/crdv1.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/globalconfigmap/v1/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "indexedjob": {
+          "name": "indexedjob",
+          "path": "metacontroller.git/examples/indexedjob",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/indexedjob/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/indexedjob/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "indexedjob-controller.yaml": {
+                  "name": "indexedjob-controller.yaml",
+                  "path": "metacontroller.git/examples/indexedjob/manifest/indexedjob-controller.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/indexedjob/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync.py": {
+                  "name": "sync.py",
+                  "path": "metacontroller.git/examples/indexedjob/manifest/sync.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "my-indexedjob.yaml": {
+              "name": "my-indexedjob.yaml",
+              "path": "metacontroller.git/examples/indexedjob/my-indexedjob.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/indexedjob/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "v1": {
+              "name": "v1",
+              "path": "metacontroller.git/examples/indexedjob/v1",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "crdv1.yaml": {
+                  "name": "crdv1.yaml",
+                  "path": "metacontroller.git/examples/indexedjob/v1/crdv1.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/indexedjob/v1/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "jsonnetd": {
+          "name": "jsonnetd",
+          "path": "metacontroller.git/examples/jsonnetd",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".gitignore": {
+              "name": ".gitignore",
+              "path": "metacontroller.git/examples/jsonnetd/.gitignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "metacontroller.git/examples/jsonnetd/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "metacontroller.git/examples/jsonnetd/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/jsonnetd/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "extensions.go": {
+              "name": "extensions.go",
+              "path": "metacontroller.git/examples/jsonnetd/extensions.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "go.mod": {
+              "name": "go.mod",
+              "path": "metacontroller.git/examples/jsonnetd/go.mod",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "metacontroller.git/examples/jsonnetd/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "leader-election": {
+          "name": "leader-election",
+          "path": "metacontroller.git/examples/leader-election",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/leader-election/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/leader-election/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "args.yaml": {
+                  "name": "args.yaml",
+                  "path": "metacontroller.git/examples/leader-election/manifest/args.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/leader-election/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "replicas.yaml": {
+                  "name": "replicas.yaml",
+                  "path": "metacontroller.git/examples/leader-election/manifest/replicas.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/leader-election/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "nodejs": {
+          "name": "nodejs",
+          "path": "metacontroller.git/examples/nodejs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "metacontroller.git/examples/nodejs/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "metacontroller.git/examples/nodejs/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/nodejs/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "server.js": {
+              "name": "server.js",
+              "path": "metacontroller.git/examples/nodejs/server.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "pprof-profiling": {
+          "name": "pprof-profiling",
+          "path": "metacontroller.git/examples/pprof-profiling",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/pprof-profiling/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/pprof-profiling/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "args.yaml": {
+                  "name": "args.yaml",
+                  "path": "metacontroller.git/examples/pprof-profiling/manifest/args.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/pprof-profiling/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.yaml": {
+                  "name": "service.yaml",
+                  "path": "metacontroller.git/examples/pprof-profiling/manifest/service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/pprof-profiling/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "prometheus-monitoring": {
+          "name": "prometheus-monitoring",
+          "path": "metacontroller.git/examples/prometheus-monitoring",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/prometheus-monitoring/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/prometheus-monitoring/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/prometheus-monitoring/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ports.yaml": {
+                  "name": "ports.yaml",
+                  "path": "metacontroller.git/examples/prometheus-monitoring/manifest/ports.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "prometheus.yaml": {
+                  "name": "prometheus.yaml",
+                  "path": "metacontroller.git/examples/prometheus-monitoring/manifest/prometheus.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.yaml": {
+                  "name": "service.yaml",
+                  "path": "metacontroller.git/examples/prometheus-monitoring/manifest/service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "serviceMonitor.yaml": {
+                  "name": "serviceMonitor.yaml",
+                  "path": "metacontroller.git/examples/prometheus-monitoring/manifest/serviceMonitor.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/prometheus-monitoring/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "secretpropagation": {
+          "name": "secretpropagation",
+          "path": "metacontroller.git/examples/secretpropagation",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/secretpropagation/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "example-secret.yaml": {
+              "name": "example-secret.yaml",
+              "path": "metacontroller.git/examples/secretpropagation/example-secret.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/secretpropagation/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/secretpropagation/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret-propagation.yaml": {
+                  "name": "secret-propagation.yaml",
+                  "path": "metacontroller.git/examples/secretpropagation/manifest/secret-propagation.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync.py": {
+                  "name": "sync.py",
+                  "path": "metacontroller.git/examples/secretpropagation/manifest/sync.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "secret-propagation.yaml": {
+              "name": "secret-propagation.yaml",
+              "path": "metacontroller.git/examples/secretpropagation/secret-propagation.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/secretpropagation/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "v1": {
+              "name": "v1",
+              "path": "metacontroller.git/examples/secretpropagation/v1",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "crdv1.yaml": {
+                  "name": "crdv1.yaml",
+                  "path": "metacontroller.git/examples/secretpropagation/v1/crdv1.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/secretpropagation/v1/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "service-per-pod": {
+          "name": "service-per-pod",
+          "path": "metacontroller.git/examples/service-per-pod",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "metacontroller.git/examples/service-per-pod/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manifest": {
+              "name": "manifest",
+              "path": "metacontroller.git/examples/service-per-pod/manifest",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "finalize-service-per-pod.jsonnet": {
+                  "name": "finalize-service-per-pod.jsonnet",
+                  "path": "metacontroller.git/examples/service-per-pod/manifest/finalize-service-per-pod.jsonnet",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kustomization.yaml": {
+                  "name": "kustomization.yaml",
+                  "path": "metacontroller.git/examples/service-per-pod/manifest/kustomization.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service-per-pod.yaml": {
+                  "name": "service-per-pod.yaml",
+                  "path": "metacontroller.git/examples/service-per-pod/manifest/service-per-pod.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync-pod-name-label.jsonnet": {
+                  "name": "sync-pod-name-label.jsonnet",
+                  "path": "metacontroller.git/examples/service-per-pod/manifest/sync-pod-name-label.jsonnet",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync-service-per-pod.jsonnet": {
+                  "name": "sync-service-per-pod.jsonnet",
+                  "path": "metacontroller.git/examples/service-per-pod/manifest/sync-service-per-pod.jsonnet",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "my-statefulset.yaml": {
+              "name": "my-statefulset.yaml",
+              "path": "metacontroller.git/examples/service-per-pod/my-statefulset.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.sh": {
+              "name": "test.sh",
+              "path": "metacontroller.git/examples/service-per-pod/test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "test.sh": {
+          "name": "test.sh",
+          "path": "metacontroller.git/examples/test.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "metacontroller.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "metacontroller.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "hack": {
+      "name": "hack",
+      "path": "metacontroller.git/hack",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "boilerplate.go.txt": {
+          "name": "boilerplate.go.txt",
+          "path": "metacontroller.git/hack/boilerplate.go.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "manifests": {
+      "name": "manifests",
+      "path": "metacontroller.git/manifests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "debug": {
+          "name": "debug",
+          "path": "metacontroller.git/manifests/debug",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "args.yaml": {
+              "name": "args.yaml",
+              "path": "metacontroller.git/manifests/debug/args.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image.yaml": {
+              "name": "image.yaml",
+              "path": "metacontroller.git/manifests/debug/image.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "metacontroller.git/manifests/debug/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "dev": {
+          "name": "dev",
+          "path": "metacontroller.git/manifests/dev",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "args.yaml": {
+              "name": "args.yaml",
+              "path": "metacontroller.git/manifests/dev/args.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image.yaml": {
+              "name": "image.yaml",
+              "path": "metacontroller.git/manifests/dev/image.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "metacontroller.git/manifests/dev/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "production": {
+          "name": "production",
+          "path": "metacontroller.git/manifests/production",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "kustomization.yaml": {
+              "name": "kustomization.yaml",
+              "path": "metacontroller.git/manifests/production/kustomization.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metacontroller-crds-v1.yaml": {
+              "name": "metacontroller-crds-v1.yaml",
+              "path": "metacontroller.git/manifests/production/metacontroller-crds-v1.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metacontroller-namespace.yaml": {
+              "name": "metacontroller-namespace.yaml",
+              "path": "metacontroller.git/manifests/production/metacontroller-namespace.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metacontroller-rbac.yaml": {
+              "name": "metacontroller-rbac.yaml",
+              "path": "metacontroller.git/manifests/production/metacontroller-rbac.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metacontroller.yaml": {
+              "name": "metacontroller.yaml",
+              "path": "metacontroller.git/manifests/production/metacontroller.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "pkg": {
+      "name": "pkg",
+      "path": "metacontroller.git/pkg",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "apis": {
+          "name": "apis",
+          "path": "metacontroller.git/pkg/apis",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "metacontroller": {
+              "name": "metacontroller",
+              "path": "metacontroller.git/pkg/apis/metacontroller",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "v1alpha1": {
+                  "name": "v1alpha1",
+                  "path": "metacontroller.git/pkg/apis/metacontroller/v1alpha1",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "doc.go": {
+                      "name": "doc.go",
+                      "path": "metacontroller.git/pkg/apis/metacontroller/v1alpha1/doc.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "register.go": {
+                      "name": "register.go",
+                      "path": "metacontroller.git/pkg/apis/metacontroller/v1alpha1/register.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "roundtrip_test.go": {
+                      "name": "roundtrip_test.go",
+                      "path": "metacontroller.git/pkg/apis/metacontroller/v1alpha1/roundtrip_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "types.go": {
+                      "name": "types.go",
+                      "path": "metacontroller.git/pkg/apis/metacontroller/v1alpha1/types.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "zz_generated.deepcopy.go": {
+                      "name": "zz_generated.deepcopy.go",
+                      "path": "metacontroller.git/pkg/apis/metacontroller/v1alpha1/zz_generated.deepcopy.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cache": {
+          "name": "cache",
+          "path": "metacontroller.git/pkg/cache",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cache.go": {
+              "name": "cache.go",
+              "path": "metacontroller.git/pkg/cache/cache.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "client": {
+          "name": "client",
+          "path": "metacontroller.git/pkg/client",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "generated": {
+              "name": "generated",
+              "path": "metacontroller.git/pkg/client/generated",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "clientset": {
+                  "name": "clientset",
+                  "path": "metacontroller.git/pkg/client/generated/clientset",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "internalclientset": {
+                      "name": "internalclientset",
+                      "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "clientset.go": {
+                          "name": "clientset.go",
+                          "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/clientset.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "doc.go": {
+                          "name": "doc.go",
+                          "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/doc.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "scheme": {
+                          "name": "scheme",
+                          "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/scheme",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "doc.go": {
+                              "name": "doc.go",
+                              "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/scheme/doc.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "register.go": {
+                              "name": "register.go",
+                              "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/scheme/register.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "typed": {
+                          "name": "typed",
+                          "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/typed",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "metacontroller": {
+                              "name": "metacontroller",
+                              "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/typed/metacontroller",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "v1alpha1": {
+                                  "name": "v1alpha1",
+                                  "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/typed/metacontroller/v1alpha1",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "controllerrevision.go": {
+                                      "name": "controllerrevision.go",
+                                      "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/typed/metacontroller/v1alpha1/controllerrevision.go",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "controllerrevision_expansion.go": {
+                                      "name": "controllerrevision_expansion.go",
+                                      "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/typed/metacontroller/v1alpha1/controllerrevision_expansion.go",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "doc.go": {
+                                      "name": "doc.go",
+                                      "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/typed/metacontroller/v1alpha1/doc.go",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "generated_expansion.go": {
+                                      "name": "generated_expansion.go",
+                                      "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/typed/metacontroller/v1alpha1/generated_expansion.go",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "metacontroller_client.go": {
+                                      "name": "metacontroller_client.go",
+                                      "path": "metacontroller.git/pkg/client/generated/clientset/internalclientset/typed/metacontroller/v1alpha1/metacontroller_client.go",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "informer": {
+                  "name": "informer",
+                  "path": "metacontroller.git/pkg/client/generated/informer",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "externalversions": {
+                      "name": "externalversions",
+                      "path": "metacontroller.git/pkg/client/generated/informer/externalversions",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "factory.go": {
+                          "name": "factory.go",
+                          "path": "metacontroller.git/pkg/client/generated/informer/externalversions/factory.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "generic.go": {
+                          "name": "generic.go",
+                          "path": "metacontroller.git/pkg/client/generated/informer/externalversions/generic.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "internalinterfaces": {
+                          "name": "internalinterfaces",
+                          "path": "metacontroller.git/pkg/client/generated/informer/externalversions/internalinterfaces",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "factory_interfaces.go": {
+                              "name": "factory_interfaces.go",
+                              "path": "metacontroller.git/pkg/client/generated/informer/externalversions/internalinterfaces/factory_interfaces.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "metacontroller": {
+                          "name": "metacontroller",
+                          "path": "metacontroller.git/pkg/client/generated/informer/externalversions/metacontroller",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "interface.go": {
+                              "name": "interface.go",
+                              "path": "metacontroller.git/pkg/client/generated/informer/externalversions/metacontroller/interface.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "v1alpha1": {
+                              "name": "v1alpha1",
+                              "path": "metacontroller.git/pkg/client/generated/informer/externalversions/metacontroller/v1alpha1",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "controllerrevision.go": {
+                                  "name": "controllerrevision.go",
+                                  "path": "metacontroller.git/pkg/client/generated/informer/externalversions/metacontroller/v1alpha1/controllerrevision.go",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "interface.go": {
+                                  "name": "interface.go",
+                                  "path": "metacontroller.git/pkg/client/generated/informer/externalversions/metacontroller/v1alpha1/interface.go",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "lister": {
+                  "name": "lister",
+                  "path": "metacontroller.git/pkg/client/generated/lister",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "metacontroller": {
+                      "name": "metacontroller",
+                      "path": "metacontroller.git/pkg/client/generated/lister/metacontroller",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "v1alpha1": {
+                          "name": "v1alpha1",
+                          "path": "metacontroller.git/pkg/client/generated/lister/metacontroller/v1alpha1",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "controllerrevision.go": {
+                              "name": "controllerrevision.go",
+                              "path": "metacontroller.git/pkg/client/generated/lister/metacontroller/v1alpha1/controllerrevision.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "expansion_generated.go": {
+                              "name": "expansion_generated.go",
+                              "path": "metacontroller.git/pkg/client/generated/lister/metacontroller/v1alpha1/expansion_generated.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cmd": {
+          "name": "cmd",
+          "path": "metacontroller.git/pkg/cmd",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "metacontroller": {
+              "name": "metacontroller",
+              "path": "metacontroller.git/pkg/cmd/metacontroller",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main.go": {
+                  "name": "main.go",
+                  "path": "metacontroller.git/pkg/cmd/metacontroller/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "controller": {
+          "name": "controller",
+          "path": "metacontroller.git/pkg/controller",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "common": {
+              "name": "common",
+              "path": "metacontroller.git/pkg/controller/common",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "api": {
+                  "name": "api",
+                  "path": "metacontroller.git/pkg/controller/common/api",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "api.go": {
+                      "name": "api.go",
+                      "path": "metacontroller.git/pkg/controller/common/api/api.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "v1": {
+                      "name": "v1",
+                      "path": "metacontroller.git/pkg/controller/common/api/v1",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "common.go": {
+                          "name": "common.go",
+                          "path": "metacontroller.git/pkg/controller/common/api/v1/common.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "common_test.go": {
+                          "name": "common_test.go",
+                          "path": "metacontroller.git/pkg/controller/common/api/v1/common_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "v2": {
+                      "name": "v2",
+                      "path": "metacontroller.git/pkg/controller/common/api/v2",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "common.go": {
+                          "name": "common.go",
+                          "path": "metacontroller.git/pkg/controller/common/api/v2/common.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "common_test.go": {
+                          "name": "common_test.go",
+                          "path": "metacontroller.git/pkg/controller/common/api/v2/common_test.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "common.go": {
+                  "name": "common.go",
+                  "path": "metacontroller.git/pkg/controller/common/common.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "customize": {
+                  "name": "customize",
+                  "path": "metacontroller.git/pkg/controller/common/customize",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "api": {
+                      "name": "api",
+                      "path": "metacontroller.git/pkg/controller/common/customize/api",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "v1": {
+                          "name": "v1",
+                          "path": "metacontroller.git/pkg/controller/common/customize/api/v1",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "hooks.go": {
+                              "name": "hooks.go",
+                              "path": "metacontroller.git/pkg/controller/common/customize/api/v1/hooks.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "cache_test.go": {
+                      "name": "cache_test.go",
+                      "path": "metacontroller.git/pkg/controller/common/customize/cache_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "manager.go": {
+                      "name": "manager.go",
+                      "path": "metacontroller.git/pkg/controller/common/customize/manager.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "manager_test.go": {
+                      "name": "manager_test.go",
+                      "path": "metacontroller.git/pkg/controller/common/customize/manager_test.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "diff.go": {
+                  "name": "diff.go",
+                  "path": "metacontroller.git/pkg/controller/common/diff.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "diff_test.go": {
+                  "name": "diff_test.go",
+                  "path": "metacontroller.git/pkg/controller/common/diff_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "equality.go": {
+                  "name": "equality.go",
+                  "path": "metacontroller.git/pkg/controller/common/equality.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "finalizer": {
+                  "name": "finalizer",
+                  "path": "metacontroller.git/pkg/controller/common/finalizer",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "finalizer.go": {
+                      "name": "finalizer.go",
+                      "path": "metacontroller.git/pkg/controller/common/finalizer/finalizer.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "manage_children.go": {
+                  "name": "manage_children.go",
+                  "path": "metacontroller.git/pkg/controller/common/manage_children.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "manage_children_test.go": {
+                  "name": "manage_children_test.go",
+                  "path": "metacontroller.git/pkg/controller/common/manage_children_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "composite": {
+              "name": "composite",
+              "path": "metacontroller.git/pkg/controller/composite",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "api": {
+                  "name": "api",
+                  "path": "metacontroller.git/pkg/controller/composite/api",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "common": {
+                      "name": "common",
+                      "path": "metacontroller.git/pkg/controller/composite/api/common",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "interface.go": {
+                          "name": "interface.go",
+                          "path": "metacontroller.git/pkg/controller/composite/api/common/interface.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "v1": {
+                      "name": "v1",
+                      "path": "metacontroller.git/pkg/controller/composite/api/v1",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "hooks.go": {
+                          "name": "hooks.go",
+                          "path": "metacontroller.git/pkg/controller/composite/api/v1/hooks.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "controller.go": {
+                  "name": "controller.go",
+                  "path": "metacontroller.git/pkg/controller/composite/controller.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controller_revision.go": {
+                  "name": "controller_revision.go",
+                  "path": "metacontroller.git/pkg/controller/composite/controller_revision.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controller_test.go": {
+                  "name": "controller_test.go",
+                  "path": "metacontroller.git/pkg/controller/composite/controller_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "hooks.go": {
+                  "name": "hooks.go",
+                  "path": "metacontroller.git/pkg/controller/composite/hooks.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "hooks_test.go": {
+                  "name": "hooks_test.go",
+                  "path": "metacontroller.git/pkg/controller/composite/hooks_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "metacontroller.go": {
+                  "name": "metacontroller.go",
+                  "path": "metacontroller.git/pkg/controller/composite/metacontroller.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rolling_update.go": {
+                  "name": "rolling_update.go",
+                  "path": "metacontroller.git/pkg/controller/composite/rolling_update.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "decorator": {
+              "name": "decorator",
+              "path": "metacontroller.git/pkg/controller/decorator",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "api": {
+                  "name": "api",
+                  "path": "metacontroller.git/pkg/controller/decorator/api",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "common": {
+                      "name": "common",
+                      "path": "metacontroller.git/pkg/controller/decorator/api/common",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "interface.go": {
+                          "name": "interface.go",
+                          "path": "metacontroller.git/pkg/controller/decorator/api/common/interface.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "v1": {
+                      "name": "v1",
+                      "path": "metacontroller.git/pkg/controller/decorator/api/v1",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "hooks.go": {
+                          "name": "hooks.go",
+                          "path": "metacontroller.git/pkg/controller/decorator/api/v1/hooks.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "controller.go": {
+                  "name": "controller.go",
+                  "path": "metacontroller.git/pkg/controller/decorator/controller.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controller_test.go": {
+                  "name": "controller_test.go",
+                  "path": "metacontroller.git/pkg/controller/decorator/controller_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "hooks.go": {
+                  "name": "hooks.go",
+                  "path": "metacontroller.git/pkg/controller/decorator/hooks.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "metacontroller.go": {
+                  "name": "metacontroller.go",
+                  "path": "metacontroller.git/pkg/controller/decorator/metacontroller.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "selector.go": {
+                  "name": "selector.go",
+                  "path": "metacontroller.git/pkg/controller/decorator/selector.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "dynamic": {
+          "name": "dynamic",
+          "path": "metacontroller.git/pkg/dynamic",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "apply": {
+              "name": "apply",
+              "path": "metacontroller.git/pkg/dynamic/apply",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "apply.go": {
+                  "name": "apply.go",
+                  "path": "metacontroller.git/pkg/dynamic/apply/apply.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "apply_test.go": {
+                  "name": "apply_test.go",
+                  "path": "metacontroller.git/pkg/dynamic/apply/apply_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "clientset": {
+              "name": "clientset",
+              "path": "metacontroller.git/pkg/dynamic/clientset",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "clientset.go": {
+                  "name": "clientset.go",
+                  "path": "metacontroller.git/pkg/dynamic/clientset/clientset.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "controllerref": {
+              "name": "controllerref",
+              "path": "metacontroller.git/pkg/dynamic/controllerref",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "controller_ref.go": {
+                  "name": "controller_ref.go",
+                  "path": "metacontroller.git/pkg/dynamic/controllerref/controller_ref.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controller_revision.go": {
+                  "name": "controller_revision.go",
+                  "path": "metacontroller.git/pkg/dynamic/controllerref/controller_revision.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "unstructured.go": {
+                  "name": "unstructured.go",
+                  "path": "metacontroller.git/pkg/dynamic/controllerref/unstructured.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "discovery": {
+              "name": "discovery",
+              "path": "metacontroller.git/pkg/dynamic/discovery",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "discovery.go": {
+                  "name": "discovery.go",
+                  "path": "metacontroller.git/pkg/dynamic/discovery/discovery.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "informer": {
+              "name": "informer",
+              "path": "metacontroller.git/pkg/dynamic/informer",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "factory.go": {
+                  "name": "factory.go",
+                  "path": "metacontroller.git/pkg/dynamic/informer/factory.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "informer.go": {
+                  "name": "informer.go",
+                  "path": "metacontroller.git/pkg/dynamic/informer/informer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "object": {
+              "name": "object",
+              "path": "metacontroller.git/pkg/dynamic/object",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "status.go": {
+                  "name": "status.go",
+                  "path": "metacontroller.git/pkg/dynamic/object/status.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "events": {
+          "name": "events",
+          "path": "metacontroller.git/pkg/events",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "events.go": {
+              "name": "events.go",
+              "path": "metacontroller.git/pkg/events/events.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "metacontroller.git/pkg/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "hooks.go": {
+              "name": "hooks.go",
+              "path": "metacontroller.git/pkg/hooks/hooks.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hooks_test.go": {
+              "name": "hooks_test.go",
+              "path": "metacontroller.git/pkg/hooks/hooks_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "webhook.go": {
+              "name": "webhook.go",
+              "path": "metacontroller.git/pkg/hooks/webhook.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "webhook_etag.go": {
+              "name": "webhook_etag.go",
+              "path": "metacontroller.git/pkg/hooks/webhook_etag.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "webhook_etag_test.go": {
+              "name": "webhook_etag_test.go",
+              "path": "metacontroller.git/pkg/hooks/webhook_etag_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "webhook_plain.go": {
+              "name": "webhook_plain.go",
+              "path": "metacontroller.git/pkg/hooks/webhook_plain.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "webhook_test.go": {
+              "name": "webhook_test.go",
+              "path": "metacontroller.git/pkg/hooks/webhook_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "internal": {
+          "name": "internal",
+          "path": "metacontroller.git/pkg/internal",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "testutils": {
+              "name": "testutils",
+              "path": "metacontroller.git/pkg/internal/testutils",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "common": {
+                  "name": "common",
+                  "path": "metacontroller.git/pkg/internal/testutils/common",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "metav1.go": {
+                      "name": "metav1.go",
+                      "path": "metacontroller.git/pkg/internal/testutils/common/metav1.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "rest.go": {
+                      "name": "rest.go",
+                      "path": "metacontroller.git/pkg/internal/testutils/common/rest.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "unstructured.go": {
+                      "name": "unstructured.go",
+                      "path": "metacontroller.git/pkg/internal/testutils/common/unstructured.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "util.go": {
+                      "name": "util.go",
+                      "path": "metacontroller.git/pkg/internal/testutils/common/util.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "dynamic": {
+                  "name": "dynamic",
+                  "path": "metacontroller.git/pkg/internal/testutils/dynamic",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "clientset": {
+                      "name": "clientset",
+                      "path": "metacontroller.git/pkg/internal/testutils/dynamic/clientset",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "clientset.go": {
+                          "name": "clientset.go",
+                          "path": "metacontroller.git/pkg/internal/testutils/dynamic/clientset/clientset.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "discovery": {
+                      "name": "discovery",
+                      "path": "metacontroller.git/pkg/internal/testutils/dynamic/discovery",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "discovery.go": {
+                          "name": "discovery.go",
+                          "path": "metacontroller.git/pkg/internal/testutils/dynamic/discovery/discovery.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "hooks": {
+                  "name": "hooks",
+                  "path": "metacontroller.git/pkg/internal/testutils/hooks",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "hooks.go": {
+                      "name": "hooks.go",
+                      "path": "metacontroller.git/pkg/internal/testutils/hooks/hooks.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "logging": {
+          "name": "logging",
+          "path": "metacontroller.git/pkg/logging",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "logging.go": {
+              "name": "logging.go",
+              "path": "metacontroller.git/pkg/logging/logging.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "metrics": {
+          "name": "metrics",
+          "path": "metacontroller.git/pkg/metrics",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "http.go": {
+              "name": "http.go",
+              "path": "metacontroller.git/pkg/metrics/http.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "http_test.go": {
+              "name": "http_test.go",
+              "path": "metacontroller.git/pkg/metrics/http_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "options": {
+          "name": "options",
+          "path": "metacontroller.git/pkg/options",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "configuration.go": {
+              "name": "configuration.go",
+              "path": "metacontroller.git/pkg/options/configuration.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "profile": {
+          "name": "profile",
+          "path": "metacontroller.git/pkg/profile",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "pprof_profiler.go": {
+              "name": "pprof_profiler.go",
+              "path": "metacontroller.git/pkg/profile/pprof_profiler.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "server": {
+          "name": "server",
+          "path": "metacontroller.git/pkg/server",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "server.go": {
+              "name": "server.go",
+              "path": "metacontroller.git/pkg/server/server.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "third_party": {
+          "name": "third_party",
+          "path": "metacontroller.git/pkg/third_party",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "kubernetes": {
+              "name": "kubernetes",
+              "path": "metacontroller.git/pkg/third_party/kubernetes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "LICENSE": {
+                  "name": "LICENSE",
+                  "path": "metacontroller.git/pkg/third_party/kubernetes/LICENSE",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "controller_ref_manager.go": {
+                  "name": "controller_ref_manager.go",
+                  "path": "metacontroller.git/pkg/third_party/kubernetes/controller_ref_manager.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "unstructured.go": {
+                  "name": "unstructured.go",
+                  "path": "metacontroller.git/pkg/third_party/kubernetes/unstructured.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "release.config.js": {
+      "name": "release.config.js",
+      "path": "metacontroller.git/release.config.js",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "renovate.json": {
+      "name": "renovate.json",
+      "path": "metacontroller.git/renovate.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "test": {
+      "name": "test",
+      "path": "metacontroller.git/test",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "integration": {
+          "name": "integration",
+          "path": "metacontroller.git/test/integration",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "composite": {
+              "name": "composite",
+              "path": "metacontroller.git/test/integration/composite",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "composite_test.go": {
+                  "name": "composite_test.go",
+                  "path": "metacontroller.git/test/integration/composite/composite_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "decorator": {
+              "name": "decorator",
+              "path": "metacontroller.git/test/integration/decorator",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "decorator_test.go": {
+                  "name": "decorator_test.go",
+                  "path": "metacontroller.git/test/integration/decorator/decorator_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "framework": {
+              "name": "framework",
+              "path": "metacontroller.git/test/integration/framework",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "apiserver.go": {
+                  "name": "apiserver.go",
+                  "path": "metacontroller.git/test/integration/framework/apiserver.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "crd.go": {
+                  "name": "crd.go",
+                  "path": "metacontroller.git/test/integration/framework/crd.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "etcd.go": {
+                  "name": "etcd.go",
+                  "path": "metacontroller.git/test/integration/framework/etcd.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fixture.go": {
+                  "name": "fixture.go",
+                  "path": "metacontroller.git/test/integration/framework/fixture.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.go": {
+                  "name": "main.go",
+                  "path": "metacontroller.git/test/integration/framework/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "metacontroller.go": {
+                  "name": "metacontroller.go",
+                  "path": "metacontroller.git/test/integration/framework/metacontroller.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "webhook.go": {
+                  "name": "webhook.go",
+                  "path": "metacontroller.git/test/integration/framework/webhook.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "go.mod": {
+              "name": "go.mod",
+              "path": "metacontroller.git/test/integration/go.mod",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "go.sum": {
+              "name": "go.sum",
+              "path": "metacontroller.git/test/integration/go.sum",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hack": {
+              "name": "hack",
+              "path": "metacontroller.git/test/integration/hack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "get-kube-binaries.sh": {
+                  "name": "get-kube-binaries.sh",
+                  "path": "metacontroller.git/test/integration/hack/get-kube-binaries.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "setup.sh": {
+                  "name": "setup.sh",
+                  "path": "metacontroller.git/test/integration/hack/setup.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 265204291,
+    "name": "metacontroller",
+    "full_name": "metacontroller/metacontroller",
+    "owner": {
+      "login": "metacontroller",
+      "html_url": "https://github.com/metacontroller",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/metacontroller/metacontroller",
+    "description": "Writing kubernetes controllers can be simple",
+    "url": "https://api.github.com/repos/metacontroller/metacontroller",
+    "clone_url": "https://github.com/metacontroller/metacontroller.git",
+    "homepage": "https://metacontroller.github.io/metacontroller",
+    "size": 5766,
+    "stargazers_count": 539,
+    "watchers_count": 539,
+    "language": "Go"
+  }
+}

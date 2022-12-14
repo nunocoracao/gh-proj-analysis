@@ -1,0 +1,1449 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": true,
+      "count": 23,
+      "rootCount": 0,
+      "subFolderCount": 23,
+      "filepaths": [
+        "runtime-compose.git/hbase/docker-compose.yaml",
+        "runtime-compose.git/hdfs/basic/docker-compose.yaml",
+        "runtime-compose.git/hdfs/byteman/docker-compose.yaml",
+        "runtime-compose.git/hdfs/ec/docker-compose.yaml",
+        "runtime-compose.git/hdfs/federation/docker-compose.yaml",
+        "runtime-compose.git/hdfs/ha/docker-compose.yaml",
+        "runtime-compose.git/hdfs/multinn/docker-compose.yaml",
+        "runtime-compose.git/hdfs/routerfeder/c1compose.yaml",
+        "runtime-compose.git/hdfs/routerfeder/c2compose.yaml",
+        "runtime-compose.git/hdfs/routerfeder/docker-compose.yaml",
+        "runtime-compose.git/hdfs/s3/docker-compose.yaml",
+        "runtime-compose.git/hdfs/tde/docker-compose.yaml",
+        "runtime-compose.git/hdfs/viewfs/docker-compose.yaml",
+        "runtime-compose.git/hive/docker-compose.yaml",
+        "runtime-compose.git/hivellap/docker-compose.yaml",
+        "runtime-compose.git/kerberos/docker-compose.yaml",
+        "runtime-compose.git/ozone/docker-compose.yaml",
+        "runtime-compose.git/ozone-monitor/docker-compose.yaml",
+        "runtime-compose.git/spark/docker-compose.yaml",
+        "runtime-compose.git/spark-ozone/docker-compose.yaml",
+        "runtime-compose.git/yarn/docker-compose.yaml",
+        "runtime-compose.git/zeppelin-ldap/docker-compose.yaml",
+        "runtime-compose.git/zookeeper/docker-compose.yaml"
+      ]
+    }
+  },
+  "struct": {
+    ".env": {
+      "name": ".env",
+      "path": "runtime-compose.git/.env",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "runtime-compose.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "runtime-compose.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "runtime-compose.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "runtime-compose.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "runtime-compose.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "runtime-compose.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "runtime-compose.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "runtime-compose.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "runtime-compose.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "runtime-compose.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "runtime-compose.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "runtime-compose.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "runtime-compose.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "runtime-compose.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "runtime-compose.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "runtime-compose.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "runtime-compose.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "runtime-compose.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "runtime-compose.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "runtime-compose.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "runtime-compose.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "runtime-compose.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "runtime-compose.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "runtime-compose.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "runtime-compose.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "runtime-compose.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "runtime-compose.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "runtime-compose.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "runtime-compose.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "runtime-compose.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "runtime-compose.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "runtime-compose.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-821763bf3c9f55d1dee88b3acccb622b651edbf0.idx": {
+                  "name": "pack-821763bf3c9f55d1dee88b3acccb622b651edbf0.idx",
+                  "path": "runtime-compose.git/.git/objects/pack/pack-821763bf3c9f55d1dee88b3acccb622b651edbf0.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-821763bf3c9f55d1dee88b3acccb622b651edbf0.pack": {
+                  "name": "pack-821763bf3c9f55d1dee88b3acccb622b651edbf0.pack",
+                  "path": "runtime-compose.git/.git/objects/pack/pack-821763bf3c9f55d1dee88b3acccb622b651edbf0.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "runtime-compose.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "runtime-compose.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "runtime-compose.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "runtime-compose.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "runtime-compose.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "runtime-compose.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "runtime-compose.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "runtime-compose.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "runtime-compose.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "runtime-compose.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "ambari": {
+      "name": "ambari",
+      "path": "runtime-compose.git/ambari",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "runtime-compose.git/ambari/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "runtime-compose.git/ambari/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ambari-agent.ini.env": {
+          "name": "ambari-agent.ini.env",
+          "path": "runtime-compose.git/ambari/ambari-agent.ini.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ambari-agent.yaml": {
+          "name": "ambari-agent.yaml",
+          "path": "runtime-compose.git/ambari/ambari-agent.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ambari-server-debug.yaml": {
+          "name": "ambari-server-debug.yaml",
+          "path": "runtime-compose.git/ambari/ambari-server-debug.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ambari-server.yaml": {
+          "name": "ambari-server.yaml",
+          "path": "runtime-compose.git/ambari/ambari-server.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ambari.properties.env": {
+          "name": "ambari.properties.env",
+          "path": "runtime-compose.git/ambari/ambari.properties.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "init": {
+          "name": "init",
+          "path": "runtime-compose.git/ambari/init",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "hdfs-blueprint.json": {
+              "name": "hdfs-blueprint.json",
+              "path": "runtime-compose.git/ambari/init/hdfs-blueprint.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hdp-up.sh": {
+              "name": "hdp-up.sh",
+              "path": "runtime-compose.git/ambari/init/hdp-up.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hdpbn.repo": {
+              "name": "hdpbn.repo",
+              "path": "runtime-compose.git/ambari/init/hdpbn.repo",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hosts.json": {
+              "name": "hosts.json",
+              "path": "runtime-compose.git/ambari/init/hosts.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "init.yaml": {
+          "name": "init.yaml",
+          "path": "runtime-compose.git/ambari/init.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "local-repo.yaml": {
+          "name": "local-repo.yaml",
+          "path": "runtime-compose.git/ambari/local-repo.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "log4j.properties.env": {
+          "name": "log4j.properties.env",
+          "path": "runtime-compose.git/ambari/log4j.properties.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "logging.conf.env": {
+          "name": "logging.conf.env",
+          "path": "runtime-compose.git/ambari/logging.conf.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "mysql.yaml": {
+          "name": "mysql.yaml",
+          "path": "runtime-compose.git/ambari/mysql.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "postgres.yaml": {
+          "name": "postgres.yaml",
+          "path": "runtime-compose.git/ambari/postgres.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "hbase": {
+      "name": "hbase",
+      "path": "runtime-compose.git/hbase",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".env": {
+          "name": ".env",
+          "path": "runtime-compose.git/hbase/.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "compose-config": {
+          "name": "compose-config",
+          "path": "runtime-compose.git/hbase/compose-config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yaml": {
+          "name": "docker-compose.yaml",
+          "path": "runtime-compose.git/hbase/docker-compose.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "hbase.robot": {
+          "name": "hbase.robot",
+          "path": "runtime-compose.git/hbase/hbase.robot",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "hdfs": {
+      "name": "hdfs",
+      "path": "runtime-compose.git/hdfs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "basic": {
+          "name": "basic",
+          "path": "runtime-compose.git/hdfs/basic",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".env": {
+              "name": ".env",
+              "path": "runtime-compose.git/hdfs/basic/.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config": {
+              "name": "config",
+              "path": "runtime-compose.git/hdfs/basic/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "runtime-compose.git/hdfs/basic/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "hdfs_smoketest.robot": {
+              "name": "hdfs_smoketest.robot",
+              "path": "runtime-compose.git/hdfs/basic/hdfs_smoketest.robot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "byteman": {
+          "name": "byteman",
+          "path": "runtime-compose.git/hdfs/byteman",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".env": {
+              "name": ".env",
+              "path": "runtime-compose.git/hdfs/byteman/.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config": {
+              "name": "config",
+              "path": "runtime-compose.git/hdfs/byteman/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "runtime-compose.git/hdfs/byteman/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "hdfs_smoketest.robot": {
+              "name": "hdfs_smoketest.robot",
+              "path": "runtime-compose.git/hdfs/byteman/hdfs_smoketest.robot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "ec": {
+          "name": "ec",
+          "path": "runtime-compose.git/hdfs/ec",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".env": {
+              "name": ".env",
+              "path": "runtime-compose.git/hdfs/ec/.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "runtime-compose.git/hdfs/ec/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config": {
+              "name": "config",
+              "path": "runtime-compose.git/hdfs/ec/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "runtime-compose.git/hdfs/ec/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "hdfs_ec.robot": {
+              "name": "hdfs_ec.robot",
+              "path": "runtime-compose.git/hdfs/ec/hdfs_ec.robot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "federation": {
+          "name": "federation",
+          "path": "runtime-compose.git/hdfs/federation",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".env": {
+              "name": ".env",
+              "path": "runtime-compose.git/hdfs/federation/.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config": {
+              "name": "config",
+              "path": "runtime-compose.git/hdfs/federation/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "runtime-compose.git/hdfs/federation/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "federation.robot": {
+              "name": "federation.robot",
+              "path": "runtime-compose.git/hdfs/federation/federation.robot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "ha": {
+          "name": "ha",
+          "path": "runtime-compose.git/hdfs/ha",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".env": {
+              "name": ".env",
+              "path": "runtime-compose.git/hdfs/ha/.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config": {
+              "name": "config",
+              "path": "runtime-compose.git/hdfs/ha/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "runtime-compose.git/hdfs/ha/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "namenodeformat.sh": {
+              "name": "namenodeformat.sh",
+              "path": "runtime-compose.git/hdfs/ha/namenodeformat.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "multinn": {
+          "name": "multinn",
+          "path": "runtime-compose.git/hdfs/multinn",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".env": {
+              "name": ".env",
+              "path": "runtime-compose.git/hdfs/multinn/.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "runtime-compose.git/hdfs/multinn/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config": {
+              "name": "config",
+              "path": "runtime-compose.git/hdfs/multinn/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "runtime-compose.git/hdfs/multinn/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "routerfeder": {
+          "name": "routerfeder",
+          "path": "runtime-compose.git/hdfs/routerfeder",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".env": {
+              "name": ".env",
+              "path": "runtime-compose.git/hdfs/routerfeder/.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "c1compose.yaml": {
+              "name": "c1compose.yaml",
+              "path": "runtime-compose.git/hdfs/routerfeder/c1compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "c1config": {
+              "name": "c1config",
+              "path": "runtime-compose.git/hdfs/routerfeder/c1config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "c2compose.yaml": {
+              "name": "c2compose.yaml",
+              "path": "runtime-compose.git/hdfs/routerfeder/c2compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "c2config": {
+              "name": "c2config",
+              "path": "runtime-compose.git/hdfs/routerfeder/c2config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "runtime-compose.git/hdfs/routerfeder/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "router.yaml": {
+              "name": "router.yaml",
+              "path": "runtime-compose.git/hdfs/routerfeder/router.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "router1": {
+              "name": "router1",
+              "path": "runtime-compose.git/hdfs/routerfeder/router1",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "router2": {
+              "name": "router2",
+              "path": "runtime-compose.git/hdfs/routerfeder/router2",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "s3": {
+          "name": "s3",
+          "path": "runtime-compose.git/hdfs/s3",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".env": {
+              "name": ".env",
+              "path": "runtime-compose.git/hdfs/s3/.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config": {
+              "name": "config",
+              "path": "runtime-compose.git/hdfs/s3/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "runtime-compose.git/hdfs/s3/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "tde": {
+          "name": "tde",
+          "path": "runtime-compose.git/hdfs/tde",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".env": {
+              "name": ".env",
+              "path": "runtime-compose.git/hdfs/tde/.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "a": {
+              "name": "a",
+              "path": "runtime-compose.git/hdfs/tde/a",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config": {
+              "name": "config",
+              "path": "runtime-compose.git/hdfs/tde/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "runtime-compose.git/hdfs/tde/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "viewfs": {
+          "name": "viewfs",
+          "path": "runtime-compose.git/hdfs/viewfs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".env": {
+              "name": ".env",
+              "path": "runtime-compose.git/hdfs/viewfs/.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "configx": {
+              "name": "configx",
+              "path": "runtime-compose.git/hdfs/viewfs/configx",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "configy": {
+              "name": "configy",
+              "path": "runtime-compose.git/hdfs/viewfs/configy",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "runtime-compose.git/hdfs/viewfs/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "viewfs.robot": {
+              "name": "viewfs.robot",
+              "path": "runtime-compose.git/hdfs/viewfs/viewfs.robot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "hive": {
+      "name": "hive",
+      "path": "runtime-compose.git/hive",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".env": {
+          "name": ".env",
+          "path": "runtime-compose.git/hive/.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "runtime-compose.git/hive/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yaml": {
+          "name": "docker-compose.yaml",
+          "path": "runtime-compose.git/hive/docker-compose.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "hive.robot": {
+          "name": "hive.robot",
+          "path": "runtime-compose.git/hive/hive.robot",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "testdata.sql": {
+          "name": "testdata.sql",
+          "path": "runtime-compose.git/hive/testdata.sql",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "hivellap": {
+      "name": "hivellap",
+      "path": "runtime-compose.git/hivellap",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".env": {
+          "name": ".env",
+          "path": "runtime-compose.git/hivellap/.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "runtime-compose.git/hivellap/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yaml": {
+          "name": "docker-compose.yaml",
+          "path": "runtime-compose.git/hivellap/docker-compose.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "kerberos": {
+      "name": "kerberos",
+      "path": "runtime-compose.git/kerberos",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".env": {
+          "name": ".env",
+          "path": "runtime-compose.git/kerberos/.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "runtime-compose.git/kerberos/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "runtime-compose.git/kerberos/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yaml": {
+          "name": "docker-compose.yaml",
+          "path": "runtime-compose.git/kerberos/docker-compose.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "kerberos.robot": {
+          "name": "kerberos.robot",
+          "path": "runtime-compose.git/kerberos/kerberos.robot",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "ozone": {
+      "name": "ozone",
+      "path": "runtime-compose.git/ozone",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".env": {
+          "name": ".env",
+          "path": "runtime-compose.git/ozone/.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "runtime-compose.git/ozone/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yaml": {
+          "name": "docker-compose.yaml",
+          "path": "runtime-compose.git/ozone/docker-compose.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "ozone.robot": {
+          "name": "ozone.robot",
+          "path": "runtime-compose.git/ozone/ozone.robot",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "ozone-monitor": {
+      "name": "ozone-monitor",
+      "path": "runtime-compose.git/ozone-monitor",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose.yaml": {
+          "name": "docker-compose.yaml",
+          "path": "runtime-compose.git/ozone-monitor/docker-compose.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "docker-config": {
+          "name": "docker-config",
+          "path": "runtime-compose.git/ozone-monitor/docker-config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "prometheus.yml": {
+          "name": "prometheus.yml",
+          "path": "runtime-compose.git/ozone-monitor/prometheus.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "robotlib": {
+      "name": "robotlib",
+      "path": "runtime-compose.git/robotlib",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker.robot": {
+          "name": "docker.robot",
+          "path": "runtime-compose.git/robotlib/docker.robot",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "spark": {
+      "name": "spark",
+      "path": "runtime-compose.git/spark",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".env": {
+          "name": ".env",
+          "path": "runtime-compose.git/spark/.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "runtime-compose.git/spark/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "runtime-compose.git/spark/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yaml": {
+          "name": "docker-compose.yaml",
+          "path": "runtime-compose.git/spark/docker-compose.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "init-hdfs.sh": {
+          "name": "init-hdfs.sh",
+          "path": "runtime-compose.git/spark/init-hdfs.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "spark_wordcount.robot": {
+          "name": "spark_wordcount.robot",
+          "path": "runtime-compose.git/spark/spark_wordcount.robot",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "testdata": {
+          "name": "testdata",
+          "path": "runtime-compose.git/spark/testdata",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "big.txt": {
+              "name": "big.txt",
+              "path": "runtime-compose.git/spark/testdata/big.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "spark-ozone": {
+      "name": "spark-ozone",
+      "path": "runtime-compose.git/spark-ozone",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".env": {
+          "name": ".env",
+          "path": "runtime-compose.git/spark-ozone/.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "runtime-compose.git/spark-ozone/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yaml": {
+          "name": "docker-compose.yaml",
+          "path": "runtime-compose.git/spark-ozone/docker-compose.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "initdata.sh": {
+          "name": "initdata.sh",
+          "path": "runtime-compose.git/spark-ozone/initdata.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "run.sh": {
+          "name": "run.sh",
+          "path": "runtime-compose.git/spark-ozone/run.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "yarn": {
+      "name": "yarn",
+      "path": "runtime-compose.git/yarn",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".env": {
+          "name": ".env",
+          "path": "runtime-compose.git/yarn/.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "runtime-compose.git/yarn/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yaml": {
+          "name": "docker-compose.yaml",
+          "path": "runtime-compose.git/yarn/docker-compose.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "test.sh": {
+          "name": "test.sh",
+          "path": "runtime-compose.git/yarn/test.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "testdata": {
+          "name": "testdata",
+          "path": "runtime-compose.git/yarn/testdata",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "big.txt": {
+              "name": "big.txt",
+              "path": "runtime-compose.git/yarn/testdata/big.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "yarn_smoketest.robot": {
+          "name": "yarn_smoketest.robot",
+          "path": "runtime-compose.git/yarn/yarn_smoketest.robot",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "zeppelin-ldap": {
+      "name": "zeppelin-ldap",
+      "path": "runtime-compose.git/zeppelin-ldap",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "runtime-compose.git/zeppelin-ldap/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yaml": {
+          "name": "docker-compose.yaml",
+          "path": "runtime-compose.git/zeppelin-ldap/docker-compose.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "shiro.ini": {
+          "name": "shiro.ini",
+          "path": "runtime-compose.git/zeppelin-ldap/shiro.ini",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "zookeeper": {
+      "name": "zookeeper",
+      "path": "runtime-compose.git/zookeeper",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".env": {
+          "name": ".env",
+          "path": "runtime-compose.git/zookeeper/.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "runtime-compose.git/zookeeper/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "runtime-compose.git/zookeeper/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yaml": {
+          "name": "docker-compose.yaml",
+          "path": "runtime-compose.git/zookeeper/docker-compose.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "zookeeper.robot": {
+          "name": "zookeeper.robot",
+          "path": "runtime-compose.git/zookeeper/zookeeper.robot",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 98762259,
+    "name": "runtime-compose",
+    "full_name": "flokkr/runtime-compose",
+    "owner": {
+      "login": "flokkr",
+      "html_url": "https://github.com/flokkr",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/flokkr/runtime-compose",
+    "description": "Examples to run Hadoop/Spark clusters locally with docker-compose.",
+    "url": "https://api.github.com/repos/flokkr/runtime-compose",
+    "clone_url": "https://github.com/flokkr/runtime-compose.git",
+    "homepage": "",
+    "size": 2426,
+    "stargazers_count": 33,
+    "watchers_count": 33,
+    "language": "RobotFramework"
+  }
+}

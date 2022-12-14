@@ -1,0 +1,4451 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 40,
+      "rootCount": 0,
+      "subFolderCount": 40,
+      "filepaths": [
+        "arrow-ballista.git/ballista-cli/Dockerfile",
+        "arrow-ballista.git/benchmarks/db-benchmark/db-benchmark.Dockerfile",
+        "arrow-ballista.git/ci/docker/conda-cpp.Dockerfile",
+        "arrow-ballista.git/ci/docker/conda-integration.Dockerfile",
+        "arrow-ballista.git/ci/docker/conda-python-dask.Dockerfile",
+        "arrow-ballista.git/ci/docker/conda-python-hdfs.Dockerfile",
+        "arrow-ballista.git/ci/docker/conda-python-jpype.Dockerfile",
+        "arrow-ballista.git/ci/docker/conda-python-kartothek.Dockerfile",
+        "arrow-ballista.git/ci/docker/conda-python-pandas.Dockerfile",
+        "arrow-ballista.git/ci/docker/conda-python-spark.Dockerfile",
+        "arrow-ballista.git/ci/docker/conda-python-turbodbc.Dockerfile",
+        "arrow-ballista.git/ci/docker/conda-python.Dockerfile",
+        "arrow-ballista.git/ci/docker/conda.Dockerfile",
+        "arrow-ballista.git/ci/docker/debian-10-cpp.Dockerfile",
+        "arrow-ballista.git/ci/docker/debian-10-go.Dockerfile",
+        "arrow-ballista.git/ci/docker/debian-10-js.Dockerfile",
+        "arrow-ballista.git/ci/docker/debian-9-java.Dockerfile",
+        "arrow-ballista.git/ci/docker/fedora-33-cpp.Dockerfile",
+        "arrow-ballista.git/ci/docker/linux-apt-c-glib.Dockerfile",
+        "arrow-ballista.git/ci/docker/linux-apt-docs.Dockerfile",
+        "arrow-ballista.git/ci/docker/linux-apt-jni.Dockerfile",
+        "arrow-ballista.git/ci/docker/linux-apt-lint.Dockerfile",
+        "arrow-ballista.git/ci/docker/linux-apt-python-3.Dockerfile",
+        "arrow-ballista.git/ci/docker/linux-apt-r.Dockerfile",
+        "arrow-ballista.git/ci/docker/linux-apt-ruby.Dockerfile",
+        "arrow-ballista.git/ci/docker/linux-dnf-python-3.Dockerfile",
+        "arrow-ballista.git/ci/docker/linux-r.Dockerfile",
+        "arrow-ballista.git/ci/docker/python-sdist.Dockerfile",
+        "arrow-ballista.git/ci/docker/python-wheel-manylinux-201x.Dockerfile",
+        "arrow-ballista.git/ci/docker/python-wheel-manylinux-test.Dockerfile",
+        "arrow-ballista.git/ci/docker/python-wheel-windows-vs2017.Dockerfile",
+        "arrow-ballista.git/ci/docker/ubuntu-18.04-cpp.Dockerfile",
+        "arrow-ballista.git/ci/docker/ubuntu-18.04-csharp.Dockerfile",
+        "arrow-ballista.git/ci/docker/ubuntu-20.04-cpp.Dockerfile",
+        "arrow-ballista.git/ci/docker/ubuntu-20.10-cpp.Dockerfile",
+        "arrow-ballista.git/dev/docker/ballista-benchmarks.Dockerfile",
+        "arrow-ballista.git/dev/docker/ballista-builder.Dockerfile",
+        "arrow-ballista.git/dev/docker/ballista-executor.Dockerfile",
+        "arrow-ballista.git/dev/docker/ballista-scheduler.Dockerfile",
+        "arrow-ballista.git/dev/docker/ballista-standalone.Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 1,
+      "subFolderCount": 0,
+      "filepaths": [
+        "arrow-ballista.git/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".asf.yaml": {
+      "name": ".asf.yaml",
+      "path": "arrow-ballista.git/.asf.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "arrow-ballista.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "arrow-ballista.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "arrow-ballista.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "arrow-ballista.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "arrow-ballista.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "arrow-ballista.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "arrow-ballista.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "arrow-ballista.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "arrow-ballista.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "arrow-ballista.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "arrow-ballista.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "arrow-ballista.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "arrow-ballista.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "arrow-ballista.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "arrow-ballista.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "arrow-ballista.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "arrow-ballista.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "arrow-ballista.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "arrow-ballista.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "arrow-ballista.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "arrow-ballista.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "arrow-ballista.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "arrow-ballista.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "arrow-ballista.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "arrow-ballista.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "arrow-ballista.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "arrow-ballista.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "arrow-ballista.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "arrow-ballista.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "arrow-ballista.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "arrow-ballista.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "arrow-ballista.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "arrow-ballista.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-a48a83ca10103b9b0de60e40acaff906b57306ef.idx": {
+                  "name": "pack-a48a83ca10103b9b0de60e40acaff906b57306ef.idx",
+                  "path": "arrow-ballista.git/.git/objects/pack/pack-a48a83ca10103b9b0de60e40acaff906b57306ef.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-a48a83ca10103b9b0de60e40acaff906b57306ef.pack": {
+                  "name": "pack-a48a83ca10103b9b0de60e40acaff906b57306ef.pack",
+                  "path": "arrow-ballista.git/.git/objects/pack/pack-a48a83ca10103b9b0de60e40acaff906b57306ef.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "arrow-ballista.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "arrow-ballista.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "arrow-ballista.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "arrow-ballista.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "arrow-ballista.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "arrow-ballista.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "arrow-ballista.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "arrow-ballista.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        }
+      }
+    },
+    ".gitattributes": {
+      "name": ".gitattributes",
+      "path": "arrow-ballista.git/.gitattributes",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".github": {
+      "name": ".github",
+      "path": "arrow-ballista.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "arrow-ballista.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug_report.md": {
+              "name": "bug_report.md",
+              "path": "arrow-ballista.git/.github/ISSUE_TEMPLATE/bug_report.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature_request.md": {
+              "name": "feature_request.md",
+              "path": "arrow-ballista.git/.github/ISSUE_TEMPLATE/feature_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "actions": {
+          "name": "actions",
+          "path": "arrow-ballista.git/.github/actions",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "setup-builder": {
+              "name": "setup-builder",
+              "path": "arrow-ballista.git/.github/actions/setup-builder",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "action.yaml": {
+                  "name": "action.yaml",
+                  "path": "arrow-ballista.git/.github/actions/setup-builder/action.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "dependabot.yml": {
+          "name": "dependabot.yml",
+          "path": "arrow-ballista.git/.github/dependabot.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pull_request_template.md": {
+          "name": "pull_request_template.md",
+          "path": "arrow-ballista.git/.github/pull_request_template.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "arrow-ballista.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cancel.yml": {
+              "name": "cancel.yml",
+              "path": "arrow-ballista.git/.github/workflows/cancel.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "comment_bot.yml": {
+              "name": "comment_bot.yml",
+              "path": "arrow-ballista.git/.github/workflows/comment_bot.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dev.yml": {
+              "name": "dev.yml",
+              "path": "arrow-ballista.git/.github/workflows/dev.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dev_pr": {
+              "name": "dev_pr",
+              "path": "arrow-ballista.git/.github/workflows/dev_pr",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "labeler.yml": {
+                  "name": "labeler.yml",
+                  "path": "arrow-ballista.git/.github/workflows/dev_pr/labeler.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "dev_pr.yml": {
+              "name": "dev_pr.yml",
+              "path": "arrow-ballista.git/.github/workflows/dev_pr.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_build.yml": {
+              "name": "python_build.yml",
+              "path": "arrow-ballista.git/.github/workflows/python_build.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_test.yaml": {
+              "name": "python_test.yaml",
+              "path": "arrow-ballista.git/.github/workflows/python_test.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rust.yml": {
+              "name": "rust.yml",
+              "path": "arrow-ballista.git/.github/workflows/rust.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".github_changelog_generator": {
+      "name": ".github_changelog_generator",
+      "path": "arrow-ballista.git/.github_changelog_generator",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "arrow-ballista.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".gitmodules": {
+      "name": ".gitmodules",
+      "path": "arrow-ballista.git/.gitmodules",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".readthedocs.yml": {
+      "name": ".readthedocs.yml",
+      "path": "arrow-ballista.git/.readthedocs.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CHANGELOG.md": {
+      "name": "CHANGELOG.md",
+      "path": "arrow-ballista.git/CHANGELOG.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CODE_OF_CONDUCT.md": {
+      "name": "CODE_OF_CONDUCT.md",
+      "path": "arrow-ballista.git/CODE_OF_CONDUCT.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "arrow-ballista.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Cargo.toml": {
+      "name": "Cargo.toml",
+      "path": "arrow-ballista.git/Cargo.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE.txt": {
+      "name": "LICENSE.txt",
+      "path": "arrow-ballista.git/LICENSE.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "NOTICE.txt": {
+      "name": "NOTICE.txt",
+      "path": "arrow-ballista.git/NOTICE.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "arrow-ballista.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "ballista": {
+      "name": "ballista",
+      "path": "arrow-ballista.git/ballista",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CHANGELOG.md": {
+          "name": "CHANGELOG.md",
+          "path": "arrow-ballista.git/ballista/CHANGELOG.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "client": {
+          "name": "client",
+          "path": "arrow-ballista.git/ballista/client",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "arrow-ballista.git/ballista/client/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "arrow-ballista.git/ballista/client/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "arrow-ballista.git/ballista/client/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "columnar_batch.rs": {
+                  "name": "columnar_batch.rs",
+                  "path": "arrow-ballista.git/ballista/client/src/columnar_batch.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "context.rs": {
+                  "name": "context.rs",
+                  "path": "arrow-ballista.git/ballista/client/src/context.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "arrow-ballista.git/ballista/client/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "prelude.rs": {
+                  "name": "prelude.rs",
+                  "path": "arrow-ballista.git/ballista/client/src/prelude.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "testdata": {
+              "name": "testdata",
+              "path": "arrow-ballista.git/ballista/client/testdata",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "alltypes_plain.parquet": {
+                  "name": "alltypes_plain.parquet",
+                  "path": "arrow-ballista.git/ballista/client/testdata/alltypes_plain.parquet",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "single_nan.parquet": {
+                  "name": "single_nan.parquet",
+                  "path": "arrow-ballista.git/ballista/client/testdata/single_nan.parquet",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "core": {
+          "name": "core",
+          "path": "arrow-ballista.git/ballista/core",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "arrow-ballista.git/ballista/core/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "arrow-ballista.git/ballista/core/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build.rs": {
+              "name": "build.rs",
+              "path": "arrow-ballista.git/ballista/core/build.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "proto": {
+              "name": "proto",
+              "path": "arrow-ballista.git/ballista/core/proto",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ballista.proto": {
+                  "name": "ballista.proto",
+                  "path": "arrow-ballista.git/ballista/core/proto/ballista.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "datafusion.proto": {
+                  "name": "datafusion.proto",
+                  "path": "arrow-ballista.git/ballista/core/proto/datafusion.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "src": {
+              "name": "src",
+              "path": "arrow-ballista.git/ballista/core/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "client.rs": {
+                  "name": "client.rs",
+                  "path": "arrow-ballista.git/ballista/core/src/client.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config.rs": {
+                  "name": "config.rs",
+                  "path": "arrow-ballista.git/ballista/core/src/config.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "error.rs": {
+                  "name": "error.rs",
+                  "path": "arrow-ballista.git/ballista/core/src/error.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "event_loop.rs": {
+                  "name": "event_loop.rs",
+                  "path": "arrow-ballista.git/ballista/core/src/event_loop.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "execution_plans": {
+                  "name": "execution_plans",
+                  "path": "arrow-ballista.git/ballista/core/src/execution_plans",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "distributed_query.rs": {
+                      "name": "distributed_query.rs",
+                      "path": "arrow-ballista.git/ballista/core/src/execution_plans/distributed_query.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "arrow-ballista.git/ballista/core/src/execution_plans/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "shuffle_reader.rs": {
+                      "name": "shuffle_reader.rs",
+                      "path": "arrow-ballista.git/ballista/core/src/execution_plans/shuffle_reader.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "shuffle_writer.rs": {
+                      "name": "shuffle_writer.rs",
+                      "path": "arrow-ballista.git/ballista/core/src/execution_plans/shuffle_writer.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "unresolved_shuffle.rs": {
+                      "name": "unresolved_shuffle.rs",
+                      "path": "arrow-ballista.git/ballista/core/src/execution_plans/unresolved_shuffle.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "arrow-ballista.git/ballista/core/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "plugin": {
+                  "name": "plugin",
+                  "path": "arrow-ballista.git/ballista/core/src/plugin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "arrow-ballista.git/ballista/core/src/plugin/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "plugin_manager.rs": {
+                      "name": "plugin_manager.rs",
+                      "path": "arrow-ballista.git/ballista/core/src/plugin/plugin_manager.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "udf.rs": {
+                      "name": "udf.rs",
+                      "path": "arrow-ballista.git/ballista/core/src/plugin/udf.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "serde": {
+                  "name": "serde",
+                  "path": "arrow-ballista.git/ballista/core/src/serde",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "generated": {
+                      "name": "generated",
+                      "path": "arrow-ballista.git/ballista/core/src/serde/generated",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "ballista.rs": {
+                          "name": "ballista.rs",
+                          "path": "arrow-ballista.git/ballista/core/src/serde/generated/ballista.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "arrow-ballista.git/ballista/core/src/serde/generated/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "arrow-ballista.git/ballista/core/src/serde/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "physical_plan": {
+                      "name": "physical_plan",
+                      "path": "arrow-ballista.git/ballista/core/src/serde/physical_plan",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "from_proto.rs": {
+                          "name": "from_proto.rs",
+                          "path": "arrow-ballista.git/ballista/core/src/serde/physical_plan/from_proto.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "arrow-ballista.git/ballista/core/src/serde/physical_plan/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "to_proto.rs": {
+                          "name": "to_proto.rs",
+                          "path": "arrow-ballista.git/ballista/core/src/serde/physical_plan/to_proto.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "scheduler": {
+                      "name": "scheduler",
+                      "path": "arrow-ballista.git/ballista/core/src/serde/scheduler",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "from_proto.rs": {
+                          "name": "from_proto.rs",
+                          "path": "arrow-ballista.git/ballista/core/src/serde/scheduler/from_proto.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "arrow-ballista.git/ballista/core/src/serde/scheduler/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "to_proto.rs": {
+                          "name": "to_proto.rs",
+                          "path": "arrow-ballista.git/ballista/core/src/serde/scheduler/to_proto.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "utils.rs": {
+                  "name": "utils.rs",
+                  "path": "arrow-ballista.git/ballista/core/src/utils.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "tests": {
+              "name": "tests",
+              "path": "arrow-ballista.git/ballista/core/tests",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "customer.csv": {
+                  "name": "customer.csv",
+                  "path": "arrow-ballista.git/ballista/core/tests/customer.csv",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "executor": {
+          "name": "executor",
+          "path": "arrow-ballista.git/ballista/executor",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "arrow-ballista.git/ballista/executor/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "arrow-ballista.git/ballista/executor/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build.rs": {
+              "name": "build.rs",
+              "path": "arrow-ballista.git/ballista/executor/build.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "examples": {
+              "name": "examples",
+              "path": "arrow-ballista.git/ballista/executor/examples",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "example_executor_config.toml": {
+                  "name": "example_executor_config.toml",
+                  "path": "arrow-ballista.git/ballista/executor/examples/example_executor_config.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "executor_config_spec.toml": {
+              "name": "executor_config_spec.toml",
+              "path": "arrow-ballista.git/ballista/executor/executor_config_spec.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "arrow-ballista.git/ballista/executor/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "collect.rs": {
+                  "name": "collect.rs",
+                  "path": "arrow-ballista.git/ballista/executor/src/collect.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cpu_bound_executor.rs": {
+                  "name": "cpu_bound_executor.rs",
+                  "path": "arrow-ballista.git/ballista/executor/src/cpu_bound_executor.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "execution_loop.rs": {
+                  "name": "execution_loop.rs",
+                  "path": "arrow-ballista.git/ballista/executor/src/execution_loop.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "executor.rs": {
+                  "name": "executor.rs",
+                  "path": "arrow-ballista.git/ballista/executor/src/executor.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "executor_server.rs": {
+                  "name": "executor_server.rs",
+                  "path": "arrow-ballista.git/ballista/executor/src/executor_server.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "flight_service.rs": {
+                  "name": "flight_service.rs",
+                  "path": "arrow-ballista.git/ballista/executor/src/flight_service.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "arrow-ballista.git/ballista/executor/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.rs": {
+                  "name": "main.rs",
+                  "path": "arrow-ballista.git/ballista/executor/src/main.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "metrics": {
+                  "name": "metrics",
+                  "path": "arrow-ballista.git/ballista/executor/src/metrics",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "arrow-ballista.git/ballista/executor/src/metrics/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "shutdown.rs": {
+                  "name": "shutdown.rs",
+                  "path": "arrow-ballista.git/ballista/executor/src/shutdown.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "standalone.rs": {
+                  "name": "standalone.rs",
+                  "path": "arrow-ballista.git/ballista/executor/src/standalone.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "terminate.rs": {
+                  "name": "terminate.rs",
+                  "path": "arrow-ballista.git/ballista/executor/src/terminate.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "scheduler": {
+          "name": "scheduler",
+          "path": "arrow-ballista.git/ballista/scheduler",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "arrow-ballista.git/ballista/scheduler/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "arrow-ballista.git/ballista/scheduler/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build.rs": {
+              "name": "build.rs",
+              "path": "arrow-ballista.git/ballista/scheduler/build.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "proto": {
+              "name": "proto",
+              "path": "arrow-ballista.git/ballista/scheduler/proto",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "keda.proto": {
+                  "name": "keda.proto",
+                  "path": "arrow-ballista.git/ballista/scheduler/proto/keda.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "scheduler_config_spec.toml": {
+              "name": "scheduler_config_spec.toml",
+              "path": "arrow-ballista.git/ballista/scheduler/scheduler_config_spec.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "arrow-ballista.git/ballista/scheduler/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "api": {
+                  "name": "api",
+                  "path": "arrow-ballista.git/ballista/scheduler/src/api",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "handlers.rs": {
+                      "name": "handlers.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/api/handlers.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/api/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "config.rs": {
+                  "name": "config.rs",
+                  "path": "arrow-ballista.git/ballista/scheduler/src/config.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "display.rs": {
+                  "name": "display.rs",
+                  "path": "arrow-ballista.git/ballista/scheduler/src/display.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "flight_sql.rs": {
+                  "name": "flight_sql.rs",
+                  "path": "arrow-ballista.git/ballista/scheduler/src/flight_sql.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "arrow-ballista.git/ballista/scheduler/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.rs": {
+                  "name": "main.rs",
+                  "path": "arrow-ballista.git/ballista/scheduler/src/main.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "metrics": {
+                  "name": "metrics",
+                  "path": "arrow-ballista.git/ballista/scheduler/src/metrics",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/metrics/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "prometheus.rs": {
+                      "name": "prometheus.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/metrics/prometheus.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "planner.rs": {
+                  "name": "planner.rs",
+                  "path": "arrow-ballista.git/ballista/scheduler/src/planner.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scheduler_server": {
+                  "name": "scheduler_server",
+                  "path": "arrow-ballista.git/ballista/scheduler/src/scheduler_server",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "event.rs": {
+                      "name": "event.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/scheduler_server/event.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "external_scaler.rs": {
+                      "name": "external_scaler.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/scheduler_server/external_scaler.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "grpc.rs": {
+                      "name": "grpc.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/scheduler_server/grpc.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/scheduler_server/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "query_stage_scheduler.rs": {
+                      "name": "query_stage_scheduler.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/scheduler_server/query_stage_scheduler.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "standalone.rs": {
+                  "name": "standalone.rs",
+                  "path": "arrow-ballista.git/ballista/scheduler/src/standalone.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "state": {
+                  "name": "state",
+                  "path": "arrow-ballista.git/ballista/scheduler/src/state",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "backend": {
+                      "name": "backend",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/state/backend",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "etcd.rs": {
+                          "name": "etcd.rs",
+                          "path": "arrow-ballista.git/ballista/scheduler/src/state/backend/etcd.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "memory.rs": {
+                          "name": "memory.rs",
+                          "path": "arrow-ballista.git/ballista/scheduler/src/state/backend/memory.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "arrow-ballista.git/ballista/scheduler/src/state/backend/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "sled.rs": {
+                          "name": "sled.rs",
+                          "path": "arrow-ballista.git/ballista/scheduler/src/state/backend/sled.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "utils": {
+                          "name": "utils",
+                          "path": "arrow-ballista.git/ballista/scheduler/src/state/backend/utils",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "arrow-ballista.git/ballista/scheduler/src/state/backend/utils/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "oneshot.rs": {
+                              "name": "oneshot.rs",
+                              "path": "arrow-ballista.git/ballista/scheduler/src/state/backend/utils/oneshot.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "subscriber.rs": {
+                              "name": "subscriber.rs",
+                              "path": "arrow-ballista.git/ballista/scheduler/src/state/backend/utils/subscriber.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "execution_graph": {
+                      "name": "execution_graph",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/state/execution_graph",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "execution_stage.rs": {
+                          "name": "execution_stage.rs",
+                          "path": "arrow-ballista.git/ballista/scheduler/src/state/execution_graph/execution_stage.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "execution_graph.rs": {
+                      "name": "execution_graph.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/state/execution_graph.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "execution_graph_dot.rs": {
+                      "name": "execution_graph_dot.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/state/execution_graph_dot.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "executor_manager.rs": {
+                      "name": "executor_manager.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/state/executor_manager.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/state/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "session_manager.rs": {
+                      "name": "session_manager.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/state/session_manager.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "session_registry.rs": {
+                      "name": "session_registry.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/state/session_registry.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "task_manager.rs": {
+                      "name": "task_manager.rs",
+                      "path": "arrow-ballista.git/ballista/scheduler/src/state/task_manager.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "test_utils.rs": {
+                  "name": "test_utils.rs",
+                  "path": "arrow-ballista.git/ballista/scheduler/src/test_utils.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "testdata": {
+              "name": "testdata",
+              "path": "arrow-ballista.git/ballista/scheduler/testdata",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "customer": {
+                  "name": "customer",
+                  "path": "arrow-ballista.git/ballista/scheduler/testdata/customer",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "customer.tbl": {
+                      "name": "customer.tbl",
+                      "path": "arrow-ballista.git/ballista/scheduler/testdata/customer/customer.tbl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "lineitem": {
+                  "name": "lineitem",
+                  "path": "arrow-ballista.git/ballista/scheduler/testdata/lineitem",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "partition0.tbl": {
+                      "name": "partition0.tbl",
+                      "path": "arrow-ballista.git/ballista/scheduler/testdata/lineitem/partition0.tbl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "partition1.tbl": {
+                      "name": "partition1.tbl",
+                      "path": "arrow-ballista.git/ballista/scheduler/testdata/lineitem/partition1.tbl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "nation": {
+                  "name": "nation",
+                  "path": "arrow-ballista.git/ballista/scheduler/testdata/nation",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "nation.tbl": {
+                      "name": "nation.tbl",
+                      "path": "arrow-ballista.git/ballista/scheduler/testdata/nation/nation.tbl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "orders": {
+                  "name": "orders",
+                  "path": "arrow-ballista.git/ballista/scheduler/testdata/orders",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "orders.tbl": {
+                      "name": "orders.tbl",
+                      "path": "arrow-ballista.git/ballista/scheduler/testdata/orders/orders.tbl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "part": {
+                  "name": "part",
+                  "path": "arrow-ballista.git/ballista/scheduler/testdata/part",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "part.tbl": {
+                      "name": "part.tbl",
+                      "path": "arrow-ballista.git/ballista/scheduler/testdata/part/part.tbl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "partsupp": {
+                  "name": "partsupp",
+                  "path": "arrow-ballista.git/ballista/scheduler/testdata/partsupp",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "partsupp.tbl": {
+                      "name": "partsupp.tbl",
+                      "path": "arrow-ballista.git/ballista/scheduler/testdata/partsupp/partsupp.tbl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "region": {
+                  "name": "region",
+                  "path": "arrow-ballista.git/ballista/scheduler/testdata/region",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "region.tbl": {
+                      "name": "region.tbl",
+                      "path": "arrow-ballista.git/ballista/scheduler/testdata/region/region.tbl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "supplier": {
+                  "name": "supplier",
+                  "path": "arrow-ballista.git/ballista/scheduler/testdata/supplier",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "supplier.tbl": {
+                      "name": "supplier.tbl",
+                      "path": "arrow-ballista.git/ballista/scheduler/testdata/supplier/supplier.tbl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "ui": {
+              "name": "ui",
+              "path": "arrow-ballista.git/ballista/scheduler/ui",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".dockerignore": {
+                  "name": ".dockerignore",
+                  "path": "arrow-ballista.git/ballista/scheduler/ui/.dockerignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                ".gitignore": {
+                  "name": ".gitignore",
+                  "path": "arrow-ballista.git/ballista/scheduler/ui/.gitignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "README.md": {
+                  "name": "README.md",
+                  "path": "arrow-ballista.git/ballista/scheduler/ui/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "index.d.ts": {
+                  "name": "index.d.ts",
+                  "path": "arrow-ballista.git/ballista/scheduler/ui/index.d.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "package.json": {
+                  "name": "package.json",
+                  "path": "arrow-ballista.git/ballista/scheduler/ui/package.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "public": {
+                  "name": "public",
+                  "path": "arrow-ballista.git/ballista/scheduler/ui/public",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "favicon.ico": {
+                      "name": "favicon.ico",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/public/favicon.ico",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "index.html": {
+                      "name": "index.html",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/public/index.html",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logo192.png": {
+                      "name": "logo192.png",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/public/logo192.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logo512.png": {
+                      "name": "logo512.png",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/public/logo512.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "manifest.json": {
+                      "name": "manifest.json",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/public/manifest.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "robots.txt": {
+                      "name": "robots.txt",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/public/robots.txt",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "react-table-config.d.ts": {
+                  "name": "react-table-config.d.ts",
+                  "path": "arrow-ballista.git/ballista/scheduler/ui/react-table-config.d.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "src": {
+                  "name": "src",
+                  "path": "arrow-ballista.git/ballista/scheduler/ui/src",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "App.css": {
+                      "name": "App.css",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/src/App.css",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "App.test.tsx": {
+                      "name": "App.test.tsx",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/src/App.test.tsx",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "App.tsx": {
+                      "name": "App.tsx",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/src/App.tsx",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "components": {
+                      "name": "components",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/src/components",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "DataTable.tsx": {
+                          "name": "DataTable.tsx",
+                          "path": "arrow-ballista.git/ballista/scheduler/ui/src/components/DataTable.tsx",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Empty.tsx": {
+                          "name": "Empty.tsx",
+                          "path": "arrow-ballista.git/ballista/scheduler/ui/src/components/Empty.tsx",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ExecutorsList.tsx": {
+                          "name": "ExecutorsList.tsx",
+                          "path": "arrow-ballista.git/ballista/scheduler/ui/src/components/ExecutorsList.tsx",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Footer.tsx": {
+                          "name": "Footer.tsx",
+                          "path": "arrow-ballista.git/ballista/scheduler/ui/src/components/Footer.tsx",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Header.tsx": {
+                          "name": "Header.tsx",
+                          "path": "arrow-ballista.git/ballista/scheduler/ui/src/components/Header.tsx",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "JobStagesMetrics.tsx": {
+                          "name": "JobStagesMetrics.tsx",
+                          "path": "arrow-ballista.git/ballista/scheduler/ui/src/components/JobStagesMetrics.tsx",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "QueriesList.tsx": {
+                          "name": "QueriesList.tsx",
+                          "path": "arrow-ballista.git/ballista/scheduler/ui/src/components/QueriesList.tsx",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Summary.tsx": {
+                          "name": "Summary.tsx",
+                          "path": "arrow-ballista.git/ballista/scheduler/ui/src/components/Summary.tsx",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "logo.svg": {
+                          "name": "logo.svg",
+                          "path": "arrow-ballista.git/ballista/scheduler/ui/src/components/logo.svg",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "index.css": {
+                      "name": "index.css",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/src/index.css",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "index.tsx": {
+                      "name": "index.tsx",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/src/index.tsx",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "react-app-env.d.ts": {
+                      "name": "react-app-env.d.ts",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/src/react-app-env.d.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "reportWebVitals.ts": {
+                      "name": "reportWebVitals.ts",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/src/reportWebVitals.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "setupTests.ts": {
+                      "name": "setupTests.ts",
+                      "path": "arrow-ballista.git/ballista/scheduler/ui/src/setupTests.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "tsconfig.json": {
+                  "name": "tsconfig.json",
+                  "path": "arrow-ballista.git/ballista/scheduler/ui/tsconfig.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "yarn.lock": {
+                  "name": "yarn.lock",
+                  "path": "arrow-ballista.git/ballista/scheduler/ui/yarn.lock",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "ballista-cli": {
+      "name": "ballista-cli",
+      "path": "arrow-ballista.git/ballista-cli",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "arrow-ballista.git/ballista-cli/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "arrow-ballista.git/ballista-cli/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "arrow-ballista.git/ballista-cli/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "arrow-ballista.git/ballista-cli/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "command.rs": {
+              "name": "command.rs",
+              "path": "arrow-ballista.git/ballista-cli/src/command.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "exec.rs": {
+              "name": "exec.rs",
+              "path": "arrow-ballista.git/ballista-cli/src/exec.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lib.rs": {
+              "name": "lib.rs",
+              "path": "arrow-ballista.git/ballista-cli/src/lib.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.rs": {
+              "name": "main.rs",
+              "path": "arrow-ballista.git/ballista-cli/src/main.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "benchmarks": {
+      "name": "benchmarks",
+      "path": "arrow-ballista.git/benchmarks",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".dockerignore": {
+          "name": ".dockerignore",
+          "path": "arrow-ballista.git/benchmarks/.dockerignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "arrow-ballista.git/benchmarks/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "arrow-ballista.git/benchmarks/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "arrow-ballista.git/benchmarks/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "db-benchmark": {
+          "name": "db-benchmark",
+          "path": "arrow-ballista.git/benchmarks/db-benchmark",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "arrow-ballista.git/benchmarks/db-benchmark/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "db-benchmark.Dockerfile": {
+              "name": "db-benchmark.Dockerfile",
+              "path": "arrow-ballista.git/benchmarks/db-benchmark/db-benchmark.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "groupby-datafusion.py": {
+              "name": "groupby-datafusion.py",
+              "path": "arrow-ballista.git/benchmarks/db-benchmark/groupby-datafusion.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "join-datafusion.py": {
+              "name": "join-datafusion.py",
+              "path": "arrow-ballista.git/benchmarks/db-benchmark/join-datafusion.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run-bench.sh": {
+              "name": "run-bench.sh",
+              "path": "arrow-ballista.git/benchmarks/db-benchmark/run-bench.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "queries": {
+          "name": "queries",
+          "path": "arrow-ballista.git/benchmarks/queries",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "q1.sql": {
+              "name": "q1.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q1.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q10.sql": {
+              "name": "q10.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q10.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q11.sql": {
+              "name": "q11.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q11.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q12.sql": {
+              "name": "q12.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q12.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q13.sql": {
+              "name": "q13.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q13.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q14.sql": {
+              "name": "q14.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q14.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q15.sql": {
+              "name": "q15.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q15.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q16.sql": {
+              "name": "q16.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q16.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q17.sql": {
+              "name": "q17.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q17.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q18.sql": {
+              "name": "q18.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q18.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q19.sql": {
+              "name": "q19.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q19.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q2.sql": {
+              "name": "q2.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q2.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q20.sql": {
+              "name": "q20.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q20.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q21.sql": {
+              "name": "q21.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q21.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q22.sql": {
+              "name": "q22.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q22.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q3.sql": {
+              "name": "q3.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q3.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q4.sql": {
+              "name": "q4.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q4.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q5.sql": {
+              "name": "q5.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q5.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q6.sql": {
+              "name": "q6.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q6.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q7.sql": {
+              "name": "q7.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q7.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q8.sql": {
+              "name": "q8.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q8.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "q9.sql": {
+              "name": "q9.sql",
+              "path": "arrow-ballista.git/benchmarks/queries/q9.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "run.sh": {
+          "name": "run.sh",
+          "path": "arrow-ballista.git/benchmarks/run.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "spark": {
+          "name": "spark",
+          "path": "arrow-ballista.git/benchmarks/spark",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".gitignore": {
+              "name": ".gitignore",
+              "path": "arrow-ballista.git/benchmarks/spark/.gitignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "arrow-ballista.git/benchmarks/spark/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pom.xml": {
+              "name": "pom.xml",
+              "path": "arrow-ballista.git/benchmarks/spark/pom.xml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "arrow-ballista.git/benchmarks/spark/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "arrow-ballista.git/benchmarks/spark/src/main",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "scala": {
+                      "name": "scala",
+                      "path": "arrow-ballista.git/benchmarks/spark/src/main/scala",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "org": {
+                          "name": "org",
+                          "path": "arrow-ballista.git/benchmarks/spark/src/main/scala/org",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "apache": {
+                              "name": "apache",
+                              "path": "arrow-ballista.git/benchmarks/spark/src/main/scala/org/apache",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "arrow": {
+                                  "name": "arrow",
+                                  "path": "arrow-ballista.git/benchmarks/spark/src/main/scala/org/apache/arrow",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "SparkTpch.scala": {
+                                      "name": "SparkTpch.scala",
+                                      "path": "arrow-ballista.git/benchmarks/spark/src/main/scala/org/apache/arrow/SparkTpch.scala",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "src": {
+          "name": "src",
+          "path": "arrow-ballista.git/benchmarks/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bin": {
+              "name": "bin",
+              "path": "arrow-ballista.git/benchmarks/src/bin",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "nyctaxi.rs": {
+                  "name": "nyctaxi.rs",
+                  "path": "arrow-ballista.git/benchmarks/src/bin/nyctaxi.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tpch.rs": {
+                  "name": "tpch.rs",
+                  "path": "arrow-ballista.git/benchmarks/src/bin/tpch.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "tpch-gen.sh": {
+          "name": "tpch-gen.sh",
+          "path": "arrow-ballista.git/benchmarks/tpch-gen.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "tpch.py": {
+          "name": "tpch.py",
+          "path": "arrow-ballista.git/benchmarks/tpch.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "ci": {
+      "name": "ci",
+      "path": "arrow-ballista.git/ci",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "appveyor-cpp-build.bat": {
+          "name": "appveyor-cpp-build.bat",
+          "path": "arrow-ballista.git/ci/appveyor-cpp-build.bat",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "appveyor-cpp-setup.bat": {
+          "name": "appveyor-cpp-setup.bat",
+          "path": "arrow-ballista.git/ci/appveyor-cpp-setup.bat",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conda_env_archery.yml": {
+          "name": "conda_env_archery.yml",
+          "path": "arrow-ballista.git/ci/conda_env_archery.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conda_env_cpp.yml": {
+          "name": "conda_env_cpp.yml",
+          "path": "arrow-ballista.git/ci/conda_env_cpp.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conda_env_crossbow.txt": {
+          "name": "conda_env_crossbow.txt",
+          "path": "arrow-ballista.git/ci/conda_env_crossbow.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conda_env_gandiva.yml": {
+          "name": "conda_env_gandiva.yml",
+          "path": "arrow-ballista.git/ci/conda_env_gandiva.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conda_env_gandiva_win.yml": {
+          "name": "conda_env_gandiva_win.yml",
+          "path": "arrow-ballista.git/ci/conda_env_gandiva_win.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conda_env_python.yml": {
+          "name": "conda_env_python.yml",
+          "path": "arrow-ballista.git/ci/conda_env_python.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conda_env_r.yml": {
+          "name": "conda_env_r.yml",
+          "path": "arrow-ballista.git/ci/conda_env_r.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conda_env_sphinx.yml": {
+          "name": "conda_env_sphinx.yml",
+          "path": "arrow-ballista.git/ci/conda_env_sphinx.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conda_env_unix.yml": {
+          "name": "conda_env_unix.yml",
+          "path": "arrow-ballista.git/ci/conda_env_unix.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "detect-changes.py": {
+          "name": "detect-changes.py",
+          "path": "arrow-ballista.git/ci/detect-changes.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "arrow-ballista.git/ci/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "conda-cpp.Dockerfile": {
+              "name": "conda-cpp.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/conda-cpp.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "conda-integration.Dockerfile": {
+              "name": "conda-integration.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/conda-integration.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "conda-python-dask.Dockerfile": {
+              "name": "conda-python-dask.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/conda-python-dask.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "conda-python-hdfs.Dockerfile": {
+              "name": "conda-python-hdfs.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/conda-python-hdfs.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "conda-python-jpype.Dockerfile": {
+              "name": "conda-python-jpype.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/conda-python-jpype.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "conda-python-kartothek.Dockerfile": {
+              "name": "conda-python-kartothek.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/conda-python-kartothek.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "conda-python-pandas.Dockerfile": {
+              "name": "conda-python-pandas.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/conda-python-pandas.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "conda-python-spark.Dockerfile": {
+              "name": "conda-python-spark.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/conda-python-spark.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "conda-python-turbodbc.Dockerfile": {
+              "name": "conda-python-turbodbc.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/conda-python-turbodbc.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "conda-python.Dockerfile": {
+              "name": "conda-python.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/conda-python.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "conda.Dockerfile": {
+              "name": "conda.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/conda.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "debian-10-cpp.Dockerfile": {
+              "name": "debian-10-cpp.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/debian-10-cpp.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "debian-10-go.Dockerfile": {
+              "name": "debian-10-go.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/debian-10-go.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "debian-10-js.Dockerfile": {
+              "name": "debian-10-js.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/debian-10-js.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "debian-9-java.Dockerfile": {
+              "name": "debian-9-java.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/debian-9-java.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "fedora-33-cpp.Dockerfile": {
+              "name": "fedora-33-cpp.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/fedora-33-cpp.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "linux-apt-c-glib.Dockerfile": {
+              "name": "linux-apt-c-glib.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/linux-apt-c-glib.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "linux-apt-docs.Dockerfile": {
+              "name": "linux-apt-docs.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/linux-apt-docs.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "linux-apt-jni.Dockerfile": {
+              "name": "linux-apt-jni.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/linux-apt-jni.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "linux-apt-lint.Dockerfile": {
+              "name": "linux-apt-lint.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/linux-apt-lint.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "linux-apt-python-3.Dockerfile": {
+              "name": "linux-apt-python-3.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/linux-apt-python-3.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "linux-apt-r.Dockerfile": {
+              "name": "linux-apt-r.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/linux-apt-r.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "linux-apt-ruby.Dockerfile": {
+              "name": "linux-apt-ruby.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/linux-apt-ruby.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "linux-dnf-python-3.Dockerfile": {
+              "name": "linux-dnf-python-3.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/linux-dnf-python-3.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "linux-r.Dockerfile": {
+              "name": "linux-r.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/linux-r.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "python-sdist.Dockerfile": {
+              "name": "python-sdist.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/python-sdist.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "python-wheel-manylinux-201x.Dockerfile": {
+              "name": "python-wheel-manylinux-201x.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/python-wheel-manylinux-201x.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "python-wheel-manylinux-test.Dockerfile": {
+              "name": "python-wheel-manylinux-test.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/python-wheel-manylinux-test.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "python-wheel-windows-vs2017.Dockerfile": {
+              "name": "python-wheel-windows-vs2017.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/python-wheel-windows-vs2017.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "ubuntu-18.04-cpp.Dockerfile": {
+              "name": "ubuntu-18.04-cpp.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/ubuntu-18.04-cpp.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "ubuntu-18.04-csharp.Dockerfile": {
+              "name": "ubuntu-18.04-csharp.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/ubuntu-18.04-csharp.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "ubuntu-20.04-cpp.Dockerfile": {
+              "name": "ubuntu-20.04-cpp.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/ubuntu-20.04-cpp.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "ubuntu-20.10-cpp.Dockerfile": {
+              "name": "ubuntu-20.10-cpp.Dockerfile",
+              "path": "arrow-ballista.git/ci/docker/ubuntu-20.10-cpp.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "etc": {
+          "name": "etc",
+          "path": "arrow-ballista.git/ci/etc",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "hdfs-site.xml": {
+              "name": "hdfs-site.xml",
+              "path": "arrow-ballista.git/ci/etc/hdfs-site.xml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rprofile": {
+              "name": "rprofile",
+              "path": "arrow-ballista.git/ci/etc/rprofile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "scripts": {
+          "name": "scripts",
+          "path": "arrow-ballista.git/ci/scripts",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "PKGBUILD": {
+              "name": "PKGBUILD",
+              "path": "arrow-ballista.git/ci/scripts/PKGBUILD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "c_glib_build.sh": {
+              "name": "c_glib_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/c_glib_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "c_glib_test.sh": {
+              "name": "c_glib_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/c_glib_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ccache_setup.sh": {
+              "name": "ccache_setup.sh",
+              "path": "arrow-ballista.git/ci/scripts/ccache_setup.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cpp_build.sh": {
+              "name": "cpp_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/cpp_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cpp_test.sh": {
+              "name": "cpp_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/cpp_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "csharp_build.sh": {
+              "name": "csharp_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/csharp_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "csharp_pack.sh": {
+              "name": "csharp_pack.sh",
+              "path": "arrow-ballista.git/ci/scripts/csharp_pack.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "csharp_test.sh": {
+              "name": "csharp_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/csharp_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docs_build.sh": {
+              "name": "docs_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/docs_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "go_build.sh": {
+              "name": "go_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/go_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "go_test.sh": {
+              "name": "go_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/go_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install_conda.sh": {
+              "name": "install_conda.sh",
+              "path": "arrow-ballista.git/ci/scripts/install_conda.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install_dask.sh": {
+              "name": "install_dask.sh",
+              "path": "arrow-ballista.git/ci/scripts/install_dask.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install_iwyu.sh": {
+              "name": "install_iwyu.sh",
+              "path": "arrow-ballista.git/ci/scripts/install_iwyu.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install_kartothek.sh": {
+              "name": "install_kartothek.sh",
+              "path": "arrow-ballista.git/ci/scripts/install_kartothek.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install_minio.sh": {
+              "name": "install_minio.sh",
+              "path": "arrow-ballista.git/ci/scripts/install_minio.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install_osx_sdk.sh": {
+              "name": "install_osx_sdk.sh",
+              "path": "arrow-ballista.git/ci/scripts/install_osx_sdk.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install_pandas.sh": {
+              "name": "install_pandas.sh",
+              "path": "arrow-ballista.git/ci/scripts/install_pandas.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install_spark.sh": {
+              "name": "install_spark.sh",
+              "path": "arrow-ballista.git/ci/scripts/install_spark.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install_turbodbc.sh": {
+              "name": "install_turbodbc.sh",
+              "path": "arrow-ballista.git/ci/scripts/install_turbodbc.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "integration_arrow.sh": {
+              "name": "integration_arrow.sh",
+              "path": "arrow-ballista.git/ci/scripts/integration_arrow.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "integration_dask.sh": {
+              "name": "integration_dask.sh",
+              "path": "arrow-ballista.git/ci/scripts/integration_dask.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "integration_hdfs.sh": {
+              "name": "integration_hdfs.sh",
+              "path": "arrow-ballista.git/ci/scripts/integration_hdfs.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "integration_hiveserver2.sh": {
+              "name": "integration_hiveserver2.sh",
+              "path": "arrow-ballista.git/ci/scripts/integration_hiveserver2.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "integration_kartothek.sh": {
+              "name": "integration_kartothek.sh",
+              "path": "arrow-ballista.git/ci/scripts/integration_kartothek.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "integration_spark.sh": {
+              "name": "integration_spark.sh",
+              "path": "arrow-ballista.git/ci/scripts/integration_spark.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "integration_turbodbc.sh": {
+              "name": "integration_turbodbc.sh",
+              "path": "arrow-ballista.git/ci/scripts/integration_turbodbc.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "java_build.sh": {
+              "name": "java_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/java_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "java_test.sh": {
+              "name": "java_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/java_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "js_build.sh": {
+              "name": "js_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/js_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "js_test.sh": {
+              "name": "js_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/js_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "msys2_setup.sh": {
+              "name": "msys2_setup.sh",
+              "path": "arrow-ballista.git/ci/scripts/msys2_setup.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "msys2_system_clean.sh": {
+              "name": "msys2_system_clean.sh",
+              "path": "arrow-ballista.git/ci/scripts/msys2_system_clean.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "msys2_system_upgrade.sh": {
+              "name": "msys2_system_upgrade.sh",
+              "path": "arrow-ballista.git/ci/scripts/msys2_system_upgrade.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_benchmark.sh": {
+              "name": "python_benchmark.sh",
+              "path": "arrow-ballista.git/ci/scripts/python_benchmark.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_build.sh": {
+              "name": "python_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/python_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_sdist_build.sh": {
+              "name": "python_sdist_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/python_sdist_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_sdist_test.sh": {
+              "name": "python_sdist_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/python_sdist_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_test.sh": {
+              "name": "python_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/python_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_wheel_macos_build.sh": {
+              "name": "python_wheel_macos_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/python_wheel_macos_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_wheel_macos_test.sh": {
+              "name": "python_wheel_macos_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/python_wheel_macos_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_wheel_manylinux_build.sh": {
+              "name": "python_wheel_manylinux_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/python_wheel_manylinux_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_wheel_manylinux_test.sh": {
+              "name": "python_wheel_manylinux_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/python_wheel_manylinux_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_wheel_windows_build.bat": {
+              "name": "python_wheel_windows_build.bat",
+              "path": "arrow-ballista.git/ci/scripts/python_wheel_windows_build.bat",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_wheel_windows_test.bat": {
+              "name": "python_wheel_windows_test.bat",
+              "path": "arrow-ballista.git/ci/scripts/python_wheel_windows_test.bat",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "r_build.sh": {
+              "name": "r_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/r_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "r_deps.sh": {
+              "name": "r_deps.sh",
+              "path": "arrow-ballista.git/ci/scripts/r_deps.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "r_docker_configure.sh": {
+              "name": "r_docker_configure.sh",
+              "path": "arrow-ballista.git/ci/scripts/r_docker_configure.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "r_pkgdown_check.sh": {
+              "name": "r_pkgdown_check.sh",
+              "path": "arrow-ballista.git/ci/scripts/r_pkgdown_check.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "r_sanitize.sh": {
+              "name": "r_sanitize.sh",
+              "path": "arrow-ballista.git/ci/scripts/r_sanitize.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "r_test.sh": {
+              "name": "r_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/r_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "r_windows_build.sh": {
+              "name": "r_windows_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/r_windows_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "release_test.sh": {
+              "name": "release_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/release_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ruby_test.sh": {
+              "name": "ruby_test.sh",
+              "path": "arrow-ballista.git/ci/scripts/ruby_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rust_build.sh": {
+              "name": "rust_build.sh",
+              "path": "arrow-ballista.git/ci/scripts/rust_build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rust_clippy.sh": {
+              "name": "rust_clippy.sh",
+              "path": "arrow-ballista.git/ci/scripts/rust_clippy.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rust_fmt.sh": {
+              "name": "rust_fmt.sh",
+              "path": "arrow-ballista.git/ci/scripts/rust_fmt.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rust_toml_fmt.sh": {
+              "name": "rust_toml_fmt.sh",
+              "path": "arrow-ballista.git/ci/scripts/rust_toml_fmt.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "util_checkout.sh": {
+              "name": "util_checkout.sh",
+              "path": "arrow-ballista.git/ci/scripts/util_checkout.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "util_cleanup.sh": {
+              "name": "util_cleanup.sh",
+              "path": "arrow-ballista.git/ci/scripts/util_cleanup.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "util_download_apache.sh": {
+              "name": "util_download_apache.sh",
+              "path": "arrow-ballista.git/ci/scripts/util_download_apache.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "util_wait_for_it.sh": {
+              "name": "util_wait_for_it.sh",
+              "path": "arrow-ballista.git/ci/scripts/util_wait_for_it.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "vcpkg": {
+          "name": "vcpkg",
+          "path": "arrow-ballista.git/ci/vcpkg",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "arm64-linux-static-debug.cmake": {
+              "name": "arm64-linux-static-debug.cmake",
+              "path": "arrow-ballista.git/ci/vcpkg/arm64-linux-static-debug.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "arm64-linux-static-release.cmake": {
+              "name": "arm64-linux-static-release.cmake",
+              "path": "arrow-ballista.git/ci/vcpkg/arm64-linux-static-release.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ports.patch": {
+              "name": "ports.patch",
+              "path": "arrow-ballista.git/ci/vcpkg/ports.patch",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "x64-linux-static-debug.cmake": {
+              "name": "x64-linux-static-debug.cmake",
+              "path": "arrow-ballista.git/ci/vcpkg/x64-linux-static-debug.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "x64-linux-static-release.cmake": {
+              "name": "x64-linux-static-release.cmake",
+              "path": "arrow-ballista.git/ci/vcpkg/x64-linux-static-release.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "x64-osx-static-debug.cmake": {
+              "name": "x64-osx-static-debug.cmake",
+              "path": "arrow-ballista.git/ci/vcpkg/x64-osx-static-debug.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "x64-osx-static-release.cmake": {
+              "name": "x64-osx-static-release.cmake",
+              "path": "arrow-ballista.git/ci/vcpkg/x64-osx-static-release.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "x64-windows-static-md-debug.cmake": {
+              "name": "x64-windows-static-md-debug.cmake",
+              "path": "arrow-ballista.git/ci/vcpkg/x64-windows-static-md-debug.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "x64-windows-static-md-release.cmake": {
+              "name": "x64-windows-static-md-release.cmake",
+              "path": "arrow-ballista.git/ci/vcpkg/x64-windows-static-md-release.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "dev": {
+      "name": "dev",
+      "path": "arrow-ballista.git/dev",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "build-ballista-docker.sh": {
+          "name": "build-ballista-docker.sh",
+          "path": "arrow-ballista.git/dev/build-ballista-docker.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build-ballista-rust.sh": {
+          "name": "build-ballista-rust.sh",
+          "path": "arrow-ballista.git/dev/build-ballista-rust.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build-set-env.sh": {
+          "name": "build-set-env.sh",
+          "path": "arrow-ballista.git/dev/build-set-env.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build-ui.sh": {
+          "name": "build-ui.sh",
+          "path": "arrow-ballista.git/dev/build-ui.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "create_license.py": {
+          "name": "create_license.py",
+          "path": "arrow-ballista.git/dev/create_license.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "arrow-ballista.git/dev/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ballista-benchmarks.Dockerfile": {
+              "name": "ballista-benchmarks.Dockerfile",
+              "path": "arrow-ballista.git/dev/docker/ballista-benchmarks.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "ballista-builder.Dockerfile": {
+              "name": "ballista-builder.Dockerfile",
+              "path": "arrow-ballista.git/dev/docker/ballista-builder.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "ballista-executor.Dockerfile": {
+              "name": "ballista-executor.Dockerfile",
+              "path": "arrow-ballista.git/dev/docker/ballista-executor.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "ballista-scheduler.Dockerfile": {
+              "name": "ballista-scheduler.Dockerfile",
+              "path": "arrow-ballista.git/dev/docker/ballista-scheduler.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "ballista-standalone.Dockerfile": {
+              "name": "ballista-standalone.Dockerfile",
+              "path": "arrow-ballista.git/dev/docker/ballista-standalone.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "builder-entrypoint.sh": {
+              "name": "builder-entrypoint.sh",
+              "path": "arrow-ballista.git/dev/docker/builder-entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "executor-entrypoint.sh": {
+              "name": "executor-entrypoint.sh",
+              "path": "arrow-ballista.git/dev/docker/executor-entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nginx.conf": {
+              "name": "nginx.conf",
+              "path": "arrow-ballista.git/dev/docker/nginx.conf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "scheduler-entrypoint.sh": {
+              "name": "scheduler-entrypoint.sh",
+              "path": "arrow-ballista.git/dev/docker/scheduler-entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "standalone-entrypoint.sh": {
+              "name": "standalone-entrypoint.sh",
+              "path": "arrow-ballista.git/dev/docker/standalone-entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "integration-tests.sh": {
+          "name": "integration-tests.sh",
+          "path": "arrow-ballista.git/dev/integration-tests.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "release": {
+          "name": "release",
+          "path": "arrow-ballista.git/dev/release",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "arrow-ballista.git/dev/release/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "check-rat-report.py": {
+              "name": "check-rat-report.py",
+              "path": "arrow-ballista.git/dev/release/check-rat-report.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "crate-deps.dot": {
+              "name": "crate-deps.dot",
+              "path": "arrow-ballista.git/dev/release/crate-deps.dot",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "crate-deps.svg": {
+              "name": "crate-deps.svg",
+              "path": "arrow-ballista.git/dev/release/crate-deps.svg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "create-tarball.sh": {
+              "name": "create-tarball.sh",
+              "path": "arrow-ballista.git/dev/release/create-tarball.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "download-python-wheels.py": {
+              "name": "download-python-wheels.py",
+              "path": "arrow-ballista.git/dev/release/download-python-wheels.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rat_exclude_files.txt": {
+              "name": "rat_exclude_files.txt",
+              "path": "arrow-ballista.git/dev/release/rat_exclude_files.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "release-tarball.sh": {
+              "name": "release-tarball.sh",
+              "path": "arrow-ballista.git/dev/release/release-tarball.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run-rat.sh": {
+              "name": "run-rat.sh",
+              "path": "arrow-ballista.git/dev/release/run-rat.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update_change_log-ballista.sh": {
+              "name": "update_change_log-ballista.sh",
+              "path": "arrow-ballista.git/dev/release/update_change_log-ballista.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update_change_log.sh": {
+              "name": "update_change_log.sh",
+              "path": "arrow-ballista.git/dev/release/update_change_log.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "verify-release-candidate.sh": {
+              "name": "verify-release-candidate.sh",
+              "path": "arrow-ballista.git/dev/release/verify-release-candidate.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "rust_lint.sh": {
+          "name": "rust_lint.sh",
+          "path": "arrow-ballista.git/dev/rust_lint.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "update_arrow_deps.py": {
+          "name": "update_arrow_deps.py",
+          "path": "arrow-ballista.git/dev/update_arrow_deps.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "update_ballista_versions.py": {
+          "name": "update_ballista_versions.py",
+          "path": "arrow-ballista.git/dev/update_ballista_versions.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "update_datafusion_versions.py": {
+          "name": "update_datafusion_versions.py",
+          "path": "arrow-ballista.git/dev/update_datafusion_versions.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "docker-compose.yml": {
+      "name": "docker-compose.yml",
+      "path": "arrow-ballista.git/docker-compose.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "docs": {
+      "name": "docs",
+      "path": "arrow-ballista.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "arrow-ballista.git/docs/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Makefile": {
+          "name": "Makefile",
+          "path": "arrow-ballista.git/docs/Makefile",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "arrow-ballista.git/docs/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build.sh": {
+          "name": "build.sh",
+          "path": "arrow-ballista.git/docs/build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "developer": {
+          "name": "developer",
+          "path": "arrow-ballista.git/docs/developer",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "arrow-ballista.git/docs/developer/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "architecture.md": {
+              "name": "architecture.md",
+              "path": "arrow-ballista.git/docs/developer/architecture.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "configuration.md": {
+              "name": "configuration.md",
+              "path": "arrow-ballista.git/docs/developer/configuration.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dev-env.md": {
+              "name": "dev-env.md",
+              "path": "arrow-ballista.git/docs/developer/dev-env.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "images": {
+              "name": "images",
+              "path": "arrow-ballista.git/docs/developer/images",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "query-execution.png": {
+                  "name": "query-execution.png",
+                  "path": "arrow-ballista.git/docs/developer/images/query-execution.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "integration-testing.md": {
+              "name": "integration-testing.md",
+              "path": "arrow-ballista.git/docs/developer/integration-testing.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "make.bat": {
+          "name": "make.bat",
+          "path": "arrow-ballista.git/docs/make.bat",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "requirements.txt": {
+          "name": "requirements.txt",
+          "path": "arrow-ballista.git/docs/requirements.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "source": {
+          "name": "source",
+          "path": "arrow-ballista.git/docs/source",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "_static": {
+              "name": "_static",
+              "path": "arrow-ballista.git/docs/source/_static",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "images": {
+                  "name": "images",
+                  "path": "arrow-ballista.git/docs/source/_static/images",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ballista-logo.png": {
+                      "name": "ballista-logo.png",
+                      "path": "arrow-ballista.git/docs/source/_static/images/ballista-logo.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "theme_overrides.css": {
+                  "name": "theme_overrides.css",
+                  "path": "arrow-ballista.git/docs/source/_static/theme_overrides.css",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "_templates": {
+              "name": "_templates",
+              "path": "arrow-ballista.git/docs/source/_templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "docs-sidebar.html": {
+                  "name": "docs-sidebar.html",
+                  "path": "arrow-ballista.git/docs/source/_templates/docs-sidebar.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "layout.html": {
+                  "name": "layout.html",
+                  "path": "arrow-ballista.git/docs/source/_templates/layout.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "community": {
+              "name": "community",
+              "path": "arrow-ballista.git/docs/source/community",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "communication.md": {
+                  "name": "communication.md",
+                  "path": "arrow-ballista.git/docs/source/community/communication.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "conf.py": {
+              "name": "conf.py",
+              "path": "arrow-ballista.git/docs/source/conf.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "index.rst": {
+              "name": "index.rst",
+              "path": "arrow-ballista.git/docs/source/index.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "user-guide": {
+              "name": "user-guide",
+              "path": "arrow-ballista.git/docs/source/user-guide",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cli.md": {
+                  "name": "cli.md",
+                  "path": "arrow-ballista.git/docs/source/user-guide/cli.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "configs.md": {
+                  "name": "configs.md",
+                  "path": "arrow-ballista.git/docs/source/user-guide/configs.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment": {
+                  "name": "deployment",
+                  "path": "arrow-ballista.git/docs/source/user-guide/deployment",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "cargo-install.md": {
+                      "name": "cargo-install.md",
+                      "path": "arrow-ballista.git/docs/source/user-guide/deployment/cargo-install.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker-compose.md": {
+                      "name": "docker-compose.md",
+                      "path": "arrow-ballista.git/docs/source/user-guide/deployment/docker-compose.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "docker.md": {
+                      "name": "docker.md",
+                      "path": "arrow-ballista.git/docs/source/user-guide/deployment/docker.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "index.rst": {
+                      "name": "index.rst",
+                      "path": "arrow-ballista.git/docs/source/user-guide/deployment/index.rst",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "kubernetes.md": {
+                      "name": "kubernetes.md",
+                      "path": "arrow-ballista.git/docs/source/user-guide/deployment/kubernetes.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "faq.md": {
+                  "name": "faq.md",
+                  "path": "arrow-ballista.git/docs/source/user-guide/faq.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "flightsql.md": {
+                  "name": "flightsql.md",
+                  "path": "arrow-ballista.git/docs/source/user-guide/flightsql.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "images": {
+                  "name": "images",
+                  "path": "arrow-ballista.git/docs/source/user-guide/images",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ballista-web-ui.png": {
+                      "name": "ballista-web-ui.png",
+                      "path": "arrow-ballista.git/docs/source/user-guide/images/ballista-web-ui.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "example-query-plan.png": {
+                      "name": "example-query-plan.png",
+                      "path": "arrow-ballista.git/docs/source/user-guide/images/example-query-plan.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "introduction.md": {
+                  "name": "introduction.md",
+                  "path": "arrow-ballista.git/docs/source/user-guide/introduction.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "metrics.md": {
+                  "name": "metrics.md",
+                  "path": "arrow-ballista.git/docs/source/user-guide/metrics.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "python.md": {
+                  "name": "python.md",
+                  "path": "arrow-ballista.git/docs/source/user-guide/python.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rust.md": {
+                  "name": "rust.md",
+                  "path": "arrow-ballista.git/docs/source/user-guide/rust.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scheduler.md": {
+                  "name": "scheduler.md",
+                  "path": "arrow-ballista.git/docs/source/user-guide/scheduler.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tuning-guide.md": {
+                  "name": "tuning-guide.md",
+                  "path": "arrow-ballista.git/docs/source/user-guide/tuning-guide.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "examples": {
+      "name": "examples",
+      "path": "arrow-ballista.git/examples",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "arrow-ballista.git/examples/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "arrow-ballista.git/examples/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "examples": {
+          "name": "examples",
+          "path": "arrow-ballista.git/examples/examples",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "standalone-sql.rs": {
+              "name": "standalone-sql.rs",
+              "path": "arrow-ballista.git/examples/examples/standalone-sql.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "src": {
+          "name": "src",
+          "path": "arrow-ballista.git/examples/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bin": {
+              "name": "bin",
+              "path": "arrow-ballista.git/examples/src/bin",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "dataframe.rs": {
+                  "name": "dataframe.rs",
+                  "path": "arrow-ballista.git/examples/src/bin/dataframe.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sql.rs": {
+                  "name": "sql.rs",
+                  "path": "arrow-ballista.git/examples/src/bin/sql.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "testdata": {
+          "name": "testdata",
+          "path": "arrow-ballista.git/examples/testdata",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "aggregate_test_100.csv": {
+              "name": "aggregate_test_100.csv",
+              "path": "arrow-ballista.git/examples/testdata/aggregate_test_100.csv",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "alltypes_plain.parquet": {
+              "name": "alltypes_plain.parquet",
+              "path": "arrow-ballista.git/examples/testdata/alltypes_plain.parquet",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "header": {
+      "name": "header",
+      "path": "arrow-ballista.git/header",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "helm": {
+      "name": "helm",
+      "path": "arrow-ballista.git/helm",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "arrow-ballista.git/helm/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ballista": {
+          "name": "ballista",
+          "path": "arrow-ballista.git/helm/ballista",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".gitignore": {
+              "name": ".gitignore",
+              "path": "arrow-ballista.git/helm/ballista/.gitignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            ".helmignore": {
+              "name": ".helmignore",
+              "path": "arrow-ballista.git/helm/ballista/.helmignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Chart.lock": {
+              "name": "Chart.lock",
+              "path": "arrow-ballista.git/helm/ballista/Chart.lock",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Chart.yaml": {
+              "name": "Chart.yaml",
+              "path": "arrow-ballista.git/helm/ballista/Chart.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "arrow-ballista.git/helm/ballista/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "NOTES.txt": {
+                  "name": "NOTES.txt",
+                  "path": "arrow-ballista.git/helm/ballista/templates/NOTES.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers.tpl": {
+                  "name": "_helpers.tpl",
+                  "path": "arrow-ballista.git/helm/ballista/templates/_helpers.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "executor.yaml": {
+                  "name": "executor.yaml",
+                  "path": "arrow-ballista.git/helm/ballista/templates/executor.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "hpa.yaml": {
+                  "name": "hpa.yaml",
+                  "path": "arrow-ballista.git/helm/ballista/templates/hpa.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ingress.yaml": {
+                  "name": "ingress.yaml",
+                  "path": "arrow-ballista.git/helm/ballista/templates/ingress.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scheduler.yaml": {
+                  "name": "scheduler.yaml",
+                  "path": "arrow-ballista.git/helm/ballista/templates/scheduler.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "serviceaccount.yaml": {
+                  "name": "serviceaccount.yaml",
+                  "path": "arrow-ballista.git/helm/ballista/templates/serviceaccount.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests": {
+                  "name": "tests",
+                  "path": "arrow-ballista.git/helm/ballista/templates/tests",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "test-connection.yaml": {
+                      "name": "test-connection.yaml",
+                      "path": "arrow-ballista.git/helm/ballista/templates/tests/test-connection.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "values.yaml": {
+              "name": "values.yaml",
+              "path": "arrow-ballista.git/helm/ballista/values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "pre-commit.sh": {
+      "name": "pre-commit.sh",
+      "path": "arrow-ballista.git/pre-commit.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "python": {
+      "name": "python",
+      "path": "arrow-ballista.git/python",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".cargo": {
+          "name": ".cargo",
+          "path": "arrow-ballista.git/python/.cargo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config": {
+              "name": "config",
+              "path": "arrow-ballista.git/python/.cargo/config",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        ".dockerignore": {
+          "name": ".dockerignore",
+          "path": "arrow-ballista.git/python/.dockerignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "arrow-ballista.git/python/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "CHANGELOG.md": {
+          "name": "CHANGELOG.md",
+          "path": "arrow-ballista.git/python/CHANGELOG.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "arrow-ballista.git/python/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "LICENSE.txt": {
+          "name": "LICENSE.txt",
+          "path": "arrow-ballista.git/python/LICENSE.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "arrow-ballista.git/python/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ballista": {
+          "name": "ballista",
+          "path": "arrow-ballista.git/python/ballista",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "__init__.py": {
+              "name": "__init__.py",
+              "path": "arrow-ballista.git/python/ballista/__init__.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "functions.py": {
+              "name": "functions.py",
+              "path": "arrow-ballista.git/python/ballista/functions.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tests": {
+              "name": "tests",
+              "path": "arrow-ballista.git/python/ballista/tests",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "__init__.py": {
+                  "name": "__init__.py",
+                  "path": "arrow-ballista.git/python/ballista/tests/__init__.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "generic.py": {
+                  "name": "generic.py",
+                  "path": "arrow-ballista.git/python/ballista/tests/generic.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "test_aggregation.py": {
+                  "name": "test_aggregation.py",
+                  "path": "arrow-ballista.git/python/ballista/tests/test_aggregation.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "test_catalog.py": {
+                  "name": "test_catalog.py",
+                  "path": "arrow-ballista.git/python/ballista/tests/test_catalog.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "test_context.py": {
+                  "name": "test_context.py",
+                  "path": "arrow-ballista.git/python/ballista/tests/test_context.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "test_dataframe.py": {
+                  "name": "test_dataframe.py",
+                  "path": "arrow-ballista.git/python/ballista/tests/test_dataframe.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "test_functions.py": {
+                  "name": "test_functions.py",
+                  "path": "arrow-ballista.git/python/ballista/tests/test_functions.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "test_imports.py": {
+                  "name": "test_imports.py",
+                  "path": "arrow-ballista.git/python/ballista/tests/test_imports.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "test_sql.py": {
+                  "name": "test_sql.py",
+                  "path": "arrow-ballista.git/python/ballista/tests/test_sql.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "test_udaf.py": {
+                  "name": "test_udaf.py",
+                  "path": "arrow-ballista.git/python/ballista/tests/test_udaf.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "pyproject.toml": {
+          "name": "pyproject.toml",
+          "path": "arrow-ballista.git/python/pyproject.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "requirements-310.txt": {
+          "name": "requirements-310.txt",
+          "path": "arrow-ballista.git/python/requirements-310.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "requirements-37.txt": {
+          "name": "requirements-37.txt",
+          "path": "arrow-ballista.git/python/requirements-37.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "requirements.in": {
+          "name": "requirements.in",
+          "path": "arrow-ballista.git/python/requirements.in",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "requirements.txt": {
+          "name": "requirements.txt",
+          "path": "arrow-ballista.git/python/requirements.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "arrow-ballista.git/python/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ballista_context.rs": {
+              "name": "ballista_context.rs",
+              "path": "arrow-ballista.git/python/src/ballista_context.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "catalog.rs": {
+              "name": "catalog.rs",
+              "path": "arrow-ballista.git/python/src/catalog.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "context.rs": {
+              "name": "context.rs",
+              "path": "arrow-ballista.git/python/src/context.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dataframe.rs": {
+              "name": "dataframe.rs",
+              "path": "arrow-ballista.git/python/src/dataframe.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dataset.rs": {
+              "name": "dataset.rs",
+              "path": "arrow-ballista.git/python/src/dataset.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dataset_exec.rs": {
+              "name": "dataset_exec.rs",
+              "path": "arrow-ballista.git/python/src/dataset_exec.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "datatype.rs": {
+              "name": "datatype.rs",
+              "path": "arrow-ballista.git/python/src/datatype.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "errors.rs": {
+              "name": "errors.rs",
+              "path": "arrow-ballista.git/python/src/errors.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "expression.rs": {
+              "name": "expression.rs",
+              "path": "arrow-ballista.git/python/src/expression.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "functions.rs": {
+              "name": "functions.rs",
+              "path": "arrow-ballista.git/python/src/functions.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lib.rs": {
+              "name": "lib.rs",
+              "path": "arrow-ballista.git/python/src/lib.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pyarrow_filter_expression.rs": {
+              "name": "pyarrow_filter_expression.rs",
+              "path": "arrow-ballista.git/python/src/pyarrow_filter_expression.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "udaf.rs": {
+              "name": "udaf.rs",
+              "path": "arrow-ballista.git/python/src/udaf.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "udf.rs": {
+              "name": "udf.rs",
+              "path": "arrow-ballista.git/python/src/udf.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "utils.rs": {
+              "name": "utils.rs",
+              "path": "arrow-ballista.git/python/src/utils.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "rustfmt.toml": {
+      "name": "rustfmt.toml",
+      "path": "arrow-ballista.git/rustfmt.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    }
+  },
+  "info": {
+    "id": 494107715,
+    "name": "arrow-ballista",
+    "full_name": "apache/arrow-ballista",
+    "owner": {
+      "login": "apache",
+      "html_url": "https://github.com/apache",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/apache/arrow-ballista",
+    "description": "Apache Arrow Ballista Distributed Query Engine",
+    "url": "https://api.github.com/repos/apache/arrow-ballista",
+    "clone_url": "https://github.com/apache/arrow-ballista.git",
+    "homepage": "https://arrow.apache.org/ballista",
+    "size": 17984,
+    "stargazers_count": 440,
+    "watchers_count": 440,
+    "language": "Rust"
+  }
+}
