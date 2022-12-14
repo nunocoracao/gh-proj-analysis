@@ -4,6 +4,11 @@ const githubSearchRepos = require('./src/ghCrawler.js');
 var utils = require('./src/utils');
 
 var searchQueries = [
+    'dockerfile',
+    'compose',
+    'docker',
+    'docker compose',
+    'kubernetes',
     'javascript',
     'go',
     'java',
@@ -24,9 +29,6 @@ var searchQueries = [
     'ruby',
     'swift',
     'scala',
-    'docker',
-    'compose',
-    'kubernetes',
     'sample',
     'api',
     'ml'
