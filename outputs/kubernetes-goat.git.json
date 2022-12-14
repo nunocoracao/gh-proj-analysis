@@ -1,0 +1,3326 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 14,
+      "rootCount": 0,
+      "subFolderCount": 14,
+      "filepaths": [
+        "kubernetes-goat.git/infrastructure/batch-check/Dockerfile",
+        "kubernetes-goat.git/infrastructure/build-code/Dockerfile",
+        "kubernetes-goat.git/infrastructure/cache-store/Dockerfile",
+        "kubernetes-goat.git/infrastructure/goat-home/Dockerfile",
+        "kubernetes-goat.git/infrastructure/health-check/Dockerfile",
+        "kubernetes-goat.git/infrastructure/helm-tiller/Dockerfile",
+        "kubernetes-goat.git/infrastructure/hidden-in-layers/Dockerfile",
+        "kubernetes-goat.git/infrastructure/hunger-check/Dockerfile",
+        "kubernetes-goat.git/infrastructure/info-app/Dockerfile",
+        "kubernetes-goat.git/infrastructure/internal-api/Dockerfile",
+        "kubernetes-goat.git/infrastructure/metadata-db/Dockerfile",
+        "kubernetes-goat.git/infrastructure/poor-registry/Dockerfile",
+        "kubernetes-goat.git/infrastructure/system-monitor/Dockerfile",
+        "kubernetes-goat.git/infrastructure/users-repo/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".git": {
+      "name": ".git",
+      "path": "kubernetes-goat.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "kubernetes-goat.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "kubernetes-goat.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "kubernetes-goat.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "kubernetes-goat.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "kubernetes-goat.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "kubernetes-goat.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "kubernetes-goat.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "kubernetes-goat.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "kubernetes-goat.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "kubernetes-goat.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "kubernetes-goat.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "kubernetes-goat.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "kubernetes-goat.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "kubernetes-goat.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "kubernetes-goat.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "kubernetes-goat.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "kubernetes-goat.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "kubernetes-goat.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "kubernetes-goat.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "kubernetes-goat.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "kubernetes-goat.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "kubernetes-goat.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "kubernetes-goat.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "kubernetes-goat.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "kubernetes-goat.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "kubernetes-goat.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "kubernetes-goat.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "kubernetes-goat.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "kubernetes-goat.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "kubernetes-goat.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "kubernetes-goat.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-8041efb12c78114bbfe828750bc091a0dcf984a4.idx": {
+                  "name": "pack-8041efb12c78114bbfe828750bc091a0dcf984a4.idx",
+                  "path": "kubernetes-goat.git/.git/objects/pack/pack-8041efb12c78114bbfe828750bc091a0dcf984a4.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-8041efb12c78114bbfe828750bc091a0dcf984a4.pack": {
+                  "name": "pack-8041efb12c78114bbfe828750bc091a0dcf984a4.pack",
+                  "path": "kubernetes-goat.git/.git/objects/pack/pack-8041efb12c78114bbfe828750bc091a0dcf984a4.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "kubernetes-goat.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "kubernetes-goat.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "kubernetes-goat.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "kubernetes-goat.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "kubernetes-goat.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "kubernetes-goat.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "kubernetes-goat.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "kubernetes-goat.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "kubernetes-goat.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "kubernetes-goat.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "kubernetes-goat.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "access-kubernetes-goat.sh": {
+      "name": "access-kubernetes-goat.sh",
+      "path": "kubernetes-goat.git/access-kubernetes-goat.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "guide": {
+      "name": "guide",
+      "path": "kubernetes-goat.git/guide",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "kubernetes-goat.git/guide/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "kubernetes-goat.git/guide/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "babel.config.js": {
+          "name": "babel.config.js",
+          "path": "kubernetes-goat.git/guide/babel.config.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docs": {
+          "name": "docs",
+          "path": "kubernetes-goat.git/guide/docs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "acknowledgments.md": {
+              "name": "acknowledgments.md",
+              "path": "kubernetes-goat.git/guide/docs/acknowledgments.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "architecture.md": {
+              "name": "architecture.md",
+              "path": "kubernetes-goat.git/guide/docs/architecture.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cheatsheet.md": {
+              "name": "cheatsheet.md",
+              "path": "kubernetes-goat.git/guide/docs/cheatsheet.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "community.md": {
+              "name": "community.md",
+              "path": "kubernetes-goat.git/guide/docs/community.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "faq.md": {
+              "name": "faq.md",
+              "path": "kubernetes-goat.git/guide/docs/faq.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "getting-involved": {
+              "name": "getting-involved",
+              "path": "kubernetes-goat.git/guide/docs/getting-involved",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.md": {
+                  "name": "index.md",
+                  "path": "kubernetes-goat.git/guide/docs/getting-involved/index.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "getting-started.md": {
+              "name": "getting-started.md",
+              "path": "kubernetes-goat.git/guide/docs/getting-started.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "how-to-run": {
+              "name": "how-to-run",
+              "path": "kubernetes-goat.git/guide/docs/how-to-run",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "aws-ec2-kind-cdk.md": {
+                  "name": "aws-ec2-kind-cdk.md",
+                  "path": "kubernetes-goat.git/guide/docs/how-to-run/aws-ec2-kind-cdk.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "aws.md": {
+                  "name": "aws.md",
+                  "path": "kubernetes-goat.git/guide/docs/how-to-run/aws.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "azure.md": {
+                  "name": "azure.md",
+                  "path": "kubernetes-goat.git/guide/docs/how-to-run/azure.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "gcp.md": {
+                  "name": "gcp.md",
+                  "path": "kubernetes-goat.git/guide/docs/how-to-run/gcp.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "images": {
+                  "name": "images",
+                  "path": "kubernetes-goat.git/guide/docs/how-to-run/images",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "gke-cloudshell.jpg": {
+                      "name": "gke-cloudshell.jpg",
+                      "path": "kubernetes-goat.git/guide/docs/how-to-run/images/gke-cloudshell.jpg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "kubectl-check.png": {
+                      "name": "kubectl-check.png",
+                      "path": "kubernetes-goat.git/guide/docs/how-to-run/images/kubectl-check.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "kubectl-version-check.jpg": {
+                      "name": "kubectl-version-check.jpg",
+                      "path": "kubernetes-goat.git/guide/docs/how-to-run/images/kubectl-version-check.jpg",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "kubernetes-goat-katacoda.png": {
+                      "name": "kubernetes-goat-katacoda.png",
+                      "path": "kubernetes-goat.git/guide/docs/how-to-run/images/kubernetes-goat-katacoda.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "index.md": {
+                  "name": "index.md",
+                  "path": "kubernetes-goat.git/guide/docs/how-to-run/index.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "k3s.md": {
+                  "name": "k3s.md",
+                  "path": "kubernetes-goat.git/guide/docs/how-to-run/k3s.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kind.md": {
+                  "name": "kind.md",
+                  "path": "kubernetes-goat.git/guide/docs/how-to-run/kind.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kubernetes.md": {
+                  "name": "kubernetes.md",
+                  "path": "kubernetes-goat.git/guide/docs/how-to-run/kubernetes.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "index.md": {
+              "name": "index.md",
+              "path": "kubernetes-goat.git/guide/docs/index.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "learning-kubernetes": {
+              "name": "learning-kubernetes",
+              "path": "kubernetes-goat.git/guide/docs/learning-kubernetes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "images": {
+                  "name": "images",
+                  "path": "kubernetes-goat.git/guide/docs/learning-kubernetes/images",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "kubernetes-architecture.png": {
+                      "name": "kubernetes-architecture.png",
+                      "path": "kubernetes-goat.git/guide/docs/learning-kubernetes/images/kubernetes-architecture.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "index.md": {
+                  "name": "index.md",
+                  "path": "kubernetes-goat.git/guide/docs/learning-kubernetes/index.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "miscellaneous": {
+              "name": "miscellaneous",
+              "path": "kubernetes-goat.git/guide/docs/miscellaneous",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.md": {
+                  "name": "index.md",
+                  "path": "kubernetes-goat.git/guide/docs/miscellaneous/index.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "resources.md": {
+              "name": "resources.md",
+              "path": "kubernetes-goat.git/guide/docs/resources.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "scenarios": {
+              "name": "scenarios",
+              "path": "kubernetes-goat.git/guide/docs/scenarios",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "images": {
+                  "name": "images",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/images",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "access-kubernetes-goat.png": {
+                      "name": "access-kubernetes-goat.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/access-kubernetes-goat.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "hacker-container.png": {
+                      "name": "hacker-container.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/hacker-container.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "kubectl-get-pods.png": {
+                      "name": "kubectl-get-pods.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/kubectl-get-pods.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "kubernetes-goat-architecture.png": {
+                      "name": "kubernetes-goat-architecture.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/kubernetes-goat-architecture.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "kubernetes-goat-home.png": {
+                      "name": "kubernetes-goat-home.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/kubernetes-goat-home.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-1-1.png": {
+                      "name": "sc-1-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-1-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-1-2.png": {
+                      "name": "sc-1-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-1-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-1-3.png": {
+                      "name": "sc-1-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-1-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-1-4.png": {
+                      "name": "sc-1-4.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-1-4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-1-5.png": {
+                      "name": "sc-1-5.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-1-5.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-1-6.png": {
+                      "name": "sc-1-6.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-1-6.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-1-7.png": {
+                      "name": "sc-1-7.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-1-7.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-10-1.png": {
+                      "name": "sc-10-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-10-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-10-2.png": {
+                      "name": "sc-10-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-10-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-10-3.png": {
+                      "name": "sc-10-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-10-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-10-4.png": {
+                      "name": "sc-10-4.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-10-4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-11-1.png": {
+                      "name": "sc-11-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-11-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-11-2.png": {
+                      "name": "sc-11-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-11-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-11-3.png": {
+                      "name": "sc-11-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-11-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-11-4.png": {
+                      "name": "sc-11-4.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-11-4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-11-5.png": {
+                      "name": "sc-11-5.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-11-5.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-12-1.png": {
+                      "name": "sc-12-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-12-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-12-2.png": {
+                      "name": "sc-12-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-12-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-12-3.png": {
+                      "name": "sc-12-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-12-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-13-1.png": {
+                      "name": "sc-13-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-13-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-13-2.png": {
+                      "name": "sc-13-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-13-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-13-3.png": {
+                      "name": "sc-13-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-13-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-14-1.png": {
+                      "name": "sc-14-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-14-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-14-2.png": {
+                      "name": "sc-14-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-14-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-14-3.png": {
+                      "name": "sc-14-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-14-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-15-0.png": {
+                      "name": "sc-15-0.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-15-0.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-15-1.png": {
+                      "name": "sc-15-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-15-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-15-2.png": {
+                      "name": "sc-15-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-15-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-15-3.png": {
+                      "name": "sc-15-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-15-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-15-4-0.png": {
+                      "name": "sc-15-4-0.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-15-4-0.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-15-4-1.png": {
+                      "name": "sc-15-4-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-15-4-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-15-5.png": {
+                      "name": "sc-15-5.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-15-5.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-15-6.png": {
+                      "name": "sc-15-6.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-15-6.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-15-7.png": {
+                      "name": "sc-15-7.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-15-7.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-16-1.png": {
+                      "name": "sc-16-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-16-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-16-2.png": {
+                      "name": "sc-16-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-16-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-16-3.png": {
+                      "name": "sc-16-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-16-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-16-4.png": {
+                      "name": "sc-16-4.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-16-4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-16-5.png": {
+                      "name": "sc-16-5.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-16-5.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-16-6.png": {
+                      "name": "sc-16-6.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-16-6.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-16-7.png": {
+                      "name": "sc-16-7.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-16-7.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-17-1.png": {
+                      "name": "sc-17-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-17-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-18-1.png": {
+                      "name": "sc-18-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-18-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-18-2.png": {
+                      "name": "sc-18-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-18-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-18-3.png": {
+                      "name": "sc-18-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-18-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-19-1.png": {
+                      "name": "sc-19-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-19-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-1_1.png": {
+                      "name": "sc-1_1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-1_1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-1_2.png": {
+                      "name": "sc-1_2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-1_2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-2-1.png": {
+                      "name": "sc-2-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-2-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-2-2.png": {
+                      "name": "sc-2-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-2-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-2-3.png": {
+                      "name": "sc-2-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-2-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-2-4.png": {
+                      "name": "sc-2-4.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-2-4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-2-5.png": {
+                      "name": "sc-2-5.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-2-5.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-2-6.png": {
+                      "name": "sc-2-6.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-2-6.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-2-7.png": {
+                      "name": "sc-2-7.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-2-7.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-20-1.png": {
+                      "name": "sc-20-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-20-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-20-2.png": {
+                      "name": "sc-20-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-20-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-3-1.png": {
+                      "name": "sc-3-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-3-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-3-2.png": {
+                      "name": "sc-3-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-3-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-3-3.png": {
+                      "name": "sc-3-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-3-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-3-4.png": {
+                      "name": "sc-3-4.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-3-4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-3-5.png": {
+                      "name": "sc-3-5.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-3-5.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-4-1.png": {
+                      "name": "sc-4-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-4-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-4-2.png": {
+                      "name": "sc-4-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-4-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-4-3.png": {
+                      "name": "sc-4-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-4-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-4-4.png": {
+                      "name": "sc-4-4.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-4-4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-4-5.png": {
+                      "name": "sc-4-5.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-4-5.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-5-1.png": {
+                      "name": "sc-5-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-5-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-5-2.png": {
+                      "name": "sc-5-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-5-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-6-1.png": {
+                      "name": "sc-6-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-6-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-6-2.png": {
+                      "name": "sc-6-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-6-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-7-1.png": {
+                      "name": "sc-7-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-7-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-7-2.png": {
+                      "name": "sc-7-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-7-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-7-3.png": {
+                      "name": "sc-7-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-7-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-7-4.png": {
+                      "name": "sc-7-4.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-7-4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-8-1.png": {
+                      "name": "sc-8-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-8-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-8-2.png": {
+                      "name": "sc-8-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-8-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-9-1.png": {
+                      "name": "sc-9-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-9-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-9-2.png": {
+                      "name": "sc-9-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-9-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-9-3.png": {
+                      "name": "sc-9-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-9-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-9-4.png": {
+                      "name": "sc-9-4.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-9-4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-9-5.png": {
+                      "name": "sc-9-5.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-9-5.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "sc-9-6.png": {
+                      "name": "sc-9-6.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/sc-9-6.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-1.png": {
+                      "name": "scenario-1.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/scenario-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-11.png": {
+                      "name": "scenario-11.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/scenario-11.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-2.png": {
+                      "name": "scenario-2.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/scenario-2.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-20.png": {
+                      "name": "scenario-20.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/scenario-20.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-3.png": {
+                      "name": "scenario-3.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/scenario-3.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-4.png": {
+                      "name": "scenario-4.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/scenario-4.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-5.png": {
+                      "name": "scenario-5.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/scenario-5.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-6.png": {
+                      "name": "scenario-6.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/scenario-6.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-7.png": {
+                      "name": "scenario-7.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/scenario-7.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-8.png": {
+                      "name": "scenario-8.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/scenario-8.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-diagram-wip.png": {
+                      "name": "scenario-diagram-wip.png",
+                      "path": "kubernetes-goat.git/guide/docs/scenarios/images/scenario-diagram-wip.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "scenario-1.md": {
+                  "name": "scenario-1.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-1.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-10.md": {
+                  "name": "scenario-10.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-10.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-11.md": {
+                  "name": "scenario-11.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-11.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-12.md": {
+                  "name": "scenario-12.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-12.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-13.md": {
+                  "name": "scenario-13.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-13.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-14.md": {
+                  "name": "scenario-14.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-14.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-15.md": {
+                  "name": "scenario-15.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-15.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-16.md": {
+                  "name": "scenario-16.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-16.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-17.md": {
+                  "name": "scenario-17.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-17.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-18.md": {
+                  "name": "scenario-18.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-18.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-19.md": {
+                  "name": "scenario-19.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-19.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-2.md": {
+                  "name": "scenario-2.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-2.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-20.md": {
+                  "name": "scenario-20.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-20.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-3.md": {
+                  "name": "scenario-3.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-3.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-4.md": {
+                  "name": "scenario-4.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-4.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-5.md": {
+                  "name": "scenario-5.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-5.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-6.md": {
+                  "name": "scenario-6.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-6.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-7.md": {
+                  "name": "scenario-7.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-7.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-8.md": {
+                  "name": "scenario-8.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-8.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "scenario-9.md": {
+                  "name": "scenario-9.md",
+                  "path": "kubernetes-goat.git/guide/docs/scenarios/scenario-9.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "security-reports": {
+              "name": "security-reports",
+              "path": "kubernetes-goat.git/guide/docs/security-reports",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "checkov.md": {
+                  "name": "checkov.md",
+                  "path": "kubernetes-goat.git/guide/docs/security-reports/checkov.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kics.md": {
+                  "name": "kics.md",
+                  "path": "kubernetes-goat.git/guide/docs/security-reports/kics.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kubescape.md": {
+                  "name": "kubescape.md",
+                  "path": "kubernetes-goat.git/guide/docs/security-reports/kubescape.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "showcase.md": {
+              "name": "showcase.md",
+              "path": "kubernetes-goat.git/guide/docs/showcase.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sponsors.md": {
+              "name": "sponsors.md",
+              "path": "kubernetes-goat.git/guide/docs/sponsors.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "teardown.md": {
+              "name": "teardown.md",
+              "path": "kubernetes-goat.git/guide/docs/teardown.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "troubleshooting": {
+              "name": "troubleshooting",
+              "path": "kubernetes-goat.git/guide/docs/troubleshooting",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.md": {
+                  "name": "index.md",
+                  "path": "kubernetes-goat.git/guide/docs/troubleshooting/index.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "wall-of-love.md": {
+              "name": "wall-of-love.md",
+              "path": "kubernetes-goat.git/guide/docs/wall-of-love.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "why.md": {
+              "name": "why.md",
+              "path": "kubernetes-goat.git/guide/docs/why.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "docusaurus.config.js": {
+          "name": "docusaurus.config.js",
+          "path": "kubernetes-goat.git/guide/docusaurus.config.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "package.json": {
+          "name": "package.json",
+          "path": "kubernetes-goat.git/guide/package.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "sidebars.js": {
+          "name": "sidebars.js",
+          "path": "kubernetes-goat.git/guide/sidebars.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "kubernetes-goat.git/guide/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "components": {
+              "name": "components",
+              "path": "kubernetes-goat.git/guide/src/components",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "HomepageFeatures.module.css": {
+                  "name": "HomepageFeatures.module.css",
+                  "path": "kubernetes-goat.git/guide/src/components/HomepageFeatures.module.css",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "HomepageFeatures.tsx": {
+                  "name": "HomepageFeatures.tsx",
+                  "path": "kubernetes-goat.git/guide/src/components/HomepageFeatures.tsx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "css": {
+              "name": "css",
+              "path": "kubernetes-goat.git/guide/src/css",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "custom.css": {
+                  "name": "custom.css",
+                  "path": "kubernetes-goat.git/guide/src/css/custom.css",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pages": {
+              "name": "pages",
+              "path": "kubernetes-goat.git/guide/src/pages",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.module.css": {
+                  "name": "index.module.css",
+                  "path": "kubernetes-goat.git/guide/src/pages/index.module.css",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "index.tsx": {
+                  "name": "index.tsx",
+                  "path": "kubernetes-goat.git/guide/src/pages/index.tsx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "theme": {
+              "name": "theme",
+              "path": "kubernetes-goat.git/guide/src/theme",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "SearchBar": {
+                  "name": "SearchBar",
+                  "path": "kubernetes-goat.git/guide/src/theme/SearchBar",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "algolia.css": {
+                      "name": "algolia.css",
+                      "path": "kubernetes-goat.git/guide/src/theme/SearchBar/algolia.css",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "kubernetes-goat.git/guide/src/theme/SearchBar/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "lib": {
+                      "name": "lib",
+                      "path": "kubernetes-goat.git/guide/src/theme/SearchBar/lib",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "DocSearch.js": {
+                          "name": "DocSearch.js",
+                          "path": "kubernetes-goat.git/guide/src/theme/SearchBar/lib/DocSearch.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "lunar-search.js": {
+                          "name": "lunar-search.js",
+                          "path": "kubernetes-goat.git/guide/src/theme/SearchBar/lib/lunar-search.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "templates.js": {
+                          "name": "templates.js",
+                          "path": "kubernetes-goat.git/guide/src/theme/SearchBar/lib/templates.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "utils.js": {
+                          "name": "utils.js",
+                          "path": "kubernetes-goat.git/guide/src/theme/SearchBar/lib/utils.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "styles.css": {
+                      "name": "styles.css",
+                      "path": "kubernetes-goat.git/guide/src/theme/SearchBar/styles.css",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "static": {
+          "name": "static",
+          "path": "kubernetes-goat.git/guide/static",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".nojekyll": {
+              "name": ".nojekyll",
+              "path": "kubernetes-goat.git/guide/static/.nojekyll",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "img": {
+              "name": "img",
+              "path": "kubernetes-goat.git/guide/static/img",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "attackers-redteams.svg": {
+                  "name": "attackers-redteams.svg",
+                  "path": "kubernetes-goat.git/guide/static/img/attackers-redteams.svg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "defenders-blueteams.svg": {
+                  "name": "defenders-blueteams.svg",
+                  "path": "kubernetes-goat.git/guide/static/img/defenders-blueteams.svg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "developers-devopsteams.svg": {
+                  "name": "developers-devopsteams.svg",
+                  "path": "kubernetes-goat.git/guide/static/img/developers-devopsteams.svg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "discord-description.png": {
+                  "name": "discord-description.png",
+                  "path": "kubernetes-goat.git/guide/static/img/discord-description.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "discord-x-k8sgoat.jpg": {
+                  "name": "discord-x-k8sgoat.jpg",
+                  "path": "kubernetes-goat.git/guide/static/img/discord-x-k8sgoat.jpg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "everyone.svg": {
+                  "name": "everyone.svg",
+                  "path": "kubernetes-goat.git/guide/static/img/everyone.svg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "favicon.ico": {
+                  "name": "favicon.ico",
+                  "path": "kubernetes-goat.git/guide/static/img/favicon.ico",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kubernetes-goat-banner.png": {
+                  "name": "kubernetes-goat-banner.png",
+                  "path": "kubernetes-goat.git/guide/static/img/kubernetes-goat-banner.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kubernetes-goat-docs.png": {
+                  "name": "kubernetes-goat-docs.png",
+                  "path": "kubernetes-goat.git/guide/static/img/kubernetes-goat-docs.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kubernetes-goat.png": {
+                  "name": "kubernetes-goat.png",
+                  "path": "kubernetes-goat.git/guide/static/img/kubernetes-goat.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "products-vendors.svg": {
+                  "name": "products-vendors.svg",
+                  "path": "kubernetes-goat.git/guide/static/img/products-vendors.svg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kics-report.html": {
+              "name": "kics-report.html",
+              "path": "kubernetes-goat.git/guide/static/kics-report.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "robots.txt": {
+              "name": "robots.txt",
+              "path": "kubernetes-goat.git/guide/static/robots.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "tsconfig.json": {
+          "name": "tsconfig.json",
+          "path": "kubernetes-goat.git/guide/tsconfig.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "yarn.lock": {
+          "name": "yarn.lock",
+          "path": "kubernetes-goat.git/guide/yarn.lock",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "infrastructure": {
+      "name": "infrastructure",
+      "path": "kubernetes-goat.git/infrastructure",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "batch-check": {
+          "name": "batch-check",
+          "path": "kubernetes-goat.git/infrastructure/batch-check",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/batch-check/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/batch-check/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "build-code": {
+          "name": "build-code",
+          "path": "kubernetes-goat.git/infrastructure/build-code",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/build-code/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/build-code/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "app-arm64.tar.gz": {
+              "name": "app-arm64.tar.gz",
+              "path": "kubernetes-goat.git/infrastructure/build-code/app-arm64.tar.gz",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "app.tar.gz": {
+              "name": "app.tar.gz",
+              "path": "kubernetes-goat.git/infrastructure/build-code/app.tar.gz",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "cache-store": {
+          "name": "cache-store",
+          "path": "kubernetes-goat.git/infrastructure/cache-store",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/cache-store/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/cache-store/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "data.redis": {
+              "name": "data.redis",
+              "path": "kubernetes-goat.git/infrastructure/cache-store/data.redis",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "start-redis.sh": {
+              "name": "start-redis.sh",
+              "path": "kubernetes-goat.git/infrastructure/cache-store/start-redis.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "goat-home": {
+          "name": "goat-home",
+          "path": "kubernetes-goat.git/infrastructure/goat-home",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/goat-home/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/goat-home/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "home": {
+              "name": "home",
+              "path": "kubernetes-goat.git/infrastructure/goat-home/home",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".gitignore": {
+                  "name": ".gitignore",
+                  "path": "kubernetes-goat.git/infrastructure/goat-home/home/.gitignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "archetypes": {
+                  "name": "archetypes",
+                  "path": "kubernetes-goat.git/infrastructure/goat-home/home/archetypes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "default.md": {
+                      "name": "default.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/archetypes/default.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "config.toml": {
+                  "name": "config.toml",
+                  "path": "kubernetes-goat.git/infrastructure/goat-home/home/config.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "content": {
+                  "name": "content",
+                  "path": "kubernetes-goat.git/infrastructure/goat-home/home/content",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "introduction.md": {
+                      "name": "introduction.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/introduction.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-1.md": {
+                      "name": "scenario-1.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-1.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-10.md": {
+                      "name": "scenario-10.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-10.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-11.md": {
+                      "name": "scenario-11.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-11.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-12.md": {
+                      "name": "scenario-12.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-12.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-13.md": {
+                      "name": "scenario-13.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-13.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-14.md": {
+                      "name": "scenario-14.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-14.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-15.md": {
+                      "name": "scenario-15.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-15.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-16.md": {
+                      "name": "scenario-16.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-16.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-17.md": {
+                      "name": "scenario-17.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-17.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-18.md": {
+                      "name": "scenario-18.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-18.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-19.md": {
+                      "name": "scenario-19.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-19.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-2.md": {
+                      "name": "scenario-2.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-2.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-20.md": {
+                      "name": "scenario-20.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-20.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-3.md": {
+                      "name": "scenario-3.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-3.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-4.md": {
+                      "name": "scenario-4.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-4.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-5.md": {
+                      "name": "scenario-5.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-5.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-6.md": {
+                      "name": "scenario-6.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-6.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-7.md": {
+                      "name": "scenario-7.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-7.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-8.md": {
+                      "name": "scenario-8.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-8.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "scenario-9.md": {
+                      "name": "scenario-9.md",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/content/scenario-9.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "static": {
+                  "name": "static",
+                  "path": "kubernetes-goat.git/infrastructure/goat-home/home/static",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "kubernetes-goat-banner.png": {
+                      "name": "kubernetes-goat-banner.png",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/static/kubernetes-goat-banner.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "kubernetes-goat.png": {
+                      "name": "kubernetes-goat.png",
+                      "path": "kubernetes-goat.git/infrastructure/goat-home/home/static/kubernetes-goat.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "health-check": {
+          "name": "health-check",
+          "path": "kubernetes-goat.git/infrastructure/health-check",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".dockerignore": {
+              "name": ".dockerignore",
+              "path": "kubernetes-goat.git/infrastructure/health-check/.dockerignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/health-check/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/health-check/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "go.mod": {
+              "name": "go.mod",
+              "path": "kubernetes-goat.git/infrastructure/health-check/go.mod",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "go.sum": {
+              "name": "go.sum",
+              "path": "kubernetes-goat.git/infrastructure/health-check/go.sum",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "kubernetes-goat.git/infrastructure/health-check/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "views": {
+              "name": "views",
+              "path": "kubernetes-goat.git/infrastructure/health-check/views",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.html": {
+                  "name": "index.html",
+                  "path": "kubernetes-goat.git/infrastructure/health-check/views/index.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "helm-tiller": {
+          "name": "helm-tiller",
+          "path": "kubernetes-goat.git/infrastructure/helm-tiller",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/helm-tiller/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/helm-tiller/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pwnchart": {
+              "name": "pwnchart",
+              "path": "kubernetes-goat.git/infrastructure/helm-tiller/pwnchart",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Chart.yaml": {
+                  "name": "Chart.yaml",
+                  "path": "kubernetes-goat.git/infrastructure/helm-tiller/pwnchart/Chart.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "templates": {
+                  "name": "templates",
+                  "path": "kubernetes-goat.git/infrastructure/helm-tiller/pwnchart/templates",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "_helpers.tpl": {
+                      "name": "_helpers.tpl",
+                      "path": "kubernetes-goat.git/infrastructure/helm-tiller/pwnchart/templates/_helpers.tpl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "clusterrole.yaml": {
+                      "name": "clusterrole.yaml",
+                      "path": "kubernetes-goat.git/infrastructure/helm-tiller/pwnchart/templates/clusterrole.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "clusterrolebinding.yaml": {
+                      "name": "clusterrolebinding.yaml",
+                      "path": "kubernetes-goat.git/infrastructure/helm-tiller/pwnchart/templates/clusterrolebinding.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "values.yaml": {
+                  "name": "values.yaml",
+                  "path": "kubernetes-goat.git/infrastructure/helm-tiller/pwnchart/values.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "hidden-in-layers": {
+          "name": "hidden-in-layers",
+          "path": "kubernetes-goat.git/infrastructure/hidden-in-layers",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/hidden-in-layers/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/hidden-in-layers/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "secret.txt": {
+              "name": "secret.txt",
+              "path": "kubernetes-goat.git/infrastructure/hidden-in-layers/secret.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "hunger-check": {
+          "name": "hunger-check",
+          "path": "kubernetes-goat.git/infrastructure/hunger-check",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/hunger-check/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/hunger-check/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "info-app": {
+          "name": "info-app",
+          "path": "kubernetes-goat.git/infrastructure/info-app",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/info-app/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/info-app/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "app.py": {
+              "name": "app.py",
+              "path": "kubernetes-goat.git/infrastructure/info-app/app.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "internal-api": {
+          "name": "internal-api",
+          "path": "kubernetes-goat.git/infrastructure/internal-api",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".dockerignore": {
+              "name": ".dockerignore",
+              "path": "kubernetes-goat.git/infrastructure/internal-api/.dockerignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/internal-api/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/internal-api/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "code": {
+              "name": "code",
+              "path": "kubernetes-goat.git/infrastructure/internal-api/code",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".gitignore": {
+                  "name": ".gitignore",
+                  "path": "kubernetes-goat.git/infrastructure/internal-api/code/.gitignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "index.html": {
+                  "name": "index.html",
+                  "path": "kubernetes-goat.git/infrastructure/internal-api/code/index.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "package-lock.json": {
+                  "name": "package-lock.json",
+                  "path": "kubernetes-goat.git/infrastructure/internal-api/code/package-lock.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "package.json": {
+                  "name": "package.json",
+                  "path": "kubernetes-goat.git/infrastructure/internal-api/code/package.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "server.js": {
+                  "name": "server.js",
+                  "path": "kubernetes-goat.git/infrastructure/internal-api/code/server.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "metadata-db": {
+          "name": "metadata-db",
+          "path": "kubernetes-goat.git/infrastructure/metadata-db",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/metadata-db/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/metadata-db/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "go.mod": {
+              "name": "go.mod",
+              "path": "kubernetes-goat.git/infrastructure/metadata-db/go.mod",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "kubernetes-goat.git/infrastructure/metadata-db/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metadata": {
+              "name": "metadata",
+              "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "1.0": {
+                  "name": "1.0",
+                  "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/1.0",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "latest": {
+                  "name": "latest",
+                  "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/latest",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "events": {
+                      "name": "events",
+                      "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/latest/events",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "list": {
+                          "name": "list",
+                          "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/latest/events/list",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "1": {
+                              "name": "1",
+                              "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/latest/events/list/1",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "2": {
+                              "name": "2",
+                              "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/latest/events/list/2",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "3": {
+                              "name": "3",
+                              "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/latest/events/list/3",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "hostname": {
+                      "name": "hostname",
+                      "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/latest/hostname",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "latest": {
+                      "name": "latest",
+                      "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/latest/latest",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "profile": {
+                      "name": "profile",
+                      "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/latest/profile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "secrets": {
+                      "name": "secrets",
+                      "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/latest/secrets",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "info": {
+                          "name": "info",
+                          "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/latest/secrets/info",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "kubernetes-goat": {
+                          "name": "kubernetes-goat",
+                          "path": "kubernetes-goat.git/infrastructure/metadata-db/metadata/latest/secrets/kubernetes-goat",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "poor-registry": {
+          "name": "poor-registry",
+          "path": "kubernetes-goat.git/infrastructure/poor-registry",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/poor-registry/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/poor-registry/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config.yml": {
+              "name": "config.yml",
+              "path": "kubernetes-goat.git/infrastructure/poor-registry/config.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "v2.tar.gz": {
+              "name": "v2.tar.gz",
+              "path": "kubernetes-goat.git/infrastructure/poor-registry/v2.tar.gz",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "system-monitor": {
+          "name": "system-monitor",
+          "path": "kubernetes-goat.git/infrastructure/system-monitor",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/system-monitor/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/system-monitor/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "users-repo": {
+          "name": "users-repo",
+          "path": "kubernetes-goat.git/infrastructure/users-repo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "kubernetes-goat.git/infrastructure/users-repo/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/infrastructure/users-repo/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "app.py": {
+              "name": "app.py",
+              "path": "kubernetes-goat.git/infrastructure/users-repo/app.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "kubernetes-goat-docs.png": {
+      "name": "kubernetes-goat-docs.png",
+      "path": "kubernetes-goat.git/kubernetes-goat-docs.png",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "kubernetes-goat-home.png": {
+      "name": "kubernetes-goat-home.png",
+      "path": "kubernetes-goat.git/kubernetes-goat-home.png",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "kubernetes-goat-logo.png": {
+      "name": "kubernetes-goat-logo.png",
+      "path": "kubernetes-goat.git/kubernetes-goat-logo.png",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "platforms": {
+      "name": "platforms",
+      "path": "kubernetes-goat.git/platforms",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "aws-setup": {
+          "name": "aws-setup",
+          "path": "kubernetes-goat.git/platforms/aws-setup",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "aws-eks-cdk": {
+              "name": "aws-eks-cdk",
+              "path": "kubernetes-goat.git/platforms/aws-setup/aws-eks-cdk",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "README.MD": {
+                  "name": "README.MD",
+                  "path": "kubernetes-goat.git/platforms/aws-setup/aws-eks-cdk/README.MD",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "aws-kind-ec2-cdk": {
+              "name": "aws-kind-ec2-cdk",
+              "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".env": {
+                  "name": ".env",
+                  "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/.env",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "README.md": {
+                  "name": "README.md",
+                  "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "app.py": {
+                  "name": "app.py",
+                  "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/app.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "aws_kind_ec2_cdk": {
+                  "name": "aws_kind_ec2_cdk",
+                  "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/aws_kind_ec2_cdk",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "__init__.py": {
+                      "name": "__init__.py",
+                      "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/aws_kind_ec2_cdk/__init__.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "aws_kind_ec2_cdk_stack.py": {
+                      "name": "aws_kind_ec2_cdk_stack.py",
+                      "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/aws_kind_ec2_cdk/aws_kind_ec2_cdk_stack.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "cdk.json": {
+                  "name": "cdk.json",
+                  "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/cdk.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "requirements-dev.txt": {
+                  "name": "requirements-dev.txt",
+                  "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/requirements-dev.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "requirements.txt": {
+                  "name": "requirements.txt",
+                  "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/requirements.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "source.bat": {
+                  "name": "source.bat",
+                  "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/source.bat",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests": {
+                  "name": "tests",
+                  "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/tests",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "__init__.py": {
+                      "name": "__init__.py",
+                      "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/tests/__init__.py",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "unit": {
+                      "name": "unit",
+                      "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/tests/unit",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "__init__.py": {
+                          "name": "__init__.py",
+                          "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/tests/unit/__init__.py",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "test_aws_kind_ec2_cdk_stack.py": {
+                          "name": "test_aws_kind_ec2_cdk_stack.py",
+                          "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/tests/unit/test_aws_kind_ec2_cdk_stack.py",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "user_data.sh": {
+                  "name": "user_data.sh",
+                  "path": "kubernetes-goat.git/platforms/aws-setup/aws-kind-ec2-cdk/user_data.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "kind-setup": {
+          "name": "kind-setup",
+          "path": "kubernetes-goat.git/platforms/kind-setup",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "kubernetes-goat.git/platforms/kind-setup/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kind-cluster-setup.yaml": {
+              "name": "kind-cluster-setup.yaml",
+              "path": "kubernetes-goat.git/platforms/kind-setup/kind-cluster-setup.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "setup-kind-cluster-and-goat.sh": {
+              "name": "setup-kind-cluster-and-goat.sh",
+              "path": "kubernetes-goat.git/platforms/kind-setup/setup-kind-cluster-and-goat.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "teardown-cluster.sh": {
+              "name": "teardown-cluster.sh",
+              "path": "kubernetes-goat.git/platforms/kind-setup/teardown-cluster.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "scenarios": {
+      "name": "scenarios",
+      "path": "kubernetes-goat.git/scenarios",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "batch-check": {
+          "name": "batch-check",
+          "path": "kubernetes-goat.git/scenarios/batch-check",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "job.yaml": {
+              "name": "job.yaml",
+              "path": "kubernetes-goat.git/scenarios/batch-check/job.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "build-code": {
+          "name": "build-code",
+          "path": "kubernetes-goat.git/scenarios/build-code",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kubernetes-goat.git/scenarios/build-code/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "cache-store": {
+          "name": "cache-store",
+          "path": "kubernetes-goat.git/scenarios/cache-store",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kubernetes-goat.git/scenarios/cache-store/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "docker-bench-security": {
+          "name": "docker-bench-security",
+          "path": "kubernetes-goat.git/scenarios/docker-bench-security",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kubernetes-goat.git/scenarios/docker-bench-security/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "health-check": {
+          "name": "health-check",
+          "path": "kubernetes-goat.git/scenarios/health-check",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment-kind.yaml": {
+              "name": "deployment-kind.yaml",
+              "path": "kubernetes-goat.git/scenarios/health-check/deployment-kind.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kubernetes-goat.git/scenarios/health-check/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "hidden-in-layers": {
+          "name": "hidden-in-layers",
+          "path": "kubernetes-goat.git/scenarios/hidden-in-layers",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kubernetes-goat.git/scenarios/hidden-in-layers/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "hunger-check": {
+          "name": "hunger-check",
+          "path": "kubernetes-goat.git/scenarios/hunger-check",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kubernetes-goat.git/scenarios/hunger-check/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "insecure-rbac": {
+          "name": "insecure-rbac",
+          "path": "kubernetes-goat.git/scenarios/insecure-rbac",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "setup.yaml": {
+              "name": "setup.yaml",
+              "path": "kubernetes-goat.git/scenarios/insecure-rbac/setup.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "internal-proxy": {
+          "name": "internal-proxy",
+          "path": "kubernetes-goat.git/scenarios/internal-proxy",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kubernetes-goat.git/scenarios/internal-proxy/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "kube-bench-security": {
+          "name": "kube-bench-security",
+          "path": "kubernetes-goat.git/scenarios/kube-bench-security",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "master-job.yaml": {
+              "name": "master-job.yaml",
+              "path": "kubernetes-goat.git/scenarios/kube-bench-security/master-job.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "node-job.yaml": {
+              "name": "node-job.yaml",
+              "path": "kubernetes-goat.git/scenarios/kube-bench-security/node-job.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "kubernetes-goat-home": {
+          "name": "kubernetes-goat-home",
+          "path": "kubernetes-goat.git/scenarios/kubernetes-goat-home",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kubernetes-goat.git/scenarios/kubernetes-goat-home/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "metadata-db": {
+          "name": "metadata-db",
+          "path": "kubernetes-goat.git/scenarios/metadata-db",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Chart.yaml": {
+              "name": "Chart.yaml",
+              "path": "kubernetes-goat.git/scenarios/metadata-db/Chart.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "kubernetes-goat.git/scenarios/metadata-db/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "NOTES.txt": {
+                  "name": "NOTES.txt",
+                  "path": "kubernetes-goat.git/scenarios/metadata-db/templates/NOTES.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers.tpl": {
+                  "name": "_helpers.tpl",
+                  "path": "kubernetes-goat.git/scenarios/metadata-db/templates/_helpers.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment.yaml": {
+                  "name": "deployment.yaml",
+                  "path": "kubernetes-goat.git/scenarios/metadata-db/templates/deployment.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ingress.yaml": {
+                  "name": "ingress.yaml",
+                  "path": "kubernetes-goat.git/scenarios/metadata-db/templates/ingress.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.yaml": {
+                  "name": "service.yaml",
+                  "path": "kubernetes-goat.git/scenarios/metadata-db/templates/service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tests": {
+                  "name": "tests",
+                  "path": "kubernetes-goat.git/scenarios/metadata-db/templates/tests",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "test-connection.yaml": {
+                      "name": "test-connection.yaml",
+                      "path": "kubernetes-goat.git/scenarios/metadata-db/templates/tests/test-connection.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "values.yaml": {
+              "name": "values.yaml",
+              "path": "kubernetes-goat.git/scenarios/metadata-db/values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "poor-registry": {
+          "name": "poor-registry",
+          "path": "kubernetes-goat.git/scenarios/poor-registry",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kubernetes-goat.git/scenarios/poor-registry/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "system-monitor": {
+          "name": "system-monitor",
+          "path": "kubernetes-goat.git/scenarios/system-monitor",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "kubernetes-goat.git/scenarios/system-monitor/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "setup-kubernetes-goat.sh": {
+      "name": "setup-kubernetes-goat.sh",
+      "path": "kubernetes-goat.git/setup-kubernetes-goat.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "teardown-kubernetes-goat.sh": {
+      "name": "teardown-kubernetes-goat.sh",
+      "path": "kubernetes-goat.git/teardown-kubernetes-goat.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    }
+  },
+  "info": {
+    "id": 269419110,
+    "name": "kubernetes-goat",
+    "full_name": "madhuakula/kubernetes-goat",
+    "owner": {
+      "login": "madhuakula",
+      "html_url": "https://github.com/madhuakula",
+      "type": "User"
+    },
+    "html_url": "https://github.com/madhuakula/kubernetes-goat",
+    "description": "Kubernetes Goat is a \"Vulnerable by Design\" cluster environment to learn and practice Kubernetes security using an interactive hands-on playground 🚀",
+    "url": "https://api.github.com/repos/madhuakula/kubernetes-goat",
+    "clone_url": "https://github.com/madhuakula/kubernetes-goat.git",
+    "homepage": "https://madhuakula.com/kubernetes-goat",
+    "size": 123460,
+    "stargazers_count": 2813,
+    "watchers_count": 2813,
+    "language": "HTML"
+  }
+}

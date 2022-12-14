@@ -1,0 +1,4371 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 2,
+      "subFolderCount": 1,
+      "filepaths": [
+        "nerdctl.git/Dockerfile",
+        "nerdctl.git/Dockerfile.d",
+        "nerdctl.git/examples/compose-multi-platform/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "nerdctl.git/examples/compose-multi-platform/docker-compose.yaml",
+        "nerdctl.git/examples/compose-wordpress/docker-compose.stargz.yaml",
+        "nerdctl.git/examples/compose-wordpress/docker-compose.yaml"
+      ]
+    }
+  },
+  "struct": {
+    ".cirrus.yml": {
+      "name": ".cirrus.yml",
+      "path": "nerdctl.git/.cirrus.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "nerdctl.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "nerdctl.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "nerdctl.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "nerdctl.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "nerdctl.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "nerdctl.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "nerdctl.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "nerdctl.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "nerdctl.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "nerdctl.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "nerdctl.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "nerdctl.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "nerdctl.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "nerdctl.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "nerdctl.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "nerdctl.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "nerdctl.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "nerdctl.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "nerdctl.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "nerdctl.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "nerdctl.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "nerdctl.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "nerdctl.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "nerdctl.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "nerdctl.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "nerdctl.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "nerdctl.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "nerdctl.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "nerdctl.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "nerdctl.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "nerdctl.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "nerdctl.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "nerdctl.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-bbe399d1fbdaa6fdd67119c34e9307ecb4c60522.idx": {
+                  "name": "pack-bbe399d1fbdaa6fdd67119c34e9307ecb4c60522.idx",
+                  "path": "nerdctl.git/.git/objects/pack/pack-bbe399d1fbdaa6fdd67119c34e9307ecb4c60522.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-bbe399d1fbdaa6fdd67119c34e9307ecb4c60522.pack": {
+                  "name": "pack-bbe399d1fbdaa6fdd67119c34e9307ecb4c60522.pack",
+                  "path": "nerdctl.git/.git/objects/pack/pack-bbe399d1fbdaa6fdd67119c34e9307ecb4c60522.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "nerdctl.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "nerdctl.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "nerdctl.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "nerdctl.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "nerdctl.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "nerdctl.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "nerdctl.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "nerdctl.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "v1.1.0": {
+                  "name": "v1.1.0",
+                  "path": "nerdctl.git/.git/refs/tags/v1.1.0",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "nerdctl.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "nerdctl.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "nerdctl.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug_report.yaml": {
+              "name": "bug_report.yaml",
+              "path": "nerdctl.git/.github/ISSUE_TEMPLATE/bug_report.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config.yml": {
+              "name": "config.yml",
+              "path": "nerdctl.git/.github/ISSUE_TEMPLATE/config.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature_request.yaml": {
+              "name": "feature_request.yaml",
+              "path": "nerdctl.git/.github/ISSUE_TEMPLATE/feature_request.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "dependabot.yml": {
+          "name": "dependabot.yml",
+          "path": "nerdctl.git/.github/dependabot.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "nerdctl.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ghcr-image-build-and-publish.yml": {
+              "name": "ghcr-image-build-and-publish.yml",
+              "path": "nerdctl.git/.github/workflows/ghcr-image-build-and-publish.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "release.yml": {
+              "name": "release.yml",
+              "path": "nerdctl.git/.github/workflows/release.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.yml": {
+              "name": "test.yml",
+              "path": "nerdctl.git/.github/workflows/test.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "nerdctl.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".golangci.yml": {
+      "name": ".golangci.yml",
+      "path": "nerdctl.git/.golangci.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".yamllint": {
+      "name": ".yamllint",
+      "path": "nerdctl.git/.yamllint",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "nerdctl.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile.d": {
+      "name": "Dockerfile.d",
+      "path": "nerdctl.git/Dockerfile.d",
+      "isDir": true,
+      "isDockerfile": true,
+      "isComposefile": false,
+      "children": {
+        "SHA256SUMS.d": {
+          "name": "SHA256SUMS.d",
+          "path": "nerdctl.git/Dockerfile.d/SHA256SUMS.d",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "buildg-v0.4.1": {
+              "name": "buildg-v0.4.1",
+              "path": "nerdctl.git/Dockerfile.d/SHA256SUMS.d/buildg-v0.4.1",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "buildkit-v0.10.6": {
+              "name": "buildkit-v0.10.6",
+              "path": "nerdctl.git/Dockerfile.d/SHA256SUMS.d/buildkit-v0.10.6",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cni-plugins-v1.1.1": {
+              "name": "cni-plugins-v1.1.1",
+              "path": "nerdctl.git/Dockerfile.d/SHA256SUMS.d/cni-plugins-v1.1.1",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "containerd-fuse-overlayfs-v1.0.5": {
+              "name": "containerd-fuse-overlayfs-v1.0.5",
+              "path": "nerdctl.git/Dockerfile.d/SHA256SUMS.d/containerd-fuse-overlayfs-v1.0.5",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fuse-overlayfs-v1.10": {
+              "name": "fuse-overlayfs-v1.10",
+              "path": "nerdctl.git/Dockerfile.d/SHA256SUMS.d/fuse-overlayfs-v1.10",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kubo-v0.17.0": {
+              "name": "kubo-v0.17.0",
+              "path": "nerdctl.git/Dockerfile.d/SHA256SUMS.d/kubo-v0.17.0",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rootlesskit-v1.1.0": {
+              "name": "rootlesskit-v1.1.0",
+              "path": "nerdctl.git/Dockerfile.d/SHA256SUMS.d/rootlesskit-v1.1.0",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "slirp4netns-v1.2.0": {
+              "name": "slirp4netns-v1.2.0",
+              "path": "nerdctl.git/Dockerfile.d/SHA256SUMS.d/slirp4netns-v1.2.0",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stargz-snapshotter-v0.13.0": {
+              "name": "stargz-snapshotter-v0.13.0",
+              "path": "nerdctl.git/Dockerfile.d/SHA256SUMS.d/stargz-snapshotter-v0.13.0",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tini-v0.19.0": {
+              "name": "tini-v0.19.0",
+              "path": "nerdctl.git/Dockerfile.d/SHA256SUMS.d/tini-v0.19.0",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "etc_buildkit_buildkitd.toml": {
+          "name": "etc_buildkit_buildkitd.toml",
+          "path": "nerdctl.git/Dockerfile.d/etc_buildkit_buildkitd.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "etc_containerd_config.toml": {
+          "name": "etc_containerd_config.toml",
+          "path": "nerdctl.git/Dockerfile.d/etc_containerd_config.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "etc_systemd_system_user@.service.d_delegate.conf": {
+          "name": "etc_systemd_system_user@.service.d_delegate.conf",
+          "path": "nerdctl.git/Dockerfile.d/etc_systemd_system_user@.service.d_delegate.conf",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "home_rootless_.config_systemd_user_containerd.service.d_port-slirp4netns.conf": {
+          "name": "home_rootless_.config_systemd_user_containerd.service.d_port-slirp4netns.conf",
+          "path": "nerdctl.git/Dockerfile.d/home_rootless_.config_systemd_user_containerd.service.d_port-slirp4netns.conf",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test-integration-buildkit-nerdctl-test.service": {
+          "name": "test-integration-buildkit-nerdctl-test.service",
+          "path": "nerdctl.git/Dockerfile.d/test-integration-buildkit-nerdctl-test.service",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test-integration-etc_containerd-stargz-grpc_config.toml": {
+          "name": "test-integration-etc_containerd-stargz-grpc_config.toml",
+          "path": "nerdctl.git/Dockerfile.d/test-integration-etc_containerd-stargz-grpc_config.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test-integration-ipfs-offline.service": {
+          "name": "test-integration-ipfs-offline.service",
+          "path": "nerdctl.git/Dockerfile.d/test-integration-ipfs-offline.service",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test-integration-rootless.sh": {
+          "name": "test-integration-rootless.sh",
+          "path": "nerdctl.git/Dockerfile.d/test-integration-rootless.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "nerdctl.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "MAINTAINERS": {
+      "name": "MAINTAINERS",
+      "path": "nerdctl.git/MAINTAINERS",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Makefile": {
+      "name": "Makefile",
+      "path": "nerdctl.git/Makefile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "NOTICE": {
+      "name": "NOTICE",
+      "path": "nerdctl.git/NOTICE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "nerdctl.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "SECURITY.md": {
+      "name": "SECURITY.md",
+      "path": "nerdctl.git/SECURITY.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "cmd": {
+      "name": "cmd",
+      "path": "nerdctl.git/cmd",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "nerdctl": {
+          "name": "nerdctl",
+          "path": "nerdctl.git/cmd/nerdctl",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "apparmor_inspect_linux.go": {
+              "name": "apparmor_inspect_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/apparmor_inspect_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "apparmor_linux.go": {
+              "name": "apparmor_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/apparmor_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "apparmor_load_linux.go": {
+              "name": "apparmor_load_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/apparmor_load_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "apparmor_ls_linux.go": {
+              "name": "apparmor_ls_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/apparmor_ls_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "apparmor_unload_linux.go": {
+              "name": "apparmor_unload_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/apparmor_unload_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build.go": {
+              "name": "build.go",
+              "path": "nerdctl.git/cmd/nerdctl/build.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build_test.go": {
+              "name": "build_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/build_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "builder.go": {
+              "name": "builder.go",
+              "path": "nerdctl.git/cmd/nerdctl/builder.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "builder_linux_test.go": {
+              "name": "builder_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/builder_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client.go": {
+              "name": "client.go",
+              "path": "nerdctl.git/cmd/nerdctl/client.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit.go": {
+              "name": "commit.go",
+              "path": "nerdctl.git/cmd/nerdctl/commit.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit_test.go": {
+              "name": "commit_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/commit_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "completion.go": {
+              "name": "completion.go",
+              "path": "nerdctl.git/cmd/nerdctl/completion.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "completion_linux.go": {
+              "name": "completion_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/completion_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "completion_linux_test.go": {
+              "name": "completion_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/completion_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose.go": {
+              "name": "compose.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_build.go": {
+              "name": "compose_build.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_build.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_build_linux_test.go": {
+              "name": "compose_build_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_build_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_config.go": {
+              "name": "compose_config.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_config.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_config_test.go": {
+              "name": "compose_config_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_config_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_down.go": {
+              "name": "compose_down.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_down.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_exec.go": {
+              "name": "compose_exec.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_exec.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_exec_linux_test.go": {
+              "name": "compose_exec_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_exec_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_images.go": {
+              "name": "compose_images.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_images.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_images_linux_test.go": {
+              "name": "compose_images_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_images_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_kill.go": {
+              "name": "compose_kill.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_kill.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_kill_linux_test.go": {
+              "name": "compose_kill_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_kill_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_logs.go": {
+              "name": "compose_logs.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_logs.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_pause.go": {
+              "name": "compose_pause.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_pause.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_pause_linux_test.go": {
+              "name": "compose_pause_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_pause_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_port.go": {
+              "name": "compose_port.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_port.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_port_linux_test.go": {
+              "name": "compose_port_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_port_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_ps.go": {
+              "name": "compose_ps.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_ps.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_ps_linux_test.go": {
+              "name": "compose_ps_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_ps_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_pull.go": {
+              "name": "compose_pull.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_pull.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_pull_linux_test.go": {
+              "name": "compose_pull_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_pull_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_push.go": {
+              "name": "compose_push.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_push.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_restart.go": {
+              "name": "compose_restart.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_restart.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_restart_linux_test.go": {
+              "name": "compose_restart_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_restart_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_rm.go": {
+              "name": "compose_rm.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_rm.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_rm_linux_test.go": {
+              "name": "compose_rm_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_rm_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_run.go": {
+              "name": "compose_run.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_run.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_run_linux_test.go": {
+              "name": "compose_run_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_run_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_stop.go": {
+              "name": "compose_stop.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_stop.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_stop_linux_test.go": {
+              "name": "compose_stop_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_stop_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_top.go": {
+              "name": "compose_top.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_top.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_top_linux_test.go": {
+              "name": "compose_top_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_top_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_up.go": {
+              "name": "compose_up.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_up.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_up_linux_test.go": {
+              "name": "compose_up_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_up_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_version.go": {
+              "name": "compose_version.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_version.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "compose_version_test.go": {
+              "name": "compose_version_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/compose_version_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "container.go": {
+              "name": "container.go",
+              "path": "nerdctl.git/cmd/nerdctl/container.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "container_inspect.go": {
+              "name": "container_inspect.go",
+              "path": "nerdctl.git/cmd/nerdctl/container_inspect.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "container_inspect_linux_test.go": {
+              "name": "container_inspect_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/container_inspect_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "container_lsutil.go": {
+              "name": "container_lsutil.go",
+              "path": "nerdctl.git/cmd/nerdctl/container_lsutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "container_prune.go": {
+              "name": "container_prune.go",
+              "path": "nerdctl.git/cmd/nerdctl/container_prune.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "container_prune_linux_test.go": {
+              "name": "container_prune_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/container_prune_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cp.go": {
+              "name": "cp.go",
+              "path": "nerdctl.git/cmd/nerdctl/cp.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cp_linux.go": {
+              "name": "cp_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/cp_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cp_linux_test.go": {
+              "name": "cp_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/cp_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "create.go": {
+              "name": "create.go",
+              "path": "nerdctl.git/cmd/nerdctl/create.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "create_linux_test.go": {
+              "name": "create_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/create_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "events.go": {
+              "name": "events.go",
+              "path": "nerdctl.git/cmd/nerdctl/events.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "exec.go": {
+              "name": "exec.go",
+              "path": "nerdctl.git/cmd/nerdctl/exec.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "exec_freebsd.go": {
+              "name": "exec_freebsd.go",
+              "path": "nerdctl.git/cmd/nerdctl/exec_freebsd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "exec_linux.go": {
+              "name": "exec_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/exec_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "exec_linux_test.go": {
+              "name": "exec_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/exec_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "exec_test.go": {
+              "name": "exec_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/exec_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "exec_windows.go": {
+              "name": "exec_windows.go",
+              "path": "nerdctl.git/cmd/nerdctl/exec_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fmtutil.go": {
+              "name": "fmtutil.go",
+              "path": "nerdctl.git/cmd/nerdctl/fmtutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "history.go": {
+              "name": "history.go",
+              "path": "nerdctl.git/cmd/nerdctl/history.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image.go": {
+              "name": "image.go",
+              "path": "nerdctl.git/cmd/nerdctl/image.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image_convert.go": {
+              "name": "image_convert.go",
+              "path": "nerdctl.git/cmd/nerdctl/image_convert.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image_convert_linux_test.go": {
+              "name": "image_convert_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/image_convert_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image_convert_test.go": {
+              "name": "image_convert_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/image_convert_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image_cryptutil.go": {
+              "name": "image_cryptutil.go",
+              "path": "nerdctl.git/cmd/nerdctl/image_cryptutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image_decrypt.go": {
+              "name": "image_decrypt.go",
+              "path": "nerdctl.git/cmd/nerdctl/image_decrypt.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image_encrypt.go": {
+              "name": "image_encrypt.go",
+              "path": "nerdctl.git/cmd/nerdctl/image_encrypt.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image_encrypt_linux_test.go": {
+              "name": "image_encrypt_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/image_encrypt_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image_inspect.go": {
+              "name": "image_inspect.go",
+              "path": "nerdctl.git/cmd/nerdctl/image_inspect.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image_inspect_test.go": {
+              "name": "image_inspect_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/image_inspect_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image_prune.go": {
+              "name": "image_prune.go",
+              "path": "nerdctl.git/cmd/nerdctl/image_prune.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image_prune_test.go": {
+              "name": "image_prune_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/image_prune_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "images.go": {
+              "name": "images.go",
+              "path": "nerdctl.git/cmd/nerdctl/images.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "images_test.go": {
+              "name": "images_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/images_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "info.go": {
+              "name": "info.go",
+              "path": "nerdctl.git/cmd/nerdctl/info.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "info_test.go": {
+              "name": "info_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/info_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "inspect.go": {
+              "name": "inspect.go",
+              "path": "nerdctl.git/cmd/nerdctl/inspect.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "internal.go": {
+              "name": "internal.go",
+              "path": "nerdctl.git/cmd/nerdctl/internal.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "internal_oci_hook.go": {
+              "name": "internal_oci_hook.go",
+              "path": "nerdctl.git/cmd/nerdctl/internal_oci_hook.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ipfs.go": {
+              "name": "ipfs.go",
+              "path": "nerdctl.git/cmd/nerdctl/ipfs.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ipfs_build_linux_test.go": {
+              "name": "ipfs_build_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/ipfs_build_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ipfs_compose_linux_test.go": {
+              "name": "ipfs_compose_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/ipfs_compose_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ipfs_linux_test.go": {
+              "name": "ipfs_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/ipfs_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ipfs_registry.go": {
+              "name": "ipfs_registry.go",
+              "path": "nerdctl.git/cmd/nerdctl/ipfs_registry.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ipfs_registry_down.go": {
+              "name": "ipfs_registry_down.go",
+              "path": "nerdctl.git/cmd/nerdctl/ipfs_registry_down.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ipfs_registry_linux_test.go": {
+              "name": "ipfs_registry_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/ipfs_registry_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ipfs_registry_serve.go": {
+              "name": "ipfs_registry_serve.go",
+              "path": "nerdctl.git/cmd/nerdctl/ipfs_registry_serve.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ipfs_registry_up.go": {
+              "name": "ipfs_registry_up.go",
+              "path": "nerdctl.git/cmd/nerdctl/ipfs_registry_up.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kill.go": {
+              "name": "kill.go",
+              "path": "nerdctl.git/cmd/nerdctl/kill.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "load.go": {
+              "name": "load.go",
+              "path": "nerdctl.git/cmd/nerdctl/load.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "load_linux_test.go": {
+              "name": "load_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/load_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "login.go": {
+              "name": "login.go",
+              "path": "nerdctl.git/cmd/nerdctl/login.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "login_linux_test.go": {
+              "name": "login_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/login_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "login_unix.go": {
+              "name": "login_unix.go",
+              "path": "nerdctl.git/cmd/nerdctl/login_unix.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "login_windows.go": {
+              "name": "login_windows.go",
+              "path": "nerdctl.git/cmd/nerdctl/login_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logout.go": {
+              "name": "logout.go",
+              "path": "nerdctl.git/cmd/nerdctl/logout.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logs.go": {
+              "name": "logs.go",
+              "path": "nerdctl.git/cmd/nerdctl/logs.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logs_test.go": {
+              "name": "logs_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/logs_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "nerdctl.git/cmd/nerdctl/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main_freebsd.go": {
+              "name": "main_freebsd.go",
+              "path": "nerdctl.git/cmd/nerdctl/main_freebsd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main_linux.go": {
+              "name": "main_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/main_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main_linux_test.go": {
+              "name": "main_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/main_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main_test.go": {
+              "name": "main_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/main_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main_unix.go": {
+              "name": "main_unix.go",
+              "path": "nerdctl.git/cmd/nerdctl/main_unix.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main_windows.go": {
+              "name": "main_windows.go",
+              "path": "nerdctl.git/cmd/nerdctl/main_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "multi_platform_linux_test.go": {
+              "name": "multi_platform_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/multi_platform_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "namespace.go": {
+              "name": "namespace.go",
+              "path": "nerdctl.git/cmd/nerdctl/namespace.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "namespace_create.go": {
+              "name": "namespace_create.go",
+              "path": "nerdctl.git/cmd/nerdctl/namespace_create.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "namespace_freebsd.go": {
+              "name": "namespace_freebsd.go",
+              "path": "nerdctl.git/cmd/nerdctl/namespace_freebsd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "namespace_inspect.go": {
+              "name": "namespace_inspect.go",
+              "path": "nerdctl.git/cmd/nerdctl/namespace_inspect.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "namespace_linux.go": {
+              "name": "namespace_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/namespace_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "namespace_rm.go": {
+              "name": "namespace_rm.go",
+              "path": "nerdctl.git/cmd/nerdctl/namespace_rm.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "namespace_update.go": {
+              "name": "namespace_update.go",
+              "path": "nerdctl.git/cmd/nerdctl/namespace_update.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "namespace_windows.go": {
+              "name": "namespace_windows.go",
+              "path": "nerdctl.git/cmd/nerdctl/namespace_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network.go": {
+              "name": "network.go",
+              "path": "nerdctl.git/cmd/nerdctl/network.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network_create.go": {
+              "name": "network_create.go",
+              "path": "nerdctl.git/cmd/nerdctl/network_create.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network_create_linux_test.go": {
+              "name": "network_create_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/network_create_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network_create_unix.go": {
+              "name": "network_create_unix.go",
+              "path": "nerdctl.git/cmd/nerdctl/network_create_unix.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network_create_windows.go": {
+              "name": "network_create_windows.go",
+              "path": "nerdctl.git/cmd/nerdctl/network_create_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network_inspect.go": {
+              "name": "network_inspect.go",
+              "path": "nerdctl.git/cmd/nerdctl/network_inspect.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network_inspect_test.go": {
+              "name": "network_inspect_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/network_inspect_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network_ls.go": {
+              "name": "network_ls.go",
+              "path": "nerdctl.git/cmd/nerdctl/network_ls.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network_prune.go": {
+              "name": "network_prune.go",
+              "path": "nerdctl.git/cmd/nerdctl/network_prune.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network_prune_linux_test.go": {
+              "name": "network_prune_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/network_prune_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network_rm.go": {
+              "name": "network_rm.go",
+              "path": "nerdctl.git/cmd/nerdctl/network_rm.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network_rm_linux_test.go": {
+              "name": "network_rm_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/network_rm_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pause.go": {
+              "name": "pause.go",
+              "path": "nerdctl.git/cmd/nerdctl/pause.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "port.go": {
+              "name": "port.go",
+              "path": "nerdctl.git/cmd/nerdctl/port.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ps.go": {
+              "name": "ps.go",
+              "path": "nerdctl.git/cmd/nerdctl/ps.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ps_linux_test.go": {
+              "name": "ps_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/ps_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pull.go": {
+              "name": "pull.go",
+              "path": "nerdctl.git/cmd/nerdctl/pull.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pull_linux_test.go": {
+              "name": "pull_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/pull_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push.go": {
+              "name": "push.go",
+              "path": "nerdctl.git/cmd/nerdctl/push.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push_linux_test.go": {
+              "name": "push_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/push_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rename.go": {
+              "name": "rename.go",
+              "path": "nerdctl.git/cmd/nerdctl/rename.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rename_linux_test.go": {
+              "name": "rename_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/rename_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "restart.go": {
+              "name": "restart.go",
+              "path": "nerdctl.git/cmd/nerdctl/restart.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "restart_linux_test.go": {
+              "name": "restart_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/restart_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rm.go": {
+              "name": "rm.go",
+              "path": "nerdctl.git/cmd/nerdctl/rm.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rm_linux_test.go": {
+              "name": "rm_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/rm_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rmi.go": {
+              "name": "rmi.go",
+              "path": "nerdctl.git/cmd/nerdctl/rmi.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rmi_linux_test.go": {
+              "name": "rmi_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/rmi_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run.go": {
+              "name": "run.go",
+              "path": "nerdctl.git/cmd/nerdctl/run.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_cgroup_freebsd.go": {
+              "name": "run_cgroup_freebsd.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_cgroup_freebsd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_cgroup_linux.go": {
+              "name": "run_cgroup_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_cgroup_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_cgroup_linux_test.go": {
+              "name": "run_cgroup_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_cgroup_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_cgroup_windows.go": {
+              "name": "run_cgroup_windows.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_cgroup_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_freebsd.go": {
+              "name": "run_freebsd.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_freebsd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_gpus.go": {
+              "name": "run_gpus.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_gpus.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_gpus_test.go": {
+              "name": "run_gpus_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_gpus_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_linux.go": {
+              "name": "run_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_linux_test.go": {
+              "name": "run_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_log_driver_syslog_test.go": {
+              "name": "run_log_driver_syslog_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_log_driver_syslog_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_mount.go": {
+              "name": "run_mount.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_mount.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_mount_linux_test.go": {
+              "name": "run_mount_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_mount_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_network.go": {
+              "name": "run_network.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_network.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_network_linux_test.go": {
+              "name": "run_network_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_network_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_restart.go": {
+              "name": "run_restart.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_restart.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_restart_linux_test.go": {
+              "name": "run_restart_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_restart_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_runtime.go": {
+              "name": "run_runtime.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_runtime.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_runtime_linux_test.go": {
+              "name": "run_runtime_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_runtime_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_security_linux.go": {
+              "name": "run_security_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_security_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_security_linux_test.go": {
+              "name": "run_security_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_security_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_stargz_linux_test.go": {
+              "name": "run_stargz_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_stargz_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_test.go": {
+              "name": "run_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_ulimit.go": {
+              "name": "run_ulimit.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_ulimit.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_user.go": {
+              "name": "run_user.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_user.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_user_linux_test.go": {
+              "name": "run_user_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_user_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_user_windows_test.go": {
+              "name": "run_user_windows_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_user_windows_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_verify_linux_test.go": {
+              "name": "run_verify_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_verify_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run_windows.go": {
+              "name": "run_windows.go",
+              "path": "nerdctl.git/cmd/nerdctl/run_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "save.go": {
+              "name": "save.go",
+              "path": "nerdctl.git/cmd/nerdctl/save.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "save_linux_test.go": {
+              "name": "save_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/save_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "start.go": {
+              "name": "start.go",
+              "path": "nerdctl.git/cmd/nerdctl/start.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "start_test.go": {
+              "name": "start_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/start_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stats.go": {
+              "name": "stats.go",
+              "path": "nerdctl.git/cmd/nerdctl/stats.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stats_freebsd.go": {
+              "name": "stats_freebsd.go",
+              "path": "nerdctl.git/cmd/nerdctl/stats_freebsd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stats_linux.go": {
+              "name": "stats_linux.go",
+              "path": "nerdctl.git/cmd/nerdctl/stats_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stats_linux_test.go": {
+              "name": "stats_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/stats_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stats_windows.go": {
+              "name": "stats_windows.go",
+              "path": "nerdctl.git/cmd/nerdctl/stats_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stop.go": {
+              "name": "stop.go",
+              "path": "nerdctl.git/cmd/nerdctl/stop.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stop_linux_test.go": {
+              "name": "stop_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/stop_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "system.go": {
+              "name": "system.go",
+              "path": "nerdctl.git/cmd/nerdctl/system.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "system_prune.go": {
+              "name": "system_prune.go",
+              "path": "nerdctl.git/cmd/nerdctl/system_prune.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "system_prune_linux_test.go": {
+              "name": "system_prune_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/system_prune_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tag.go": {
+              "name": "tag.go",
+              "path": "nerdctl.git/cmd/nerdctl/tag.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "top.go": {
+              "name": "top.go",
+              "path": "nerdctl.git/cmd/nerdctl/top.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "top_linux_test.go": {
+              "name": "top_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/top_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "unpause.go": {
+              "name": "unpause.go",
+              "path": "nerdctl.git/cmd/nerdctl/unpause.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.go": {
+              "name": "update.go",
+              "path": "nerdctl.git/cmd/nerdctl/update.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "version.go": {
+              "name": "version.go",
+              "path": "nerdctl.git/cmd/nerdctl/version.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volume.go": {
+              "name": "volume.go",
+              "path": "nerdctl.git/cmd/nerdctl/volume.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volume_create.go": {
+              "name": "volume_create.go",
+              "path": "nerdctl.git/cmd/nerdctl/volume_create.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volume_inspect.go": {
+              "name": "volume_inspect.go",
+              "path": "nerdctl.git/cmd/nerdctl/volume_inspect.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volume_inspect_test.go": {
+              "name": "volume_inspect_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/volume_inspect_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volume_ls.go": {
+              "name": "volume_ls.go",
+              "path": "nerdctl.git/cmd/nerdctl/volume_ls.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volume_ls_test.go": {
+              "name": "volume_ls_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/volume_ls_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volume_prune.go": {
+              "name": "volume_prune.go",
+              "path": "nerdctl.git/cmd/nerdctl/volume_prune.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volume_prune_linux_test.go": {
+              "name": "volume_prune_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/volume_prune_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volume_rm.go": {
+              "name": "volume_rm.go",
+              "path": "nerdctl.git/cmd/nerdctl/volume_rm.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volume_rm_linux_test.go": {
+              "name": "volume_rm_linux_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/volume_rm_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "wait.go": {
+              "name": "wait.go",
+              "path": "nerdctl.git/cmd/nerdctl/wait.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "wait_test.go": {
+              "name": "wait_test.go",
+              "path": "nerdctl.git/cmd/nerdctl/wait_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "docs": {
+      "name": "docs",
+      "path": "nerdctl.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "build.md": {
+          "name": "build.md",
+          "path": "nerdctl.git/docs/build.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "builder-debug.md": {
+          "name": "builder-debug.md",
+          "path": "nerdctl.git/docs/builder-debug.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cni.md": {
+          "name": "cni.md",
+          "path": "nerdctl.git/docs/cni.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "compose.md": {
+          "name": "compose.md",
+          "path": "nerdctl.git/docs/compose.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config.md": {
+          "name": "config.md",
+          "path": "nerdctl.git/docs/config.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cosign.md": {
+          "name": "cosign.md",
+          "path": "nerdctl.git/docs/cosign.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "dir.md": {
+          "name": "dir.md",
+          "path": "nerdctl.git/docs/dir.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "experimental.md": {
+          "name": "experimental.md",
+          "path": "nerdctl.git/docs/experimental.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "faq.md": {
+          "name": "faq.md",
+          "path": "nerdctl.git/docs/faq.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "freebsd.md": {
+          "name": "freebsd.md",
+          "path": "nerdctl.git/docs/freebsd.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "gpu.md": {
+          "name": "gpu.md",
+          "path": "nerdctl.git/docs/gpu.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ipfs.md": {
+          "name": "ipfs.md",
+          "path": "nerdctl.git/docs/ipfs.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "multi-platform.md": {
+          "name": "multi-platform.md",
+          "path": "nerdctl.git/docs/multi-platform.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "nydus.md": {
+          "name": "nydus.md",
+          "path": "nerdctl.git/docs/nydus.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ocicrypt.md": {
+          "name": "ocicrypt.md",
+          "path": "nerdctl.git/docs/ocicrypt.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "overlaybd.md": {
+          "name": "overlaybd.md",
+          "path": "nerdctl.git/docs/overlaybd.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "registry.md": {
+          "name": "registry.md",
+          "path": "nerdctl.git/docs/registry.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rootless.md": {
+          "name": "rootless.md",
+          "path": "nerdctl.git/docs/rootless.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "stargz.md": {
+          "name": "stargz.md",
+          "path": "nerdctl.git/docs/stargz.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "examples": {
+      "name": "examples",
+      "path": "nerdctl.git/examples",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "compose-multi-platform": {
+          "name": "compose-multi-platform",
+          "path": "nerdctl.git/examples/compose-multi-platform",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "nerdctl.git/examples/compose-multi-platform/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "nerdctl.git/examples/compose-multi-platform/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "nerdctl.git/examples/compose-multi-platform/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "index.php": {
+              "name": "index.php",
+              "path": "nerdctl.git/examples/compose-multi-platform/index.php",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "compose-wordpress": {
+          "name": "compose-wordpress",
+          "path": "nerdctl.git/examples/compose-wordpress",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "nerdctl.git/examples/compose-wordpress/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.stargz.yaml": {
+              "name": "docker-compose.stargz.yaml",
+              "path": "nerdctl.git/examples/compose-wordpress/docker-compose.stargz.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "docker-compose.yaml": {
+              "name": "docker-compose.yaml",
+              "path": "nerdctl.git/examples/compose-wordpress/docker-compose.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "nerdctl-ipfs-registry-kubernetes": {
+          "name": "nerdctl-ipfs-registry-kubernetes",
+          "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ipfs": {
+              "name": "ipfs",
+              "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/ipfs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "README.md": {
+                  "name": "README.md",
+                  "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/ipfs/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "bootstrap.yaml.sh": {
+                  "name": "bootstrap.yaml.sh",
+                  "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/ipfs/bootstrap.yaml.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nerdctl-ipfs-registry.yaml": {
+                  "name": "nerdctl-ipfs-registry.yaml",
+                  "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/ipfs/nerdctl-ipfs-registry.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "ipfs-cluster": {
+              "name": "ipfs-cluster",
+              "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/ipfs-cluster",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "README.md": {
+                  "name": "README.md",
+                  "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/ipfs-cluster/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "bootstrap.yaml.sh": {
+                  "name": "bootstrap.yaml.sh",
+                  "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/ipfs-cluster/bootstrap.yaml.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nerdctl-ipfs-registry.yaml": {
+                  "name": "nerdctl-ipfs-registry.yaml",
+                  "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/ipfs-cluster/nerdctl-ipfs-registry.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "ipfs-stargz-snapshotter": {
+              "name": "ipfs-stargz-snapshotter",
+              "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/ipfs-stargz-snapshotter",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "README.md": {
+                  "name": "README.md",
+                  "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/ipfs-stargz-snapshotter/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "bootstrap.yaml.sh": {
+                  "name": "bootstrap.yaml.sh",
+                  "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/ipfs-stargz-snapshotter/bootstrap.yaml.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nerdctl-ipfs-registry.yaml": {
+                  "name": "nerdctl-ipfs-registry.yaml",
+                  "path": "nerdctl.git/examples/nerdctl-ipfs-registry-kubernetes/ipfs-stargz-snapshotter/nerdctl-ipfs-registry.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "extras": {
+      "name": "extras",
+      "path": "nerdctl.git/extras",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "rootless": {
+          "name": "rootless",
+          "path": "nerdctl.git/extras/rootless",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "containerd-rootless-setuptool.sh": {
+              "name": "containerd-rootless-setuptool.sh",
+              "path": "nerdctl.git/extras/rootless/containerd-rootless-setuptool.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "containerd-rootless.sh": {
+              "name": "containerd-rootless.sh",
+              "path": "nerdctl.git/extras/rootless/containerd-rootless.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "nerdctl.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "nerdctl.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "hack": {
+      "name": "hack",
+      "path": "nerdctl.git/hack",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "configure-windows-ci.ps1": {
+          "name": "configure-windows-ci.ps1",
+          "path": "nerdctl.git/hack/configure-windows-ci.ps1",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "generate-release-note.sh": {
+          "name": "generate-release-note.sh",
+          "path": "nerdctl.git/hack/generate-release-note.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "verify-no-patent.sh": {
+          "name": "verify-no-patent.sh",
+          "path": "nerdctl.git/hack/verify-no-patent.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "pkg": {
+      "name": "pkg",
+      "path": "nerdctl.git/pkg",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "apparmorutil": {
+          "name": "apparmorutil",
+          "path": "nerdctl.git/pkg/apparmorutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "apparmorutil.go": {
+              "name": "apparmorutil.go",
+              "path": "nerdctl.git/pkg/apparmorutil/apparmorutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "apparmorutil_linux.go": {
+              "name": "apparmorutil_linux.go",
+              "path": "nerdctl.git/pkg/apparmorutil/apparmorutil_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "buildkitutil": {
+          "name": "buildkitutil",
+          "path": "nerdctl.git/pkg/buildkitutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "buildkitutil.go": {
+              "name": "buildkitutil.go",
+              "path": "nerdctl.git/pkg/buildkitutil/buildkitutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "buildkitutil_test.go": {
+              "name": "buildkitutil_test.go",
+              "path": "nerdctl.git/pkg/buildkitutil/buildkitutil_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "bypass4netnsutil": {
+          "name": "bypass4netnsutil",
+          "path": "nerdctl.git/pkg/bypass4netnsutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bypass.go": {
+              "name": "bypass.go",
+              "path": "nerdctl.git/pkg/bypass4netnsutil/bypass.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "bypass4netnsutil.go": {
+              "name": "bypass4netnsutil.go",
+              "path": "nerdctl.git/pkg/bypass4netnsutil/bypass4netnsutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "composer": {
+          "name": "composer",
+          "path": "nerdctl.git/pkg/composer",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "build.go": {
+              "name": "build.go",
+              "path": "nerdctl.git/pkg/composer/build.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "composer.go": {
+              "name": "composer.go",
+              "path": "nerdctl.git/pkg/composer/composer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config.go": {
+              "name": "config.go",
+              "path": "nerdctl.git/pkg/composer/config.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "container.go": {
+              "name": "container.go",
+              "path": "nerdctl.git/pkg/composer/container.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "down.go": {
+              "name": "down.go",
+              "path": "nerdctl.git/pkg/composer/down.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "exec.go": {
+              "name": "exec.go",
+              "path": "nerdctl.git/pkg/composer/exec.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "kill.go": {
+              "name": "kill.go",
+              "path": "nerdctl.git/pkg/composer/kill.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logs.go": {
+              "name": "logs.go",
+              "path": "nerdctl.git/pkg/composer/logs.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "orphans.go": {
+              "name": "orphans.go",
+              "path": "nerdctl.git/pkg/composer/orphans.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pipetagger": {
+              "name": "pipetagger",
+              "path": "nerdctl.git/pkg/composer/pipetagger",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pipetagger.go": {
+                  "name": "pipetagger.go",
+                  "path": "nerdctl.git/pkg/composer/pipetagger/pipetagger.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "port.go": {
+              "name": "port.go",
+              "path": "nerdctl.git/pkg/composer/port.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "projectloader": {
+              "name": "projectloader",
+              "path": "nerdctl.git/pkg/composer/projectloader",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "projectloader.go": {
+                  "name": "projectloader.go",
+                  "path": "nerdctl.git/pkg/composer/projectloader/projectloader.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pull.go": {
+              "name": "pull.go",
+              "path": "nerdctl.git/pkg/composer/pull.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push.go": {
+              "name": "push.go",
+              "path": "nerdctl.git/pkg/composer/push.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "restart.go": {
+              "name": "restart.go",
+              "path": "nerdctl.git/pkg/composer/restart.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rm.go": {
+              "name": "rm.go",
+              "path": "nerdctl.git/pkg/composer/rm.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run.go": {
+              "name": "run.go",
+              "path": "nerdctl.git/pkg/composer/run.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "serviceparser": {
+              "name": "serviceparser",
+              "path": "nerdctl.git/pkg/composer/serviceparser",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "build.go": {
+                  "name": "build.go",
+                  "path": "nerdctl.git/pkg/composer/serviceparser/build.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "build_test.go": {
+                  "name": "build_test.go",
+                  "path": "nerdctl.git/pkg/composer/serviceparser/build_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "serviceparser.go": {
+                  "name": "serviceparser.go",
+                  "path": "nerdctl.git/pkg/composer/serviceparser/serviceparser.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "serviceparser_test.go": {
+                  "name": "serviceparser_test.go",
+                  "path": "nerdctl.git/pkg/composer/serviceparser/serviceparser_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "stop.go": {
+              "name": "stop.go",
+              "path": "nerdctl.git/pkg/composer/stop.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "up.go": {
+              "name": "up.go",
+              "path": "nerdctl.git/pkg/composer/up.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "up_network.go": {
+              "name": "up_network.go",
+              "path": "nerdctl.git/pkg/composer/up_network.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "up_service.go": {
+              "name": "up_service.go",
+              "path": "nerdctl.git/pkg/composer/up_service.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "up_volume.go": {
+              "name": "up_volume.go",
+              "path": "nerdctl.git/pkg/composer/up_volume.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "containerinspector": {
+          "name": "containerinspector",
+          "path": "nerdctl.git/pkg/containerinspector",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "containerinspector.go": {
+              "name": "containerinspector.go",
+              "path": "nerdctl.git/pkg/containerinspector/containerinspector.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "containerinspector_freebsd.go": {
+              "name": "containerinspector_freebsd.go",
+              "path": "nerdctl.git/pkg/containerinspector/containerinspector_freebsd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "containerinspector_linux.go": {
+              "name": "containerinspector_linux.go",
+              "path": "nerdctl.git/pkg/containerinspector/containerinspector_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "containerinspector_windows.go": {
+              "name": "containerinspector_windows.go",
+              "path": "nerdctl.git/pkg/containerinspector/containerinspector_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "containerutil": {
+          "name": "containerutil",
+          "path": "nerdctl.git/pkg/containerutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "containerutil.go": {
+              "name": "containerutil.go",
+              "path": "nerdctl.git/pkg/containerutil/containerutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "cosignutil": {
+          "name": "cosignutil",
+          "path": "nerdctl.git/pkg/cosignutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cosignutil.go": {
+              "name": "cosignutil.go",
+              "path": "nerdctl.git/pkg/cosignutil/cosignutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "defaults": {
+          "name": "defaults",
+          "path": "nerdctl.git/pkg/defaults",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cgroup_linux.go": {
+              "name": "cgroup_linux.go",
+              "path": "nerdctl.git/pkg/defaults/cgroup_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "defaults_freebsd.go": {
+              "name": "defaults_freebsd.go",
+              "path": "nerdctl.git/pkg/defaults/defaults_freebsd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "defaults_linux.go": {
+              "name": "defaults_linux.go",
+              "path": "nerdctl.git/pkg/defaults/defaults_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "defaults_windows.go": {
+              "name": "defaults_windows.go",
+              "path": "nerdctl.git/pkg/defaults/defaults_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "dnsutil": {
+          "name": "dnsutil",
+          "path": "nerdctl.git/pkg/dnsutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "dnsutil.go": {
+              "name": "dnsutil.go",
+              "path": "nerdctl.git/pkg/dnsutil/dnsutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "hostsstore": {
+              "name": "hostsstore",
+              "path": "nerdctl.git/pkg/dnsutil/hostsstore",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "hosts.go": {
+                  "name": "hosts.go",
+                  "path": "nerdctl.git/pkg/dnsutil/hostsstore/hosts.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "hostsstore.go": {
+                  "name": "hostsstore.go",
+                  "path": "nerdctl.git/pkg/dnsutil/hostsstore/hostsstore.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "updater.go": {
+                  "name": "updater.go",
+                  "path": "nerdctl.git/pkg/dnsutil/hostsstore/updater.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "updater_test.go": {
+                  "name": "updater_test.go",
+                  "path": "nerdctl.git/pkg/dnsutil/hostsstore/updater_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "doc.go": {
+          "name": "doc.go",
+          "path": "nerdctl.git/pkg/doc.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "errutil": {
+          "name": "errutil",
+          "path": "nerdctl.git/pkg/errutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "errors_check.go": {
+              "name": "errors_check.go",
+              "path": "nerdctl.git/pkg/errutil/errors_check.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "eventutil": {
+          "name": "eventutil",
+          "path": "nerdctl.git/pkg/eventutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "eventutil.go": {
+              "name": "eventutil.go",
+              "path": "nerdctl.git/pkg/eventutil/eventutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "flagutil": {
+          "name": "flagutil",
+          "path": "nerdctl.git/pkg/flagutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "flagutil.go": {
+              "name": "flagutil.go",
+              "path": "nerdctl.git/pkg/flagutil/flagutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "flagutil_test.go": {
+              "name": "flagutil_test.go",
+              "path": "nerdctl.git/pkg/flagutil/flagutil_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "formatter": {
+          "name": "formatter",
+          "path": "nerdctl.git/pkg/formatter",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "formatter.go": {
+              "name": "formatter.go",
+              "path": "nerdctl.git/pkg/formatter/formatter.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "idgen": {
+          "name": "idgen",
+          "path": "nerdctl.git/pkg/idgen",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "idgen.go": {
+              "name": "idgen.go",
+              "path": "nerdctl.git/pkg/idgen/idgen.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "idutil": {
+          "name": "idutil",
+          "path": "nerdctl.git/pkg/idutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "containerwalker": {
+              "name": "containerwalker",
+              "path": "nerdctl.git/pkg/idutil/containerwalker",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "containerwalker.go": {
+                  "name": "containerwalker.go",
+                  "path": "nerdctl.git/pkg/idutil/containerwalker/containerwalker.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "imagewalker": {
+              "name": "imagewalker",
+              "path": "nerdctl.git/pkg/idutil/imagewalker",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "imagewalker.go": {
+                  "name": "imagewalker.go",
+                  "path": "nerdctl.git/pkg/idutil/imagewalker/imagewalker.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "netwalker": {
+              "name": "netwalker",
+              "path": "nerdctl.git/pkg/idutil/netwalker",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "netwalker.go": {
+                  "name": "netwalker.go",
+                  "path": "nerdctl.git/pkg/idutil/netwalker/netwalker.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "imageinspector": {
+          "name": "imageinspector",
+          "path": "nerdctl.git/pkg/imageinspector",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "imageinspector.go": {
+              "name": "imageinspector.go",
+              "path": "nerdctl.git/pkg/imageinspector/imageinspector.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "imgutil": {
+          "name": "imgutil",
+          "path": "nerdctl.git/pkg/imgutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "commit": {
+              "name": "commit",
+              "path": "nerdctl.git/pkg/imgutil/commit",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "commit.go": {
+                  "name": "commit.go",
+                  "path": "nerdctl.git/pkg/imgutil/commit/commit.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "converter": {
+              "name": "converter",
+              "path": "nerdctl.git/pkg/imgutil/converter",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "info.go": {
+                  "name": "info.go",
+                  "path": "nerdctl.git/pkg/imgutil/converter/info.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "dockerconfigresolver": {
+              "name": "dockerconfigresolver",
+              "path": "nerdctl.git/pkg/imgutil/dockerconfigresolver",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "dockerconfigresolver.go": {
+                  "name": "dockerconfigresolver.go",
+                  "path": "nerdctl.git/pkg/imgutil/dockerconfigresolver/dockerconfigresolver.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dockerconfigresolver_util.go": {
+                  "name": "dockerconfigresolver_util.go",
+                  "path": "nerdctl.git/pkg/imgutil/dockerconfigresolver/dockerconfigresolver_util.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "imgutil.go": {
+              "name": "imgutil.go",
+              "path": "nerdctl.git/pkg/imgutil/imgutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "imgutil_test.go": {
+              "name": "imgutil_test.go",
+              "path": "nerdctl.git/pkg/imgutil/imgutil_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pull": {
+              "name": "pull",
+              "path": "nerdctl.git/pkg/imgutil/pull",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pull.go": {
+                  "name": "pull.go",
+                  "path": "nerdctl.git/pkg/imgutil/pull/pull.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "push": {
+              "name": "push",
+              "path": "nerdctl.git/pkg/imgutil/push",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "push.go": {
+                  "name": "push.go",
+                  "path": "nerdctl.git/pkg/imgutil/push/push.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "snapshotter.go": {
+              "name": "snapshotter.go",
+              "path": "nerdctl.git/pkg/imgutil/snapshotter.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "snapshotter_test.go": {
+              "name": "snapshotter_test.go",
+              "path": "nerdctl.git/pkg/imgutil/snapshotter_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "infoutil": {
+          "name": "infoutil",
+          "path": "nerdctl.git/pkg/infoutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "infoutil.go": {
+              "name": "infoutil.go",
+              "path": "nerdctl.git/pkg/infoutil/infoutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "infoutil_freebsd.go": {
+              "name": "infoutil_freebsd.go",
+              "path": "nerdctl.git/pkg/infoutil/infoutil_freebsd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "infoutil_linux.go": {
+              "name": "infoutil_linux.go",
+              "path": "nerdctl.git/pkg/infoutil/infoutil_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "infoutil_test.go": {
+              "name": "infoutil_test.go",
+              "path": "nerdctl.git/pkg/infoutil/infoutil_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "infoutil_unix.go": {
+              "name": "infoutil_unix.go",
+              "path": "nerdctl.git/pkg/infoutil/infoutil_unix.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "infoutil_unix_test.go": {
+              "name": "infoutil_unix_test.go",
+              "path": "nerdctl.git/pkg/infoutil/infoutil_unix_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "infoutil_windows.go": {
+              "name": "infoutil_windows.go",
+              "path": "nerdctl.git/pkg/infoutil/infoutil_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "inspecttypes": {
+          "name": "inspecttypes",
+          "path": "nerdctl.git/pkg/inspecttypes",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "dockercompat": {
+              "name": "dockercompat",
+              "path": "nerdctl.git/pkg/inspecttypes/dockercompat",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "dockercompat.go": {
+                  "name": "dockercompat.go",
+                  "path": "nerdctl.git/pkg/inspecttypes/dockercompat/dockercompat.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "info.go": {
+                  "name": "info.go",
+                  "path": "nerdctl.git/pkg/inspecttypes/dockercompat/info.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "native": {
+              "name": "native",
+              "path": "nerdctl.git/pkg/inspecttypes/native",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "container.go": {
+                  "name": "container.go",
+                  "path": "nerdctl.git/pkg/inspecttypes/native/container.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "image.go": {
+                  "name": "image.go",
+                  "path": "nerdctl.git/pkg/inspecttypes/native/image.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "info.go": {
+                  "name": "info.go",
+                  "path": "nerdctl.git/pkg/inspecttypes/native/info.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "namespace.go": {
+                  "name": "namespace.go",
+                  "path": "nerdctl.git/pkg/inspecttypes/native/namespace.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "network.go": {
+                  "name": "network.go",
+                  "path": "nerdctl.git/pkg/inspecttypes/native/network.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "volume.go": {
+                  "name": "volume.go",
+                  "path": "nerdctl.git/pkg/inspecttypes/native/volume.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "ipfs": {
+          "name": "ipfs",
+          "path": "nerdctl.git/pkg/ipfs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "image.go": {
+              "name": "image.go",
+              "path": "nerdctl.git/pkg/ipfs/image.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "registry.go": {
+              "name": "registry.go",
+              "path": "nerdctl.git/pkg/ipfs/registry.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "labels": {
+          "name": "labels",
+          "path": "nerdctl.git/pkg/labels",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "k8slabels": {
+              "name": "k8slabels",
+              "path": "nerdctl.git/pkg/labels/k8slabels",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "k8slabels.go": {
+                  "name": "k8slabels.go",
+                  "path": "nerdctl.git/pkg/labels/k8slabels/k8slabels.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "labels.go": {
+              "name": "labels.go",
+              "path": "nerdctl.git/pkg/labels/labels.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "lockutil": {
+          "name": "lockutil",
+          "path": "nerdctl.git/pkg/lockutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "lockutil_unix.go": {
+              "name": "lockutil_unix.go",
+              "path": "nerdctl.git/pkg/lockutil/lockutil_unix.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lockutil_windows.go": {
+              "name": "lockutil_windows.go",
+              "path": "nerdctl.git/pkg/lockutil/lockutil_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logging": {
+          "name": "logging",
+          "path": "nerdctl.git/pkg/logging",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "fluentd_logger.go": {
+              "name": "fluentd_logger.go",
+              "path": "nerdctl.git/pkg/logging/fluentd_logger.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fluentd_logger_test.go": {
+              "name": "fluentd_logger_test.go",
+              "path": "nerdctl.git/pkg/logging/fluentd_logger_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "journald_logger.go": {
+              "name": "journald_logger.go",
+              "path": "nerdctl.git/pkg/logging/journald_logger.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "json_logger.go": {
+              "name": "json_logger.go",
+              "path": "nerdctl.git/pkg/logging/json_logger.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "jsonfile": {
+              "name": "jsonfile",
+              "path": "nerdctl.git/pkg/logging/jsonfile",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "jsonfile.go": {
+                  "name": "jsonfile.go",
+                  "path": "nerdctl.git/pkg/logging/jsonfile/jsonfile.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "log_viewer.go": {
+              "name": "log_viewer.go",
+              "path": "nerdctl.git/pkg/logging/log_viewer.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logging.go": {
+              "name": "logging.go",
+              "path": "nerdctl.git/pkg/logging/logging.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "syslog_logger.go": {
+              "name": "syslog_logger.go",
+              "path": "nerdctl.git/pkg/logging/syslog_logger.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "maputil": {
+          "name": "maputil",
+          "path": "nerdctl.git/pkg/maputil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "maputil.go": {
+              "name": "maputil.go",
+              "path": "nerdctl.git/pkg/maputil/maputil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "maputil_test.go": {
+              "name": "maputil_test.go",
+              "path": "nerdctl.git/pkg/maputil/maputil_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "mountutil": {
+          "name": "mountutil",
+          "path": "nerdctl.git/pkg/mountutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "mountutil.go": {
+              "name": "mountutil.go",
+              "path": "nerdctl.git/pkg/mountutil/mountutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mountutil_freebsd.go": {
+              "name": "mountutil_freebsd.go",
+              "path": "nerdctl.git/pkg/mountutil/mountutil_freebsd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mountutil_linux.go": {
+              "name": "mountutil_linux.go",
+              "path": "nerdctl.git/pkg/mountutil/mountutil_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mountutil_linux_test.go": {
+              "name": "mountutil_linux_test.go",
+              "path": "nerdctl.git/pkg/mountutil/mountutil_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mountutil_windows.go": {
+              "name": "mountutil_windows.go",
+              "path": "nerdctl.git/pkg/mountutil/mountutil_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mountutil_windows_test.go": {
+              "name": "mountutil_windows_test.go",
+              "path": "nerdctl.git/pkg/mountutil/mountutil_windows_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "volumestore": {
+              "name": "volumestore",
+              "path": "nerdctl.git/pkg/mountutil/volumestore",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "volumestore.go": {
+                  "name": "volumestore.go",
+                  "path": "nerdctl.git/pkg/mountutil/volumestore/volumestore.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "namestore": {
+          "name": "namestore",
+          "path": "nerdctl.git/pkg/namestore",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "namestore.go": {
+              "name": "namestore.go",
+              "path": "nerdctl.git/pkg/namestore/namestore.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "netutil": {
+          "name": "netutil",
+          "path": "nerdctl.git/pkg/netutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cni_plugin.go": {
+              "name": "cni_plugin.go",
+              "path": "nerdctl.git/pkg/netutil/cni_plugin.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cni_plugin_unix.go": {
+              "name": "cni_plugin_unix.go",
+              "path": "nerdctl.git/pkg/netutil/cni_plugin_unix.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cni_plugin_windows.go": {
+              "name": "cni_plugin_windows.go",
+              "path": "nerdctl.git/pkg/netutil/cni_plugin_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nettype": {
+              "name": "nettype",
+              "path": "nerdctl.git/pkg/netutil/nettype",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "nettype.go": {
+                  "name": "nettype.go",
+                  "path": "nerdctl.git/pkg/netutil/nettype/nettype.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nettype_test.go": {
+                  "name": "nettype_test.go",
+                  "path": "nerdctl.git/pkg/netutil/nettype/nettype_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "netutil.go": {
+              "name": "netutil.go",
+              "path": "nerdctl.git/pkg/netutil/netutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "netutil_linux_test.go": {
+              "name": "netutil_linux_test.go",
+              "path": "nerdctl.git/pkg/netutil/netutil_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "netutil_test.go": {
+              "name": "netutil_test.go",
+              "path": "nerdctl.git/pkg/netutil/netutil_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "netutil_unix.go": {
+              "name": "netutil_unix.go",
+              "path": "nerdctl.git/pkg/netutil/netutil_unix.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "netutil_unix_test.go": {
+              "name": "netutil_unix_test.go",
+              "path": "nerdctl.git/pkg/netutil/netutil_unix_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "netutil_windows.go": {
+              "name": "netutil_windows.go",
+              "path": "nerdctl.git/pkg/netutil/netutil_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "netutil_windows_test.go": {
+              "name": "netutil_windows_test.go",
+              "path": "nerdctl.git/pkg/netutil/netutil_windows_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "subnet": {
+              "name": "subnet",
+              "path": "nerdctl.git/pkg/netutil/subnet",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "subnet.go": {
+                  "name": "subnet.go",
+                  "path": "nerdctl.git/pkg/netutil/subnet/subnet.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "subnet_test.go": {
+                  "name": "subnet_test.go",
+                  "path": "nerdctl.git/pkg/netutil/subnet/subnet_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "ocihook": {
+          "name": "ocihook",
+          "path": "nerdctl.git/pkg/ocihook",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ocihook.go": {
+              "name": "ocihook.go",
+              "path": "nerdctl.git/pkg/ocihook/ocihook.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ocihook_freebsd.go": {
+              "name": "ocihook_freebsd.go",
+              "path": "nerdctl.git/pkg/ocihook/ocihook_freebsd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ocihook_linux.go": {
+              "name": "ocihook_linux.go",
+              "path": "nerdctl.git/pkg/ocihook/ocihook_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ocihook_windows.go": {
+              "name": "ocihook_windows.go",
+              "path": "nerdctl.git/pkg/ocihook/ocihook_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "platformutil": {
+          "name": "platformutil",
+          "path": "nerdctl.git/pkg/platformutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "binfmt.go": {
+              "name": "binfmt.go",
+              "path": "nerdctl.git/pkg/platformutil/binfmt.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "layers.go": {
+              "name": "layers.go",
+              "path": "nerdctl.git/pkg/platformutil/layers.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "platformutil.go": {
+              "name": "platformutil.go",
+              "path": "nerdctl.git/pkg/platformutil/platformutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "portutil": {
+          "name": "portutil",
+          "path": "nerdctl.git/pkg/portutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "port_allocate_linux.go": {
+              "name": "port_allocate_linux.go",
+              "path": "nerdctl.git/pkg/portutil/port_allocate_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "port_allocate_others.go": {
+              "name": "port_allocate_others.go",
+              "path": "nerdctl.git/pkg/portutil/port_allocate_others.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "portutil.go": {
+              "name": "portutil.go",
+              "path": "nerdctl.git/pkg/portutil/portutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "portutil_test.go": {
+              "name": "portutil_test.go",
+              "path": "nerdctl.git/pkg/portutil/portutil_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "procnet": {
+              "name": "procnet",
+              "path": "nerdctl.git/pkg/portutil/procnet",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "procnet.go": {
+                  "name": "procnet.go",
+                  "path": "nerdctl.git/pkg/portutil/procnet/procnet.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "procnet_linux.go": {
+                  "name": "procnet_linux.go",
+                  "path": "nerdctl.git/pkg/portutil/procnet/procnet_linux.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "procnetd_test.go": {
+                  "name": "procnetd_test.go",
+                  "path": "nerdctl.git/pkg/portutil/procnet/procnetd_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "referenceutil": {
+          "name": "referenceutil",
+          "path": "nerdctl.git/pkg/referenceutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "referenceutil.go": {
+              "name": "referenceutil.go",
+              "path": "nerdctl.git/pkg/referenceutil/referenceutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "referenceutil_test.go": {
+              "name": "referenceutil_test.go",
+              "path": "nerdctl.git/pkg/referenceutil/referenceutil_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "reflectutil": {
+          "name": "reflectutil",
+          "path": "nerdctl.git/pkg/reflectutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "reflectutil.go": {
+              "name": "reflectutil.go",
+              "path": "nerdctl.git/pkg/reflectutil/reflectutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "reflectutil_test.go": {
+              "name": "reflectutil_test.go",
+              "path": "nerdctl.git/pkg/reflectutil/reflectutil_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "resolvconf": {
+          "name": "resolvconf",
+          "path": "nerdctl.git/pkg/resolvconf",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "resolvconf.go": {
+              "name": "resolvconf.go",
+              "path": "nerdctl.git/pkg/resolvconf/resolvconf.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "resolvconf_linux_test.go": {
+              "name": "resolvconf_linux_test.go",
+              "path": "nerdctl.git/pkg/resolvconf/resolvconf_linux_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "rootlessutil": {
+          "name": "rootlessutil",
+          "path": "nerdctl.git/pkg/rootlessutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "child.go": {
+              "name": "child.go",
+              "path": "nerdctl.git/pkg/rootlessutil/child.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "parent.go": {
+              "name": "parent.go",
+              "path": "nerdctl.git/pkg/rootlessutil/parent.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "port.go": {
+              "name": "port.go",
+              "path": "nerdctl.git/pkg/rootlessutil/port.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rootlessutil.go": {
+              "name": "rootlessutil.go",
+              "path": "nerdctl.git/pkg/rootlessutil/rootlessutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "xdg.go": {
+              "name": "xdg.go",
+              "path": "nerdctl.git/pkg/rootlessutil/xdg.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "statsutil": {
+          "name": "statsutil",
+          "path": "nerdctl.git/pkg/statsutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "stats.go": {
+              "name": "stats.go",
+              "path": "nerdctl.git/pkg/statsutil/stats.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stats_linux.go": {
+              "name": "stats_linux.go",
+              "path": "nerdctl.git/pkg/statsutil/stats_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "strutil": {
+          "name": "strutil",
+          "path": "nerdctl.git/pkg/strutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "strutil.go": {
+              "name": "strutil.go",
+              "path": "nerdctl.git/pkg/strutil/strutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "strutil_test.go": {
+              "name": "strutil_test.go",
+              "path": "nerdctl.git/pkg/strutil/strutil_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "systemutil": {
+          "name": "systemutil",
+          "path": "nerdctl.git/pkg/systemutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "socket_unix.go": {
+              "name": "socket_unix.go",
+              "path": "nerdctl.git/pkg/systemutil/socket_unix.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "socket_windows.go": {
+              "name": "socket_windows.go",
+              "path": "nerdctl.git/pkg/systemutil/socket_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "tabutil": {
+          "name": "tabutil",
+          "path": "nerdctl.git/pkg/tabutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "tabutil.go": {
+              "name": "tabutil.go",
+              "path": "nerdctl.git/pkg/tabutil/tabutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tabutil_test.go": {
+              "name": "tabutil_test.go",
+              "path": "nerdctl.git/pkg/tabutil/tabutil_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "tarutil": {
+          "name": "tarutil",
+          "path": "nerdctl.git/pkg/tarutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "tarutil.go": {
+              "name": "tarutil.go",
+              "path": "nerdctl.git/pkg/tarutil/tarutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "taskutil": {
+          "name": "taskutil",
+          "path": "nerdctl.git/pkg/taskutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "taskutil.go": {
+              "name": "taskutil.go",
+              "path": "nerdctl.git/pkg/taskutil/taskutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "testutil": {
+          "name": "testutil",
+          "path": "nerdctl.git/pkg/testutil",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "compose.go": {
+              "name": "compose.go",
+              "path": "nerdctl.git/pkg/testutil/compose.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nettestutil": {
+              "name": "nettestutil",
+              "path": "nerdctl.git/pkg/testutil/nettestutil",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "nettestutil.go": {
+                  "name": "nettestutil.go",
+                  "path": "nerdctl.git/pkg/testutil/nettestutil/nettestutil.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "testca": {
+              "name": "testca",
+              "path": "nerdctl.git/pkg/testutil/testca",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "testca.go": {
+                  "name": "testca.go",
+                  "path": "nerdctl.git/pkg/testutil/testca/testca.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "testregistry": {
+              "name": "testregistry",
+              "path": "nerdctl.git/pkg/testutil/testregistry",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "testregistry_linux.go": {
+                  "name": "testregistry_linux.go",
+                  "path": "nerdctl.git/pkg/testutil/testregistry/testregistry_linux.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "testsyslog": {
+              "name": "testsyslog",
+              "path": "nerdctl.git/pkg/testutil/testsyslog",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "testsyslog.go": {
+                  "name": "testsyslog.go",
+                  "path": "nerdctl.git/pkg/testutil/testsyslog/testsyslog.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "testutil.go": {
+              "name": "testutil.go",
+              "path": "nerdctl.git/pkg/testutil/testutil.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "testutil_freebsd.go": {
+              "name": "testutil_freebsd.go",
+              "path": "nerdctl.git/pkg/testutil/testutil_freebsd.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "testutil_linux.go": {
+              "name": "testutil_linux.go",
+              "path": "nerdctl.git/pkg/testutil/testutil_linux.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "testutil_windows.go": {
+              "name": "testutil_windows.go",
+              "path": "nerdctl.git/pkg/testutil/testutil_windows.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "version": {
+          "name": "version",
+          "path": "nerdctl.git/pkg/version",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "version.go": {
+              "name": "version.go",
+              "path": "nerdctl.git/pkg/version/version.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 318476701,
+    "name": "nerdctl",
+    "full_name": "containerd/nerdctl",
+    "owner": {
+      "login": "containerd",
+      "html_url": "https://github.com/containerd",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/containerd/nerdctl",
+    "description": "contaiNERD CTL - Docker-compatible CLI for containerd, with support for Compose, Rootless, eStargz, OCIcrypt, IPFS, ...",
+    "url": "https://api.github.com/repos/containerd/nerdctl",
+    "clone_url": "https://github.com/containerd/nerdctl.git",
+    "homepage": "",
+    "size": 5174,
+    "stargazers_count": 5162,
+    "watchers_count": 5162,
+    "language": "Go"
+  }
+}
