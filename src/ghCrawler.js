@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 const LIMIT_PER_REQUEST = 1000
-const INTERVAL = 2000
+const INTERVAL = 5000
 
 var crawlLikeABoss = (query, opts, callback, preData, page) => {
 

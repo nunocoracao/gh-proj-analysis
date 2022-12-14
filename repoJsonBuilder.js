@@ -1,3 +1,4 @@
+const fs = require('fs');
 require('dotenv-safe').config();
 const githubSearchRepos = require('./src/ghCrawler.js');
 var utils = require('./src/utils');
@@ -42,6 +43,18 @@ var searchGH = (query, callback) => {
     });
 }
 
+var saveToFile = () => {
+    var res_array = []
+    var url_array = []
+    for (var i in results) {
+        res_array.push(results[i])
+        url_array.push(results[i].clone_url)
+    }
+    console.log('Saving ' + res_array.length + ' entries to file')
+    utils.saveToFile(res_array, '../repos.json')
+    utils.saveToFile(url_array, '../repos_url.json')
+}
+
 var processResult = (items) => {
     console.log('Processing ' + items.length + ' items')
 
@@ -70,16 +83,16 @@ var processResult = (items) => {
 
     //run next
     currentIndex++
-    if(currentIndex < searchQueries.length){
-        searchGH(searchQueries[currentIndex], processResult)
-    } else {
+    saveToFile()
 
-        var res_array = []
-        for(var i in results)
-            res_array.push(results[i])
-        console.log('Saving ' + res_array.length + ' entries to file')
-        utils.saveToFile(res_array, '../repos.json')
+    if (currentIndex < searchQueries.length) {
+        searchGH(searchQueries[currentIndex], processResult)
     }
 }
 
+if (fs.existsSync('repos.json')) {
+    var alreadyLoaded = JSON.parse(fs.readFileSync('repos.json'))
+    for (var i in alreadyLoaded)
+        results[alreadyLoaded[i].id] = alreadyLoaded[i]
+}
 searchGH(searchQueries[currentIndex], processResult)
