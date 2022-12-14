@@ -5,33 +5,33 @@ var utils = require('./src/utils');
 
 var searchQueries = [
     'javascript',
-    //'typescript',
-    //'java',
-    //'python',
-    //'html',
-    //'css',
-    //'go',
-    //'rust',
-    //'ruby',
-    //'php',
-    //'sql',
-    //'c#',
-    //'c++',
-    //'c',
-    //'dart',
-    //'swift',
-    //'scala',
-    //'sample',
-    //'kotlin',
-    //'android',
-    //'ios',
-    //'dockerfile',
-    //'compose',
-    //'docker',
-    //'docker compose',
-    //'kubernetes',
-    //'api',
-    //'ml',
+    'typescript',
+    'java',
+    'python',
+    'html',
+    'css',
+    'go',
+    'rust',
+    'ruby',
+    'php',
+    'sql',
+    'c#',
+    'c++',
+    'c',
+    'dart',
+    'swift',
+    'scala',
+    'sample',
+    'kotlin',
+    'android',
+    'ios',
+    'dockerfile',
+    'compose',
+    'docker',
+    'docker compose',
+    'kubernetes',
+    'api',
+    'ml',
 ]
 
 currentIndex = 0
@@ -40,7 +40,7 @@ var results = {}
 
 var searchGH = (query, callback) => {
     console.log('Search using query: ' + query)
-    githubSearchRepos(query, { token: process.env.TOKEN, sort: 'stars' }, (data) => {
+    githubSearchRepos(query, { token: process.env.TOKEN, sort: 'stars'  /* stars | forks | updated */ }, (data) => {
         callback(data.items);
     });
 }

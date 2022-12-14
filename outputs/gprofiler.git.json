@@ -1,0 +1,1846 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 3,
+      "subFolderCount": 16,
+      "filepaths": [
+        "gprofiler.git/Dockerfile",
+        "gprofiler.git/dockerfile_lint.sh",
+        "gprofiler.git/pyi.Dockerfile",
+        "gprofiler.git/tests/containers/dotnet/Dockerfile",
+        "gprofiler.git/tests/containers/golang/Dockerfile",
+        "gprofiler.git/tests/containers/java/Dockerfile",
+        "gprofiler.git/tests/containers/java/musl.Dockerfile",
+        "gprofiler.git/tests/containers/java/zing.Dockerfile",
+        "gprofiler.git/tests/containers/native/change_comm.Dockerfile",
+        "gprofiler.git/tests/containers/native/dwarf.Dockerfile",
+        "gprofiler.git/tests/containers/native/fp.Dockerfile",
+        "gprofiler.git/tests/containers/native/thread_comm.Dockerfile",
+        "gprofiler.git/tests/containers/nodejs/Dockerfile",
+        "gprofiler.git/tests/containers/php/Dockerfile",
+        "gprofiler.git/tests/containers/python/Dockerfile",
+        "gprofiler.git/tests/containers/python/libpython.Dockerfile",
+        "gprofiler.git/tests/containers/python/matrix.Dockerfile",
+        "gprofiler.git/tests/containers/python/uwsgi.Dockerfile",
+        "gprofiler.git/tests/containers/ruby/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "gprofiler.git/deploy/docker-compose/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "gprofiler.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".flake8": {
+      "name": ".flake8",
+      "path": "gprofiler.git/.flake8",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "gprofiler.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "gprofiler.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "gprofiler.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "gprofiler.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "gprofiler.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "gprofiler.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "gprofiler.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "gprofiler.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "gprofiler.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "gprofiler.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "gprofiler.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "gprofiler.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "gprofiler.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "gprofiler.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "gprofiler.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "gprofiler.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "gprofiler.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "gprofiler.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "gprofiler.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "gprofiler.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "gprofiler.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "gprofiler.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "gprofiler.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "gprofiler.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "gprofiler.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "gprofiler.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "gprofiler.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "gprofiler.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "gprofiler.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "gprofiler.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "gprofiler.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "gprofiler.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-4703c752e5d5152fccc60ffac2bf9c061dd18a66.idx": {
+                  "name": "pack-4703c752e5d5152fccc60ffac2bf9c061dd18a66.idx",
+                  "path": "gprofiler.git/.git/objects/pack/pack-4703c752e5d5152fccc60ffac2bf9c061dd18a66.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-4703c752e5d5152fccc60ffac2bf9c061dd18a66.pack": {
+                  "name": "pack-4703c752e5d5152fccc60ffac2bf9c061dd18a66.pack",
+                  "path": "gprofiler.git/.git/objects/pack/pack-4703c752e5d5152fccc60ffac2bf9c061dd18a66.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "gprofiler.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "gprofiler.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "gprofiler.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "gprofiler.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "gprofiler.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "gprofiler.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "gprofiler.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "gprofiler.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        }
+      }
+    },
+    ".gitattributes": {
+      "name": ".gitattributes",
+      "path": "gprofiler.git/.gitattributes",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".github": {
+      "name": ".github",
+      "path": "gprofiler.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "gprofiler.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug.md": {
+              "name": "bug.md",
+              "path": "gprofiler.git/.github/ISSUE_TEMPLATE/bug.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature.md": {
+              "name": "feature.md",
+              "path": "gprofiler.git/.github/ISSUE_TEMPLATE/feature.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "PULL_REQUEST_TEMPLATE.md": {
+          "name": "PULL_REQUEST_TEMPLATE.md",
+          "path": "gprofiler.git/.github/PULL_REQUEST_TEMPLATE.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "gprofiler.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "build-container-and-deploy.yml": {
+              "name": "build-container-and-deploy.yml",
+              "path": "gprofiler.git/.github/workflows/build-container-and-deploy.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build-container-and-test.yml": {
+              "name": "build-container-and-test.yml",
+              "path": "gprofiler.git/.github/workflows/build-container-and-test.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build-executable-test-deploy.yml": {
+              "name": "build-executable-test-deploy.yml",
+              "path": "gprofiler.git/.github/workflows/build-executable-test-deploy.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linters.yml": {
+              "name": "linters.yml",
+              "path": "gprofiler.git/.github/workflows/linters.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "gprofiler.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".gitmodules": {
+      "name": ".gitmodules",
+      "path": "gprofiler.git/.gitmodules",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".hadolint.yaml": {
+      "name": ".hadolint.yaml",
+      "path": "gprofiler.git/.hadolint.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".isort.cfg": {
+      "name": ".isort.cfg",
+      "path": "gprofiler.git/.isort.cfg",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "gprofiler.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "gprofiler.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "LICENSE.md": {
+      "name": "LICENSE.md",
+      "path": "gprofiler.git/LICENSE.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "MANIFEST.in": {
+      "name": "MANIFEST.in",
+      "path": "gprofiler.git/MANIFEST.in",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "gprofiler.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "deploy": {
+      "name": "deploy",
+      "path": "gprofiler.git/deploy",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ansible": {
+          "name": "ansible",
+          "path": "gprofiler.git/deploy/ansible",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "gprofiler_playbook.yml": {
+              "name": "gprofiler_playbook.yml",
+              "path": "gprofiler.git/deploy/ansible/gprofiler_playbook.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "dataproc": {
+          "name": "dataproc",
+          "path": "gprofiler.git/deploy/dataproc",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "gprofiler_initialization_action.sh": {
+              "name": "gprofiler_initialization_action.sh",
+              "path": "gprofiler.git/deploy/dataproc/gprofiler_initialization_action.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "docker-compose": {
+          "name": "docker-compose",
+          "path": "gprofiler.git/deploy/docker-compose",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "gprofiler.git/deploy/docker-compose/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "ecs": {
+          "name": "ecs",
+          "path": "gprofiler.git/deploy/ecs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "gprofiler_task_definition.json": {
+              "name": "gprofiler_task_definition.json",
+              "path": "gprofiler.git/deploy/ecs/gprofiler_task_definition.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "k8s": {
+          "name": "k8s",
+          "path": "gprofiler.git/deploy/k8s",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "gprofiler.yaml": {
+              "name": "gprofiler.yaml",
+              "path": "gprofiler.git/deploy/k8s/gprofiler.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "helm-charts": {
+              "name": "helm-charts",
+              "path": "gprofiler.git/deploy/k8s/helm-charts",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".helmignore": {
+                  "name": ".helmignore",
+                  "path": "gprofiler.git/deploy/k8s/helm-charts/.helmignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Chart.yaml": {
+                  "name": "Chart.yaml",
+                  "path": "gprofiler.git/deploy/k8s/helm-charts/Chart.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "templates": {
+                  "name": "templates",
+                  "path": "gprofiler.git/deploy/k8s/helm-charts/templates",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "_helpers.tpl": {
+                      "name": "_helpers.tpl",
+                      "path": "gprofiler.git/deploy/k8s/helm-charts/templates/_helpers.tpl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "daemonset.yaml": {
+                      "name": "daemonset.yaml",
+                      "path": "gprofiler.git/deploy/k8s/helm-charts/templates/daemonset.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "values.yaml": {
+                  "name": "values.yaml",
+                  "path": "gprofiler.git/deploy/k8s/helm-charts/values.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "systemd": {
+          "name": "systemd",
+          "path": "gprofiler.git/deploy/systemd",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".gitignore": {
+              "name": ".gitignore",
+              "path": "gprofiler.git/deploy/systemd/.gitignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "create_systemd_service.sh": {
+              "name": "create_systemd_service.sh",
+              "path": "gprofiler.git/deploy/systemd/create_systemd_service.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "granulate-gprofiler.service.template": {
+              "name": "granulate-gprofiler.service.template",
+              "path": "gprofiler.git/deploy/systemd/granulate-gprofiler.service.template",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "dev-requirements.txt": {
+      "name": "dev-requirements.txt",
+      "path": "gprofiler.git/dev-requirements.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "dockerfile_lint.sh": {
+      "name": "dockerfile_lint.sh",
+      "path": "gprofiler.git/dockerfile_lint.sh",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "enable_hook.sh": {
+      "name": "enable_hook.sh",
+      "path": "gprofiler.git/enable_hook.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "exe-requirements.txt": {
+      "name": "exe-requirements.txt",
+      "path": "gprofiler.git/exe-requirements.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "gprofiler": {
+      "name": "gprofiler",
+      "path": "gprofiler.git/gprofiler",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "__init__.py": {
+          "name": "__init__.py",
+          "path": "gprofiler.git/gprofiler/__init__.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "__main__.py": {
+          "name": "__main__.py",
+          "path": "gprofiler.git/gprofiler/__main__.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "client.py": {
+          "name": "client.py",
+          "path": "gprofiler.git/gprofiler/client.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "consts.py": {
+          "name": "consts.py",
+          "path": "gprofiler.git/gprofiler/consts.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "containers_client.py": {
+          "name": "containers_client.py",
+          "path": "gprofiler.git/gprofiler/containers_client.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "databricks_client.py": {
+          "name": "databricks_client.py",
+          "path": "gprofiler.git/gprofiler/databricks_client.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "diagnostics.py": {
+          "name": "diagnostics.py",
+          "path": "gprofiler.git/gprofiler/diagnostics.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "exceptions.py": {
+          "name": "exceptions.py",
+          "path": "gprofiler.git/gprofiler/exceptions.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "gprofiler_types.py": {
+          "name": "gprofiler_types.py",
+          "path": "gprofiler.git/gprofiler/gprofiler_types.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kernel_messages.py": {
+          "name": "kernel_messages.py",
+          "path": "gprofiler.git/gprofiler/kernel_messages.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "log.py": {
+          "name": "log.py",
+          "path": "gprofiler.git/gprofiler/log.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "main.py": {
+          "name": "main.py",
+          "path": "gprofiler.git/gprofiler/main.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "merge.py": {
+          "name": "merge.py",
+          "path": "gprofiler.git/gprofiler/merge.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "metadata": {
+          "name": "metadata",
+          "path": "gprofiler.git/gprofiler/metadata",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "__init__.py": {
+              "name": "__init__.py",
+              "path": "gprofiler.git/gprofiler/metadata/__init__.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "application_identifiers.py": {
+              "name": "application_identifiers.py",
+              "path": "gprofiler.git/gprofiler/metadata/application_identifiers.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "application_identifiers_java.py": {
+              "name": "application_identifiers_java.py",
+              "path": "gprofiler.git/gprofiler/metadata/application_identifiers_java.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "application_metadata.py": {
+              "name": "application_metadata.py",
+              "path": "gprofiler.git/gprofiler/metadata/application_metadata.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "base_application_identifier.py": {
+              "name": "base_application_identifier.py",
+              "path": "gprofiler.git/gprofiler/metadata/base_application_identifier.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "enrichment.py": {
+              "name": "enrichment.py",
+              "path": "gprofiler.git/gprofiler/metadata/enrichment.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metadata_collector.py": {
+              "name": "metadata_collector.py",
+              "path": "gprofiler.git/gprofiler/metadata/metadata_collector.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "py_module_version.py": {
+              "name": "py_module_version.py",
+              "path": "gprofiler.git/gprofiler/metadata/py_module_version.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "system_metadata.py": {
+              "name": "system_metadata.py",
+              "path": "gprofiler.git/gprofiler/metadata/system_metadata.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "versions.py": {
+              "name": "versions.py",
+              "path": "gprofiler.git/gprofiler/metadata/versions.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "platform.py": {
+          "name": "platform.py",
+          "path": "gprofiler.git/gprofiler/platform.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "profilers": {
+          "name": "profilers",
+          "path": "gprofiler.git/gprofiler/profilers",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "__init__.py": {
+              "name": "__init__.py",
+              "path": "gprofiler.git/gprofiler/profilers/__init__.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dotnet.py": {
+              "name": "dotnet.py",
+              "path": "gprofiler.git/gprofiler/profilers/dotnet.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "factory.py": {
+              "name": "factory.py",
+              "path": "gprofiler.git/gprofiler/profilers/factory.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "java.py": {
+              "name": "java.py",
+              "path": "gprofiler.git/gprofiler/profilers/java.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "node.py": {
+              "name": "node.py",
+              "path": "gprofiler.git/gprofiler/profilers/node.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "perf.py": {
+              "name": "perf.py",
+              "path": "gprofiler.git/gprofiler/profilers/perf.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "php.py": {
+              "name": "php.py",
+              "path": "gprofiler.git/gprofiler/profilers/php.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "profiler_base.py": {
+              "name": "profiler_base.py",
+              "path": "gprofiler.git/gprofiler/profilers/profiler_base.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python.py": {
+              "name": "python.py",
+              "path": "gprofiler.git/gprofiler/profilers/python.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "python_ebpf.py": {
+              "name": "python_ebpf.py",
+              "path": "gprofiler.git/gprofiler/profilers/python_ebpf.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "registry.py": {
+              "name": "registry.py",
+              "path": "gprofiler.git/gprofiler/profilers/registry.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ruby.py": {
+              "name": "ruby.py",
+              "path": "gprofiler.git/gprofiler/profilers/ruby.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "resources": {
+          "name": "resources",
+          "path": "gprofiler.git/gprofiler/resources",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "flamegraph": {
+              "name": "flamegraph",
+              "path": "gprofiler.git/gprofiler/resources/flamegraph",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "flamegraph_template.html": {
+                  "name": "flamegraph_template.html",
+                  "path": "gprofiler.git/gprofiler/resources/flamegraph/flamegraph_template.html",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "state.py": {
+          "name": "state.py",
+          "path": "gprofiler.git/gprofiler/state.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "system_metrics.py": {
+          "name": "system_metrics.py",
+          "path": "gprofiler.git/gprofiler/system_metrics.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "usage_loggers.py": {
+          "name": "usage_loggers.py",
+          "path": "gprofiler.git/gprofiler/usage_loggers.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "utils": {
+          "name": "utils",
+          "path": "gprofiler.git/gprofiler/utils",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "__init__.py": {
+              "name": "__init__.py",
+              "path": "gprofiler.git/gprofiler/utils/__init__.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fs.py": {
+              "name": "fs.py",
+              "path": "gprofiler.git/gprofiler/utils/fs.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "perf.py": {
+              "name": "perf.py",
+              "path": "gprofiler.git/gprofiler/utils/perf.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "process.py": {
+              "name": "process.py",
+              "path": "gprofiler.git/gprofiler/utils/process.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "proxy.py": {
+              "name": "proxy.py",
+              "path": "gprofiler.git/gprofiler/utils/proxy.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "speedscope.py": {
+              "name": "speedscope.py",
+              "path": "gprofiler.git/gprofiler/utils/speedscope.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "granulate-utils": {
+      "name": "granulate-utils",
+      "path": "gprofiler.git/granulate-utils",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {}
+    },
+    "lint.sh": {
+      "name": "lint.sh",
+      "path": "gprofiler.git/lint.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "mypy.ini": {
+      "name": "mypy.ini",
+      "path": "gprofiler.git/mypy.ini",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "pyi.Dockerfile": {
+      "name": "pyi.Dockerfile",
+      "path": "gprofiler.git/pyi.Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "pyi_build.py": {
+      "name": "pyi_build.py",
+      "path": "gprofiler.git/pyi_build.py",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "pyinstaller.spec": {
+      "name": "pyinstaller.spec",
+      "path": "gprofiler.git/pyinstaller.spec",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "requirements.txt": {
+      "name": "requirements.txt",
+      "path": "gprofiler.git/requirements.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "scripts": {
+      "name": "scripts",
+      "path": "gprofiler.git/scripts",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "async_profiler_build_shared.sh": {
+          "name": "async_profiler_build_shared.sh",
+          "path": "gprofiler.git/scripts/async_profiler_build_shared.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "async_profiler_env_glibc.sh": {
+          "name": "async_profiler_env_glibc.sh",
+          "path": "gprofiler.git/scripts/async_profiler_env_glibc.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "async_profiler_env_musl.sh": {
+          "name": "async_profiler_env_musl.sh",
+          "path": "gprofiler.git/scripts/async_profiler_env_musl.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "bcc_helpers_build.sh": {
+          "name": "bcc_helpers_build.sh",
+          "path": "gprofiler.git/scripts/bcc_helpers_build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build_aarch64_container.sh": {
+          "name": "build_aarch64_container.sh",
+          "path": "gprofiler.git/scripts/build_aarch64_container.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build_aarch64_executable.sh": {
+          "name": "build_aarch64_executable.sh",
+          "path": "gprofiler.git/scripts/build_aarch64_executable.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build_node_package.sh": {
+          "name": "build_node_package.sh",
+          "path": "gprofiler.git/scripts/build_node_package.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build_x86_64_container.sh": {
+          "name": "build_x86_64_container.sh",
+          "path": "gprofiler.git/scripts/build_x86_64_container.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build_x86_64_executable.sh": {
+          "name": "build_x86_64_executable.sh",
+          "path": "gprofiler.git/scripts/build_x86_64_executable.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "burn_build.sh": {
+          "name": "burn_build.sh",
+          "path": "gprofiler.git/scripts/burn_build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "check_pyinstaller.sh": {
+          "name": "check_pyinstaller.sh",
+          "path": "gprofiler.git/scripts/check_pyinstaller.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cmp_tags.sh": {
+          "name": "cmp_tags.sh",
+          "path": "gprofiler.git/scripts/cmp_tags.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "copy_resources_from_image.sh": {
+          "name": "copy_resources_from_image.sh",
+          "path": "gprofiler.git/scripts/copy_resources_from_image.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "dotnet_prepare_dependencies.sh": {
+          "name": "dotnet_prepare_dependencies.sh",
+          "path": "gprofiler.git/scripts/dotnet_prepare_dependencies.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "libunwind_build.sh": {
+          "name": "libunwind_build.sh",
+          "path": "gprofiler.git/scripts/libunwind_build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "list_needed_libs.sh": {
+          "name": "list_needed_libs.sh",
+          "path": "gprofiler.git/scripts/list_needed_libs.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "node_builder_glibc_env.sh": {
+          "name": "node_builder_glibc_env.sh",
+          "path": "gprofiler.git/scripts/node_builder_glibc_env.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "node_builder_musl_env.sh": {
+          "name": "node_builder_musl_env.sh",
+          "path": "gprofiler.git/scripts/node_builder_musl_env.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "openssl_build.sh": {
+          "name": "openssl_build.sh",
+          "path": "gprofiler.git/scripts/openssl_build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "perf_build.sh": {
+          "name": "perf_build.sh",
+          "path": "gprofiler.git/scripts/perf_build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "perf_env.sh": {
+          "name": "perf_env.sh",
+          "path": "gprofiler.git/scripts/perf_env.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "phpspy_build.sh": {
+          "name": "phpspy_build.sh",
+          "path": "gprofiler.git/scripts/phpspy_build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "phpspy_env.sh": {
+          "name": "phpspy_env.sh",
+          "path": "gprofiler.git/scripts/phpspy_env.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "prepare_machine-unknown-linux-musl.sh": {
+          "name": "prepare_machine-unknown-linux-musl.sh",
+          "path": "gprofiler.git/scripts/prepare_machine-unknown-linux-musl.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pyperf_build.sh": {
+          "name": "pyperf_build.sh",
+          "path": "gprofiler.git/scripts/pyperf_build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pyspy_build.sh": {
+          "name": "pyspy_build.sh",
+          "path": "gprofiler.git/scripts/pyspy_build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pyspy_commit.txt": {
+          "name": "pyspy_commit.txt",
+          "path": "gprofiler.git/scripts/pyspy_commit.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pyspy_tag.txt": {
+          "name": "pyspy_tag.txt",
+          "path": "gprofiler.git/scripts/pyspy_tag.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "python310_build.sh": {
+          "name": "python310_build.sh",
+          "path": "gprofiler.git/scripts/python310_build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rbspy_build.sh": {
+          "name": "rbspy_build.sh",
+          "path": "gprofiler.git/scripts/rbspy_build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "setup_runner_requirements.sh": {
+          "name": "setup_runner_requirements.sh",
+          "path": "gprofiler.git/scripts/setup_runner_requirements.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "staticx_patch.diff": {
+          "name": "staticx_patch.diff",
+          "path": "gprofiler.git/scripts/staticx_patch.diff",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "verify_tag.sh": {
+          "name": "verify_tag.sh",
+          "path": "gprofiler.git/scripts/verify_tag.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "windows": {
+          "name": "windows",
+          "path": "gprofiler.git/scripts/windows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "build-pyspy.bat": {
+              "name": "build-pyspy.bat",
+              "path": "gprofiler.git/scripts/windows/build-pyspy.bat",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build.bat": {
+              "name": "build.bat",
+              "path": "gprofiler.git/scripts/windows/build.bat",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "setup.py": {
+      "name": "setup.py",
+      "path": "gprofiler.git/setup.py",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "shell_lint.sh": {
+      "name": "shell_lint.sh",
+      "path": "gprofiler.git/shell_lint.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "test-requirements.txt": {
+      "name": "test-requirements.txt",
+      "path": "gprofiler.git/test-requirements.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "tests": {
+      "name": "tests",
+      "path": "gprofiler.git/tests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "__init__.py": {
+          "name": "__init__.py",
+          "path": "gprofiler.git/tests/__init__.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conftest.py": {
+          "name": "conftest.py",
+          "path": "gprofiler.git/tests/conftest.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "containers": {
+          "name": "containers",
+          "path": "gprofiler.git/tests/containers",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "dotnet": {
+              "name": "dotnet",
+              "path": "gprofiler.git/tests/containers/dotnet",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "gprofiler.git/tests/containers/dotnet/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Fibonacci.cs": {
+                  "name": "Fibonacci.cs",
+                  "path": "gprofiler.git/tests/containers/dotnet/Fibonacci.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "golang": {
+              "name": "golang",
+              "path": "gprofiler.git/tests/containers/golang",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "gprofiler.git/tests/containers/golang/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "fibonacci.go": {
+                  "name": "fibonacci.go",
+                  "path": "gprofiler.git/tests/containers/golang/fibonacci.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "java": {
+              "name": "java",
+              "path": "gprofiler.git/tests/containers/java",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "gprofiler.git/tests/containers/java/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Fibonacci.java": {
+                  "name": "Fibonacci.java",
+                  "path": "gprofiler.git/tests/containers/java/Fibonacci.java",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "MANIFEST.MF": {
+                  "name": "MANIFEST.MF",
+                  "path": "gprofiler.git/tests/containers/java/MANIFEST.MF",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "musl.Dockerfile": {
+                  "name": "musl.Dockerfile",
+                  "path": "gprofiler.git/tests/containers/java/musl.Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "zing.Dockerfile": {
+                  "name": "zing.Dockerfile",
+                  "path": "gprofiler.git/tests/containers/java/zing.Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "native": {
+              "name": "native",
+              "path": "gprofiler.git/tests/containers/native",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "change_comm.Dockerfile": {
+                  "name": "change_comm.Dockerfile",
+                  "path": "gprofiler.git/tests/containers/native/change_comm.Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "dwarf.Dockerfile": {
+                  "name": "dwarf.Dockerfile",
+                  "path": "gprofiler.git/tests/containers/native/dwarf.Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "fp.Dockerfile": {
+                  "name": "fp.Dockerfile",
+                  "path": "gprofiler.git/tests/containers/native/fp.Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "native.c": {
+                  "name": "native.c",
+                  "path": "gprofiler.git/tests/containers/native/native.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "thread_comm.Dockerfile": {
+                  "name": "thread_comm.Dockerfile",
+                  "path": "gprofiler.git/tests/containers/native/thread_comm.Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "nodejs": {
+              "name": "nodejs",
+              "path": "gprofiler.git/tests/containers/nodejs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "gprofiler.git/tests/containers/nodejs/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "fibonacci.js": {
+                  "name": "fibonacci.js",
+                  "path": "gprofiler.git/tests/containers/nodejs/fibonacci.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "php": {
+              "name": "php",
+              "path": "gprofiler.git/tests/containers/php",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "gprofiler.git/tests/containers/php/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "fibonacci.php": {
+                  "name": "fibonacci.php",
+                  "path": "gprofiler.git/tests/containers/php/fibonacci.php",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "python": {
+              "name": "python",
+              "path": "gprofiler.git/tests/containers/python",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "gprofiler.git/tests/containers/python/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "libpython.Dockerfile": {
+                  "name": "libpython.Dockerfile",
+                  "path": "gprofiler.git/tests/containers/python/libpython.Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "lister.py": {
+                  "name": "lister.py",
+                  "path": "gprofiler.git/tests/containers/python/lister.py",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "matrix.Dockerfile": {
+                  "name": "matrix.Dockerfile",
+                  "path": "gprofiler.git/tests/containers/python/matrix.Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "uwsgi.Dockerfile": {
+                  "name": "uwsgi.Dockerfile",
+                  "path": "gprofiler.git/tests/containers/python/uwsgi.Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "ruby": {
+              "name": "ruby",
+              "path": "gprofiler.git/tests/containers/ruby",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "gprofiler.git/tests/containers/ruby/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "fibonacci.rb": {
+                  "name": "fibonacci.rb",
+                  "path": "gprofiler.git/tests/containers/ruby/fibonacci.rb",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "pytest.ini": {
+          "name": "pytest.ini",
+          "path": "gprofiler.git/tests/pytest.ini",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test.sh": {
+          "name": "test.sh",
+          "path": "gprofiler.git/tests/test.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_app_metadata.py": {
+          "name": "test_app_metadata.py",
+          "path": "gprofiler.git/tests/test_app_metadata.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_appids.py": {
+          "name": "test_appids.py",
+          "path": "gprofiler.git/tests/test_appids.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_controller_pid.py": {
+          "name": "test_controller_pid.py",
+          "path": "gprofiler.git/tests/test_controller_pid.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_executable.py": {
+          "name": "test_executable.py",
+          "path": "gprofiler.git/tests/test_executable.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_java.py": {
+          "name": "test_java.py",
+          "path": "gprofiler.git/tests/test_java.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_merge.py": {
+          "name": "test_merge.py",
+          "path": "gprofiler.git/tests/test_merge.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_node.py": {
+          "name": "test_node.py",
+          "path": "gprofiler.git/tests/test_node.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_perf.py": {
+          "name": "test_perf.py",
+          "path": "gprofiler.git/tests/test_perf.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_preconditions.py": {
+          "name": "test_preconditions.py",
+          "path": "gprofiler.git/tests/test_preconditions.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_profiling_mode.py": {
+          "name": "test_profiling_mode.py",
+          "path": "gprofiler.git/tests/test_profiling_mode.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_python.py": {
+          "name": "test_python.py",
+          "path": "gprofiler.git/tests/test_python.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_sanity.py": {
+          "name": "test_sanity.py",
+          "path": "gprofiler.git/tests/test_sanity.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "type_utils.py": {
+          "name": "type_utils.py",
+          "path": "gprofiler.git/tests/type_utils.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "utils.py": {
+          "name": "utils.py",
+          "path": "gprofiler.git/tests/utils.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 342226763,
+    "name": "gprofiler",
+    "full_name": "Granulate/gprofiler",
+    "owner": {
+      "login": "Granulate",
+      "html_url": "https://github.com/Granulate",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/Granulate/gprofiler",
+    "description": "gProfiler is a system-wide profiler, combining multiple sampling profilers to produce unified visualization of what your CPU is spending time on.",
+    "url": "https://api.github.com/repos/Granulate/gprofiler",
+    "clone_url": "https://github.com/Granulate/gprofiler.git",
+    "homepage": "https://profiler.granulate.io",
+    "size": 1506,
+    "stargazers_count": 594,
+    "watchers_count": 594,
+    "language": "Python"
+  }
+}

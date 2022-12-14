@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const LIMIT_PER_REQUEST = 2000
+const LIMIT_PER_REQUEST = 1000 //max available
 const INTERVAL = 5000
 
 var crawlLikeABoss = (query, opts, callback, preData, page) => {
@@ -17,6 +17,8 @@ var crawlLikeABoss = (query, opts, callback, preData, page) => {
 
         if (page)
             url += `&page=${page}`;
+
+        url += `&per_page=100`;
 
         axios({
             method: 'get',
@@ -39,6 +41,7 @@ var crawlLikeABoss = (query, opts, callback, preData, page) => {
             for(var i in response.data.items)
                 console.log(response.data.items[i].clone_url)
 
+            console.log(query)
 
             if (data.items.length < LIMIT_PER_REQUEST && data.items.length < data.total_count) {
                 console.log('getting more data')
