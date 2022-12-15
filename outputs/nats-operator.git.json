@@ -1,0 +1,1827 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "nats-operator.git/docker/operator/Dockerfile",
+        "nats-operator.git/hack/e2e/skaffold/Dockerfile",
+        "nats-operator.git/hack/operator/skaffold/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "nats-operator.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "nats-operator.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "nats-operator.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "nats-operator.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "nats-operator.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "nats-operator.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "nats-operator.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "nats-operator.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "nats-operator.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "nats-operator.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "nats-operator.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "nats-operator.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "nats-operator.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "nats-operator.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "nats-operator.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "nats-operator.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "nats-operator.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "nats-operator.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "nats-operator.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "nats-operator.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "nats-operator.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "nats-operator.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "nats-operator.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "nats-operator.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "nats-operator.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "nats-operator.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "nats-operator.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "nats-operator.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "nats-operator.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "nats-operator.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "nats-operator.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "nats-operator.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "nats-operator.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-bf7032e07261423b7b2b4d99597f3974f63aec12.idx": {
+                  "name": "pack-bf7032e07261423b7b2b4d99597f3974f63aec12.idx",
+                  "path": "nats-operator.git/.git/objects/pack/pack-bf7032e07261423b7b2b4d99597f3974f63aec12.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-bf7032e07261423b7b2b4d99597f3974f63aec12.pack": {
+                  "name": "pack-bf7032e07261423b7b2b4d99597f3974f63aec12.pack",
+                  "path": "nats-operator.git/.git/objects/pack/pack-bf7032e07261423b7b2b4d99597f3974f63aec12.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "nats-operator.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "nats-operator.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "nats-operator.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "nats-operator.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "nats-operator.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "nats-operator.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "nats-operator.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "nats-operator.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "nats-operator.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "nats-operator.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".travis.yml": {
+      "name": ".travis.yml",
+      "path": "nats-operator.git/.travis.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "GOVERNANCE.md": {
+      "name": "GOVERNANCE.md",
+      "path": "nats-operator.git/GOVERNANCE.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "nats-operator.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "MAINTAINERS.md": {
+      "name": "MAINTAINERS.md",
+      "path": "nats-operator.git/MAINTAINERS.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Makefile": {
+      "name": "Makefile",
+      "path": "nats-operator.git/Makefile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "nats-operator.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "bin": {
+      "name": "bin",
+      "path": "nats-operator.git/bin",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitkeep": {
+          "name": ".gitkeep",
+          "path": "nats-operator.git/bin/.gitkeep",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "cmd": {
+      "name": "cmd",
+      "path": "nats-operator.git/cmd",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "operator": {
+          "name": "operator",
+          "path": "nats-operator.git/cmd/operator",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "nats-operator.git/cmd/operator/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main_internal_test.go": {
+              "name": "main_internal_test.go",
+              "path": "nats-operator.git/cmd/operator/main_internal_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "dependencies.md": {
+      "name": "dependencies.md",
+      "path": "nats-operator.git/dependencies.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "deploy": {
+      "name": "deploy",
+      "path": "nats-operator.git/deploy",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "00-prereqs.yaml": {
+          "name": "00-prereqs.yaml",
+          "path": "nats-operator.git/deploy/00-prereqs.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "10-deployment.yaml": {
+          "name": "10-deployment.yaml",
+          "path": "nats-operator.git/deploy/10-deployment.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "docker": {
+      "name": "docker",
+      "path": "nats-operator.git/docker",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "operator": {
+          "name": "operator",
+          "path": "nats-operator.git/docker/operator",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "nats-operator.git/docker/operator/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "docs": {
+      "name": "docs",
+      "path": "nats-operator.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "development": {
+          "name": "development",
+          "path": "nats-operator.git/docs/development",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "development.md": {
+              "name": "development.md",
+              "path": "nats-operator.git/docs/development/development.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "usage": {
+          "name": "usage",
+          "path": "nats-operator.git/docs/usage",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "svc-account-bound-tokens-integration.md": {
+              "name": "svc-account-bound-tokens-integration.md",
+              "path": "nats-operator.git/docs/usage/svc-account-bound-tokens-integration.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "example": {
+      "name": "example",
+      "path": "nats-operator.git/example",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "clients-auth-permissions.json": {
+          "name": "clients-auth-permissions.json",
+          "path": "nats-operator.git/example/clients-auth-permissions.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-cluster-service-accounts.yaml": {
+          "name": "example-cluster-service-accounts.yaml",
+          "path": "nats-operator.git/example/example-cluster-service-accounts.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-custom-cipher.yaml": {
+          "name": "example-custom-cipher.yaml",
+          "path": "nats-operator.git/example/example-custom-cipher.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-nats-cluster-auth.yaml": {
+          "name": "example-nats-cluster-auth.yaml",
+          "path": "nats-operator.git/example/example-nats-cluster-auth.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-nats-cluster-authfile.yaml": {
+          "name": "example-nats-cluster-authfile.yaml",
+          "path": "nats-operator.git/example/example-nats-cluster-authfile.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-nats-cluster-gateway.yaml": {
+          "name": "example-nats-cluster-gateway.yaml",
+          "path": "nats-operator.git/example/example-nats-cluster-gateway.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-nats-cluster-metrics.yaml": {
+          "name": "example-nats-cluster-metrics.yaml",
+          "path": "nats-operator.git/example/example-nats-cluster-metrics.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-nats-cluster-tls.yaml": {
+          "name": "example-nats-cluster-tls.yaml",
+          "path": "nats-operator.git/example/example-nats-cluster-tls.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-nats-cluster.yaml": {
+          "name": "example-nats-cluster.yaml",
+          "path": "nats-operator.git/example/example-nats-cluster.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-nats-custom-config.yaml": {
+          "name": "example-nats-custom-config.yaml",
+          "path": "nats-operator.git/example/example-nats-custom-config.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-service-annotations.yaml": {
+          "name": "example-service-annotations.yaml",
+          "path": "nats-operator.git/example/example-service-annotations.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-super-cluster.yaml": {
+          "name": "example-super-cluster.yaml",
+          "path": "nats-operator.git/example/example-super-cluster.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-svc-accounts-diff-namespaces.yaml": {
+          "name": "example-svc-accounts-diff-namespaces.yaml",
+          "path": "nats-operator.git/example/example-svc-accounts-diff-namespaces.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "example-with-server-name.yaml": {
+          "name": "example-with-server-name.yaml",
+          "path": "nats-operator.git/example/example-with-server-name.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "leafnode-remotes-gateways.yaml": {
+          "name": "leafnode-remotes-gateways.yaml",
+          "path": "nats-operator.git/example/leafnode-remotes-gateways.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "nats-operator-cluster-scoped-rbac.yaml": {
+          "name": "nats-operator-cluster-scoped-rbac.yaml",
+          "path": "nats-operator.git/example/nats-operator-cluster-scoped-rbac.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "nats-operator-cluster-scoped.yaml": {
+          "name": "nats-operator-cluster-scoped.yaml",
+          "path": "nats-operator.git/example/nats-operator-cluster-scoped.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "websocket.yaml": {
+          "name": "websocket.yaml",
+          "path": "nats-operator.git/example/websocket.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "nats-operator.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "nats-operator.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "hack": {
+      "name": "hack",
+      "path": "nats-operator.git/hack",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "boilerplate.txt": {
+          "name": "boilerplate.txt",
+          "path": "nats-operator.git/hack/boilerplate.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "codegen.sh": {
+          "name": "codegen.sh",
+          "path": "nats-operator.git/hack/codegen.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "e2e": {
+          "name": "e2e",
+          "path": "nats-operator.git/hack/e2e",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "certs": {
+              "name": "certs",
+              "path": "nats-operator.git/hack/e2e/certs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ca-config.json": {
+                  "name": "ca-config.json",
+                  "path": "nats-operator.git/hack/e2e/certs/ca-config.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ca-csr.json": {
+                  "name": "ca-csr.json",
+                  "path": "nats-operator.git/hack/e2e/certs/ca-csr.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "client-csr.json": {
+                  "name": "client-csr.json",
+                  "path": "nats-operator.git/hack/e2e/certs/client-csr.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "route-csr.json": {
+                  "name": "route-csr.json",
+                  "path": "nats-operator.git/hack/e2e/certs/route-csr.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "server-csr.json": {
+                  "name": "server-csr.json",
+                  "path": "nats-operator.git/hack/e2e/certs/server-csr.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "prepare-secrets.sh": {
+              "name": "prepare-secrets.sh",
+              "path": "nats-operator.git/hack/e2e/prepare-secrets.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "skaffold": {
+              "name": "skaffold",
+              "path": "nats-operator.git/hack/e2e/skaffold",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "nats-operator.git/hack/e2e/skaffold/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "pod.yml": {
+                  "name": "pod.yml",
+                  "path": "nats-operator.git/hack/e2e/skaffold/pod.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "skaffold.yml": {
+                  "name": "skaffold.yml",
+                  "path": "nats-operator.git/hack/e2e/skaffold/skaffold.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "operator": {
+          "name": "operator",
+          "path": "nats-operator.git/hack/operator",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "skaffold": {
+              "name": "skaffold",
+              "path": "nats-operator.git/hack/operator/skaffold",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "nats-operator.git/hack/operator/skaffold/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "deployment.yml": {
+                  "name": "deployment.yml",
+                  "path": "nats-operator.git/hack/operator/skaffold/deployment.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "prereqs.yml": {
+                  "name": "prereqs.yml",
+                  "path": "nats-operator.git/hack/operator/skaffold/prereqs.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "skaffold.yml": {
+                  "name": "skaffold.yml",
+                  "path": "nats-operator.git/hack/operator/skaffold/skaffold.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "skaffold.sh": {
+          "name": "skaffold.sh",
+          "path": "nats-operator.git/hack/skaffold.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "update-kube-version.sh": {
+          "name": "update-kube-version.sh",
+          "path": "nats-operator.git/hack/update-kube-version.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "helm": {
+      "name": "helm",
+      "path": "nats-operator.git/helm",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "nats-operator": {
+          "name": "nats-operator",
+          "path": "nats-operator.git/helm/nats-operator",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "readme.md": {
+              "name": "readme.md",
+              "path": "nats-operator.git/helm/nats-operator/readme.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "pkg": {
+      "name": "pkg",
+      "path": "nats-operator.git/pkg",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "apis": {
+          "name": "apis",
+          "path": "nats-operator.git/pkg/apis",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "nats": {
+              "name": "nats",
+              "path": "nats-operator.git/pkg/apis/nats",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "v1alpha2": {
+                  "name": "v1alpha2",
+                  "path": "nats-operator.git/pkg/apis/nats/v1alpha2",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "cluster.go": {
+                      "name": "cluster.go",
+                      "path": "nats-operator.git/pkg/apis/nats/v1alpha2/cluster.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "doc.go": {
+                      "name": "doc.go",
+                      "path": "nats-operator.git/pkg/apis/nats/v1alpha2/doc.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "register.go": {
+                      "name": "register.go",
+                      "path": "nats-operator.git/pkg/apis/nats/v1alpha2/register.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "service_role.go": {
+                      "name": "service_role.go",
+                      "path": "nats-operator.git/pkg/apis/nats/v1alpha2/service_role.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "zz_generated.deepcopy.go": {
+                      "name": "zz_generated.deepcopy.go",
+                      "path": "nats-operator.git/pkg/apis/nats/v1alpha2/zz_generated.deepcopy.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "chaos": {
+          "name": "chaos",
+          "path": "nats-operator.git/pkg/chaos",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "chaos.go": {
+              "name": "chaos.go",
+              "path": "nats-operator.git/pkg/chaos/chaos.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "client": {
+          "name": "client",
+          "path": "nats-operator.git/pkg/client",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "clientset": {
+              "name": "clientset",
+              "path": "nats-operator.git/pkg/client/clientset",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "versioned": {
+                  "name": "versioned",
+                  "path": "nats-operator.git/pkg/client/clientset/versioned",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "clientset.go": {
+                      "name": "clientset.go",
+                      "path": "nats-operator.git/pkg/client/clientset/versioned/clientset.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "doc.go": {
+                      "name": "doc.go",
+                      "path": "nats-operator.git/pkg/client/clientset/versioned/doc.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "fake": {
+                      "name": "fake",
+                      "path": "nats-operator.git/pkg/client/clientset/versioned/fake",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "clientset_generated.go": {
+                          "name": "clientset_generated.go",
+                          "path": "nats-operator.git/pkg/client/clientset/versioned/fake/clientset_generated.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "doc.go": {
+                          "name": "doc.go",
+                          "path": "nats-operator.git/pkg/client/clientset/versioned/fake/doc.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "register.go": {
+                          "name": "register.go",
+                          "path": "nats-operator.git/pkg/client/clientset/versioned/fake/register.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "scheme": {
+                      "name": "scheme",
+                      "path": "nats-operator.git/pkg/client/clientset/versioned/scheme",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "doc.go": {
+                          "name": "doc.go",
+                          "path": "nats-operator.git/pkg/client/clientset/versioned/scheme/doc.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "register.go": {
+                          "name": "register.go",
+                          "path": "nats-operator.git/pkg/client/clientset/versioned/scheme/register.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "typed": {
+                      "name": "typed",
+                      "path": "nats-operator.git/pkg/client/clientset/versioned/typed",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "nats": {
+                          "name": "nats",
+                          "path": "nats-operator.git/pkg/client/clientset/versioned/typed/nats",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "v1alpha2": {
+                              "name": "v1alpha2",
+                              "path": "nats-operator.git/pkg/client/clientset/versioned/typed/nats/v1alpha2",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "doc.go": {
+                                  "name": "doc.go",
+                                  "path": "nats-operator.git/pkg/client/clientset/versioned/typed/nats/v1alpha2/doc.go",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "fake": {
+                                  "name": "fake",
+                                  "path": "nats-operator.git/pkg/client/clientset/versioned/typed/nats/v1alpha2/fake",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "doc.go": {
+                                      "name": "doc.go",
+                                      "path": "nats-operator.git/pkg/client/clientset/versioned/typed/nats/v1alpha2/fake/doc.go",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "fake_nats_client.go": {
+                                      "name": "fake_nats_client.go",
+                                      "path": "nats-operator.git/pkg/client/clientset/versioned/typed/nats/v1alpha2/fake/fake_nats_client.go",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "fake_natscluster.go": {
+                                      "name": "fake_natscluster.go",
+                                      "path": "nats-operator.git/pkg/client/clientset/versioned/typed/nats/v1alpha2/fake/fake_natscluster.go",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "fake_natsservicerole.go": {
+                                      "name": "fake_natsservicerole.go",
+                                      "path": "nats-operator.git/pkg/client/clientset/versioned/typed/nats/v1alpha2/fake/fake_natsservicerole.go",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    }
+                                  }
+                                },
+                                "generated_expansion.go": {
+                                  "name": "generated_expansion.go",
+                                  "path": "nats-operator.git/pkg/client/clientset/versioned/typed/nats/v1alpha2/generated_expansion.go",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "nats_client.go": {
+                                  "name": "nats_client.go",
+                                  "path": "nats-operator.git/pkg/client/clientset/versioned/typed/nats/v1alpha2/nats_client.go",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "natscluster.go": {
+                                  "name": "natscluster.go",
+                                  "path": "nats-operator.git/pkg/client/clientset/versioned/typed/nats/v1alpha2/natscluster.go",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "natsservicerole.go": {
+                                  "name": "natsservicerole.go",
+                                  "path": "nats-operator.git/pkg/client/clientset/versioned/typed/nats/v1alpha2/natsservicerole.go",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "cr.go": {
+              "name": "cr.go",
+              "path": "nats-operator.git/pkg/client/cr.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "informers": {
+              "name": "informers",
+              "path": "nats-operator.git/pkg/client/informers",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "externalversions": {
+                  "name": "externalversions",
+                  "path": "nats-operator.git/pkg/client/informers/externalversions",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "factory.go": {
+                      "name": "factory.go",
+                      "path": "nats-operator.git/pkg/client/informers/externalversions/factory.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "generic.go": {
+                      "name": "generic.go",
+                      "path": "nats-operator.git/pkg/client/informers/externalversions/generic.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "internalinterfaces": {
+                      "name": "internalinterfaces",
+                      "path": "nats-operator.git/pkg/client/informers/externalversions/internalinterfaces",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "factory_interfaces.go": {
+                          "name": "factory_interfaces.go",
+                          "path": "nats-operator.git/pkg/client/informers/externalversions/internalinterfaces/factory_interfaces.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "nats": {
+                      "name": "nats",
+                      "path": "nats-operator.git/pkg/client/informers/externalversions/nats",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "interface.go": {
+                          "name": "interface.go",
+                          "path": "nats-operator.git/pkg/client/informers/externalversions/nats/interface.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "v1alpha2": {
+                          "name": "v1alpha2",
+                          "path": "nats-operator.git/pkg/client/informers/externalversions/nats/v1alpha2",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "interface.go": {
+                              "name": "interface.go",
+                              "path": "nats-operator.git/pkg/client/informers/externalversions/nats/v1alpha2/interface.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "natscluster.go": {
+                              "name": "natscluster.go",
+                              "path": "nats-operator.git/pkg/client/informers/externalversions/nats/v1alpha2/natscluster.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "natsservicerole.go": {
+                              "name": "natsservicerole.go",
+                              "path": "nats-operator.git/pkg/client/informers/externalversions/nats/v1alpha2/natsservicerole.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "listers": {
+              "name": "listers",
+              "path": "nats-operator.git/pkg/client/listers",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "nats": {
+                  "name": "nats",
+                  "path": "nats-operator.git/pkg/client/listers/nats",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "v1alpha2": {
+                      "name": "v1alpha2",
+                      "path": "nats-operator.git/pkg/client/listers/nats/v1alpha2",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "expansion_generated.go": {
+                          "name": "expansion_generated.go",
+                          "path": "nats-operator.git/pkg/client/listers/nats/v1alpha2/expansion_generated.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "natscluster.go": {
+                          "name": "natscluster.go",
+                          "path": "nats-operator.git/pkg/client/listers/nats/v1alpha2/natscluster.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "natsservicerole.go": {
+                          "name": "natsservicerole.go",
+                          "path": "nats-operator.git/pkg/client/listers/nats/v1alpha2/natsservicerole.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cluster": {
+          "name": "cluster",
+          "path": "nats-operator.git/pkg/cluster",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cluster.go": {
+              "name": "cluster.go",
+              "path": "nats-operator.git/pkg/cluster/cluster.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cluster_status.go": {
+              "name": "cluster_status.go",
+              "path": "nats-operator.git/pkg/cluster/cluster_status.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "error.go": {
+              "name": "error.go",
+              "path": "nats-operator.git/pkg/cluster/error.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metrics.go": {
+              "name": "metrics.go",
+              "path": "nats-operator.git/pkg/cluster/metrics.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "reconcile.go": {
+              "name": "reconcile.go",
+              "path": "nats-operator.git/pkg/cluster/reconcile.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "upgrade.go": {
+              "name": "upgrade.go",
+              "path": "nats-operator.git/pkg/cluster/upgrade.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "conf": {
+          "name": "conf",
+          "path": "nats-operator.git/pkg/conf",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "natsconf.go": {
+              "name": "natsconf.go",
+              "path": "nats-operator.git/pkg/conf/natsconf.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "natsconf_test.go": {
+              "name": "natsconf_test.go",
+              "path": "nats-operator.git/pkg/conf/natsconf_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "constants": {
+          "name": "constants",
+          "path": "nats-operator.git/pkg/constants",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "constants.go": {
+              "name": "constants.go",
+              "path": "nats-operator.git/pkg/constants/constants.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "controller": {
+          "name": "controller",
+          "path": "nats-operator.git/pkg/controller",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "controller.go": {
+              "name": "controller.go",
+              "path": "nats-operator.git/pkg/controller/controller.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "generic.go": {
+              "name": "generic.go",
+              "path": "nats-operator.git/pkg/controller/generic.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "metrics.go": {
+              "name": "metrics.go",
+              "path": "nats-operator.git/pkg/controller/metrics.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "debug": {
+          "name": "debug",
+          "path": "nats-operator.git/pkg/debug",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "local": {
+              "name": "local",
+              "path": "nats-operator.git/pkg/debug/local",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "kubeconfig.go": {
+                  "name": "kubeconfig.go",
+                  "path": "nats-operator.git/pkg/debug/local/kubeconfig.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "logger.go": {
+              "name": "logger.go",
+              "path": "nats-operator.git/pkg/debug/logger.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "features": {
+          "name": "features",
+          "path": "nats-operator.git/pkg/features",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "features.go": {
+              "name": "features.go",
+              "path": "nats-operator.git/pkg/features/features.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "features_test.go": {
+              "name": "features_test.go",
+              "path": "nats-operator.git/pkg/features/features_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "util": {
+          "name": "util",
+          "path": "nats-operator.git/pkg/util",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "kubernetes": {
+              "name": "kubernetes",
+              "path": "nats-operator.git/pkg/util/kubernetes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "crd.go": {
+                  "name": "crd.go",
+                  "path": "nats-operator.git/pkg/util/kubernetes/crd.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "exec.go": {
+                  "name": "exec.go",
+                  "path": "nats-operator.git/pkg/util/kubernetes/exec.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "kubernetes.go": {
+                  "name": "kubernetes.go",
+                  "path": "nats-operator.git/pkg/util/kubernetes/kubernetes.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pod.go": {
+                  "name": "pod.go",
+                  "path": "nats-operator.git/pkg/util/kubernetes/pod.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "selectors.go": {
+                  "name": "selectors.go",
+                  "path": "nats-operator.git/pkg/util/kubernetes/selectors.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "probe": {
+              "name": "probe",
+              "path": "nats-operator.git/pkg/util/probe",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "readyz.go": {
+                  "name": "readyz.go",
+                  "path": "nats-operator.git/pkg/util/probe/readyz.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "retryutil": {
+              "name": "retryutil",
+              "path": "nats-operator.git/pkg/util/retryutil",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "retry_util.go": {
+                  "name": "retry_util.go",
+                  "path": "nats-operator.git/pkg/util/retryutil/retry_util.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "strings": {
+              "name": "strings",
+              "path": "nats-operator.git/pkg/util/strings",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "hash.go": {
+                  "name": "hash.go",
+                  "path": "nats-operator.git/pkg/util/strings/hash.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "versionCheck": {
+              "name": "versionCheck",
+              "path": "nats-operator.git/pkg/util/versionCheck",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "versionCheck.go": {
+                  "name": "versionCheck.go",
+                  "path": "nats-operator.git/pkg/util/versionCheck/versionCheck.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "versionCheck_test.go": {
+                  "name": "versionCheck_test.go",
+                  "path": "nats-operator.git/pkg/util/versionCheck/versionCheck_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "test": {
+      "name": "test",
+      "path": "nats-operator.git/test",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "e2e": {
+          "name": "e2e",
+          "path": "nats-operator.git/test/e2e",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "basic_test.go": {
+              "name": "basic_test.go",
+              "path": "nats-operator.git/test/e2e/basic_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cluster_scoped_test.go": {
+              "name": "cluster_scoped_test.go",
+              "path": "nats-operator.git/test/e2e/cluster_scoped_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config_reload_test.go": {
+              "name": "config_reload_test.go",
+              "path": "nats-operator.git/test/e2e/config_reload_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config_test.go": {
+              "name": "config_test.go",
+              "path": "nats-operator.git/test/e2e/config_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "framework": {
+              "name": "framework",
+              "path": "nats-operator.git/test/e2e/framework",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "framework.go": {
+                  "name": "framework.go",
+                  "path": "nats-operator.git/test/e2e/framework/framework.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "namespace.go": {
+                  "name": "namespace.go",
+                  "path": "nats-operator.git/test/e2e/framework/namespace.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nats.go": {
+                  "name": "nats.go",
+                  "path": "nats-operator.git/test/e2e/framework/nats.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "natscluster.go": {
+                  "name": "natscluster.go",
+                  "path": "nats-operator.git/test/e2e/framework/natscluster.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "natsservicerole.go": {
+                  "name": "natsservicerole.go",
+                  "path": "nats-operator.git/test/e2e/framework/natsservicerole.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secrets.go": {
+                  "name": "secrets.go",
+                  "path": "nats-operator.git/test/e2e/framework/secrets.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "util.go": {
+                  "name": "util.go",
+                  "path": "nats-operator.git/test/e2e/framework/util.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "lame_duck_mode_test.go": {
+              "name": "lame_duck_mode_test.go",
+              "path": "nats-operator.git/test/e2e/lame_duck_mode_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main_test.go": {
+              "name": "main_test.go",
+              "path": "nats-operator.git/test/e2e/main_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "resize_test.go": {
+              "name": "resize_test.go",
+              "path": "nats-operator.git/test/e2e/resize_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "super_cluster_test.go": {
+              "name": "super_cluster_test.go",
+              "path": "nats-operator.git/test/e2e/super_cluster_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tls_test.go": {
+              "name": "tls_test.go",
+              "path": "nats-operator.git/test/e2e/tls_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "upgrade_test.go": {
+              "name": "upgrade_test.go",
+              "path": "nats-operator.git/test/e2e/upgrade_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "tools": {
+      "name": "tools",
+      "path": "nats-operator.git/tools",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "tools.go": {
+          "name": "tools.go",
+          "path": "nats-operator.git/tools/tools.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "version": {
+      "name": "version",
+      "path": "nats-operator.git/version",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "version.go": {
+          "name": "version.go",
+          "path": "nats-operator.git/version/version.go",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 75548298,
+    "name": "nats-operator",
+    "full_name": "nats-io/nats-operator",
+    "owner": {
+      "login": "nats-io",
+      "html_url": "https://github.com/nats-io",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/nats-io/nats-operator",
+    "description": "NATS Operator",
+    "url": "https://api.github.com/repos/nats-io/nats-operator",
+    "clone_url": "https://github.com/nats-io/nats-operator.git",
+    "homepage": "https://nats-io.github.io/k8s/",
+    "size": 12306,
+    "stargazers_count": 549,
+    "watchers_count": 549,
+    "language": "Go"
+  }
+}

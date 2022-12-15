@@ -4,9 +4,9 @@ const OUTPUT_DIR = "./outputs/"
 
 //Query
 var language = 'Go'
-var dockerfileCountMin = 1
+var dockerfileCountMin = 200
 var dockerfileCountMax = 100000
-var composeCountMin = 1
+var composeCountMin = 0
 var composeCountMax = 1000000
 
 

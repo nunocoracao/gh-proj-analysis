@@ -1,0 +1,2976 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 43,
+      "rootCount": 0,
+      "subFolderCount": 43,
+      "filepaths": [
+        "containerit.git/R/Class-Dockerfile.R",
+        "containerit.git/R/dockerfile.R",
+        "containerit.git/docs/reference/Dockerfile-class.html",
+        "containerit.git/docs/reference/as.character-Dockerfile-method.html",
+        "containerit.git/docs/reference/dockerfile.html",
+        "containerit.git/docs/reference/format-Dockerfile-method.html",
+        "containerit.git/docs/reference/print-Dockerfile-method.html",
+        "containerit.git/docs/reference/toString-Dockerfile-method.html",
+        "containerit.git/docs/reference/write-Dockerfile-method.html",
+        "containerit.git/inst/docker/Dockerfile",
+        "containerit.git/inst/docker/Dockerfile.local",
+        "containerit.git/inst/docker/geospatial/Dockerfile",
+        "containerit.git/inst/docker/geospatial/Dockerfile.local",
+        "containerit.git/inst/docker/minimal/Dockerfile",
+        "containerit.git/man/Dockerfile-class.Rd",
+        "containerit.git/man/as.character-Dockerfile-method.Rd",
+        "containerit.git/man/dockerfile.Rd",
+        "containerit.git/man/format-Dockerfile-method.Rd",
+        "containerit.git/man/print-Dockerfile-method.Rd",
+        "containerit.git/man/toString-Dockerfile-method.Rd",
+        "containerit.git/man/write-Dockerfile-method.Rd",
+        "containerit.git/tests/testthat/Dockerfile.savetest",
+        "containerit.git/tests/testthat/test_dockerfile-method.R",
+        "containerit.git/tests/testthat/test_dockerfiles.R",
+        "containerit.git/tests/testthat/bioconductor/Dockerfile",
+        "containerit.git/tests/testthat/entrypoint/Dockerfile",
+        "containerit.git/tests/testthat/github/Dockerfile",
+        "containerit.git/tests/testthat/package_description/Dockerfile",
+        "containerit.git/tests/testthat/package_description/Dockerfile.copy",
+        "containerit.git/tests/testthat/package_description/Dockerfile.sf",
+        "containerit.git/tests/testthat/package_description/Dockerfile.sf.versioned",
+        "containerit.git/tests/testthat/package_description/Dockerfile.testonlydontcommit",
+        "containerit.git/tests/testthat/package_description/Dockerfile.versioned",
+        "containerit.git/tests/testthat/package_markdown/missing_dependency/Dockerfile",
+        "containerit.git/tests/testthat/package_markdown/units/Dockerfile",
+        "containerit.git/tests/testthat/package_markdown/units/Dockerfile_original",
+        "containerit.git/tests/testthat/package_script/needs_predetect/Dockerfile",
+        "containerit.git/tests/testthat/package_script/resources/Dockerfile",
+        "containerit.git/tests/testthat/package_script/resources/Dockerfile2",
+        "containerit.git/tests/testthat/package_script/resources/Dockerfile3",
+        "containerit.git/tests/testthat/package_script/simple/Dockerfile",
+        "containerit.git/tests/testthat/package_script/simple_lowercase/Dockerfile",
+        "containerit.git/tests/testthat/package_versions/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".Rbuildignore": {
+      "name": ".Rbuildignore",
+      "path": "containerit.git/.Rbuildignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "containerit.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "containerit.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "containerit.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "containerit.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "containerit.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "containerit.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "containerit.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "containerit.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "containerit.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "containerit.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "containerit.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "containerit.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "containerit.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "containerit.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "containerit.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "containerit.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "containerit.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "containerit.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "containerit.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "containerit.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "containerit.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "containerit.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "containerit.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "containerit.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "containerit.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "containerit.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "containerit.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "containerit.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "containerit.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "containerit.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "containerit.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "containerit.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-ca5f37c60747bb29f427244e869cfab8a8707fc0.idx": {
+                  "name": "pack-ca5f37c60747bb29f427244e869cfab8a8707fc0.idx",
+                  "path": "containerit.git/.git/objects/pack/pack-ca5f37c60747bb29f427244e869cfab8a8707fc0.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-ca5f37c60747bb29f427244e869cfab8a8707fc0.pack": {
+                  "name": "pack-ca5f37c60747bb29f427244e869cfab8a8707fc0.pack",
+                  "path": "containerit.git/.git/objects/pack/pack-ca5f37c60747bb29f427244e869cfab8a8707fc0.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "containerit.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "containerit.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "containerit.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "containerit.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "containerit.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "containerit.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "containerit.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "containerit.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "containerit.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "containerit.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".lintr": {
+      "name": ".lintr",
+      "path": "containerit.git/.lintr",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".pre-commit-config.yaml": {
+      "name": ".pre-commit-config.yaml",
+      "path": "containerit.git/.pre-commit-config.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".travis.yml": {
+      "name": ".travis.yml",
+      "path": "containerit.git/.travis.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONDUCT.md": {
+      "name": "CONDUCT.md",
+      "path": "containerit.git/CONDUCT.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "containerit.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "DESCRIPTION": {
+      "name": "DESCRIPTION",
+      "path": "containerit.git/DESCRIPTION",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "containerit.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "NAMESPACE": {
+      "name": "NAMESPACE",
+      "path": "containerit.git/NAMESPACE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "NEWS.md": {
+      "name": "NEWS.md",
+      "path": "containerit.git/NEWS.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "R": {
+      "name": "R",
+      "path": "containerit.git/R",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Class-Add.R": {
+          "name": "Class-Add.R",
+          "path": "containerit.git/R/Class-Add.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-All.R": {
+          "name": "Class-All.R",
+          "path": "containerit.git/R/Class-All.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Arg.R": {
+          "name": "Class-Arg.R",
+          "path": "containerit.git/R/Class-Arg.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Cmd.R": {
+          "name": "Class-Cmd.R",
+          "path": "containerit.git/R/Class-Cmd.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Comment.R": {
+          "name": "Class-Comment.R",
+          "path": "containerit.git/R/Class-Comment.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Copy.R": {
+          "name": "Class-Copy.R",
+          "path": "containerit.git/R/Class-Copy.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Dockerfile.R": {
+          "name": "Class-Dockerfile.R",
+          "path": "containerit.git/R/Class-Dockerfile.R",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "Class-Entrypoint.R": {
+          "name": "Class-Entrypoint.R",
+          "path": "containerit.git/R/Class-Entrypoint.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Env.R": {
+          "name": "Class-Env.R",
+          "path": "containerit.git/R/Class-Env.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Expose.R": {
+          "name": "Class-Expose.R",
+          "path": "containerit.git/R/Class-Expose.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-From.R": {
+          "name": "Class-From.R",
+          "path": "containerit.git/R/Class-From.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Healthcheck.R": {
+          "name": "Class-Healthcheck.R",
+          "path": "containerit.git/R/Class-Healthcheck.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Instruction.R": {
+          "name": "Class-Instruction.R",
+          "path": "containerit.git/R/Class-Instruction.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Label.R": {
+          "name": "Class-Label.R",
+          "path": "containerit.git/R/Class-Label.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Maintainer.R": {
+          "name": "Class-Maintainer.R",
+          "path": "containerit.git/R/Class-Maintainer.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Onbuild.R": {
+          "name": "Class-Onbuild.R",
+          "path": "containerit.git/R/Class-Onbuild.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Run.R": {
+          "name": "Class-Run.R",
+          "path": "containerit.git/R/Class-Run.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Shell.R": {
+          "name": "Class-Shell.R",
+          "path": "containerit.git/R/Class-Shell.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Stopsignal.R": {
+          "name": "Class-Stopsignal.R",
+          "path": "containerit.git/R/Class-Stopsignal.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Volume.R": {
+          "name": "Class-Volume.R",
+          "path": "containerit.git/R/Class-Volume.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Class-Workdir.R": {
+          "name": "Class-Workdir.R",
+          "path": "containerit.git/R/Class-Workdir.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "LabelSchemaFactory.R": {
+          "name": "LabelSchemaFactory.R",
+          "path": "containerit.git/R/LabelSchemaFactory.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "addin.R": {
+          "name": "addin.R",
+          "path": "containerit.git/R/addin.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "baseimages.R": {
+          "name": "baseimages.R",
+          "path": "containerit.git/R/baseimages.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "containerit-config.R": {
+          "name": "containerit-config.R",
+          "path": "containerit.git/R/containerit-config.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "containerit.R": {
+          "name": "containerit.R",
+          "path": "containerit.git/R/containerit.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "defaults.R": {
+          "name": "defaults.R",
+          "path": "containerit.git/R/defaults.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "dockerfile.R": {
+          "name": "dockerfile.R",
+          "path": "containerit.git/R/dockerfile.R",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "package-installation-bespoke.R": {
+          "name": "package-installation-bespoke.R",
+          "path": "containerit.git/R/package-installation-bespoke.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "package-installation-methods.R": {
+          "name": "package-installation-methods.R",
+          "path": "containerit.git/R/package-installation-methods.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rstudio_containerit.R": {
+          "name": "rstudio_containerit.R",
+          "path": "containerit.git/R/rstudio_containerit.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "utility-functions.R": {
+          "name": "utility-functions.R",
+          "path": "containerit.git/R/utility-functions.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "README.Rmd": {
+      "name": "README.Rmd",
+      "path": "containerit.git/README.Rmd",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "containerit.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "appveyor.yml": {
+      "name": "appveyor.yml",
+      "path": "containerit.git/appveyor.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "codemeta.json": {
+      "name": "codemeta.json",
+      "path": "containerit.git/codemeta.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "demo": {
+      "name": "demo",
+      "path": "containerit.git/demo",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "00Index": {
+          "name": "00Index",
+          "path": "containerit.git/demo/00Index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "fullstack.R": {
+          "name": "fullstack.R",
+          "path": "containerit.git/demo/fullstack.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "docs": {
+      "name": "docs",
+      "path": "containerit.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CONDUCT.html": {
+          "name": "CONDUCT.html",
+          "path": "containerit.git/docs/CONDUCT.html",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "CONTRIBUTING.html": {
+          "name": "CONTRIBUTING.html",
+          "path": "containerit.git/docs/CONTRIBUTING.html",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "LICENSE-text.html": {
+          "name": "LICENSE-text.html",
+          "path": "containerit.git/docs/LICENSE-text.html",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.knit.html": {
+          "name": "README.knit.html",
+          "path": "containerit.git/docs/README.knit.html",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.utf8.html": {
+          "name": "README.utf8.html",
+          "path": "containerit.git/docs/README.utf8.html",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "articles": {
+          "name": "articles",
+          "path": "containerit.git/docs/articles",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "basic.html": {
+              "name": "basic.html",
+              "path": "containerit.git/docs/articles/basic.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "basic_files": {
+              "name": "basic_files",
+              "path": "containerit.git/docs/articles/basic_files",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "figure-html": {
+                  "name": "figure-html",
+                  "path": "containerit.git/docs/articles/basic_files/figure-html",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "example_geo-1.png": {
+                      "name": "example_geo-1.png",
+                      "path": "containerit.git/docs/articles/basic_files/figure-html/example_geo-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tldr-1.png": {
+                      "name": "tldr-1.png",
+                      "path": "containerit.git/docs/articles/basic_files/figure-html/tldr-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "bioconductor.html": {
+              "name": "bioconductor.html",
+              "path": "containerit.git/docs/articles/bioconductor.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "container.html": {
+              "name": "container.html",
+              "path": "containerit.git/docs/articles/container.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "containerit.html": {
+              "name": "containerit.html",
+              "path": "containerit.git/docs/articles/containerit.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "containerit_files": {
+              "name": "containerit_files",
+              "path": "containerit.git/docs/articles/containerit_files",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "figure-html": {
+                  "name": "figure-html",
+                  "path": "containerit.git/docs/articles/containerit_files/figure-html",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "interactive_session-1.png": {
+                      "name": "interactive_session-1.png",
+                      "path": "containerit.git/docs/articles/containerit_files/figure-html/interactive_session-1.png",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "index.html": {
+              "name": "index.html",
+              "path": "containerit.git/docs/articles/index.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "authors.html": {
+          "name": "authors.html",
+          "path": "containerit.git/docs/authors.html",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docsearch.css": {
+          "name": "docsearch.css",
+          "path": "containerit.git/docs/docsearch.css",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docsearch.js": {
+          "name": "docsearch.js",
+          "path": "containerit.git/docs/docsearch.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "index.html": {
+          "name": "index.html",
+          "path": "containerit.git/docs/index.html",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "jquery.sticky-kit.min.js": {
+          "name": "jquery.sticky-kit.min.js",
+          "path": "containerit.git/docs/jquery.sticky-kit.min.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "link.svg": {
+          "name": "link.svg",
+          "path": "containerit.git/docs/link.svg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "logo.png": {
+          "name": "logo.png",
+          "path": "containerit.git/docs/logo.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "news": {
+          "name": "news",
+          "path": "containerit.git/docs/news",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "index.html": {
+              "name": "index.html",
+              "path": "containerit.git/docs/news/index.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "paper.html": {
+          "name": "paper.html",
+          "path": "containerit.git/docs/paper.html",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pkgdown.css": {
+          "name": "pkgdown.css",
+          "path": "containerit.git/docs/pkgdown.css",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pkgdown.js": {
+          "name": "pkgdown.js",
+          "path": "containerit.git/docs/pkgdown.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "pkgdown.yml": {
+          "name": "pkgdown.yml",
+          "path": "containerit.git/docs/pkgdown.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "reference": {
+          "name": "reference",
+          "path": "containerit.git/docs/reference",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Add-class.html": {
+              "name": "Add-class.html",
+              "path": "containerit.git/docs/reference/Add-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Add.html": {
+              "name": "Add.html",
+              "path": "containerit.git/docs/reference/Add.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Arg-class.html": {
+              "name": "Arg-class.html",
+              "path": "containerit.git/docs/reference/Arg-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Arg.html": {
+              "name": "Arg.html",
+              "path": "containerit.git/docs/reference/Arg.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "CMD_Render.html": {
+              "name": "CMD_Render.html",
+              "path": "containerit.git/docs/reference/CMD_Render.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "CMD_Rscript.html": {
+              "name": "CMD_Rscript.html",
+              "path": "containerit.git/docs/reference/CMD_Rscript.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Cmd-class.html": {
+              "name": "Cmd-class.html",
+              "path": "containerit.git/docs/reference/Cmd-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Cmd.html": {
+              "name": "Cmd.html",
+              "path": "containerit.git/docs/reference/Cmd.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Comment-class.html": {
+              "name": "Comment-class.html",
+              "path": "containerit.git/docs/reference/Comment-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Comment.html": {
+              "name": "Comment.html",
+              "path": "containerit.git/docs/reference/Comment.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Copy-class.html": {
+              "name": "Copy-class.html",
+              "path": "containerit.git/docs/reference/Copy-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Copy.html": {
+              "name": "Copy.html",
+              "path": "containerit.git/docs/reference/Copy.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Dockerfile-class.html": {
+              "name": "Dockerfile-class.html",
+              "path": "containerit.git/docs/reference/Dockerfile-class.html",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Entrypoint-class.html": {
+              "name": "Entrypoint-class.html",
+              "path": "containerit.git/docs/reference/Entrypoint-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Entrypoint.html": {
+              "name": "Entrypoint.html",
+              "path": "containerit.git/docs/reference/Entrypoint.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Env-class.html": {
+              "name": "Env-class.html",
+              "path": "containerit.git/docs/reference/Env-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Env.html": {
+              "name": "Env.html",
+              "path": "containerit.git/docs/reference/Env.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Expose-class.html": {
+              "name": "Expose-class.html",
+              "path": "containerit.git/docs/reference/Expose-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Expose.html": {
+              "name": "Expose.html",
+              "path": "containerit.git/docs/reference/Expose.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "From-class.html": {
+              "name": "From-class.html",
+              "path": "containerit.git/docs/reference/From-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "From.html": {
+              "name": "From.html",
+              "path": "containerit.git/docs/reference/From.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Healthcheck-class.html": {
+              "name": "Healthcheck-class.html",
+              "path": "containerit.git/docs/reference/Healthcheck-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Healthcheck.html": {
+              "name": "Healthcheck.html",
+              "path": "containerit.git/docs/reference/Healthcheck.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Instruction-class.html": {
+              "name": "Instruction-class.html",
+              "path": "containerit.git/docs/reference/Instruction-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Label-class.html": {
+              "name": "Label-class.html",
+              "path": "containerit.git/docs/reference/Label-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Label.html": {
+              "name": "Label.html",
+              "path": "containerit.git/docs/reference/Label.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "LabelSchemaFactory.html": {
+              "name": "LabelSchemaFactory.html",
+              "path": "containerit.git/docs/reference/LabelSchemaFactory.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Label_Maintainer.html": {
+              "name": "Label_Maintainer.html",
+              "path": "containerit.git/docs/reference/Label_Maintainer.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Label_SessionInfo.html": {
+              "name": "Label_SessionInfo.html",
+              "path": "containerit.git/docs/reference/Label_SessionInfo.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Maintainer-class.html": {
+              "name": "Maintainer-class.html",
+              "path": "containerit.git/docs/reference/Maintainer-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Maintainer.html": {
+              "name": "Maintainer.html",
+              "path": "containerit.git/docs/reference/Maintainer.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Onbuild-class.html": {
+              "name": "Onbuild-class.html",
+              "path": "containerit.git/docs/reference/Onbuild-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Onbuild.html": {
+              "name": "Onbuild.html",
+              "path": "containerit.git/docs/reference/Onbuild.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Run-class.html": {
+              "name": "Run-class.html",
+              "path": "containerit.git/docs/reference/Run-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Run.html": {
+              "name": "Run.html",
+              "path": "containerit.git/docs/reference/Run.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Run_shell-class.html": {
+              "name": "Run_shell-class.html",
+              "path": "containerit.git/docs/reference/Run_shell-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Run_shell.html": {
+              "name": "Run_shell.html",
+              "path": "containerit.git/docs/reference/Run_shell.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Shell-class.html": {
+              "name": "Shell-class.html",
+              "path": "containerit.git/docs/reference/Shell-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Shell.html": {
+              "name": "Shell.html",
+              "path": "containerit.git/docs/reference/Shell.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Stopsignal-class.html": {
+              "name": "Stopsignal-class.html",
+              "path": "containerit.git/docs/reference/Stopsignal-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Stopsignal.html": {
+              "name": "Stopsignal.html",
+              "path": "containerit.git/docs/reference/Stopsignal.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Volume-class.html": {
+              "name": "Volume-class.html",
+              "path": "containerit.git/docs/reference/Volume-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Volume.html": {
+              "name": "Volume.html",
+              "path": "containerit.git/docs/reference/Volume.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Workdir-class.html": {
+              "name": "Workdir-class.html",
+              "path": "containerit.git/docs/reference/Workdir-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Workdir.html": {
+              "name": "Workdir.html",
+              "path": "containerit.git/docs/reference/Workdir.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "addInstruction-set.html": {
+              "name": "addInstruction-set.html",
+              "path": "containerit.git/docs/reference/addInstruction-set.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "as.character-Dockerfile-method.html": {
+              "name": "as.character-Dockerfile-method.html",
+              "path": "containerit.git/docs/reference/as.character-Dockerfile-method.html",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "as.character-Instruction-method.html": {
+              "name": "as.character-Instruction-method.html",
+              "path": "containerit.git/docs/reference/as.character-Instruction-method.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "characterOrInteger-class.html": {
+              "name": "characterOrInteger-class.html",
+              "path": "containerit.git/docs/reference/characterOrInteger-class.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "clean_session.html": {
+              "name": "clean_session.html",
+              "path": "containerit.git/docs/reference/clean_session.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "containerit-addin.html": {
+              "name": "containerit-addin.html",
+              "path": "containerit.git/docs/reference/containerit-addin.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "containerit.html": {
+              "name": "containerit.html",
+              "path": "containerit.git/docs/reference/containerit.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "containerit_write_config.html": {
+              "name": "containerit_write_config.html",
+              "path": "containerit.git/docs/reference/containerit_write_config.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker_build.html": {
+              "name": "docker_build.html",
+              "path": "containerit.git/docs/reference/docker_build.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker_inspect.html": {
+              "name": "docker_inspect.html",
+              "path": "containerit.git/docs/reference/docker_inspect.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dockerfile.html": {
+              "name": "dockerfile.html",
+              "path": "containerit.git/docs/reference/dockerfile.html",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "empty_session.html": {
+              "name": "empty_session.html",
+              "path": "containerit.git/docs/reference/empty_session.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "extract_session_file.html": {
+              "name": "extract_session_file.html",
+              "path": "containerit.git/docs/reference/extract_session_file.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "extract_session_image.html": {
+              "name": "extract_session_image.html",
+              "path": "containerit.git/docs/reference/extract_session_image.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "figures": {
+              "name": "figures",
+              "path": "containerit.git/docs/reference/figures",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "logo.png": {
+                  "name": "logo.png",
+                  "path": "containerit.git/docs/reference/figures/logo.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "format-Dockerfile-method.html": {
+              "name": "format-Dockerfile-method.html",
+              "path": "containerit.git/docs/reference/format-Dockerfile-method.html",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "getGitHubRef.html": {
+              "name": "getGitHubRef.html",
+              "path": "containerit.git/docs/reference/getGitHubRef.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "getImageForVersion.html": {
+              "name": "getImageForVersion.html",
+              "path": "containerit.git/docs/reference/getImageForVersion.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "getRVersionTag.html": {
+              "name": "getRVersionTag.html",
+              "path": "containerit.git/docs/reference/getRVersionTag.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "getSessionInfoFromRdata.html": {
+              "name": "getSessionInfoFromRdata.html",
+              "path": "containerit.git/docs/reference/getSessionInfoFromRdata.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "get_installed_packages.html": {
+              "name": "get_installed_packages.html",
+              "path": "containerit.git/docs/reference/get_installed_packages.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "index.html": {
+              "name": "index.html",
+              "path": "containerit.git/docs/reference/index.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "parseFrom.html": {
+              "name": "parseFrom.html",
+              "path": "containerit.git/docs/reference/parseFrom.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "print-Dockerfile-method.html": {
+              "name": "print-Dockerfile-method.html",
+              "path": "containerit.git/docs/reference/print-Dockerfile-method.html",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "print-Instruction-method.html": {
+              "name": "print-Instruction-method.html",
+              "path": "containerit.git/docs/reference/print-Instruction-method.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "toString-Dockerfile-method.html": {
+              "name": "toString-Dockerfile-method.html",
+              "path": "containerit.git/docs/reference/toString-Dockerfile-method.html",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "toString-Instruction-method.html": {
+              "name": "toString-Instruction-method.html",
+              "path": "containerit.git/docs/reference/toString-Instruction-method.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "versioned_install_instructions.html": {
+              "name": "versioned_install_instructions.html",
+              "path": "containerit.git/docs/reference/versioned_install_instructions.html",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "write-Dockerfile-method.html": {
+              "name": "write-Dockerfile-method.html",
+              "path": "containerit.git/docs/reference/write-Dockerfile-method.html",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "inst": {
+      "name": "inst",
+      "path": "containerit.git/inst",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CITATION": {
+          "name": "CITATION",
+          "path": "containerit.git/inst/CITATION",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "LOGO-README.md": {
+          "name": "LOGO-README.md",
+          "path": "containerit.git/inst/LOGO-README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cli": {
+          "name": "cli",
+          "path": "containerit.git/inst/cli",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "container_it.R": {
+              "name": "container_it.R",
+              "path": "containerit.git/inst/cli/container_it.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "install_cli.sh": {
+              "name": "install_cli.sh",
+              "path": "containerit.git/inst/cli/install_cli.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "uninstall_cli.sh": {
+              "name": "uninstall_cli.sh",
+              "path": "containerit.git/inst/cli/uninstall_cli.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "containerit_config.json": {
+          "name": "containerit_config.json",
+          "path": "containerit.git/inst/containerit_config.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "demo.Rmd": {
+          "name": "demo.Rmd",
+          "path": "containerit.git/inst/demo.Rmd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "demo_sf.Rmd": {
+          "name": "demo_sf.Rmd",
+          "path": "containerit.git/inst/demo_sf.Rmd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "containerit.git/inst/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "containerit.git/inst/docker/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.local": {
+              "name": "Dockerfile.local",
+              "path": "containerit.git/inst/docker/Dockerfile.local",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "geospatial": {
+              "name": "geospatial",
+              "path": "containerit.git/inst/docker/geospatial",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "containerit.git/inst/docker/geospatial/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.local": {
+                  "name": "Dockerfile.local",
+                  "path": "containerit.git/inst/docker/geospatial/Dockerfile.local",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "hooks": {
+                  "name": "hooks",
+                  "path": "containerit.git/inst/docker/geospatial/hooks",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "build": {
+                      "name": "build",
+                      "path": "containerit.git/inst/docker/geospatial/hooks/build",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "post_push": {
+                      "name": "post_push",
+                      "path": "containerit.git/inst/docker/geospatial/hooks/post_push",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "hooks": {
+              "name": "hooks",
+              "path": "containerit.git/inst/docker/hooks",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "build": {
+                  "name": "build",
+                  "path": "containerit.git/inst/docker/hooks/build",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "post_push": {
+                  "name": "post_push",
+                  "path": "containerit.git/inst/docker/hooks/post_push",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "minimal": {
+              "name": "minimal",
+              "path": "containerit.git/inst/docker/minimal",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "containerit.git/inst/docker/minimal/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "label-schema_1.0.0-rc.1.txt": {
+          "name": "label-schema_1.0.0-rc.1.txt",
+          "path": "containerit.git/inst/label-schema_1.0.0-rc.1.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "logo.svg": {
+          "name": "logo.svg",
+          "path": "containerit.git/inst/logo.svg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rstudio": {
+          "name": "rstudio",
+          "path": "containerit.git/inst/rstudio",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "addins.dcf": {
+              "name": "addins.dcf",
+              "path": "containerit.git/inst/rstudio/addins.dcf",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "scripts": {
+          "name": "scripts",
+          "path": "containerit.git/inst/scripts",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "common.R": {
+              "name": "common.R",
+              "path": "containerit.git/inst/scripts/common.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package-expressions.R": {
+              "name": "package-expressions.R",
+              "path": "containerit.git/inst/scripts/package-expressions.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package-file.R": {
+              "name": "package-file.R",
+              "path": "containerit.git/inst/scripts/package-file.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package-session.R": {
+              "name": "package-session.R",
+              "path": "containerit.git/inst/scripts/package-session.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package-workspace.R": {
+              "name": "package-workspace.R",
+              "path": "containerit.git/inst/scripts/package-workspace.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "simple_test_script_resources": {
+          "name": "simple_test_script_resources",
+          "path": "containerit.git/inst/simple_test_script_resources",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "simple_test.R": {
+              "name": "simple_test.R",
+              "path": "containerit.git/inst/simple_test_script_resources/simple_test.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_subfolder": {
+              "name": "test_subfolder",
+              "path": "containerit.git/inst/simple_test_script_resources/test_subfolder",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "testresource": {
+                  "name": "testresource",
+                  "path": "containerit.git/inst/simple_test_script_resources/test_subfolder/testresource",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test_table.csv": {
+              "name": "test_table.csv",
+              "path": "containerit.git/inst/simple_test_script_resources/test_table.csv",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "social-preview.svg": {
+          "name": "social-preview.svg",
+          "path": "containerit.git/inst/social-preview.svg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "man": {
+      "name": "man",
+      "path": "containerit.git/man",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Add-class.Rd": {
+          "name": "Add-class.Rd",
+          "path": "containerit.git/man/Add-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Add.Rd": {
+          "name": "Add.Rd",
+          "path": "containerit.git/man/Add.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Arg-class.Rd": {
+          "name": "Arg-class.Rd",
+          "path": "containerit.git/man/Arg-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Arg.Rd": {
+          "name": "Arg.Rd",
+          "path": "containerit.git/man/Arg.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "CMD_Render.Rd": {
+          "name": "CMD_Render.Rd",
+          "path": "containerit.git/man/CMD_Render.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "CMD_Rscript.Rd": {
+          "name": "CMD_Rscript.Rd",
+          "path": "containerit.git/man/CMD_Rscript.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Cmd-class.Rd": {
+          "name": "Cmd-class.Rd",
+          "path": "containerit.git/man/Cmd-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Cmd.Rd": {
+          "name": "Cmd.Rd",
+          "path": "containerit.git/man/Cmd.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Comment-class.Rd": {
+          "name": "Comment-class.Rd",
+          "path": "containerit.git/man/Comment-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Comment.Rd": {
+          "name": "Comment.Rd",
+          "path": "containerit.git/man/Comment.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Copy-class.Rd": {
+          "name": "Copy-class.Rd",
+          "path": "containerit.git/man/Copy-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Copy.Rd": {
+          "name": "Copy.Rd",
+          "path": "containerit.git/man/Copy.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Dockerfile-class.Rd": {
+          "name": "Dockerfile-class.Rd",
+          "path": "containerit.git/man/Dockerfile-class.Rd",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "Entrypoint-class.Rd": {
+          "name": "Entrypoint-class.Rd",
+          "path": "containerit.git/man/Entrypoint-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Entrypoint.Rd": {
+          "name": "Entrypoint.Rd",
+          "path": "containerit.git/man/Entrypoint.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Env-class.Rd": {
+          "name": "Env-class.Rd",
+          "path": "containerit.git/man/Env-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Env.Rd": {
+          "name": "Env.Rd",
+          "path": "containerit.git/man/Env.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Expose-class.Rd": {
+          "name": "Expose-class.Rd",
+          "path": "containerit.git/man/Expose-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Expose.Rd": {
+          "name": "Expose.Rd",
+          "path": "containerit.git/man/Expose.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "From-class.Rd": {
+          "name": "From-class.Rd",
+          "path": "containerit.git/man/From-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "From.Rd": {
+          "name": "From.Rd",
+          "path": "containerit.git/man/From.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Healthcheck-class.Rd": {
+          "name": "Healthcheck-class.Rd",
+          "path": "containerit.git/man/Healthcheck-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Healthcheck.Rd": {
+          "name": "Healthcheck.Rd",
+          "path": "containerit.git/man/Healthcheck.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Instruction-class.Rd": {
+          "name": "Instruction-class.Rd",
+          "path": "containerit.git/man/Instruction-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Label-class.Rd": {
+          "name": "Label-class.Rd",
+          "path": "containerit.git/man/Label-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Label.Rd": {
+          "name": "Label.Rd",
+          "path": "containerit.git/man/Label.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "LabelSchemaFactory.Rd": {
+          "name": "LabelSchemaFactory.Rd",
+          "path": "containerit.git/man/LabelSchemaFactory.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Label_Maintainer.Rd": {
+          "name": "Label_Maintainer.Rd",
+          "path": "containerit.git/man/Label_Maintainer.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Label_SessionInfo.Rd": {
+          "name": "Label_SessionInfo.Rd",
+          "path": "containerit.git/man/Label_SessionInfo.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Maintainer-class.Rd": {
+          "name": "Maintainer-class.Rd",
+          "path": "containerit.git/man/Maintainer-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Maintainer.Rd": {
+          "name": "Maintainer.Rd",
+          "path": "containerit.git/man/Maintainer.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Onbuild-class.Rd": {
+          "name": "Onbuild-class.Rd",
+          "path": "containerit.git/man/Onbuild-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Onbuild.Rd": {
+          "name": "Onbuild.Rd",
+          "path": "containerit.git/man/Onbuild.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Run-class.Rd": {
+          "name": "Run-class.Rd",
+          "path": "containerit.git/man/Run-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Run.Rd": {
+          "name": "Run.Rd",
+          "path": "containerit.git/man/Run.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Run_shell-class.Rd": {
+          "name": "Run_shell-class.Rd",
+          "path": "containerit.git/man/Run_shell-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Run_shell.Rd": {
+          "name": "Run_shell.Rd",
+          "path": "containerit.git/man/Run_shell.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Shell-class.Rd": {
+          "name": "Shell-class.Rd",
+          "path": "containerit.git/man/Shell-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Shell.Rd": {
+          "name": "Shell.Rd",
+          "path": "containerit.git/man/Shell.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Stopsignal-class.Rd": {
+          "name": "Stopsignal-class.Rd",
+          "path": "containerit.git/man/Stopsignal-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Stopsignal.Rd": {
+          "name": "Stopsignal.Rd",
+          "path": "containerit.git/man/Stopsignal.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Volume-class.Rd": {
+          "name": "Volume-class.Rd",
+          "path": "containerit.git/man/Volume-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Volume.Rd": {
+          "name": "Volume.Rd",
+          "path": "containerit.git/man/Volume.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Workdir-class.Rd": {
+          "name": "Workdir-class.Rd",
+          "path": "containerit.git/man/Workdir-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Workdir.Rd": {
+          "name": "Workdir.Rd",
+          "path": "containerit.git/man/Workdir.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "addInstruction-set.Rd": {
+          "name": "addInstruction-set.Rd",
+          "path": "containerit.git/man/addInstruction-set.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "as.character-Dockerfile-method.Rd": {
+          "name": "as.character-Dockerfile-method.Rd",
+          "path": "containerit.git/man/as.character-Dockerfile-method.Rd",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "as.character-Instruction-method.Rd": {
+          "name": "as.character-Instruction-method.Rd",
+          "path": "containerit.git/man/as.character-Instruction-method.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "characterOrInteger-class.Rd": {
+          "name": "characterOrInteger-class.Rd",
+          "path": "containerit.git/man/characterOrInteger-class.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "clean_session.Rd": {
+          "name": "clean_session.Rd",
+          "path": "containerit.git/man/clean_session.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "containerit-addin.Rd": {
+          "name": "containerit-addin.Rd",
+          "path": "containerit.git/man/containerit-addin.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "containerit.Rd": {
+          "name": "containerit.Rd",
+          "path": "containerit.git/man/containerit.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "containerit_write_config.Rd": {
+          "name": "containerit_write_config.Rd",
+          "path": "containerit.git/man/containerit_write_config.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker_build.Rd": {
+          "name": "docker_build.Rd",
+          "path": "containerit.git/man/docker_build.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "dockerfile.Rd": {
+          "name": "dockerfile.Rd",
+          "path": "containerit.git/man/dockerfile.Rd",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "extract_session_file.Rd": {
+          "name": "extract_session_file.Rd",
+          "path": "containerit.git/man/extract_session_file.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "extract_session_image.Rd": {
+          "name": "extract_session_image.Rd",
+          "path": "containerit.git/man/extract_session_image.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "figures": {
+          "name": "figures",
+          "path": "containerit.git/man/figures",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "logo.png": {
+              "name": "logo.png",
+              "path": "containerit.git/man/figures/logo.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "format-Dockerfile-method.Rd": {
+          "name": "format-Dockerfile-method.Rd",
+          "path": "containerit.git/man/format-Dockerfile-method.Rd",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "getGitHubRef.Rd": {
+          "name": "getGitHubRef.Rd",
+          "path": "containerit.git/man/getGitHubRef.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "getImageForVersion.Rd": {
+          "name": "getImageForVersion.Rd",
+          "path": "containerit.git/man/getImageForVersion.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "getRVersionTag.Rd": {
+          "name": "getRVersionTag.Rd",
+          "path": "containerit.git/man/getRVersionTag.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "get_installed_packages.Rd": {
+          "name": "get_installed_packages.Rd",
+          "path": "containerit.git/man/get_installed_packages.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "parseFrom.Rd": {
+          "name": "parseFrom.Rd",
+          "path": "containerit.git/man/parseFrom.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "print-Dockerfile-method.Rd": {
+          "name": "print-Dockerfile-method.Rd",
+          "path": "containerit.git/man/print-Dockerfile-method.Rd",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "print-Instruction-method.Rd": {
+          "name": "print-Instruction-method.Rd",
+          "path": "containerit.git/man/print-Instruction-method.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "toString-Dockerfile-method.Rd": {
+          "name": "toString-Dockerfile-method.Rd",
+          "path": "containerit.git/man/toString-Dockerfile-method.Rd",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "toString-Instruction-method.Rd": {
+          "name": "toString-Instruction-method.Rd",
+          "path": "containerit.git/man/toString-Instruction-method.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "versioned_install_instructions.Rd": {
+          "name": "versioned_install_instructions.Rd",
+          "path": "containerit.git/man/versioned_install_instructions.Rd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "write-Dockerfile-method.Rd": {
+          "name": "write-Dockerfile-method.Rd",
+          "path": "containerit.git/man/write-Dockerfile-method.Rd",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        }
+      }
+    },
+    "paper.bib": {
+      "name": "paper.bib",
+      "path": "containerit.git/paper.bib",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "paper.md": {
+      "name": "paper.md",
+      "path": "containerit.git/paper.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "tests": {
+      "name": "tests",
+      "path": "containerit.git/tests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "testthat": {
+          "name": "testthat",
+          "path": "containerit.git/tests/testthat",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile.savetest": {
+              "name": "Dockerfile.savetest",
+              "path": "containerit.git/tests/testthat/Dockerfile.savetest",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "bioconductor": {
+              "name": "bioconductor",
+              "path": "containerit.git/tests/testthat/bioconductor",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "containerit.git/tests/testthat/bioconductor/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "entrypoint": {
+              "name": "entrypoint",
+              "path": "containerit.git/tests/testthat/entrypoint",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "containerit.git/tests/testthat/entrypoint/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "github": {
+              "name": "github",
+              "path": "containerit.git/tests/testthat/github",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "DESCRIPTION": {
+                  "name": "DESCRIPTION",
+                  "path": "containerit.git/tests/testthat/github/DESCRIPTION",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "containerit.git/tests/testthat/github/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "package_description": {
+              "name": "package_description",
+              "path": "containerit.git/tests/testthat/package_description",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "DESCRIPTION": {
+                  "name": "DESCRIPTION",
+                  "path": "containerit.git/tests/testthat/package_description/DESCRIPTION",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "containerit.git/tests/testthat/package_description/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.copy": {
+                  "name": "Dockerfile.copy",
+                  "path": "containerit.git/tests/testthat/package_description/Dockerfile.copy",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.sf": {
+                  "name": "Dockerfile.sf",
+                  "path": "containerit.git/tests/testthat/package_description/Dockerfile.sf",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.sf.versioned": {
+                  "name": "Dockerfile.sf.versioned",
+                  "path": "containerit.git/tests/testthat/package_description/Dockerfile.sf.versioned",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.testonlydontcommit": {
+                  "name": "Dockerfile.testonlydontcommit",
+                  "path": "containerit.git/tests/testthat/package_description/Dockerfile.testonlydontcommit",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.versioned": {
+                  "name": "Dockerfile.versioned",
+                  "path": "containerit.git/tests/testthat/package_description/Dockerfile.versioned",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "hello.txt": {
+                  "name": "hello.txt",
+                  "path": "containerit.git/tests/testthat/package_description/hello.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "package_markdown": {
+              "name": "package_markdown",
+              "path": "containerit.git/tests/testthat/package_markdown",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "missing_dependency": {
+                  "name": "missing_dependency",
+                  "path": "containerit.git/tests/testthat/package_markdown/missing_dependency",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "containerit.git/tests/testthat/package_markdown/missing_dependency/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "doc.Rmd": {
+                      "name": "doc.Rmd",
+                      "path": "containerit.git/tests/testthat/package_markdown/missing_dependency/doc.Rmd",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "sfr": {
+                  "name": "sfr",
+                  "path": "containerit.git/tests/testthat/package_markdown/sfr",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "sf2.Rmd": {
+                      "name": "sf2.Rmd",
+                      "path": "containerit.git/tests/testthat/package_markdown/sfr/sf2.Rmd",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "units": {
+                  "name": "units",
+                  "path": "containerit.git/tests/testthat/package_markdown/units",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "2016-09-29-plot_units.Rmd": {
+                      "name": "2016-09-29-plot_units.Rmd",
+                      "path": "containerit.git/tests/testthat/package_markdown/units/2016-09-29-plot_units.Rmd",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "containerit.git/tests/testthat/package_markdown/units/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "Dockerfile_original": {
+                      "name": "Dockerfile_original",
+                      "path": "containerit.git/tests/testthat/package_markdown/units/Dockerfile_original",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "package_script": {
+              "name": "package_script",
+              "path": "containerit.git/tests/testthat/package_script",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "needs_predetect": {
+                  "name": "needs_predetect",
+                  "path": "containerit.git/tests/testthat/package_script/needs_predetect",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "containerit.git/tests/testthat/package_script/needs_predetect/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "script.R": {
+                      "name": "script.R",
+                      "path": "containerit.git/tests/testthat/package_script/needs_predetect/script.R",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "resources": {
+                  "name": "resources",
+                  "path": "containerit.git/tests/testthat/package_script/resources",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "containerit.git/tests/testthat/package_script/resources/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "Dockerfile2": {
+                      "name": "Dockerfile2",
+                      "path": "containerit.git/tests/testthat/package_script/resources/Dockerfile2",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "Dockerfile3": {
+                      "name": "Dockerfile3",
+                      "path": "containerit.git/tests/testthat/package_script/resources/Dockerfile3",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "simple_test.R": {
+                      "name": "simple_test.R",
+                      "path": "containerit.git/tests/testthat/package_script/resources/simple_test.R",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_subfolder": {
+                      "name": "test_subfolder",
+                      "path": "containerit.git/tests/testthat/package_script/resources/test_subfolder",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "testresource": {
+                          "name": "testresource",
+                          "path": "containerit.git/tests/testthat/package_script/resources/test_subfolder/testresource",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "test_table.csv": {
+                      "name": "test_table.csv",
+                      "path": "containerit.git/tests/testthat/package_script/resources/test_table.csv",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "simple": {
+                  "name": "simple",
+                  "path": "containerit.git/tests/testthat/package_script/simple",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "containerit.git/tests/testthat/package_script/simple/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "simple_test.R": {
+                      "name": "simple_test.R",
+                      "path": "containerit.git/tests/testthat/package_script/simple/simple_test.R",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "simple_lowercase": {
+                  "name": "simple_lowercase",
+                  "path": "containerit.git/tests/testthat/package_script/simple_lowercase",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Dockerfile": {
+                      "name": "Dockerfile",
+                      "path": "containerit.git/tests/testthat/package_script/simple_lowercase/Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "simple_test.r": {
+                      "name": "simple_test.r",
+                      "path": "containerit.git/tests/testthat/package_script/simple_lowercase/simple_test.r",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "package_versions": {
+              "name": "package_versions",
+              "path": "containerit.git/tests/testthat/package_versions",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "containerit.git/tests/testthat/package_versions/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test_baseimage.R": {
+              "name": "test_baseimage.R",
+              "path": "containerit.git/tests/testthat/test_baseimage.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_bioconductor.R": {
+              "name": "test_bioconductor.R",
+              "path": "containerit.git/tests/testthat/test_bioconductor.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_cmd.R": {
+              "name": "test_cmd.R",
+              "path": "containerit.git/tests/testthat/test_cmd.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_comment.R": {
+              "name": "test_comment.R",
+              "path": "containerit.git/tests/testthat/test_comment.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_copy.R": {
+              "name": "test_copy.R",
+              "path": "containerit.git/tests/testthat/test_copy.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_dockerfile-method.R": {
+              "name": "test_dockerfile-method.R",
+              "path": "containerit.git/tests/testthat/test_dockerfile-method.R",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "test_dockerfiles.R": {
+              "name": "test_dockerfiles.R",
+              "path": "containerit.git/tests/testthat/test_dockerfiles.R",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "test_entrypoint.R": {
+              "name": "test_entrypoint.R",
+              "path": "containerit.git/tests/testthat/test_entrypoint.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_expose.R": {
+              "name": "test_expose.R",
+              "path": "containerit.git/tests/testthat/test_expose.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_find_systemrequirements.R": {
+              "name": "test_find_systemrequirements.R",
+              "path": "containerit.git/tests/testthat/test_find_systemrequirements.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_from.R": {
+              "name": "test_from.R",
+              "path": "containerit.git/tests/testthat/test_from.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_getImageForVersion.R": {
+              "name": "test_getImageForVersion.R",
+              "path": "containerit.git/tests/testthat/test_getImageForVersion.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_install_github.R": {
+              "name": "test_install_github.R",
+              "path": "containerit.git/tests/testthat/test_install_github.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_label.R": {
+              "name": "test_label.R",
+              "path": "containerit.git/tests/testthat/test_label.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_maintainer.R": {
+              "name": "test_maintainer.R",
+              "path": "containerit.git/tests/testthat/test_maintainer.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_metadata_creation.R": {
+              "name": "test_metadata_creation.R",
+              "path": "containerit.git/tests/testthat/test_metadata_creation.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_package_description.R": {
+              "name": "test_package_description.R",
+              "path": "containerit.git/tests/testthat/test_package_description.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_package_expression.R": {
+              "name": "test_package_expression.R",
+              "path": "containerit.git/tests/testthat/test_package_expression.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_package_markdown.R": {
+              "name": "test_package_markdown.R",
+              "path": "containerit.git/tests/testthat/test_package_markdown.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_package_script.R": {
+              "name": "test_package_script.R",
+              "path": "containerit.git/tests/testthat/test_package_script.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_package_sessionInfo-file.R": {
+              "name": "test_package_sessionInfo-file.R",
+              "path": "containerit.git/tests/testthat/test_package_sessionInfo-file.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_package_with-versions.R": {
+              "name": "test_package_with-versions.R",
+              "path": "containerit.git/tests/testthat/test_package_with-versions.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_run.R": {
+              "name": "test_run.R",
+              "path": "containerit.git/tests/testthat/test_run.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_save_workspace.R": {
+              "name": "test_save_workspace.R",
+              "path": "containerit.git/tests/testthat/test_save_workspace.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_sessioninfo_reproduce.R": {
+              "name": "test_sessioninfo_reproduce.R",
+              "path": "containerit.git/tests/testthat/test_sessioninfo_reproduce.R",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "v1.29.yaml": {
+              "name": "v1.29.yaml",
+              "path": "containerit.git/tests/testthat/v1.29.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "testthat.R": {
+          "name": "testthat.R",
+          "path": "containerit.git/tests/testthat.R",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "vignettes": {
+      "name": "vignettes",
+      "path": "containerit.git/vignettes",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "basic.Rmd": {
+          "name": "basic.Rmd",
+          "path": "containerit.git/vignettes/basic.Rmd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "bioconductor.Rmd": {
+          "name": "bioconductor.Rmd",
+          "path": "containerit.git/vignettes/bioconductor.Rmd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "container.Rmd": {
+          "name": "container.Rmd",
+          "path": "containerit.git/vignettes/container.Rmd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "containerit.Rmd": {
+          "name": "containerit.Rmd",
+          "path": "containerit.git/vignettes/containerit.Rmd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 62705318,
+    "name": "containerit",
+    "full_name": "o2r-project/containerit",
+    "owner": {
+      "login": "o2r-project",
+      "html_url": "https://github.com/o2r-project",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/o2r-project/containerit",
+    "description": "Package an R workspace and all dependencies as a Docker container",
+    "url": "https://api.github.com/repos/o2r-project/containerit",
+    "clone_url": "https://github.com/o2r-project/containerit.git",
+    "homepage": "https://o2r.info/containerit/",
+    "size": 1699,
+    "stargazers_count": 275,
+    "watchers_count": 275,
+    "language": "R"
+  }
+}

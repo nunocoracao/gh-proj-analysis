@@ -24,7 +24,7 @@ module.exports = {
         return repos
     },
 
-    cloneRepo: function (repoUrl, callback) {
+    cloneRepo: function (repoUrl, callback, skipCallback) {
         var repoTokens = repoUrl.split("/")
         var repoName = repoTokens[repoTokens.length - 1]
         var path = TEMP_DIR + repoName
@@ -38,7 +38,8 @@ module.exports = {
         clone(repoUrl, path, { shallow: true }, (error) => {
             if (error){
                 console.log(error)
-                this.cloneRepo(repoUrl, callback)
+                //this.cloneRepo(repoUrl, callback)
+                skipCallback()
             } else
                 callback(repoName)
         })

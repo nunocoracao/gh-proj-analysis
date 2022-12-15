@@ -1,0 +1,925 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": true,
+      "count": 25,
+      "rootCount": 0,
+      "subFolderCount": 25,
+      "filepaths": [
+        "docker-compose-in-depth.git/01 - Introduction/0102/docker-compose.yml",
+        "docker-compose-in-depth.git/02 - Compose Basics/0201/docker-compose.yml",
+        "docker-compose-in-depth.git/02 - Compose Basics/0202/docker-compose.yml",
+        "docker-compose-in-depth.git/02 - Compose Basics/0203/docker-compose.yml",
+        "docker-compose-in-depth.git/03 - Networking/0302/docker-compose.yml",
+        "docker-compose-in-depth.git/03 - Networking/0303/docker-compose.yml",
+        "docker-compose-in-depth.git/03 - Networking/0304/docker-compose.yml",
+        "docker-compose-in-depth.git/03 - Networking/0305/docker-compose.yml",
+        "docker-compose-in-depth.git/03 - Networking/0307/docker-compose.yml",
+        "docker-compose-in-depth.git/04 - Volumes/0402/docker-compose.yml",
+        "docker-compose-in-depth.git/04 - Volumes/0403/docker-compose.yml",
+        "docker-compose-in-depth.git/04 - Volumes/0404/docker-compose.yml",
+        "docker-compose-in-depth.git/05 - Logging/0501/docker-compose.yml",
+        "docker-compose-in-depth.git/05 - Logging/0502/docker-compose.yml",
+        "docker-compose-in-depth.git/06 - Compose CLI/0601/docker-compose.yml",
+        "docker-compose-in-depth.git/06 - Compose CLI/0603/docker-compose.yml",
+        "docker-compose-in-depth.git/06 - Compose CLI/0604/docker-compose.yml",
+        "docker-compose-in-depth.git/06 - Compose CLI/0606/docker-compose.yml",
+        "docker-compose-in-depth.git/07 - Composing Compose/0701/docker-compose.merge.yml",
+        "docker-compose-in-depth.git/07 - Composing Compose/0701/docker-compose.yml",
+        "docker-compose-in-depth.git/07 - Composing Compose/0702/docker-compose.override.yml",
+        "docker-compose-in-depth.git/07 - Composing Compose/0702/docker-compose.yml",
+        "docker-compose-in-depth.git/07 - Composing Compose/0703/docker-compose.yml",
+        "docker-compose-in-depth.git/08 - Compose in Production/docker-compose.production.yml",
+        "docker-compose-in-depth.git/08 - Compose in Production/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".git": {
+      "name": ".git",
+      "path": "docker-compose-in-depth.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "docker-compose-in-depth.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "docker-compose-in-depth.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "docker-compose-in-depth.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "docker-compose-in-depth.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "docker-compose-in-depth.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "docker-compose-in-depth.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "docker-compose-in-depth.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "docker-compose-in-depth.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "docker-compose-in-depth.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "docker-compose-in-depth.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "docker-compose-in-depth.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "docker-compose-in-depth.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "docker-compose-in-depth.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "docker-compose-in-depth.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "docker-compose-in-depth.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "docker-compose-in-depth.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "docker-compose-in-depth.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "docker-compose-in-depth.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "docker-compose-in-depth.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-d4567916db89903a5e8692c48193065645861414.idx": {
+                  "name": "pack-d4567916db89903a5e8692c48193065645861414.idx",
+                  "path": "docker-compose-in-depth.git/.git/objects/pack/pack-d4567916db89903a5e8692c48193065645861414.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-d4567916db89903a5e8692c48193065645861414.pack": {
+                  "name": "pack-d4567916db89903a5e8692c48193065645861414.pack",
+                  "path": "docker-compose-in-depth.git/.git/objects/pack/pack-d4567916db89903a5e8692c48193065645861414.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "docker-compose-in-depth.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "docker-compose-in-depth.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "docker-compose-in-depth.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "docker-compose-in-depth.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "docker-compose-in-depth.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "docker-compose-in-depth.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "docker-compose-in-depth.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "docker-compose-in-depth.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "docker-compose-in-depth.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "docker-compose-in-depth.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "01 - Introduction": {
+      "name": "01 - Introduction",
+      "path": "docker-compose-in-depth.git/01 - Introduction",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "0102": {
+          "name": "0102",
+          "path": "docker-compose-in-depth.git/01 - Introduction/0102",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/01 - Introduction/0102/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        }
+      }
+    },
+    "02 - Compose Basics": {
+      "name": "02 - Compose Basics",
+      "path": "docker-compose-in-depth.git/02 - Compose Basics",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "0201": {
+          "name": "0201",
+          "path": "docker-compose-in-depth.git/02 - Compose Basics/0201",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/02 - Compose Basics/0201/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0202": {
+          "name": "0202",
+          "path": "docker-compose-in-depth.git/02 - Compose Basics/0202",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/02 - Compose Basics/0202/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0203": {
+          "name": "0203",
+          "path": "docker-compose-in-depth.git/02 - Compose Basics/0203",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "docker-compose-in-depth.git/02 - Compose Basics/0203/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/02 - Compose Basics/0203/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        }
+      }
+    },
+    "03 - Networking": {
+      "name": "03 - Networking",
+      "path": "docker-compose-in-depth.git/03 - Networking",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "0302": {
+          "name": "0302",
+          "path": "docker-compose-in-depth.git/03 - Networking/0302",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/03 - Networking/0302/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0303": {
+          "name": "0303",
+          "path": "docker-compose-in-depth.git/03 - Networking/0303",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/03 - Networking/0303/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0304": {
+          "name": "0304",
+          "path": "docker-compose-in-depth.git/03 - Networking/0304",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/03 - Networking/0304/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "scale.yml": {
+              "name": "scale.yml",
+              "path": "docker-compose-in-depth.git/03 - Networking/0304/scale.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "share.yml": {
+              "name": "share.yml",
+              "path": "docker-compose-in-depth.git/03 - Networking/0304/share.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "0305": {
+          "name": "0305",
+          "path": "docker-compose-in-depth.git/03 - Networking/0305",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/03 - Networking/0305/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0307": {
+          "name": "0307",
+          "path": "docker-compose-in-depth.git/03 - Networking/0307",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/03 - Networking/0307/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        }
+      }
+    },
+    "04 - Volumes": {
+      "name": "04 - Volumes",
+      "path": "docker-compose-in-depth.git/04 - Volumes",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "0402": {
+          "name": "0402",
+          "path": "docker-compose-in-depth.git/04 - Volumes/0402",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "conf.d": {
+              "name": "conf.d",
+              "path": "docker-compose-in-depth.git/04 - Volumes/0402/conf.d",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "default.conf": {
+                  "name": "default.conf",
+                  "path": "docker-compose-in-depth.git/04 - Volumes/0402/conf.d/default.conf",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/04 - Volumes/0402/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0403": {
+          "name": "0403",
+          "path": "docker-compose-in-depth.git/04 - Volumes/0403",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/04 - Volumes/0403/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0404": {
+          "name": "0404",
+          "path": "docker-compose-in-depth.git/04 - Volumes/0404",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/04 - Volumes/0404/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        }
+      }
+    },
+    "05 - Logging": {
+      "name": "05 - Logging",
+      "path": "docker-compose-in-depth.git/05 - Logging",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "0501": {
+          "name": "0501",
+          "path": "docker-compose-in-depth.git/05 - Logging/0501",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/05 - Logging/0501/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0502": {
+          "name": "0502",
+          "path": "docker-compose-in-depth.git/05 - Logging/0502",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/05 - Logging/0502/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        }
+      }
+    },
+    "06 - Compose CLI": {
+      "name": "06 - Compose CLI",
+      "path": "docker-compose-in-depth.git/06 - Compose CLI",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "0601": {
+          "name": "0601",
+          "path": "docker-compose-in-depth.git/06 - Compose CLI/0601",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/06 - Compose CLI/0601/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0603": {
+          "name": "0603",
+          "path": "docker-compose-in-depth.git/06 - Compose CLI/0603",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/06 - Compose CLI/0603/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0604": {
+          "name": "0604",
+          "path": "docker-compose-in-depth.git/06 - Compose CLI/0604",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/06 - Compose CLI/0604/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0606": {
+          "name": "0606",
+          "path": "docker-compose-in-depth.git/06 - Compose CLI/0606",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".env": {
+              "name": ".env",
+              "path": "docker-compose-in-depth.git/06 - Compose CLI/0606/.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/06 - Compose CLI/0606/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "staging.env": {
+              "name": "staging.env",
+              "path": "docker-compose-in-depth.git/06 - Compose CLI/0606/staging.env",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "07 - Composing Compose": {
+      "name": "07 - Composing Compose",
+      "path": "docker-compose-in-depth.git/07 - Composing Compose",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "0701": {
+          "name": "0701",
+          "path": "docker-compose-in-depth.git/07 - Composing Compose/0701",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.merge.yml": {
+              "name": "docker-compose.merge.yml",
+              "path": "docker-compose-in-depth.git/07 - Composing Compose/0701/docker-compose.merge.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/07 - Composing Compose/0701/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0702": {
+          "name": "0702",
+          "path": "docker-compose-in-depth.git/07 - Composing Compose/0702",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose.override.yml": {
+              "name": "docker-compose.override.yml",
+              "path": "docker-compose-in-depth.git/07 - Composing Compose/0702/docker-compose.override.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/07 - Composing Compose/0702/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "0703": {
+          "name": "0703",
+          "path": "docker-compose-in-depth.git/07 - Composing Compose/0703",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "base.yml": {
+              "name": "base.yml",
+              "path": "docker-compose-in-depth.git/07 - Composing Compose/0703/base.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "docker-compose-in-depth.git/07 - Composing Compose/0703/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        }
+      }
+    },
+    "08 - Compose in Production": {
+      "name": "08 - Compose in Production",
+      "path": "docker-compose-in-depth.git/08 - Compose in Production",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "docker-compose-in-depth.git/08 - Compose in Production/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "deploy.sh": {
+          "name": "deploy.sh",
+          "path": "docker-compose-in-depth.git/08 - Compose in Production/deploy.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.production.yml": {
+          "name": "docker-compose.production.yml",
+          "path": "docker-compose-in-depth.git/08 - Compose in Production/docker-compose.production.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "docker-compose-in-depth.git/08 - Compose in Production/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "provision.sh": {
+          "name": "provision.sh",
+          "path": "docker-compose-in-depth.git/08 - Compose in Production/provision.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "docker-compose-in-depth.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    }
+  },
+  "info": {
+    "id": 61407311,
+    "name": "docker-compose-in-depth",
+    "full_name": "avescodes/docker-compose-in-depth",
+    "owner": {
+      "login": "avescodes",
+      "html_url": "https://github.com/avescodes",
+      "type": "User"
+    },
+    "html_url": "https://github.com/avescodes/docker-compose-in-depth",
+    "description": "Code samples for Stone River E-Learning's \"Docker Compose in Depth\" course",
+    "url": "https://api.github.com/repos/avescodes/docker-compose-in-depth",
+    "clone_url": "https://github.com/avescodes/docker-compose-in-depth.git",
+    "homepage": "stoneriverelearning.com/courses/docker-compose-in-depth",
+    "size": 10,
+    "stargazers_count": 34,
+    "watchers_count": 34,
+    "language": "Shell"
+  }
+}

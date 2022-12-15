@@ -17,6 +17,8 @@ function buildStep(item, info) {
                     utils.saveToFile(res, repoName + '.json')
                     utils.deleteRepo(item) //delete repo after processing
                     endCB()
+                }, () => {
+                    endCB()
                 })
             } else {
                 endCB()

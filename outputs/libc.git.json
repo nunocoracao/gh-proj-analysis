@@ -1,0 +1,4007 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 34,
+      "rootCount": 0,
+      "subFolderCount": 34,
+      "filepaths": [
+        "libc.git/ci/docker/aarch64-linux-android/Dockerfile",
+        "libc.git/ci/docker/aarch64-unknown-linux-gnu/Dockerfile",
+        "libc.git/ci/docker/aarch64-unknown-linux-musl/Dockerfile",
+        "libc.git/ci/docker/arm-linux-androideabi/Dockerfile",
+        "libc.git/ci/docker/arm-unknown-linux-gnueabihf/Dockerfile",
+        "libc.git/ci/docker/arm-unknown-linux-musleabihf/Dockerfile",
+        "libc.git/ci/docker/armv7-unknown-linux-uclibceabihf/Dockerfile",
+        "libc.git/ci/docker/asmjs-unknown-emscripten/Dockerfile",
+        "libc.git/ci/docker/i686-linux-android/Dockerfile",
+        "libc.git/ci/docker/i686-unknown-linux-gnu/Dockerfile",
+        "libc.git/ci/docker/i686-unknown-linux-musl/Dockerfile",
+        "libc.git/ci/docker/mips-unknown-linux-gnu/Dockerfile",
+        "libc.git/ci/docker/mips-unknown-linux-musl/Dockerfile",
+        "libc.git/ci/docker/mips64-unknown-linux-gnuabi64/Dockerfile",
+        "libc.git/ci/docker/mips64-unknown-linux-muslabi64/Dockerfile",
+        "libc.git/ci/docker/mips64el-unknown-linux-gnuabi64/Dockerfile",
+        "libc.git/ci/docker/mips64el-unknown-linux-muslabi64/Dockerfile",
+        "libc.git/ci/docker/mipsel-unknown-linux-musl/Dockerfile",
+        "libc.git/ci/docker/mipsel-unknown-linux-uclibc/Dockerfile",
+        "libc.git/ci/docker/powerpc-unknown-linux-gnu/Dockerfile",
+        "libc.git/ci/docker/powerpc64-unknown-linux-gnu/Dockerfile",
+        "libc.git/ci/docker/powerpc64le-unknown-linux-gnu/Dockerfile",
+        "libc.git/ci/docker/riscv64gc-unknown-linux-gnu/Dockerfile",
+        "libc.git/ci/docker/s390x-unknown-linux-gnu/Dockerfile",
+        "libc.git/ci/docker/s390x-unknown-linux-musl/Dockerfile",
+        "libc.git/ci/docker/sparc64-unknown-linux-gnu/Dockerfile",
+        "libc.git/ci/docker/switch/Dockerfile",
+        "libc.git/ci/docker/wasm32-unknown-emscripten/Dockerfile",
+        "libc.git/ci/docker/wasm32-wasi/Dockerfile",
+        "libc.git/ci/docker/x86_64-linux-android/Dockerfile",
+        "libc.git/ci/docker/x86_64-unknown-linux-gnu/Dockerfile",
+        "libc.git/ci/docker/x86_64-unknown-linux-gnux32/Dockerfile",
+        "libc.git/ci/docker/x86_64-unknown-linux-musl/Dockerfile",
+        "libc.git/ci/docker/x86_64-unknown-redox/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".cirrus.yml": {
+      "name": ".cirrus.yml",
+      "path": "libc.git/.cirrus.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "libc.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "libc.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "libc.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "libc.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "libc.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "libc.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "libc.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "libc.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "libc.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "libc.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "libc.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "libc.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "libc.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "libc.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "libc.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "libc.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "libc.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "libc.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "libc.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "libc.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "libc.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "libc.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "libc.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "libc.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "libc.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "libc.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "libc.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "libc.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "libc.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "libc.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "libc.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "libc.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-82647d6fb65c79d374f22af4f4f2379e178ae565.idx": {
+                  "name": "pack-82647d6fb65c79d374f22af4f4f2379e178ae565.idx",
+                  "path": "libc.git/.git/objects/pack/pack-82647d6fb65c79d374f22af4f4f2379e178ae565.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-82647d6fb65c79d374f22af4f4f2379e178ae565.pack": {
+                  "name": "pack-82647d6fb65c79d374f22af4f4f2379e178ae565.pack",
+                  "path": "libc.git/.git/objects/pack/pack-82647d6fb65c79d374f22af4f4f2379e178ae565.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "libc.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "libc.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "libc.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "libc.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "libc.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "libc.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "libc.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "libc.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "libc.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "libc.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "libc.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "api_request.md": {
+              "name": "api_request.md",
+              "path": "libc.git/.github/ISSUE_TEMPLATE/api_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "bug_report.md": {
+              "name": "bug_report.md",
+              "path": "libc.git/.github/ISSUE_TEMPLATE/bug_report.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "PULL_REQUEST_TEMPLATE.md": {
+          "name": "PULL_REQUEST_TEMPLATE.md",
+          "path": "libc.git/.github/PULL_REQUEST_TEMPLATE.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "libc.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bors.yml": {
+              "name": "bors.yml",
+              "path": "libc.git/.github/workflows/bors.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docs.yml": {
+              "name": "docs.yml",
+              "path": "libc.git/.github/workflows/docs.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.yml": {
+              "name": "main.yml",
+              "path": "libc.git/.github/workflows/main.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "libc.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "libc.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Cargo.toml": {
+      "name": "Cargo.toml",
+      "path": "libc.git/Cargo.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE-APACHE": {
+      "name": "LICENSE-APACHE",
+      "path": "libc.git/LICENSE-APACHE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE-MIT": {
+      "name": "LICENSE-MIT",
+      "path": "libc.git/LICENSE-MIT",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "libc.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "build.rs": {
+      "name": "build.rs",
+      "path": "libc.git/build.rs",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "ci": {
+      "name": "ci",
+      "path": "libc.git/ci",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "libc.git/ci/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "android-emulator-package.xml": {
+          "name": "android-emulator-package.xml",
+          "path": "libc.git/ci/android-emulator-package.xml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "android-install-ndk.sh": {
+          "name": "android-install-ndk.sh",
+          "path": "libc.git/ci/android-install-ndk.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "android-install-sdk.sh": {
+          "name": "android-install-sdk.sh",
+          "path": "libc.git/ci/android-install-sdk.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "android-sysimage.sh": {
+          "name": "android-sysimage.sh",
+          "path": "libc.git/ci/android-sysimage.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build.sh": {
+          "name": "build.sh",
+          "path": "libc.git/ci/build.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "libc.git/ci/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "aarch64-linux-android": {
+              "name": "aarch64-linux-android",
+              "path": "libc.git/ci/docker/aarch64-linux-android",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/aarch64-linux-android/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "aarch64-unknown-linux-gnu": {
+              "name": "aarch64-unknown-linux-gnu",
+              "path": "libc.git/ci/docker/aarch64-unknown-linux-gnu",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/aarch64-unknown-linux-gnu/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "aarch64-unknown-linux-musl": {
+              "name": "aarch64-unknown-linux-musl",
+              "path": "libc.git/ci/docker/aarch64-unknown-linux-musl",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/aarch64-unknown-linux-musl/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "arm-linux-androideabi": {
+              "name": "arm-linux-androideabi",
+              "path": "libc.git/ci/docker/arm-linux-androideabi",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/arm-linux-androideabi/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "arm-unknown-linux-gnueabihf": {
+              "name": "arm-unknown-linux-gnueabihf",
+              "path": "libc.git/ci/docker/arm-unknown-linux-gnueabihf",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/arm-unknown-linux-gnueabihf/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "arm-unknown-linux-musleabihf": {
+              "name": "arm-unknown-linux-musleabihf",
+              "path": "libc.git/ci/docker/arm-unknown-linux-musleabihf",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/arm-unknown-linux-musleabihf/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "armv7-unknown-linux-uclibceabihf": {
+              "name": "armv7-unknown-linux-uclibceabihf",
+              "path": "libc.git/ci/docker/armv7-unknown-linux-uclibceabihf",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/armv7-unknown-linux-uclibceabihf/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "asmjs-unknown-emscripten": {
+              "name": "asmjs-unknown-emscripten",
+              "path": "libc.git/ci/docker/asmjs-unknown-emscripten",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/asmjs-unknown-emscripten/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "i686-linux-android": {
+              "name": "i686-linux-android",
+              "path": "libc.git/ci/docker/i686-linux-android",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/i686-linux-android/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "i686-unknown-linux-gnu": {
+              "name": "i686-unknown-linux-gnu",
+              "path": "libc.git/ci/docker/i686-unknown-linux-gnu",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/i686-unknown-linux-gnu/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "i686-unknown-linux-musl": {
+              "name": "i686-unknown-linux-musl",
+              "path": "libc.git/ci/docker/i686-unknown-linux-musl",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/i686-unknown-linux-musl/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mips-unknown-linux-gnu": {
+              "name": "mips-unknown-linux-gnu",
+              "path": "libc.git/ci/docker/mips-unknown-linux-gnu",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/mips-unknown-linux-gnu/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mips-unknown-linux-musl": {
+              "name": "mips-unknown-linux-musl",
+              "path": "libc.git/ci/docker/mips-unknown-linux-musl",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/mips-unknown-linux-musl/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mips64-unknown-linux-gnuabi64": {
+              "name": "mips64-unknown-linux-gnuabi64",
+              "path": "libc.git/ci/docker/mips64-unknown-linux-gnuabi64",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/mips64-unknown-linux-gnuabi64/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mips64-unknown-linux-muslabi64": {
+              "name": "mips64-unknown-linux-muslabi64",
+              "path": "libc.git/ci/docker/mips64-unknown-linux-muslabi64",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/mips64-unknown-linux-muslabi64/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mips64el-unknown-linux-gnuabi64": {
+              "name": "mips64el-unknown-linux-gnuabi64",
+              "path": "libc.git/ci/docker/mips64el-unknown-linux-gnuabi64",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/mips64el-unknown-linux-gnuabi64/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mips64el-unknown-linux-muslabi64": {
+              "name": "mips64el-unknown-linux-muslabi64",
+              "path": "libc.git/ci/docker/mips64el-unknown-linux-muslabi64",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/mips64el-unknown-linux-muslabi64/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mipsel-unknown-linux-musl": {
+              "name": "mipsel-unknown-linux-musl",
+              "path": "libc.git/ci/docker/mipsel-unknown-linux-musl",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/mipsel-unknown-linux-musl/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mipsel-unknown-linux-uclibc": {
+              "name": "mipsel-unknown-linux-uclibc",
+              "path": "libc.git/ci/docker/mipsel-unknown-linux-uclibc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/mipsel-unknown-linux-uclibc/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "powerpc-unknown-linux-gnu": {
+              "name": "powerpc-unknown-linux-gnu",
+              "path": "libc.git/ci/docker/powerpc-unknown-linux-gnu",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/powerpc-unknown-linux-gnu/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "powerpc64-unknown-linux-gnu": {
+              "name": "powerpc64-unknown-linux-gnu",
+              "path": "libc.git/ci/docker/powerpc64-unknown-linux-gnu",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/powerpc64-unknown-linux-gnu/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "powerpc64le-unknown-linux-gnu": {
+              "name": "powerpc64le-unknown-linux-gnu",
+              "path": "libc.git/ci/docker/powerpc64le-unknown-linux-gnu",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/powerpc64le-unknown-linux-gnu/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "riscv64gc-unknown-linux-gnu": {
+              "name": "riscv64gc-unknown-linux-gnu",
+              "path": "libc.git/ci/docker/riscv64gc-unknown-linux-gnu",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/riscv64gc-unknown-linux-gnu/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "s390x-unknown-linux-gnu": {
+              "name": "s390x-unknown-linux-gnu",
+              "path": "libc.git/ci/docker/s390x-unknown-linux-gnu",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/s390x-unknown-linux-gnu/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "s390x-unknown-linux-musl": {
+              "name": "s390x-unknown-linux-musl",
+              "path": "libc.git/ci/docker/s390x-unknown-linux-musl",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/s390x-unknown-linux-musl/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "sparc64-unknown-linux-gnu": {
+              "name": "sparc64-unknown-linux-gnu",
+              "path": "libc.git/ci/docker/sparc64-unknown-linux-gnu",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/sparc64-unknown-linux-gnu/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "switch": {
+              "name": "switch",
+              "path": "libc.git/ci/docker/switch",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/switch/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "wasm32-unknown-emscripten": {
+              "name": "wasm32-unknown-emscripten",
+              "path": "libc.git/ci/docker/wasm32-unknown-emscripten",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/wasm32-unknown-emscripten/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "node-wrapper.sh": {
+                  "name": "node-wrapper.sh",
+                  "path": "libc.git/ci/docker/wasm32-unknown-emscripten/node-wrapper.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "wasm32-wasi": {
+              "name": "wasm32-wasi",
+              "path": "libc.git/ci/docker/wasm32-wasi",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/wasm32-wasi/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "clang.sh": {
+                  "name": "clang.sh",
+                  "path": "libc.git/ci/docker/wasm32-wasi/clang.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "x86_64-linux-android": {
+              "name": "x86_64-linux-android",
+              "path": "libc.git/ci/docker/x86_64-linux-android",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/x86_64-linux-android/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "x86_64-unknown-linux-gnu": {
+              "name": "x86_64-unknown-linux-gnu",
+              "path": "libc.git/ci/docker/x86_64-unknown-linux-gnu",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/x86_64-unknown-linux-gnu/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "x86_64-unknown-linux-gnux32": {
+              "name": "x86_64-unknown-linux-gnux32",
+              "path": "libc.git/ci/docker/x86_64-unknown-linux-gnux32",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/x86_64-unknown-linux-gnux32/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "x86_64-unknown-linux-musl": {
+              "name": "x86_64-unknown-linux-musl",
+              "path": "libc.git/ci/docker/x86_64-unknown-linux-musl",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/x86_64-unknown-linux-musl/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "x86_64-unknown-redox": {
+              "name": "x86_64-unknown-redox",
+              "path": "libc.git/ci/docker/x86_64-unknown-redox",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "libc.git/ci/docker/x86_64-unknown-redox/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "dox.sh": {
+          "name": "dox.sh",
+          "path": "libc.git/ci/dox.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "emscripten-entry.sh": {
+          "name": "emscripten-entry.sh",
+          "path": "libc.git/ci/emscripten-entry.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "emscripten.sh": {
+          "name": "emscripten.sh",
+          "path": "libc.git/ci/emscripten.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "install-musl.sh": {
+          "name": "install-musl.sh",
+          "path": "libc.git/ci/install-musl.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "install-rust.sh": {
+          "name": "install-rust.sh",
+          "path": "libc.git/ci/install-rust.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ios": {
+          "name": "ios",
+          "path": "libc.git/ci/ios",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deploy_and_run_on_ios_simulator.rs": {
+              "name": "deploy_and_run_on_ios_simulator.rs",
+              "path": "libc.git/ci/ios/deploy_and_run_on_ios_simulator.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "linux-s390x.sh": {
+          "name": "linux-s390x.sh",
+          "path": "libc.git/ci/linux-s390x.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "linux-sparc64.sh": {
+          "name": "linux-sparc64.sh",
+          "path": "libc.git/ci/linux-sparc64.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "run-docker.sh": {
+          "name": "run-docker.sh",
+          "path": "libc.git/ci/run-docker.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "run.sh": {
+          "name": "run.sh",
+          "path": "libc.git/ci/run.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "runtest-android.rs": {
+          "name": "runtest-android.rs",
+          "path": "libc.git/ci/runtest-android.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rust.css": {
+          "name": "rust.css",
+          "path": "libc.git/ci/rust.css",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "semver.sh": {
+          "name": "semver.sh",
+          "path": "libc.git/ci/semver.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "style.rs": {
+          "name": "style.rs",
+          "path": "libc.git/ci/style.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "style.sh": {
+          "name": "style.sh",
+          "path": "libc.git/ci/style.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "switch.json": {
+          "name": "switch.json",
+          "path": "libc.git/ci/switch.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "sysinfo_guard.patch": {
+          "name": "sysinfo_guard.patch",
+          "path": "libc.git/ci/sysinfo_guard.patch",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test-runner-linux": {
+          "name": "test-runner-linux",
+          "path": "libc.git/ci/test-runner-linux",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "libc-test": {
+      "name": "libc-test",
+      "path": "libc.git/libc-test",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "libc.git/libc-test/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build.rs": {
+          "name": "build.rs",
+          "path": "libc.git/libc-test/build.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "semver": {
+          "name": "semver",
+          "path": "libc.git/libc-test/semver",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "libc.git/libc-test/semver/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "TODO-linux.txt": {
+              "name": "TODO-linux.txt",
+              "path": "libc.git/libc-test/semver/TODO-linux.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "TODO-unix.txt": {
+              "name": "TODO-unix.txt",
+              "path": "libc.git/libc-test/semver/TODO-unix.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "android-aarch64.txt": {
+              "name": "android-aarch64.txt",
+              "path": "libc.git/libc-test/semver/android-aarch64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "android-arm.txt": {
+              "name": "android-arm.txt",
+              "path": "libc.git/libc-test/semver/android-arm.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "android-i686.txt": {
+              "name": "android-i686.txt",
+              "path": "libc.git/libc-test/semver/android-i686.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "android-x86_64.txt": {
+              "name": "android-x86_64.txt",
+              "path": "libc.git/libc-test/semver/android-x86_64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "android.txt": {
+              "name": "android.txt",
+              "path": "libc.git/libc-test/semver/android.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "apple.txt": {
+              "name": "apple.txt",
+              "path": "libc.git/libc-test/semver/apple.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dragonfly.txt": {
+              "name": "dragonfly.txt",
+              "path": "libc.git/libc-test/semver/dragonfly.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "freebsd-x86_64.txt": {
+              "name": "freebsd-x86_64.txt",
+              "path": "libc.git/libc-test/semver/freebsd-x86_64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "freebsd.txt": {
+              "name": "freebsd.txt",
+              "path": "libc.git/libc-test/semver/freebsd.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fuchsia-x86_64.txt": {
+              "name": "fuchsia-x86_64.txt",
+              "path": "libc.git/libc-test/semver/fuchsia-x86_64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fuchsia.txt": {
+              "name": "fuchsia.txt",
+              "path": "libc.git/libc-test/semver/fuchsia.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ios.txt": {
+              "name": "ios.txt",
+              "path": "libc.git/libc-test/semver/ios.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-aarch64.txt": {
+              "name": "linux-aarch64.txt",
+              "path": "libc.git/libc-test/semver/linux-aarch64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-gnu-riscv64gc.txt": {
+              "name": "linux-gnu-riscv64gc.txt",
+              "path": "libc.git/libc-test/semver/linux-gnu-riscv64gc.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-gnu-x86_64.txt": {
+              "name": "linux-gnu-x86_64.txt",
+              "path": "libc.git/libc-test/semver/linux-gnu-x86_64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-gnu.txt": {
+              "name": "linux-gnu.txt",
+              "path": "libc.git/libc-test/semver/linux-gnu.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-i686.txt": {
+              "name": "linux-i686.txt",
+              "path": "libc.git/libc-test/semver/linux-i686.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-mips.txt": {
+              "name": "linux-mips.txt",
+              "path": "libc.git/libc-test/semver/linux-mips.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-musl.txt": {
+              "name": "linux-musl.txt",
+              "path": "libc.git/libc-test/semver/linux-musl.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-powerpc.txt": {
+              "name": "linux-powerpc.txt",
+              "path": "libc.git/libc-test/semver/linux-powerpc.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-powerpc64.txt": {
+              "name": "linux-powerpc64.txt",
+              "path": "libc.git/libc-test/semver/linux-powerpc64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-powerpc64le.txt": {
+              "name": "linux-powerpc64le.txt",
+              "path": "libc.git/libc-test/semver/linux-powerpc64le.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-riscv64gc.txt": {
+              "name": "linux-riscv64gc.txt",
+              "path": "libc.git/libc-test/semver/linux-riscv64gc.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-s390x.txt": {
+              "name": "linux-s390x.txt",
+              "path": "libc.git/libc-test/semver/linux-s390x.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-sparc64.txt": {
+              "name": "linux-sparc64.txt",
+              "path": "libc.git/libc-test/semver/linux-sparc64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux-x86_64.txt": {
+              "name": "linux-x86_64.txt",
+              "path": "libc.git/libc-test/semver/linux-x86_64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux.txt": {
+              "name": "linux.txt",
+              "path": "libc.git/libc-test/semver/linux.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "macos-aarch64.txt": {
+              "name": "macos-aarch64.txt",
+              "path": "libc.git/libc-test/semver/macos-aarch64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "macos-i686.txt": {
+              "name": "macos-i686.txt",
+              "path": "libc.git/libc-test/semver/macos-i686.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "macos-x86_64.txt": {
+              "name": "macos-x86_64.txt",
+              "path": "libc.git/libc-test/semver/macos-x86_64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "macos.txt": {
+              "name": "macos.txt",
+              "path": "libc.git/libc-test/semver/macos.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "netbsd-aarch64.txt": {
+              "name": "netbsd-aarch64.txt",
+              "path": "libc.git/libc-test/semver/netbsd-aarch64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "netbsd-powerpc.txt": {
+              "name": "netbsd-powerpc.txt",
+              "path": "libc.git/libc-test/semver/netbsd-powerpc.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "netbsd-x86_64.txt": {
+              "name": "netbsd-x86_64.txt",
+              "path": "libc.git/libc-test/semver/netbsd-x86_64.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "netbsd.txt": {
+              "name": "netbsd.txt",
+              "path": "libc.git/libc-test/semver/netbsd.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "openbsd.txt": {
+              "name": "openbsd.txt",
+              "path": "libc.git/libc-test/semver/openbsd.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "redox.txt": {
+              "name": "redox.txt",
+              "path": "libc.git/libc-test/semver/redox.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "unix.txt": {
+              "name": "unix.txt",
+              "path": "libc.git/libc-test/semver/unix.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "windows-gnu.txt": {
+              "name": "windows-gnu.txt",
+              "path": "libc.git/libc-test/semver/windows-gnu.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "windows-msvc.txt": {
+              "name": "windows-msvc.txt",
+              "path": "libc.git/libc-test/semver/windows-msvc.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "windows.txt": {
+              "name": "windows.txt",
+              "path": "libc.git/libc-test/semver/windows.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "src": {
+          "name": "src",
+          "path": "libc.git/libc-test/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cmsg.c": {
+              "name": "cmsg.c",
+              "path": "libc.git/libc-test/src/cmsg.c",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "errqueue.c": {
+              "name": "errqueue.c",
+              "path": "libc.git/libc-test/src/errqueue.c",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "makedev.c": {
+              "name": "makedev.c",
+              "path": "libc.git/libc-test/src/makedev.c",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sigrt.c": {
+              "name": "sigrt.c",
+              "path": "libc.git/libc-test/src/sigrt.c",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "test": {
+          "name": "test",
+          "path": "libc.git/libc-test/test",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cmsg.rs": {
+              "name": "cmsg.rs",
+              "path": "libc.git/libc-test/test/cmsg.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "errqueue.rs": {
+              "name": "errqueue.rs",
+              "path": "libc.git/libc-test/test/errqueue.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux_elf.rs": {
+              "name": "linux_elf.rs",
+              "path": "libc.git/libc-test/test/linux_elf.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux_fcntl.rs": {
+              "name": "linux_fcntl.rs",
+              "path": "libc.git/libc-test/test/linux_fcntl.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux_if_arp.rs": {
+              "name": "linux_if_arp.rs",
+              "path": "libc.git/libc-test/test/linux_if_arp.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux_ipv6.rs": {
+              "name": "linux_ipv6.rs",
+              "path": "libc.git/libc-test/test/linux_ipv6.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux_strerror_r.rs": {
+              "name": "linux_strerror_r.rs",
+              "path": "libc.git/libc-test/test/linux_strerror_r.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "linux_termios.rs": {
+              "name": "linux_termios.rs",
+              "path": "libc.git/libc-test/test/linux_termios.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.rs": {
+              "name": "main.rs",
+              "path": "libc.git/libc-test/test/main.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "makedev.rs": {
+              "name": "makedev.rs",
+              "path": "libc.git/libc-test/test/makedev.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "semver.rs": {
+              "name": "semver.rs",
+              "path": "libc.git/libc-test/test/semver.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sigrt.rs": {
+              "name": "sigrt.rs",
+              "path": "libc.git/libc-test/test/sigrt.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "rustfmt.toml": {
+      "name": "rustfmt.toml",
+      "path": "libc.git/rustfmt.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "src": {
+      "name": "src",
+      "path": "libc.git/src",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "fixed_width_ints.rs": {
+          "name": "fixed_width_ints.rs",
+          "path": "libc.git/src/fixed_width_ints.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "fuchsia": {
+          "name": "fuchsia",
+          "path": "libc.git/src/fuchsia",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "aarch64.rs": {
+              "name": "aarch64.rs",
+              "path": "libc.git/src/fuchsia/aarch64.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "align.rs": {
+              "name": "align.rs",
+              "path": "libc.git/src/fuchsia/align.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mod.rs": {
+              "name": "mod.rs",
+              "path": "libc.git/src/fuchsia/mod.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "no_align.rs": {
+              "name": "no_align.rs",
+              "path": "libc.git/src/fuchsia/no_align.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "x86_64.rs": {
+              "name": "x86_64.rs",
+              "path": "libc.git/src/fuchsia/x86_64.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "hermit": {
+          "name": "hermit",
+          "path": "libc.git/src/hermit",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "aarch64.rs": {
+              "name": "aarch64.rs",
+              "path": "libc.git/src/hermit/aarch64.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mod.rs": {
+              "name": "mod.rs",
+              "path": "libc.git/src/hermit/mod.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "x86_64.rs": {
+              "name": "x86_64.rs",
+              "path": "libc.git/src/hermit/x86_64.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "lib.rs": {
+          "name": "lib.rs",
+          "path": "libc.git/src/lib.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "macros.rs": {
+          "name": "macros.rs",
+          "path": "libc.git/src/macros.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "psp.rs": {
+          "name": "psp.rs",
+          "path": "libc.git/src/psp.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "sgx.rs": {
+          "name": "sgx.rs",
+          "path": "libc.git/src/sgx.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "solid": {
+          "name": "solid",
+          "path": "libc.git/src/solid",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "aarch64.rs": {
+              "name": "aarch64.rs",
+              "path": "libc.git/src/solid/aarch64.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "arm.rs": {
+              "name": "arm.rs",
+              "path": "libc.git/src/solid/arm.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mod.rs": {
+              "name": "mod.rs",
+              "path": "libc.git/src/solid/mod.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "switch.rs": {
+          "name": "switch.rs",
+          "path": "libc.git/src/switch.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "unix": {
+          "name": "unix",
+          "path": "libc.git/src/unix",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "align.rs": {
+              "name": "align.rs",
+              "path": "libc.git/src/unix/align.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "bsd": {
+              "name": "bsd",
+              "path": "libc.git/src/unix/bsd",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "apple": {
+                  "name": "apple",
+                  "path": "libc.git/src/unix/bsd/apple",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "b32": {
+                      "name": "b32",
+                      "path": "libc.git/src/unix/bsd/apple/b32",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "align.rs": {
+                          "name": "align.rs",
+                          "path": "libc.git/src/unix/bsd/apple/b32/align.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "libc.git/src/unix/bsd/apple/b32/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "b64": {
+                      "name": "b64",
+                      "path": "libc.git/src/unix/bsd/apple/b64",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "aarch64": {
+                          "name": "aarch64",
+                          "path": "libc.git/src/unix/bsd/apple/b64/aarch64",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "align.rs": {
+                              "name": "align.rs",
+                              "path": "libc.git/src/unix/bsd/apple/b64/aarch64/align.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/bsd/apple/b64/aarch64/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "align.rs": {
+                          "name": "align.rs",
+                          "path": "libc.git/src/unix/bsd/apple/b64/align.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "libc.git/src/unix/bsd/apple/b64/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "x86_64": {
+                          "name": "x86_64",
+                          "path": "libc.git/src/unix/bsd/apple/b64/x86_64",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "align.rs": {
+                              "name": "align.rs",
+                              "path": "libc.git/src/unix/bsd/apple/b64/x86_64/align.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/bsd/apple/b64/x86_64/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "libc.git/src/unix/bsd/apple/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "freebsdlike": {
+                  "name": "freebsdlike",
+                  "path": "libc.git/src/unix/bsd/freebsdlike",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "dragonfly": {
+                      "name": "dragonfly",
+                      "path": "libc.git/src/unix/bsd/freebsdlike/dragonfly",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "errno.rs": {
+                          "name": "errno.rs",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/dragonfly/errno.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/dragonfly/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "freebsd": {
+                      "name": "freebsd",
+                      "path": "libc.git/src/unix/bsd/freebsdlike/freebsd",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "aarch64.rs": {
+                          "name": "aarch64.rs",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/aarch64.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "arm.rs": {
+                          "name": "arm.rs",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/arm.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "freebsd11": {
+                          "name": "freebsd11",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd11",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "b64.rs": {
+                              "name": "b64.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd11/b64.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd11/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "freebsd12": {
+                          "name": "freebsd12",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd12",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "b64.rs": {
+                              "name": "b64.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd12/b64.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd12/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "x86_64.rs": {
+                              "name": "x86_64.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd12/x86_64.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "freebsd13": {
+                          "name": "freebsd13",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd13",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "b64.rs": {
+                              "name": "b64.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd13/b64.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd13/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "x86_64.rs": {
+                              "name": "x86_64.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd13/x86_64.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "freebsd14": {
+                          "name": "freebsd14",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd14",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "b64.rs": {
+                              "name": "b64.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd14/b64.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd14/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "x86_64.rs": {
+                              "name": "x86_64.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/freebsd14/x86_64.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "powerpc.rs": {
+                          "name": "powerpc.rs",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/powerpc.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "powerpc64.rs": {
+                          "name": "powerpc64.rs",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/powerpc64.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "riscv64.rs": {
+                          "name": "riscv64.rs",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/riscv64.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "x86.rs": {
+                          "name": "x86.rs",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/x86.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "x86_64": {
+                          "name": "x86_64",
+                          "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/x86_64",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "align.rs": {
+                              "name": "align.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/x86_64/align.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/bsd/freebsdlike/freebsd/x86_64/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "libc.git/src/unix/bsd/freebsdlike/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "libc.git/src/unix/bsd/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "netbsdlike": {
+                  "name": "netbsdlike",
+                  "path": "libc.git/src/unix/bsd/netbsdlike",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "libc.git/src/unix/bsd/netbsdlike/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "netbsd": {
+                      "name": "netbsd",
+                      "path": "libc.git/src/unix/bsd/netbsdlike/netbsd",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "aarch64.rs": {
+                          "name": "aarch64.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/netbsd/aarch64.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "arm.rs": {
+                          "name": "arm.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/netbsd/arm.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/netbsd/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "powerpc.rs": {
+                          "name": "powerpc.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/netbsd/powerpc.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "sparc64.rs": {
+                          "name": "sparc64.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/netbsd/sparc64.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "x86.rs": {
+                          "name": "x86.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/netbsd/x86.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "x86_64.rs": {
+                          "name": "x86_64.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/netbsd/x86_64.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "openbsd": {
+                      "name": "openbsd",
+                      "path": "libc.git/src/unix/bsd/netbsdlike/openbsd",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "aarch64.rs": {
+                          "name": "aarch64.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/openbsd/aarch64.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "arm.rs": {
+                          "name": "arm.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/openbsd/arm.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "mips64.rs": {
+                          "name": "mips64.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/openbsd/mips64.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/openbsd/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "powerpc.rs": {
+                          "name": "powerpc.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/openbsd/powerpc.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "powerpc64.rs": {
+                          "name": "powerpc64.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/openbsd/powerpc64.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "riscv64.rs": {
+                          "name": "riscv64.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/openbsd/riscv64.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "sparc64.rs": {
+                          "name": "sparc64.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/openbsd/sparc64.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "x86.rs": {
+                          "name": "x86.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/openbsd/x86.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "x86_64.rs": {
+                          "name": "x86_64.rs",
+                          "path": "libc.git/src/unix/bsd/netbsdlike/openbsd/x86_64.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "haiku": {
+              "name": "haiku",
+              "path": "libc.git/src/unix/haiku",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "b32.rs": {
+                  "name": "b32.rs",
+                  "path": "libc.git/src/unix/haiku/b32.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "b64.rs": {
+                  "name": "b64.rs",
+                  "path": "libc.git/src/unix/haiku/b64.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "libc.git/src/unix/haiku/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "native.rs": {
+                  "name": "native.rs",
+                  "path": "libc.git/src/unix/haiku/native.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "x86_64.rs": {
+                  "name": "x86_64.rs",
+                  "path": "libc.git/src/unix/haiku/x86_64.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "hermit": {
+              "name": "hermit",
+              "path": "libc.git/src/unix/hermit",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "aarch64.rs": {
+                  "name": "aarch64.rs",
+                  "path": "libc.git/src/unix/hermit/aarch64.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "libc.git/src/unix/hermit/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "x86_64.rs": {
+                  "name": "x86_64.rs",
+                  "path": "libc.git/src/unix/hermit/x86_64.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "linux_like": {
+              "name": "linux_like",
+              "path": "libc.git/src/unix/linux_like",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "android": {
+                  "name": "android",
+                  "path": "libc.git/src/unix/linux_like/android",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "b32": {
+                      "name": "b32",
+                      "path": "libc.git/src/unix/linux_like/android/b32",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "arm.rs": {
+                          "name": "arm.rs",
+                          "path": "libc.git/src/unix/linux_like/android/b32/arm.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "libc.git/src/unix/linux_like/android/b32/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "x86": {
+                          "name": "x86",
+                          "path": "libc.git/src/unix/linux_like/android/b32/x86",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "align.rs": {
+                              "name": "align.rs",
+                              "path": "libc.git/src/unix/linux_like/android/b32/x86/align.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/android/b32/x86/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "b64": {
+                      "name": "b64",
+                      "path": "libc.git/src/unix/linux_like/android/b64",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "aarch64": {
+                          "name": "aarch64",
+                          "path": "libc.git/src/unix/linux_like/android/b64/aarch64",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "align.rs": {
+                              "name": "align.rs",
+                              "path": "libc.git/src/unix/linux_like/android/b64/aarch64/align.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "int128.rs": {
+                              "name": "int128.rs",
+                              "path": "libc.git/src/unix/linux_like/android/b64/aarch64/int128.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/android/b64/aarch64/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "libc.git/src/unix/linux_like/android/b64/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "riscv64": {
+                          "name": "riscv64",
+                          "path": "libc.git/src/unix/linux_like/android/b64/riscv64",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "align.rs": {
+                              "name": "align.rs",
+                              "path": "libc.git/src/unix/linux_like/android/b64/riscv64/align.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/android/b64/riscv64/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "x86_64": {
+                          "name": "x86_64",
+                          "path": "libc.git/src/unix/linux_like/android/b64/x86_64",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "align.rs": {
+                              "name": "align.rs",
+                              "path": "libc.git/src/unix/linux_like/android/b64/x86_64/align.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/android/b64/x86_64/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "libc.git/src/unix/linux_like/android/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "emscripten": {
+                  "name": "emscripten",
+                  "path": "libc.git/src/unix/linux_like/emscripten",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "align.rs": {
+                      "name": "align.rs",
+                      "path": "libc.git/src/unix/linux_like/emscripten/align.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "libc.git/src/unix/linux_like/emscripten/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "no_align.rs": {
+                      "name": "no_align.rs",
+                      "path": "libc.git/src/unix/linux_like/emscripten/no_align.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "linux": {
+                  "name": "linux",
+                  "path": "libc.git/src/unix/linux_like/linux",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "align.rs": {
+                      "name": "align.rs",
+                      "path": "libc.git/src/unix/linux_like/linux/align.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "arch": {
+                      "name": "arch",
+                      "path": "libc.git/src/unix/linux_like/linux/arch",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "generic": {
+                          "name": "generic",
+                          "path": "libc.git/src/unix/linux_like/linux/arch/generic",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/arch/generic/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "mips": {
+                          "name": "mips",
+                          "path": "libc.git/src/unix/linux_like/linux/arch/mips",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/arch/mips/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "libc.git/src/unix/linux_like/linux/arch/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "powerpc": {
+                          "name": "powerpc",
+                          "path": "libc.git/src/unix/linux_like/linux/arch/powerpc",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/arch/powerpc/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "sparc": {
+                          "name": "sparc",
+                          "path": "libc.git/src/unix/linux_like/linux/arch/sparc",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/arch/sparc/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "gnu": {
+                      "name": "gnu",
+                      "path": "libc.git/src/unix/linux_like/linux/gnu",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "align.rs": {
+                          "name": "align.rs",
+                          "path": "libc.git/src/unix/linux_like/linux/gnu/align.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "b32": {
+                          "name": "b32",
+                          "path": "libc.git/src/unix/linux_like/linux/gnu/b32",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "arm": {
+                              "name": "arm",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b32/arm",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b32/arm/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b32/arm/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "m68k": {
+                              "name": "m68k",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b32/m68k",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b32/m68k/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b32/m68k/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "mips": {
+                              "name": "mips",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b32/mips",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b32/mips/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b32/mips/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b32/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "powerpc.rs": {
+                              "name": "powerpc.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b32/powerpc.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "riscv32": {
+                              "name": "riscv32",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b32/riscv32",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b32/riscv32/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b32/riscv32/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "sparc": {
+                              "name": "sparc",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b32/sparc",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b32/sparc/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b32/sparc/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "x86": {
+                              "name": "x86",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b32/x86",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b32/x86/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b32/x86/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "b64": {
+                          "name": "b64",
+                          "path": "libc.git/src/unix/linux_like/linux/gnu/b64",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "aarch64": {
+                              "name": "aarch64",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b64/aarch64",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/aarch64/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "ilp32.rs": {
+                                  "name": "ilp32.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/aarch64/ilp32.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "int128.rs": {
+                                  "name": "int128.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/aarch64/int128.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "lp64.rs": {
+                                  "name": "lp64.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/aarch64/lp64.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/aarch64/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "loongarch64": {
+                              "name": "loongarch64",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b64/loongarch64",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/loongarch64/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/loongarch64/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "mips64": {
+                              "name": "mips64",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b64/mips64",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/mips64/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/mips64/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b64/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "powerpc64": {
+                              "name": "powerpc64",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b64/powerpc64",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/powerpc64/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/powerpc64/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "riscv64": {
+                              "name": "riscv64",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b64/riscv64",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/riscv64/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/riscv64/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "s390x.rs": {
+                              "name": "s390x.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b64/s390x.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "sparc64": {
+                              "name": "sparc64",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b64/sparc64",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/sparc64/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/sparc64/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "x86_64": {
+                              "name": "x86_64",
+                              "path": "libc.git/src/unix/linux_like/linux/gnu/b64/x86_64",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/x86_64/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/x86_64/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "not_x32.rs": {
+                                  "name": "not_x32.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/x86_64/not_x32.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "x32.rs": {
+                                  "name": "x32.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/gnu/b64/x86_64/x32.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "libc.git/src/unix/linux_like/linux/gnu/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "no_align.rs": {
+                          "name": "no_align.rs",
+                          "path": "libc.git/src/unix/linux_like/linux/gnu/no_align.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "libc.git/src/unix/linux_like/linux/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "musl": {
+                      "name": "musl",
+                      "path": "libc.git/src/unix/linux_like/linux/musl",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "b32": {
+                          "name": "b32",
+                          "path": "libc.git/src/unix/linux_like/linux/musl/b32",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "arm": {
+                              "name": "arm",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b32/arm",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b32/arm/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b32/arm/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "hexagon.rs": {
+                              "name": "hexagon.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b32/hexagon.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mips": {
+                              "name": "mips",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b32/mips",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b32/mips/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b32/mips/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b32/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "powerpc.rs": {
+                              "name": "powerpc.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b32/powerpc.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "riscv32": {
+                              "name": "riscv32",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b32/riscv32",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b32/riscv32/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b32/riscv32/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "x86": {
+                              "name": "x86",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b32/x86",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b32/x86/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b32/x86/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "b64": {
+                          "name": "b64",
+                          "path": "libc.git/src/unix/linux_like/linux/musl/b64",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "aarch64": {
+                              "name": "aarch64",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b64/aarch64",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b64/aarch64/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "int128.rs": {
+                                  "name": "int128.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b64/aarch64/int128.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b64/aarch64/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "mips64.rs": {
+                              "name": "mips64.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b64/mips64.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b64/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "powerpc64.rs": {
+                              "name": "powerpc64.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b64/powerpc64.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "riscv64": {
+                              "name": "riscv64",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b64/riscv64",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b64/riscv64/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b64/riscv64/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "s390x.rs": {
+                              "name": "s390x.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b64/s390x.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "x86_64": {
+                              "name": "x86_64",
+                              "path": "libc.git/src/unix/linux_like/linux/musl/b64/x86_64",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b64/x86_64/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/musl/b64/x86_64/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "libc.git/src/unix/linux_like/linux/musl/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "no_align.rs": {
+                      "name": "no_align.rs",
+                      "path": "libc.git/src/unix/linux_like/linux/no_align.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "non_exhaustive.rs": {
+                      "name": "non_exhaustive.rs",
+                      "path": "libc.git/src/unix/linux_like/linux/non_exhaustive.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "uclibc": {
+                      "name": "uclibc",
+                      "path": "libc.git/src/unix/linux_like/linux/uclibc",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "align.rs": {
+                          "name": "align.rs",
+                          "path": "libc.git/src/unix/linux_like/linux/uclibc/align.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "arm": {
+                          "name": "arm",
+                          "path": "libc.git/src/unix/linux_like/linux/uclibc/arm",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "align.rs": {
+                              "name": "align.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/uclibc/arm/align.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/uclibc/arm/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "no_align.rs": {
+                              "name": "no_align.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/uclibc/arm/no_align.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "mips": {
+                          "name": "mips",
+                          "path": "libc.git/src/unix/linux_like/linux/uclibc/mips",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "mips32": {
+                              "name": "mips32",
+                              "path": "libc.git/src/unix/linux_like/linux/uclibc/mips/mips32",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/uclibc/mips/mips32/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/uclibc/mips/mips32/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "no_align.rs": {
+                                  "name": "no_align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/uclibc/mips/mips32/no_align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "mips64": {
+                              "name": "mips64",
+                              "path": "libc.git/src/unix/linux_like/linux/uclibc/mips/mips64",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "align.rs": {
+                                  "name": "align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/uclibc/mips/mips64/align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "mod.rs": {
+                                  "name": "mod.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/uclibc/mips/mips64/mod.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "no_align.rs": {
+                                  "name": "no_align.rs",
+                                  "path": "libc.git/src/unix/linux_like/linux/uclibc/mips/mips64/no_align.rs",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/uclibc/mips/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "mod.rs": {
+                          "name": "mod.rs",
+                          "path": "libc.git/src/unix/linux_like/linux/uclibc/mod.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "no_align.rs": {
+                          "name": "no_align.rs",
+                          "path": "libc.git/src/unix/linux_like/linux/uclibc/no_align.rs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "x86_64": {
+                          "name": "x86_64",
+                          "path": "libc.git/src/unix/linux_like/linux/uclibc/x86_64",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "l4re.rs": {
+                              "name": "l4re.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/uclibc/x86_64/l4re.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "mod.rs": {
+                              "name": "mod.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/uclibc/x86_64/mod.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "other.rs": {
+                              "name": "other.rs",
+                              "path": "libc.git/src/unix/linux_like/linux/uclibc/x86_64/other.rs",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "libc.git/src/unix/linux_like/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mod.rs": {
+              "name": "mod.rs",
+              "path": "libc.git/src/unix/mod.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "newlib": {
+              "name": "newlib",
+              "path": "libc.git/src/unix/newlib",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "aarch64": {
+                  "name": "aarch64",
+                  "path": "libc.git/src/unix/newlib/aarch64",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "libc.git/src/unix/newlib/aarch64/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "align.rs": {
+                  "name": "align.rs",
+                  "path": "libc.git/src/unix/newlib/align.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "arm": {
+                  "name": "arm",
+                  "path": "libc.git/src/unix/newlib/arm",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "libc.git/src/unix/newlib/arm/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "espidf": {
+                  "name": "espidf",
+                  "path": "libc.git/src/unix/newlib/espidf",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "libc.git/src/unix/newlib/espidf/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "generic.rs": {
+                  "name": "generic.rs",
+                  "path": "libc.git/src/unix/newlib/generic.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "horizon": {
+                  "name": "horizon",
+                  "path": "libc.git/src/unix/newlib/horizon",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "libc.git/src/unix/newlib/horizon/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "libc.git/src/unix/newlib/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "no_align.rs": {
+                  "name": "no_align.rs",
+                  "path": "libc.git/src/unix/newlib/no_align.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "powerpc": {
+                  "name": "powerpc",
+                  "path": "libc.git/src/unix/newlib/powerpc",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "mod.rs": {
+                      "name": "mod.rs",
+                      "path": "libc.git/src/unix/newlib/powerpc/mod.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "no_align.rs": {
+              "name": "no_align.rs",
+              "path": "libc.git/src/unix/no_align.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "redox": {
+              "name": "redox",
+              "path": "libc.git/src/unix/redox",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "libc.git/src/unix/redox/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "solarish": {
+              "name": "solarish",
+              "path": "libc.git/src/unix/solarish",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "compat.rs": {
+                  "name": "compat.rs",
+                  "path": "libc.git/src/unix/solarish/compat.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "illumos.rs": {
+                  "name": "illumos.rs",
+                  "path": "libc.git/src/unix/solarish/illumos.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "libc.git/src/unix/solarish/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "solaris.rs": {
+                  "name": "solaris.rs",
+                  "path": "libc.git/src/unix/solarish/solaris.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "x86.rs": {
+                  "name": "x86.rs",
+                  "path": "libc.git/src/unix/solarish/x86.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "x86_64.rs": {
+                  "name": "x86_64.rs",
+                  "path": "libc.git/src/unix/solarish/x86_64.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "x86_common.rs": {
+                  "name": "x86_common.rs",
+                  "path": "libc.git/src/unix/solarish/x86_common.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "vxworks": {
+          "name": "vxworks",
+          "path": "libc.git/src/vxworks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "aarch64.rs": {
+              "name": "aarch64.rs",
+              "path": "libc.git/src/vxworks/aarch64.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "arm.rs": {
+              "name": "arm.rs",
+              "path": "libc.git/src/vxworks/arm.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mod.rs": {
+              "name": "mod.rs",
+              "path": "libc.git/src/vxworks/mod.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "powerpc.rs": {
+              "name": "powerpc.rs",
+              "path": "libc.git/src/vxworks/powerpc.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "powerpc64.rs": {
+              "name": "powerpc64.rs",
+              "path": "libc.git/src/vxworks/powerpc64.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "x86.rs": {
+              "name": "x86.rs",
+              "path": "libc.git/src/vxworks/x86.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "x86_64.rs": {
+              "name": "x86_64.rs",
+              "path": "libc.git/src/vxworks/x86_64.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "wasi.rs": {
+          "name": "wasi.rs",
+          "path": "libc.git/src/wasi.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "windows": {
+          "name": "windows",
+          "path": "libc.git/src/windows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "gnu": {
+              "name": "gnu",
+              "path": "libc.git/src/windows/gnu",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "align.rs": {
+                  "name": "align.rs",
+                  "path": "libc.git/src/windows/gnu/align.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "libc.git/src/windows/gnu/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mod.rs": {
+              "name": "mod.rs",
+              "path": "libc.git/src/windows/mod.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "msvc": {
+              "name": "msvc",
+              "path": "libc.git/src/windows/msvc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "mod.rs": {
+                  "name": "mod.rs",
+                  "path": "libc.git/src/windows/msvc/mod.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tests": {
+      "name": "tests",
+      "path": "libc.git/tests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "const_fn.rs": {
+          "name": "const_fn.rs",
+          "path": "libc.git/tests/const_fn.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "triagebot.toml": {
+      "name": "triagebot.toml",
+      "path": "libc.git/triagebot.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    }
+  },
+  "info": {
+    "id": 29197565,
+    "name": "libc",
+    "full_name": "rust-lang/libc",
+    "owner": {
+      "login": "rust-lang",
+      "html_url": "https://github.com/rust-lang",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/rust-lang/libc",
+    "description": "Raw bindings to platform APIs for Rust",
+    "url": "https://api.github.com/repos/rust-lang/libc",
+    "clone_url": "https://github.com/rust-lang/libc.git",
+    "homepage": "https://rust-lang.github.io/libc/",
+    "size": 28022,
+    "stargazers_count": 1529,
+    "watchers_count": 1529,
+    "language": "Rust"
+  }
+}
