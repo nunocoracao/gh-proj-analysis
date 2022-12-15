@@ -1,0 +1,2590 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 1,
+      "subFolderCount": 4,
+      "filepaths": [
+        "pyrsia.git/Dockerfile",
+        "pyrsia.git/installers/docker/AptGet.Dockerfile",
+        "pyrsia.git/installers/docker/CodeCoverageTest.Dockerfile",
+        "pyrsia.git/installers/docker/NginxGcsFuse.Dockerfile",
+        "pyrsia.git/installers/docker/local_code_coverage/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 1,
+      "subFolderCount": 1,
+      "filepaths": [
+        "pyrsia.git/docker-compose.yml",
+        "pyrsia.git/installers/docker/local_code_coverage/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "pyrsia.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".editorconfig": {
+      "name": ".editorconfig",
+      "path": "pyrsia.git/.editorconfig",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "pyrsia.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "pyrsia.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "pyrsia.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "pyrsia.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "pyrsia.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "pyrsia.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "pyrsia.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "pyrsia.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "pyrsia.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "pyrsia.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "pyrsia.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "pyrsia.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "pyrsia.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "pyrsia.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "pyrsia.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "pyrsia.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "pyrsia.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "pyrsia.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "pyrsia.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "pyrsia.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "pyrsia.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "pyrsia.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "pyrsia.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "pyrsia.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "pyrsia.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "pyrsia.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "pyrsia.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "pyrsia.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "pyrsia.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "pyrsia.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "pyrsia.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "pyrsia.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-fea5dd87d8d6f757c2a0fb4d2d70fcea95c29d37.idx": {
+                  "name": "pack-fea5dd87d8d6f757c2a0fb4d2d70fcea95c29d37.idx",
+                  "path": "pyrsia.git/.git/objects/pack/pack-fea5dd87d8d6f757c2a0fb4d2d70fcea95c29d37.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-fea5dd87d8d6f757c2a0fb4d2d70fcea95c29d37.pack": {
+                  "name": "pack-fea5dd87d8d6f757c2a0fb4d2d70fcea95c29d37.pack",
+                  "path": "pyrsia.git/.git/objects/pack/pack-fea5dd87d8d6f757c2a0fb4d2d70fcea95c29d37.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "pyrsia.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "pyrsia.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "pyrsia.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "pyrsia.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "pyrsia.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "pyrsia.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "pyrsia.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "pyrsia.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "pyrsia.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "pyrsia.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CODEOWNERS": {
+          "name": "CODEOWNERS",
+          "path": "pyrsia.git/.github/CODEOWNERS",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "pyrsia.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug_report.yaml": {
+              "name": "bug_report.yaml",
+              "path": "pyrsia.git/.github/ISSUE_TEMPLATE/bug_report.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature.yaml": {
+              "name": "feature.yaml",
+              "path": "pyrsia.git/.github/ISSUE_TEMPLATE/feature.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "dependabot.yml": {
+          "name": "dependabot.yml",
+          "path": "pyrsia.git/.github/dependabot.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "license-check": {
+          "name": "license-check",
+          "path": "pyrsia.git/.github/license-check",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config.json": {
+              "name": "config.json",
+              "path": "pyrsia.git/.github/license-check/config.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "header-Apache-2.0.txt": {
+              "name": "header-Apache-2.0.txt",
+              "path": "pyrsia.git/.github/license-check/header-Apache-2.0.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "linters": {
+          "name": "linters",
+          "path": "pyrsia.git/.github/linters",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".markdownlint.yaml": {
+              "name": ".markdownlint.yaml",
+              "path": "pyrsia.git/.github/linters/.markdownlint.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "pull_request_template.md": {
+          "name": "pull_request_template.md",
+          "path": "pyrsia.git/.github/pull_request_template.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "pyrsia.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".cargo": {
+              "name": ".cargo",
+              "path": "pyrsia.git/.github/workflows/.cargo",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "README.md": {
+                  "name": "README.md",
+                  "path": "pyrsia.git/.github/workflows/.cargo/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "audit.toml": {
+                  "name": "audit.toml",
+                  "path": "pyrsia.git/.github/workflows/.cargo/audit.toml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "aptly.sh": {
+              "name": "aptly.sh",
+              "path": "pyrsia.git/.github/workflows/aptly.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "board-automation.yml": {
+              "name": "board-automation.yml",
+              "path": "pyrsia.git/.github/workflows/board-automation.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build.sh": {
+              "name": "build.sh",
+              "path": "pyrsia.git/.github/workflows/build.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "chartmuseum.sh": {
+              "name": "chartmuseum.sh",
+              "path": "pyrsia.git/.github/workflows/chartmuseum.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "delete-pushed-branches.yml": {
+              "name": "delete-pushed-branches.yml",
+              "path": "pyrsia.git/.github/workflows/delete-pushed-branches.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "demo.yml": {
+              "name": "demo.yml",
+              "path": "pyrsia.git/.github/workflows/demo.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "doc-lint.yml": {
+              "name": "doc-lint.yml",
+              "path": "pyrsia.git/.github/workflows/doc-lint.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "genlisting.py": {
+              "name": "genlisting.py",
+              "path": "pyrsia.git/.github/workflows/genlisting.py",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "homebrew-installer-upload.sh": {
+              "name": "homebrew-installer-upload.sh",
+              "path": "pyrsia.git/.github/workflows/homebrew-installer-upload.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "label-conflicts.yml": {
+              "name": "label-conflicts.yml",
+              "path": "pyrsia.git/.github/workflows/label-conflicts.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rust-lint-skipped.yml": {
+              "name": "rust-lint-skipped.yml",
+              "path": "pyrsia.git/.github/workflows/rust-lint-skipped.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rust-lint.yml": {
+              "name": "rust-lint.yml",
+              "path": "pyrsia.git/.github/workflows/rust-lint.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rust-skipped.yml": {
+              "name": "rust-skipped.yml",
+              "path": "pyrsia.git/.github/workflows/rust-skipped.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rust.yml": {
+              "name": "rust.yml",
+              "path": "pyrsia.git/.github/workflows/rust.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sccache-linux.sh": {
+              "name": "sccache-linux.sh",
+              "path": "pyrsia.git/.github/workflows/sccache-linux.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sccache-macos.sh": {
+              "name": "sccache-macos.sh",
+              "path": "pyrsia.git/.github/workflows/sccache-macos.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sccache-windows.bat": {
+              "name": "sccache-windows.bat",
+              "path": "pyrsia.git/.github/workflows/sccache-windows.bat",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "pyrsia.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Cargo.lock": {
+      "name": "Cargo.lock",
+      "path": "pyrsia.git/Cargo.lock",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Cargo.toml": {
+      "name": "Cargo.toml",
+      "path": "pyrsia.git/Cargo.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "pyrsia.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "docker-bake.hcl": {
+      "name": "docker-bake.hcl",
+      "path": "pyrsia.git/docker-bake.hcl",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docker-compose.yml": {
+      "name": "docker-compose.yml",
+      "path": "pyrsia.git/docker-compose.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "docs": {
+      "name": "docs",
+      "path": "pyrsia.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "community": {
+          "name": "community",
+          "path": "pyrsia.git/docs/community",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "code-of-conduct.md": {
+              "name": "code-of-conduct.md",
+              "path": "pyrsia.git/docs/community/code-of-conduct.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "community_roles.md": {
+              "name": "community_roles.md",
+              "path": "pyrsia.git/docs/community/community_roles.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "get_involved": {
+              "name": "get_involved",
+              "path": "pyrsia.git/docs/community/get_involved",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "contributing.md": {
+                  "name": "contributing.md",
+                  "path": "pyrsia.git/docs/community/get_involved/contributing.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "doc_workflow.md": {
+                  "name": "doc_workflow.md",
+                  "path": "pyrsia.git/docs/community/get_involved/doc_workflow.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "good_pr.md": {
+                  "name": "good_pr.md",
+                  "path": "pyrsia.git/docs/community/get_involved/good_pr.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "local_dev_setup.md": {
+                  "name": "local_dev_setup.md",
+                  "path": "pyrsia.git/docs/community/get_involved/local_dev_setup.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "onboarding.md": {
+                  "name": "onboarding.md",
+                  "path": "pyrsia.git/docs/community/get_involved/onboarding.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "readme.md": {
+                  "name": "readme.md",
+                  "path": "pyrsia.git/docs/community/get_involved/readme.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "submit_pr.md": {
+                  "name": "submit_pr.md",
+                  "path": "pyrsia.git/docs/community/get_involved/submit_pr.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "governance.md": {
+              "name": "governance.md",
+              "path": "pyrsia.git/docs/community/governance.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "readme.md": {
+              "name": "readme.md",
+              "path": "pyrsia.git/docs/community/readme.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rfc": {
+              "name": "rfc",
+              "path": "pyrsia.git/docs/community/rfc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "readme.md": {
+                  "name": "readme.md",
+                  "path": "pyrsia.git/docs/community/rfc/readme.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sample_rfc.md": {
+                  "name": "sample_rfc.md",
+                  "path": "pyrsia.git/docs/community/rfc/sample_rfc.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "developers": {
+          "name": "developers",
+          "path": "pyrsia.git/docs/developers",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "build_from_source_docker.md": {
+              "name": "build_from_source_docker.md",
+              "path": "pyrsia.git/docs/developers/build_from_source_docker.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build_from_source_maven.md": {
+              "name": "build_from_source_maven.md",
+              "path": "pyrsia.git/docs/developers/build_from_source_maven.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pyrsia-architecture-and-use-cases.md": {
+              "name": "pyrsia-architecture-and-use-cases.md",
+              "path": "pyrsia.git/docs/developers/pyrsia-architecture-and-use-cases.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pyrsia-autonat.md": {
+              "name": "pyrsia-autonat.md",
+              "path": "pyrsia.git/docs/developers/pyrsia-autonat.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pyrsia-network1.png": {
+              "name": "pyrsia-network1.png",
+              "path": "pyrsia.git/docs/developers/pyrsia-network1.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pyrsia-network2.png": {
+              "name": "pyrsia-network2.png",
+              "path": "pyrsia.git/docs/developers/pyrsia-network2.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pyrsia-node-high-level-components.png": {
+              "name": "pyrsia-node-high-level-components.png",
+              "path": "pyrsia.git/docs/developers/pyrsia-node-high-level-components.png",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "readme.md": {
+              "name": "readme.md",
+              "path": "pyrsia.git/docs/developers/readme.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "setting_up_ide.md": {
+              "name": "setting_up_ide.md",
+              "path": "pyrsia.git/docs/developers/setting_up_ide.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "readme.md": {
+          "name": "readme.md",
+          "path": "pyrsia.git/docs/readme.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "sre": {
+          "name": "sre",
+          "path": "pyrsia.git/docs/sre",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "kubernetes-helm.md": {
+              "name": "kubernetes-helm.md",
+              "path": "pyrsia.git/docs/sre/kubernetes-helm.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "tutorials": {
+          "name": "tutorials",
+          "path": "pyrsia.git/docs/tutorials",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-pull-pyrsia-decentralized-network-verification.md": {
+              "name": "docker-pull-pyrsia-decentralized-network-verification.md",
+              "path": "pyrsia.git/docs/tutorials/docker-pull-pyrsia-decentralized-network-verification.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker.md": {
+              "name": "docker.md",
+              "path": "pyrsia.git/docs/tutorials/docker.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "faq.md": {
+              "name": "faq.md",
+              "path": "pyrsia.git/docs/tutorials/faq.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "maven.md": {
+              "name": "maven.md",
+              "path": "pyrsia.git/docs/tutorials/maven.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "quick-installation.mdx": {
+              "name": "quick-installation.mdx",
+              "path": "pyrsia.git/docs/tutorials/quick-installation.mdx",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "readme.md": {
+              "name": "readme.md",
+              "path": "pyrsia.git/docs/tutorials/readme.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "what_is_pyrsia.md": {
+              "name": "what_is_pyrsia.md",
+              "path": "pyrsia.git/docs/tutorials/what_is_pyrsia.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "installers": {
+      "name": "installers",
+      "path": "pyrsia.git/installers",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "debian": {
+          "name": "debian",
+          "path": "pyrsia.git/installers/debian",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "postinst": {
+              "name": "postinst",
+              "path": "pyrsia.git/installers/debian/postinst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "postrm": {
+              "name": "postrm",
+              "path": "pyrsia.git/installers/debian/postrm",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "preinst": {
+              "name": "preinst",
+              "path": "pyrsia.git/installers/debian/preinst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prerm": {
+              "name": "prerm",
+              "path": "pyrsia.git/installers/debian/prerm",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pyrsia.service": {
+              "name": "pyrsia.service",
+              "path": "pyrsia.git/installers/debian/pyrsia.service",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "docker": {
+          "name": "docker",
+          "path": "pyrsia.git/installers/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "AptGet.Dockerfile": {
+              "name": "AptGet.Dockerfile",
+              "path": "pyrsia.git/installers/docker/AptGet.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "CodeCoverageTest.Dockerfile": {
+              "name": "CodeCoverageTest.Dockerfile",
+              "path": "pyrsia.git/installers/docker/CodeCoverageTest.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "NginxGcsFuse.Dockerfile": {
+              "name": "NginxGcsFuse.Dockerfile",
+              "path": "pyrsia.git/installers/docker/NginxGcsFuse.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "local_code_coverage": {
+              "name": "local_code_coverage",
+              "path": "pyrsia.git/installers/docker/local_code_coverage",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "pyrsia.git/installers/docker/local_code_coverage/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "docker-compose.yml": {
+                  "name": "docker-compose.yml",
+                  "path": "pyrsia.git/installers/docker/local_code_coverage/docker-compose.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": true
+                },
+                "entrypoint.sh": {
+                  "name": "entrypoint.sh",
+                  "path": "pyrsia.git/installers/docker/local_code_coverage/entrypoint.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "node-entrypoint.sh": {
+              "name": "node-entrypoint.sh",
+              "path": "pyrsia.git/installers/docker/node-entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "helm": {
+          "name": "helm",
+          "path": "pyrsia.git/installers/helm",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "pyrsia-brewrepo": {
+              "name": "pyrsia-brewrepo",
+              "path": "pyrsia.git/installers/helm/pyrsia-brewrepo",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".helmignore": {
+                  "name": ".helmignore",
+                  "path": "pyrsia.git/installers/helm/pyrsia-brewrepo/.helmignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Chart.yaml": {
+                  "name": "Chart.yaml",
+                  "path": "pyrsia.git/installers/helm/pyrsia-brewrepo/Chart.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "templates": {
+                  "name": "templates",
+                  "path": "pyrsia.git/installers/helm/pyrsia-brewrepo/templates",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "_helpers.tpl": {
+                      "name": "_helpers.tpl",
+                      "path": "pyrsia.git/installers/helm/pyrsia-brewrepo/templates/_helpers.tpl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "deployment.yaml": {
+                      "name": "deployment.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-brewrepo/templates/deployment.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ingress.yaml": {
+                      "name": "ingress.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-brewrepo/templates/ingress.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "managed-cert.yaml": {
+                      "name": "managed-cert.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-brewrepo/templates/managed-cert.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "service.yaml": {
+                      "name": "service.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-brewrepo/templates/service.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "values.yaml": {
+                  "name": "values.yaml",
+                  "path": "pyrsia.git/installers/helm/pyrsia-brewrepo/values.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pyrsia-helmrepo": {
+              "name": "pyrsia-helmrepo",
+              "path": "pyrsia.git/installers/helm/pyrsia-helmrepo",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".helmignore": {
+                  "name": ".helmignore",
+                  "path": "pyrsia.git/installers/helm/pyrsia-helmrepo/.helmignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Chart.yaml": {
+                  "name": "Chart.yaml",
+                  "path": "pyrsia.git/installers/helm/pyrsia-helmrepo/Chart.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "templates": {
+                  "name": "templates",
+                  "path": "pyrsia.git/installers/helm/pyrsia-helmrepo/templates",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "_helpers.tpl": {
+                      "name": "_helpers.tpl",
+                      "path": "pyrsia.git/installers/helm/pyrsia-helmrepo/templates/_helpers.tpl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "deployment.yaml": {
+                      "name": "deployment.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-helmrepo/templates/deployment.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ingress.yaml": {
+                      "name": "ingress.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-helmrepo/templates/ingress.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "managed-cert.yaml": {
+                      "name": "managed-cert.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-helmrepo/templates/managed-cert.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "service.yaml": {
+                      "name": "service.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-helmrepo/templates/service.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "values.yaml": {
+                  "name": "values.yaml",
+                  "path": "pyrsia.git/installers/helm/pyrsia-helmrepo/values.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pyrsia-node": {
+              "name": "pyrsia-node",
+              "path": "pyrsia.git/installers/helm/pyrsia-node",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".helmignore": {
+                  "name": ".helmignore",
+                  "path": "pyrsia.git/installers/helm/pyrsia-node/.helmignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Chart.yaml": {
+                  "name": "Chart.yaml",
+                  "path": "pyrsia.git/installers/helm/pyrsia-node/Chart.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "README.md": {
+                  "name": "README.md",
+                  "path": "pyrsia.git/installers/helm/pyrsia-node/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "artifacthub-repo.yaml": {
+                  "name": "artifacthub-repo.yaml",
+                  "path": "pyrsia.git/installers/helm/pyrsia-node/artifacthub-repo.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "templates": {
+                  "name": "templates",
+                  "path": "pyrsia.git/installers/helm/pyrsia-node/templates",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "_helpers.tpl": {
+                      "name": "_helpers.tpl",
+                      "path": "pyrsia.git/installers/helm/pyrsia-node/templates/_helpers.tpl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "clusterrole.yaml": {
+                      "name": "clusterrole.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-node/templates/clusterrole.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "deployment.yaml": {
+                      "name": "deployment.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-node/templates/deployment.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "external-dns.yaml": {
+                      "name": "external-dns.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-node/templates/external-dns.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "service.yaml": {
+                      "name": "service.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-node/templates/service.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "storage.yaml": {
+                      "name": "storage.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-node/templates/storage.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "values.yaml": {
+                  "name": "values.yaml",
+                  "path": "pyrsia.git/installers/helm/pyrsia-node/values.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pyrsia-repo": {
+              "name": "pyrsia-repo",
+              "path": "pyrsia.git/installers/helm/pyrsia-repo",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".helmignore": {
+                  "name": ".helmignore",
+                  "path": "pyrsia.git/installers/helm/pyrsia-repo/.helmignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Chart.yaml": {
+                  "name": "Chart.yaml",
+                  "path": "pyrsia.git/installers/helm/pyrsia-repo/Chart.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "templates": {
+                  "name": "templates",
+                  "path": "pyrsia.git/installers/helm/pyrsia-repo/templates",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "_helpers.tpl": {
+                      "name": "_helpers.tpl",
+                      "path": "pyrsia.git/installers/helm/pyrsia-repo/templates/_helpers.tpl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "deployment.yaml": {
+                      "name": "deployment.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-repo/templates/deployment.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ingress.yaml": {
+                      "name": "ingress.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-repo/templates/ingress.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "managed-cert.yaml": {
+                      "name": "managed-cert.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-repo/templates/managed-cert.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "service.yaml": {
+                      "name": "service.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-repo/templates/service.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "values.yaml": {
+                  "name": "values.yaml",
+                  "path": "pyrsia.git/installers/helm/pyrsia-repo/values.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pyrsia-winrepo": {
+              "name": "pyrsia-winrepo",
+              "path": "pyrsia.git/installers/helm/pyrsia-winrepo",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".helmignore": {
+                  "name": ".helmignore",
+                  "path": "pyrsia.git/installers/helm/pyrsia-winrepo/.helmignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Chart.yaml": {
+                  "name": "Chart.yaml",
+                  "path": "pyrsia.git/installers/helm/pyrsia-winrepo/Chart.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "templates": {
+                  "name": "templates",
+                  "path": "pyrsia.git/installers/helm/pyrsia-winrepo/templates",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "_helpers.tpl": {
+                      "name": "_helpers.tpl",
+                      "path": "pyrsia.git/installers/helm/pyrsia-winrepo/templates/_helpers.tpl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "deployment.yaml": {
+                      "name": "deployment.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-winrepo/templates/deployment.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ingress.yaml": {
+                      "name": "ingress.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-winrepo/templates/ingress.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "managed-cert.yaml": {
+                      "name": "managed-cert.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-winrepo/templates/managed-cert.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "service.yaml": {
+                      "name": "service.yaml",
+                      "path": "pyrsia.git/installers/helm/pyrsia-winrepo/templates/service.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "values.yaml": {
+                  "name": "values.yaml",
+                  "path": "pyrsia.git/installers/helm/pyrsia-winrepo/values.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "readme.md": {
+          "name": "readme.md",
+          "path": "pyrsia.git/installers/readme.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "windows": {
+          "name": "windows",
+          "path": "pyrsia.git/installers/windows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "InstallNSSM.ps1": {
+              "name": "InstallNSSM.ps1",
+              "path": "pyrsia.git/installers/windows/InstallNSSM.ps1",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "InstallPyrsiaNodeAsWindowsService.ps1": {
+              "name": "InstallPyrsiaNodeAsWindowsService.ps1",
+              "path": "pyrsia.git/installers/windows/InstallPyrsiaNodeAsWindowsService.ps1",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Readme.txt": {
+              "name": "Readme.txt",
+              "path": "pyrsia.git/installers/windows/Readme.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Readme_service.txt": {
+              "name": "Readme_service.txt",
+              "path": "pyrsia.git/installers/windows/Readme_service.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "installer.wxs": {
+              "name": "installer.wxs",
+              "path": "pyrsia.git/installers/windows/installer.wxs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "installerps1.wxs": {
+              "name": "installerps1.wxs",
+              "path": "pyrsia.git/installers/windows/installerps1.wxs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "license": {
+      "name": "license",
+      "path": "pyrsia.git/license",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "pre-commit.bat": {
+      "name": "pre-commit.bat",
+      "path": "pyrsia.git/pre-commit.bat",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "pre-commit.sh": {
+      "name": "pre-commit.sh",
+      "path": "pyrsia.git/pre-commit.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "pyrsia_cli": {
+      "name": "pyrsia_cli",
+      "path": "pyrsia.git/pyrsia_cli",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "pyrsia.git/pyrsia_cli/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build.rs": {
+          "name": "build.rs",
+          "path": "pyrsia.git/pyrsia_cli/build.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "readme.md": {
+          "name": "readme.md",
+          "path": "pyrsia.git/pyrsia_cli/readme.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "pyrsia.git/pyrsia_cli/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cli": {
+              "name": "cli",
+              "path": "pyrsia.git/pyrsia_cli/src/cli",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "handlers.rs": {
+                  "name": "handlers.rs",
+                  "path": "pyrsia.git/pyrsia_cli/src/cli/handlers.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "parser.rs": {
+                  "name": "parser.rs",
+                  "path": "pyrsia.git/pyrsia_cli/src/cli/parser.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "cli.rs": {
+              "name": "cli.rs",
+              "path": "pyrsia.git/pyrsia_cli/src/cli.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.rs": {
+              "name": "main.rs",
+              "path": "pyrsia.git/pyrsia_cli/src/main.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "pyrsia_node": {
+      "name": "pyrsia_node",
+      "path": "pyrsia.git/pyrsia_node",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Cargo.toml": {
+          "name": "Cargo.toml",
+          "path": "pyrsia.git/pyrsia_node/Cargo.toml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "readme.md": {
+          "name": "readme.md",
+          "path": "pyrsia.git/pyrsia_node/readme.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "src": {
+          "name": "src",
+          "path": "pyrsia.git/pyrsia_node/src",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "args": {
+              "name": "args",
+              "path": "pyrsia.git/pyrsia_node/src/args",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "parser.rs": {
+                  "name": "parser.rs",
+                  "path": "pyrsia.git/pyrsia_node/src/args/parser.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "args.rs": {
+              "name": "args.rs",
+              "path": "pyrsia.git/pyrsia_node/src/args.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.rs": {
+              "name": "main.rs",
+              "path": "pyrsia.git/pyrsia_node/src/main.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "network": {
+              "name": "network",
+              "path": "pyrsia.git/pyrsia_node/src/network",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "handlers.rs": {
+                  "name": "handlers.rs",
+                  "path": "pyrsia.git/pyrsia_node/src/network/handlers.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "network.rs": {
+              "name": "network.rs",
+              "path": "pyrsia.git/pyrsia_node/src/network.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "readme.md": {
+      "name": "readme.md",
+      "path": "pyrsia.git/readme.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "src": {
+      "name": "src",
+      "path": "pyrsia.git/src",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "artifact_service": {
+          "name": "artifact_service",
+          "path": "pyrsia.git/src/artifact_service",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "model.rs": {
+              "name": "model.rs",
+              "path": "pyrsia.git/src/artifact_service/model.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service.rs": {
+              "name": "service.rs",
+              "path": "pyrsia.git/src/artifact_service/service.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "storage.rs": {
+              "name": "storage.rs",
+              "path": "pyrsia.git/src/artifact_service/storage.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "artifact_service.rs": {
+          "name": "artifact_service.rs",
+          "path": "pyrsia.git/src/artifact_service.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "blockchain": {
+          "name": "blockchain",
+          "path": "pyrsia.git/src/blockchain",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Cargo.toml": {
+              "name": "Cargo.toml",
+              "path": "pyrsia.git/src/blockchain/Cargo.toml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "readme.md": {
+              "name": "readme.md",
+              "path": "pyrsia.git/src/blockchain/readme.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "pyrsia.git/src/blockchain/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "blockchain.rs": {
+                  "name": "blockchain.rs",
+                  "path": "pyrsia.git/src/blockchain/src/blockchain.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "crypto": {
+                  "name": "crypto",
+                  "path": "pyrsia.git/src/blockchain/src/crypto",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "hash_algorithm.rs": {
+                      "name": "hash_algorithm.rs",
+                      "path": "pyrsia.git/src/blockchain/src/crypto/hash_algorithm.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "crypto.rs": {
+                  "name": "crypto.rs",
+                  "path": "pyrsia.git/src/blockchain/src/crypto.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "error.rs": {
+                  "name": "error.rs",
+                  "path": "pyrsia.git/src/blockchain/src/error.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "identities": {
+                  "name": "identities",
+                  "path": "pyrsia.git/src/blockchain/src/identities",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "authority_pen.rs": {
+                      "name": "authority_pen.rs",
+                      "path": "pyrsia.git/src/blockchain/src/identities/authority_pen.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "authority_verifier.rs": {
+                      "name": "authority_verifier.rs",
+                      "path": "pyrsia.git/src/blockchain/src/identities/authority_verifier.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "key_box.rs": {
+                      "name": "key_box.rs",
+                      "path": "pyrsia.git/src/blockchain/src/identities/key_box.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "verify_key.rs": {
+                      "name": "verify_key.rs",
+                      "path": "pyrsia.git/src/blockchain/src/identities/verify_key.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "identities.rs": {
+                  "name": "identities.rs",
+                  "path": "pyrsia.git/src/blockchain/src/identities.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lib.rs": {
+                  "name": "lib.rs",
+                  "path": "pyrsia.git/src/blockchain/src/lib.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "signature.rs": {
+                  "name": "signature.rs",
+                  "path": "pyrsia.git/src/blockchain/src/signature.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "structures": {
+                  "name": "structures",
+                  "path": "pyrsia.git/src/blockchain/src/structures",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "block.rs": {
+                      "name": "block.rs",
+                      "path": "pyrsia.git/src/blockchain/src/structures/block.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "chain.rs": {
+                      "name": "chain.rs",
+                      "path": "pyrsia.git/src/blockchain/src/structures/chain.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "header.rs": {
+                      "name": "header.rs",
+                      "path": "pyrsia.git/src/blockchain/src/structures/header.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "transaction.rs": {
+                      "name": "transaction.rs",
+                      "path": "pyrsia.git/src/blockchain/src/structures/transaction.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "structures.rs": {
+                  "name": "structures.rs",
+                  "path": "pyrsia.git/src/blockchain/src/structures.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "blockchain_service": {
+          "name": "blockchain_service",
+          "path": "pyrsia.git/src/blockchain_service",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "service.rs": {
+              "name": "service.rs",
+              "path": "pyrsia.git/src/blockchain_service/service.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "blockchain_service.rs": {
+          "name": "blockchain_service.rs",
+          "path": "pyrsia.git/src/blockchain_service.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build_service": {
+          "name": "build_service",
+          "path": "pyrsia.git/src/build_service",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "error.rs": {
+              "name": "error.rs",
+              "path": "pyrsia.git/src/build_service/error.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "event.rs": {
+              "name": "event.rs",
+              "path": "pyrsia.git/src/build_service/event.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "mapping": {
+              "name": "mapping",
+              "path": "pyrsia.git/src/build_service/mapping",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "model.rs": {
+                  "name": "model.rs",
+                  "path": "pyrsia.git/src/build_service/mapping/model.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "service.rs": {
+                  "name": "service.rs",
+                  "path": "pyrsia.git/src/build_service/mapping/service.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mapping.rs": {
+              "name": "mapping.rs",
+              "path": "pyrsia.git/src/build_service/mapping.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "model.rs": {
+              "name": "model.rs",
+              "path": "pyrsia.git/src/build_service/model.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pipeline": {
+              "name": "pipeline",
+              "path": "pyrsia.git/src/build_service/pipeline",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "service.rs": {
+                  "name": "service.rs",
+                  "path": "pyrsia.git/src/build_service/pipeline/service.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "pipeline.rs": {
+              "name": "pipeline.rs",
+              "path": "pyrsia.git/src/build_service/pipeline.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "service.rs": {
+              "name": "service.rs",
+              "path": "pyrsia.git/src/build_service/service.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "build_service.rs": {
+          "name": "build_service.rs",
+          "path": "pyrsia.git/src/build_service.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cli_commands": {
+          "name": "cli_commands",
+          "path": "pyrsia.git/src/cli_commands",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "config.rs": {
+              "name": "config.rs",
+              "path": "pyrsia.git/src/cli_commands/config.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "node.rs": {
+              "name": "node.rs",
+              "path": "pyrsia.git/src/cli_commands/node.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "cli_commands.rs": {
+          "name": "cli_commands.rs",
+          "path": "pyrsia.git/src/cli_commands.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker": {
+          "name": "docker",
+          "path": "pyrsia.git/src/docker",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "constants.rs": {
+              "name": "constants.rs",
+              "path": "pyrsia.git/src/docker/constants.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "error_util.rs": {
+              "name": "error_util.rs",
+              "path": "pyrsia.git/src/docker/error_util.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "v2": {
+              "name": "v2",
+              "path": "pyrsia.git/src/docker/v2",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "handlers": {
+                  "name": "handlers",
+                  "path": "pyrsia.git/src/docker/v2/handlers",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "blobs.rs": {
+                      "name": "blobs.rs",
+                      "path": "pyrsia.git/src/docker/v2/handlers/blobs.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "manifests.rs": {
+                      "name": "manifests.rs",
+                      "path": "pyrsia.git/src/docker/v2/handlers/manifests.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "handlers.rs": {
+                  "name": "handlers.rs",
+                  "path": "pyrsia.git/src/docker/v2/handlers.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "routes.rs": {
+                  "name": "routes.rs",
+                  "path": "pyrsia.git/src/docker/v2/routes.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "v2.rs": {
+              "name": "v2.rs",
+              "path": "pyrsia.git/src/docker/v2.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "docker.rs": {
+          "name": "docker.rs",
+          "path": "pyrsia.git/src/docker.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "java": {
+          "name": "java",
+          "path": "pyrsia.git/src/java",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "maven2": {
+              "name": "maven2",
+              "path": "pyrsia.git/src/java/maven2",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "handlers": {
+                  "name": "handlers",
+                  "path": "pyrsia.git/src/java/maven2/handlers",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "maven_artifacts.rs": {
+                      "name": "maven_artifacts.rs",
+                      "path": "pyrsia.git/src/java/maven2/handlers/maven_artifacts.rs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "handlers.rs": {
+                  "name": "handlers.rs",
+                  "path": "pyrsia.git/src/java/maven2/handlers.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "routes.rs": {
+                  "name": "routes.rs",
+                  "path": "pyrsia.git/src/java/maven2/routes.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "maven2.rs": {
+              "name": "maven2.rs",
+              "path": "pyrsia.git/src/java/maven2.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "java.rs": {
+          "name": "java.rs",
+          "path": "pyrsia.git/src/java.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "lib.rs": {
+          "name": "lib.rs",
+          "path": "pyrsia.git/src/lib.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "logging": {
+          "name": "logging",
+          "path": "pyrsia.git/src/logging",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "http.rs": {
+              "name": "http.rs",
+              "path": "pyrsia.git/src/logging/http.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logging.rs": {
+          "name": "logging.rs",
+          "path": "pyrsia.git/src/logging.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "network": {
+          "name": "network",
+          "path": "pyrsia.git/src/network",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "artifact_protocol.rs": {
+              "name": "artifact_protocol.rs",
+              "path": "pyrsia.git/src/network/artifact_protocol.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "behaviour.rs": {
+              "name": "behaviour.rs",
+              "path": "pyrsia.git/src/network/behaviour.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "blockchain_protocol.rs": {
+              "name": "blockchain_protocol.rs",
+              "path": "pyrsia.git/src/network/blockchain_protocol.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "build_protocol.rs": {
+              "name": "build_protocol.rs",
+              "path": "pyrsia.git/src/network/build_protocol.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client": {
+              "name": "client",
+              "path": "pyrsia.git/src/network/client",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "command.rs": {
+                  "name": "command.rs",
+                  "path": "pyrsia.git/src/network/client/command.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "client.rs": {
+              "name": "client.rs",
+              "path": "pyrsia.git/src/network/client.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "event_loop.rs": {
+              "name": "event_loop.rs",
+              "path": "pyrsia.git/src/network/event_loop.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "idle_metric_protocol.rs": {
+              "name": "idle_metric_protocol.rs",
+              "path": "pyrsia.git/src/network/idle_metric_protocol.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "p2p.rs": {
+              "name": "p2p.rs",
+              "path": "pyrsia.git/src/network/p2p.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "network.rs": {
+          "name": "network.rs",
+          "path": "pyrsia.git/src/network.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "node_api": {
+          "name": "node_api",
+          "path": "pyrsia.git/src/node_api",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "handlers": {
+              "name": "handlers",
+              "path": "pyrsia.git/src/node_api/handlers",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "swarm.rs": {
+                  "name": "swarm.rs",
+                  "path": "pyrsia.git/src/node_api/handlers/swarm.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "handlers.rs": {
+              "name": "handlers.rs",
+              "path": "pyrsia.git/src/node_api/handlers.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "model": {
+              "name": "model",
+              "path": "pyrsia.git/src/node_api/model",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cli.rs": {
+                  "name": "cli.rs",
+                  "path": "pyrsia.git/src/node_api/model/cli.rs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "model.rs": {
+              "name": "model.rs",
+              "path": "pyrsia.git/src/node_api/model.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "routes.rs": {
+              "name": "routes.rs",
+              "path": "pyrsia.git/src/node_api/routes.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "node_api.rs": {
+          "name": "node_api.rs",
+          "path": "pyrsia.git/src/node_api.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "peer_metrics": {
+          "name": "peer_metrics",
+          "path": "pyrsia.git/src/peer_metrics",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "metrics.rs": {
+              "name": "metrics.rs",
+              "path": "pyrsia.git/src/peer_metrics/metrics.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "peer_metrics.rs": {
+          "name": "peer_metrics.rs",
+          "path": "pyrsia.git/src/peer_metrics.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "readme.md": {
+          "name": "readme.md",
+          "path": "pyrsia.git/src/readme.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "transparency_log": {
+          "name": "transparency_log",
+          "path": "pyrsia.git/src/transparency_log",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "log.rs": {
+              "name": "log.rs",
+              "path": "pyrsia.git/src/transparency_log/log.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "transparency_log.rs": {
+          "name": "transparency_log.rs",
+          "path": "pyrsia.git/src/transparency_log.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "util": {
+          "name": "util",
+          "path": "pyrsia.git/src/util",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "env_util.rs": {
+              "name": "env_util.rs",
+              "path": "pyrsia.git/src/util/env_util.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "keypair_util.rs": {
+              "name": "keypair_util.rs",
+              "path": "pyrsia.git/src/util/keypair_util.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_util.rs": {
+              "name": "test_util.rs",
+              "path": "pyrsia.git/src/util/test_util.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "util.rs": {
+          "name": "util.rs",
+          "path": "pyrsia.git/src/util.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "verification_service": {
+          "name": "verification_service",
+          "path": "pyrsia.git/src/verification_service",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "service.rs": {
+              "name": "service.rs",
+              "path": "pyrsia.git/src/verification_service/service.rs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "verification_service.rs": {
+          "name": "verification_service.rs",
+          "path": "pyrsia.git/src/verification_service.rs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "tests": {
+      "name": "tests",
+      "path": "pyrsia.git/tests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "resources": {
+          "name": "resources",
+          "path": "pyrsia.git/tests/resources",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "alpine_manifest.json": {
+              "name": "alpine_manifest.json",
+              "path": "pyrsia.git/tests/resources/alpine_manifest.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "artifact_test.json": {
+              "name": "artifact_test.json",
+              "path": "pyrsia.git/tests/resources/artifact_test.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test-1.0.jar": {
+              "name": "test-1.0.jar",
+              "path": "pyrsia.git/tests/resources/test-1.0.jar",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "test_code_coverage.sh": {
+          "name": "test_code_coverage.sh",
+          "path": "pyrsia.git/tests/test_code_coverage.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_local_code_coverage.sh": {
+          "name": "test_local_code_coverage.sh",
+          "path": "pyrsia.git/tests/test_local_code_coverage.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 421422957,
+    "name": "pyrsia",
+    "full_name": "pyrsia/pyrsia",
+    "owner": {
+      "login": "pyrsia",
+      "html_url": "https://github.com/pyrsia",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/pyrsia/pyrsia",
+    "description": "Decentralized Package Network",
+    "url": "https://api.github.com/repos/pyrsia/pyrsia",
+    "clone_url": "https://github.com/pyrsia/pyrsia.git",
+    "homepage": "https://pyrsia.io/",
+    "size": 2722,
+    "stargazers_count": 231,
+    "watchers_count": 231,
+    "language": "Rust"
+  }
+}

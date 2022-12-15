@@ -1,0 +1,916 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 17,
+      "rootCount": 4,
+      "subFolderCount": 13,
+      "filepaths": [
+        "micromamba-docker.git/Dockerfile",
+        "micromamba-docker.git/_dockerfile_initialize_user_accounts.sh",
+        "micromamba-docker.git/_dockerfile_setup_root_prefix.sh",
+        "micromamba-docker.git/_dockerfile_shell.sh",
+        "micromamba-docker.git/examples/add_micromamba/Dockerfile",
+        "micromamba-docker.git/examples/cmdline_spec/Dockerfile",
+        "micromamba-docker.git/examples/multi_env/Dockerfile",
+        "micromamba-docker.git/examples/yaml_spec/Dockerfile",
+        "micromamba-docker.git/test/cli-invocations.Dockerfile",
+        "micromamba-docker.git/test/cmd-exec-form.Dockerfile",
+        "micromamba-docker.git/test/cmd-shell-form.Dockerfile",
+        "micromamba-docker.git/test/conda-mamba-activate.Dockerfile",
+        "micromamba-docker.git/test/entrypoint.Dockerfile",
+        "micromamba-docker.git/test/modify-username.Dockerfile",
+        "micromamba-docker.git/test/multi-env.Dockerfile",
+        "micromamba-docker.git/test/new-user.Dockerfile",
+        "micromamba-docker.git/test/run-shell-form.Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "micromamba-docker.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".flake8": {
+      "name": ".flake8",
+      "path": "micromamba-docker.git/.flake8",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "micromamba-docker.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "micromamba-docker.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "micromamba-docker.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "micromamba-docker.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "micromamba-docker.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "micromamba-docker.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "micromamba-docker.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "micromamba-docker.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "micromamba-docker.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "micromamba-docker.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "micromamba-docker.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "micromamba-docker.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "micromamba-docker.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "micromamba-docker.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "micromamba-docker.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "micromamba-docker.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "micromamba-docker.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "micromamba-docker.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "micromamba-docker.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "micromamba-docker.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "micromamba-docker.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "micromamba-docker.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "micromamba-docker.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "micromamba-docker.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "micromamba-docker.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "micromamba-docker.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "micromamba-docker.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "micromamba-docker.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "micromamba-docker.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "micromamba-docker.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "micromamba-docker.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "micromamba-docker.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-93d280846f26e8f0dd17fb668411657c85900ff0.idx": {
+                  "name": "pack-93d280846f26e8f0dd17fb668411657c85900ff0.idx",
+                  "path": "micromamba-docker.git/.git/objects/pack/pack-93d280846f26e8f0dd17fb668411657c85900ff0.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-93d280846f26e8f0dd17fb668411657c85900ff0.pack": {
+                  "name": "pack-93d280846f26e8f0dd17fb668411657c85900ff0.pack",
+                  "path": "micromamba-docker.git/.git/objects/pack/pack-93d280846f26e8f0dd17fb668411657c85900ff0.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "micromamba-docker.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "micromamba-docker.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "micromamba-docker.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "micromamba-docker.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "micromamba-docker.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "micromamba-docker.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "micromamba-docker.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "micromamba-docker.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "v1.1.0": {
+                  "name": "v1.1.0",
+                  "path": "micromamba-docker.git/.git/refs/tags/v1.1.0",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "micromamba-docker.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "micromamba-docker.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "micromamba-docker.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "issue-template.md": {
+              "name": "issue-template.md",
+              "path": "micromamba-docker.git/.github/ISSUE_TEMPLATE/issue-template.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "micromamba-docker.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "push_latest.yml": {
+              "name": "push_latest.yml",
+              "path": "micromamba-docker.git/.github/workflows/push_latest.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test.yml": {
+              "name": "test.yml",
+              "path": "micromamba-docker.git/.github/workflows/test.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update_version.yml": {
+              "name": "update_version.yml",
+              "path": "micromamba-docker.git/.github/workflows/update_version.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "micromamba-docker.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".gitmodules": {
+      "name": ".gitmodules",
+      "path": "micromamba-docker.git/.gitmodules",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".hadolint.yaml": {
+      "name": ".hadolint.yaml",
+      "path": "micromamba-docker.git/.hadolint.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".pre-commit-config.yaml": {
+      "name": ".pre-commit-config.yaml",
+      "path": "micromamba-docker.git/.pre-commit-config.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CHANGELOG.md": {
+      "name": "CHANGELOG.md",
+      "path": "micromamba-docker.git/CHANGELOG.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "micromamba-docker.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "micromamba-docker.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "micromamba-docker.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "_activate_current_env.sh": {
+      "name": "_activate_current_env.sh",
+      "path": "micromamba-docker.git/_activate_current_env.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "_dockerfile_initialize_user_accounts.sh": {
+      "name": "_dockerfile_initialize_user_accounts.sh",
+      "path": "micromamba-docker.git/_dockerfile_initialize_user_accounts.sh",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "_dockerfile_setup_root_prefix.sh": {
+      "name": "_dockerfile_setup_root_prefix.sh",
+      "path": "micromamba-docker.git/_dockerfile_setup_root_prefix.sh",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "_dockerfile_shell.sh": {
+      "name": "_dockerfile_shell.sh",
+      "path": "micromamba-docker.git/_dockerfile_shell.sh",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "_entrypoint.sh": {
+      "name": "_entrypoint.sh",
+      "path": "micromamba-docker.git/_entrypoint.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "check_version.py": {
+      "name": "check_version.py",
+      "path": "micromamba-docker.git/check_version.py",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "examples": {
+      "name": "examples",
+      "path": "micromamba-docker.git/examples",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "add_micromamba": {
+          "name": "add_micromamba",
+          "path": "micromamba-docker.git/examples/add_micromamba",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "micromamba-docker.git/examples/add_micromamba/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "cmdline_spec": {
+          "name": "cmdline_spec",
+          "path": "micromamba-docker.git/examples/cmdline_spec",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "micromamba-docker.git/examples/cmdline_spec/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "multi_env": {
+          "name": "multi_env",
+          "path": "micromamba-docker.git/examples/multi_env",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "micromamba-docker.git/examples/multi_env/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "env1.yaml": {
+              "name": "env1.yaml",
+              "path": "micromamba-docker.git/examples/multi_env/env1.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "env2.yaml": {
+              "name": "env2.yaml",
+              "path": "micromamba-docker.git/examples/multi_env/env2.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "yaml_spec": {
+          "name": "yaml_spec",
+          "path": "micromamba-docker.git/examples/yaml_spec",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "micromamba-docker.git/examples/yaml_spec/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "env.yaml": {
+              "name": "env.yaml",
+              "path": "micromamba-docker.git/examples/yaml_spec/env.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "noxfile.py": {
+      "name": "noxfile.py",
+      "path": "micromamba-docker.git/noxfile.py",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "pyproject.toml": {
+      "name": "pyproject.toml",
+      "path": "micromamba-docker.git/pyproject.toml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "requirements.txt": {
+      "name": "requirements.txt",
+      "path": "micromamba-docker.git/requirements.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "test": {
+      "name": "test",
+      "path": "micromamba-docker.git/test",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "__init__.py": {
+          "name": "__init__.py",
+          "path": "micromamba-docker.git/test/__init__.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "activation-logic.bats": {
+          "name": "activation-logic.bats",
+          "path": "micromamba-docker.git/test/activation-logic.bats",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "bats": {
+          "name": "bats",
+          "path": "micromamba-docker.git/test/bats",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {}
+        },
+        "cli-invocations.Dockerfile": {
+          "name": "cli-invocations.Dockerfile",
+          "path": "micromamba-docker.git/test/cli-invocations.Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "cli-invocations.bats": {
+          "name": "cli-invocations.bats",
+          "path": "micromamba-docker.git/test/cli-invocations.bats",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cmd-exec-form.Dockerfile": {
+          "name": "cmd-exec-form.Dockerfile",
+          "path": "micromamba-docker.git/test/cmd-exec-form.Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "cmd-exec-form.bats": {
+          "name": "cmd-exec-form.bats",
+          "path": "micromamba-docker.git/test/cmd-exec-form.bats",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cmd-shell-form.Dockerfile": {
+          "name": "cmd-shell-form.Dockerfile",
+          "path": "micromamba-docker.git/test/cmd-shell-form.Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "cmd-shell-form.bats": {
+          "name": "cmd-shell-form.bats",
+          "path": "micromamba-docker.git/test/cmd-shell-form.bats",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conda-mamba-activate.Dockerfile": {
+          "name": "conda-mamba-activate.Dockerfile",
+          "path": "micromamba-docker.git/test/conda-mamba-activate.Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "conda-mamba-activate.bats": {
+          "name": "conda-mamba-activate.bats",
+          "path": "micromamba-docker.git/test/conda-mamba-activate.bats",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "direct-tests.bats": {
+          "name": "direct-tests.bats",
+          "path": "micromamba-docker.git/test/direct-tests.bats",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "entrypoint.Dockerfile": {
+          "name": "entrypoint.Dockerfile",
+          "path": "micromamba-docker.git/test/entrypoint.Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "entrypoint.bats": {
+          "name": "entrypoint.bats",
+          "path": "micromamba-docker.git/test/entrypoint.bats",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "env1.yaml": {
+          "name": "env1.yaml",
+          "path": "micromamba-docker.git/test/env1.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "env2.yaml": {
+          "name": "env2.yaml",
+          "path": "micromamba-docker.git/test/env2.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "examples.bats": {
+          "name": "examples.bats",
+          "path": "micromamba-docker.git/test/examples.bats",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "modify-username.Dockerfile": {
+          "name": "modify-username.Dockerfile",
+          "path": "micromamba-docker.git/test/modify-username.Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "multi-env.Dockerfile": {
+          "name": "multi-env.Dockerfile",
+          "path": "micromamba-docker.git/test/multi-env.Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "multi-env.bats": {
+          "name": "multi-env.bats",
+          "path": "micromamba-docker.git/test/multi-env.bats",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "new-user.Dockerfile": {
+          "name": "new-user.Dockerfile",
+          "path": "micromamba-docker.git/test/new-user.Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "new-user.bats": {
+          "name": "new-user.bats",
+          "path": "micromamba-docker.git/test/new-user.bats",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "run-shell-form.Dockerfile": {
+          "name": "run-shell-form.Dockerfile",
+          "path": "micromamba-docker.git/test/run-shell-form.Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "run-shell-form.bats": {
+          "name": "run-shell-form.bats",
+          "path": "micromamba-docker.git/test/run-shell-form.bats",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_check_version.py": {
+          "name": "test_check_version.py",
+          "path": "micromamba-docker.git/test/test_check_version.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "test_helper": {
+          "name": "test_helper",
+          "path": "micromamba-docker.git/test/test_helper",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bats-assert": {
+              "name": "bats-assert",
+              "path": "micromamba-docker.git/test/test_helper/bats-assert",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "bats-support": {
+              "name": "bats-support",
+              "path": "micromamba-docker.git/test/test_helper/bats-support",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "common-setup.bash": {
+              "name": "common-setup.bash",
+              "path": "micromamba-docker.git/test/test_helper/common-setup.bash",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "user.bats": {
+          "name": "user.bats",
+          "path": "micromamba-docker.git/test/user.bats",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "test_with_base_image.sh": {
+      "name": "test_with_base_image.sh",
+      "path": "micromamba-docker.git/test_with_base_image.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "update.sh": {
+      "name": "update.sh",
+      "path": "micromamba-docker.git/update.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    }
+  },
+  "info": {
+    "id": 332067292,
+    "name": "micromamba-docker",
+    "full_name": "mamba-org/micromamba-docker",
+    "owner": {
+      "login": "mamba-org",
+      "html_url": "https://github.com/mamba-org",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/mamba-org/micromamba-docker",
+    "description": "Rapid builds of small Conda-based containers using micromamba.",
+    "url": "https://api.github.com/repos/mamba-org/micromamba-docker",
+    "clone_url": "https://github.com/mamba-org/micromamba-docker.git",
+    "homepage": "",
+    "size": 220,
+    "stargazers_count": 136,
+    "watchers_count": 136,
+    "language": "Shell"
+  }
+}

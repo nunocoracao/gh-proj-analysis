@@ -1,0 +1,3087 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/Dockerfile",
+        "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/Dockerfile",
+        "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 3,
+      "subFolderCount": 0,
+      "filepaths": [
+        "core-grpc.git/docker-compose.ci.build.yml",
+        "core-grpc.git/docker-compose.override.yml",
+        "core-grpc.git/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "core-grpc.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".gen": {
+      "name": ".gen",
+      "path": "core-grpc.git/.gen",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "generate_protos.bat": {
+          "name": "generate_protos.bat",
+          "path": "core-grpc.git/.gen/generate_protos.bat",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "generate_protos_core.bat": {
+          "name": "generate_protos_core.bat",
+          "path": "core-grpc.git/.gen/generate_protos_core.bat",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "generate_protos_core_genelib.bat": {
+          "name": "generate_protos_core_genelib.bat",
+          "path": "core-grpc.git/.gen/generate_protos_core_genelib.bat",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "generate_remark.txt": {
+          "name": "generate_remark.txt",
+          "path": "core-grpc.git/.gen/generate_remark.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".git": {
+      "name": ".git",
+      "path": "core-grpc.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "core-grpc.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "core-grpc.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "core-grpc.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "core-grpc.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "core-grpc.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "core-grpc.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "core-grpc.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "core-grpc.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "core-grpc.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "core-grpc.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "core-grpc.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "core-grpc.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "core-grpc.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "core-grpc.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "core-grpc.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "core-grpc.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "core-grpc.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "core-grpc.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "core-grpc.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "core-grpc.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "core-grpc.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "core-grpc.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "core-grpc.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "core-grpc.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "core-grpc.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "core-grpc.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "core-grpc.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "core-grpc.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "core-grpc.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "core-grpc.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "core-grpc.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-89271732bd1a0d55cd6f6cfe1b484d58ac3689ba.idx": {
+                  "name": "pack-89271732bd1a0d55cd6f6cfe1b484d58ac3689ba.idx",
+                  "path": "core-grpc.git/.git/objects/pack/pack-89271732bd1a0d55cd6f6cfe1b484d58ac3689ba.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-89271732bd1a0d55cd6f6cfe1b484d58ac3689ba.pack": {
+                  "name": "pack-89271732bd1a0d55cd6f6cfe1b484d58ac3689ba.pack",
+                  "path": "core-grpc.git/.git/objects/pack/pack-89271732bd1a0d55cd6f6cfe1b484d58ac3689ba.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "core-grpc.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "core-grpc.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "core-grpc.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "core-grpc.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "core-grpc.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "core-grpc.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "core-grpc.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "core-grpc.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "core-grpc.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitattributes": {
+      "name": ".gitattributes",
+      "path": "core-grpc.git/.gitattributes",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "core-grpc.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "core-grpc.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "core-grpc-h2.sln": {
+      "name": "core-grpc-h2.sln",
+      "path": "core-grpc.git/core-grpc-h2.sln",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "core-grpc.sln": {
+      "name": "core-grpc.sln",
+      "path": "core-grpc.git/core-grpc.sln",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docker-compose.ci.build.yml": {
+      "name": "docker-compose.ci.build.yml",
+      "path": "core-grpc.git/docker-compose.ci.build.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "docker-compose.dcproj": {
+      "name": "docker-compose.dcproj",
+      "path": "core-grpc.git/docker-compose.dcproj",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docker-compose.override.yml": {
+      "name": "docker-compose.override.yml",
+      "path": "core-grpc.git/docker-compose.override.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "docker-compose.yml": {
+      "name": "docker-compose.yml",
+      "path": "core-grpc.git/docker-compose.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "sample": {
+      "name": "sample",
+      "path": "core-grpc.git/sample",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "cross": {
+          "name": "cross",
+          "path": "core-grpc.git/sample/cross",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Overt.GrpcExampleCrossPlat.Service": {
+              "name": "Overt.GrpcExampleCrossPlat.Service",
+              "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "HostedService": {
+                  "name": "HostedService",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/HostedService",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "GrpcExampleHostedService.cs": {
+                      "name": "GrpcExampleHostedService.cs",
+                      "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/HostedService/GrpcExampleHostedService.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Impl": {
+                  "name": "Impl",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/Impl",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "GrpcExampleServiceImpl.cs": {
+                      "name": "GrpcExampleServiceImpl.cs",
+                      "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/Impl/GrpcExampleServiceImpl.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Overt.GrpcExampleCrossPlat.Service.csproj": {
+                  "name": "Overt.GrpcExampleCrossPlat.Service.csproj",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/Overt.GrpcExampleCrossPlat.Service.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Program.cs": {
+                  "name": "Program.cs",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/Program.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Properties": {
+                  "name": "Properties",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/Properties",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "PublishProfiles": {
+                      "name": "PublishProfiles",
+                      "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/Properties/PublishProfiles",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "FolderProfile.pubxml": {
+                          "name": "FolderProfile.pubxml",
+                          "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/Properties/PublishProfiles/FolderProfile.pubxml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "Tracer": {
+                  "name": "Tracer",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/Tracer",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ConsoleTracer.cs": {
+                      "name": "ConsoleTracer.cs",
+                      "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/Tracer/ConsoleTracer.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "appsettings.json": {
+                  "name": "appsettings.json",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/appsettings.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dllconfigs": {
+                  "name": "dllconfigs",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/dllconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "consulsettings.json": {
+                      "name": "consulsettings.json",
+                      "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service/dllconfigs/consulsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "Overt.GrpcExampleCrossPlat.Service.Grpc": {
+              "name": "Overt.GrpcExampleCrossPlat.Service.Grpc",
+              "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ClientManager.cs": {
+                  "name": "ClientManager.cs",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc/ClientManager.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "GrpcExample.cs": {
+                  "name": "GrpcExample.cs",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc/GrpcExample.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "GrpcExampleGrpc.cs": {
+                  "name": "GrpcExampleGrpc.cs",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc/GrpcExampleGrpc.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Overt.GrpcExampleCrossPlat.Service.Grpc.csproj": {
+                  "name": "Overt.GrpcExampleCrossPlat.Service.Grpc.csproj",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc/Overt.GrpcExampleCrossPlat.Service.Grpc.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "coreconfigs": {
+                  "name": "coreconfigs",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc/coreconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "clientsettings.json": {
+                      "name": "clientsettings.json",
+                      "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc/coreconfigs/clientsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "consulsettings.json": {
+                      "name": "consulsettings.json",
+                      "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc/coreconfigs/consulsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "grpcsettings.json": {
+                      "name": "grpcsettings.json",
+                      "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc/coreconfigs/grpcsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "fmconfigs": {
+                  "name": "fmconfigs",
+                  "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc/fmconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Client.config": {
+                      "name": "Client.config",
+                      "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc/fmconfigs/Client.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Consul.config": {
+                      "name": "Consul.config",
+                      "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc/fmconfigs/Consul.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Server.config": {
+                      "name": "Server.config",
+                      "path": "core-grpc.git/sample/cross/Overt.GrpcExampleCrossPlat.Service.Grpc/fmconfigs/Server.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "grpc.net": {
+          "name": "grpc.net",
+          "path": "core-grpc.git/sample/grpc.net",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Overt.GrpcExample.Client": {
+              "name": "Overt.GrpcExample.Client",
+              "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Client",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Overt.GrpcExample.Client.csproj": {
+                  "name": "Overt.GrpcExample.Client.csproj",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Client/Overt.GrpcExample.Client.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Program.cs": {
+                  "name": "Program.cs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Client/Program.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dllconfigs": {
+                  "name": "dllconfigs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Client/dllconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Overt.GrpcExample.Service.Grpc.dll.json": {
+                      "name": "Overt.GrpcExample.Service.Grpc.dll.json",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Client/dllconfigs/Overt.GrpcExample.Service.Grpc.dll.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Overt.GrpcExample1.Service.Grpc.dll.json": {
+                      "name": "Overt.GrpcExample1.Service.Grpc.dll.json",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Client/dllconfigs/Overt.GrpcExample1.Service.Grpc.dll.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "consulsettings.json": {
+                      "name": "consulsettings.json",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Client/dllconfigs/consulsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "Overt.GrpcExample.Service": {
+              "name": "Overt.GrpcExample.Service",
+              "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Overt.GrpcExample.Service.csproj": {
+                  "name": "Overt.GrpcExample.Service.csproj",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/Overt.GrpcExample.Service.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Program.cs": {
+                  "name": "Program.cs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/Program.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Properties": {
+                  "name": "Properties",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/Properties",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "launchSettings.json": {
+                      "name": "launchSettings.json",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/Properties/launchSettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Services": {
+                  "name": "Services",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/Services",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "GrpcExampleService.cs": {
+                      "name": "GrpcExampleService.cs",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/Services/GrpcExampleService.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Startup.cs": {
+                  "name": "Startup.cs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/Startup.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "appsettings.Development.json": {
+                  "name": "appsettings.Development.json",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/appsettings.Development.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "appsettings.json": {
+                  "name": "appsettings.json",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/appsettings.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dllconfigs": {
+                  "name": "dllconfigs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/dllconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "consulsettings.json": {
+                      "name": "consulsettings.json",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service/dllconfigs/consulsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "Overt.GrpcExample.Service.Grpc": {
+              "name": "Overt.GrpcExample.Service.Grpc",
+              "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "GrpcExample.cs": {
+                  "name": "GrpcExample.cs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/GrpcExample.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "GrpcExampleGrpc.cs": {
+                  "name": "GrpcExampleGrpc.cs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/GrpcExampleGrpc.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Overt.GrpcExample.Service.Grpc.csproj": {
+                  "name": "Overt.GrpcExample.Service.Grpc.csproj",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/Overt.GrpcExample.Service.Grpc.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Protos": {
+                  "name": "Protos",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/Protos",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "GrpcExample.proto": {
+                      "name": "GrpcExample.proto",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/Protos/GrpcExample.proto",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "coreconfigs": {
+                  "name": "coreconfigs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/coreconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "clientsettings.json": {
+                      "name": "clientsettings.json",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/coreconfigs/clientsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "consulsettings.json": {
+                      "name": "consulsettings.json",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/coreconfigs/consulsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "grpcsettings.json": {
+                      "name": "grpcsettings.json",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/coreconfigs/grpcsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "fmconfigs": {
+                  "name": "fmconfigs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/fmconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Client.config": {
+                      "name": "Client.config",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/fmconfigs/Client.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Consul.config": {
+                      "name": "Consul.config",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/fmconfigs/Consul.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Server.config": {
+                      "name": "Server.config",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample.Service.Grpc/fmconfigs/Server.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "Overt.GrpcExample1.Service.Grpc": {
+              "name": "Overt.GrpcExample1.Service.Grpc",
+              "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "GrpcExample1.cs": {
+                  "name": "GrpcExample1.cs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/GrpcExample1.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "GrpcExample1Grpc.cs": {
+                  "name": "GrpcExample1Grpc.cs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/GrpcExample1Grpc.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Overt.GrpcExample1.Service.Grpc.csproj": {
+                  "name": "Overt.GrpcExample1.Service.Grpc.csproj",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/Overt.GrpcExample1.Service.Grpc.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Protos": {
+                  "name": "Protos",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/Protos",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "GrpcExample1.proto": {
+                      "name": "GrpcExample1.proto",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/Protos/GrpcExample1.proto",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "coreconfigs": {
+                  "name": "coreconfigs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/coreconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "clientsettings.json": {
+                      "name": "clientsettings.json",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/coreconfigs/clientsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "consulsettings.json": {
+                      "name": "consulsettings.json",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/coreconfigs/consulsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "grpcsettings.json": {
+                      "name": "grpcsettings.json",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/coreconfigs/grpcsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "fmconfigs": {
+                  "name": "fmconfigs",
+                  "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/fmconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Client.config": {
+                      "name": "Client.config",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/fmconfigs/Client.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Consul.config": {
+                      "name": "Consul.config",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/fmconfigs/Consul.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Server.config": {
+                      "name": "Server.config",
+                      "path": "core-grpc.git/sample/grpc.net/Overt.GrpcExample1.Service.Grpc/fmconfigs/Server.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "net45": {
+          "name": "net45",
+          "path": "core-grpc.git/sample/net45",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Overt.GrpcExampleNet45.Client": {
+              "name": "Overt.GrpcExampleNet45.Client",
+              "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Client",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "App.config": {
+                  "name": "App.config",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Client/App.config",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Overt.GrpcExampleNet45.Client.csproj": {
+                  "name": "Overt.GrpcExampleNet45.Client.csproj",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Client/Overt.GrpcExampleNet45.Client.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Program.cs": {
+                  "name": "Program.cs",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Client/Program.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Properties": {
+                  "name": "Properties",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Client/Properties",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "AssemblyInfo.cs": {
+                      "name": "AssemblyInfo.cs",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Client/Properties/AssemblyInfo.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Tracer": {
+                  "name": "Tracer",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Client/Tracer",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ConsoleTracer.cs": {
+                      "name": "ConsoleTracer.cs",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Client/Tracer/ConsoleTracer.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "dllconfigs": {
+                  "name": "dllconfigs",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Client/dllconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Consul.config": {
+                      "name": "Consul.config",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Client/dllconfigs/Consul.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Overt.GrpcExample.Service.Grpc.dll.config": {
+                      "name": "Overt.GrpcExample.Service.Grpc.dll.config",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Client/dllconfigs/Overt.GrpcExample.Service.Grpc.dll.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "packages.config": {
+                  "name": "packages.config",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Client/packages.config",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "Overt.GrpcExampleNet45.Service": {
+              "name": "Overt.GrpcExampleNet45.Service",
+              "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "App.config": {
+                  "name": "App.config",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/App.config",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "AutofacContainer.cs": {
+                  "name": "AutofacContainer.cs",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/AutofacContainer.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Impl": {
+                  "name": "Impl",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/Impl",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "GrpcExampleServiceImpl.cs": {
+                      "name": "GrpcExampleServiceImpl.cs",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/Impl/GrpcExampleServiceImpl.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "InstallService.bat": {
+                  "name": "InstallService.bat",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/InstallService.bat",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "MainService.cs": {
+                  "name": "MainService.cs",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/MainService.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Overt.GrpcExampleNet45.Service.csproj": {
+                  "name": "Overt.GrpcExampleNet45.Service.csproj",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/Overt.GrpcExampleNet45.Service.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Program.cs": {
+                  "name": "Program.cs",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/Program.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Properties": {
+                  "name": "Properties",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/Properties",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "AssemblyInfo.cs": {
+                      "name": "AssemblyInfo.cs",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/Properties/AssemblyInfo.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Readme.txt": {
+                  "name": "Readme.txt",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/Readme.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "StartService.bat": {
+                  "name": "StartService.bat",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/StartService.bat",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "StopService.bat": {
+                  "name": "StopService.bat",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/StopService.bat",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Tracer": {
+                  "name": "Tracer",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/Tracer",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ConsoleTracer.cs": {
+                      "name": "ConsoleTracer.cs",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/Tracer/ConsoleTracer.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "UninstallService.bat": {
+                  "name": "UninstallService.bat",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/UninstallService.bat",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dllconfigs": {
+                  "name": "dllconfigs",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/dllconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Consul.config": {
+                      "name": "Consul.config",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/dllconfigs/Consul.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Sodao.Log.nlog.config": {
+                      "name": "Sodao.Log.nlog.config",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/dllconfigs/Sodao.Log.nlog.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "packages.config": {
+                  "name": "packages.config",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service/packages.config",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "Overt.GrpcExampleNet45.Service.Grpc": {
+              "name": "Overt.GrpcExampleNet45.Service.Grpc",
+              "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ClientManager.cs": {
+                  "name": "ClientManager.cs",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc/ClientManager.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "GrpcExample.cs": {
+                  "name": "GrpcExample.cs",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc/GrpcExample.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "GrpcExampleGrpc.cs": {
+                  "name": "GrpcExampleGrpc.cs",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc/GrpcExampleGrpc.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Overt.GrpcExampleNet45.Service.Grpc.csproj": {
+                  "name": "Overt.GrpcExampleNet45.Service.Grpc.csproj",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc/Overt.GrpcExampleNet45.Service.Grpc.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "coreconfigs": {
+                  "name": "coreconfigs",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc/coreconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "clientsettings.json": {
+                      "name": "clientsettings.json",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc/coreconfigs/clientsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "consulsettings.json": {
+                      "name": "consulsettings.json",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc/coreconfigs/consulsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "grpcsettings.json": {
+                      "name": "grpcsettings.json",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc/coreconfigs/grpcsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "fmconfigs": {
+                  "name": "fmconfigs",
+                  "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc/fmconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Client.config": {
+                      "name": "Client.config",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc/fmconfigs/Client.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Consul.config": {
+                      "name": "Consul.config",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc/fmconfigs/Consul.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Server.config": {
+                      "name": "Server.config",
+                      "path": "core-grpc.git/sample/net45/Overt.GrpcExampleNet45.Service.Grpc/fmconfigs/Server.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "netcore": {
+          "name": "netcore",
+          "path": "core-grpc.git/sample/netcore",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Overt.GrpcExample.Application": {
+              "name": "Overt.GrpcExample.Application",
+              "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Application",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Constracts": {
+                  "name": "Constracts",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Application/Constracts",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "IUserService.cs": {
+                      "name": "IUserService.cs",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Application/Constracts/IUserService.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Overt.GrpcExample.Application.csproj": {
+                  "name": "Overt.GrpcExample.Application.csproj",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Application/Overt.GrpcExample.Application.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ServiceCollectionExtensions.cs": {
+                  "name": "ServiceCollectionExtensions.cs",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Application/ServiceCollectionExtensions.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Services": {
+                  "name": "Services",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Application/Services",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "UserService.cs": {
+                      "name": "UserService.cs",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Application/Services/UserService.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "Overt.GrpcExample.Client": {
+              "name": "Overt.GrpcExample.Client",
+              "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ClientLoggerInterceptor.cs": {
+                  "name": "ClientLoggerInterceptor.cs",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client/ClientLoggerInterceptor.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Overt.GrpcExample.Client.csproj": {
+                  "name": "Overt.GrpcExample.Client.csproj",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client/Overt.GrpcExample.Client.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Program.cs": {
+                  "name": "Program.cs",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client/Program.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Properties": {
+                  "name": "Properties",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client/Properties",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "PublishProfiles": {
+                      "name": "PublishProfiles",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client/Properties/PublishProfiles",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "FolderProfile.pubxml": {
+                          "name": "FolderProfile.pubxml",
+                          "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client/Properties/PublishProfiles/FolderProfile.pubxml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "Tracer": {
+                  "name": "Tracer",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client/Tracer",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ConsoleTracer.cs": {
+                      "name": "ConsoleTracer.cs",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client/Tracer/ConsoleTracer.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "appsettings.json": {
+                  "name": "appsettings.json",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client/appsettings.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dllconfigs": {
+                  "name": "dllconfigs",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client/dllconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Overt.GrpcExample.Service.Grpc.dll.json": {
+                      "name": "Overt.GrpcExample.Service.Grpc.dll.json",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client/dllconfigs/Overt.GrpcExample.Service.Grpc.dll.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "consulsettings.json": {
+                      "name": "consulsettings.json",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Client/dllconfigs/consulsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "Overt.GrpcExample.Domain": {
+              "name": "Overt.GrpcExample.Domain",
+              "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Domain",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Contracts": {
+                  "name": "Contracts",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Domain/Contracts",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "IUserRepository.cs": {
+                      "name": "IUserRepository.cs",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Domain/Contracts/IUserRepository.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Entities": {
+                  "name": "Entities",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Domain/Entities",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "UserEntity.cs": {
+                      "name": "UserEntity.cs",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Domain/Entities/UserEntity.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Overt.GrpcExample.Domain.csproj": {
+                  "name": "Overt.GrpcExample.Domain.csproj",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Domain/Overt.GrpcExample.Domain.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Repositories": {
+                  "name": "Repositories",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Domain/Repositories",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "UserRepository.cs": {
+                      "name": "UserRepository.cs",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Domain/Repositories/UserRepository.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "ServiceCollectionExtensions.cs": {
+                  "name": "ServiceCollectionExtensions.cs",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Domain/ServiceCollectionExtensions.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "Overt.GrpcExample.Service": {
+              "name": "Overt.GrpcExample.Service",
+              "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "HostedService": {
+                  "name": "HostedService",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/HostedService",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "GrpcExampleHostedService.cs": {
+                      "name": "GrpcExampleHostedService.cs",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/HostedService/GrpcExampleHostedService.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Impl": {
+                  "name": "Impl",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/Impl",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "GrpcExampleServiceImpl.cs": {
+                      "name": "GrpcExampleServiceImpl.cs",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/Impl/GrpcExampleServiceImpl.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Overt.GrpcExample.Service.csproj": {
+                  "name": "Overt.GrpcExample.Service.csproj",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/Overt.GrpcExample.Service.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Program.cs": {
+                  "name": "Program.cs",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/Program.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Properties": {
+                  "name": "Properties",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/Properties",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "PublishProfiles": {
+                      "name": "PublishProfiles",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/Properties/PublishProfiles",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "FolderProfile.pubxml": {
+                          "name": "FolderProfile.pubxml",
+                          "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/Properties/PublishProfiles/FolderProfile.pubxml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "Tracer": {
+                  "name": "Tracer",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/Tracer",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ConsoleTracer.cs": {
+                      "name": "ConsoleTracer.cs",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/Tracer/ConsoleTracer.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "appsettings.json": {
+                  "name": "appsettings.json",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/appsettings.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dllconfigs": {
+                  "name": "dllconfigs",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/dllconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "consulsettings.json": {
+                      "name": "consulsettings.json",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service/dllconfigs/consulsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "Overt.GrpcExample.Service.Grpc": {
+              "name": "Overt.GrpcExample.Service.Grpc",
+              "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "GrpcExample.cs": {
+                  "name": "GrpcExample.cs",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/GrpcExample.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "GrpcExample.proto": {
+                  "name": "GrpcExample.proto",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/GrpcExample.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "GrpcExample.proto.xml": {
+                  "name": "GrpcExample.proto.xml",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/GrpcExample.proto.xml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "GrpcExampleGrpc.cs": {
+                  "name": "GrpcExampleGrpc.cs",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/GrpcExampleGrpc.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Overt.GrpcExample.Service.Grpc.csproj": {
+                  "name": "Overt.GrpcExample.Service.Grpc.csproj",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/Overt.GrpcExample.Service.Grpc.csproj",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "coreconfigs": {
+                  "name": "coreconfigs",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/coreconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "clientsettings.json": {
+                      "name": "clientsettings.json",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/coreconfigs/clientsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "consulsettings.json": {
+                      "name": "consulsettings.json",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/coreconfigs/consulsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "grpcsettings.json": {
+                      "name": "grpcsettings.json",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/coreconfigs/grpcsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "fmconfigs": {
+                  "name": "fmconfigs",
+                  "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/fmconfigs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Client.config": {
+                      "name": "Client.config",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/fmconfigs/Client.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Consul.config": {
+                      "name": "Consul.config",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/fmconfigs/Consul.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Server.config": {
+                      "name": "Server.config",
+                      "path": "core-grpc.git/sample/netcore/Overt.GrpcExample.Service.Grpc/fmconfigs/Server.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "src": {
+      "name": "src",
+      "path": "core-grpc.git/src",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Overt.Core.Grpc": {
+          "name": "Overt.Core.Grpc",
+          "path": "core-grpc.git/src/Overt.Core.Grpc",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Client": {
+              "name": "Client",
+              "path": "core-grpc.git/src/Overt.Core.Grpc/Client",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "CallInvoker": {
+                  "name": "CallInvoker",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Client/CallInvoker",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ClientCallInvoker.cs": {
+                      "name": "ClientCallInvoker.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/CallInvoker/ClientCallInvoker.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "InterceptedServerCallInvoker.cs": {
+                      "name": "InterceptedServerCallInvoker.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/CallInvoker/InterceptedServerCallInvoker.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ServerCallInvoker.cs": {
+                      "name": "ServerCallInvoker.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/CallInvoker/ServerCallInvoker.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "ClientGenerate": {
+                  "name": "ClientGenerate",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Client/ClientGenerate",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "GrpcClient.cs": {
+                      "name": "GrpcClient.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/ClientGenerate/GrpcClient.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "GrpcClientFactory.cs": {
+                      "name": "GrpcClientFactory.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/ClientGenerate/GrpcClientFactory.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "GrpcClientOptions.cs": {
+                      "name": "GrpcClientOptions.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/ClientGenerate/GrpcClientOptions.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Interface": {
+                      "name": "Interface",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/ClientGenerate/Interface",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "IGrpcClient.cs": {
+                          "name": "IGrpcClient.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc/Client/ClientGenerate/Interface/IGrpcClient.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "IGrpcClientFactory.cs": {
+                          "name": "IGrpcClientFactory.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc/Client/ClientGenerate/Interface/IGrpcClientFactory.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "ClientTimespan.cs": {
+                  "name": "ClientTimespan.cs",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Client/ClientTimespan.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "EndpointDiscovery": {
+                  "name": "EndpointDiscovery",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Client/EndpointDiscovery",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "IEndpointDiscovery.cs": {
+                      "name": "IEndpointDiscovery.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/EndpointDiscovery/IEndpointDiscovery.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "IPEndpointDiscovery.cs": {
+                      "name": "IPEndpointDiscovery.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/EndpointDiscovery/IPEndpointDiscovery.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "StickyEndpointDiscovery.cs": {
+                      "name": "StickyEndpointDiscovery.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/EndpointDiscovery/StickyEndpointDiscovery.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "EndpointStrategy": {
+                  "name": "EndpointStrategy",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Client/EndpointStrategy",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "EndpointStrategy.cs": {
+                      "name": "EndpointStrategy.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/EndpointStrategy/EndpointStrategy.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "IEndpointStrategy.cs": {
+                      "name": "IEndpointStrategy.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/EndpointStrategy/IEndpointStrategy.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "StrategyFactory.cs": {
+                      "name": "StrategyFactory.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/EndpointStrategy/StrategyFactory.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "ServicePolicy": {
+                  "name": "ServicePolicy",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Client/ServicePolicy",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ServiceBlackPolicy.cs": {
+                      "name": "ServiceBlackPolicy.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/ServicePolicy/ServiceBlackPolicy.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ServicePollingPolicy.cs": {
+                      "name": "ServicePollingPolicy.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Client/ServicePolicy/ServicePollingPolicy.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "Config": {
+              "name": "Config",
+              "path": "core-grpc.git/src/Overt.Core.Grpc/Config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Consul": {
+                  "name": "Consul",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Consul",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ConsulServerSection.cs": {
+                      "name": "ConsulServerSection.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Consul/ConsulServerSection.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ConsulServiceElement.cs": {
+                      "name": "ConsulServiceElement.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Consul/ConsulServiceElement.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Grpc": {
+                  "name": "Grpc",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Client": {
+                      "name": "Client",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc/Client",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "GrpcClientSection.cs": {
+                          "name": "GrpcClientSection.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc/Client/GrpcClientSection.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "GrpcDiscoveryElement.cs": {
+                          "name": "GrpcDiscoveryElement.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc/Client/GrpcDiscoveryElement.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "GrpcEndpointElement.cs": {
+                          "name": "GrpcEndpointElement.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc/Client/GrpcEndpointElement.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "GrpcEndpointElementCollection.cs": {
+                          "name": "GrpcEndpointElementCollection.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc/Client/GrpcEndpointElementCollection.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "GrpcServiceElement.cs": {
+                          "name": "GrpcServiceElement.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc/Client/GrpcServiceElement.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "Common": {
+                      "name": "Common",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc/Common",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "ConsulElement.cs": {
+                          "name": "ConsulElement.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc/Common/ConsulElement.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "Service": {
+                      "name": "Service",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc/Service",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "GrpcRegistryElement.cs": {
+                          "name": "GrpcRegistryElement.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc/Service/GrpcRegistryElement.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "GrpcServerSection.cs": {
+                          "name": "GrpcServerSection.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc/Service/GrpcServerSection.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ServiceElement.cs": {
+                          "name": "ServiceElement.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Grpc/Service/ServiceElement.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "Util": {
+                  "name": "Util",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Util",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ConfigBuilder.cs": {
+                      "name": "ConfigBuilder.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Util/ConfigBuilder.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "GrpcConstants.cs": {
+                      "name": "GrpcConstants.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Util/GrpcConstants.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "IPHelper.cs": {
+                      "name": "IPHelper.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Config/Util/IPHelper.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "GrpcServiceCollectionExtensions.cs": {
+              "name": "GrpcServiceCollectionExtensions.cs",
+              "path": "core-grpc.git/src/Overt.Core.Grpc/GrpcServiceCollectionExtensions.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Intercept": {
+              "name": "Intercept",
+              "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Handler": {
+                  "name": "Handler",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Handler",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "InterceptedClientHandler.cs": {
+                      "name": "InterceptedClientHandler.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Handler/InterceptedClientHandler.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "InterceptedServerHandler.cs": {
+                      "name": "InterceptedServerHandler.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Handler/InterceptedServerHandler.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "InterceptExtensions.cs": {
+                  "name": "InterceptExtensions.cs",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/InterceptExtensions.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Interceptor": {
+                  "name": "Interceptor",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Interceptor",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ClientTracerInterceptor.cs": {
+                      "name": "ClientTracerInterceptor.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Interceptor/ClientTracerInterceptor.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ServerTracerInterceptor.cs": {
+                      "name": "ServerTracerInterceptor.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Interceptor/ServerTracerInterceptor.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Streaming": {
+                  "name": "Streaming",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Streaming",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "TracingAsyncClientStreamReader.cs": {
+                      "name": "TracingAsyncClientStreamReader.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Streaming/TracingAsyncClientStreamReader.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "TracingAsyncServerStreamReader.cs": {
+                      "name": "TracingAsyncServerStreamReader.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Streaming/TracingAsyncServerStreamReader.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "TracingClientStreamWriter.cs": {
+                      "name": "TracingClientStreamWriter.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Streaming/TracingClientStreamWriter.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "TracingServerStreamWriter.cs": {
+                      "name": "TracingServerStreamWriter.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Streaming/TracingServerStreamWriter.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Tracer": {
+                  "name": "Tracer",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Tracer",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ClientMockTracer.cs": {
+                      "name": "ClientMockTracer.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Tracer/ClientMockTracer.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "IClientTracer.cs": {
+                      "name": "IClientTracer.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Tracer/IClientTracer.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "IServerTracer.cs": {
+                      "name": "IServerTracer.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Tracer/IServerTracer.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ServerMockTracer.cs": {
+                      "name": "ServerMockTracer.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Intercept/Tracer/ServerMockTracer.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "Manager": {
+              "name": "Manager",
+              "path": "core-grpc.git/src/Overt.Core.Grpc/Manager",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "GrpcClientManager.cs": {
+                  "name": "GrpcClientManager.cs",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Manager/GrpcClientManager.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "GrpcServiceManager.cs": {
+                  "name": "GrpcServiceManager.cs",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Manager/GrpcServiceManager.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "Overt.Core.Grpc.csproj": {
+              "name": "Overt.Core.Grpc.csproj",
+              "path": "core-grpc.git/src/Overt.Core.Grpc/Overt.Core.Grpc.csproj",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Service": {
+              "name": "Service",
+              "path": "core-grpc.git/src/Overt.Core.Grpc/Service",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ConsulTimespan.cs": {
+                  "name": "ConsulTimespan.cs",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Service/ConsulTimespan.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Entity": {
+                  "name": "Entity",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Service/Entity",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Entry.cs": {
+                      "name": "Entry.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Service/Entity/Entry.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Exitus.cs": {
+                      "name": "Exitus.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Service/Entity/Exitus.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "GrpcOptions.cs": {
+                      "name": "GrpcOptions.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/Service/Entity/GrpcOptions.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "ServerRegister.cs": {
+                  "name": "ServerRegister.cs",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/Service/ServerRegister.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "dllconfigs": {
+              "name": "dllconfigs",
+              "path": "core-grpc.git/src/Overt.Core.Grpc/dllconfigs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "framework": {
+                  "name": "framework",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/dllconfigs/framework",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Client.config": {
+                      "name": "Client.config",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/dllconfigs/framework/Client.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Consul.config": {
+                      "name": "Consul.config",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/dllconfigs/framework/Consul.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Server.config": {
+                      "name": "Server.config",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/dllconfigs/framework/Server.config",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "netstandard20": {
+                  "name": "netstandard20",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc/dllconfigs/netstandard20",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "clientsettings.json": {
+                      "name": "clientsettings.json",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/dllconfigs/netstandard20/clientsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "consulsettings.json": {
+                      "name": "consulsettings.json",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/dllconfigs/netstandard20/consulsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "grpcsettings.json": {
+                      "name": "grpcsettings.json",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc/dllconfigs/netstandard20/grpcsettings.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Overt.Core.Grpc.H2": {
+          "name": "Overt.Core.Grpc.H2",
+          "path": "core-grpc.git/src/Overt.Core.Grpc.H2",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Client": {
+              "name": "Client",
+              "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ClientGenerate": {
+                  "name": "ClientGenerate",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/ClientGenerate",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ChannelWrapper.cs": {
+                      "name": "ChannelWrapper.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/ClientGenerate/ChannelWrapper.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "GrpcClient.cs": {
+                      "name": "GrpcClient.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/ClientGenerate/GrpcClient.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "GrpcClientFactory.cs": {
+                      "name": "GrpcClientFactory.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/ClientGenerate/GrpcClientFactory.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "GrpcClientOptions.cs": {
+                      "name": "GrpcClientOptions.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/ClientGenerate/GrpcClientOptions.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Interface": {
+                      "name": "Interface",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/ClientGenerate/Interface",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "IGrpcClient.cs": {
+                          "name": "IGrpcClient.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/ClientGenerate/Interface/IGrpcClient.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "IGrpcClientFactory.cs": {
+                          "name": "IGrpcClientFactory.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/ClientGenerate/Interface/IGrpcClientFactory.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "ClientTimespan.cs": {
+                  "name": "ClientTimespan.cs",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/ClientTimespan.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "EndpointDiscovery": {
+                  "name": "EndpointDiscovery",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/EndpointDiscovery",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "IEndpointDiscovery.cs": {
+                      "name": "IEndpointDiscovery.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/EndpointDiscovery/IEndpointDiscovery.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "IPEndpointDiscovery.cs": {
+                      "name": "IPEndpointDiscovery.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/EndpointDiscovery/IPEndpointDiscovery.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "StickyEndpointDiscovery.cs": {
+                      "name": "StickyEndpointDiscovery.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/EndpointDiscovery/StickyEndpointDiscovery.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "EndpointStrategy": {
+                  "name": "EndpointStrategy",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/EndpointStrategy",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "EndpointStrategy.cs": {
+                      "name": "EndpointStrategy.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/EndpointStrategy/EndpointStrategy.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "IEndpointStrategy.cs": {
+                      "name": "IEndpointStrategy.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/EndpointStrategy/IEndpointStrategy.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "IPEndpointStrategy.cs": {
+                      "name": "IPEndpointStrategy.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/EndpointStrategy/IPEndpointStrategy.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "StickyEndpointStrategy.cs": {
+                      "name": "StickyEndpointStrategy.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/EndpointStrategy/StickyEndpointStrategy.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "StrategyFactory.cs": {
+                      "name": "StrategyFactory.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/EndpointStrategy/StrategyFactory.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Entity": {
+                  "name": "Entity",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/Entity",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Exitus.cs": {
+                      "name": "Exitus.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/Entity/Exitus.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "NET5_0_OR_GREATER": {
+                  "name": "NET5_0_OR_GREATER",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/NET5_0_OR_GREATER",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Balancer": {
+                      "name": "Balancer",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/NET5_0_OR_GREATER/Balancer",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "RandomBalancer.cs": {
+                          "name": "RandomBalancer.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/NET5_0_OR_GREATER/Balancer/RandomBalancer.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "RandomBalancerFactory.cs": {
+                          "name": "RandomBalancerFactory.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/NET5_0_OR_GREATER/Balancer/RandomBalancerFactory.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "RandomPicker.cs": {
+                          "name": "RandomPicker.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/NET5_0_OR_GREATER/Balancer/RandomPicker.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "Resolver": {
+                      "name": "Resolver",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/NET5_0_OR_GREATER/Resolver",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "InternalResolver.cs": {
+                          "name": "InternalResolver.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/NET5_0_OR_GREATER/Resolver/InternalResolver.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "InternalResolverFactory.cs": {
+                          "name": "InternalResolverFactory.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/NET5_0_OR_GREATER/Resolver/InternalResolverFactory.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "ServicePolicy": {
+                  "name": "ServicePolicy",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/ServicePolicy",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ServiceBlackPolicy.cs": {
+                      "name": "ServiceBlackPolicy.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/ServicePolicy/ServiceBlackPolicy.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ServicePollingPolicy.cs": {
+                      "name": "ServicePollingPolicy.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Client/ServicePolicy/ServicePollingPolicy.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "Config": {
+              "name": "Config",
+              "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Consul": {
+                  "name": "Consul",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Consul",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ConsulServerSection.cs": {
+                      "name": "ConsulServerSection.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Consul/ConsulServerSection.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "ConsulServiceElement.cs": {
+                      "name": "ConsulServiceElement.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Consul/ConsulServiceElement.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "Grpc": {
+                  "name": "Grpc",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Grpc",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Client": {
+                      "name": "Client",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Grpc/Client",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "GrpcClientSection.cs": {
+                          "name": "GrpcClientSection.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Grpc/Client/GrpcClientSection.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "GrpcDiscoveryElement.cs": {
+                          "name": "GrpcDiscoveryElement.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Grpc/Client/GrpcDiscoveryElement.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "GrpcEndpointElement.cs": {
+                          "name": "GrpcEndpointElement.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Grpc/Client/GrpcEndpointElement.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "GrpcServiceElement.cs": {
+                          "name": "GrpcServiceElement.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Grpc/Client/GrpcServiceElement.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "Common": {
+                      "name": "Common",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Grpc/Common",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "ConsulElement.cs": {
+                          "name": "ConsulElement.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Grpc/Common/ConsulElement.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "Service": {
+                      "name": "Service",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Grpc/Service",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "GrpcServerSection.cs": {
+                          "name": "GrpcServerSection.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Grpc/Service/GrpcServerSection.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ServiceElement.cs": {
+                          "name": "ServiceElement.cs",
+                          "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Grpc/Service/ServiceElement.cs",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "Util": {
+                  "name": "Util",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Util",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "ConfigBuilder.cs": {
+                      "name": "ConfigBuilder.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Util/ConfigBuilder.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Constants.cs": {
+                      "name": "Constants.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Util/Constants.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "IPHelper.cs": {
+                      "name": "IPHelper.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Config/Util/IPHelper.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "GrpcServiceCollectionExtensions.cs": {
+              "name": "GrpcServiceCollectionExtensions.cs",
+              "path": "core-grpc.git/src/Overt.Core.Grpc.H2/GrpcServiceCollectionExtensions.cs",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Overt.Core.Grpc.H2.csproj": {
+              "name": "Overt.Core.Grpc.H2.csproj",
+              "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Overt.Core.Grpc.H2.csproj",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Service": {
+              "name": "Service",
+              "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Service",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ConsulRegister.cs": {
+                  "name": "ConsulRegister.cs",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Service/ConsulRegister.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ConsulTimespan.cs": {
+                  "name": "ConsulTimespan.cs",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Service/ConsulTimespan.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Entity": {
+                  "name": "Entity",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Service/Entity",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Entry.cs": {
+                      "name": "Entry.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Service/Entity/Entry.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "GrpcOptions.cs": {
+                      "name": "GrpcOptions.cs",
+                      "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Service/Entity/GrpcOptions.cs",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "GrpcHostedService.cs": {
+                  "name": "GrpcHostedService.cs",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Service/GrpcHostedService.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "RegisterFactory.cs": {
+                  "name": "RegisterFactory.cs",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/Service/RegisterFactory.cs",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "dllconfigs": {
+              "name": "dllconfigs",
+              "path": "core-grpc.git/src/Overt.Core.Grpc.H2/dllconfigs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "clientsettings.json": {
+                  "name": "clientsettings.json",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/dllconfigs/clientsettings.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "consulsettings.json": {
+                  "name": "consulsettings.json",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/dllconfigs/consulsettings.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "grpcsettings.json": {
+                  "name": "grpcsettings.json",
+                  "path": "core-grpc.git/src/Overt.Core.Grpc.H2/dllconfigs/grpcsettings.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 159925304,
+    "name": "core-grpc",
+    "full_name": "overtly/core-grpc",
+    "owner": {
+      "login": "overtly",
+      "html_url": "https://github.com/overtly",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/overtly/core-grpc",
+    "description": "C# Grpc、Consul结合驱动封装，Overt.Core.Grpc基于Consul/Grpc实现服务注册服务发现，支持dotnetcore / framework，可快速实现基于Grpc的微服务；另外Overt.Core.Grpc.H2基于Consul/Grpc.Net实现服务注册服务发现，支持Net5.0， 内部有完整案例，包含服务端Server 客户端 Client，core+grpc, netcore+grpc, dotnetcore+grpc",
+    "url": "https://api.github.com/repos/overtly/core-grpc",
+    "clone_url": "https://github.com/overtly/core-grpc.git",
+    "homepage": "",
+    "size": 267,
+    "stargazers_count": 266,
+    "watchers_count": 266,
+    "language": "C#"
+  }
+}

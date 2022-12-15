@@ -1,0 +1,2464 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 22,
+      "rootCount": 3,
+      "subFolderCount": 19,
+      "filepaths": [
+        "pgcopydb.git/Dockerfile",
+        "pgcopydb.git/Dockerfile.debian",
+        "pgcopydb.git/Dockerfile.debian-qa",
+        "pgcopydb.git/tests/Dockerfile.pagila",
+        "pgcopydb.git/tests/blobs/Dockerfile",
+        "pgcopydb.git/tests/cdc-endpos-between-transaction/Dockerfile",
+        "pgcopydb.git/tests/cdc-endpos-between-transaction/Dockerfile.pg",
+        "pgcopydb.git/tests/cdc-test-decoding/Dockerfile",
+        "pgcopydb.git/tests/cdc-wal2json/Dockerfile",
+        "pgcopydb.git/tests/cdc-wal2json/Dockerfile.pg",
+        "pgcopydb.git/tests/extensions/Dockerfile",
+        "pgcopydb.git/tests/extensions/Dockerfile.pg",
+        "pgcopydb.git/tests/filtering/Dockerfile",
+        "pgcopydb.git/tests/follow-9.6/Dockerfile",
+        "pgcopydb.git/tests/follow-9.6/Dockerfile.inject",
+        "pgcopydb.git/tests/follow-9.6/Dockerfile.pg",
+        "pgcopydb.git/tests/follow-wal2json/Dockerfile",
+        "pgcopydb.git/tests/follow-wal2json/Dockerfile.inject",
+        "pgcopydb.git/tests/follow-wal2json/Dockerfile.pg",
+        "pgcopydb.git/tests/pagila/Dockerfile",
+        "pgcopydb.git/tests/pagila-multi-steps/Dockerfile",
+        "pgcopydb.git/tests/unit/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "pgcopydb.git/tests/blobs/docker-compose.yml",
+        "pgcopydb.git/tests/cdc-endpos-between-transaction/docker-compose.yml",
+        "pgcopydb.git/tests/cdc-test-decoding/docker-compose.yml",
+        "pgcopydb.git/tests/cdc-wal2json/docker-compose.yml",
+        "pgcopydb.git/tests/extensions/docker-compose.yml",
+        "pgcopydb.git/tests/filtering/docker-compose.yml",
+        "pgcopydb.git/tests/follow-9.6/docker-compose.yml",
+        "pgcopydb.git/tests/follow-wal2json/docker-compose.yml",
+        "pgcopydb.git/tests/pagila/docker-compose.yml",
+        "pgcopydb.git/tests/pagila-multi-steps/docker-compose.yml",
+        "pgcopydb.git/tests/unit/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "pgcopydb.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".editorconfig": {
+      "name": ".editorconfig",
+      "path": "pgcopydb.git/.editorconfig",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "pgcopydb.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "pgcopydb.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "pgcopydb.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "pgcopydb.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "pgcopydb.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "pgcopydb.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "pgcopydb.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "pgcopydb.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "pgcopydb.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "pgcopydb.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "pgcopydb.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "pgcopydb.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "pgcopydb.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "pgcopydb.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "pgcopydb.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "pgcopydb.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "pgcopydb.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "pgcopydb.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "pgcopydb.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "pgcopydb.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "pgcopydb.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "pgcopydb.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "pgcopydb.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "pgcopydb.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "pgcopydb.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "pgcopydb.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "pgcopydb.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "pgcopydb.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "pgcopydb.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "pgcopydb.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "pgcopydb.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "pgcopydb.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-7b187bdb64c89bcb7e7b0d10e14f4a8b92e427aa.idx": {
+                  "name": "pack-7b187bdb64c89bcb7e7b0d10e14f4a8b92e427aa.idx",
+                  "path": "pgcopydb.git/.git/objects/pack/pack-7b187bdb64c89bcb7e7b0d10e14f4a8b92e427aa.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-7b187bdb64c89bcb7e7b0d10e14f4a8b92e427aa.pack": {
+                  "name": "pack-7b187bdb64c89bcb7e7b0d10e14f4a8b92e427aa.pack",
+                  "path": "pgcopydb.git/.git/objects/pack/pack-7b187bdb64c89bcb7e7b0d10e14f4a8b92e427aa.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "pgcopydb.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "pgcopydb.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "pgcopydb.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "pgcopydb.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "pgcopydb.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "pgcopydb.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "pgcopydb.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "pgcopydb.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "pgcopydb.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitattributes": {
+      "name": ".gitattributes",
+      "path": "pgcopydb.git/.gitattributes",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".github": {
+      "name": ".github",
+      "path": "pgcopydb.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "workflows": {
+          "name": "workflows",
+          "path": "pgcopydb.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-publish.yml": {
+              "name": "docker-publish.yml",
+              "path": "pgcopydb.git/.github/workflows/docker-publish.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "run-tests.yml": {
+              "name": "run-tests.yml",
+              "path": "pgcopydb.git/.github/workflows/run-tests.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "pgcopydb.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CHANGELOG.md": {
+      "name": "CHANGELOG.md",
+      "path": "pgcopydb.git/CHANGELOG.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "pgcopydb.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile.debian": {
+      "name": "Dockerfile.debian",
+      "path": "pgcopydb.git/Dockerfile.debian",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "Dockerfile.debian-qa": {
+      "name": "Dockerfile.debian-qa",
+      "path": "pgcopydb.git/Dockerfile.debian-qa",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "GIT-VERSION-GEN": {
+      "name": "GIT-VERSION-GEN",
+      "path": "pgcopydb.git/GIT-VERSION-GEN",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "pgcopydb.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Makefile": {
+      "name": "Makefile",
+      "path": "pgcopydb.git/Makefile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "pgcopydb.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "ci": {
+      "name": "ci",
+      "path": "pgcopydb.git/ci",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "banned.h.sh": {
+          "name": "banned.h.sh",
+          "path": "pgcopydb.git/ci/banned.h.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "debian": {
+      "name": "debian",
+      "path": "pgcopydb.git/debian",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "changelog": {
+          "name": "changelog",
+          "path": "pgcopydb.git/debian/changelog",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "clean": {
+          "name": "clean",
+          "path": "pgcopydb.git/debian/clean",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "control": {
+          "name": "control",
+          "path": "pgcopydb.git/debian/control",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "copyright": {
+          "name": "copyright",
+          "path": "pgcopydb.git/debian/copyright",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rules": {
+          "name": "rules",
+          "path": "pgcopydb.git/debian/rules",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "source": {
+          "name": "source",
+          "path": "pgcopydb.git/debian/source",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "format": {
+              "name": "format",
+              "path": "pgcopydb.git/debian/source/format",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "tests": {
+          "name": "tests",
+          "path": "pgcopydb.git/debian/tests",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "control": {
+              "name": "control",
+              "path": "pgcopydb.git/debian/tests/control",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copydb": {
+              "name": "copydb",
+              "path": "pgcopydb.git/debian/tests/copydb",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "watch": {
+          "name": "watch",
+          "path": "pgcopydb.git/debian/watch",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "docs": {
+      "name": "docs",
+      "path": "pgcopydb.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "pgcopydb.git/docs/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Makefile": {
+          "name": "Makefile",
+          "path": "pgcopydb.git/docs/Makefile",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "conf.py": {
+          "name": "conf.py",
+          "path": "pgcopydb.git/docs/conf.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "design.rst": {
+          "name": "design.rst",
+          "path": "pgcopydb.git/docs/design.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "index.rst": {
+          "name": "index.rst",
+          "path": "pgcopydb.git/docs/index.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "install.rst": {
+          "name": "install.rst",
+          "path": "pgcopydb.git/docs/install.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "intro.rst": {
+          "name": "intro.rst",
+          "path": "pgcopydb.git/docs/intro.rst",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "make.bat": {
+          "name": "make.bat",
+          "path": "pgcopydb.git/docs/make.bat",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ref": {
+          "name": "ref",
+          "path": "pgcopydb.git/docs/ref",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "manual.rst": {
+              "name": "manual.rst",
+              "path": "pgcopydb.git/docs/ref/manual.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgcopydb.rst": {
+              "name": "pgcopydb.rst",
+              "path": "pgcopydb.git/docs/ref/pgcopydb.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgcopydb_clone.rst": {
+              "name": "pgcopydb_clone.rst",
+              "path": "pgcopydb.git/docs/ref/pgcopydb_clone.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgcopydb_config.rst": {
+              "name": "pgcopydb_config.rst",
+              "path": "pgcopydb.git/docs/ref/pgcopydb_config.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgcopydb_copy.rst": {
+              "name": "pgcopydb_copy.rst",
+              "path": "pgcopydb.git/docs/ref/pgcopydb_copy.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgcopydb_dump.rst": {
+              "name": "pgcopydb_dump.rst",
+              "path": "pgcopydb.git/docs/ref/pgcopydb_dump.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgcopydb_follow.rst": {
+              "name": "pgcopydb_follow.rst",
+              "path": "pgcopydb.git/docs/ref/pgcopydb_follow.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgcopydb_list.rst": {
+              "name": "pgcopydb_list.rst",
+              "path": "pgcopydb.git/docs/ref/pgcopydb_list.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgcopydb_restore.rst": {
+              "name": "pgcopydb_restore.rst",
+              "path": "pgcopydb.git/docs/ref/pgcopydb_restore.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgcopydb_snapshot.rst": {
+              "name": "pgcopydb_snapshot.rst",
+              "path": "pgcopydb.git/docs/ref/pgcopydb_snapshot.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pgcopydb_stream.rst": {
+              "name": "pgcopydb_stream.rst",
+              "path": "pgcopydb.git/docs/ref/pgcopydb_stream.rst",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "src": {
+      "name": "src",
+      "path": "pgcopydb.git/src",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "bin": {
+          "name": "bin",
+          "path": "pgcopydb.git/src/bin",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "pgcopydb.git/src/bin/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "lib": {
+              "name": "lib",
+              "path": "pgcopydb.git/src/bin/lib",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "README.md": {
+                  "name": "README.md",
+                  "path": "pgcopydb.git/src/bin/lib/README.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "libs": {
+                  "name": "libs",
+                  "path": "pgcopydb.git/src/bin/lib/libs",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "docs": {
+                      "name": "docs",
+                      "path": "pgcopydb.git/src/bin/lib/libs/docs",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "ini.md": {
+                          "name": "ini.md",
+                          "path": "pgcopydb.git/src/bin/lib/libs/docs/ini.md",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "ini.h": {
+                      "name": "ini.h",
+                      "path": "pgcopydb.git/src/bin/lib/libs/ini.h",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "log": {
+                  "name": "log",
+                  "path": "pgcopydb.git/src/bin/lib/log",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "LICENSE": {
+                      "name": "LICENSE",
+                      "path": "pgcopydb.git/src/bin/lib/log/LICENSE",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "README.md": {
+                      "name": "README.md",
+                      "path": "pgcopydb.git/src/bin/lib/log/README.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "src": {
+                      "name": "src",
+                      "path": "pgcopydb.git/src/bin/lib/log/src",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "log.c": {
+                          "name": "log.c",
+                          "path": "pgcopydb.git/src/bin/lib/log/src/log.c",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "log.h": {
+                          "name": "log.h",
+                          "path": "pgcopydb.git/src/bin/lib/log/src/log.h",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "parson": {
+                  "name": "parson",
+                  "path": "pgcopydb.git/src/bin/lib/parson",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    ".gitignore": {
+                      "name": ".gitignore",
+                      "path": "pgcopydb.git/src/bin/lib/parson/.gitignore",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "LICENSE": {
+                      "name": "LICENSE",
+                      "path": "pgcopydb.git/src/bin/lib/parson/LICENSE",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Makefile": {
+                      "name": "Makefile",
+                      "path": "pgcopydb.git/src/bin/lib/parson/Makefile",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "parson.c": {
+                      "name": "parson.c",
+                      "path": "pgcopydb.git/src/bin/lib/parson/parson.c",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "parson.h": {
+                      "name": "parson.h",
+                      "path": "pgcopydb.git/src/bin/lib/parson/parson.h",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "tests": {
+                      "name": "tests",
+                      "path": "pgcopydb.git/src/bin/lib/parson/tests",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "test_1_1.txt": {
+                          "name": "test_1_1.txt",
+                          "path": "pgcopydb.git/src/bin/lib/parson/tests/test_1_1.txt",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "test_1_2.txt": {
+                          "name": "test_1_2.txt",
+                          "path": "pgcopydb.git/src/bin/lib/parson/tests/test_1_2.txt",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "test_1_3.txt": {
+                          "name": "test_1_3.txt",
+                          "path": "pgcopydb.git/src/bin/lib/parson/tests/test_1_3.txt",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "test_2.txt": {
+                          "name": "test_2.txt",
+                          "path": "pgcopydb.git/src/bin/lib/parson/tests/test_2.txt",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "test_2_comments.txt": {
+                          "name": "test_2_comments.txt",
+                          "path": "pgcopydb.git/src/bin/lib/parson/tests/test_2_comments.txt",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "test_2_pretty.txt": {
+                          "name": "test_2_pretty.txt",
+                          "path": "pgcopydb.git/src/bin/lib/parson/tests/test_2_pretty.txt",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "test_2_serialized.txt": {
+                          "name": "test_2_serialized.txt",
+                          "path": "pgcopydb.git/src/bin/lib/parson/tests/test_2_serialized.txt",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "test_2_serialized_pretty.txt": {
+                          "name": "test_2_serialized_pretty.txt",
+                          "path": "pgcopydb.git/src/bin/lib/parson/tests/test_2_serialized_pretty.txt",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "test_5.txt": {
+                          "name": "test_5.txt",
+                          "path": "pgcopydb.git/src/bin/lib/parson/tests/test_5.txt",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "tests.c": {
+                      "name": "tests.c",
+                      "path": "pgcopydb.git/src/bin/lib/parson/tests.c",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "pg": {
+                  "name": "pg",
+                  "path": "pgcopydb.git/src/bin/lib/pg",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "README.md": {
+                      "name": "README.md",
+                      "path": "pgcopydb.git/src/bin/lib/pg/README.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "snprintf.c": {
+                      "name": "snprintf.c",
+                      "path": "pgcopydb.git/src/bin/lib/pg/snprintf.c",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "snprintf.h": {
+                      "name": "snprintf.h",
+                      "path": "pgcopydb.git/src/bin/lib/pg/snprintf.h",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "strerror.c": {
+                      "name": "strerror.c",
+                      "path": "pgcopydb.git/src/bin/lib/pg/strerror.c",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "subcommands.c": {
+                  "name": "subcommands.c",
+                  "path": "pgcopydb.git/src/bin/lib/subcommands.c",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "commandline.c": {
+                      "name": "commandline.c",
+                      "path": "pgcopydb.git/src/bin/lib/subcommands.c/commandline.c",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "commandline.h": {
+                      "name": "commandline.h",
+                      "path": "pgcopydb.git/src/bin/lib/subcommands.c/commandline.h",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "runprogram.h": {
+                      "name": "runprogram.h",
+                      "path": "pgcopydb.git/src/bin/lib/subcommands.c/runprogram.h",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "uthash": {
+                  "name": "uthash",
+                  "path": "pgcopydb.git/src/bin/lib/uthash",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "uthash.h": {
+                      "name": "uthash.h",
+                      "path": "pgcopydb.git/src/bin/lib/uthash/uthash.h",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "pgcopydb": {
+              "name": "pgcopydb",
+              "path": "pgcopydb.git/src/bin/pgcopydb",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                ".gitignore": {
+                  "name": ".gitignore",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/.gitignore",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "Makefile": {
+                  "name": "Makefile",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/Makefile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "blobs.c": {
+                  "name": "blobs.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/blobs.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_clone_follow.c": {
+                  "name": "cli_clone_follow.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_clone_follow.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_common.c": {
+                  "name": "cli_common.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_common.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_common.h": {
+                  "name": "cli_common.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_common.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_copy.c": {
+                  "name": "cli_copy.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_copy.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_create.c": {
+                  "name": "cli_create.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_create.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_dump.c": {
+                  "name": "cli_dump.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_dump.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_list.c": {
+                  "name": "cli_list.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_list.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_list.h": {
+                  "name": "cli_list.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_list.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_restore.c": {
+                  "name": "cli_restore.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_restore.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_root.c": {
+                  "name": "cli_root.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_root.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_root.h": {
+                  "name": "cli_root.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_root.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_sentinel.c": {
+                  "name": "cli_sentinel.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_sentinel.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cli_stream.c": {
+                  "name": "cli_stream.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/cli_stream.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "copydb.c": {
+                  "name": "copydb.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/copydb.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "copydb.h": {
+                  "name": "copydb.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/copydb.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "copydb_paths.h": {
+                  "name": "copydb_paths.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/copydb_paths.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "copydb_schema.c": {
+                  "name": "copydb_schema.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/copydb_schema.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "defaults.h": {
+                  "name": "defaults.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/defaults.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dump_restore.c": {
+                  "name": "dump_restore.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/dump_restore.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "env_utils.c": {
+                  "name": "env_utils.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/env_utils.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "env_utils.h": {
+                  "name": "env_utils.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/env_utils.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "extensions.c": {
+                  "name": "extensions.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/extensions.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "file_utils.c": {
+                  "name": "file_utils.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/file_utils.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "file_utils.h": {
+                  "name": "file_utils.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/file_utils.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "filtering.c": {
+                  "name": "filtering.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/filtering.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "filtering.h": {
+                  "name": "filtering.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/filtering.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "follow.c": {
+                  "name": "follow.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/follow.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "indexes.c": {
+                  "name": "indexes.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/indexes.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ini_implementation.c": {
+                  "name": "ini_implementation.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/ini_implementation.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ld_apply.c": {
+                  "name": "ld_apply.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/ld_apply.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ld_stream.c": {
+                  "name": "ld_stream.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/ld_stream.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ld_stream.h": {
+                  "name": "ld_stream.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/ld_stream.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ld_test_decoding.c": {
+                  "name": "ld_test_decoding.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/ld_test_decoding.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ld_transform.c": {
+                  "name": "ld_transform.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/ld_transform.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ld_wal2json.c": {
+                  "name": "ld_wal2json.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/ld_wal2json.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lock_utils.c": {
+                  "name": "lock_utils.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/lock_utils.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lock_utils.h": {
+                  "name": "lock_utils.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/lock_utils.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.c": {
+                  "name": "main.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/main.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "parsing_utils.c": {
+                  "name": "parsing_utils.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/parsing_utils.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "parsing_utils.h": {
+                  "name": "parsing_utils.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/parsing_utils.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pg_depend_sql.h": {
+                  "name": "pg_depend_sql.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/pg_depend_sql.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pg_utils.c": {
+                  "name": "pg_utils.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/pg_utils.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pg_utils.h": {
+                  "name": "pg_utils.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/pg_utils.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pgcmd.c": {
+                  "name": "pgcmd.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/pgcmd.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pgcmd.h": {
+                  "name": "pgcmd.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/pgcmd.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pgsql.c": {
+                  "name": "pgsql.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/pgsql.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pgsql.h": {
+                  "name": "pgsql.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/pgsql.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pidfile.c": {
+                  "name": "pidfile.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/pidfile.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pidfile.h": {
+                  "name": "pidfile.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/pidfile.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "progress.c": {
+                  "name": "progress.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/progress.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "progress.h": {
+                  "name": "progress.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/progress.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "queue_utils.c": {
+                  "name": "queue_utils.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/queue_utils.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "queue_utils.h": {
+                  "name": "queue_utils.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/queue_utils.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "schema.c": {
+                  "name": "schema.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/schema.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "schema.h": {
+                  "name": "schema.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/schema.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sequences.c": {
+                  "name": "sequences.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/sequences.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "signals.c": {
+                  "name": "signals.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/signals.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "signals.h": {
+                  "name": "signals.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/signals.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "snapshot.c": {
+                  "name": "snapshot.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/snapshot.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "string_utils.c": {
+                  "name": "string_utils.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/string_utils.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "string_utils.h": {
+                  "name": "string_utils.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/string_utils.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "summary.c": {
+                  "name": "summary.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/summary.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "summary.h": {
+                  "name": "summary.h",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/summary.h",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "table-data.c": {
+                  "name": "table-data.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/table-data.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "vacuum.c": {
+                  "name": "vacuum.c",
+                  "path": "pgcopydb.git/src/bin/pgcopydb/vacuum.c",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tests": {
+      "name": "tests",
+      "path": "pgcopydb.git/tests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".psqlrc": {
+          "name": ".psqlrc",
+          "path": "pgcopydb.git/tests/.psqlrc",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Dockerfile.pagila": {
+          "name": "Dockerfile.pagila",
+          "path": "pgcopydb.git/tests/Dockerfile.pagila",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "Makefile": {
+          "name": "Makefile",
+          "path": "pgcopydb.git/tests/Makefile",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "blobs": {
+          "name": "blobs",
+          "path": "pgcopydb.git/tests/blobs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "pgcopydb.git/tests/blobs/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "pgcopydb.git/tests/blobs/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "pgcopydb.git/tests/blobs/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copydb.sh": {
+              "name": "copydb.sh",
+              "path": "pgcopydb.git/tests/blobs/copydb.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "pgcopydb.git/tests/blobs/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "imgs": {
+              "name": "imgs",
+              "path": "pgcopydb.git/tests/blobs/imgs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "aj-robbie-BuQ1RZckYW4-unsplash.jpg": {
+                  "name": "aj-robbie-BuQ1RZckYW4-unsplash.jpg",
+                  "path": "pgcopydb.git/tests/blobs/imgs/aj-robbie-BuQ1RZckYW4-unsplash.jpg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "bisakha-datta--6SmukZ_w6s-unsplash.jpg": {
+                  "name": "bisakha-datta--6SmukZ_w6s-unsplash.jpg",
+                  "path": "pgcopydb.git/tests/blobs/imgs/bisakha-datta--6SmukZ_w6s-unsplash.jpg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "geran-de-klerk-AX9sJ-mPoL4-unsplash.jpg": {
+                  "name": "geran-de-klerk-AX9sJ-mPoL4-unsplash.jpg",
+                  "path": "pgcopydb.git/tests/blobs/imgs/geran-de-klerk-AX9sJ-mPoL4-unsplash.jpg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "nam-anh-QJbyG6O0ick-unsplash.jpg": {
+                  "name": "nam-anh-QJbyG6O0ick-unsplash.jpg",
+                  "path": "pgcopydb.git/tests/blobs/imgs/nam-anh-QJbyG6O0ick-unsplash.jpg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "redcharlie-Y--zr3CPaPs-unsplash.jpg": {
+                  "name": "redcharlie-Y--zr3CPaPs-unsplash.jpg",
+                  "path": "pgcopydb.git/tests/blobs/imgs/redcharlie-Y--zr3CPaPs-unsplash.jpg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "richard-jacobs-8oenpCXktqQ-unsplash.jpg": {
+                  "name": "richard-jacobs-8oenpCXktqQ-unsplash.jpg",
+                  "path": "pgcopydb.git/tests/blobs/imgs/richard-jacobs-8oenpCXktqQ-unsplash.jpg",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "import.sql": {
+              "name": "import.sql",
+              "path": "pgcopydb.git/tests/blobs/import.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "cdc-endpos-between-transaction": {
+          "name": "cdc-endpos-between-transaction",
+          "path": "pgcopydb.git/tests/cdc-endpos-between-transaction",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "000000010000000000000002.json": {
+              "name": "000000010000000000000002.json",
+              "path": "pgcopydb.git/tests/cdc-endpos-between-transaction/000000010000000000000002.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "000000010000000000000002.sql": {
+              "name": "000000010000000000000002.sql",
+              "path": "pgcopydb.git/tests/cdc-endpos-between-transaction/000000010000000000000002.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "pgcopydb.git/tests/cdc-endpos-between-transaction/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.pg": {
+              "name": "Dockerfile.pg",
+              "path": "pgcopydb.git/tests/cdc-endpos-between-transaction/Dockerfile.pg",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "pgcopydb.git/tests/cdc-endpos-between-transaction/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copydb.sh": {
+              "name": "copydb.sh",
+              "path": "pgcopydb.git/tests/cdc-endpos-between-transaction/copydb.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ddl.sql": {
+              "name": "ddl.sql",
+              "path": "pgcopydb.git/tests/cdc-endpos-between-transaction/ddl.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dml.sql": {
+              "name": "dml.sql",
+              "path": "pgcopydb.git/tests/cdc-endpos-between-transaction/dml.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "pgcopydb.git/tests/cdc-endpos-between-transaction/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "cdc-test-decoding": {
+          "name": "cdc-test-decoding",
+          "path": "pgcopydb.git/tests/cdc-test-decoding",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "000000010000000000000002.json": {
+              "name": "000000010000000000000002.json",
+              "path": "pgcopydb.git/tests/cdc-test-decoding/000000010000000000000002.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "000000010000000000000002.sql": {
+              "name": "000000010000000000000002.sql",
+              "path": "pgcopydb.git/tests/cdc-test-decoding/000000010000000000000002.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "pgcopydb.git/tests/cdc-test-decoding/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "pgcopydb.git/tests/cdc-test-decoding/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "pgcopydb.git/tests/cdc-test-decoding/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copydb.sh": {
+              "name": "copydb.sh",
+              "path": "pgcopydb.git/tests/cdc-test-decoding/copydb.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ddl.sql": {
+              "name": "ddl.sql",
+              "path": "pgcopydb.git/tests/cdc-test-decoding/ddl.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dml.sql": {
+              "name": "dml.sql",
+              "path": "pgcopydb.git/tests/cdc-test-decoding/dml.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "pgcopydb.git/tests/cdc-test-decoding/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "cdc-wal2json": {
+          "name": "cdc-wal2json",
+          "path": "pgcopydb.git/tests/cdc-wal2json",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "000000010000000000000002.json": {
+              "name": "000000010000000000000002.json",
+              "path": "pgcopydb.git/tests/cdc-wal2json/000000010000000000000002.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "000000010000000000000002.sql": {
+              "name": "000000010000000000000002.sql",
+              "path": "pgcopydb.git/tests/cdc-wal2json/000000010000000000000002.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "pgcopydb.git/tests/cdc-wal2json/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.pg": {
+              "name": "Dockerfile.pg",
+              "path": "pgcopydb.git/tests/cdc-wal2json/Dockerfile.pg",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "pgcopydb.git/tests/cdc-wal2json/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "pgcopydb.git/tests/cdc-wal2json/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copydb.sh": {
+              "name": "copydb.sh",
+              "path": "pgcopydb.git/tests/cdc-wal2json/copydb.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ddl.sql": {
+              "name": "ddl.sql",
+              "path": "pgcopydb.git/tests/cdc-wal2json/ddl.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dml.sql": {
+              "name": "dml.sql",
+              "path": "pgcopydb.git/tests/cdc-wal2json/dml.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "pgcopydb.git/tests/cdc-wal2json/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "extensions": {
+          "name": "extensions",
+          "path": "pgcopydb.git/tests/extensions",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "pgcopydb.git/tests/extensions/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.pg": {
+              "name": "Dockerfile.pg",
+              "path": "pgcopydb.git/tests/extensions/Dockerfile.pg",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "pgcopydb.git/tests/extensions/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "pgcopydb.git/tests/extensions/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copydb.sh": {
+              "name": "copydb.sh",
+              "path": "pgcopydb.git/tests/extensions/copydb.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "countries.sql": {
+              "name": "countries.sql",
+              "path": "pgcopydb.git/tests/extensions/countries.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "pgcopydb.git/tests/extensions/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "filtering": {
+          "name": "filtering",
+          "path": "pgcopydb.git/tests/filtering",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "pgcopydb.git/tests/filtering/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "pgcopydb.git/tests/filtering/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copydb.sh": {
+              "name": "copydb.sh",
+              "path": "pgcopydb.git/tests/filtering/copydb.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "pgcopydb.git/tests/filtering/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "exclude.ini": {
+              "name": "exclude.ini",
+              "path": "pgcopydb.git/tests/filtering/exclude.ini",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "expected": {
+              "name": "expected",
+              "path": "pgcopydb.git/tests/filtering/expected",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "1-empty-rental.out": {
+                  "name": "1-empty-rental.out",
+                  "path": "pgcopydb.git/tests/filtering/expected/1-empty-rental.out",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "2-payment-does-not-exists.out": {
+                  "name": "2-payment-does-not-exists.out",
+                  "path": "pgcopydb.git/tests/filtering/expected/2-payment-does-not-exists.out",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "include.ini": {
+              "name": "include.ini",
+              "path": "pgcopydb.git/tests/filtering/include.ini",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sql": {
+              "name": "sql",
+              "path": "pgcopydb.git/tests/filtering/sql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "1-empty-rental.sql": {
+                  "name": "1-empty-rental.sql",
+                  "path": "pgcopydb.git/tests/filtering/sql/1-empty-rental.sql",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "2-payment-does-not-exists.sql": {
+                  "name": "2-payment-does-not-exists.sql",
+                  "path": "pgcopydb.git/tests/filtering/sql/2-payment-does-not-exists.sql",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "follow-9.6": {
+          "name": "follow-9.6",
+          "path": "pgcopydb.git/tests/follow-9.6",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "pgcopydb.git/tests/follow-9.6/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.inject": {
+              "name": "Dockerfile.inject",
+              "path": "pgcopydb.git/tests/follow-9.6/Dockerfile.inject",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.pg": {
+              "name": "Dockerfile.pg",
+              "path": "pgcopydb.git/tests/follow-9.6/Dockerfile.pg",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "pgcopydb.git/tests/follow-9.6/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "pgcopydb.git/tests/follow-9.6/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "allow-logical-rep.sh": {
+              "name": "allow-logical-rep.sh",
+              "path": "pgcopydb.git/tests/follow-9.6/allow-logical-rep.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copydb.sh": {
+              "name": "copydb.sh",
+              "path": "pgcopydb.git/tests/follow-9.6/copydb.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ddl.sql": {
+              "name": "ddl.sql",
+              "path": "pgcopydb.git/tests/follow-9.6/ddl.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dml.sql": {
+              "name": "dml.sql",
+              "path": "pgcopydb.git/tests/follow-9.6/dml.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "pgcopydb.git/tests/follow-9.6/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "inject.sh": {
+              "name": "inject.sh",
+              "path": "pgcopydb.git/tests/follow-9.6/inject.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "follow-wal2json": {
+          "name": "follow-wal2json",
+          "path": "pgcopydb.git/tests/follow-wal2json",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "pgcopydb.git/tests/follow-wal2json/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.inject": {
+              "name": "Dockerfile.inject",
+              "path": "pgcopydb.git/tests/follow-wal2json/Dockerfile.inject",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.pg": {
+              "name": "Dockerfile.pg",
+              "path": "pgcopydb.git/tests/follow-wal2json/Dockerfile.pg",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "pgcopydb.git/tests/follow-wal2json/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "pgcopydb.git/tests/follow-wal2json/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copydb.sh": {
+              "name": "copydb.sh",
+              "path": "pgcopydb.git/tests/follow-wal2json/copydb.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ddl.sql": {
+              "name": "ddl.sql",
+              "path": "pgcopydb.git/tests/follow-wal2json/ddl.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "dml.sql": {
+              "name": "dml.sql",
+              "path": "pgcopydb.git/tests/follow-wal2json/dml.sql",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "pgcopydb.git/tests/follow-wal2json/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "inject.sh": {
+              "name": "inject.sh",
+              "path": "pgcopydb.git/tests/follow-wal2json/inject.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "pagila": {
+          "name": "pagila",
+          "path": "pgcopydb.git/tests/pagila",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "pgcopydb.git/tests/pagila/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "pgcopydb.git/tests/pagila/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copydb.sh": {
+              "name": "copydb.sh",
+              "path": "pgcopydb.git/tests/pagila/copydb.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "pgcopydb.git/tests/pagila/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "pagila-multi-steps": {
+          "name": "pagila-multi-steps",
+          "path": "pgcopydb.git/tests/pagila-multi-steps",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "pgcopydb.git/tests/pagila-multi-steps/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "pgcopydb.git/tests/pagila-multi-steps/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copydb.sh": {
+              "name": "copydb.sh",
+              "path": "pgcopydb.git/tests/pagila-multi-steps/copydb.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "pgcopydb.git/tests/pagila-multi-steps/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            }
+          }
+        },
+        "unit": {
+          "name": "unit",
+          "path": "pgcopydb.git/tests/unit",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "pgcopydb.git/tests/unit/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Makefile": {
+              "name": "Makefile",
+              "path": "pgcopydb.git/tests/unit/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "pgcopydb.git/tests/unit/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copydb.sh": {
+              "name": "copydb.sh",
+              "path": "pgcopydb.git/tests/unit/copydb.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docker-compose.yml": {
+              "name": "docker-compose.yml",
+              "path": "pgcopydb.git/tests/unit/docker-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "expected": {
+              "name": "expected",
+              "path": "pgcopydb.git/tests/unit/expected",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "1-exclusion-constraints.out": {
+                  "name": "1-exclusion-constraints.out",
+                  "path": "pgcopydb.git/tests/unit/expected/1-exclusion-constraints.out",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "2-inherit.out": {
+                  "name": "2-inherit.out",
+                  "path": "pgcopydb.git/tests/unit/expected/2-inherit.out",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "setup": {
+              "name": "setup",
+              "path": "pgcopydb.git/tests/unit/setup",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "1-exclusion-constraints.sql": {
+                  "name": "1-exclusion-constraints.sql",
+                  "path": "pgcopydb.git/tests/unit/setup/1-exclusion-constraints.sql",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "2-inherit.sql": {
+                  "name": "2-inherit.sql",
+                  "path": "pgcopydb.git/tests/unit/setup/2-inherit.sql",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "3-collation.sql": {
+                  "name": "3-collation.sql",
+                  "path": "pgcopydb.git/tests/unit/setup/3-collation.sql",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "setup.sql": {
+                  "name": "setup.sql",
+                  "path": "pgcopydb.git/tests/unit/setup/setup.sql",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "sql": {
+              "name": "sql",
+              "path": "pgcopydb.git/tests/unit/sql",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "1-exclusion-constraints.sql": {
+                  "name": "1-exclusion-constraints.sql",
+                  "path": "pgcopydb.git/tests/unit/sql/1-exclusion-constraints.sql",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "2-inherit.sql": {
+                  "name": "2-inherit.sql",
+                  "path": "pgcopydb.git/tests/unit/sql/2-inherit.sql",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 440229033,
+    "name": "pgcopydb",
+    "full_name": "dimitri/pgcopydb",
+    "owner": {
+      "login": "dimitri",
+      "html_url": "https://github.com/dimitri",
+      "type": "User"
+    },
+    "html_url": "https://github.com/dimitri/pgcopydb",
+    "description": "Copy a Postgres database to a target Postgres server (pg_dump | pg_restore on steroids)",
+    "url": "https://api.github.com/repos/dimitri/pgcopydb",
+    "clone_url": "https://github.com/dimitri/pgcopydb.git",
+    "homepage": null,
+    "size": 16728,
+    "stargazers_count": 606,
+    "watchers_count": 606,
+    "language": "C"
+  }
+}

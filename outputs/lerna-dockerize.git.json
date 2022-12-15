@@ -1,0 +1,2364 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 28,
+      "rootCount": 0,
+      "subFolderCount": 28,
+      "filepaths": [
+        "lerna-dockerize.git/packages/generate/src/read-dockerfile.ts",
+        "lerna-dockerize.git/packages/generate/test/read-dockerfile.spec.ts",
+        "lerna-dockerize.git/packages/init/templates/Dockerfile.base",
+        "lerna-dockerize.git/packages/init/templates/Dockerfile.template",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/Dockerfile.base",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/Dockerfile.expected",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/Dockerfile.template",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/Dockerfile.base",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/Dockerfile.expected",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/Dockerfile.template",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/Dockerfile.base",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/Dockerfile.expected",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/Dockerfile.template",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/Dockerfile.base",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/Dockerfile.expected",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/Dockerfile.template",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/packages/b/Dockerfile",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/Dockerfile.base",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/Dockerfile.expected",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/Dockerfile.template",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/packages/a/Dockerfile",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/Dockerfile.base",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/Dockerfile.expected",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/Dockerfile.template",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/Dockerfile.base",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/Dockerfile.expected",
+        "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/Dockerfile.template"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".editorconfig": {
+      "name": ".editorconfig",
+      "path": "lerna-dockerize.git/.editorconfig",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "lerna-dockerize.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "lerna-dockerize.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "lerna-dockerize.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "lerna-dockerize.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "lerna-dockerize.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "lerna-dockerize.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "lerna-dockerize.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "lerna-dockerize.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "lerna-dockerize.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "lerna-dockerize.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "lerna-dockerize.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "lerna-dockerize.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "lerna-dockerize.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "lerna-dockerize.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "lerna-dockerize.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "lerna-dockerize.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "lerna-dockerize.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "lerna-dockerize.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "lerna-dockerize.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "lerna-dockerize.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "lerna-dockerize.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "lerna-dockerize.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "lerna-dockerize.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "lerna-dockerize.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "lerna-dockerize.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "lerna-dockerize.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "lerna-dockerize.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "lerna-dockerize.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "lerna-dockerize.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "lerna-dockerize.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "lerna-dockerize.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "lerna-dockerize.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-6c5dfa652e14834d5b65ff0d90519ccc83f26045.idx": {
+                  "name": "pack-6c5dfa652e14834d5b65ff0d90519ccc83f26045.idx",
+                  "path": "lerna-dockerize.git/.git/objects/pack/pack-6c5dfa652e14834d5b65ff0d90519ccc83f26045.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-6c5dfa652e14834d5b65ff0d90519ccc83f26045.pack": {
+                  "name": "pack-6c5dfa652e14834d5b65ff0d90519ccc83f26045.pack",
+                  "path": "lerna-dockerize.git/.git/objects/pack/pack-6c5dfa652e14834d5b65ff0d90519ccc83f26045.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "lerna-dockerize.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "lerna-dockerize.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "lerna-dockerize.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "lerna-dockerize.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "lerna-dockerize.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "lerna-dockerize.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "lerna-dockerize.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "lerna-dockerize.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "lerna-dockerize.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "lerna-dockerize.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CONTRIBUTING.md": {
+          "name": "CONTRIBUTING.md",
+          "path": "lerna-dockerize.git/.github/CONTRIBUTING.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "lerna-dockerize.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "bug_report.md": {
+              "name": "bug_report.md",
+              "path": "lerna-dockerize.git/.github/ISSUE_TEMPLATE/bug_report.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "feature_request.md": {
+              "name": "feature_request.md",
+              "path": "lerna-dockerize.git/.github/ISSUE_TEMPLATE/feature_request.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "dependabot.yml": {
+          "name": "dependabot.yml",
+          "path": "lerna-dockerize.git/.github/dependabot.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "lerna-dockerize.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "build-and-test.yml": {
+              "name": "build-and-test.yml",
+              "path": "lerna-dockerize.git/.github/workflows/build-and-test.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "njsscan-analysis.yml": {
+              "name": "njsscan-analysis.yml",
+              "path": "lerna-dockerize.git/.github/workflows/njsscan-analysis.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-release.yml": {
+              "name": "pre-release.yml",
+              "path": "lerna-dockerize.git/.github/workflows/pre-release.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "release.yml": {
+              "name": "release.yml",
+              "path": "lerna-dockerize.git/.github/workflows/release.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "lerna-dockerize.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CHANGELOG.md": {
+      "name": "CHANGELOG.md",
+      "path": "lerna-dockerize.git/CHANGELOG.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE.txt": {
+      "name": "LICENSE.txt",
+      "path": "lerna-dockerize.git/LICENSE.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "lerna-dockerize.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "lerna.json": {
+      "name": "lerna.json",
+      "path": "lerna-dockerize.git/lerna.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "package-lock.json": {
+      "name": "package-lock.json",
+      "path": "lerna-dockerize.git/package-lock.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "package.json": {
+      "name": "package.json",
+      "path": "lerna-dockerize.git/package.json",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "packages": {
+      "name": "packages",
+      "path": "lerna-dockerize.git/packages",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "cli": {
+          "name": "cli",
+          "path": "lerna-dockerize.git/packages/cli",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".eslintignore": {
+              "name": ".eslintignore",
+              "path": "lerna-dockerize.git/packages/cli/.eslintignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            ".eslintrc.js": {
+              "name": ".eslintrc.js",
+              "path": "lerna-dockerize.git/packages/cli/.eslintrc.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "CHANGELOG.md": {
+              "name": "CHANGELOG.md",
+              "path": "lerna-dockerize.git/packages/cli/CHANGELOG.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "LICENSE": {
+              "name": "LICENSE",
+              "path": "lerna-dockerize.git/packages/cli/LICENSE",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "lerna-dockerize.git/packages/cli/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "jasmine.json": {
+              "name": "jasmine.json",
+              "path": "lerna-dockerize.git/packages/cli/jasmine.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nycrc.txt": {
+              "name": "nycrc.txt",
+              "path": "lerna-dockerize.git/packages/cli/nycrc.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package-lock.json": {
+              "name": "package-lock.json",
+              "path": "lerna-dockerize.git/packages/cli/package-lock.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package.json": {
+              "name": "package.json",
+              "path": "lerna-dockerize.git/packages/cli/package.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "lerna-dockerize.git/packages/cli/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.ts": {
+                  "name": "index.ts",
+                  "path": "lerna-dockerize.git/packages/cli/src/index.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test": {
+              "name": "test",
+              "path": "lerna-dockerize.git/packages/cli/test",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "test.spec.ts": {
+                  "name": "test.spec.ts",
+                  "path": "lerna-dockerize.git/packages/cli/test/test.spec.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tsconfig.json": {
+                  "name": "tsconfig.json",
+                  "path": "lerna-dockerize.git/packages/cli/test/tsconfig.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "tsconfig.json": {
+              "name": "tsconfig.json",
+              "path": "lerna-dockerize.git/packages/cli/tsconfig.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tsconfig.test.json": {
+              "name": "tsconfig.test.json",
+              "path": "lerna-dockerize.git/packages/cli/tsconfig.test.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "generate": {
+          "name": "generate",
+          "path": "lerna-dockerize.git/packages/generate",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".eslintignore": {
+              "name": ".eslintignore",
+              "path": "lerna-dockerize.git/packages/generate/.eslintignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            ".eslintrc.js": {
+              "name": ".eslintrc.js",
+              "path": "lerna-dockerize.git/packages/generate/.eslintrc.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "CHANGELOG.md": {
+              "name": "CHANGELOG.md",
+              "path": "lerna-dockerize.git/packages/generate/CHANGELOG.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "LICENSE": {
+              "name": "LICENSE",
+              "path": "lerna-dockerize.git/packages/generate/LICENSE",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "lerna-dockerize.git/packages/generate/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "bin": {
+              "name": "bin",
+              "path": "lerna-dockerize.git/packages/generate/bin",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "jasmine.json": {
+              "name": "jasmine.json",
+              "path": "lerna-dockerize.git/packages/generate/jasmine.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nycrc.txt": {
+              "name": "nycrc.txt",
+              "path": "lerna-dockerize.git/packages/generate/nycrc.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package-lock.json": {
+              "name": "package-lock.json",
+              "path": "lerna-dockerize.git/packages/generate/package-lock.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package.json": {
+              "name": "package.json",
+              "path": "lerna-dockerize.git/packages/generate/package.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "lerna-dockerize.git/packages/generate/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "args.ts": {
+                  "name": "args.ts",
+                  "path": "lerna-dockerize.git/packages/generate/src/args.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "bin.ts": {
+                  "name": "bin.ts",
+                  "path": "lerna-dockerize.git/packages/generate/src/bin.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "extended-docker-syntax.ts": {
+                  "name": "extended-docker-syntax.ts",
+                  "path": "lerna-dockerize.git/packages/generate/src/extended-docker-syntax.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "get-dependencies-transitive.ts": {
+                  "name": "get-dependencies-transitive.ts",
+                  "path": "lerna-dockerize.git/packages/generate/src/get-dependencies-transitive.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "index.ts": {
+                  "name": "index.ts",
+                  "path": "lerna-dockerize.git/packages/generate/src/index.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "iterate-dependencies.ts": {
+                  "name": "iterate-dependencies.ts",
+                  "path": "lerna-dockerize.git/packages/generate/src/iterate-dependencies.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "lerna-command.ts": {
+                  "name": "lerna-command.ts",
+                  "path": "lerna-dockerize.git/packages/generate/src/lerna-command.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.ts": {
+                  "name": "main.ts",
+                  "path": "lerna-dockerize.git/packages/generate/src/main.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "normalize-path.ts": {
+                  "name": "normalize-path.ts",
+                  "path": "lerna-dockerize.git/packages/generate/src/normalize-path.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "package.ts": {
+                  "name": "package.ts",
+                  "path": "lerna-dockerize.git/packages/generate/src/package.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "read-dockerfile.ts": {
+                  "name": "read-dockerfile.ts",
+                  "path": "lerna-dockerize.git/packages/generate/src/read-dockerfile.ts",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "slim-package.ts": {
+                  "name": "slim-package.ts",
+                  "path": "lerna-dockerize.git/packages/generate/src/slim-package.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test": {
+              "name": "test",
+              "path": "lerna-dockerize.git/packages/generate/test",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "normalize-path.spec.ts": {
+                  "name": "normalize-path.spec.ts",
+                  "path": "lerna-dockerize.git/packages/generate/test/normalize-path.spec.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "read-dockerfile.spec.ts": {
+                  "name": "read-dockerfile.spec.ts",
+                  "path": "lerna-dockerize.git/packages/generate/test/read-dockerfile.spec.ts",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "slim-package.spec.ts": {
+                  "name": "slim-package.spec.ts",
+                  "path": "lerna-dockerize.git/packages/generate/test/slim-package.spec.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tsconfig.json": {
+                  "name": "tsconfig.json",
+                  "path": "lerna-dockerize.git/packages/generate/test/tsconfig.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "tsconfig.json": {
+              "name": "tsconfig.json",
+              "path": "lerna-dockerize.git/packages/generate/tsconfig.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tsconfig.test.json": {
+              "name": "tsconfig.test.json",
+              "path": "lerna-dockerize.git/packages/generate/tsconfig.test.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "typings": {
+              "name": "typings",
+              "path": "lerna-dockerize.git/packages/generate/typings",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "lerna-child-process": {
+                  "name": "lerna-child-process",
+                  "path": "lerna-dockerize.git/packages/generate/typings/lerna-child-process",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.d.ts": {
+                      "name": "index.d.ts",
+                      "path": "lerna-dockerize.git/packages/generate/typings/lerna-child-process/index.d.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "lerna-command": {
+                  "name": "lerna-command",
+                  "path": "lerna-dockerize.git/packages/generate/typings/lerna-command",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.d.ts": {
+                      "name": "index.d.ts",
+                      "path": "lerna-dockerize.git/packages/generate/typings/lerna-command/index.d.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "lerna-filter-options": {
+                  "name": "lerna-filter-options",
+                  "path": "lerna-dockerize.git/packages/generate/typings/lerna-filter-options",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.d.ts": {
+                      "name": "index.d.ts",
+                      "path": "lerna-dockerize.git/packages/generate/typings/lerna-filter-options/index.d.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "lerna-package": {
+                  "name": "lerna-package",
+                  "path": "lerna-dockerize.git/packages/generate/typings/lerna-package",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.d.ts": {
+                      "name": "index.d.ts",
+                      "path": "lerna-dockerize.git/packages/generate/typings/lerna-package/index.d.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "lerna-package-graph": {
+                  "name": "lerna-package-graph",
+                  "path": "lerna-dockerize.git/packages/generate/typings/lerna-package-graph",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.d.ts": {
+                      "name": "index.d.ts",
+                      "path": "lerna-dockerize.git/packages/generate/typings/lerna-package-graph/index.d.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "lerna-query-graph": {
+                  "name": "lerna-query-graph",
+                  "path": "lerna-dockerize.git/packages/generate/typings/lerna-query-graph",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.d.ts": {
+                      "name": "index.d.ts",
+                      "path": "lerna-dockerize.git/packages/generate/typings/lerna-query-graph/index.d.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "lerna-run-topologically": {
+                  "name": "lerna-run-topologically",
+                  "path": "lerna-dockerize.git/packages/generate/typings/lerna-run-topologically",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.d.ts": {
+                      "name": "index.d.ts",
+                      "path": "lerna-dockerize.git/packages/generate/typings/lerna-run-topologically/index.d.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "init": {
+          "name": "init",
+          "path": "lerna-dockerize.git/packages/init",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".eslintignore": {
+              "name": ".eslintignore",
+              "path": "lerna-dockerize.git/packages/init/.eslintignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            ".eslintrc.js": {
+              "name": ".eslintrc.js",
+              "path": "lerna-dockerize.git/packages/init/.eslintrc.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "CHANGELOG.md": {
+              "name": "CHANGELOG.md",
+              "path": "lerna-dockerize.git/packages/init/CHANGELOG.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "LICENSE": {
+              "name": "LICENSE",
+              "path": "lerna-dockerize.git/packages/init/LICENSE",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "lerna-dockerize.git/packages/init/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "bin": {
+              "name": "bin",
+              "path": "lerna-dockerize.git/packages/init/bin",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "jasmine.json": {
+              "name": "jasmine.json",
+              "path": "lerna-dockerize.git/packages/init/jasmine.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nycrc.txt": {
+              "name": "nycrc.txt",
+              "path": "lerna-dockerize.git/packages/init/nycrc.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package-lock.json": {
+              "name": "package-lock.json",
+              "path": "lerna-dockerize.git/packages/init/package-lock.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package.json": {
+              "name": "package.json",
+              "path": "lerna-dockerize.git/packages/init/package.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "lerna-dockerize.git/packages/init/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "args.ts": {
+                  "name": "args.ts",
+                  "path": "lerna-dockerize.git/packages/init/src/args.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "bin.ts": {
+                  "name": "bin.ts",
+                  "path": "lerna-dockerize.git/packages/init/src/bin.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "detect-ident.ts": {
+                  "name": "detect-ident.ts",
+                  "path": "lerna-dockerize.git/packages/init/src/detect-ident.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "index.ts": {
+                  "name": "index.ts",
+                  "path": "lerna-dockerize.git/packages/init/src/index.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.ts": {
+                  "name": "main.ts",
+                  "path": "lerna-dockerize.git/packages/init/src/main.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "templates": {
+              "name": "templates",
+              "path": "lerna-dockerize.git/packages/init/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile.base": {
+                  "name": "Dockerfile.base",
+                  "path": "lerna-dockerize.git/packages/init/templates/Dockerfile.base",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile.template": {
+                  "name": "Dockerfile.template",
+                  "path": "lerna-dockerize.git/packages/init/templates/Dockerfile.template",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test": {
+              "name": "test",
+              "path": "lerna-dockerize.git/packages/init/test",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "detect-ident.spec.ts": {
+                  "name": "detect-ident.spec.ts",
+                  "path": "lerna-dockerize.git/packages/init/test/detect-ident.spec.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tsconfig.json": {
+                  "name": "tsconfig.json",
+                  "path": "lerna-dockerize.git/packages/init/test/tsconfig.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "tsconfig.json": {
+              "name": "tsconfig.json",
+              "path": "lerna-dockerize.git/packages/init/tsconfig.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tsconfig.test.json": {
+              "name": "tsconfig.test.json",
+              "path": "lerna-dockerize.git/packages/init/tsconfig.test.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "lerna-dockerize": {
+          "name": "lerna-dockerize",
+          "path": "lerna-dockerize.git/packages/lerna-dockerize",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".eslintignore": {
+              "name": ".eslintignore",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/.eslintignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            ".eslintrc.js": {
+              "name": ".eslintrc.js",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/.eslintrc.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "CHANGELOG.md": {
+              "name": "CHANGELOG.md",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/CHANGELOG.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "LICENSE": {
+              "name": "LICENSE",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/LICENSE",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "bin": {
+              "name": "bin",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/bin",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "jasmine.json": {
+              "name": "jasmine.json",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/jasmine.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nycrc.txt": {
+              "name": "nycrc.txt",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/nycrc.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package-lock.json": {
+              "name": "package-lock.json",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/package-lock.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package.json": {
+              "name": "package.json",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/package.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.ts": {
+                  "name": "index.ts",
+                  "path": "lerna-dockerize.git/packages/lerna-dockerize/src/index.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test": {
+              "name": "test",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/test",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "integration": {
+                  "name": "integration",
+                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Readme.md": {
+                      "name": "Readme.md",
+                      "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/Readme.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "config-file": {
+                      "name": "config-file",
+                      "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Dockerfile.base": {
+                          "name": "Dockerfile.base",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/Dockerfile.base",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.expected": {
+                          "name": "Dockerfile.expected",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/Dockerfile.expected",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.template": {
+                          "name": "Dockerfile.template",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/Dockerfile.template",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "lerna.json": {
+                          "name": "lerna.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/lerna.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "package.json": {
+                          "name": "package.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/package.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "packages": {
+                          "name": "packages",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/packages",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "a": {
+                              "name": "a",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/packages/a",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/packages/a/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "b": {
+                              "name": "b",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/packages/b",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/packages/b/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "c": {
+                              "name": "c",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/packages/c",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/config-file/packages/c/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "custom_dockerfile": {
+                      "name": "custom_dockerfile",
+                      "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile",
+                      "isDir": true,
+                      "isDockerfile": true,
+                      "isComposefile": false,
+                      "children": {
+                        "Dockerfile.base": {
+                          "name": "Dockerfile.base",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/Dockerfile.base",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.expected": {
+                          "name": "Dockerfile.expected",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/Dockerfile.expected",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.template": {
+                          "name": "Dockerfile.template",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/Dockerfile.template",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "lerna.json": {
+                          "name": "lerna.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/lerna.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "package.json": {
+                          "name": "package.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/package.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "packages": {
+                          "name": "packages",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/packages",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "a": {
+                              "name": "a",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/packages/a",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/packages/a/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "b": {
+                              "name": "b",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/packages/b",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/packages/b/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "c": {
+                              "name": "c",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/packages/c",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "Dockerfile": {
+                                  "name": "Dockerfile",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/packages/c/Dockerfile",
+                                  "isDir": false,
+                                  "isDockerfile": true,
+                                  "isComposefile": false
+                                },
+                                "build.sh": {
+                                  "name": "build.sh",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/packages/c/build.sh",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/custom_dockerfile/packages/c/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "delete-if-exists.ts": {
+                      "name": "delete-if-exists.ts",
+                      "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/delete-if-exists.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "hoist": {
+                      "name": "hoist",
+                      "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Dockerfile.base": {
+                          "name": "Dockerfile.base",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/Dockerfile.base",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.expected": {
+                          "name": "Dockerfile.expected",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/Dockerfile.expected",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.template": {
+                          "name": "Dockerfile.template",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/Dockerfile.template",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "lerna.json": {
+                          "name": "lerna.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/lerna.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "package.json": {
+                          "name": "package.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/package.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "packages": {
+                          "name": "packages",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/packages",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "a": {
+                              "name": "a",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/packages/a",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/packages/a/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "b": {
+                              "name": "b",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/packages/b",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/packages/b/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "c": {
+                              "name": "c",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/packages/c",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/hoist/packages/c/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "if_exists": {
+                      "name": "if_exists",
+                      "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Dockerfile.base": {
+                          "name": "Dockerfile.base",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/Dockerfile.base",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.expected": {
+                          "name": "Dockerfile.expected",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/Dockerfile.expected",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.template": {
+                          "name": "Dockerfile.template",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/Dockerfile.template",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "lerna.json": {
+                          "name": "lerna.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/lerna.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "package.json": {
+                          "name": "package.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/package.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "packages": {
+                          "name": "packages",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/packages",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "a": {
+                              "name": "a",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/packages/a",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "build.sh": {
+                                  "name": "build.sh",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/packages/a/build.sh",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/packages/a/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "b": {
+                              "name": "b",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/packages/b",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/packages/b/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "c": {
+                              "name": "c",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/packages/c",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/if_exists/packages/c/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "integration.spec.ts": {
+                      "name": "integration.spec.ts",
+                      "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/integration.spec.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "npm_i_args": {
+                      "name": "npm_i_args",
+                      "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Dockerfile.base": {
+                          "name": "Dockerfile.base",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/Dockerfile.base",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.expected": {
+                          "name": "Dockerfile.expected",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/Dockerfile.expected",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.template": {
+                          "name": "Dockerfile.template",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/Dockerfile.template",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Readme.md": {
+                          "name": "Readme.md",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/Readme.md",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "lerna.json": {
+                          "name": "lerna.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/lerna.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "package.json": {
+                          "name": "package.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/package.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "packages": {
+                          "name": "packages",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/packages",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "a": {
+                              "name": "a",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/packages/a",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/packages/a/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "b": {
+                              "name": "b",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/packages/b",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "Dockerfile": {
+                                  "name": "Dockerfile",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/packages/b/Dockerfile",
+                                  "isDir": false,
+                                  "isDockerfile": true,
+                                  "isComposefile": false
+                                },
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/packages/b/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "c": {
+                              "name": "c",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/packages/c",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/npm_i_args/packages/c/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "pre-stage": {
+                      "name": "pre-stage",
+                      "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Dockerfile.base": {
+                          "name": "Dockerfile.base",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/Dockerfile.base",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.expected": {
+                          "name": "Dockerfile.expected",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/Dockerfile.expected",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.template": {
+                          "name": "Dockerfile.template",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/Dockerfile.template",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Readme.md": {
+                          "name": "Readme.md",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/Readme.md",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "lerna.json": {
+                          "name": "lerna.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/lerna.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "package.json": {
+                          "name": "package.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/package.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "packages": {
+                          "name": "packages",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/packages",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "a": {
+                              "name": "a",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/packages/a",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "Dockerfile": {
+                                  "name": "Dockerfile",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/packages/a/Dockerfile",
+                                  "isDir": false,
+                                  "isDockerfile": true,
+                                  "isComposefile": false
+                                },
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/packages/a/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "b": {
+                              "name": "b",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/packages/b",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/packages/b/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "c": {
+                              "name": "c",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/packages/c",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/pre-stage/packages/c/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "run.ts": {
+                      "name": "run.ts",
+                      "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/run.ts",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "simple": {
+                      "name": "simple",
+                      "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Dockerfile.base": {
+                          "name": "Dockerfile.base",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/Dockerfile.base",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.expected": {
+                          "name": "Dockerfile.expected",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/Dockerfile.expected",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.template": {
+                          "name": "Dockerfile.template",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/Dockerfile.template",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Readme.md": {
+                          "name": "Readme.md",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/Readme.md",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "lerna.json": {
+                          "name": "lerna.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/lerna.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "package.json": {
+                          "name": "package.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/package.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "packages": {
+                          "name": "packages",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/packages",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "a": {
+                              "name": "a",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/packages/a",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/packages/a/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "b": {
+                              "name": "b",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/packages/b",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/packages/b/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "c": {
+                              "name": "c",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/packages/c",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/simple/packages/c/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "split-stages": {
+                      "name": "split-stages",
+                      "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Dockerfile.base": {
+                          "name": "Dockerfile.base",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/Dockerfile.base",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.expected": {
+                          "name": "Dockerfile.expected",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/Dockerfile.expected",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "Dockerfile.template": {
+                          "name": "Dockerfile.template",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/Dockerfile.template",
+                          "isDir": false,
+                          "isDockerfile": true,
+                          "isComposefile": false
+                        },
+                        "lerna.json": {
+                          "name": "lerna.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/lerna.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "package.json": {
+                          "name": "package.json",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/package.json",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "packages": {
+                          "name": "packages",
+                          "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/packages",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "a": {
+                              "name": "a",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/packages/a",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/packages/a/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "b": {
+                              "name": "b",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/packages/b",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/packages/b/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "c": {
+                              "name": "c",
+                              "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/packages/c",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "package.json": {
+                                  "name": "package.json",
+                                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/integration/split-stages/packages/c/package.json",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "tsconfig.json": {
+                  "name": "tsconfig.json",
+                  "path": "lerna-dockerize.git/packages/lerna-dockerize/test/tsconfig.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "tsconfig.json": {
+              "name": "tsconfig.json",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/tsconfig.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tsconfig.test.json": {
+              "name": "tsconfig.test.json",
+              "path": "lerna-dockerize.git/packages/lerna-dockerize/tsconfig.test.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logger": {
+          "name": "logger",
+          "path": "lerna-dockerize.git/packages/logger",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".eslintignore": {
+              "name": ".eslintignore",
+              "path": "lerna-dockerize.git/packages/logger/.eslintignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            ".eslintrc.js": {
+              "name": ".eslintrc.js",
+              "path": "lerna-dockerize.git/packages/logger/.eslintrc.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "CHANGELOG.md": {
+              "name": "CHANGELOG.md",
+              "path": "lerna-dockerize.git/packages/logger/CHANGELOG.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "LICENSE": {
+              "name": "LICENSE",
+              "path": "lerna-dockerize.git/packages/logger/LICENSE",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "lerna-dockerize.git/packages/logger/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "jasmine.json": {
+              "name": "jasmine.json",
+              "path": "lerna-dockerize.git/packages/logger/jasmine.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "nycrc.txt": {
+              "name": "nycrc.txt",
+              "path": "lerna-dockerize.git/packages/logger/nycrc.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package-lock.json": {
+              "name": "package-lock.json",
+              "path": "lerna-dockerize.git/packages/logger/package-lock.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package.json": {
+              "name": "package.json",
+              "path": "lerna-dockerize.git/packages/logger/package.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "src": {
+              "name": "src",
+              "path": "lerna-dockerize.git/packages/logger/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "args.ts": {
+                  "name": "args.ts",
+                  "path": "lerna-dockerize.git/packages/logger/src/args.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "index.ts": {
+                  "name": "index.ts",
+                  "path": "lerna-dockerize.git/packages/logger/src/index.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logger.ts": {
+                  "name": "logger.ts",
+                  "path": "lerna-dockerize.git/packages/logger/src/logger.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "options-of.ts": {
+                  "name": "options-of.ts",
+                  "path": "lerna-dockerize.git/packages/logger/src/options-of.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "test": {
+              "name": "test",
+              "path": "lerna-dockerize.git/packages/logger/test",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "test.spec.ts": {
+                  "name": "test.spec.ts",
+                  "path": "lerna-dockerize.git/packages/logger/test/test.spec.ts",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tsconfig.json": {
+                  "name": "tsconfig.json",
+                  "path": "lerna-dockerize.git/packages/logger/test/tsconfig.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "tsconfig.json": {
+              "name": "tsconfig.json",
+              "path": "lerna-dockerize.git/packages/logger/tsconfig.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tsconfig.test.json": {
+              "name": "tsconfig.test.json",
+              "path": "lerna-dockerize.git/packages/logger/tsconfig.test.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 360711704,
+    "name": "lerna-dockerize",
+    "full_name": "rudxde/lerna-dockerize",
+    "owner": {
+      "login": "rudxde",
+      "html_url": "https://github.com/rudxde",
+      "type": "User"
+    },
+    "html_url": "https://github.com/rudxde/lerna-dockerize",
+    "description": "lerna-dockerize is a package, that generates a dockerfile for lerna projects.",
+    "url": "https://api.github.com/repos/rudxde/lerna-dockerize",
+    "clone_url": "https://github.com/rudxde/lerna-dockerize.git",
+    "homepage": "https://github.com/rudxde/lerna-dockerize",
+    "size": 3283,
+    "stargazers_count": 28,
+    "watchers_count": 28,
+    "language": "TypeScript"
+  }
+}

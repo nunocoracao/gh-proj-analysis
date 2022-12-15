@@ -1,0 +1,4744 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 1,
+      "subFolderCount": 18,
+      "filepaths": [
+        "Open-IM-Server.git/deploy.Dockerfile",
+        "Open-IM-Server.git/deploy/dockerfiles",
+        "Open-IM-Server.git/deploy_k8s/admin_cms/admin_cms.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/api/api.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/auth/auth.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/cache/cache.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/cms_api/cms_api.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/conversation/conversation.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/demo/demo.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/friend/friend.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/group/group.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/msg/msg.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/msg_gateway/msg_gateway.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/msg_transfer/msg_transfer.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/office/office.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/organization/organization.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/push/push.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/sdk_server/sdk_server.Dockerfile",
+        "Open-IM-Server.git/deploy_k8s/user/user.Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 3,
+      "subFolderCount": 2,
+      "filepaths": [
+        "Open-IM-Server.git/docker-compose-mongos.yaml",
+        "Open-IM-Server.git/docker-compose-shard-cluster.yaml",
+        "Open-IM-Server.git/docker-compose.yaml",
+        "Open-IM-Server.git/docker-compose_cfg/datasource-compose.yaml",
+        "Open-IM-Server.git/docker-compose_cfg/prometheus-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".env": {
+      "name": ".env",
+      "path": "Open-IM-Server.git/.env",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "Open-IM-Server.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "Open-IM-Server.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "Open-IM-Server.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "Open-IM-Server.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "Open-IM-Server.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "Open-IM-Server.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "Open-IM-Server.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "Open-IM-Server.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "Open-IM-Server.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "Open-IM-Server.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "Open-IM-Server.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "Open-IM-Server.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "Open-IM-Server.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "Open-IM-Server.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "Open-IM-Server.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "Open-IM-Server.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "Open-IM-Server.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "Open-IM-Server.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "Open-IM-Server.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "Open-IM-Server.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "Open-IM-Server.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "Open-IM-Server.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "Open-IM-Server.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "Open-IM-Server.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "Open-IM-Server.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "main": {
+                      "name": "main",
+                      "path": "Open-IM-Server.git/.git/logs/refs/heads/main",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "Open-IM-Server.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "Open-IM-Server.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "Open-IM-Server.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "Open-IM-Server.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "Open-IM-Server.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "Open-IM-Server.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-6d8e6e3bc10c22406458694214e81b7b749e190b.idx": {
+                  "name": "pack-6d8e6e3bc10c22406458694214e81b7b749e190b.idx",
+                  "path": "Open-IM-Server.git/.git/objects/pack/pack-6d8e6e3bc10c22406458694214e81b7b749e190b.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-6d8e6e3bc10c22406458694214e81b7b749e190b.pack": {
+                  "name": "pack-6d8e6e3bc10c22406458694214e81b7b749e190b.pack",
+                  "path": "Open-IM-Server.git/.git/objects/pack/pack-6d8e6e3bc10c22406458694214e81b7b749e190b.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "Open-IM-Server.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "Open-IM-Server.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "Open-IM-Server.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main": {
+                  "name": "main",
+                  "path": "Open-IM-Server.git/.git/refs/heads/main",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "Open-IM-Server.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "Open-IM-Server.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "Open-IM-Server.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "Open-IM-Server.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "Open-IM-Server.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "Open-IM-Server.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "ISSUE_TEMPLATE": {
+          "name": "ISSUE_TEMPLATE",
+          "path": "Open-IM-Server.git/.github/ISSUE_TEMPLATE",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ISSUE_TEMPLATE.md": {
+              "name": "ISSUE_TEMPLATE.md",
+              "path": "Open-IM-Server.git/.github/ISSUE_TEMPLATE/ISSUE_TEMPLATE.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "deployment-issues.md": {
+              "name": "deployment-issues.md",
+              "path": "Open-IM-Server.git/.github/ISSUE_TEMPLATE/deployment-issues.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update-.md": {
+              "name": "update-.md",
+              "path": "Open-IM-Server.git/.github/ISSUE_TEMPLATE/update-.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "Open-IM-Server.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "codeql-analysis.yml": {
+              "name": "codeql-analysis.yml",
+              "path": "Open-IM-Server.git/.github/workflows/codeql-analysis.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "Open-IM-Server.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".gitmodules": {
+      "name": ".gitmodules",
+      "path": "Open-IM-Server.git/.gitmodules",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "Open-IM-Server.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "Open-IM-Server.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "cmd": {
+      "name": "cmd",
+      "path": "Open-IM-Server.git/cmd",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Open-IM-SDK-Core": {
+          "name": "Open-IM-SDK-Core",
+          "path": "Open-IM-Server.git/cmd/Open-IM-SDK-Core",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {}
+        },
+        "open_im_api": {
+          "name": "open_im_api",
+          "path": "Open-IM-Server.git/cmd/open_im_api",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "Open-IM-Server.git/cmd/open_im_api/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "docs": {
+              "name": "docs",
+              "path": "Open-IM-Server.git/cmd/open_im_api/docs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "docs.go": {
+                  "name": "docs.go",
+                  "path": "Open-IM-Server.git/cmd/open_im_api/docs/docs.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "swagger.json": {
+                  "name": "swagger.json",
+                  "path": "Open-IM-Server.git/cmd/open_im_api/docs/swagger.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "swagger.yaml": {
+                  "name": "swagger.yaml",
+                  "path": "Open-IM-Server.git/cmd/open_im_api/docs/swagger.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "Open-IM-Server.git/cmd/open_im_api/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "open_im_cms_api": {
+          "name": "open_im_cms_api",
+          "path": "Open-IM-Server.git/cmd/open_im_cms_api",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "Open-IM-Server.git/cmd/open_im_cms_api/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "Open-IM-Server.git/cmd/open_im_cms_api/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "open_im_cron_task": {
+          "name": "open_im_cron_task",
+          "path": "Open-IM-Server.git/cmd/open_im_cron_task",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "Open-IM-Server.git/cmd/open_im_cron_task/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "Open-IM-Server.git/cmd/open_im_cron_task/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "open_im_demo": {
+          "name": "open_im_demo",
+          "path": "Open-IM-Server.git/cmd/open_im_demo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "Open-IM-Server.git/cmd/open_im_demo/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "Open-IM-Server.git/cmd/open_im_demo/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "open_im_msg_gateway": {
+          "name": "open_im_msg_gateway",
+          "path": "Open-IM-Server.git/cmd/open_im_msg_gateway",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "Open-IM-Server.git/cmd/open_im_msg_gateway/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "Open-IM-Server.git/cmd/open_im_msg_gateway/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "open_im_msg_transfer": {
+          "name": "open_im_msg_transfer",
+          "path": "Open-IM-Server.git/cmd/open_im_msg_transfer",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "Open-IM-Server.git/cmd/open_im_msg_transfer/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "Open-IM-Server.git/cmd/open_im_msg_transfer/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "open_im_push": {
+          "name": "open_im_push",
+          "path": "Open-IM-Server.git/cmd/open_im_push",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Makefile": {
+              "name": "Makefile",
+              "path": "Open-IM-Server.git/cmd/open_im_push/Makefile",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "main.go": {
+              "name": "main.go",
+              "path": "Open-IM-Server.git/cmd/open_im_push/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "rpc": {
+          "name": "rpc",
+          "path": "Open-IM-Server.git/cmd/rpc",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "open_im_admin_cms": {
+              "name": "open_im_admin_cms",
+              "path": "Open-IM-Server.git/cmd/rpc/open_im_admin_cms",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Makefile": {
+                  "name": "Makefile",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_admin_cms/Makefile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.go": {
+                  "name": "main.go",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_admin_cms/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "open_im_auth": {
+              "name": "open_im_auth",
+              "path": "Open-IM-Server.git/cmd/rpc/open_im_auth",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Makefile": {
+                  "name": "Makefile",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_auth/Makefile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.go": {
+                  "name": "main.go",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_auth/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "open_im_cache": {
+              "name": "open_im_cache",
+              "path": "Open-IM-Server.git/cmd/rpc/open_im_cache",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Makefile": {
+                  "name": "Makefile",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_cache/Makefile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.go": {
+                  "name": "main.go",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_cache/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "open_im_conversation": {
+              "name": "open_im_conversation",
+              "path": "Open-IM-Server.git/cmd/rpc/open_im_conversation",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Makefile": {
+                  "name": "Makefile",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_conversation/Makefile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.go": {
+                  "name": "main.go",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_conversation/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "open_im_friend": {
+              "name": "open_im_friend",
+              "path": "Open-IM-Server.git/cmd/rpc/open_im_friend",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Makefile": {
+                  "name": "Makefile",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_friend/Makefile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.go": {
+                  "name": "main.go",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_friend/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "open_im_group": {
+              "name": "open_im_group",
+              "path": "Open-IM-Server.git/cmd/rpc/open_im_group",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Makefile": {
+                  "name": "Makefile",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_group/Makefile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.go": {
+                  "name": "main.go",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_group/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "open_im_msg": {
+              "name": "open_im_msg",
+              "path": "Open-IM-Server.git/cmd/rpc/open_im_msg",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Makefile": {
+                  "name": "Makefile",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_msg/Makefile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.go": {
+                  "name": "main.go",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_msg/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "open_im_office": {
+              "name": "open_im_office",
+              "path": "Open-IM-Server.git/cmd/rpc/open_im_office",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Makefile": {
+                  "name": "Makefile",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_office/Makefile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.go": {
+                  "name": "main.go",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_office/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "open_im_organization": {
+              "name": "open_im_organization",
+              "path": "Open-IM-Server.git/cmd/rpc/open_im_organization",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Makefile": {
+                  "name": "Makefile",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_organization/Makefile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.go": {
+                  "name": "main.go",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_organization/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "open_im_user": {
+              "name": "open_im_user",
+              "path": "Open-IM-Server.git/cmd/rpc/open_im_user",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Makefile": {
+                  "name": "Makefile",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_user/Makefile",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "main.go": {
+                  "name": "main.go",
+                  "path": "Open-IM-Server.git/cmd/rpc/open_im_user/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "test": {
+          "name": "test",
+          "path": "Open-IM-Server.git/cmd/test",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "main.go": {
+              "name": "main.go",
+              "path": "Open-IM-Server.git/cmd/test/main.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "config": {
+      "name": "config",
+      "path": "Open-IM-Server.git/config",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "config.yaml": {
+          "name": "config.yaml",
+          "path": "Open-IM-Server.git/config/config.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "open-im-ng-example.conf": {
+          "name": "open-im-ng-example.conf",
+          "path": "Open-IM-Server.git/config/open-im-ng-example.conf",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "usualConfig.yaml": {
+          "name": "usualConfig.yaml",
+          "path": "Open-IM-Server.git/config/usualConfig.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "deploy": {
+      "name": "deploy",
+      "path": "Open-IM-Server.git/deploy",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".dockerignore": {
+          "name": ".dockerignore",
+          "path": "Open-IM-Server.git/deploy/.dockerignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Makefile": {
+          "name": "Makefile",
+          "path": "Open-IM-Server.git/deploy/Makefile",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config.example.yaml": {
+          "name": "config.example.yaml",
+          "path": "Open-IM-Server.git/deploy/config.example.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "dockerfiles": {
+          "name": "dockerfiles",
+          "path": "Open-IM-Server.git/deploy/dockerfiles",
+          "isDir": true,
+          "isDockerfile": true,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile.api": {
+              "name": "Dockerfile.api",
+              "path": "Open-IM-Server.git/deploy/dockerfiles/Dockerfile.api",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.demo": {
+              "name": "Dockerfile.demo",
+              "path": "Open-IM-Server.git/deploy/dockerfiles/Dockerfile.demo",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.msg_gateway": {
+              "name": "Dockerfile.msg_gateway",
+              "path": "Open-IM-Server.git/deploy/dockerfiles/Dockerfile.msg_gateway",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.msg_transfer": {
+              "name": "Dockerfile.msg_transfer",
+              "path": "Open-IM-Server.git/deploy/dockerfiles/Dockerfile.msg_transfer",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.push": {
+              "name": "Dockerfile.push",
+              "path": "Open-IM-Server.git/deploy/dockerfiles/Dockerfile.push",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.rpc_auth": {
+              "name": "Dockerfile.rpc_auth",
+              "path": "Open-IM-Server.git/deploy/dockerfiles/Dockerfile.rpc_auth",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.rpc_friend": {
+              "name": "Dockerfile.rpc_friend",
+              "path": "Open-IM-Server.git/deploy/dockerfiles/Dockerfile.rpc_friend",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.rpc_group": {
+              "name": "Dockerfile.rpc_group",
+              "path": "Open-IM-Server.git/deploy/dockerfiles/Dockerfile.rpc_group",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.rpc_msg": {
+              "name": "Dockerfile.rpc_msg",
+              "path": "Open-IM-Server.git/deploy/dockerfiles/Dockerfile.rpc_msg",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.rpc_user": {
+              "name": "Dockerfile.rpc_user",
+              "path": "Open-IM-Server.git/deploy/dockerfiles/Dockerfile.rpc_user",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "Dockerfile.timer_task": {
+              "name": "Dockerfile.timer_task",
+              "path": "Open-IM-Server.git/deploy/dockerfiles/Dockerfile.timer_task",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "env.yaml": {
+          "name": "env.yaml",
+          "path": "Open-IM-Server.git/deploy/env.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "openim.yaml": {
+          "name": "openim.yaml",
+          "path": "Open-IM-Server.git/deploy/openim.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "readme.md": {
+          "name": "readme.md",
+          "path": "Open-IM-Server.git/deploy/readme.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "deploy.Dockerfile": {
+      "name": "deploy.Dockerfile",
+      "path": "Open-IM-Server.git/deploy.Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "deploy_k8s": {
+      "name": "deploy_k8s",
+      "path": "Open-IM-Server.git/deploy_k8s",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "admin_cms": {
+          "name": "admin_cms",
+          "path": "Open-IM-Server.git/deploy_k8s/admin_cms",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "admin_cms.Dockerfile": {
+              "name": "admin_cms.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/admin_cms/admin_cms.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/admin_cms/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "api": {
+          "name": "api",
+          "path": "Open-IM-Server.git/deploy_k8s/api",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "api.Dockerfile": {
+              "name": "api.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/api/api.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/api/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "auth": {
+          "name": "auth",
+          "path": "Open-IM-Server.git/deploy_k8s/auth",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "auth.Dockerfile": {
+              "name": "auth.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/auth/auth.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/auth/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "build_push_all_images.sh": {
+          "name": "build_push_all_images.sh",
+          "path": "Open-IM-Server.git/deploy_k8s/build_push_all_images.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "cache": {
+          "name": "cache",
+          "path": "Open-IM-Server.git/deploy_k8s/cache",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cache.Dockerfile": {
+              "name": "cache.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/cache/cache.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/cache/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "cms_api": {
+          "name": "cms_api",
+          "path": "Open-IM-Server.git/deploy_k8s/cms_api",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cms_api.Dockerfile": {
+              "name": "cms_api.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/cms_api/cms_api.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/cms_api/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "conversation": {
+          "name": "conversation",
+          "path": "Open-IM-Server.git/deploy_k8s/conversation",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "conversation.Dockerfile": {
+              "name": "conversation.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/conversation/conversation.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/conversation/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "demo": {
+          "name": "demo",
+          "path": "Open-IM-Server.git/deploy_k8s/demo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "demo.Dockerfile": {
+              "name": "demo.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/demo/demo.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/demo/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "friend": {
+          "name": "friend",
+          "path": "Open-IM-Server.git/deploy_k8s/friend",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/friend/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "friend.Dockerfile": {
+              "name": "friend.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/friend/friend.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "group": {
+          "name": "group",
+          "path": "Open-IM-Server.git/deploy_k8s/group",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/group/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "group.Dockerfile": {
+              "name": "group.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/group/group.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "ingress.yaml": {
+          "name": "ingress.yaml",
+          "path": "Open-IM-Server.git/deploy_k8s/ingress.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "k8s_openim_deploy.md": {
+          "name": "k8s_openim_deploy.md",
+          "path": "Open-IM-Server.git/deploy_k8s/k8s_openim_deploy.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kubectl_start_all.sh": {
+          "name": "kubectl_start_all.sh",
+          "path": "Open-IM-Server.git/deploy_k8s/kubectl_start_all.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "kubectl_stop_all.sh": {
+          "name": "kubectl_stop_all.sh",
+          "path": "Open-IM-Server.git/deploy_k8s/kubectl_stop_all.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "msg": {
+          "name": "msg",
+          "path": "Open-IM-Server.git/deploy_k8s/msg",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/msg/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "msg.Dockerfile": {
+              "name": "msg.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/msg/msg.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "msg_gateway": {
+          "name": "msg_gateway",
+          "path": "Open-IM-Server.git/deploy_k8s/msg_gateway",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/msg_gateway/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "msg_gateway.Dockerfile": {
+              "name": "msg_gateway.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/msg_gateway/msg_gateway.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "msg_transfer": {
+          "name": "msg_transfer",
+          "path": "Open-IM-Server.git/deploy_k8s/msg_transfer",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/msg_transfer/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "msg_transfer.Dockerfile": {
+              "name": "msg_transfer.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/msg_transfer/msg_transfer.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "office": {
+          "name": "office",
+          "path": "Open-IM-Server.git/deploy_k8s/office",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/office/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "office.Dockerfile": {
+              "name": "office.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/office/office.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "organization": {
+          "name": "organization",
+          "path": "Open-IM-Server.git/deploy_k8s/organization",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/organization/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "organization.Dockerfile": {
+              "name": "organization.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/organization/organization.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "path_info.cfg": {
+          "name": "path_info.cfg",
+          "path": "Open-IM-Server.git/deploy_k8s/path_info.cfg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "push": {
+          "name": "push",
+          "path": "Open-IM-Server.git/deploy_k8s/push",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/push/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push.Dockerfile": {
+              "name": "push.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/push/push.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "sdk_server": {
+          "name": "sdk_server",
+          "path": "Open-IM-Server.git/deploy_k8s/sdk_server",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/sdk_server/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sdk_server.Dockerfile": {
+              "name": "sdk_server.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/sdk_server/sdk_server.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "user": {
+          "name": "user",
+          "path": "Open-IM-Server.git/deploy_k8s/user",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "deployment.yaml": {
+              "name": "deployment.yaml",
+              "path": "Open-IM-Server.git/deploy_k8s/user/deployment.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "user.Dockerfile": {
+              "name": "user.Dockerfile",
+              "path": "Open-IM-Server.git/deploy_k8s/user/user.Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "docker-compose-mongos.yaml": {
+      "name": "docker-compose-mongos.yaml",
+      "path": "Open-IM-Server.git/docker-compose-mongos.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "docker-compose-shard-cluster.yaml": {
+      "name": "docker-compose-shard-cluster.yaml",
+      "path": "Open-IM-Server.git/docker-compose-shard-cluster.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "docker-compose.yaml": {
+      "name": "docker-compose.yaml",
+      "path": "Open-IM-Server.git/docker-compose.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "docker-compose_cfg": {
+      "name": "docker-compose_cfg",
+      "path": "Open-IM-Server.git/docker-compose_cfg",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "config.yaml": {
+          "name": "config.yaml",
+          "path": "Open-IM-Server.git/docker-compose_cfg/config.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "datasource-compose.yaml": {
+          "name": "datasource-compose.yaml",
+          "path": "Open-IM-Server.git/docker-compose_cfg/datasource-compose.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "grafana.db": {
+          "name": "grafana.db",
+          "path": "Open-IM-Server.git/docker-compose_cfg/grafana.db",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "grafana.ini": {
+          "name": "grafana.ini",
+          "path": "Open-IM-Server.git/docker-compose_cfg/grafana.ini",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "node-exporter-full_rev1.json": {
+          "name": "node-exporter-full_rev1.json",
+          "path": "Open-IM-Server.git/docker-compose_cfg/node-exporter-full_rev1.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "prometheus-compose.yml": {
+          "name": "prometheus-compose.yml",
+          "path": "Open-IM-Server.git/docker-compose_cfg/prometheus-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "docs": {
+      "name": "docs",
+      "path": "Open-IM-Server.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Architecture.jpg": {
+          "name": "Architecture.jpg",
+          "path": "Open-IM-Server.git/docs/Architecture.jpg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Open-IM-Servers-on-System.png": {
+          "name": "Open-IM-Servers-on-System.png",
+          "path": "Open-IM-Server.git/docs/Open-IM-Servers-on-System.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Open-IM-Servers-on-docker.png": {
+          "name": "Open-IM-Servers-on-docker.png",
+          "path": "Open-IM-Server.git/docs/Open-IM-Servers-on-docker.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Open-IM.png": {
+          "name": "Open-IM.png",
+          "path": "Open-IM-Server.git/docs/Open-IM.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "Wechat.jpg": {
+          "name": "Wechat.jpg",
+          "path": "Open-IM-Server.git/docs/Wechat.jpg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "open-im-logo.png": {
+          "name": "open-im-logo.png",
+          "path": "Open-IM-Server.git/docs/open-im-logo.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "open-im-server.png": {
+          "name": "open-im-server.png",
+          "path": "Open-IM-Server.git/docs/open-im-server.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "go.mod": {
+      "name": "go.mod",
+      "path": "Open-IM-Server.git/go.mod",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "go.sum": {
+      "name": "go.sum",
+      "path": "Open-IM-Server.git/go.sum",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "init_docker.sh": {
+      "name": "init_docker.sh",
+      "path": "Open-IM-Server.git/init_docker.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "install_im_server.sh": {
+      "name": "install_im_server.sh",
+      "path": "Open-IM-Server.git/install_im_server.sh",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "internal": {
+      "name": "internal",
+      "path": "Open-IM-Server.git/internal",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "api": {
+          "name": "api",
+          "path": "Open-IM-Server.git/internal/api",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "auth": {
+              "name": "auth",
+              "path": "Open-IM-Server.git/internal/api/auth",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "auth.go": {
+                  "name": "auth.go",
+                  "path": "Open-IM-Server.git/internal/api/auth/auth.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "client_init": {
+              "name": "client_init",
+              "path": "Open-IM-Server.git/internal/api/client_init",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "init_config.go": {
+                  "name": "init_config.go",
+                  "path": "Open-IM-Server.git/internal/api/client_init/init_config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "conversation": {
+              "name": "conversation",
+              "path": "Open-IM-Server.git/internal/api/conversation",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "conversation.go": {
+                  "name": "conversation.go",
+                  "path": "Open-IM-Server.git/internal/api/conversation/conversation.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "friend": {
+              "name": "friend",
+              "path": "Open-IM-Server.git/internal/api/friend",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "friend.go": {
+                  "name": "friend.go",
+                  "path": "Open-IM-Server.git/internal/api/friend/friend.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "group": {
+              "name": "group",
+              "path": "Open-IM-Server.git/internal/api/group",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "group.go": {
+                  "name": "group.go",
+                  "path": "Open-IM-Server.git/internal/api/group/group.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "super_group.go": {
+                  "name": "super_group.go",
+                  "path": "Open-IM-Server.git/internal/api/group/super_group.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "manage": {
+              "name": "manage",
+              "path": "Open-IM-Server.git/internal/api/manage",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "management_chat.go": {
+                  "name": "management_chat.go",
+                  "path": "Open-IM-Server.git/internal/api/manage/management_chat.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "management_user.go": {
+                  "name": "management_user.go",
+                  "path": "Open-IM-Server.git/internal/api/manage/management_user.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "msg": {
+              "name": "msg",
+              "path": "Open-IM-Server.git/internal/api/msg",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "del_msg.go": {
+                  "name": "del_msg.go",
+                  "path": "Open-IM-Server.git/internal/api/msg/del_msg.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "get_max_min_seq.go": {
+                  "name": "get_max_min_seq.go",
+                  "path": "Open-IM-Server.git/internal/api/msg/get_max_min_seq.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pull_msg.go": {
+                  "name": "pull_msg.go",
+                  "path": "Open-IM-Server.git/internal/api/msg/pull_msg.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "send_msg.go": {
+                  "name": "send_msg.go",
+                  "path": "Open-IM-Server.git/internal/api/msg/send_msg.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "office": {
+              "name": "office",
+              "path": "Open-IM-Server.git/internal/api/office",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "tag.go": {
+                  "name": "tag.go",
+                  "path": "Open-IM-Server.git/internal/api/office/tag.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "work_moments.go": {
+                  "name": "work_moments.go",
+                  "path": "Open-IM-Server.git/internal/api/office/work_moments.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "organization": {
+              "name": "organization",
+              "path": "Open-IM-Server.git/internal/api/organization",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "organization.go": {
+                  "name": "organization.go",
+                  "path": "Open-IM-Server.git/internal/api/organization/organization.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "third": {
+              "name": "third",
+              "path": "Open-IM-Server.git/internal/api/third",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "ali_oss_credential.go": {
+                  "name": "ali_oss_credential.go",
+                  "path": "Open-IM-Server.git/internal/api/third/ali_oss_credential.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "aws_storage_credential.go": {
+                  "name": "aws_storage_credential.go",
+                  "path": "Open-IM-Server.git/internal/api/third/aws_storage_credential.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fcm_update_token.go": {
+                  "name": "fcm_update_token.go",
+                  "path": "Open-IM-Server.git/internal/api/third/fcm_update_token.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "minio_init.go": {
+                  "name": "minio_init.go",
+                  "path": "Open-IM-Server.git/internal/api/third/minio_init.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "minio_storage_credential.go": {
+                  "name": "minio_storage_credential.go",
+                  "path": "Open-IM-Server.git/internal/api/third/minio_storage_credential.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rtc.go": {
+                  "name": "rtc.go",
+                  "path": "Open-IM-Server.git/internal/api/third/rtc.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "set_app_badge.go": {
+                  "name": "set_app_badge.go",
+                  "path": "Open-IM-Server.git/internal/api/third/set_app_badge.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tencent_cloud_storage_credential.go": {
+                  "name": "tencent_cloud_storage_credential.go",
+                  "path": "Open-IM-Server.git/internal/api/third/tencent_cloud_storage_credential.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "user": {
+              "name": "user",
+              "path": "Open-IM-Server.git/internal/api/user",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "user.go": {
+                  "name": "user.go",
+                  "path": "Open-IM-Server.git/internal/api/user/user.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "cms_api": {
+          "name": "cms_api",
+          "path": "Open-IM-Server.git/internal/cms_api",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "admin": {
+              "name": "admin",
+              "path": "Open-IM-Server.git/internal/cms_api/admin",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "admin.go": {
+                  "name": "admin.go",
+                  "path": "Open-IM-Server.git/internal/cms_api/admin/admin.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "friend": {
+              "name": "friend",
+              "path": "Open-IM-Server.git/internal/cms_api/friend",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "friend.go": {
+                  "name": "friend.go",
+                  "path": "Open-IM-Server.git/internal/cms_api/friend/friend.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "group": {
+              "name": "group",
+              "path": "Open-IM-Server.git/internal/cms_api/group",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "group.go": {
+                  "name": "group.go",
+                  "path": "Open-IM-Server.git/internal/cms_api/group/group.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "message_cms": {
+              "name": "message_cms",
+              "path": "Open-IM-Server.git/internal/cms_api/message_cms",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "message.go": {
+                  "name": "message.go",
+                  "path": "Open-IM-Server.git/internal/cms_api/message_cms/message.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "middleware": {
+              "name": "middleware",
+              "path": "Open-IM-Server.git/internal/cms_api/middleware",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cors.go": {
+                  "name": "cors.go",
+                  "path": "Open-IM-Server.git/internal/cms_api/middleware/cors.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "jwt_auth.go": {
+                  "name": "jwt_auth.go",
+                  "path": "Open-IM-Server.git/internal/cms_api/middleware/jwt_auth.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "prome.go": {
+              "name": "prome.go",
+              "path": "Open-IM-Server.git/internal/cms_api/prome.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "router.go": {
+              "name": "router.go",
+              "path": "Open-IM-Server.git/internal/cms_api/router.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "statistics": {
+              "name": "statistics",
+              "path": "Open-IM-Server.git/internal/cms_api/statistics",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "statistics.go": {
+                  "name": "statistics.go",
+                  "path": "Open-IM-Server.git/internal/cms_api/statistics/statistics.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "user": {
+              "name": "user",
+              "path": "Open-IM-Server.git/internal/cms_api/user",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "user.go": {
+                  "name": "user.go",
+                  "path": "Open-IM-Server.git/internal/cms_api/user/user.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "cron_task": {
+          "name": "cron_task",
+          "path": "Open-IM-Server.git/internal/cron_task",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "clear_msg.go": {
+              "name": "clear_msg.go",
+              "path": "Open-IM-Server.git/internal/cron_task/clear_msg.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "clear_msg_test.go": {
+              "name": "clear_msg_test.go",
+              "path": "Open-IM-Server.git/internal/cron_task/clear_msg_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cron_task.go": {
+              "name": "cron_task.go",
+              "path": "Open-IM-Server.git/internal/cron_task/cron_task.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test": {
+              "name": "test",
+              "path": "Open-IM-Server.git/internal/cron_task/test",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main.go": {
+                  "name": "main.go",
+                  "path": "Open-IM-Server.git/internal/cron_task/test/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "demo": {
+          "name": "demo",
+          "path": "Open-IM-Server.git/internal/demo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "register": {
+              "name": "register",
+              "path": "Open-IM-Server.git/internal/demo/register",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "CreateTencentSMSClient_test.go": {
+                  "name": "CreateTencentSMSClient_test.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/CreateTencentSMSClient_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ali_sms.go": {
+                  "name": "ali_sms.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/ali_sms.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "check_login.go": {
+                  "name": "check_login.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/check_login.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "invitation_code.go": {
+                  "name": "invitation_code.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/invitation_code.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ip_limit.go": {
+                  "name": "ip_limit.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/ip_limit.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "login.go": {
+                  "name": "login.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/login.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "onboarding_process.go": {
+                  "name": "onboarding_process.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/onboarding_process.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "register_import_friend.go": {
+                  "name": "register_import_friend.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/register_import_friend.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "reset_password.go": {
+                  "name": "reset_password.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/reset_password.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "send_code.go": {
+                  "name": "send_code.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/send_code.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "set_password.go": {
+                  "name": "set_password.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/set_password.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sms_interface.go": {
+                  "name": "sms_interface.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/sms_interface.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tencent_sms.go": {
+                  "name": "tencent_sms.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/tencent_sms.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "verify.go": {
+                  "name": "verify.go",
+                  "path": "Open-IM-Server.git/internal/demo/register/verify.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "msg_gateway": {
+          "name": "msg_gateway",
+          "path": "Open-IM-Server.git/internal/msg_gateway",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "gate": {
+              "name": "gate",
+              "path": "Open-IM-Server.git/internal/msg_gateway/gate",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "batch_push.go": {
+                  "name": "batch_push.go",
+                  "path": "Open-IM-Server.git/internal/msg_gateway/gate/batch_push.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "callback.go": {
+                  "name": "callback.go",
+                  "path": "Open-IM-Server.git/internal/msg_gateway/gate/callback.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "init.go": {
+                  "name": "init.go",
+                  "path": "Open-IM-Server.git/internal/msg_gateway/gate/init.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logic.go": {
+                  "name": "logic.go",
+                  "path": "Open-IM-Server.git/internal/msg_gateway/gate/logic.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "open_im_media": {
+                  "name": "open_im_media",
+                  "path": "Open-IM-Server.git/internal/msg_gateway/gate/open_im_media",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "room.go": {
+                      "name": "room.go",
+                      "path": "Open-IM-Server.git/internal/msg_gateway/gate/open_im_media/room.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "relay_rpc_server.go": {
+                  "name": "relay_rpc_server.go",
+                  "path": "Open-IM-Server.git/internal/msg_gateway/gate/relay_rpc_server.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "validate.go": {
+                  "name": "validate.go",
+                  "path": "Open-IM-Server.git/internal/msg_gateway/gate/validate.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ws_server.go": {
+                  "name": "ws_server.go",
+                  "path": "Open-IM-Server.git/internal/msg_gateway/gate/ws_server.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "msg_transfer": {
+          "name": "msg_transfer",
+          "path": "Open-IM-Server.git/internal/msg_transfer",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "logic": {
+              "name": "logic",
+              "path": "Open-IM-Server.git/internal/msg_transfer/logic",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "db.go": {
+                  "name": "db.go",
+                  "path": "Open-IM-Server.git/internal/msg_transfer/logic/db.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "init.go": {
+                  "name": "init.go",
+                  "path": "Open-IM-Server.git/internal/msg_transfer/logic/init.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "online_history_msg_handler.go": {
+                  "name": "online_history_msg_handler.go",
+                  "path": "Open-IM-Server.git/internal/msg_transfer/logic/online_history_msg_handler.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "online_msg_to_mongo_handler.go": {
+                  "name": "online_msg_to_mongo_handler.go",
+                  "path": "Open-IM-Server.git/internal/msg_transfer/logic/online_msg_to_mongo_handler.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "persistent_msg_handler.go": {
+                  "name": "persistent_msg_handler.go",
+                  "path": "Open-IM-Server.git/internal/msg_transfer/logic/persistent_msg_handler.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "push": {
+          "name": "push",
+          "path": "Open-IM-Server.git/internal/push",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "content_struct": {
+              "name": "content_struct",
+              "path": "Open-IM-Server.git/internal/push/content_struct",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "content.go": {
+                  "name": "content.go",
+                  "path": "Open-IM-Server.git/internal/push/content_struct/content.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "fcm": {
+              "name": "fcm",
+              "path": "Open-IM-Server.git/internal/push/fcm",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "push.go": {
+                  "name": "push.go",
+                  "path": "Open-IM-Server.git/internal/push/fcm/push.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "push_test.go": {
+                  "name": "push_test.go",
+                  "path": "Open-IM-Server.git/internal/push/fcm/push_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "getui": {
+              "name": "getui",
+              "path": "Open-IM-Server.git/internal/push/getui",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "push.go": {
+                  "name": "push.go",
+                  "path": "Open-IM-Server.git/internal/push/getui/push.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "jpush": {
+              "name": "jpush",
+              "path": "Open-IM-Server.git/internal/push/jpush",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "common": {
+                  "name": "common",
+                  "path": "Open-IM-Server.git/internal/push/jpush/common",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "JGPlatform.go": {
+                      "name": "JGPlatform.go",
+                      "path": "Open-IM-Server.git/internal/push/jpush/common/JGPlatform.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "push.go": {
+                  "name": "push.go",
+                  "path": "Open-IM-Server.git/internal/push/jpush/push.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "requestBody": {
+                  "name": "requestBody",
+                  "path": "Open-IM-Server.git/internal/push/jpush/requestBody",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "audience.go": {
+                      "name": "audience.go",
+                      "path": "Open-IM-Server.git/internal/push/jpush/requestBody/audience.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "message.go": {
+                      "name": "message.go",
+                      "path": "Open-IM-Server.git/internal/push/jpush/requestBody/message.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "notification.go": {
+                      "name": "notification.go",
+                      "path": "Open-IM-Server.git/internal/push/jpush/requestBody/notification.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "options.go": {
+                      "name": "options.go",
+                      "path": "Open-IM-Server.git/internal/push/jpush/requestBody/options.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "platform.go": {
+                      "name": "platform.go",
+                      "path": "Open-IM-Server.git/internal/push/jpush/requestBody/platform.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "pushObj.go": {
+                      "name": "pushObj.go",
+                      "path": "Open-IM-Server.git/internal/push/jpush/requestBody/pushObj.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "logic": {
+              "name": "logic",
+              "path": "Open-IM-Server.git/internal/push/logic",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "callback.go": {
+                  "name": "callback.go",
+                  "path": "Open-IM-Server.git/internal/push/logic/callback.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "init.go": {
+                  "name": "init.go",
+                  "path": "Open-IM-Server.git/internal/push/logic/init.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "push_handler.go": {
+                  "name": "push_handler.go",
+                  "path": "Open-IM-Server.git/internal/push/logic/push_handler.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "push_rpc_server.go": {
+                  "name": "push_rpc_server.go",
+                  "path": "Open-IM-Server.git/internal/push/logic/push_rpc_server.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "push_to_client.go": {
+                  "name": "push_to_client.go",
+                  "path": "Open-IM-Server.git/internal/push/logic/push_to_client.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tpns.go": {
+                  "name": "tpns.go",
+                  "path": "Open-IM-Server.git/internal/push/logic/tpns.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mobpush": {
+              "name": "mobpush",
+              "path": "Open-IM-Server.git/internal/push/mobpush",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "common": {
+                  "name": "common",
+                  "path": "Open-IM-Server.git/internal/push/mobpush/common",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "getSign.go": {
+                      "name": "getSign.go",
+                      "path": "Open-IM-Server.git/internal/push/mobpush/common/getSign.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "push.go": {
+                  "name": "push.go",
+                  "path": "Open-IM-Server.git/internal/push/mobpush/push.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "requestParams": {
+                  "name": "requestParams",
+                  "path": "Open-IM-Server.git/internal/push/mobpush/requestParams",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "pushForward.go": {
+                      "name": "pushForward.go",
+                      "path": "Open-IM-Server.git/internal/push/mobpush/requestParams/pushForward.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "pushNotify.go": {
+                      "name": "pushNotify.go",
+                      "path": "Open-IM-Server.git/internal/push/mobpush/requestParams/pushNotify.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "pushObj.go": {
+                      "name": "pushObj.go",
+                      "path": "Open-IM-Server.git/internal/push/mobpush/requestParams/pushObj.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "pushTarget.go": {
+                      "name": "pushTarget.go",
+                      "path": "Open-IM-Server.git/internal/push/mobpush/requestParams/pushTarget.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "push_interface.go": {
+              "name": "push_interface.go",
+              "path": "Open-IM-Server.git/internal/push/push_interface.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "sdk": {
+              "name": "sdk",
+              "path": "Open-IM-Server.git/internal/push/sdk",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "tpns-server-sdk-go": {
+                  "name": "tpns-server-sdk-go",
+                  "path": "Open-IM-Server.git/internal/push/sdk/tpns-server-sdk-go",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "go": {
+                      "name": "go",
+                      "path": "Open-IM-Server.git/internal/push/sdk/tpns-server-sdk-go/go",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "auth": {
+                          "name": "auth",
+                          "path": "Open-IM-Server.git/internal/push/sdk/tpns-server-sdk-go/go/auth",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "auth.go": {
+                              "name": "auth.go",
+                              "path": "Open-IM-Server.git/internal/push/sdk/tpns-server-sdk-go/go/auth/auth.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "client": {
+                          "name": "client",
+                          "path": "Open-IM-Server.git/internal/push/sdk/tpns-server-sdk-go/go/client",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "client.go": {
+                              "name": "client.go",
+                              "path": "Open-IM-Server.git/internal/push/sdk/tpns-server-sdk-go/go/client/client.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "common": {
+                          "name": "common",
+                          "path": "Open-IM-Server.git/internal/push/sdk/tpns-server-sdk-go/go/common",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "http_helper.go": {
+                              "name": "http_helper.go",
+                              "path": "Open-IM-Server.git/internal/push/sdk/tpns-server-sdk-go/go/common/http_helper.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "json_helper.go": {
+                              "name": "json_helper.go",
+                              "path": "Open-IM-Server.git/internal/push/sdk/tpns-server-sdk-go/go/common/json_helper.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        },
+                        "def.go": {
+                          "name": "def.go",
+                          "path": "Open-IM-Server.git/internal/push/sdk/tpns-server-sdk-go/go/def.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "req": {
+                          "name": "req",
+                          "path": "Open-IM-Server.git/internal/push/sdk/tpns-server-sdk-go/go/req",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "req.go": {
+                              "name": "req.go",
+                              "path": "Open-IM-Server.git/internal/push/sdk/tpns-server-sdk-go/go/req/req.go",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "rpc": {
+          "name": "rpc",
+          "path": "Open-IM-Server.git/internal/rpc",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "admin_cms": {
+              "name": "admin_cms",
+              "path": "Open-IM-Server.git/internal/rpc/admin_cms",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "admin_cms.go": {
+                  "name": "admin_cms.go",
+                  "path": "Open-IM-Server.git/internal/rpc/admin_cms/admin_cms.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "auth": {
+              "name": "auth",
+              "path": "Open-IM-Server.git/internal/rpc/auth",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "auth.go": {
+                  "name": "auth.go",
+                  "path": "Open-IM-Server.git/internal/rpc/auth/auth.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "cache": {
+              "name": "cache",
+              "path": "Open-IM-Server.git/internal/rpc/cache",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cache.go": {
+                  "name": "cache.go",
+                  "path": "Open-IM-Server.git/internal/rpc/cache/cache.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "conversation": {
+              "name": "conversation",
+              "path": "Open-IM-Server.git/internal/rpc/conversation",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "conversaion.go": {
+                  "name": "conversaion.go",
+                  "path": "Open-IM-Server.git/internal/rpc/conversation/conversaion.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "friend": {
+              "name": "friend",
+              "path": "Open-IM-Server.git/internal/rpc/friend",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "callback.go": {
+                  "name": "callback.go",
+                  "path": "Open-IM-Server.git/internal/rpc/friend/callback.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "friend.go": {
+                  "name": "friend.go",
+                  "path": "Open-IM-Server.git/internal/rpc/friend/friend.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "group": {
+              "name": "group",
+              "path": "Open-IM-Server.git/internal/rpc/group",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "callback.go": {
+                  "name": "callback.go",
+                  "path": "Open-IM-Server.git/internal/rpc/group/callback.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "group.go": {
+                  "name": "group.go",
+                  "path": "Open-IM-Server.git/internal/rpc/group/group.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "super_group.go": {
+                  "name": "super_group.go",
+                  "path": "Open-IM-Server.git/internal/rpc/group/super_group.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "msg": {
+              "name": "msg",
+              "path": "Open-IM-Server.git/internal/rpc/msg",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "callback.go": {
+                  "name": "callback.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/callback.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "chat.go": {
+                  "name": "chat.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/chat.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "conversation_notification.go": {
+                  "name": "conversation_notification.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/conversation_notification.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "del_msg.go": {
+                  "name": "del_msg.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/del_msg.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "friend_notification.go": {
+                  "name": "friend_notification.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/friend_notification.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "group_notification.go": {
+                  "name": "group_notification.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/group_notification.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_notification.go": {
+                  "name": "msg_notification.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/msg_notification.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg_status.go": {
+                  "name": "msg_status.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/msg_status.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "organization_notification.go": {
+                  "name": "organization_notification.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/organization_notification.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pull_message.go": {
+                  "name": "pull_message.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/pull_message.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "query_msg.go": {
+                  "name": "query_msg.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/query_msg.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rpcChat.go": {
+                  "name": "rpcChat.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/rpcChat.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "send_msg.go": {
+                  "name": "send_msg.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/send_msg.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "super_group_notification.go": {
+                  "name": "super_group_notification.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/super_group_notification.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tag_send_msg.go": {
+                  "name": "tag_send_msg.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/tag_send_msg.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "work_moments_notification.go": {
+                  "name": "work_moments_notification.go",
+                  "path": "Open-IM-Server.git/internal/rpc/msg/work_moments_notification.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "office": {
+              "name": "office",
+              "path": "Open-IM-Server.git/internal/rpc/office",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "office.go": {
+                  "name": "office.go",
+                  "path": "Open-IM-Server.git/internal/rpc/office/office.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "organization": {
+              "name": "organization",
+              "path": "Open-IM-Server.git/internal/rpc/organization",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "organization.go": {
+                  "name": "organization.go",
+                  "path": "Open-IM-Server.git/internal/rpc/organization/organization.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "user": {
+              "name": "user",
+              "path": "Open-IM-Server.git/internal/rpc/user",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "callback.go": {
+                  "name": "callback.go",
+                  "path": "Open-IM-Server.git/internal/rpc/user/callback.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "user.go": {
+                  "name": "user.go",
+                  "path": "Open-IM-Server.git/internal/rpc/user/user.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "utils": {
+          "name": "utils",
+          "path": "Open-IM-Server.git/internal/utils",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "callback.go": {
+              "name": "callback.go",
+              "path": "Open-IM-Server.git/internal/utils/callback.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cors_middleware_test.go": {
+              "name": "cors_middleware_test.go",
+              "path": "Open-IM-Server.git/internal/utils/cors_middleware_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "get_server_ip_test.go": {
+              "name": "get_server_ip_test.go",
+              "path": "Open-IM-Server.git/internal/utils/get_server_ip_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "id.go": {
+              "name": "id.go",
+              "path": "Open-IM-Server.git/internal/utils/id.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "id_test.go": {
+              "name": "id_test.go",
+              "path": "Open-IM-Server.git/internal/utils/id_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image_test.go": {
+              "name": "image_test.go",
+              "path": "Open-IM-Server.git/internal/utils/image_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "jwt_token_test.go": {
+              "name": "jwt_token_test.go",
+              "path": "Open-IM-Server.git/internal/utils/jwt_token_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "local_cache.go": {
+              "name": "local_cache.go",
+              "path": "Open-IM-Server.git/internal/utils/local_cache.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "md5_test.go": {
+              "name": "md5_test.go",
+              "path": "Open-IM-Server.git/internal/utils/md5_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "platform_number_id_to_name_test.go": {
+              "name": "platform_number_id_to_name_test.go",
+              "path": "Open-IM-Server.git/internal/utils/platform_number_id_to_name_test.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "utils.go": {
+              "name": "utils.go",
+              "path": "Open-IM-Server.git/internal/utils/utils.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "pkg": {
+      "name": "pkg",
+      "path": "Open-IM-Server.git/pkg",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "base_info": {
+          "name": "base_info",
+          "path": "Open-IM-Server.git/pkg/base_info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "auth_api_struct.go": {
+              "name": "auth_api_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/auth_api_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "aws_api_struct.go": {
+              "name": "aws_api_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/aws_api_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "client_init.go": {
+              "name": "client_init.go",
+              "path": "Open-IM-Server.git/pkg/base_info/client_init.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "common.go": {
+              "name": "common.go",
+              "path": "Open-IM-Server.git/pkg/base_info/common.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "conversation_api_struct.go": {
+              "name": "conversation_api_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/conversation_api_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cos_api_struct.go": {
+              "name": "cos_api_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/cos_api_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "friend_api_struct.go": {
+              "name": "friend_api_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/friend_api_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "group_api_struct.go": {
+              "name": "group_api_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/group_api_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "manage_api_struct.go": {
+              "name": "manage_api_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/manage_api_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "msg.go": {
+              "name": "msg.go",
+              "path": "Open-IM-Server.git/pkg/base_info/msg.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "office_struct.go": {
+              "name": "office_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/office_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "organization_api_struct.go": {
+              "name": "organization_api_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/organization_api_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "oss_api_struct.go": {
+              "name": "oss_api_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/oss_api_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pagination.go": {
+              "name": "pagination.go",
+              "path": "Open-IM-Server.git/pkg/base_info/pagination.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "public_struct.go": {
+              "name": "public_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/public_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "super_group.go": {
+              "name": "super_group.go",
+              "path": "Open-IM-Server.git/pkg/base_info/super_group.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "swagger_example.go": {
+              "name": "swagger_example.go",
+              "path": "Open-IM-Server.git/pkg/base_info/swagger_example.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "third_api_struct.go": {
+              "name": "third_api_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/third_api_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "user_api_struct.go": {
+              "name": "user_api_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/user_api_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "work_moments_struct.go": {
+              "name": "work_moments_struct.go",
+              "path": "Open-IM-Server.git/pkg/base_info/work_moments_struct.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "call_back_struct": {
+          "name": "call_back_struct",
+          "path": "Open-IM-Server.git/pkg/call_back_struct",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "common.go": {
+              "name": "common.go",
+              "path": "Open-IM-Server.git/pkg/call_back_struct/common.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "friend.go": {
+              "name": "friend.go",
+              "path": "Open-IM-Server.git/pkg/call_back_struct/friend.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "group.go": {
+              "name": "group.go",
+              "path": "Open-IM-Server.git/pkg/call_back_struct/group.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "message.go": {
+              "name": "message.go",
+              "path": "Open-IM-Server.git/pkg/call_back_struct/message.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "msg_gateway.go": {
+              "name": "msg_gateway.go",
+              "path": "Open-IM-Server.git/pkg/call_back_struct/msg_gateway.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push.go": {
+              "name": "push.go",
+              "path": "Open-IM-Server.git/pkg/call_back_struct/push.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "cms_api_struct": {
+          "name": "cms_api_struct",
+          "path": "Open-IM-Server.git/pkg/cms_api_struct",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "admin.go": {
+              "name": "admin.go",
+              "path": "Open-IM-Server.git/pkg/cms_api_struct/admin.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "common.go": {
+              "name": "common.go",
+              "path": "Open-IM-Server.git/pkg/cms_api_struct/common.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "friend.go": {
+              "name": "friend.go",
+              "path": "Open-IM-Server.git/pkg/cms_api_struct/friend.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "group.go": {
+              "name": "group.go",
+              "path": "Open-IM-Server.git/pkg/cms_api_struct/group.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "message_cms.go": {
+              "name": "message_cms.go",
+              "path": "Open-IM-Server.git/pkg/cms_api_struct/message_cms.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "statistics.go": {
+              "name": "statistics.go",
+              "path": "Open-IM-Server.git/pkg/cms_api_struct/statistics.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "user.go": {
+              "name": "user.go",
+              "path": "Open-IM-Server.git/pkg/cms_api_struct/user.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "common": {
+          "name": "common",
+          "path": "Open-IM-Server.git/pkg/common",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "callback": {
+              "name": "callback",
+              "path": "Open-IM-Server.git/pkg/common/callback",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "callback.go": {
+                  "name": "callback.go",
+                  "path": "Open-IM-Server.git/pkg/common/callback/callback.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "config": {
+              "name": "config",
+              "path": "Open-IM-Server.git/pkg/common/config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "config.go": {
+                  "name": "config.go",
+                  "path": "Open-IM-Server.git/pkg/common/config/config.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "constant": {
+              "name": "constant",
+              "path": "Open-IM-Server.git/pkg/common/constant",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "constant.go": {
+                  "name": "constant.go",
+                  "path": "Open-IM-Server.git/pkg/common/constant/constant.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "error.go": {
+                  "name": "error.go",
+                  "path": "Open-IM-Server.git/pkg/common/constant/error.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "platform_number_id_to_name.go": {
+                  "name": "platform_number_id_to_name.go",
+                  "path": "Open-IM-Server.git/pkg/common/constant/platform_number_id_to_name.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "db": {
+              "name": "db",
+              "path": "Open-IM-Server.git/pkg/common/db",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "RedisModel.go": {
+                  "name": "RedisModel.go",
+                  "path": "Open-IM-Server.git/pkg/common/db/RedisModel.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "batch_insert_chat.go": {
+                  "name": "batch_insert_chat.go",
+                  "path": "Open-IM-Server.git/pkg/common/db/batch_insert_chat.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "model.go": {
+                  "name": "model.go",
+                  "path": "Open-IM-Server.git/pkg/common/db/model.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "model_struct.go": {
+                  "name": "model_struct.go",
+                  "path": "Open-IM-Server.git/pkg/common/db/model_struct.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mongoModel.go": {
+                  "name": "mongoModel.go",
+                  "path": "Open-IM-Server.git/pkg/common/db/mongoModel.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mysql.go": {
+                  "name": "mysql.go",
+                  "path": "Open-IM-Server.git/pkg/common/db/mysql.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "mysql_model": {
+                  "name": "mysql_model",
+                  "path": "Open-IM-Server.git/pkg/common/db/mysql_model",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "im_mysql_model": {
+                      "name": "im_mysql_model",
+                      "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "client_config.go": {
+                          "name": "client_config.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/client_config.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "conversation_model.go": {
+                          "name": "conversation_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/conversation_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "demo_model.go": {
+                          "name": "demo_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/demo_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "file_model.go": {
+                          "name": "file_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/file_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "friend_model.go": {
+                          "name": "friend_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/friend_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "friend_request_model.go": {
+                          "name": "friend_request_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/friend_request_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "group_member_model.go": {
+                          "name": "group_member_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/group_member_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "group_model.go": {
+                          "name": "group_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/group_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "group_request_model.go": {
+                          "name": "group_request_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/group_request_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "invitation_model.go": {
+                          "name": "invitation_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/invitation_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ip_model.go": {
+                          "name": "ip_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/ip_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "message_cms.go": {
+                          "name": "message_cms.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/message_cms.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "organization_model.go": {
+                          "name": "organization_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/organization_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "statistics_model.go": {
+                          "name": "statistics_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/statistics_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "user_black_list_model.go": {
+                          "name": "user_black_list_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/user_black_list_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "user_model.go": {
+                          "name": "user_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_model/user_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "im_mysql_msg_model": {
+                      "name": "im_mysql_msg_model",
+                      "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_msg_model",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "chat_log_model.go": {
+                          "name": "chat_log_model.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_msg_model/chat_log_model.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "hash_code.go": {
+                          "name": "hash_code.go",
+                          "path": "Open-IM-Server.git/pkg/common/db/mysql_model/im_mysql_msg_model/hash_code.go",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "redisModel_test.go": {
+                  "name": "redisModel_test.go",
+                  "path": "Open-IM-Server.git/pkg/common/db/redisModel_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rocks_cache": {
+                  "name": "rocks_cache",
+                  "path": "Open-IM-Server.git/pkg/common/db/rocks_cache",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "rocks_cache.go": {
+                      "name": "rocks_cache.go",
+                      "path": "Open-IM-Server.git/pkg/common/db/rocks_cache/rocks_cache.go",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "http": {
+              "name": "http",
+              "path": "Open-IM-Server.git/pkg/common/http",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "http_client.go": {
+                  "name": "http_client.go",
+                  "path": "Open-IM-Server.git/pkg/common/http/http_client.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "kafka": {
+              "name": "kafka",
+              "path": "Open-IM-Server.git/pkg/common/kafka",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "consumer.go": {
+                  "name": "consumer.go",
+                  "path": "Open-IM-Server.git/pkg/common/kafka/consumer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "consumer_group.go": {
+                  "name": "consumer_group.go",
+                  "path": "Open-IM-Server.git/pkg/common/kafka/consumer_group.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "producer.go": {
+                  "name": "producer.go",
+                  "path": "Open-IM-Server.git/pkg/common/kafka/producer.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "log": {
+              "name": "log",
+              "path": "Open-IM-Server.git/pkg/common/log",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "es_hk.go": {
+                  "name": "es_hk.go",
+                  "path": "Open-IM-Server.git/pkg/common/log/es_hk.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "file_line_hk.go": {
+                  "name": "file_line_hk.go",
+                  "path": "Open-IM-Server.git/pkg/common/log/file_line_hk.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "logrus.go": {
+                  "name": "logrus.go",
+                  "path": "Open-IM-Server.git/pkg/common/log/logrus.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "time_format.go": {
+                  "name": "time_format.go",
+                  "path": "Open-IM-Server.git/pkg/common/log/time_format.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "multi_terminal_login": {
+              "name": "multi_terminal_login",
+              "path": "Open-IM-Server.git/pkg/common/multi_terminal_login",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "multi_terminal_login.go": {
+                  "name": "multi_terminal_login.go",
+                  "path": "Open-IM-Server.git/pkg/common/multi_terminal_login/multi_terminal_login.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "prometheus": {
+              "name": "prometheus",
+              "path": "Open-IM-Server.git/pkg/common/prometheus",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "gather.go": {
+                  "name": "gather.go",
+                  "path": "Open-IM-Server.git/pkg/common/prometheus/gather.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "grpc.go": {
+                  "name": "grpc.go",
+                  "path": "Open-IM-Server.git/pkg/common/prometheus/grpc.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "prometheus.go": {
+                  "name": "prometheus.go",
+                  "path": "Open-IM-Server.git/pkg/common/prometheus/prometheus.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "token_verify": {
+              "name": "token_verify",
+              "path": "Open-IM-Server.git/pkg/common/token_verify",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "jwt_token.go": {
+                  "name": "jwt_token.go",
+                  "path": "Open-IM-Server.git/pkg/common/token_verify/jwt_token.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "jwt_token_test.go": {
+                  "name": "jwt_token_test.go",
+                  "path": "Open-IM-Server.git/pkg/common/token_verify/jwt_token_test.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "utils": {
+              "name": "utils",
+              "path": "Open-IM-Server.git/pkg/common/utils",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "utils.go": {
+                  "name": "utils.go",
+                  "path": "Open-IM-Server.git/pkg/common/utils/utils.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "grpc-etcdv3": {
+          "name": "grpc-etcdv3",
+          "path": "Open-IM-Server.git/pkg/grpc-etcdv3",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "getcdv3": {
+              "name": "getcdv3",
+              "path": "Open-IM-Server.git/pkg/grpc-etcdv3/getcdv3",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pool.go": {
+                  "name": "pool.go",
+                  "path": "Open-IM-Server.git/pkg/grpc-etcdv3/getcdv3/pool.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "register.go": {
+                  "name": "register.go",
+                  "path": "Open-IM-Server.git/pkg/grpc-etcdv3/getcdv3/register.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "resolver.go": {
+                  "name": "resolver.go",
+                  "path": "Open-IM-Server.git/pkg/grpc-etcdv3/getcdv3/resolver.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "proto": {
+          "name": "proto",
+          "path": "Open-IM-Server.git/pkg/proto",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "admin_cms": {
+              "name": "admin_cms",
+              "path": "Open-IM-Server.git/pkg/proto/admin_cms",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "admin_cms.pb.go": {
+                  "name": "admin_cms.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/admin_cms/admin_cms.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "admin_cms.proto": {
+                  "name": "admin_cms.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/admin_cms/admin_cms.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "auth": {
+              "name": "auth",
+              "path": "Open-IM-Server.git/pkg/proto/auth",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "auth.pb.go": {
+                  "name": "auth.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/auth/auth.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "auth.proto": {
+                  "name": "auth.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/auth/auth.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "auto_proto.sh": {
+              "name": "auto_proto.sh",
+              "path": "Open-IM-Server.git/pkg/proto/auto_proto.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cache": {
+              "name": "cache",
+              "path": "Open-IM-Server.git/pkg/proto/cache",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cache.pb.go": {
+                  "name": "cache.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/cache/cache.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cache.proto": {
+                  "name": "cache.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/cache/cache.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "conversation": {
+              "name": "conversation",
+              "path": "Open-IM-Server.git/pkg/proto/conversation",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "conversation.pb.go": {
+                  "name": "conversation.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/conversation/conversation.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "conversation.proto": {
+                  "name": "conversation.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/conversation/conversation.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "friend": {
+              "name": "friend",
+              "path": "Open-IM-Server.git/pkg/proto/friend",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "friend.pb.go": {
+                  "name": "friend.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/friend/friend.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "friend.proto": {
+                  "name": "friend.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/friend/friend.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "group": {
+              "name": "group",
+              "path": "Open-IM-Server.git/pkg/proto/group",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "group.pb.go": {
+                  "name": "group.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/group/group.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "group.proto": {
+                  "name": "group.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/group/group.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "msg": {
+              "name": "msg",
+              "path": "Open-IM-Server.git/pkg/proto/msg",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "msg.pb.go": {
+                  "name": "msg.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/msg/msg.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "msg.proto": {
+                  "name": "msg.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/msg/msg.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "office": {
+              "name": "office",
+              "path": "Open-IM-Server.git/pkg/proto/office",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "office.pb.go": {
+                  "name": "office.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/office/office.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "office.proto": {
+                  "name": "office.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/office/office.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "organization": {
+              "name": "organization",
+              "path": "Open-IM-Server.git/pkg/proto/organization",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "organization.pb.go": {
+                  "name": "organization.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/organization/organization.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "organization.proto": {
+                  "name": "organization.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/organization/organization.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "proto_dir.cfg": {
+              "name": "proto_dir.cfg",
+              "path": "Open-IM-Server.git/pkg/proto/proto_dir.cfg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push": {
+              "name": "push",
+              "path": "Open-IM-Server.git/pkg/proto/push",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "push.pb.go": {
+                  "name": "push.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/push/push.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "push.proto": {
+                  "name": "push.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/push/push.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "relay": {
+              "name": "relay",
+              "path": "Open-IM-Server.git/pkg/proto/relay",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "relay.pb.go": {
+                  "name": "relay.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/relay/relay.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "relay.proto": {
+                  "name": "relay.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/relay/relay.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "rtc": {
+              "name": "rtc",
+              "path": "Open-IM-Server.git/pkg/proto/rtc",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "rtc.pb.go": {
+                  "name": "rtc.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/rtc/rtc.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rtc.proto": {
+                  "name": "rtc.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/rtc/rtc.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "sdk_ws": {
+              "name": "sdk_ws",
+              "path": "Open-IM-Server.git/pkg/proto/sdk_ws",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "wrappers.proto": {
+                  "name": "wrappers.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/sdk_ws/wrappers.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ws.pb.go": {
+                  "name": "ws.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/sdk_ws/ws.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ws.proto": {
+                  "name": "ws.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/sdk_ws/ws.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "user": {
+              "name": "user",
+              "path": "Open-IM-Server.git/pkg/proto/user",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "user.pb.go": {
+                  "name": "user.pb.go",
+                  "path": "Open-IM-Server.git/pkg/proto/user/user.pb.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "user.proto": {
+                  "name": "user.proto",
+                  "path": "Open-IM-Server.git/pkg/proto/user/user.proto",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "statistics": {
+          "name": "statistics",
+          "path": "Open-IM-Server.git/pkg/statistics",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "statistics.go": {
+              "name": "statistics.go",
+              "path": "Open-IM-Server.git/pkg/statistics/statistics.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "tools": {
+          "name": "tools",
+          "path": "Open-IM-Server.git/pkg/tools",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "retry": {
+              "name": "retry",
+              "path": "Open-IM-Server.git/pkg/tools/retry",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "retry.go": {
+                  "name": "retry.go",
+                  "path": "Open-IM-Server.git/pkg/tools/retry/retry.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "stratey.go": {
+                  "name": "stratey.go",
+                  "path": "Open-IM-Server.git/pkg/tools/retry/stratey.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "splitter": {
+              "name": "splitter",
+              "path": "Open-IM-Server.git/pkg/tools/splitter",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "tools.go": {
+                  "name": "tools.go",
+                  "path": "Open-IM-Server.git/pkg/tools/splitter/tools.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "utils": {
+          "name": "utils",
+          "path": "Open-IM-Server.git/pkg/utils",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "base64.go": {
+              "name": "base64.go",
+              "path": "Open-IM-Server.git/pkg/utils/base64.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cache_delete.go": {
+              "name": "cache_delete.go",
+              "path": "Open-IM-Server.git/pkg/utils/cache_delete.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cors_middleware.go": {
+              "name": "cors_middleware.go",
+              "path": "Open-IM-Server.git/pkg/utils/cors_middleware.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "encryption.go": {
+              "name": "encryption.go",
+              "path": "Open-IM-Server.git/pkg/utils/encryption.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "file.go": {
+              "name": "file.go",
+              "path": "Open-IM-Server.git/pkg/utils/file.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "get_server_ip.go": {
+              "name": "get_server_ip.go",
+              "path": "Open-IM-Server.git/pkg/utils/get_server_ip.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "image.go": {
+              "name": "image.go",
+              "path": "Open-IM-Server.git/pkg/utils/image.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "map.go": {
+              "name": "map.go",
+              "path": "Open-IM-Server.git/pkg/utils/map.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "strings.go": {
+              "name": "strings.go",
+              "path": "Open-IM-Server.git/pkg/utils/strings.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "time_format.go": {
+              "name": "time_format.go",
+              "path": "Open-IM-Server.git/pkg/utils/time_format.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "utils.go": {
+              "name": "utils.go",
+              "path": "Open-IM-Server.git/pkg/utils/utils.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "script": {
+      "name": "script",
+      "path": "Open-IM-Server.git/script",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".env": {
+          "name": ".env",
+          "path": "Open-IM-Server.git/script/.env",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "batch_build_all_service.sh": {
+          "name": "batch_build_all_service.sh",
+          "path": "Open-IM-Server.git/script/batch_build_all_service.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "batch_start_all.sh": {
+          "name": "batch_start_all.sh",
+          "path": "Open-IM-Server.git/script/batch_start_all.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build_all_service.sh": {
+          "name": "build_all_service.sh",
+          "path": "Open-IM-Server.git/script/build_all_service.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "build_images.sh": {
+          "name": "build_images.sh",
+          "path": "Open-IM-Server.git/script/build_images.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "check_all.sh": {
+          "name": "check_all.sh",
+          "path": "Open-IM-Server.git/script/check_all.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "demo_svr_start.sh": {
+          "name": "demo_svr_start.sh",
+          "path": "Open-IM-Server.git/script/demo_svr_start.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker_check_service.sh": {
+          "name": "docker_check_service.sh",
+          "path": "Open-IM-Server.git/script/docker_check_service.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker_start_all.sh": {
+          "name": "docker_start_all.sh",
+          "path": "Open-IM-Server.git/script/docker_start_all.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "enterprise": {
+          "name": "enterprise",
+          "path": "Open-IM-Server.git/script/enterprise",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "check_all.sh": {
+              "name": "check_all.sh",
+              "path": "Open-IM-Server.git/script/enterprise/check_all.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "function.sh": {
+              "name": "function.sh",
+              "path": "Open-IM-Server.git/script/enterprise/function.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "path_info.cfg": {
+              "name": "path_info.cfg",
+              "path": "Open-IM-Server.git/script/enterprise/path_info.cfg",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "env_check.sh": {
+          "name": "env_check.sh",
+          "path": "Open-IM-Server.git/script/env_check.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "function.sh": {
+          "name": "function.sh",
+          "path": "Open-IM-Server.git/script/function.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "init_pwd.sh": {
+          "name": "init_pwd.sh",
+          "path": "Open-IM-Server.git/script/init_pwd.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "mongo-init.sh": {
+          "name": "mongo-init.sh",
+          "path": "Open-IM-Server.git/script/mongo-init.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "msg_gateway_start.sh": {
+          "name": "msg_gateway_start.sh",
+          "path": "Open-IM-Server.git/script/msg_gateway_start.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "msg_transfer_start.sh": {
+          "name": "msg_transfer_start.sh",
+          "path": "Open-IM-Server.git/script/msg_transfer_start.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "path_info.cfg": {
+          "name": "path_info.cfg",
+          "path": "Open-IM-Server.git/script/path_info.cfg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "push_start.sh": {
+          "name": "push_start.sh",
+          "path": "Open-IM-Server.git/script/push_start.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "sdk_svr_start.sh": {
+          "name": "sdk_svr_start.sh",
+          "path": "Open-IM-Server.git/script/sdk_svr_start.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "start_all.sh": {
+          "name": "start_all.sh",
+          "path": "Open-IM-Server.git/script/start_all.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "start_cron.sh": {
+          "name": "start_cron.sh",
+          "path": "Open-IM-Server.git/script/start_cron.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "start_rpc_service.sh": {
+          "name": "start_rpc_service.sh",
+          "path": "Open-IM-Server.git/script/start_rpc_service.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "stop_all.sh": {
+          "name": "stop_all.sh",
+          "path": "Open-IM-Server.git/script/stop_all.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "style_info.cfg": {
+          "name": "style_info.cfg",
+          "path": "Open-IM-Server.git/script/style_info.cfg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "win_build_all_service.cmd": {
+          "name": "win_build_all_service.cmd",
+          "path": "Open-IM-Server.git/script/win_build_all_service.cmd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "win_start_all_service.cmd": {
+          "name": "win_start_all_service.cmd",
+          "path": "Open-IM-Server.git/script/win_start_all_service.cmd",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "test": {
+      "name": "test",
+      "path": "Open-IM-Server.git/test",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "mongo": {
+          "name": "mongo",
+          "path": "Open-IM-Server.git/test/mongo",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cmd": {
+              "name": "cmd",
+              "path": "Open-IM-Server.git/test/mongo/cmd",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "main.go": {
+                  "name": "main.go",
+                  "path": "Open-IM-Server.git/test/mongo/cmd/main.go",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "mongo_utils.go": {
+              "name": "mongo_utils.go",
+              "path": "Open-IM-Server.git/test/mongo/mongo_utils.go",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 370977430,
+    "name": "Open-IM-Server",
+    "full_name": "OpenIMSDK/Open-IM-Server",
+    "owner": {
+      "login": "OpenIMSDK",
+      "html_url": "https://github.com/OpenIMSDK",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/OpenIMSDK/Open-IM-Server",
+    "description": "即时通讯IM",
+    "url": "https://api.github.com/repos/OpenIMSDK/Open-IM-Server",
+    "clone_url": "https://github.com/OpenIMSDK/Open-IM-Server.git",
+    "homepage": "https://doc.rentsoft.cn/",
+    "size": 8736,
+    "stargazers_count": 9941,
+    "watchers_count": 9941,
+    "language": "Go"
+  }
+}

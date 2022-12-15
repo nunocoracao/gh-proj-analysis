@@ -1,0 +1,1461 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 1,
+      "subFolderCount": 2,
+      "filepaths": [
+        "bridge-dockerize.git/Dockerfile",
+        "bridge-dockerize.git/ethvault-validator/Dockerfile",
+        "bridge-dockerize.git/xrpvault-validator/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 1,
+      "subFolderCount": 11,
+      "filepaths": [
+        "bridge-dockerize.git/docker-compose.common.yml",
+        "bridge-dockerize.git/bscvault-validator/docker-compose.yml",
+        "bridge-dockerize.git/celovault-validator/docker-compose.yml",
+        "bridge-dockerize.git/ethvault-validator/docker-compose.yml",
+        "bridge-dockerize.git/hecovault-validator/docker-compose.yml",
+        "bridge-dockerize.git/iconvault-validator/docker-compose.yml",
+        "bridge-dockerize.git/klaytnvault-validator/docker-compose.yml",
+        "bridge-dockerize.git/orbitvault-validator/docker-compose.yml",
+        "bridge-dockerize.git/polygon-validator/docker-compose.yml",
+        "bridge-dockerize.git/stacksvault-validator/docker-compose.yml",
+        "bridge-dockerize.git/tonvault-validator/docker-compose.yml",
+        "bridge-dockerize.git/xrpvault-validator/docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".dockerignore": {
+      "name": ".dockerignore",
+      "path": "bridge-dockerize.git/.dockerignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".env": {
+      "name": ".env",
+      "path": "bridge-dockerize.git/.env",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "bridge-dockerize.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "bridge-dockerize.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "bridge-dockerize.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "bridge-dockerize.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "bridge-dockerize.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "bridge-dockerize.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "bridge-dockerize.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "bridge-dockerize.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "bridge-dockerize.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "bridge-dockerize.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "bridge-dockerize.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "bridge-dockerize.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "bridge-dockerize.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "bridge-dockerize.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "bridge-dockerize.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "bridge-dockerize.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "bridge-dockerize.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "bridge-dockerize.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "bridge-dockerize.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "bridge-dockerize.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "bridge-dockerize.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "bridge-dockerize.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "bridge-dockerize.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "bridge-dockerize.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "bridge-dockerize.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "bridge-dockerize.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "bridge-dockerize.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "bridge-dockerize.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "bridge-dockerize.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "bridge-dockerize.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "bridge-dockerize.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "bridge-dockerize.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-10766e47498549c763c200f69665a68e87c08ce8.idx": {
+                  "name": "pack-10766e47498549c763c200f69665a68e87c08ce8.idx",
+                  "path": "bridge-dockerize.git/.git/objects/pack/pack-10766e47498549c763c200f69665a68e87c08ce8.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-10766e47498549c763c200f69665a68e87c08ce8.pack": {
+                  "name": "pack-10766e47498549c763c200f69665a68e87c08ce8.pack",
+                  "path": "bridge-dockerize.git/.git/objects/pack/pack-10766e47498549c763c200f69665a68e87c08ce8.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "bridge-dockerize.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "bridge-dockerize.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "bridge-dockerize.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "bridge-dockerize.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "bridge-dockerize.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "bridge-dockerize.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "bridge-dockerize.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "bridge-dockerize.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "v1.0.4": {
+                  "name": "v1.0.4",
+                  "path": "bridge-dockerize.git/.git/refs/tags/v1.0.4",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "bridge-dockerize.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "bridge-dockerize.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "path": "bridge-dockerize.git/Dockerfile",
+      "isDir": false,
+      "isDockerfile": true,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "bridge-dockerize.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "bscvault-validator": {
+      "name": "bscvault-validator",
+      "path": "bridge-dockerize.git/bscvault-validator",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "bridge-dockerize.git/bscvault-validator/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "celovault-validator": {
+      "name": "celovault-validator",
+      "path": "bridge-dockerize.git/celovault-validator",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "bridge-dockerize.git/celovault-validator/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "docker-compose.common.yml": {
+      "name": "docker-compose.common.yml",
+      "path": "bridge-dockerize.git/docker-compose.common.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": true
+    },
+    "ethvault-validator": {
+      "name": "ethvault-validator",
+      "path": "bridge-dockerize.git/ethvault-validator",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "bridge-dockerize.git/ethvault-validator/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "common.yml": {
+          "name": "common.yml",
+          "path": "bridge-dockerize.git/ethvault-validator/common.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "bridge-dockerize.git/ethvault-validator/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "pm2.yaml": {
+          "name": "pm2.yaml",
+          "path": "bridge-dockerize.git/ethvault-validator/pm2.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "settings.js": {
+          "name": "settings.js",
+          "path": "bridge-dockerize.git/ethvault-validator/settings.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "hecovault-validator": {
+      "name": "hecovault-validator",
+      "path": "bridge-dockerize.git/hecovault-validator",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "bridge-dockerize.git/hecovault-validator/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "iconvault-validator": {
+      "name": "iconvault-validator",
+      "path": "bridge-dockerize.git/iconvault-validator",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "bridge-dockerize.git/iconvault-validator/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "klaytnvault-validator": {
+      "name": "klaytnvault-validator",
+      "path": "bridge-dockerize.git/klaytnvault-validator",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "bridge-dockerize.git/klaytnvault-validator/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "nodes": {
+      "name": "nodes",
+      "path": "bridge-dockerize.git/nodes",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "validator": {
+          "name": "validator",
+          "path": "bridge-dockerize.git/nodes/validator",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".gitignore": {
+              "name": ".gitignore",
+              "path": "bridge-dockerize.git/nodes/validator/.gitignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            ".vscode": {
+              "name": ".vscode",
+              "path": "bridge-dockerize.git/nodes/validator/.vscode",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "launch.json": {
+                  "name": "launch.json",
+                  "path": "bridge-dockerize.git/nodes/validator/.vscode/launch.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "tasks.json": {
+                  "name": "tasks.json",
+                  "path": "bridge-dockerize.git/nodes/validator/.vscode/tasks.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "abi": {
+              "name": "abi",
+              "path": "bridge-dockerize.git/nodes/validator/abi",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "docker": {
+                  "name": "docker",
+                  "path": "bridge-dockerize.git/nodes/validator/abi/docker",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "GateKeeper.abi": {
+                      "name": "GateKeeper.abi",
+                      "path": "bridge-dockerize.git/nodes/validator/abi/docker/GateKeeper.abi",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Governance.abi": {
+                      "name": "Governance.abi",
+                      "path": "bridge-dockerize.git/nodes/validator/abi/docker/Governance.abi",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Minter.abi": {
+                      "name": "Minter.abi",
+                      "path": "bridge-dockerize.git/nodes/validator/abi/docker/Minter.abi",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "OrbitHub.abi": {
+                      "name": "OrbitHub.abi",
+                      "path": "bridge-dockerize.git/nodes/validator/abi/docker/OrbitHub.abi",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "Vault.abi": {
+                      "name": "Vault.abi",
+                      "path": "bridge-dockerize.git/nodes/validator/abi/docker/Vault.abi",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "addressbook": {
+                      "name": "addressbook",
+                      "path": "bridge-dockerize.git/nodes/validator/abi/docker/addressbook",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Stacks.abi": {
+                          "name": "Stacks.abi",
+                          "path": "bridge-dockerize.git/nodes/validator/abi/docker/addressbook/Stacks.abi",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Ton.abi": {
+                          "name": "Ton.abi",
+                          "path": "bridge-dockerize.git/nodes/validator/abi/docker/addressbook/Ton.abi",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Xrp.abi": {
+                          "name": "Xrp.abi",
+                          "path": "bridge-dockerize.git/nodes/validator/abi/docker/addressbook/Xrp.abi",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "bridge": {
+                      "name": "bridge",
+                      "path": "bridge-dockerize.git/nodes/validator/abi/docker/bridge",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Common.abi": {
+                          "name": "Common.abi",
+                          "path": "bridge-dockerize.git/nodes/validator/abi/docker/bridge/Common.abi",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Stacks.abi": {
+                          "name": "Stacks.abi",
+                          "path": "bridge-dockerize.git/nodes/validator/abi/docker/bridge/Stacks.abi",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Xrp.abi": {
+                          "name": "Xrp.abi",
+                          "path": "bridge-dockerize.git/nodes/validator/abi/docker/bridge/Xrp.abi",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "multisig": {
+                      "name": "multisig",
+                      "path": "bridge-dockerize.git/nodes/validator/abi/docker/multisig",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "Common.abi": {
+                          "name": "Common.abi",
+                          "path": "bridge-dockerize.git/nodes/validator/abi/docker/multisig/Common.abi",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Ed25519.abi": {
+                          "name": "Ed25519.abi",
+                          "path": "bridge-dockerize.git/nodes/validator/abi/docker/multisig/Ed25519.abi",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Stacks.abi": {
+                          "name": "Stacks.abi",
+                          "path": "bridge-dockerize.git/nodes/validator/abi/docker/multisig/Stacks.abi",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "Xrp.abi": {
+                          "name": "Xrp.abi",
+                          "path": "bridge-dockerize.git/nodes/validator/abi/docker/multisig/Xrp.abi",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "app.js": {
+              "name": "app.js",
+              "path": "bridge-dockerize.git/nodes/validator/app.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config": {
+              "name": "config",
+              "path": "bridge-dockerize.git/nodes/validator/config",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "docker": {
+                  "name": "docker",
+                  "path": "bridge-dockerize.git/nodes/validator/config/docker",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "chain.json": {
+                      "name": "chain.json",
+                      "path": "bridge-dockerize.git/nodes/validator/config/docker/chain.json",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "governance.js": {
+                      "name": "governance.js",
+                      "path": "bridge-dockerize.git/nodes/validator/config/docker/governance.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "info.js": {
+                      "name": "info.js",
+                      "path": "bridge-dockerize.git/nodes/validator/config/docker/info.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "system.js": {
+                      "name": "system.js",
+                      "path": "bridge-dockerize.git/nodes/validator/config/docker/system.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "index.js": {
+                  "name": "index.js",
+                  "path": "bridge-dockerize.git/nodes/validator/config/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "lib": {
+              "name": "lib",
+              "path": "bridge-dockerize.git/nodes/validator/lib",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "api.js": {
+                  "name": "api.js",
+                  "path": "bridge-dockerize.git/nodes/validator/lib/api.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "bridgeutils.js": {
+                  "name": "bridgeutils.js",
+                  "path": "bridge-dockerize.git/nodes/validator/lib/bridgeutils.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "britto.js": {
+                  "name": "britto.js",
+                  "path": "bridge-dockerize.git/nodes/validator/lib/britto.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "decimal.js": {
+                  "name": "decimal.js",
+                  "path": "bridge-dockerize.git/nodes/validator/lib/decimal.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "request.js": {
+                  "name": "request.js",
+                  "path": "bridge-dockerize.git/nodes/validator/lib/request.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rpcAggregator.js": {
+                  "name": "rpcAggregator.js",
+                  "path": "bridge-dockerize.git/nodes/validator/lib/rpcAggregator.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "txsender.js": {
+                  "name": "txsender.js",
+                  "path": "bridge-dockerize.git/nodes/validator/lib/txsender.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "txutils.js": {
+                  "name": "txutils.js",
+                  "path": "bridge-dockerize.git/nodes/validator/lib/txutils.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "logger.js": {
+              "name": "logger.js",
+              "path": "bridge-dockerize.git/nodes/validator/logger.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "package.json": {
+              "name": "package.json",
+              "path": "bridge-dockerize.git/nodes/validator/package.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "routes": {
+              "name": "routes",
+              "path": "bridge-dockerize.git/nodes/validator/routes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.js": {
+                  "name": "index.js",
+                  "path": "bridge-dockerize.git/nodes/validator/routes/index.js",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "v1": {
+                  "name": "v1",
+                  "path": "bridge-dockerize.git/nodes/validator/routes/v1",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "gov.js": {
+                      "name": "gov.js",
+                      "path": "bridge-dockerize.git/nodes/validator/routes/v1/gov.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "src": {
+              "name": "src",
+              "path": "bridge-dockerize.git/nodes/validator/src",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "evm": {
+                  "name": "evm",
+                  "path": "bridge-dockerize.git/nodes/validator/src/evm",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/evm/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logger.js": {
+                      "name": "logger.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/evm/logger.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils": {
+                      "name": "utils",
+                      "path": "bridge-dockerize.git/nodes/validator/src/evm/utils",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "packer.js": {
+                          "name": "packer.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/evm/utils/packer.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "gov": {
+                  "name": "gov",
+                  "path": "bridge-dockerize.git/nodes/validator/src/gov",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/gov/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logger.js": {
+                      "name": "logger.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/gov/logger.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "hub": {
+                  "name": "hub",
+                  "path": "bridge-dockerize.git/nodes/validator/src/hub",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/hub/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logger.js": {
+                      "name": "logger.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/hub/logger.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils": {
+                      "name": "utils",
+                      "path": "bridge-dockerize.git/nodes/validator/src/hub/utils",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "packer.js": {
+                          "name": "packer.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/hub/utils/packer.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "icon": {
+                  "name": "icon",
+                  "path": "bridge-dockerize.git/nodes/validator/src/icon",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/icon/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logger.js": {
+                      "name": "logger.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/icon/logger.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils": {
+                      "name": "utils",
+                      "path": "bridge-dockerize.git/nodes/validator/src/icon/utils",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "icon.api.js": {
+                          "name": "icon.api.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/icon/utils/icon.api.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "packer.js": {
+                          "name": "packer.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/icon/utils/packer.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "monitor": {
+                  "name": "monitor",
+                  "path": "bridge-dockerize.git/nodes/validator/src/monitor",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/monitor/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "stacks": {
+                  "name": "stacks",
+                  "path": "bridge-dockerize.git/nodes/validator/src/stacks",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/stacks/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logger.js": {
+                      "name": "logger.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/stacks/logger.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils": {
+                      "name": "utils",
+                      "path": "bridge-dockerize.git/nodes/validator/src/stacks/utils",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "packer.js": {
+                          "name": "packer.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/stacks/utils/packer.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "stacks.bridgeutils.js": {
+                          "name": "stacks.bridgeutils.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/stacks/utils/stacks.bridgeutils.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "stacks_layer_1": {
+                  "name": "stacks_layer_1",
+                  "path": "bridge-dockerize.git/nodes/validator/src/stacks_layer_1",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/stacks_layer_1/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logger.js": {
+                      "name": "logger.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/stacks_layer_1/logger.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils": {
+                      "name": "utils",
+                      "path": "bridge-dockerize.git/nodes/validator/src/stacks_layer_1/utils",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "packer.js": {
+                          "name": "packer.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/stacks_layer_1/utils/packer.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "stacks.bridgeutils.js": {
+                          "name": "stacks.bridgeutils.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/stacks_layer_1/utils/stacks.bridgeutils.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "ton": {
+                  "name": "ton",
+                  "path": "bridge-dockerize.git/nodes/validator/src/ton",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/ton/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logger.js": {
+                      "name": "logger.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/ton/logger.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils": {
+                      "name": "utils",
+                      "path": "bridge-dockerize.git/nodes/validator/src/ton/utils",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "packer.js": {
+                          "name": "packer.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/ton/utils/packer.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ton.api.js": {
+                          "name": "ton.api.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/ton/utils/ton.api.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "ton_layer_1": {
+                  "name": "ton_layer_1",
+                  "path": "bridge-dockerize.git/nodes/validator/src/ton_layer_1",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/ton_layer_1/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logger.js": {
+                      "name": "logger.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/ton_layer_1/logger.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils": {
+                      "name": "utils",
+                      "path": "bridge-dockerize.git/nodes/validator/src/ton_layer_1/utils",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "packer.js": {
+                          "name": "packer.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/ton_layer_1/utils/packer.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ton.api.js": {
+                          "name": "ton.api.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/ton_layer_1/utils/ton.api.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "xrp": {
+                  "name": "xrp",
+                  "path": "bridge-dockerize.git/nodes/validator/src/xrp",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "index.js": {
+                      "name": "index.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/xrp/index.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "logger.js": {
+                      "name": "logger.js",
+                      "path": "bridge-dockerize.git/nodes/validator/src/xrp/logger.js",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "utils": {
+                      "name": "utils",
+                      "path": "bridge-dockerize.git/nodes/validator/src/xrp/utils",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "packer.js": {
+                          "name": "packer.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/xrp/utils/packer.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ripple.api.js": {
+                          "name": "ripple.api.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/xrp/utils/ripple.api.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "xrp.bridgeutils.js": {
+                          "name": "xrp.bridgeutils.js",
+                          "path": "bridge-dockerize.git/nodes/validator/src/xrp/utils/xrp.bridgeutils.js",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "wallet.js": {
+              "name": "wallet.js",
+              "path": "bridge-dockerize.git/nodes/validator/wallet.js",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "orbitvault-validator": {
+      "name": "orbitvault-validator",
+      "path": "bridge-dockerize.git/orbitvault-validator",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "bridge-dockerize.git/orbitvault-validator/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "pm2.yaml": {
+      "name": "pm2.yaml",
+      "path": "bridge-dockerize.git/pm2.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "polygon-validator": {
+      "name": "polygon-validator",
+      "path": "bridge-dockerize.git/polygon-validator",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "bridge-dockerize.git/polygon-validator/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "stacksvault-validator": {
+      "name": "stacksvault-validator",
+      "path": "bridge-dockerize.git/stacksvault-validator",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "bridge-dockerize.git/stacksvault-validator/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "tonvault-validator": {
+      "name": "tonvault-validator",
+      "path": "bridge-dockerize.git/tonvault-validator",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "bridge-dockerize.git/tonvault-validator/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "xrpvault-validator": {
+      "name": "xrpvault-validator",
+      "path": "bridge-dockerize.git/xrpvault-validator",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "Dockerfile": {
+          "name": "Dockerfile",
+          "path": "bridge-dockerize.git/xrpvault-validator/Dockerfile",
+          "isDir": false,
+          "isDockerfile": true,
+          "isComposefile": false
+        },
+        "common.yml": {
+          "name": "common.yml",
+          "path": "bridge-dockerize.git/xrpvault-validator/common.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "bridge-dockerize.git/xrpvault-validator/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "pm2.yaml": {
+          "name": "pm2.yaml",
+          "path": "bridge-dockerize.git/xrpvault-validator/pm2.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "settings.js": {
+          "name": "settings.js",
+          "path": "bridge-dockerize.git/xrpvault-validator/settings.js",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 307630619,
+    "name": "bridge-dockerize",
+    "full_name": "orbit-chain/bridge-dockerize",
+    "owner": {
+      "login": "orbit-chain",
+      "html_url": "https://github.com/orbit-chain",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/orbit-chain/bridge-dockerize",
+    "description": "provide docker compose files for bridge operating set",
+    "url": "https://api.github.com/repos/orbit-chain/bridge-dockerize",
+    "clone_url": "https://github.com/orbit-chain/bridge-dockerize.git",
+    "homepage": null,
+    "size": 340,
+    "stargazers_count": 8,
+    "watchers_count": 8,
+    "language": "JavaScript"
+  }
+}

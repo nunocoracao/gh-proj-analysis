@@ -1,0 +1,2381 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "acs-deployment.git/.github/workflows/docker-compose-community.yml",
+        "acs-deployment.git/.github/workflows/docker-compose-enterprise.yml",
+        "acs-deployment.git/.github/workflows/pre-commit-compose.yml",
+        "acs-deployment.git/docker-compose/7.0.N-docker-compose.yml",
+        "acs-deployment.git/docker-compose/7.1.N-docker-compose.yml",
+        "acs-deployment.git/docker-compose/7.2.N-docker-compose.yml",
+        "acs-deployment.git/docker-compose/7.3.N-docker-compose.yml",
+        "acs-deployment.git/docker-compose/community-docker-compose.yml",
+        "acs-deployment.git/docker-compose/docker-compose.yml",
+        "acs-deployment.git/docker-compose/elasticsearch-override-docker-compose.yml"
+      ]
+    }
+  },
+  "struct": {
+    ".checkov": {
+      "name": ".checkov",
+      "path": "acs-deployment.git/.checkov",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "helm_vars.yaml": {
+          "name": "helm_vars.yaml",
+          "path": "acs-deployment.git/.checkov/helm_vars.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".checkov.yml": {
+      "name": ".checkov.yml",
+      "path": "acs-deployment.git/.checkov.yml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".editorconfig": {
+      "name": ".editorconfig",
+      "path": "acs-deployment.git/.editorconfig",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "acs-deployment.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "acs-deployment.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "acs-deployment.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "acs-deployment.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "acs-deployment.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "acs-deployment.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "acs-deployment.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "acs-deployment.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "acs-deployment.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "acs-deployment.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "acs-deployment.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "acs-deployment.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "acs-deployment.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "acs-deployment.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "acs-deployment.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "acs-deployment.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "acs-deployment.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "acs-deployment.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "acs-deployment.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "acs-deployment.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "acs-deployment.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "acs-deployment.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "acs-deployment.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "acs-deployment.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "acs-deployment.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "acs-deployment.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "acs-deployment.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "acs-deployment.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "acs-deployment.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "acs-deployment.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "acs-deployment.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "acs-deployment.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-dd8c1af0a6e972bd58a1ba5baed52d28339034ad.idx": {
+                  "name": "pack-dd8c1af0a6e972bd58a1ba5baed52d28339034ad.idx",
+                  "path": "acs-deployment.git/.git/objects/pack/pack-dd8c1af0a6e972bd58a1ba5baed52d28339034ad.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-dd8c1af0a6e972bd58a1ba5baed52d28339034ad.pack": {
+                  "name": "pack-dd8c1af0a6e972bd58a1ba5baed52d28339034ad.pack",
+                  "path": "acs-deployment.git/.git/objects/pack/pack-dd8c1af0a6e972bd58a1ba5baed52d28339034ad.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "acs-deployment.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "acs-deployment.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "acs-deployment.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "acs-deployment.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "acs-deployment.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "acs-deployment.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "acs-deployment.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "acs-deployment.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "acs-deployment.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "acs-deployment.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "actions": {
+          "name": "actions",
+          "path": "acs-deployment.git/.github/actions",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "charts-as-json": {
+              "name": "charts-as-json",
+              "path": "acs-deployment.git/.github/actions/charts-as-json",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "action.yml": {
+                  "name": "action.yml",
+                  "path": "acs-deployment.git/.github/actions/charts-as-json/action.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "use-local-deps": {
+              "name": "use-local-deps",
+              "path": "acs-deployment.git/.github/actions/use-local-deps",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "action.yml": {
+                  "name": "action.yml",
+                  "path": "acs-deployment.git/.github/actions/use-local-deps/action.yml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "local-deps.sh": {
+                  "name": "local-deps.sh",
+                  "path": "acs-deployment.git/.github/actions/use-local-deps/local-deps.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "dependabot.yml": {
+          "name": "dependabot.yml",
+          "path": "acs-deployment.git/.github/dependabot.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "acs-deployment.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose-community.yml": {
+              "name": "docker-compose-community.yml",
+              "path": "acs-deployment.git/.github/workflows/docker-compose-community.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "docker-compose-enterprise.yml": {
+              "name": "docker-compose-enterprise.yml",
+              "path": "acs-deployment.git/.github/workflows/docker-compose-enterprise.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "helm-community.yml": {
+              "name": "helm-community.yml",
+              "path": "acs-deployment.git/.github/workflows/helm-community.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "helm-enterprise.yml": {
+              "name": "helm-enterprise.yml",
+              "path": "acs-deployment.git/.github/workflows/helm-enterprise.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "helm-release.yml": {
+              "name": "helm-release.yml",
+              "path": "acs-deployment.git/.github/workflows/helm-release.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit-compose.yml": {
+              "name": "pre-commit-compose.yml",
+              "path": "acs-deployment.git/.github/workflows/pre-commit-compose.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": true
+            },
+            "pre-commit-helm-docs.yml": {
+              "name": "pre-commit-helm-docs.yml",
+              "path": "acs-deployment.git/.github/workflows/pre-commit-helm-docs.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit-helm.yml": {
+              "name": "pre-commit-helm.yml",
+              "path": "acs-deployment.git/.github/workflows/pre-commit-helm.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "acs-deployment.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".pre-commit-config.yaml": {
+      "name": ".pre-commit-config.yaml",
+      "path": "acs-deployment.git/.pre-commit-config.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".vscode": {
+      "name": ".vscode",
+      "path": "acs-deployment.git/.vscode",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "tasks.json": {
+          "name": "tasks.json",
+          "path": "acs-deployment.git/.vscode/tasks.json",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "CONTRIBUTING.md": {
+      "name": "CONTRIBUTING.md",
+      "path": "acs-deployment.git/CONTRIBUTING.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "path": "acs-deployment.git/LICENSE",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "acs-deployment.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "docker-compose": {
+      "name": "docker-compose",
+      "path": "acs-deployment.git/docker-compose",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "7.0.N-docker-compose.yml": {
+          "name": "7.0.N-docker-compose.yml",
+          "path": "acs-deployment.git/docker-compose/7.0.N-docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "7.1.N-docker-compose.yml": {
+          "name": "7.1.N-docker-compose.yml",
+          "path": "acs-deployment.git/docker-compose/7.1.N-docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "7.2.N-docker-compose.yml": {
+          "name": "7.2.N-docker-compose.yml",
+          "path": "acs-deployment.git/docker-compose/7.2.N-docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "7.3.N-docker-compose.yml": {
+          "name": "7.3.N-docker-compose.yml",
+          "path": "acs-deployment.git/docker-compose/7.3.N-docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "acs-deployment.git/docker-compose/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "community-docker-compose.yml": {
+          "name": "community-docker-compose.yml",
+          "path": "acs-deployment.git/docker-compose/community-docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "docker-compose.yml": {
+          "name": "docker-compose.yml",
+          "path": "acs-deployment.git/docker-compose/docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        },
+        "elasticsearch-override-docker-compose.yml": {
+          "name": "elasticsearch-override-docker-compose.yml",
+          "path": "acs-deployment.git/docker-compose/elasticsearch-override-docker-compose.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": true
+        }
+      }
+    },
+    "docs": {
+      "name": "docs",
+      "path": "acs-deployment.git/docs",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "docker-compose": {
+          "name": "docker-compose",
+          "path": "acs-deployment.git/docs/docker-compose",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "acs-deployment.git/docs/docker-compose/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "diagrams": {
+              "name": "diagrams",
+              "path": "acs-deployment.git/docs/docker-compose/diagrams",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "docker-compose-community.png": {
+                  "name": "docker-compose-community.png",
+                  "path": "acs-deployment.git/docs/docker-compose/diagrams/docker-compose-community.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "docker-compose-community.puml": {
+                  "name": "docker-compose-community.puml",
+                  "path": "acs-deployment.git/docs/docker-compose/diagrams/docker-compose-community.puml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "docker-compose-enterprise.png": {
+                  "name": "docker-compose-enterprise.png",
+                  "path": "acs-deployment.git/docs/docker-compose/diagrams/docker-compose-enterprise.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "docker-compose-enterprise.puml": {
+                  "name": "docker-compose-enterprise.puml",
+                  "path": "acs-deployment.git/docs/docker-compose/diagrams/docker-compose-enterprise.puml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "examples": {
+              "name": "examples",
+              "path": "acs-deployment.git/docs/docker-compose/examples",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "customisation-guidelines.md": {
+                  "name": "customisation-guidelines.md",
+                  "path": "acs-deployment.git/docs/docker-compose/examples/customisation-guidelines.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "helm": {
+          "name": "helm",
+          "path": "acs-deployment.git/docs/helm",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "README.md": {
+              "name": "README.md",
+              "path": "acs-deployment.git/docs/helm/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "diagrams": {
+              "name": "diagrams",
+              "path": "acs-deployment.git/docs/helm/diagrams",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "charts-storage-persistence.png": {
+                  "name": "charts-storage-persistence.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/charts-storage-persistence.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "charts-storage-persistence.puml": {
+                  "name": "charts-storage-persistence.puml",
+                  "path": "acs-deployment.git/docs/helm/diagrams/charts-storage-persistence.puml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dfd-k8s-enabled.png": {
+                  "name": "dfd-k8s-enabled.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/dfd-k8s-enabled.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "dfd-resources.png": {
+                  "name": "dfd-resources.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/dfd-resources.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "eks-attach-policy.png": {
+                  "name": "eks-attach-policy.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/eks-attach-policy.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "eks-db-inbound-rules.png": {
+                  "name": "eks-db-inbound-rules.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/eks-db-inbound-rules.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "eks-db-security-group.png": {
+                  "name": "eks-db-security-group.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/eks-db-security-group.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "eks-efs.png": {
+                  "name": "eks-efs.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/eks-efs.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "eks-mq-inbound-rules.png": {
+                  "name": "eks-mq-inbound-rules.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/eks-mq-inbound-rules.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "eks-nfs-inbound-rules.png": {
+                  "name": "eks-nfs-inbound-rules.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/eks-nfs-inbound-rules.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "eks-s3-iam-policy.png": {
+                  "name": "eks-s3-iam-policy.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/eks-s3-iam-policy.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "eks-vpc-security-group.png": {
+                  "name": "eks-vpc-security-group.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/eks-vpc-security-group.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-community.png": {
+                  "name": "helm-community.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-community.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-community.puml": {
+                  "name": "helm-community.puml",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-community.puml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-eks-community.png": {
+                  "name": "helm-eks-community.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-eks-community.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-eks-community.puml": {
+                  "name": "helm-eks-community.puml",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-eks-community.puml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-eks-enterprise.png": {
+                  "name": "helm-eks-enterprise.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-eks-enterprise.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-eks-enterprise.puml": {
+                  "name": "helm-eks-enterprise.puml",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-eks-enterprise.puml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-eks-s3-rds-mq-ai.png": {
+                  "name": "helm-eks-s3-rds-mq-ai.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-eks-s3-rds-mq-ai.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-eks-s3-rds-mq-ai.puml": {
+                  "name": "helm-eks-s3-rds-mq-ai.puml",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-eks-s3-rds-mq-ai.puml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-eks-s3-rds-mq-ooi.png": {
+                  "name": "helm-eks-s3-rds-mq-ooi.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-eks-s3-rds-mq-ooi.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-eks-s3-rds-mq-ooi.puml": {
+                  "name": "helm-eks-s3-rds-mq-ooi.puml",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-eks-s3-rds-mq-ooi.puml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-eks-s3-rds-mq.png": {
+                  "name": "helm-eks-s3-rds-mq.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-eks-s3-rds-mq.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-eks-s3-rds-mq.puml": {
+                  "name": "helm-eks-s3-rds-mq.puml",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-eks-s3-rds-mq.puml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-enterprise.png": {
+                  "name": "helm-enterprise.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-enterprise.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "helm-enterprise.puml": {
+                  "name": "helm-enterprise.puml",
+                  "path": "acs-deployment.git/docs/helm/diagrams/helm-enterprise.puml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "k8s-dashboard.png": {
+                  "name": "k8s-dashboard.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/k8s-dashboard.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "k8s-lens.png": {
+                  "name": "k8s-lens.png",
+                  "path": "acs-deployment.git/docs/helm/diagrams/k8s-lens.png",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "docker-desktop-deployment.md": {
+              "name": "docker-desktop-deployment.md",
+              "path": "acs-deployment.git/docs/helm/docker-desktop-deployment.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "eks-deployment.md": {
+              "name": "eks-deployment.md",
+              "path": "acs-deployment.git/docs/helm/eks-deployment.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "examples": {
+              "name": "examples",
+              "path": "acs-deployment.git/docs/helm/examples",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "alf_license.md": {
+                  "name": "alf_license.md",
+                  "path": "acs-deployment.git/docs/helm/examples/alf_license.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "custom-metadata-keystore.md": {
+                  "name": "custom-metadata-keystore.md",
+                  "path": "acs-deployment.git/docs/helm/examples/custom-metadata-keystore.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "customisation-guidelines.md": {
+                  "name": "customisation-guidelines.md",
+                  "path": "acs-deployment.git/docs/helm/examples/customisation-guidelines.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "email-enabled.md": {
+                  "name": "email-enabled.md",
+                  "path": "acs-deployment.git/docs/helm/examples/email-enabled.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "search-external-access.md": {
+                  "name": "search-external-access.md",
+                  "path": "acs-deployment.git/docs/helm/examples/search-external-access.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "with-ai.md": {
+                  "name": "with-ai.md",
+                  "path": "acs-deployment.git/docs/helm/examples/with-ai.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "with-aws-services.md": {
+                  "name": "with-aws-services.md",
+                  "path": "acs-deployment.git/docs/helm/examples/with-aws-services.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "with-ms-teams.md": {
+                  "name": "with-ms-teams.md",
+                  "path": "acs-deployment.git/docs/helm/examples/with-ms-teams.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "with-ooi.md": {
+                  "name": "with-ooi.md",
+                  "path": "acs-deployment.git/docs/helm/examples/with-ooi.md",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "storage.md": {
+              "name": "storage.md",
+              "path": "acs-deployment.git/docs/helm/storage.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "properties-reference.md": {
+          "name": "properties-reference.md",
+          "path": "acs-deployment.git/docs/properties-reference.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "helm": {
+      "name": "helm",
+      "path": "acs-deployment.git/helm",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "alfresco-common": {
+          "name": "alfresco-common",
+          "path": "acs-deployment.git/helm/alfresco-common",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".helmignore": {
+              "name": ".helmignore",
+              "path": "acs-deployment.git/helm/alfresco-common/.helmignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Chart.yaml": {
+              "name": "Chart.yaml",
+              "path": "acs-deployment.git/helm/alfresco-common/Chart.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "acs-deployment.git/helm/alfresco-common/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md.gotmpl": {
+              "name": "README.md.gotmpl",
+              "path": "acs-deployment.git/helm/alfresco-common/README.md.gotmpl",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "acs-deployment.git/helm/alfresco-common/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "_helpers-activemq.tpl": {
+                  "name": "_helpers-activemq.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-common/templates/_helpers-activemq.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-image-pull-secrets.tpl": {
+                  "name": "_helpers-image-pull-secrets.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-common/templates/_helpers-image-pull-secrets.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-persistence.tpl": {
+                  "name": "_helpers-persistence.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-common/templates/_helpers-persistence.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-search.tpl": {
+                  "name": "_helpers-search.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-common/templates/_helpers-search.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers.tpl": {
+                  "name": "_helpers.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-common/templates/_helpers.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "alfresco-content-services": {
+          "name": "alfresco-content-services",
+          "path": "acs-deployment.git/helm/alfresco-content-services",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            ".helmignore": {
+              "name": ".helmignore",
+              "path": "acs-deployment.git/helm/alfresco-content-services/.helmignore",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "7.0.N_values.yaml": {
+              "name": "7.0.N_values.yaml",
+              "path": "acs-deployment.git/helm/alfresco-content-services/7.0.N_values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "7.1.N_values.yaml": {
+              "name": "7.1.N_values.yaml",
+              "path": "acs-deployment.git/helm/alfresco-content-services/7.1.N_values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "7.2.N_values.yaml": {
+              "name": "7.2.N_values.yaml",
+              "path": "acs-deployment.git/helm/alfresco-content-services/7.2.N_values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "7.3.N_values.yaml": {
+              "name": "7.3.N_values.yaml",
+              "path": "acs-deployment.git/helm/alfresco-content-services/7.3.N_values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Chart.yaml": {
+              "name": "Chart.yaml",
+              "path": "acs-deployment.git/helm/alfresco-content-services/Chart.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md": {
+              "name": "README.md",
+              "path": "acs-deployment.git/helm/alfresco-content-services/README.md",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "README.md.gotmpl": {
+              "name": "README.md.gotmpl",
+              "path": "acs-deployment.git/helm/alfresco-content-services/README.md.gotmpl",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "charts": {
+              "name": "charts",
+              "path": "acs-deployment.git/helm/alfresco-content-services/charts",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "activemq": {
+                  "name": "activemq",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/charts/activemq",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Chart.yaml": {
+                      "name": "Chart.yaml",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/activemq/Chart.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "README.md": {
+                      "name": "README.md",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/activemq/README.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "README.md.gotmpl": {
+                      "name": "README.md.gotmpl",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/activemq/README.md.gotmpl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "templates": {
+                      "name": "templates",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/activemq/templates",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "deployment-activemq.yaml": {
+                          "name": "deployment-activemq.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/activemq/templates/deployment-activemq.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "pvc-activemq.yaml": {
+                          "name": "pvc-activemq.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/activemq/templates/pvc-activemq.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "svc-activemq-broker.yaml": {
+                          "name": "svc-activemq-broker.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/activemq/templates/svc-activemq-broker.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "svc-activemq-web-console.yaml": {
+                          "name": "svc-activemq-web-console.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/activemq/templates/svc-activemq-web-console.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "tests": {
+                      "name": "tests",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/activemq/tests",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "pv_activemq_test.yaml": {
+                          "name": "pv_activemq_test.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/activemq/tests/pv_activemq_test.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "values.yaml": {
+                      "name": "values.yaml",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/activemq/values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "alfresco-elasticsearch-connector": {
+                  "name": "alfresco-elasticsearch-connector",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Chart.yaml": {
+                      "name": "Chart.yaml",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/Chart.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "README.md": {
+                      "name": "README.md",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/README.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "README.md.gotmpl": {
+                      "name": "README.md.gotmpl",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/README.md.gotmpl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "templates": {
+                      "name": "templates",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/templates",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "_helpers-elasticsearch.tpl": {
+                          "name": "_helpers-elasticsearch.tpl",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/templates/_helpers-elasticsearch.tpl",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "_helpers.tpl": {
+                          "name": "_helpers.tpl",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/templates/_helpers.tpl",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "liveindexing-config.yaml": {
+                          "name": "liveindexing-config.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/templates/liveindexing-config.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "liveindexing-deployment.yaml": {
+                          "name": "liveindexing-deployment.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/templates/liveindexing-deployment.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "reindexing-config.yaml": {
+                          "name": "reindexing-config.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/templates/reindexing-config.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "reindexing-job.yaml": {
+                          "name": "reindexing-job.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/templates/reindexing-job.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "tests": {
+                      "name": "tests",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/tests",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "liveindexing_test.yaml": {
+                          "name": "liveindexing_test.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/tests/liveindexing_test.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "reindexing_test.yaml": {
+                          "name": "reindexing_test.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/tests/reindexing_test.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "values": {
+                          "name": "values",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/tests/values",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "external.yaml": {
+                              "name": "external.yaml",
+                              "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/tests/values/external.yaml",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "values.yaml": {
+                      "name": "values.yaml",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-elasticsearch-connector/values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "alfresco-search": {
+                  "name": "alfresco-search",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Chart.yaml": {
+                      "name": "Chart.yaml",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/Chart.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "README.md": {
+                      "name": "README.md",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/README.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "README.md.gotmpl": {
+                      "name": "README.md.gotmpl",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/README.md.gotmpl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "charts": {
+                      "name": "charts",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "alfresco-insight-zeppelin": {
+                          "name": "alfresco-insight-zeppelin",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts/alfresco-insight-zeppelin",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "Chart.yaml": {
+                              "name": "Chart.yaml",
+                              "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts/alfresco-insight-zeppelin/Chart.yaml",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "README.md": {
+                              "name": "README.md",
+                              "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts/alfresco-insight-zeppelin/README.md",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "README.md.gotmpl": {
+                              "name": "README.md.gotmpl",
+                              "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts/alfresco-insight-zeppelin/README.md.gotmpl",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            },
+                            "templates": {
+                              "name": "templates",
+                              "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts/alfresco-insight-zeppelin/templates",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "NOTES.txt": {
+                                  "name": "NOTES.txt",
+                                  "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts/alfresco-insight-zeppelin/templates/NOTES.txt",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "_helpers.tpl": {
+                                  "name": "_helpers.tpl",
+                                  "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts/alfresco-insight-zeppelin/templates/_helpers.tpl",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "config.yaml": {
+                                  "name": "config.yaml",
+                                  "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts/alfresco-insight-zeppelin/templates/config.yaml",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "deployment.yaml": {
+                                  "name": "deployment.yaml",
+                                  "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts/alfresco-insight-zeppelin/templates/deployment.yaml",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "ingress.yaml": {
+                                  "name": "ingress.yaml",
+                                  "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts/alfresco-insight-zeppelin/templates/ingress.yaml",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                },
+                                "service.yaml": {
+                                  "name": "service.yaml",
+                                  "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts/alfresco-insight-zeppelin/templates/service.yaml",
+                                  "isDir": false,
+                                  "isDockerfile": false,
+                                  "isComposefile": false
+                                }
+                              }
+                            },
+                            "values.yaml": {
+                              "name": "values.yaml",
+                              "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/charts/alfresco-insight-zeppelin/values.yaml",
+                              "isDir": false,
+                              "isDockerfile": false,
+                              "isComposefile": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "templates": {
+                      "name": "templates",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/templates",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "NOTES.txt": {
+                          "name": "NOTES.txt",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/templates/NOTES.txt",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "_helpers.tpl": {
+                          "name": "_helpers.tpl",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/templates/_helpers.tpl",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "config.yaml": {
+                          "name": "config.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/templates/config.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "deployment.yaml": {
+                          "name": "deployment.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/templates/deployment.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ingress.yaml": {
+                          "name": "ingress.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/templates/ingress.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "pvc.yaml": {
+                          "name": "pvc.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/templates/pvc.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "secret-solr-jtoolopt.yml": {
+                          "name": "secret-solr-jtoolopt.yml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/templates/secret-solr-jtoolopt.yml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "secrets.yaml": {
+                          "name": "secrets.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/templates/secrets.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "service.yaml": {
+                          "name": "service.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/templates/service.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "values.yaml": {
+                      "name": "values.yaml",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-search/values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "alfresco-sync-service": {
+                  "name": "alfresco-sync-service",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "Chart.yaml": {
+                      "name": "Chart.yaml",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service/Chart.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "README.md": {
+                      "name": "README.md",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service/README.md",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "README.md.gotmpl": {
+                      "name": "README.md.gotmpl",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service/README.md.gotmpl",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "templates": {
+                      "name": "templates",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service/templates",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "_helpers.tpl": {
+                          "name": "_helpers.tpl",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service/templates/_helpers.tpl",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "config-syncservice.yaml": {
+                          "name": "config-syncservice.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service/templates/config-syncservice.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "deployment-syncservice.yaml": {
+                          "name": "deployment-syncservice.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service/templates/deployment-syncservice.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "hpa-syncservice.yaml": {
+                          "name": "hpa-syncservice.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service/templates/hpa-syncservice.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "ingress.yaml": {
+                          "name": "ingress.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service/templates/ingress.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "secret-database.yaml": {
+                          "name": "secret-database.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service/templates/secret-database.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "svc-syncservice.yaml": {
+                          "name": "svc-syncservice.yaml",
+                          "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service/templates/svc-syncservice.yaml",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    },
+                    "values.yaml": {
+                      "name": "values.yaml",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/charts/alfresco-sync-service/values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "community_values.yaml": {
+              "name": "community_values.yaml",
+              "path": "acs-deployment.git/helm/alfresco-content-services/community_values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "templates": {
+              "name": "templates",
+              "path": "acs-deployment.git/helm/alfresco-content-services/templates",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "NOTES.txt": {
+                  "name": "NOTES.txt",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/NOTES.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-ai-transformer.tpl": {
+                  "name": "_helpers-ai-transformer.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-ai-transformer.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-elasticsearch.tpl": {
+                  "name": "_helpers-elasticsearch.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-elasticsearch.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-filestore.tpl": {
+                  "name": "_helpers-filestore.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-filestore.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-imagemagick.tpl": {
+                  "name": "_helpers-imagemagick.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-imagemagick.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-ingress.tpl": {
+                  "name": "_helpers-ingress.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-ingress.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-libreoffice.tpl": {
+                  "name": "_helpers-libreoffice.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-libreoffice.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-ms-teams-service.tpl": {
+                  "name": "_helpers-ms-teams-service.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-ms-teams-service.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-ooi-service.tpl": {
+                  "name": "_helpers-ooi-service.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-ooi-service.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-pdfrenderer.tpl": {
+                  "name": "_helpers-pdfrenderer.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-pdfrenderer.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-repository.tpl": {
+                  "name": "_helpers-repository.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-repository.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-share.tpl": {
+                  "name": "_helpers-share.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-share.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-tika.tpl": {
+                  "name": "_helpers-tika.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-tika.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-transform-misc.tpl": {
+                  "name": "_helpers-transform-misc.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-transform-misc.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-transform-router.tpl": {
+                  "name": "_helpers-transform-router.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-transform-router.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers-url.tpl": {
+                  "name": "_helpers-url.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers-url.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "_helpers.tpl": {
+                  "name": "_helpers.tpl",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/_helpers.tpl",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-ai-transformer.yaml": {
+                  "name": "config-ai-transformer.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-ai-transformer.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-dev-log4j-properties.yaml": {
+                  "name": "config-dev-log4j-properties.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-dev-log4j-properties.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-email.yaml": {
+                  "name": "config-email.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-email.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-filestore.yaml": {
+                  "name": "config-filestore.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-filestore.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-imagemagick.yaml": {
+                  "name": "config-imagemagick.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-imagemagick.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-libreoffice.yaml": {
+                  "name": "config-libreoffice.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-libreoffice.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-ms-teams-service.yaml": {
+                  "name": "config-ms-teams-service.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-ms-teams-service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-ooi-service.yaml": {
+                  "name": "config-ooi-service.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-ooi-service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-pdfrenderer.yaml": {
+                  "name": "config-pdfrenderer.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-pdfrenderer.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-repository.yaml": {
+                  "name": "config-repository.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-repository.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-share.yaml": {
+                  "name": "config-share.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-share.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-tika.yaml": {
+                  "name": "config-tika.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-tika.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-transform-misc.yaml": {
+                  "name": "config-transform-misc.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-transform-misc.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-transform-router.yaml": {
+                  "name": "config-transform-router.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-transform-router.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "config-transformer-routes.yaml": {
+                  "name": "config-transformer-routes.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/config-transformer-routes.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment-ai-transformer.yaml": {
+                  "name": "deployment-ai-transformer.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/deployment-ai-transformer.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment-filestore.yaml": {
+                  "name": "deployment-filestore.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/deployment-filestore.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment-imagemagick.yaml": {
+                  "name": "deployment-imagemagick.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/deployment-imagemagick.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment-libreoffice.yaml": {
+                  "name": "deployment-libreoffice.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/deployment-libreoffice.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment-ms-teams-service.yaml": {
+                  "name": "deployment-ms-teams-service.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/deployment-ms-teams-service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment-ooi-service.yaml": {
+                  "name": "deployment-ooi-service.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/deployment-ooi-service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment-pdfrenderer.yaml": {
+                  "name": "deployment-pdfrenderer.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/deployment-pdfrenderer.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment-repository.yaml": {
+                  "name": "deployment-repository.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/deployment-repository.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment-share.yaml": {
+                  "name": "deployment-share.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/deployment-share.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment-tika.yaml": {
+                  "name": "deployment-tika.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/deployment-tika.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment-transform-misc.yaml": {
+                  "name": "deployment-transform-misc.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/deployment-transform-misc.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "deployment-transform-router.yaml": {
+                  "name": "deployment-transform-router.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/deployment-transform-router.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ingress-ms-teams-service.yaml": {
+                  "name": "ingress-ms-teams-service.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/ingress-ms-teams-service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ingress-ooi-service.yaml": {
+                  "name": "ingress-ooi-service.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/ingress-ooi-service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ingress-repository.yaml": {
+                  "name": "ingress-repository.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/ingress-repository.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "ingress-share.yaml": {
+                  "name": "ingress-share.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/ingress-share.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pvc.yaml": {
+                  "name": "pvc.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/pvc.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret-database.yaml": {
+                  "name": "secret-database.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/secret-database.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret-mail-password.yaml": {
+                  "name": "secret-mail-password.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/secret-mail-password.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret-message-broker.yaml": {
+                  "name": "secret-message-broker.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/secret-message-broker.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret-metadata-keystore.yaml": {
+                  "name": "secret-metadata-keystore.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/secret-metadata-keystore.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret-repo-jtoolopt.yaml": {
+                  "name": "secret-repo-jtoolopt.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/secret-repo-jtoolopt.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "secret-s3.yaml": {
+                  "name": "secret-s3.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/secret-s3.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-ai-transformer.yaml": {
+                  "name": "svc-ai-transformer.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-ai-transformer.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-email.yaml": {
+                  "name": "svc-email.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-email.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-filestore.yaml": {
+                  "name": "svc-filestore.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-filestore.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-imagemagick.yaml": {
+                  "name": "svc-imagemagick.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-imagemagick.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-libreoffice.yaml": {
+                  "name": "svc-libreoffice.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-libreoffice.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-ms-teams-service.yaml": {
+                  "name": "svc-ms-teams-service.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-ms-teams-service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-ooi-service.yaml": {
+                  "name": "svc-ooi-service.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-ooi-service.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-pdfrenderer.yaml": {
+                  "name": "svc-pdfrenderer.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-pdfrenderer.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-repository.yaml": {
+                  "name": "svc-repository.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-repository.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-share.yaml": {
+                  "name": "svc-share.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-share.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-tika.yaml": {
+                  "name": "svc-tika.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-tika.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-transform-misc.yaml": {
+                  "name": "svc-transform-misc.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-transform-misc.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "svc-transform-router.yaml": {
+                  "name": "svc-transform-router.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/templates/svc-transform-router.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "tests": {
+              "name": "tests",
+              "path": "acs-deployment.git/helm/alfresco-content-services/tests",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "activemq_test.yaml": {
+                  "name": "activemq_test.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/tests/activemq_test.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "alfresco-common_test.yaml": {
+                  "name": "alfresco-common_test.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/tests/alfresco-common_test.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pv_test.yaml": {
+                  "name": "pv_test.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/tests/pv_test.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "repository_test.yaml": {
+                  "name": "repository_test.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/tests/repository_test.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "search_test.yaml": {
+                  "name": "search_test.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/tests/search_test.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "share_test.yaml": {
+                  "name": "share_test.yaml",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/tests/share_test.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "values": {
+                  "name": "values",
+                  "path": "acs-deployment.git/helm/alfresco-content-services/tests/values",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "externalBroker_values.yaml": {
+                      "name": "externalBroker_values.yaml",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/tests/values/externalBroker_values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "test_values.yaml": {
+                      "name": "test_values.yaml",
+                      "path": "acs-deployment.git/helm/alfresco-content-services/tests/values/test_values.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "values.yaml": {
+              "name": "values.yaml",
+              "path": "acs-deployment.git/helm/alfresco-content-services/values.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "test": {
+      "name": "test",
+      "path": "acs-deployment.git/test",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "community-integration-test-values.yaml": {
+          "name": "community-integration-test-values.yaml",
+          "path": "acs-deployment.git/test/community-integration-test-values.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "postman": {
+          "name": "postman",
+          "path": "acs-deployment.git/test/postman",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "docker-compose": {
+              "name": "docker-compose",
+              "path": "acs-deployment.git/test/postman/docker-compose",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "acs-test-docker-compose-collection.json": {
+                  "name": "acs-test-docker-compose-collection.json",
+                  "path": "acs-deployment.git/test/postman/docker-compose/acs-test-docker-compose-collection.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "helm": {
+              "name": "helm",
+              "path": "acs-deployment.git/test/postman/helm",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "acs-test-helm-collection.json": {
+                  "name": "acs-test-helm-collection.json",
+                  "path": "acs-deployment.git/test/postman/helm/acs-test-helm-collection.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "acs-validate-volume-collection.json": {
+                  "name": "acs-validate-volume-collection.json",
+                  "path": "acs-deployment.git/test/postman/helm/acs-validate-volume-collection.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "sync-service-test-helm-collection.json": {
+                  "name": "sync-service-test-helm-collection.json",
+                  "path": "acs-deployment.git/test/postman/helm/sync-service-test-helm-collection.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 128182796,
+    "name": "acs-deployment",
+    "full_name": "Alfresco/acs-deployment",
+    "owner": {
+      "login": "Alfresco",
+      "html_url": "https://github.com/Alfresco",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/Alfresco/acs-deployment",
+    "description": "Alfresco Content Services containerized deployment (Helm and Docker Compose)",
+    "url": "https://api.github.com/repos/Alfresco/acs-deployment",
+    "clone_url": "https://github.com/Alfresco/acs-deployment.git",
+    "homepage": "https://www.alfresco.com/platform/content-services-ecm/trial/download",
+    "size": 8993,
+    "stargazers_count": 139,
+    "watchers_count": 139,
+    "language": "Smarty"
+  }
+}

@@ -1,0 +1,1773 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 14,
+      "rootCount": 0,
+      "subFolderCount": 14,
+      "filepaths": [
+        "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/Dockerfile.java",
+        "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipelineFromDockerfile.java",
+        "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/FromFingerprintStep/help-dockerfile.html",
+        "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipelineFromDockerfile",
+        "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipelineFromDockerfileScript.groovy",
+        "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/DockerfileTest.java",
+        "docker-workflow-plugin.git/src/test/resources/Dockerfile-defaultArgs",
+        "docker-workflow-plugin.git/src/test/resources/Dockerfile-withArgs",
+        "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/agent-with-docker/Dockerfile",
+        "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/dirSepInDockerfileName.groovy",
+        "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/fromAlternateDockerfile.groovy",
+        "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/fromDockerfile.groovy",
+        "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/fromDockerfileInOtherDir.groovy",
+        "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/fromDockerfileNoArgs.groovy"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".editorconfig": {
+      "name": ".editorconfig",
+      "path": "docker-workflow-plugin.git/.editorconfig",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "docker-workflow-plugin.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "docker-workflow-plugin.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "docker-workflow-plugin.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "docker-workflow-plugin.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "docker-workflow-plugin.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "docker-workflow-plugin.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "docker-workflow-plugin.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "docker-workflow-plugin.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "docker-workflow-plugin.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "docker-workflow-plugin.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "docker-workflow-plugin.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "docker-workflow-plugin.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "docker-workflow-plugin.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "docker-workflow-plugin.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "docker-workflow-plugin.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "docker-workflow-plugin.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "docker-workflow-plugin.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "docker-workflow-plugin.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "docker-workflow-plugin.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "docker-workflow-plugin.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-a980c05c64778722461e6bfda861676047a02e97.idx": {
+                  "name": "pack-a980c05c64778722461e6bfda861676047a02e97.idx",
+                  "path": "docker-workflow-plugin.git/.git/objects/pack/pack-a980c05c64778722461e6bfda861676047a02e97.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-a980c05c64778722461e6bfda861676047a02e97.pack": {
+                  "name": "pack-a980c05c64778722461e6bfda861676047a02e97.pack",
+                  "path": "docker-workflow-plugin.git/.git/objects/pack/pack-a980c05c64778722461e6bfda861676047a02e97.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "docker-workflow-plugin.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "docker-workflow-plugin.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "docker-workflow-plugin.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "docker-workflow-plugin.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "docker-workflow-plugin.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "docker-workflow-plugin.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "docker-workflow-plugin.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "docker-workflow-plugin.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "563.vd5d2e5c4007f": {
+                  "name": "563.vd5d2e5c4007f",
+                  "path": "docker-workflow-plugin.git/.git/refs/tags/563.vd5d2e5c4007f",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "docker-workflow-plugin.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "docker-workflow-plugin.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "dependabot.yml": {
+          "name": "dependabot.yml",
+          "path": "docker-workflow-plugin.git/.github/dependabot.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "docker-workflow-plugin.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "cd.yaml": {
+              "name": "cd.yaml",
+              "path": "docker-workflow-plugin.git/.github/workflows/cd.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "docker-workflow-plugin.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".mvn": {
+      "name": ".mvn",
+      "path": "docker-workflow-plugin.git/.mvn",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "extensions.xml": {
+          "name": "extensions.xml",
+          "path": "docker-workflow-plugin.git/.mvn/extensions.xml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "maven.config": {
+          "name": "maven.config",
+          "path": "docker-workflow-plugin.git/.mvn/maven.config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "Jenkinsfile": {
+      "name": "Jenkinsfile",
+      "path": "docker-workflow-plugin.git/Jenkinsfile",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "LICENSE.txt": {
+      "name": "LICENSE.txt",
+      "path": "docker-workflow-plugin.git/LICENSE.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "docker-workflow-plugin.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "pom.xml": {
+      "name": "pom.xml",
+      "path": "docker-workflow-plugin.git/pom.xml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "src": {
+      "name": "src",
+      "path": "docker-workflow-plugin.git/src",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "main": {
+          "name": "main",
+          "path": "docker-workflow-plugin.git/src/main",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "java": {
+              "name": "java",
+              "path": "docker-workflow-plugin.git/src/main/java",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "org": {
+                  "name": "org",
+                  "path": "docker-workflow-plugin.git/src/main/java/org",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "jenkinsci": {
+                      "name": "jenkinsci",
+                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "plugins": {
+                          "name": "plugins",
+                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "docker": {
+                              "name": "docker",
+                              "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "workflow": {
+                                  "name": "workflow",
+                                  "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "AbstractEndpointStepExecution.java": {
+                                      "name": "AbstractEndpointStepExecution.java",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/AbstractEndpointStepExecution.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "AbstractEndpointStepExecution2.java": {
+                                      "name": "AbstractEndpointStepExecution2.java",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/AbstractEndpointStepExecution2.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "DockerDSL.java": {
+                                      "name": "DockerDSL.java",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/DockerDSL.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "DockerUtils.java": {
+                                      "name": "DockerUtils.java",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/DockerUtils.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "Dockerfile.java": {
+                                      "name": "Dockerfile.java",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/Dockerfile.java",
+                                      "isDir": false,
+                                      "isDockerfile": true,
+                                      "isComposefile": false
+                                    },
+                                    "FromFingerprintStep.java": {
+                                      "name": "FromFingerprintStep.java",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/FromFingerprintStep.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "ImageAction.java": {
+                                      "name": "ImageAction.java",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/ImageAction.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "ImageNameTokens.java": {
+                                      "name": "ImageNameTokens.java",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/ImageNameTokens.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "RegistryEndpointStep.java": {
+                                      "name": "RegistryEndpointStep.java",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/RegistryEndpointStep.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "RunFingerprintStep.java": {
+                                      "name": "RunFingerprintStep.java",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/RunFingerprintStep.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "ServerEndpointStep.java": {
+                                      "name": "ServerEndpointStep.java",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/ServerEndpointStep.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "WithContainerStep.java": {
+                                      "name": "WithContainerStep.java",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/WithContainerStep.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "client": {
+                                      "name": "client",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/client",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "ControlGroup.java": {
+                                          "name": "ControlGroup.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/client/ControlGroup.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "DockerClient.java": {
+                                          "name": "DockerClient.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/client/DockerClient.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "LaunchResult.java": {
+                                          "name": "LaunchResult.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/client/LaunchResult.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "WindowsDockerClient.java": {
+                                          "name": "WindowsDockerClient.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/client/WindowsDockerClient.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    },
+                                    "declarative": {
+                                      "name": "declarative",
+                                      "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/declarative",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "AbstractDockerAgent.java": {
+                                          "name": "AbstractDockerAgent.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/declarative/AbstractDockerAgent.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "ContainerPerStage.java": {
+                                          "name": "ContainerPerStage.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/declarative/ContainerPerStage.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "DeclarativeDockerUtils.java": {
+                                          "name": "DeclarativeDockerUtils.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/declarative/DeclarativeDockerUtils.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "DockerLabelProvider.java": {
+                                          "name": "DockerLabelProvider.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/declarative/DockerLabelProvider.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "DockerPipeline.java": {
+                                          "name": "DockerPipeline.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipeline.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "DockerPipelineFromDockerfile.java": {
+                                          "name": "DockerPipelineFromDockerfile.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipelineFromDockerfile.java",
+                                          "isDir": false,
+                                          "isDockerfile": true,
+                                          "isComposefile": false
+                                        },
+                                        "DockerPropertiesProvider.java": {
+                                          "name": "DockerPropertiesProvider.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/declarative/DockerPropertiesProvider.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "FolderConfig.java": {
+                                          "name": "FolderConfig.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/declarative/FolderConfig.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "GlobalConfig.java": {
+                                          "name": "GlobalConfig.java",
+                                          "path": "docker-workflow-plugin.git/src/main/java/org/jenkinsci/plugins/docker/workflow/declarative/GlobalConfig.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "resources": {
+              "name": "resources",
+              "path": "docker-workflow-plugin.git/src/main/resources",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "index.jelly": {
+                  "name": "index.jelly",
+                  "path": "docker-workflow-plugin.git/src/main/resources/index.jelly",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "org": {
+                  "name": "org",
+                  "path": "docker-workflow-plugin.git/src/main/resources/org",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "jenkinsci": {
+                      "name": "jenkinsci",
+                      "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "plugins": {
+                          "name": "plugins",
+                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "docker": {
+                              "name": "docker",
+                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "workflow": {
+                                  "name": "workflow",
+                                  "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "Docker.groovy": {
+                                      "name": "Docker.groovy",
+                                      "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/Docker.groovy",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "DockerDSL": {
+                                      "name": "DockerDSL",
+                                      "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/DockerDSL",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "help.jelly": {
+                                          "name": "help.jelly",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/DockerDSL/help.jelly",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    },
+                                    "FromFingerprintStep": {
+                                      "name": "FromFingerprintStep",
+                                      "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/FromFingerprintStep",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "config.jelly": {
+                                          "name": "config.jelly",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/FromFingerprintStep/config.jelly",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "help-dockerfile.html": {
+                                          "name": "help-dockerfile.html",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/FromFingerprintStep/help-dockerfile.html",
+                                          "isDir": false,
+                                          "isDockerfile": true,
+                                          "isComposefile": false
+                                        },
+                                        "help-image.html": {
+                                          "name": "help-image.html",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/FromFingerprintStep/help-image.html",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "help.html": {
+                                          "name": "help.html",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/FromFingerprintStep/help.html",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    },
+                                    "RegistryEndpointStep": {
+                                      "name": "RegistryEndpointStep",
+                                      "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/RegistryEndpointStep",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "config.jelly": {
+                                          "name": "config.jelly",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/RegistryEndpointStep/config.jelly",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "help.html": {
+                                          "name": "help.html",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/RegistryEndpointStep/help.html",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    },
+                                    "RunFingerprintStep": {
+                                      "name": "RunFingerprintStep",
+                                      "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/RunFingerprintStep",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "config.jelly": {
+                                          "name": "config.jelly",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/RunFingerprintStep/config.jelly",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "help.html": {
+                                          "name": "help.html",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/RunFingerprintStep/help.html",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    },
+                                    "ServerEndpointStep": {
+                                      "name": "ServerEndpointStep",
+                                      "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/ServerEndpointStep",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "config.jelly": {
+                                          "name": "config.jelly",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/ServerEndpointStep/config.jelly",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "help.html": {
+                                          "name": "help.html",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/ServerEndpointStep/help.html",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    },
+                                    "WithContainerStep": {
+                                      "name": "WithContainerStep",
+                                      "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/WithContainerStep",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "config.jelly": {
+                                          "name": "config.jelly",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/WithContainerStep/config.jelly",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "help-args.html": {
+                                          "name": "help-args.html",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/WithContainerStep/help-args.html",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "help.html": {
+                                          "name": "help.html",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/WithContainerStep/help.html",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    },
+                                    "declarative": {
+                                      "name": "declarative",
+                                      "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "AbstractDockerAgent": {
+                                          "name": "AbstractDockerAgent",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/AbstractDockerAgent",
+                                          "isDir": true,
+                                          "isDockerfile": false,
+                                          "isComposefile": false,
+                                          "children": {
+                                            "help-args.html": {
+                                              "name": "help-args.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/AbstractDockerAgent/help-args.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help-customWorkspace.html": {
+                                              "name": "help-customWorkspace.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/AbstractDockerAgent/help-customWorkspace.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help-label.html": {
+                                              "name": "help-label.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/AbstractDockerAgent/help-label.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help-registryCredentialsId.html": {
+                                              "name": "help-registryCredentialsId.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/AbstractDockerAgent/help-registryCredentialsId.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help-registryUrl.html": {
+                                              "name": "help-registryUrl.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/AbstractDockerAgent/help-registryUrl.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help-reuseNode.html": {
+                                              "name": "help-reuseNode.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/AbstractDockerAgent/help-reuseNode.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            }
+                                          }
+                                        },
+                                        "AbstractDockerPipelineScript.groovy": {
+                                          "name": "AbstractDockerPipelineScript.groovy",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/AbstractDockerPipelineScript.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "ContainerPerStage": {
+                                          "name": "ContainerPerStage",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/ContainerPerStage",
+                                          "isDir": true,
+                                          "isDockerfile": false,
+                                          "isComposefile": false,
+                                          "children": {
+                                            "config.jelly": {
+                                              "name": "config.jelly",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/ContainerPerStage/config.jelly",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help.html": {
+                                              "name": "help.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/ContainerPerStage/help.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            }
+                                          }
+                                        },
+                                        "DockerPipeline": {
+                                          "name": "DockerPipeline",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipeline",
+                                          "isDir": true,
+                                          "isDockerfile": false,
+                                          "isComposefile": false,
+                                          "children": {
+                                            "config.jelly": {
+                                              "name": "config.jelly",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipeline/config.jelly",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help-alwaysPull.html": {
+                                              "name": "help-alwaysPull.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipeline/help-alwaysPull.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help-image.html": {
+                                              "name": "help-image.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipeline/help-image.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help.html": {
+                                              "name": "help.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipeline/help.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            }
+                                          }
+                                        },
+                                        "DockerPipelineFromDockerfile": {
+                                          "name": "DockerPipelineFromDockerfile",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipelineFromDockerfile",
+                                          "isDir": true,
+                                          "isDockerfile": true,
+                                          "isComposefile": false,
+                                          "children": {
+                                            "config.jelly": {
+                                              "name": "config.jelly",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipelineFromDockerfile/config.jelly",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help-additionalBuildArgs.html": {
+                                              "name": "help-additionalBuildArgs.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipelineFromDockerfile/help-additionalBuildArgs.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help-dir.html": {
+                                              "name": "help-dir.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipelineFromDockerfile/help-dir.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help-filename.html": {
+                                              "name": "help-filename.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipelineFromDockerfile/help-filename.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help.html": {
+                                              "name": "help.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipelineFromDockerfile/help.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            }
+                                          }
+                                        },
+                                        "DockerPipelineFromDockerfileScript.groovy": {
+                                          "name": "DockerPipelineFromDockerfileScript.groovy",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipelineFromDockerfileScript.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": true,
+                                          "isComposefile": false
+                                        },
+                                        "DockerPipelineScript.groovy": {
+                                          "name": "DockerPipelineScript.groovy",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/DockerPipelineScript.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "FolderConfig": {
+                                          "name": "FolderConfig",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/FolderConfig",
+                                          "isDir": true,
+                                          "isDockerfile": false,
+                                          "isComposefile": false,
+                                          "children": {
+                                            "config.groovy": {
+                                              "name": "config.groovy",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/FolderConfig/config.groovy",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help-dockerLabel.html": {
+                                              "name": "help-dockerLabel.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/FolderConfig/help-dockerLabel.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            }
+                                          }
+                                        },
+                                        "GlobalConfig": {
+                                          "name": "GlobalConfig",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/GlobalConfig",
+                                          "isDir": true,
+                                          "isDockerfile": false,
+                                          "isComposefile": false,
+                                          "children": {
+                                            "config.groovy": {
+                                              "name": "config.groovy",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/GlobalConfig/config.groovy",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            },
+                                            "help-dockerLabel.html": {
+                                              "name": "help-dockerLabel.html",
+                                              "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/GlobalConfig/help-dockerLabel.html",
+                                              "isDir": false,
+                                              "isDockerfile": false,
+                                              "isComposefile": false
+                                            }
+                                          }
+                                        },
+                                        "Messages.properties": {
+                                          "name": "Messages.properties",
+                                          "path": "docker-workflow-plugin.git/src/main/resources/org/jenkinsci/plugins/docker/workflow/declarative/Messages.properties",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "test": {
+          "name": "test",
+          "path": "docker-workflow-plugin.git/src/test",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "java": {
+              "name": "java",
+              "path": "docker-workflow-plugin.git/src/test/java",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "org": {
+                  "name": "org",
+                  "path": "docker-workflow-plugin.git/src/test/java/org",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "jenkinsci": {
+                      "name": "jenkinsci",
+                      "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "plugins": {
+                          "name": "plugins",
+                          "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "docker": {
+                              "name": "docker",
+                              "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "workflow": {
+                                  "name": "workflow",
+                                  "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "DockerDSLTest.java": {
+                                      "name": "DockerDSLTest.java",
+                                      "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/DockerDSLTest.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "DockerTestUtil.java": {
+                                      "name": "DockerTestUtil.java",
+                                      "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/DockerTestUtil.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "DockerUtilsTest.java": {
+                                      "name": "DockerUtilsTest.java",
+                                      "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/DockerUtilsTest.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "DockerfileTest.java": {
+                                      "name": "DockerfileTest.java",
+                                      "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/DockerfileTest.java",
+                                      "isDir": false,
+                                      "isDockerfile": true,
+                                      "isComposefile": false
+                                    },
+                                    "FromFingerprintStepTest.java": {
+                                      "name": "FromFingerprintStepTest.java",
+                                      "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/FromFingerprintStepTest.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "ImageNameTokensTest.java": {
+                                      "name": "ImageNameTokensTest.java",
+                                      "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/ImageNameTokensTest.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "RegistryEndpointStepTest.java": {
+                                      "name": "RegistryEndpointStepTest.java",
+                                      "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/RegistryEndpointStepTest.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "ServerEndpointStepTest.java": {
+                                      "name": "ServerEndpointStepTest.java",
+                                      "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/ServerEndpointStepTest.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "WithContainerStepTest.java": {
+                                      "name": "WithContainerStepTest.java",
+                                      "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/WithContainerStepTest.java",
+                                      "isDir": false,
+                                      "isDockerfile": false,
+                                      "isComposefile": false
+                                    },
+                                    "client": {
+                                      "name": "client",
+                                      "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/client",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "ControlGroupTest.java": {
+                                          "name": "ControlGroupTest.java",
+                                          "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/client/ControlGroupTest.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "DockerClientTest.java": {
+                                          "name": "DockerClientTest.java",
+                                          "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/client/DockerClientTest.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "WindowsDockerClientTest.java": {
+                                          "name": "WindowsDockerClientTest.java",
+                                          "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/client/WindowsDockerClientTest.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    },
+                                    "declarative": {
+                                      "name": "declarative",
+                                      "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/declarative",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "DeclarativeDockerUtilsTest.java": {
+                                          "name": "DeclarativeDockerUtilsTest.java",
+                                          "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/declarative/DeclarativeDockerUtilsTest.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "DockerAgentTest.java": {
+                                          "name": "DockerAgentTest.java",
+                                          "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/declarative/DockerAgentTest.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "DockerBasicModelDefTest.java": {
+                                          "name": "DockerBasicModelDefTest.java",
+                                          "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/declarative/DockerBasicModelDefTest.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "DockerDirectiveGeneratorTest.java": {
+                                          "name": "DockerDirectiveGeneratorTest.java",
+                                          "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/declarative/DockerDirectiveGeneratorTest.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "DockerPostStageTest.java": {
+                                          "name": "DockerPostStageTest.java",
+                                          "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/declarative/DockerPostStageTest.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "DockerScriptStepTest.java": {
+                                          "name": "DockerScriptStepTest.java",
+                                          "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/declarative/DockerScriptStepTest.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "GlobalConfigTest.java": {
+                                          "name": "GlobalConfigTest.java",
+                                          "path": "docker-workflow-plugin.git/src/test/java/org/jenkinsci/plugins/docker/workflow/declarative/GlobalConfigTest.java",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "resources": {
+              "name": "resources",
+              "path": "docker-workflow-plugin.git/src/test/resources",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile-defaultArgs": {
+                  "name": "Dockerfile-defaultArgs",
+                  "path": "docker-workflow-plugin.git/src/test/resources/Dockerfile-defaultArgs",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "Dockerfile-withArgs": {
+                  "name": "Dockerfile-withArgs",
+                  "path": "docker-workflow-plugin.git/src/test/resources/Dockerfile-withArgs",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "org": {
+                  "name": "org",
+                  "path": "docker-workflow-plugin.git/src/test/resources/org",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "jenkinsci": {
+                      "name": "jenkinsci",
+                      "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "plugins": {
+                          "name": "plugins",
+                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins",
+                          "isDir": true,
+                          "isDockerfile": false,
+                          "isComposefile": false,
+                          "children": {
+                            "docker": {
+                              "name": "docker",
+                              "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker",
+                              "isDir": true,
+                              "isDockerfile": false,
+                              "isComposefile": false,
+                              "children": {
+                                "workflow": {
+                                  "name": "workflow",
+                                  "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow",
+                                  "isDir": true,
+                                  "isDockerfile": false,
+                                  "isComposefile": false,
+                                  "children": {
+                                    "agent-with-docker": {
+                                      "name": "agent-with-docker",
+                                      "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/agent-with-docker",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "Dockerfile": {
+                                          "name": "Dockerfile",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/agent-with-docker/Dockerfile",
+                                          "isDir": false,
+                                          "isDockerfile": true,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    },
+                                    "declarative": {
+                                      "name": "declarative",
+                                      "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative",
+                                      "isDir": true,
+                                      "isDockerfile": false,
+                                      "isComposefile": false,
+                                      "children": {
+                                        "GlobalConfigTest": {
+                                          "name": "GlobalConfigTest",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/GlobalConfigTest",
+                                          "isDir": true,
+                                          "isDockerfile": false,
+                                          "isComposefile": false,
+                                          "children": {
+                                            "oldPackages": {
+                                              "name": "oldPackages",
+                                              "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/GlobalConfigTest/oldPackages",
+                                              "isDir": true,
+                                              "isDockerfile": false,
+                                              "isComposefile": false,
+                                              "children": {
+                                                "jobs": {
+                                                  "name": "jobs",
+                                                  "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/GlobalConfigTest/oldPackages/jobs",
+                                                  "isDir": true,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false,
+                                                  "children": {
+                                                    "d": {
+                                                      "name": "d",
+                                                      "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/GlobalConfigTest/oldPackages/jobs/d",
+                                                      "isDir": true,
+                                                      "isDockerfile": false,
+                                                      "isComposefile": false,
+                                                      "children": {
+                                                        "config.xml": {
+                                                          "name": "config.xml",
+                                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/GlobalConfigTest/oldPackages/jobs/d/config.xml",
+                                                          "isDir": false,
+                                                          "isDockerfile": false,
+                                                          "isComposefile": false
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "org.jenkinsci.plugins.pipeline.modeldefinition.config.GlobalConfig.xml": {
+                                                  "name": "org.jenkinsci.plugins.pipeline.modeldefinition.config.GlobalConfig.xml",
+                                                  "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/GlobalConfigTest/oldPackages/org.jenkinsci.plugins.pipeline.modeldefinition.config.GlobalConfig.xml",
+                                                  "isDir": false,
+                                                  "isDockerfile": false,
+                                                  "isComposefile": false
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "additionalDockerBuildArgs.groovy": {
+                                          "name": "additionalDockerBuildArgs.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/additionalDockerBuildArgs.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "additionalDockerBuildArgsParallel.groovy": {
+                                          "name": "additionalDockerBuildArgsParallel.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/additionalDockerBuildArgsParallel.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDocker.groovy": {
+                                          "name": "agentDocker.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDocker.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDocker.json": {
+                                          "name": "agentDocker.json",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDocker.json",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDockerContainerPerStage.groovy": {
+                                          "name": "agentDockerContainerPerStage.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDockerContainerPerStage.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDockerDontReuseNode.groovy": {
+                                          "name": "agentDockerDontReuseNode.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDockerDontReuseNode.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDockerEnvSpecLabel.groovy": {
+                                          "name": "agentDockerEnvSpecLabel.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDockerEnvSpecLabel.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDockerEnvTest.groovy": {
+                                          "name": "agentDockerEnvTest.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDockerEnvTest.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDockerGlobalThenLabel.groovy": {
+                                          "name": "agentDockerGlobalThenLabel.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDockerGlobalThenLabel.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDockerReuseNode.groovy": {
+                                          "name": "agentDockerReuseNode.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDockerReuseNode.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDockerWithCreds.groovy": {
+                                          "name": "agentDockerWithCreds.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDockerWithCreds.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDockerWithEmptyDockerArgs.groovy": {
+                                          "name": "agentDockerWithEmptyDockerArgs.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDockerWithEmptyDockerArgs.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDockerWithNullDockerArgs.groovy": {
+                                          "name": "agentDockerWithNullDockerArgs.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDockerWithNullDockerArgs.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDockerWithRegistryNoCreds.groovy": {
+                                          "name": "agentDockerWithRegistryNoCreds.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDockerWithRegistryNoCreds.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentDockerWithoutContainerPerStage.groovy": {
+                                          "name": "agentDockerWithoutContainerPerStage.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentDockerWithoutContainerPerStage.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "agentInStageAutoCheckout.groovy": {
+                                          "name": "agentInStageAutoCheckout.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/agentInStageAutoCheckout.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "declarativeDockerConfig.groovy": {
+                                          "name": "declarativeDockerConfig.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/declarativeDockerConfig.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "declarativeDockerConfigWithOverride.groovy": {
+                                          "name": "declarativeDockerConfigWithOverride.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/declarativeDockerConfigWithOverride.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "dirSepInDockerfileName.groovy": {
+                                          "name": "dirSepInDockerfileName.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/dirSepInDockerfileName.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": true,
+                                          "isComposefile": false
+                                        },
+                                        "dockerGlobalVariable.groovy": {
+                                          "name": "dockerGlobalVariable.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/dockerGlobalVariable.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "dockerGlobalVariableInScript.groovy": {
+                                          "name": "dockerGlobalVariableInScript.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/dockerGlobalVariableInScript.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "dockerPullLocalImage.groovy": {
+                                          "name": "dockerPullLocalImage.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/dockerPullLocalImage.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "failureBeforeStages.groovy": {
+                                          "name": "failureBeforeStages.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/failureBeforeStages.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "fromAlternateDockerfile.groovy": {
+                                          "name": "fromAlternateDockerfile.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/fromAlternateDockerfile.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": true,
+                                          "isComposefile": false
+                                        },
+                                        "fromDockerfile.groovy": {
+                                          "name": "fromDockerfile.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/fromDockerfile.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": true,
+                                          "isComposefile": false
+                                        },
+                                        "fromDockerfileInOtherDir.groovy": {
+                                          "name": "fromDockerfileInOtherDir.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/fromDockerfileInOtherDir.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": true,
+                                          "isComposefile": false
+                                        },
+                                        "fromDockerfileNoArgs.groovy": {
+                                          "name": "fromDockerfileNoArgs.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/fromDockerfileNoArgs.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": true,
+                                          "isComposefile": false
+                                        },
+                                        "nonExistentDockerImage.groovy": {
+                                          "name": "nonExistentDockerImage.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/nonExistentDockerImage.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        },
+                                        "withAgentNoneAndAgentDocker.groovy": {
+                                          "name": "withAgentNoneAndAgentDocker.groovy",
+                                          "path": "docker-workflow-plugin.git/src/test/resources/org/jenkinsci/plugins/docker/workflow/declarative/withAgentNoneAndAgentDocker.groovy",
+                                          "isDir": false,
+                                          "isDockerfile": false,
+                                          "isComposefile": false
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 36385785,
+    "name": "docker-workflow-plugin",
+    "full_name": "jenkinsci/docker-workflow-plugin",
+    "owner": {
+      "login": "jenkinsci",
+      "html_url": "https://github.com/jenkinsci",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/jenkinsci/docker-workflow-plugin",
+    "description": "Jenkins plugin which allows building, testing, and using Docker images from Jenkins Pipeline projects.",
+    "url": "https://api.github.com/repos/jenkinsci/docker-workflow-plugin",
+    "clone_url": "https://github.com/jenkinsci/docker-workflow-plugin.git",
+    "homepage": "https://plugins.jenkins.io/docker-workflow",
+    "size": 865,
+    "stargazers_count": 472,
+    "watchers_count": 472,
+    "language": "Java"
+  }
+}

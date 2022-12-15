@@ -1,0 +1,4043 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "falco.git/docker/builder/Dockerfile",
+        "falco.git/docker/driver-loader/Dockerfile",
+        "falco.git/docker/falco/Dockerfile",
+        "falco.git/docker/local/Dockerfile",
+        "falco.git/docker/no-driver/Dockerfile",
+        "falco.git/docker/tester/Dockerfile",
+        "falco.git/docker/tester/root/runners/deb.Dockerfile",
+        "falco.git/docker/tester/root/runners/rpm.Dockerfile",
+        "falco.git/docker/tester/root/runners/tar.gz.Dockerfile",
+        "falco.git/docker/ubi/Dockerfile",
+        "falco.git/test/driver-loader/runner/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "struct": {
+    ".circleci": {
+      "name": ".circleci",
+      "path": "falco.git/.circleci",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "OWNERS": {
+          "name": "OWNERS",
+          "path": "falco.git/.circleci/OWNERS",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config.yml": {
+          "name": "config.yml",
+          "path": "falco.git/.circleci/config.yml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".clang-format": {
+      "name": ".clang-format",
+      "path": "falco.git/.clang-format",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".cmake-format": {
+      "name": ".cmake-format",
+      "path": "falco.git/.cmake-format",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".codespellignore": {
+      "name": ".codespellignore",
+      "path": "falco.git/.codespellignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".git": {
+      "name": ".git",
+      "path": "falco.git/.git",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "HEAD": {
+          "name": "HEAD",
+          "path": "falco.git/.git/HEAD",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "config": {
+          "name": "config",
+          "path": "falco.git/.git/config",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "description": {
+          "name": "description",
+          "path": "falco.git/.git/description",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "hooks": {
+          "name": "hooks",
+          "path": "falco.git/.git/hooks",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "applypatch-msg.sample": {
+              "name": "applypatch-msg.sample",
+              "path": "falco.git/.git/hooks/applypatch-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "commit-msg.sample": {
+              "name": "commit-msg.sample",
+              "path": "falco.git/.git/hooks/commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "fsmonitor-watchman.sample": {
+              "name": "fsmonitor-watchman.sample",
+              "path": "falco.git/.git/hooks/fsmonitor-watchman.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "post-update.sample": {
+              "name": "post-update.sample",
+              "path": "falco.git/.git/hooks/post-update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-applypatch.sample": {
+              "name": "pre-applypatch.sample",
+              "path": "falco.git/.git/hooks/pre-applypatch.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-commit.sample": {
+              "name": "pre-commit.sample",
+              "path": "falco.git/.git/hooks/pre-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-merge-commit.sample": {
+              "name": "pre-merge-commit.sample",
+              "path": "falco.git/.git/hooks/pre-merge-commit.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-push.sample": {
+              "name": "pre-push.sample",
+              "path": "falco.git/.git/hooks/pre-push.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-rebase.sample": {
+              "name": "pre-rebase.sample",
+              "path": "falco.git/.git/hooks/pre-rebase.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "pre-receive.sample": {
+              "name": "pre-receive.sample",
+              "path": "falco.git/.git/hooks/pre-receive.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prepare-commit-msg.sample": {
+              "name": "prepare-commit-msg.sample",
+              "path": "falco.git/.git/hooks/prepare-commit-msg.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "push-to-checkout.sample": {
+              "name": "push-to-checkout.sample",
+              "path": "falco.git/.git/hooks/push-to-checkout.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "update.sample": {
+              "name": "update.sample",
+              "path": "falco.git/.git/hooks/update.sample",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "index": {
+          "name": "index",
+          "path": "falco.git/.git/index",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "info": {
+          "name": "info",
+          "path": "falco.git/.git/info",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "exclude": {
+              "name": "exclude",
+              "path": "falco.git/.git/info/exclude",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "logs": {
+          "name": "logs",
+          "path": "falco.git/.git/logs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "HEAD": {
+              "name": "HEAD",
+              "path": "falco.git/.git/logs/HEAD",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "refs": {
+              "name": "refs",
+              "path": "falco.git/.git/logs/refs",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "heads": {
+                  "name": "heads",
+                  "path": "falco.git/.git/logs/refs/heads",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "master": {
+                      "name": "master",
+                      "path": "falco.git/.git/logs/refs/heads/master",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "remotes": {
+                  "name": "remotes",
+                  "path": "falco.git/.git/logs/refs/remotes",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "origin": {
+                      "name": "origin",
+                      "path": "falco.git/.git/logs/refs/remotes/origin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "HEAD": {
+                          "name": "HEAD",
+                          "path": "falco.git/.git/logs/refs/remotes/origin/HEAD",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "name": "objects",
+          "path": "falco.git/.git/objects",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "info": {
+              "name": "info",
+              "path": "falco.git/.git/objects/info",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            },
+            "pack": {
+              "name": "pack",
+              "path": "falco.git/.git/objects/pack",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "pack-9a29da902685fb67174df1e9a10aea0322ee2b5a.idx": {
+                  "name": "pack-9a29da902685fb67174df1e9a10aea0322ee2b5a.idx",
+                  "path": "falco.git/.git/objects/pack/pack-9a29da902685fb67174df1e9a10aea0322ee2b5a.idx",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "pack-9a29da902685fb67174df1e9a10aea0322ee2b5a.pack": {
+                  "name": "pack-9a29da902685fb67174df1e9a10aea0322ee2b5a.pack",
+                  "path": "falco.git/.git/objects/pack/pack-9a29da902685fb67174df1e9a10aea0322ee2b5a.pack",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "packed-refs": {
+          "name": "packed-refs",
+          "path": "falco.git/.git/packed-refs",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "refs": {
+          "name": "refs",
+          "path": "falco.git/.git/refs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "heads": {
+              "name": "heads",
+              "path": "falco.git/.git/refs/heads",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "master": {
+                  "name": "master",
+                  "path": "falco.git/.git/refs/heads/master",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "remotes": {
+              "name": "remotes",
+              "path": "falco.git/.git/refs/remotes",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "origin": {
+                  "name": "origin",
+                  "path": "falco.git/.git/refs/remotes/origin",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "HEAD": {
+                      "name": "HEAD",
+                      "path": "falco.git/.git/refs/remotes/origin/HEAD",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "name": "tags",
+              "path": "falco.git/.git/refs/tags",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {}
+            }
+          }
+        },
+        "shallow": {
+          "name": "shallow",
+          "path": "falco.git/.git/shallow",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    ".github": {
+      "name": ".github",
+      "path": "falco.git/.github",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "PULL_REQUEST_TEMPLATE.md": {
+          "name": "PULL_REQUEST_TEMPLATE.md",
+          "path": "falco.git/.github/PULL_REQUEST_TEMPLATE.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "workflows": {
+          "name": "workflows",
+          "path": "falco.git/.github/workflows",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "ci.yml": {
+              "name": "ci.yml",
+              "path": "falco.git/.github/workflows/ci.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "codeql.yaml": {
+              "name": "codeql.yaml",
+              "path": "falco.git/.github/workflows/codeql.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "codespell.yml": {
+              "name": "codespell.yml",
+              "path": "falco.git/.github/workflows/codespell.yml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "name": ".gitignore",
+      "path": "falco.git/.gitignore",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    ".yamllint.conf": {
+      "name": ".yamllint.conf",
+      "path": "falco.git/.yamllint.conf",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "ADOPTERS.md": {
+      "name": "ADOPTERS.md",
+      "path": "falco.git/ADOPTERS.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CHANGELOG.md": {
+      "name": "CHANGELOG.md",
+      "path": "falco.git/CHANGELOG.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "CMakeLists.txt": {
+      "name": "CMakeLists.txt",
+      "path": "falco.git/CMakeLists.txt",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "COPYING": {
+      "name": "COPYING",
+      "path": "falco.git/COPYING",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "OWNERS": {
+      "name": "OWNERS",
+      "path": "falco.git/OWNERS",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "README.md": {
+      "name": "README.md",
+      "path": "falco.git/README.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "RELEASE.md": {
+      "name": "RELEASE.md",
+      "path": "falco.git/RELEASE.md",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "audits": {
+      "name": "audits",
+      "path": "falco.git/audits",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "SECURITY_AUDIT_2019_07.pdf": {
+          "name": "SECURITY_AUDIT_2019_07.pdf",
+          "path": "falco.git/audits/SECURITY_AUDIT_2019_07.pdf",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "brand": {
+      "name": "brand",
+      "path": "falco.git/brand",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "README.md": {
+          "name": "README.md",
+          "path": "falco.git/brand/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "primary-logo.png": {
+          "name": "primary-logo.png",
+          "path": "falco.git/brand/primary-logo.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "teal-logo.svg": {
+          "name": "teal-logo.svg",
+          "path": "falco.git/brand/teal-logo.svg",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "white-logo.png": {
+          "name": "white-logo.png",
+          "path": "falco.git/brand/white-logo.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "cmake": {
+      "name": "cmake",
+      "path": "falco.git/cmake",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "cpack": {
+          "name": "cpack",
+          "path": "falco.git/cmake/cpack",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "CMakeCPackOptions.cmake": {
+              "name": "CMakeCPackOptions.cmake",
+              "path": "falco.git/cmake/cpack/CMakeCPackOptions.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "debian": {
+              "name": "debian",
+              "path": "falco.git/cmake/cpack/debian",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "conffiles": {
+                  "name": "conffiles",
+                  "path": "falco.git/cmake/cpack/debian/conffiles",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "modules": {
+          "name": "modules",
+          "path": "falco.git/cmake/modules",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "CPackConfig.cmake": {
+              "name": "CPackConfig.cmake",
+              "path": "falco.git/cmake/modules/CPackConfig.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Catch.cmake": {
+              "name": "Catch.cmake",
+              "path": "falco.git/cmake/modules/Catch.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "CatchAddTests.cmake": {
+              "name": "CatchAddTests.cmake",
+              "path": "falco.git/cmake/modules/CatchAddTests.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Coverage.cmake": {
+              "name": "Coverage.cmake",
+              "path": "falco.git/cmake/modules/Coverage.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "DownloadCatch.cmake": {
+              "name": "DownloadCatch.cmake",
+              "path": "falco.git/cmake/modules/DownloadCatch.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "DownloadFakeIt.cmake": {
+              "name": "DownloadFakeIt.cmake",
+              "path": "falco.git/cmake/modules/DownloadFakeIt.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "FindMakedev.cmake": {
+              "name": "FindMakedev.cmake",
+              "path": "falco.git/cmake/modules/FindMakedev.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "GetFalcoVersion.cmake": {
+              "name": "GetFalcoVersion.cmake",
+              "path": "falco.git/cmake/modules/GetFalcoVersion.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "GetGitRevisionDescription.cmake": {
+              "name": "GetGitRevisionDescription.cmake",
+              "path": "falco.git/cmake/modules/GetGitRevisionDescription.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "GetGitRevisionDescription.cmake.in": {
+              "name": "GetGitRevisionDescription.cmake.in",
+              "path": "falco.git/cmake/modules/GetGitRevisionDescription.cmake.in",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "copy_files_to_build_dir.cmake": {
+              "name": "copy_files_to_build_dir.cmake",
+              "path": "falco.git/cmake/modules/copy_files_to_build_dir.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cpp-httplib.cmake": {
+              "name": "cpp-httplib.cmake",
+              "path": "falco.git/cmake/modules/cpp-httplib.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cxxopts.cmake": {
+              "name": "cxxopts.cmake",
+              "path": "falco.git/cmake/modules/cxxopts.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "driver-repo": {
+              "name": "driver-repo",
+              "path": "falco.git/cmake/modules/driver-repo",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "CMakeLists.txt": {
+                  "name": "CMakeLists.txt",
+                  "path": "falco.git/cmake/modules/driver-repo/CMakeLists.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "driver.cmake": {
+              "name": "driver.cmake",
+              "path": "falco.git/cmake/modules/driver.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falcosecurity-libs-repo": {
+              "name": "falcosecurity-libs-repo",
+              "path": "falco.git/cmake/modules/falcosecurity-libs-repo",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "CMakeLists.txt": {
+                  "name": "CMakeLists.txt",
+                  "path": "falco.git/cmake/modules/falcosecurity-libs-repo/CMakeLists.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "falcosecurity-libs.cmake": {
+              "name": "falcosecurity-libs.cmake",
+              "path": "falco.git/cmake/modules/falcosecurity-libs.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "libyaml.cmake": {
+              "name": "libyaml.cmake",
+              "path": "falco.git/cmake/modules/libyaml.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "plugins.cmake": {
+              "name": "plugins.cmake",
+              "path": "falco.git/cmake/modules/plugins.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "static-analysis.cmake": {
+              "name": "static-analysis.cmake",
+              "path": "falco.git/cmake/modules/static-analysis.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "yaml-cpp.cmake": {
+              "name": "yaml-cpp.cmake",
+              "path": "falco.git/cmake/modules/yaml-cpp.cmake",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "docker": {
+      "name": "docker",
+      "path": "falco.git/docker",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CMakeLists.txt": {
+          "name": "CMakeLists.txt",
+          "path": "falco.git/docker/CMakeLists.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "OWNERS": {
+          "name": "OWNERS",
+          "path": "falco.git/docker/OWNERS",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "falco.git/docker/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "builder": {
+          "name": "builder",
+          "path": "falco.git/docker/builder",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "falco.git/docker/builder/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "root": {
+              "name": "root",
+              "path": "falco.git/docker/builder/root",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "usr": {
+                  "name": "usr",
+                  "path": "falco.git/docker/builder/root/usr",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "bin": {
+                      "name": "bin",
+                      "path": "falco.git/docker/builder/root/usr/bin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "entrypoint": {
+                          "name": "entrypoint",
+                          "path": "falco.git/docker/builder/root/usr/bin/entrypoint",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "scl_enable": {
+                          "name": "scl_enable",
+                          "path": "falco.git/docker/builder/root/usr/bin/scl_enable",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "usage": {
+                          "name": "usage",
+                          "path": "falco.git/docker/builder/root/usr/bin/usage",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "driver-loader": {
+          "name": "driver-loader",
+          "path": "falco.git/docker/driver-loader",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "falco.git/docker/driver-loader/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "docker-entrypoint.sh": {
+              "name": "docker-entrypoint.sh",
+              "path": "falco.git/docker/driver-loader/docker-entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "falco": {
+          "name": "falco",
+          "path": "falco.git/docker/falco",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "falco.git/docker/falco/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "docker-entrypoint.sh": {
+              "name": "docker-entrypoint.sh",
+              "path": "falco.git/docker/falco/docker-entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "local": {
+          "name": "local",
+          "path": "falco.git/docker/local",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "CMakeLists.txt": {
+              "name": "CMakeLists.txt",
+              "path": "falco.git/docker/local/CMakeLists.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "falco.git/docker/local/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "docker-entrypoint.sh": {
+              "name": "docker-entrypoint.sh",
+              "path": "falco.git/docker/local/docker-entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rules": {
+              "name": "rules",
+              "path": "falco.git/docker/local/rules",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "CMakeLists.txt": {
+                  "name": "CMakeLists.txt",
+                  "path": "falco.git/docker/local/rules/CMakeLists.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "traces": {
+              "name": "traces",
+              "path": "falco.git/docker/local/traces",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "CMakeLists.txt": {
+                  "name": "CMakeLists.txt",
+                  "path": "falco.git/docker/local/traces/CMakeLists.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "no-driver": {
+          "name": "no-driver",
+          "path": "falco.git/docker/no-driver",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "falco.git/docker/no-driver/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            }
+          }
+        },
+        "tester": {
+          "name": "tester",
+          "path": "falco.git/docker/tester",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "falco.git/docker/tester/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "root": {
+              "name": "root",
+              "path": "falco.git/docker/tester/root",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "runners": {
+                  "name": "runners",
+                  "path": "falco.git/docker/tester/root/runners",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "deb.Dockerfile": {
+                      "name": "deb.Dockerfile",
+                      "path": "falco.git/docker/tester/root/runners/deb.Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "rpm.Dockerfile": {
+                      "name": "rpm.Dockerfile",
+                      "path": "falco.git/docker/tester/root/runners/rpm.Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    },
+                    "tar.gz.Dockerfile": {
+                      "name": "tar.gz.Dockerfile",
+                      "path": "falco.git/docker/tester/root/runners/tar.gz.Dockerfile",
+                      "isDir": false,
+                      "isDockerfile": true,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "usr": {
+                  "name": "usr",
+                  "path": "falco.git/docker/tester/root/usr",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "bin": {
+                      "name": "bin",
+                      "path": "falco.git/docker/tester/root/usr/bin",
+                      "isDir": true,
+                      "isDockerfile": false,
+                      "isComposefile": false,
+                      "children": {
+                        "entrypoint": {
+                          "name": "entrypoint",
+                          "path": "falco.git/docker/tester/root/usr/bin/entrypoint",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        },
+                        "usage": {
+                          "name": "usage",
+                          "path": "falco.git/docker/tester/root/usr/bin/usage",
+                          "isDir": false,
+                          "isDockerfile": false,
+                          "isComposefile": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ubi": {
+          "name": "ubi",
+          "path": "falco.git/docker/ubi",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "Dockerfile": {
+              "name": "Dockerfile",
+              "path": "falco.git/docker/ubi/Dockerfile",
+              "isDir": false,
+              "isDockerfile": true,
+              "isComposefile": false
+            },
+            "docker-entrypoint.sh": {
+              "name": "docker-entrypoint.sh",
+              "path": "falco.git/docker/ubi/docker-entrypoint.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "falco.yaml": {
+      "name": "falco.yaml",
+      "path": "falco.git/falco.yaml",
+      "isDir": false,
+      "isDockerfile": false,
+      "isComposefile": false
+    },
+    "proposals": {
+      "name": "proposals",
+      "path": "falco.git/proposals",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "20190826-grpc-output-single-alert-sequence.png": {
+          "name": "20190826-grpc-output-single-alert-sequence.png",
+          "path": "falco.git/proposals/20190826-grpc-output-single-alert-sequence.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20190826-grpc-outputs.md": {
+          "name": "20190826-grpc-outputs.md",
+          "path": "falco.git/proposals/20190826-grpc-outputs.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20190909-psp-rules-support.md": {
+          "name": "20190909-psp-rules-support.md",
+          "path": "falco.git/proposals/20190909-psp-rules-support.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20191030-api.md": {
+          "name": "20191030-api.md",
+          "path": "falco.git/proposals/20191030-api.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20191217-rules-naming-convention.md": {
+          "name": "20191217-rules-naming-convention.md",
+          "path": "falco.git/proposals/20191217-rules-naming-convention.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20200506-artifacts-scope-part-1.md": {
+          "name": "20200506-artifacts-scope-part-1.md",
+          "path": "falco.git/proposals/20200506-artifacts-scope-part-1.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20200506-artifacts-scope-part-2.md": {
+          "name": "20200506-artifacts-scope-part-2.md",
+          "path": "falco.git/proposals/20200506-artifacts-scope-part-2.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20200818-artifacts-storage.md": {
+          "name": "20200818-artifacts-storage.md",
+          "path": "falco.git/proposals/20200818-artifacts-storage.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20200828-structured-exception-handling.md": {
+          "name": "20200828-structured-exception-handling.md",
+          "path": "falco.git/proposals/20200828-structured-exception-handling.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20200901-artifacts-cleanup.md": {
+          "name": "20200901-artifacts-cleanup.md",
+          "path": "falco.git/proposals/20200901-artifacts-cleanup.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20201025-drivers-storage-s3.md": {
+          "name": "20201025-drivers-storage-s3.md",
+          "path": "falco.git/proposals/20201025-drivers-storage-s3.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20201025-drivers-storage-s3_downloads.png": {
+          "name": "20201025-drivers-storage-s3_downloads.png",
+          "path": "falco.git/proposals/20201025-drivers-storage-s3_downloads.png",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20210119-libraries-contribution.md": {
+          "name": "20210119-libraries-contribution.md",
+          "path": "falco.git/proposals/20210119-libraries-contribution.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20210501-plugin-system.md": {
+          "name": "20210501-plugin-system.md",
+          "path": "falco.git/proposals/20210501-plugin-system.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "20221129-artifacts-distribution.md": {
+          "name": "20221129-artifacts-distribution.md",
+          "path": "falco.git/proposals/20221129-artifacts-distribution.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "rules": {
+      "name": "rules",
+      "path": "falco.git/rules",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CMakeLists.txt": {
+          "name": "CMakeLists.txt",
+          "path": "falco.git/rules/CMakeLists.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "OWNERS": {
+          "name": "OWNERS",
+          "path": "falco.git/rules/OWNERS",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "application_rules.yaml": {
+          "name": "application_rules.yaml",
+          "path": "falco.git/rules/application_rules.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "falco_rules.local.yaml": {
+          "name": "falco_rules.local.yaml",
+          "path": "falco.git/rules/falco_rules.local.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "falco_rules.yaml": {
+          "name": "falco_rules.yaml",
+          "path": "falco.git/rules/falco_rules.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "scripts": {
+      "name": "scripts",
+      "path": "falco.git/scripts",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CMakeLists.txt": {
+          "name": "CMakeLists.txt",
+          "path": "falco.git/scripts/CMakeLists.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "debian": {
+          "name": "debian",
+          "path": "falco.git/scripts/debian",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "falco.service": {
+              "name": "falco.service",
+              "path": "falco.git/scripts/debian/falco.service",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_inject_kmod.service": {
+              "name": "falco_inject_kmod.service",
+              "path": "falco.git/scripts/debian/falco_inject_kmod.service",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "postinst.in": {
+              "name": "postinst.in",
+              "path": "falco.git/scripts/debian/postinst.in",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "postrm.in": {
+              "name": "postrm.in",
+              "path": "falco.git/scripts/debian/postrm.in",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "prerm.in": {
+              "name": "prerm.in",
+              "path": "falco.git/scripts/debian/prerm.in",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "description.txt": {
+          "name": "description.txt",
+          "path": "falco.git/scripts/description.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "falco-driver-loader": {
+          "name": "falco-driver-loader",
+          "path": "falco.git/scripts/falco-driver-loader",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "ignored-calls.sh": {
+          "name": "ignored-calls.sh",
+          "path": "falco.git/scripts/ignored-calls.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "publish-bin": {
+          "name": "publish-bin",
+          "path": "falco.git/scripts/publish-bin",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "publish-deb": {
+          "name": "publish-deb",
+          "path": "falco.git/scripts/publish-deb",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "publish-rpm": {
+          "name": "publish-rpm",
+          "path": "falco.git/scripts/publish-rpm",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rpm": {
+          "name": "rpm",
+          "path": "falco.git/scripts/rpm",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "falco.service": {
+              "name": "falco.service",
+              "path": "falco.git/scripts/rpm/falco.service",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_inject_kmod.service": {
+              "name": "falco_inject_kmod.service",
+              "path": "falco.git/scripts/rpm/falco_inject_kmod.service",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "postinstall.in": {
+              "name": "postinstall.in",
+              "path": "falco.git/scripts/rpm/postinstall.in",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "postuninstall.in": {
+              "name": "postuninstall.in",
+              "path": "falco.git/scripts/rpm/postuninstall.in",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "preuninstall.in": {
+              "name": "preuninstall.in",
+              "path": "falco.git/scripts/rpm/preuninstall.in",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    },
+    "test": {
+      "name": "test",
+      "path": "falco.git/test",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        ".gitignore": {
+          "name": ".gitignore",
+          "path": "falco.git/test/.gitignore",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "CMakeLists.txt": {
+          "name": "CMakeLists.txt",
+          "path": "falco.git/test/CMakeLists.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "OWNERS": {
+          "name": "OWNERS",
+          "path": "falco.git/test/OWNERS",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "falco.git/test/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "confs": {
+          "name": "confs",
+          "path": "falco.git/test/confs",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "drops_alert.yaml": {
+              "name": "drops_alert.yaml",
+              "path": "falco.git/test/confs/drops_alert.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "drops_exit.yaml": {
+              "name": "drops_exit.yaml",
+              "path": "falco.git/test/confs/drops_exit.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "drops_ignore.yaml": {
+              "name": "drops_ignore.yaml",
+              "path": "falco.git/test/confs/drops_ignore.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "drops_ignore_log.yaml": {
+              "name": "drops_ignore_log.yaml",
+              "path": "falco.git/test/confs/drops_ignore_log.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "drops_log.yaml": {
+              "name": "drops_log.yaml",
+              "path": "falco.git/test/confs/drops_log.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "drops_none.yaml": {
+              "name": "drops_none.yaml",
+              "path": "falco.git/test/confs/drops_none.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "drops_threshold_neg.yaml": {
+              "name": "drops_threshold_neg.yaml",
+              "path": "falco.git/test/confs/drops_threshold_neg.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "drops_threshold_oor.yaml": {
+              "name": "drops_threshold_oor.yaml",
+              "path": "falco.git/test/confs/drops_threshold_oor.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "file_output.yaml": {
+              "name": "file_output.yaml",
+              "path": "falco.git/test/confs/file_output.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grpc_unix_socket.yaml": {
+              "name": "grpc_unix_socket.yaml",
+              "path": "falco.git/test/confs/grpc_unix_socket.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "plugins": {
+              "name": "plugins",
+              "path": "falco.git/test/confs/plugins",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "CMakeLists.txt": {
+                  "name": "CMakeLists.txt",
+                  "path": "falco.git/test/confs/plugins/CMakeLists.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cloudtrail_json_create_instances.yaml": {
+                  "name": "cloudtrail_json_create_instances.yaml",
+                  "path": "falco.git/test/confs/plugins/cloudtrail_json_create_instances.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cloudtrail_json_create_instances_bigevent.yaml": {
+                  "name": "cloudtrail_json_create_instances_bigevent.yaml",
+                  "path": "falco.git/test/confs/plugins/cloudtrail_json_create_instances_bigevent.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "incompatible_extract_sources.yaml": {
+                  "name": "incompatible_extract_sources.yaml",
+                  "path": "falco.git/test/confs/plugins/incompatible_extract_sources.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "incompatible_plugin_api.yaml": {
+                  "name": "incompatible_plugin_api.yaml",
+                  "path": "falco.git/test/confs/plugins/incompatible_plugin_api.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "k8s_audit.yaml": {
+                  "name": "k8s_audit.yaml",
+                  "path": "falco.git/test/confs/plugins/k8s_audit.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "overlap_extract_sources.yaml": {
+                  "name": "overlap_extract_sources.yaml",
+                  "path": "falco.git/test/confs/plugins/overlap_extract_sources.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "wrong_plugin_path.yaml": {
+                  "name": "wrong_plugin_path.yaml",
+                  "path": "falco.git/test/confs/plugins/wrong_plugin_path.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "program_output.yaml": {
+              "name": "program_output.yaml",
+              "path": "falco.git/test/confs/program_output.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stdout_output.yaml": {
+              "name": "stdout_output.yaml",
+              "path": "falco.git/test/confs/stdout_output.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "driver-loader": {
+          "name": "driver-loader",
+          "path": "falco.git/test/driver-loader",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "run_test.sh": {
+              "name": "run_test.sh",
+              "path": "falco.git/test/driver-loader/run_test.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "runner": {
+              "name": "runner",
+              "path": "falco.git/test/driver-loader/runner",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "Dockerfile": {
+                  "name": "Dockerfile",
+                  "path": "falco.git/test/driver-loader/runner/Dockerfile",
+                  "isDir": false,
+                  "isDockerfile": true,
+                  "isComposefile": false
+                },
+                "test.sh": {
+                  "name": "test.sh",
+                  "path": "falco.git/test/driver-loader/runner/test.sh",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            }
+          }
+        },
+        "falco_k8s_audit_tests.yaml": {
+          "name": "falco_k8s_audit_tests.yaml",
+          "path": "falco.git/test/falco_k8s_audit_tests.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "falco_test.py": {
+          "name": "falco_test.py",
+          "path": "falco.git/test/falco_test.py",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "falco_tests.yaml": {
+          "name": "falco_tests.yaml",
+          "path": "falco.git/test/falco_tests.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "falco_tests_exceptions.yaml": {
+          "name": "falco_tests_exceptions.yaml",
+          "path": "falco.git/test/falco_tests_exceptions.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "falco_tests_package.yaml": {
+          "name": "falco_tests_package.yaml",
+          "path": "falco.git/test/falco_tests_package.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "falco_tests_plugins.yaml": {
+          "name": "falco_tests_plugins.yaml",
+          "path": "falco.git/test/falco_tests_plugins.yaml",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "falco_traces.yaml.in": {
+          "name": "falco_traces.yaml.in",
+          "path": "falco.git/test/falco_traces.yaml.in",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "output_files": {
+          "name": "output_files",
+          "path": "falco.git/test/output_files",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "single_rule_with_cat_write.json": {
+              "name": "single_rule_with_cat_write.json",
+              "path": "falco.git/test/output_files/single_rule_with_cat_write.json",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "single_rule_with_cat_write.txt": {
+              "name": "single_rule_with_cat_write.txt",
+              "path": "falco.git/test/output_files/single_rule_with_cat_write.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "plugins": {
+          "name": "plugins",
+          "path": "falco.git/test/plugins",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "CMakeLists.txt": {
+              "name": "CMakeLists.txt",
+              "path": "falco.git/test/plugins/CMakeLists.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "incompat_api.cpp": {
+              "name": "incompat_api.cpp",
+              "path": "falco.git/test/plugins/incompat_api.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_extract.cpp": {
+              "name": "test_extract.cpp",
+              "path": "falco.git/test/plugins/test_extract.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_source.cpp": {
+              "name": "test_source.cpp",
+              "path": "falco.git/test/plugins/test_source.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "requirements.txt": {
+          "name": "requirements.txt",
+          "path": "falco.git/test/requirements.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "rules": {
+          "name": "rules",
+          "path": "falco.git/test/rules",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "append_single_rule.yaml": {
+              "name": "append_single_rule.yaml",
+              "path": "falco.git/test/rules/append_single_rule.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "catchall_order.yaml": {
+              "name": "catchall_order.yaml",
+              "path": "falco.git/test/rules/catchall_order.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "detect_connect_using_in.yaml": {
+              "name": "detect_connect_using_in.yaml",
+              "path": "falco.git/test/rules/detect_connect_using_in.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "disabled_rule_using_enabled_flag_only.yaml": {
+              "name": "disabled_rule_using_enabled_flag_only.yaml",
+              "path": "falco.git/test/rules/disabled_rule_using_enabled_flag_only.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "double_rule.yaml": {
+              "name": "double_rule.yaml",
+              "path": "falco.git/test/rules/double_rule.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "empty_rules.yaml": {
+              "name": "empty_rules.yaml",
+              "path": "falco.git/test/rules/empty_rules.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "enabled_rule_using_enabled_flag_only.yaml": {
+              "name": "enabled_rule_using_enabled_flag_only.yaml",
+              "path": "falco.git/test/rules/enabled_rule_using_enabled_flag_only.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "endswith.yaml": {
+              "name": "endswith.yaml",
+              "path": "falco.git/test/rules/endswith.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "engine_version_mismatch.yaml": {
+              "name": "engine_version_mismatch.yaml",
+              "path": "falco.git/test/rules/engine_version_mismatch.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "exceptions": {
+              "name": "exceptions",
+              "path": "falco.git/test/rules/exceptions",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "append_item_fields_values_len_mismatch.yaml": {
+                  "name": "append_item_fields_values_len_mismatch.yaml",
+                  "path": "falco.git/test/rules/exceptions/append_item_fields_values_len_mismatch.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "append_item_no_name.yaml": {
+                  "name": "append_item_no_name.yaml",
+                  "path": "falco.git/test/rules/exceptions/append_item_no_name.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "append_item_not_in_rule.yaml": {
+                  "name": "append_item_not_in_rule.yaml",
+                  "path": "falco.git/test/rules/exceptions/append_item_not_in_rule.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "item_comps_fields_len_mismatch.yaml": {
+                  "name": "item_comps_fields_len_mismatch.yaml",
+                  "path": "falco.git/test/rules/exceptions/item_comps_fields_len_mismatch.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "item_fields_values_len_mismatch.yaml": {
+                  "name": "item_fields_values_len_mismatch.yaml",
+                  "path": "falco.git/test/rules/exceptions/item_fields_values_len_mismatch.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "item_no_fields.yaml": {
+                  "name": "item_no_fields.yaml",
+                  "path": "falco.git/test/rules/exceptions/item_no_fields.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "item_no_name.yaml": {
+                  "name": "item_no_name.yaml",
+                  "path": "falco.git/test/rules/exceptions/item_no_name.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "item_unknown_comp.yaml": {
+                  "name": "item_unknown_comp.yaml",
+                  "path": "falco.git/test/rules/exceptions/item_unknown_comp.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "item_unknown_fields.yaml": {
+                  "name": "item_unknown_fields.yaml",
+                  "path": "falco.git/test/rules/exceptions/item_unknown_fields.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_append_comp.yaml": {
+                  "name": "rule_exception_append_comp.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_append_comp.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_append_multiple.yaml": {
+                  "name": "rule_exception_append_multiple.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_append_multiple.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_append_one_value.yaml": {
+                  "name": "rule_exception_append_one_value.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_append_one_value.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_append_second_item.yaml": {
+                  "name": "rule_exception_append_second_item.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_append_second_item.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_append_second_value.yaml": {
+                  "name": "rule_exception_append_second_value.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_append_second_value.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_append_third_item.yaml": {
+                  "name": "rule_exception_append_third_item.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_append_third_item.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_comp.yaml": {
+                  "name": "rule_exception_comp.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_comp.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_new_no_field_append.yaml": {
+                  "name": "rule_exception_new_no_field_append.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_new_no_field_append.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_new_second_field_append.yaml": {
+                  "name": "rule_exception_new_second_field_append.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_new_second_field_append.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_new_single_field_append.yaml": {
+                  "name": "rule_exception_new_single_field_append.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_new_single_field_append.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_no_values.yaml": {
+                  "name": "rule_exception_no_values.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_no_values.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_one_value.yaml": {
+                  "name": "rule_exception_one_value.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_one_value.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_quoted.yaml": {
+                  "name": "rule_exception_quoted.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_quoted.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_second_item.yaml": {
+                  "name": "rule_exception_second_item.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_second_item.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_second_value.yaml": {
+                  "name": "rule_exception_second_value.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_second_value.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_single_field.yaml": {
+                  "name": "rule_exception_single_field.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_single_field.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_single_field_append.yaml": {
+                  "name": "rule_exception_single_field_append.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_single_field_append.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_third_item.yaml": {
+                  "name": "rule_exception_third_item.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_third_item.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_values_list.yaml": {
+                  "name": "rule_exception_values_list.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_values_list.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_values_listref.yaml": {
+                  "name": "rule_exception_values_listref.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_values_listref.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "rule_exception_values_listref_noparens.yaml": {
+                  "name": "rule_exception_values_listref_noparens.yaml",
+                  "path": "falco.git/test/rules/exceptions/rule_exception_values_listref_noparens.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "falco_rules_warnings.yaml": {
+              "name": "falco_rules_warnings.yaml",
+              "path": "falco.git/test/rules/falco_rules_warnings.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_append_macro.yaml": {
+              "name": "invalid_append_macro.yaml",
+              "path": "falco.git/test/rules/invalid_append_macro.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_append_macro_dangling.yaml": {
+              "name": "invalid_append_macro_dangling.yaml",
+              "path": "falco.git/test/rules/invalid_append_macro_dangling.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_append_macro_multiple_docs.yaml": {
+              "name": "invalid_append_macro_multiple_docs.yaml",
+              "path": "falco.git/test/rules/invalid_append_macro_multiple_docs.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_append_rule.yaml": {
+              "name": "invalid_append_rule.yaml",
+              "path": "falco.git/test/rules/invalid_append_rule.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_append_rule_multiple_docs.yaml": {
+              "name": "invalid_append_rule_multiple_docs.yaml",
+              "path": "falco.git/test/rules/invalid_append_rule_multiple_docs.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_append_rule_without_condition.yaml": {
+              "name": "invalid_append_rule_without_condition.yaml",
+              "path": "falco.git/test/rules/invalid_append_rule_without_condition.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_array_item_not_object.yaml": {
+              "name": "invalid_array_item_not_object.yaml",
+              "path": "falco.git/test/rules/invalid_array_item_not_object.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_base_macro.yaml": {
+              "name": "invalid_base_macro.yaml",
+              "path": "falco.git/test/rules/invalid_base_macro.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_base_rule.yaml": {
+              "name": "invalid_base_rule.yaml",
+              "path": "falco.git/test/rules/invalid_base_rule.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_condition_not_rule.yaml": {
+              "name": "invalid_condition_not_rule.yaml",
+              "path": "falco.git/test/rules/invalid_condition_not_rule.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_engine_version_not_number.yaml": {
+              "name": "invalid_engine_version_not_number.yaml",
+              "path": "falco.git/test/rules/invalid_engine_version_not_number.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_list_loop.yaml": {
+              "name": "invalid_list_loop.yaml",
+              "path": "falco.git/test/rules/invalid_list_loop.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_list_without_items.yaml": {
+              "name": "invalid_list_without_items.yaml",
+              "path": "falco.git/test/rules/invalid_list_without_items.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_macro_comple_error.yaml": {
+              "name": "invalid_macro_comple_error.yaml",
+              "path": "falco.git/test/rules/invalid_macro_comple_error.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_macro_loop.yaml": {
+              "name": "invalid_macro_loop.yaml",
+              "path": "falco.git/test/rules/invalid_macro_loop.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_macro_without_condition.yaml": {
+              "name": "invalid_macro_without_condition.yaml",
+              "path": "falco.git/test/rules/invalid_macro_without_condition.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_missing_list_name.yaml": {
+              "name": "invalid_missing_list_name.yaml",
+              "path": "falco.git/test/rules/invalid_missing_list_name.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_missing_macro_name.yaml": {
+              "name": "invalid_missing_macro_name.yaml",
+              "path": "falco.git/test/rules/invalid_missing_macro_name.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_missing_rule_name.yaml": {
+              "name": "invalid_missing_rule_name.yaml",
+              "path": "falco.git/test/rules/invalid_missing_rule_name.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_not_array.yaml": {
+              "name": "invalid_not_array.yaml",
+              "path": "falco.git/test/rules/invalid_not_array.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_not_yaml.yaml": {
+              "name": "invalid_not_yaml.yaml",
+              "path": "falco.git/test/rules/invalid_not_yaml.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_overwrite_macro.yaml": {
+              "name": "invalid_overwrite_macro.yaml",
+              "path": "falco.git/test/rules/invalid_overwrite_macro.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_overwrite_macro_multiple_docs.yaml": {
+              "name": "invalid_overwrite_macro_multiple_docs.yaml",
+              "path": "falco.git/test/rules/invalid_overwrite_macro_multiple_docs.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_overwrite_rule.yaml": {
+              "name": "invalid_overwrite_rule.yaml",
+              "path": "falco.git/test/rules/invalid_overwrite_rule.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_overwrite_rule_multiple_docs.yaml": {
+              "name": "invalid_overwrite_rule_multiple_docs.yaml",
+              "path": "falco.git/test/rules/invalid_overwrite_rule_multiple_docs.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_rule_output.yaml": {
+              "name": "invalid_rule_output.yaml",
+              "path": "falco.git/test/rules/invalid_rule_output.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_rule_without_output.yaml": {
+              "name": "invalid_rule_without_output.yaml",
+              "path": "falco.git/test/rules/invalid_rule_without_output.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "invalid_yaml_parse_error.yaml": {
+              "name": "invalid_yaml_parse_error.yaml",
+              "path": "falco.git/test/rules/invalid_yaml_parse_error.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "k8s_audit": {
+              "name": "k8s_audit",
+              "path": "falco.git/test/rules/k8s_audit",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "allow_namespace_foo.yaml": {
+                  "name": "allow_namespace_foo.yaml",
+                  "path": "falco.git/test/rules/k8s_audit/allow_namespace_foo.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "allow_nginx_container.yaml": {
+                  "name": "allow_nginx_container.yaml",
+                  "path": "falco.git/test/rules/k8s_audit/allow_nginx_container.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "allow_only_apache_container.yaml": {
+                  "name": "allow_only_apache_container.yaml",
+                  "path": "falco.git/test/rules/k8s_audit/allow_only_apache_container.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "allow_user_some-user.yaml": {
+                  "name": "allow_user_some-user.yaml",
+                  "path": "falco.git/test/rules/k8s_audit/allow_user_some-user.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "disallow_kactivity.yaml": {
+                  "name": "disallow_kactivity.yaml",
+                  "path": "falco.git/test/rules/k8s_audit/disallow_kactivity.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "engine_v4": {
+                  "name": "engine_v4",
+                  "path": "falco.git/test/rules/k8s_audit/engine_v4",
+                  "isDir": true,
+                  "isDockerfile": false,
+                  "isComposefile": false,
+                  "children": {
+                    "allow_nginx_container.yaml": {
+                      "name": "allow_nginx_container.yaml",
+                      "path": "falco.git/test/rules/k8s_audit/engine_v4/allow_nginx_container.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    },
+                    "allow_only_apache_container.yaml": {
+                      "name": "allow_only_apache_container.yaml",
+                      "path": "falco.git/test/rules/k8s_audit/engine_v4/allow_only_apache_container.yaml",
+                      "isDir": false,
+                      "isDockerfile": false,
+                      "isComposefile": false
+                    }
+                  }
+                },
+                "engine_v4_k8s_audit_rules.yaml": {
+                  "name": "engine_v4_k8s_audit_rules.yaml",
+                  "path": "falco.git/test/rules/k8s_audit/engine_v4_k8s_audit_rules.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "single_rule_with_json_pointer.yaml": {
+                  "name": "single_rule_with_json_pointer.yaml",
+                  "path": "falco.git/test/rules/k8s_audit/single_rule_with_json_pointer.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "trust_nginx_container.yaml": {
+                  "name": "trust_nginx_container.yaml",
+                  "path": "falco.git/test/rules/k8s_audit/trust_nginx_container.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "list_append.yaml": {
+              "name": "list_append.yaml",
+              "path": "falco.git/test/rules/list_append.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "list_append_failure.yaml": {
+              "name": "list_append_failure.yaml",
+              "path": "falco.git/test/rules/list_append_failure.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "list_append_false.yaml": {
+              "name": "list_append_false.yaml",
+              "path": "falco.git/test/rules/list_append_false.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "list_order.yaml": {
+              "name": "list_order.yaml",
+              "path": "falco.git/test/rules/list_order.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "list_sub_bare.yaml": {
+              "name": "list_sub_bare.yaml",
+              "path": "falco.git/test/rules/list_sub_bare.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "list_sub_end.yaml": {
+              "name": "list_sub_end.yaml",
+              "path": "falco.git/test/rules/list_sub_end.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "list_sub_front.yaml": {
+              "name": "list_sub_front.yaml",
+              "path": "falco.git/test/rules/list_sub_front.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "list_sub_mid.yaml": {
+              "name": "list_sub_mid.yaml",
+              "path": "falco.git/test/rules/list_sub_mid.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "list_sub_whitespace.yaml": {
+              "name": "list_sub_whitespace.yaml",
+              "path": "falco.git/test/rules/list_sub_whitespace.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "list_substring.yaml": {
+              "name": "list_substring.yaml",
+              "path": "falco.git/test/rules/list_substring.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "macro_append.yaml": {
+              "name": "macro_append.yaml",
+              "path": "falco.git/test/rules/macro_append.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "macro_append_false.yaml": {
+              "name": "macro_append_false.yaml",
+              "path": "falco.git/test/rules/macro_append_false.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "macro_order.yaml": {
+              "name": "macro_order.yaml",
+              "path": "falco.git/test/rules/macro_order.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "multiple_docs.yaml": {
+              "name": "multiple_docs.yaml",
+              "path": "falco.git/test/rules/multiple_docs.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "null_output_field.yaml": {
+              "name": "null_output_field.yaml",
+              "path": "falco.git/test/rules/null_output_field.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "override_list.yaml": {
+              "name": "override_list.yaml",
+              "path": "falco.git/test/rules/override_list.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "override_macro.yaml": {
+              "name": "override_macro.yaml",
+              "path": "falco.git/test/rules/override_macro.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "override_nested_list.yaml": {
+              "name": "override_nested_list.yaml",
+              "path": "falco.git/test/rules/override_nested_list.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "override_rule.yaml": {
+              "name": "override_rule.yaml",
+              "path": "falco.git/test/rules/override_rule.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "plugins": {
+              "name": "plugins",
+              "path": "falco.git/test/rules/plugins",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "cloudtrail_create_instances.yaml": {
+                  "name": "cloudtrail_create_instances.yaml",
+                  "path": "falco.git/test/rules/plugins/cloudtrail_create_instances.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cloudtrail_create_instances_exceptions.yaml": {
+                  "name": "cloudtrail_create_instances_exceptions.yaml",
+                  "path": "falco.git/test/rules/plugins/cloudtrail_create_instances_exceptions.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "cloudtrail_incompat_plugin_version.yaml": {
+                  "name": "cloudtrail_incompat_plugin_version.yaml",
+                  "path": "falco.git/test/rules/plugins/cloudtrail_incompat_plugin_version.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "rule_append.yaml": {
+              "name": "rule_append.yaml",
+              "path": "falco.git/test/rules/rule_append.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_append_failure.yaml": {
+              "name": "rule_append_failure.yaml",
+              "path": "falco.git/test/rules/rule_append_failure.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_append_false.yaml": {
+              "name": "rule_append_false.yaml",
+              "path": "falco.git/test/rules/rule_append_false.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_names_with_regex_chars.yaml": {
+              "name": "rule_names_with_regex_chars.yaml",
+              "path": "falco.git/test/rules/rule_names_with_regex_chars.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_names_with_spaces.yaml": {
+              "name": "rule_names_with_spaces.yaml",
+              "path": "falco.git/test/rules/rule_names_with_spaces.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_order.yaml": {
+              "name": "rule_order.yaml",
+              "path": "falco.git/test/rules/rule_order.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rules_dir": {
+              "name": "rules_dir",
+              "path": "falco.git/test/rules/rules_dir",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "000-single_rule.yaml": {
+                  "name": "000-single_rule.yaml",
+                  "path": "falco.git/test/rules/rules_dir/000-single_rule.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "001-double_rule.yaml": {
+                  "name": "001-double_rule.yaml",
+                  "path": "falco.git/test/rules/rules_dir/001-double_rule.yaml",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "single_rule.yaml": {
+              "name": "single_rule.yaml",
+              "path": "falco.git/test/rules/single_rule.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "single_rule_enabled_flag.yaml": {
+              "name": "single_rule_enabled_flag.yaml",
+              "path": "falco.git/test/rules/single_rule_enabled_flag.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "single_rule_with_tags.yaml": {
+              "name": "single_rule_with_tags.yaml",
+              "path": "falco.git/test/rules/single_rule_with_tags.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "skip_unknown_error.yaml": {
+              "name": "skip_unknown_error.yaml",
+              "path": "falco.git/test/rules/skip_unknown_error.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "skip_unknown_evt.yaml": {
+              "name": "skip_unknown_evt.yaml",
+              "path": "falco.git/test/rules/skip_unknown_evt.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "skip_unknown_prefix.yaml": {
+              "name": "skip_unknown_prefix.yaml",
+              "path": "falco.git/test/rules/skip_unknown_prefix.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "skip_unknown_unspec.yaml": {
+              "name": "skip_unknown_unspec.yaml",
+              "path": "falco.git/test/rules/skip_unknown_unspec.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "syscalls.yaml": {
+              "name": "syscalls.yaml",
+              "path": "falco.git/test/rules/syscalls.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "tagged_rules.yaml": {
+              "name": "tagged_rules.yaml",
+              "path": "falco.git/test/rules/tagged_rules.yaml",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "run_regression_tests.sh": {
+          "name": "run_regression_tests.sh",
+          "path": "falco.git/test/run_regression_tests.sh",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "trace_files": {
+          "name": "trace_files",
+          "path": "falco.git/test/trace_files",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "CMakeLists.txt": {
+              "name": "CMakeLists.txt",
+              "path": "falco.git/test/trace_files/CMakeLists.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "cat_write.scap": {
+              "name": "cat_write.scap",
+              "path": "falco.git/test/trace_files/cat_write.scap",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "connect_localhost.scap": {
+              "name": "connect_localhost.scap",
+              "path": "falco.git/test/trace_files/connect_localhost.scap",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "empty.scap": {
+              "name": "empty.scap",
+              "path": "falco.git/test/trace_files/empty.scap",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "k8s_audit": {
+              "name": "k8s_audit",
+              "path": "falco.git/test/trace_files/k8s_audit",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "CMakeLists.txt": {
+                  "name": "CMakeLists.txt",
+                  "path": "falco.git/test/trace_files/k8s_audit/CMakeLists.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "anonymous_creates_namespace_foo.json": {
+                  "name": "anonymous_creates_namespace_foo.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/anonymous_creates_namespace_foo.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "attach_cluster_admin_role.json": {
+                  "name": "attach_cluster_admin_role.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/attach_cluster_admin_role.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "attach_pod.json": {
+                  "name": "attach_pod.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/attach_pod.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_cluster_role_pod_exec.json": {
+                  "name": "create_cluster_role_pod_exec.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_cluster_role_pod_exec.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_cluster_role_wildcard_resources.json": {
+                  "name": "create_cluster_role_wildcard_resources.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_cluster_role_wildcard_resources.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_cluster_role_wildcard_verbs.json": {
+                  "name": "create_cluster_role_wildcard_verbs.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_cluster_role_wildcard_verbs.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_cluster_role_write_privileges.json": {
+                  "name": "create_cluster_role_write_privileges.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_cluster_role_write_privileges.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_clusterrole.json": {
+                  "name": "create_clusterrole.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_clusterrole.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_clusterrolebinding.json": {
+                  "name": "create_clusterrolebinding.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_clusterrolebinding.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_configmap.json": {
+                  "name": "create_configmap.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_configmap.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_configmap_no_sensitive_values.json": {
+                  "name": "create_configmap_no_sensitive_values.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_configmap_no_sensitive_values.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_configmap_sensitive_values.json": {
+                  "name": "create_configmap_sensitive_values.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_configmap_sensitive_values.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_deployment.json": {
+                  "name": "create_deployment.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_deployment.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_kube_system_secret.json": {
+                  "name": "create_kube_system_secret.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_kube_system_secret.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_nginx_pod_hostnetwork.json": {
+                  "name": "create_nginx_pod_hostnetwork.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_nginx_pod_hostnetwork.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_nginx_pod_no_secctx_1st_container_privileged_2nd_container.json": {
+                  "name": "create_nginx_pod_no_secctx_1st_container_privileged_2nd_container.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_nginx_pod_no_secctx_1st_container_privileged_2nd_container.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_nginx_pod_nohostnetwork.json": {
+                  "name": "create_nginx_pod_nohostnetwork.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_nginx_pod_nohostnetwork.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_nginx_pod_privileged.json": {
+                  "name": "create_nginx_pod_privileged.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_nginx_pod_privileged.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_nginx_pod_privileged_2nd_container.json": {
+                  "name": "create_nginx_pod_privileged_2nd_container.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_nginx_pod_privileged_2nd_container.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_nginx_pod_sensitive_mount.json": {
+                  "name": "create_nginx_pod_sensitive_mount.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_nginx_pod_sensitive_mount.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_nginx_pod_sensitive_mount_2nd_container.json": {
+                  "name": "create_nginx_pod_sensitive_mount_2nd_container.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_nginx_pod_sensitive_mount_2nd_container.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_nginx_pod_unprivileged.json": {
+                  "name": "create_nginx_pod_unprivileged.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_nginx_pod_unprivileged.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_nginx_pod_unsensitive_mount.json": {
+                  "name": "create_nginx_pod_unsensitive_mount.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_nginx_pod_unsensitive_mount.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_nginx_service_nodeport.json": {
+                  "name": "create_nginx_service_nodeport.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_nginx_service_nodeport.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_nginx_service_nonodeport.json": {
+                  "name": "create_nginx_service_nonodeport.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_nginx_service_nonodeport.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_pod_kube_public_namespace.json": {
+                  "name": "create_pod_kube_public_namespace.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_pod_kube_public_namespace.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_pod_kube_system_namespace.json": {
+                  "name": "create_pod_kube_system_namespace.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_pod_kube_system_namespace.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_secret.json": {
+                  "name": "create_secret.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_secret.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_service.json": {
+                  "name": "create_service.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_service.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_service_account_token_secret.json": {
+                  "name": "create_service_account_token_secret.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_service_account_token_secret.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_serviceaccount.json": {
+                  "name": "create_serviceaccount.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_serviceaccount.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_serviceaccount_kube_public_namespace.json": {
+                  "name": "create_serviceaccount_kube_public_namespace.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_serviceaccount_kube_public_namespace.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_serviceaccount_kube_system_namespace.json": {
+                  "name": "create_serviceaccount_kube_system_namespace.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/create_serviceaccount_kube_system_namespace.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete_cluster_role_kube_aggregator.json": {
+                  "name": "delete_cluster_role_kube_aggregator.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/delete_cluster_role_kube_aggregator.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete_clusterrole.json": {
+                  "name": "delete_clusterrole.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/delete_clusterrole.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete_clusterrolebinding.json": {
+                  "name": "delete_clusterrolebinding.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/delete_clusterrolebinding.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete_configmap.json": {
+                  "name": "delete_configmap.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/delete_configmap.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete_deployment.json": {
+                  "name": "delete_deployment.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/delete_deployment.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete_namespace_foo.json": {
+                  "name": "delete_namespace_foo.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/delete_namespace_foo.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete_secret.json": {
+                  "name": "delete_secret.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/delete_secret.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete_service.json": {
+                  "name": "delete_service.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/delete_service.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "delete_serviceaccount.json": {
+                  "name": "delete_serviceaccount.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/delete_serviceaccount.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "exec_pod.json": {
+                  "name": "exec_pod.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/exec_pod.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "fal_01_003.json": {
+                  "name": "fal_01_003.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/fal_01_003.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "minikube_creates_namespace_foo.json": {
+                  "name": "minikube_creates_namespace_foo.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/minikube_creates_namespace_foo.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "modify_cluster_role_node_problem_detector.json": {
+                  "name": "modify_cluster_role_node_problem_detector.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/modify_cluster_role_node_problem_detector.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "some-user_creates_namespace_foo.json": {
+                  "name": "some-user_creates_namespace_foo.json",
+                  "path": "falco.git/test/trace_files/k8s_audit/some-user_creates_namespace_foo.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "open-multiple-files.scap": {
+              "name": "open-multiple-files.scap",
+              "path": "falco.git/test/trace_files/open-multiple-files.scap",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "ping_sendto.scap": {
+              "name": "ping_sendto.scap",
+              "path": "falco.git/test/trace_files/ping_sendto.scap",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "plugins": {
+              "name": "plugins",
+              "path": "falco.git/test/trace_files/plugins",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "CMakeLists.txt": {
+                  "name": "CMakeLists.txt",
+                  "path": "falco.git/test/trace_files/plugins/CMakeLists.txt",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "alice_start_instances.json": {
+                  "name": "alice_start_instances.json",
+                  "path": "falco.git/test/trace_files/plugins/alice_start_instances.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "alice_start_instances_bigevent.json": {
+                  "name": "alice_start_instances_bigevent.json",
+                  "path": "falco.git/test/trace_files/plugins/alice_start_instances_bigevent.json",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "syscall.scap": {
+              "name": "syscall.scap",
+              "path": "falco.git/test/trace_files/syscall.scap",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "usage": {
+          "name": "usage",
+          "path": "falco.git/test/usage",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "tests": {
+      "name": "tests",
+      "path": "falco.git/tests",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "CMakeLists.txt": {
+          "name": "CMakeLists.txt",
+          "path": "falco.git/tests/CMakeLists.txt",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "OWNERS": {
+          "name": "OWNERS",
+          "path": "falco.git/tests/OWNERS",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "falco.git/tests/README.md",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        },
+        "engine": {
+          "name": "engine",
+          "path": "falco.git/tests/engine",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "test_falco_utils.cpp": {
+              "name": "test_falco_utils.cpp",
+              "path": "falco.git/tests/engine/test_falco_utils.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_filter_evttype_resolver.cpp": {
+              "name": "test_filter_evttype_resolver.cpp",
+              "path": "falco.git/tests/engine/test_filter_evttype_resolver.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_filter_macro_resolver.cpp": {
+              "name": "test_filter_macro_resolver.cpp",
+              "path": "falco.git/tests/engine/test_filter_macro_resolver.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_filter_warning_resolver.cpp": {
+              "name": "test_filter_warning_resolver.cpp",
+              "path": "falco.git/tests/engine/test_filter_warning_resolver.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_plugin_requirements.cpp": {
+              "name": "test_plugin_requirements.cpp",
+              "path": "falco.git/tests/engine/test_plugin_requirements.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "test_rulesets.cpp": {
+              "name": "test_rulesets.cpp",
+              "path": "falco.git/tests/engine/test_rulesets.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "falco": {
+          "name": "falco",
+          "path": "falco.git/tests/falco",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "test_configuration.cpp": {
+              "name": "test_configuration.cpp",
+              "path": "falco.git/tests/falco/test_configuration.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "test_base.cpp": {
+          "name": "test_base.cpp",
+          "path": "falco.git/tests/test_base.cpp",
+          "isDir": false,
+          "isDockerfile": false,
+          "isComposefile": false
+        }
+      }
+    },
+    "userspace": {
+      "name": "userspace",
+      "path": "falco.git/userspace",
+      "isDir": true,
+      "isDockerfile": false,
+      "isComposefile": false,
+      "children": {
+        "engine": {
+          "name": "engine",
+          "path": "falco.git/userspace/engine",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "CMakeLists.txt": {
+              "name": "CMakeLists.txt",
+              "path": "falco.git/userspace/engine/CMakeLists.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "OWNERS": {
+              "name": "OWNERS",
+              "path": "falco.git/userspace/engine/OWNERS",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "banned.h": {
+              "name": "banned.h",
+              "path": "falco.git/userspace/engine/banned.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "evttype_index_ruleset.cpp": {
+              "name": "evttype_index_ruleset.cpp",
+              "path": "falco.git/userspace/engine/evttype_index_ruleset.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "evttype_index_ruleset.h": {
+              "name": "evttype_index_ruleset.h",
+              "path": "falco.git/userspace/engine/evttype_index_ruleset.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_common.cpp": {
+              "name": "falco_common.cpp",
+              "path": "falco.git/userspace/engine/falco_common.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_common.h": {
+              "name": "falco_common.h",
+              "path": "falco.git/userspace/engine/falco_common.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_engine.cpp": {
+              "name": "falco_engine.cpp",
+              "path": "falco.git/userspace/engine/falco_engine.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_engine.h": {
+              "name": "falco_engine.h",
+              "path": "falco.git/userspace/engine/falco_engine.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_engine_version.h": {
+              "name": "falco_engine_version.h",
+              "path": "falco.git/userspace/engine/falco_engine_version.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_load_result.cpp": {
+              "name": "falco_load_result.cpp",
+              "path": "falco.git/userspace/engine/falco_load_result.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_load_result.h": {
+              "name": "falco_load_result.h",
+              "path": "falco.git/userspace/engine/falco_load_result.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_rule.h": {
+              "name": "falco_rule.h",
+              "path": "falco.git/userspace/engine/falco_rule.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_source.h": {
+              "name": "falco_source.h",
+              "path": "falco.git/userspace/engine/falco_source.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_utils.cpp": {
+              "name": "falco_utils.cpp",
+              "path": "falco.git/userspace/engine/falco_utils.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_utils.h": {
+              "name": "falco_utils.h",
+              "path": "falco.git/userspace/engine/falco_utils.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "filter_evttype_resolver.cpp": {
+              "name": "filter_evttype_resolver.cpp",
+              "path": "falco.git/userspace/engine/filter_evttype_resolver.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "filter_evttype_resolver.h": {
+              "name": "filter_evttype_resolver.h",
+              "path": "falco.git/userspace/engine/filter_evttype_resolver.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "filter_macro_resolver.cpp": {
+              "name": "filter_macro_resolver.cpp",
+              "path": "falco.git/userspace/engine/filter_macro_resolver.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "filter_macro_resolver.h": {
+              "name": "filter_macro_resolver.h",
+              "path": "falco.git/userspace/engine/filter_macro_resolver.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "filter_ruleset.h": {
+              "name": "filter_ruleset.h",
+              "path": "falco.git/userspace/engine/filter_ruleset.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "filter_warning_resolver.cpp": {
+              "name": "filter_warning_resolver.cpp",
+              "path": "falco.git/userspace/engine/filter_warning_resolver.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "filter_warning_resolver.h": {
+              "name": "filter_warning_resolver.h",
+              "path": "falco.git/userspace/engine/filter_warning_resolver.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "formats.cpp": {
+              "name": "formats.cpp",
+              "path": "falco.git/userspace/engine/formats.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "formats.h": {
+              "name": "formats.h",
+              "path": "falco.git/userspace/engine/formats.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "indexed_vector.h": {
+              "name": "indexed_vector.h",
+              "path": "falco.git/userspace/engine/indexed_vector.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "json_evt.cpp": {
+              "name": "json_evt.cpp",
+              "path": "falco.git/userspace/engine/json_evt.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "json_evt.h": {
+              "name": "json_evt.h",
+              "path": "falco.git/userspace/engine/json_evt.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_loader.cpp": {
+              "name": "rule_loader.cpp",
+              "path": "falco.git/userspace/engine/rule_loader.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_loader.h": {
+              "name": "rule_loader.h",
+              "path": "falco.git/userspace/engine/rule_loader.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_loader_collector.cpp": {
+              "name": "rule_loader_collector.cpp",
+              "path": "falco.git/userspace/engine/rule_loader_collector.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_loader_collector.h": {
+              "name": "rule_loader_collector.h",
+              "path": "falco.git/userspace/engine/rule_loader_collector.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_loader_compiler.cpp": {
+              "name": "rule_loader_compiler.cpp",
+              "path": "falco.git/userspace/engine/rule_loader_compiler.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_loader_compiler.h": {
+              "name": "rule_loader_compiler.h",
+              "path": "falco.git/userspace/engine/rule_loader_compiler.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_loader_reader.cpp": {
+              "name": "rule_loader_reader.cpp",
+              "path": "falco.git/userspace/engine/rule_loader_reader.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "rule_loader_reader.h": {
+              "name": "rule_loader_reader.h",
+              "path": "falco.git/userspace/engine/rule_loader_reader.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stats_manager.cpp": {
+              "name": "stats_manager.cpp",
+              "path": "falco.git/userspace/engine/stats_manager.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stats_manager.h": {
+              "name": "stats_manager.h",
+              "path": "falco.git/userspace/engine/stats_manager.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        },
+        "falco": {
+          "name": "falco",
+          "path": "falco.git/userspace/falco",
+          "isDir": true,
+          "isDockerfile": false,
+          "isComposefile": false,
+          "children": {
+            "CMakeLists.txt": {
+              "name": "CMakeLists.txt",
+              "path": "falco.git/userspace/falco/CMakeLists.txt",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "app_actions": {
+              "name": "app_actions",
+              "path": "falco.git/userspace/falco/app_actions",
+              "isDir": true,
+              "isDockerfile": false,
+              "isComposefile": false,
+              "children": {
+                "compute_syscall_buffer_size.cpp": {
+                  "name": "compute_syscall_buffer_size.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/compute_syscall_buffer_size.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "configure_interesting_sets.cpp": {
+                  "name": "configure_interesting_sets.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/configure_interesting_sets.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_requested_paths.cpp": {
+                  "name": "create_requested_paths.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/create_requested_paths.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "create_signal_handlers.cpp": {
+                  "name": "create_signal_handlers.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/create_signal_handlers.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "daemonize.cpp": {
+                  "name": "daemonize.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/daemonize.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "init_clients.cpp": {
+                  "name": "init_clients.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/init_clients.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "init_falco_engine.cpp": {
+                  "name": "init_falco_engine.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/init_falco_engine.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "init_inspectors.cpp": {
+                  "name": "init_inspectors.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/init_inspectors.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "init_outputs.cpp": {
+                  "name": "init_outputs.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/init_outputs.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "list_fields.cpp": {
+                  "name": "list_fields.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/list_fields.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "list_plugins.cpp": {
+                  "name": "list_plugins.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/list_plugins.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "load_config.cpp": {
+                  "name": "load_config.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/load_config.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "load_plugins.cpp": {
+                  "name": "load_plugins.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/load_plugins.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "load_rules_files.cpp": {
+                  "name": "load_rules_files.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/load_rules_files.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "open_inspector.cpp": {
+                  "name": "open_inspector.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/open_inspector.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "print_generated_gvisor_config.cpp": {
+                  "name": "print_generated_gvisor_config.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/print_generated_gvisor_config.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "print_help.cpp": {
+                  "name": "print_help.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/print_help.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "print_ignored_events.cpp": {
+                  "name": "print_ignored_events.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/print_ignored_events.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "print_page_size.cpp": {
+                  "name": "print_page_size.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/print_page_size.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "print_plugin_info.cpp": {
+                  "name": "print_plugin_info.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/print_plugin_info.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "print_support.cpp": {
+                  "name": "print_support.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/print_support.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "print_syscall_events.cpp": {
+                  "name": "print_syscall_events.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/print_syscall_events.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "print_version.cpp": {
+                  "name": "print_version.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/print_version.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "process_events.cpp": {
+                  "name": "process_events.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/process_events.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "select_event_sources.cpp": {
+                  "name": "select_event_sources.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/select_event_sources.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "start_grpc_server.cpp": {
+                  "name": "start_grpc_server.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/start_grpc_server.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "start_webserver.cpp": {
+                  "name": "start_webserver.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/start_webserver.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                },
+                "validate_rules_files.cpp": {
+                  "name": "validate_rules_files.cpp",
+                  "path": "falco.git/userspace/falco/app_actions/validate_rules_files.cpp",
+                  "isDir": false,
+                  "isDockerfile": false,
+                  "isComposefile": false
+                }
+              }
+            },
+            "app_cmdline_options.cpp": {
+              "name": "app_cmdline_options.cpp",
+              "path": "falco.git/userspace/falco/app_cmdline_options.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "app_cmdline_options.h": {
+              "name": "app_cmdline_options.h",
+              "path": "falco.git/userspace/falco/app_cmdline_options.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "application.cpp": {
+              "name": "application.cpp",
+              "path": "falco.git/userspace/falco/application.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "application.h": {
+              "name": "application.h",
+              "path": "falco.git/userspace/falco/application.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "config_falco.h.in": {
+              "name": "config_falco.h.in",
+              "path": "falco.git/userspace/falco/config_falco.h.in",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "configuration.cpp": {
+              "name": "configuration.cpp",
+              "path": "falco.git/userspace/falco/configuration.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "configuration.h": {
+              "name": "configuration.h",
+              "path": "falco.git/userspace/falco/configuration.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "event_drops.cpp": {
+              "name": "event_drops.cpp",
+              "path": "falco.git/userspace/falco/event_drops.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "event_drops.h": {
+              "name": "event_drops.h",
+              "path": "falco.git/userspace/falco/event_drops.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco.cpp": {
+              "name": "falco.cpp",
+              "path": "falco.git/userspace/falco/falco.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_outputs.cpp": {
+              "name": "falco_outputs.cpp",
+              "path": "falco.git/userspace/falco/falco_outputs.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "falco_outputs.h": {
+              "name": "falco_outputs.h",
+              "path": "falco.git/userspace/falco/falco_outputs.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grpc_context.cpp": {
+              "name": "grpc_context.cpp",
+              "path": "falco.git/userspace/falco/grpc_context.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grpc_context.h": {
+              "name": "grpc_context.h",
+              "path": "falco.git/userspace/falco/grpc_context.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grpc_queue.h": {
+              "name": "grpc_queue.h",
+              "path": "falco.git/userspace/falco/grpc_queue.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grpc_request_context.cpp": {
+              "name": "grpc_request_context.cpp",
+              "path": "falco.git/userspace/falco/grpc_request_context.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grpc_request_context.h": {
+              "name": "grpc_request_context.h",
+              "path": "falco.git/userspace/falco/grpc_request_context.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grpc_server.cpp": {
+              "name": "grpc_server.cpp",
+              "path": "falco.git/userspace/falco/grpc_server.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grpc_server.h": {
+              "name": "grpc_server.h",
+              "path": "falco.git/userspace/falco/grpc_server.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grpc_server_impl.cpp": {
+              "name": "grpc_server_impl.cpp",
+              "path": "falco.git/userspace/falco/grpc_server_impl.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "grpc_server_impl.h": {
+              "name": "grpc_server_impl.h",
+              "path": "falco.git/userspace/falco/grpc_server_impl.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logger.cpp": {
+              "name": "logger.cpp",
+              "path": "falco.git/userspace/falco/logger.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "logger.h": {
+              "name": "logger.h",
+              "path": "falco.git/userspace/falco/logger.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs.h": {
+              "name": "outputs.h",
+              "path": "falco.git/userspace/falco/outputs.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs.proto": {
+              "name": "outputs.proto",
+              "path": "falco.git/userspace/falco/outputs.proto",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs_file.cpp": {
+              "name": "outputs_file.cpp",
+              "path": "falco.git/userspace/falco/outputs_file.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs_file.h": {
+              "name": "outputs_file.h",
+              "path": "falco.git/userspace/falco/outputs_file.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs_grpc.cpp": {
+              "name": "outputs_grpc.cpp",
+              "path": "falco.git/userspace/falco/outputs_grpc.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs_grpc.h": {
+              "name": "outputs_grpc.h",
+              "path": "falco.git/userspace/falco/outputs_grpc.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs_http.cpp": {
+              "name": "outputs_http.cpp",
+              "path": "falco.git/userspace/falco/outputs_http.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs_http.h": {
+              "name": "outputs_http.h",
+              "path": "falco.git/userspace/falco/outputs_http.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs_program.cpp": {
+              "name": "outputs_program.cpp",
+              "path": "falco.git/userspace/falco/outputs_program.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs_program.h": {
+              "name": "outputs_program.h",
+              "path": "falco.git/userspace/falco/outputs_program.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs_stdout.cpp": {
+              "name": "outputs_stdout.cpp",
+              "path": "falco.git/userspace/falco/outputs_stdout.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs_stdout.h": {
+              "name": "outputs_stdout.h",
+              "path": "falco.git/userspace/falco/outputs_stdout.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs_syslog.cpp": {
+              "name": "outputs_syslog.cpp",
+              "path": "falco.git/userspace/falco/outputs_syslog.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "outputs_syslog.h": {
+              "name": "outputs_syslog.h",
+              "path": "falco.git/userspace/falco/outputs_syslog.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "schema.proto": {
+              "name": "schema.proto",
+              "path": "falco.git/userspace/falco/schema.proto",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "semaphore.h": {
+              "name": "semaphore.h",
+              "path": "falco.git/userspace/falco/semaphore.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stats_writer.cpp": {
+              "name": "stats_writer.cpp",
+              "path": "falco.git/userspace/falco/stats_writer.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "stats_writer.h": {
+              "name": "stats_writer.h",
+              "path": "falco.git/userspace/falco/stats_writer.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "verify_engine_fields.sh": {
+              "name": "verify_engine_fields.sh",
+              "path": "falco.git/userspace/falco/verify_engine_fields.sh",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "version.proto": {
+              "name": "version.proto",
+              "path": "falco.git/userspace/falco/version.proto",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "watchdog.h": {
+              "name": "watchdog.h",
+              "path": "falco.git/userspace/falco/watchdog.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "webserver.cpp": {
+              "name": "webserver.cpp",
+              "path": "falco.git/userspace/falco/webserver.cpp",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            },
+            "webserver.h": {
+              "name": "webserver.h",
+              "path": "falco.git/userspace/falco/webserver.h",
+              "isDir": false,
+              "isDockerfile": false,
+              "isComposefile": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "id": 49986046,
+    "name": "falco",
+    "full_name": "falcosecurity/falco",
+    "owner": {
+      "login": "falcosecurity",
+      "html_url": "https://github.com/falcosecurity",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/falcosecurity/falco",
+    "description": "Cloud Native Runtime Security",
+    "url": "https://api.github.com/repos/falcosecurity/falco",
+    "clone_url": "https://github.com/falcosecurity/falco.git",
+    "homepage": "https://falco.org",
+    "size": 13075,
+    "stargazers_count": 5436,
+    "watchers_count": 5436,
+    "language": "C++"
+  }
+}
