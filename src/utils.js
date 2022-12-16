@@ -155,11 +155,13 @@ module.exports = {
         var res = {
             total_repos: 0,
             dockerfile: {
+                total: 0,
                 only_in_root: 0,
                 only_in_subfolders: 0,
                 root_and_subfolders: 0,
             },
             composefile: {
+                total: 0,
                 only_in_root: 0,
                 only_in_subfolders: 0,
                 root_and_subfolders: 0,
@@ -245,6 +247,8 @@ module.exports = {
             res.total_repos++
 
             //dockerifle stats
+            if (data.results.dockerfile.exist)
+                res.dockerfile.total++
             if (data.results.dockerfile.rootCount > 0 && data.results.dockerfile.subFolderCount == 0)
                 res.dockerfile.only_in_root++
             if (data.results.dockerfile.rootCount == 0 && data.results.dockerfile.subFolderCount > 0)
@@ -253,6 +257,8 @@ module.exports = {
                 res.dockerfile.root_and_subfolders++
 
             //composefile stats
+            if (data.results.composefile.exist)
+                res.composefile.total++
             if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount == 0)
                 res.composefile.only_in_root++
             if (data.results.composefile.rootCount == 0 && data.results.composefile.subFolderCount > 0)
@@ -414,11 +420,13 @@ module.exports = {
                 res.languages[data.info.language] = {
                     total_repos: 0,
                     dockerfile: {
+                        total: 0,
                         only_in_root: 0,
                         only_in_subfolders: 0,
                         root_and_subfolders: 0,
                     },
                     composefile: {
+                        total: 0,
                         only_in_root: 0,
                         only_in_subfolders: 0,
                         root_and_subfolders: 0,
@@ -500,6 +508,8 @@ module.exports = {
             res.languages[data.info.language].total_repos++
 
             //dockerifle stats
+            if (data.results.dockerfile.exist)
+                res.languages[data.info.language].dockerfile.total++
             if (data.results.dockerfile.rootCount > 0 && data.results.dockerfile.subFolderCount == 0)
                 res.languages[data.info.language].dockerfile.only_in_root++
             if (data.results.dockerfile.rootCount == 0 && data.results.dockerfile.subFolderCount > 0)
@@ -508,6 +518,8 @@ module.exports = {
                 res.languages[data.info.language].dockerfile.root_and_subfolders++
 
             //composefile stats
+            if (data.results.composefile.exist)
+                res.languages[data.info.language].composefile.total++
             if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount == 0)
                 res.languages[data.info.language].composefile.only_in_root++
             if (data.results.composefile.rootCount == 0 && data.results.composefile.subFolderCount > 0)
