@@ -3,6 +3,7 @@ const fs = require('fs');
 
 const TEMP_DIR = "./temp/"
 const OUTPUT_DIR = "./outputs/"
+const OUTPUT_MIN_DIR = "./outputs.min/"
 const REPOS_FILE = "./repos.json"
 
 const dockerfile_regex = /[Dd]ockerfile.*/;
@@ -237,9 +238,9 @@ module.exports = {
             languages: {}
         }
 
-        fs.readdirSync(OUTPUT_DIR).forEach(file => {
+        fs.readdirSync(OUTPUT_MIN_DIR).forEach(file => {
             this.print('processing overall results for file: ' + file)
-            var data = JSON.parse(fs.readFileSync(OUTPUT_DIR + '/' + file))
+            var data = JSON.parse(fs.readFileSync(OUTPUT_MIN_DIR + '/' + file))
 
             res.total_repos++
 
