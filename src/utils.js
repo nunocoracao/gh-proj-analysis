@@ -6,8 +6,19 @@ const OUTPUT_DIR = "./outputs/"
 const OUTPUT_MIN_DIR = "./outputs.min/"
 const REPOS_FILE = "./repos.json"
 
-const dockerfile_regex = /[Dd]ockerfile.*/;
-const compose_regex = /.*[Cc]ompose.*ya*ml/;
+//const dockerfile_regex = /[Dd]ockerfile.*/; # initial regex
+//const compose_regex = /.*[Cc]ompose.*ya*ml/; # initial regex
+const dockerfile_regex = /.[Dd]ockerfile.*/;
+const compose_regex = /.*[Cc]ompose.*ya?ml/;
+const devcontainer_regex = /[Dd]evcontainer.*json/;
+const kustomize_regex = /.*[Kk]ustomization.*ya?ml/;
+const helm_regex = /.*[Cc]hart.*ya?ml/;
+const k8s_regex_1 = /.*[Dd]eployment.*ya?ml/;
+const k8s_regex_2 = /.*[Ss]ervice.*ya?ml/;
+const k8s_regex_3 = /.*[Cc]onfigmap.*ya?ml/;
+const backstage_regex = /.*[Cc]atalog\-info.*ya?ml/;
+const terraform_regex_1 = /.*\.tf/
+const terraform_regex_2 = /.*\.hcl/
 
 //And of course... right when I saw I don't normally see something.Dockerfile, it shows up in the CAH today! 
 
@@ -39,7 +50,7 @@ module.exports = {
         this.print('cloning ' + repoName)
 
         clone(repoUrl, path, { shallow: true }, (error) => {
-            if (error){
+            if (error) {
                 console.log(error)
                 //this.cloneRepo(repoUrl, callback)
                 skipCallback()
@@ -88,6 +99,28 @@ module.exports = {
             }
         }
         return struct
+    },
+
+    rescanAndMinifyOutputs: function () {
+        /*fs.readdirSync(OUTPUT_MIN_DIR).forEach(file => {
+            this.print('processing overall results for file: ' + file)
+            var data = JSON.parse(fs.readFileSync(OUTPUT_MIN_DIR + '/' + file))
+        })*/
+
+
+        fs.readdirSync(OUTPUT_DIR).forEach(file => {
+            if (!fs.existsSync(OUTPUT_MIN_DIR + file)) {
+                console.log('minifying file: ' + file)
+                var data = JSON.parse(fs.readFileSync(OUTPUT_DIR + file))
+                delete data.struct
+                fs.writeFileSync(OUTPUT_MIN_DIR + file, JSON.stringify(data, null, 2))
+            }
+        })
+
+    },
+
+    rescan: function(){
+
     },
 
     processStruct: function (struct) {
