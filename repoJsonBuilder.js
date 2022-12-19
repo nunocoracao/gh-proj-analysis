@@ -4,7 +4,7 @@ const githubSearchRepos = require('./src/ghCrawler.js');
 var utils = require('./src/utils');
 
 var searchQueries = [
-    'Cloud Foundation',
+    /*'Cloud Foundation',
     'cncf',
     'cluster',
     'cloud',
@@ -23,7 +23,7 @@ var searchQueries = [
     'infra',
     'PaaS',
     'IaaS',
-    'digital ocean',
+    'digital ocean',*/
     'heroku',
     'distributed',
     'parallel',

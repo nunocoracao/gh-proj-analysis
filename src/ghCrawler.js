@@ -44,7 +44,7 @@ var crawlLikeABoss = (query, opts, callback, preData, page) => {
             console.log(url)
             console.log(query)
 
-            if (data.items.length < LIMIT_PER_REQUEST && data.items.length < data.total_count) {
+            if (data.items.length + 100 < LIMIT_PER_REQUEST && data.items.length < data.total_count) {
                 console.log('getting more data')
                 crawlLikeABoss(query, opts, callback, data, page + 1)
             } else
