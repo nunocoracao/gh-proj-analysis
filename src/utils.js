@@ -556,6 +556,7 @@ module.exports = {
             no_docker: {
                 total: 0,
             },
+            languagesRepoCount: {},
             languages: {}
         }
 
@@ -756,6 +757,7 @@ module.exports = {
 
             //Language Stats
             if (!res.languages[data.info.language]) {
+                res.languagesRepoCount[data.info.language] = 1
                 res.languages[data.info.language] = {
                     total_repos: 0,
                     dockerfile: {
@@ -857,6 +859,8 @@ module.exports = {
                         total: 0,
                     }
                 }
+            }else{
+                res.languagesRepoCount[data.info.language]++
             }
 
             res.languages[data.info.language].total_repos++
