@@ -240,12 +240,14 @@ module.exports = {
 
     rescan: function () {
         fs.readdirSync(OUTPUT_DIR).every(file => {
-            this.print('rescanning file: ' + file)
             var data = JSON.parse(fs.readFileSync(OUTPUT_DIR + '/' + file))
-            data.struct = this.rescanStruct(data.struct)
-            var res = this.processStruct(data.struct)
-            data.results = res.results
-            this.saveToFile(data, file)
+            if(!data.results.k8s){
+                this.print('rescanning file: ' + file)
+                data.struct = this.rescanStruct(data.struct)
+                var res = this.processStruct(data.struct)
+                data.results = res.results
+                this.saveToFile(data, file)
+            }
             return true;
         })
     },
