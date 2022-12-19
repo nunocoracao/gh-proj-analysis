@@ -1,0 +1,11 @@
+const utils = require('./src/utils')
+var validations = utils.validate()
+
+utils.saveToFile(validations.dockerfiles, '../validations/dockerfiles.validations.json')
+utils.saveToFile(validations.composefiles, '../validations/composefiles.validations.json')
+utils.saveToFile(validations.kustomize, '../validations/kustomize.validations.json')
+utils.saveToFile(validations.helm, '../validations/helm.validations.json')
+utils.saveToFile(validations.k8s, '../validations/k8s.validations.json')
+utils.saveToFile(validations.backstage, '../validations/backstage.validations.json')
+utils.saveToFile(validations.terraform, '../validations/terraform.validations.json')
+utils.saveToFile(validations.multiple, '../validations/multiple.validations.json')
