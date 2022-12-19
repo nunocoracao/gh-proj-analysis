@@ -9,6 +9,8 @@ const REPOS_FILE = "./repos.json"
 const dockerfile_regex = /[Dd]ockerfile.*/;
 const compose_regex = /.*[Cc]ompose.*ya*ml/;
 
+//And of course... right when I saw I don't normally see something.Dockerfile, it shows up in the CAH today! 
+
 module.exports = {
 
 
