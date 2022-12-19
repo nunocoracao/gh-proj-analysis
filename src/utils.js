@@ -101,13 +101,7 @@ module.exports = {
         return struct
     },
 
-    rescanAndMinifyOutputs: function () {
-        /*fs.readdirSync(OUTPUT_MIN_DIR).forEach(file => {
-            this.print('processing overall results for file: ' + file)
-            var data = JSON.parse(fs.readFileSync(OUTPUT_MIN_DIR + '/' + file))
-        })*/
-
-
+    minifyOutputs: function () {
         fs.readdirSync(OUTPUT_DIR).forEach(file => {
             if (!fs.existsSync(OUTPUT_MIN_DIR + file)) {
                 console.log('minifying file: ' + file)
@@ -119,7 +113,12 @@ module.exports = {
 
     },
 
-    rescan: function(){
+    rescan: function () {
+
+        /*fs.readdirSync(OUTPUT_MIN_DIR).forEach(file => {
+            this.print('processing overall results for file: ' + file)
+            var data = JSON.parse(fs.readFileSync(OUTPUT_MIN_DIR + '/' + file))
+        })*/
 
     },
 
