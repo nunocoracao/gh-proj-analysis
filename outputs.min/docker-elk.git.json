@@ -1,11 +1,23 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 11,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 11,
+      "filepaths": [
+        "docker-elk.git/elasticsearch/Dockerfile",
+        "docker-elk.git/extensions/curator/Dockerfile",
+        "docker-elk.git/extensions/enterprise-search/Dockerfile",
+        "docker-elk.git/extensions/filebeat/Dockerfile",
+        "docker-elk.git/extensions/fleet/Dockerfile",
+        "docker-elk.git/extensions/heartbeat/Dockerfile",
+        "docker-elk.git/extensions/logspout/Dockerfile",
+        "docker-elk.git/extensions/metricbeat/Dockerfile",
+        "docker-elk.git/kibana/Dockerfile",
+        "docker-elk.git/logstash/Dockerfile",
+        "docker-elk.git/setup/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -23,6 +35,13 @@
         "docker-elk.git/extensions/logspout/logspout-compose.yml",
         "docker-elk.git/extensions/metricbeat/metricbeat-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

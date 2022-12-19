@@ -1,11 +1,17 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 5,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 5,
+      "filepaths": [
+        "cqrs-microservice-sampler.git/command-side/src/main/docker/Dockerfile",
+        "cqrs-microservice-sampler.git/config-service/src/main/docker/Dockerfile",
+        "cqrs-microservice-sampler.git/discovery-service/src/main/docker/Dockerfile",
+        "cqrs-microservice-sampler.git/gateway-service/src/main/docker/Dockerfile",
+        "cqrs-microservice-sampler.git/query-side/src/main/docker/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -15,6 +21,13 @@
       "filepaths": [
         "cqrs-microservice-sampler.git/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

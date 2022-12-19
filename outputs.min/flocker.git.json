@@ -2,11 +2,20 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 1,
+      "count": 10,
       "rootCount": 0,
-      "subFolderCount": 1,
+      "subFolderCount": 10,
       "filepaths": [
-        "flocker.git/admin/requirements.Dockerfile"
+        "flocker.git/admin/requirements.Dockerfile",
+        "flocker.git/admin/build_targets/centos-7/Dockerfile",
+        "flocker.git/admin/build_targets/ubuntu-14.04/Dockerfile",
+        "flocker.git/admin/build_targets/ubuntu-16.04/Dockerfile",
+        "flocker.git/dockerfiles/control/Dockerfile",
+        "flocker.git/dockerfiles/dataset/Dockerfile",
+        "flocker.git/dockerfiles/docker-plugin/Dockerfile",
+        "flocker.git/flocker/node/functional/env-docker/Dockerfile",
+        "flocker.git/flocker/node/functional/retry-docker/Dockerfile",
+        "flocker.git/flocker/node/functional/sendbytes-docker/Dockerfile.in"
       ]
     },
     "composefile": {
@@ -18,6 +27,13 @@
         "flocker.git/admin/test/installer/postgres/docker-compose-node1.yml",
         "flocker.git/admin/test/installer/postgres/docker-compose-node2.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

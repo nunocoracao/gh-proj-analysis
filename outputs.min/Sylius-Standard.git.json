@@ -1,11 +1,13 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
-      "rootCount": 0,
+      "exist": true,
+      "count": 1,
+      "rootCount": 1,
       "subFolderCount": 0,
-      "filepaths": []
+      "filepaths": [
+        "Sylius-Standard.git/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -16,6 +18,13 @@
         "Sylius-Standard.git/docker-compose.prod.yml",
         "Sylius-Standard.git/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,
@@ -32,11 +41,15 @@
       "filepaths": []
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 3,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 3,
+      "filepaths": [
+        "Sylius-Standard.git/config/services.yaml",
+        "Sylius-Standard.git/config/services_test.yaml",
+        "Sylius-Standard.git/config/services_test_cached.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

@@ -2,12 +2,16 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 2,
+      "count": 6,
       "rootCount": 0,
-      "subFolderCount": 2,
+      "subFolderCount": 6,
       "filepaths": [
+        "semaphore.git/deployment/docker/ci/Dockerfile",
         "semaphore.git/deployment/docker/ci/dredd.Dockerfile",
-        "semaphore.git/deployment/docker/prod/buildx.Dockerfile"
+        "semaphore.git/deployment/docker/dev/Dockerfile",
+        "semaphore.git/deployment/docker/prod/Dockerfile",
+        "semaphore.git/deployment/docker/prod/buildx.Dockerfile",
+        "semaphore.git/deployment/docker/prod/proxy/Dockerfile"
       ]
     },
     "composefile": {
@@ -21,6 +25,15 @@
         "semaphore.git/deployment/docker/ci/docker-compose.postgres.yml",
         "semaphore.git/deployment/docker/dev/docker-compose.yml",
         "semaphore.git/deployment/docker/prod/docker-compose.yml"
+      ]
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "semaphore.git/.devcontainer/devcontainer.json"
       ]
     },
     "kustomize": {

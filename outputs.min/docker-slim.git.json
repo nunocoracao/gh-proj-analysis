@@ -1,11 +1,19 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 7,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 7,
+      "filepaths": [
+        "docker-slim.git/build/package/docker/Dockerfile",
+        "docker-slim.git/examples/artifacts/Dockerfile.fat",
+        "docker-slim.git/pkg/docker/dockerfile/dockerfile.go",
+        "docker-slim.git/pkg/third_party/compose-go/ci/Dockerfile",
+        "docker-slim.git/pkg/third_party/compose-go/loader/testdata/Dockerfile",
+        "docker-slim.git/pkg/third_party/compose-go/scripts/validate/template/dockerfile.txt",
+        "docker-slim.git/vendor/golang.org/x/net/http2/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -21,6 +29,13 @@
         "docker-slim.git/pkg/third_party/compose-go/loader/testdata/compose-test-extends.yaml",
         "docker-slim.git/pkg/third_party/compose-go/loader/testdata/compose-test-with-version.yaml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

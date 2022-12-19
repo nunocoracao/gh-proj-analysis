@@ -1,11 +1,13 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 1,
+      "filepaths": [
+        "aws-microservices-deploy-options.git/config/xray/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -19,6 +21,13 @@
         "aws-microservices-deploy-options.git/apps/ecs/ecs-cli/webapp-docker-compose.yaml"
       ]
     },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
     "kustomize": {
       "exist": false,
       "count": 0,
@@ -27,18 +36,35 @@
       "filepaths": []
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 1,
+      "filepaths": [
+        "aws-microservices-deploy-options.git/apps/k8s/helm/myapp/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 14,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 14,
+      "filepaths": [
+        "aws-microservices-deploy-options.git/apps/ecs/deployment/deployment-pipeline-name.yaml",
+        "aws-microservices-deploy-options.git/apps/ecs/deployment/deployment-pipeline-webapp.yaml",
+        "aws-microservices-deploy-options.git/apps/ecs/deployment/deployment-pipeline.yaml",
+        "aws-microservices-deploy-options.git/apps/ecs/deployment/ecs-refarch-continuous-deployment.yaml",
+        "aws-microservices-deploy-options.git/apps/k8s/helm/myapp/templates/greeting-deployment.yaml",
+        "aws-microservices-deploy-options.git/apps/k8s/helm/myapp/templates/greeting-service.yaml",
+        "aws-microservices-deploy-options.git/apps/k8s/helm/myapp/templates/name-deployment.yaml",
+        "aws-microservices-deploy-options.git/apps/k8s/helm/myapp/templates/name-service.yaml",
+        "aws-microservices-deploy-options.git/apps/k8s/helm/myapp/templates/webapp-deployment.yaml",
+        "aws-microservices-deploy-options.git/apps/k8s/helm/myapp/templates/webapp-service.yaml",
+        "aws-microservices-deploy-options.git/apps/k8s/kubepack/manifests/app/greeting.deployment.yml",
+        "aws-microservices-deploy-options.git/apps/k8s/kubepack/manifests/app/name.deployment.yml",
+        "aws-microservices-deploy-options.git/apps/k8s/kubepack/manifests/app/webapp.deployment.yml",
+        "aws-microservices-deploy-options.git/apps/lambda/microservice-pipeline.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

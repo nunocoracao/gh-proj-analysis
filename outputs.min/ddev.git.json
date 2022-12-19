@@ -2,12 +2,20 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 2,
+      "count": 10,
       "rootCount": 0,
-      "subFolderCount": 2,
+      "subFolderCount": 10,
       "filepaths": [
         "ddev.git/.circleci/aur-checker-Dockerfile",
-        "ddev.git/pkg/ddevapp/router_Dockerfile_template"
+        "ddev.git/.gitpod/images/Dockerfile",
+        "ddev.git/containers/ddev-dbserver/Dockerfile",
+        "ddev.git/containers/ddev-php-base/Dockerfile",
+        "ddev.git/containers/ddev-router/Dockerfile",
+        "ddev.git/containers/ddev-ssh-agent/Dockerfile",
+        "ddev.git/containers/ddev-webserver/Dockerfile",
+        "ddev.git/containers/test-ssh-server/Dockerfile",
+        "ddev.git/pkg/ddevapp/router_Dockerfile_template",
+        "ddev.git/vendor/github.com/pelletier/go-toml/Dockerfile"
       ]
     },
     "composefile": {
@@ -33,6 +41,13 @@
         "ddev.git/pkg/dockerutil/testdata/docker-compose.yml",
         "ddev.git/pkg/dockerutil/testdata/TestComposeWithStreams/test-compose-with-streams.yaml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

@@ -2,11 +2,37 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 1,
+      "count": 27,
       "rootCount": 0,
-      "subFolderCount": 1,
+      "subFolderCount": 27,
       "filepaths": [
-        "terrascan.git/pkg/iac-providers/docker/v1/testdata/file-test-data/valid-Dockerfile"
+        "terrascan.git/build/Dockerfile",
+        "terrascan.git/integrations/argocd/Dockerfile",
+        "terrascan.git/integrations/atlantis/Dockerfile",
+        "terrascan.git/pkg/iac-providers/docker/v1/testdata/file-test-data/Dockerfile",
+        "terrascan.git/pkg/iac-providers/docker/v1/testdata/file-test-data/dockerfile-testparse-function",
+        "terrascan.git/pkg/iac-providers/docker/v1/testdata/file-test-data/dockerfile-withmultiple-stages",
+        "terrascan.git/pkg/iac-providers/docker/v1/testdata/file-test-data/valid-Dockerfile",
+        "terrascan.git/pkg/iac-providers/docker/v1/testdata/valid-directory/Dockerfile",
+        "terrascan.git/pkg/iac-providers/docker/v1/testdata/valid-directory-with-in-file-instrumentation/Dockerfile",
+        "terrascan.git/pkg/iac-providers/docker/v1/testdata/valid-directory-with-invalid-file/Dockerfile",
+        "terrascan.git/test/e2e/scan/golden/docker_scan/dockerfiles/dockerfile_platform_flag_violations/dockerfile_platform_flag_human.txt",
+        "terrascan.git/test/e2e/scan/golden/docker_scan/dockerfiles/dockerfile_platform_flag_violations/dockerfile_platform_flag_human_verbose.txt",
+        "terrascan.git/test/e2e/scan/golden/docker_scan/dockerfiles/dockerfile_platform_flag_violations/dockerfile_platform_flag_json.txt",
+        "terrascan.git/test/e2e/scan/golden/docker_scan/dockerfiles/dockerfile_platform_flag_violations/dockerfile_platform_flag_junit_xml.txt",
+        "terrascan.git/test/e2e/scan/golden/docker_scan/dockerfiles/dockerfile_platform_flag_violations/dockerfile_platform_flag_sarif.txt",
+        "terrascan.git/test/e2e/scan/golden/docker_scan/dockerfiles/dockerfile_platform_flag_violations/dockerfile_platform_flag_xml.txt",
+        "terrascan.git/test/e2e/scan/golden/docker_scan/dockerfiles/dockerfile_platform_flag_violations/dockerfile_platform_flag_yaml.txt",
+        "terrascan.git/test/e2e/scan/golden/resource_prioritising/max_severity_set/docker/dockerfile_max_severity_low.txt",
+        "terrascan.git/test/e2e/scan/golden/resource_prioritising/max_severity_set_none/docker/dockerfile_max_severity_none.txt",
+        "terrascan.git/test/e2e/scan/golden/resource_prioritising/min_severity_set/docker/dockerfile_min_severity_high.txt",
+        "terrascan.git/test/e2e/scan/golden/resource_skipping/dockerfile_resource_skipping.txt",
+        "terrascan.git/test/e2e/test_data/iac/docker/dockerfile_with_platform_flag_violation/Dockerfile",
+        "terrascan.git/test/e2e/test_data/iac/resource_prioritising/max_severity_set/docker/Dockerfile",
+        "terrascan.git/test/e2e/test_data/iac/resource_prioritising/max_severity_set_none/docker/Dockerfile",
+        "terrascan.git/test/e2e/test_data/iac/resource_prioritising/min_max_both_severity_set/docker/Dockerfile",
+        "terrascan.git/test/e2e/test_data/iac/resource_prioritising/min_severity_set/docker/Dockerfile",
+        "terrascan.git/test/e2e/test_data/iac/resource_skipping/docker/Dockerfile"
       ]
     },
     "composefile": {
@@ -17,6 +43,13 @@
       "filepaths": [
         "terrascan.git/deploy/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": true,

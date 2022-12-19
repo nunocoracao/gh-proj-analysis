@@ -1,11 +1,14 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 2,
+      "filepaths": [
+        "KubeFATE.git/build/ci/jenkins_build/Dockerfile",
+        "KubeFATE.git/k8s-deploy/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -20,6 +23,13 @@
         "KubeFATE.git/docker-deploy/training_template/docker-compose-spark.yml"
       ]
     },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
     "kustomize": {
       "exist": false,
       "count": 0,
@@ -28,18 +38,59 @@
       "filepaths": []
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 4,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 4,
+      "filepaths": [
+        "KubeFATE.git/helm-charts/FATE/Chart.yaml",
+        "KubeFATE.git/helm-charts/FATE-Exchange/Chart.yaml",
+        "KubeFATE.git/helm-charts/FATE-Serving/Chart.yaml",
+        "KubeFATE.git/helm-charts/UpgradeManager/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 35,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 35,
+      "filepaths": [
+        "KubeFATE.git/docker-deploy/training_template/public/fate_flow/conf/service_conf.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/serviceaccount.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/eggroll/configmap.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/eggroll/clustermanager/deployment.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/eggroll/clustermanager/service.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/eggroll/lb-rollsite/configmap.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/eggroll/lb-rollsite/deployment.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/eggroll/lb-rollsite/service.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/eggroll/nodemanager/configmap.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/eggroll/nodemanager/service.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/eggroll/rollsite/configmap.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/eggroll/rollsite/deployment.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/eggroll/rollsite/service.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/hdfs/configmap.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/hdfs/service.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/nginx/configmap.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/nginx/deployment.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/nginx/service.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/pulsar/configmap.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/pulsar/service.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/rabbitmq/configmap.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/rabbitmq/deployment.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/rabbitmq/service.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/spark/configmap.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/spark/deployment.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/backends/spark/spark/service.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/core/client/service.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/core/fateboard/configmap.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/core/fateboard/service.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/core/fateflow/configmap.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/core/fateflow/service.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/core/mysql/configmap.yaml",
+        "KubeFATE.git/helm-charts/FATE/templates/core/mysql/service.yaml",
+        "KubeFATE.git/helm-charts/FATE-Exchange/templates/serviceaccount.yaml",
+        "KubeFATE.git/helm-charts/FATE-Serving/templates/serviceaccount.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

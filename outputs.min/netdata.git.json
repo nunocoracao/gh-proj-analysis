@@ -2,17 +2,22 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 7,
-      "rootCount": 0,
-      "subFolderCount": 7,
+      "count": 12,
+      "rootCount": 2,
+      "subFolderCount": 10,
       "filepaths": [
+        "netdata.git/Dockerfile",
+        "netdata.git/Dockerfile.test",
+        "netdata.git/.github/dockerfiles/Dockerfile.build_test",
+        "netdata.git/.github/dockerfiles/Dockerfile.clang",
         "netdata.git/build_external/clean-install-arch-debug.Dockerfile",
         "netdata.git/build_external/clean-install-arch-extras.Dockerfile",
         "netdata.git/build_external/clean-install-arch.Dockerfile",
         "netdata.git/build_external/clean-install.Dockerfile",
         "netdata.git/build_external/make-install.Dockerfile",
         "netdata.git/build_external/scenarios/aclk-testing/configureVerneMQ.Dockerfile",
-        "netdata.git/build_external/scenarios/aclk-testing/paho.Dockerfile"
+        "netdata.git/build_external/scenarios/aclk-testing/paho.Dockerfile",
+        "netdata.git/packaging/docker/Dockerfile"
       ]
     },
     "composefile": {
@@ -33,6 +38,15 @@
         "netdata.git/build_external/scenarios/gaps_lo/parent-compose.yml",
         "netdata.git/build_external/scenarios/only-agent/docker-compose.yml",
         "netdata.git/build_external/scenarios/parent-child/docker-compose.yml"
+      ]
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "netdata.git/.devcontainer/devcontainer.json"
       ]
     },
     "kustomize": {

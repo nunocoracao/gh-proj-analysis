@@ -1,11 +1,15 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
-      "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "exist": true,
+      "count": 3,
+      "rootCount": 2,
+      "subFolderCount": 1,
+      "filepaths": [
+        "flink-on-k8s-operator.git/Dockerfile",
+        "flink-on-k8s-operator.git/Dockerfile.builder",
+        "flink-on-k8s-operator.git/images/flink/docker/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": false,
@@ -14,26 +18,46 @@
       "subFolderCount": 0,
       "filepaths": []
     },
-    "kustomize": {
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "flink-on-k8s-operator.git/config/crd/kustomization.yaml",
+        "flink-on-k8s-operator.git/config/default/kustomization.yaml",
+        "flink-on-k8s-operator.git/config/manager/kustomization.yaml",
+        "flink-on-k8s-operator.git/config/rbac/kustomization.yaml",
+        "flink-on-k8s-operator.git/config/webhook/kustomization.yaml"
+      ]
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 2,
+      "filepaths": [
+        "flink-on-k8s-operator.git/helm-chart/flink-job-cluster/Chart.yaml",
+        "flink-on-k8s-operator.git/helm-chart/flink-operator/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 3,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 3,
+      "filepaths": [
+        "flink-on-k8s-operator.git/config/rbac/auth_proxy_service.yaml",
+        "flink-on-k8s-operator.git/config/webhook/service.yaml",
+        "flink-on-k8s-operator.git/helm-chart/flink-operator/templates/serviceaccount.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

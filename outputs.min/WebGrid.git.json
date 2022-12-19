@@ -1,11 +1,16 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 4,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 4,
+      "filepaths": [
+        "WebGrid.git/distribution/docker/images/builder/Dockerfile",
+        "WebGrid.git/distribution/docker/images/core/Dockerfile",
+        "WebGrid.git/distribution/docker/images/mkdocs/Dockerfile",
+        "WebGrid.git/distribution/docker/images/node/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -17,6 +22,13 @@
         "WebGrid.git/test/tracing-compose.yml"
       ]
     },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
     "kustomize": {
       "exist": false,
       "count": 0,
@@ -25,18 +37,24 @@
       "filepaths": []
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 2,
+      "filepaths": [
+        "WebGrid.git/distribution/kubernetes/demo/Chart.yaml",
+        "WebGrid.git/distribution/kubernetes/demo/charts/webgrid/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 2,
+      "filepaths": [
+        "WebGrid.git/distribution/kubernetes/demo/charts/webgrid/templates/service.yaml",
+        "WebGrid.git/distribution/kubernetes/demo/charts/webgrid/templates/serviceAccount.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

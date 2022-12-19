@@ -1,11 +1,22 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 10,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 10,
+      "filepaths": [
+        "cockroach.git/build/bazelbuilder/Dockerfile",
+        "cockroach.git/build/builder/Dockerfile",
+        "cockroach.git/build/deploy/Dockerfile",
+        "cockroach.git/build/deploy-redhat/Dockerfile.in",
+        "cockroach.git/pkg/acceptance/compose/gss/kdc/Dockerfile",
+        "cockroach.git/pkg/acceptance/compose/gss/psql/Dockerfile",
+        "cockroach.git/pkg/acceptance/compose/gss/python/Dockerfile",
+        "cockroach.git/pkg/acceptance/testdata/Dockerfile",
+        "cockroach.git/pkg/cmd/roachprod/docker/Dockerfile",
+        "cockroach.git/scripts/localmetrics/grafana/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -21,6 +32,13 @@
         "cockroach.git/pkg/ui/workspaces/e2e-tests/compose.yaml",
         "cockroach.git/scripts/localmetrics/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

@@ -1,11 +1,22 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 10,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 10,
+      "filepaths": [
+        "Rocket.Chat.git/apps/meteor/.docker/Dockerfile",
+        "Rocket.Chat.git/apps/meteor/.docker/Dockerfile.alpine",
+        "Rocket.Chat.git/apps/meteor/.docker/Dockerfile.rhel",
+        "Rocket.Chat.git/apps/meteor/.docker-mongo/Dockerfile",
+        "Rocket.Chat.git/apps/meteor/ee/server/services/Dockerfile",
+        "Rocket.Chat.git/ee/apps/account-service/Dockerfile",
+        "Rocket.Chat.git/ee/apps/authorization-service/Dockerfile",
+        "Rocket.Chat.git/ee/apps/ddp-streamer/Dockerfile",
+        "Rocket.Chat.git/ee/apps/presence-service/Dockerfile",
+        "Rocket.Chat.git/ee/apps/stream-hub-service/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -16,6 +27,13 @@
         "Rocket.Chat.git/docker-compose-ci.yml",
         "Rocket.Chat.git/apps/meteor/ee/server/services/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

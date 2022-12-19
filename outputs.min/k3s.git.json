@@ -1,11 +1,20 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
-      "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "exist": true,
+      "count": 8,
+      "rootCount": 3,
+      "subFolderCount": 5,
+      "filepaths": [
+        "k3s.git/Dockerfile.dapper",
+        "k3s.git/Dockerfile.manifest",
+        "k3s.git/Dockerfile.test",
+        "k3s.git/conformance/Dockerfile",
+        "k3s.git/package/Dockerfile",
+        "k3s.git/tests/e2e/scripts/Dockerfile",
+        "k3s.git/tests/integration/Dockerfile.test",
+        "k3s.git/tests/terraform/Dockerfile.build"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -15,6 +24,13 @@
       "filepaths": [
         "k3s.git/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,
@@ -31,11 +47,20 @@
       "filepaths": []
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 8,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 8,
+      "filepaths": [
+        "k3s.git/manifests/metrics-server/metrics-apiservice.yaml",
+        "k3s.git/manifests/metrics-server/metrics-server-deployment.yaml",
+        "k3s.git/manifests/metrics-server/metrics-server-service.yaml",
+        "k3s.git/tests/perf/tests/density/deployment.yaml",
+        "k3s.git/tests/perf/tests/load/configmap.yaml",
+        "k3s.git/tests/perf/tests/load/deployment.yaml",
+        "k3s.git/tests/perf/tests/load/service.yaml",
+        "k3s.git/tests/perf/tests/load/statefulset_service.yaml"
+      ]
     },
     "backstage": {
       "exist": false,
@@ -45,11 +70,35 @@
       "filepaths": []
     },
     "terraform": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 23,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 23,
+      "filepaths": [
+        "k3s.git/tests/perf/agents/data.tf",
+        "k3s.git/tests/perf/agents/main.tf",
+        "k3s.git/tests/perf/agents/outputs.tf",
+        "k3s.git/tests/perf/agents/variables.tf",
+        "k3s.git/tests/perf/agents/versions.tf",
+        "k3s.git/tests/perf/server/data.tf",
+        "k3s.git/tests/perf/server/main.tf",
+        "k3s.git/tests/perf/server/outputs.tf",
+        "k3s.git/tests/perf/server/variables.tf",
+        "k3s.git/tests/perf/server/versions.tf",
+        "k3s.git/tests/terraform/modules/k3scluster/main.tf",
+        "k3s.git/tests/terraform/modules/k3scluster/outputs.tf",
+        "k3s.git/tests/terraform/modules/k3scluster/providers.tf",
+        "k3s.git/tests/terraform/modules/k3scluster/variables.tf",
+        "k3s.git/tests/terraform/modules/k3scluster/config/local.tfvars",
+        "k3s.git/tests/terraform/modules/k3scluster/master/instances_server.tf",
+        "k3s.git/tests/terraform/modules/k3scluster/master/outputs.tf",
+        "k3s.git/tests/terraform/modules/k3scluster/master/providers.tf",
+        "k3s.git/tests/terraform/modules/k3scluster/master/variables.tf",
+        "k3s.git/tests/terraform/modules/k3scluster/worker/instances_worker.tf",
+        "k3s.git/tests/terraform/modules/k3scluster/worker/outputs.tf",
+        "k3s.git/tests/terraform/modules/k3scluster/worker/providers.tf",
+        "k3s.git/tests/terraform/modules/k3scluster/worker/variables.tf"
+      ]
     }
   },
   "info": {

@@ -2,11 +2,22 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 1,
+      "count": 12,
       "rootCount": 1,
-      "subFolderCount": 0,
+      "subFolderCount": 11,
       "filepaths": [
-        "kustomize.git/kustomize.Dockerfile"
+        "kustomize.git/kustomize.Dockerfile",
+        "kustomize.git/cmd/config/internal/commands/e2e/e2econtainerconfig/Dockerfile",
+        "kustomize.git/functions/examples/application-cr/image/Dockerfile",
+        "kustomize.git/functions/examples/injection-tshirt-sizes/image/Dockerfile",
+        "kustomize.git/functions/examples/template-go-nginx/image/Dockerfile",
+        "kustomize.git/functions/examples/template-heredoc-cockroachdb/image/Dockerfile",
+        "kustomize.git/functions/examples/validator-kubeval/image/Dockerfile",
+        "kustomize.git/functions/examples/validator-resource-requests/image/Dockerfile",
+        "kustomize.git/hack/krmFunctionBenchmark/example_tshirt/execfn/Dockerfile",
+        "kustomize.git/hack/krmFunctionBenchmark/label_namespace/execfn/Dockerfile",
+        "kustomize.git/kyaml/fn/framework/example/Dockerfile",
+        "kustomize.git/site/Dockerfile"
       ]
     },
     "composefile": {
@@ -17,6 +28,13 @@
       "filepaths": [
         "kustomize.git/site/docker-compose.yaml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": true,

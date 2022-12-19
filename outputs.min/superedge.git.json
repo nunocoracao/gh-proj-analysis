@@ -1,13 +1,36 @@
 {
   "results": {
     "dockerfile": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "superedge.git/build/docker/application-grid-controller/Dockerfile",
+        "superedge.git/build/docker/application-grid-wrapper/Dockerfile",
+        "superedge.git/build/docker/apps-manager/Dockerfile",
+        "superedge.git/build/docker/edge-health/Dockerfile",
+        "superedge.git/build/docker/edge-health-admission/Dockerfile",
+        "superedge.git/build/docker/helper-job/Dockerfile",
+        "superedge.git/build/docker/lite-apiserver/Dockerfile",
+        "superedge.git/build/docker/penetrator-controller/Dockerfile",
+        "superedge.git/build/docker/penetrator-job/Dockerfile",
+        "superedge.git/build/docker/site-manager/Dockerfile",
+        "superedge.git/build/docker/statefulset-grid-daemon/Dockerfile",
+        "superedge.git/build/docker/tunnel/Dockerfile",
+        "superedge.git/examples/Tars/testapp/httpserver/Dockerfile",
+        "superedge.git/examples/Tars/testapp/testserver/Dockerfile",
+        "superedge.git/hack/update-lite-apiserver/Dockerfile"
+      ]
+    },
+    "composefile": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
     },
-    "composefile": {
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
@@ -29,11 +52,20 @@
       "filepaths": []
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 8,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 8,
+      "filepaths": [
+        "superedge.git/deployment/edgex/edgex-app-service-configurable.yaml",
+        "superedge.git/examples/Tars/yaml/baseserver/tars-configmap.yaml",
+        "superedge.git/examples/access-edge-service/yaml/tcp/edge-service.yaml",
+        "superedge.git/pkg/application-grid-controller/manifests/superedge.io_deploymentgrids.yaml",
+        "superedge.git/pkg/application-grid-controller/manifests/superedge.io_servicegrids.yaml",
+        "superedge.git/pkg/apps-manager/crd/apps.superedge.io_edeployments.yaml",
+        "superedge.git/pkg/apps-manager/crd/apps_v1_edeployment_damo.yaml",
+        "superedge.git/sample/application-grid/servicegrid.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

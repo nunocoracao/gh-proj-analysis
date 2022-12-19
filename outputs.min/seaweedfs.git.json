@@ -1,11 +1,21 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 9,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 9,
+      "filepaths": [
+        "seaweedfs.git/docker/Dockerfile.e2e",
+        "seaweedfs.git/docker/Dockerfile.gccgo_build",
+        "seaweedfs.git/docker/Dockerfile.go_build",
+        "seaweedfs.git/docker/Dockerfile.local",
+        "seaweedfs.git/docker/Dockerfile.rocksdb_dev_env",
+        "seaweedfs.git/docker/Dockerfile.rocksdb_large",
+        "seaweedfs.git/docker/Dockerfile.rocksdb_large_local",
+        "seaweedfs.git/docker/Dockerfile.s3tests",
+        "seaweedfs.git/test/s3/compatibility/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -31,6 +41,13 @@
         "seaweedfs.git/docker/compose/local-sync-mount-compose.yml"
       ]
     },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
     "kustomize": {
       "exist": false,
       "count": 0,
@@ -39,18 +56,33 @@
       "filepaths": []
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 1,
+      "filepaths": [
+        "seaweedfs.git/k8s/helm_charts2/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 12,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 12,
+      "filepaths": [
+        "seaweedfs.git/k8s/helm_charts2/templates/filer-service-client.yaml",
+        "seaweedfs.git/k8s/helm_charts2/templates/filer-service.yaml",
+        "seaweedfs.git/k8s/helm_charts2/templates/filer-servicemonitor.yaml",
+        "seaweedfs.git/k8s/helm_charts2/templates/master-service.yaml",
+        "seaweedfs.git/k8s/helm_charts2/templates/master-servicemonitor.yaml",
+        "seaweedfs.git/k8s/helm_charts2/templates/s3-deployment.yaml",
+        "seaweedfs.git/k8s/helm_charts2/templates/s3-service.yaml",
+        "seaweedfs.git/k8s/helm_charts2/templates/s3-servicemonitor.yaml",
+        "seaweedfs.git/k8s/helm_charts2/templates/security-configmap.yaml",
+        "seaweedfs.git/k8s/helm_charts2/templates/service-account.yaml",
+        "seaweedfs.git/k8s/helm_charts2/templates/volume-service.yaml",
+        "seaweedfs.git/k8s/helm_charts2/templates/volume-servicemonitor.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

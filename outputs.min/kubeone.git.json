@@ -2,14 +2,23 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 1,
-      "rootCount": 0,
-      "subFolderCount": 1,
+      "count": 3,
+      "rootCount": 1,
+      "subFolderCount": 2,
       "filepaths": [
-        "kubeone.git/hack/boilerplate/boilerplate.Dockerfile.txt"
+        "kubeone.git/Dockerfile",
+        "kubeone.git/hack/boilerplate/boilerplate.Dockerfile.txt",
+        "kubeone.git/hack/images/kubeone-e2e/Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
@@ -31,11 +40,17 @@
       "filepaths": []
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 5,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 5,
+      "filepaths": [
+        "kubeone.git/addons/csi-aws-ebs/serviceaccount-csi-controller.yaml",
+        "kubeone.git/addons/csi-aws-ebs/serviceaccount-csi-node.yaml",
+        "kubeone.git/addons/machinecontroller/crd-machine-deployment.yaml",
+        "kubeone.git/addons/machinecontroller/deployment-controller.yaml",
+        "kubeone.git/addons/operating-system-manager/deployment-controller.yaml"
+      ]
     },
     "backstage": {
       "exist": false,
@@ -45,11 +60,79 @@
       "filepaths": []
     },
     "terraform": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 67,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 67,
+      "filepaths": [
+        "kubeone.git/examples/terraform/aws/main.tf",
+        "kubeone.git/examples/terraform/aws/output.tf",
+        "kubeone.git/examples/terraform/aws/variables.tf",
+        "kubeone.git/examples/terraform/aws/versions.tf",
+        "kubeone.git/examples/terraform/aws-dualstack/main.tf",
+        "kubeone.git/examples/terraform/aws-dualstack/output.tf",
+        "kubeone.git/examples/terraform/aws-dualstack/variables.tf",
+        "kubeone.git/examples/terraform/aws-dualstack/versions.tf",
+        "kubeone.git/examples/terraform/azure/cloud-config.tftpl",
+        "kubeone.git/examples/terraform/azure/main.tf",
+        "kubeone.git/examples/terraform/azure/output.tf",
+        "kubeone.git/examples/terraform/azure/variables.tf",
+        "kubeone.git/examples/terraform/azure/versions.tf",
+        "kubeone.git/examples/terraform/digitalocean/main.tf",
+        "kubeone.git/examples/terraform/digitalocean/output.tf",
+        "kubeone.git/examples/terraform/digitalocean/variables.tf",
+        "kubeone.git/examples/terraform/digitalocean/versions.tf",
+        "kubeone.git/examples/terraform/equinixmetal/main.tf",
+        "kubeone.git/examples/terraform/equinixmetal/output.tf",
+        "kubeone.git/examples/terraform/equinixmetal/variables.tf",
+        "kubeone.git/examples/terraform/equinixmetal/versions.tf",
+        "kubeone.git/examples/terraform/gce/main.tf",
+        "kubeone.git/examples/terraform/gce/output.tf",
+        "kubeone.git/examples/terraform/gce/variables.tf",
+        "kubeone.git/examples/terraform/gce/versions.tf",
+        "kubeone.git/examples/terraform/hetzner/main.tf",
+        "kubeone.git/examples/terraform/hetzner/output.tf",
+        "kubeone.git/examples/terraform/hetzner/variables.tf",
+        "kubeone.git/examples/terraform/hetzner/versions.tf",
+        "kubeone.git/examples/terraform/nutanix/cloud-config.tftpl",
+        "kubeone.git/examples/terraform/nutanix/main.tf",
+        "kubeone.git/examples/terraform/nutanix/output.tf",
+        "kubeone.git/examples/terraform/nutanix/variables.tf",
+        "kubeone.git/examples/terraform/nutanix/versions.tf",
+        "kubeone.git/examples/terraform/openstack/main.tf",
+        "kubeone.git/examples/terraform/openstack/output.tf",
+        "kubeone.git/examples/terraform/openstack/variables.tf",
+        "kubeone.git/examples/terraform/openstack/versions.tf",
+        "kubeone.git/examples/terraform/vmware-cloud-director/main.tf",
+        "kubeone.git/examples/terraform/vmware-cloud-director/output.tf",
+        "kubeone.git/examples/terraform/vmware-cloud-director/variables.tf",
+        "kubeone.git/examples/terraform/vmware-cloud-director/versions.tf",
+        "kubeone.git/examples/terraform/vsphere/main.tf",
+        "kubeone.git/examples/terraform/vsphere/outputs.tf",
+        "kubeone.git/examples/terraform/vsphere/variables.tf",
+        "kubeone.git/examples/terraform/vsphere/versions.tf",
+        "kubeone.git/examples/terraform/vsphere_centos/cloud-config-metadata.tftpl",
+        "kubeone.git/examples/terraform/vsphere_centos/cloud-config-userdata.tftpl",
+        "kubeone.git/examples/terraform/vsphere_centos/main.tf",
+        "kubeone.git/examples/terraform/vsphere_centos/outputs.tf",
+        "kubeone.git/examples/terraform/vsphere_centos/variables.tf",
+        "kubeone.git/examples/terraform/vsphere_centos/versions.tf",
+        "kubeone.git/examples/terraform/vsphere_flatcar/main.tf",
+        "kubeone.git/examples/terraform/vsphere_flatcar/outputs.tf",
+        "kubeone.git/examples/terraform/vsphere_flatcar/variables.tf",
+        "kubeone.git/examples/terraform/vsphere_flatcar/versions.tf",
+        "kubeone.git/test/e2e/testdata/aws_medium.tfvars",
+        "kubeone.git/test/e2e/testdata/aws_rhel.tfvars",
+        "kubeone.git/test/e2e/testdata/aws_small.tfvars",
+        "kubeone.git/test/e2e/testdata/aws_stable_medium.tfvars",
+        "kubeone.git/test/e2e/testdata/aws_stable_small.tfvars",
+        "kubeone.git/test/e2e/testdata/openstack_centos.tfvars",
+        "kubeone.git/test/e2e/testdata/openstack_flatcar.tfvars",
+        "kubeone.git/test/e2e/testdata/openstack_rhel.tfvars",
+        "kubeone.git/test/e2e/testdata/openstack_rockylinux.tfvars",
+        "kubeone.git/test/e2e/testdata/openstack_ubuntu.tfvars",
+        "kubeone.git/test/e2e/testdata/vsphere.tfvars"
+      ]
     }
   },
   "info": {

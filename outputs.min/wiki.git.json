@@ -1,11 +1,16 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 4,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 4,
+      "filepaths": [
+        "wiki.git/dev/build/Dockerfile",
+        "wiki.git/dev/build-arm/Dockerfile",
+        "wiki.git/dev/containers/Dockerfile",
+        "wiki.git/dev/openshift/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -15,6 +20,15 @@
       "filepaths": [
         "wiki.git/dev/containers/docker-compose.yml",
         "wiki.git/dev/examples/docker-compose.yml"
+      ]
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "wiki.git/.devcontainer/devcontainer.json"
       ]
     },
     "kustomize": {

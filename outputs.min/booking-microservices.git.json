@@ -1,11 +1,17 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 5,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 5,
+      "filepaths": [
+        "booking-microservices.git/src/ApiGateway/Dockerfile",
+        "booking-microservices.git/src/Services/Booking/Dockerfile",
+        "booking-microservices.git/src/Services/Flight/Dockerfile",
+        "booking-microservices.git/src/Services/Identity/Dockerfile",
+        "booking-microservices.git/src/Services/Passenger/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -15,6 +21,13 @@
       "filepaths": [
         "booking-microservices.git/deployments/docker-compose/docker-compose.yaml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

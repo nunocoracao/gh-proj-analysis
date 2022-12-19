@@ -1,11 +1,38 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 26,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 26,
+      "filepaths": [
+        "podman.git/test/build/from-multiple-files/Dockerfile1.alpine",
+        "podman.git/test/build/from-multiple-files/Dockerfile1.scratch",
+        "podman.git/test/build/from-multiple-files/Dockerfile2.glob",
+        "podman.git/test/build/from-multiple-files/Dockerfile2.nofrom",
+        "podman.git/test/build/from-multiple-files/Dockerfile2.withfrom",
+        "podman.git/test/build/from-scratch/Dockerfile",
+        "podman.git/test/build/preserve-volumes/Dockerfile",
+        "podman.git/test/build/volume-perms/Dockerfile",
+        "podman.git/test/compose/env_and_volume/read/Dockerfile",
+        "podman.git/test/compose/env_and_volume/write/Dockerfile",
+        "podman.git/test/compose/mount_and_label/frontend/Dockerfile",
+        "podman.git/test/compose/port_map_diff_port/frontend/Dockerfile",
+        "podman.git/test/compose/simple_port_map/frontend/Dockerfile",
+        "podman.git/test/compose/uptwice/Dockerfile",
+        "podman.git/test/e2e/build/envwithtab/Dockerfile",
+        "podman.git/test/e2e/build/squash/Dockerfile.squash-a",
+        "podman.git/test/e2e/build/squash/Dockerfile.squash-b",
+        "podman.git/test/e2e/build/squash/Dockerfile.squash-c",
+        "podman.git/test/e2e/build/workdir-symlink/Dockerfile",
+        "podman.git/test/install/Dockerfile.Centos",
+        "podman.git/test/install/Dockerfile.Fedora",
+        "podman.git/test/python/docker/build_labels/Dockerfile",
+        "podman.git/test/tools/vendor/github.com/cpuguy83/go-md2man/v2/Dockerfile",
+        "podman.git/test/tools/vendor/github.com/nxadm/tail/Dockerfile",
+        "podman.git/vendor/github.com/nxadm/tail/Dockerfile",
+        "podman.git/vendor/golang.org/x/net/http2/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -24,6 +51,13 @@
         "podman.git/test/compose/update_network_mtu/docker-compose.yml",
         "podman.git/test/compose/uptwice/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

@@ -1,11 +1,19 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
-      "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "exist": true,
+      "count": 7,
+      "rootCount": 1,
+      "subFolderCount": 6,
+      "filepaths": [
+        "prefect.git/Dockerfile",
+        "prefect.git/tests/docker/contexts/alternate/Dockerfile.a",
+        "prefect.git/tests/docker/contexts/alternate/Dockerfile.b",
+        "prefect.git/tests/docker/contexts/bad-base/Dockerfile",
+        "prefect.git/tests/docker/contexts/broken/Dockerfile",
+        "prefect.git/tests/docker/contexts/missing-file/Dockerfile",
+        "prefect.git/tests/docker/contexts/tiny/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -15,6 +23,13 @@
       "filepaths": [
         "prefect.git/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

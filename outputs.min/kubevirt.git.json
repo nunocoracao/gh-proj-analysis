@@ -1,11 +1,18 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 6,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 6,
+      "filepaths": [
+        "kubevirt.git/hack/builder/Dockerfile",
+        "kubevirt.git/hack/ci/Dockerfile.ci",
+        "kubevirt.git/tests/Dockerfile",
+        "kubevirt.git/vendor/github.com/onsi/gomega/Dockerfile",
+        "kubevirt.git/vendor/golang.org/x/net/http2/Dockerfile",
+        "kubevirt.git/vendor/mvdan.cc/sh/v3/cmd/shfmt/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -15,6 +22,13 @@
       "filepaths": [
         "kubevirt.git/vendor/github.com/onsi/gomega/docker-compose.yaml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": true,

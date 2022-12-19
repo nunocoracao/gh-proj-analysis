@@ -2,10 +2,16 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 8,
+      "count": 21,
       "rootCount": 0,
-      "subFolderCount": 8,
+      "subFolderCount": 21,
       "filepaths": [
+        "vector.git/distribution/docker/alpine/Dockerfile",
+        "vector.git/distribution/docker/debian/Dockerfile",
+        "vector.git/distribution/docker/distroless-libc/Dockerfile",
+        "vector.git/distribution/docker/distroless-static/Dockerfile",
+        "vector.git/lib/soak/Dockerfile",
+        "vector.git/regression/Dockerfile",
         "vector.git/scripts/cross/aarch64-unknown-linux-gnu.dockerfile",
         "vector.git/scripts/cross/aarch64-unknown-linux-musl.dockerfile",
         "vector.git/scripts/cross/armv7-unknown-linux-gnueabihf.dockerfile",
@@ -13,7 +19,14 @@
         "vector.git/scripts/cross/powerpc-unknown-linux-gnu.dockerfile",
         "vector.git/scripts/cross/powerpc64le-unknown-linux-gnu.dockerfile",
         "vector.git/scripts/cross/x86_64-unknown-linux-gnu.dockerfile",
-        "vector.git/scripts/cross/x86_64-unknown-linux-musl.dockerfile"
+        "vector.git/scripts/cross/x86_64-unknown-linux-musl.dockerfile",
+        "vector.git/scripts/environment/Dockerfile",
+        "vector.git/scripts/integration/Dockerfile",
+        "vector.git/skaffold/docker/Dockerfile",
+        "vector.git/soaks_disabled/Dockerfile",
+        "vector.git/soaks_disabled/Dockerfile.builder",
+        "vector.git/tests/data/dnstap/Dockerfile",
+        "vector.git/tilt/Dockerfile"
       ]
     },
     "composefile": {
@@ -56,6 +69,13 @@
         "vector.git/scripts/integration/docker-compose.shutdown.yml",
         "vector.git/scripts/integration/docker-compose.splunk.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": true,

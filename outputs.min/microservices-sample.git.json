@@ -1,11 +1,17 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 5,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 5,
+      "filepaths": [
+        "microservices-sample.git/api-gateway/Dockerfile",
+        "microservices-sample.git/api-gateway/src/main/docker/Dockerfile",
+        "microservices-sample.git/service-one/src/main/docker/Dockerfile",
+        "microservices-sample.git/service-two/src/main/docker/Dockerfile",
+        "microservices-sample.git/web-application/docker/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -15,6 +21,13 @@
       "filepaths": [
         "microservices-sample.git/build/docker/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

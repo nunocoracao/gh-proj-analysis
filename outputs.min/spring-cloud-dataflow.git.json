@@ -1,11 +1,17 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 5,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 5,
+      "filepaths": [
+        "spring-cloud-dataflow.git/src/docker/uaa/Dockerfile",
+        "spring-cloud-dataflow.git/src/grafana/influxdb/docker/grafana/Dockerfile",
+        "spring-cloud-dataflow.git/src/grafana/prometheus/docker/grafana/Dockerfile",
+        "spring-cloud-dataflow.git/src/grafana/prometheus/docker/prometheus-local/Dockerfile",
+        "spring-cloud-dataflow.git/src/templates/add-deps/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -50,6 +56,13 @@
         "spring-cloud-dataflow.git/src/templates/docker-compose/docker-compose-zipkin.yml",
         "spring-cloud-dataflow.git/src/templates/docker-compose/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

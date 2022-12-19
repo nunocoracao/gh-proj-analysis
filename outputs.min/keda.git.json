@@ -2,11 +2,17 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 1,
-      "rootCount": 0,
-      "subFolderCount": 1,
+      "count": 7,
+      "rootCount": 2,
+      "subFolderCount": 5,
       "filepaths": [
-        "keda.git/tools/build-tools.Dockerfile"
+        "keda.git/Dockerfile",
+        "keda.git/Dockerfile.adapter",
+        "keda.git/.devcontainer/Dockerfile",
+        "keda.git/tools/build-tools.Dockerfile",
+        "keda.git/vendor/github.com/Shopify/sarama/Dockerfile.kafka",
+        "keda.git/vendor/github.com/nxadm/tail/Dockerfile",
+        "keda.git/vendor/golang.org/x/net/http2/Dockerfile"
       ]
     },
     "composefile": {
@@ -16,6 +22,15 @@
       "subFolderCount": 1,
       "filepaths": [
         "keda.git/vendor/github.com/Shopify/sarama/docker-compose.yml"
+      ]
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "keda.git/.devcontainer/devcontainer.json"
       ]
     },
     "kustomize": {

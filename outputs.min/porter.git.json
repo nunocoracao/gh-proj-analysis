@@ -2,16 +2,26 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 6,
+      "count": 16,
       "rootCount": 0,
-      "subFolderCount": 6,
+      "subFolderCount": 16,
       "filepaths": [
+        "porter.git/build/Dockerfile.osx",
+        "porter.git/build/Dockerfile.win",
         "porter.git/dashboard/docker/dev.Dockerfile",
+        "porter.git/docker/Dockerfile",
         "porter.git/docker/cli.Dockerfile",
         "porter.git/docker/dev.Dockerfile",
         "porter.git/ee/docker/ee.Dockerfile",
         "porter.git/ee/docker/provisioner.Dockerfile",
-        "porter.git/services/porter_cli_container/dev.Dockerfile"
+        "porter.git/services/cli_install_script_container/Dockerfile",
+        "porter.git/services/deploy_init_container/Dockerfile",
+        "porter.git/services/deploy_job_init_container/Dockerfile",
+        "porter.git/services/job_sidecar_container/Dockerfile",
+        "porter.git/services/migrator/Dockerfile",
+        "porter.git/services/porter_cli_container/Dockerfile",
+        "porter.git/services/porter_cli_container/dev.Dockerfile",
+        "porter.git/workers/Dockerfile"
       ]
     },
     "composefile": {
@@ -23,6 +33,13 @@
         "porter.git/docker-compose.dev-secure.yaml",
         "porter.git/docker-compose.dev.yaml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

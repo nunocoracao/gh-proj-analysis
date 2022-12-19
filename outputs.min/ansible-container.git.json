@@ -2,13 +2,15 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 3,
+      "count": 5,
       "rootCount": 0,
-      "subFolderCount": 3,
+      "subFolderCount": 5,
       "filepaths": [
         "ansible-container.git/container/docker/templates/conductor-local-dockerfile.j2",
         "ansible-container.git/container/docker/templates/conductor-src-dockerfile.j2",
-        "ansible-container.git/container/templates/ansible-dockerfile.j2"
+        "ansible-container.git/container/docker/tests/import/Dockerfile",
+        "ansible-container.git/container/templates/ansible-dockerfile.j2",
+        "ansible-container.git/test/roles/validate-build-and-import/templates/Dockerfile.j2"
       ]
     },
     "composefile": {
@@ -23,6 +25,13 @@
         "ansible-container.git/container/templates/run-docker-compose.j2.yml",
         "ansible-container.git/container/templates/stop-docker-compose.j2.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

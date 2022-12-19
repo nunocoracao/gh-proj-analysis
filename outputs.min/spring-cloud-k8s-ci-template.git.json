@@ -1,13 +1,28 @@
 {
   "results": {
     "dockerfile": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "spring-cloud-k8s-ci-template.git/docker-images/ali-maven-docker/Dockerfile",
+        "spring-cloud-k8s-ci-template.git/docker-images/kubectl/Dockerfile",
+        "spring-cloud-k8s-ci-template.git/docker-images/oraclejava-8/Dockerfile.txt",
+        "spring-cloud-k8s-ci-template.git/eureka-server/Dockerfile",
+        "spring-cloud-k8s-ci-template.git/gateway/Dockerfile",
+        "spring-cloud-k8s-ci-template.git/hello-world-client/Dockerfile",
+        "spring-cloud-k8s-ci-template.git/hello-world-service/Dockerfile"
+      ]
+    },
+    "composefile": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
     },
-    "composefile": {
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
@@ -29,11 +44,16 @@
       "filepaths": []
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 4,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 4,
+      "filepaths": [
+        "spring-cloud-k8s-ci-template.git/eureka-server/Deployment.yaml",
+        "spring-cloud-k8s-ci-template.git/gateway/Deployment.yaml",
+        "spring-cloud-k8s-ci-template.git/hello-world-client/Deployment.yaml",
+        "spring-cloud-k8s-ci-template.git/hello-world-service/Deployment.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

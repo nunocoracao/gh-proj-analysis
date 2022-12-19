@@ -1,13 +1,29 @@
 {
   "results": {
     "dockerfile": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "k8s-tutorials.git/configmaps/Dockerfile",
+        "k8s-tutorials.git/container/Dockerfile",
+        "k8s-tutorials.git/deployment/liveness/Dockerfile",
+        "k8s-tutorials.git/deployment/readiness/Dockerfile",
+        "k8s-tutorials.git/deployment/v2/Dockerfile",
+        "k8s-tutorials.git/helm-charts/hello-helm/Dockerfile",
+        "k8s-tutorials.git/secret/Dockerfile",
+        "k8s-tutorials.git/service/Dockerfile"
+      ]
+    },
+    "composefile": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
     },
-    "composefile": {
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
@@ -22,18 +38,33 @@
       "filepaths": []
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 1,
+      "filepaths": [
+        "k8s-tutorials.git/helm-charts/hello-helm/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 12,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 12,
+      "filepaths": [
+        "k8s-tutorials.git/deployment/liveness/deployment.yaml",
+        "k8s-tutorials.git/deployment/readiness/deployment.yaml",
+        "k8s-tutorials.git/deployment/v1/deployment.yaml",
+        "k8s-tutorials.git/deployment/v2/deployment.yaml",
+        "k8s-tutorials.git/helm-charts/hello-helm/templates/hellok8s-configmaps.yaml",
+        "k8s-tutorials.git/helm-charts/hello-helm/templates/hellok8s-deployment.yaml",
+        "k8s-tutorials.git/helm-charts/hello-helm/templates/hellok8s-service.yaml",
+        "k8s-tutorials.git/helm-charts/hello-helm/templates/nginx-deployment.yaml",
+        "k8s-tutorials.git/helm-charts/hello-helm/templates/nginx-service.yaml",
+        "k8s-tutorials.git/service/deployment.yaml",
+        "k8s-tutorials.git/service/service-hellok8s-clusterip.yaml",
+        "k8s-tutorials.git/service/service-hellok8s-nodeport.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

@@ -1,11 +1,31 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 19,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 19,
+      "filepaths": [
+        "fluid.git/charts/alluxio/docker/init-users/Dockerfile",
+        "fluid.git/charts/goosefs/docker/init-users/Dockerfile",
+        "fluid.git/docker/Dockerfile.alluxioruntime",
+        "fluid.git/docker/Dockerfile.application",
+        "fluid.git/docker/Dockerfile.crds",
+        "fluid.git/docker/Dockerfile.csi",
+        "fluid.git/docker/Dockerfile.dataset",
+        "fluid.git/docker/Dockerfile.eacruntime",
+        "fluid.git/docker/Dockerfile.goosefsruntime",
+        "fluid.git/docker/Dockerfile.jindoruntime",
+        "fluid.git/docker/Dockerfile.juicefsruntime",
+        "fluid.git/docker/Dockerfile.thinruntime",
+        "fluid.git/docker/Dockerfile.webhook",
+        "fluid.git/integration/custom-metrics-api/docker/Dockerfile",
+        "fluid.git/samples/hdfs/Dockerfile",
+        "fluid.git/samples/knative/docker/Dockerfile",
+        "fluid.git/vendor/github.com/nxadm/tail/Dockerfile",
+        "fluid.git/vendor/github.com/onsi/gomega/Dockerfile",
+        "fluid.git/vendor/golang.org/x/net/http2/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -16,26 +36,97 @@
         "fluid.git/vendor/github.com/onsi/gomega/docker-compose.yaml"
       ]
     },
-    "kustomize": {
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "fluid.git/config/certmanager/kustomization.yaml",
+        "fluid.git/config/crd/kustomization.yaml",
+        "fluid.git/config/default/kustomization.yaml",
+        "fluid.git/config/fluid/kustomization.yaml",
+        "fluid.git/config/manager/kustomization.yaml",
+        "fluid.git/config/prometheus/kustomization.yaml",
+        "fluid.git/config/rbac/kustomization.yaml",
+        "fluid.git/config/samples/kustomization.yaml",
+        "fluid.git/config/webhook/kustomization.yaml"
+      ]
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 23,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 23,
+      "filepaths": [
+        "fluid.git/charts/alluxio/Chart.yaml",
+        "fluid.git/charts/eac/Chart.yaml",
+        "fluid.git/charts/fluid/fluid/Chart.yaml",
+        "fluid.git/charts/fluid/v0.1.0/Chart.yaml",
+        "fluid.git/charts/fluid/v0.2.0/Chart.yaml",
+        "fluid.git/charts/fluid/v0.3.0/Chart.yaml",
+        "fluid.git/charts/fluid/v0.4.0/Chart.yaml",
+        "fluid.git/charts/fluid/v0.5.0/Chart.yaml",
+        "fluid.git/charts/fluid/v0.6.0/Chart.yaml",
+        "fluid.git/charts/fluid/v0.7.0/Chart.yaml",
+        "fluid.git/charts/fluid/v0.8.0/Chart.yaml",
+        "fluid.git/charts/fluid-databackup/alluxio/Chart.yaml",
+        "fluid.git/charts/fluid-databackup/goosefs/Chart.yaml",
+        "fluid.git/charts/fluid-dataloader/alluxio/Chart.yaml",
+        "fluid.git/charts/fluid-dataloader/goosefs/Chart.yaml",
+        "fluid.git/charts/fluid-dataloader/jindo/Chart.yaml",
+        "fluid.git/charts/fluid-dataloader/jindofsx/Chart.yaml",
+        "fluid.git/charts/fluid-dataloader/juicefs/Chart.yaml",
+        "fluid.git/charts/goosefs/Chart.yaml",
+        "fluid.git/charts/jindofs/Chart.yaml",
+        "fluid.git/charts/jindofsx/Chart.yaml",
+        "fluid.git/charts/juicefs/Chart.yaml",
+        "fluid.git/charts/thin/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 29,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 29,
+      "filepaths": [
+        "fluid.git/charts/alluxio/templates/master/service.yaml",
+        "fluid.git/charts/eac/templates/worker/configmap.yaml",
+        "fluid.git/charts/fluid/fluid/templates/webhook/service.yaml",
+        "fluid.git/charts/fluid/v0.6.0/templates/webhook/service.yaml",
+        "fluid.git/charts/fluid/v0.7.0/templates/webhook/service.yaml",
+        "fluid.git/charts/fluid/v0.8.0/templates/webhook/service.yaml",
+        "fluid.git/charts/fluid-databackup/alluxio/templates/configmap.yaml",
+        "fluid.git/charts/fluid-databackup/goosefs/templates/configmap.yaml",
+        "fluid.git/charts/fluid-dataloader/alluxio/templates/configmap.yaml",
+        "fluid.git/charts/fluid-dataloader/goosefs/templates/configmap.yaml",
+        "fluid.git/charts/fluid-dataloader/jindo/templates/configmap.yaml",
+        "fluid.git/charts/fluid-dataloader/jindofsx/templates/configmap.yaml",
+        "fluid.git/charts/fluid-dataloader/juicefs/templates/configmap.yaml",
+        "fluid.git/charts/goosefs/templates/master/service.yaml",
+        "fluid.git/charts/jindofs/templates/master/service.yaml",
+        "fluid.git/charts/jindofsx/templates/master/service.yaml",
+        "fluid.git/config/rbac/auth_proxy_service.yaml",
+        "fluid.git/config/webhook/service.yaml",
+        "fluid.git/integration/cronhpa/service.yaml",
+        "fluid.git/integration/custom-metrics-api/custom-metrics-apiserver-deployment.yaml",
+        "fluid.git/integration/custom-metrics-api/custom-metrics-apiserver-service-account.yaml",
+        "fluid.git/integration/custom-metrics-api/custom-metrics-apiserver-service-secrets-init.yaml",
+        "fluid.git/integration/custom-metrics-api/custom-metrics-apiserver-service.yaml",
+        "fluid.git/integration/custom-metrics-api/custom-metrics-apiservice.yaml",
+        "fluid.git/integration/metrics-server/metrics-apiservice.yaml",
+        "fluid.git/integration/metrics-server/metrics-server-deployment.yaml",
+        "fluid.git/integration/metrics-server/metrics-server-service.yaml",
+        "fluid.git/samples/knative/deployment-cachedir-enabled.yaml",
+        "fluid.git/samples/knative/deployment.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

@@ -1,13 +1,25 @@
 {
   "results": {
     "dockerfile": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 1,
+      "subFolderCount": 3,
+      "filepaths": [
+        "vault-controller.git/Dockerfile",
+        "vault-controller.git/microservice/Dockerfile",
+        "vault-controller.git/vault-example/Dockerfile",
+        "vault-controller.git/vault-init/Dockerfile"
+      ]
+    },
+    "composefile": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
     },
-    "composefile": {
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
@@ -43,11 +55,13 @@
       "filepaths": []
     },
     "terraform": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 1,
+      "filepaths": [
+        "vault-controller.git/policies/microservice.hcl"
+      ]
     }
   },
   "info": {

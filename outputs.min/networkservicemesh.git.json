@@ -1,13 +1,33 @@
 {
   "results": {
     "dockerfile": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "networkservicemesh.git/build/Dockerfile.empty",
+        "networkservicemesh.git/build/Dockerfile.kernel-forwarder",
+        "networkservicemesh.git/build/Dockerfile.vpp-test-common",
+        "networkservicemesh.git/build/Dockerfile.vppagent-forwarder",
+        "networkservicemesh.git/controlplane/build/Dockerfile.nsmd",
+        "networkservicemesh.git/controlplane/build/Dockerfile.proxy-nsmd",
+        "networkservicemesh.git/forwarder/kernel-forwarder/build/Dockerfile.kernel-forwarder",
+        "networkservicemesh.git/forwarder/vppagent/build/Dockerfile.vppagent-forwarder",
+        "networkservicemesh.git/forwarder/vppagent/build/Dockerfile.vppagent-forwarder-dev",
+        "networkservicemesh.git/k8s/build/Dockerfile.nsmdp",
+        "networkservicemesh.git/side-cars/build/Dockerfile.nsm-init",
+        "networkservicemesh.git/side-cars/build/Dockerfile.nsm-monitor"
+      ]
+    },
+    "composefile": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
     },
-    "composefile": {
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
@@ -22,18 +42,38 @@
       "filepaths": []
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 14,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 14,
+      "filepaths": [
+        "networkservicemesh.git/deployments/helm/client/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/crossconnect-monitor/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/endpoint/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/jaeger/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/nsm/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/nsm/charts/admission-webhook/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/nsm/charts/config/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/nsm/charts/prefix-service/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/nsm/charts/spire/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/nsmrs/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/proxy-nsmgr/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/skydive/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/vpn/Chart.yaml",
+        "networkservicemesh.git/deployments/helm/vpp-icmp-responder/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 4,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 4,
+      "filepaths": [
+        "networkservicemesh.git/deployments/helm/nsm/charts/config/templates/crd-networkserviceendpoints.yaml",
+        "networkservicemesh.git/deployments/helm/nsm/charts/config/templates/crd-networkservicemanagers.yaml",
+        "networkservicemesh.git/deployments/helm/nsm/charts/config/templates/crd-networkservices.yaml",
+        "networkservicemesh.git/deployments/helm/nsm/charts/config/templates/nsm-configmap.yaml"
+      ]
     },
     "backstage": {
       "exist": false,
@@ -43,11 +83,13 @@
       "filepaths": []
     },
     "terraform": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 1,
+      "filepaths": [
+        "networkservicemesh.git/scripts/terraform/packet.tf"
+      ]
     }
   },
   "info": {

@@ -2,15 +2,24 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 2,
-      "rootCount": 0,
-      "subFolderCount": 2,
+      "count": 4,
+      "rootCount": 1,
+      "subFolderCount": 3,
       "filepaths": [
+        "gepp.git/Dockerfile",
         "gepp.git/Dockerfiles/cdk-Dockerfile",
-        "gepp.git/Dockerfiles/kubectl-Dockerfile"
+        "gepp.git/Dockerfiles/kubectl-Dockerfile",
+        "gepp.git/templates/Dockerfile.j2"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
@@ -32,11 +41,14 @@
       "filepaths": []
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 2,
+      "filepaths": [
+        "gepp.git/templates/deployment.yaml.j2",
+        "gepp.git/templates/service.yaml.j2"
+      ]
     },
     "backstage": {
       "exist": false,

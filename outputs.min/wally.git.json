@@ -1,11 +1,17 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
-      "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "exist": true,
+      "count": 5,
+      "rootCount": 1,
+      "subFolderCount": 4,
+      "filepaths": [
+        "wally.git/Dockerfile",
+        "wally.git/.ci-dockerfiles/ci-standard/Dockerfile",
+        "wally.git/.release/centos-metrics_ui-docker/Dockerfile",
+        "wally.git/giles/sender/Dockerfile",
+        "wally.git/monitoring_hub/apps/metrics_reporter_ui/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -15,6 +21,13 @@
       "filepaths": [
         "wally.git/orchestration/ansible/playbooks/roles/geerlingguy.docker/tasks/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

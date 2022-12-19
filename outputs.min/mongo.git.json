@@ -1,11 +1,17 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 5,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 5,
+      "filepaths": [
+        "mongo.git/buildscripts/antithesis/base_images/mongo_binaries/Dockerfile",
+        "mongo.git/buildscripts/antithesis/base_images/workload/Dockerfile",
+        "mongo.git/buildscripts/antithesis/topologies/replica_set/Dockerfile",
+        "mongo.git/buildscripts/antithesis/topologies/sharded_cluster/Dockerfile",
+        "mongo.git/src/third_party/zstandard/zstd/contrib/docker/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -16,6 +22,13 @@
         "mongo.git/buildscripts/antithesis/topologies/replica_set/docker-compose.yml",
         "mongo.git/buildscripts/antithesis/topologies/sharded_cluster/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

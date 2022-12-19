@@ -1,11 +1,19 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
-      "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "exist": true,
+      "count": 7,
+      "rootCount": 1,
+      "subFolderCount": 6,
+      "filepaths": [
+        "exchain.git/Dockerfile",
+        "exchain.git/libs/tendermint/DOCKER/Dockerfile",
+        "exchain.git/libs/tendermint/DOCKER/Dockerfile.build_c-amazonlinux",
+        "exchain.git/libs/tendermint/DOCKER/Dockerfile.testing",
+        "exchain.git/libs/tendermint/networks/local/localnode/Dockerfile",
+        "exchain.git/libs/tendermint/test/docker/Dockerfile",
+        "exchain.git/networks/local/node/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -15,6 +23,13 @@
       "filepaths": [
         "exchain.git/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,
@@ -45,11 +60,16 @@
       "filepaths": []
     },
     "terraform": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 4,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 4,
+      "filepaths": [
+        "exchain.git/libs/tendermint/networks/remote/terraform/main.tf",
+        "exchain.git/libs/tendermint/networks/remote/terraform/cluster/main.tf",
+        "exchain.git/libs/tendermint/networks/remote/terraform/cluster/outputs.tf",
+        "exchain.git/libs/tendermint/networks/remote/terraform/cluster/variables.tf"
+      ]
     }
   },
   "info": {

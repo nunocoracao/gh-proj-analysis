@@ -1,13 +1,23 @@
 {
   "results": {
     "dockerfile": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 1,
+      "subFolderCount": 1,
+      "filepaths": [
+        "faas-netes.git/Dockerfile",
+        "faas-netes.git/vendor/golang.org/x/net/http2/Dockerfile"
+      ]
+    },
+    "composefile": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
     },
-    "composefile": {
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
@@ -22,18 +32,38 @@
       "filepaths": []
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 9,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 9,
+      "filepaths": [
+        "faas-netes.git/chart/cron-connector/Chart.yaml",
+        "faas-netes.git/chart/kafka-connector/Chart.yaml",
+        "faas-netes.git/chart/mqtt-connector/Chart.yaml",
+        "faas-netes.git/chart/nats-connector/Chart.yaml",
+        "faas-netes.git/chart/openfaas/Chart.yaml",
+        "faas-netes.git/chart/postgres-connector/Chart.yaml",
+        "faas-netes.git/chart/pro-builder/Chart.yaml",
+        "faas-netes.git/chart/queue-worker/Chart.yaml",
+        "faas-netes.git/chart/sqs-connector/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 9,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 9,
+      "filepaths": [
+        "faas-netes.git/chart/cron-connector/templates/deployment.yaml",
+        "faas-netes.git/chart/kafka-connector/templates/deployment.yml",
+        "faas-netes.git/chart/mqtt-connector/templates/deployment.yml",
+        "faas-netes.git/chart/nats-connector/templates/deployment.yml",
+        "faas-netes.git/chart/postgres-connector/templates/deployment.yml",
+        "faas-netes.git/chart/pro-builder/templates/deployment.yml",
+        "faas-netes.git/chart/pro-builder/templates/service.yml",
+        "faas-netes.git/chart/queue-worker/templates/deployment.yaml",
+        "faas-netes.git/chart/sqs-connector/templates/deployment.yml"
+      ]
     },
     "backstage": {
       "exist": false,

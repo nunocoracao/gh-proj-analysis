@@ -2,14 +2,27 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 4,
-      "rootCount": 0,
-      "subFolderCount": 4,
+      "count": 17,
+      "rootCount": 2,
+      "subFolderCount": 15,
       "filepaths": [
+        "docker-lock.git/Dockerfile.alpine",
+        "docker-lock.git/Dockerfile.scratch",
+        "docker-lock.git/.devcontainer/Dockerfile",
+        "docker-lock.git/test/demo-app/Dockerfile",
+        "docker-lock.git/test/demo-app/Dockerfile-rewrite",
+        "docker-lock.git/test/demo-app/Dockerfile-rewrite-exclude-tags",
         "docker-lock.git/test/demo-app/docker-lock-dockerfile-globs.json",
         "docker-lock.git/test/demo-app/docker-lock-dockerfile-recursive.json",
         "docker-lock.git/test/demo-app/docker-lock-dockerfiles.json",
-        "docker-lock.git/test/demo-app/docker-lock-exclude-all-dockerfiles.json"
+        "docker-lock.git/test/demo-app/docker-lock-exclude-all-dockerfiles.json",
+        "docker-lock.git/test/demo-app/database/Dockerfile",
+        "docker-lock.git/test/demo-app/database/Dockerfile-rewrite",
+        "docker-lock.git/test/demo-app/database/Dockerfile-rewrite-exclude-tags",
+        "docker-lock.git/test/demo-app/private/Dockerfile-errors",
+        "docker-lock.git/test/demo-app/web/Dockerfile",
+        "docker-lock.git/test/demo-app/web/Dockerfile-rewrite",
+        "docker-lock.git/test/demo-app/web/Dockerfile-rewrite-exclude-tags"
       ]
     },
     "composefile": {
@@ -22,6 +35,15 @@
         "docker-lock.git/test/demo-app/docker-compose-rewrite-exclude-tags.yml",
         "docker-lock.git/test/demo-app/docker-compose-rewrite.yml",
         "docker-lock.git/test/demo-app/docker-compose.yml"
+      ]
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "docker-lock.git/.devcontainer/devcontainer.json"
       ]
     },
     "kustomize": {

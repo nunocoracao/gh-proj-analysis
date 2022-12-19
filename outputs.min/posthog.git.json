@@ -2,11 +2,16 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 1,
-      "rootCount": 1,
-      "subFolderCount": 0,
+      "count": 6,
+      "rootCount": 4,
+      "subFolderCount": 2,
       "filepaths": [
-        "posthog.git/production.Dockerfile"
+        "posthog.git/Dockerfile",
+        "posthog.git/Dockerfile.cloud",
+        "posthog.git/Dockerfile.playwright",
+        "posthog.git/production.Dockerfile",
+        "posthog.git/.devcontainer/Dockerfile",
+        "posthog.git/.github/workflows/dockerfile-lint.yml"
       ]
     },
     "composefile": {
@@ -20,6 +25,16 @@
         "posthog.git/docker-compose.dev.yml",
         "posthog.git/docker-compose.hobby.yml",
         "posthog.git/docker-compose.playwright.yml"
+      ]
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "posthog.git/.devcontainer/devcontainer.json",
+        "posthog.git/plugin-server/.devcontainer/devcontainer.json"
       ]
     },
     "kustomize": {

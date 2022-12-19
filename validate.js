@@ -3,6 +3,7 @@ var validations = utils.validate()
 
 utils.saveToFile(validations.dockerfiles, '../validations/dockerfiles.validations.json')
 utils.saveToFile(validations.composefiles, '../validations/composefiles.validations.json')
+utils.saveToFile(validations.devcontainer, '../validations/devcontainer.validations.json')
 utils.saveToFile(validations.kustomize, '../validations/kustomize.validations.json')
 utils.saveToFile(validations.helm, '../validations/helm.validations.json')
 utils.saveToFile(validations.k8s, '../validations/k8s.validations.json')

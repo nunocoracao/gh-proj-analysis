@@ -2,15 +2,25 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 5,
+      "count": 15,
       "rootCount": 0,
-      "subFolderCount": 5,
+      "subFolderCount": 15,
       "filepaths": [
+        "databend.git/.devcontainer/Dockerfile",
+        "databend.git/docker/Dockerfile",
+        "databend.git/docker/build-tool/alpine/Dockerfile",
+        "databend.git/docker/build-tool/base/Dockerfile",
+        "databend.git/docker/build-tool/dev/Dockerfile",
+        "databend.git/docker/build-tool/gnu/Dockerfile",
+        "databend.git/docker/build-tool/musl/Dockerfile",
+        "databend.git/docker/cache/Dockerfile",
         "databend.git/docker/debian/meta.Dockerfile",
         "databend.git/docker/debian/query.Dockerfile",
         "databend.git/docker/distroless/meta.Dockerfile",
         "databend.git/docker/distroless/query.Dockerfile",
-        "databend.git/scripts/setup/tpchdata.dockerfile"
+        "databend.git/docker/stateless/Dockerfile",
+        "databend.git/scripts/setup/tpchdata.dockerfile",
+        "databend.git/tests/logictest/Dockerfile"
       ]
     },
     "composefile": {
@@ -20,6 +30,15 @@
       "subFolderCount": 1,
       "filepaths": [
         "databend.git/docker/it-hive/hive-docker-compose.yml"
+      ]
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "databend.git/.devcontainer/devcontainer.json"
       ]
     },
     "kustomize": {

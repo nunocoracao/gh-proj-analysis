@@ -1,13 +1,24 @@
 {
   "results": {
     "dockerfile": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 2,
+      "subFolderCount": 1,
+      "filepaths": [
+        "mercure.git/Dockerfile",
+        "mercure.git/Dockerfile.legacy",
+        "mercure.git/examples/chat/Dockerfile"
+      ]
+    },
+    "composefile": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
     },
-    "composefile": {
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
@@ -22,18 +33,32 @@
       "filepaths": []
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 4,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 4,
+      "filepaths": [
+        "mercure.git/.github/workflows/cd-chart.yml",
+        "mercure.git/.github/workflows/ci-chart.yml",
+        "mercure.git/charts/mercure/Chart.yaml",
+        "mercure.git/examples/chat/chart/mercure-example-chat/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 8,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 8,
+      "filepaths": [
+        "mercure.git/charts/mercure/templates/configmap.yaml",
+        "mercure.git/charts/mercure/templates/deployment.yaml",
+        "mercure.git/charts/mercure/templates/service.yaml",
+        "mercure.git/charts/mercure/templates/serviceaccount.yaml",
+        "mercure.git/examples/chat/chart/mercure-example-chat/templates/configmap.yaml",
+        "mercure.git/examples/chat/chart/mercure-example-chat/templates/deployment.yaml",
+        "mercure.git/examples/chat/chart/mercure-example-chat/templates/service.yaml",
+        "mercure.git/examples/chat/chart/mercure-example-chat/templates/serviceaccount.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

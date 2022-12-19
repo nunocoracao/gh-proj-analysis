@@ -1,11 +1,21 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 9,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 9,
+      "filepaths": [
+        "hydra.git/.docker/Dockerfile-alpine",
+        "hydra.git/.docker/Dockerfile-build",
+        "hydra.git/.docker/Dockerfile-hsm",
+        "hydra.git/.docker/Dockerfile-scratch",
+        "hydra.git/.docker/Dockerfile-sqlite",
+        "hydra.git/test/conformance/Dockerfile",
+        "hydra.git/test/conformance/httpd/Dockerfile",
+        "hydra.git/test/conformance/hydra/Dockerfile",
+        "hydra.git/test/e2e/oauth2-client/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -20,6 +30,13 @@
         "hydra.git/test/e2e/docker-compose.postgres.yml",
         "hydra.git/test/e2e/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

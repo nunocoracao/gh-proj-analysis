@@ -1,11 +1,14 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 2,
+      "filepaths": [
+        "googleapis.git/.cloudbuild/Dockerfile.bazel-gapic",
+        "googleapis.git/.kokoro/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -16,6 +19,13 @@
         "googleapis.git/google/cloud/orchestration/airflow/service/v1/composer_v1.yaml",
         "googleapis.git/google/cloud/orchestration/airflow/service/v1beta1/composer_v1beta1.yaml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

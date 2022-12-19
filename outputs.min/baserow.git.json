@@ -2,17 +2,27 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 7,
+      "count": 17,
       "rootCount": 1,
-      "subFolderCount": 6,
+      "subFolderCount": 16,
       "filepaths": [
         "baserow.git/heroku.Dockerfile",
+        "baserow.git/.gitlab/ci_util_image/Dockerfile",
+        "baserow.git/backend/Dockerfile",
+        "baserow.git/deploy/all-in-one/Dockerfile",
         "baserow.git/deploy/all-in-one/dev.Dockerfile",
+        "baserow.git/deploy/apache/no-caddy/Dockerfile",
+        "baserow.git/deploy/apache/recommended/Dockerfile",
+        "baserow.git/deploy/cloudron/Dockerfile",
+        "baserow.git/deploy/render/Dockerfile",
+        "baserow.git/formula/Dockerfile",
+        "baserow.git/plugin-boilerplate/{{ cookiecutter.project_slug }}/Dockerfile",
         "baserow.git/plugin-boilerplate/{{ cookiecutter.project_slug }}/backend-dev.Dockerfile",
         "baserow.git/plugin-boilerplate/{{ cookiecutter.project_slug }}/backend.Dockerfile",
         "baserow.git/plugin-boilerplate/{{ cookiecutter.project_slug }}/dev.Dockerfile",
         "baserow.git/plugin-boilerplate/{{ cookiecutter.project_slug }}/web-frontend-dev.Dockerfile",
-        "baserow.git/plugin-boilerplate/{{ cookiecutter.project_slug }}/web-frontend.Dockerfile"
+        "baserow.git/plugin-boilerplate/{{ cookiecutter.project_slug }}/web-frontend.Dockerfile",
+        "baserow.git/web-frontend/Dockerfile"
       ]
     },
     "composefile": {
@@ -41,6 +51,13 @@
         "baserow.git/plugin-boilerplate/{{ cookiecutter.project_slug }}/docker-compose.multi-service.yml",
         "baserow.git/plugin-boilerplate/{{ cookiecutter.project_slug }}/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

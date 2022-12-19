@@ -1,11 +1,17 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 5,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 5,
+      "filepaths": [
+        "sui.git/crates/sui-rosetta/docker/sui-rosetta-devnet/Dockerfile",
+        "sui.git/crates/sui-rosetta/docker/sui-rosetta-local/Dockerfile",
+        "sui.git/docker/sui-node/Dockerfile",
+        "sui.git/docker/sui-tools/Dockerfile",
+        "sui.git/narwhal/Docker/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -18,6 +24,13 @@
         "sui.git/docker/fullnode/docker-compose.yaml",
         "sui.git/narwhal/Docker/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

@@ -8,15 +8,15 @@ const REPOS_FILE = "./repos.json"
 
 //const dockerfile_regex = /[Dd]ockerfile.*/; # initial regex
 //const compose_regex = /.*[Cc]ompose.*ya*ml/; # initial regex
-const dockerfile_regex = /.[Dd]ockerfile.*/i;
-const compose_regex = /.*[Cc]ompose.*ya?ml/i;
+const dockerfile_regex = /.*?[Dd]ockerfile.*?/i;
+const compose_regex = /.*?[Cc]ompose.*ya?ml/i;
 const devcontainer_regex = /[Dd]evcontainer.*json/i;
-const kustomize_regex = /.*[Kk]ustomization.*ya?ml/i;
-const helm_regex = /.*[Cc]hart.*ya?ml/;
-const k8s_regex_1 = /.*[Dd]eployment.*ya?ml/i;
-const k8s_regex_2 = /.*[Ss]ervice.*ya?ml/i;
-const k8s_regex_3 = /.*[Cc]onfigmap.*ya?ml/i;
-const backstage_regex = /.*[Cc]atalog\-info.*ya?ml/i;
+const kustomize_regex = /.*?[Kk]ustomization.*ya?ml/i;
+const helm_regex = /.*?[Cc]hart.*ya?ml/;
+const k8s_regex_1 = /.*?[Dd]eployment.*ya?ml/i;
+const k8s_regex_2 = /.*?[Ss]ervice.*ya?ml/i;
+const k8s_regex_3 = /.*?[Cc]onfigmap.*ya?ml/i;
+const backstage_regex = /.*?[Cc]atalog\-info.*ya?ml/i;
 const terraform_regex_1 = /.*\.tf/i
 const terraform_regex_2 = /.*\.hcl/i
 
@@ -105,12 +105,12 @@ module.exports = {
 
     minifyOutputs: function () {
         fs.readdirSync(OUTPUT_DIR).forEach(file => {
-            if (!fs.existsSync(OUTPUT_MIN_DIR + file)) {
+            //if (!fs.existsSync(OUTPUT_MIN_DIR + file)) {
                 this.print('minifying file: ' + file)
                 var data = JSON.parse(fs.readFileSync(OUTPUT_DIR + file))
                 delete data.struct
                 fs.writeFileSync(OUTPUT_MIN_DIR + file, JSON.stringify(data, null, 2))
-            }
+            //}
         })
 
     },
@@ -120,6 +120,7 @@ module.exports = {
         var validations = {
             dockerfiles: [],
             composefiles: [],
+            devcontainer: [],
             kustomize: [],
             helm: [],
             k8s: [],
@@ -134,6 +135,7 @@ module.exports = {
             var temp = this.validateStruct(data.struct)
             validations.dockerfiles = validations.dockerfiles.concat(temp.dockerfiles)
             validations.composefiles = validations.composefiles.concat(temp.composefiles)
+            validations.devcontainer = validations.devcontainer.concat(temp.composefiles)
             validations.kustomize = validations.kustomize.concat(temp.kustomize)
             validations.helm = validations.helm.concat(temp.helm)
             validations.k8s = validations.k8s.concat(temp.k8s)
@@ -151,6 +153,7 @@ module.exports = {
         var validations = {
             dockerfiles: [],
             composefiles: [],
+            devcontainer: [],
             kustomize: [],
             helm: [],
             k8s: [],
@@ -175,6 +178,13 @@ module.exports = {
                 console.log('Found Compose file')
                 console.log(struct[i].name)
                 validations.composefiles.push(struct[i].name)
+                validation++
+            }
+
+            if (struct[i].isDevcontainer) {
+                console.log('Found devcontainer file')
+                console.log(struct[i].name)
+                validations.devcontainer.push(struct[i].name)
                 validation++
             }
 
@@ -241,13 +251,15 @@ module.exports = {
     rescan: function () {
         fs.readdirSync(OUTPUT_DIR).every(file => {
             var data = JSON.parse(fs.readFileSync(OUTPUT_DIR + '/' + file))
-            if(!data.results.k8s){
+            //if(!data.results.k8s){
                 this.print('rescanning file: ' + file)
                 data.struct = this.rescanStruct(data.struct)
                 var res = this.processStruct(data.struct)
                 data.results = res.results
                 this.saveToFile(data, file)
-            }
+            //}else{
+            //    this.print('already scanned file: ' + file)
+            //}
             return true;
         })
     },
@@ -257,6 +269,7 @@ module.exports = {
             if (!struct[i].isDir) {
                 struct[i].isDockerfile = struct[i].name.match(dockerfile_regex) ? true : false;
                 struct[i].isComposefile = struct[i].name.match(compose_regex) ? true : false;
+                struct[i].isDevcontainer = struct[i].name.match(devcontainer_regex) ? true : false;
                 struct[i].isKustomize = struct[i].name.match(kustomize_regex) ? true : false;
                 struct[i].isHelm = !struct[i].isComposefile && struct[i].name.match(helm_regex) ? true : false;
                 if (!struct[i].isDockerfile &&
@@ -280,6 +293,7 @@ module.exports = {
             } else {
                 struct[i].isDockerfile = false
                 struct[i].isComposefile = false
+                struct[i].isDevcontainer = false
                 struct[i].isKustomize = false
                 struct[i].isHelm = false
                 struct[i].isK8s = false
@@ -317,6 +331,13 @@ module.exports = {
                 filepaths: []
             },
             composefile: {
+                exist: false,
+                count: 0,
+                rootCount: 0,
+                subFolderCount: 0,
+                filepaths: []
+            },
+            devcontainer: {
                 exist: false,
                 count: 0,
                 rootCount: 0,
@@ -374,6 +395,11 @@ module.exports = {
                 res.composefile.count++
                 res.composefile.rootCount++
                 res.composefile.filepaths.push(struct[i].path)
+            } else if (struct[i].isDevcontainer) {
+                res.devcontainer.exist = true
+                res.devcontainer.count++
+                res.devcontainer.rootCount++
+                res.devcontainer.filepaths.push(struct[i].path)
             } else if (struct[i].isKustomize) {
                 res.kustomize.exist = true
                 res.kustomize.count++
@@ -418,6 +444,12 @@ module.exports = {
             res.composefile.count += temp.composefile.count
             res.composefile.subFolderCount += temp.composefile.rootCount + temp.composefile.subFolderCount
             res.composefile.filepaths = res.composefile.filepaths.concat(temp.composefile.filepaths)
+
+            //compose file
+            res.devcontainer.exist = temp.devcontainer.exist ? true : res.devcontainer.exist
+            res.devcontainer.count += temp.devcontainer.count
+            res.devcontainer.subFolderCount += temp.devcontainer.rootCount + temp.devcontainer.subFolderCount
+            res.devcontainer.filepaths = res.devcontainer.filepaths.concat(temp.devcontainer.filepaths)
 
             //kustomize file
             res.kustomize.exist = temp.kustomize.exist ? true : res.kustomize.exist
@@ -469,6 +501,9 @@ module.exports = {
                 only_in_root: 0,
                 only_in_subfolders: 0,
                 root_and_subfolders: 0,
+            },
+            devcontainer: {
+                total: 0,
             },
             kustomize: {
                 total: 0,
@@ -585,6 +620,10 @@ module.exports = {
                 res.composefile.only_in_subfolders++
             if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount > 0)
                 res.composefile.root_and_subfolders++
+
+            //devcontainer stats
+            if (data.results.devcontainer.exist)
+                res.devcontainer.total++
 
             //kustomize stats
             if (data.results.kustomize.exist)
@@ -772,6 +811,9 @@ module.exports = {
                         only_in_subfolders: 0,
                         root_and_subfolders: 0,
                     },
+                    devcontainer:{
+                        total: 0,
+                    },
                     kustomize: {
                         total: 0,
                     },
@@ -885,6 +927,9 @@ module.exports = {
             if (data.results.composefile.rootCount > 0 && data.results.composefile.subFolderCount > 0)
                 res.languages[data.info.language].composefile.root_and_subfolders++
 
+            //devcontainer stats
+            if (data.results.devcontainer.exist)
+                res.languages[data.info.language].devcontainer.total++
 
             //kustomize stats
             if (data.results.kustomize.exist)

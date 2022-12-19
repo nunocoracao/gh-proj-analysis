@@ -2,13 +2,15 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 3,
+      "count": 5,
       "rootCount": 3,
-      "subFolderCount": 0,
+      "subFolderCount": 2,
       "filepaths": [
         "realm-core.git/android.Dockerfile",
         "realm-core.git/packaging.Dockerfile",
-        "realm-core.git/testing.Dockerfile"
+        "realm-core.git/testing.Dockerfile",
+        "realm-core.git/test/cloud_perf_test/client/resources/docker/Dockerfile",
+        "realm-core.git/test/cloud_perf_test/server/resources/docker/Dockerfile"
       ]
     },
     "composefile": {
@@ -18,6 +20,15 @@
       "subFolderCount": 1,
       "filepaths": [
         "realm-core.git/.devcontainer/docker-compose.yml"
+      ]
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "realm-core.git/.devcontainer/devcontainer.json"
       ]
     },
     "kustomize": {

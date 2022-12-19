@@ -1,13 +1,26 @@
 {
   "results": {
     "dockerfile": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 5,
+      "subFolderCount": 0,
+      "filepaths": [
+        "kubeclarity.git/Dockerfile.backend",
+        "kubeclarity.git/Dockerfile.cis_docker_benchmark_scanner",
+        "kubeclarity.git/Dockerfile.cli",
+        "kubeclarity.git/Dockerfile.runtime_k8s_scanner",
+        "kubeclarity.git/Dockerfile.sbom_db"
+      ]
+    },
+    "composefile": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
     },
-    "composefile": {
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
@@ -22,18 +35,31 @@
       "filepaths": []
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 1,
+      "filepaths": [
+        "kubeclarity.git/charts/kubeclarity/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 10,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 10,
+      "filepaths": [
+        "kubeclarity.git/charts/kubeclarity/templates/deployment.yaml",
+        "kubeclarity.git/charts/kubeclarity/templates/scanner-template-configmap.yaml",
+        "kubeclarity.git/charts/kubeclarity/templates/service.yaml",
+        "kubeclarity.git/charts/kubeclarity/templates/serviceaccount.yaml",
+        "kubeclarity.git/charts/kubeclarity/templates/grype_server/deployment.yaml",
+        "kubeclarity.git/charts/kubeclarity/templates/grype_server/service.yaml",
+        "kubeclarity.git/charts/kubeclarity/templates/grype_server/serviceaccount.yaml",
+        "kubeclarity.git/charts/kubeclarity/templates/sbom_db/deployment.yaml",
+        "kubeclarity.git/charts/kubeclarity/templates/sbom_db/service.yaml",
+        "kubeclarity.git/charts/kubeclarity/templates/sbom_db/serviceaccount.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

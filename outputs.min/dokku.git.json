@@ -2,12 +2,16 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 14,
-      "rootCount": 0,
-      "subFolderCount": 14,
+      "count": 30,
+      "rootCount": 1,
+      "subFolderCount": 29,
       "filepaths": [
+        "dokku.git/Dockerfile",
+        "dokku.git/.devcontainer/Dockerfile",
         "dokku.git/contrib/build-base.Dockerfile",
         "dokku.git/contrib/build-dokku.Dockerfile",
+        "dokku.git/docs/_build/Dockerfile",
+        "dokku.git/docs/deployment/builders/dockerfiles.md",
         "dokku.git/plugins/20_events/post-build-dockerfile",
         "dokku.git/plugins/20_events/post-release-dockerfile",
         "dokku.git/plugins/20_events/pre-build-dockerfile",
@@ -16,7 +20,19 @@
         "dokku.git/plugins/builder-herokuish/dockerfiles/builder-release.Dockerfile",
         "dokku.git/plugins/builder-herokuish/dockerfiles/pre-build.Dockerfile",
         "dokku.git/plugins/builder-lambda/dockerfiles/builder-release.Dockerfile",
+        "dokku.git/tests/apps/dockerfile/Dockerfile",
         "dokku.git/tests/apps/dockerfile/second.Dockerfile",
+        "dokku.git/tests/apps/dockerfile-dokku-scale/Dockerfile",
+        "dokku.git/tests/apps/dockerfile-entrypoint/Dockerfile",
+        "dokku.git/tests/apps/dockerfile-noexpose/Dockerfile",
+        "dokku.git/tests/apps/dockerfile-procfile/Dockerfile",
+        "dokku.git/tests/apps/dockerfile-procfile-bad/Dockerfile",
+        "dokku.git/tests/apps/dockerfile-release/Dockerfile",
+        "dokku.git/tests/apps/go-fail-postdeploy/Dockerfile",
+        "dokku.git/tests/apps/go-fail-predeploy/Dockerfile",
+        "dokku.git/tests/apps/gogrpc/Dockerfile",
+        "dokku.git/tests/apps/zombies-dockerfile-no-tini/Dockerfile",
+        "dokku.git/tests/apps/zombies-dockerfile-tini/Dockerfile",
         "dokku.git/tests/unit/builder-dockerfile.bats",
         "dokku.git/tests/unit/ps-dockerfile-1.bats",
         "dokku.git/tests/unit/ps-dockerfile-2.bats"
@@ -30,6 +46,15 @@
       "filepaths": [
         "dokku.git/plugins/caddy-vhosts/templates/compose.yml.sigil",
         "dokku.git/plugins/traefik-vhosts/templates/compose.yml.sigil"
+      ]
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "dokku.git/.devcontainer/devcontainer.json"
       ]
     },
     "kustomize": {

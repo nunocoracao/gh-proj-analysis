@@ -1,11 +1,15 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 3,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 3,
+      "filepaths": [
+        "apisix.git/ci/pod/nacos/healthcheck/Dockerfile",
+        "apisix.git/ci/pod/nacos/service/Dockerfile",
+        "apisix.git/t/chaos/utils/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -19,6 +23,13 @@
         "apisix.git/ci/pod/docker-compose.plugin.yml",
         "apisix.git/t/cli/docker-compose-etcd-cluster.yaml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

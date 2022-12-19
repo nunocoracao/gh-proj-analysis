@@ -2,14 +2,33 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 1,
-      "rootCount": 0,
-      "subFolderCount": 1,
+      "count": 13,
+      "rootCount": 1,
+      "subFolderCount": 12,
       "filepaths": [
-        "gitkube.git/build/cli-builder.dockerfile"
+        "gitkube.git/Dockerfile",
+        "gitkube.git/build/cli-builder.dockerfile",
+        "gitkube.git/build/gitkubed/Dockerfile",
+        "gitkube.git/vendor/github.com/cpuguy83/go-md2man/Dockerfile",
+        "gitkube.git/vendor/golang.org/x/net/http2/Dockerfile",
+        "gitkube.git/vendor/golang.org/x/net/http2/h2demo/Dockerfile",
+        "gitkube.git/vendor/golang.org/x/net/http2/h2demo/Dockerfile.0",
+        "gitkube.git/vendor/golang.org/x/sys/unix/linux/Dockerfile",
+        "gitkube.git/vendor/golang.org/x/tools/cmd/getgo/Dockerfile",
+        "gitkube.git/vendor/golang.org/x/tools/cmd/godoc/Dockerfile.prod",
+        "gitkube.git/vendor/golang.org/x/tools/cmd/tip/Dockerfile",
+        "gitkube.git/vendor/k8s.io/apiextensions-apiserver/artifacts/simple-image/Dockerfile",
+        "gitkube.git/vendor/k8s.io/client-go/examples/in-cluster-client-configuration/Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
@@ -31,11 +50,18 @@
       "filepaths": []
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 6,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 6,
+      "filepaths": [
+        "gitkube.git/vendor/golang.org/x/net/http2/h2demo/deployment-prod.yaml",
+        "gitkube.git/vendor/golang.org/x/net/http2/h2demo/service.yaml",
+        "gitkube.git/vendor/golang.org/x/tools/cmd/tip/tip-service.yaml",
+        "gitkube.git/vendor/k8s.io/apiextensions-apiserver/artifacts/customresource-01/noxu-apiservice.yaml",
+        "gitkube.git/vendor/k8s.io/apiextensions-apiserver/artifacts/example/apiservice.yaml",
+        "gitkube.git/vendor/k8s.io/apiextensions-apiserver/artifacts/example/service.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

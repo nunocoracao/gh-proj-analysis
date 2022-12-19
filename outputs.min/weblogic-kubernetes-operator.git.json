@@ -1,13 +1,26 @@
 {
   "results": {
     "dockerfile": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 1,
+      "subFolderCount": 4,
+      "filepaths": [
+        "weblogic-kubernetes-operator.git/Dockerfile",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/auxiliaryimage/Dockerfile",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/auxiliaryimage/negative/Dockerfile",
+        "weblogic-kubernetes-operator.git/kubernetes/samples/scripts/create-weblogic-domain/model-in-image/ai-docker-file/Dockerfile",
+        "weblogic-kubernetes-operator.git/operator/integration-tests/introspector/Dockerfile.adduser"
+      ]
+    },
+    "composefile": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
     },
-    "composefile": {
+    "devcontainer": {
       "exist": false,
       "count": 0,
       "rootCount": 0,
@@ -22,18 +35,29 @@
       "filepaths": []
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 3,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 3,
+      "filepaths": [
+        "weblogic-kubernetes-operator.git/kubernetes/charts/weblogic-operator/Chart.yaml",
+        "weblogic-kubernetes-operator.git/kubernetes/samples/charts/apache-webtier/Chart.yaml",
+        "weblogic-kubernetes-operator.git/kubernetes/samples/charts/ingress-per-domain/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 6,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 6,
+      "filepaths": [
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/istio/istio-cdt-http-template-service.yaml",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/opnshift/servicememberroll.yaml",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/wdt-models/fluentd.configmap.elk.yaml",
+        "weblogic-kubernetes-operator.git/kubernetes/samples/charts/apache-webtier/templates/deployment.yaml",
+        "weblogic-kubernetes-operator.git/kubernetes/samples/charts/apache-webtier/templates/service-account.yaml",
+        "weblogic-kubernetes-operator.git/kubernetes/samples/charts/apache-webtier/templates/service.yaml"
+      ]
     },
     "backstage": {
       "exist": false,
@@ -43,11 +67,38 @@
       "filepaths": []
     },
     "terraform": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 26,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 26,
+      "filepaths": [
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/cluster.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/export.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/export_set.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/file_system.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/kube_config.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/mount_target.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/node-pool.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/provider.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/vcn.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/versions.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/twoclusters/cluster.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/twoclusters/export.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/twoclusters/export_set.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/twoclusters/file_system.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/twoclusters/kube_config.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/twoclusters/mount_target.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/twoclusters/provider.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/twoclusters/template.tfvars",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/twoclusters/vcn.tf",
+        "weblogic-kubernetes-operator.git/integration-tests/src/test/resources/oke/terraform/twoclusters/versions.tf",
+        "weblogic-kubernetes-operator.git/kubernetes/samples/scripts/terraform/cluster.tf",
+        "weblogic-kubernetes-operator.git/kubernetes/samples/scripts/terraform/kube_config.tf",
+        "weblogic-kubernetes-operator.git/kubernetes/samples/scripts/terraform/provider.tf",
+        "weblogic-kubernetes-operator.git/kubernetes/samples/scripts/terraform/template.tfvars",
+        "weblogic-kubernetes-operator.git/kubernetes/samples/scripts/terraform/vcn.tf",
+        "weblogic-kubernetes-operator.git/kubernetes/samples/scripts/terraform/versions.tf"
+      ]
     }
   },
   "info": {

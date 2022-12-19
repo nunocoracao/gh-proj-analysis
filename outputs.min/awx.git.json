@@ -1,11 +1,19 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 7,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 7,
+      "filepaths": [
+        "awx.git/awx/ui/Dockerfile",
+        "awx.git/tools/ansible/dockerfile.yml",
+        "awx.git/tools/ansible/roles/dockerfile/templates/Dockerfile.j2",
+        "awx.git/tools/docker-compose/Dockerfile-logstash",
+        "awx.git/tools/elastic/elasticsearch/Dockerfile",
+        "awx.git/tools/elastic/kibana/Dockerfile",
+        "awx.git/tools/elastic/logstash/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -18,6 +26,13 @@
         "awx.git/tools/elastic/docker-compose.logstash-link-cluster.yml",
         "awx.git/tools/elastic/docker-compose.logstash-link.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,

@@ -1,11 +1,16 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 4,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 4,
+      "filepaths": [
+        "lance.git/.devcontainer/Dockerfile",
+        "lance.git/integration/duckdb/cuda/Dockerfile",
+        "lance.git/integration/duckdb/tools/Dockerfile.manylinux2014",
+        "lance.git/python/tools/Dockerfile.manylinux2014"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -14,6 +19,15 @@
       "subFolderCount": 1,
       "filepaths": [
         "lance.git/integration/duckdb/cuda/docker-compose.yml"
+      ]
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "lance.git/.devcontainer/devcontainer.json"
       ]
     },
     "kustomize": {

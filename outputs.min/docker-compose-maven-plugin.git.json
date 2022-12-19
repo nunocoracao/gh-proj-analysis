@@ -1,11 +1,17 @@
 {
   "results": {
     "dockerfile": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 5,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 5,
+      "filepaths": [
+        "docker-compose-maven-plugin.git/src/it/build/Dockerfile",
+        "docker-compose-maven-plugin.git/src/it/build-args/Dockerfile",
+        "docker-compose-maven-plugin.git/src/it/build-force-rm/Dockerfile",
+        "docker-compose-maven-plugin.git/src/it/build-no-cache/Dockerfile",
+        "docker-compose-maven-plugin.git/src/it/build-pull/Dockerfile"
+      ]
     },
     "composefile": {
       "exist": true,
@@ -47,6 +53,13 @@
         "docker-compose-maven-plugin.git/src/it/up-skip/docker-compose.yml",
         "docker-compose-maven-plugin.git/src/it/up-verbose/docker-compose.yml"
       ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "kustomize": {
       "exist": false,
