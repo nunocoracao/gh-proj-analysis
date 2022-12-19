@@ -27,7 +27,7 @@ module.exports = {
 
         if (!semaphore) {
             semaphore = !semaphore
-            this.print('processing item - ' + item.repo)
+            //this.print('processing item - ' + item.repo)
             item.action(() => {
                 totalItems--
                 semaphore = !semaphore
