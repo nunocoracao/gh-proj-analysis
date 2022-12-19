@@ -1,14 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 1,
-      "subFolderCount": 1,
-      "filepaths": [
-        "clickhouse-operator.git/dockerfile",
-        "clickhouse-operator.git/tests/image/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -18,6 +15,56 @@
       "filepaths": [
         "clickhouse-operator.git/tests/docker-compose/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 14,
+      "rootCount": 0,
+      "subFolderCount": 14,
+      "filepaths": [
+        "clickhouse-operator.git/deploy/builder/templates-install-bundle/clickhouse-operator-install-yaml-template-03-section-env-01-configmap-header.yaml",
+        "clickhouse-operator.git/deploy/builder/templates-install-bundle/clickhouse-operator-install-yaml-template-04-section-deployment-with-configmap.yaml",
+        "clickhouse-operator.git/deploy/builder/templates-install-bundle/clickhouse-operator-install-yaml-template-04-section-deployment.yaml",
+        "clickhouse-operator.git/deploy/builder/templates-install-bundle/clickhouse-operator-install-yaml-template-05-section-service-metrics.yaml",
+        "clickhouse-operator.git/deploy/builder/templates-operatorhub/clickhouse-operator.vVERSION.clusterserviceversion-template.yaml",
+        "clickhouse-operator.git/deploy/operatorhub/0.18.1/clickhouse-operator.v0.18.1.clusterserviceversion.yaml",
+        "clickhouse-operator.git/deploy/operatorhub/0.18.3/clickhouse-operator.v0.18.3.clusterserviceversion.yaml",
+        "clickhouse-operator.git/deploy/zookeeper/advanced/01-service-client-access.yaml",
+        "clickhouse-operator.git/deploy/zookeeper/advanced/02-headless-service.yaml",
+        "clickhouse-operator.git/docs/chi-examples/02-templates-03-service-template.yaml",
+        "clickhouse-operator.git/tests/e2e/manifests/chi/test-012-service-template-2.yaml",
+        "clickhouse-operator.git/tests/e2e/manifests/chi/test-012-service-template.yaml",
+        "clickhouse-operator.git/tests/e2e/manifests/chi/test-018-configmap-1.yaml",
+        "clickhouse-operator.git/tests/e2e/manifests/chi/test-018-configmap-2.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

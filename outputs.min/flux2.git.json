@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "flux2.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -15,6 +13,104 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 34,
+      "rootCount": 0,
+      "subFolderCount": 34,
+      "filepaths": [
+        "flux2.git/cmd/flux/testdata/build-kustomization/podinfo-kustomization.yaml",
+        "flux2.git/cmd/flux/testdata/build-kustomization/delete-service/kustomization.yaml",
+        "flux2.git/cmd/flux/testdata/build-kustomization/podinfo/kustomization.yaml",
+        "flux2.git/cmd/flux/testdata/build-kustomization/var-substitution/kustomization.yaml",
+        "flux2.git/cmd/flux/testdata/diff-kustomization/kustomization.yaml",
+        "flux2.git/cmd/flux/testdata/tree/kustomizations.yaml",
+        "flux2.git/manifests/bases/helm-controller/kustomization.yaml",
+        "flux2.git/manifests/bases/image-automation-controller/kustomization.yaml",
+        "flux2.git/manifests/bases/image-reflector-controller/kustomization.yaml",
+        "flux2.git/manifests/bases/kustomize-controller/kustomization.yaml",
+        "flux2.git/manifests/bases/notification-controller/kustomization.yaml",
+        "flux2.git/manifests/bases/source-controller/kustomization.yaml",
+        "flux2.git/manifests/crds/kustomization.yaml",
+        "flux2.git/manifests/install/kustomization.yaml",
+        "flux2.git/manifests/integrations/eventhub-credentials-sync/_base/kustomization.yaml",
+        "flux2.git/manifests/integrations/eventhub-credentials-sync/_cronjobs/_base/kustomization.yaml",
+        "flux2.git/manifests/integrations/eventhub-credentials-sync/_cronjobs/azure/kustomization.yaml",
+        "flux2.git/manifests/integrations/eventhub-credentials-sync/_cronjobs/generic/kustomization.yaml",
+        "flux2.git/manifests/integrations/eventhub-credentials-sync/azure/kustomization.yaml",
+        "flux2.git/manifests/integrations/eventhub-credentials-sync/generic/kustomization.yaml",
+        "flux2.git/manifests/integrations/registry-credentials-sync/_base/kustomization.yaml",
+        "flux2.git/manifests/integrations/registry-credentials-sync/_cronjobs/_base/kustomization.yaml",
+        "flux2.git/manifests/integrations/registry-credentials-sync/_cronjobs/aws/kustomization.yaml",
+        "flux2.git/manifests/integrations/registry-credentials-sync/_cronjobs/azure/kustomization.yaml",
+        "flux2.git/manifests/integrations/registry-credentials-sync/_cronjobs/gcp/kustomization.yaml",
+        "flux2.git/manifests/integrations/registry-credentials-sync/aws/kustomization.yaml",
+        "flux2.git/manifests/integrations/registry-credentials-sync/azure/kustomization.yaml",
+        "flux2.git/manifests/integrations/registry-credentials-sync/gcp/kustomization.yaml",
+        "flux2.git/manifests/monitoring/kube-prometheus-stack/kustomization.yaml",
+        "flux2.git/manifests/monitoring/loki-stack/kustomization.yaml",
+        "flux2.git/manifests/monitoring/monitoring-config/kustomization.yaml",
+        "flux2.git/manifests/policies/kustomization.yaml",
+        "flux2.git/manifests/rbac/kustomization.yaml",
+        "flux2.git/tests/image-automation/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "flux2.git/cmd/flux/testdata/build-kustomization/podinfo-without-service-result.yaml",
+        "flux2.git/cmd/flux/testdata/build-kustomization/delete-service/deployment.yaml",
+        "flux2.git/cmd/flux/testdata/build-kustomization/podinfo/deployment.yaml",
+        "flux2.git/cmd/flux/testdata/build-kustomization/podinfo/service.yaml",
+        "flux2.git/cmd/flux/testdata/build-kustomization/var-substitution/deployment.yaml",
+        "flux2.git/cmd/flux/testdata/diff-artifact/deployment-diff.yaml",
+        "flux2.git/cmd/flux/testdata/diff-artifact/deployment.yaml",
+        "flux2.git/cmd/flux/testdata/diff-kustomization/deployment.yaml",
+        "flux2.git/cmd/flux/testdata/diff-kustomization/service.yaml",
+        "flux2.git/cmd/flux/testdata/trace/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 16,
+      "rootCount": 0,
+      "subFolderCount": 16,
+      "filepaths": [
+        "flux2.git/tests/azure/terraform/aks/.terraform.lock.hcl",
+        "flux2.git/tests/azure/terraform/aks/aks.tf",
+        "flux2.git/tests/azure/terraform/aks/azuredevops.tf",
+        "flux2.git/tests/azure/terraform/aks/event-hub.tf",
+        "flux2.git/tests/azure/terraform/aks/keyvault.tf",
+        "flux2.git/tests/azure/terraform/aks/main.tf",
+        "flux2.git/tests/azure/terraform/aks/outputs.tf",
+        "flux2.git/tests/azure/terraform/aks/service-principal.tf",
+        "flux2.git/tests/azure/terraform/aks/shared.tf",
+        "flux2.git/tests/azure/terraform/shared/.terraform.lock.hcl",
+        "flux2.git/tests/azure/terraform/shared/acr.tf",
+        "flux2.git/tests/azure/terraform/shared/keyvault.tf",
+        "flux2.git/tests/azure/terraform/shared/main.tf",
+        "flux2.git/tests/azure/terraform/shared/outputs.tf",
+        "flux2.git/tests/azure/terraform/shared/service-principal.tf",
+        "flux2.git/tests/azure/terraform/shared/variables.tf"
+      ]
     }
   },
   "info": {

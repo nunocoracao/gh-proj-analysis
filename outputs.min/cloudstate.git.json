@@ -1,18 +1,69 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 2,
-      "subFolderCount": 2,
-      "filepaths": [
-        "cloudstate.git/Dockerfile.js-crdts",
-        "cloudstate.git/Dockerfile.js-shopping-cart",
-        "cloudstate.git/.devcontainer/Dockerfile",
-        "cloudstate.git/cloudstate-operator/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "cloudstate.git/cloudstate-operator/config/certmanager/kustomization.yaml",
+        "cloudstate.git/cloudstate-operator/config/crd/kustomization.yaml",
+        "cloudstate.git/cloudstate-operator/config/default/kustomization.yaml",
+        "cloudstate.git/cloudstate-operator/config/manager/kustomization.yaml",
+        "cloudstate.git/cloudstate-operator/config/native-image/kustomization.yaml",
+        "cloudstate.git/cloudstate-operator/config/prometheus/kustomization.yaml",
+        "cloudstate.git/cloudstate-operator/config/rbac/kustomization.yaml",
+        "cloudstate.git/cloudstate-operator/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "cloudstate.git/cloudstate-operator/config/crd/bases/cloudstate.io_statefulservices.yaml",
+        "cloudstate.git/cloudstate-operator/config/crd/patches/cainjection_in_statefulservices.yaml",
+        "cloudstate.git/cloudstate-operator/config/crd/patches/webhook_in_statefulservices.yaml",
+        "cloudstate.git/cloudstate-operator/config/manager/configmap.yaml",
+        "cloudstate.git/cloudstate-operator/config/rbac/auth_proxy_service.yaml",
+        "cloudstate.git/cloudstate-operator/config/samples/cloudstate_v1alpha1_statefulservice.yaml",
+        "cloudstate.git/cloudstate-operator/config/webhook/service.yaml",
+        "cloudstate.git/operator/deploy/01-service-account.yaml",
+        "cloudstate.git/operator/deploy/05-deployment.yaml",
+        "cloudstate.git/operator/deploy/crds/stateful-service-crd.yaml",
+        "cloudstate.git/samples/js-crdts/stateful-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,21 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 9,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 9,
-      "filepaths": [
-        "microservices.git/authors/src/main/docker/Dockerfile",
-        "microservices.git/books/src/main/docker/Dockerfile",
-        "microservices.git/configserver/src/main/docker/Dockerfile",
-        "microservices.git/discovery/src/main/docker/Dockerfile",
-        "microservices.git/front/src/main/docker/Dockerfile",
-        "microservices.git/gateway/src/main/docker/Dockerfile",
-        "microservices.git/hystrix-dashboard/src/main/docker/Dockerfile",
-        "microservices.git/releases/src/main/docker/Dockerfile",
-        "microservices.git/turbine/src/main/docker/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -25,6 +15,54 @@
       "filepaths": [
         "microservices.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "microservices.git/configserver/src/main/resources/authors-service-docker.yml",
+        "microservices.git/configserver/src/main/resources/authors-service-local.yml",
+        "microservices.git/configserver/src/main/resources/books-service-docker.yml",
+        "microservices.git/configserver/src/main/resources/books-service-local.yml",
+        "microservices.git/configserver/src/main/resources/front-service-docker.yml",
+        "microservices.git/configserver/src/main/resources/front-service-local.yml",
+        "microservices.git/configserver/src/main/resources/gateway-service-docker.yml",
+        "microservices.git/configserver/src/main/resources/gateway-service-local.yml",
+        "microservices.git/configserver/src/main/resources/releases-service-docker.yml",
+        "microservices.git/configserver/src/main/resources/releases-service-local.yml",
+        "microservices.git/configserver/src/main/resources/turbine-service-docker.yml",
+        "microservices.git/configserver/src/main/resources/turbine-service-local.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

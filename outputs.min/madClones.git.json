@@ -1,16 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 4,
-      "filepaths": [
-        "madClones.git/server/trello-microservice/Dockerfile",
-        "madClones.git/server/trello-microservice/Dockerfile.test",
-        "madClones.git/server/users-microservice/Dockerfile",
-        "madClones.git/server/users-microservice/Dockerfile.test"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -22,6 +17,59 @@
         "madClones.git/server/trello-microservice/docker-compose.yml",
         "madClones.git/server/users-microservice/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 17,
+      "rootCount": 2,
+      "subFolderCount": 15,
+      "filepaths": [
+        "madClones.git/dc-trello-service.test.yml",
+        "madClones.git/dc-users-service.test.yml",
+        "madClones.git/server/deployments/kubernetes/.archives/complete-deployment.yaml",
+        "madClones.git/server/deployments/kubernetes/.archives/trello-deployment.yaml",
+        "madClones.git/server/deployments/kubernetes/.archives/trellodb-deployment.yaml",
+        "madClones.git/server/deployments/kubernetes/.archives/users-deployment.yaml",
+        "madClones.git/server/deployments/kubernetes/.archives/usersdb-deployment.yaml",
+        "madClones.git/server/deployments/kubernetes/traefik/traefik-deployment.yaml",
+        "madClones.git/server/deployments/kubernetes/trello/trello-deployment.yaml",
+        "madClones.git/server/deployments/kubernetes/trello/trello-service.yaml",
+        "madClones.git/server/deployments/kubernetes/trellodb/trellodb-deployment.yaml",
+        "madClones.git/server/deployments/kubernetes/trellodb/trellodb-service.yaml",
+        "madClones.git/server/deployments/kubernetes/users/users-deployment.yaml",
+        "madClones.git/server/deployments/kubernetes/users/users-service-with-lb.yaml",
+        "madClones.git/server/deployments/kubernetes/users/users-service.yaml",
+        "madClones.git/server/deployments/kubernetes/usersdb/usersdb-deployment.yaml",
+        "madClones.git/server/deployments/kubernetes/usersdb/usersdb-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

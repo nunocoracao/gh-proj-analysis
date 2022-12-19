@@ -1,16 +1,72 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "nacos-k8s.git/operator/Dockerfile",
-        "nacos-k8s.git/plugin/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "nacos-k8s.git/operator/config/certmanager/kustomization.yaml",
+        "nacos-k8s.git/operator/config/crd/kustomization.yaml",
+        "nacos-k8s.git/operator/config/default/kustomization.yaml",
+        "nacos-k8s.git/operator/config/manager/kustomization.yaml",
+        "nacos-k8s.git/operator/config/prometheus/kustomization.yaml",
+        "nacos-k8s.git/operator/config/rbac/kustomization.yaml",
+        "nacos-k8s.git/operator/config/samples/kustomization.yaml",
+        "nacos-k8s.git/operator/config/scorecard/kustomization.yaml",
+        "nacos-k8s.git/operator/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "nacos-k8s.git/helm/Chart.yaml",
+        "nacos-k8s.git/operator/chart/nacos/Chart.yaml",
+        "nacos-k8s.git/operator/chart/nacos-operator/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "nacos-k8s.git/deploy/nfs/deployment.yaml",
+        "nacos-k8s.git/helm/templates/configmap.yaml",
+        "nacos-k8s.git/helm/templates/service.yaml",
+        "nacos-k8s.git/operator/chart/nacos/templates/servicemonitor.yaml",
+        "nacos-k8s.git/operator/chart/nacos-operator/templates/deployment.yaml",
+        "nacos-k8s.git/operator/chart/nacos-operator/templates/service.yaml",
+        "nacos-k8s.git/operator/chart/nacos-operator/templates/serviceaccount.yaml",
+        "nacos-k8s.git/operator/config/rbac/auth_proxy_service.yaml",
+        "nacos-k8s.git/operator/config/webhook/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

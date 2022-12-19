@@ -1,22 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 10,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 10,
-      "filepaths": [
-        "crunchy-containers.git/build/base/Dockerfile",
-        "crunchy-containers.git/build/base-ext/Dockerfile",
-        "crunchy-containers.git/build/pgadmin4/Dockerfile",
-        "crunchy-containers.git/build/pgbackrest/Dockerfile",
-        "crunchy-containers.git/build/pgbadger/Dockerfile",
-        "crunchy-containers.git/build/pgbouncer/Dockerfile",
-        "crunchy-containers.git/build/pgpool/Dockerfile",
-        "crunchy-containers.git/build/postgres/Dockerfile",
-        "crunchy-containers.git/build/postgres-gis/Dockerfile",
-        "crunchy-containers.git/build/upgrade/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -26,6 +15,57 @@
       "filepaths": [
         "crunchy-containers.git/examples/docker/swarm-service/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "crunchy-containers.git/examples/helm/custom-config/Chart.yaml",
+        "crunchy-containers.git/examples/helm/primary/Chart.yaml",
+        "crunchy-containers.git/examples/helm/primary-replica/Chart.yaml",
+        "crunchy-containers.git/examples/helm/template-small/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "crunchy-containers.git/examples/helm/custom-config/templates/custom-config-service.yml",
+        "crunchy-containers.git/examples/helm/custom-config/templates/custom-configmap.yaml",
+        "crunchy-containers.git/examples/helm/primary/templates/basic-service.yaml",
+        "crunchy-containers.git/examples/helm/primary-replica/templates/primary-service.yaml",
+        "crunchy-containers.git/examples/helm/primary-replica/templates/replica-deployment.yaml",
+        "crunchy-containers.git/examples/helm/primary-replica/templates/replica-service.yaml",
+        "crunchy-containers.git/examples/helm/template-small/templates/deployment.yaml",
+        "crunchy-containers.git/examples/helm/template-small/templates/service.yaml",
+        "crunchy-containers.git/examples/kube/centralized-logging/efk/fluentd-configmap.yaml",
+        "crunchy-containers.git/examples/kube/centralized-logging/efk/kibana-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

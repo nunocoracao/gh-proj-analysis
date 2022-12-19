@@ -1,16 +1,60 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 1,
-      "subFolderCount": 1,
-      "filepaths": [
-        "csi-driver.git/Dockerfile",
-        "csi-driver.git/integrationtests/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 1,
+      "subFolderCount": 6,
+      "filepaths": [
+        "csi-driver.git/kustomization.yaml",
+        "csi-driver.git/deploy/kustomization.yaml",
+        "csi-driver.git/deploy/kubernetes/kustomization.yaml",
+        "csi-driver.git/deploy/kubernetes/controller/kustomization.yaml",
+        "csi-driver.git/deploy/kubernetes/core/kustomization.yaml",
+        "csi-driver.git/deploy/kubernetes/node/kustomization.yaml",
+        "csi-driver.git/hack/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "csi-driver.git/deploy/kubernetes/controller/deployment.yaml",
+        "csi-driver.git/deploy/kubernetes/controller/service.yaml",
+        "csi-driver.git/deploy/kubernetes/node/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

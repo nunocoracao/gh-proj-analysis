@@ -1,17 +1,65 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 3,
-      "filepaths": [
-        "easegress.git/build/package/Dockerfile",
-        "easegress.git/build/package/Dockerfile.builder",
-        "easegress.git/build/package/Dockerfile.goreleaser"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "easegress.git/helm-charts/easegress/Chart.yaml",
+        "easegress.git/helm-charts/ingress-controller/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "easegress.git/example/config/consul-service-registry-example.yaml",
+        "easegress.git/example/config/etcd-service-registry-example.yaml",
+        "easegress.git/example/config/eureka-service-registry-example.yaml",
+        "easegress.git/example/config/nacos-service-registry-example.yaml",
+        "easegress.git/example/config/zookeeper-service-registry-example.yaml",
+        "easegress.git/helm-charts/easegress/templates/ConfigMap.yaml",
+        "easegress.git/helm-charts/easegress/templates/Deployment.yaml",
+        "easegress.git/helm-charts/easegress/templates/Service.yaml",
+        "easegress.git/helm-charts/easegress/templates/ServiceAccount.yaml",
+        "easegress.git/helm-charts/ingress-controller/templates/ConfigMap.yaml",
+        "easegress.git/helm-charts/ingress-controller/templates/Deployment.yaml",
+        "easegress.git/helm-charts/ingress-controller/templates/Service.yaml",
+        "easegress.git/helm-charts/ingress-controller/templates/ServiceAccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

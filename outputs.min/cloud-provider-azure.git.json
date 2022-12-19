@@ -2,19 +2,73 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 6,
-      "rootCount": 4,
-      "subFolderCount": 2,
+      "count": 4,
+      "rootCount": 3,
+      "subFolderCount": 1,
       "filepaths": [
-        "cloud-provider-azure.git/Dockerfile",
         "cloud-provider-azure.git/cloud-node-manager-windows.Dockerfile",
         "cloud-provider-azure.git/cloud-node-manager.Dockerfile",
         "cloud-provider-azure.git/e2e.Dockerfile",
-        "cloud-provider-azure.git/hack/boilerplate/boilerplate.Dockerfile.txt",
-        "cloud-provider-azure.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "cloud-provider-azure.git/hack/boilerplate/boilerplate.Dockerfile.txt"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "cloud-provider-azure.git/helm/cloud-provider-azure/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "cloud-provider-azure.git/tests/kubemark/configs/access-tokens/deployment.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/access-tokens/serviceAccount.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/density/deployment.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/experimental/storage/pod-startup/volume-types/configmap/configmap.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/experimental/storage/pod-startup/volume-types/configmap/deployment_with_configmap.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/experimental/storage/pod-startup/volume-types/downwardapi/deployment_with_downwardapi.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/experimental/storage/pod-startup/volume-types/emptydir/deployment_with_emptydir.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/experimental/storage/pod-startup/volume-types/persistentvolume/deployment_with_pvc.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/experimental/storage/pod-startup/volume-types/secret/deployment_with_secret.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/l4ilb/service.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/load/configmap.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/load/deployment.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/load/service.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/load/simple-deployment.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/load/statefulset_service.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/load/experimental/bundled_services_and_deployments.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/load/experimental/overrides/enable_configmaps.yaml",
+        "cloud-provider-azure.git/tests/kubemark/configs/load/legacy/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

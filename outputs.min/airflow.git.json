@@ -2,25 +2,13 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 17,
-      "rootCount": 2,
-      "subFolderCount": 15,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
       "filepaths": [
-        "airflow.git/Dockerfile",
-        "airflow.git/Dockerfile.ci",
-        "airflow.git/chart/dockerfiles",
-        "airflow.git/docs/docker-stack/docker-examples/extending/add-apt-packages/Dockerfile",
-        "airflow.git/docs/docker-stack/docker-examples/extending/add-build-essential-extend/Dockerfile",
-        "airflow.git/docs/docker-stack/docker-examples/extending/add-providers/Dockerfile",
-        "airflow.git/docs/docker-stack/docker-examples/extending/add-pypi-packages/Dockerfile",
-        "airflow.git/docs/docker-stack/docker-examples/extending/add-requirement-packages/Dockerfile",
-        "airflow.git/docs/docker-stack/docker-examples/extending/custom-providers/Dockerfile",
-        "airflow.git/docs/docker-stack/docker-examples/extending/embedding-dags/Dockerfile",
-        "airflow.git/docs/docker-stack/docker-examples/extending/writable-directory/Dockerfile",
         "airflow.git/docs/docker-stack/docker-images-recipes/gcloud.Dockerfile",
         "airflow.git/docs/docker-stack/docker-images-recipes/go-beam.Dockerfile",
         "airflow.git/docs/docker-stack/docker-images-recipes/hadoop.Dockerfile",
-        "airflow.git/scripts/ci/dockerfiles",
         "airflow.git/scripts/ci/pre_commit/pre_commit_check_order_dockerfile_extras.py",
         "airflow.git/scripts/ci/pre_commit/pre_commit_lint_dockerfile.py"
       ]
@@ -32,6 +20,80 @@
       "subFolderCount": 1,
       "filepaths": [
         "airflow.git/docs/apache-airflow/howto/docker-compose/docker-compose.yaml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "airflow.git/.github/ISSUE_TEMPLATE/airflow_helmchart_bug_report.yml",
+        "airflow.git/chart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 31,
+      "rootCount": 0,
+      "subFolderCount": 31,
+      "filepaths": [
+        "airflow.git/chart/templates/cleanup/cleanup-serviceaccount.yaml",
+        "airflow.git/chart/templates/configmaps/configmap.yaml",
+        "airflow.git/chart/templates/configmaps/extra-configmaps.yaml",
+        "airflow.git/chart/templates/configmaps/statsd-configmap.yaml",
+        "airflow.git/chart/templates/configmaps/webserver-configmap.yaml",
+        "airflow.git/chart/templates/dag-processor/dag-processor-deployment.yaml",
+        "airflow.git/chart/templates/dag-processor/dag-processor-serviceaccount.yaml",
+        "airflow.git/chart/templates/flower/flower-deployment.yaml",
+        "airflow.git/chart/templates/flower/flower-service.yaml",
+        "airflow.git/chart/templates/flower/flower-serviceaccount.yaml",
+        "airflow.git/chart/templates/jobs/create-user-job-serviceaccount.yaml",
+        "airflow.git/chart/templates/jobs/migrate-database-job-serviceaccount.yaml",
+        "airflow.git/chart/templates/pgbouncer/pgbouncer-deployment.yaml",
+        "airflow.git/chart/templates/pgbouncer/pgbouncer-service.yaml",
+        "airflow.git/chart/templates/pgbouncer/pgbouncer-serviceaccount.yaml",
+        "airflow.git/chart/templates/redis/redis-service.yaml",
+        "airflow.git/chart/templates/redis/redis-serviceaccount.yaml",
+        "airflow.git/chart/templates/scheduler/scheduler-deployment.yaml",
+        "airflow.git/chart/templates/scheduler/scheduler-service.yaml",
+        "airflow.git/chart/templates/scheduler/scheduler-serviceaccount.yaml",
+        "airflow.git/chart/templates/statsd/statsd-deployment.yaml",
+        "airflow.git/chart/templates/statsd/statsd-service.yaml",
+        "airflow.git/chart/templates/statsd/statsd-serviceaccount.yaml",
+        "airflow.git/chart/templates/triggerer/triggerer-deployment.yaml",
+        "airflow.git/chart/templates/triggerer/triggerer-serviceaccount.yaml",
+        "airflow.git/chart/templates/webserver/webserver-deployment.yaml",
+        "airflow.git/chart/templates/webserver/webserver-service.yaml",
+        "airflow.git/chart/templates/webserver/webserver-serviceaccount.yaml",
+        "airflow.git/chart/templates/workers/worker-deployment.yaml",
+        "airflow.git/chart/templates/workers/worker-service.yaml",
+        "airflow.git/chart/templates/workers/worker-serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "airflow.git/tests/providers/amazon/aws/infrastructure/example_s3_to_redshift/outputs.tf",
+        "airflow.git/tests/providers/amazon/aws/infrastructure/example_s3_to_redshift/resources.tf",
+        "airflow.git/tests/providers/amazon/aws/infrastructure/example_s3_to_redshift/variables.tf"
       ]
     }
   },

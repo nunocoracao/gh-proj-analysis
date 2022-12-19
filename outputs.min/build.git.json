@@ -1,15 +1,57 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "build.git/images/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "build.git/config/200-serviceaccount.yaml",
+        "build.git/config/400-controller-service.yaml",
+        "build.git/config/400-webhook-service.yaml",
+        "build.git/test/configmap/configmap.yaml",
+        "build.git/test/docker-basic/1-serviceaccount.yaml",
+        "build.git/test/git-ssh/1-serviceaccount.yaml",
+        "build.git/test/serviceaccount/0-serviceaccount.yaml",
+        "build.git/test/template-volumes-args/0-configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -2,12 +2,10 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 31,
-      "rootCount": 1,
-      "subFolderCount": 30,
+      "count": 28,
+      "rootCount": 0,
+      "subFolderCount": 28,
       "filepaths": [
-        "keycloak-operator.git/Dockerfile",
-        "keycloak-operator.git/build/Dockerfile",
         "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/10.0.0/bundle.Dockerfile",
         "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/11.0.0/bundle.Dockerfile",
         "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/12.0.1/bundle.Dockerfile",
@@ -35,11 +33,77 @@
         "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/8.0.2/bundle.Dockerfile",
         "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/9.0.0/bundle.Dockerfile",
         "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/9.0.2/bundle.Dockerfile",
-        "keycloak-operator.git/vendor/github.com/operator-framework/operator-sdk/internal/scaffold/build_dockerfile.go",
-        "keycloak-operator.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "keycloak-operator.git/vendor/github.com/operator-framework/operator-sdk/internal/scaffold/build_dockerfile.go"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 1,
+      "subFolderCount": 1,
+      "filepaths": [
+        "keycloak-operator.git/kustomization.yaml",
+        "keycloak-operator.git/deploy/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 28,
+      "rootCount": 0,
+      "subFolderCount": 28,
+      "filepaths": [
+        "keycloak-operator.git/deploy/service_account.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/10.0.0/manifests/keycloak-operator.v10.0.0.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/11.0.0/manifests/keycloak-operator.v11.0.0.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/12.0.1/manifests/keycloak-operator.v12.0.1.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/12.0.3/manifests/keycloak-operator.v12.0.3.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/13.0.0/manifests/keycloak-operator.v13.0.0.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/13.0.1/manifests/keycloak-operator.v13.0.1.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/14.0.0/manifests/keycloak-operator.v14.0.0.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/15.0.0/manifests/keycloak-operator.v15.0.0.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/15.0.1/manifests/keycloak-operator.v15.0.1.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/15.0.2/manifests/keycloak-operator.v15.0.2.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/15.1.0/manifests/keycloak-operator.v15.1.0.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/15.1.1/manifests/keycloak-operator.v15.1.1.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/16.0.0/manifests/keycloak-operator.v16.0.0.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/16.1.0/manifests/keycloak-operator.v16.1.0.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/17.0.0/manifests/keycloak-operator.v17.0.0.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/17.0.1/manifests/keycloak-operator.v17.0.1.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/18.0.0/manifests/keycloak-operator.v18.0.0.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/18.0.1/manifests/keycloak-operator.v18.0.1.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/18.0.2/manifests/keycloak-operator.v18.0.2.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/19.0.0/manifests/keycloak-operator.v19.0.0.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/19.0.1/manifests/keycloak-operator.v19.0.1.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/19.0.2/manifests/keycloak-operator.v19.0.2.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/7.0.1/manifests/keycloak-operator.v7.0.1.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/8.0.1/manifests/keycloak-operator.v8.0.1.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/8.0.2/manifests/keycloak-operator.v8.0.2.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/9.0.0/manifests/keycloak-operator.v9.0.0.clusterserviceversion.yaml",
+        "keycloak-operator.git/deploy/olm-catalog/keycloak-operator/9.0.2/manifests/keycloak-operator.v9.0.2.clusterserviceversion.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

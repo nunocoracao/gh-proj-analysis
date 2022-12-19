@@ -1,16 +1,61 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 2,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "external-dns.git/Dockerfile",
-        "external-dns.git/Dockerfile.mini"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "external-dns.git/kustomize/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "external-dns.git/.github/workflows/lint-test-chart.yaml",
+        "external-dns.git/.github/workflows/release-chart.yaml",
+        "external-dns.git/charts/external-dns/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "external-dns.git/charts/external-dns/templates/deployment.yaml",
+        "external-dns.git/charts/external-dns/templates/service.yaml",
+        "external-dns.git/charts/external-dns/templates/serviceaccount.yaml",
+        "external-dns.git/charts/external-dns/templates/servicemonitor.yaml",
+        "external-dns.git/kustomize/external-dns-deployment.yaml",
+        "external-dns.git/kustomize/external-dns-serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

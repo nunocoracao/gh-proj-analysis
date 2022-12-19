@@ -1,16 +1,59 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "kubernetes-for-java-developers.git/app/Dockerfile",
-        "kubernetes-for-java-developers.git/app/Dockerfile.jre"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kubernetes-for-java-developers.git/manifests/myapp/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "kubernetes-for-java-developers.git/app/greeting-deployment.yaml",
+        "kubernetes-for-java-developers.git/app/greeting-service.yaml",
+        "kubernetes-for-java-developers.git/manifests/appmesh/services.yaml",
+        "kubernetes-for-java-developers.git/manifests/appmesh/virtualservice.yaml",
+        "kubernetes-for-java-developers.git/manifests/kubemonkey/kube-monkey-configmap.yaml",
+        "kubernetes-for-java-developers.git/manifests/kubemonkey/kube-monkey-deployment.yaml",
+        "kubernetes-for-java-developers.git/manifests/myapp/templates/greeting-deployment.yaml",
+        "kubernetes-for-java-developers.git/manifests/myapp/templates/greeting-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

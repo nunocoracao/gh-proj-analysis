@@ -1,43 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 31,
-      "rootCount": 1,
-      "subFolderCount": 30,
-      "filepaths": [
-        "h2o-3.git/Dockerfile",
-        "h2o-3.git/docker/Dockerfile.dev",
-        "h2o-3.git/docker/hadoop/cdh/Dockerfile",
-        "h2o-3.git/docker/hadoop/cdh/Dockerfile.kerberos",
-        "h2o-3.git/docker/hadoop/edge_node/Dockerfile",
-        "h2o-3.git/docker/hadoop/hdp/Dockerfile",
-        "h2o-3.git/docker/hadoop/hdp/Dockerfile.kerberos",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-base",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-build-base",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-build-hadoop",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-graalvm",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-jdk-8-base",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-jdk-others",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-jdk-others-base",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-k8s-test",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-k8s-test-h2o",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-mojocompat",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-python",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-python-base",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-r",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-r-base",
-        "h2o-3.git/docker/jenkins-images/Dockerfile-release",
-        "h2o-3.git/docker/jenkins-images/Dockerfile.dev",
-        "h2o-3.git/docker/public/Dockerfile-h2o-release",
-        "h2o-3.git/docker/xgb/centos/Dockerfile-centos-gpu",
-        "h2o-3.git/docker/xgb/centos/Dockerfile-centos-minimal",
-        "h2o-3.git/docker/xgb/centos/Dockerfile-centos-omp",
-        "h2o-3.git/docker/xgb/ubuntu/Dockerfile-ubuntu-gpu",
-        "h2o-3.git/docker/xgb/ubuntu/Dockerfile-ubuntu-minimal",
-        "h2o-3.git/docker/xgb/ubuntu/Dockerfile-ubuntu-omp",
-        "h2o-3.git/docker/xgb_build/Dockerfile-gpu-centos"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -45,6 +13,80 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "h2o-3.git/h2o-helm/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "h2o-3.git/h2o-helm/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 34,
+      "rootCount": 0,
+      "subFolderCount": 34,
+      "filepaths": [
+        "h2o-3.git/templates/emr/terraform/main.tf",
+        "h2o-3.git/templates/emr/terraform/outputs.tf",
+        "h2o-3.git/templates/emr/terraform/variables.tf",
+        "h2o-3.git/templates/emr/terraform/modules/emr/emr_ec2_role.tf",
+        "h2o-3.git/templates/emr/terraform/modules/emr/emr_role.tf",
+        "h2o-3.git/templates/emr/terraform/modules/emr/main.tf",
+        "h2o-3.git/templates/emr/terraform/modules/emr/outputs.tf",
+        "h2o-3.git/templates/emr/terraform/modules/emr/security_groups.tf",
+        "h2o-3.git/templates/emr/terraform/modules/emr/variables.tf",
+        "h2o-3.git/templates/emr/terraform/modules/network/main.tf",
+        "h2o-3.git/templates/emr/terraform/modules/network/outputs.tf",
+        "h2o-3.git/templates/emr/terraform/modules/network/variables.tf",
+        "h2o-3.git/templates/gcp/h2ocluster/terraform/main.tf",
+        "h2o-3.git/templates/gcp/h2ocluster/terraform/outputs.tf",
+        "h2o-3.git/templates/gcp/h2ocluster/terraform/provider.tf",
+        "h2o-3.git/templates/gcp/h2ocluster/terraform/terraform.tfvars",
+        "h2o-3.git/templates/gcp/h2ocluster/terraform/variables.tf",
+        "h2o-3.git/templates/gcp/h2ocluster/terraform/modules/h2ocluster/main.tf",
+        "h2o-3.git/templates/gcp/h2ocluster/terraform/modules/h2ocluster/outputs.tf",
+        "h2o-3.git/templates/gcp/h2ocluster/terraform/modules/h2ocluster/variables.tf",
+        "h2o-3.git/templates/gcp/network/main.tf",
+        "h2o-3.git/templates/gcp/network/outputs.tf",
+        "h2o-3.git/templates/gcp/network/provider.tf",
+        "h2o-3.git/templates/gcp/network/terraform.tfvars",
+        "h2o-3.git/templates/gcp/network/variables.tf",
+        "h2o-3.git/templates/gcp/network/modules/service-accounts/main.tf",
+        "h2o-3.git/templates/gcp/network/modules/service-accounts/outputs.tf",
+        "h2o-3.git/templates/gcp/network/modules/service-accounts/variables.tf",
+        "h2o-3.git/templates/gcp/network/modules/vpc/main.tf",
+        "h2o-3.git/templates/gcp/network/modules/vpc/outputs.tf",
+        "h2o-3.git/templates/gcp/network/modules/vpc/variables.tf",
+        "h2o-3.git/templates/gcp/network/modules/workspace/main.tf",
+        "h2o-3.git/templates/gcp/network/modules/workspace/outputs.tf",
+        "h2o-3.git/templates/gcp/network/modules/workspace/variables.tf"
+      ]
     }
   },
   "info": {

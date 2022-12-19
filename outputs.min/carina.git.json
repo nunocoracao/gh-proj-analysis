@@ -1,19 +1,71 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
-      "rootCount": 1,
-      "subFolderCount": 4,
-      "filepaths": [
-        "carina.git/Dockerfile",
-        "carina.git/debug/Dockerfile",
-        "carina.git/docs/runtime-container/Dockerfile",
-        "carina.git/kube-webhook-certgen/rootfs/Dockerfile",
-        "carina.git/scheduler/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "carina.git/config/certmanager/kustomization.yaml",
+        "carina.git/config/crd/kustomization.yaml",
+        "carina.git/config/default/kustomization.yaml",
+        "carina.git/config/manager/kustomization.yaml",
+        "carina.git/config/prometheus/kustomization.yaml",
+        "carina.git/config/rbac/kustomization.yaml",
+        "carina.git/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "carina.git/charts/Chart.yaml",
+        "carina.git/charts/charts/carina-scheduler/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "carina.git/charts/charts/carina-scheduler/templates/configmap.yaml",
+        "carina.git/charts/charts/carina-scheduler/templates/deployment.yaml",
+        "carina.git/charts/charts/carina-scheduler/templates/serviceaccount.yaml",
+        "carina.git/charts/templates/csi-service.yaml",
+        "carina.git/charts/templates/serviceaccount-csi-controller.yaml",
+        "carina.git/charts/templates/serviceaccount-csi-node.yaml",
+        "carina.git/config/rbac/auth_proxy_service.yaml",
+        "carina.git/config/webhook/service.yaml",
+        "carina.git/deploy/kubernetes/prometheus-service-monitor.yaml",
+        "carina.git/examples/kubernetes/deployment.yaml",
+        "carina.git/examples/kubernetes/deploymentspeedlimit.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,16 +1,86 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 2,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "flagger.git/Dockerfile",
-        "flagger.git/Dockerfile.loadtester"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "flagger.git/kustomize/apisix/kustomization.yaml",
+        "flagger.git/kustomize/appmesh/kustomization.yaml",
+        "flagger.git/kustomize/base/flagger/kustomization.yaml",
+        "flagger.git/kustomize/base/prometheus/kustomization.yaml",
+        "flagger.git/kustomize/contour/kustomization.yaml",
+        "flagger.git/kustomize/gatewayapi/kustomization.yaml",
+        "flagger.git/kustomize/istio/kustomization.yaml",
+        "flagger.git/kustomize/kubernetes/kustomization.yaml",
+        "flagger.git/kustomize/kuma/kustomization.yaml",
+        "flagger.git/kustomize/linkerd/kustomization.yaml",
+        "flagger.git/kustomize/osm/kustomization.yaml",
+        "flagger.git/kustomize/podinfo/kustomization.yaml",
+        "flagger.git/kustomize/tester/kustomization.yaml",
+        "flagger.git/test/kuma/kustomization.yaml",
+        "flagger.git/test/skipper/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "flagger.git/charts/flagger/Chart.yaml",
+        "flagger.git/charts/grafana/Chart.yaml",
+        "flagger.git/charts/loadtester/Chart.yaml",
+        "flagger.git/charts/podinfo/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 16,
+      "rootCount": 0,
+      "subFolderCount": 16,
+      "filepaths": [
+        "flagger.git/artifacts/flagger/deployment.yaml",
+        "flagger.git/charts/flagger/templates/deployment.yaml",
+        "flagger.git/charts/grafana/templates/deployment.yaml",
+        "flagger.git/charts/grafana/templates/service.yaml",
+        "flagger.git/charts/loadtester/templates/deployment.yaml",
+        "flagger.git/charts/loadtester/templates/service.yaml",
+        "flagger.git/charts/podinfo/templates/configmap.yaml",
+        "flagger.git/charts/podinfo/templates/deployment.yaml",
+        "flagger.git/charts/podinfo/templates/service.yaml",
+        "flagger.git/kustomize/base/flagger/deployment.yaml",
+        "flagger.git/kustomize/base/prometheus/deployment.yaml",
+        "flagger.git/kustomize/base/prometheus/service.yaml",
+        "flagger.git/kustomize/podinfo/deployment.yaml",
+        "flagger.git/kustomize/tester/deployment.yaml",
+        "flagger.git/kustomize/tester/service.yaml",
+        "flagger.git/test/workloads/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

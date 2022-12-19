@@ -1,16 +1,80 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "kubeasz.git/docs/deprecated/practice/go_web_app/Dockerfile",
-        "kubeasz.git/docs/deprecated/practice/go_web_app/Dockerfile-more"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "kubeasz.git/manifests/es-cluster/elasticsearch/Chart.yaml",
+        "kubeasz.git/manifests/jenkins/Chart.yaml",
+        "kubeasz.git/manifests/mariadb-cluster/mariadb/Chart.yaml",
+        "kubeasz.git/manifests/redis-cluster/redis-ha/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 26,
+      "rootCount": 0,
+      "subFolderCount": 26,
+      "filepaths": [
+        "kubeasz.git/manifests/efk/es-service.yaml",
+        "kubeasz.git/manifests/efk/fluentd-es-configmap.yaml",
+        "kubeasz.git/manifests/efk/kibana-deployment.yaml",
+        "kubeasz.git/manifests/efk/kibana-service.yaml",
+        "kubeasz.git/manifests/es-cluster/elasticsearch/templates/client-deployment.yaml",
+        "kubeasz.git/manifests/es-cluster/elasticsearch/templates/configmap.yaml",
+        "kubeasz.git/manifests/ingress/nginx-ingress/tcp-services-configmap.yaml",
+        "kubeasz.git/manifests/ingress/nginx-ingress/udp-services-configmap.yaml",
+        "kubeasz.git/manifests/jenkins/templates/jenkins-master-deployment.yaml",
+        "kubeasz.git/manifests/jenkins/templates/service-account.yaml",
+        "kubeasz.git/manifests/mariadb-cluster/mariadb/templates/initialization-configmap.yaml",
+        "kubeasz.git/manifests/mariadb-cluster/mariadb/templates/master-configmap.yaml",
+        "kubeasz.git/manifests/mariadb-cluster/mariadb/templates/slave-configmap.yaml",
+        "kubeasz.git/manifests/mysql-cluster/mysql-configmap.yaml",
+        "kubeasz.git/manifests/mysql-cluster/mysql-services.yaml",
+        "kubeasz.git/manifests/redis-cluster/redis-ha/templates/redis-ha-announce-service.yaml",
+        "kubeasz.git/manifests/redis-cluster/redis-ha/templates/redis-ha-configmap.yaml",
+        "kubeasz.git/manifests/redis-cluster/redis-ha/templates/redis-ha-exporter-script-configmap.yaml",
+        "kubeasz.git/manifests/redis-cluster/redis-ha/templates/redis-ha-service.yaml",
+        "kubeasz.git/manifests/redis-cluster/redis-ha/templates/redis-ha-serviceaccount.yaml",
+        "kubeasz.git/manifests/redis-cluster/redis-ha/templates/redis-ha-servicemonitor.yaml",
+        "kubeasz.git/manifests/redis-cluster/redis-ha/templates/redis-haproxy-deployment.yaml",
+        "kubeasz.git/manifests/redis-cluster/redis-ha/templates/redis-haproxy-service.yaml",
+        "kubeasz.git/manifests/redis-cluster/redis-ha/templates/redis-haproxy-serviceaccount.yaml",
+        "kubeasz.git/manifests/redis-cluster/redis-ha/templates/redis-haproxy-servicemonitor.yaml",
+        "kubeasz.git/manifests/redis-cluster/redis-ha/templates/tests/test-redis-ha-configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

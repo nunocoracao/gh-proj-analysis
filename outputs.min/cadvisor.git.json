@@ -1,17 +1,55 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
       "exist": true,
       "count": 3,
       "rootCount": 0,
       "subFolderCount": 3,
       "filepaths": [
-        "cadvisor.git/deploy/Dockerfile",
-        "cadvisor.git/deploy/Dockerfile.ppc64le",
-        "cadvisor.git/deploy/canary/Dockerfile"
+        "cadvisor.git/deploy/kubernetes/base/kustomization.yaml",
+        "cadvisor.git/deploy/kubernetes/overlays/examples/kustomization.yaml",
+        "cadvisor.git/deploy/kubernetes/overlays/examples_perf/kustomization.yaml"
       ]
     },
-    "composefile": {
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "cadvisor.git/deploy/kubernetes/base/serviceaccount.yaml",
+        "cadvisor.git/deploy/kubernetes/overlays/examples_perf/configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

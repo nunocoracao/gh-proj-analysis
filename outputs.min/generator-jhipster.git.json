@@ -2,17 +2,14 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 7,
-      "rootCount": 1,
-      "subFolderCount": 6,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
       "filepaths": [
-        "generator-jhipster.git/Dockerfile",
         "generator-jhipster.git/generators/docker/templates/src/main/docker/cassandra/Cassandra-Migration.Dockerfile.ejs",
         "generator-jhipster.git/generators/docker/templates/src/main/docker/couchbase/Couchbase.Dockerfile.ejs",
         "generator-jhipster.git/generators/docker/templates/src/main/docker/mongodb/MongoDB.Dockerfile.ejs",
-        "generator-jhipster.git/generators/docker/templates/src/main/docker/redis/Redis-Cluster.Dockerfile.ejs",
-        "generator-jhipster.git/generators/server/templates/Dockerfile",
-        "generator-jhipster.git/generators/server/templates/devcontainer/Dockerfile.ejs"
+        "generator-jhipster.git/generators/docker/templates/src/main/docker/redis/Redis-Cluster.Dockerfile.ejs"
       ]
     },
     "composefile": {
@@ -23,6 +20,56 @@
       "filepaths": [
         "generator-jhipster.git/generators/docker-compose/templates/docker-compose.yml.ejs"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "generator-jhipster.git/generators/kubernetes/templates/kustomize/kustomization.yml.ejs"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "generator-jhipster.git/generators/kubernetes-helm/templates/app/Chart.yml.ejs",
+        "generator-jhipster.git/generators/kubernetes-helm/templates/csvc/Chart.yml.ejs"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "generator-jhipster.git/generators/azure-app-service/templates/github/workflows/azure-app-service.yml.ejs",
+        "generator-jhipster.git/generators/kubernetes/templates/deployment.yml.ejs",
+        "generator-jhipster.git/generators/kubernetes/templates/service.yml.ejs",
+        "generator-jhipster.git/generators/kubernetes/templates/istio/virtual-service.yml.ejs",
+        "generator-jhipster.git/generators/kubernetes/templates/registry/application-configmap.yml.ejs",
+        "generator-jhipster.git/generators/kubernetes-knative/templates/service.yml.ejs",
+        "generator-jhipster.git/generators/kubernetes-knative/templates/istio/virtual-service.yml.ejs",
+        "generator-jhipster.git/generators/openshift/templates/deployment.yml.ejs",
+        "generator-jhipster.git/generators/openshift/templates/registry/application-configmap.yml.ejs"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

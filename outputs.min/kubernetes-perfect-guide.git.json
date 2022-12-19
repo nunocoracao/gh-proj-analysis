@@ -1,18 +1,108 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 4,
-      "filepaths": [
-        "kubernetes-perfect-guide.git/samples/chapter01/Dockerfile",
-        "kubernetes-perfect-guide.git/samples/chapter01/Dockerfile-MultiStage",
-        "kubernetes-perfect-guide.git/samples/chapter01/Dockerfile-Scratch",
-        "kubernetes-perfect-guide.git/samples/chapter17/skaffold/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/commonmeta-sample/kustomization.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/generate-sample/kustomization.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/image-sample/kustomization.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/name-sample/kustomization.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/namespace-sample/kustomization.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/production/kustomization.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/resources-sample/kustomization.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/role-sample/kustomization.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/staging/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 49,
+      "rootCount": 0,
+      "subFolderCount": 49,
+      "filepaths": [
+        "kubernetes-perfect-guide.git/samples/chapter04/sample-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter05/sample-deployment-params.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter05/sample-deployment-recreate.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter05/sample-deployment-rollingupdate.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter05/sample-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter06/sample-deployment-servicelinks.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter06/sample-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter06/sample-named-port-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter06/sample-named-port-service.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter06/sample-service-topology.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter07/sample-configmap-binary-webserver.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter07/sample-configmap-binary.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter07/sample-configmap-immutable.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter07/sample-configmap-multi-env.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter07/sample-configmap-multi-volume.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter07/sample-configmap-scripts.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter07/sample-configmap-single-env.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter07/sample-configmap-single-volume.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter07/sample-configmap.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter09/sample-hpa-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter09/sample-vpa-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter10/sample-deployment-readinessgate.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter11/sample-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter12/sample-matchexpressions-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter13/sample-serviceaccount-noautomount-pod.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter13/sample-serviceaccount-noautomount.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter13/sample-serviceaccount-pod.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter13/sample-serviceaccount-pullsecret-pod.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter13/sample-serviceaccount-pullsecret.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter13/sample-serviceaccount.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/commonmeta-sample/sample-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/generate-sample/sample-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/image-sample/sample-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/name-sample/sample-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/namespace-sample/sample-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/resources-sample/sample-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter14/kustomize/role-sample/sample-serviceaccount.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter17/argocd/manifests/sample-cd-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter17/conftest/fail-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter17/conftest/success-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter17/kubeval/fail-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter17/opa-gatekeeper/uniqueserviceselector/sync-service.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter17/skaffold/dev-skaffold-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter17/skaffold/dev-skaffold-service.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter17/skaffold/skaffold-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter17/skaffold/skaffold-service.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter17/telepresence/replace-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter17/telepresence/sample-deployment.yaml",
+        "kubernetes-perfect-guide.git/samples/chapter18/sample-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

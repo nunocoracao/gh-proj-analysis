@@ -1,16 +1,60 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "origin-ci-tool.git/oct/ansible/openshift-ansible/Dockerfile",
-        "origin-ci-tool.git/oct/ansible/openshift-ansible/roles/dns/templates/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "origin-ci-tool.git/oct/ansible/openshift-ansible/playbooks/aws/openshift-cluster/service.yml",
+        "origin-ci-tool.git/oct/ansible/openshift-ansible/playbooks/common/openshift-cluster/upgrades/create_service_signer_cert.yml",
+        "origin-ci-tool.git/oct/ansible/openshift-ansible/playbooks/common/openshift-etcd/service.yml",
+        "origin-ci-tool.git/oct/ansible/openshift-ansible/playbooks/common/openshift-loadbalancer/service.yml",
+        "origin-ci-tool.git/oct/ansible/openshift-ansible/playbooks/common/openshift-master/restart_services.yml",
+        "origin-ci-tool.git/oct/ansible/openshift-ansible/playbooks/common/openshift-master/service.yml",
+        "origin-ci-tool.git/oct/ansible/openshift-ansible/playbooks/common/openshift-nfs/service.yml",
+        "origin-ci-tool.git/oct/ansible/openshift-ansible/playbooks/common/openshift-node/service.yml",
+        "origin-ci-tool.git/oct/ansible/openshift-ansible/playbooks/gce/openshift-cluster/service.yml",
+        "origin-ci-tool.git/oct/ansible/openshift-ansible/playbooks/libvirt/openshift-cluster/service.yml",
+        "origin-ci-tool.git/oct/ansible/openshift-ansible/roles/nuage_master/tasks/serviceaccount.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

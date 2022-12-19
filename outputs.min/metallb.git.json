@@ -1,17 +1,80 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 3,
-      "filepaths": [
-        "metallb.git/configmaptocrs/Dockerfile",
-        "metallb.git/controller/Dockerfile",
-        "metallb.git/speaker/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "metallb.git/config/controllers/kustomization.yaml",
+        "metallb.git/config/crd/kustomization.yaml",
+        "metallb.git/config/frr/kustomization.yaml",
+        "metallb.git/config/native/kustomization.yaml",
+        "metallb.git/config/prometheus-frr/kustomization.yaml",
+        "metallb.git/config/prometheus-native/kustomization.yaml",
+        "metallb.git/config/rbac/kustomization.yaml",
+        "metallb.git/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "metallb.git/charts/metallb/Chart.yaml",
+        "metallb.git/charts/metallb/charts/crds/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "metallb.git/charts/metallb/templates/service-accounts.yaml",
+        "metallb.git/charts/metallb/templates/servicemonitor.yaml",
+        "metallb.git/config/rbac/service-accounts.yaml",
+        "metallb.git/config/webhook/service.yaml",
+        "metallb.git/configsamples/deployment_bgp.yaml",
+        "metallb.git/configsamples/deployment_l2.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/kubernetes-serviceMonitorApiserver.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/kubernetes-serviceMonitorCoreDNS.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/kubernetes-serviceMonitorKubeControllerManager.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/kubernetes-serviceMonitorKubeScheduler.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/kubernetes-serviceMonitorKubelet.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/prometheus-operator-serviceMonitor.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/prometheus-service.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/prometheus-serviceAccount.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/prometheus-serviceMonitor.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/setup/prometheus-operator-0servicemonitorCustomResourceDefinition.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/setup/prometheus-operator-deployment.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/setup/prometheus-operator-service.yaml",
+        "metallb.git/dev-env/kube-prometheus/manifests/setup/prometheus-operator-serviceAccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

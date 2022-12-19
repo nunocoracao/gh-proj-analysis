@@ -2,68 +2,20 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 51,
-      "rootCount": 1,
-      "subFolderCount": 50,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
       "filepaths": [
-        "devspace.git/Dockerfile",
         "devspace.git/docs/pages/configuration/_partials/v2beta1/images/appendDockerfileInstructions.mdx",
-        "devspace.git/docs/pages/configuration/_partials/v2beta1/images/dockerfile.mdx",
         "devspace.git/docs/versioned_docs/version-4.x/configuration/images/append-dockerfile-instructions.mdx",
-        "devspace.git/docs/versioned_docs/version-4.x/configuration/images/dockerfile-context.mdx",
-        "devspace.git/docs/versioned_docs/version-5.x/configuration/images/append-dockerfile-instructions.mdx",
-        "devspace.git/docs/versioned_docs/version-5.x/configuration/images/dockerfile-context.mdx",
-        "devspace.git/e2e/tests/build/testdata/buildkit/Dockerfile",
-        "devspace.git/e2e/tests/build/testdata/custom_build/Dockerfile",
-        "devspace.git/e2e/tests/build/testdata/docker/Dockerfile",
-        "devspace.git/e2e/tests/build/testdata/docker-skip-dependency/Dockerfile",
-        "devspace.git/e2e/tests/build/testdata/dockerignore/Dockerfile",
-        "devspace.git/e2e/tests/build/testdata/dockerignore/Dockerfile.dockerignore",
-        "devspace.git/e2e/tests/build/testdata/dockerignore_context/dockerfile",
-        "devspace.git/e2e/tests/build/testdata/dockerignore_rel_path/app/Dockerfile.dev",
-        "devspace.git/e2e/tests/build/testdata/dockerignore_rel_path/app/Dockerfile.dev.dockerignore",
-        "devspace.git/e2e/tests/build/testdata/kaniko/Dockerfile",
-        "devspace.git/e2e/tests/config/testdata/runtime-variables/Dockerfile",
-        "devspace.git/e2e/tests/devspacehelper/testdata/curl/Dockerfile",
-        "devspace.git/e2e/tests/devspacehelper/testdata/upload/Dockerfile",
-        "devspace.git/e2e/tests/hooks/testdata/error/Dockerfile",
-        "devspace.git/e2e/tests/localregistry/testdata/local-registry-buildkit/Dockerfile",
-        "devspace.git/e2e/tests/localregistry/testdata/local-registry-disabled/Dockerfile",
-        "devspace.git/e2e/tests/localregistry/testdata/local-registry-docker/Dockerfile",
-        "devspace.git/e2e/tests/localregistry/testdata/local-registry-image-selectors/Dockerfile",
-        "devspace.git/e2e/tests/localregistry/testdata/local-registry-kaniko/Dockerfile",
-        "devspace.git/e2e/tests/localregistry/testdata/local-registry-kubectl/Dockerfile",
-        "devspace.git/e2e/tests/localregistry/testdata/local-registry-persistence/Dockerfile",
-        "devspace.git/e2e/tests/localregistry/testdata/local-registry-runtime-variables/Dockerfile",
-        "devspace.git/examples/buildkit/Dockerfile",
-        "devspace.git/examples/buildkit-in-cluster/Dockerfile",
-        "devspace.git/examples/custom-builder/custom/Dockerfile",
-        "devspace.git/examples/dependencies/dependency1/Dockerfile",
-        "devspace.git/examples/hot-reload-container-restart/Dockerfile",
-        "devspace.git/examples/kaniko/Dockerfile",
-        "devspace.git/examples/kind/Dockerfile",
-        "devspace.git/examples/kustomize/Dockerfile",
-        "devspace.git/examples/microservices/node/Dockerfile",
-        "devspace.git/examples/microservices/php/Dockerfile",
-        "devspace.git/examples/php-mysql-example/Dockerfile",
-        "devspace.git/examples/quickstart-kubectl/Dockerfile",
-        "devspace.git/examples/redeploy-instead-of-hot-reload/Dockerfile",
-        "devspace.git/pkg/devspace/compose/testdata/build_dockerfile",
-        "devspace.git/pkg/devspace/compose/testdata/depends_on_with_build/backend/Dockerfile",
-        "devspace.git/pkg/util/dockerfile",
-        "devspace.git/vendor/github.com/creack/pty/Dockerfile.golang",
-        "devspace.git/vendor/github.com/creack/pty/Dockerfile.riscv",
-        "devspace.git/vendor/github.com/docker/distribution/Dockerfile",
-        "devspace.git/vendor/github.com/moby/buildkit/frontend/dockerfile",
-        "devspace.git/vendor/github.com/nxadm/tail/Dockerfile",
-        "devspace.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "devspace.git/docs/versioned_docs/version-5.x/configuration/images/append-dockerfile-instructions.mdx"
       ]
     },
     "composefile": {
       "exist": true,
-      "count": 34,
+      "count": 35,
       "rootCount": 0,
-      "subFolderCount": 34,
+      "subFolderCount": 35,
       "filepaths": [
         "devspace.git/e2e/tests/init/testdata/docker-compose/docker-compose.yaml",
         "devspace.git/pkg/devspace/compose/testdata/basic/docker-compose.yaml",
@@ -71,6 +23,7 @@
         "devspace.git/pkg/devspace/compose/testdata/build_args_list/docker-compose.yaml",
         "devspace.git/pkg/devspace/compose/testdata/build_args_map/docker-compose.yaml",
         "devspace.git/pkg/devspace/compose/testdata/build_context/docker-compose.yaml",
+        "devspace.git/pkg/devspace/compose/testdata/build_dockerfile/docker-compose.yaml",
         "devspace.git/pkg/devspace/compose/testdata/build_entry_point/docker-compose.yaml",
         "devspace.git/pkg/devspace/compose/testdata/build_image/docker-compose.yaml",
         "devspace.git/pkg/devspace/compose/testdata/build_image_tag/docker-compose.yaml",
@@ -99,6 +52,76 @@
         "devspace.git/pkg/devspace/compose/testdata/volumes-depends_on/docker-compose.yaml",
         "devspace.git/pkg/devspace/compose/testdata/volumes-long/docker-compose.yaml",
         "devspace.git/pkg/devspace/compose/testdata/volumes-short/docker-compose.yaml"
+      ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "devspace.git/e2e/tests/deploy/testdata/kustomize/kube/kustomization.yaml",
+        "devspace.git/e2e/tests/init/testdata/new/kustomization/kustomization.yaml",
+        "devspace.git/examples/kustomize/kube/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "devspace.git/e2e/tests/deploy/testdata/different_namespaces/chart/Chart.yaml",
+        "devspace.git/e2e/tests/init/testdata/new/chart/Chart.yaml",
+        "devspace.git/examples/microservices/php/chart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 23,
+      "rootCount": 0,
+      "subFolderCount": 23,
+      "filepaths": [
+        "devspace.git/e2e/tests/config/testdata/profile-patches/replace-and-add-deployments.yaml",
+        "devspace.git/e2e/tests/deploy/testdata/different_namespaces/chart/templates/service1.yaml",
+        "devspace.git/e2e/tests/deploy/testdata/different_namespaces/chart/templates/service2.yaml",
+        "devspace.git/e2e/tests/deploy/testdata/different_namespaces/kube/service1.yaml",
+        "devspace.git/e2e/tests/deploy/testdata/kubectl/deployment.yaml",
+        "devspace.git/e2e/tests/deploy/testdata/kubectl/service.yaml",
+        "devspace.git/e2e/tests/deploy/testdata/kustomize/kube/service.yaml",
+        "devspace.git/e2e/tests/init/testdata/new/chart/templates/deployment.yaml",
+        "devspace.git/e2e/tests/init/testdata/new/chart/templates/service.yaml",
+        "devspace.git/e2e/tests/init/testdata/new/kustomization/deployment.yaml",
+        "devspace.git/e2e/tests/init/testdata/new/manifests/deployment.yaml",
+        "devspace.git/e2e/tests/localregistry/testdata/local-registry-kubectl/manifests/deployment.yaml",
+        "devspace.git/e2e/tests/render/testdata/kubectl/deployment.yaml",
+        "devspace.git/e2e/tests/render/testdata/kubectl/service.yaml",
+        "devspace.git/examples/custom-builder/kube/deployment.yaml",
+        "devspace.git/examples/custom-builder/kube/service.yaml",
+        "devspace.git/examples/kustomize/kube/deployment.yaml",
+        "devspace.git/examples/kustomize/kube/service.yaml",
+        "devspace.git/examples/microservices/node/kube/deployment.yaml",
+        "devspace.git/examples/microservices/php/chart/templates/deployment.yaml",
+        "devspace.git/examples/microservices/php/chart/templates/service.yaml",
+        "devspace.git/examples/quickstart-kubectl/kube/deployment.yaml",
+        "devspace.git/examples/quickstart-kubectl/kube/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "devspace.git/vendor/github.com/AlecAivazis/survey/v2/_tasks.hcl",
+        "devspace.git/vendor/github.com/docker/distribution/docker-bake.hcl"
       ]
     }
   },

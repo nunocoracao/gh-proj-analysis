@@ -1,21 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 9,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 9,
-      "filepaths": [
-        "laf.git/core/controllers/database/Dockerfile",
-        "laf.git/core/controllers/gateway/Dockerfile",
-        "laf.git/core/controllers/oss/Dockerfile",
-        "laf.git/docs/Dockerfile",
-        "laf.git/runtimes/nodejs/Dockerfile",
-        "laf.git/runtimes/nodejs/Dockerfile.init",
-        "laf.git/server/Dockerfile",
-        "laf.git/server/Dockerfile.alpine",
-        "laf.git/web/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -25,6 +15,116 @@
       "filepaths": [
         "laf.git/deploy/docker-compose/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "laf.git/core/controllers/database/config/crd/kustomization.yaml",
+        "laf.git/core/controllers/database/config/default/kustomization.yaml",
+        "laf.git/core/controllers/database/config/manager/kustomization.yaml",
+        "laf.git/core/controllers/database/config/prometheus/kustomization.yaml",
+        "laf.git/core/controllers/database/config/rbac/kustomization.yaml",
+        "laf.git/core/controllers/gateway/config/crd/kustomization.yaml",
+        "laf.git/core/controllers/gateway/config/default/kustomization.yaml",
+        "laf.git/core/controllers/gateway/config/manager/kustomization.yaml",
+        "laf.git/core/controllers/gateway/config/prometheus/kustomization.yaml",
+        "laf.git/core/controllers/gateway/config/rbac/kustomization.yaml",
+        "laf.git/core/controllers/oss/config/crd/kustomization.yaml",
+        "laf.git/core/controllers/oss/config/default/kustomization.yaml",
+        "laf.git/core/controllers/oss/config/manager/kustomization.yaml",
+        "laf.git/core/controllers/oss/config/prometheus/kustomization.yaml",
+        "laf.git/core/controllers/oss/config/rbac/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "laf.git/deploy/build/charts/laf/Chart.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/Chart.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/apisix-dashboard/Chart.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/apisix-ingress-controller/Chart.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/etcd/Chart.yaml",
+        "laf.git/deploy/build/charts/laf/charts/casdoor/Chart.yaml",
+        "laf.git/deploy/build/charts/laf/charts/casdoor/charts/postgresql/Chart.yaml",
+        "laf.git/deploy/build/charts/laf/charts/laf-server/Chart.yaml",
+        "laf.git/deploy/build/charts/laf/charts/laf-web/Chart.yaml",
+        "laf.git/deploy/build/charts/laf/charts/minio/Chart.yaml",
+        "laf.git/deploy/build/charts/laf/charts/mongodb/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 46,
+      "rootCount": 0,
+      "subFolderCount": 46,
+      "filepaths": [
+        "laf.git/core/controllers/database/config/rbac/auth_proxy_service.yaml",
+        "laf.git/core/controllers/database/config/rbac/service_account.yaml",
+        "laf.git/core/controllers/gateway/config/rbac/auth_proxy_service.yaml",
+        "laf.git/core/controllers/gateway/config/rbac/service_account.yaml",
+        "laf.git/core/controllers/oss/config/rbac/auth_proxy_service.yaml",
+        "laf.git/core/controllers/oss/config/rbac/service_account.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/apisix-dashboard/templates/configmap.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/apisix-dashboard/templates/deployment.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/apisix-dashboard/templates/service.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/apisix-dashboard/templates/serviceaccount.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/apisix-ingress-controller/templates/configmap.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/apisix-ingress-controller/templates/deployment.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/apisix-ingress-controller/templates/service-account.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/apisix-ingress-controller/templates/service.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/apisix-ingress-controller/templates/servicemonitor.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/etcd/templates/deployment.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/etcd/templates/service.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/charts/etcd/templates/serviceaccount.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/templates/configmap.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/templates/deployment.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/templates/service-admin.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/templates/service-gateway.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/templates/service-monitor.yaml",
+        "laf.git/deploy/build/charts/laf/charts/apisix/templates/serviceaccount.yaml",
+        "laf.git/deploy/build/charts/laf/charts/casdoor/charts/postgresql/templates/deployment.yaml",
+        "laf.git/deploy/build/charts/laf/charts/casdoor/charts/postgresql/templates/service.yaml",
+        "laf.git/deploy/build/charts/laf/charts/casdoor/charts/postgresql/templates/serviceaccount.yaml",
+        "laf.git/deploy/build/charts/laf/charts/casdoor/templates/deployment.yaml",
+        "laf.git/deploy/build/charts/laf/charts/casdoor/templates/service.yaml",
+        "laf.git/deploy/build/charts/laf/charts/casdoor/templates/serviceaccount.yaml",
+        "laf.git/deploy/build/charts/laf/charts/laf-server/templates/deployment.yaml",
+        "laf.git/deploy/build/charts/laf/charts/laf-server/templates/service.yaml",
+        "laf.git/deploy/build/charts/laf/charts/laf-server/templates/serviceaccount.yaml",
+        "laf.git/deploy/build/charts/laf/charts/laf-web/templates/deployment.yaml",
+        "laf.git/deploy/build/charts/laf/charts/laf-web/templates/service.yaml",
+        "laf.git/deploy/build/charts/laf/charts/laf-web/templates/serviceaccount.yaml",
+        "laf.git/deploy/build/charts/laf/charts/minio/templates/configmap.yaml",
+        "laf.git/deploy/build/charts/laf/charts/minio/templates/console-service.yaml",
+        "laf.git/deploy/build/charts/laf/charts/minio/templates/deployment.yaml",
+        "laf.git/deploy/build/charts/laf/charts/minio/templates/service.yaml",
+        "laf.git/deploy/build/charts/laf/charts/minio/templates/serviceaccount.yaml",
+        "laf.git/deploy/build/charts/laf/charts/minio/templates/servicemonitor.yaml",
+        "laf.git/deploy/build/charts/laf/charts/mongodb/templates/deployment.yaml",
+        "laf.git/deploy/build/charts/laf/charts/mongodb/templates/service-dev.yaml",
+        "laf.git/deploy/build/charts/laf/charts/mongodb/templates/service.yaml",
+        "laf.git/deploy/build/charts/laf/charts/mongodb/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

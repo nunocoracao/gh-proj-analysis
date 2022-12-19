@@ -1,17 +1,56 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
-      "rootCount": 1,
-      "subFolderCount": 2,
-      "filepaths": [
-        "velero.git/Dockerfile",
-        "velero.git/hack/build-image/Dockerfile",
-        "velero.git/site/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "velero.git/design/CLI/PoC/base/kustomization.yaml",
+        "velero.git/design/CLI/PoC/overlays/plugins/kustomization.yaml",
+        "velero.git/tilt-resources/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "velero.git/design/CLI/PoC/base/deployment.yaml",
+        "velero.git/examples/minio/00-minio-deployment.yaml",
+        "velero.git/tilt-resources/examples/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

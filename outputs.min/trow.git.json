@@ -1,19 +1,58 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 5,
-      "filepaths": [
-        "trow.git/docker/Dockerfile",
-        "trow.git/docker/Dockerfile.notls",
-        "trow.git/docker/Dockerfile.test",
-        "trow.git/quick-install/copy-certs/Dockerfile",
-        "trow.git/quick-install/trow-init-pod/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "trow.git/install/base/kustomization.yaml",
+        "trow.git/install/overlays/cert-manager-nginx/kustomization.yaml",
+        "trow.git/install/overlays/example-overlay/kustomization.yaml",
+        "trow.git/install/overlays/gke/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "trow.git/charts/trow/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "trow.git/charts/trow/templates/service.yaml",
+        "trow.git/install/base/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

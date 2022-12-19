@@ -1,15 +1,54 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
       "exist": true,
       "count": 1,
       "rootCount": 0,
       "subFolderCount": 1,
       "filepaths": [
-        "kubeview.git/build/Dockerfile"
+        "kubeview.git/charts/kubeview/Chart.yaml"
       ]
     },
-    "composefile": {
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "kubeview.git/charts/kubeview/templates/deployment.yaml",
+        "kubeview.git/charts/kubeview/templates/service-account.yaml",
+        "kubeview.git/charts/kubeview/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

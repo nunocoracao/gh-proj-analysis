@@ -1,16 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 4,
-      "filepaths": [
-        "telepresence.git/base-image/Dockerfile",
-        "telepresence.git/build-aux/Dockerfile.winbuild",
-        "telepresence.git/integration_test/testdata/echo-server/Dockerfile",
-        "telepresence.git/integration_test/testdata/udp-echo/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -18,6 +13,57 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "telepresence.git/charts/telepresence/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "telepresence.git/charts/telepresence/templates/agent-configmap.yaml",
+        "telepresence.git/charts/telepresence/templates/client-configmap.yaml",
+        "telepresence.git/charts/telepresence/templates/deployment.yaml",
+        "telepresence.git/charts/telepresence/templates/service.yaml",
+        "telepresence.git/charts/telepresence/templates/trafficManagerRbac/service-account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "telepresence.git/test-infra/aws-okd/dns/dns.tf",
+        "telepresence.git/test-infra/aws-vpn/dns.tf",
+        "telepresence.git/test-infra/aws-vpn/eks.tf",
+        "telepresence.git/test-infra/aws-vpn/locals.tf",
+        "telepresence.git/test-infra/aws-vpn/network.tf",
+        "telepresence.git/test-infra/aws-vpn/provider.tf",
+        "telepresence.git/test-infra/aws-vpn/vpn.tf"
+      ]
     }
   },
   "info": {

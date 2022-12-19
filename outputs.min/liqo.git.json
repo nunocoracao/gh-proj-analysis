@@ -1,18 +1,73 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 4,
-      "filepaths": [
-        "liqo.git/build/cert-creator/Dockerfile",
-        "liqo.git/build/common/Dockerfile",
-        "liqo.git/build/liqo-test/Dockerfile",
-        "liqo.git/build/liqonet/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "liqo.git/examples/quick-start/manifests/demo-application/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "liqo.git/deployments/liqo/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 20,
+      "rootCount": 0,
+      "subFolderCount": 20,
+      "filepaths": [
+        "liqo.git/deployments/liqo/templates/liqo-auth-deployment.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-auth-service.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-clusterid-configmap.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-controller-manager-deployment.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-controller-manager-service.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-crd-replicator-deployment.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-discovery-deployment.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-gateway-deployment.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-gateway-service.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-gateway-servicemonitor.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-metric-agent-apiservice.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-metric-agent-deployment.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-metric-agent-service.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-network-manager-deployment.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-network-manager-service.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-proxy-configmap.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-proxy-deployment.yaml",
+        "liqo.git/deployments/liqo/templates/liqo-proxy-service.yaml",
+        "liqo.git/examples/global-ingress/manifests/edge/deployment.yaml",
+        "liqo.git/examples/global-ingress/manifests/edge/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

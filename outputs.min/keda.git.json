@@ -2,17 +2,11 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 7,
-      "rootCount": 2,
-      "subFolderCount": 5,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
       "filepaths": [
-        "keda.git/Dockerfile",
-        "keda.git/Dockerfile.adapter",
-        "keda.git/.devcontainer/Dockerfile",
-        "keda.git/tools/build-tools.Dockerfile",
-        "keda.git/vendor/github.com/Shopify/sarama/Dockerfile.kafka",
-        "keda.git/vendor/github.com/nxadm/tail/Dockerfile",
-        "keda.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "keda.git/tools/build-tools.Dockerfile"
       ]
     },
     "composefile": {
@@ -22,6 +16,59 @@
       "subFolderCount": 1,
       "filepaths": [
         "keda.git/vendor/github.com/Shopify/sarama/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "keda.git/config/crd/kustomization.yaml",
+        "keda.git/config/default/kustomization.yaml",
+        "keda.git/config/general/kustomization.yaml",
+        "keda.git/config/manager/kustomization.yaml",
+        "keda.git/config/metrics-server/kustomization.yaml",
+        "keda.git/config/prometheus/kustomization.yaml",
+        "keda.git/config/rbac/kustomization.yaml",
+        "keda.git/config/samples/kustomization.yaml",
+        "keda.git/config/service_account/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "keda.git/config/manager/service.yaml",
+        "keda.git/config/metrics-server/api_service.yaml",
+        "keda.git/config/metrics-server/deployment.yaml",
+        "keda.git/config/metrics-server/service.yaml",
+        "keda.git/config/service_account/service_account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "keda.git/vendor/github.com/Azure/azure-event-hubs-go/v3/azuredeploy.tf"
       ]
     }
   },

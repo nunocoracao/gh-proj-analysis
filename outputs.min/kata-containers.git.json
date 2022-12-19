@@ -1,36 +1,61 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 22,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 22,
-      "filepaths": [
-        "kata-containers.git/ci/openshift-ci/images/Dockerfile.buildroot",
-        "kata-containers.git/src/runtime/vendor/golang.org/x/net/http2/Dockerfile",
-        "kata-containers.git/tools/osbuilder/dockerfiles",
-        "kata-containers.git/tools/osbuilder/dracut/Dockerfile.in",
-        "kata-containers.git/tools/osbuilder/image-builder/Dockerfile",
-        "kata-containers.git/tools/osbuilder/rootfs-builder/alpine/Dockerfile.in",
-        "kata-containers.git/tools/osbuilder/rootfs-builder/centos/Dockerfile.in",
-        "kata-containers.git/tools/osbuilder/rootfs-builder/clearlinux/Dockerfile.in",
-        "kata-containers.git/tools/osbuilder/rootfs-builder/debian/Dockerfile.in",
-        "kata-containers.git/tools/osbuilder/rootfs-builder/template/Dockerfile.template",
-        "kata-containers.git/tools/osbuilder/rootfs-builder/ubuntu/Dockerfile.in",
-        "kata-containers.git/tools/packaging/kata-deploy/Dockerfile",
-        "kata-containers.git/tools/packaging/kata-deploy/action/Dockerfile",
-        "kata-containers.git/tools/packaging/kata-deploy/local-build/dockerbuild/Dockerfile",
-        "kata-containers.git/tools/packaging/kata-monitor/Dockerfile",
-        "kata-containers.git/tools/packaging/static-build/kernel/Dockerfile",
-        "kata-containers.git/tools/packaging/static-build/ovmf/Dockerfile",
-        "kata-containers.git/tools/packaging/static-build/qemu/Dockerfile",
-        "kata-containers.git/tools/packaging/static-build/shim-v2/Dockerfile",
-        "kata-containers.git/tools/packaging/static-build/td-shim/Dockerfile",
-        "kata-containers.git/tools/packaging/static-build/virtiofsd/gnu/Dockerfile",
-        "kata-containers.git/tools/packaging/static-build/virtiofsd/musl/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "kata-containers.git/tools/packaging/kata-deploy/kata-cleanup/base/kustomization.yaml",
+        "kata-containers.git/tools/packaging/kata-deploy/kata-cleanup/overlays/k3s/kustomization.yaml",
+        "kata-containers.git/tools/packaging/kata-deploy/kata-cleanup/overlays/rke2/kustomization.yaml",
+        "kata-containers.git/tools/packaging/kata-deploy/kata-deploy/base/kustomization.yaml",
+        "kata-containers.git/tools/packaging/kata-deploy/kata-deploy/overlays/k3s/kustomization.yaml",
+        "kata-containers.git/tools/packaging/kata-deploy/kata-deploy/overlays/rke2/kustomization.yaml",
+        "kata-containers.git/tools/packaging/kata-deploy/kata-rbac/base/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "kata-containers.git/tools/packaging/kata-deploy/examples/nginx-deployment-clh.yaml",
+        "kata-containers.git/tools/packaging/kata-deploy/examples/nginx-deployment-dragonball.yaml",
+        "kata-containers.git/tools/packaging/kata-deploy/examples/nginx-deployment-fc.yaml",
+        "kata-containers.git/tools/packaging/kata-deploy/examples/nginx-deployment-qemu.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

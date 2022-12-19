@@ -1,14 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "docker-jenkins-bootstrap.git/docker/jenkins/agent/Dockerfile",
-        "docker-jenkins-bootstrap.git/docker/jenkins/templates/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -18,6 +15,57 @@
       "filepaths": [
         "docker-jenkins-bootstrap.git/docker/jenkins/templates/docker-compose.yml",
         "docker-jenkins-bootstrap.git/docker/traefik/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "docker-jenkins-bootstrap.git/terraform/base/common.tf",
+        "docker-jenkins-bootstrap.git/terraform/base/state_bucket.tf",
+        "docker-jenkins-bootstrap.git/terraform/common/backend.tf",
+        "docker-jenkins-bootstrap.git/terraform/common/common.tf",
+        "docker-jenkins-bootstrap.git/terraform/compute/backend.tf",
+        "docker-jenkins-bootstrap.git/terraform/compute/common.tf",
+        "docker-jenkins-bootstrap.git/terraform/compute/dns.tf",
+        "docker-jenkins-bootstrap.git/terraform/compute/firewall.tf",
+        "docker-jenkins-bootstrap.git/terraform/compute/instance.tf",
+        "docker-jenkins-bootstrap.git/terraform/compute/outputs.tf",
+        "docker-jenkins-bootstrap.git/terraform/compute/remote_state.tf",
+        "docker-jenkins-bootstrap.git/terraform/network/backend.tf",
+        "docker-jenkins-bootstrap.git/terraform/network/common.tf",
+        "docker-jenkins-bootstrap.git/terraform/network/dns.tf",
+        "docker-jenkins-bootstrap.git/terraform/network/outputs.tf"
       ]
     }
   },

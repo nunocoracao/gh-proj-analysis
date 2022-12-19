@@ -1,15 +1,93 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "servicecomb-samples.git/ServiceComb-SpringMVC/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 44,
+      "rootCount": 0,
+      "subFolderCount": 44,
+      "filepaths": [
+        "servicecomb-samples.git/ServiceComb-SpringMVC/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-deployment-samples/war-external-tomcat/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/demo-schema/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/dynamic-config-tests/src/test/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/it-common/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/it-consumer/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/it-edge/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/it-producer/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/it-producer-deploy-springboot2-servlet/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/it-producer-deploy-springboot2-standalone/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/jaxrs-tests/src/test/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/pojo-test/src/test/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/spring-jaxrs-tests/src/test/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/spring-pojo-connection-limit-test/src/test/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/spring-pojo-tests/src/test/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/springmvc-tests/connection-limit/src/test/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/springmvc-tests/general/src/test/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/springmvc-tests/general-with-springboot/src/test/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/springmvc-tests/simplified-mapping/src/test/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/springmvc-tests/simplified-mapping-with-springboot/src/test/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-integration-tests/tracing-tests/src/test/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-perfermance/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/auth-sample/auth-consumer/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/auth-sample/auth-provider/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/codefirst-sample/codefirst-consumer/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/codefirst-sample/codefirst-provider/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/config-apollo-sample/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/custom-handler-sample/custom-handler-consumer/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/custom-handler-sample/custom-handler-provider/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/jaxrs-sample/jaxrs-consumer/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/jaxrs-sample/jaxrs-provider/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/local-service-registry/local-registry-client/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/local-service-registry/local-registry-server/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/pojo-sample/pojo-consumer/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/pojo-sample/pojo-provider/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/springmvc-sample/springmvc-consumer/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/springmvc-sample/springmvc-provider/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/trust-sample/customer/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/trust-sample/hacker/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/trust-sample/store/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/java-chassis-samples/use-log4j2-sample/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/porter_lightweight/file-service/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/porter_lightweight/gateway-service/src/main/resources/microservice.yaml",
+        "servicecomb-samples.git/porter_lightweight/user-service/src/main/resources/microservice.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

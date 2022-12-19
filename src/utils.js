@@ -256,7 +256,7 @@ module.exports = {
                 struct[i].isDockerfile = struct[i].name.match(dockerfile_regex) ? true : false;
                 struct[i].isComposefile = struct[i].name.match(compose_regex) ? true : false;
                 struct[i].isKustomize = struct[i].name.match(kustomize_regex) ? true : false;
-                struct[i].isHelm = struct[i].name.match(helm_regex) ? true : false;
+                struct[i].isHelm = !struct[i].isComposefile && struct[i].name.match(helm_regex) ? true : false;
                 if (!struct[i].isDockerfile &&
                     !struct[i].isComposefile &&
                     !struct[i].isHelm &&

@@ -1,16 +1,61 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "rook.git/images/ceph/Dockerfile",
-        "rook.git/tests/scripts/pythonwebserver/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "rook.git/deploy/charts/library/Chart.yaml",
+        "rook.git/deploy/charts/rook-ceph/Chart.yaml",
+        "rook.git/deploy/charts/rook-ceph-cluster/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "rook.git/deploy/charts/rook-ceph/templates/configmap.yaml",
+        "rook.git/deploy/charts/rook-ceph/templates/deployment.yaml",
+        "rook.git/deploy/charts/rook-ceph/templates/serviceaccount.yaml",
+        "rook.git/deploy/charts/rook-ceph-cluster/templates/configmap.yaml",
+        "rook.git/deploy/charts/rook-ceph-cluster/templates/deployment.yaml",
+        "rook.git/deploy/examples/monitoring/csi-metrics-service-monitor.yaml",
+        "rook.git/deploy/examples/monitoring/prometheus-service.yaml",
+        "rook.git/deploy/examples/monitoring/service-monitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

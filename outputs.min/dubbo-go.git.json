@@ -1,15 +1,58 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "dubbo-go.git/dubbogo-cli/cmd/testGenCode/template/newApp/build/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "dubbo-go.git/dubbogo-cli/cmd/testGenCode/template/newApp/chart/app/Chart.yaml",
+        "dubbo-go.git/dubbogo-cli/cmd/testGenCode/template/newApp/chart/nacos_env/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "dubbo-go.git/config/testdata/router_config_virtual_service.yml",
+        "dubbo-go.git/dubbogo-cli/cmd/testGenCode/template/newApp/chart/app/templates/deployment.yaml",
+        "dubbo-go.git/dubbogo-cli/cmd/testGenCode/template/newApp/chart/app/templates/service.yaml",
+        "dubbo-go.git/dubbogo-cli/cmd/testGenCode/template/newApp/chart/app/templates/serviceaccount.yaml",
+        "dubbo-go.git/dubbogo-cli/cmd/testGenCode/template/newApp/chart/nacos_env/templates/deployment.yaml",
+        "dubbo-go.git/dubbogo-cli/cmd/testGenCode/template/newApp/chart/nacos_env/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

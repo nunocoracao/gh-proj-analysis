@@ -1,15 +1,69 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "aws-load-balancer-controller.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "aws-load-balancer-controller.git/config/certmanager/kustomization.yaml",
+        "aws-load-balancer-controller.git/config/controller/kustomization.yaml",
+        "aws-load-balancer-controller.git/config/crd/kustomization.yaml",
+        "aws-load-balancer-controller.git/config/default/kustomization.yaml",
+        "aws-load-balancer-controller.git/config/prometheus/kustomization.yaml",
+        "aws-load-balancer-controller.git/config/rbac/kustomization.yaml",
+        "aws-load-balancer-controller.git/config/webhook/kustomization.yaml",
+        "aws-load-balancer-controller.git/helm/aws-load-balancer-controller/crds/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "aws-load-balancer-controller.git/helm/aws-load-balancer-controller/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "aws-load-balancer-controller.git/config/webhook/service.yaml",
+        "aws-load-balancer-controller.git/docs/examples/echoservice/echoserver-deployment.yaml",
+        "aws-load-balancer-controller.git/docs/examples/echoservice/echoserver-service.yaml",
+        "aws-load-balancer-controller.git/docs/examples/grpc/grpcserver-deployment.yaml",
+        "aws-load-balancer-controller.git/docs/examples/grpc/grpcserver-service.yaml",
+        "aws-load-balancer-controller.git/helm/aws-load-balancer-controller/templates/deployment.yaml",
+        "aws-load-balancer-controller.git/helm/aws-load-balancer-controller/templates/service.yaml",
+        "aws-load-balancer-controller.git/helm/aws-load-balancer-controller/templates/serviceaccount.yaml",
+        "aws-load-balancer-controller.git/helm/aws-load-balancer-controller/templates/servicemonitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

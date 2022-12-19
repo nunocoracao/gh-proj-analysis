@@ -1,18 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 6,
-      "filepaths": [
-        "redpanda.git/src/go/k8s/Dockerfile",
-        "redpanda.git/src/go/k8s/Dockerfile.dockerignore",
-        "redpanda.git/tests/docker/Dockerfile",
-        "redpanda.git/tests/docker/Dockerfile.dockerignore",
-        "redpanda.git/tools/docker/Dockerfile",
-        "redpanda.git/tools/docker/Dockerfile.ignore"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -22,6 +15,65 @@
       "filepaths": [
         "redpanda.git/tests/docker/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "redpanda.git/src/go/k8s/config/certmanager/kustomization.yaml",
+        "redpanda.git/src/go/k8s/config/crd/kustomization.yaml",
+        "redpanda.git/src/go/k8s/config/default/kustomization.yaml",
+        "redpanda.git/src/go/k8s/config/default-with-metrics/kustomization.yaml",
+        "redpanda.git/src/go/k8s/config/e2e-tests/kustomization.yaml",
+        "redpanda.git/src/go/k8s/config/manager/kustomization.yaml",
+        "redpanda.git/src/go/k8s/config/prometheus/kustomization.yaml",
+        "redpanda.git/src/go/k8s/config/rbac/kustomization.yaml",
+        "redpanda.git/src/go/k8s/config/webhook/kustomization.yaml",
+        "redpanda.git/src/go/k8s/config/without-webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "redpanda.git/.github/workflows/helm-chart-release.yml",
+        "redpanda.git/.github/workflows/helm-chart-test.yml",
+        "redpanda.git/src/go/k8s/helm-chart/charts/redpanda-operator/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "redpanda.git/src/go/k8s/config/rbac/auth_proxy_service.yaml",
+        "redpanda.git/src/go/k8s/config/webhook/service.yaml",
+        "redpanda.git/src/go/k8s/helm-chart/charts/redpanda-operator/templates/configmap.yaml",
+        "redpanda.git/src/go/k8s/helm-chart/charts/redpanda-operator/templates/deployment.yaml",
+        "redpanda.git/src/go/k8s/helm-chart/charts/redpanda-operator/templates/service_account.yaml",
+        "redpanda.git/src/go/k8s/helm-chart/charts/redpanda-operator/templates/service_metrics.yaml",
+        "redpanda.git/src/go/k8s/helm-chart/charts/redpanda-operator/templates/service_webhook.yaml",
+        "redpanda.git/src/go/k8s/helm-chart/charts/redpanda-operator/templates/servicemonitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

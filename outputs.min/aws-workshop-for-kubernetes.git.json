@@ -1,22 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 10,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 10,
-      "filepaths": [
-        "aws-workshop-for-kubernetes.git/03-path-application-development/303-app-update/images/app-v1/Dockerfile",
-        "aws-workshop-for-kubernetes.git/03-path-application-development/303-app-update/images/app-v2/Dockerfile",
-        "aws-workshop-for-kubernetes.git/03-path-application-development/306-app-tracing-with-jaeger-and-x-ray/x-ray/nodejs-microservices/greeter/Dockerfile",
-        "aws-workshop-for-kubernetes.git/03-path-application-development/306-app-tracing-with-jaeger-and-x-ray/x-ray/nodejs-microservices/name/Dockerfile",
-        "aws-workshop-for-kubernetes.git/03-path-application-development/306-app-tracing-with-jaeger-and-x-ray/x-ray/nodejs-microservices/webapp/Dockerfile",
-        "aws-workshop-for-kubernetes.git/03-path-application-development/306-app-tracing-with-jaeger-and-x-ray/x-ray/python-flask-app/Dockerfile",
-        "aws-workshop-for-kubernetes.git/03-path-application-development/306-app-tracing-with-jaeger-and-x-ray/x-ray/x-ray-daemon/Dockerfile",
-        "aws-workshop-for-kubernetes.git/04-path-security-and-networking/401-configmaps-and-secrets/images/app/Dockerfile",
-        "aws-workshop-for-kubernetes.git/04-path-security-and-networking/401-configmaps-and-secrets/images/sec_mgr_app/Dockerfile",
-        "aws-workshop-for-kubernetes.git/04-path-security-and-networking/402-authentication-and-authorization/templates/Dockerfile-consul-template"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -24,6 +13,74 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "aws-workshop-for-kubernetes.git/03-path-application-development/307-app-management-with-helm/sample/Chart.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/310-deploying-a-chart-repository/sample/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 26,
+      "rootCount": 0,
+      "subFolderCount": 26,
+      "filepaths": [
+        "aws-workshop-for-kubernetes.git/01-path-basics/103-kubernetes-concepts/templates/deployment-namespace.yaml",
+        "aws-workshop-for-kubernetes.git/01-path-basics/103-kubernetes-concepts/templates/deployment.yaml",
+        "aws-workshop-for-kubernetes.git/01-path-basics/103-kubernetes-concepts/templates/echo-deployment.yaml",
+        "aws-workshop-for-kubernetes.git/01-path-basics/103-kubernetes-concepts/templates/service.yaml",
+        "aws-workshop-for-kubernetes.git/02-path-working-with-clusters/204-cluster-logging-with-EFK/templates/fluentd-configmap.yaml",
+        "aws-workshop-for-kubernetes.git/02-path-working-with-clusters/204-cluster-logging-with-EFK/templates/fluentd-service-account.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/303-app-update/templates/app-service.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/305-app-scaling-custom-metrics/templates/cluster-agent/datadog-cluster-agent_service.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/306-app-tracing-with-jaeger-and-x-ray/x-ray/templates/flaskyxray-deployment.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/306-app-tracing-with-jaeger-and-x-ray/x-ray/templates/flaskyxray-service.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/306-app-tracing-with-jaeger-and-x-ray/x-ray/templates/nodejs-microservices.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/307-app-management-with-helm/sample/templates/db-deployment.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/307-app-management-with-helm/sample/templates/db-service.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/307-app-management-with-helm/sample/templates/webapp-deployment.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/307-app-management-with-helm/sample/templates/webapp-service.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/308-statefulsets-and-pvs/templates/mysql-configmap.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/308-statefulsets-and-pvs/templates/mysql-services.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/310-deploying-a-chart-repository/sample/templates/db-deployment.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/310-deploying-a-chart-repository/sample/templates/db-service.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/310-deploying-a-chart-repository/sample/templates/webapp-deployment.yaml",
+        "aws-workshop-for-kubernetes.git/03-path-application-development/310-deploying-a-chart-repository/sample/templates/webapp-service.yaml",
+        "aws-workshop-for-kubernetes.git/04-path-security-and-networking/401-configmaps-and-secrets/templates/redis-configmap.yaml",
+        "aws-workshop-for-kubernetes.git/04-path-security-and-networking/402-authentication-and-authorization/templates/deployment-with-vault.yaml",
+        "aws-workshop-for-kubernetes.git/04-path-security-and-networking/405-ingress-controllers/templates/kube-aws-ingress-controller-deployment.yaml",
+        "aws-workshop-for-kubernetes.git/04-path-security-and-networking/406-coredns/templates/coredns-service.yaml",
+        "aws-workshop-for-kubernetes.git/04-path-security-and-networking/406-coredns/templates/kubedns-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "aws-workshop-for-kubernetes.git/04-path-security-and-networking/401-configmaps-and-secrets/templates/kube-auth.hcl",
+        "aws-workshop-for-kubernetes.git/04-path-security-and-networking/402-authentication-and-authorization/templates/kube-auth.hcl"
+      ]
     }
   },
   "info": {

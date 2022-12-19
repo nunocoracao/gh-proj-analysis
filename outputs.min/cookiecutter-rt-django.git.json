@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 3,
-      "filepaths": [
-        "cookiecutter-rt-django.git/docker/nginx/Dockerfile",
-        "cookiecutter-rt-django.git/docker/node-exporter/Dockerfile",
-        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/app/envs/prod/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -20,6 +16,78 @@
         "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/files/docker-compose.yml",
         "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/envs/dev/docker-compose.yml",
         "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/envs/prod/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 36,
+      "rootCount": 0,
+      "subFolderCount": 36,
+      "filepaths": [
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/packer/docker-optimized.pkr.hcl",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/core/backend.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/core/main.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/core/terraform.tfvars",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/core/vars.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/common/main.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/common/vars.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/common/versions.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/prod/backend.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/prod/main.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/prod/terraform.tfvars",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/prod/vars.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/prod/versions.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/staging/backend.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/staging/main.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/staging/terraform.tfvars",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/staging/vars.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/envs/staging/versions.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/backend/alb.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/backend/domain.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/backend/ec2-autoscale.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/backend/ec2-keys.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/backend/ec2-profile.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/backend/parameters.docker-compose.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/backend/parameters.env.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/backend/parameters.nginx.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/backend/parameters.ssh-keys.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/backend/security.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/backend/vars.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/database/output.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/database/rds.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/database/security.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/database/vars.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/networking/network.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/networking/output.tf",
+        "cookiecutter-rt-django.git/{{cookiecutter.repostory_name}}/devops/tf/main/modules/networking/vars.tf"
       ]
     }
   },

@@ -1,21 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 9,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 9,
-      "filepaths": [
-        "apicurio-studio.git/distro/docker-compose/keycloak/Dockerfile",
-        "apicurio-studio.git/distro/openshift/auth/Dockerfile",
-        "apicurio-studio.git/distro/quarkus/docker-compose/keycloak/Dockerfile",
-        "apicurio-studio.git/distro/quarkus/openshift/auth/Dockerfile",
-        "apicurio-studio.git/platforms/quarkus/api/Dockerfile",
-        "apicurio-studio.git/platforms/quarkus/ui/Dockerfile",
-        "apicurio-studio.git/platforms/quarkus/ws/Dockerfile",
-        "apicurio-studio.git/test/integration/arquillian/src/test/resources/wildfly/Dockerfile",
-        "apicurio-studio.git/tools/ci/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -35,6 +25,57 @@
         "apicurio-studio.git/distro/quarkus/docker-compose/docker-compose.keycloak.yml",
         "apicurio-studio.git/distro/quarkus/docker-compose/docker-compose.microcks.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "apicurio-studio.git/distro/helm/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "apicurio-studio.git/distro/helm/templates/apicurio-studio-api-deployment.yaml",
+        "apicurio-studio.git/distro/helm/templates/apicurio-studio-db-deployment.yaml",
+        "apicurio-studio.git/distro/helm/templates/apicurio-studio-services.yaml",
+        "apicurio-studio.git/distro/helm/templates/apicurio-studio-ui-deployment.yaml",
+        "apicurio-studio.git/distro/helm/templates/apicurio-studio-ws-deployment.yaml",
+        "apicurio-studio.git/distro/kubernetes/apicurio-configmap.yaml",
+        "apicurio-studio.git/distro/kubernetes/apicurio-studio-api-deployment.yaml",
+        "apicurio-studio.git/distro/kubernetes/apicurio-studio-db-deployment.yaml",
+        "apicurio-studio.git/distro/kubernetes/apicurio-studio-services.yaml",
+        "apicurio-studio.git/distro/kubernetes/apicurio-studio-ui-deployment.yaml",
+        "apicurio-studio.git/distro/kubernetes/apicurio-studio-ws-deployment.yaml",
+        "apicurio-studio.git/distro/quarkus/openshift/apicurio-deployment-configs-template.yml",
+        "apicurio-studio.git/distro/quarkus/openshift/apicurio-services-template.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

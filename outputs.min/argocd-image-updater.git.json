@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
-      "rootCount": 1,
-      "subFolderCount": 2,
-      "filepaths": [
-        "argocd-image-updater.git/Dockerfile",
-        "argocd-image-updater.git/test/e2e/containers/git/Dockerfile",
-        "argocd-image-updater.git/test/e2e/images/test-image/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -20,6 +16,59 @@
         "argocd-image-updater.git/test/e2e/containers/git/example/docker-compose.no-init.yml",
         "argocd-image-updater.git/test/e2e/containers/git/example/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "argocd-image-updater.git/manifests/base/kustomization.yaml",
+        "argocd-image-updater.git/manifests/base/config/kustomization.yaml",
+        "argocd-image-updater.git/manifests/base/deployment/kustomization.yaml",
+        "argocd-image-updater.git/manifests/base/rbac/kustomization.yaml",
+        "argocd-image-updater.git/test/e2e/containers/git/testdata/001/kustomization.yaml",
+        "argocd-image-updater.git/test/e2e/containers/git/testdata/001-simple-kustomize-app/kustomization.yaml",
+        "argocd-image-updater.git/test/e2e/containers/git/testdata/004-multi-images/kustomization.yaml",
+        "argocd-image-updater.git/test/e2e/prereqs/argocd/kustomization.yaml",
+        "argocd-image-updater.git/test/e2e/testdata/001-simple-kustomize-app/kustomization.yaml",
+        "argocd-image-updater.git/test/e2e/testdata/004-multi-images/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "argocd-image-updater.git/manifests/base/deployment/argocd-image-updater-deployment.yaml",
+        "argocd-image-updater.git/test/e2e/containers/git/testdata/001/deployment.yaml",
+        "argocd-image-updater.git/test/e2e/containers/git/testdata/001-simple-kustomize-app/deployment.yaml",
+        "argocd-image-updater.git/test/e2e/containers/git/testdata/004-multi-images/deployment.yaml",
+        "argocd-image-updater.git/test/e2e/testdata/001-simple-kustomize-app/deployment.yaml",
+        "argocd-image-updater.git/test/e2e/testdata/004-multi-images/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

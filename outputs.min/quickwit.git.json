@@ -2,16 +2,14 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 6,
-      "rootCount": 1,
-      "subFolderCount": 5,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
       "filepaths": [
-        "quickwit.git/Dockerfile",
         "quickwit.git/build/cross-images/aarch64-unknown-linux-gnu.dockerfile",
         "quickwit.git/build/cross-images/aarch64-unknown-linux-musl.dockerfile",
         "quickwit.git/build/cross-images/x86_64-unknown-linux-gnu.dockerfile",
-        "quickwit.git/build/cross-images/x86_64-unknown-linux-musl.dockerfile",
-        "quickwit.git/distribution/docker/alpine/Dockerfile"
+        "quickwit.git/build/cross-images/x86_64-unknown-linux-musl.dockerfile"
       ]
     },
     "composefile": {
@@ -22,6 +20,45 @@
       "filepaths": [
         "quickwit.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "quickwit.git/quickwit/quickwit-proto/protos/third-party/otlp/opentelemetry/proto/collector/logs/v1/logs_service_http.yaml",
+        "quickwit.git/quickwit/quickwit-proto/protos/third-party/otlp/opentelemetry/proto/collector/metrics/v1/metrics_service_http.yaml",
+        "quickwit.git/quickwit/quickwit-proto/protos/third-party/otlp/opentelemetry/proto/collector/trace/v1/trace_service_http.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

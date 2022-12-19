@@ -2,24 +2,16 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 21,
+      "count": 13,
       "rootCount": 0,
-      "subFolderCount": 21,
+      "subFolderCount": 13,
       "filepaths": [
-        "cube.js.git/examples/apollo-federation-with-cube/apollo-server-app/Dockerfile.gateway",
-        "cube.js.git/examples/apollo-federation-with-cube/apollo-server-app/Dockerfile.server",
-        "cube.js.git/examples/d3-dashboard/Dockerfile",
-        "cube.js.git/examples/react-dashboard/Dockerfile",
-        "cube.js.git/examples/recipes/entity-attribute-value/Dockerfile",
-        "cube.js.git/examples/twitter-stream/producer/Dockerfile",
-        "cube.js.git/examples/web-analytics/Dockerfile",
         "cube.js.git/packages/cubejs-docker/dev-alpine.Dockerfile",
         "cube.js.git/packages/cubejs-docker/dev.Dockerfile",
         "cube.js.git/packages/cubejs-docker/latest-alpine-jdk.Dockerfile",
         "cube.js.git/packages/cubejs-docker/latest-alpine.Dockerfile",
         "cube.js.git/packages/cubejs-docker/latest-debian-jdk.Dockerfile",
         "cube.js.git/packages/cubejs-docker/latest.Dockerfile",
-        "cube.js.git/rust/cubestore/Dockerfile",
         "cube.js.git/rust/cubestore/cross/aarch64-unknown-linux-gnu.Dockerfile",
         "cube.js.git/rust/cubestore/cross/x86_64-apple-darwin.Dockerfile",
         "cube.js.git/rust/cubestore/cross/x86_64-pc-windows-gnu.Dockerfile",
@@ -78,6 +70,69 @@
         "cube.js.git/packages/cubejs-prestodb-driver/docker-compose.yml",
         "cube.js.git/packages/cubejs-query-orchestrator/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "cube.js.git/examples/helm-charts/cube-stack/Chart.yaml",
+        "cube.js.git/examples/helm-charts/cubejs/Chart.yaml",
+        "cube.js.git/examples/helm-charts/cubestore/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 23,
+      "rootCount": 0,
+      "subFolderCount": 23,
+      "filepaths": [
+        "cube.js.git/examples/helm-charts/cubejs/templates/master/deployment.yaml",
+        "cube.js.git/examples/helm-charts/cubejs/templates/master/service.yaml",
+        "cube.js.git/examples/helm-charts/cubejs/templates/master/serviceaccount.yaml",
+        "cube.js.git/examples/helm-charts/cubejs/templates/workers/deployment.yaml",
+        "cube.js.git/examples/helm-charts/cubejs/templates/workers/serviceaccount.yaml",
+        "cube.js.git/examples/helm-charts/cubestore/templates/router/service.yaml",
+        "cube.js.git/examples/helm-charts/cubestore/templates/router/serviceaccount.yaml",
+        "cube.js.git/examples/helm-charts/cubestore/templates/workers/service-headless.yaml",
+        "cube.js.git/examples/helm-charts/cubestore/templates/workers/serviceaccount.yaml",
+        "cube.js.git/examples/kubernetes/cluster/cube-api-deployment.yaml",
+        "cube.js.git/examples/kubernetes/cluster/cube-api-schema-configmap.yaml",
+        "cube.js.git/examples/kubernetes/cluster/cube-api-service.yaml",
+        "cube.js.git/examples/kubernetes/cluster/cube-refresh-worker-deployment.yaml",
+        "cube.js.git/examples/kubernetes/cluster/cubestore-router-service.yaml",
+        "cube.js.git/examples/kubernetes/cluster/cubestore-workers-service.yaml",
+        "cube.js.git/examples/kubernetes/cluster/redis-deployment.yaml",
+        "cube.js.git/examples/kubernetes/cluster/redis-service.yaml",
+        "cube.js.git/examples/kubernetes/minikube/cube-deployment.yaml",
+        "cube.js.git/examples/kubernetes/minikube/cube-service.yaml",
+        "cube.js.git/examples/kubernetes/minikube/cubestore-deployment.yaml",
+        "cube.js.git/examples/kubernetes/minikube/cubestore-service.yaml",
+        "cube.js.git/examples/kubernetes/minikube/redis-deployment.yaml",
+        "cube.js.git/examples/kubernetes/minikube/redis-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

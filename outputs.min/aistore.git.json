@@ -2,21 +2,12 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 11,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 11,
+      "subFolderCount": 2,
       "filepaths": [
-        "aistore.git/deploy/dev/docker/Dockerfile",
-        "aistore.git/deploy/dev/docker/Dockerfile-ais-demo-alpine",
-        "aistore.git/deploy/dev/docker/Dockerfile-ais-demo-ubuntu",
-        "aistore.git/deploy/dev/k8s/Dockerfile",
-        "aistore.git/deploy/prod/docker/single/Dockerfile",
-        "aistore.git/deploy/prod/k8s/aisadmin_container/Dockerfile",
-        "aistore.git/deploy/prod/k8s/aisnode_container/Dockerfile",
-        "aistore.git/deploy/prod/k8s/init_container/Dockerfile",
         "aistore.git/deploy/test/ci/general.dockerfile",
-        "aistore.git/deploy/test/ci/hdfs.dockerfile",
-        "aistore.git/deploy/test/docker/Dockerfile"
+        "aistore.git/deploy/test/ci/hdfs.dockerfile"
       ]
     },
     "composefile": {
@@ -27,6 +18,49 @@
       "filepaths": [
         "aistore.git/deploy/dev/docker/docker-compose.multinet.yml",
         "aistore.git/deploy/dev/docker/docker-compose.singlenet.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "aistore.git/deploy/dev/k8s/kube_templates/aisproxy_deployment.yml",
+        "aistore.git/deploy/dev/k8s/kube_templates/aistarget_deployment.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "aistore.git/deploy/dev/terraform/main.tf",
+        "aistore.git/deploy/dev/terraform/network.tf",
+        "aistore.git/deploy/dev/terraform/terraform.tfvars",
+        "aistore.git/deploy/dev/terraform/version.tf"
       ]
     }
   },

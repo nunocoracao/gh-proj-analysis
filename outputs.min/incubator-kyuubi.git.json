@@ -2,18 +2,15 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 8,
+      "count": 5,
       "rootCount": 0,
-      "subFolderCount": 8,
+      "subFolderCount": 5,
       "filepaths": [
-        "incubator-kyuubi.git/build/Dockerfile",
-        "incubator-kyuubi.git/docker/Dockerfile",
         "incubator-kyuubi.git/docker/playground/image/kyuubi-playground-base.Dockerfile",
         "incubator-kyuubi.git/docker/playground/image/kyuubi-playground-hadoop.Dockerfile",
         "incubator-kyuubi.git/docker/playground/image/kyuubi-playground-kyuubi.Dockerfile",
         "incubator-kyuubi.git/docker/playground/image/kyuubi-playground-metastore.Dockerfile",
-        "incubator-kyuubi.git/docker/playground/image/kyuubi-playground-spark.Dockerfile",
-        "incubator-kyuubi.git/tools/spark-block-cleaner/kubernetes/docker/Dockerfile"
+        "incubator-kyuubi.git/docker/playground/image/kyuubi-playground-spark.Dockerfile"
       ]
     },
     "composefile": {
@@ -27,6 +24,51 @@
         "incubator-kyuubi.git/externals/kyuubi-jdbc-engine/src/test/resources/doris-compose.yml",
         "incubator-kyuubi.git/integration-tests/kyuubi-jdbc-it/src/test/resources/doris-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "incubator-kyuubi.git/docker/helm/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "incubator-kyuubi.git/docker/kyuubi-configmap.yaml",
+        "incubator-kyuubi.git/docker/kyuubi-deployment.yaml",
+        "incubator-kyuubi.git/docker/kyuubi-service.yaml",
+        "incubator-kyuubi.git/docker/helm/templates/kyuubi-configmap.yaml",
+        "incubator-kyuubi.git/docker/helm/templates/kyuubi-deployment.yaml",
+        "incubator-kyuubi.git/docker/helm/templates/kyuubi-service.yaml",
+        "incubator-kyuubi.git/docker/helm/templates/kyuubi-serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

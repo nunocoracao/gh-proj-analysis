@@ -1,29 +1,74 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 15,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 15,
-      "filepaths": [
-        "osm-seed.git/images/backup-restore/Dockerfile",
-        "osm-seed.git/images/db/Dockerfile",
-        "osm-seed.git/images/full-history/Dockerfile",
-        "osm-seed.git/images/nominatim/Dockerfile",
-        "osm-seed.git/images/osm-processor/Dockerfile",
-        "osm-seed.git/images/overpass-api/Dockerfile",
-        "osm-seed.git/images/planet-dump/Dockerfile",
-        "osm-seed.git/images/populate-apidb/Dockerfile",
-        "osm-seed.git/images/replication-job/Dockerfile",
-        "osm-seed.git/images/taginfo/Dockerfile",
-        "osm-seed.git/images/tasking-manager-api/Dockerfile",
-        "osm-seed.git/images/tiler-db/Dockerfile",
-        "osm-seed.git/images/tiler-imposm/Dockerfile",
-        "osm-seed.git/images/tiler-server/Dockerfile",
-        "osm-seed.git/images/web/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 1,
+      "subFolderCount": 2,
+      "filepaths": [
+        "osm-seed.git/chartpress.yaml",
+        "osm-seed.git/.github/workflows/chartpress.yaml",
+        "osm-seed.git/osm-seed/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 21,
+      "rootCount": 0,
+      "subFolderCount": 21,
+      "filepaths": [
+        "osm-seed.git/osm-seed/templates/db/db-service.yaml",
+        "osm-seed.git/osm-seed/templates/id-editor/id-editor-deployment.yaml",
+        "osm-seed.git/osm-seed/templates/id-editor/id-editor-service.yaml",
+        "osm-seed.git/osm-seed/templates/jobs/replication-job-deployment.yaml",
+        "osm-seed.git/osm-seed/templates/memcached/memcached-deployment.yml",
+        "osm-seed.git/osm-seed/templates/memcached/memcached-service.yml",
+        "osm-seed.git/osm-seed/templates/nominatim-api/nominatim-api-service.yaml",
+        "osm-seed.git/osm-seed/templates/overpass-api/overpass-api-service.yaml",
+        "osm-seed.git/osm-seed/templates/taginfo/taginfo-deployment.yaml",
+        "osm-seed.git/osm-seed/templates/taginfo/taginfo-service.yaml",
+        "osm-seed.git/osm-seed/templates/tasking-manager-api/tasking-manager-api-deployment.yaml",
+        "osm-seed.git/osm-seed/templates/tasking-manager-api/tasking-manager-api-service.yaml",
+        "osm-seed.git/osm-seed/templates/tiler-db/tiler-db-service.yaml",
+        "osm-seed.git/osm-seed/templates/tiler-imposm/tiler-imposm-service.yaml",
+        "osm-seed.git/osm-seed/templates/tiler-server/tiler-server-cache-cleaner-deployment.yaml",
+        "osm-seed.git/osm-seed/templates/tiler-server/tiler-server-deployment.yaml",
+        "osm-seed.git/osm-seed/templates/tiler-server/tiler-server-service.yaml",
+        "osm-seed.git/osm-seed/templates/tiler-visor/tiler-visor-deployment.yaml",
+        "osm-seed.git/osm-seed/templates/tiler-visor/tiler-visor-service.yaml",
+        "osm-seed.git/osm-seed/templates/web/web-deployment.yaml",
+        "osm-seed.git/osm-seed/templates/web/web-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -2,16 +2,81 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 3,
-      "rootCount": 3,
+      "count": 1,
+      "rootCount": 1,
       "subFolderCount": 0,
       "filepaths": [
-        "jaeger-operator.git/Dockerfile",
-        "jaeger-operator.git/Dockerfile.asserts",
         "jaeger-operator.git/bundle.Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "jaeger-operator.git/config/certmanager/kustomization.yaml",
+        "jaeger-operator.git/config/crd/kustomization.yaml",
+        "jaeger-operator.git/config/default/kustomization.yaml",
+        "jaeger-operator.git/config/manager/kustomization.yaml",
+        "jaeger-operator.git/config/manifests/kustomization.yaml",
+        "jaeger-operator.git/config/namespaced/kustomization.yaml",
+        "jaeger-operator.git/config/namespaced/patch/kustomization.yaml",
+        "jaeger-operator.git/config/prometheus/kustomization.yaml",
+        "jaeger-operator.git/config/rbac/kustomization.yaml",
+        "jaeger-operator.git/config/samples/kustomization.yaml",
+        "jaeger-operator.git/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "jaeger-operator.git/bundle/manifests/jaeger-operator-metrics_v1_service.yaml",
+        "jaeger-operator.git/bundle/manifests/jaeger-operator-webhook-service_v1_service.yaml",
+        "jaeger-operator.git/bundle/manifests/jaeger-operator.clusterserviceversion.yaml",
+        "jaeger-operator.git/config/manifests/bases/jaeger-operator.clusterserviceversion.yaml",
+        "jaeger-operator.git/config/rbac/auth_proxy_service.yaml",
+        "jaeger-operator.git/config/rbac/service_account.yaml",
+        "jaeger-operator.git/config/webhook/deployment_inject_patch.yaml",
+        "jaeger-operator.git/config/webhook/service.yaml",
+        "jaeger-operator.git/examples/custom-serviceaccount.yaml",
+        "jaeger-operator.git/examples/service-types.yaml",
+        "jaeger-operator.git/examples/with-deployment-strategy.yaml",
+        "jaeger-operator.git/examples/openshift/service_account_jaeger-agent-daemonset.yaml",
+        "jaeger-operator.git/tests/e2e/miscellaneous/istio/patch-04-find-service.yaml.template",
+        "jaeger-operator.git/tests/e2e/upgrade/upgrade/deployment-assert.yaml.template",
+        "jaeger-operator.git/tests/templates/assert-find-service.yaml.template",
+        "jaeger-operator.git/tests/templates/assert-jaeger-deployment.yaml.template",
+        "jaeger-operator.git/tests/templates/find-service-from-client.yaml.template",
+        "jaeger-operator.git/tests/templates/find-service.yaml.template",
+        "jaeger-operator.git/tests/templates/openshift/find-service.yaml.template"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

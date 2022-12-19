@@ -1,42 +1,92 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 28,
-      "rootCount": 3,
-      "subFolderCount": 25,
-      "filepaths": [
-        "model_server.git/Dockerfile.redhat",
-        "model_server.git/Dockerfile.ubuntu",
-        "model_server.git/DockerfileMakePackage",
-        "model_server.git/ci/Dockerfile",
-        "model_server.git/client/python/ovmsclient/Dockerfile.redhat",
-        "model_server.git/client/python/ovmsclient/Dockerfile.ubuntu",
-        "model_server.git/demos/benchmark/python/Dockerfile",
-        "model_server.git/demos/bert_question_answering/python/Dockerfile",
-        "model_server.git/demos/common/cpp/Dockerfile",
-        "model_server.git/demos/image_classification/go/Dockerfile",
-        "model_server.git/demos/real_time_stream_analysis/python/Dockerfile",
-        "model_server.git/demos/speech_recognition_with_kaldi_model/python/asr_demo/Dockerfile",
-        "model_server.git/extras/nginx-mtls-auth/Dockerfile.redhat",
-        "model_server.git/extras/nginx-mtls-auth/Dockerfile.ubuntu",
-        "model_server.git/extras/openvino-operator-openshift/Dockerfile",
-        "model_server.git/extras/openvino-operator-openshift/openshift-bundle/0.2.0/Dockerfile",
-        "model_server.git/extras/ovms-operator/Dockerfile",
-        "model_server.git/extras/ovms-operator/openshift-bundle/0.1.0/Dockerfile",
-        "model_server.git/extras/ovms-operator/openshift-bundle/0.1.1/Dockerfile",
-        "model_server.git/release_files/Dockerfile.redhat",
-        "model_server.git/release_files/Dockerfile.ubuntu",
-        "model_server.git/src/custom_nodes/Dockerfile.redhat",
-        "model_server.git/src/custom_nodes/Dockerfile.ubuntu",
-        "model_server.git/src/example/SampleCpuExtension/Dockerfile.redhat",
-        "model_server.git/src/example/SampleCpuExtension/Dockerfile.ubuntu",
-        "model_server.git/src/example/SampleCustomLoader/Dockerfile.redhat",
-        "model_server.git/src/example/SampleCustomLoader/Dockerfile.ubuntu",
-        "model_server.git/tools/deps/redhat/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 16,
+      "rootCount": 0,
+      "subFolderCount": 16,
+      "filepaths": [
+        "model_server.git/extras/openvino-operator-openshift/config/crd/kustomization.yaml",
+        "model_server.git/extras/openvino-operator-openshift/config/default/kustomization.yaml",
+        "model_server.git/extras/openvino-operator-openshift/config/manager/kustomization.yaml",
+        "model_server.git/extras/openvino-operator-openshift/config/manifests/kustomization.yaml",
+        "model_server.git/extras/openvino-operator-openshift/config/prometheus/kustomization.yaml",
+        "model_server.git/extras/openvino-operator-openshift/config/rbac/kustomization.yaml",
+        "model_server.git/extras/openvino-operator-openshift/config/samples/kustomization.yaml",
+        "model_server.git/extras/openvino-operator-openshift/config/scorecard/kustomization.yaml",
+        "model_server.git/extras/ovms-operator/config/crd/kustomization.yaml",
+        "model_server.git/extras/ovms-operator/config/default/kustomization.yaml",
+        "model_server.git/extras/ovms-operator/config/manager/kustomization.yaml",
+        "model_server.git/extras/ovms-operator/config/manifests/kustomization.yaml",
+        "model_server.git/extras/ovms-operator/config/prometheus/kustomization.yaml",
+        "model_server.git/extras/ovms-operator/config/rbac/kustomization.yaml",
+        "model_server.git/extras/ovms-operator/config/samples/kustomization.yaml",
+        "model_server.git/extras/ovms-operator/config/scorecard/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "model_server.git/demos/real_time_stream_analysis/python/deploy/Chart.yaml",
+        "model_server.git/deploy/ovms/Chart.yaml",
+        "model_server.git/extras/openvino-operator-openshift/helm-charts/ovms/Chart.yaml",
+        "model_server.git/extras/openvino-operator-openshift/helm-charts/rhods-ov-image-stream/Chart.yaml",
+        "model_server.git/extras/ovms-operator/helm-charts/ovms/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 20,
+      "rootCount": 0,
+      "subFolderCount": 20,
+      "filepaths": [
+        "model_server.git/demos/real_time_stream_analysis/python/deploy/templates/deployment.yaml",
+        "model_server.git/demos/real_time_stream_analysis/python/deploy/templates/service.yaml",
+        "model_server.git/deploy/ovms/templates/deployment.yaml",
+        "model_server.git/deploy/ovms/templates/service.yaml",
+        "model_server.git/extras/openvino-operator-openshift/config/manifests/bases/ovms-operator.clusterserviceversion.yaml",
+        "model_server.git/extras/openvino-operator-openshift/config/rbac/auth_proxy_service.yaml",
+        "model_server.git/extras/openvino-operator-openshift/helm-charts/ovms/templates/deployment.yaml",
+        "model_server.git/extras/openvino-operator-openshift/helm-charts/ovms/templates/service.yaml",
+        "model_server.git/extras/openvino-operator-openshift/openshift-bundle/0.2.0/manifests/openvino-operator-controller-manager-metrics-service_v1_service.yaml",
+        "model_server.git/extras/openvino-operator-openshift/openshift-bundle/0.2.0/manifests/openvino-operator-controller-manager_v1_serviceaccount.yaml",
+        "model_server.git/extras/openvino-operator-openshift/openshift-bundle/0.2.0/manifests/openvino-operator-manager-config_v1_configmap.yaml",
+        "model_server.git/extras/openvino-operator-openshift/openshift-bundle/0.2.0/manifests/openvino-operator.clusterserviceversion.yaml",
+        "model_server.git/extras/ovms-operator/config/manifests/bases/ovms-operator.clusterserviceversion.yaml",
+        "model_server.git/extras/ovms-operator/config/rbac/auth_proxy_service.yaml",
+        "model_server.git/extras/ovms-operator/helm-charts/ovms/templates/deployment.yaml",
+        "model_server.git/extras/ovms-operator/helm-charts/ovms/templates/service.yaml",
+        "model_server.git/extras/ovms-operator/openshift-bundle/0.1.0/manifests/ovms-operator-controller-manager-metrics-service_v1_service.yaml",
+        "model_server.git/extras/ovms-operator/openshift-bundle/0.1.0/manifests/ovms-operator.clusterserviceversion.yaml",
+        "model_server.git/extras/ovms-operator/openshift-bundle/0.1.1/manifests/ovms-operator-controller-manager-metrics-service_v1_service.yaml",
+        "model_server.git/extras/ovms-operator/openshift-bundle/0.1.1/manifests/ovms-operator.clusterserviceversion.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

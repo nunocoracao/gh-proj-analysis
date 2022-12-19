@@ -1,16 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 3,
-      "subFolderCount": 1,
-      "filepaths": [
-        "naftis.git/Dockerfile.api",
-        "naftis.git/Dockerfile.api_debug",
-        "naftis.git/Dockerfile.ui",
-        "naftis.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -20,6 +15,53 @@
       "filepaths": [
         "naftis.git/vendor/github.com/jinzhu/gorm/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "naftis.git/install/helm/mysql/Chart.yaml",
+        "naftis.git/install/helm/naftis/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "naftis.git/install/helm/mysql/templates/configurationFiles-configmap.yaml",
+        "naftis.git/install/helm/mysql/templates/deployment.yaml",
+        "naftis.git/install/helm/mysql/templates/initializationFiles-configmap.yaml",
+        "naftis.git/install/helm/mysql/templates/tests/test-configmap.yaml",
+        "naftis.git/install/helm/naftis/templates/configmap.yaml",
+        "naftis.git/install/helm/naftis/templates/deployment.yaml",
+        "naftis.git/install/helm/naftis/templates/service.yaml",
+        "naftis.git/install/helm/naftis/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

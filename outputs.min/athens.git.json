@@ -1,18 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
-      "rootCount": 1,
-      "subFolderCount": 5,
-      "filepaths": [
-        "athens.git/Dockerfile.test",
-        "athens.git/.sail/Dockerfile",
-        "athens.git/cmd/proxy/Dockerfile",
-        "athens.git/docs/Dockerfile",
-        "athens.git/scripts/build-image/Dockerfile",
-        "athens.git/scripts/gae/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -21,6 +14,49 @@
       "subFolderCount": 0,
       "filepaths": [
         "athens.git/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "athens.git/charts/athens-proxy/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "athens.git/charts/athens-proxy/templates/deployment.yaml",
+        "athens.git/charts/athens-proxy/templates/service-account.yaml",
+        "athens.git/charts/athens-proxy/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 1,
+      "subFolderCount": 0,
+      "filepaths": [
+        "athens.git/download.example.hcl"
       ]
     }
   },

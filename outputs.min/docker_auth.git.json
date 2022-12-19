@@ -1,15 +1,54 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
       "exist": true,
       "count": 1,
       "rootCount": 0,
       "subFolderCount": 1,
       "filepaths": [
-        "docker_auth.git/auth_server/Dockerfile"
+        "docker_auth.git/chart/docker-auth/Chart.yaml"
       ]
     },
-    "composefile": {
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "docker_auth.git/chart/docker-auth/templates/configmap.yaml",
+        "docker_auth.git/chart/docker-auth/templates/deployment.yaml",
+        "docker_auth.git/chart/docker-auth/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

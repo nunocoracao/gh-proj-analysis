@@ -2,27 +2,57 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 14,
-      "rootCount": 1,
-      "subFolderCount": 13,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
       "filepaths": [
-        "dotmesh.git/dockerfiles",
-        "dotmesh.git/cmd/dotmesh-server/Dockerfile",
-        "dotmesh.git/cmd/dotmesh-server/pkg/dind-dynamic-provisioning/Dockerfile",
-        "dotmesh.git/cmd/dotmesh-server/pkg/dind-dynamic-provisioning/vendor/golang.org/x/net/http2/Dockerfile",
-        "dotmesh.git/cmd/dynamic-provisioner/vendor/golang.org/x/net/http2/Dockerfile",
-        "dotmesh.git/cmd/operator/vendor/golang.org/x/net/http2/Dockerfile",
-        "dotmesh.git/etcd-container-image/Dockerfile",
-        "dotmesh.git/kubernetes/example_app/Dockerfile",
-        "dotmesh.git/tests/vendor/github.com/dotmesh-io/citools/Dockerfile",
-        "dotmesh.git/vendor/github.com/dotmesh-io/citools/Dockerfile",
-        "dotmesh.git/vendor/github.com/portworx/kvdb/Dockerfile.kvdb",
-        "dotmesh.git/vendor/golang.org/x/net/http2/Dockerfile",
-        "dotmesh.git/zfs-userland-builder/Dockerfile.0-6",
-        "dotmesh.git/zfs-userland-builder/Dockerfile.0-7"
+        "dotmesh.git/dockerfiles/dind-provisioner.Dockerfile",
+        "dotmesh.git/dockerfiles/dotmesh.Dockerfile",
+        "dotmesh.git/dockerfiles/operator.Dockerfile",
+        "dotmesh.git/dockerfiles/provisioner.Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "dotmesh.git/kubernetes/configmap.yaml",
+        "dotmesh.git/kubernetes/example_app/manifests/deployment.yaml",
+        "dotmesh.git/kubernetes/manifests/pv/deployment.yaml",
+        "dotmesh.git/kubernetes/manifests/storageclass/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

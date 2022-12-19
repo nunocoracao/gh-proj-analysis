@@ -1,16 +1,73 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "redis-operator.git/manifests/kustomize/base/kustomization.yaml",
+        "redis-operator.git/manifests/kustomize/components/monitoring/kustomization.yaml",
+        "redis-operator.git/manifests/kustomize/components/rbac/kustomization.yaml",
+        "redis-operator.git/manifests/kustomize/components/rbac-full/kustomization.yaml",
+        "redis-operator.git/manifests/kustomize/components/resources/kustomization.yaml",
+        "redis-operator.git/manifests/kustomize/components/version/kustomization.yaml",
+        "redis-operator.git/manifests/kustomize/overlays/default/kustomization.yaml",
+        "redis-operator.git/manifests/kustomize/overlays/full/kustomization.yaml",
+        "redis-operator.git/manifests/kustomize/overlays/minimal/kustomization.yaml"
+      ]
+    },
+    "helm": {
       "exist": true,
       "count": 2,
       "rootCount": 0,
       "subFolderCount": 2,
       "filepaths": [
-        "redis-operator.git/docker/app/Dockerfile",
-        "redis-operator.git/docker/development/Dockerfile"
+        "redis-operator.git/charts/chart-release-config.yaml",
+        "redis-operator.git/charts/redisoperator/Chart.yaml"
       ]
     },
-    "composefile": {
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "redis-operator.git/charts/redisoperator/templates/deployment.yaml",
+        "redis-operator.git/charts/redisoperator/templates/service-account.yaml",
+        "redis-operator.git/charts/redisoperator/templates/service.yaml",
+        "redis-operator.git/example/operator/serviceaccount.yaml",
+        "redis-operator.git/manifests/kustomize/base/deployment.yaml",
+        "redis-operator.git/manifests/kustomize/components/monitoring/deployment.yaml",
+        "redis-operator.git/manifests/kustomize/components/monitoring/service.yaml",
+        "redis-operator.git/manifests/kustomize/components/monitoring/servicemonitor.yaml",
+        "redis-operator.git/manifests/kustomize/components/rbac-full/deployment.yaml",
+        "redis-operator.git/manifests/kustomize/components/rbac-full/serviceaccount.yaml",
+        "redis-operator.git/manifests/kustomize/components/resources/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,15 +1,66 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "kubeorbit.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "kubeorbit.git/config/certmanager/kustomization.yaml",
+        "kubeorbit.git/config/crd/kustomization.yaml",
+        "kubeorbit.git/config/default/kustomization.yaml",
+        "kubeorbit.git/config/manager/kustomization.yaml",
+        "kubeorbit.git/config/prometheus/kustomization.yaml",
+        "kubeorbit.git/config/rbac/kustomization.yaml",
+        "kubeorbit.git/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "kubeorbit.git/config/crd/bases/network.kubeorbit.io_serviceroutes.yaml",
+        "kubeorbit.git/config/crd/patches/cainjection_in_serviceroutes.yaml",
+        "kubeorbit.git/config/crd/patches/webhook_in_serviceroutes.yaml",
+        "kubeorbit.git/config/rbac/auth_proxy_service.yaml",
+        "kubeorbit.git/config/rbac/service_account.yaml",
+        "kubeorbit.git/config/rbac/serviceroute_editor_role.yaml",
+        "kubeorbit.git/config/rbac/serviceroute_viewer_role.yaml",
+        "kubeorbit.git/config/samples/network_v1alpha1_serviceroute.yaml",
+        "kubeorbit.git/config/webhook/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

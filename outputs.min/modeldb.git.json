@@ -1,17 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 5,
-      "filepaths": [
-        "modeldb.git/backend/dockerfile",
-        "modeldb.git/backend/graphql/Dockerfile",
-        "modeldb.git/backend/proxy/Dockerfile",
-        "modeldb.git/protos/scripts/Dockerfile",
-        "modeldb.git/webapp/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -22,6 +16,57 @@
         "modeldb.git/docker-compose-all.yaml",
         "modeldb.git/backend/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "modeldb.git/chart/modeldb/Chart.yaml",
+        "modeldb.git/chart/modeldb/charts/backend/Chart.yaml",
+        "modeldb.git/chart/modeldb/charts/graphql/Chart.yaml",
+        "modeldb.git/chart/modeldb/charts/postgres/Chart.yaml",
+        "modeldb.git/chart/modeldb/charts/webapp/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "modeldb.git/chart/modeldb/charts/backend/templates/deployment.yaml",
+        "modeldb.git/chart/modeldb/charts/backend/templates/service.yaml",
+        "modeldb.git/chart/modeldb/charts/graphql/templates/deployment.yaml",
+        "modeldb.git/chart/modeldb/charts/graphql/templates/service.yaml",
+        "modeldb.git/chart/modeldb/charts/postgres/templates/configmap.yaml",
+        "modeldb.git/chart/modeldb/charts/postgres/templates/extended-config-configmap.yaml",
+        "modeldb.git/chart/modeldb/charts/postgres/templates/initialization-configmap.yaml",
+        "modeldb.git/chart/modeldb/charts/webapp/templates/deployment.yaml",
+        "modeldb.git/chart/modeldb/charts/webapp/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

@@ -1,15 +1,86 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "hello_arc.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "hello_arc.git/charts/hello-arc/Chart.yaml",
+        "hello_arc.git/charts/nginx-ingress/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 34,
+      "rootCount": 0,
+      "subFolderCount": 34,
+      "filepaths": [
+        "hello_arc.git/charts/hello-arc/templates/deployment.yaml",
+        "hello_arc.git/charts/hello-arc/templates/service.yaml",
+        "hello_arc.git/charts/hello-arc/templates/serviceaccount.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/daemonset-tcp-udp-configMapNamespace-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-autoscaling-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-customconfig-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-customnodeport-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-default-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-headers-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-internal-lb-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-metrics-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-nodeport-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-psp-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-tcp-udp-configMapNamespace-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-tcp-udp-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-tcp-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-webhook-and-psp-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/ci/deployment-webhook-values.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/addheaders-configmap.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/controller-configmap.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/controller-deployment.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/controller-metrics-service.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/controller-service-internal.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/controller-service.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/controller-serviceaccount.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/controller-servicemonitor.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/controller-webhook-service.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/default-backend-deployment.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/default-backend-service.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/default-backend-serviceaccount.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/proxyheaders-configmap.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/tcp-configmap.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/udp-configmap.yaml",
+        "hello_arc.git/charts/nginx-ingress/templates/admission-webhooks/job-patch/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -2,18 +2,72 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 5,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 5,
+      "subFolderCount": 1,
       "filepaths": [
-        "postgres-operator.git/docker/DebugDockerfile",
-        "postgres-operator.git/docker/Dockerfile",
-        "postgres-operator.git/docker/logical-backup/Dockerfile",
-        "postgres-operator.git/e2e/Dockerfile",
-        "postgres-operator.git/ui/Dockerfile"
+        "postgres-operator.git/docker/DebugDockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "postgres-operator.git/manifests/kustomization.yaml",
+        "postgres-operator.git/ui/manifests/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "postgres-operator.git/charts/postgres-operator/Chart.yaml",
+        "postgres-operator.git/charts/postgres-operator-ui/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 16,
+      "rootCount": 0,
+      "subFolderCount": 16,
+      "filepaths": [
+        "postgres-operator.git/charts/postgres-operator/templates/configmap.yaml",
+        "postgres-operator.git/charts/postgres-operator/templates/deployment.yaml",
+        "postgres-operator.git/charts/postgres-operator/templates/service.yaml",
+        "postgres-operator.git/charts/postgres-operator/templates/serviceaccount.yaml",
+        "postgres-operator.git/charts/postgres-operator-ui/templates/deployment.yaml",
+        "postgres-operator.git/charts/postgres-operator-ui/templates/service.yaml",
+        "postgres-operator.git/charts/postgres-operator-ui/templates/serviceaccount.yaml",
+        "postgres-operator.git/manifests/api-service.yaml",
+        "postgres-operator.git/manifests/configmap.yaml",
+        "postgres-operator.git/manifests/infrastructure-roles-configmap.yaml",
+        "postgres-operator.git/manifests/minimal-fake-pooler-deployment.yaml",
+        "postgres-operator.git/manifests/operator-service-account-rbac-openshift.yaml",
+        "postgres-operator.git/manifests/operator-service-account-rbac.yaml",
+        "postgres-operator.git/ui/manifests/deployment.yaml",
+        "postgres-operator.git/ui/manifests/service.yaml",
+        "postgres-operator.git/ui/manifests/ui-service-account-rbac.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

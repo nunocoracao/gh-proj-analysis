@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 3,
-      "filepaths": [
-        "dcos.git/gen/build_deploy/bash/Dockerfile.in",
-        "dcos.git/packages/adminrouter/docker/Dockerfile",
-        "dcos.git/pkgpanda/docker/dcos-builder/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -17,6 +13,49 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "dcos.git/gen/dcos-services.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "dcos.git/teamcity/main.tf",
+        "dcos.git/test-qualification/scenarios/centos-7.8.2003/defaults/terraform.tfvars",
+        "dcos.git/test-upgrade/terraform.tfvars",
+        "dcos.git/test_util/main.tf",
+        "dcos.git/test_util/variables.tf"
+      ]
     }
   },
   "info": {

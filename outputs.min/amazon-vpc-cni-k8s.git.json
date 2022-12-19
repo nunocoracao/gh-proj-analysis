@@ -1,18 +1,64 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "amazon-vpc-cni-k8s.git/charts/aws-vpc-cni/crds/kustomization.yaml"
+      ]
+    },
+    "helm": {
       "exist": true,
       "count": 4,
       "rootCount": 0,
       "subFolderCount": 4,
       "filepaths": [
-        "amazon-vpc-cni-k8s.git/misc/certs/Dockerfile",
-        "amazon-vpc-cni-k8s.git/scripts/dockerfiles",
-        "amazon-vpc-cni-k8s.git/test/_cmd/packet-verifier/Dockerfile",
-        "amazon-vpc-cni-k8s.git/test/agent/Dockerfile"
+        "amazon-vpc-cni-k8s.git/charts/aws-calico/Chart.yaml",
+        "amazon-vpc-cni-k8s.git/charts/aws-vpc-cni/Chart.yaml",
+        "amazon-vpc-cni-k8s.git/charts/cni-metrics-helper/Chart.yaml",
+        "amazon-vpc-cni-k8s.git/test/helm/charts/cni-metrics-helper/Chart.yaml"
       ]
     },
-    "composefile": {
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "amazon-vpc-cni-k8s.git/charts/aws-calico/templates/tigera-operator/02-configmap-calico-resources.yaml",
+        "amazon-vpc-cni-k8s.git/charts/aws-calico/templates/tigera-operator/02-serviceaccount-tigera-operator.yaml",
+        "amazon-vpc-cni-k8s.git/charts/aws-vpc-cni/templates/configmap.yaml",
+        "amazon-vpc-cni-k8s.git/charts/aws-vpc-cni/templates/serviceaccount.yaml",
+        "amazon-vpc-cni-k8s.git/charts/cni-metrics-helper/templates/deployment.yaml",
+        "amazon-vpc-cni-k8s.git/charts/cni-metrics-helper/templates/serviceaccount.yaml",
+        "amazon-vpc-cni-k8s.git/test/helm/charts/cni-metrics-helper/templates/deployment.yaml",
+        "amazon-vpc-cni-k8s.git/test/helm/charts/cni-metrics-helper/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

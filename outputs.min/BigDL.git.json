@@ -2,35 +2,11 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 25,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 25,
+      "subFolderCount": 1,
       "filepaths": [
-        "BigDL.git/docker/bigdl/Dockerfile",
-        "BigDL.git/docker/bigdl-k8s/Dockerfile",
-        "BigDL.git/docker/chronos-nightly/Dockerfile",
-        "BigDL.git/docker/friesian-serving/Dockerfile",
-        "BigDL.git/ppml/base/Dockerfile",
-        "BigDL.git/ppml/services/kms-utils/docker/Dockerfile",
-        "BigDL.git/ppml/services/pccs/docker/Dockerfile",
-        "BigDL.git/ppml/tdx/docker/bigdl-tdx/Dockerfile",
-        "BigDL.git/ppml/tdx/docker/client-image/Dockerfile",
-        "BigDL.git/ppml/trusted-big-data-ml/python/docker-gramine/base/Dockerfile",
-        "BigDL.git/ppml/trusted-big-data-ml/python/docker-gramine/bigdl-gramine/Dockerfile",
-        "BigDL.git/ppml/trusted-big-data-ml/python/docker-graphene/Dockerfile",
-        "BigDL.git/ppml/trusted-big-data-ml/scala/docker-occlum/Dockerfile",
-        "BigDL.git/ppml/trusted-big-data-ml/scala/docker-occlum/production/Dockerfile",
-        "BigDL.git/ppml/trusted-big-data-ml/scala/docker-occlum/production/customer/Dockerfile",
-        "BigDL.git/ppml/trusted-bigdata/Dockerfile",
-        "BigDL.git/ppml/trusted-bigdata/custom-image/Dockerfile",
-        "BigDL.git/ppml/trusted-deep-learning/base/Dockerfile",
-        "BigDL.git/ppml/trusted-deep-learning/ref/Dockerfile",
-        "BigDL.git/ppml/trusted-python-toolkit/Dockerfile",
-        "BigDL.git/ppml/trusted-python-toolkit/custom-image/Dockerfile",
-        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-graphene/Dockerfile",
-        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-occlum/Dockerfile",
-        "BigDL.git/python/orca/orca-dev.dockerfile",
-        "BigDL.git/scala/ppml/demo/Dockerfile"
+        "BigDL.git/python/orca/orca-dev.dockerfile"
       ]
     },
     "composefile": {
@@ -39,6 +15,69 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "BigDL.git/ppml/trusted-big-data-ml/python/docker-gramine/kubernetes/bigdl-ppml-helm/Chart.yaml",
+        "BigDL.git/ppml/trusted-big-data-ml/python/docker-graphene/kubernetes/bigdl-ppml-helm/Chart.yaml",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/Chart.yaml",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-occlum/kubernetes/Chart.yaml",
+        "BigDL.git/scala/ppml/demo/kubernetes/bigdl-ppml-fl-helm/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "BigDL.git/docker/bigdl/deployment-k8s.yaml",
+        "BigDL.git/docker/bigdl/deployment-nfs.yaml",
+        "BigDL.git/docker/bigdl/deployment.yaml",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/taskmanager-deployment.yaml.back",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/templates/flink-configuration-configmap.yaml",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/templates/jobmanager-deployment.yaml",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/templates/jobmanager-service.yaml",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/templates/master-deployment.yaml",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/templates/redis-service.yaml",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-occlum/kubernetes/taskmanager-deployment.yaml.back",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-occlum/kubernetes/templates/flink-configuration-configmap.yaml",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-occlum/kubernetes/templates/jobmanager-deployment.yaml",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-occlum/kubernetes/templates/jobmanager-service.yaml",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-occlum/kubernetes/templates/master-deployment.yaml",
+        "BigDL.git/ppml/trusted-realtime-ml/scala/docker-occlum/kubernetes/templates/redis-service.yaml",
+        "BigDL.git/scala/ppml/demo/kubernetes/bigdl-ppml-fl-helm/templates/fl-client-deployment.yaml",
+        "BigDL.git/scala/ppml/demo/kubernetes/bigdl-ppml-fl-helm/templates/fl-server-deployment.yaml",
+        "BigDL.git/scala/ppml/demo/kubernetes/bigdl-ppml-fl-helm/templates/fl-server-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "BigDL.git/ppml/trusted-big-data-ml/python/docker-graphene/orca.learn.tf.text.patch",
+        "BigDL.git/ppml/trusted-big-data-ml/python/docker-graphene/orca.learn.tf.transfer.patch"
+      ]
     }
   },
   "info": {

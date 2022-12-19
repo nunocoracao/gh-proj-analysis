@@ -1,18 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
-      "rootCount": 1,
-      "subFolderCount": 5,
-      "filepaths": [
-        "skipper.git/Dockerfile",
-        "skipper.git/fastcgiserver/Dockerfile",
-        "skipper.git/packaging/Dockerfile",
-        "skipper.git/packaging/Dockerfile.alpine",
-        "skipper.git/packaging/Dockerfile.arm64",
-        "skipper.git/packaging/Dockerfile.armv7"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -22,6 +15,65 @@
       "filepaths": [
         "skipper.git/fastcgiserver/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "skipper.git/packaging/helm/skipper-aws/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 21,
+      "rootCount": 0,
+      "subFolderCount": 21,
+      "filepaths": [
+        "skipper.git/dataclients/kubernetes/definitions/testdata/validation/invalid-service-port.yaml",
+        "skipper.git/dataclients/kubernetes/definitions/testdata/validation/missing-service-name.yaml",
+        "skipper.git/dataclients/kubernetes/testdata/ingressV1/ingress-data/ing-with-default-backend-and-force-k8s-service-flag-enabled.yaml",
+        "skipper.git/dataclients/kubernetes/testdata/ingressV1/ingress-data/ing-with-label-selector-filter-and-force-k8s-service-flag.yaml",
+        "skipper.git/dataclients/kubernetes/testdata/ingressV1/ingress-data/lb-traffic-switch-and-force-k8s-service-flag.yaml",
+        "skipper.git/dataclients/kubernetes/testdata/routegroups/cluster-state/invalid-service.yaml",
+        "skipper.git/dataclients/kubernetes/testdata/routegroups/convert/missing-service-endpoints-and-cluster-ip.yaml",
+        "skipper.git/dataclients/kubernetes/testdata/routegroups/convert/missing-service.yaml",
+        "skipper.git/dataclients/kubernetes/testdata/routegroups/convert/multiple-route-groups-using-the-same-service.yaml",
+        "skipper.git/dataclients/kubernetes/testdata/routegroups/convert/service-not-cluster-ip-type.yaml",
+        "skipper.git/dataclients/kubernetes/testdata/routegroups/external-name/external-name-service-not-used.yaml",
+        "skipper.git/docs/kubernetes/deploy/demo/deployment.yaml",
+        "skipper.git/docs/kubernetes/deploy/deployment/deployment.yaml",
+        "skipper.git/docs/kubernetes/deploy/deployment/service.yaml",
+        "skipper.git/packaging/helm/skipper-aws/templates/external-dns/deployment.yaml",
+        "skipper.git/packaging/helm/skipper-aws/templates/ingress-controller/deployment.yaml",
+        "skipper.git/packaging/helm/skipper-aws/templates/kube-aws-iam-controller/deployment.yaml",
+        "skipper.git/packaging/helm/skipper-aws/templates/skipper/deployment.yaml",
+        "skipper.git/packaging/helm/skipper-aws/templates/skipper/service-internal.yaml",
+        "skipper.git/packaging/helm/skipper-aws/templates/skipper/service.yaml",
+        "skipper.git/packaging/helm/skipper-aws/templates/skipper/skipper-redis-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

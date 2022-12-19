@@ -2,15 +2,13 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 5,
+      "count": 3,
       "rootCount": 3,
-      "subFolderCount": 2,
+      "subFolderCount": 0,
       "filepaths": [
         "realm-core.git/android.Dockerfile",
         "realm-core.git/packaging.Dockerfile",
-        "realm-core.git/testing.Dockerfile",
-        "realm-core.git/test/cloud_perf_test/client/resources/docker/Dockerfile",
-        "realm-core.git/test/cloud_perf_test/server/resources/docker/Dockerfile"
+        "realm-core.git/testing.Dockerfile"
       ]
     },
     "composefile": {
@@ -21,6 +19,50 @@
       "filepaths": [
         "realm-core.git/.devcontainer/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "realm-core.git/test/cloud_perf_test/client/resources/helm/Chart.yaml",
+        "realm-core.git/test/cloud_perf_test/server/resources/helm/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "realm-core.git/test/cloud_perf_test/client/resources/helm/templates/deployment.yaml",
+        "realm-core.git/test/cloud_perf_test/client/resources/helm/templates/service.yaml",
+        "realm-core.git/test/cloud_perf_test/client/resources/helm/templates/servicemonitor.yaml",
+        "realm-core.git/test/cloud_perf_test/server/resources/helm/templates/deployment.yaml",
+        "realm-core.git/test/cloud_perf_test/server/resources/helm/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

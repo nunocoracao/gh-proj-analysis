@@ -1,19 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 7,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 7,
-      "filepaths": [
-        "go-coffeeshop.git/.devcontainer/Dockerfile-dev",
-        "go-coffeeshop.git/docker/Dockerfile-barista",
-        "go-coffeeshop.git/docker/Dockerfile-counter",
-        "go-coffeeshop.git/docker/Dockerfile-kitchen",
-        "go-coffeeshop.git/docker/Dockerfile-product",
-        "go-coffeeshop.git/docker/Dockerfile-proxy",
-        "go-coffeeshop.git/docker/Dockerfile-web"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -23,6 +15,55 @@
       "filepaths": [
         "go-coffeeshop.git/docker-compose-full.yaml",
         "go-coffeeshop.git/docker-compose.yaml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "go-coffeeshop.git/build/local/etc/consul.hcl",
+        "go-coffeeshop.git/build/local/etc/nomad.hcl",
+        "go-coffeeshop.git/build/nomad/.terraform.lock.hcl",
+        "go-coffeeshop.git/build/nomad/nomad.tf",
+        "go-coffeeshop.git/build/nomad/jobs/barista-api.nomad.hcl",
+        "go-coffeeshop.git/build/nomad/jobs/counter-api.nomad.hcl",
+        "go-coffeeshop.git/build/nomad/jobs/grpc-gw.nomad.hcl",
+        "go-coffeeshop.git/build/nomad/jobs/kitchen-api.nomad.hcl",
+        "go-coffeeshop.git/build/nomad/jobs/postgresdb.nomad.hcl",
+        "go-coffeeshop.git/build/nomad/jobs/product-api.nomad.hcl",
+        "go-coffeeshop.git/build/nomad/jobs/rabbitmq.nomad.hcl",
+        "go-coffeeshop.git/build/nomad/jobs/traefik.nomad.hcl",
+        "go-coffeeshop.git/build/nomad/jobs/web.nomad.hcl"
       ]
     }
   },

@@ -1,16 +1,69 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 1,
-      "subFolderCount": 1,
-      "filepaths": [
-        "kubernetes-ingress-controller.git/Dockerfile",
-        "kubernetes-ingress-controller.git/.github/actions/redhat-opdev-preflight-action/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "kubernetes-ingress-controller.git/config/base/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/certmanager/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/crd/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/default/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/image/enterprise/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/image/oss/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/manager/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/prometheus/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/rbac/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/rbac/gateway/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/rbac/knative/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/variants/enterprise/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/variants/enterprise-postgres/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/variants/postgres/kustomization.yaml",
+        "kubernetes-ingress-controller.git/config/variants/postgres/wait/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "kubernetes-ingress-controller.git/config/base/service.yaml",
+        "kubernetes-ingress-controller.git/config/base/serviceaccount.yaml",
+        "kubernetes-ingress-controller.git/config/base/validation-service.yaml",
+        "kubernetes-ingress-controller.git/config/rbac/auth_proxy_service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

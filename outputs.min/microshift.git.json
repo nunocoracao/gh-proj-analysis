@@ -1,16 +1,78 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "microshift.git/packaging/images/openshift-ci/Dockerfile",
-        "microshift.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "microshift.git/hack/reference-workload/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "microshift.git/vendor/github.com/openshift/api/helm/v1beta1/0000_10-helm-chart-repository.crd.yaml",
+        "microshift.git/vendor/github.com/openshift/api/helm/v1beta1/0000_10-project-helm-chart-repository.crd.yaml",
+        "microshift.git/vendor/github.com/openshift/api/helm/v1beta1/stable.helmchartrepository.testsuite.yaml",
+        "microshift.git/vendor/github.com/openshift/api/helm/v1beta1/stable.projecthelmchartrepository.testsuite.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 22,
+      "rootCount": 0,
+      "subFolderCount": 22,
+      "filepaths": [
+        "microshift.git/assets/components/odf-lvm/topolvm-controller_deployment.yaml",
+        "microshift.git/assets/components/odf-lvm/topolvm-controller_v1_serviceaccount.yaml",
+        "microshift.git/assets/components/odf-lvm/topolvm-lvmd-config_configmap_v1.yaml",
+        "microshift.git/assets/components/odf-lvm/topolvm-node-metrics_v1_service.yaml",
+        "microshift.git/assets/components/odf-lvm/topolvm-node_v1_serviceaccount.yaml",
+        "microshift.git/assets/components/openshift-dns/dns/configmap.yaml",
+        "microshift.git/assets/components/openshift-dns/dns/service-account.yaml",
+        "microshift.git/assets/components/openshift-dns/dns/service.yaml",
+        "microshift.git/assets/components/openshift-dns/node-resolver/service-account.yaml",
+        "microshift.git/assets/components/openshift-router/configmap.yaml",
+        "microshift.git/assets/components/openshift-router/deployment.yaml",
+        "microshift.git/assets/components/openshift-router/service-account.yaml",
+        "microshift.git/assets/components/openshift-router/service-internal.yaml",
+        "microshift.git/assets/components/ovn/configmap.yaml",
+        "microshift.git/assets/components/ovn/master/serviceaccount.yaml",
+        "microshift.git/assets/components/ovn/node/serviceaccount.yaml",
+        "microshift.git/assets/components/service-ca/deployment.yaml",
+        "microshift.git/assets/core/securityv1-local-apiservice.yaml",
+        "microshift.git/vendor/github.com/openshift/api/operator/v1/0000_50_service-ca-operator_02_crd.yaml",
+        "microshift.git/vendor/github.com/openshift/api/operator/v1/stable.serviceca.testsuite.yaml",
+        "microshift.git/vendor/github.com/openshift/api/sharedresource/v1alpha1/0000_10_sharedconfigmap.crd.yaml",
+        "microshift.git/vendor/github.com/openshift/api/sharedresource/v1alpha1/stable.sharedconfigmap.testsuite.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

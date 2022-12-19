@@ -1,22 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 10,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 10,
-      "filepaths": [
-        "cockroach.git/build/bazelbuilder/Dockerfile",
-        "cockroach.git/build/builder/Dockerfile",
-        "cockroach.git/build/deploy/Dockerfile",
-        "cockroach.git/build/deploy-redhat/Dockerfile.in",
-        "cockroach.git/pkg/acceptance/compose/gss/kdc/Dockerfile",
-        "cockroach.git/pkg/acceptance/compose/gss/psql/Dockerfile",
-        "cockroach.git/pkg/acceptance/compose/gss/python/Dockerfile",
-        "cockroach.git/pkg/acceptance/testdata/Dockerfile",
-        "cockroach.git/pkg/cmd/roachprod/docker/Dockerfile",
-        "cockroach.git/scripts/localmetrics/grafana/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -31,6 +20,50 @@
         "cockroach.git/pkg/compose/compare/docker-compose.yml",
         "cockroach.git/pkg/ui/workspaces/e2e-tests/compose.yaml",
         "cockroach.git/scripts/localmetrics/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "cockroach.git/cloud/kubernetes/fluentd-configmap.yml",
+        "cockroach.git/cloud/kubernetes/multiregion/eks/configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "cockroach.git/pkg/roachprod/vm/aws/terraform/main.tf",
+        "cockroach.git/pkg/roachprod/vm/aws/terraform/aws-region/ami.tf",
+        "cockroach.git/pkg/roachprod/vm/aws/terraform/aws-region/main.tf",
+        "cockroach.git/pkg/roachprod/vm/aws/terraform/aws-region/network.tf",
+        "cockroach.git/pkg/roachprod/vm/aws/terraform/aws-vpc-peer/main.tf"
       ]
     }
   },

@@ -2,29 +2,11 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 19,
+      "count": 1,
       "rootCount": 1,
-      "subFolderCount": 18,
+      "subFolderCount": 0,
       "filepaths": [
-        "gravity.git/mage.dockerfile",
-        "gravity.git/assets/dns-app/hooks/Dockerfile",
-        "gravity.git/assets/fio/Dockerfile",
-        "gravity.git/assets/robotest/Dockerfile",
-        "gravity.git/assets/site/fixtures/sample-app/images/bash-app/Dockerfile",
-        "gravity.git/assets/site/fixtures/sample-app/images/sample-app/Dockerfile",
-        "gravity.git/assets/site/fixtures/tiny-image/Dockerfile",
-        "gravity.git/assets/site-app/images/hook/Dockerfile",
-        "gravity.git/assets/site-app/images/site/Dockerfile",
-        "gravity.git/build.assets/Dockerfile",
-        "gravity.git/build.assets/Dockerfile.buildx",
-        "gravity.git/docs/Dockerfile",
-        "gravity.git/e/web/Dockerfile",
-        "gravity.git/lib/system/selinux/Dockerfile",
-        "gravity.git/vendor/github.com/docker/distribution/Dockerfile",
-        "gravity.git/vendor/github.com/gravitational/tail/Dockerfile",
-        "gravity.git/vendor/golang.org/x/net/http2/Dockerfile",
-        "gravity.git/web/Dockerfile",
-        "gravity.git/web/Dockerfile.buildx"
+        "gravity.git/mage.dockerfile"
       ]
     },
     "composefile": {
@@ -33,6 +15,82 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "gravity.git/assets/charts/alpine-0.1.0/Chart.yaml",
+        "gravity.git/assets/charts/alpine-0.2.0/Chart.yaml",
+        "gravity.git/assets/robotest/current/charts/echoserver/Chart.yaml",
+        "gravity.git/assets/robotest/upgrade-base/charts/echoserver/Chart.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/Chart.yaml",
+        "gravity.git/examples/tensorflow-resnet/resources/charts/tensorflow-resnet/Chart.yaml",
+        "gravity.git/examples/wordpress/resources/charts/wordpress/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 30,
+      "rootCount": 0,
+      "subFolderCount": 30,
+      "filepaths": [
+        "gravity.git/assets/robotest/current/charts/echoserver/templates/echoserver-deployment.yaml",
+        "gravity.git/assets/robotest/upgrade-base/charts/echoserver/templates/echoserver-deployment.yaml",
+        "gravity.git/assets/site/fixtures/parsing/skydns/skydns_service.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/cart-deployment.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/cart-service.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/catalogue-deployment.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/catalogue-service.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/dispatch-deployment.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/dispatch-service.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/mongodb-deployment.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/mongodb-service.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/mysql-deployment.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/mysql-service.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/payment-deployment.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/payment-service.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/rabbitmq-deployment.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/rabbitmq-service.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/ratings-deployment.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/ratings-service.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/redis-service.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/serviceaccount.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/shipping-deployment.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/shipping-service.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/user-deployment.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/user-service.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/web-deployment.yaml",
+        "gravity.git/examples/robot-shop-app/resources/charts/robot-shop/templates/web-service.yaml",
+        "gravity.git/examples/tensorflow-resnet/resources/charts/tensorflow-resnet/templates/deployment.yaml",
+        "gravity.git/examples/wordpress/resources/charts/wordpress/templates/mysql-deployment.yaml",
+        "gravity.git/examples/wordpress/resources/charts/wordpress/templates/wordpress-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "gravity.git/terraform-dev/cluster.tf"
+      ]
     }
   },
   "info": {

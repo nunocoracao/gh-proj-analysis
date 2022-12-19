@@ -1,19 +1,64 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 5,
-      "filepaths": [
-        "kui.git/packages/proxy/Dockerfile",
-        "kui.git/packages/proxy/Dockerfile.http",
-        "kui.git/packages/test/docker/Dockerfile",
-        "kui.git/packages/webpack/Dockerfile",
-        "kui.git/packages/webpack/Dockerfile.http"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kui.git/plugins/plugin-kubectl/tests/data/k8s/kustomize/base/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "kui.git/packages/proxy/kube/deployment.yaml",
+        "kui.git/packages/proxy/kube/service.yaml",
+        "kui.git/plugins/plugin-kubectl/tests/data/k8s/deployment.yaml",
+        "kui.git/plugins/plugin-kubectl/tests/data/k8s/application/guestbook/frontend-deployment.yaml",
+        "kui.git/plugins/plugin-kubectl/tests/data/k8s/application/guestbook/frontend-service.yaml",
+        "kui.git/plugins/plugin-kubectl/tests/data/k8s/application/guestbook/redis-master-deployment.yaml",
+        "kui.git/plugins/plugin-kubectl/tests/data/k8s/application/guestbook/redis-master-service.yaml",
+        "kui.git/plugins/plugin-kubectl/tests/data/k8s/application/guestbook/redis-slave-deployment.yaml",
+        "kui.git/plugins/plugin-kubectl/tests/data/k8s/application/guestbook/redis-slave-service.yaml",
+        "kui.git/plugins/plugin-kubectl/tests/data/k8s/bunch/deployment.yaml",
+        "kui.git/plugins/plugin-kubectl/tests/data/k8s/kustomize/base/configMap.yaml",
+        "kui.git/plugins/plugin-kubectl/tests/data/k8s/kustomize/base/deployment.yaml",
+        "kui.git/plugins/plugin-kubectl/tests/data/k8s/kustomize/base/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,15 +1,73 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "kubegres.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "kubegres.git/config/crd/kustomization.yaml",
+        "kubegres.git/config/default/kustomization.yaml",
+        "kubegres.git/config/localresource/custom-namespace/kustomization.yaml",
+        "kubegres.git/config/localresource/default-namespace/kustomization.yaml",
+        "kubegres.git/config/manager/kustomization.yaml",
+        "kubegres.git/config/prometheus/kustomization.yaml",
+        "kubegres.git/config/rbac/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 16,
+      "rootCount": 0,
+      "subFolderCount": 16,
+      "filepaths": [
+        "kubegres.git/config/localresource/custom-namespace/configMap.yaml",
+        "kubegres.git/config/localresource/default-namespace/configMap.yaml",
+        "kubegres.git/config/rbac/auth_proxy_service.yaml",
+        "kubegres.git/config/rbac/service_account.yaml",
+        "kubegres.git/controllers/spec/template/yaml/BaseConfigMapTemplate.yaml",
+        "kubegres.git/controllers/spec/template/yaml/PrimaryServiceTemplate.yaml",
+        "kubegres.git/controllers/spec/template/yaml/ReplicaServiceTemplate.yaml",
+        "kubegres.git/test/resourceConfigs/primaryService.yaml",
+        "kubegres.git/test/resourceConfigs/replicaService.yaml",
+        "kubegres.git/test/resourceConfigs/customConfig/configMap_empty.yaml",
+        "kubegres.git/test/resourceConfigs/customConfig/configMap_with_all_configs.yaml",
+        "kubegres.git/test/resourceConfigs/customConfig/configMap_with_backup_database_script.yaml",
+        "kubegres.git/test/resourceConfigs/customConfig/configMap_with_pg_hba_conf.yaml",
+        "kubegres.git/test/resourceConfigs/customConfig/configMap_with_postgres_conf.yaml",
+        "kubegres.git/test/resourceConfigs/customConfig/configMap_with_postgres_conf_and_wal_level_to_logical.yaml",
+        "kubegres.git/test/resourceConfigs/customConfig/configMap_with_primary_init_script.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

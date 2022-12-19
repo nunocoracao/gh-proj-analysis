@@ -1,20 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 8,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 8,
-      "filepaths": [
-        "pushdeer.git/docker/mqtt/Dockerfile",
-        "pushdeer.git/docker/mqtt/Dockerfile.dev",
-        "pushdeer.git/docker/web/Dockerfile",
-        "pushdeer.git/docker/web/Dockerfile.serverless",
-        "pushdeer.git/push/gorush-with-mipush/src/docker/Dockerfile.linux.amd64",
-        "pushdeer.git/push/gorush-with-mipush/src/docker/Dockerfile.linux.arm",
-        "pushdeer.git/push/gorush-with-mipush/src/docker/Dockerfile.linux.arm64",
-        "pushdeer.git/push/gorush-with-mipush/src/docker/Dockerfile.windows.amd64"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -29,6 +20,53 @@
         "pushdeer.git/docker/mqtt/docker-compose.yml",
         "pushdeer.git/push/gorush-with-mipush/src/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "pushdeer.git/push/gorush-with-mipush/src/helm/gorush/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "pushdeer.git/push/gorush-with-mipush/src/helm/gorush/templates/configmap.yml",
+        "pushdeer.git/push/gorush-with-mipush/src/helm/gorush/templates/deployment.yaml",
+        "pushdeer.git/push/gorush-with-mipush/src/helm/gorush/templates/service.yaml",
+        "pushdeer.git/push/gorush-with-mipush/src/helm/gorush/templates/serviceaccount.yaml",
+        "pushdeer.git/push/gorush-with-mipush/src/k8s/gorush-configmap.yaml",
+        "pushdeer.git/push/gorush-with-mipush/src/k8s/gorush-deployment.yaml",
+        "pushdeer.git/push/gorush-with-mipush/src/k8s/gorush-redis-deployment.yaml",
+        "pushdeer.git/push/gorush-with-mipush/src/k8s/gorush-redis-service.yaml",
+        "pushdeer.git/push/gorush-with-mipush/src/k8s/gorush-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

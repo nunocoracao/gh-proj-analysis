@@ -1,20 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 8,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 8,
-      "filepaths": [
-        "druid.git/distribution/docker/Dockerfile",
-        "druid.git/distribution/docker/Dockerfile.mariadb",
-        "druid.git/distribution/docker/Dockerfile.mysql",
-        "druid.git/distribution/docker/DockerfileBuildTarAdvanced",
-        "druid.git/examples/quickstart/tutorial/hadoop/docker/Dockerfile",
-        "druid.git/examples/quickstart/tutorial/hadoop3/docker/Dockerfile",
-        "druid.git/integration-tests/docker/Dockerfile",
-        "druid.git/integration-tests-ex/image/docker/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -38,6 +29,55 @@
         "druid.git/integration-tests-ex/cases/cluster/HighAvailability/docker-compose.yaml",
         "druid.git/integration-tests-ex/cases/cluster/MultiStageQuery/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "druid.git/helm/druid/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "druid.git/helm/druid/templates/configmap.yaml",
+        "druid.git/helm/druid/templates/broker/deployment.yaml",
+        "druid.git/helm/druid/templates/broker/service.yaml",
+        "druid.git/helm/druid/templates/coordinator/deployment.yaml",
+        "druid.git/helm/druid/templates/coordinator/service.yaml",
+        "druid.git/helm/druid/templates/historical/service.yaml",
+        "druid.git/helm/druid/templates/middleManager/service.yaml",
+        "druid.git/helm/druid/templates/overlord/deployment.yaml",
+        "druid.git/helm/druid/templates/overlord/service.yaml",
+        "druid.git/helm/druid/templates/router/deployment.yaml",
+        "druid.git/helm/druid/templates/router/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

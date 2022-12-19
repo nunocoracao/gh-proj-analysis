@@ -1,17 +1,69 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
-      "rootCount": 1,
-      "subFolderCount": 2,
-      "filepaths": [
-        "aks-aspnet-sqldb-rest.git/dockerfile",
-        "aks-aspnet-sqldb-rest.git/extensions/ingest-claims-keda/ClaimsApiAsyncFunc/Dockerfile",
-        "aks-aspnet-sqldb-rest.git/extensions/ingest-claims-keda/ClaimsAsyncApiFunc/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "aks-aspnet-sqldb-rest.git/claims-api/Chart.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/azure-stack-edge/claims-api/Chart.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/ingest-claims-keda/claims-api-func/Chart.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/ingest-claims-keda/claims-async-func/Chart.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/istio-service-mesh/claims-api/Chart.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/use-pod-identity/claims-api/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "aks-aspnet-sqldb-rest.git/claims-api/templates/deployment.blue.yaml",
+        "aks-aspnet-sqldb-rest.git/claims-api/templates/deployment.green.yaml",
+        "aks-aspnet-sqldb-rest.git/claims-api/templates/service.prod.yaml",
+        "aks-aspnet-sqldb-rest.git/claims-api/templates/service.stage.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/azure-stack-edge/claims-api/templates/deployment.blue.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/azure-stack-edge/claims-api/templates/deployment.green.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/azure-stack-edge/claims-api/templates/service.prod.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/azure-stack-edge/claims-api/templates/service.stage.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/istio-service-mesh/claims-api/templates/deployments.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/istio-service-mesh/claims-api/templates/service.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/use-pod-identity/claims-api/templates/deployment.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/use-pod-identity/claims-api/templates/service.yaml",
+        "aks-aspnet-sqldb-rest.git/extensions/use-pod-identity-mid/k8s-resources/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

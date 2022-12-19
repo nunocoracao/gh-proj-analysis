@@ -1,21 +1,102 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 7,
-      "rootCount": 2,
-      "subFolderCount": 5,
-      "filepaths": [
-        "KubeArmor.git/Dockerfile",
-        "KubeArmor.git/Dockerfile.init",
-        "KubeArmor.git/examples/multiubuntu/build/Dockerfile",
-        "KubeArmor.git/pkg/KubeArmorAnnotation/Dockerfile",
-        "KubeArmor.git/pkg/KubeArmorController/Dockerfile",
-        "KubeArmor.git/pkg/KubeArmorHostPolicy/Dockerfile",
-        "KubeArmor.git/pkg/KubeArmorPolicy/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 27,
+      "rootCount": 0,
+      "subFolderCount": 27,
+      "filepaths": [
+        "KubeArmor.git/pkg/KubeArmorAnnotation/config/certmanager/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorAnnotation/config/default/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorAnnotation/config/manager/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorAnnotation/config/prometheus/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorAnnotation/config/rbac/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorAnnotation/config/webhook/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorController/config/certmanager/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorController/config/crd/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorController/config/default/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorController/config/manager/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorController/config/prometheus/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorController/config/rbac/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorController/config/webhook/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorHostPolicy/config/certmanager/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorHostPolicy/config/crd/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorHostPolicy/config/default/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorHostPolicy/config/manager/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorHostPolicy/config/prometheus/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorHostPolicy/config/rbac/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorHostPolicy/config/webhook/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorPolicy/config/certmanager/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorPolicy/config/crd/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorPolicy/config/default/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorPolicy/config/manager/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorPolicy/config/prometheus/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorPolicy/config/rbac/kustomization.yaml",
+        "KubeArmor.git/pkg/KubeArmorPolicy/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "KubeArmor.git/deployments/helm/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 23,
+      "rootCount": 0,
+      "subFolderCount": 23,
+      "filepaths": [
+        "KubeArmor.git/deployments/helm/templates/deployment.yaml",
+        "KubeArmor.git/deployments/helm/templates/service.yaml",
+        "KubeArmor.git/deployments/helm/templates/serviceaccount.yaml",
+        "KubeArmor.git/examples/multiubuntu/multiubuntu-deployment.yaml",
+        "KubeArmor.git/examples/multiubuntu/original/multiubuntu-deployment.yaml",
+        "KubeArmor.git/examples/sock-shop/sock-shop-deployment.yaml",
+        "KubeArmor.git/examples/sock-shop/original/sock-shop-deployment.yaml",
+        "KubeArmor.git/examples/wordpress-mysql/wordpress-mysql-deployment.yaml",
+        "KubeArmor.git/examples/wordpress-mysql/original/wordpress-mysql-deployment.yaml",
+        "KubeArmor.git/pkg/KubeArmorAnnotation/config/rbac/auth_proxy_service.yaml",
+        "KubeArmor.git/pkg/KubeArmorAnnotation/config/rbac/service_account.yaml",
+        "KubeArmor.git/pkg/KubeArmorAnnotation/config/webhook/service.yaml",
+        "KubeArmor.git/pkg/KubeArmorController/config/rbac/auth_proxy_service.yaml",
+        "KubeArmor.git/pkg/KubeArmorController/config/rbac/service_account.yaml",
+        "KubeArmor.git/pkg/KubeArmorController/config/webhook/service.yaml",
+        "KubeArmor.git/pkg/KubeArmorHostPolicy/config/rbac/auth_proxy_service.yaml",
+        "KubeArmor.git/pkg/KubeArmorHostPolicy/config/webhook/service.yaml",
+        "KubeArmor.git/pkg/KubeArmorPolicy/config/rbac/auth_proxy_service.yaml",
+        "KubeArmor.git/pkg/KubeArmorPolicy/config/webhook/service.yaml",
+        "KubeArmor.git/tests/microservices/github/multiubuntu-deployment.yaml",
+        "KubeArmor.git/tests/multicontainer/manifests/multicontainer-deployment.yaml",
+        "KubeArmor.git/tests/smoke/res/wordpress-mysql-deployment.yaml",
+        "KubeArmor.git/tests/syscalls/manifests/ubuntu-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

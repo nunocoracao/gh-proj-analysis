@@ -1,18 +1,54 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 4,
-      "filepaths": [
-        "k8s-device-plugin.git/deployments/container/Dockerfile.ubi8",
-        "k8s-device-plugin.git/deployments/container/Dockerfile.ubuntu",
-        "k8s-device-plugin.git/docker/Dockerfile.devel",
-        "k8s-device-plugin.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "k8s-device-plugin.git/deployments/helm/nvidia-device-plugin/Chart.yaml",
+        "k8s-device-plugin.git/deployments/helm/nvidia-device-plugin/charts/gpu-feature-discovery/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "k8s-device-plugin.git/deployments/helm/nvidia-device-plugin/templates/configmap.yml",
+        "k8s-device-plugin.git/deployments/helm/nvidia-device-plugin/templates/service-account.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

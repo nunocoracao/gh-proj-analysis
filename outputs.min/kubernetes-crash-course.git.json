@@ -1,22 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 10,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 10,
-      "filepaths": [
-        "kubernetes-crash-course.git/01-hello-world-rest-api/Dockerfile",
-        "kubernetes-crash-course.git/02-todo-web-application-h2/Dockerfile",
-        "kubernetes-crash-course.git/03-todo-web-application-mysql/Dockerfile",
-        "kubernetes-crash-course.git/04-currency-exchange-microservice-basic/Dockerfile",
-        "kubernetes-crash-course.git/05-currency-conversion-microservice-basic/Dockerfile",
-        "kubernetes-crash-course.git/06-currency-conversion-microservice-cloud/Dockerfile",
-        "kubernetes-crash-course.git/07-currency-exchange-microservice-stackdriver/Dockerfile",
-        "kubernetes-crash-course.git/08-currency-conversion-microservice-stackdriver/Dockerfile",
-        "kubernetes-crash-course.git/09-currency-exchange-microservice-istio/Dockerfile",
-        "kubernetes-crash-course.git/10-currency-conversion-microservice-istio/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -26,6 +15,77 @@
       "filepaths": [
         "kubernetes-crash-course.git/03-todo-web-application-mysql/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kubernetes-crash-course.git/12-helm/currency-exchange/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 33,
+      "rootCount": 0,
+      "subFolderCount": 33,
+      "filepaths": [
+        "kubernetes-crash-course.git/01-hello-world-rest-api/backup/deployment-00-original.yaml",
+        "kubernetes-crash-course.git/01-hello-world-rest-api/backup/deployment-01-after-cleanup.yaml",
+        "kubernetes-crash-course.git/01-hello-world-rest-api/backup/deployment-02-using-replica-set.yaml",
+        "kubernetes-crash-course.git/01-hello-world-rest-api/backup/deployment-03-Multiple-Deployments-With-Same-Service.yaml",
+        "kubernetes-crash-course.git/01-hello-world-rest-api/backup/deployment-10-at-end-of-course.yaml",
+        "kubernetes-crash-course.git/01-hello-world-rest-api/backup/service-00-original.yaml",
+        "kubernetes-crash-course.git/02-todo-web-application-h2/backup/deployment.yaml",
+        "kubernetes-crash-course.git/03-todo-web-application-mysql/backup/00-generated-by-kompose/mysql-deployment-original-generated-by-kompose.yaml",
+        "kubernetes-crash-course.git/03-todo-web-application-mysql/backup/00-generated-by-kompose/mysql-service-original-generated-by-kompose.yaml",
+        "kubernetes-crash-course.git/03-todo-web-application-mysql/backup/00-generated-by-kompose/todo-web-application-deployment-original-generated-by-kompose.yaml",
+        "kubernetes-crash-course.git/03-todo-web-application-mysql/backup/00-generated-by-kompose/todo-web-application-service-original-generated-by-kompose.yaml",
+        "kubernetes-crash-course.git/03-todo-web-application-mysql/backup/01-updated-manually/mysql-deployment.yaml",
+        "kubernetes-crash-course.git/03-todo-web-application-mysql/backup/01-updated-manually/mysql-service.yaml",
+        "kubernetes-crash-course.git/03-todo-web-application-mysql/backup/01-updated-manually/todo-web-application-deployment.yaml",
+        "kubernetes-crash-course.git/03-todo-web-application-mysql/backup/01-updated-manually/todo-web-application-service.yaml",
+        "kubernetes-crash-course.git/03-todo-web-application-mysql/backup/02-final-backup-at-end-of-course/mysql-deployment.yaml",
+        "kubernetes-crash-course.git/03-todo-web-application-mysql/backup/02-final-backup-at-end-of-course/mysql-service.yaml",
+        "kubernetes-crash-course.git/03-todo-web-application-mysql/backup/02-final-backup-at-end-of-course/todo-web-application-deployment.yaml",
+        "kubernetes-crash-course.git/03-todo-web-application-mysql/backup/02-final-backup-at-end-of-course/todo-web-application-service.yaml",
+        "kubernetes-crash-course.git/04-currency-exchange-microservice-basic/00-configmap-currency-conversion.yaml",
+        "kubernetes-crash-course.git/04-currency-exchange-microservice-basic/deployment.yaml",
+        "kubernetes-crash-course.git/05-currency-conversion-microservice-basic/deployment.yaml",
+        "kubernetes-crash-course.git/06-currency-conversion-microservice-cloud/deployment.yaml",
+        "kubernetes-crash-course.git/07-currency-exchange-microservice-stackdriver/deployment.yaml",
+        "kubernetes-crash-course.git/08-currency-conversion-microservice-stackdriver/deployment.yaml",
+        "kubernetes-crash-course.git/09-currency-exchange-microservice-istio/deployment.yaml",
+        "kubernetes-crash-course.git/10-currency-conversion-microservice-istio/00-configmap-currency-conversion.yaml",
+        "kubernetes-crash-course.git/10-currency-conversion-microservice-istio/deployment.yaml",
+        "kubernetes-crash-course.git/11-istio-scripts-and-configuration/01-helloworld-deployment.yaml",
+        "kubernetes-crash-course.git/11-istio-scripts-and-configuration/03-creating-virtualservice-external.yaml",
+        "kubernetes-crash-course.git/11-istio-scripts-and-configuration/04-helloworld-multiple-deployments.yaml",
+        "kubernetes-crash-course.git/11-istio-scripts-and-configuration/07-hw-virtualservice-all-services.yaml",
+        "kubernetes-crash-course.git/12-helm/currency-exchange/templates/microservice-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

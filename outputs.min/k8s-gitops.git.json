@@ -1,15 +1,91 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "k8s-gitops.git/.devcontainer/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "k8s-gitops.git/cert-manager/crds/kustomization.yaml",
+        "k8s-gitops.git/flux-system/kustomization.yaml",
+        "k8s-gitops.git/monitoring/grafana/dashboards/kustomization.yaml",
+        "k8s-gitops.git/monitoring/kube-prometheus-stack/crds/kustomization.yaml",
+        "k8s-gitops.git/rook-ceph/crds/kustomization.yaml",
+        "k8s-gitops.git/velero/crds/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 31,
+      "rootCount": 0,
+      "subFolderCount": 31,
+      "filepaths": [
+        "k8s-gitops.git/cert-manager/chart/cert-manager-chart.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/1password-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/banzaicloud-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/bitnami-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/blakeshome-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/coredns-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/emqx-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/fairwinds-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/grafana-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/hashicorp-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/influxdata-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/infracloudio-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/ingress-nginx-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/jetstack-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/k8s-at-home-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/kubernetes-sigs-descheduler-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/kubernetes-sigs-nfd-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/metallb-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/minecraft-server-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/minio-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/nextcloud-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/nfs-subdir-external-provisioner-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/oauth2-proxy-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/prometheus-community-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/ricoberger-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/rook-ceph-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/stakater-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/vector-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/vmware-tanzu-charts.yaml",
+        "k8s-gitops.git/flux-system-extra/helm-chart-repositories/weaveworks-kured-charts.yaml",
+        "k8s-gitops.git/rook-ceph/chart/rook-ceph-chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "k8s-gitops.git/logs/loki/servicemonitor.yaml",
+        "k8s-gitops.git/rook-ceph/monitoring/csi-metrics-service-monitor.yaml",
+        "k8s-gitops.git/rook-ceph/monitoring/service-monitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

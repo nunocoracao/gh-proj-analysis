@@ -1,16 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 1,
-      "subFolderCount": 3,
-      "filepaths": [
-        "open-event-server.git/Dockerfile",
-        "open-event-server.git/kubernetes/images/gcloud/Dockerfile",
-        "open-event-server.git/kubernetes/images/nfs-server/Dockerfile",
-        "open-event-server.git/kubernetes/images/web/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -21,6 +16,67 @@
         "open-event-server.git/docker-compose-dev.yml",
         "open-event-server.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "open-event-server.git/charts/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 23,
+      "rootCount": 0,
+      "subFolderCount": 23,
+      "filepaths": [
+        "open-event-server.git/charts/templates/celery-deployment.yaml",
+        "open-event-server.git/charts/templates/frontend-deployment.yaml",
+        "open-event-server.git/charts/templates/frontend-service.yaml",
+        "open-event-server.git/charts/templates/web-deployment.yaml",
+        "open-event-server.git/charts/templates/web-service.yaml",
+        "open-event-server.git/kubernetes/yamls/api-server/configmap.yml",
+        "open-event-server.git/kubernetes/yamls/api-server/deployment.yml",
+        "open-event-server.git/kubernetes/yamls/api-server/service.yml",
+        "open-event-server.git/kubernetes/yamls/elasticsearch/configmap.yml",
+        "open-event-server.git/kubernetes/yamls/elasticsearch/deployment.yaml",
+        "open-event-server.git/kubernetes/yamls/elasticsearch/service.yaml",
+        "open-event-server.git/kubernetes/yamls/lego/configmap.yml",
+        "open-event-server.git/kubernetes/yamls/lego/deployment.yaml",
+        "open-event-server.git/kubernetes/yamls/nginx/configmap.yml",
+        "open-event-server.git/kubernetes/yamls/nginx/default-deployment.yml",
+        "open-event-server.git/kubernetes/yamls/nginx/default-service.yml",
+        "open-event-server.git/kubernetes/yamls/nginx/deployment.yml",
+        "open-event-server.git/kubernetes/yamls/nginx/service.yml",
+        "open-event-server.git/kubernetes/yamls/postgres/configmap.yml",
+        "open-event-server.git/kubernetes/yamls/postgres/deployment.yml",
+        "open-event-server.git/kubernetes/yamls/postgres/service.yml",
+        "open-event-server.git/kubernetes/yamls/redis/redis-deployment.yml",
+        "open-event-server.git/kubernetes/yamls/redis/redis-service.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

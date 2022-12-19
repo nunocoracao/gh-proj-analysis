@@ -1,17 +1,73 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
-      "rootCount": 2,
-      "subFolderCount": 1,
-      "filepaths": [
-        "topolvm.git/Dockerfile",
-        "topolvm.git/Dockerfile.with-sidecar",
-        "topolvm.git/e2e/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "topolvm.git/config/certmanager/kustomization.yaml",
+        "topolvm.git/config/crd/kustomization.yaml",
+        "topolvm.git/config/default/kustomization.yaml",
+        "topolvm.git/config/manager/kustomization.yaml",
+        "topolvm.git/config/rbac/kustomization.yaml",
+        "topolvm.git/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "topolvm.git/charts/topolvm/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "topolvm.git/charts/topolvm/templates/controller/deployment.yaml",
+        "topolvm.git/charts/topolvm/templates/controller/service.yaml",
+        "topolvm.git/charts/topolvm/templates/controller/serviceaccount.yaml",
+        "topolvm.git/charts/topolvm/templates/lvmd/configmap.yaml",
+        "topolvm.git/charts/topolvm/templates/lvmd/serviceaccount.yaml",
+        "topolvm.git/charts/topolvm/templates/node/serviceaccount.yaml",
+        "topolvm.git/charts/topolvm/templates/scheduler/configmap.yaml",
+        "topolvm.git/charts/topolvm/templates/scheduler/deployment-service.yaml",
+        "topolvm.git/charts/topolvm/templates/scheduler/deployment.yaml",
+        "topolvm.git/charts/topolvm/templates/scheduler/serviceaccount.yaml",
+        "topolvm.git/config/rbac/auth_proxy_service.yaml",
+        "topolvm.git/config/rbac/service_account.yaml",
+        "topolvm.git/config/webhook/service.yaml",
+        "topolvm.git/e2e/scheduler-config-deployment.yaml",
+        "topolvm.git/e2e/manifests/values/deployment-scheduler.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

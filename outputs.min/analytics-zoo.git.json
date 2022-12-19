@@ -2,22 +2,11 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 12,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 12,
+      "subFolderCount": 1,
       "filepaths": [
-        "analytics-zoo.git/docker/cluster-serving/ClusterServingSparkVersionDockerfile",
-        "analytics-zoo.git/docker/cluster-serving/Dockerfile",
-        "analytics-zoo.git/docker/hyperzoo/Dockerfile",
-        "analytics-zoo.git/docker/jenkins-ci/jenkins-master/Dockerfile",
-        "analytics-zoo.git/docker/jenkins-ci/jenkins-slave/Dockerfile",
-        "analytics-zoo.git/docker/zoo/Dockerfile",
-        "analytics-zoo.git/ppml/trusted-big-data-ml/python/docker-graphene/Dockerfile",
-        "analytics-zoo.git/ppml/trusted-big-data-ml/scala/docker-graphene/Dockerfile",
-        "analytics-zoo.git/ppml/trusted-big-data-ml/scala/docker-occlum/Dockerfile",
-        "analytics-zoo.git/ppml/trusted-big-data-ml/scala/docker-occlum/kubernetes/Dockerfile",
-        "analytics-zoo.git/ppml/trusted-realtime-ml/scala/docker-graphene/Dockerfile",
-        "analytics-zoo.git/ppml/trusted-realtime-ml/scala/docker-occlum/Dockerfile"
+        "analytics-zoo.git/docker/cluster-serving/ClusterServingSparkVersionDockerfile"
       ]
     },
     "composefile": {
@@ -26,6 +15,53 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "analytics-zoo.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "analytics-zoo.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/taskmanager-deployment.yaml.back",
+        "analytics-zoo.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/templates/flink-configuration-configmap.yaml",
+        "analytics-zoo.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/templates/jobmanager-deployment.yaml",
+        "analytics-zoo.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/templates/jobmanager-service.yaml",
+        "analytics-zoo.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/templates/master-deployment.yaml",
+        "analytics-zoo.git/ppml/trusted-realtime-ml/scala/docker-graphene/kubernetes/templates/redis-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "analytics-zoo.git/ppml/trusted-big-data-ml/python/docker-graphene/orca.learn.tf.text.patch",
+        "analytics-zoo.git/ppml/trusted-big-data-ml/python/docker-graphene/orca.learn.tf.transfer.patch"
+      ]
     }
   },
   "info": {

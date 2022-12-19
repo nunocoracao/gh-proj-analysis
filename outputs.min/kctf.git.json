@@ -2,25 +2,68 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 12,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 12,
+      "subFolderCount": 1,
       "filepaths": [
-        "kctf.git/dist/challenge-templates/pwn/challenge/Dockerfile",
-        "kctf.git/dist/challenge-templates/pwn/healthcheck/Dockerfile",
-        "kctf.git/dist/challenge-templates/web/challenge/Dockerfile",
-        "kctf.git/dist/challenge-templates/web/healthcheck/Dockerfile",
-        "kctf.git/dist/challenge-templates/xss-bot/challenge/Dockerfile",
-        "kctf.git/dist/challenge-templates/xss-bot/healthcheck/Dockerfile",
-        "kctf.git/docker-images/certbot/Dockerfile",
-        "kctf.git/docker-images/challenge/Dockerfile",
-        "kctf.git/docker-images/gcsfuse/Dockerfile",
-        "kctf.git/docker-images/healthcheck/Dockerfile",
-        "kctf.git/kctf-operator/Dockerfile",
         "kctf.git/kctf-operator/bundle.Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "kctf.git/kctf-operator/config/crd/kustomization.yaml",
+        "kctf.git/kctf-operator/config/default/kustomization.yaml",
+        "kctf.git/kctf-operator/config/manager/kustomization.yaml",
+        "kctf.git/kctf-operator/config/manifests/kustomization.yaml",
+        "kctf.git/kctf-operator/config/prometheus/kustomization.yaml",
+        "kctf.git/kctf-operator/config/rbac/kustomization.yaml",
+        "kctf.git/kctf-operator/config/samples/kustomization.yaml",
+        "kctf.git/kctf-operator/config/scorecard/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "kctf.git/dist/resources/kctf-operator-controller-manager-metrics-service_v1_service.yaml",
+        "kctf.git/dist/resources/kctf-operator-manager-config_v1_configmap.yaml",
+        "kctf.git/dist/resources/kctf-operator.clusterserviceversion.yaml",
+        "kctf.git/kctf-operator/bundle/manifests/kctf-operator-controller-manager-metrics-service_v1_service.yaml",
+        "kctf.git/kctf-operator/bundle/manifests/kctf-operator-manager-config_v1_configmap.yaml",
+        "kctf.git/kctf-operator/bundle/manifests/kctf-operator.clusterserviceversion.yaml",
+        "kctf.git/kctf-operator/config/manifests/bases/kctf-operator.clusterserviceversion.yaml",
+        "kctf.git/kctf-operator/config/rbac/auth_proxy_service.yaml",
+        "kctf.git/kctf-operator/config/rbac/service_account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

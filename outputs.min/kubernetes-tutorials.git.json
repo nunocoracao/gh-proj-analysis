@@ -1,17 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 5,
-      "filepaths": [
-        "kubernetes-tutorials.git/003_00_replica_sets_and_controllers/node-app/Dockerfile",
-        "kubernetes-tutorials.git/003_01_probes/node-app/Dockerfile",
-        "kubernetes-tutorials.git/01_intro/001_0_intro/node-app/Dockerfile",
-        "kubernetes-tutorials.git/02_pods/002_0_pods/Dockerfile",
-        "kubernetes-tutorials.git/04_services/004_01_services/node-app/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -19,6 +13,58 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "kubernetes-tutorials.git/06_tools/007_alb_ingress/01_eks/k8s/kustomization.yaml",
+        "kubernetes-tutorials.git/06_tools/06_cert_manager/01_kops/k8s/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "kubernetes-tutorials.git/06_tools/007_alb_ingress/01_eks/k8s/01-foo-deployment.yml",
+        "kubernetes-tutorials.git/06_tools/007_alb_ingress/01_eks/k8s/02-bar-deployment.yml",
+        "kubernetes-tutorials.git/06_tools/03_kops/auth_configmap.yaml",
+        "kubernetes-tutorials.git/06_tools/03_kops/deployment.yml",
+        "kubernetes-tutorials.git/06_tools/04_eks/02_access_management_control/deployment.yml",
+        "kubernetes-tutorials.git/06_tools/05_haproxy_ingress/01_kops/k8s/01-foo-deployment.yml",
+        "kubernetes-tutorials.git/06_tools/05_haproxy_ingress/01_kops/k8s/02-bar-deployment.yml",
+        "kubernetes-tutorials.git/06_tools/05_haproxy_ingress/02_eks/k8s/node-deployment.yml",
+        "kubernetes-tutorials.git/06_tools/06_cert_manager/01_kops/k8s/01-foo-deployment.yml",
+        "kubernetes-tutorials.git/06_tools/06_cert_manager/01_kops/k8s/02-bar-deployment.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "kubernetes-tutorials.git/06_tools/03_kops/main.tf",
+        "kubernetes-tutorials.git/06_tools/06_cert_manager/01_kops/main.tf"
+      ]
     }
   },
   "info": {

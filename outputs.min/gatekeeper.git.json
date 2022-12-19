@@ -2,19 +2,12 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 9,
-      "rootCount": 3,
-      "subFolderCount": 6,
+      "count": 2,
+      "rootCount": 2,
+      "subFolderCount": 0,
       "filepaths": [
-        "gatekeeper.git/Dockerfile",
         "gatekeeper.git/crd.Dockerfile",
-        "gatekeeper.git/gator.Dockerfile",
-        "gatekeeper.git/build/tooling/Dockerfile",
-        "gatekeeper.git/test/externaldata/dummy-provider/Dockerfile",
-        "gatekeeper.git/test/image/Dockerfile",
-        "gatekeeper.git/vendor/github.com/docker/distribution/Dockerfile",
-        "gatekeeper.git/vendor/github.com/nxadm/tail/Dockerfile",
-        "gatekeeper.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "gatekeeper.git/gator.Dockerfile"
       ]
     },
     "composefile": {
@@ -23,6 +16,84 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "gatekeeper.git/cmd/build/helmify/kustomization.yaml",
+        "gatekeeper.git/config/certmanager/kustomization.yaml",
+        "gatekeeper.git/config/crd/kustomization.yaml",
+        "gatekeeper.git/config/default/kustomization.yaml",
+        "gatekeeper.git/config/manager/kustomization.yaml",
+        "gatekeeper.git/config/overlays/dev/kustomization.yaml",
+        "gatekeeper.git/config/pdb/kustomization.yaml",
+        "gatekeeper.git/config/rbac/kustomization.yaml",
+        "gatekeeper.git/config/secret/kustomization.yaml",
+        "gatekeeper.git/config/webhook/kustomization.yaml",
+        "gatekeeper.git/vendor/github.com/open-policy-agent/frameworks/constraint/deploy/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "gatekeeper.git/charts/gatekeeper/Chart.yaml",
+        "gatekeeper.git/cmd/build/helmify/static/Chart.yaml",
+        "gatekeeper.git/manifest_staging/charts/gatekeeper/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 24,
+      "rootCount": 0,
+      "subFolderCount": 24,
+      "filepaths": [
+        "gatekeeper.git/charts/gatekeeper/templates/gatekeeper-admin-serviceaccount.yaml",
+        "gatekeeper.git/charts/gatekeeper/templates/gatekeeper-audit-deployment.yaml",
+        "gatekeeper.git/charts/gatekeeper/templates/gatekeeper-controller-manager-deployment.yaml",
+        "gatekeeper.git/charts/gatekeeper/templates/gatekeeper-webhook-service-service.yaml",
+        "gatekeeper.git/config/rbac/auth_proxy_service.yaml",
+        "gatekeeper.git/config/rbac/service_account.yaml",
+        "gatekeeper.git/config/webhook/service.yaml",
+        "gatekeeper.git/demo/agilebank/bad_resources/deployment_nolimit.yaml",
+        "gatekeeper.git/demo/agilebank/bad_resources/duplicate_service.yaml",
+        "gatekeeper.git/demo/agilebank/constraints/unique_service_selector.yaml",
+        "gatekeeper.git/demo/agilebank/expansion_templates/expand_deployment_expansiontemplate.yaml",
+        "gatekeeper.git/demo/agilebank/templates/k8suniqueserviceselector_template.yaml",
+        "gatekeeper.git/manifest_staging/charts/gatekeeper/templates/gatekeeper-admin-serviceaccount.yaml",
+        "gatekeeper.git/manifest_staging/charts/gatekeeper/templates/gatekeeper-audit-deployment.yaml",
+        "gatekeeper.git/manifest_staging/charts/gatekeeper/templates/gatekeeper-controller-manager-deployment.yaml",
+        "gatekeeper.git/manifest_staging/charts/gatekeeper/templates/gatekeeper-webhook-service-service.yaml",
+        "gatekeeper.git/pkg/readiness/testdata/99-configmap.yaml",
+        "gatekeeper.git/test/bats/tests/bad/bad_deployment.yaml",
+        "gatekeeper.git/test/expansion/deployment_no_label.yaml",
+        "gatekeeper.git/test/expansion/deployment_with_label.yaml",
+        "gatekeeper.git/test/expansion/expand_deployments.yaml",
+        "gatekeeper.git/test/expansion/warn_expand_deployments.yaml",
+        "gatekeeper.git/test/externaldata/dummy-provider/manifest/deployment.yaml",
+        "gatekeeper.git/test/externaldata/dummy-provider/manifest/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "gatekeeper.git/vendor/github.com/docker/distribution/docker-bake.hcl"
+      ]
     }
   },
   "info": {

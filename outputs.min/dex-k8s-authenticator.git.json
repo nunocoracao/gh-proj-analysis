@@ -1,15 +1,59 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "dex-k8s-authenticator.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "dex-k8s-authenticator.git/charts/dex/Chart.yaml",
+        "dex-k8s-authenticator.git/charts/dex-k8s-authenticator/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "dex-k8s-authenticator.git/charts/dex/templates/configmap.yaml",
+        "dex-k8s-authenticator.git/charts/dex/templates/deployment.yaml",
+        "dex-k8s-authenticator.git/charts/dex/templates/service.yaml",
+        "dex-k8s-authenticator.git/charts/dex/templates/serviceaccount.yaml",
+        "dex-k8s-authenticator.git/charts/dex-k8s-authenticator/templates/configmap.yaml",
+        "dex-k8s-authenticator.git/charts/dex-k8s-authenticator/templates/deployment.yaml",
+        "dex-k8s-authenticator.git/charts/dex-k8s-authenticator/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

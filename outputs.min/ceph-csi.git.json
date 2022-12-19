@@ -1,19 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 7,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 7,
-      "filepaths": [
-        "ceph-csi.git/actions/retest/Dockerfile",
-        "ceph-csi.git/deploy/cephcsi/image/Dockerfile",
-        "ceph-csi.git/scripts/Dockerfile.devel",
-        "ceph-csi.git/scripts/Dockerfile.test",
-        "ceph-csi.git/vendor/github.com/gemalto/flume/Dockerfile",
-        "ceph-csi.git/vendor/github.com/gemalto/kmip-go/Dockerfile",
-        "ceph-csi.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -24,6 +16,85 @@
         "ceph-csi.git/vendor/github.com/gemalto/flume/docker-compose.yml",
         "ceph-csi.git/vendor/github.com/gemalto/kmip-go/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "ceph-csi.git/charts/ceph-csi-cephfs/Chart.yaml",
+        "ceph-csi.git/charts/ceph-csi-rbd/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 40,
+      "rootCount": 0,
+      "subFolderCount": 40,
+      "filepaths": [
+        "ceph-csi.git/charts/ceph-csi-cephfs/templates/csiplugin-configmap.yaml",
+        "ceph-csi.git/charts/ceph-csi-cephfs/templates/nodeplugin-http-service.yaml",
+        "ceph-csi.git/charts/ceph-csi-cephfs/templates/nodeplugin-serviceaccount.yaml",
+        "ceph-csi.git/charts/ceph-csi-cephfs/templates/provisioner-deployment.yaml",
+        "ceph-csi.git/charts/ceph-csi-cephfs/templates/provisioner-http-service.yaml",
+        "ceph-csi.git/charts/ceph-csi-cephfs/templates/provisioner-serviceaccount.yaml",
+        "ceph-csi.git/charts/ceph-csi-rbd/templates/csiplugin-configmap.yaml",
+        "ceph-csi.git/charts/ceph-csi-rbd/templates/encryptionkms-configmap.yaml",
+        "ceph-csi.git/charts/ceph-csi-rbd/templates/nodeplugin-http-service.yaml",
+        "ceph-csi.git/charts/ceph-csi-rbd/templates/nodeplugin-serviceaccount.yaml",
+        "ceph-csi.git/charts/ceph-csi-rbd/templates/provisioner-deployment.yaml",
+        "ceph-csi.git/charts/ceph-csi-rbd/templates/provisioner-http-service.yaml",
+        "ceph-csi.git/charts/ceph-csi-rbd/templates/provisioner-serviceaccount.yaml",
+        "ceph-csi.git/e2e/templates/rbd-block-deployment.yaml",
+        "ceph-csi.git/e2e/templates/rbd-fs-deployment.yaml",
+        "ceph-csi.git/examples/service-monitor.yaml",
+        "ceph-csi.git/examples/cephfs/deployment.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/cluster-dns/dns-backend-service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/guestbook/agnhost-primary-deployment.yaml.in",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/guestbook/agnhost-primary-service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/guestbook/agnhost-replica-deployment.yaml.in",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/guestbook/agnhost-replica-service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/guestbook/frontend-deployment.yaml.in",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/guestbook/frontend-service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/guestbook/redis-master-deployment.yaml.in",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/guestbook/redis-master-service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/guestbook/redis-slave-deployment.yaml.in",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/guestbook/redis-slave-service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/kubectl/httpd-deployment1.yaml.in",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/kubectl/httpd-deployment2.yaml.in",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/kubectl/httpd-deployment3.yaml.in",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/statefulset/cassandra/service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/statefulset/cockroachdb/service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/statefulset/etcd/service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/statefulset/mysql-galera/service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/statefulset/mysql-upgrade/configmap.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/statefulset/mysql-upgrade/service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/statefulset/nginx/service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/statefulset/redis/service.yaml",
+        "ceph-csi.git/vendor/k8s.io/kubernetes/test/e2e/testing-manifests/statefulset/zookeeper/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

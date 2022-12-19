@@ -1,16 +1,68 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "eventing.git/vendor/github.com/pelletier/go-toml/v2/Dockerfile",
-        "eventing.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "eventing.git/config/201-eventing-serviceaccount.yaml",
+        "eventing.git/config/201-pingsource-mt-adapter-serviceaccount.yaml",
+        "eventing.git/config/201-webhook-serviceaccount.yaml",
+        "eventing.git/config/400-webhook-service.yaml",
+        "eventing.git/config/brokers/mt-channel-broker/200-filter-serviceaccount.yaml",
+        "eventing.git/config/brokers/mt-channel-broker/200-ingress-serviceaccount.yaml",
+        "eventing.git/config/brokers/mt-channel-broker/roles/filter-serviceaccount.yaml",
+        "eventing.git/config/brokers/mt-channel-broker/roles/ingress-serviceaccount.yaml",
+        "eventing.git/config/channels/in-memory-channel/200-imc-controller-serviceaccount.yaml",
+        "eventing.git/config/channels/in-memory-channel/200-imc-dispatcher-serviceaccount.yaml",
+        "eventing.git/config/channels/in-memory-channel/deployments/dispatcher-service.yaml",
+        "eventing.git/config/core/200-eventing-serviceaccount.yaml",
+        "eventing.git/config/core/200-pingsource-mt-adapter-serviceaccount.yaml",
+        "eventing.git/config/core/200-webhook-serviceaccount.yaml",
+        "eventing.git/config/post-install/serviceaccount.yaml",
+        "eventing.git/test/rekt/resources/deployment/deployment.yaml",
+        "eventing.git/test/rekt/resources/svc/service.yaml",
+        "eventing.git/vendor/knative.dev/reconciler-test/pkg/eventshub/102-service.yaml",
+        "eventing.git/vendor/knative.dev/reconciler-test/resources/svc/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

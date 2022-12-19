@@ -1,18 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
-      "rootCount": 2,
-      "subFolderCount": 4,
-      "filepaths": [
-        "atlantis.git/Dockerfile",
-        "atlantis.git/Dockerfile.dev",
-        "atlantis.git/.github/website_link_checker/Dockerfile",
-        "atlantis.git/docker-base/Dockerfile.alpine",
-        "atlantis.git/docker-base/Dockerfile.debian",
-        "atlantis.git/testing/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -21,6 +14,95 @@
       "subFolderCount": 0,
       "filepaths": [
         "atlantis.git/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "atlantis.git/kustomize/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 51,
+      "rootCount": 0,
+      "subFolderCount": 51,
+      "filepaths": [
+        "atlantis.git/runatlantis.io/terraform/main.tf",
+        "atlantis.git/runatlantis.io/terraform/versions.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/automerge/dir1/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/automerge/dir2/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/modules/modules/null/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/modules/production/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/modules/staging/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/modules-yaml/modules/null/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/modules-yaml/production/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/modules-yaml/staging/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/policy-checks/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/policy-checks-apply-reqs/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/policy-checks-diff-owner/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/policy-checks-extra-args/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/policy-checks-multi-projects/dir1/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/policy-checks-multi-projects/dir2/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/policy-checks-success-silent/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/server-side-cfg/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/simple/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/simple-with-lockfile/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/simple-yaml/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/simple-yaml/staging.tfvars",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/tfvars-yaml/default.backend.tfvars",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/tfvars-yaml/default.tfvars",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/tfvars-yaml/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/tfvars-yaml/staging.backend.tfvars",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/tfvars-yaml/staging.tfvars",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/tfvars-yaml-no-autoplan/default.backend.tfvars",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/tfvars-yaml-no-autoplan/default.tfvars",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/tfvars-yaml-no-autoplan/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/tfvars-yaml-no-autoplan/staging.backend.tfvars",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/tfvars-yaml-no-autoplan/staging.tfvars",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/workspace-parallel-yaml/production/main.tf",
+        "atlantis.git/server/controllers/events/testfixtures/test-repos/workspace-parallel-yaml/staging/main.tf",
+        "atlantis.git/server/events/testdata/fs/repoA/baz/init.tf",
+        "atlantis.git/server/events/testdata/fs/repoA/baz/mods.tf",
+        "atlantis.git/server/events/testdata/fs/repoA/modules/bar/bar.tf",
+        "atlantis.git/server/events/testdata/fs/repoA/modules/foo/foo.tf",
+        "atlantis.git/server/events/testdata/fs/repoA/modules/foo/mods.tf",
+        "atlantis.git/server/events/testdata/fs/repoA/qux/quxx/init.tf",
+        "atlantis.git/server/events/testdata/fs/repoA/qux/quxx/mods.tf",
+        "atlantis.git/server/events/testdata/fs/repoB/dev/quxx/init.tf",
+        "atlantis.git/server/events/testdata/fs/repoB/dev/quxx/mods.tf",
+        "atlantis.git/server/events/testdata/fs/repoB/modules/bar/bar.tf",
+        "atlantis.git/server/events/testdata/fs/repoB/modules/foo/foo.tf",
+        "atlantis.git/server/events/testdata/fs/repoB/modules/foo/mods.tf",
+        "atlantis.git/server/events/testdata/fs/repoB/prod/quxx/init.tf",
+        "atlantis.git/server/events/testdata/fs/repoB/prod/quxx/mods.tf",
+        "atlantis.git/server/events/testdata/test-repos/cloud-block-without-workspace-name/main.tf",
+        "atlantis.git/server/events/testdata/test-repos/no-cloud-block/main.tf",
+        "atlantis.git/server/events/testdata/test-repos/workspace-configured/main.tf"
       ]
     }
   },

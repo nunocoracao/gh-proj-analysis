@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 3,
-      "filepaths": [
-        "starhackit.git/client/Dockerfile",
-        "starhackit.git/deploy/alpine-nginx/Dockerfile",
-        "starhackit.git/server/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -20,6 +16,52 @@
         "starhackit.git/docker-compose.yml",
         "starhackit.git/server/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "starhackit.git/deploy/k8s/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "starhackit.git/deploy/k8s/deployment.yaml",
+        "starhackit.git/deploy/k8s/nginx-configmap.yaml",
+        "starhackit.git/deploy/k8s/postgres-configmap.yaml",
+        "starhackit.git/deploy/k8s/postgres-deployment.yaml",
+        "starhackit.git/deploy/k8s/postgres-service.yaml",
+        "starhackit.git/deploy/k8s/redis-deployment.yaml",
+        "starhackit.git/deploy/k8s/redis-service.yaml",
+        "starhackit.git/deploy/k8s/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

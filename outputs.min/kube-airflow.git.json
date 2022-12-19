@@ -1,15 +1,56 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "kube-airflow.git/Dockerfile.template"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kube-airflow.git/airflow/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "kube-airflow.git/airflow/myvalue-with-airflowcfg-configmap.yaml",
+        "kube-airflow.git/airflow/templates/deployments-flower.yaml",
+        "kube-airflow.git/airflow/templates/deployments-scheduler.yaml",
+        "kube-airflow.git/airflow/templates/deployments-web.yaml",
+        "kube-airflow.git/airflow/templates/services.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

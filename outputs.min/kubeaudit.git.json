@@ -2,15 +2,61 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 2,
-      "rootCount": 2,
+      "count": 1,
+      "rootCount": 1,
       "subFolderCount": 0,
       "filepaths": [
-        "kubeaudit.git/Dockerfile",
         "kubeaudit.git/goreleaser.Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "kubeaudit.git/auditors/asat/fixtures/service-account-token-deprecated.yml",
+        "kubeaudit.git/auditors/asat/fixtures/service-account-token-false.yml",
+        "kubeaudit.git/auditors/asat/fixtures/service-account-token-nil-and-no-name-and-default-sa.yml",
+        "kubeaudit.git/auditors/asat/fixtures/service-account-token-nil-and-no-name.yml",
+        "kubeaudit.git/auditors/asat/fixtures/service-account-token-redundant-override.yml",
+        "kubeaudit.git/auditors/asat/fixtures/service-account-token-true-allowed.yml",
+        "kubeaudit.git/auditors/asat/fixtures/service-account-token-true-and-default-name.yml",
+        "kubeaudit.git/auditors/asat/fixtures/service-account-token-true-and-default-sa.yml",
+        "kubeaudit.git/auditors/asat/fixtures/service-account-token-true-and-no-name.yml",
+        "kubeaudit.git/internal/test/fixtures/service.yml",
+        "kubeaudit.git/internal/test/fixtures/all_resources/deployment-apps-v1.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

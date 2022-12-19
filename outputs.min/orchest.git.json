@@ -1,31 +1,92 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 17,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 17,
-      "filepaths": [
-        "orchest.git/services/auth-server/Dockerfile",
-        "orchest.git/services/base-images/base-kernel-javascript/Dockerfile",
-        "orchest.git/services/base-images/base-kernel-julia/Dockerfile",
-        "orchest.git/services/base-images/base-kernel-py/Dockerfile",
-        "orchest.git/services/base-images/base-kernel-r/Dockerfile",
-        "orchest.git/services/buildkit-daemon/Dockerfile",
-        "orchest.git/services/jupyter-enterprise-gateway/Dockerfile",
-        "orchest.git/services/jupyter-server/Dockerfile",
-        "orchest.git/services/node-agent/Dockerfile",
-        "orchest.git/services/orchest-api/Dockerfile",
-        "orchest.git/services/orchest-api/Dockerfile_celery",
-        "orchest.git/services/orchest-controller/Dockerfile",
-        "orchest.git/services/orchest-webserver/Dockerfile",
-        "orchest.git/services/session-sidecar/Dockerfile",
-        "orchest.git/utility-containers/image-builder-buildkit/Dockerfile",
-        "orchest.git/utility-containers/image-builder-buildx/Dockerfile",
-        "orchest.git/utility-containers/image-puller/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "orchest.git/services/orchest-controller/deploy/helm/Chart.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/argo-workflows/helm/Chart.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/docker-registry/helm/Chart.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/efs-csi-driver/helm/Chart.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/Chart.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/rook/library/Chart.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/rook/rook-nfs/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 35,
+      "rootCount": 0,
+      "subFolderCount": 35,
+      "filepaths": [
+        "orchest.git/services/orchest-controller/deploy/helm/templates/deployment.yaml",
+        "orchest.git/services/orchest-controller/deploy/helm/templates/service.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/argo-workflows/helm/templates/controller/workflow-controller-deployment-pdb.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/argo-workflows/helm/templates/controller/workflow-controller-deployment.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/argo-workflows/helm/templates/controller/workflow-controller-service.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/argo-workflows/helm/templates/controller/workflow-controller-servicemonitor.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/argo-workflows/helm/templates/server/server-deployment-pdb.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/argo-workflows/helm/templates/server/server-deployment.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/argo-workflows/helm/templates/server/server-service.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/docker-registry/helm/templates/configmap.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/docker-registry/helm/templates/deployment.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/docker-registry/helm/templates/service.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/docker-registry/helm/templates/serviceaccount.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/docker-registry/helm/templates/servicemonitor.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/efs-csi-driver/helm/templates/controller-deployment.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/efs-csi-driver/helm/templates/controller-serviceaccount.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/efs-csi-driver/helm/templates/node-serviceaccount.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/controller-configmap-addheaders.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/controller-configmap-proxyheaders.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/controller-configmap-tcp.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/controller-configmap-udp.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/controller-configmap.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/controller-deployment.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/controller-service-internal.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/controller-service-metrics.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/controller-service-webhook.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/controller-service.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/controller-serviceaccount.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/controller-servicemonitor.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/default-backend-deployment.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/default-backend-service.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/default-backend-serviceaccount.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/ingress-nginx/helm/templates/admission-webhooks/job-patch/serviceaccount.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/rook/rook-nfs/templates/deployment.yaml",
+        "orchest.git/services/orchest-controller/deploy/thirdparty/rook/rook-nfs/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,15 +1,69 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
       "exist": true,
       "count": 1,
       "rootCount": 0,
       "subFolderCount": 1,
       "filepaths": [
-        "erda.git/build/dockerfiles"
+        "erda.git/cmd/monitor/monitor/conf/i18n/charts.yml"
       ]
     },
-    "composefile": {
+    "k8s": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "erda.git/cmd/erda-server/conf/i18n/cp/scenarios/service-list.yaml",
+        "erda.git/cmd/erda-server/conf/i18n/cp/scenarios/service-overview.yaml",
+        "erda.git/cmd/monitor/extensions/loghub/log-exporter.deployment.yaml",
+        "erda.git/cmd/monitor/extensions/loghub/log-metrics.deployment.yaml",
+        "erda.git/cmd/monitor/monitor/conf/metricmeta/groups/micro_service.yml",
+        "erda.git/cmd/monitor/monitor/conf/metricmeta/i18n/application_micro_service.yml",
+        "erda.git/cmd/monitor/monitor/conf/metricmeta/i18n/application_micro_service_slow.yml",
+        "erda.git/cmd/monitor/monitor/conf/metricmeta/i18n/application_service_node.yml",
+        "erda.git/cmd/monitor/monitor/conf/metricmeta/i18n/kubernetes_deployment.yml",
+        "erda.git/cmd/monitor/monitor/conf/metricmeta/metrics/micro_service/application_micro_service.yml",
+        "erda.git/cmd/monitor/monitor/conf/metricmeta/metrics/micro_service/application_micro_service_slow.yml",
+        "erda.git/cmd/monitor/monitor/conf/metricmeta/metrics/micro_service/application_service_node.yml",
+        "erda.git/cmd/monitor/monitor/conf/metricmeta/metrics/org/kubernetes_deployment.yml",
+        "erda.git/cmd/monitor/monitor/conf/notify/monitor/app_transaction/app_transaction_http_service_error.yml",
+        "erda.git/cmd/monitor/monitor/conf/notify/monitor/app_transaction/app_transaction_http_service_rt.yml",
+        "erda.git/cmd/orchestrator/conf/i18n/deployment-order-precheck.yaml",
+        "erda.git/internal/apps/msp/apm/service/scenarios/service-list.yml",
+        "erda.git/internal/apps/msp/apm/service/scenarios/service-overview.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

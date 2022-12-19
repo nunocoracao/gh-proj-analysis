@@ -1,20 +1,82 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
-      "rootCount": 1,
-      "subFolderCount": 5,
-      "filepaths": [
-        "prometheus-operator.git/Dockerfile",
-        "prometheus-operator.git/cmd/admission-webhook/Dockerfile",
-        "prometheus-operator.git/cmd/prometheus-config-reloader/Dockerfile",
-        "prometheus-operator.git/example/alertmanager-webhook/Dockerfile",
-        "prometheus-operator.git/scripts/tooling/Dockerfile",
-        "prometheus-operator.git/test/instrumented-sample-app/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 1,
+      "subFolderCount": 0,
+      "filepaths": [
+        "prometheus-operator.git/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 31,
+      "rootCount": 0,
+      "subFolderCount": 31,
+      "filepaths": [
+        "prometheus-operator.git/example/additional-scrape-configs/prometheus-service-account.yaml",
+        "prometheus-operator.git/example/admission-webhook/deployment.yaml",
+        "prometheus-operator.git/example/admission-webhook/service-account.yaml",
+        "prometheus-operator.git/example/admission-webhook/service-monitor.yaml",
+        "prometheus-operator.git/example/admission-webhook/service.yaml",
+        "prometheus-operator.git/example/prometheus-operator-crd/monitoring.coreos.com_servicemonitors.yaml",
+        "prometheus-operator.git/example/prometheus-operator-crd-full/monitoring.coreos.com_servicemonitors.yaml",
+        "prometheus-operator.git/example/rbac/prometheus/prometheus-service-account.yaml",
+        "prometheus-operator.git/example/rbac/prometheus-operator/prometheus-operator-deployment.yaml",
+        "prometheus-operator.git/example/rbac/prometheus-operator/prometheus-operator-service-account.yaml",
+        "prometheus-operator.git/example/rbac/prometheus-operator/prometheus-operator-service-monitor.yaml",
+        "prometheus-operator.git/example/rbac/prometheus-operator/prometheus-operator-service.yaml",
+        "prometheus-operator.git/example/shards/example-app-deployment.yaml",
+        "prometheus-operator.git/example/shards/example-app-service-monitor.yaml",
+        "prometheus-operator.git/example/shards/example-app-service.yaml",
+        "prometheus-operator.git/example/shards/prometheus-service-account.yaml",
+        "prometheus-operator.git/example/shards/prometheus-service.yaml",
+        "prometheus-operator.git/example/thanos/prometheus-service.yaml",
+        "prometheus-operator.git/example/thanos/prometheus-servicemonitor.yaml",
+        "prometheus-operator.git/example/thanos/query-deployment.yaml",
+        "prometheus-operator.git/example/thanos/query-service.yaml",
+        "prometheus-operator.git/example/thanos/sidecar-service.yaml",
+        "prometheus-operator.git/example/thanos/thanos-ruler-service.yaml",
+        "prometheus-operator.git/example/user-guides/alerting/alertmanager-example-service.yaml",
+        "prometheus-operator.git/example/user-guides/getting-started/example-app-deployment.yaml",
+        "prometheus-operator.git/example/user-guides/getting-started/example-app-service-monitor.yaml",
+        "prometheus-operator.git/example/user-guides/getting-started/example-app-service.yaml",
+        "prometheus-operator.git/example/user-guides/getting-started/prometheus-service-monitor.yaml",
+        "prometheus-operator.git/example/user-guides/getting-started/prometheus-service.yaml",
+        "prometheus-operator.git/test/framework/resources/basic-auth-app-deployment.yaml",
+        "prometheus-operator.git/test/framework/resources/default-http-backend-service.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

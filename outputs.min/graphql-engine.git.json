@@ -2,42 +2,13 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 32,
+      "count": 3,
       "rootCount": 0,
-      "subFolderCount": 32,
+      "subFolderCount": 3,
       "filepaths": [
         "graphql-engine.git/.circleci/cli-migrations-builder.dockerfile",
-        "graphql-engine.git/.circleci/postgres-12.0-alpine-postgis3/Dockerfile",
-        "graphql-engine.git/.circleci/postgres-13.0-alpine-postgis3/Dockerfile",
         "graphql-engine.git/cli/build/builder.dockerfile",
-        "graphql-engine.git/community/boilerplates/auth-servers/passportjs-jwt-roles/Dockerfile",
-        "graphql-engine.git/community/boilerplates/auth-webhooks/python-flask/Dockerfile",
-        "graphql-engine.git/community/boilerplates/remote-schemas/zeit-now/nodejs/Dockerfile",
-        "graphql-engine.git/community/boilerplates/remote-schemas/zeit-now/python/flask-graphene-sqlalchemy/Dockerfile",
-        "graphql-engine.git/community/sample-apps/react-apollo-todo/Dockerfile",
-        "graphql-engine.git/community/sample-apps/realtime-chat/Dockerfile",
-        "graphql-engine.git/community/sample-apps/realtime-location-tracking/Dockerfile",
-        "graphql-engine.git/community/sample-apps/realtime-poll/Dockerfile",
-        "graphql-engine.git/community/sample-apps/serverless-etl/Dockerfile",
-        "graphql-engine.git/community/sample-apps/serverless-push/Dockerfile",
-        "graphql-engine.git/community/sample-apps/streaming-subscriptions-chat/Dockerfile",
-        "graphql-engine.git/community/sample-apps/tic-tac-toe-react/client/Dockerfile",
-        "graphql-engine.git/community/sample-apps/tic-tac-toe-react/remote-schema/Dockerfile",
-        "graphql-engine.git/community/sample-apps/todo-auth0-jwt/todo-app/Dockerfile",
-        "graphql-engine.git/community/sample-apps/vuejs-auth0-graphql/app/Dockerfile",
-        "graphql-engine.git/community/sample-apps/whatsapp-clone-typescript-react/auth-server/Dockerfile",
-        "graphql-engine.git/community/sample-apps/whatsapp-clone-typescript-react/react-app/Dockerfile",
-        "graphql-engine.git/dc-agents/Dockerfile-reference",
-        "graphql-engine.git/dc-agents/Dockerfile-sqlite",
-        "graphql-engine.git/dc-agents/reference/Dockerfile",
-        "graphql-engine.git/dc-agents/sqlite/Dockerfile",
-        "graphql-engine.git/docs/Dockerfile",
-        "graphql-engine.git/packaging/cli-migrations/v2/Dockerfile",
-        "graphql-engine.git/packaging/cli-migrations/v3/Dockerfile",
-        "graphql-engine.git/packaging/dc-tests/Dockerfile",
-        "graphql-engine.git/packaging/graphql-engine/Dockerfile",
-        "graphql-engine.git/packaging/graphql-engine-base/ubuntu.dockerfile",
-        "graphql-engine.git/server/bench-wrk/wrk-websocket-server/Dockerfile"
+        "graphql-engine.git/packaging/graphql-engine-base/ubuntu.dockerfile"
       ]
     },
     "composefile": {
@@ -69,6 +40,54 @@
         "graphql-engine.git/packaging/cli-migrations/v3/test/docker-compose.yaml",
         "graphql-engine.git/server/lib/pg-client-hs/docker-compose.yml",
         "graphql-engine.git/server/tests-py/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "graphql-engine.git/install-manifests/enterprise/kubernetes/deployment.yaml",
+        "graphql-engine.git/install-manifests/google-cloud-k8s-sql/deployment.yaml",
+        "graphql-engine.git/install-manifests/google-cloud-k8s-sql/service.yaml",
+        "graphql-engine.git/install-manifests/kubernetes/deployment.yaml",
+        "graphql-engine.git/server/tests-py/queries/graphql_mutation/insert/geojson/insert_service_locations.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "graphql-engine.git/server/test-manual/alloydb/.terraform.lock.hcl",
+        "graphql-engine.git/server/test-manual/alloydb/alloydb.tf",
+        "graphql-engine.git/server/test-manual/alloydb/bastion.tf",
+        "graphql-engine.git/server/test-manual/alloydb/network.tf",
+        "graphql-engine.git/server/test-manual/alloydb/provider.tf",
+        "graphql-engine.git/server/test-manual/alloydb/service_account.tf"
       ]
     }
   },

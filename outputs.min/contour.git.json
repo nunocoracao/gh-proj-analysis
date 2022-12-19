@@ -1,15 +1,67 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "contour.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "contour.git/examples/render/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 16,
+      "rootCount": 0,
+      "subFolderCount": 16,
+      "filepaths": [
+        "contour.git/examples/contour/02-service-contour.yaml",
+        "contour.git/examples/contour/02-service-envoy.yaml",
+        "contour.git/examples/deployment/03-envoy-deployment.yaml",
+        "contour.git/examples/example-workload/httpproxy/00-common/01-services.yaml",
+        "contour.git/examples/example-workload/httpproxy/00-common/02-deployments.yaml",
+        "contour.git/examples/grafana/02-grafana-configmap.yaml",
+        "contour.git/examples/grafana/03-grafana-deployment.yaml",
+        "contour.git/examples/grafana/03-grafana-service.yaml",
+        "contour.git/examples/prometheus/02-prometheus-alertmanager-configmap.yaml",
+        "contour.git/examples/prometheus/02-prometheus-alertrules-configmap.yaml",
+        "contour.git/examples/prometheus/02-prometheus-configmap.yaml",
+        "contour.git/examples/prometheus/03-prometheus-alertmanager-deployment.yaml",
+        "contour.git/examples/prometheus/03-prometheus-deployment.yaml",
+        "contour.git/examples/render/contour-deployment.yaml",
+        "contour.git/site/content/examples/authdemo/02-auth-deployment.yaml",
+        "contour.git/site/content/examples/authdemo/04-extensionservice.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

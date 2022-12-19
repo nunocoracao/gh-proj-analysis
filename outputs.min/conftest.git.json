@@ -1,14 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 1,
-      "subFolderCount": 1,
-      "filepaths": [
-        "conftest.git/Dockerfile",
-        "conftest.git/examples/docker/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -17,6 +14,62 @@
       "subFolderCount": 1,
       "filepaths": [
         "conftest.git/examples/compose/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "conftest.git/examples/kustomize/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "conftest.git/examples/configfile/deployment.yaml",
+        "conftest.git/examples/data/service.yaml",
+        "conftest.git/examples/data/exclusions/services.yaml",
+        "conftest.git/examples/exceptions/deployments.yaml",
+        "conftest.git/examples/kubernetes/deployment+service.yaml",
+        "conftest.git/examples/kubernetes/deployment.yaml",
+        "conftest.git/examples/kubernetes/service.yaml",
+        "conftest.git/examples/kustomize/configMap.yaml",
+        "conftest.git/examples/kustomize/deployment.yaml",
+        "conftest.git/examples/kustomize/service.yaml",
+        "conftest.git/tests/annotations/service.yaml",
+        "conftest.git/tests/annotations/exclusions/services.yaml",
+        "conftest.git/tests/multitype/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "conftest.git/examples/hcl1/gke-plan.tfplan",
+        "conftest.git/examples/hcl1/gke.tf",
+        "conftest.git/examples/hcl2/terraform.tf",
+        "conftest.git/examples/hcl2/policy/unencrypted_azure_disk.tf"
       ]
     }
   },

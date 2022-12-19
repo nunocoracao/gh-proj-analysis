@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "php-ddd-example.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -17,6 +15,50 @@
       "filepaths": [
         "php-ddd-example.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "php-ddd-example.git/apps/backoffice/backend/config/services.yaml",
+        "php-ddd-example.git/apps/backoffice/backend/config/services_test.yaml",
+        "php-ddd-example.git/apps/backoffice/frontend/config/services.yaml",
+        "php-ddd-example.git/apps/backoffice/frontend/config/services_test.yaml",
+        "php-ddd-example.git/apps/mooc/backend/config/services.yaml",
+        "php-ddd-example.git/apps/mooc/backend/config/services_test.yaml",
+        "php-ddd-example.git/src/Backoffice/Shared/Infrastructure/Symfony/DependencyInjection/backoffice_services.yaml",
+        "php-ddd-example.git/src/Mooc/Shared/Infrastructure/Symfony/DependencyInjection/mooc_services.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

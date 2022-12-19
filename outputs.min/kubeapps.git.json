@@ -1,21 +1,67 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 7,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 7,
-      "filepaths": [
-        "kubeapps.git/cmd/apprepository-controller/Dockerfile",
-        "kubeapps.git/cmd/asset-syncer/Dockerfile",
-        "kubeapps.git/cmd/kubeapps-apis/Dockerfile",
-        "kubeapps.git/cmd/kubeapps-apis/plugins/fluxv2/packages/v1alpha1/testdata/Dockerfile",
-        "kubeapps.git/cmd/pinniped-proxy/Dockerfile",
-        "kubeapps.git/dashboard/Dockerfile",
-        "kubeapps.git/integration/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "kubeapps.git/chart/kubeapps/Chart.yaml",
+        "kubeapps.git/cmd/kubeapps-apis/plugins/fluxv2/packages/v1alpha1/testdata/charts/chart-with-relative-url.yaml",
+        "kubeapps.git/integration/charts/simplechart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 14,
+      "rootCount": 0,
+      "subFolderCount": 14,
+      "filepaths": [
+        "kubeapps.git/chart/kubeapps/templates/apprepository/deployment.yaml",
+        "kubeapps.git/chart/kubeapps/templates/apprepository/serviceaccount.yaml",
+        "kubeapps.git/chart/kubeapps/templates/dashboard/configmap.yaml",
+        "kubeapps.git/chart/kubeapps/templates/dashboard/deployment.yaml",
+        "kubeapps.git/chart/kubeapps/templates/dashboard/service.yaml",
+        "kubeapps.git/chart/kubeapps/templates/frontend/configmap.yaml",
+        "kubeapps.git/chart/kubeapps/templates/frontend/deployment.yaml",
+        "kubeapps.git/chart/kubeapps/templates/frontend/service.yaml",
+        "kubeapps.git/chart/kubeapps/templates/kubeappsapis/configmap.yaml",
+        "kubeapps.git/chart/kubeapps/templates/kubeappsapis/deployment.yaml",
+        "kubeapps.git/chart/kubeapps/templates/kubeappsapis/service.yaml",
+        "kubeapps.git/chart/kubeapps/templates/kubeappsapis/serviceaccount.yaml",
+        "kubeapps.git/integration/charts/simplechart/templates/deployment.yaml",
+        "kubeapps.git/integration/charts/simplechart/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

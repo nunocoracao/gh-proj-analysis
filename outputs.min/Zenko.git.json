@@ -1,21 +1,74 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 7,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 7,
-      "filepaths": [
-        "Zenko.git/.github/scripts/ceph/Dockerfile",
-        "Zenko.git/.github/scripts/cosbench/Dockerfile",
-        "Zenko.git/.github/scripts/mocks/azure/Dockerfile",
-        "Zenko.git/docs/Dockerfile",
-        "Zenko.git/solution/kafka/Dockerfile",
-        "Zenko.git/solution/kafka-connect/Dockerfile",
-        "Zenko.git/tests/zenko_tests/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "Zenko.git/.github/scripts/end2end/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "Zenko.git/.github/scripts/ceph/chart/Chart.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb/Chart.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/Chart.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/charts/common/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "Zenko.git/.github/scripts/ceph/chart/templates/deployment.yaml",
+        "Zenko.git/.github/scripts/ceph/chart/templates/service.yaml",
+        "Zenko.git/solution-base/kubedb/service-account.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb/templates/configmap.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb/templates/deployment-standalone.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb/templates/initialization-configmap.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb/templates/prometheus-service-monitor.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/templates/headless-service.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/templates/initialization-configmap.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/templates/replicaset-entrypoint-configmap.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/templates/serviceaccount.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/templates/config-server/config-server-configmap.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/templates/config-server/config-server-service.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/templates/mongos/mongos-configmap.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/templates/mongos/mongos-service-per-replica.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/templates/mongos/mongos-service.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/templates/shard/shard-arbiter-configmap.yaml",
+        "Zenko.git/solution-base/mongodb/charts/mongodb-sharded/templates/shard/shard-data-configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

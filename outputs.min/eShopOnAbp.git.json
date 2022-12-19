@@ -1,37 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 25,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 25,
-      "filepaths": [
-        "eShopOnAbp.git/apps/angular/Dockerfile",
-        "eShopOnAbp.git/apps/angular/Dockerfile.local",
-        "eShopOnAbp.git/apps/auth-server/src/EShopOnAbp.AuthServer/Dockerfile",
-        "eShopOnAbp.git/apps/auth-server/src/EShopOnAbp.AuthServer/Dockerfile.local",
-        "eShopOnAbp.git/apps/public-web/src/EShopOnAbp.PublicWeb/Dockerfile",
-        "eShopOnAbp.git/apps/public-web/src/EShopOnAbp.PublicWeb/Dockerfile.local",
-        "eShopOnAbp.git/apps/public-web/src/EShopOnAbp.PublicWeb/wwwroot/libs/codemirror/mode/dockerfile",
-        "eShopOnAbp.git/gateways/web/src/EShopOnAbp.WebGateway/Dockerfile",
-        "eShopOnAbp.git/gateways/web/src/EShopOnAbp.WebGateway/Dockerfile.local",
-        "eShopOnAbp.git/gateways/web-public/src/EShopOnAbp.WebPublicGateway/Dockerfile",
-        "eShopOnAbp.git/gateways/web-public/src/EShopOnAbp.WebPublicGateway/Dockerfile.local",
-        "eShopOnAbp.git/services/administration/src/EShopOnAbp.AdministrationService.HttpApi.Host/Dockerfile",
-        "eShopOnAbp.git/services/administration/src/EShopOnAbp.AdministrationService.HttpApi.Host/Dockerfile.local",
-        "eShopOnAbp.git/services/basket/src/EShopOnAbp.BasketService/Dockerfile",
-        "eShopOnAbp.git/services/basket/src/EShopOnAbp.BasketService/Dockerfile.local",
-        "eShopOnAbp.git/services/catalog/src/EShopOnAbp.CatalogService.HttpApi.Host/Dockerfile",
-        "eShopOnAbp.git/services/catalog/src/EShopOnAbp.CatalogService.HttpApi.Host/Dockerfile.local",
-        "eShopOnAbp.git/services/cmskit/src/EShopOnAbp.CmskitService.HttpApi.Host/Dockerfile",
-        "eShopOnAbp.git/services/cmskit/src/EShopOnAbp.CmskitService.HttpApi.Host/Dockerfile.local",
-        "eShopOnAbp.git/services/identity/src/EShopOnAbp.IdentityService.HttpApi.Host/Dockerfile",
-        "eShopOnAbp.git/services/identity/src/EShopOnAbp.IdentityService.HttpApi.Host/Dockerfile.local",
-        "eShopOnAbp.git/services/ordering/src/EShopOnAbp.OrderingService.HttpApi.Host/Dockerfile",
-        "eShopOnAbp.git/services/ordering/src/EShopOnAbp.OrderingService.HttpApi.Host/Dockerfile.local",
-        "eShopOnAbp.git/services/payment/src/EShopOnAbp.PaymentService.HttpApi.Host/Dockerfile",
-        "eShopOnAbp.git/services/payment/src/EShopOnAbp.PaymentService.HttpApi.Host/Dockerfile.local"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -43,6 +17,93 @@
         "eShopOnAbp.git/etc/docker/docker-compose.infrastructure.yml",
         "eShopOnAbp.git/etc/docker/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 17,
+      "rootCount": 0,
+      "subFolderCount": 17,
+      "filepaths": [
+        "eShopOnAbp.git/etc/k8s/eshoponabp/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/administration/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/authserver/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/basket/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/catalog/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/cmskit/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/gateway-web/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/gateway-web-public/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/identity/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/mongodb/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/ordering/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/payment/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/postgres/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/public-web/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/rabbitmq/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/redis/Chart.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/web/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 33,
+      "rootCount": 0,
+      "subFolderCount": 33,
+      "filepaths": [
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/administration/templates/administration-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/administration/templates/administration-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/authserver/templates/authserver-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/authserver/templates/authserver-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/basket/templates/basket-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/basket/templates/basket-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/catalog/templates/catalog-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/catalog/templates/catalog-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/cmskit/templates/cmskit-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/cmskit/templates/cmskit-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/gateway-web/templates/gateway-web-configmap.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/gateway-web/templates/gateway-web-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/gateway-web/templates/gateway-web-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/gateway-web-public/templates/gateway-web-public-configmap.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/gateway-web-public/templates/gateway-web-public-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/gateway-web-public/templates/gateway-web-public-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/identity/templates/identity-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/identity/templates/identity-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/mongodb/templates/mongodb-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/mongodb/templates/mongodb-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/ordering/templates/ordering-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/ordering/templates/ordering-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/payment/templates/payment-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/payment/templates/payment-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/postgres/templates/postgres-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/postgres/templates/postgres-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/public-web/templates/public-web-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/public-web/templates/public-web-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/rabbitmq/templates/rabbitmq-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/redis/templates/redis-service.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/web/templates/web-configmap.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/web/templates/web-deployment.yaml",
+        "eShopOnAbp.git/etc/k8s/eshoponabp/charts/web/templates/web-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

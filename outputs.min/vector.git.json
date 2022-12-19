@@ -2,16 +2,10 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 21,
+      "count": 8,
       "rootCount": 0,
-      "subFolderCount": 21,
+      "subFolderCount": 8,
       "filepaths": [
-        "vector.git/distribution/docker/alpine/Dockerfile",
-        "vector.git/distribution/docker/debian/Dockerfile",
-        "vector.git/distribution/docker/distroless-libc/Dockerfile",
-        "vector.git/distribution/docker/distroless-static/Dockerfile",
-        "vector.git/lib/soak/Dockerfile",
-        "vector.git/regression/Dockerfile",
         "vector.git/scripts/cross/aarch64-unknown-linux-gnu.dockerfile",
         "vector.git/scripts/cross/aarch64-unknown-linux-musl.dockerfile",
         "vector.git/scripts/cross/armv7-unknown-linux-gnueabihf.dockerfile",
@@ -19,14 +13,7 @@
         "vector.git/scripts/cross/powerpc-unknown-linux-gnu.dockerfile",
         "vector.git/scripts/cross/powerpc64le-unknown-linux-gnu.dockerfile",
         "vector.git/scripts/cross/x86_64-unknown-linux-gnu.dockerfile",
-        "vector.git/scripts/cross/x86_64-unknown-linux-musl.dockerfile",
-        "vector.git/scripts/environment/Dockerfile",
-        "vector.git/scripts/integration/Dockerfile",
-        "vector.git/skaffold/docker/Dockerfile",
-        "vector.git/soaks_disabled/Dockerfile",
-        "vector.git/soaks_disabled/Dockerfile.builder",
-        "vector.git/tests/data/dnstap/Dockerfile",
-        "vector.git/tilt/Dockerfile"
+        "vector.git/scripts/cross/x86_64-unknown-linux-musl.dockerfile"
       ]
     },
     "composefile": {
@@ -69,6 +56,58 @@
         "vector.git/scripts/integration/docker-compose.shutdown.yml",
         "vector.git/scripts/integration/docker-compose.splunk.yml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "vector.git/distribution/kubernetes/vector-agent/kustomization.yaml",
+        "vector.git/distribution/kubernetes/vector-aggregator/kustomization.yaml",
+        "vector.git/distribution/kubernetes/vector-stateless-aggregator/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "vector.git/distribution/kubernetes/vector-agent/configmap.yaml",
+        "vector.git/distribution/kubernetes/vector-agent/service-headless.yaml",
+        "vector.git/distribution/kubernetes/vector-agent/serviceaccount.yaml",
+        "vector.git/distribution/kubernetes/vector-aggregator/configmap.yaml",
+        "vector.git/distribution/kubernetes/vector-aggregator/service-headless.yaml",
+        "vector.git/distribution/kubernetes/vector-aggregator/service.yaml",
+        "vector.git/distribution/kubernetes/vector-aggregator/serviceaccount.yaml",
+        "vector.git/distribution/kubernetes/vector-stateless-aggregator/configmap.yaml",
+        "vector.git/distribution/kubernetes/vector-stateless-aggregator/deployment.yaml",
+        "vector.git/distribution/kubernetes/vector-stateless-aggregator/service-headless.yaml",
+        "vector.git/distribution/kubernetes/vector-stateless-aggregator/service.yaml",
+        "vector.git/distribution/kubernetes/vector-stateless-aggregator/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

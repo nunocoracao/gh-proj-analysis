@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 3,
-      "filepaths": [
-        "yelb.git/yelb-appserver/Dockerfile",
-        "yelb.git/yelb-db/Dockerfile",
-        "yelb.git/yelb-ui/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -19,6 +15,62 @@
       "filepaths": [
         "yelb.git/deployments/localtest/docker-compose.yaml",
         "yelb.git/deployments/platformdeployment/Docker/docker-compose.yaml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "yelb.git/deployments/platformdeployment/Kubernetes/chart/yelb/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "yelb.git/deployments/platformdeployment/AWS/ECS/cfn/yelb-cloudformation-ECS-deployment.yaml",
+        "yelb.git/deployments/platformdeployment/Kubernetes/chart/yelb/templates/deployment.yaml",
+        "yelb.git/deployments/platformdeployment/Kubernetes/chart/yelb/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 14,
+      "rootCount": 0,
+      "subFolderCount": 14,
+      "filepaths": [
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/alb.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/auto_scaling.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/data.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/dns.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/ecr.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/ecs.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/logs.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/network.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/outputs.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/provider.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/roles.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/security.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/variables.tf",
+        "yelb.git/deployments/platformdeployment/AWS/ECS/Terraform/versions.tf"
       ]
     }
   },

@@ -1,23 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 11,
-      "rootCount": 1,
-      "subFolderCount": 10,
-      "filepaths": [
-        "kube-lego.git/Dockerfile",
-        "kube-lego.git/vendor/github.com/docker/distribution/Dockerfile",
-        "kube-lego.git/vendor/github.com/docker/distribution/contrib/compose/nginx/Dockerfile",
-        "kube-lego.git/vendor/github.com/docker/distribution/contrib/docker-integration/Dockerfile",
-        "kube-lego.git/vendor/github.com/docker/distribution/contrib/docker-integration/nginx/Dockerfile",
-        "kube-lego.git/vendor/github.com/docker/distribution/contrib/docker-integration/tokenserver/Dockerfile",
-        "kube-lego.git/vendor/github.com/docker/distribution/contrib/docker-integration/tokenserver-oauth/Dockerfile",
-        "kube-lego.git/vendor/github.com/docker/distribution/project/dev-image/Dockerfile",
-        "kube-lego.git/vendor/golang.org/x/net/http2/Dockerfile",
-        "kube-lego.git/vendor/golang.org/x/sys/unix/linux/Dockerfile",
-        "kube-lego.git/vendor/k8s.io/client-go/examples/in-cluster-client-configuration/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -27,6 +15,61 @@
       "filepaths": [
         "kube-lego.git/vendor/github.com/docker/distribution/contrib/compose/docker-compose.yml",
         "kube-lego.git/vendor/github.com/docker/distribution/contrib/docker-integration/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "kube-lego.git/examples/gce/echoserver/deployment.yaml",
+        "kube-lego.git/examples/gce/echoserver/service.yaml",
+        "kube-lego.git/examples/gce/lego/configmap.yaml",
+        "kube-lego.git/examples/gce/lego/deployment.yaml",
+        "kube-lego.git/examples/gce/lego/service-account.yaml",
+        "kube-lego.git/examples/nginx/echoserver/deployment.yaml",
+        "kube-lego.git/examples/nginx/echoserver/service.yaml",
+        "kube-lego.git/examples/nginx/lego/configmap.yaml",
+        "kube-lego.git/examples/nginx/lego/deployment.yaml",
+        "kube-lego.git/examples/nginx/lego/service-account.yaml",
+        "kube-lego.git/examples/nginx/nginx/configmap.yaml",
+        "kube-lego.git/examples/nginx/nginx/default-deployment.yaml",
+        "kube-lego.git/examples/nginx/nginx/default-service.yaml",
+        "kube-lego.git/examples/nginx/nginx/deployment.yaml",
+        "kube-lego.git/examples/nginx/nginx/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "kube-lego.git/tests/gke-cluster.tf.template",
+        "kube-lego.git/tests/e2e-gke-gce/gke-cluster.tf",
+        "kube-lego.git/tests/e2e-gke-nginx/gke-cluster.tf"
       ]
     }
   },

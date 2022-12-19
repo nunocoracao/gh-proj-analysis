@@ -1,18 +1,61 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
       "exist": true,
       "count": 4,
       "rootCount": 0,
       "subFolderCount": 4,
       "filepaths": [
-        "phippyandfriends.git/captainkube/Dockerfile",
-        "phippyandfriends.git/nodebrady/Dockerfile",
-        "phippyandfriends.git/parrot/Dockerfile",
-        "phippyandfriends.git/phippy/Dockerfile"
+        "phippyandfriends.git/captainkube/charts/captainkube/Chart.yaml",
+        "phippyandfriends.git/nodebrady/charts/nodebrady/Chart.yaml",
+        "phippyandfriends.git/parrot/charts/parrot/Chart.yaml",
+        "phippyandfriends.git/phippy/charts/phippy/Chart.yaml"
       ]
     },
-    "composefile": {
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "phippyandfriends.git/captainkube/charts/captainkube/templates/deployment.yaml",
+        "phippyandfriends.git/nodebrady/charts/nodebrady/templates/deployment.yaml",
+        "phippyandfriends.git/nodebrady/charts/nodebrady/templates/service.yaml",
+        "phippyandfriends.git/parrot/charts/parrot/templates/deployment.yaml",
+        "phippyandfriends.git/parrot/charts/parrot/templates/service.yaml",
+        "phippyandfriends.git/phippy/charts/phippy/templates/deployment.yaml",
+        "phippyandfriends.git/phippy/charts/phippy/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,15 +1,70 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "application-gateway-kubernetes-ingress.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/Chart-template.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/Chart.yaml",
+        "application-gateway-kubernetes-ingress.git/scripts/e2e/cmd/runner/testdata/extensions-v1beta1/one-namespace-many-ingresses/fifty-ingresses-with-services/app/Chart.yaml",
+        "application-gateway-kubernetes-ingress.git/scripts/e2e/cmd/runner/testdata/networking-v1/one-namespace-many-ingresses/fifty-ingresses-with-services/app/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 16,
+      "rootCount": 0,
+      "subFolderCount": 16,
+      "filepaths": [
+        "application-gateway-kubernetes-ingress.git/crds/MultiClusterService.yaml",
+        "application-gateway-kubernetes-ingress.git/crds/examples/MultiClusterService.yaml",
+        "application-gateway-kubernetes-ingress.git/docs/examples/sample-app/deployment.yaml",
+        "application-gateway-kubernetes-ingress.git/docs/examples/sample-app/service.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/templates/configmap.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/templates/deployment.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/templates/serviceaccount.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/tests/snapshots/sample-config/ingress-azure/templates/configmap.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/tests/snapshots/sample-config/ingress-azure/templates/deployment.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/tests/snapshots/sample-config/ingress-azure/templates/serviceaccount.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/tests/snapshots/sample-config-empty/ingress-azure/templates/configmap.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/tests/snapshots/sample-config-empty/ingress-azure/templates/deployment.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/tests/snapshots/sample-config-empty/ingress-azure/templates/serviceaccount.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/tests/snapshots/sample-config-prohibited-target/ingress-azure/templates/configmap.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/tests/snapshots/sample-config-prohibited-target/ingress-azure/templates/deployment.yaml",
+        "application-gateway-kubernetes-ingress.git/helm/ingress-azure/tests/snapshots/sample-config-prohibited-target/ingress-azure/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

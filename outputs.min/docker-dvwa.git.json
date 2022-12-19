@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "docker-dvwa.git/docker/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -16,6 +14,52 @@
       "subFolderCount": 0,
       "filepaths": [
         "docker-dvwa.git/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "docker-dvwa.git/k8s/configmap.yml",
+        "docker-dvwa.git/k8s/deployment-dvwa.yml",
+        "docker-dvwa.git/k8s/deployment-mysql.yml",
+        "docker-dvwa.git/k8s/service-dvwa.yml",
+        "docker-dvwa.git/k8s/service-mysql.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "docker-dvwa.git/aws/main.tf",
+        "docker-dvwa.git/aws/outputs.tf",
+        "docker-dvwa.git/aws/terraform.tfvars-example",
+        "docker-dvwa.git/aws/variables.tf"
       ]
     }
   },

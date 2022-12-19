@@ -2,21 +2,70 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 8,
-      "rootCount": 2,
-      "subFolderCount": 6,
+      "count": 1,
+      "rootCount": 1,
+      "subFolderCount": 0,
       "filepaths": [
-        "opentelemetry-operator.git/Dockerfile",
-        "opentelemetry-operator.git/bundle.Dockerfile",
-        "opentelemetry-operator.git/autoinstrumentation/apache-httpd/Dockerfile",
-        "opentelemetry-operator.git/autoinstrumentation/dotnet/Dockerfile",
-        "opentelemetry-operator.git/autoinstrumentation/java/Dockerfile",
-        "opentelemetry-operator.git/autoinstrumentation/nodejs/Dockerfile",
-        "opentelemetry-operator.git/autoinstrumentation/python/Dockerfile",
-        "opentelemetry-operator.git/cmd/otel-allocator/Dockerfile"
+        "opentelemetry-operator.git/bundle.Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "opentelemetry-operator.git/config/certmanager/kustomization.yaml",
+        "opentelemetry-operator.git/config/crd/kustomization.yaml",
+        "opentelemetry-operator.git/config/default/kustomization.yaml",
+        "opentelemetry-operator.git/config/manager/kustomization.yaml",
+        "opentelemetry-operator.git/config/manifests/kustomization.yaml",
+        "opentelemetry-operator.git/config/prometheus/kustomization.yaml",
+        "opentelemetry-operator.git/config/rbac/kustomization.yaml",
+        "opentelemetry-operator.git/config/samples/kustomization.yaml",
+        "opentelemetry-operator.git/config/scorecard/kustomization.yaml",
+        "opentelemetry-operator.git/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "opentelemetry-operator.git/bundle/manifests/opentelemetry-operator-controller-manager-metrics-service_v1_service.yaml",
+        "opentelemetry-operator.git/bundle/manifests/opentelemetry-operator-webhook-service_v1_service.yaml",
+        "opentelemetry-operator.git/bundle/manifests/opentelemetry-operator.clusterserviceversion.yaml",
+        "opentelemetry-operator.git/cmd/otel-allocator/config/testdata/pod_service_selector_test.yaml",
+        "opentelemetry-operator.git/config/manifests/bases/opentelemetry-operator.clusterserviceversion.yaml",
+        "opentelemetry-operator.git/config/rbac/auth_proxy_service.yaml",
+        "opentelemetry-operator.git/config/rbac/service_account.yaml",
+        "opentelemetry-operator.git/config/webhook/service.yaml",
+        "opentelemetry-operator.git/pkg/collector/testdata/http_sd_config_servicemonitor_test.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

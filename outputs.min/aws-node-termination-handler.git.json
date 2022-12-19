@@ -2,16 +2,11 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 6,
-      "rootCount": 2,
-      "subFolderCount": 4,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
       "filepaths": [
-        "aws-node-termination-handler.git/Dockerfile",
-        "aws-node-termination-handler.git/Dockerfile.windows",
-        "aws-node-termination-handler.git/test/license-test/Dockerfile",
-        "aws-node-termination-handler.git/test/readme-test/spellcheck-Dockerfile",
-        "aws-node-termination-handler.git/test/webhook-test-proxy/Dockerfile",
-        "aws-node-termination-handler.git/test/webhook-test-proxy/Dockerfile.windows"
+        "aws-node-termination-handler.git/test/readme-test/spellcheck-Dockerfile"
       ]
     },
     "composefile": {
@@ -20,6 +15,60 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "aws-node-termination-handler.git/config/helm/aws-node-termination-handler/Chart.yaml",
+        "aws-node-termination-handler.git/config/helm/localstack/Chart.yaml",
+        "aws-node-termination-handler.git/config/helm/squid/Chart.yaml",
+        "aws-node-termination-handler.git/config/helm/webhook-test-proxy/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "aws-node-termination-handler.git/config/helm/aws-node-termination-handler/templates/deployment.yaml",
+        "aws-node-termination-handler.git/config/helm/aws-node-termination-handler/templates/service.yaml",
+        "aws-node-termination-handler.git/config/helm/aws-node-termination-handler/templates/serviceaccount.yaml",
+        "aws-node-termination-handler.git/config/helm/aws-node-termination-handler/templates/servicemonitor.yaml",
+        "aws-node-termination-handler.git/config/helm/localstack/templates/deployment.yaml",
+        "aws-node-termination-handler.git/config/helm/localstack/templates/service.yaml",
+        "aws-node-termination-handler.git/config/helm/localstack/templates/serviceaccount.yaml",
+        "aws-node-termination-handler.git/config/helm/squid/templates/service.yaml",
+        "aws-node-termination-handler.git/config/helm/squid/templates/serviceaccount.yaml",
+        "aws-node-termination-handler.git/config/helm/webhook-test-proxy/templates/service.yaml",
+        "aws-node-termination-handler.git/config/helm/webhook-test-proxy/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "aws-node-termination-handler.git/test/license-test/license-config.hcl"
+      ]
     }
   },
   "info": {

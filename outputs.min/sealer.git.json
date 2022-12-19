@@ -1,23 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 11,
-      "rootCount": 1,
-      "subFolderCount": 10,
-      "filepaths": [
-        "sealer.git/Dockerfile",
-        "sealer.git/pkg/infra/container/imagecontext/arm/Dockerfile",
-        "sealer.git/pkg/infra/container/imagecontext/base/Dockerfile",
-        "sealer.git/pkg/infra/container/imagecontext/build/Dockerfile",
-        "sealer.git/vendor/github.com/distribution/distribution/v3/Dockerfile",
-        "sealer.git/vendor/github.com/docker/distribution/Dockerfile",
-        "sealer.git/vendor/github.com/moby/buildkit/frontend/dockerfile",
-        "sealer.git/vendor/github.com/nxadm/tail/Dockerfile",
-        "sealer.git/vendor/github.com/openshift/imagebuilder/dockerfile",
-        "sealer.git/vendor/github.com/pelletier/go-toml/Dockerfile",
-        "sealer.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -25,6 +13,62 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "sealer.git/build/kubefile/parser/test/brigade-github-app/Chart.yaml",
+        "sealer.git/build/layerutils/charts/testcharts/apps/Chart.yaml",
+        "sealer.git/build/layerutils/charts/testcharts/apps/charts/app1/Chart.yaml",
+        "sealer.git/build/layerutils/charts/testcharts/apps/charts/app2/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "sealer.git/build/kubefile/parser/test/brigade-github-app/templates/deployment.yaml",
+        "sealer.git/build/kubefile/parser/test/brigade-github-app/templates/service.yaml",
+        "sealer.git/build/kubefile/parser/test/kube-nginx-deployment/deployment.yaml",
+        "sealer.git/build/layerutils/charts/testcharts/apps/charts/app1/templates/deployment.yaml",
+        "sealer.git/build/layerutils/charts/testcharts/apps/charts/app1/templates/service.yaml",
+        "sealer.git/build/layerutils/charts/testcharts/apps/charts/app1/templates/serviceaccount.yaml",
+        "sealer.git/build/layerutils/charts/testcharts/apps/charts/app2/templates/deployment.yaml",
+        "sealer.git/build/layerutils/charts/testcharts/apps/charts/app2/templates/service.yaml",
+        "sealer.git/build/layerutils/charts/testcharts/apps/charts/app2/templates/serviceaccount.yaml",
+        "sealer.git/build/layerutils/charts/testcharts/apps/templates/deployment.yaml",
+        "sealer.git/build/layerutils/charts/testcharts/apps/templates/service.yaml",
+        "sealer.git/build/layerutils/charts/testcharts/apps/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "sealer.git/vendor/github.com/distribution/distribution/v3/docker-bake.hcl",
+        "sealer.git/vendor/github.com/docker/distribution/docker-bake.hcl"
+      ]
     }
   },
   "info": {

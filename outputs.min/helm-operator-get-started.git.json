@@ -1,15 +1,55 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
       "exist": true,
       "count": 1,
       "rootCount": 0,
       "subFolderCount": 1,
       "filepaths": [
-        "helm-operator-get-started.git/hack/Dockerfile.ci"
+        "helm-operator-get-started.git/charts/podinfo/Chart.yaml"
       ]
     },
-    "composefile": {
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "helm-operator-get-started.git/charts/podinfo/templates/deployment.yaml",
+        "helm-operator-get-started.git/charts/podinfo/templates/service.yaml",
+        "helm-operator-get-started.git/charts/podinfo/templates/serviceaccount.yaml",
+        "helm-operator-get-started.git/charts/podinfo/templates/tests/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

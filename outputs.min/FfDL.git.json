@@ -1,32 +1,72 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 18,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 18,
-      "filepaths": [
-        "FfDL.git/bin/dind_scripts/Dockerfile.compile",
-        "FfDL.git/community/FfDL-H2Oai/h2o-model/Dockerfile.h2o3",
-        "FfDL.git/dashboard/Dockerfile",
-        "FfDL.git/databroker/objectstorage/Dockerfile",
-        "FfDL.git/databroker/s3/Dockerfile",
-        "FfDL.git/demos/fashion-mnist-training/fashion-mnist-webapp/Dockerfile",
-        "FfDL.git/etc/dlaas-service-base/Dockerfile.alpine",
-        "FfDL.git/etc/dlaas-service-base/Dockerfile.ubuntu",
-        "FfDL.git/jobmonitor/Dockerfile",
-        "FfDL.git/lcm/Dockerfile",
-        "FfDL.git/lcm/controller/Dockerfile",
-        "FfDL.git/metrics/Dockerfile",
-        "FfDL.git/metrics/log_collectors/emetrics_file/Dockerfile",
-        "FfDL.git/metrics/log_collectors/regex_extractor/Dockerfile",
-        "FfDL.git/metrics/log_collectors/simple_log_collector/Dockerfile",
-        "FfDL.git/metrics/log_collectors/tensorboard/Dockerfile",
-        "FfDL.git/restapi/Dockerfile",
-        "FfDL.git/trainer/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "FfDL.git/docs/helm-charts/ffdl-core/Chart.yaml",
+        "FfDL.git/docs/helm-charts/ffdl-helper/Chart.yaml",
+        "FfDL.git/docs/helm-charts/ibmcloud-object-storage-plugin/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "FfDL.git/docs/helm-charts/ffdl-core/templates/services/lcm-deployment.yml",
+        "FfDL.git/docs/helm-charts/ffdl-core/templates/services/lcm-service.yml",
+        "FfDL.git/docs/helm-charts/ffdl-core/templates/services/learner-configmap.yml",
+        "FfDL.git/docs/helm-charts/ffdl-core/templates/services/restapi-deployment.yml",
+        "FfDL.git/docs/helm-charts/ffdl-core/templates/services/restapi-service.yml",
+        "FfDL.git/docs/helm-charts/ffdl-core/templates/services/trainer-deployment.yml",
+        "FfDL.git/docs/helm-charts/ffdl-core/templates/services/trainer-service.yml",
+        "FfDL.git/docs/helm-charts/ffdl-core/templates/services/trainingdata-deployment.yml",
+        "FfDL.git/docs/helm-charts/ffdl-core/templates/services/trainingdata-service.yml",
+        "FfDL.git/docs/helm-charts/ffdl-helper/templates/monitoring/alertmanager-configmap.yml",
+        "FfDL.git/docs/helm-charts/ffdl-helper/templates/monitoring/alertmanager-deployment.yml",
+        "FfDL.git/docs/helm-charts/ffdl-helper/templates/monitoring/alertmanager-service.yml",
+        "FfDL.git/docs/helm-charts/ffdl-helper/templates/monitoring/alertrules-configmap.yml",
+        "FfDL.git/docs/helm-charts/ffdl-helper/templates/monitoring/prometheus-configmap.yml",
+        "FfDL.git/docs/helm-charts/ffdl-helper/templates/monitoring/prometheus-deployment.yml",
+        "FfDL.git/docs/helm-charts/ffdl-helper/templates/monitoring/prometheus-service.yml",
+        "FfDL.git/docs/helm-charts/ffdl-helper/templates/monitoring/pushgateway-configmap.yml",
+        "FfDL.git/docs/helm-charts/ffdl-helper/templates/monitoring/pushgateway-deployment.yml",
+        "FfDL.git/docs/helm-charts/ffdl-helper/templates/monitoring/pushgateway-service.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

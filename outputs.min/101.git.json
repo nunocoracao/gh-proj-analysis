@@ -1,15 +1,73 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
       "exist": true,
       "count": 1,
       "rootCount": 0,
       "subFolderCount": 1,
       "filepaths": [
-        "101.git/module15/4.enable-service-rbac/productpage-v2/Dockerfile"
+        "101.git/helloworld/Chart.yaml"
       ]
     },
-    "composefile": {
+    "k8s": {
+      "exist": true,
+      "count": 22,
+      "rootCount": 0,
+      "subFolderCount": 22,
+      "filepaths": [
+        "101.git/helloworld/templates/deployment.yaml",
+        "101.git/helloworld/templates/service.yaml",
+        "101.git/helloworld/templates/serviceaccount.yaml",
+        "101.git/module11/deployment/deployment-min-ready.yaml",
+        "101.git/module11/drain-node/nginx-deployment.yaml",
+        "101.git/module11/qos-pods/deployment-min-ready.yaml",
+        "101.git/module12/istio/4.sidecar/virtualservice.yaml",
+        "101.git/module12/istio/tracing/service0.yaml",
+        "101.git/module12/istio/tracing/service1.yaml",
+        "101.git/module12/istio/tracing/service2.yaml",
+        "101.git/module13/clusternet/deployment.yaml",
+        "101.git/module13/federation/test-deployment-rsp.yaml",
+        "101.git/module13/federation/test-deployment.yaml",
+        "101.git/module4/configmap-volume-pod.yaml",
+        "101.git/module7/controller-manager/deployment.yaml",
+        "101.git/module8/coredns/coredns-configmap.yaml",
+        "101.git/module8/ingress/nginx-ingress-deployment.yaml",
+        "101.git/module8/service/service-external-name.yaml",
+        "101.git/module8/service/service-publish-notready.yaml",
+        "101.git/module8/service/service-without-selector.yaml",
+        "101.git/module8/service/service.yaml",
+        "101.git/module9/extended-resource/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

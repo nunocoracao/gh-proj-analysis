@@ -1,20 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 8,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 8,
-      "filepaths": [
-        "dgiot.git/.ci/build_packages/Dockerfile",
-        "dgiot.git/.ci/docker-compose-file/openldap/Dockerfile",
-        "dgiot.git/.ci/docker-compose-file/pgsql/Dockerfile",
-        "dgiot.git/deploy/docker/Dockerfile",
-        "dgiot.git/docker/dgiot/Dockerfile",
-        "dgiot.git/docker/dgiot_dashboard/Dockerfile",
-        "dgiot.git/docker/dgiot_db/Dockerfile",
-        "dgiot.git/docker/dgiot_edge/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -39,6 +30,46 @@
         "dgiot.git/.ci/docker-compose-file/docker-compose-redis-single-tls.yaml",
         "dgiot.git/.ci/docker-compose-file/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "dgiot.git/deploy/charts/emqx/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "dgiot.git/deploy/charts/emqx/templates/configmap.yaml",
+        "dgiot.git/deploy/charts/emqx/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

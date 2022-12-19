@@ -1,16 +1,57 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 1,
-      "subFolderCount": 1,
-      "filepaths": [
-        "helm-s3.git/Dockerfile",
-        "helm-s3.git/hack/minio/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "helm-s3.git/tests/e2e/testdata/bar/Chart.yaml",
+        "helm-s3.git/tests/e2e/testdata/foo/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "helm-s3.git/tests/e2e/testdata/bar/templates/deployment.yaml",
+        "helm-s3.git/tests/e2e/testdata/bar/templates/service.yaml",
+        "helm-s3.git/tests/e2e/testdata/bar/templates/serviceaccount.yaml",
+        "helm-s3.git/tests/e2e/testdata/foo/templates/deployment.yaml",
+        "helm-s3.git/tests/e2e/testdata/foo/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

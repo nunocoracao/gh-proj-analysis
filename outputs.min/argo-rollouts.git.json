@@ -1,16 +1,81 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 2,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "argo-rollouts.git/Dockerfile",
-        "argo-rollouts.git/Dockerfile.dev"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "argo-rollouts.git/docs/features/kustomize/example/kustomization.yaml",
+        "argo-rollouts.git/examples/notifications/kustomization.yaml",
+        "argo-rollouts.git/manifests/base/kustomization.yaml",
+        "argo-rollouts.git/manifests/cluster-install/kustomization.yaml",
+        "argo-rollouts.git/manifests/crds/kustomization.yaml",
+        "argo-rollouts.git/manifests/dashboard-install/kustomization.yaml",
+        "argo-rollouts.git/manifests/namespace-install/kustomization.yaml",
+        "argo-rollouts.git/manifests/notifications/kustomization.yaml",
+        "argo-rollouts.git/manifests/role/kustomization.yaml",
+        "argo-rollouts.git/test/kustomize/rollout/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "argo-rollouts.git/examples/helm-blue-green/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "argo-rollouts.git/docs/getting-started/alb/services.yaml",
+        "argo-rollouts.git/docs/getting-started/basic/service.yaml",
+        "argo-rollouts.git/docs/getting-started/istio/services.yaml",
+        "argo-rollouts.git/docs/getting-started/mixed/services.yaml",
+        "argo-rollouts.git/docs/getting-started/nginx/services.yaml",
+        "argo-rollouts.git/docs/getting-started/smi/services.yaml",
+        "argo-rollouts.git/examples/ambassador/echo-service.yaml",
+        "argo-rollouts.git/examples/apisix/services.yaml",
+        "argo-rollouts.git/examples/appmesh/canary-service.yaml",
+        "argo-rollouts.git/examples/helm-blue-green/templates/services.yaml",
+        "argo-rollouts.git/examples/notifications/configmap.yaml",
+        "argo-rollouts.git/manifests/base/argo-rollouts-deployment.yaml",
+        "argo-rollouts.git/manifests/base/argo-rollouts-metrics-service.yaml",
+        "argo-rollouts.git/manifests/dashboard-install/dashboard-deployment.yaml",
+        "argo-rollouts.git/manifests/dashboard-install/dashboard-service.yaml",
+        "argo-rollouts.git/manifests/dashboard-install/dashboard-serviceaccount.yaml",
+        "argo-rollouts.git/manifests/notifications/argo-rollouts-notification-configmap.yaml",
+        "argo-rollouts.git/pkg/kubectl-argo-rollouts/cmd/lint/testdata/invalid-service-labels.yml",
+        "argo-rollouts.git/test/e2e/functional/experiment-with-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

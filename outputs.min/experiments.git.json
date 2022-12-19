@@ -2,32 +2,12 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 22,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 22,
+      "subFolderCount": 2,
       "filepaths": [
-        "experiments.git/ingress-controller-demo/src/svc1/Dockerfile",
-        "experiments.git/ingress-controller-demo/src/svc2/Dockerfile",
-        "experiments.git/ingress-controller-demo/src/svc3/Dockerfile",
-        "experiments.git/ingress-controller-demo/src/svc4/Dockerfile",
-        "experiments.git/ingress-controller-demo/src/svc5/Dockerfile",
-        "experiments.git/ingress-controller-demo/src/svc6/Dockerfile",
-        "experiments.git/ingress-controller-demo/src/svc7/Dockerfile",
-        "experiments.git/ingress-controller-demo/src/svc8/Dockerfile",
-        "experiments.git/ingress-controller-demo/src/svc9/Dockerfile",
-        "experiments.git/istio-demo/service_a_v0.1/Dockerfile",
-        "experiments.git/istio-demo/service_b_v0.1/Dockerfile",
-        "experiments.git/istio-demo/service_b_v0.2/Dockerfile",
         "experiments.git/k8s-tzconfig/1404pod-image-dockerfile",
-        "experiments.git/k8s-tzconfig/1604pod-image-dockerfile",
-        "experiments.git/multi_stage_image_build/heterogeneous/Dockerfile.alpine",
-        "experiments.git/multi_stage_image_build/heterogeneous/Dockerfile.alpine.build",
-        "experiments.git/multi_stage_image_build/heterogeneous/Dockerfile.build",
-        "experiments.git/multi_stage_image_build/isomorphism/Dockerfile",
-        "experiments.git/multi_stage_image_build/isomorphism/Dockerfile.alpine",
-        "experiments.git/multi_stage_image_build/isomorphism/Dockerfile.build",
-        "experiments.git/multi_stage_image_build/multi_stages/Dockerfile",
-        "experiments.git/webserver-operator/Dockerfile"
+        "experiments.git/k8s-tzconfig/1604pod-image-dockerfile"
       ]
     },
     "composefile": {
@@ -37,6 +17,89 @@
       "subFolderCount": 1,
       "filepaths": [
         "experiments.git/kafka-clients/benchmark/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "experiments.git/webserver-operator/config/crd/kustomization.yaml",
+        "experiments.git/webserver-operator/config/default/kustomization.yaml",
+        "experiments.git/webserver-operator/config/manager/kustomization.yaml",
+        "experiments.git/webserver-operator/config/prometheus/kustomization.yaml",
+        "experiments.git/webserver-operator/config/rbac/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "experiments.git/ingress-controller-demo/charts/svc1/Chart.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc2/Chart.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc3/Chart.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc4/Chart.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc5/Chart.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc6/Chart.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc7/Chart.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc8/Chart.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc9/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 28,
+      "rootCount": 0,
+      "subFolderCount": 28,
+      "filepaths": [
+        "experiments.git/ingress-controller-demo/charts/svc1/templates/deployment.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc1/templates/service.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc2/templates/deployment.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc2/templates/service.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc3/templates/deployment.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc3/templates/service.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc4/templates/deployment.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc4/templates/service.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc5/templates/deployment.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc5/templates/service.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc6/templates/deployment.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc6/templates/service.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc7/templates/deployment.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc7/templates/service.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc8/templates/deployment.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc8/templates/service.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc9/templates/deployment.yaml",
+        "experiments.git/ingress-controller-demo/charts/svc9/templates/service.yaml",
+        "experiments.git/ingress-controller-demo/manifests/ic1-service-nodeport.yaml",
+        "experiments.git/ingress-controller-demo/manifests/ic2-service-nodeport.yaml",
+        "experiments.git/ingress-controller-demo/manifests/ic3-service-nodeport.yaml",
+        "experiments.git/k8s-rolling-update-demo/deployments/deployment-demo-svc.yaml",
+        "experiments.git/k8s-rolling-update-demo/deployments/deployment-demo-v0.1.yaml",
+        "experiments.git/k8s-rolling-update-demo/deployments/deployment-demo-v0.2.yaml",
+        "experiments.git/k8s-rolling-update-demo/selector/nginx-deployment1.yaml",
+        "experiments.git/k8s-rolling-update-demo/selector/nginx-deployment2.yaml",
+        "experiments.git/webserver-operator/config/rbac/auth_proxy_service.yaml",
+        "experiments.git/webserver-operator/config/rbac/service_account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "experiments.git/nomad-demo/part3/agent-weave-proxy-mode.hcl",
+        "experiments.git/nomad-demo/part3/agent.hcl"
       ]
     }
   },

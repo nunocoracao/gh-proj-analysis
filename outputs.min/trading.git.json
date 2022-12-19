@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "trading.git/modules/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -17,6 +15,57 @@
       "filepaths": [
         "trading.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "trading.git/ops/apps/alerts-deployment.yaml",
+        "trading.git/ops/apps/alerts-service.yaml",
+        "trading.git/ops/apps/forecasts-deployment.yaml",
+        "trading.git/ops/apps/forecasts-service.yaml",
+        "trading.git/ops/apps/processor-deployment.yaml",
+        "trading.git/ops/apps/processor-service.yaml",
+        "trading.git/ops/apps/snapshots-deployment.yaml",
+        "trading.git/ops/apps/snapshots-service.yaml",
+        "trading.git/ops/apps/tracing-deployment.yaml",
+        "trading.git/ops/apps/tracing-service.yaml",
+        "trading.git/ops/apps/ws-server-deployment.yaml",
+        "trading.git/ops/apps/ws-server-service.yaml",
+        "trading.git/ops/infra/pulsar-deployment.yaml",
+        "trading.git/ops/infra/redis-deployment.yaml",
+        "trading.git/ops/infra/redis-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

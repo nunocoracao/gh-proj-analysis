@@ -1,0 +1,139 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "azure-service-operator.git/config/certmanager/kustomization.yaml",
+        "azure-service-operator.git/config/crd/kustomization.yaml",
+        "azure-service-operator.git/config/default/kustomization.yaml",
+        "azure-service-operator.git/config/manager/kustomization.yaml",
+        "azure-service-operator.git/config/operator-bundle/kustomization.yaml",
+        "azure-service-operator.git/config/rbac/kustomization.yaml",
+        "azure-service-operator.git/config/samples/kustomization.yaml",
+        "azure-service-operator.git/config/webhook/kustomization.yaml",
+        "azure-service-operator.git/v2/config/certmanager/kustomization.yaml",
+        "azure-service-operator.git/v2/config/default/kustomization.yaml",
+        "azure-service-operator.git/v2/config/manager/kustomization.yaml",
+        "azure-service-operator.git/v2/config/rbac/kustomization.yaml",
+        "azure-service-operator.git/v2/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "azure-service-operator.git/.github/workflows/helm-chart-repo.yaml",
+        "azure-service-operator.git/charts/azure-service-operator/Chart.yaml",
+        "azure-service-operator.git/v2/charts/azure-service-operator/Chart.yaml",
+        "azure-service-operator.git/v2/charts/azure-service-operator/charts/azure-service-operator-crds/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 47,
+      "rootCount": 0,
+      "subFolderCount": 47,
+      "filepaths": [
+        "azure-service-operator.git/charts/azure-service-operator/crds/apiextensions.k8s.io_v1_customresourcedefinition_apimservices.azure.microsoft.com.yaml",
+        "azure-service-operator.git/charts/azure-service-operator/templates/generated/apps_v1_deployment_azureoperator-controller-manager.yaml",
+        "azure-service-operator.git/charts/azure-service-operator/templates/generated/v1_service_azureoperator-controller-manager-metrics-service.yaml",
+        "azure-service-operator.git/charts/azure-service-operator/templates/generated/v1_service_azureoperator-webhook-service.yaml",
+        "azure-service-operator.git/config/crd/patches/cainjection_in_apimservices.yaml",
+        "azure-service-operator.git/config/crd/patches/webhook_in_apimservices.yaml",
+        "azure-service-operator.git/config/operator-bundle/bases/azure-service-operator.clusterserviceversion.yaml",
+        "azure-service-operator.git/config/operator-bundle/patches/serviceaccountname_in_deployment.yaml",
+        "azure-service-operator.git/config/operator-bundle/patches/serviceaccountname_in_rolebindings.yaml",
+        "azure-service-operator.git/config/rbac/auth_proxy_service.yaml",
+        "azure-service-operator.git/config/samples/azure_v1alpha1_apimservice.yaml",
+        "azure-service-operator.git/config/webhook/service.yaml",
+        "azure-service-operator.git/v2/config/manager/manager_metrics_service.yaml",
+        "azure-service-operator.git/v2/config/rbac/auth_proxy_service.yaml",
+        "azure-service-operator.git/v2/config/webhook/service.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_ConfigMapInDifferentNamespace_ConfigMapNotFound.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_ConfigMapUpdated_TriggersReconcile.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_ManagedIdentity_UserAssignedIdentity_ExportConfigMap.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_MissingConfigMapKey_ReturnsError.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_MissingConfigMap_ReturnsError.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_ServiceBus_Namespace_Basic_CRUD.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_ServiceBus_Namespace_Standard_CRUD.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_SignalRService_SignalR_CRUD.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_UserConfigMapInDifferentNamespace_ShouldNotTriggerReconcile.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_Samples_CreationAndDeletion/Test_Blobservice_v1alpha1api_CreationAndDeletion.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_Samples_CreationAndDeletion/Test_Blobservice_v1beta_CreationAndDeletion.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_Samples_CreationAndDeletion/Test_Containerservice_v1alpha1api_CreationAndDeletion.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_Samples_CreationAndDeletion/Test_Containerservice_v1beta_CreationAndDeletion.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_Samples_CreationAndDeletion/Test_Machinelearningservices_v1beta_CreationAndDeletion.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_Samples_CreationAndDeletion/Test_Queueservice_v1alpha1api_CreationAndDeletion.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_Samples_CreationAndDeletion/Test_Queueservice_v1beta_CreationAndDeletion.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_Samples_CreationAndDeletion/Test_Servicebus_v1alpha1api_CreationAndDeletion.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_Samples_CreationAndDeletion/Test_Servicebus_v1beta_CreationAndDeletion.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_Samples_CreationAndDeletion/Test_Signalrservice_v1alpha1api_CreationAndDeletion.yaml",
+        "azure-service-operator.git/v2/internal/controllers/recordings/Test_Samples_CreationAndDeletion/Test_Signalrservice_v1beta_CreationAndDeletion.yaml",
+        "azure-service-operator.git/v2/samples/eventgrid/v1alpha1api/refs/v1alpha1api20210401_storageaccountsqueueservice.yaml",
+        "azure-service-operator.git/v2/samples/eventgrid/v1alpha1api/refs/v1alpha1api20210401_storageaccountsqueueservicesqueue.yaml",
+        "azure-service-operator.git/v2/samples/eventgrid/v1beta/refs/v1beta20210401_storageaccountsqueueservice.yaml",
+        "azure-service-operator.git/v2/samples/eventgrid/v1beta/refs/v1beta20210401_storageaccountsqueueservicesqueue.yaml",
+        "azure-service-operator.git/v2/samples/storage/blobservice/v1alpha1api/v1alpha1api20210401_storageaccountsblobservice.yaml",
+        "azure-service-operator.git/v2/samples/storage/blobservice/v1alpha1api/v1alpha1api20210401_storageaccountsblobservicescontainer.yaml",
+        "azure-service-operator.git/v2/samples/storage/blobservice/v1beta/v1beta20210401_storageaccountsblobservice.yaml",
+        "azure-service-operator.git/v2/samples/storage/blobservice/v1beta/v1beta20210401_storageaccountsblobservicescontainer.yaml",
+        "azure-service-operator.git/v2/samples/storage/queueservice/v1alpha1api/v1alpha1api20210401_storageaccountsqueueservice.yaml",
+        "azure-service-operator.git/v2/samples/storage/queueservice/v1alpha1api/v1alpha1api20210401_storageaccountsqueueservicesqueue.yaml",
+        "azure-service-operator.git/v2/samples/storage/queueservice/v1beta/v1beta20210401_storageaccountsqueueservice.yaml",
+        "azure-service-operator.git/v2/samples/storage/queueservice/v1beta/v1beta20210401_storageaccountsqueueservicesqueue.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "info": {
+    "id": 197483319,
+    "name": "azure-service-operator",
+    "full_name": "Azure/azure-service-operator",
+    "owner": {
+      "login": "Azure",
+      "html_url": "https://github.com/Azure",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/Azure/azure-service-operator",
+    "description": "Azure Service Operator allows you to create Azure resources using kubectl",
+    "url": "https://api.github.com/repos/Azure/azure-service-operator",
+    "clone_url": "https://github.com/Azure/azure-service-operator.git",
+    "homepage": "https://azure.github.io/azure-service-operator/",
+    "size": 143644,
+    "stargazers_count": 517,
+    "watchers_count": 517,
+    "language": "Go"
+  }
+}

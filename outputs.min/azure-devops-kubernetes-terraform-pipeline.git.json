@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "azure-devops-kubernetes-terraform-pipeline.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -15,6 +13,52 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "azure-devops-kubernetes-terraform-pipeline.git/configuration/kubernetes/deployment.yaml",
+        "azure-devops-kubernetes-terraform-pipeline.git/pipeline-backups/03-playing-with-environment-deployment.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "azure-devops-kubernetes-terraform-pipeline.git/configuration/iaac/aws/kubernetes/main.tf",
+        "azure-devops-kubernetes-terraform-pipeline.git/configuration/iaac/azure/backend/main.tf",
+        "azure-devops-kubernetes-terraform-pipeline.git/configuration/iaac/azure/backend/outputs.tf",
+        "azure-devops-kubernetes-terraform-pipeline.git/configuration/iaac/azure/backend/variables.tf",
+        "azure-devops-kubernetes-terraform-pipeline.git/configuration/iaac/azure/kubernetes/main.tf",
+        "azure-devops-kubernetes-terraform-pipeline.git/configuration/iaac/azure/kubernetes/outputs.tf",
+        "azure-devops-kubernetes-terraform-pipeline.git/configuration/iaac/azure/kubernetes/variables.tf"
+      ]
     }
   },
   "info": {

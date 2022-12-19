@@ -1,15 +1,60 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "kube2iam.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "kube2iam.git/kustomize/base/kustomization.yaml",
+        "kube2iam.git/kustomize/overlays/psp_calico/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "kube2iam.git/.github/workflows/install-chart.yaml",
+        "kube2iam.git/.github/workflows/lint-charts.yaml",
+        "kube2iam.git/charts/kube2iam/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 1,
+      "subFolderCount": 3,
+      "filepaths": [
+        "kube2iam.git/deployment.yaml",
+        "kube2iam.git/charts/kube2iam/templates/service.yaml",
+        "kube2iam.git/charts/kube2iam/templates/serviceaccount.yaml",
+        "kube2iam.git/charts/kube2iam/templates/servicemonitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

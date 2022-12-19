@@ -1,18 +1,69 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 1,
-      "subFolderCount": 3,
-      "filepaths": [
-        "koperator.git/Dockerfile",
-        "koperator.git/docs/benchmarks/loadgens/Dockerfile",
-        "koperator.git/docs/examples/springboot-kafka-avro/Dockerfile",
-        "koperator.git/hack/kafka-test-pod/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "koperator.git/config/kustomization.yaml",
+        "koperator.git/config/base/kustomization.yaml",
+        "koperator.git/config/overlays/auth-proxy-enabled/kustomization.yaml",
+        "koperator.git/config/overlays/basic/kustomization.yaml",
+        "koperator.git/config/overlays/certmanager-enabled/kustomization.yaml",
+        "koperator.git/config/overlays/certmanager-with-auth-proxy/kustomization.yaml",
+        "koperator.git/config/overlays/prometheus-scraping-enabled/kustomization.yaml",
+        "koperator.git/config/overlays/specific-manager-version/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "koperator.git/charts/kafka-operator/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "koperator.git/charts/kafka-operator/templates/alertmanager-service.yaml",
+        "koperator.git/charts/kafka-operator/templates/authproxy-service.yaml",
+        "koperator.git/charts/kafka-operator/templates/operator-deployment-with-webhook.yaml",
+        "koperator.git/charts/kafka-operator/templates/operator-service.yaml",
+        "koperator.git/config/base/alertmanager/service.yaml",
+        "koperator.git/config/base/webhook/service.yaml",
+        "koperator.git/config/overlays/auth-proxy-enabled/rbac/auth_proxy_service.yaml",
+        "koperator.git/config/overlays/certmanager-with-auth-proxy/auth-proxy/rbac/auth_proxy_service.yaml",
+        "koperator.git/config/test/crd/istio/networking.istio.io_virtualservice.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

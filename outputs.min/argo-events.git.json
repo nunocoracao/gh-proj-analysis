@@ -1,17 +1,70 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
-      "rootCount": 1,
-      "subFolderCount": 2,
-      "filepaths": [
-        "argo-events.git/Dockerfile",
-        "argo-events.git/third_party/nats-streaming-docker/amd64/Dockerfile",
-        "argo-events.git/third_party/prometheus-nats-exporter-docker/amd64/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "argo-events.git/manifests/base/kustomization.yaml",
+        "argo-events.git/manifests/base/controller-manager/kustomization.yaml",
+        "argo-events.git/manifests/base/crds/kustomization.yaml",
+        "argo-events.git/manifests/cluster-install/kustomization.yaml",
+        "argo-events.git/manifests/cluster-install/rbac/kustomization.yaml",
+        "argo-events.git/manifests/extensions/validating-webhook/kustomization.yaml",
+        "argo-events.git/manifests/extensions/validating-webhook/rbac/kustomization.yaml",
+        "argo-events.git/manifests/namespace-install/kustomization.yaml",
+        "argo-events.git/manifests/namespace-install/rbac/kustomization.yaml",
+        "argo-events.git/test/manifests/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "argo-events.git/examples/event-sources/azure-service-bus.yaml",
+        "argo-events.git/examples/sensors/azure-service-bus-sensor.yaml",
+        "argo-events.git/examples/sensors/azure-service-bus.yaml",
+        "argo-events.git/examples/sensors/trigger-source-configmap.yaml",
+        "argo-events.git/examples/tutorials/04-standard-k8s-resources/sensor-deployment.yaml",
+        "argo-events.git/hack/e2e/manifests/gateway-controller-deployment.yaml",
+        "argo-events.git/hack/e2e/manifests/sensor-controller-deployment.yaml",
+        "argo-events.git/manifests/base/controller-manager/controller-manager-deployment.yaml",
+        "argo-events.git/manifests/extensions/validating-webhook/events-webhook-deployment.yaml",
+        "argo-events.git/manifests/extensions/validating-webhook/events-webhook-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

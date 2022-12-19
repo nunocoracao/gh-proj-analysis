@@ -1,15 +1,63 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "gateway.git/tools/docker/envoy-gateway/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "gateway.git/internal/infrastructure/kubernetes/config/rbac/kustomization.yaml",
+        "gateway.git/internal/provider/kubernetes/config/crd/kustomization.yaml",
+        "gateway.git/internal/provider/kubernetes/config/default/kustomization.yaml",
+        "gateway.git/internal/provider/kubernetes/config/envoy-gateway/kustomization.yaml",
+        "gateway.git/internal/provider/kubernetes/config/prometheus/kustomization.yaml",
+        "gateway.git/internal/provider/kubernetes/config/rbac/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "gateway.git/internal/gatewayapi/testdata/httproute-with-invalid-backend-ref-no-service.in.yaml",
+        "gateway.git/internal/gatewayapi/testdata/httproute-with-invalid-backend-ref-no-service.out.yaml",
+        "gateway.git/internal/gatewayapi/testdata/httproute-with-some-invalid-backend-refs-no-service.in.yaml",
+        "gateway.git/internal/gatewayapi/testdata/httproute-with-some-invalid-backend-refs-no-service.out.yaml",
+        "gateway.git/internal/provider/kubernetes/config/envoy-gateway/service.yaml",
+        "gateway.git/internal/provider/kubernetes/config/rbac/auth_proxy_service.yaml",
+        "gateway.git/internal/provider/kubernetes/config/rbac/service_account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

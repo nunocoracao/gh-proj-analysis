@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "terraform-provider-kubernetes-alpha.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -15,6 +13,110 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 68,
+      "rootCount": 0,
+      "subFolderCount": 68,
+      "filepaths": [
+        "terraform-provider-kubernetes-alpha.git/examples/bigcrd/bigcrd.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/cluster-with-resources/main.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/cluster-with-resources/cluster/test.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/cluster-with-resources/manifests/test.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/configmap/main.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/crd/main.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/credentials-client-cert/cert-cred.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/credentials-exec-auth/exec-cli.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/credentials-token/token-cred.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/deployment/deployment.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/ingress/ingress.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/namespace/namespace.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/pod/pod.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/psp/psp.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/role/role.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/service/service.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/terraform-operator/api-token-secret.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/terraform-operator/namespace.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/terraform-operator/sync-workspace-role.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/terraform-operator/sync-workspace-rolebinding.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/terraform-operator/sync-workspace-secret.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/terraform-operator/sync-workspace-serviceaccount.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/terraform-operator/sync-workspaces-deployment.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/terraform-operator/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/terraform-operator/workspaces.app.terraform.io.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/vault/configmap.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/vault/headless.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/vault/injector.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/vault/main.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/vault/server.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/vault/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/vault/webhook.tf",
+        "terraform-provider-kubernetes-alpha.git/examples/wait/main.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/ConfigMap/configmap.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/ConfigMap/configmap_modified.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/ConfigMap/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/CronJob/cronjob.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/CronJob/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/CustomResource/custom_resource.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/CustomResource/terraform.tfvars",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/CustomResource/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/CustomResourceDefinition/customresourcedefinition.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/CustomResourceDefinition/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/CustomResourceOAPI3/custom_resource.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/CustomResourceOAPI3/custom_resource_definition.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/CustomResourceOAPI3/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/DaemonSet/daemonset.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/DaemonSet/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/Deployment/deployment.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/Deployment/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/HPA/hpa.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/HPA/hpa_modified.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/HPA/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/Job/job.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/Job/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/Namespace/namespace.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/Namespace/namespace_modified.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/Namespace/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/NonStructuredCustomResource/custom_resource.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/NonStructuredCustomResource/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/NonStructuredCustomResourceDefinition/customresourcedefinition.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/NonStructuredCustomResourceDefinition/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/Secret/secret.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/Secret/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/StatefulSet/statefulset.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/StatefulSet/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/WaitFor/variables.tf",
+        "terraform-provider-kubernetes-alpha.git/test/acceptance/testdata/WaitFor/wait_for_fields_pod.tf"
+      ]
     }
   },
   "info": {

@@ -1,20 +1,70 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 6,
-      "filepaths": [
-        "jetson.git/workflow/deploy/device-query/src/Dockerfile",
-        "jetson.git/workflow/deploy/jupyter/src/Dockerfile",
-        "jetson.git/workflow/deploy/l4t/src/Dockerfile",
-        "jetson.git/workflow/deploy/ml-base/src/Dockerfile",
-        "jetson.git/workflow/deploy/tensorflow-serving/src/Dockerfile",
-        "jetson.git/workflow/deploy/tensorflow-serving-base/src/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "jetson.git/workflow/deploy/device-query/kustomize/base/kustomization.yaml",
+        "jetson.git/workflow/deploy/device-query/kustomize/overlays/xavier/kustomization.yaml",
+        "jetson.git/workflow/deploy/jupyter/kustomize/base/kustomization.yaml",
+        "jetson.git/workflow/deploy/jupyter/kustomize/overlays/xavier/kustomization.yaml",
+        "jetson.git/workflow/deploy/l4t/kustomize/base/kustomization.yaml",
+        "jetson.git/workflow/deploy/l4t/kustomize/overlays/xavier/kustomization.yaml",
+        "jetson.git/workflow/deploy/tensorflow-serving/kustomize/base/kustomization.yaml",
+        "jetson.git/workflow/deploy/tensorflow-serving/kustomize/overlays/xavier/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "jetson.git/workflow/deploy/device-query/kustomize/base/deployment.yaml",
+        "jetson.git/workflow/deploy/device-query/kustomize/overlays/xavier/deployment.yaml",
+        "jetson.git/workflow/deploy/jupyter/kustomize/base/deployment.yaml",
+        "jetson.git/workflow/deploy/jupyter/kustomize/base/services.yaml",
+        "jetson.git/workflow/deploy/jupyter/kustomize/overlays/xavier/deployment.yaml",
+        "jetson.git/workflow/deploy/l4t/kustomize/base/deployment.yaml",
+        "jetson.git/workflow/deploy/l4t/kustomize/base/services.yaml",
+        "jetson.git/workflow/deploy/l4t/kustomize/overlays/xavier/deployment.yaml",
+        "jetson.git/workflow/deploy/tensorflow-serving/kustomize/base/deployment.yaml",
+        "jetson.git/workflow/deploy/tensorflow-serving/kustomize/base/services.yaml",
+        "jetson.git/workflow/deploy/tensorflow-serving/kustomize/overlays/xavier/deployment.yaml",
+        "jetson.git/workflow/deploy/tensorflow-serving/src/test/webservice.yaml.waiting.for.issue.70"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

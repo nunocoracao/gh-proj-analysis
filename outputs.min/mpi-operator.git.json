@@ -2,25 +2,65 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 12,
-      "rootCount": 1,
-      "subFolderCount": 11,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
       "filepaths": [
-        "mpi-operator.git/Dockerfile",
-        "mpi-operator.git/build/base/Dockerfile",
         "mpi-operator.git/build/base/intel-builder.Dockerfile",
         "mpi-operator.git/build/base/intel.Dockerfile",
         "mpi-operator.git/build/base/openmpi-builder.Dockerfile",
         "mpi-operator.git/build/base/openmpi.Dockerfile",
-        "mpi-operator.git/cmd/kubectl-delivery/Dockerfile",
-        "mpi-operator.git/examples/v1/mxnet/Dockerfile",
-        "mpi-operator.git/examples/v2beta1/horovod/Dockerfile",
-        "mpi-operator.git/examples/v2beta1/pi/Dockerfile",
-        "mpi-operator.git/examples/v2beta1/pi/intel.Dockerfile",
-        "mpi-operator.git/examples/v2beta1/tensorflow-benchmarks/Dockerfile"
+        "mpi-operator.git/examples/v2beta1/pi/intel.Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "mpi-operator.git/manifests/base/kustomization.yaml",
+        "mpi-operator.git/manifests/overlays/dev/kustomization.yaml.template",
+        "mpi-operator.git/manifests/overlays/kubeflow/kustomization.yaml",
+        "mpi-operator.git/manifests/overlays/standalone/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "mpi-operator.git/hack/helm/mpi-operator/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "mpi-operator.git/hack/helm/mpi-operator/templates/mpi-operator-deployment.yaml",
+        "mpi-operator.git/hack/helm/mpi-operator/templates/mpi-operator-serviceaccount.yaml",
+        "mpi-operator.git/manifests/base/deployment.yaml",
+        "mpi-operator.git/manifests/base/service-account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

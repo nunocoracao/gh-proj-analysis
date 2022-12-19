@@ -1,15 +1,58 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "karpenter.git/test/tools/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "karpenter.git/charts/karpenter/Chart.yaml",
+        "karpenter.git/charts/karpenter-crd/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "karpenter.git/charts/karpenter/templates/configmap-logging.yaml",
+        "karpenter.git/charts/karpenter/templates/configmap.yaml",
+        "karpenter.git/charts/karpenter/templates/deployment.yaml",
+        "karpenter.git/charts/karpenter/templates/service.yaml",
+        "karpenter.git/charts/karpenter/templates/serviceaccount.yaml",
+        "karpenter.git/charts/karpenter/templates/servicemonitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,17 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 5,
-      "filepaths": [
-        "microservices-docker-go-mongodb.git/bookings/Dockerfile",
-        "microservices-docker-go-mongodb.git/movies/Dockerfile",
-        "microservices-docker-go-mongodb.git/showtimes/Dockerfile",
-        "microservices-docker-go-mongodb.git/users/Dockerfile",
-        "microservices-docker-go-mongodb.git/website/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -21,6 +15,64 @@
       "filepaths": [
         "microservices-docker-go-mongodb.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "microservices-docker-go-mongodb.git/charts/cinema/Chart.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/bookings/Chart.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/movies/Chart.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/showtimes/Chart.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/users/Chart.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/website/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/bookings/templates/deployment.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/bookings/templates/service.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/bookings/templates/serviceaccount.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/movies/templates/deployment.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/movies/templates/service.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/movies/templates/serviceaccount.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/showtimes/templates/deployment.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/showtimes/templates/service.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/showtimes/templates/serviceaccount.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/users/templates/deployment.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/users/templates/service.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/users/templates/serviceaccount.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/website/templates/deployment.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/website/templates/service.yaml",
+        "microservices-docker-go-mongodb.git/charts/cinema/charts/website/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

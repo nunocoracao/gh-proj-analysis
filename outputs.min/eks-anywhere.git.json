@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 3,
-      "filepaths": [
-        "eks-anywhere.git/designs/Dockerfile",
-        "eks-anywhere.git/docs/Dockerfile",
-        "eks-anywhere.git/manager/docker/linux/eks-anywhere-cluster-controller/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -19,6 +15,84 @@
       "filepaths": [
         "eks-anywhere.git/docs/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "eks-anywhere.git/config/certmanager/kustomization.yaml",
+        "eks-anywhere.git/config/crd/kustomization.yaml",
+        "eks-anywhere.git/config/default/kustomization.yaml",
+        "eks-anywhere.git/config/manager/kustomization.yaml",
+        "eks-anywhere.git/config/prod/kustomization.yaml",
+        "eks-anywhere.git/config/rbac/kustomization.yaml",
+        "eks-anywhere.git/config/tilt/kustomization.yaml",
+        "eks-anywhere.git/config/webhook/kustomization.yaml",
+        "eks-anywhere.git/pkg/gitops/flux/manifests/eksa-system/kustomization.yaml",
+        "eks-anywhere.git/pkg/gitops/flux/manifests/flux-system/kustomization.yaml",
+        "eks-anywhere.git/pkg/gitops/flux/testdata/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "eks-anywhere.git/pkg/providers/tinkerbell/stack/testdata/expected_tinkerbell_chart_overrides_with_all_options.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 28,
+      "rootCount": 0,
+      "subFolderCount": 28,
+      "filepaths": [
+        "eks-anywhere.git/config/manager/manager_service_account_patch.yaml",
+        "eks-anywhere.git/config/rbac/service_account.yaml",
+        "eks-anywhere.git/config/webhook/service.yaml",
+        "eks-anywhere.git/config/webhook/service_selector_patch.yaml",
+        "eks-anywhere.git/controllers/resource/testdata/cloudstackMachineDeployment.yaml",
+        "eks-anywhere.git/controllers/resource/testdata/expectedCloudStackMachineDeployment.yaml",
+        "eks-anywhere.git/controllers/resource/testdata/expectedCloudStackMachineDeploymentOnlyReplica.yaml",
+        "eks-anywhere.git/controllers/resource/testdata/expectedCloudStackMachineDeploymentTemplateChanged.yaml",
+        "eks-anywhere.git/controllers/resource/testdata/expectedVSphereMachineDeployment.yaml",
+        "eks-anywhere.git/controllers/resource/testdata/expectedVSphereMachineDeploymentOnlyReplica.yaml",
+        "eks-anywhere.git/controllers/resource/testdata/expectedVSphereMachineDeploymentTemplateChanged.yaml",
+        "eks-anywhere.git/controllers/resource/testdata/vsphereMachineDeployment.yaml",
+        "eks-anywhere.git/pkg/api/v1alpha1/testdata/cluster_1_21_awsiam_no_mapping_eksconfigmap.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_autoscaler_deployment_md_expected.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_cp_expected.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_cp_expected_124onwards.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_cp_pod_iam_expected.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_cp_stacked_etcd_expected.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_cp_taints_expected.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_custom_cidrs_cp_expected.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_custom_cidrs_md_expected.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_md_expected.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_md_expected_124onwards.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_md_taints_expected.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_multiple_md_taints_expected.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_node_labels_cp_expected.yaml",
+        "eks-anywhere.git/pkg/providers/docker/testdata/valid_deployment_node_labels_md_expected.yaml",
+        "eks-anywhere.git/test/framework/testdata/adot_package_deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

@@ -1,16 +1,64 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "kube-linter.git/image/Dockerfile",
-        "kube-linter.git/image/Dockerfile_alpine"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kube-linter.git/tests/testdata/mychart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "kube-linter.git/pkg/builtinchecks/yamls/dangling-service.yaml",
+        "kube-linter.git/pkg/builtinchecks/yamls/default-service-account.yaml",
+        "kube-linter.git/pkg/builtinchecks/yamls/deprecated-service-account.yaml",
+        "kube-linter.git/pkg/builtinchecks/yamls/non-existent-service-account.yaml",
+        "kube-linter.git/pkg/builtinchecks/yamls/servicetype.yaml",
+        "kube-linter.git/tests/checks/dangling-service.yml",
+        "kube-linter.git/tests/checks/default-service-account.yml",
+        "kube-linter.git/tests/checks/deprecated-service-account-field.yml",
+        "kube-linter.git/tests/checks/exposed-services.yml",
+        "kube-linter.git/tests/checks/non-existent-service-account.yml",
+        "kube-linter.git/tests/testdata/mychart/templates/deployment.yaml",
+        "kube-linter.git/tests/testdata/mychart/templates/service.yaml",
+        "kube-linter.git/tests/testdata/mychart/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

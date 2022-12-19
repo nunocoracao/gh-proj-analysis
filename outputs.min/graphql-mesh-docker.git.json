@@ -1,16 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 4,
-      "filepaths": [
-        "graphql-mesh-docker.git/docker/Dockerfile",
-        "graphql-mesh-docker.git/docker/Dockerfile-all",
-        "graphql-mesh-docker.git/docker/Dockerfile-all-alpine",
-        "graphql-mesh-docker.git/docker/Dockerfile-alpine"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -20,6 +15,51 @@
       "filepaths": [
         "graphql-mesh-docker.git/docker/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "graphql-mesh-docker.git/helm-src/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "graphql-mesh-docker.git/helm-chart/graphql-mesh-configmap.yaml",
+        "graphql-mesh-docker.git/helm-src/templates/deployment.yaml",
+        "graphql-mesh-docker.git/helm-src/templates/raw-files-configmap.yaml",
+        "graphql-mesh-docker.git/helm-src/templates/service.yaml",
+        "graphql-mesh-docker.git/helm-src/templates/serviceaccount.yaml",
+        "graphql-mesh-docker.git/k8s/basic/service.yaml",
+        "graphql-mesh-docker.git/k8s/jsonschema-covid19/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

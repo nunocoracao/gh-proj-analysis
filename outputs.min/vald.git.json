@@ -1,24 +1,98 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 10,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 10,
-      "filepaths": [
-        "vald.git/dockers/agent/core/ngt/Dockerfile",
-        "vald.git/dockers/agent/sidecar/Dockerfile",
-        "vald.git/dockers/ci/base/Dockerfile",
-        "vald.git/dockers/dev/Dockerfile",
-        "vald.git/dockers/discoverer/k8s/Dockerfile",
-        "vald.git/dockers/gateway/filter/Dockerfile",
-        "vald.git/dockers/gateway/lb/Dockerfile",
-        "vald.git/dockers/manager/index/Dockerfile",
-        "vald.git/dockers/operator/helm/Dockerfile",
-        "vald.git/dockers/tools/cli/loadtest/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "vald.git/k8s/metrics/pyroscope/base/kustomization.yaml",
+        "vald.git/k8s/metrics/pyroscope/overlay/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "vald.git/charts/vald/Chart.yaml",
+        "vald.git/charts/vald-helm-operator/Chart.yaml",
+        "vald.git/tests/chaos/chart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 42,
+      "rootCount": 0,
+      "subFolderCount": 42,
+      "filepaths": [
+        "vald.git/charts/vald/templates/agent/configmap.yaml",
+        "vald.git/charts/vald/templates/agent/deployment.yaml",
+        "vald.git/charts/vald/templates/agent/sidecar-configmap.yaml",
+        "vald.git/charts/vald/templates/discoverer/configmap.yaml",
+        "vald.git/charts/vald/templates/discoverer/deployment.yaml",
+        "vald.git/charts/vald/templates/discoverer/serviceaccount.yaml",
+        "vald.git/charts/vald/templates/gateway/filter/configmap.yaml",
+        "vald.git/charts/vald/templates/gateway/filter/deployment.yaml",
+        "vald.git/charts/vald/templates/gateway/lb/configmap.yaml",
+        "vald.git/charts/vald/templates/gateway/lb/deployment.yaml",
+        "vald.git/charts/vald/templates/manager/index/configmap.yaml",
+        "vald.git/charts/vald/templates/manager/index/deployment.yaml",
+        "vald.git/charts/vald-helm-operator/templates/serviceaccount.yaml",
+        "vald.git/example/manifest/scylla/configmap.yaml",
+        "vald.git/k8s/agent/configmap.yaml",
+        "vald.git/k8s/agent/deployment.yaml",
+        "vald.git/k8s/agent/sidecar-configmap.yaml",
+        "vald.git/k8s/discoverer/configmap.yaml",
+        "vald.git/k8s/discoverer/deployment.yaml",
+        "vald.git/k8s/discoverer/serviceaccount.yaml",
+        "vald.git/k8s/external/minio/deployment.yaml",
+        "vald.git/k8s/gateway/lb/configmap.yaml",
+        "vald.git/k8s/gateway/lb/deployment.yaml",
+        "vald.git/k8s/manager/index/configmap.yaml",
+        "vald.git/k8s/manager/index/deployment.yaml",
+        "vald.git/k8s/metrics/grafana/configmap.yaml",
+        "vald.git/k8s/metrics/grafana/deployment.yaml",
+        "vald.git/k8s/metrics/jaeger/jaeger-operator/deployment.yaml",
+        "vald.git/k8s/metrics/jaeger/jaeger-operator/service-account.yaml",
+        "vald.git/k8s/metrics/jaeger/jaeger-operator/service.yaml",
+        "vald.git/k8s/metrics/profefe/deployment.yaml",
+        "vald.git/k8s/metrics/profefe/serviceaccount.yaml",
+        "vald.git/k8s/metrics/prometheus/configmap.yaml",
+        "vald.git/k8s/metrics/prometheus/deployment.yaml",
+        "vald.git/k8s/metrics/prometheus/serviceaccount.yaml",
+        "vald.git/k8s/metrics/pyroscope/base/configmap.yaml",
+        "vald.git/k8s/metrics/pyroscope/base/deployment.yaml",
+        "vald.git/k8s/metrics/pyroscope/base/service.yaml",
+        "vald.git/k8s/metrics/pyroscope/base/serviceaccount.yaml",
+        "vald.git/k8s/metrics/pyroscope/overlay/deployment.yaml",
+        "vald.git/k8s/operator/helm/serviceaccount.yaml",
+        "vald.git/k8s/tools/cli/loadtest/configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

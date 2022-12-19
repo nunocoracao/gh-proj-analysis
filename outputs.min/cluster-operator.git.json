@@ -1,15 +1,62 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "cluster-operator.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "cluster-operator.git/config/crd/kustomization.yaml",
+        "cluster-operator.git/config/default/base/kustomization.yaml",
+        "cluster-operator.git/config/default/overlays/dev/kustomization.yaml",
+        "cluster-operator.git/config/default/overlays/kind/kustomization.yaml",
+        "cluster-operator.git/config/installation/kustomization.yaml",
+        "cluster-operator.git/config/manager/kustomization.yaml",
+        "cluster-operator.git/config/namespace/base/kustomization.yaml",
+        "cluster-operator.git/config/rbac/kustomization.yaml",
+        "cluster-operator.git/config/samples/base/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "cluster-operator.git/config/rbac/service_account.yaml",
+        "cluster-operator.git/config/rbac/service_binding_cluster_role.yaml",
+        "cluster-operator.git/observability/prometheus/monitors/rabbitmq-servicemonitor.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

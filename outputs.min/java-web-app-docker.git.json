@@ -1,15 +1,57 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "java-web-app-docker.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "java-web-app-docker.git/helmchart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 3,
+      "subFolderCount": 3,
+      "filepaths": [
+        "java-web-app-docker.git/deployment.yml",
+        "java-web-app-docker.git/javawebapp-deployment.yml",
+        "java-web-app-docker.git/service.yml",
+        "java-web-app-docker.git/helmchart/templates/deployment.yaml",
+        "java-web-app-docker.git/helmchart/templates/service.yaml",
+        "java-web-app-docker.git/helmchart/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

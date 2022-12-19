@@ -1,27 +1,59 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 13,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 13,
-      "filepaths": [
-        "mongodb-kubernetes-operator.git/scripts/dev/templates/Dockerfile.e2e",
-        "mongodb-kubernetes-operator.git/scripts/dev/templates/Dockerfile.template",
-        "mongodb-kubernetes-operator.git/scripts/dev/templates/agent/Dockerfile.builder",
-        "mongodb-kubernetes-operator.git/scripts/dev/templates/agent/Dockerfile.template",
-        "mongodb-kubernetes-operator.git/scripts/dev/templates/agent/Dockerfile.ubi",
-        "mongodb-kubernetes-operator.git/scripts/dev/templates/agent/Dockerfile.ubuntu",
-        "mongodb-kubernetes-operator.git/scripts/dev/templates/operator/Dockerfile.builder",
-        "mongodb-kubernetes-operator.git/scripts/dev/templates/operator/Dockerfile.operator",
-        "mongodb-kubernetes-operator.git/scripts/dev/templates/readiness/Dockerfile.builder",
-        "mongodb-kubernetes-operator.git/scripts/dev/templates/readiness/Dockerfile.readiness",
-        "mongodb-kubernetes-operator.git/scripts/dev/templates/versionhook/Dockerfile.builder",
-        "mongodb-kubernetes-operator.git/scripts/dev/templates/versionhook/Dockerfile.versionhook",
-        "mongodb-kubernetes-operator.git/test/test-app/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "mongodb-kubernetes-operator.git/config/crd/kustomization.yaml",
+        "mongodb-kubernetes-operator.git/config/default/kustomization.yaml",
+        "mongodb-kubernetes-operator.git/config/local_run/kustomization.yaml",
+        "mongodb-kubernetes-operator.git/config/manager/kustomization.yaml",
+        "mongodb-kubernetes-operator.git/config/rbac/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "mongodb-kubernetes-operator.git/config/rbac/service_account.yaml",
+        "mongodb-kubernetes-operator.git/config/rbac/service_account_database.yaml",
+        "mongodb-kubernetes-operator.git/config/samples/external_access/external_services.yaml",
+        "mongodb-kubernetes-operator.git/deploy/e2e/service_account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

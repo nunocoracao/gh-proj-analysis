@@ -1,21 +1,57 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 7,
-      "rootCount": 1,
-      "subFolderCount": 6,
-      "filepaths": [
-        "elasticsearch-operator.git/Dockerfile",
-        "elasticsearch-operator.git/vendor/golang.org/x/net/http2/Dockerfile",
-        "elasticsearch-operator.git/vendor/golang.org/x/sys/unix/linux/Dockerfile",
-        "elasticsearch-operator.git/vendor/golang.org/x/tools/cmd/getgo/Dockerfile",
-        "elasticsearch-operator.git/vendor/golang.org/x/tools/cmd/tip/Dockerfile",
-        "elasticsearch-operator.git/vendor/k8s.io/apiextensions-apiserver/artifacts/simple-image/Dockerfile",
-        "elasticsearch-operator.git/vendor/k8s.io/client-go/examples/in-cluster-client-configuration/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "elasticsearch-operator.git/charts/elasticsearch/Chart.yaml",
+        "elasticsearch-operator.git/charts/elasticsearch-operator/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "elasticsearch-operator.git/charts/elasticsearch-operator/templates/deployment.yaml",
+        "elasticsearch-operator.git/vendor/golang.org/x/tools/cmd/tip/tip-service.yaml",
+        "elasticsearch-operator.git/vendor/k8s.io/apiextensions-apiserver/artifacts/customresource-01/noxu-apiservice.yaml",
+        "elasticsearch-operator.git/vendor/k8s.io/apiextensions-apiserver/artifacts/example/apiservice.yaml",
+        "elasticsearch-operator.git/vendor/k8s.io/apiextensions-apiserver/artifacts/example/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,16 +1,60 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "oneinfra.git/config/certmanager/kustomization.yaml",
+        "oneinfra.git/config/crd/kustomization.yaml",
+        "oneinfra.git/config/default/kustomization.yaml",
+        "oneinfra.git/config/manager/kustomization.yaml",
+        "oneinfra.git/config/nightly/kustomization.yaml",
+        "oneinfra.git/config/prometheus/kustomization.yaml",
+        "oneinfra.git/config/rbac/kustomization.yaml",
+        "oneinfra.git/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
       "exist": true,
       "count": 2,
       "rootCount": 0,
       "subFolderCount": 2,
       "filepaths": [
-        "oneinfra.git/images/kubelet-installer/Dockerfile",
-        "oneinfra.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "oneinfra.git/config/rbac/auth_proxy_service.yaml",
+        "oneinfra.git/config/webhook/service.yaml"
       ]
     },
-    "composefile": {
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

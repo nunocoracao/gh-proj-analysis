@@ -2,26 +2,70 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 13,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 13,
+      "subFolderCount": 2,
       "filepaths": [
-        "minikube.git/deploy/addons/auto-pause/Dockerfile",
-        "minikube.git/deploy/gvisor/Dockerfile",
-        "minikube.git/deploy/iso/minikube-iso/Dockerfile",
-        "minikube.git/deploy/kicbase/Dockerfile",
-        "minikube.git/deploy/prow/Dockerfile",
-        "minikube.git/deploy/storage-provisioner/Dockerfile",
         "minikube.git/hack/boilerplate/boilerplate.Dockerfile.txt",
-        "minikube.git/installers/linux/kvm/Dockerfile.amd64",
-        "minikube.git/installers/linux/kvm/Dockerfile.arm64",
-        "minikube.git/test/integration/testdata/gvisor-addon-Dockerfile",
-        "minikube.git/test/integration/testdata/build/Dockerfile",
-        "minikube.git/test/integration/testdata/skaffold/leeroy-app/Dockerfile",
-        "minikube.git/test/integration/testdata/skaffold/leeroy-web/Dockerfile"
+        "minikube.git/test/integration/testdata/gvisor-addon-Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "minikube.git/.github/workflows/time-to-k8s-public-chart.yml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 17,
+      "rootCount": 0,
+      "subFolderCount": 17,
+      "filepaths": [
+        "minikube.git/deploy/addons/cloud-spanner/deployment.yaml",
+        "minikube.git/deploy/addons/dashboard/dashboard-configmap.yaml",
+        "minikube.git/deploy/addons/efk/fluentd-es-configmap.yaml.tmpl",
+        "minikube.git/deploy/addons/gcp-auth/gcp-auth-service.yaml.tmpl",
+        "minikube.git/deploy/addons/headlamp/headlamp-deployment.yaml.tmpl",
+        "minikube.git/deploy/addons/headlamp/headlamp-service.yaml",
+        "minikube.git/deploy/addons/headlamp/headlamp-serviceaccount.yaml",
+        "minikube.git/deploy/addons/metrics-server/metrics-apiservice.yaml.tmpl",
+        "minikube.git/deploy/addons/metrics-server/metrics-server-deployment.yaml.tmpl",
+        "minikube.git/deploy/addons/metrics-server/metrics-server-service.yaml.tmpl",
+        "minikube.git/deploy/addons/storage-provisioner-gluster/heketi-deployment.yaml.tmpl",
+        "minikube.git/deploy/addons/volumesnapshots/volume-snapshot-controller-deployment.yaml.tmpl",
+        "minikube.git/site/content/en/docs/tutorials/includes/hello-deployment.yaml",
+        "minikube.git/test/integration/testdata/netcat-deployment-nomaster.yaml",
+        "minikube.git/test/integration/testdata/netcat-deployment.yaml",
+        "minikube.git/test/integration/testdata/skaffold/leeroy-app/kubernetes/deployment.yaml",
+        "minikube.git/test/integration/testdata/skaffold/leeroy-web/kubernetes/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

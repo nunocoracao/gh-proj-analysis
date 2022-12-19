@@ -2,43 +2,22 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 33,
+      "count": 12,
       "rootCount": 0,
-      "subFolderCount": 33,
+      "subFolderCount": 12,
       "filepaths": [
-        "werf.git/docs/images/configuration/dockerfile_image1.png",
-        "werf.git/docs/images/configuration/dockerfile_image1_preview.png",
-        "werf.git/integration/suites/build/dockerfile_image",
         "werf.git/integration/suites/giterminism/config_dockerfile_test.go",
-        "werf.git/pkg/dockerfile",
-        "werf.git/pkg/build/image/dockerfile.go",
         "werf.git/pkg/build/stage/full_dockerfile.go",
         "werf.git/pkg/build/stage/full_dockerfile_test.go",
         "werf.git/pkg/config/image_from_dockerfile.go",
         "werf.git/pkg/config/raw_image_from_dockerfile.go",
         "werf.git/pkg/config/raw_image_from_dockerfile_test.go",
-        "werf.git/pkg/container_backend/stage_builder/dockerfile_builder.go",
-        "werf.git/pkg/container_backend/stage_builder/dockerfile_stage_builder.go",
-        "werf.git/pkg/giterminism_manager/file_reader/dockerfile.go",
-        "werf.git/pkg/giterminism_manager/inspector/dockerfile.go",
-        "werf.git/pkg/path_matcher/dockerfile_ignore.go",
-        "werf.git/pkg/path_matcher/dockerfile_ignore_test.go",
-        "werf.git/playground/Dockerfile.ghost",
-        "werf.git/playground/Dockerfile.neovim",
-        "werf.git/scripts/werf-builder/Dockerfile",
+        "werf.git/pkg/dockerfile/frontend/buildkit_dockerfile.go",
         "werf.git/scripts/werf-in-image/alpine.Dockerfile",
         "werf.git/scripts/werf-in-image/argocd-cmp-sidecar-ubuntu.Dockerfile",
         "werf.git/scripts/werf-in-image/centos.Dockerfile",
         "werf.git/scripts/werf-in-image/fedora.Dockerfile",
-        "werf.git/scripts/werf-in-image/ubuntu.Dockerfile",
-        "werf.git/stapel/Dockerfile",
-        "werf.git/stapel/update_certs/Dockerfile",
-        "werf.git/test/e2e/build/_fixtures/complex/state0/Dockerfile",
-        "werf.git/test/e2e/build/_fixtures/complex/state1/Dockerfile",
-        "werf.git/test/e2e/build/_fixtures/images_dependencies/state0/Dockerfile",
-        "werf.git/test/e2e/build/_fixtures/images_dependencies/state0/Dockerfile.base",
-        "werf.git/test/e2e/build/_fixtures/simple/state0/Dockerfile",
-        "werf.git/test/perf/build/dockerfile"
+        "werf.git/scripts/werf-in-image/ubuntu.Dockerfile"
       ]
     },
     "composefile": {
@@ -50,6 +29,66 @@
         "werf.git/docs/docker-compose-slow.yml",
         "werf.git/docs/docker-compose.yml",
         "werf.git/scripts/local-telemetry/docker-compose.yaml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "werf.git/integration/suites/helm/deploy_rollback/_fixtures/chart_1/Chart.yaml",
+        "werf.git/integration/suites/helm/deploy_rollback/_fixtures/chart_2/Chart.yaml",
+        "werf.git/test/e2e/converge/_fixtures/complex/state0/.helm/Chart.yaml",
+        "werf.git/test/e2e/converge/_fixtures/complex/state0/.helm/charts/local-chart/Chart.yaml",
+        "werf.git/test/e2e/converge/_fixtures/complex/state1/.helm/Chart.yaml",
+        "werf.git/test/e2e/converge/_fixtures/complex/state2/.helm/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "werf.git/ci/.helm/templates/configmap.yaml",
+        "werf.git/integration/suites/helm/deploy_rollback/_fixtures/chart_1/templates/deployment.yaml",
+        "werf.git/integration/suites/helm/deploy_rollback/_fixtures/chart_1/templates/service.yaml",
+        "werf.git/integration/suites/helm/deploy_rollback/_fixtures/chart_1/templates/serviceaccount.yaml",
+        "werf.git/integration/suites/helm/deploy_rollback/_fixtures/chart_2/templates/service.yaml",
+        "werf.git/integration/suites/helm/render/_fixtures/secret/.helm/templates/configmap.yaml",
+        "werf.git/test/e2e/converge/_fixtures/complex/state0/.helm/charts/local-chart/templates/configmap.yaml",
+        "werf.git/test/e2e/converge/_fixtures/complex/state0/.helm/templates/configmap-app1.yaml",
+        "werf.git/test/e2e/converge/_fixtures/complex/state0/.helm/templates/deployment-app1.yaml",
+        "werf.git/test/e2e/converge/_fixtures/complex/state0/.helm/templates/deployment-app2.yaml",
+        "werf.git/test/e2e/converge/_fixtures/complex/state1/.helm/templates/configmap-app1.yaml",
+        "werf.git/test/e2e/converge/_fixtures/complex/state2/.helm/templates/deployment-app2.yaml",
+        "werf.git/test/e2e/converge/_fixtures/simple/state0/.helm/templates/configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "werf.git/scripts/images/template.pkr.hcl",
+        "werf.git/scripts/tests/openstack/tf/main.tf",
+        "werf.git/scripts/tests/openstack/tf/providers.tf"
       ]
     }
   },

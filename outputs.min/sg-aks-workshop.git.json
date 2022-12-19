@@ -1,14 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "sg-aks-workshop.git/app/Classifier.Web/Dockerfile",
-        "sg-aks-workshop.git/app/Classifier.Worker/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -16,6 +13,57 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "sg-aks-workshop.git/app/charts/imageclassifier/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "sg-aks-workshop.git/app/charts/imageclassifier/templates/serviceaccount.yaml",
+        "sg-aks-workshop.git/app/charts/imageclassifier/templates/web-deployment.yaml",
+        "sg-aks-workshop.git/app/charts/imageclassifier/templates/web-service.yaml",
+        "sg-aks-workshop.git/app/charts/imageclassifier/templates/worker-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "sg-aks-workshop.git/cluster-provisioning/terraform/aag.tf",
+        "sg-aks-workshop.git/cluster-provisioning/terraform/appinsights.tf",
+        "sg-aks-workshop.git/cluster-provisioning/terraform/flux.tf",
+        "sg-aks-workshop.git/cluster-provisioning/terraform/github.tf",
+        "sg-aks-workshop.git/cluster-provisioning/terraform/main.tf",
+        "sg-aks-workshop.git/cluster-provisioning/terraform/output.tf",
+        "sg-aks-workshop.git/cluster-provisioning/terraform/provider.tf",
+        "sg-aks-workshop.git/cluster-provisioning/terraform/variables.tf"
+      ]
     }
   },
   "info": {

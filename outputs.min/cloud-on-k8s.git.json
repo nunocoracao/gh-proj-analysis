@@ -1,22 +1,71 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 8,
-      "rootCount": 2,
-      "subFolderCount": 6,
-      "filepaths": [
-        "cloud-on-k8s.git/Dockerfile",
-        "cloud-on-k8s.git/Dockerfile.ubi",
-        "cloud-on-k8s.git/.ci/Dockerfile",
-        "cloud-on-k8s.git/hack/deployer/clients/kind/Dockerfile",
-        "cloud-on-k8s.git/hack/deployer/clients/ocp/Dockerfile",
-        "cloud-on-k8s.git/hack/dev/kubectl-image/Dockerfile",
-        "cloud-on-k8s.git/hack/manifest-gen/Dockerfile",
-        "cloud-on-k8s.git/test/e2e/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "cloud-on-k8s.git/config/crds/v1/bases/kustomization.yaml",
+        "cloud-on-k8s.git/config/crds/v1/patches/kustomization.yaml",
+        "cloud-on-k8s.git/hack/deployer/config/local-disks/kustomization.yaml",
+        "cloud-on-k8s.git/hack/manifest-gen/crd_patches/v1/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "cloud-on-k8s.git/deploy/eck-agent/Chart.yaml",
+        "cloud-on-k8s.git/deploy/eck-beats/Chart.yaml",
+        "cloud-on-k8s.git/deploy/eck-elasticsearch/Chart.yaml",
+        "cloud-on-k8s.git/deploy/eck-fleet-server/Chart.yaml",
+        "cloud-on-k8s.git/deploy/eck-kibana/Chart.yaml",
+        "cloud-on-k8s.git/deploy/eck-operator/Chart.yaml",
+        "cloud-on-k8s.git/deploy/eck-operator/charts/eck-operator-crds/Chart.yaml",
+        "cloud-on-k8s.git/deploy/eck-operator/templates/validate-chart.yaml",
+        "cloud-on-k8s.git/deploy/eck-stack/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "cloud-on-k8s.git/deploy/eck-agent/templates/service-account.yaml",
+        "cloud-on-k8s.git/deploy/eck-agent/templates/tests/elastic-agent-service-account_test.yaml",
+        "cloud-on-k8s.git/deploy/eck-beats/templates/service-account.yaml",
+        "cloud-on-k8s.git/deploy/eck-fleet-server/templates/service-account.yaml",
+        "cloud-on-k8s.git/deploy/eck-fleet-server/templates/tests/fleet-server-service-account_test.yaml",
+        "cloud-on-k8s.git/deploy/eck-operator/templates/configmap.yaml",
+        "cloud-on-k8s.git/deploy/eck-operator/templates/service-account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

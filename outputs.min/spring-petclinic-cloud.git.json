@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 3,
-      "filepaths": [
-        "spring-petclinic-cloud.git/docker/Dockerfile",
-        "spring-petclinic-cloud.git/docker/grafana/Dockerfile",
-        "spring-petclinic-cloud.git/docker/prometheus/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -19,6 +15,50 @@
       "filepaths": [
         "spring-petclinic-cloud.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "spring-petclinic-cloud.git/k8s/api-gateway-deployment.yaml",
+        "spring-petclinic-cloud.git/k8s/customers-service-deployment.yaml",
+        "spring-petclinic-cloud.git/k8s/vets-service-deployment.yaml",
+        "spring-petclinic-cloud.git/k8s/visits-service-deployment.yaml",
+        "spring-petclinic-cloud.git/k8s/init-services/05-api-gateway-service.yaml",
+        "spring-petclinic-cloud.git/k8s/init-services/06-customers-service-service.yaml",
+        "spring-petclinic-cloud.git/k8s/init-services/07-vets-service-service.yaml",
+        "spring-petclinic-cloud.git/k8s/init-services/08-visits-service-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

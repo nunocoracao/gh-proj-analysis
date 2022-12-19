@@ -1,28 +1,65 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 14,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 14,
-      "filepaths": [
-        "kubernetes-goat.git/infrastructure/batch-check/Dockerfile",
-        "kubernetes-goat.git/infrastructure/build-code/Dockerfile",
-        "kubernetes-goat.git/infrastructure/cache-store/Dockerfile",
-        "kubernetes-goat.git/infrastructure/goat-home/Dockerfile",
-        "kubernetes-goat.git/infrastructure/health-check/Dockerfile",
-        "kubernetes-goat.git/infrastructure/helm-tiller/Dockerfile",
-        "kubernetes-goat.git/infrastructure/hidden-in-layers/Dockerfile",
-        "kubernetes-goat.git/infrastructure/hunger-check/Dockerfile",
-        "kubernetes-goat.git/infrastructure/info-app/Dockerfile",
-        "kubernetes-goat.git/infrastructure/internal-api/Dockerfile",
-        "kubernetes-goat.git/infrastructure/metadata-db/Dockerfile",
-        "kubernetes-goat.git/infrastructure/poor-registry/Dockerfile",
-        "kubernetes-goat.git/infrastructure/system-monitor/Dockerfile",
-        "kubernetes-goat.git/infrastructure/users-repo/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "kubernetes-goat.git/infrastructure/helm-tiller/pwnchart/Chart.yaml",
+        "kubernetes-goat.git/scenarios/metadata-db/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "kubernetes-goat.git/scenarios/build-code/deployment.yaml",
+        "kubernetes-goat.git/scenarios/cache-store/deployment.yaml",
+        "kubernetes-goat.git/scenarios/docker-bench-security/deployment.yaml",
+        "kubernetes-goat.git/scenarios/health-check/deployment-kind.yaml",
+        "kubernetes-goat.git/scenarios/health-check/deployment.yaml",
+        "kubernetes-goat.git/scenarios/hidden-in-layers/deployment.yaml",
+        "kubernetes-goat.git/scenarios/hunger-check/deployment.yaml",
+        "kubernetes-goat.git/scenarios/internal-proxy/deployment.yaml",
+        "kubernetes-goat.git/scenarios/kubernetes-goat-home/deployment.yaml",
+        "kubernetes-goat.git/scenarios/metadata-db/templates/deployment.yaml",
+        "kubernetes-goat.git/scenarios/metadata-db/templates/service.yaml",
+        "kubernetes-goat.git/scenarios/poor-registry/deployment.yaml",
+        "kubernetes-goat.git/scenarios/system-monitor/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "redis-ui.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -17,6 +15,50 @@
       "filepaths": [
         "redis-ui.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "redis-ui.git/k8s/chart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "redis-ui.git/k8s/chart/templates/configmap.yaml",
+        "redis-ui.git/k8s/chart/templates/deployment.yaml",
+        "redis-ui.git/k8s/chart/templates/service.yaml",
+        "redis-ui.git/k8s/manifests/configmap.yaml",
+        "redis-ui.git/k8s/manifests/deployment.yaml",
+        "redis-ui.git/k8s/manifests/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

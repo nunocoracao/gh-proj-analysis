@@ -2,15 +2,13 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 5,
-      "rootCount": 1,
-      "subFolderCount": 4,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
       "filepaths": [
-        "pyrsia.git/Dockerfile",
         "pyrsia.git/installers/docker/AptGet.Dockerfile",
         "pyrsia.git/installers/docker/CodeCoverageTest.Dockerfile",
-        "pyrsia.git/installers/docker/NginxGcsFuse.Dockerfile",
-        "pyrsia.git/installers/docker/local_code_coverage/Dockerfile"
+        "pyrsia.git/installers/docker/NginxGcsFuse.Dockerfile"
       ]
     },
     "composefile": {
@@ -21,6 +19,60 @@
       "filepaths": [
         "pyrsia.git/docker-compose.yml",
         "pyrsia.git/installers/docker/local_code_coverage/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "pyrsia.git/installers/helm/pyrsia-brewrepo/Chart.yaml",
+        "pyrsia.git/installers/helm/pyrsia-helmrepo/Chart.yaml",
+        "pyrsia.git/installers/helm/pyrsia-node/Chart.yaml",
+        "pyrsia.git/installers/helm/pyrsia-repo/Chart.yaml",
+        "pyrsia.git/installers/helm/pyrsia-winrepo/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "pyrsia.git/installers/helm/pyrsia-brewrepo/templates/deployment.yaml",
+        "pyrsia.git/installers/helm/pyrsia-brewrepo/templates/service.yaml",
+        "pyrsia.git/installers/helm/pyrsia-helmrepo/templates/deployment.yaml",
+        "pyrsia.git/installers/helm/pyrsia-helmrepo/templates/service.yaml",
+        "pyrsia.git/installers/helm/pyrsia-node/templates/deployment.yaml",
+        "pyrsia.git/installers/helm/pyrsia-node/templates/service.yaml",
+        "pyrsia.git/installers/helm/pyrsia-repo/templates/deployment.yaml",
+        "pyrsia.git/installers/helm/pyrsia-repo/templates/service.yaml",
+        "pyrsia.git/installers/helm/pyrsia-winrepo/templates/deployment.yaml",
+        "pyrsia.git/installers/helm/pyrsia-winrepo/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 1,
+      "subFolderCount": 0,
+      "filepaths": [
+        "pyrsia.git/docker-bake.hcl"
       ]
     }
   },

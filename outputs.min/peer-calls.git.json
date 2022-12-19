@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "peer-calls.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -17,6 +15,50 @@
       "filepaths": [
         "peer-calls.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 1,
+      "subFolderCount": 0,
+      "filepaths": [
+        "peer-calls.git/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "peer-calls.git/deploy/configmap.yaml",
+        "peer-calls.git/deploy/deployment.yaml",
+        "peer-calls.git/deploy/redis-deployment.yaml",
+        "peer-calls.git/deploy/redis-service.yaml",
+        "peer-calls.git/deploy/service-account.yaml",
+        "peer-calls.git/deploy/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

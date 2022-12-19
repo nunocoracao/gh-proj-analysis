@@ -2,19 +2,11 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 23,
+      "count": 10,
       "rootCount": 0,
-      "subFolderCount": 23,
+      "subFolderCount": 10,
       "filepaths": [
-        "Restaurant-App.git/src/backend/elk/elasticsearch/Dockerfile",
-        "Restaurant-App.git/src/backend/elk/fluentd/Dockerfile",
-        "Restaurant-App.git/src/backend/elk/kibana/Dockerfile",
-        "Restaurant-App.git/src/backend/nginx/Dockerfile",
-        "Restaurant-App.git/src/backend/services/basket.api/Dockerfile",
         "Restaurant-App.git/src/backend/services/basket.api/release.Dockerfile",
-        "Restaurant-App.git/src/backend/services/catalog-api/Dockerfile",
-        "Restaurant-App.git/src/backend/services/identity.api/Dockerfile",
-        "Restaurant-App.git/src/backend/services/identity.api/Dockerfile.test",
         "Restaurant-App.git/src/backend/services/identity.api/release.Dockerfile",
         "Restaurant-App.git/src/backend/services/menu.api/ci-test.Dockerfile",
         "Restaurant-App.git/src/backend/services/menu.api/debug.Dockerfile",
@@ -22,12 +14,7 @@
         "Restaurant-App.git/src/backend/services/menu.api/release.Dockerfile",
         "Restaurant-App.git/src/backend/services/order-api/local.Dockerfile",
         "Restaurant-App.git/src/backend/services/order-api/release.Dockerfile",
-        "Restaurant-App.git/src/backend/services/order-api/src/main/docker/Dockerfile.jvm",
-        "Restaurant-App.git/src/backend/services/order-api/src/main/docker/Dockerfile.legacy-jar",
-        "Restaurant-App.git/src/backend/services/order-api/src/main/docker/Dockerfile.native-micro",
-        "Restaurant-App.git/src/backend/web/web.admin/dashboard/Dockerfile",
         "Restaurant-App.git/src/backend/web/web.admin/dashboard/local.Dockerfile",
-        "Restaurant-App.git/src/backend/web/web.client/web-app/Dockerfile",
         "Restaurant-App.git/src/backend/web/web.client/web-app/local.Dockerfile"
       ]
     },
@@ -42,6 +29,68 @@
         "Restaurant-App.git/src/backend/docker-compose.override.yml",
         "Restaurant-App.git/src/backend/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "Restaurant-App.git/k8s-kustomize/infrastructure/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/infrastructure/crds/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/infrastructure/crds/gateway/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/infrastructure/crds/istio-operator/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/infrastructure/gateway/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/infrastructure/istio-profile/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/local-deploy-all/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/basket.api/base/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/basket.api/dev/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/identity.api/base/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/identity.api/dev/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/menu.api/base/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/menu.api/dev/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/order-api/base/kustomization.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/order-api/dev/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "Restaurant-App.git/k8s-kustomize/services/basket.api/base/deployment.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/basket.api/base/service.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/identity.api/base/deployment.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/identity.api/base/service.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/menu.api/base/deployment.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/menu.api/base/service.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/order-api/base/deployment.yaml",
+        "Restaurant-App.git/k8s-kustomize/services/order-api/base/service.yaml",
+        "Restaurant-App.git/src/backend/k8s/deployment.yml",
+        "Restaurant-App.git/src/backend/k8s/services.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

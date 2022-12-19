@@ -1,26 +1,76 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 12,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 12,
-      "filepaths": [
-        "keptn.git/api/Dockerfile",
-        "keptn.git/approval-service/Dockerfile",
-        "keptn.git/bridge/Dockerfile",
-        "keptn.git/distributor/Dockerfile",
-        "keptn.git/lighthouse-service/Dockerfile",
-        "keptn.git/mongodb-datastore/Dockerfile",
-        "keptn.git/remediation-service/Dockerfile",
-        "keptn.git/resource-service/Dockerfile",
-        "keptn.git/secret-service/Dockerfile",
-        "keptn.git/shipyard-controller/Dockerfile",
-        "keptn.git/statistics-service/Dockerfile",
-        "keptn.git/webhook-service/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "keptn.git/.github/workflows/build-helm-charts.yml",
+        "keptn.git/installer/manifests/common/Chart.yaml",
+        "keptn.git/installer/manifests/keptn/Chart.yaml",
+        "keptn.git/test/assets/podtato-head/helm-charts/helloservice/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 22,
+      "rootCount": 0,
+      "subFolderCount": 22,
+      "filepaths": [
+        "keptn.git/api/deploy/service.yaml",
+        "keptn.git/api/test/data/import/rendered-sample-package/simple-task-rendering/api/create-service.context.yaml",
+        "keptn.git/approval-service/deploy/service.yaml",
+        "keptn.git/installer/manifests/keptn/templates/api-service.yaml",
+        "keptn.git/installer/manifests/keptn/templates/approval-service.yaml",
+        "keptn.git/installer/manifests/keptn/templates/lighthouse-service.yaml",
+        "keptn.git/installer/manifests/keptn/templates/remediation-service.yaml",
+        "keptn.git/installer/manifests/keptn/templates/resource-service.yaml",
+        "keptn.git/installer/manifests/keptn/templates/secret-service.yaml",
+        "keptn.git/installer/manifests/keptn/templates/statistics-service.yaml",
+        "keptn.git/installer/manifests/keptn/templates/webhook-service.yaml",
+        "keptn.git/lighthouse-service/deploy/service.yaml",
+        "keptn.git/mongodb-datastore/deploy/manifests-db/deployment.yaml",
+        "keptn.git/remediation-service/deploy/service.yaml",
+        "keptn.git/resource-service/deploy/service.yaml",
+        "keptn.git/secret-service/deploy/service.yaml",
+        "keptn.git/shipyard-controller/deploy/service.yaml",
+        "keptn.git/statistics-service/deploy/service.yaml",
+        "keptn.git/test/assets/import/rendered-sample-package/simple-task-rendering/api/create-service.context.yaml",
+        "keptn.git/test/assets/podtato-head/helm-charts/helloservice/templates/deployment.yaml",
+        "keptn.git/test/assets/podtato-head/helm-charts/helloservice/templates/service.yaml",
+        "keptn.git/webhook-service/deploy/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

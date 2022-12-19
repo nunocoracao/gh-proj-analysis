@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "vault-k8s.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -15,6 +13,51 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 1,
+      "subFolderCount": 1,
+      "filepaths": [
+        "vault-k8s.git/kustomization.yaml",
+        "vault-k8s.git/deploy/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "vault-k8s.git/deploy/injector-deployment.yaml",
+        "vault-k8s.git/deploy/injector-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "vault-k8s.git/.release/ci.hcl",
+        "vault-k8s.git/.release/release-metadata.hcl",
+        "vault-k8s.git/.release/security-scan.hcl"
+      ]
     }
   },
   "info": {

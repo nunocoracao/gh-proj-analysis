@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "MLOpsPython.git/environment_setup/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -15,6 +13,52 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "MLOpsPython.git/charts/abtest-istio/Chart.yaml",
+        "MLOpsPython.git/charts/abtest-model/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "MLOpsPython.git/charts/abtest-model/templates/deployment.yaml",
+        "MLOpsPython.git/charts/abtest-model/templates/service.yaml",
+        "MLOpsPython.git/diabetes_regression/scoring/deployment_config_aci.yml",
+        "MLOpsPython.git/diabetes_regression/scoring/deployment_config_aks.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "MLOpsPython.git/environment_setup/tf-templates/backend.tf",
+        "MLOpsPython.git/environment_setup/tf-templates/main.tf"
+      ]
     }
   },
   "info": {

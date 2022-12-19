@@ -1,15 +1,62 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "container-pipelines.git/cucumber-selenium-grid/nodejs-slave/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "container-pipelines.git/basic-helm-spring-boot/.helm/jenkins-agent-helm/Chart.yaml",
+        "container-pipelines.git/basic-helm-spring-boot/.helm/spring-boot/Chart.yaml",
+        "container-pipelines.git/basic-helm-spring-boot/.helm/spring-boot-build/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "container-pipelines.git/basic-dotnet-core/.openshift/templates/deployment.yml",
+        "container-pipelines.git/basic-helm-spring-boot/.helm/spring-boot/templates/deployment.yaml",
+        "container-pipelines.git/basic-helm-spring-boot/.helm/spring-boot/templates/service.yaml",
+        "container-pipelines.git/basic-spring-boot/.openshift/templates/deployment.yml",
+        "container-pipelines.git/basic-spring-boot-tekton/.openshift/templates/deployment.yml",
+        "container-pipelines.git/cucumber-selenium-grid/applier/templates/deployment.yml",
+        "container-pipelines.git/multi-cluster-spring-boot/image-mirror-example/.applier/templates/deployment.yml",
+        "container-pipelines.git/multi-cluster-spring-boot/skopeo-example/.applier/templates/deployment.yml",
+        "container-pipelines.git/secure-spring-boot/.openshift-applier/templates/deployment.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,19 +1,59 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
-      "rootCount": 2,
-      "subFolderCount": 3,
-      "filepaths": [
-        "rudr.git/Dockerfile",
-        "rudr.git/Dockerfile.e2e",
-        "rudr.git/.devcontainer/devenv/Dockerfile",
-        "rudr.git/charts/Dockerfile.tmpl",
-        "rudr.git/docs/how-to/app/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "rudr.git/examples/kustomize/hello-rudr/base/kustomization.yaml",
+        "rudr.git/examples/kustomize/hello-rudr/overlay/production/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "rudr.git/charts/healthscope/Chart.yaml",
+        "rudr.git/charts/rudr/Chart.yaml",
+        "rudr.git/examples/charts/hello-rudr/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "rudr.git/charts/healthscope/templates/deployment.yaml",
+        "rudr.git/charts/healthscope/templates/service.yaml",
+        "rudr.git/charts/rudr/templates/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

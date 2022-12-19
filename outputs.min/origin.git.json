@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
-      "rootCount": 1,
-      "subFolderCount": 2,
-      "filepaths": [
-        "origin.git/Dockerfile",
-        "origin.git/devops/dockerfiles",
-        "origin.git/docs/jekyll-builder/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -20,6 +16,106 @@
         "origin.git/docker-compose.test.yml",
         "origin.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "origin.git/devops/kubernetes/charts/ethereum-network/Chart.yaml",
+        "origin.git/devops/kubernetes/charts/ethereum-nodes/Chart.yaml",
+        "origin.git/devops/kubernetes/charts/origin/Chart.yaml",
+        "origin.git/devops/kubernetes/charts/origin-experimental/Chart.yaml",
+        "origin.git/devops/kubernetes/charts/origin-monitoring/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 58,
+      "rootCount": 0,
+      "subFolderCount": 58,
+      "filepaths": [
+        "origin.git/devops/kubernetes/charts/ethereum-network/templates/bootnode.service.yaml",
+        "origin.git/devops/kubernetes/charts/ethereum-network/templates/ethstats.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/ethereum-network/templates/ethstats.service.yaml",
+        "origin.git/devops/kubernetes/charts/ethereum-network/templates/geth-genesis.configmap.yaml",
+        "origin.git/devops/kubernetes/charts/ethereum-network/templates/geth-tx.service.yaml",
+        "origin.git/devops/kubernetes/charts/ethereum-nodes/templates/eth-discovery.service.yaml",
+        "origin.git/devops/kubernetes/charts/ethereum-nodes/templates/ethstats.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/ethereum-nodes/templates/ethstats.service.yaml",
+        "origin.git/devops/kubernetes/charts/ethereum-nodes/templates/geth-tx.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/admin.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/admin.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/auth.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/auth.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/bridge.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/bridge.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/creator-issuer.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/creator.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/creator.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/cron.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/dapp.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/dapp.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/discovery.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/discovery.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/eventlistener.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/eventlistener.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/faucet.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/faucet.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/graphql.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/graphql.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/growth.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/growth.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/ipfs-cluster-bootstrap-conf.configmap.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/ipfs-cluster-headless.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/ipfs-cluster-issuer.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/ipfs-cluster.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/ipfs-issuer.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/ipfs-lb.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/ipfs.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/messaging.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/notifications.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/notifications.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/relayer.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/relayer.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/t3.deployment.yaml",
+        "origin.git/devops/kubernetes/charts/origin/templates/t3.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin-experimental/templates/dshop-backend-mainnet.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin-experimental/templates/dshop-backend-rinkeby.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin-experimental/templates/dshop-issuer-mainnet.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin-experimental/templates/dshop-issuer-rinkeby.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin-experimental/templates/dshop-redis-mainnet.configmap.yaml",
+        "origin.git/devops/kubernetes/charts/origin-experimental/templates/dshop-redis-mainnet.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin-experimental/templates/dshop-redis-rinkeby.configmap.yaml",
+        "origin.git/devops/kubernetes/charts/origin-experimental/templates/dshop-redis-rinkeby.service.yaml",
+        "origin.git/devops/kubernetes/charts/origin-monitoring/templates/discovery.servicemonitor.yaml",
+        "origin.git/devops/kubernetes/charts/origin-monitoring/templates/eventlistener.servicemonitor.yaml",
+        "origin.git/devops/kubernetes/charts/origin-monitoring/templates/graphql.servicemonitor.yaml",
+        "origin.git/devops/kubernetes/charts/origin-monitoring/templates/ingress.servicemonitor.yaml",
+        "origin.git/devops/kubernetes/charts/origin-monitoring/templates/relayer.servicemonitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

@@ -2,11 +2,10 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 7,
-      "rootCount": 1,
+      "count": 6,
+      "rootCount": 0,
       "subFolderCount": 6,
       "filepaths": [
-        "actions-runner-controller.git/Dockerfile",
         "actions-runner-controller.git/runner/actions-runner-dind-rootless.ubuntu-20.04.dockerfile",
         "actions-runner-controller.git/runner/actions-runner-dind-rootless.ubuntu-22.04.dockerfile",
         "actions-runner-controller.git/runner/actions-runner-dind.ubuntu-20.04.dockerfile",
@@ -21,6 +20,80 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "actions-runner-controller.git/config/certmanager/kustomization.yaml",
+        "actions-runner-controller.git/config/crd/kustomization.yaml",
+        "actions-runner-controller.git/config/default/kustomization.yaml",
+        "actions-runner-controller.git/config/github-webhook-server/kustomization.yaml",
+        "actions-runner-controller.git/config/manager/kustomization.yaml",
+        "actions-runner-controller.git/config/prometheus/kustomization.yaml",
+        "actions-runner-controller.git/config/rbac/kustomization.yaml",
+        "actions-runner-controller.git/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "actions-runner-controller.git/.github/workflows/publish-chart.yaml",
+        "actions-runner-controller.git/.github/workflows/validate-chart.yaml",
+        "actions-runner-controller.git/charts/actions-runner-controller/Chart.yaml",
+        "actions-runner-controller.git/contrib/examples/actions-runner/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 21,
+      "rootCount": 0,
+      "subFolderCount": 21,
+      "filepaths": [
+        "actions-runner-controller.git/charts/actions-runner-controller/crds/actions.summerwind.dev_runnerdeployments.yaml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/actionsmetrics.deployment.yaml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/actionsmetrics.service.yaml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/actionsmetrics.serviceaccount.yaml.yml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/actionsmetrics.servicemonitor.yaml.yml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/controller.metrics.service.yaml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/controller.metrics.serviceMonitor.yaml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/deployment.yaml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/githubwebhook.deployment.yaml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/githubwebhook.service.yaml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/githubwebhook.serviceMonitor.yaml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/githubwebhook.serviceaccount.yaml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/serviceaccount.yaml",
+        "actions-runner-controller.git/charts/actions-runner-controller/templates/webhook_service.yaml",
+        "actions-runner-controller.git/config/crd/bases/actions.summerwind.dev_runnerdeployments.yaml",
+        "actions-runner-controller.git/config/github-webhook-server/deployment.yaml",
+        "actions-runner-controller.git/config/github-webhook-server/service.yaml",
+        "actions-runner-controller.git/config/rbac/auth_proxy_service.yaml",
+        "actions-runner-controller.git/config/samples/actions_v1alpha1_runnerdeployment.yaml",
+        "actions-runner-controller.git/config/webhook/service.yaml",
+        "actions-runner-controller.git/contrib/examples/actions-runner/templates/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "actions-runner-controller.git/contrib/examples/terraform/actions-runner-controller.tf",
+        "actions-runner-controller.git/contrib/examples/terraform/cert-manager.tf"
+      ]
     }
   },
   "info": {

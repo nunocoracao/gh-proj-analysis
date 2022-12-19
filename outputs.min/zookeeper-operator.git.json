@@ -1,18 +1,61 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 1,
-      "subFolderCount": 3,
-      "filepaths": [
-        "zookeeper-operator.git/Dockerfile",
-        "zookeeper-operator.git/build/Dockerfile",
-        "zookeeper-operator.git/docker/Dockerfile",
-        "zookeeper-operator.git/docker/Dockerfile-swarm"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "zookeeper-operator.git/config/crd/kustomization.yaml",
+        "zookeeper-operator.git/config/default/kustomization.yaml",
+        "zookeeper-operator.git/config/manager/kustomization.yaml",
+        "zookeeper-operator.git/config/rbac/kustomization.yaml",
+        "zookeeper-operator.git/config/samples/kustomization.yaml",
+        "zookeeper-operator.git/config/test/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "zookeeper-operator.git/charts/zookeeper/Chart.yaml",
+        "zookeeper-operator.git/charts/zookeeper-operator/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "zookeeper-operator.git/charts/zookeeper-operator/templates/service_account.yaml",
+        "zookeeper-operator.git/config/rbac/service_account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

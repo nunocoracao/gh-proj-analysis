@@ -2,15 +2,73 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 2,
-      "rootCount": 1,
+      "count": 1,
+      "rootCount": 0,
       "subFolderCount": 1,
       "filepaths": [
-        "kcp.git/Dockerfile",
         "kcp.git/hack/boilerplate/boilerplate.Dockerfile.txt"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kcp.git/manifest/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 21,
+      "rootCount": 0,
+      "subFolderCount": 21,
+      "filepaths": [
+        "kcp.git/config/rootcompute/kube-1.24/apiresourceschema_deployments.apps.yaml",
+        "kcp.git/config/rootcompute/kube-1.24/apiresourceschema_services.yaml",
+        "kcp.git/contrib/crds/apps/apps_deployments.yaml",
+        "kcp.git/contrib/crds/core/_services.yaml",
+        "kcp.git/contrib/demos-unmaintained/demo/kubecon-script/deployment.yaml",
+        "kcp.git/contrib/demos-unmaintained/demo/prototype2-script/deployment-kuard.yaml",
+        "kcp.git/contrib/demos-unmaintained/demo/prototype3-script/deployment-kuard.yaml",
+        "kcp.git/contrib/demos-unmaintained/demo/prototype3-script/apibinding/deployment-kuard-tls.yaml",
+        "kcp.git/contrib/demos-unmaintained/demo/prototype3-script/apibinding/kuard-service.yaml",
+        "kcp.git/contrib/examples/deployment.yaml",
+        "kcp.git/pkg/syncer/spec/dns/deployment_dns.yaml",
+        "kcp.git/pkg/syncer/spec/dns/service_dns.yaml",
+        "kcp.git/pkg/syncer/spec/dns/serviceaccount_dns.yaml",
+        "kcp.git/pkg/virtual/framework/internalapis/fixtures/configmaps.yaml",
+        "kcp.git/test/e2e/fixtures/kube/apps.k8s.io_deployments.yaml",
+        "kcp.git/test/e2e/fixtures/kube/core.k8s.io_services.yaml",
+        "kcp.git/test/e2e/reconciler/deployment/workloads/deployment.yaml",
+        "kcp.git/test/e2e/syncer/configmap-admin-role.yaml",
+        "kcp.git/test/e2e/syncer/configmap-admin-rolebinding.yaml",
+        "kcp.git/test/e2e/syncer/deployment.yaml",
+        "kcp.git/test/e2e/syncer/in-cluster-config-test-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

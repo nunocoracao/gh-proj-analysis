@@ -1,24 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 12,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 12,
-      "filepaths": [
-        "nocalhost.git/deployments/dep-install-job/Dockerfile",
-        "nocalhost.git/deployments/dep-install-job/wait-for/Dockerfile",
-        "nocalhost.git/deployments/dep-install-job/webhook/Dockerfile",
-        "nocalhost.git/deployments/nocalhost-api/Dockerfile",
-        "nocalhost.git/deployments/nocalhost-control-plane/Dockerfile",
-        "nocalhost.git/deployments/nocalhost-envoy/Dockerfile",
-        "nocalhost.git/deployments/nocalhost-sidecar/Dockerfile",
-        "nocalhost.git/deployments/nocalhost-sidecar/Dockerfile_syncthing",
-        "nocalhost.git/deployments/nocalhost-vpn/Dockerfile",
-        "nocalhost.git/vendor/github.com/docker/distribution/Dockerfile",
-        "nocalhost.git/vendor/github.com/pelletier/go-toml/Dockerfile",
-        "nocalhost.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -31,6 +18,66 @@
         "nocalhost.git/vendor/github.com/olivere/elastic/v7/docker-compose.cluster.yml",
         "nocalhost.git/vendor/github.com/olivere/elastic/v7/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "nocalhost.git/deployments/chart/Chart.yaml",
+        "nocalhost.git/deployments/chart/charts/mariadb/Chart.yaml",
+        "nocalhost.git/deployments/chart/charts/mariadb/charts/common/Chart.yaml",
+        "nocalhost.git/deployments/dep-chart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "nocalhost.git/deployments/chart/charts/mariadb/templates/serviceaccount.yaml",
+        "nocalhost.git/deployments/chart/charts/mariadb/templates/servicemonitor.yaml",
+        "nocalhost.git/deployments/chart/charts/mariadb/templates/primary/configmap.yaml",
+        "nocalhost.git/deployments/chart/charts/mariadb/templates/primary/initialization-configmap.yaml",
+        "nocalhost.git/deployments/chart/charts/mariadb/templates/secondary/configmap.yaml",
+        "nocalhost.git/deployments/chart/templates/api-deployment.yaml",
+        "nocalhost.git/deployments/chart/templates/api-service.yaml",
+        "nocalhost.git/deployments/chart/templates/configmap.yaml",
+        "nocalhost.git/deployments/chart/templates/db-init-configmap.yaml",
+        "nocalhost.git/deployments/chart/templates/nginx-configmap.yaml",
+        "nocalhost.git/deployments/chart/templates/web-deployment.yaml",
+        "nocalhost.git/deployments/chart/templates/web-service.yaml",
+        "nocalhost.git/deployments/dep-chart/templates/serviceaccount.yaml",
+        "nocalhost.git/deployments/dep-install-job/example/dependents-configmap-example.yaml",
+        "nocalhost.git/deployments/dep-install-job/example/kube-configmap-example.yaml",
+        "nocalhost.git/deployments/dep-install-job/wait-for/deployment.yaml",
+        "nocalhost.git/deployments/dep-install-job/webhook/deployment.yaml",
+        "nocalhost.git/deployments/dep-install-job/webhook/service.yaml",
+        "nocalhost.git/deployments/dep-install-job/webhook/sidecar-configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

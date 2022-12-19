@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "krane.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -19,6 +17,51 @@
         "krane.git/docker-compose.override.yml",
         "krane.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "krane.git/charts/krane/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "krane.git/charts/krane/templates/deployment.yaml",
+        "krane.git/charts/krane/templates/service.yaml",
+        "krane.git/charts/krane/templates/serviceaccount.yaml",
+        "krane.git/k8s/krane-deployment.yaml",
+        "krane.git/k8s/krane-service.yaml",
+        "krane.git/k8s/redisgraph-deployment.yaml",
+        "krane.git/k8s/redisgraph-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

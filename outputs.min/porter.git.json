@@ -2,26 +2,16 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 16,
+      "count": 6,
       "rootCount": 0,
-      "subFolderCount": 16,
+      "subFolderCount": 6,
       "filepaths": [
-        "porter.git/build/Dockerfile.osx",
-        "porter.git/build/Dockerfile.win",
         "porter.git/dashboard/docker/dev.Dockerfile",
-        "porter.git/docker/Dockerfile",
         "porter.git/docker/cli.Dockerfile",
         "porter.git/docker/dev.Dockerfile",
         "porter.git/ee/docker/ee.Dockerfile",
         "porter.git/ee/docker/provisioner.Dockerfile",
-        "porter.git/services/cli_install_script_container/Dockerfile",
-        "porter.git/services/deploy_init_container/Dockerfile",
-        "porter.git/services/deploy_job_init_container/Dockerfile",
-        "porter.git/services/job_sidecar_container/Dockerfile",
-        "porter.git/services/migrator/Dockerfile",
-        "porter.git/services/porter_cli_container/Dockerfile",
-        "porter.git/services/porter_cli_container/dev.Dockerfile",
-        "porter.git/workers/Dockerfile"
+        "porter.git/services/porter_cli_container/dev.Dockerfile"
       ]
     },
     "composefile": {
@@ -33,6 +23,44 @@
         "porter.git/docker-compose.dev-secure.yaml",
         "porter.git/docker-compose.dev.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "porter.git/services/deploy_init_container/default-backend-deployment.yaml",
+        "porter.git/services/deploy_init_container/default-backend-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

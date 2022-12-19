@@ -1,17 +1,72 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
-      "rootCount": 1,
-      "subFolderCount": 2,
-      "filepaths": [
-        "baremetal-operator.git/Dockerfile",
-        "baremetal-operator.git/build/Dockerfile",
-        "baremetal-operator.git/resources/keepalived-docker/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "baremetal-operator.git/config/kustomization.yaml",
+        "baremetal-operator.git/config/basic-auth/default/kustomization.yaml",
+        "baremetal-operator.git/config/basic-auth/tls/kustomization.yaml",
+        "baremetal-operator.git/config/certmanager/kustomization.yaml",
+        "baremetal-operator.git/config/crd/kustomization.yaml",
+        "baremetal-operator.git/config/default/kustomization.yaml",
+        "baremetal-operator.git/config/manager/kustomization.yaml",
+        "baremetal-operator.git/config/namespace/kustomization.yaml",
+        "baremetal-operator.git/config/prometheus/kustomization.yaml",
+        "baremetal-operator.git/config/rbac/kustomization.yaml",
+        "baremetal-operator.git/config/tls/kustomization.yaml",
+        "baremetal-operator.git/config/webhook/kustomization.yaml",
+        "baremetal-operator.git/ironic-deployment/base/kustomization.yaml",
+        "baremetal-operator.git/ironic-deployment/components/basic-auth/kustomization.yaml",
+        "baremetal-operator.git/ironic-deployment/components/keepalived/kustomization.yaml",
+        "baremetal-operator.git/ironic-deployment/components/tls/kustomization.yaml",
+        "baremetal-operator.git/ironic-deployment/default/kustomization.yaml",
+        "baremetal-operator.git/ironic-deployment/overlays/basic-auth_tls/kustomization.yaml",
+        "baremetal-operator.git/ironic-deployment/overlays/basic-auth_tls_keepalived/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "baremetal-operator.git/config/rbac/auth_proxy_service.yaml",
+        "baremetal-operator.git/config/rbac/service_account.yaml",
+        "baremetal-operator.git/config/webhook/service_patch.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

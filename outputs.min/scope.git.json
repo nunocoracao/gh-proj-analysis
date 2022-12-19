@@ -1,29 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 17,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 17,
-      "filepaths": [
-        "scope.git/backend/Dockerfile",
-        "scope.git/docker/Dockerfile.cloud-agent",
-        "scope.git/docker/Dockerfile.scope",
-        "scope.git/extras/dialer/Dockerfile",
-        "scope.git/extras/example/app/Dockerfile",
-        "scope.git/extras/example/client/Dockerfile",
-        "scope.git/extras/example/echo/Dockerfile",
-        "scope.git/extras/example/frontend/Dockerfile",
-        "scope.git/extras/example/frontend-k8s/Dockerfile",
-        "scope.git/extras/example/qotd/Dockerfile",
-        "scope.git/extras/example/searchapp/Dockerfile",
-        "scope.git/extras/example/shout/Dockerfile",
-        "scope.git/extras/example/trace_app/Dockerfile",
-        "scope.git/tools/build/golang/Dockerfile",
-        "scope.git/tools/build/haskell/Dockerfile",
-        "scope.git/tools/socks/Dockerfile",
-        "scope.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -33,6 +15,60 @@
       "filepaths": [
         "scope.git/examples/docker/docker-compose-probe-v1.yml",
         "scope.git/examples/docker/docker-compose-probe-v2.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "scope.git/extras/example/k8s/app-deployment.yaml",
+        "scope.git/extras/example/k8s/client-deployment.yaml",
+        "scope.git/extras/example/k8s/echo-deployment.yaml",
+        "scope.git/extras/example/k8s/elasticsearch-deployment.yaml",
+        "scope.git/extras/example/k8s/frontend-deployment.yaml",
+        "scope.git/extras/example/k8s/qotd-deployment.yaml",
+        "scope.git/extras/example/k8s/redis-deployment.yaml",
+        "scope.git/extras/example/k8s/search-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "scope.git/tools/provisioning/aws/main.tf",
+        "scope.git/tools/provisioning/aws/outputs.tf",
+        "scope.git/tools/provisioning/aws/variables.tf",
+        "scope.git/tools/provisioning/do/main.tf",
+        "scope.git/tools/provisioning/do/outputs.tf",
+        "scope.git/tools/provisioning/do/variables.tf",
+        "scope.git/tools/provisioning/gcp/main.tf",
+        "scope.git/tools/provisioning/gcp/outputs.tf",
+        "scope.git/tools/provisioning/gcp/variables.tf"
       ]
     }
   },

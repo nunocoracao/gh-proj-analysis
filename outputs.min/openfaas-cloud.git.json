@@ -1,22 +1,52 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 8,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 8,
-      "filepaths": [
-        "openfaas-cloud.git/edge-auth/Dockerfile",
-        "openfaas-cloud.git/edge-router/Dockerfile",
-        "openfaas-cloud.git/git-tar/Dockerfile",
-        "openfaas-cloud.git/import-secrets/vendor/golang.org/x/net/http2/Dockerfile",
-        "openfaas-cloud.git/of-builder/Dockerfile",
-        "openfaas-cloud.git/of-builder/vendor/github.com/docker/distribution/Dockerfile",
-        "openfaas-cloud.git/of-builder/vendor/golang.org/x/net/http2/Dockerfile",
-        "openfaas-cloud.git/pipeline-log/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "openfaas-cloud.git/chart/openfaas-cloud/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "openfaas-cloud.git/chart/openfaas-cloud/templates/sealed-secrets/rbac-import-secrets-service-account.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

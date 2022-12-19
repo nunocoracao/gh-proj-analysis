@@ -2,25 +2,14 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 15,
+      "count": 4,
       "rootCount": 0,
-      "subFolderCount": 15,
+      "subFolderCount": 4,
       "filepaths": [
-        "kubeedge.git/build/admission/Dockerfile",
-        "kubeedge.git/build/cloud/Dockerfile",
-        "kubeedge.git/build/controllermanager/Dockerfile",
-        "kubeedge.git/build/csidriver/Dockerfile",
         "kubeedge.git/build/docker/build-tools/build-tools.dockerfile",
         "kubeedge.git/build/docker/installation-package/installation-package.dockerfile",
-        "kubeedge.git/build/edge/Dockerfile",
-        "kubeedge.git/build/edgemark/Dockerfile",
         "kubeedge.git/build/edgesite/agent-build.Dockerfile",
-        "kubeedge.git/build/edgesite/server-build.Dockerfile",
-        "kubeedge.git/build/iptablesmanager/Dockerfile",
-        "kubeedge.git/edge/hack/memfootprint-test/Dockerfile",
-        "kubeedge.git/vendor/github.com/docker/distribution/Dockerfile",
-        "kubeedge.git/vendor/github.com/rubenv/sql-migrate/Dockerfile",
-        "kubeedge.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "kubeedge.git/build/edgesite/server-build.Dockerfile"
       ]
     },
     "composefile": {
@@ -30,6 +19,64 @@
       "subFolderCount": 1,
       "filepaths": [
         "kubeedge.git/build/edge/docker-compose.yaml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kubeedge.git/manifests/charts/cloudcore/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "kubeedge.git/build/deployment.yaml",
+        "kubeedge.git/build/admission/deployment.yaml",
+        "kubeedge.git/build/admission/service.yaml",
+        "kubeedge.git/build/admission/serviceaccount.yaml",
+        "kubeedge.git/build/cloud/02-serviceaccount.yaml",
+        "kubeedge.git/build/cloud/05-configmap.yaml",
+        "kubeedge.git/build/cloud/07-deployment.yaml",
+        "kubeedge.git/build/cloud/08-service.yaml.example",
+        "kubeedge.git/build/cloud/ha/02-ha-configmap.yaml.example",
+        "kubeedge.git/build/cloud/ha/03-ha-deployment.yaml.example",
+        "kubeedge.git/build/crd-samples/router/rule-rest-servicebus.yaml",
+        "kubeedge.git/build/crd-samples/router/ruleEndpoint-servicebus.yaml",
+        "kubeedge.git/build/edge/kubernetes/03-configmap-edgenodeconf.yaml",
+        "kubeedge.git/build/edge/kubernetes/04-deployment-edgenode.yaml",
+        "kubeedge.git/manifests/charts/cloudcore/templates/configmap_cloudcore.yaml",
+        "kubeedge.git/manifests/charts/cloudcore/templates/deployment_cloudcore.yaml",
+        "kubeedge.git/manifests/charts/cloudcore/templates/deployment_controllermanager.yaml",
+        "kubeedge.git/manifests/charts/cloudcore/templates/service_cloudcore.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kubeedge.git/vendor/github.com/docker/distribution/docker-bake.hcl"
       ]
     }
   },

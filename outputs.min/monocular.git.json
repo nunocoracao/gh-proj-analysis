@@ -1,18 +1,58 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
       "exist": true,
       "count": 4,
       "rootCount": 0,
       "subFolderCount": 4,
       "filepaths": [
-        "monocular.git/cmd/chart-repo/Dockerfile",
-        "monocular.git/cmd/chartsvc/Dockerfile",
-        "monocular.git/dev_env/ui/Dockerfile",
-        "monocular.git/frontend/rootfs/Dockerfile"
+        "monocular.git/chart/monocular/Chart.yaml",
+        "monocular.git/chart/monocular/templates/chartsvc-deployment.yaml",
+        "monocular.git/chart/monocular/templates/chartsvc-networkpolicy.yaml",
+        "monocular.git/chart/monocular/templates/chartsvc-service.yaml"
       ]
     },
-    "composefile": {
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "monocular.git/chart/monocular/templates/prerender-deployment.yaml",
+        "monocular.git/chart/monocular/templates/prerender-service.yaml",
+        "monocular.git/chart/monocular/templates/ui-deployment.yaml",
+        "monocular.git/chart/monocular/templates/ui-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

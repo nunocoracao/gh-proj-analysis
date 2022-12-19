@@ -1,15 +1,63 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "kueue.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "kueue.git/config/components/certmanager/kustomization.yaml",
+        "kueue.git/config/components/crd/kustomization.yaml",
+        "kueue.git/config/components/internalcert/kustomization.yaml",
+        "kueue.git/config/components/manager/kustomization.yaml",
+        "kueue.git/config/components/prometheus/kustomization.yaml",
+        "kueue.git/config/components/rbac/kustomization.yaml",
+        "kueue.git/config/components/webhook/kustomization.yaml",
+        "kueue.git/config/default/kustomization.yaml",
+        "kueue.git/config/prometheus/kustomization.yaml",
+        "kueue.git/test/e2e/config/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "kueue.git/config/components/rbac/auth_proxy_service.yaml",
+        "kueue.git/config/components/rbac/service_account.yaml",
+        "kueue.git/config/components/webhook/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,16 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 4,
-      "filepaths": [
-        "gorush.git/docker/Dockerfile.linux.amd64",
-        "gorush.git/docker/Dockerfile.linux.arm",
-        "gorush.git/docker/Dockerfile.linux.arm64",
-        "gorush.git/docker/Dockerfile.windows.amd64"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -20,6 +15,53 @@
       "filepaths": [
         "gorush.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "gorush.git/helm/gorush/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "gorush.git/helm/gorush/templates/configmap.yml",
+        "gorush.git/helm/gorush/templates/deployment.yaml",
+        "gorush.git/helm/gorush/templates/service.yaml",
+        "gorush.git/helm/gorush/templates/serviceaccount.yaml",
+        "gorush.git/k8s/gorush-configmap.yaml",
+        "gorush.git/k8s/gorush-deployment.yaml",
+        "gorush.git/k8s/gorush-redis-deployment.yaml",
+        "gorush.git/k8s/gorush-redis-service.yaml",
+        "gorush.git/k8s/gorush-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

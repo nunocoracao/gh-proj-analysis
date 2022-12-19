@@ -2,27 +2,20 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 17,
-      "rootCount": 1,
-      "subFolderCount": 16,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
       "filepaths": [
-        "buildx.git/Dockerfile",
-        "buildx.git/hack/dockerfiles",
-        "buildx.git/hack/demo-env/examples/compose/Dockerfile",
-        "buildx.git/hack/demo-env/examples/compose/Dockerfile.webapp",
-        "buildx.git/hack/demo-env/examples/simple1/Dockerfile",
-        "buildx.git/vendor/github.com/docker/cli-docs-tool/Dockerfile",
-        "buildx.git/vendor/github.com/docker/distribution/Dockerfile",
-        "buildx.git/vendor/github.com/pelletier/go-toml/Dockerfile",
-        "buildx.git/vendor/github.com/theupdateframework/notary/Dockerfile",
+        "buildx.git/hack/dockerfiles/authors.Dockerfile",
+        "buildx.git/hack/dockerfiles/docs.Dockerfile",
+        "buildx.git/hack/dockerfiles/lint.Dockerfile",
+        "buildx.git/hack/dockerfiles/vendor.Dockerfile",
         "buildx.git/vendor/github.com/theupdateframework/notary/cross.Dockerfile",
         "buildx.git/vendor/github.com/theupdateframework/notary/escrow.Dockerfile",
         "buildx.git/vendor/github.com/theupdateframework/notary/server.Dockerfile",
         "buildx.git/vendor/github.com/theupdateframework/notary/server.minimal.Dockerfile",
         "buildx.git/vendor/github.com/theupdateframework/notary/signer.Dockerfile",
-        "buildx.git/vendor/github.com/theupdateframework/notary/signer.minimal.Dockerfile",
-        "buildx.git/vendor/github.com/tonistiigi/fsutil/Dockerfile",
-        "buildx.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "buildx.git/vendor/github.com/theupdateframework/notary/signer.minimal.Dockerfile"
       ]
     },
     "composefile": {
@@ -35,6 +28,47 @@
         "buildx.git/vendor/github.com/theupdateframework/notary/docker-compose.postgresql.yml",
         "buildx.git/vendor/github.com/theupdateframework/notary/docker-compose.rethink.yml",
         "buildx.git/vendor/github.com/theupdateframework/notary/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 1,
+      "subFolderCount": 4,
+      "filepaths": [
+        "buildx.git/docker-bake.hcl",
+        "buildx.git/hack/demo-env/examples/compose/config.hcl",
+        "buildx.git/vendor/github.com/docker/cli-docs-tool/docker-bake.hcl",
+        "buildx.git/vendor/github.com/docker/distribution/docker-bake.hcl",
+        "buildx.git/vendor/github.com/tonistiigi/fsutil/docker-bake.hcl"
       ]
     }
   },

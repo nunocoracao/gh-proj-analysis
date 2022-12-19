@@ -2,12 +2,11 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 2,
+      "count": 1,
       "rootCount": 1,
-      "subFolderCount": 1,
+      "subFolderCount": 0,
       "filepaths": [
-        "ecs_composex.git/cli.Dockerfile",
-        "ecs_composex.git/e2e-examples/nginx_webapp/Dockerfile"
+        "ecs_composex.git/cli.Dockerfile"
       ]
     },
     "composefile": {
@@ -22,6 +21,53 @@
         "ecs_composex.git/e2e-examples/nginx_webapp/docker-compose.yaml",
         "ecs_composex.git/use-cases/cfn_macro/raw_compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "ecs_composex.git/use-cases/alarms/services.yml",
+        "ecs_composex.git/use-cases/appmesh/negative-testing/router_service.yml",
+        "ecs_composex.git/use-cases/dynamodb/create_lookup_services_mappings.yml",
+        "ecs_composex.git/use-cases/dynamodb/create_lookup_services_mappings_cloudmap.yml",
+        "ecs_composex.git/use-cases/ecs/service_to_service.yml",
+        "ecs_composex.git/use-cases/ecs/service_to_service_depend.yml",
+        "ecs_composex.git/use-cases/ecs/negative_testing/services_multi_arch.yml",
+        "ecs_composex.git/use-cases/ecs/negative_testing/services_multi_os.yml",
+        "ecs_composex.git/use-cases/events/multi_rules_same_service.yaml",
+        "ecs_composex.git/use-cases/s3/lookup_use_create_buckets_services_mappings.yaml",
+        "ecs_composex.git/use-cases/s3/lookup_use_create_buckets_services_mappings_cloudmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

@@ -1,20 +1,74 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
       "exist": true,
       "count": 6,
       "rootCount": 0,
       "subFolderCount": 6,
       "filepaths": [
-        "refine.git/documentation/Dockerfile",
-        "refine.git/examples/finefoods-antd/Dockerfile",
-        "refine.git/examples/finefoods-client/Dockerfile",
-        "refine.git/examples/finefoods-mui/Dockerfile",
-        "refine.git/examples/store/Dockerfile",
-        "refine.git/packages/live-previews/Dockerfile"
+        "refine.git/documentation/k8s/refine-documentation/Chart.yaml",
+        "refine.git/examples/finefoods-antd/k8s/refine-example/Chart.yaml",
+        "refine.git/examples/finefoods-client/k8s/refine-example/Chart.yaml",
+        "refine.git/examples/finefoods-mui/k8s/refine-example/Chart.yaml",
+        "refine.git/examples/store/k8s/refine-store/Chart.yaml",
+        "refine.git/packages/live-previews/k8s/live-previews/Chart.yaml"
       ]
     },
-    "composefile": {
+    "k8s": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "refine.git/documentation/k8s/refine-documentation/templates/deployment.yaml",
+        "refine.git/documentation/k8s/refine-documentation/templates/service.yaml",
+        "refine.git/documentation/k8s/refine-documentation/templates/serviceaccount.yaml",
+        "refine.git/examples/finefoods-antd/k8s/refine-example/templates/deployment.yaml",
+        "refine.git/examples/finefoods-antd/k8s/refine-example/templates/service.yaml",
+        "refine.git/examples/finefoods-antd/k8s/refine-example/templates/serviceaccount.yaml",
+        "refine.git/examples/finefoods-client/k8s/refine-example/templates/deployment.yaml",
+        "refine.git/examples/finefoods-client/k8s/refine-example/templates/service.yaml",
+        "refine.git/examples/finefoods-client/k8s/refine-example/templates/serviceaccount.yaml",
+        "refine.git/examples/finefoods-mui/k8s/refine-example/templates/deployment.yaml",
+        "refine.git/examples/finefoods-mui/k8s/refine-example/templates/service.yaml",
+        "refine.git/examples/finefoods-mui/k8s/refine-example/templates/serviceaccount.yaml",
+        "refine.git/examples/store/k8s/refine-store/templates/deployment.yaml",
+        "refine.git/examples/store/k8s/refine-store/templates/service.yaml",
+        "refine.git/examples/store/k8s/refine-store/templates/serviceaccount.yaml",
+        "refine.git/packages/live-previews/k8s/live-previews/templates/deployment.yaml",
+        "refine.git/packages/live-previews/k8s/live-previews/templates/service.yaml",
+        "refine.git/packages/live-previews/k8s/live-previews/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

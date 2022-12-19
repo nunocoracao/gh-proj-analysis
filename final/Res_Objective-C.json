@@ -1,9 +1,9 @@
 {
-  "total_repos": 971,
+  "total_repos": 999,
   "dockerfile": {
-    "total": 5,
-    "only_in_root": 1,
-    "only_in_subfolders": 4,
+    "total": 1,
+    "only_in_root": 0,
+    "only_in_subfolders": 1,
     "root_and_subfolders": 0
   },
   "composefile": {
@@ -12,28 +12,22 @@
     "only_in_subfolders": 1,
     "root_and_subfolders": 1
   },
-  "just_dockerfile": {
-    "total": 2,
-    "dockerfile": {
-      "only_in_root": 0,
-      "only_in_subfolders": 2,
-      "root_and_subfolders": 0
-    },
-    "composefile": {
-      "only_in_root": 0,
-      "only_in_subfolders": 0,
-      "root_and_subfolders": 0
-    },
-    "avg_dockerfile_per_repo": 1,
-    "n_dockerfiles_counter": {
-      "1": 2
-    },
-    "avg_compose_per_repo": 0,
-    "n_compose_counter": {
-      "0": 2
-    }
+  "kustomize": {
+    "total": 0
   },
-  "just_compose": {
+  "helm": {
+    "total": 0
+  },
+  "k8s": {
+    "total": 2
+  },
+  "backstage": {
+    "total": 0
+  },
+  "terraform": {
+    "total": 1
+  },
+  "just_dockerfile": {
     "total": 0,
     "dockerfile": {
       "only_in_root": 0,
@@ -50,35 +44,32 @@
     "avg_compose_per_repo": 0,
     "n_compose_counter": {}
   },
-  "dockerfile_or_compose": {
-    "total": 5,
+  "just_compose": {
+    "total": 2,
     "dockerfile": {
-      "only_in_root": 1,
-      "only_in_subfolders": 4,
+      "only_in_root": 0,
+      "only_in_subfolders": 0,
       "root_and_subfolders": 0
     },
     "composefile": {
       "only_in_root": 1,
       "only_in_subfolders": 1,
-      "root_and_subfolders": 1
+      "root_and_subfolders": 0
     },
-    "avg_dockerfile_per_repo": 2,
+    "avg_dockerfile_per_repo": 0,
     "n_dockerfiles_counter": {
-      "1": 4,
-      "6": 1
+      "0": 2
     },
     "avg_compose_per_repo": 1,
     "n_compose_counter": {
-      "0": 2,
-      "1": 2,
-      "3": 1
+      "1": 2
     }
   },
-  "dockerfile_and_compose": {
+  "dockerfile_or_compose": {
     "total": 3,
     "dockerfile": {
-      "only_in_root": 1,
-      "only_in_subfolders": 2,
+      "only_in_root": 0,
+      "only_in_subfolders": 1,
       "root_and_subfolders": 0
     },
     "composefile": {
@@ -86,10 +77,10 @@
       "only_in_subfolders": 1,
       "root_and_subfolders": 1
     },
-    "avg_dockerfile_per_repo": 2.6666666666666665,
+    "avg_dockerfile_per_repo": 0.6666666666666667,
     "n_dockerfiles_counter": {
-      "1": 2,
-      "6": 1
+      "0": 2,
+      "2": 1
     },
     "avg_compose_per_repo": 1.6666666666666667,
     "n_compose_counter": {
@@ -97,7 +88,28 @@
       "3": 1
     }
   },
+  "dockerfile_and_compose": {
+    "total": 1,
+    "dockerfile": {
+      "only_in_root": 0,
+      "only_in_subfolders": 1,
+      "root_and_subfolders": 0
+    },
+    "composefile": {
+      "only_in_root": 0,
+      "only_in_subfolders": 0,
+      "root_and_subfolders": 1
+    },
+    "avg_dockerfile_per_repo": 2,
+    "n_dockerfiles_counter": {
+      "2": 1
+    },
+    "avg_compose_per_repo": 3,
+    "n_compose_counter": {
+      "3": 1
+    }
+  },
   "no_docker": {
-    "total": 966
+    "total": 996
   }
 }

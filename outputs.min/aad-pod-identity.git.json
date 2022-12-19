@@ -1,19 +1,76 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
-      "rootCount": 1,
-      "subFolderCount": 4,
-      "filepaths": [
-        "aad-pod-identity.git/Dockerfile",
-        "aad-pod-identity.git/examples/java-blob/Dockerfile",
-        "aad-pod-identity.git/examples/java-blob/.devcontainer/Dockerfile",
-        "aad-pod-identity.git/examples/rest-api/client/Dockerfile",
-        "aad-pod-identity.git/examples/rest-api/service/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "aad-pod-identity.git/config/crd/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "aad-pod-identity.git/charts/aad-pod-identity/Chart.yaml",
+        "aad-pod-identity.git/manifest_staging/charts/aad-pod-identity/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 22,
+      "rootCount": 0,
+      "subFolderCount": 22,
+      "filepaths": [
+        "aad-pod-identity.git/charts/aad-pod-identity/templates/mic-deployment.yaml",
+        "aad-pod-identity.git/charts/aad-pod-identity/templates/mic-serviceaccount.yaml",
+        "aad-pod-identity.git/charts/aad-pod-identity/templates/nmi-serviceaccount.yaml",
+        "aad-pod-identity.git/deploy/demo/deployment.yaml",
+        "aad-pod-identity.git/deploy/infra/deployment-rbac.yaml",
+        "aad-pod-identity.git/deploy/infra/deployment.yaml",
+        "aad-pod-identity.git/deploy/infra/managed-mode-deployment.yaml",
+        "aad-pod-identity.git/deploy/infra/noazurejson/deployment-rbac.yaml",
+        "aad-pod-identity.git/deploy/infra/noazurejson/deployment.yaml",
+        "aad-pod-identity.git/examples/java-blob/deployment/deployment.yaml",
+        "aad-pod-identity.git/examples/rest-api/service.yaml",
+        "aad-pod-identity.git/manifest_staging/charts/aad-pod-identity/templates/mic-deployment.yaml",
+        "aad-pod-identity.git/manifest_staging/charts/aad-pod-identity/templates/mic-serviceaccount.yaml",
+        "aad-pod-identity.git/manifest_staging/charts/aad-pod-identity/templates/nmi-serviceaccount.yaml",
+        "aad-pod-identity.git/manifest_staging/deploy/demo/deployment.yaml",
+        "aad-pod-identity.git/manifest_staging/deploy/infra/deployment-rbac.yaml",
+        "aad-pod-identity.git/manifest_staging/deploy/infra/deployment.yaml",
+        "aad-pod-identity.git/manifest_staging/deploy/infra/managed-mode-deployment.yaml",
+        "aad-pod-identity.git/manifest_staging/deploy/infra/noazurejson/deployment-rbac.yaml",
+        "aad-pod-identity.git/manifest_staging/deploy/infra/noazurejson/deployment.yaml",
+        "aad-pod-identity.git/test/load/config-deployment-template.yml",
+        "aad-pod-identity.git/test/load/deployment-template.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

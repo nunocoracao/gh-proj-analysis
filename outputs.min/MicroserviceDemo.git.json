@@ -1,19 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 7,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 7,
-      "filepaths": [
-        "MicroserviceDemo.git/AzureFunctions/OrderApi.Messaging.Receive/OrderApi.Messaging.Receive/Dockerfile",
-        "MicroserviceDemo.git/CustomerApi/CustomerApi/Dockerfile",
-        "MicroserviceDemo.git/CustomerApi/CustomerApi/Dockerfile.Build",
-        "MicroserviceDemo.git/Infrastructure/LinuxSqlPackageDocker/Dockerfile",
-        "MicroserviceDemo.git/KedaDemoApi/KedaDemoApi/Dockerfile",
-        "MicroserviceDemo.git/OrderApi/OrderApi/Dockerfile",
-        "MicroserviceDemo.git/OrderApi/OrderApi/Dockerfile.Build"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -24,6 +16,54 @@
         "MicroserviceDemo.git/docker-compose.Build.yml",
         "MicroserviceDemo.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "MicroserviceDemo.git/CustomerApi/CustomerApi/charts/customerapi/Chart.yaml",
+        "MicroserviceDemo.git/KedaDemoApi/KedaDemoApi/charts/kedademoapi/Chart.yaml",
+        "MicroserviceDemo.git/OrderApi/OrderApi/charts/orderapi/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "MicroserviceDemo.git/CustomerApi/CustomerApi/charts/customerapi/templates/deployment.yaml",
+        "MicroserviceDemo.git/CustomerApi/CustomerApi/charts/customerapi/templates/service.yaml",
+        "MicroserviceDemo.git/CustomerApi/pipelines/templates/GetServiceBusConnectionString.yml",
+        "MicroserviceDemo.git/KedaDemoApi/KedaDemoApi/charts/kedademoapi/templates/deployment.yaml",
+        "MicroserviceDemo.git/KedaDemoApi/KedaDemoApi/charts/kedademoapi/templates/service.yaml",
+        "MicroserviceDemo.git/KedaDemoApi/pipelines/templates/GetServiceBusConnectionString.yml",
+        "MicroserviceDemo.git/OrderApi/OrderApi/charts/orderapi/templates/deployment.yaml",
+        "MicroserviceDemo.git/OrderApi/OrderApi/charts/orderapi/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

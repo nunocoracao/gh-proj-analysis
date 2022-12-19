@@ -1,18 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 6,
-      "filepaths": [
-        "kroki.git/blockdiag/Dockerfile",
-        "kroki.git/bpmn/Dockerfile",
-        "kroki.git/diagrams.net/Dockerfile",
-        "kroki.git/excalidraw/Dockerfile",
-        "kroki.git/mermaid/Dockerfile",
-        "kroki.git/server/ops/docker/jdk11-alpine/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -22,6 +15,57 @@
       "filepaths": [
         "kroki.git/ci/tests/docker-compose.yaml",
         "kroki.git/docs/modules/setup/examples/kroki-docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "kroki.git/docs/modules/setup/examples/k8s-multi-pod/blockdiag-deployment.yaml",
+        "kroki.git/docs/modules/setup/examples/k8s-multi-pod/blockdiag-service.yaml",
+        "kroki.git/docs/modules/setup/examples/k8s-multi-pod/bpmn-deployment.yaml",
+        "kroki.git/docs/modules/setup/examples/k8s-multi-pod/bpmn-service.yaml",
+        "kroki.git/docs/modules/setup/examples/k8s-multi-pod/excalidraw-deployment.yaml",
+        "kroki.git/docs/modules/setup/examples/k8s-multi-pod/excalidraw-service.yaml",
+        "kroki.git/docs/modules/setup/examples/k8s-multi-pod/kroki-deployment.yaml",
+        "kroki.git/docs/modules/setup/examples/k8s-multi-pod/kroki-service.yaml",
+        "kroki.git/docs/modules/setup/examples/k8s-multi-pod/mermaid-deployment.yaml",
+        "kroki.git/docs/modules/setup/examples/k8s-multi-pod/mermaid-service.yaml",
+        "kroki.git/docs/modules/setup/examples/k8s-single-pod/kroki-deployment.yaml",
+        "kroki.git/docs/modules/setup/examples/k8s-single-pod/kroki-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 2,
+      "subFolderCount": 0,
+      "filepaths": [
+        "kroki.git/docker-bake-release.hcl",
+        "kroki.git/docker-bake.hcl"
       ]
     }
   },

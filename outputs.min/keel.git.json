@@ -1,19 +1,55 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
-      "rootCount": 5,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "keel.git/Dockerfile",
-        "keel.git/Dockerfile.aarch64",
-        "keel.git/Dockerfile.armhf",
-        "keel.git/Dockerfile.debian",
-        "keel.git/Dockerfile.local"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "keel.git/chart/keel/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "keel.git/chart/keel/templates/deployment.yaml",
+        "keel.git/chart/keel/templates/service-account.yaml",
+        "keel.git/chart/keel/templates/service.yaml",
+        "keel.git/deployment/deployment-template.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

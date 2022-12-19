@@ -1,21 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 9,
-      "rootCount": 1,
-      "subFolderCount": 8,
-      "filepaths": [
-        "mist-ce.git/Dockerfile",
-        "mist-ce.git/docker/elasticsearch-manage/Dockerfile",
-        "mist-ce.git/docker/gocky/Dockerfile",
-        "mist-ce.git/docker/logstash/Dockerfile",
-        "mist-ce.git/docker/nginx/Dockerfile",
-        "mist-ce.git/docker/sheller/Dockerfile",
-        "mist-ce.git/docker/tests/Dockerfile",
-        "mist-ce.git/docker/vault/Dockerfile",
-        "mist-ce.git/docker/wsproxy/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -25,6 +15,93 @@
       "filepaths": [
         "mist-ce.git/docker-compose.override.yml",
         "mist-ce.git/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "mist-ce.git/chart/mist/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 47,
+      "rootCount": 0,
+      "subFolderCount": 47,
+      "filepaths": [
+        "mist-ce.git/chart/mist/templates/api-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/api-service.yaml",
+        "mist-ce.git/chart/mist/templates/api-v2-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/api-v2-service.yaml",
+        "mist-ce.git/chart/mist/templates/dockerhost-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/dockerhost-service.yaml",
+        "mist-ce.git/chart/mist/templates/dramatiq-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/dramatiq-service.yaml",
+        "mist-ce.git/chart/mist/templates/dramatiq-servicemonitor.yaml",
+        "mist-ce.git/chart/mist/templates/elasticsearch-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/elasticsearch-service.yaml",
+        "mist-ce.git/chart/mist/templates/gocky-configmap.yaml",
+        "mist-ce.git/chart/mist/templates/gocky-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/gocky-service.yaml",
+        "mist-ce.git/chart/mist/templates/influxdb-configmap.yaml",
+        "mist-ce.git/chart/mist/templates/influxdb-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/influxdb-service.yaml",
+        "mist-ce.git/chart/mist/templates/kibana-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/kibana-service.yaml",
+        "mist-ce.git/chart/mist/templates/landing-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/landing-service.yaml",
+        "mist-ce.git/chart/mist/templates/logstash-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/mailmock-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/mailmock-service.yaml",
+        "mist-ce.git/chart/mist/templates/main-configmap.yaml",
+        "mist-ce.git/chart/mist/templates/memcached-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/memcached-service.yaml",
+        "mist-ce.git/chart/mist/templates/nginx-configmap.yaml",
+        "mist-ce.git/chart/mist/templates/nginx-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/nginx-service.yaml",
+        "mist-ce.git/chart/mist/templates/poller-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/portal-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/portal-service.yaml",
+        "mist-ce.git/chart/mist/templates/scheduler-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/sheller-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/sheller-service.yaml",
+        "mist-ce.git/chart/mist/templates/sockjs-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/sockjs-service.yaml",
+        "mist-ce.git/chart/mist/templates/swagger-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/swagger-service.yaml",
+        "mist-ce.git/chart/mist/templates/traefik-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/traefik-service.yaml",
+        "mist-ce.git/chart/mist/templates/ui-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/ui-service.yaml",
+        "mist-ce.git/chart/mist/templates/vault-configmap.yaml",
+        "mist-ce.git/chart/mist/templates/wsproxy-deployment.yaml",
+        "mist-ce.git/chart/mist/templates/wsproxy-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "mist-ce.git/docker/vault/init/policies/vault-mist.hcl"
       ]
     }
   },

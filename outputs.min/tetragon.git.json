@@ -2,29 +2,56 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 16,
-      "rootCount": 9,
-      "subFolderCount": 7,
+      "count": 1,
+      "rootCount": 1,
+      "subFolderCount": 0,
       "filepaths": [
-        "tetragon.git/Dockerfile",
-        "tetragon.git/Dockerfile.clang",
-        "tetragon.git/Dockerfile.clang-format",
-        "tetragon.git/Dockerfile.clang.arm",
-        "tetragon.git/Dockerfile.codegen",
-        "tetragon.git/Dockerfile.dev",
-        "tetragon.git/Dockerfile.golangci-lint",
-        "tetragon.git/Dockerfile.test",
-        "tetragon.git/operator.Dockerfile",
-        "tetragon.git/api/vendor/golang.org/x/net/http2/Dockerfile",
-        "tetragon.git/pkg/k8s/vendor/github.com/pelletier/go-toml/Dockerfile",
-        "tetragon.git/pkg/k8s/vendor/github.com/pelletier/go-toml/v2/Dockerfile",
-        "tetragon.git/pkg/k8s/vendor/golang.org/x/net/http2/Dockerfile",
-        "tetragon.git/vendor/github.com/pelletier/go-toml/Dockerfile",
-        "tetragon.git/vendor/github.com/pelletier/go-toml/v2/Dockerfile",
-        "tetragon.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "tetragon.git/operator.Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "tetragon.git/install/kubernetes/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "tetragon.git/install/kubernetes/templates/service.yaml",
+        "tetragon.git/install/kubernetes/templates/serviceaccount.yaml",
+        "tetragon.git/install/kubernetes/templates/servicemonitor.yaml",
+        "tetragon.git/install/kubernetes/templates/tetragon_configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,18 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
-      "rootCount": 2,
-      "subFolderCount": 4,
-      "filepaths": [
-        "kruise.git/Dockerfile",
-        "kruise.git/Dockerfile_multiarch",
-        "kruise.git/docs/tutorial/v1/images/guestbook/Dockerfile",
-        "kruise.git/vendor/github.com/nxadm/tail/Dockerfile",
-        "kruise.git/vendor/github.com/onsi/gomega/Dockerfile",
-        "kruise.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -22,6 +15,74 @@
       "filepaths": [
         "kruise.git/vendor/github.com/onsi/gomega/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "kruise.git/config/certmanager/kustomization.yaml",
+        "kruise.git/config/crd/kustomization.yaml",
+        "kruise.git/config/default/kustomization.yaml",
+        "kruise.git/config/manager/kustomization.yaml",
+        "kruise.git/config/prometheus/kustomization.yaml",
+        "kruise.git/config/rbac/kustomization.yaml",
+        "kruise.git/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 24,
+      "rootCount": 0,
+      "subFolderCount": 24,
+      "filepaths": [
+        "kruise.git/config/crd/bases/apps.kruise.io_uniteddeployments.yaml",
+        "kruise.git/config/crd/patches/cainjection_in_uniteddeployments.yaml",
+        "kruise.git/config/crd/patches/webhook_in_uniteddeployments.yaml",
+        "kruise.git/config/rbac/auth_proxy_service.yaml",
+        "kruise.git/config/rbac/uniteddeployment_editor_role.yaml",
+        "kruise.git/config/rbac/uniteddeployment_viewer_role.yaml",
+        "kruise.git/config/samples/apps_v1alpha1_uniteddeployment.yaml",
+        "kruise.git/config/webhook/service.yaml",
+        "kruise.git/docs/tutorial/v1/guestbook-service-for-sidecar-demo.yaml",
+        "kruise.git/docs/tutorial/v1/guestbook-service.yaml",
+        "kruise.git/docs/tutorial/v1/redis-master-deployment.yaml",
+        "kruise.git/docs/tutorial/v1/redis-master-service.yaml",
+        "kruise.git/docs/tutorial/v1/redis-slave-deployment.yaml",
+        "kruise.git/docs/tutorial/v1/redis-slave-service.yaml",
+        "kruise.git/docs/tutorial/v1/uniteddeployment.yaml",
+        "kruise.git/test/e2e/testing-manifests/statefulset/cassandra/service.yaml",
+        "kruise.git/test/e2e/testing-manifests/statefulset/cockroachdb/service.yaml",
+        "kruise.git/test/e2e/testing-manifests/statefulset/etcd/service.yaml",
+        "kruise.git/test/e2e/testing-manifests/statefulset/mysql-galera/service.yaml",
+        "kruise.git/test/e2e/testing-manifests/statefulset/mysql-upgrade/configmap.yaml",
+        "kruise.git/test/e2e/testing-manifests/statefulset/mysql-upgrade/service.yaml",
+        "kruise.git/test/e2e/testing-manifests/statefulset/nginx/service.yaml",
+        "kruise.git/test/e2e/testing-manifests/statefulset/redis/service.yaml",
+        "kruise.git/test/e2e/testing-manifests/statefulset/zookeeper/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

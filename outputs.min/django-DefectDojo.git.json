@@ -2,14 +2,10 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 6,
-      "rootCount": 4,
+      "count": 2,
+      "rootCount": 0,
       "subFolderCount": 2,
       "filepaths": [
-        "django-DefectDojo.git/Dockerfile.django",
-        "django-DefectDojo.git/Dockerfile.django-alpine",
-        "django-DefectDojo.git/Dockerfile.integration-tests",
-        "django-DefectDojo.git/Dockerfile.nginx",
         "django-DefectDojo.git/unittests/scans/hadolint/many_dockerfile.json",
         "django-DefectDojo.git/unittests/scans/hadolint/one_dockerfile.json"
       ]
@@ -28,6 +24,51 @@
         "django-DefectDojo.git/docker-compose.override.unit_tests_cicd.yml",
         "django-DefectDojo.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "django-DefectDojo.git/.github/workflows/release-x-manual-helm-chart.yml",
+        "django-DefectDojo.git/.github/workflows/test-helm-chart.yml",
+        "django-DefectDojo.git/helm/defectdojo/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "django-DefectDojo.git/helm/defectdojo/templates/celery-beat-deployment.yaml",
+        "django-DefectDojo.git/helm/defectdojo/templates/celery-worker-deployment.yaml",
+        "django-DefectDojo.git/helm/defectdojo/templates/configmap.yaml",
+        "django-DefectDojo.git/helm/defectdojo/templates/django-deployment.yaml",
+        "django-DefectDojo.git/helm/defectdojo/templates/django-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

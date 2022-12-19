@@ -1,21 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 9,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 9,
-      "filepaths": [
-        "tendermint.git/DOCKER/Dockerfile",
-        "tendermint.git/DOCKER/Dockerfile.build_c-amazonlinux",
-        "tendermint.git/DOCKER/Dockerfile.testing",
-        "tendermint.git/networks/local/localnode/Dockerfile",
-        "tendermint.git/spec/ivy-proofs/Dockerfile",
-        "tendermint.git/test/docker/Dockerfile",
-        "tendermint.git/test/e2e/docker/Dockerfile",
-        "tendermint.git/tools/proto/Dockerfile",
-        "tendermint.git/tools/tm-signer-harness/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -25,6 +15,48 @@
       "filepaths": [
         "tendermint.git/docker-compose.yml",
         "tendermint.git/spec/ivy-proofs/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "tendermint.git/.github/workflows/docs-deployment.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "tendermint.git/networks/remote/terraform/main.tf",
+        "tendermint.git/networks/remote/terraform/cluster/main.tf",
+        "tendermint.git/networks/remote/terraform/cluster/outputs.tf",
+        "tendermint.git/networks/remote/terraform/cluster/variables.tf"
       ]
     }
   },

@@ -1,18 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
-      "rootCount": 1,
-      "subFolderCount": 5,
-      "filepaths": [
-        "superset.git/Dockerfile",
-        "superset.git/RELEASING/Dockerfile.from_local_tarball",
-        "superset.git/RELEASING/Dockerfile.from_svn_tarball",
-        "superset.git/RELEASING/Dockerfile.make_docs",
-        "superset.git/RELEASING/Dockerfile.make_tarball",
-        "superset.git/superset-websocket/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -24,6 +17,52 @@
         "superset.git/docker-compose.yml",
         "superset.git/scripts/databases/hive/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "superset.git/helm/superset/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "superset.git/helm/superset/templates/configmap-superset.yaml",
+        "superset.git/helm/superset/templates/deployment-beat.yaml",
+        "superset.git/helm/superset/templates/deployment-flower.yaml",
+        "superset.git/helm/superset/templates/deployment-worker.yaml",
+        "superset.git/helm/superset/templates/deployment-ws.yaml",
+        "superset.git/helm/superset/templates/deployment.yaml",
+        "superset.git/helm/superset/templates/service-account.yaml",
+        "superset.git/helm/superset/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

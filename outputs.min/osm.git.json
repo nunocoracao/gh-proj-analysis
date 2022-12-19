@@ -1,17 +1,73 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
-      "rootCount": 3,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "osm.git/Dockerfile",
-        "osm.git/Dockerfile.fips",
-        "osm.git/dockerfiles"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "osm.git/.github/workflows/release-chart.yml",
+        "osm.git/charts/osm/Chart.yaml",
+        "osm.git/cmd/cli/testdata/test-chart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 20,
+      "rootCount": 0,
+      "subFolderCount": 20,
+      "filepaths": [
+        "osm.git/charts/osm/templates/fluentbit-configmap.yaml",
+        "osm.git/charts/osm/templates/grafana-configmap.yaml",
+        "osm.git/charts/osm/templates/grafana-deployment.yaml",
+        "osm.git/charts/osm/templates/jaeger-deployment.yaml",
+        "osm.git/charts/osm/templates/jaeger-service.yaml",
+        "osm.git/charts/osm/templates/osm-bootstrap-deployment.yaml",
+        "osm.git/charts/osm/templates/osm-bootstrap-service.yaml",
+        "osm.git/charts/osm/templates/osm-deployment.yaml",
+        "osm.git/charts/osm/templates/osm-injector-deployment.yaml",
+        "osm.git/charts/osm/templates/osm-injector-service.yaml",
+        "osm.git/charts/osm/templates/osm-service.yaml",
+        "osm.git/charts/osm/templates/osm-validator-service.yaml",
+        "osm.git/charts/osm/templates/prometheus-configmap.yaml",
+        "osm.git/charts/osm/templates/prometheus-deployment.yaml",
+        "osm.git/cmd/cli/testdata/test-chart/templates/deployment.yaml",
+        "osm.git/cmd/osm-bootstrap/crds/config_extensionservice.yaml",
+        "osm.git/cmd/osm-bootstrap/crds/mcs_service_export.yaml",
+        "osm.git/cmd/osm-bootstrap/crds/mcs_service_import.yaml",
+        "osm.git/scripts/multicluster/crd/multicluster.x-k8s.io_serviceexports.yaml",
+        "osm.git/scripts/multicluster/crd/multicluster.x-k8s.io_serviceimports.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

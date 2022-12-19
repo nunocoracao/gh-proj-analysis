@@ -1,25 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 13,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 13,
-      "filepaths": [
-        "teleport.git/.github/services/Dockerfile.etcd",
-        "teleport.git/build.assets/Dockerfile",
-        "teleport.git/build.assets/Dockerfile-arm",
-        "teleport.git/build.assets/Dockerfile-arm-fips",
-        "teleport.git/build.assets/Dockerfile-centos7",
-        "teleport.git/build.assets/Dockerfile-centos7-assets",
-        "teleport.git/build.assets/Dockerfile-centos7-fips",
-        "teleport.git/build.assets/Dockerfile-fips",
-        "teleport.git/build.assets/Dockerfile-teleterm",
-        "teleport.git/build.assets/charts/Dockerfile",
-        "teleport.git/docker/Dockerfile",
-        "teleport.git/docker/sshd/Dockerfile",
-        "teleport.git/operator/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -30,6 +16,107 @@
         "teleport.git/assets/monitoring/docker-compose.yml",
         "teleport.git/docker/docker-compose.yml",
         "teleport.git/examples/etcd/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "teleport.git/examples/chart/teleport-cluster/Chart.yaml",
+        "teleport.git/examples/chart/teleport-cluster/charts/teleport-operator/Chart.yaml",
+        "teleport.git/examples/chart/teleport-kube-agent/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "teleport.git/.github/workflows/build-ci-service-images.yaml",
+        "teleport.git/examples/chart/teleport-cluster/.lint/service-account.yaml",
+        "teleport.git/examples/chart/teleport-cluster/.lint/service.yaml",
+        "teleport.git/examples/chart/teleport-cluster/templates/deployment.yaml",
+        "teleport.git/examples/chart/teleport-cluster/templates/service.yaml",
+        "teleport.git/examples/chart/teleport-cluster/templates/serviceaccount.yaml",
+        "teleport.git/examples/chart/teleport-cluster/tests/deployment_test.yaml",
+        "teleport.git/examples/chart/teleport-cluster/tests/service_test.yaml",
+        "teleport.git/examples/chart/teleport-cluster/tests/serviceaccount_test.yaml",
+        "teleport.git/examples/chart/teleport-cluster/tests/__snapshot__/deployment_test.yaml.snap",
+        "teleport.git/examples/chart/teleport-cluster/tests/__snapshot__/service_test.yaml.snap",
+        "teleport.git/examples/chart/teleport-cluster/tests/__snapshot__/serviceaccount_test.yaml.snap",
+        "teleport.git/examples/chart/teleport-kube-agent/.lint/service-account-name.yaml",
+        "teleport.git/examples/chart/teleport-kube-agent/templates/deployment.yaml",
+        "teleport.git/examples/chart/teleport-kube-agent/templates/serviceaccount.yaml",
+        "teleport.git/examples/chart/teleport-kube-agent/tests/deployment_test.yaml",
+        "teleport.git/examples/chart/teleport-kube-agent/tests/serviceaccount_test.yaml",
+        "teleport.git/examples/chart/teleport-kube-agent/tests/__snapshot__/deployment_test.yaml.snap",
+        "teleport.git/examples/chart/teleport-kube-agent/tests/__snapshot__/serviceaccount_test.yaml.snap"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 41,
+      "rootCount": 0,
+      "subFolderCount": 41,
+      "filepaths": [
+        "teleport.git/assets/loadtest/cluster/main.tf",
+        "teleport.git/assets/loadtest/cluster/outputs.tf",
+        "teleport.git/assets/loadtest/cluster/variables.tf",
+        "teleport.git/assets/loadtest/network/main.tf",
+        "teleport.git/assets/loadtest/network/outputs.tf",
+        "teleport.git/assets/loadtest/network/variables.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/acm.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/auth_asg.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/auth_iam.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/auth_network.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/bastion.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/data.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/dynamo.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/locks.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/monitor_asg.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/monitor_iam.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/network.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/node_asg.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/node_iam.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/node_network.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/provider.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/proxy_asg.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/proxy_iam.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/proxy_network.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/route53.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/s3.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/ssm.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/vars.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/versions.tf",
+        "teleport.git/examples/aws/terraform/ha-autoscale-cluster/vpc.tf",
+        "teleport.git/examples/aws/terraform/starter-cluster/cluster.tf",
+        "teleport.git/examples/aws/terraform/starter-cluster/cluster_iam.tf",
+        "teleport.git/examples/aws/terraform/starter-cluster/cluster_sg.tf",
+        "teleport.git/examples/aws/terraform/starter-cluster/data.tf",
+        "teleport.git/examples/aws/terraform/starter-cluster/dynamo.tf",
+        "teleport.git/examples/aws/terraform/starter-cluster/route53.tf",
+        "teleport.git/examples/aws/terraform/starter-cluster/s3.tf",
+        "teleport.git/examples/aws/terraform/starter-cluster/ssm.tf",
+        "teleport.git/examples/aws/terraform/starter-cluster/vars.tf",
+        "teleport.git/examples/resources/terraform/terraform-user-role-cloud.tf",
+        "teleport.git/examples/resources/terraform/terraform-user-role-self-hosted.tf"
       ]
     }
   },

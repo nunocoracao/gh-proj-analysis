@@ -1,18 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 6,
-      "filepaths": [
-        "pinot.git/docker/images/pinot/Dockerfile",
-        "pinot.git/docker/images/pinot-base/pinot-base-build/Dockerfile",
-        "pinot.git/docker/images/pinot-base/pinot-base-runtime/Dockerfile",
-        "pinot.git/docker/images/pinot-presto/Dockerfile",
-        "pinot.git/docker/images/pinot-superset/Dockerfile",
-        "pinot.git/docker/images/pinot-thirdeye/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -22,6 +15,77 @@
       "filepaths": [
         "pinot.git/docker/images/pinot/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "pinot.git/kubernetes/helm/pinot/Chart.yaml",
+        "pinot.git/kubernetes/helm/presto/Chart.yaml",
+        "pinot.git/kubernetes/helm/thirdeye/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 31,
+      "rootCount": 0,
+      "subFolderCount": 31,
+      "filepaths": [
+        "pinot.git/kubernetes/helm/pinot/templates/serviceaccount.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/broker/configmap.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/broker/service-external.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/broker/service-headless.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/broker/service.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/controller/configmap.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/controller/service-external.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/controller/service-headless.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/controller/service.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/minion/configmap.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/minion/service-headless.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/minion/service.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/minion-stateless/configmap.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/minion-stateless/deployment.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/server/configmap.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/server/service-headless.yaml",
+        "pinot.git/kubernetes/helm/pinot/templates/server/service.yaml",
+        "pinot.git/kubernetes/helm/presto/templates/coordinator/configmap.yaml",
+        "pinot.git/kubernetes/helm/presto/templates/coordinator/service-external.yaml",
+        "pinot.git/kubernetes/helm/presto/templates/coordinator/service-headless.yaml",
+        "pinot.git/kubernetes/helm/presto/templates/coordinator/service.yaml",
+        "pinot.git/kubernetes/helm/presto/templates/worker/configmap.yaml",
+        "pinot.git/kubernetes/helm/presto/templates/worker/service-headless.yaml",
+        "pinot.git/kubernetes/helm/presto/templates/worker/service.yaml",
+        "pinot.git/kubernetes/helm/thirdeye/templates/backend/deployment.yaml",
+        "pinot.git/kubernetes/helm/thirdeye/templates/backend/service-headless.yaml",
+        "pinot.git/kubernetes/helm/thirdeye/templates/backend/service.yaml",
+        "pinot.git/kubernetes/helm/thirdeye/templates/common/configmap.yaml",
+        "pinot.git/kubernetes/helm/thirdeye/templates/frontend/deployment.yaml",
+        "pinot.git/kubernetes/helm/thirdeye/templates/frontend/service-headless.yaml",
+        "pinot.git/kubernetes/helm/thirdeye/templates/frontend/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

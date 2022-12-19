@@ -1,15 +1,62 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "Reloader.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "Reloader.git/deployments/kubernetes/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "Reloader.git/deployments/kubernetes/chart/reloader/Chart.yaml",
+        "Reloader.git/deployments/kubernetes/templates/chart/Chart.yaml.tmpl"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "Reloader.git/deployments/kubernetes/chart/reloader/templates/deployment.yaml",
+        "Reloader.git/deployments/kubernetes/chart/reloader/templates/service.yaml",
+        "Reloader.git/deployments/kubernetes/chart/reloader/templates/serviceaccount.yaml",
+        "Reloader.git/deployments/kubernetes/chart/reloader/templates/servicemonitor.yaml",
+        "Reloader.git/deployments/kubernetes/manifests/deployment.yaml",
+        "Reloader.git/deployments/kubernetes/manifests/service.yaml",
+        "Reloader.git/deployments/kubernetes/manifests/serviceaccount.yaml",
+        "Reloader.git/deployments/kubernetes/manifests/servicemonitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -2,49 +2,18 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 39,
-      "rootCount": 1,
-      "subFolderCount": 38,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
       "filepaths": [
-        "jina.git/Dockerfiles",
-        "jina.git/tests/docker_compose/custom-gateway/Dockerfile",
-        "jina.git/tests/docker_compose/executor-merger/Dockerfile",
-        "jina.git/tests/docker_compose/multiprotocol-gateway/Dockerfile",
-        "jina.git/tests/docker_compose/reload-executor/Dockerfile",
-        "jina.git/tests/docker_compose/test-executor/Dockerfile",
-        "jina.git/tests/integration/distributed-replicas/Dockerfile",
-        "jina.git/tests/integration/docker_volumes/filewriter-exec/Dockerfile",
-        "jina.git/tests/integration/hub_usage/dummyhub/Dockerfile",
-        "jina.git/tests/integration/hub_usage/dummyhub_abs/Dockerfile",
-        "jina.git/tests/integration/hub_usage/dummyhub_pretrained/Dockerfile",
-        "jina.git/tests/integration/hub_usage/dummyhub_slow/Dockerfile",
-        "jina.git/tests/integration/hub_usage/hub-mwu/Dockerfile",
-        "jina.git/tests/integration/hub_usage/hub-mwu/multistage.Dockerfile",
-        "jina.git/tests/integration/issues/github_3124/Dockerfile",
-        "jina.git/tests/integration/multiple_protocol_gateway/gateway/Dockerfile",
-        "jina.git/tests/integration/override_config_params/container/Dockerfile",
-        "jina.git/tests/integration/pods/container/gateway-runtime/Dockerfile",
-        "jina.git/tests/integration/pods/container/head-runtime/Dockerfile",
-        "jina.git/tests/integration/pods/container/worker-runtime/Dockerfile",
-        "jina.git/tests/integration/replica-exec/Dockerfile",
-        "jina.git/tests/jinahub/Dockerfile",
-        "jina.git/tests/jinahub/hub_mwu/Dockerfile",
-        "jina.git/tests/k8s/custom-gateway/Dockerfile",
-        "jina.git/tests/k8s/executor-merger/Dockerfile",
-        "jina.git/tests/k8s/failing-executor/Dockerfile",
-        "jina.git/tests/k8s/multiprotocol-gateway/Dockerfile",
-        "jina.git/tests/k8s/reload-executor/Dockerfile",
-        "jina.git/tests/k8s/set-text-executor/Dockerfile",
-        "jina.git/tests/k8s/slow-process-executor/Dockerfile",
-        "jina.git/tests/k8s/test-executor/Dockerfile",
-        "jina.git/tests/k8s/test-stateful-executor/Dockerfile",
-        "jina.git/tests/k8s_otel/test-instrumentation/Dockerfile",
-        "jina.git/tests/unit/hubble-executor/Dockerfile",
-        "jina.git/tests/unit/orchestrate/flow/flow-construct/mwu-encoder/Dockerfile",
-        "jina.git/tests/unit/orchestrate/pods/container/custom-gateway/Dockerfile",
-        "jina.git/tests/unit/orchestrate/pods/container/dummy-exec/Dockerfile",
-        "jina.git/tests/unit/orchestrate/pods/container/env-checker/Dockerfile",
-        "jina.git/tests/unit/orchestrate/pods/container/fail-start/Dockerfile"
+        "jina.git/Dockerfiles/debianx.Dockerfile",
+        "jina.git/Dockerfiles/dind.Dockerfile",
+        "jina.git/Dockerfiles/pip-perf.Dockerfile",
+        "jina.git/Dockerfiles/pip.Dockerfile",
+        "jina.git/Dockerfiles/protogen-3.21.Dockerfile",
+        "jina.git/Dockerfiles/protogen.Dockerfile",
+        "jina.git/Dockerfiles/test-pip.Dockerfile",
+        "jina.git/tests/integration/hub_usage/hub-mwu/multistage.Dockerfile"
       ]
     },
     "composefile": {
@@ -56,6 +25,51 @@
         "jina.git/tests/integration/instrumentation/docker-compose.yml",
         "jina.git/tests/unit/orchestrate/flow/flow-construct/test_flow_to_docker_compose_yaml.py"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "jina.git/jina/resources/k8s/template/configmap.yml",
+        "jina.git/jina/resources/k8s/template/deployment-executor.yml",
+        "jina.git/jina/resources/k8s/template/deployment-gateway.yml",
+        "jina.git/jina/resources/k8s/template/deployment-uses-after.yml",
+        "jina.git/jina/resources/k8s/template/deployment-uses-before-after.yml",
+        "jina.git/jina/resources/k8s/template/deployment-uses-before.yml",
+        "jina.git/jina/resources/k8s/template/service.yml",
+        "jina.git/jina/resources/k8s/template/service_monitor.yml",
+        "jina.git/jina/resources/k8s/template/service_monitoring.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

@@ -2,24 +2,17 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 14,
+      "count": 7,
       "rootCount": 0,
-      "subFolderCount": 14,
+      "subFolderCount": 7,
       "filepaths": [
-        "tye.git/samples/apps-with-core-angular/MoviesApp/Dockerfile",
-        "tye.git/samples/azure-functions/voting/worker-function/Dockerfile",
-        "tye.git/samples/dapr/service-invocation/UppercaseService/Dockerfile",
-        "tye.git/src/Microsoft.Tye.Core/DockerfileGenerator.cs",
         "tye.git/src/Microsoft.Tye.Core/GenerateDockerfileStep.cs",
-        "tye.git/src/tye-diag-agent/Dockerfile",
         "tye.git/test/E2ETest/TyeBuildTests.Dockerfile.cs",
-        "tye.git/test/E2ETest/testassets/generate/dockerfile.yaml",
-        "tye.git/test/E2ETest/testassets/projects/dockerfile",
-        "tye.git/test/E2ETest/testassets/projects/multi-phase-dockerfile",
-        "tye.git/test/E2ETest/testassets/projects/single-phase-dockerfile",
-        "tye.git/test/E2ETest/testassets/projects/single-phase-dockerfile-args",
-        "tye.git/test/E2ETest/testassets/projects/single-phase-dockerfile-args-duplicates",
-        "tye.git/test/E2ETest/testassets/projects/single-phase-dockerfile-multi-args"
+        "tye.git/test/E2ETest/testassets/projects/multi-phase-dockerfile/multi-phase-dockerfile.csproj",
+        "tye.git/test/E2ETest/testassets/projects/single-phase-dockerfile/single-phase-dockerfile.csproj",
+        "tye.git/test/E2ETest/testassets/projects/single-phase-dockerfile-args/single-phase-dockerfile-args.csproj",
+        "tye.git/test/E2ETest/testassets/projects/single-phase-dockerfile-args-duplicates/single-phase-dockerfile-args.csproj",
+        "tye.git/test/E2ETest/testassets/projects/single-phase-dockerfile-multi-args/single-phase-dockerfile-multi-args.csproj"
       ]
     },
     "composefile": {
@@ -30,6 +23,45 @@
       "filepaths": [
         "tye.git/samples/dockercompose/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "tye.git/src/Microsoft.Tye.Core/WriteServiceYamlStep.cs",
+        "tye.git/src/Microsoft.Tye.Core/Templates/Helm/templates/deployment.yaml",
+        "tye.git/src/Microsoft.Tye.Core/Templates/Helm/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

@@ -1,16 +1,78 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 1,
-      "subFolderCount": 1,
-      "filepaths": [
-        "chart-testing.git/Dockerfile",
-        "chart-testing.git/examples/gke/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 21,
+      "rootCount": 0,
+      "subFolderCount": 21,
+      "filepaths": [
+        "chart-testing.git/etc/chart_schema.yaml",
+        "chart-testing.git/pkg/chart/test_chart_at_multi_level/foo/bar/Chart.yaml",
+        "chart-testing.git/pkg/chart/test_chart_at_multi_level/foo/baz/Chart.yaml",
+        "chart-testing.git/pkg/chart/test_chart_at_multi_level/foo/excluded/Chart.yaml",
+        "chart-testing.git/pkg/chart/test_chart_at_root/Chart.yaml",
+        "chart-testing.git/pkg/chart/test_charts/bar/Chart.yaml",
+        "chart-testing.git/pkg/chart/test_charts/bar/bar_sub/Chart.yaml",
+        "chart-testing.git/pkg/chart/test_charts/excluded/Chart.yaml",
+        "chart-testing.git/pkg/chart/test_charts/foo/Chart.yaml",
+        "chart-testing.git/pkg/chart/test_charts/must-pass-upgrade-install/Chart.yaml",
+        "chart-testing.git/pkg/chart/test_charts/mutating-deployment-selector/Chart.yaml",
+        "chart-testing.git/pkg/chart/test_charts/mutating-sfs-volumeclaim/Chart.yaml",
+        "chart-testing.git/pkg/chart/test_charts/simple-deployment/Chart.yaml",
+        "chart-testing.git/pkg/chart/test_charts/simple-deployment-different-selector/Chart.yaml",
+        "chart-testing.git/pkg/chart/testdata/empty_maintainers/Chart.yaml",
+        "chart-testing.git/pkg/chart/testdata/invalid_maintainers/Chart.yaml",
+        "chart-testing.git/pkg/chart/testdata/no_maintainers/Chart.yaml",
+        "chart-testing.git/pkg/chart/testdata/no_maintainers_deprecated/Chart.yaml",
+        "chart-testing.git/pkg/chart/testdata/test_lints/Chart.yaml",
+        "chart-testing.git/pkg/chart/testdata/valid_maintainers/Chart.yaml",
+        "chart-testing.git/pkg/chart/testdata/valid_maintainers_deprecated/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "chart-testing.git/pkg/chart/test_charts/must-pass-upgrade-install/templates/deployment.yaml",
+        "chart-testing.git/pkg/chart/test_charts/must-pass-upgrade-install/templates/service.yaml",
+        "chart-testing.git/pkg/chart/test_charts/mutating-deployment-selector/templates/deployment.yaml",
+        "chart-testing.git/pkg/chart/test_charts/mutating-deployment-selector/templates/service.yaml",
+        "chart-testing.git/pkg/chart/test_charts/mutating-sfs-volumeclaim/templates/service.yaml",
+        "chart-testing.git/pkg/chart/test_charts/simple-deployment/templates/deployment.yaml",
+        "chart-testing.git/pkg/chart/test_charts/simple-deployment-different-selector/templates/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

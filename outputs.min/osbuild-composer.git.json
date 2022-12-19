@@ -1,21 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 9,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 9,
-      "filepaths": [
-        "osbuild-composer.git/.devcontainer/Dockerfile",
-        "osbuild-composer.git/distribution/Dockerfile-config",
-        "osbuild-composer.git/distribution/Dockerfile-fauxauth",
-        "osbuild-composer.git/distribution/Dockerfile-ubi",
-        "osbuild-composer.git/distribution/Dockerfile-ubi-maintenance",
-        "osbuild-composer.git/distribution/Dockerfile-ubi-packer",
-        "osbuild-composer.git/distribution/Dockerfile-worker",
-        "osbuild-composer.git/vendor/github.com/docker/distribution/Dockerfile",
-        "osbuild-composer.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -26,6 +16,49 @@
         "osbuild-composer.git/docker-compose.yml",
         "osbuild-composer.git/templates/composer.yml",
         "osbuild-composer.git/templates/dashboards/grafana-dashboard-image-builder-composer-general.configmap.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "osbuild-composer.git/templates/dashboards/grafana-dashboard-image-builder-worker-general.configmap.yml",
+        "osbuild-composer.git/templates/packer/ansible/roles/common/tasks/worker-initialization-service.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "osbuild-composer.git/templates/packer/config.pkr.hcl",
+        "osbuild-composer.git/templates/packer/variables.pkr.hcl",
+        "osbuild-composer.git/templates/packer/worker.pkr.hcl",
+        "osbuild-composer.git/vendor/github.com/docker/distribution/docker-bake.hcl"
       ]
     }
   },

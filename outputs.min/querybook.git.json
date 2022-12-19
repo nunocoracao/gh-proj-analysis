@@ -1,14 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 1,
-      "subFolderCount": 1,
-      "filepaths": [
-        "querybook.git/Dockerfile",
-        "querybook.git/docs_website/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -22,6 +19,64 @@
         "querybook.git/containers/docker-compose.test.yml",
         "querybook.git/docs_website/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "querybook.git/helm/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 20,
+      "rootCount": 0,
+      "subFolderCount": 20,
+      "filepaths": [
+        "querybook.git/helm/templates/elasticsearch/elasticsearch-deployment.yaml",
+        "querybook.git/helm/templates/elasticsearch/elasticsearch-service.yaml",
+        "querybook.git/helm/templates/mysql/mysql-deployment.yaml",
+        "querybook.git/helm/templates/mysql/mysql-service.yaml",
+        "querybook.git/helm/templates/redis/redis-deployment.yaml",
+        "querybook.git/helm/templates/redis/redis-service.yaml",
+        "querybook.git/helm/templates/scheduler/scheduler-deployment.yaml",
+        "querybook.git/helm/templates/web/web-deployment.yaml",
+        "querybook.git/helm/templates/web/web-service.yaml",
+        "querybook.git/helm/templates/worker/worker-deployment.yaml",
+        "querybook.git/k8s/elasticsearch-deployment.yaml",
+        "querybook.git/k8s/elasticsearch-service.yaml",
+        "querybook.git/k8s/mysql-deployment.yaml",
+        "querybook.git/k8s/mysql-service.yaml",
+        "querybook.git/k8s/redis-deployment.yaml",
+        "querybook.git/k8s/redis-service.yaml",
+        "querybook.git/k8s/scheduler-deployment.yaml",
+        "querybook.git/k8s/web-deployment.yaml",
+        "querybook.git/k8s/web-service.yaml",
+        "querybook.git/k8s/worker-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

@@ -1,15 +1,58 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "amazon-cloudwatch-container-insights.git/cloudwatch-agent-dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "amazon-cloudwatch-container-insights.git/k8s-deployment-manifest-templates/deployment-mode/daemonset/container-insights-monitoring/cwagent/cwagent-configmap.yaml",
+        "amazon-cloudwatch-container-insights.git/k8s-deployment-manifest-templates/deployment-mode/daemonset/container-insights-monitoring/cwagent/cwagent-serviceaccount.yaml",
+        "amazon-cloudwatch-container-insights.git/k8s-deployment-manifest-templates/deployment-mode/daemonset/container-insights-monitoring/fluent-bit/fluent-bit-configmap.yaml",
+        "amazon-cloudwatch-container-insights.git/k8s-deployment-manifest-templates/deployment-mode/daemonset/container-insights-monitoring/fluentd/fluentd-configmap.yaml",
+        "amazon-cloudwatch-container-insights.git/k8s-yaml-templates/cwagent-kubernetes-monitoring/cwagent-configmap.yaml",
+        "amazon-cloudwatch-container-insights.git/k8s-yaml-templates/cwagent-kubernetes-monitoring/cwagent-serviceaccount.yaml",
+        "amazon-cloudwatch-container-insights.git/k8s-yaml-templates/cwagent-statsd/cwagent-statsd-configmap.yaml",
+        "amazon-cloudwatch-container-insights.git/k8s-yaml-templates/cwagent-statsd/cwagent-statsd-deployment.yaml",
+        "amazon-cloudwatch-container-insights.git/k8s-yaml-templates/fluentd/fluentd-configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

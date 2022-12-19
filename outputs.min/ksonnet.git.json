@@ -1,16 +1,61 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 1,
-      "subFolderCount": 1,
-      "filepaths": [
-        "ksonnet.git/Dockerfile",
-        "ksonnet.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "ksonnet.git/pkg/helm/testdata/redis/helm/3.4.3/redis/Chart.yaml",
+        "ksonnet.git/pkg/pkg/testdata/redis/helm/3.3.6/redis/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "ksonnet.git/e2e/testdata/input/import/deployment.yaml",
+        "ksonnet.git/pkg/component/testdata/deployment.yaml",
+        "ksonnet.git/pkg/helm/testdata/redis/helm/3.4.3/redis/templates/metrics-deployment.yaml",
+        "ksonnet.git/pkg/helm/testdata/redis/helm/3.4.3/redis/templates/redis-serviceaccount.yaml",
+        "ksonnet.git/pkg/helm/testdata/redis/helm/3.4.3/redis/templates/redis-slave-deployment.yaml",
+        "ksonnet.git/pkg/pipeline/testdata/service.yaml",
+        "ksonnet.git/pkg/pkg/testdata/redis/helm/3.3.6/redis/templates/metrics-deployment.yaml",
+        "ksonnet.git/pkg/pkg/testdata/redis/helm/3.3.6/redis/templates/redis-slave-deployment.yaml",
+        "ksonnet.git/pkg/schema/testdata/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,15 +1,55 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "docker-kubernetes-hello-world.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "docker-kubernetes-hello-world.git/charts/docker-kubernetes-hello-world/Chart.yaml",
+        "docker-kubernetes-hello-world.git/charts/preview/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 1,
+      "subFolderCount": 2,
+      "filepaths": [
+        "docker-kubernetes-hello-world.git/deployment.yaml",
+        "docker-kubernetes-hello-world.git/charts/docker-kubernetes-hello-world/templates/deployment.yaml",
+        "docker-kubernetes-hello-world.git/charts/docker-kubernetes-hello-world/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

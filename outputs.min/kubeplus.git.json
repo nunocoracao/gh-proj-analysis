@@ -2,32 +2,78 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 19,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 19,
+      "subFolderCount": 1,
       "filepaths": [
-        "kubeplus.git/consumerui/Dockerfile",
-        "kubeplus.git/deploy/Dockerfile",
-        "kubeplus.git/deploy/Dockerfile.cleanup",
-        "kubeplus.git/deploy/Dockerfile.kubeconfiggenerator",
-        "kubeplus.git/deploy/Dockerfile.rh",
-        "kubeplus.git/deploy/redhat-certification-artifacts/bundle.Dockerfile",
-        "kubeplus.git/examples/cert-management/domain-test2/image/Dockerfile",
-        "kubeplus.git/grapher/Dockerfile",
-        "kubeplus.git/mutating-webhook/Dockerfile",
-        "kubeplus.git/mutating-webhook/Dockerfile.rh",
-        "kubeplus.git/mutating-webhook-helper/Dockerfile",
-        "kubeplus.git/mutating-webhook-helper/Dockerfile.rh",
-        "kubeplus.git/platform-operator/artifacts/deployment/Dockerfile",
-        "kubeplus.git/platform-operator/artifacts/deployment/Dockerfile.rh",
-        "kubeplus.git/platform-operator/artifacts/deployment/Dockerfile.rh.not-working",
-        "kubeplus.git/platform-operator/helm-pod/Dockerfile",
-        "kubeplus.git/platform-operator/helm-pod/Dockerfile.rh",
-        "kubeplus.git/platform-operator/helm-pod/Dockerfile.waiter",
-        "kubeplus.git/platform-operator/vendor/golang.org/x/net/http2/Dockerfile"
+        "kubeplus.git/deploy/redhat-certification-artifacts/bundle.Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "kubeplus.git/deploy/kubeplus-chart/Chart.yaml",
+        "kubeplus.git/examples/jenkins/non-operator/jenkins-chart/Chart.yaml",
+        "kubeplus.git/examples/multitenancy/stacks/mysqlcluster-stack/Chart.yaml",
+        "kubeplus.git/examples/multitenancy/team/teamchart/Chart.yaml",
+        "kubeplus.git/examples/resource-composition/mysqlcluster/Chart.yaml",
+        "kubeplus.git/platform-operator/helm-pod/cloudark-helm-charts-index.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 21,
+      "rootCount": 0,
+      "subFolderCount": 21,
+      "filepaths": [
+        "kubeplus.git/deploy/kubeplus.clusterserviceversion.yaml",
+        "kubeplus.git/deploy/redhat-certification-artifacts/bundle/manifests/kubeplus.v1.0.5.clusterserviceversion.yaml",
+        "kubeplus.git/deploy/redhat-certification-artifacts/bundle/manifests/kubeplus.v1.0.6.clusterserviceversion.yaml",
+        "kubeplus.git/examples/cert-management/working-config/service1.yaml",
+        "kubeplus.git/examples/multitenancy/hello-world/hello-world-service-composition.yaml",
+        "kubeplus.git/examples/multitenancy/mongodb-as-a-service/mongodbservicetenant.yaml",
+        "kubeplus.git/examples/multitenancy/stacks/mysqlservicetenant.yaml",
+        "kubeplus.git/examples/multitenancy/team/tenantservice.yaml",
+        "kubeplus.git/examples/multitenancy/wordpress/wordpress-service-composition.yaml",
+        "kubeplus.git/examples/resource-composition/myservice1.yaml",
+        "kubeplus.git/examples/resource-composition/myservice2.yaml",
+        "kubeplus.git/examples/resource-composition/mysqlserviceapi.yaml",
+        "kubeplus.git/examples/wordpress-deployment/mysql-deployment.yaml",
+        "kubeplus.git/examples/wordpress-deployment/wordpress-deployment.yaml",
+        "kubeplus.git/examples/wordpress-mysqlcluster/wordpress-service.yaml",
+        "kubeplus.git/mutating-webhook/deployment/deployment.yaml",
+        "kubeplus.git/mutating-webhook/deployment/service.yaml",
+        "kubeplus.git/mutating-webhook-helper/deployment-1.yaml",
+        "kubeplus.git/mutating-webhook-helper/deployment.yaml",
+        "kubeplus.git/platform-operator/artifacts/deployment/deployment.yaml",
+        "kubeplus.git/platform-operator/artifacts/deployment/deployment.yaml.1"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

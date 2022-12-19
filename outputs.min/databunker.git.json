@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "databunker.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -17,6 +15,53 @@
       "filepaths": [
         "databunker.git/docker-compose-mysql.yml",
         "databunker.git/docker-compose-pgsql.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "databunker.git/charts/databunker/Chart.yaml",
+        "databunker.git/charts/databunker-demo/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "databunker.git/charts/databunker/templates/deployment.yaml",
+        "databunker.git/charts/databunker-demo/templates/deployment.yaml",
+        "databunker.git/charts/databunker-demo/templates/service.yaml",
+        "databunker.git/charts/databunker-demo/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "databunker.git/terraform/aws/main.tf",
+        "databunker.git/terraform/aws/rds.tf",
+        "databunker.git/terraform/aws/variables.tf"
       ]
     }
   },

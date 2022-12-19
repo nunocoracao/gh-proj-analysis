@@ -2,28 +2,14 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 18,
-      "rootCount": 1,
-      "subFolderCount": 17,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
       "filepaths": [
-        "buildkit.git/Dockerfile",
-        "buildkit.git/docs/dev/dockerfile-llb.md",
-        "buildkit.git/examples/build-using-dockerfile",
-        "buildkit.git/examples/dockerfile2llb",
-        "buildkit.git/frontend/dockerfile",
-        "buildkit.git/hack/dockerfiles",
-        "buildkit.git/hack/azblob_test/Dockerfile",
-        "buildkit.git/hack/azblob_test/test1/Dockerfile",
-        "buildkit.git/hack/azblob_test/test2/Dockerfile",
-        "buildkit.git/hack/s3_test/Dockerfile",
-        "buildkit.git/hack/s3_test/test1/Dockerfile",
-        "buildkit.git/hack/s3_test/test2/Dockerfile",
-        "buildkit.git/util/archutil/Dockerfile",
-        "buildkit.git/vendor/github.com/containerd/fuse-overlayfs-snapshotter/Dockerfile",
-        "buildkit.git/vendor/github.com/pelletier/go-toml/Dockerfile",
-        "buildkit.git/vendor/github.com/tonistiigi/fsutil/Dockerfile",
-        "buildkit.git/vendor/github.com/tonistiigi/go-archvariant/Dockerfile",
-        "buildkit.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "buildkit.git/hack/dockerfiles/generated-files.Dockerfile",
+        "buildkit.git/hack/dockerfiles/lint.Dockerfile",
+        "buildkit.git/hack/dockerfiles/shfmt.Dockerfile",
+        "buildkit.git/hack/dockerfiles/vendor.Dockerfile"
       ]
     },
     "composefile": {
@@ -32,6 +18,49 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "buildkit.git/examples/kubernetes/deployment+service.privileged.yaml",
+        "buildkit.git/examples/kubernetes/deployment+service.rootless.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "buildkit.git/hack/azblob_test/docker-bake.hcl",
+        "buildkit.git/hack/s3_test/docker-bake.hcl",
+        "buildkit.git/vendor/github.com/tonistiigi/fsutil/docker-bake.hcl",
+        "buildkit.git/vendor/github.com/tonistiigi/go-archvariant/docker-bake.hcl"
+      ]
     }
   },
   "info": {

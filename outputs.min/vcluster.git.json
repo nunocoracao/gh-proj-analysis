@@ -1,18 +1,88 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 2,
-      "subFolderCount": 2,
-      "filepaths": [
-        "vcluster.git/Dockerfile",
-        "vcluster.git/Dockerfile.cli",
-        "vcluster.git/vendor/github.com/nxadm/tail/Dockerfile",
-        "vcluster.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "vcluster.git/charts/eks/Chart.yaml",
+        "vcluster.git/charts/k0s/Chart.yaml",
+        "vcluster.git/charts/k3s/Chart.yaml",
+        "vcluster.git/charts/k8s/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 34,
+      "rootCount": 0,
+      "subFolderCount": 34,
+      "filepaths": [
+        "vcluster.git/charts/eks/templates/api-deployment.yaml",
+        "vcluster.git/charts/eks/templates/api-service.yaml",
+        "vcluster.git/charts/eks/templates/controller-deployment.yaml",
+        "vcluster.git/charts/eks/templates/etcd-service.yaml",
+        "vcluster.git/charts/eks/templates/etcd-statefulset-service.yaml",
+        "vcluster.git/charts/eks/templates/init-configmap.yaml",
+        "vcluster.git/charts/eks/templates/pre-install-hook-job-serviceaccount.yaml",
+        "vcluster.git/charts/eks/templates/serviceaccount.yaml",
+        "vcluster.git/charts/eks/templates/syncer-deployment.yaml",
+        "vcluster.git/charts/eks/templates/syncer-service.yaml",
+        "vcluster.git/charts/eks/templates/workloadserviceaccount.yaml",
+        "vcluster.git/charts/k0s/templates/init-configmap.yaml",
+        "vcluster.git/charts/k0s/templates/service.yaml",
+        "vcluster.git/charts/k0s/templates/serviceaccount.yaml",
+        "vcluster.git/charts/k0s/templates/statefulset-service.yaml",
+        "vcluster.git/charts/k0s/templates/workloadserviceaccount.yaml",
+        "vcluster.git/charts/k3s/templates/init-configmap.yaml",
+        "vcluster.git/charts/k3s/templates/service.yaml",
+        "vcluster.git/charts/k3s/templates/serviceaccount.yaml",
+        "vcluster.git/charts/k3s/templates/statefulset-service.yaml",
+        "vcluster.git/charts/k3s/templates/workloadserviceaccount.yaml",
+        "vcluster.git/charts/k8s/templates/api-deployment.yaml",
+        "vcluster.git/charts/k8s/templates/api-service.yaml",
+        "vcluster.git/charts/k8s/templates/controller-deployment.yaml",
+        "vcluster.git/charts/k8s/templates/etcd-service.yaml",
+        "vcluster.git/charts/k8s/templates/etcd-statefulset-service.yaml",
+        "vcluster.git/charts/k8s/templates/init-configmap.yaml",
+        "vcluster.git/charts/k8s/templates/pre-install-hook-job-serviceaccount.yaml",
+        "vcluster.git/charts/k8s/templates/scheduler-deployment.yaml",
+        "vcluster.git/charts/k8s/templates/serviceaccount.yaml",
+        "vcluster.git/charts/k8s/templates/syncer-deployment.yaml",
+        "vcluster.git/charts/k8s/templates/syncer-service.yaml",
+        "vcluster.git/charts/k8s/templates/workloadserviceaccount.yaml",
+        "vcluster.git/hack/wrong-cluster-ip-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

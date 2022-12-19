@@ -2,16 +2,75 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 3,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 3,
+      "subFolderCount": 1,
       "filepaths": [
-        "stock-analysis-engine.git/docker/Dockerfile",
-        "stock-analysis-engine.git/docker/base_Dockerfile",
-        "stock-analysis-engine.git/docker/jupyter/Dockerfile"
+        "stock-analysis-engine.git/docker/base_Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "stock-analysis-engine.git/helm/ae/Chart.yaml",
+        "stock-analysis-engine.git/helm/ae-backup/Chart.yaml",
+        "stock-analysis-engine.git/helm/ae-daily/Chart.yaml",
+        "stock-analysis-engine.git/helm/ae-intraday/Chart.yaml",
+        "stock-analysis-engine.git/helm/ae-jupyter/Chart.yaml",
+        "stock-analysis-engine.git/helm/ae-restore/Chart.yaml",
+        "stock-analysis-engine.git/helm/ae-weekly/Chart.yaml",
+        "stock-analysis-engine.git/helm/grafana/Chart.yaml",
+        "stock-analysis-engine.git/helm/minio/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "stock-analysis-engine.git/helm/ae-jupyter/templates/service.yml",
+        "stock-analysis-engine.git/helm/grafana/templates/configmap-dashboard-provider.yaml",
+        "stock-analysis-engine.git/helm/grafana/templates/configmap.yaml",
+        "stock-analysis-engine.git/helm/grafana/templates/dashboards-json-configmap.yaml",
+        "stock-analysis-engine.git/helm/grafana/templates/deployment.yaml",
+        "stock-analysis-engine.git/helm/grafana/templates/service.yaml",
+        "stock-analysis-engine.git/helm/grafana/templates/serviceaccount.yaml",
+        "stock-analysis-engine.git/helm/minio/templates/configmap.yaml",
+        "stock-analysis-engine.git/helm/minio/templates/deployment.yaml",
+        "stock-analysis-engine.git/helm/minio/templates/service.yaml",
+        "stock-analysis-engine.git/k8/engine/deployment-splunk.yml",
+        "stock-analysis-engine.git/k8/engine/deployment.yml",
+        "stock-analysis-engine.git/k8/jupyter/deployment-splunk.yml",
+        "stock-analysis-engine.git/k8/jupyter/deployment.yml",
+        "stock-analysis-engine.git/k8/jupyter/service.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

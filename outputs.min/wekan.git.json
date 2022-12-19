@@ -2,15 +2,12 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 5,
-      "rootCount": 4,
-      "subFolderCount": 1,
+      "count": 2,
+      "rootCount": 2,
+      "subFolderCount": 0,
       "filepaths": [
         "wekan.git/.gitpod.Dockerfile",
-        "wekan.git/Dockerfile",
-        "wekan.git/Dockerfile.arm64v8",
-        "wekan.git/wekan-dockerfile-manifest.yaml",
-        "wekan.git/.devcontainer/Dockerfile"
+        "wekan.git/wekan-dockerfile-manifest.yaml"
       ]
     },
     "composefile": {
@@ -23,6 +20,47 @@
         "wekan.git/.devcontainer/docker-compose.yml",
         "wekan.git/torodb-postgresql/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "wekan.git/helm/wekan/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "wekan.git/helm/wekan/templates/deployment.yaml",
+        "wekan.git/helm/wekan/templates/service.yaml",
+        "wekan.git/helm/wekan/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

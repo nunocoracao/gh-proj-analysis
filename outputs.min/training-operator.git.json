@@ -1,35 +1,57 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 21,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 21,
-      "filepaths": [
-        "training-operator.git/build/images/training-operator/Dockerfile",
-        "training-operator.git/examples/mxnet/train/Dockerfile",
-        "training-operator.git/examples/mxnet/tune/Dockerfile",
-        "training-operator.git/examples/pytorch/elastic/echo/Dockerfile",
-        "training-operator.git/examples/pytorch/elastic/imagenet/Dockerfile",
-        "training-operator.git/examples/pytorch/mnist/Dockerfile",
-        "training-operator.git/examples/pytorch/mnist/Dockerfile-mpi",
-        "training-operator.git/examples/pytorch/mnist/Dockerfile.ppc64le",
-        "training-operator.git/examples/pytorch/pytorch_cuda_docker/Dockerfile",
-        "training-operator.git/examples/pytorch/smoke-dist/Dockerfile",
-        "training-operator.git/examples/tensorflow/dist-mnist/Dockerfile",
-        "training-operator.git/examples/tensorflow/dist-mnist/Dockerfile.ppc64le",
-        "training-operator.git/examples/tensorflow/distribution_strategy/estimator-API/Dockerfile",
-        "training-operator.git/examples/tensorflow/distribution_strategy/keras-API/Dockerfile",
-        "training-operator.git/examples/tensorflow/mnist_with_summaries/Dockerfile",
-        "training-operator.git/examples/tensorflow/mnist_with_summaries/Dockerfile.ppc64le",
-        "training-operator.git/examples/tensorflow/tf_sample/Dockerfile",
-        "training-operator.git/examples/xgboost/lightgbm-dist/Dockerfile",
-        "training-operator.git/examples/xgboost/smoke-dist/Dockerfile",
-        "training-operator.git/examples/xgboost/xgboost-dist/Dockerfile",
-        "training-operator.git/test/test-server/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "training-operator.git/manifests/base/kustomization.yaml",
+        "training-operator.git/manifests/base/crds/kustomization.yaml",
+        "training-operator.git/manifests/overlays/kubeflow/kustomization.yaml",
+        "training-operator.git/manifests/overlays/standalone/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "training-operator.git/manifests/base/deployment.yaml",
+        "training-operator.git/manifests/base/service-account.yaml",
+        "training-operator.git/manifests/base/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

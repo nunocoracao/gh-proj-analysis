@@ -2,19 +2,72 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 6,
-      "rootCount": 5,
-      "subFolderCount": 1,
+      "count": 1,
+      "rootCount": 1,
+      "subFolderCount": 0,
       "filepaths": [
-        "bank-vaults.git/.gitpod.Dockerfile",
-        "bank-vaults.git/Dockerfile",
-        "bank-vaults.git/Dockerfile.operator",
-        "bank-vaults.git/Dockerfile.vault-env",
-        "bank-vaults.git/Dockerfile.webhook",
-        "bank-vaults.git/hack/Dockerfile.fluentd"
+        "bank-vaults.git/.gitpod.Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "bank-vaults.git/charts/vault/Chart.yaml",
+        "bank-vaults.git/charts/vault-operator/Chart.yaml",
+        "bank-vaults.git/charts/vault-secrets-webhook/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "bank-vaults.git/charts/vault/templates/configmap.yaml",
+        "bank-vaults.git/charts/vault/templates/prometheus-monitorservice.yaml",
+        "bank-vaults.git/charts/vault/templates/service-headless.yaml",
+        "bank-vaults.git/charts/vault/templates/service.yaml",
+        "bank-vaults.git/charts/vault/templates/serviceaccount.yaml",
+        "bank-vaults.git/charts/vault-operator/templates/deployment.yaml",
+        "bank-vaults.git/charts/vault-operator/templates/service.yaml",
+        "bank-vaults.git/charts/vault-operator/templates/servicemonitor.yaml",
+        "bank-vaults.git/charts/vault-secrets-webhook/templates/apiservice-webhook.yaml",
+        "bank-vaults.git/charts/vault-secrets-webhook/templates/prometheus-monitorservice.yaml",
+        "bank-vaults.git/charts/vault-secrets-webhook/templates/webhook-deployment.yaml",
+        "bank-vaults.git/charts/vault-secrets-webhook/templates/webhook-service.yaml",
+        "bank-vaults.git/deploy/test-configmap.yaml",
+        "bank-vaults.git/deploy/test-deployment-env-from.yaml",
+        "bank-vaults.git/deploy/test-deployment-gcp.yaml",
+        "bank-vaults.git/deploy/test-deployment-seccontext.yaml",
+        "bank-vaults.git/deploy/test-deployment.yaml",
+        "bank-vaults.git/deploy/test-external-secrets-watch-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

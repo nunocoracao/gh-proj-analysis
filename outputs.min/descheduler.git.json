@@ -1,18 +1,63 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 2,
-      "subFolderCount": 2,
-      "filepaths": [
-        "descheduler.git/Dockerfile",
-        "descheduler.git/Dockerfile.dev",
-        "descheduler.git/vendor/github.com/client9/misspell/Dockerfile",
-        "descheduler.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "descheduler.git/kubernetes/base/kustomization.yaml",
+        "descheduler.git/kubernetes/cronjob/kustomization.yaml",
+        "descheduler.git/kubernetes/deployment/kustomization.yaml",
+        "descheduler.git/kubernetes/job/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "descheduler.git/charts/descheduler/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "descheduler.git/charts/descheduler/templates/configmap.yaml",
+        "descheduler.git/charts/descheduler/templates/deployment.yaml",
+        "descheduler.git/charts/descheduler/templates/service.yaml",
+        "descheduler.git/charts/descheduler/templates/serviceaccount.yaml",
+        "descheduler.git/charts/descheduler/templates/servicemonitor.yaml",
+        "descheduler.git/kubernetes/base/configmap.yaml",
+        "descheduler.git/kubernetes/deployment/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

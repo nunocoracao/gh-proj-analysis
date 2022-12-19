@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "orbit.git/docker/server/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -17,6 +15,51 @@
       "filepaths": [
         "orbit.git/docker/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "orbit.git/charts/orbit/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "orbit.git/charts/orbit/templates/addressable-directory-deployment.yaml",
+        "orbit.git/charts/orbit/templates/addressable-directory-service.yaml",
+        "orbit.git/charts/orbit/templates/configmap.yaml",
+        "orbit.git/charts/orbit/templates/node-directory-deployment.yaml",
+        "orbit.git/charts/orbit/templates/node-directory-service.yaml",
+        "orbit.git/charts/orbit/templates/server-deployment.yaml",
+        "orbit.git/charts/orbit/templates/server-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

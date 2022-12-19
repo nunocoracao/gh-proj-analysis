@@ -1,28 +1,63 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 14,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 14,
-      "filepaths": [
-        "cloud-provider-openstack.git/cluster/images/barbican-kms-plugin/Dockerfile",
-        "cloud-provider-openstack.git/cluster/images/barbican-kms-plugin/Dockerfile.build",
-        "cloud-provider-openstack.git/cluster/images/cinder-csi-plugin/Dockerfile",
-        "cloud-provider-openstack.git/cluster/images/cinder-csi-plugin/Dockerfile.build",
-        "cloud-provider-openstack.git/cluster/images/k8s-keystone-auth/Dockerfile",
-        "cloud-provider-openstack.git/cluster/images/k8s-keystone-auth/Dockerfile.build",
-        "cloud-provider-openstack.git/cluster/images/magnum-auto-healer/Dockerfile",
-        "cloud-provider-openstack.git/cluster/images/magnum-auto-healer/Dockerfile.build",
-        "cloud-provider-openstack.git/cluster/images/manila-csi-plugin/Dockerfile",
-        "cloud-provider-openstack.git/cluster/images/manila-csi-plugin/Dockerfile.build",
-        "cloud-provider-openstack.git/cluster/images/octavia-ingress-controller/Dockerfile",
-        "cloud-provider-openstack.git/cluster/images/octavia-ingress-controller/Dockerfile.build",
-        "cloud-provider-openstack.git/cluster/images/openstack-cloud-controller-manager/Dockerfile",
-        "cloud-provider-openstack.git/cluster/images/openstack-cloud-controller-manager/Dockerfile.build"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "cloud-provider-openstack.git/charts/cinder-csi-plugin/Chart.yaml",
+        "cloud-provider-openstack.git/charts/manila-csi-plugin/Chart.yaml",
+        "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "cloud-provider-openstack.git/charts/cinder-csi-plugin/templates/controllerplugin-deployment.yaml",
+        "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/controllerplugin-service.yaml",
+        "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/controllerplugin-serviceaccount.yaml",
+        "cloud-provider-openstack.git/charts/manila-csi-plugin/templates/nodeplugin-serviceaccount.yaml",
+        "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates/service-sm.yaml",
+        "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates/serviceaccount.yaml",
+        "cloud-provider-openstack.git/charts/openstack-cloud-controller-manager/templates/servicemonitor.yaml",
+        "cloud-provider-openstack.git/examples/webhook/keystone-deployment.yaml",
+        "cloud-provider-openstack.git/examples/webhook/keystone-policy-configmap.yaml",
+        "cloud-provider-openstack.git/examples/webhook/keystone-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

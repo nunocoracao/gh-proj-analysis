@@ -1,15 +1,60 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "kiam.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kiam.git/helm/kiam/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "kiam.git/deploy/server.deployment.yaml",
+        "kiam.git/deploy/service.yaml",
+        "kiam.git/helm/kiam/templates/agent-service.yaml",
+        "kiam.git/helm/kiam/templates/agent-serviceaccount.yaml",
+        "kiam.git/helm/kiam/templates/agent-servicemonitor.yaml",
+        "kiam.git/helm/kiam/templates/server-deployment.yaml",
+        "kiam.git/helm/kiam/templates/server-service.yaml",
+        "kiam.git/helm/kiam/templates/server-serviceaccount.yaml",
+        "kiam.git/helm/kiam/templates/server-servicemonitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

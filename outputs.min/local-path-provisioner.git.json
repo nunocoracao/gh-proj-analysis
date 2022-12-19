@@ -1,18 +1,70 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 1,
-      "subFolderCount": 3,
-      "filepaths": [
-        "local-path-provisioner.git/Dockerfile.dapper",
-        "local-path-provisioner.git/examples/quota/Dockerfile",
-        "local-path-provisioner.git/package/Dockerfile",
-        "local-path-provisioner.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 14,
+      "rootCount": 0,
+      "subFolderCount": 14,
+      "filepaths": [
+        "local-path-provisioner.git/deploy/kustomization.yaml",
+        "local-path-provisioner.git/examples/pod/kustomization.yaml",
+        "local-path-provisioner.git/examples/pod-with-local-volume/kustomization.yaml",
+        "local-path-provisioner.git/examples/pod-with-node-affinity/kustomization.yaml",
+        "local-path-provisioner.git/examples/pod-with-security-context/kustomization.yaml",
+        "local-path-provisioner.git/examples/pod-with-subpath/kustomization.yaml",
+        "local-path-provisioner.git/examples/pvc/kustomization.yaml",
+        "local-path-provisioner.git/examples/pvc-with-local-volume/kustomization.yaml",
+        "local-path-provisioner.git/examples/quota/kustomization.yaml",
+        "local-path-provisioner.git/test/testdata/pod/kustomization.yaml",
+        "local-path-provisioner.git/test/testdata/pod-with-local-volume/kustomization.yaml",
+        "local-path-provisioner.git/test/testdata/pod-with-node-affinity/kustomization.yaml",
+        "local-path-provisioner.git/test/testdata/pod-with-security-context/kustomization.yaml",
+        "local-path-provisioner.git/test/testdata/pod-with-subpath/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "local-path-provisioner.git/deploy/chart/local-path-provisioner/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "local-path-provisioner.git/deploy/chart/local-path-provisioner/templates/configmap.yaml",
+        "local-path-provisioner.git/deploy/chart/local-path-provisioner/templates/deployment.yaml",
+        "local-path-provisioner.git/deploy/chart/local-path-provisioner/templates/serviceaccount.yaml",
+        "local-path-provisioner.git/examples/shared-fs/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

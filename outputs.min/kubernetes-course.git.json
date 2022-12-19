@@ -1,16 +1,72 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "kubernetes-course.git/mutatingwebhook/Dockerfile",
-        "kubernetes-course.git/skaffold-demo/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kubernetes-course.git/helm/demo-chart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 21,
+      "rootCount": 0,
+      "subFolderCount": 21,
+      "filepaths": [
+        "kubernetes-course.git/configmap/nginx-service.yml",
+        "kubernetes-course.git/elb-tls/helloworld-service.yml",
+        "kubernetes-course.git/external-dns/service-l4.yaml",
+        "kubernetes-course.git/first-app/helloworld-nodeport-service.yml",
+        "kubernetes-course.git/first-app/helloworld-service.yml",
+        "kubernetes-course.git/helm/demo-chart/templates/deployment.yaml",
+        "kubernetes-course.git/helm/demo-chart/templates/service.yaml",
+        "kubernetes-course.git/helm/jenkins/serviceaccount.yaml",
+        "kubernetes-course.git/ingress/echoservice.yml",
+        "kubernetes-course.git/istio/external-service.yaml",
+        "kubernetes-course.git/metrics-server/metrics-apiservice.yaml",
+        "kubernetes-course.git/metrics-server/metrics-server-deployment.yaml",
+        "kubernetes-course.git/metrics-server/metrics-server-service.yaml",
+        "kubernetes-course.git/pod-presets/deployments.yaml",
+        "kubernetes-course.git/pod-security-policies/serviceaccount.yml",
+        "kubernetes-course.git/service-discovery/database-service.yml",
+        "kubernetes-course.git/service-discovery/helloworld-db-service.yml",
+        "kubernetes-course.git/wordpress/wordpress-service.yml",
+        "kubernetes-course.git/wordpress/wordpress-single-deployment-no-volumes.yml",
+        "kubernetes-course.git/wordpress-volumes/wordpress-db-service.yml",
+        "kubernetes-course.git/wordpress-volumes/wordpress-web-service.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

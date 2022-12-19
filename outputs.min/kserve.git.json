@@ -2,26 +2,17 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 32,
-      "rootCount": 3,
-      "subFolderCount": 29,
+      "count": 22,
+      "rootCount": 2,
+      "subFolderCount": 20,
       "filepaths": [
-        "kserve.git/Dockerfile",
         "kserve.git/agent.Dockerfile",
         "kserve.git/router.Dockerfile",
-        "kserve.git/docs/apis/Dockerfile",
-        "kserve.git/docs/samples/explanation/aif/germancredit/server/Dockerfile",
         "kserve.git/docs/samples/explanation/aix/mnist/rfserver/rf.Dockerfile",
-        "kserve.git/docs/samples/graph/bgtest/Dockerfile",
         "kserve.git/docs/samples/kafka/transformer.Dockerfile",
-        "kserve.git/docs/samples/v1beta1/custom/paddleserving/Dockerfile",
-        "kserve.git/docs/samples/v1beta1/custom/torchserve/torchserve-image/Dockerfile",
-        "kserve.git/docs/samples/v1beta1/torchserve/model-archiver/model-archiver-image/Dockerfile",
         "kserve.git/docs/samples/v1beta1/transformer/feast/driver_transformer.Dockerfile",
         "kserve.git/docs/samples/v1beta1/transformer/torchserve_image_transformer/transformer.Dockerfile",
-        "kserve.git/docs/samples/v1beta1/triton/bert/bert_tokenizer_v2/Dockerfile",
         "kserve.git/docs/samples/v1beta1/triton/torchscript/transformer.Dockerfile",
-        "kserve.git/hack/kserve_migration/Dockerfile",
         "kserve.git/python/aiffairness.Dockerfile",
         "kserve.git/python/aixexplainer.Dockerfile",
         "kserve.git/python/alibiexplainer.Dockerfile",
@@ -36,11 +27,91 @@
         "kserve.git/python/sklearn.Dockerfile",
         "kserve.git/python/storage-initializer.Dockerfile",
         "kserve.git/python/xgb.Dockerfile",
-        "kserve.git/qpext/qpext.Dockerfile",
-        "kserve.git/tools/tf2openapi/Dockerfile"
+        "kserve.git/qpext/qpext.Dockerfile"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "kserve.git/config/certmanager/kustomization.yaml",
+        "kserve.git/config/configmap/kustomization.yaml",
+        "kserve.git/config/crd/kustomization.yaml",
+        "kserve.git/config/default/kustomization.yaml",
+        "kserve.git/config/manager/kustomization.yaml",
+        "kserve.git/config/overlays/dev-image-config/kustomization.yaml",
+        "kserve.git/config/overlays/development/kustomization.yaml",
+        "kserve.git/config/overlays/kubeflow/kustomization.yaml",
+        "kserve.git/config/overlays/test/kustomization.yaml",
+        "kserve.git/config/overlays/test/minio/kustomization.yaml",
+        "kserve.git/config/overlays/test/runtimes/kustomization.yaml",
+        "kserve.git/config/rbac/kustomization.yaml",
+        "kserve.git/config/runtimes/kustomization.yaml",
+        "kserve.git/config/webhook/kustomization.yaml",
+        "kserve.git/docs/samples/metrics-and-monitoring/prometheus/kustomization.yaml",
+        "kserve.git/docs/samples/metrics-and-monitoring/prometheus-operator/kustomization.yaml",
+        "kserve.git/test/overlays/istio/kustomization.yaml",
+        "kserve.git/test/overlays/knative/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "kserve.git/charts/kserve-crd/Chart.yaml",
+        "kserve.git/charts/kserve-resources/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 23,
+      "rootCount": 0,
+      "subFolderCount": 23,
+      "filepaths": [
+        "kserve.git/charts/kserve-crd/templates/serving.kserve.io_inferenceservices.yaml",
+        "kserve.git/charts/kserve-resources/templates/configmap.yaml",
+        "kserve.git/charts/kserve-resources/templates/deployment.yaml",
+        "kserve.git/charts/kserve-resources/templates/service.yaml",
+        "kserve.git/charts/kserve-resources/templates/serviceaccount.yaml",
+        "kserve.git/config/configmap/inferenceservice.yaml",
+        "kserve.git/config/crd/serving.kserve.io_inferenceservices.yaml",
+        "kserve.git/config/default/inferenceservice_conversion_webhook.yaml",
+        "kserve.git/config/manager/service.yaml",
+        "kserve.git/config/overlays/test/configmap/inferenceservice.yaml",
+        "kserve.git/config/overlays/test/minio/minio-deployment.yaml",
+        "kserve.git/config/overlays/test/minio/minio-service.yaml",
+        "kserve.git/config/rbac/auth_proxy_service.yaml",
+        "kserve.git/config/rbac/service_account.yaml",
+        "kserve.git/config/webhook/service.yaml",
+        "kserve.git/docs/samples/gcp-iap/virtual-service.yaml",
+        "kserve.git/docs/samples/metrics-and-monitoring/prometheus/kfserving-service-monitor.yaml",
+        "kserve.git/docs/samples/metrics-and-monitoring/prometheus/serviceaccount.yaml",
+        "kserve.git/docs/samples/multimodelserving/sklearn/inferenceservice.yaml",
+        "kserve.git/docs/samples/v1beta1/spark/deployment.yaml",
+        "kserve.git/test/crds/istio_virtualservice.yaml",
+        "kserve.git/test/crds/knative_service.yaml",
+        "kserve.git/test/crds/serving.kserve.io_inferenceservices.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

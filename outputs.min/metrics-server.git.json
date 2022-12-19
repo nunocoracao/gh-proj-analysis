@@ -1,15 +1,73 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "metrics-server.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "metrics-server.git/manifests/base/kustomization.yaml",
+        "metrics-server.git/manifests/components/autoscale/kustomization.yaml",
+        "metrics-server.git/manifests/components/high-availability/kustomization.yaml",
+        "metrics-server.git/manifests/components/high-availability-1.21+/kustomization.yaml",
+        "metrics-server.git/manifests/components/release/kustomization.yaml",
+        "metrics-server.git/manifests/components/test/kustomization.yaml",
+        "metrics-server.git/manifests/overlays/release/kustomization.yaml",
+        "metrics-server.git/manifests/overlays/release-ha/kustomization.yaml",
+        "metrics-server.git/manifests/overlays/release-ha-1.21+/kustomization.yaml",
+        "metrics-server.git/manifests/overlays/test/kustomization.yaml",
+        "metrics-server.git/manifests/overlays/test-ha/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "metrics-server.git/.github/workflows/lint-test-chart.yaml",
+        "metrics-server.git/.github/workflows/release-chart.yaml",
+        "metrics-server.git/charts/metrics-server/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "metrics-server.git/charts/metrics-server/templates/apiservice.yaml",
+        "metrics-server.git/charts/metrics-server/templates/deployment.yaml",
+        "metrics-server.git/charts/metrics-server/templates/service.yaml",
+        "metrics-server.git/charts/metrics-server/templates/serviceaccount.yaml",
+        "metrics-server.git/charts/metrics-server/templates/servicemonitor.yaml",
+        "metrics-server.git/manifests/base/apiservice.yaml",
+        "metrics-server.git/manifests/base/deployment.yaml",
+        "metrics-server.git/manifests/base/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

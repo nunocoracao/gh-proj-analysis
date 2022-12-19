@@ -2,11 +2,10 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 3,
-      "rootCount": 3,
+      "count": 2,
+      "rootCount": 2,
       "subFolderCount": 0,
       "filepaths": [
-        "tf-controller.git/Dockerfile",
         "tf-controller.git/runner-azure.Dockerfile",
         "tf-controller.git/runner.Dockerfile"
       ]
@@ -17,6 +16,64 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "tf-controller.git/config/crd/kustomization.yaml",
+        "tf-controller.git/config/default/kustomization.yaml",
+        "tf-controller.git/config/manager/kustomization.yaml",
+        "tf-controller.git/config/package/kustomization.yaml",
+        "tf-controller.git/config/rbac/kustomization.yaml",
+        "tf-controller.git/config/testdata/multi-tenancy/base/kustomization.yaml",
+        "tf-controller.git/config/testdata/multi-tenancy/tenant01/kustomization.yaml",
+        "tf-controller.git/config/testdata/multi-tenancy/tenant01/dev/kustomization.yaml",
+        "tf-controller.git/config/testdata/multi-tenancy/tenant01/prd/kustomization.yaml",
+        "tf-controller.git/config/testdata/multi-tenancy/tenant02/kustomization.yaml",
+        "tf-controller.git/config/testdata/multi-tenancy/tenant02/dev/kustomization.yaml",
+        "tf-controller.git/config/testdata/multi-tenancy/tenant02/prd/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "tf-controller.git/charts/tf-controller/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "tf-controller.git/charts/tf-controller/templates/controller-serviceaccount.yaml",
+        "tf-controller.git/charts/tf-controller/templates/deployment.yaml",
+        "tf-controller.git/charts/tf-controller/templates/runner-serviceaccount.yaml",
+        "tf-controller.git/charts/tf-controller/templates/servicemonitor.yaml",
+        "tf-controller.git/config/rbac/service_account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "tf-controller.git/tfctl/testdata/main.tf"
+      ]
     }
   },
   "info": {

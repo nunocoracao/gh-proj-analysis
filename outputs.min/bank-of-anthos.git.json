@@ -1,18 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 6,
-      "filepaths": [
-        "bank-of-anthos.git/src/accounts-db/Dockerfile",
-        "bank-of-anthos.git/src/contacts/Dockerfile",
-        "bank-of-anthos.git/src/frontend/Dockerfile",
-        "bank-of-anthos.git/src/ledger-db/Dockerfile",
-        "bank-of-anthos.git/src/loadgenerator/Dockerfile",
-        "bank-of-anthos.git/src/userservice/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -20,6 +13,85 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "bank-of-anthos.git/iac/acm-multienv-cicd-anthos-autopilot/base/kustomization.yaml",
+        "bank-of-anthos.git/iac/acm-multienv-cicd-anthos-autopilot/overlays/development/kustomization.yaml",
+        "bank-of-anthos.git/iac/acm-multienv-cicd-anthos-autopilot/overlays/production/kustomization.yaml",
+        "bank-of-anthos.git/iac/acm-multienv-cicd-anthos-autopilot/overlays/staging/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "bank-of-anthos.git/.github/prod-cluster/frontend-service.yaml",
+        "bank-of-anthos.git/dev-kubernetes-manifests/userservice.yaml",
+        "bank-of-anthos.git/extras/asm-multicluster/services-all.yaml",
+        "bank-of-anthos.git/extras/cloudsql/kubernetes-manifests/userservice.yaml",
+        "bank-of-anthos.git/extras/tls-ip-selfsigned/frontend-service.yaml",
+        "bank-of-anthos.git/iac/acm-multienv-cicd-anthos-autopilot/overlays/production/configmap.yaml",
+        "bank-of-anthos.git/iac/acm-multienv-cicd-anthos-autopilot/overlays/staging/configmap.yaml",
+        "bank-of-anthos.git/kubernetes-manifests/userservice.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 29,
+      "rootCount": 0,
+      "subFolderCount": 29,
+      "filepaths": [
+        "bank-of-anthos.git/iac/tf-anthos-gke/acm.tf",
+        "bank-of-anthos.git/iac/tf-anthos-gke/asm.tf",
+        "bank-of-anthos.git/iac/tf-anthos-gke/boa.tf",
+        "bank-of-anthos.git/iac/tf-anthos-gke/gke.tf",
+        "bank-of-anthos.git/iac/tf-anthos-gke/main.tf",
+        "bank-of-anthos.git/iac/tf-anthos-gke/outputs.tf",
+        "bank-of-anthos.git/iac/tf-anthos-gke/providers.tf",
+        "bank-of-anthos.git/iac/tf-anthos-gke/terraform.tfvars",
+        "bank-of-anthos.git/iac/tf-anthos-gke/variables.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/apis.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/artifact-registry.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/env-development.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/env-production.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/env-staging.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/fleet-features.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/locals.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/main.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/network.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/pipelines.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/project-iam-bindings.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/terraform.tfvars",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/variables.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/modules/ci-cd-pipeline/cloud-build-trigger.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/modules/ci-cd-pipeline/cloud-deploy.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/modules/ci-cd-pipeline/cloud-storage.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/modules/ci-cd-pipeline/locals.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/modules/ci-cd-pipeline/outputs.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/modules/ci-cd-pipeline/service-accounts.tf",
+        "bank-of-anthos.git/iac/tf-multienv-cicd-anthos-autopilot/modules/ci-cd-pipeline/variables.tf"
+      ]
     }
   },
   "info": {

@@ -2,16 +2,13 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 6,
+      "count": 3,
       "rootCount": 0,
-      "subFolderCount": 6,
+      "subFolderCount": 3,
       "filepaths": [
         "mindsdb.git/docker/db_handler.Dockerfile",
         "mindsdb.git/docker/mindsdb.Dockerfile",
-        "mindsdb.git/docker/ml_handler.Dockerfile",
-        "mindsdb.git/docker/db_images/mariadb/Dockerfile",
-        "mindsdb.git/docker/db_images/mysql/Dockerfile",
-        "mindsdb.git/docker/db_images/postgres/Dockerfile"
+        "mindsdb.git/docker/ml_handler.Dockerfile"
       ]
     },
     "composefile": {
@@ -23,6 +20,49 @@
         "mindsdb.git/docker/docker-compose-old-manner.yml",
         "mindsdb.git/docker/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "mindsdb.git/helm/mindsdb/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "mindsdb.git/helm/mindsdb/templates/deployment.yaml",
+        "mindsdb.git/helm/mindsdb/templates/http-service.yaml",
+        "mindsdb.git/helm/mindsdb/templates/mongodb-service.yaml",
+        "mindsdb.git/helm/mindsdb/templates/mysql-service.yaml",
+        "mindsdb.git/helm/mindsdb/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

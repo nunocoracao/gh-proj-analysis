@@ -1,17 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
-      "rootCount": 1,
-      "subFolderCount": 4,
-      "filepaths": [
-        "predictionio.git/Dockerfile",
-        "predictionio.git/docker/jupyter/Dockerfile",
-        "predictionio.git/docker/pio/Dockerfile",
-        "predictionio.git/tests/Dockerfile",
-        "predictionio.git/tests/Dockerfile.base"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -37,6 +31,49 @@
         "predictionio.git/docker/pgsql/docker-compose.model.yml",
         "predictionio.git/tests/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "predictionio.git/docker/charts/predictionio/Chart.yaml",
+        "predictionio.git/docker/charts/spark/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "predictionio.git/docker/charts/predictionio/templates/pio-deployment.yaml",
+        "predictionio.git/docker/charts/predictionio/templates/pio-service.yaml",
+        "predictionio.git/docker/charts/spark/templates/spark-master-deployment.yaml",
+        "predictionio.git/docker/charts/spark/templates/spark-worker-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

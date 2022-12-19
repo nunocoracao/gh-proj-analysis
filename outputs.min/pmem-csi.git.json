@@ -1,17 +1,103 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
-      "rootCount": 2,
-      "subFolderCount": 1,
-      "filepaths": [
-        "pmem-csi.git/Dockerfile",
-        "pmem-csi.git/Dockerfile.UBI",
-        "pmem-csi.git/build/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 48,
+      "rootCount": 0,
+      "subFolderCount": 48,
+      "filepaths": [
+        "pmem-csi.git/deploy/kubernetes-1.21/direct/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.21/direct/testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.21/lvm/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.21/lvm/testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.22/direct/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.22/direct/testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.22/lvm/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.22/lvm/testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.23/direct/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.23/direct/testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.23/lvm/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.23/lvm/testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.24/direct/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.24/direct/testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.24/lvm/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.24/lvm/testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.25/direct/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.25/direct/testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.25/lvm/kustomization.yaml",
+        "pmem-csi.git/deploy/kubernetes-1.25/lvm/testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/driver/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/kubernetes-base-direct/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/kubernetes-base-direct-coverage/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/kubernetes-base-direct-testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/kubernetes-base-direct-testing-coverage/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/kubernetes-base-fake/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/kubernetes-base-lvm/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/kubernetes-base-lvm-coverage/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/kubernetes-base-lvm-testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/kubernetes-base-lvm-testing-coverage/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/kubernetes-no-metrics/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/kubernetes-no-metrics/rbac/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/kubernetes-with-metrics/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/memcached/ephemeral/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/memcached/persistent/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/metrics-server/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/olm-catalog/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/operator/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/scheduler/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/storageclass/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/storageclass-ext4/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/storageclass-ext4-fileio/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/storageclass-late-binding/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/storageclass-xfs/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/storageclass-xfs-fileio/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/testing/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/vpa-for-pmem-csi/kustomization.yaml",
+        "pmem-csi.git/deploy/kustomize/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "pmem-csi.git/deploy/common/pmem-csi.intel.com_v1beta1_pmemcsideployment_cr.yaml",
+        "pmem-csi.git/deploy/crd/pmem-csi.intel.com_pmemcsideployments.yaml",
+        "pmem-csi.git/deploy/kustomize/olm-catalog/bases/pmem-csi-operator.clusterserviceversion.yaml",
+        "pmem-csi.git/deploy/kustomize/patches/delete-csi-provisioner-service-account-patch.yaml",
+        "pmem-csi.git/deploy/kustomize/webhook/webhook-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

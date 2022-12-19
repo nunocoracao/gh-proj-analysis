@@ -1,19 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 7,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 7,
-      "filepaths": [
-        "woodpecker.git/docker/Dockerfile.agent.alpine.multiarch",
-        "woodpecker.git/docker/Dockerfile.agent.multiarch",
-        "woodpecker.git/docker/Dockerfile.cli.alpine.multiarch",
-        "woodpecker.git/docker/Dockerfile.cli.multiarch",
-        "woodpecker.git/docker/Dockerfile.make",
-        "woodpecker.git/docker/Dockerfile.server.alpine.multiarch",
-        "woodpecker.git/docker/Dockerfile.server.multiarch"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -24,6 +16,51 @@
         "woodpecker.git/docker-compose.example.yml",
         "woodpecker.git/docker-compose.gitpod.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "woodpecker.git/charts/woodpecker-agent/Chart.yaml",
+        "woodpecker.git/charts/woodpecker-server/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "woodpecker.git/charts/woodpecker-agent/templates/deployment.yaml",
+        "woodpecker.git/charts/woodpecker-agent/templates/serviceaccount.yaml",
+        "woodpecker.git/charts/woodpecker-server/templates/deployment.yaml",
+        "woodpecker.git/charts/woodpecker-server/templates/service.yaml",
+        "woodpecker.git/charts/woodpecker-server/templates/serviceaccount.yaml",
+        "woodpecker.git/pipeline/schema/.woodpecker/test-service.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

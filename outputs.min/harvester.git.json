@@ -1,23 +1,66 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 9,
-      "rootCount": 1,
-      "subFolderCount": 8,
-      "filepaths": [
-        "harvester.git/Dockerfile.dapper",
-        "harvester.git/package/Dockerfile",
-        "harvester.git/package/Dockerfile.webhook",
-        "harvester.git/package/upgrade/Dockerfile",
-        "harvester.git/vendor/github.com/docker/distribution/Dockerfile",
-        "harvester.git/vendor/github.com/longhorn/backupstore/Dockerfile.dapper",
-        "harvester.git/vendor/github.com/pelletier/go-toml/Dockerfile",
-        "harvester.git/vendor/github.com/rubenv/sql-migrate/Dockerfile",
-        "harvester.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "harvester.git/deploy/charts/harvester/Chart.yaml",
+        "harvester.git/deploy/charts/harvester/dependency_charts/csi-snapshotter/Chart.yaml",
+        "harvester.git/deploy/charts/harvester/dependency_charts/kubevirt/Chart.yaml",
+        "harvester.git/deploy/charts/harvester/dependency_charts/kubevirt-operator/Chart.yaml",
+        "harvester.git/deploy/charts/harvester/dependency_charts/whereabouts/Chart.yaml",
+        "harvester.git/deploy/charts/harvester-crd/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "harvester.git/deploy/charts/harvester/dependency_charts/csi-snapshotter/templates/deployment.yaml",
+        "harvester.git/deploy/charts/harvester/dependency_charts/kubevirt-operator/templates/deployment.yaml",
+        "harvester.git/deploy/charts/harvester/dependency_charts/kubevirt-operator/templates/serviceaccount.yaml",
+        "harvester.git/deploy/charts/harvester/dependency_charts/whereabouts/templates/serviceaccount.yaml",
+        "harvester.git/deploy/charts/harvester/templates/configmap.yaml",
+        "harvester.git/deploy/charts/harvester/templates/deployment.yaml",
+        "harvester.git/deploy/charts/harvester/templates/longhorn-service-monitor.yaml",
+        "harvester.git/deploy/charts/harvester/templates/service.yaml",
+        "harvester.git/deploy/charts/harvester/templates/serviceaccount.yaml",
+        "harvester.git/vendor/github.com/openshift/api/operator/v1/0000_50_service-ca-operator_02_crd.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

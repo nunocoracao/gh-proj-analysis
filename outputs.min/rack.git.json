@@ -2,33 +2,13 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 23,
-      "rootCount": 2,
-      "subFolderCount": 21,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
       "filepaths": [
-        "rack.git/Dockerfile",
-        "rack.git/Dockerfile.arm",
-        "rack.git/cmd/build/Dockerfile",
-        "rack.git/examples/httpd/Dockerfile",
         "rack.git/examples/httpd/convox-dockerfile.yml",
-        "rack.git/examples/internal/Dockerfile",
-        "rack.git/pkg/build/testdata/httpd/Dockerfile",
-        "rack.git/pkg/build/testdata/httpd/Dockerfile2",
-        "rack.git/pkg/build/testdata/httpd-dev/Dockerfile",
-        "rack.git/pkg/cli/testdata/httpd/Dockerfile",
         "rack.git/pkg/cli/testdata/httpd/convox-dockerfile.yml",
-        "rack.git/pkg/manifest/testdata/api/Dockerfile",
-        "rack.git/pkg/manifest1/fixtures/Dockerfile",
-        "rack.git/pkg/manifest1/fixtures/Dockerfile-env-dir",
-        "rack.git/pkg/manifest1/fixtures/Dockerfile.dev",
-        "rack.git/pkg/manifest1/fixtures/Dockerfile.other",
-        "rack.git/pkg/manifest1/fixtures/Dockerfile.otherf",
-        "rack.git/pkg/manifest1/fixtures/double-dockerfile.yml",
-        "rack.git/pkg/manifest1/fixtures/dir-name-with-dots/foo.bar/Dockerfile",
-        "rack.git/pkg/manifest1/fixtures/other/Dockerfile",
-        "rack.git/pkg/start/testdata/httpd/Dockerfile",
-        "rack.git/pkg/start/testdata/httpd/Dockerfile2",
-        "rack.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "rack.git/pkg/manifest1/fixtures/double-dockerfile.yml"
       ]
     },
     "composefile": {
@@ -43,6 +23,45 @@
         "rack.git/pkg/manifest1/fixtures/docker-compose.invalid-cron-label.yml",
         "rack.git/pkg/manifest1/fixtures/dir-name-with-dots/foo.bar/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "rack.git/pkg/manifest1/fixtures/specific-service.yml",
+        "rack.git/pkg/manifest1/fixtures/underscore_service.yml",
+        "rack.git/provider/k8s/template/app/service.yml.tmpl"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

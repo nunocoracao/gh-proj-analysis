@@ -1,17 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
-      "rootCount": 2,
-      "subFolderCount": 3,
-      "filepaths": [
-        "wally.git/.ci-dockerfiles",
-        "wally.git/Dockerfile",
-        "wally.git/.release/centos-metrics_ui-docker/Dockerfile",
-        "wally.git/giles/sender/Dockerfile",
-        "wally.git/monitoring_hub/apps/metrics_reporter_ui/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -20,6 +14,52 @@
       "subFolderCount": 1,
       "filepaths": [
         "wally.git/orchestration/ansible/playbooks/roles/geerlingguy.docker/tasks/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "wally.git/orchestration/terraform/aws-cluster/cluster.tf",
+        "wally.git/orchestration/terraform/aws-cluster/outputs.tf",
+        "wally.git/orchestration/terraform/aws-cluster/terraform.tfstate.backup",
+        "wally.git/orchestration/terraform/aws-cluster/variables.tf",
+        "wally.git/orchestration/terraform/aws-vpc/outputs.tf",
+        "wally.git/orchestration/terraform/aws-vpc/variables.tf",
+        "wally.git/orchestration/terraform/aws-vpc/vpc.tf",
+        "wally.git/orchestration/terraform/packet-cluster/cluster.tf",
+        "wally.git/orchestration/terraform/packet-cluster/outputs.tf",
+        "wally.git/orchestration/terraform/packet-cluster/variables.tf"
       ]
     }
   },

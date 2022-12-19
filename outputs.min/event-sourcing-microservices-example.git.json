@@ -1,18 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
-      "rootCount": 1,
-      "subFolderCount": 5,
-      "filepaths": [
-        "event-sourcing-microservices-example.git/Dockerfile",
-        "event-sourcing-microservices-example.git/discovery-service/Dockerfile",
-        "event-sourcing-microservices-example.git/edge-service/Dockerfile",
-        "event-sourcing-microservices-example.git/friend-service/Dockerfile",
-        "event-sourcing-microservices-example.git/recommendation-service/Dockerfile",
-        "event-sourcing-microservices-example.git/user-service/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -23,6 +16,60 @@
         "event-sourcing-microservices-example.git/docker-compose.yml",
         "event-sourcing-microservices-example.git/deployment/docker/docker-compose-build.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "event-sourcing-microservices-example.git/deployment/helm/edge-service/Chart.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/friend-service/Chart.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/recommendation-service/Chart.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/social-network/Chart.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/user-service/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "event-sourcing-microservices-example.git/deployment/helm/edge-service/templates/deployment.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/edge-service/templates/service.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/edge-service/templates/serviceaccount.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/friend-service/templates/deployment.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/friend-service/templates/service.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/friend-service/templates/serviceaccount.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/recommendation-service/templates/deployment.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/recommendation-service/templates/service.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/recommendation-service/templates/serviceaccount.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/user-service/templates/deployment.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/user-service/templates/service.yaml",
+        "event-sourcing-microservices-example.git/deployment/helm/user-service/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

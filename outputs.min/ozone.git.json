@@ -1,16 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 4,
-      "filepaths": [
-        "ozone.git/hadoop-ozone/dev-support/docker/Dockerfile",
-        "ozone.git/hadoop-ozone/dist/src/main/compose/ozone-om-ha/Dockerfile",
-        "ozone.git/hadoop-ozone/dist/src/main/compose/ozonescripts/Dockerfile",
-        "ozone.git/hadoop-ozone/dist/src/main/docker/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -43,6 +38,114 @@
         "ozone.git/hadoop-ozone/dist/src/main/compose/upgrade/compose/non-ha/docker-compose.yaml",
         "ozone.git/hadoop-ozone/fault-injection-test/network-tests/src/test/compose/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/getting-started/kustomization.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/minikube/kustomization.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone/kustomization.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/kustomization.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-ha/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 66,
+      "rootCount": 0,
+      "subFolderCount": 66,
+      "filepaths": [
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/definitions/ozone/datanode-ss-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/definitions/ozone/om-ss-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/definitions/ozone/s3g-ss-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/definitions/ozone/scm-ss-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/definitions/prometheus/configmap.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/definitions/prometheus/deployment.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/definitions/prometheus/service-account.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/definitions/prometheus/service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/definitions/test-webserver/webserver-deployment.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/definitions/test-webserver/webserver-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/getting-started/config-configmap.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/getting-started/datanode-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/getting-started/datanode-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/getting-started/om-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/getting-started/om-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/getting-started/s3g-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/getting-started/s3g-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/getting-started/scm-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/getting-started/scm-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/getting-started/freon/freon-deployment.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/minikube/config-configmap.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/minikube/datanode-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/minikube/datanode-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/minikube/om-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/minikube/om-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/minikube/s3g-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/minikube/s3g-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/minikube/scm-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/minikube/scm-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/minikube/freon/freon-deployment.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone/config-configmap.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone/datanode-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone/om-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone/s3g-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone/scm-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone/csi/csi-ozone-serviceaccount.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone/csi/csi-provisioner-deployment.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone/freon/freon-deployment.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone/pv-test/ozone-csi-test-webserver-deployment.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone/pv-test/ozone-csi-test-webserver-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/config-configmap.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/datanode-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/datanode-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/jaeger-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/jaeger-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/om-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/om-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/prometheus-deployment.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/prometheus-operator-serviceaccount.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/prometheus-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/prometheusconf-configmap.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/s3g-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/s3g-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/scm-public-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/scm-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/csi/csi-ozone-serviceaccount.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/csi/csi-provisioner-deployment.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/freon/freon-deployment.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/pv-test/ozone-csi-test-webserver-deployment.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-dev/pv-test/ozone-csi-test-webserver-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-ha/config-configmap.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-ha/datanode-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-ha/om-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-ha/s3g-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-ha/scm-service.yaml",
+        "ozone.git/hadoop-ozone/dist/src/main/k8s/examples/ozone-ha/freon/freon-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

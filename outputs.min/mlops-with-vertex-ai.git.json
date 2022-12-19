@@ -1,14 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 1,
-      "subFolderCount": 1,
-      "filepaths": [
-        "mlops-with-vertex-ai.git/Dockerfile",
-        "mlops-with-vertex-ai.git/build/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -16,6 +13,52 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "mlops-with-vertex-ai.git/build/model-deployment.yaml",
+        "mlops-with-vertex-ai.git/build/pipeline-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "mlops-with-vertex-ai.git/provision/terraform/gcs-bucket.tf",
+        "mlops-with-vertex-ai.git/provision/terraform/main.tf",
+        "mlops-with-vertex-ai.git/provision/terraform/notebook-instance.tf",
+        "mlops-with-vertex-ai.git/provision/terraform/service-accounts.tf",
+        "mlops-with-vertex-ai.git/provision/terraform/services.tf",
+        "mlops-with-vertex-ai.git/provision/terraform/terraform.tfvars",
+        "mlops-with-vertex-ai.git/provision/terraform/variables.tf"
+      ]
     }
   },
   "info": {

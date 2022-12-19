@@ -1,16 +1,60 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "install_k8s.git/source/esn_base/Dockerfile",
-        "install_k8s.git/source/web_test/Dockerfile.tpl"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "install_k8s.git/source/metrics-server/metrics-apiservice.yaml",
+        "install_k8s.git/source/metrics-server/metrics-server-deployment.yaml.tpl",
+        "install_k8s.git/source/metrics-server/metrics-server-service.yaml",
+        "install_k8s.git/source/prometheus/alertmanager-configmap.yaml",
+        "install_k8s.git/source/prometheus/alertmanager-deployment.yaml.tpl",
+        "install_k8s.git/source/prometheus/alertmanager-service.yaml",
+        "install_k8s.git/source/prometheus/kube-state-metrics-deployment.yaml.tpl",
+        "install_k8s.git/source/prometheus/kube-state-metrics-service.yaml",
+        "install_k8s.git/source/prometheus/node-exporter-service.yaml",
+        "install_k8s.git/source/prometheus/prometheus-configmap.yaml",
+        "install_k8s.git/source/prometheus/prometheus-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,17 +1,57 @@
 {
   "results": {
     "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
       "exist": true,
       "count": 3,
       "rootCount": 0,
       "subFolderCount": 3,
       "filepaths": [
-        "botkube.git/build/Dockerfile",
-        "botkube.git/examples/src/build/Dockerfile-meme",
-        "botkube.git/examples/src/build/Dockerfile-quote"
+        "botkube.git/.github/workflows/chart-testing.yaml",
+        "botkube.git/.github/workflows/process-chart.yml",
+        "botkube.git/helm/botkube/Chart.yaml"
       ]
     },
-    "composefile": {
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "botkube.git/helm/botkube/templates/deployment.yaml",
+        "botkube.git/helm/botkube/templates/service.yaml",
+        "botkube.git/helm/botkube/templates/serviceaccount.yaml",
+        "botkube.git/helm/botkube/templates/servicemonitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

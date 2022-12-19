@@ -2,13 +2,10 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 21,
+      "count": 15,
       "rootCount": 0,
-      "subFolderCount": 21,
+      "subFolderCount": 15,
       "filepaths": [
-        "sedna.git/build/gm/Dockerfile",
-        "sedna.git/build/kb/Dockerfile",
-        "sedna.git/build/lc/Dockerfile",
         "sedna.git/examples/federated-learning-mistnet-yolo-aggregator.Dockerfile",
         "sedna.git/examples/federated-learning-mistnet-yolo-client.Dockerfile",
         "sedna.git/examples/federated-learning-surface-defect-detection-aggregation.Dockerfile",
@@ -23,13 +20,68 @@
         "sedna.git/examples/multi-edge-inference-pedestrian-tracking-gpu-videoanalytics.Dockerfile",
         "sedna.git/examples/multi-edge-inference-pedestrian-tracking-reid.Dockerfile",
         "sedna.git/examples/multi-edge-inference-pedestrian-tracking-videoanalytics.Dockerfile",
-        "sedna.git/hack/boilerplate/boilerplate.Dockerfile.txt",
-        "sedna.git/scripts/storage-initializer/Dockerfile",
-        "sedna.git/vendor/github.com/hpcloud/tail/Dockerfile",
-        "sedna.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "sedna.git/hack/boilerplate/boilerplate.Dockerfile.txt"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "sedna.git/build/helm/sedna/Chart.yaml",
+        "sedna.git/build/helm/sedna/charts/gm/Chart.yaml",
+        "sedna.git/build/helm/sedna/charts/kb/Chart.yaml",
+        "sedna.git/build/helm/sedna/charts/lc/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 17,
+      "rootCount": 0,
+      "subFolderCount": 17,
+      "filepaths": [
+        "sedna.git/build/crd-samples/sedna/jointinferenceservice_v1alpha1.yaml",
+        "sedna.git/build/crd-samples/sedna/objectsearchservice_v1alpha1.yaml",
+        "sedna.git/build/crd-samples/sedna/objecttrackingservice_v1alpha1.yaml",
+        "sedna.git/build/crds/sedna.io_featureextractionservices.yaml",
+        "sedna.git/build/crds/sedna.io_jointinferenceservices.yaml",
+        "sedna.git/build/crds/sedna.io_objectsearchservices.yaml",
+        "sedna.git/build/crds/sedna.io_objecttrackingservices.yaml",
+        "sedna.git/build/helm/sedna/charts/gm/templates/configmap.yaml",
+        "sedna.git/build/helm/sedna/charts/gm/templates/deployment.yaml",
+        "sedna.git/build/helm/sedna/charts/gm/templates/service.yaml",
+        "sedna.git/build/helm/sedna/charts/kb/templates/deployment.yaml",
+        "sedna.git/build/helm/sedna/charts/kb/templates/service.yaml",
+        "sedna.git/build/helm/sedna/crds/sedna.io_jointinferenceservices.yaml",
+        "sedna.git/build/helm/sedna/crds/sedna.io_objectsearchservices.yaml",
+        "sedna.git/build/helm/sedna/crds/sedna.io_objecttrackingservices.yaml",
+        "sedna.git/examples/multiedgeinference/pedestrian_tracking/yaml/feature-extraction-service.yaml",
+        "sedna.git/examples/multiedgeinference/pedestrian_tracking/yaml/kafka/zooservice.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

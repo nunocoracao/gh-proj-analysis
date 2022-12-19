@@ -1,38 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 26,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 26,
-      "filepaths": [
-        "v6d.git/docker/Dockerfile.vineyard-python",
-        "v6d.git/docker/Dockerfile.vineyard-python-dev",
-        "v6d.git/docker/Dockerfile.vineyardd",
-        "v6d.git/docker/dev/Dockerfile.dev",
-        "v6d.git/docker/pypa/Dockerfile.manylinux1",
-        "v6d.git/docker/pypa/Dockerfile.manylinux1-wheel",
-        "v6d.git/docker/vineyardd/Dockerfile.alpine-builder",
-        "v6d.git/k8s/Dockerfile",
-        "v6d.git/k8s/test/e2e/assembly-demo/Dockerfile.assembly-job1",
-        "v6d.git/k8s/test/e2e/assembly-demo/Dockerfile.assembly-job2",
-        "v6d.git/k8s/test/e2e/assembly-demo/Dockerfile.distributed-assembly-job1",
-        "v6d.git/k8s/test/e2e/assembly-demo/Dockerfile.distributed-assembly-job2",
-        "v6d.git/k8s/test/e2e/assembly-demo/Dockerfile.distributed-assembly-job3",
-        "v6d.git/k8s/test/e2e/checkpoint-demo/Dockerfile.serialize",
-        "v6d.git/k8s/test/e2e/checkpoint-demo/Dockerfile.spill",
-        "v6d.git/k8s/test/e2e/distributed-assembly-container/Dockerfile.assembly",
-        "v6d.git/k8s/test/e2e/local-assembly-container/Dockerfile.assembly",
-        "v6d.git/k8s/test/e2e/repartition/dask-repartition-operation/Dockerfile.repartition",
-        "v6d.git/k8s/test/e2e/repartition/repartition-demo/Dockerfile.dask-worker-with-vineyard",
-        "v6d.git/k8s/test/e2e/repartition/repartition-demo/Dockerfile.job1",
-        "v6d.git/k8s/test/e2e/repartition/repartition-demo/Dockerfile.job2",
-        "v6d.git/k8s/test/e2e/sidecar-demo/Dockerfile.job",
-        "v6d.git/k8s/test/e2e/workflow-demo/Dockerfile.job1",
-        "v6d.git/k8s/test/e2e/workflow-demo/Dockerfile.job2",
-        "v6d.git/prometheus/Dockerfile.grok-exporter",
-        "v6d.git/python/vineyard/contrib/airflow/docker/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -43,6 +16,63 @@
         "v6d.git/python/vineyard/contrib/airflow/docker/docker-compose.yaml",
         "v6d.git/python/vineyard/contrib/airflow/docker/docker-compose.yaml.diff"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "v6d.git/k8s/config/certmanager/kustomization.yaml",
+        "v6d.git/k8s/config/crd/kustomization.yaml",
+        "v6d.git/k8s/config/default/kustomization.yaml",
+        "v6d.git/k8s/config/manager/kustomization.yaml",
+        "v6d.git/k8s/config/prometheus/kustomization.yaml",
+        "v6d.git/k8s/config/rbac/kustomization.yaml",
+        "v6d.git/k8s/config/samples/kustomization.yaml",
+        "v6d.git/k8s/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "v6d.git/charts/vineyard-operator/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "v6d.git/charts/vineyard-operator/templates/deployment.yaml",
+        "v6d.git/charts/vineyard-operator/templates/metrics-service.yaml",
+        "v6d.git/charts/vineyard-operator/templates/webhook-service.yaml",
+        "v6d.git/k8s/config/rbac/auth_proxy_service.yaml",
+        "v6d.git/k8s/config/webhook/service.yaml",
+        "v6d.git/k8s/pkg/templates/etcd/service.yaml",
+        "v6d.git/k8s/pkg/templates/vineyardd/deployment.yaml",
+        "v6d.git/k8s/pkg/templates/vineyardd/etcd-service.yaml",
+        "v6d.git/k8s/pkg/templates/vineyardd/service.yaml",
+        "v6d.git/k8s/pkg/templates/vineyardd/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

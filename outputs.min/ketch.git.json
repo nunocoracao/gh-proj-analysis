@@ -1,15 +1,65 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "ketch.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "ketch.git/config/certmanager/kustomization.yaml",
+        "ketch.git/config/crd/kustomization.yaml",
+        "ketch.git/config/default/kustomization.yaml",
+        "ketch.git/config/manager/kustomization.yaml",
+        "ketch.git/config/prometheus/kustomization.yaml",
+        "ketch.git/config/rbac/kustomization.yaml",
+        "ketch.git/config/webhook/kustomization.yaml",
+        "ketch.git/internal/chart/testdata/render_yamls/annotations-kustomization.yaml",
+        "ketch.git/internal/chart/testdata/render_yamls/nodeaffinity-kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "ketch.git/config/rbac/auth_proxy_service.yaml",
+        "ketch.git/config/webhook/service.yaml",
+        "ketch.git/internal/templates/common/yamls/deployment.yaml",
+        "ketch.git/internal/templates/common/yamls/gateway_service.yaml",
+        "ketch.git/internal/templates/common/yamls/service.yaml",
+        "ketch.git/internal/templates/istio/yamls/virtualService.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

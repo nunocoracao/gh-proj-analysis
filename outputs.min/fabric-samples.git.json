@@ -1,22 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 10,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 10,
-      "filepaths": [
-        "fabric-samples.git/asset-transfer-basic/chaincode-external/Dockerfile",
-        "fabric-samples.git/asset-transfer-basic/chaincode-java/Dockerfile",
-        "fabric-samples.git/asset-transfer-basic/chaincode-typescript/Dockerfile",
-        "fabric-samples.git/asset-transfer-basic/rest-api-typescript/Dockerfile",
-        "fabric-samples.git/chaincode/fabcar/go/Dockerfile",
-        "fabric-samples.git/full-stack-asset-transfer-guide/applications/frontend/Dockerfile",
-        "fabric-samples.git/full-stack-asset-transfer-guide/applications/rest-api/Dockerfile",
-        "fabric-samples.git/full-stack-asset-transfer-guide/contracts/asset-transfer-typescript/Dockerfile",
-        "fabric-samples.git/token-erc-20/chaincode-java/Dockerfile",
-        "fabric-samples.git/token-erc-721/chaincode-java/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -49,6 +38,57 @@
         "fabric-samples.git/test-network/compose/podman/podman-compose-test-net.yaml",
         "fabric-samples.git/test-network/prometheus-grafana/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "fabric-samples.git/full-stack-asset-transfer-guide/infrastructure/kind_console_ingress/templates/ingress/kustomization.yaml",
+        "fabric-samples.git/full-stack-asset-transfer-guide/infrastructure/sample-network/config/cas/kustomization.yaml",
+        "fabric-samples.git/full-stack-asset-transfer-guide/infrastructure/sample-network/config/console/kustomization.yaml",
+        "fabric-samples.git/full-stack-asset-transfer-guide/infrastructure/sample-network/config/gateway/kustomization.yaml",
+        "fabric-samples.git/full-stack-asset-transfer-guide/infrastructure/sample-network/config/manager/kustomization.yaml",
+        "fabric-samples.git/full-stack-asset-transfer-guide/infrastructure/sample-network/config/orderers/kustomization.yaml",
+        "fabric-samples.git/full-stack-asset-transfer-guide/infrastructure/sample-network/config/peers/kustomization.yaml",
+        "fabric-samples.git/full-stack-asset-transfer-guide/infrastructure/sample-network/config/rbac/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "fabric-samples.git/full-stack-asset-transfer-guide/applications/rest-api/deployment.yaml",
+        "fabric-samples.git/full-stack-asset-transfer-guide/infrastructure/fabric_network_playbooks/16-import-ordering-service.yml",
+        "fabric-samples.git/full-stack-asset-transfer-guide/infrastructure/sample-network/config/rbac/fabric-operator-serviceaccount.yaml",
+        "fabric-samples.git/full-stack-asset-transfer-guide/infrastructure/sample-network/scripts/frontend_deployment.yaml",
+        "fabric-samples.git/full-stack-asset-transfer-guide/infrastructure/sample-network/scripts/rest_deployment.yaml",
+        "fabric-samples.git/test-network-k8s/kube/application-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

@@ -1,19 +1,69 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 5,
-      "filepaths": [
-        "iam.git/build/docker/iam-apiserver/Dockerfile",
-        "iam.git/build/docker/iam-authz-server/Dockerfile",
-        "iam.git/build/docker/iam-pump/Dockerfile",
-        "iam.git/build/docker/iam-watcher/Dockerfile",
-        "iam.git/build/docker/iamctl/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "iam.git/deployments/iam/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "iam.git/deployments/iam/service-with-nodeport/iam-apiserver-service.yaml",
+        "iam.git/deployments/iam/service-with-nodeport/iam-authz-server-service.yaml",
+        "iam.git/deployments/iam/service-with-nodeport/iam-pump-service.yaml",
+        "iam.git/deployments/iam/service-with-nodeport/iam-watcher-service.yaml",
+        "iam.git/deployments/iam/templates/iam-apiserver-deployment.yaml",
+        "iam.git/deployments/iam/templates/iam-apiserver-service.yaml",
+        "iam.git/deployments/iam/templates/iam-authz-server-deployment.yaml",
+        "iam.git/deployments/iam/templates/iam-authz-server-service.yaml",
+        "iam.git/deployments/iam/templates/iam-pump-deployment.yaml",
+        "iam.git/deployments/iam/templates/iam-pump-service.yaml",
+        "iam.git/deployments/iam/templates/iam-watcher-deployment.yaml",
+        "iam.git/deployments/iam/templates/iam-watcher-service.yaml",
+        "iam.git/deployments/iam/templates/iamctl-deployment.yaml",
+        "iam.git/deployments/templates/iam-apiserver-deployment.yaml",
+        "iam.git/deployments/templates/iam-apiserver-service.yaml",
+        "iam.git/deployments/templates/iam-configmap.yaml",
+        "iam.git/docs/guide/zh-CN/installation/iam-apiserver-deployment.yaml",
+        "iam.git/docs/guide/zh-CN/installation/iam-apiserver-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

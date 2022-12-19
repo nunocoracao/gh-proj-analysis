@@ -1,20 +1,88 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
-      "rootCount": 4,
-      "subFolderCount": 2,
-      "filepaths": [
-        "metacontroller.git/Dockerfile",
-        "metacontroller.git/Dockerfile.debug",
-        "metacontroller.git/Dockerfile.distroless",
-        "metacontroller.git/Dockerfile.distroless-debug",
-        "metacontroller.git/examples/jsonnetd/Dockerfile",
-        "metacontroller.git/examples/nodejs/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 24,
+      "rootCount": 0,
+      "subFolderCount": 24,
+      "filepaths": [
+        "metacontroller.git/examples/bluegreen/manifest/kustomization.yaml",
+        "metacontroller.git/examples/bluegreen/v1/kustomization.yaml",
+        "metacontroller.git/examples/catset/manifest/kustomization.yaml",
+        "metacontroller.git/examples/catset/v1/kustomization.yaml",
+        "metacontroller.git/examples/clusteredparent/manifest/kustomization.yaml",
+        "metacontroller.git/examples/configmappropagation/manifest/kustomization.yaml",
+        "metacontroller.git/examples/configmappropagation/v1/kustomization.yaml",
+        "metacontroller.git/examples/crd-roles/manifest/kustomization.yaml",
+        "metacontroller.git/examples/crd-roles/v1/kustomization.yaml",
+        "metacontroller.git/examples/daemonjob/manifest/kustomization.yaml",
+        "metacontroller.git/examples/daemonjob/v1/kustomization.yaml",
+        "metacontroller.git/examples/globalconfigmap/manifest/kustomization.yaml",
+        "metacontroller.git/examples/globalconfigmap/v1/kustomization.yaml",
+        "metacontroller.git/examples/indexedjob/manifest/kustomization.yaml",
+        "metacontroller.git/examples/indexedjob/v1/kustomization.yaml",
+        "metacontroller.git/examples/leader-election/manifest/kustomization.yaml",
+        "metacontroller.git/examples/pprof-profiling/manifest/kustomization.yaml",
+        "metacontroller.git/examples/prometheus-monitoring/manifest/kustomization.yaml",
+        "metacontroller.git/examples/secretpropagation/manifest/kustomization.yaml",
+        "metacontroller.git/examples/secretpropagation/v1/kustomization.yaml",
+        "metacontroller.git/examples/service-per-pod/manifest/kustomization.yaml",
+        "metacontroller.git/manifests/debug/kustomization.yaml",
+        "metacontroller.git/manifests/dev/kustomization.yaml",
+        "metacontroller.git/manifests/production/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "metacontroller.git/.github/config/chart-testing/etc/chart_schema.yaml",
+        "metacontroller.git/deploy/helm/metacontroller/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "metacontroller.git/deploy/helm/metacontroller/ci/service-values.yaml",
+        "metacontroller.git/deploy/helm/metacontroller/templates/service.yaml",
+        "metacontroller.git/deploy/helm/metacontroller/templates/serviceaccount.yaml",
+        "metacontroller.git/examples/configmappropagation/example-configmap.yaml",
+        "metacontroller.git/examples/configmappropagation/manifest/configmap-propagation.yaml",
+        "metacontroller.git/examples/globalconfigmap/example-globalconfigmap.yaml",
+        "metacontroller.git/examples/globalconfigmap/manifest/globalconfigmap.yaml",
+        "metacontroller.git/examples/pprof-profiling/manifest/service.yaml",
+        "metacontroller.git/examples/prometheus-monitoring/manifest/service.yaml",
+        "metacontroller.git/examples/prometheus-monitoring/manifest/serviceMonitor.yaml",
+        "metacontroller.git/examples/service-per-pod/manifest/service-per-pod.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

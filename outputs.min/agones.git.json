@@ -1,40 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 28,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 28,
-      "filepaths": [
-        "agones.git/build/build-image/Dockerfile",
-        "agones.git/build/build-sdk-images/cpp/Dockerfile",
-        "agones.git/build/build-sdk-images/csharp/Dockerfile",
-        "agones.git/build/build-sdk-images/go/Dockerfile",
-        "agones.git/build/build-sdk-images/node/Dockerfile",
-        "agones.git/build/build-sdk-images/restapi/Dockerfile",
-        "agones.git/build/build-sdk-images/rust/Dockerfile",
-        "agones.git/build/build-sdk-images/tool/base/Dockerfile",
-        "agones.git/build/build-sdk-images/tool/template/Dockerfile",
-        "agones.git/build/e2e-image/Dockerfile",
-        "agones.git/cmd/allocator/Dockerfile",
-        "agones.git/cmd/controller/Dockerfile",
-        "agones.git/cmd/ping/Dockerfile",
-        "agones.git/cmd/sdk-server/Dockerfile",
-        "agones.git/cmd/sdk-server/Dockerfile.windows",
-        "agones.git/examples/allocation-endpoint/server/Dockerfile",
-        "agones.git/examples/autoscaler-webhook/Dockerfile",
-        "agones.git/examples/cpp-simple/Dockerfile",
-        "agones.git/examples/crd-client/Dockerfile",
-        "agones.git/examples/nodejs-simple/Dockerfile",
-        "agones.git/examples/rust-simple/Dockerfile",
-        "agones.git/examples/simple-game-server/Dockerfile",
-        "agones.git/examples/simple-game-server/Dockerfile.windows",
-        "agones.git/examples/supertuxkart/Dockerfile",
-        "agones.git/examples/unity-simple/Dockerfile",
-        "agones.git/examples/xonotic/Dockerfile",
-        "agones.git/examples/xonotic/Dockerfile.windows",
-        "agones.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -42,6 +13,70 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "agones.git/install/helm/agones/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "agones.git/examples/autoscaler-webhook/autoscaler-service-tls.yaml",
+        "agones.git/examples/autoscaler-webhook/autoscaler-service.yaml",
+        "agones.git/install/helm/agones/templates/service-monitor.yaml",
+        "agones.git/install/helm/agones/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 21,
+      "rootCount": 0,
+      "subFolderCount": 21,
+      "filepaths": [
+        "agones.git/build/terraform/e2e/module.tf",
+        "agones.git/build/terraform/gke/module.tf",
+        "agones.git/build/terraform/prow/module.tf",
+        "agones.git/examples/allocation-endpoint/terraform/main.tf",
+        "agones.git/examples/allocation-endpoint/terraform/output.tf",
+        "agones.git/examples/allocation-endpoint/terraform/variable.tf",
+        "agones.git/examples/terraform-submodules/aks/module.tf",
+        "agones.git/examples/terraform-submodules/eks/module.tf",
+        "agones.git/examples/terraform-submodules/gke/module.tf",
+        "agones.git/install/terraform/modules/aks/aks.tf",
+        "agones.git/install/terraform/modules/aks/outputs.tf",
+        "agones.git/install/terraform/modules/aks/variables.tf",
+        "agones.git/install/terraform/modules/eks/eks.tf",
+        "agones.git/install/terraform/modules/eks/outputs.tf",
+        "agones.git/install/terraform/modules/eks/variables.tf",
+        "agones.git/install/terraform/modules/gke/cluster.tf",
+        "agones.git/install/terraform/modules/gke/outputs.tf",
+        "agones.git/install/terraform/modules/gke/variables.tf",
+        "agones.git/install/terraform/modules/helm3/helm.tf",
+        "agones.git/install/terraform/modules/helm3/variables.tf",
+        "agones.git/test/terraform/cluster.tf"
+      ]
     }
   },
   "info": {

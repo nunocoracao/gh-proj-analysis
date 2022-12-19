@@ -1,16 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 4,
-      "filepaths": [
-        "cortx-re.git/docker/cortx-build/Dockerfile",
-        "cortx-re.git/docker/cortx-deploy/Dockerfile",
-        "cortx-re.git/docker/sonarqube/Dockerfile",
-        "cortx-re.git/docker/symas-openldap/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -26,6 +21,51 @@
         "cortx-re.git/docker/sonarqube/docker-compose.yaml",
         "cortx-re.git/docker/symas-openldap/docker-compose.yml",
         "cortx-re.git/scripts/build-retention/monitoring/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "cortx-re.git/scripts/deployment/roles/factory_vm_deployment/tasks/03_field_deployment.yml",
+        "cortx-re.git/scripts/deployment/roles/factory_vm_deployment/tasks/04_component_deployment.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "cortx-re.git/solutions/community-deploy/cloud/AWS/main.tf",
+        "cortx-re.git/solutions/community-deploy/cloud/AWS/user.tfvars",
+        "cortx-re.git/solutions/community-deploy/cloud/AWS/variable.tf",
+        "cortx-re.git/solutions/vmware/terraform/main.tf",
+        "cortx-re.git/solutions/vmware/terraform/terraform.tfvars",
+        "cortx-re.git/solutions/vmware/terraform/variable.tf"
       ]
     }
   },

@@ -1,18 +1,86 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 2,
-      "subFolderCount": 2,
-      "filepaths": [
-        "kudo.git/Dockerfile",
-        "kudo.git/Dockerfile.goreleaser",
-        "kudo.git/build/Dockerfile",
-        "kudo.git/test/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 37,
+      "rootCount": 0,
+      "subFolderCount": 37,
+      "filepaths": [
+        "kudo.git/pkg/kudoctl/cmd/diagnostics/testdata/kudo_default_serviceaccount.yaml",
+        "kudo.git/pkg/kudoctl/cmd/diagnostics/testdata/kudo_serviceaccounts.yaml",
+        "kudo.git/pkg/kudoctl/cmd/diagnostics/testdata/kudo_services.yaml",
+        "kudo.git/pkg/kudoctl/cmd/diagnostics/testdata/zk_service_accounts.yaml",
+        "kudo.git/pkg/kudoctl/cmd/diagnostics/testdata/zk_services.yaml",
+        "kudo.git/pkg/kudoctl/cmd/testdata/invalidzk/templates/services.yaml",
+        "kudo.git/pkg/kudoctl/packages/testdata/zk/templates/services.yaml",
+        "kudo.git/test/e2e/apply-delete-apply/operator/templates/configmap.yaml",
+        "kudo.git/test/e2e/cli-install-uninstall/first-operator/templates/deployment.yaml",
+        "kudo.git/test/e2e/dependencies-hash/dep-operator/templates/configmap.yaml",
+        "kudo.git/test/e2e/dependencies-hash/dep-operator/templates/deployment.yaml",
+        "kudo.git/test/e2e/immutable-parameter/immutable-param/templates/deployment.yaml",
+        "kudo.git/test/e2e/immutable-parameter-with-default/immutable-param/templates/deployment.yaml",
+        "kudo.git/test/e2e/plan-trigger/feature-operator/templates/configmap.yaml",
+        "kudo.git/test/e2e/readiness/01-updatedeployment.yaml",
+        "kudo.git/test/e2e/readiness/first-operator/templates/deployment.yaml",
+        "kudo.git/test/e2e/toggle-task/feature-operator/templates/configmap.yaml",
+        "kudo.git/test/e2e/update-with-upgrade/update-with-upgrade-v1/templates/configmap-deployed.yaml",
+        "kudo.git/test/e2e/update-with-upgrade/update-with-upgrade-v1/templates/configmap-updated.yaml",
+        "kudo.git/test/e2e/update-with-upgrade/update-with-upgrade-v1/templates/configmap-upgraded.yaml",
+        "kudo.git/test/e2e/update-with-upgrade/update-with-upgrade-v2/templates/configmap-deployed.yaml",
+        "kudo.git/test/e2e/update-with-upgrade/update-with-upgrade-v2/templates/configmap-updated.yaml",
+        "kudo.git/test/e2e/update-with-upgrade/update-with-upgrade-v2/templates/configmap-upgraded.yaml",
+        "kudo.git/test/e2e/upgrade/first-operator/templates/deployment.yaml",
+        "kudo.git/test/e2e/upgrade/first-operator-v2/templates/configmap.yaml",
+        "kudo.git/test/e2e/upgrade/first-operator-v2/templates/deployment.yaml",
+        "kudo.git/test/integration/cli-install/cli-install-operator/templates/deployment.yaml",
+        "kudo.git/test/integration/first-operator-test/first-operator/templates/deployment.yaml",
+        "kudo.git/test/integration/operator-with-subdirectory-resources/operator/templates/deployments/deployment.yaml",
+        "kudo.git/test/integration/operator-with-subdirectory-resources/operator/templates/service/service.yaml",
+        "kudo.git/test/integration/parameter-types-operator/operator/templates/deployment.yaml",
+        "kudo.git/test/integration/remove-pod-container/dual-pod-operator/templates/deployment.yaml",
+        "kudo.git/test/integration/upgrade-command/first-operator/templates/configmap.yaml",
+        "kudo.git/test/integration/upgrade-command/second-operator/templates/configmap.yaml",
+        "kudo.git/test/manifests/configmap-operator.yaml",
+        "kudo.git/test/upgrade/upgrade-to-current/simple-op-0.1.0/templates/deployment.yaml",
+        "kudo.git/test/upgrade/upgrade-to-current/simple-op-0.2.0/templates/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

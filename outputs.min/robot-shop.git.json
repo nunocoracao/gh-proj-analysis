@@ -1,24 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 12,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 12,
-      "filepaths": [
-        "robot-shop.git/cart/Dockerfile",
-        "robot-shop.git/catalogue/Dockerfile",
-        "robot-shop.git/dispatch/Dockerfile",
-        "robot-shop.git/fluentd/Dockerfile",
-        "robot-shop.git/load-gen/Dockerfile",
-        "robot-shop.git/mongo/Dockerfile",
-        "robot-shop.git/mysql/Dockerfile",
-        "robot-shop.git/payment/Dockerfile",
-        "robot-shop.git/ratings/Dockerfile",
-        "robot-shop.git/shipping/Dockerfile",
-        "robot-shop.git/user/Dockerfile",
-        "robot-shop.git/web/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -31,6 +18,70 @@
         "robot-shop.git/dispatch/docker-compose.yaml",
         "robot-shop.git/payment/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "robot-shop.git/K8s/helm/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 26,
+      "rootCount": 0,
+      "subFolderCount": 26,
+      "filepaths": [
+        "robot-shop.git/K8s/load-deployment.yaml",
+        "robot-shop.git/K8s/Istio/payment-deployment-fix.yaml",
+        "robot-shop.git/K8s/helm/templates/cart-deployment.yaml",
+        "robot-shop.git/K8s/helm/templates/cart-service.yaml",
+        "robot-shop.git/K8s/helm/templates/catalogue-deployment.yaml",
+        "robot-shop.git/K8s/helm/templates/catalogue-service.yaml",
+        "robot-shop.git/K8s/helm/templates/dispatch-deployment.yaml",
+        "robot-shop.git/K8s/helm/templates/dispatch-service.yaml",
+        "robot-shop.git/K8s/helm/templates/mongodb-deployment.yaml",
+        "robot-shop.git/K8s/helm/templates/mongodb-service.yaml",
+        "robot-shop.git/K8s/helm/templates/mysql-deployment.yaml",
+        "robot-shop.git/K8s/helm/templates/mysql-service.yaml",
+        "robot-shop.git/K8s/helm/templates/payment-deployment.yaml",
+        "robot-shop.git/K8s/helm/templates/payment-service.yaml",
+        "robot-shop.git/K8s/helm/templates/rabbitmq-deployment.yaml",
+        "robot-shop.git/K8s/helm/templates/rabbitmq-service.yaml",
+        "robot-shop.git/K8s/helm/templates/ratings-deployment.yaml",
+        "robot-shop.git/K8s/helm/templates/ratings-service.yaml",
+        "robot-shop.git/K8s/helm/templates/redis-service.yaml",
+        "robot-shop.git/K8s/helm/templates/serviceaccount.yaml",
+        "robot-shop.git/K8s/helm/templates/shipping-deployment.yaml",
+        "robot-shop.git/K8s/helm/templates/shipping-service.yaml",
+        "robot-shop.git/K8s/helm/templates/user-deployment.yaml",
+        "robot-shop.git/K8s/helm/templates/user-service.yaml",
+        "robot-shop.git/K8s/helm/templates/web-deployment.yaml",
+        "robot-shop.git/K8s/helm/templates/web-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

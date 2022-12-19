@@ -1,20 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 8,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 8,
-      "filepaths": [
-        "dubbo-samples.git/2-advanced/dubbo-samples-docker/Dockerfile",
-        "dubbo-samples.git/2-advanced/dubbo-samples-tengine/dubbo-samples-tengine-provider/src/main/resources/docker/Dockerfile",
-        "dubbo-samples.git/3-extensions/registry/dubbo-samples-kubernetes/dubbo-samples-kubernetes-dns/Dockerfile",
-        "dubbo-samples.git/3-extensions/registry/dubbo-samples-mesh-k8s/dubbo-samples-mesh-consumer/Dockerfile",
-        "dubbo-samples.git/3-extensions/registry/dubbo-samples-mesh-k8s/dubbo-samples-mesh-provider/Dockerfile",
-        "dubbo-samples.git/3-extensions/registry/dubbo-samples-xds/dubbo-samples-xds-consumer/Dockerfile",
-        "dubbo-samples.git/3-extensions/registry/dubbo-samples-xds/dubbo-samples-xds-provider/Dockerfile",
-        "dubbo-samples.git/test/dubbo-test-runner/src/docker/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -26,6 +17,57 @@
         "dubbo-samples.git/2-advanced/dubbo-samples-transaction/src/main/resources/docker/docker-compose.yml",
         "dubbo-samples.git/3-extensions/registry/dubbo-samples-nacos/dubbo-samples-nacos-override/src/test/resources/docker/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-kubernetes/dubbo-samples-apiserver-consumer/src/main/resources/k8s/Deployment.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-kubernetes/dubbo-samples-apiserver-consumer/src/main/resources/k8s/Service.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-kubernetes/dubbo-samples-apiserver-provider/src/main/resources/k8s/Deployment.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-kubernetes/dubbo-samples-apiserver-provider/src/main/resources/k8s/Service.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-kubernetes/dubbo-samples-apiserver-provider/src/main/resources/k8s/ServiceAccount.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-mesh-k8s/deploy/consumer/Deployment.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-mesh-k8s/deploy/consumer/Service.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-mesh-k8s/deploy/provider/Deployment-v2.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-mesh-k8s/deploy/provider/Deployment.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-mesh-k8s/deploy/provider/Service.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-mesh-k8s/deploy/traffic/virtual-service.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-xds/dubbo-samples-xds-consumer/src/main/resources/k8s/Deployment.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-xds/dubbo-samples-xds-consumer/src/main/resources/k8s/Service.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-xds/dubbo-samples-xds-provider/src/main/resources/k8s/Deployment.yml",
+        "dubbo-samples.git/3-extensions/registry/dubbo-samples-xds/dubbo-samples-xds-provider/src/main/resources/k8s/Service.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

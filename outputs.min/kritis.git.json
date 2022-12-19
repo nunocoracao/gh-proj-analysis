@@ -2,26 +2,59 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 13,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 13,
+      "subFolderCount": 1,
       "filepaths": [
-        "kritis.git/deploy/Dockerfile",
-        "kritis.git/deploy/Dockerfile_resolve",
-        "kritis.git/deploy/gcr-kritis-signer/Dockerfile",
-        "kritis.git/deploy/kritis-int-test/Dockerfile",
-        "kritis.git/deploy/kritis-signer/Dockerfile",
-        "kritis.git/hack/boilerplate/boilerplate.Dockerfile.txt",
-        "kritis.git/helm-hooks/Dockerfile",
-        "kritis.git/helm-release/Dockerfile",
-        "kritis.git/integration/signer/Dockerfile",
-        "kritis.git/samples/policy-check/Dockerfile",
-        "kritis.git/samples/policy-check/Dockerfile.python-builder",
-        "kritis.git/samples/signer/Dockerfile",
-        "kritis.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "kritis.git/hack/boilerplate/boilerplate.Dockerfile.txt"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kritis.git/kritis-charts/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "kritis.git/integration/testdata/java/java-with-vulnz-breakglass-deployment.yaml",
+        "kritis.git/integration/testdata/java/java-with-vulnz-deployment.yaml",
+        "kritis.git/integration/testdata/nginx/nginx-deployment.yaml",
+        "kritis.git/kritis-charts/templates/configmap.yaml",
+        "kritis.git/kritis-charts/templates/kritis-server-deployment.yaml",
+        "kritis.git/kritis-charts/templates/kritis-server-service.yaml",
+        "kritis.git/kritis-charts/templates/preinstall/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

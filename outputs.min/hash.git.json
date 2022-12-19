@@ -1,25 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 13,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 13,
-      "filepaths": [
-        "hash.git/packages/engine/docker/Dockerfile",
-        "hash.git/packages/graph/deployment/graph/Dockerfile",
-        "hash.git/packages/graph/deployment/migrations/Dockerfile",
-        "hash.git/packages/hash/docker/api/prod/Dockerfile",
-        "hash.git/packages/hash/docker/citus/prod/Dockerfile",
-        "hash.git/packages/hash/docker/frontend/prod/Dockerfile",
-        "hash.git/packages/hash/docker/realtime/prod/Dockerfile",
-        "hash.git/packages/hash/docker/search-loader/prod/Dockerfile",
-        "hash.git/packages/hash/docker/statsd/Dockerfile",
-        "hash.git/packages/hash/docker/task-executor/Dockerfile",
-        "hash.git/packages/hash/external-services/kratos/Dockerfile",
-        "hash.git/packages/hash/external-services/opensearch/Dockerfile",
-        "hash.git/packages/hash/external-services/postgres/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -32,6 +18,81 @@
         "hash.git/packages/hash/external-services/docker-compose.prod.yml",
         "hash.git/packages/hash/external-services/docker-compose.test.yml",
         "hash.git/packages/hash/external-services/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 39,
+      "rootCount": 0,
+      "subFolderCount": 39,
+      "filepaths": [
+        "hash.git/infra/terraform/hash/main.tf",
+        "hash.git/infra/terraform/hash/outputs.tf",
+        "hash.git/infra/terraform/hash/prod-usea1.tfvars",
+        "hash.git/infra/terraform/hash/terraform.tf",
+        "hash.git/infra/terraform/hash/variables.tf",
+        "hash.git/infra/terraform/modules/bastion/bastion.tf",
+        "hash.git/infra/terraform/modules/bastion/main.tf",
+        "hash.git/infra/terraform/modules/bastion/output.tf",
+        "hash.git/infra/terraform/modules/bastion/variables.tf",
+        "hash.git/infra/terraform/modules/container_cluster/main.tf",
+        "hash.git/infra/terraform/modules/container_cluster/outputs.tf",
+        "hash.git/infra/terraform/modules/container_cluster/variables.tf",
+        "hash.git/infra/terraform/modules/container_registry/main.tf",
+        "hash.git/infra/terraform/modules/container_registry/outputs.tf",
+        "hash.git/infra/terraform/modules/container_registry/variables.tf",
+        "hash.git/infra/terraform/modules/hash_application/api.tf",
+        "hash.git/infra/terraform/modules/hash_application/graph.tf",
+        "hash.git/infra/terraform/modules/hash_application/kratos.tf",
+        "hash.git/infra/terraform/modules/hash_application/main.tf",
+        "hash.git/infra/terraform/modules/hash_application/variables.tf",
+        "hash.git/infra/terraform/modules/networking/main.tf",
+        "hash.git/infra/terraform/modules/networking/outputs.tf",
+        "hash.git/infra/terraform/modules/networking/variables.tf",
+        "hash.git/infra/terraform/modules/postgres/main.tf",
+        "hash.git/infra/terraform/modules/postgres/outputs.tf",
+        "hash.git/infra/terraform/modules/postgres/postgres.tf",
+        "hash.git/infra/terraform/modules/postgres/variables.tf",
+        "hash.git/infra/terraform/modules/postgres_roles/main.tf",
+        "hash.git/infra/terraform/modules/postgres_roles/postgres_roles.tf",
+        "hash.git/infra/terraform/modules/postgres_roles/variables.tf",
+        "hash.git/infra/terraform/modules/redis/main.tf",
+        "hash.git/infra/terraform/modules/redis/outputs.tf",
+        "hash.git/infra/terraform/modules/redis/variables.tf",
+        "hash.git/infra/terraform/modules/tunnel/main.tf",
+        "hash.git/infra/terraform/modules/tunnel/output.tf",
+        "hash.git/infra/terraform/modules/tunnel/variables.tf",
+        "hash.git/infra/terraform/modules/variables/main.tf",
+        "hash.git/infra/terraform/modules/variables/output.tf",
+        "hash.git/infra/terraform/modules/variables/variables.tf"
       ]
     }
   },

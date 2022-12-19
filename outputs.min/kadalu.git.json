@@ -1,21 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 9,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 9,
-      "filepaths": [
-        "kadalu.git/csi/Dockerfile",
-        "kadalu.git/extras/Dockerfile.builder",
-        "kadalu.git/extras/sample-app/Dockerfile",
-        "kadalu.git/extras/tie-breaker/Dockerfile",
-        "kadalu.git/kadalu_operator/Dockerfile",
-        "kadalu.git/monitoring/Dockerfile",
-        "kadalu.git/server/Dockerfile",
-        "kadalu.git/tests/test-csi/Dockerfile",
-        "kadalu.git/tests/test-io/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -23,6 +13,53 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "kadalu.git/helm/kadalu/Chart.yaml",
+        "kadalu.git/helm/kadalu/charts/common/Chart.yaml",
+        "kadalu.git/helm/kadalu/charts/csi-nodeplugin/Chart.yaml",
+        "kadalu.git/helm/kadalu/charts/operator/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "kadalu.git/helm/kadalu/charts/operator/templates/deployment.yaml",
+        "kadalu.git/helm/kadalu/charts/operator/templates/serviceaccount.yaml",
+        "kadalu.git/templates/configmap.yaml.j2",
+        "kadalu.git/templates/services.yaml.j2"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kadalu.git/nomad/volume.hcl"
+      ]
     }
   },
   "info": {

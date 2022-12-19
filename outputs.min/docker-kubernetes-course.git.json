@@ -1,16 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 4,
-      "filepaths": [
-        "docker-kubernetes-course.git/05_monitoring_prometheus/WebApp/Dockerfile",
-        "docker-kubernetes-course.git/13_windows_container/Dockerfile",
-        "docker-kubernetes-course.git/app-dotnet/Dockerfile",
-        "docker-kubernetes-course.git/app-nodejs/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -19,6 +14,58 @@
       "subFolderCount": 0,
       "filepaths": [
         "docker-kubernetes-course.git/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "docker-kubernetes-course.git/03_helm/firstchart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "docker-kubernetes-course.git/02_kubernetes_aks/configmap.yaml",
+        "docker-kubernetes-course.git/02_kubernetes_pods/two-containers-service.yaml",
+        "docker-kubernetes-course.git/03_helm/firstchart/templates/deployment.yaml",
+        "docker-kubernetes-course.git/03_helm/firstchart/templates/service.yaml",
+        "docker-kubernetes-course.git/03_helm/firstchart/templates/serviceaccount.yaml",
+        "docker-kubernetes-course.git/30_https_ingress_kv_oidc/service-account.yaml",
+        "docker-kubernetes-course.git/31_https_ingress_pods_kv_oidc/service-account.yaml",
+        "docker-kubernetes-course.git/40_secret_store_csi_keyvault/service-account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "docker-kubernetes-course.git/08_aks_terraform/main.tf",
+        "docker-kubernetes-course.git/08_aks_terraform/outputs.tf",
+        "docker-kubernetes-course.git/08_aks_terraform/providers.tf",
+        "docker-kubernetes-course.git/08_aks_terraform/terraform.tfvars",
+        "docker-kubernetes-course.git/08_aks_terraform/variables.tf"
       ]
     }
   },

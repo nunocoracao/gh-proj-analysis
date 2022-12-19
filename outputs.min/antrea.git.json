@@ -1,37 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 25,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 25,
-      "filepaths": [
-        "antrea.git/build/images/Dockerfile.build.coverage",
-        "antrea.git/build/images/Dockerfile.build.ubi",
-        "antrea.git/build/images/Dockerfile.build.ubuntu",
-        "antrea.git/build/images/Dockerfile.build.windows",
-        "antrea.git/build/images/Dockerfile.octant.ubuntu",
-        "antrea.git/build/images/Dockerfile.simulator.build.ubuntu",
-        "antrea.git/build/images/Dockerfile.ubuntu",
-        "antrea.git/build/images/base/Dockerfile",
-        "antrea.git/build/images/base/Dockerfile.ubi",
-        "antrea.git/build/images/base-windows/Dockerfile",
-        "antrea.git/build/images/codegen/Dockerfile",
-        "antrea.git/build/images/ethtool/Dockerfile",
-        "antrea.git/build/images/flow-aggregator/Dockerfile",
-        "antrea.git/build/images/flow-aggregator/Dockerfile.coverage",
-        "antrea.git/build/images/lichen/Dockerfile",
-        "antrea.git/build/images/ovs/Dockerfile",
-        "antrea.git/build/images/ovs/Dockerfile.ubi",
-        "antrea.git/build/images/perftool/Dockerfile",
-        "antrea.git/build/images/test/Dockerfile",
-        "antrea.git/build/images/wireguard-go/Dockerfile",
-        "antrea.git/docs/cookbooks/multus/build/cni-dhcp-daemon/Dockerfile",
-        "antrea.git/hack/netpol/Dockerfile",
-        "antrea.git/hack/netpol/images/netpol-test/Dockerfile",
-        "antrea.git/multicluster/build/images/Dockerfile.build",
-        "antrea.git/multicluster/build/images/Dockerfile.build.coverage"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -39,6 +13,88 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "antrea.git/build/yamls/flow-aggregator/base/kustomization.yml",
+        "antrea.git/build/yamls/octant/base/kustomization.yml",
+        "antrea.git/build/yamls/windows/base/kustomization.yml",
+        "antrea.git/multicluster/config/crd/kustomization.yaml",
+        "antrea.git/multicluster/config/default/kustomization.yaml",
+        "antrea.git/multicluster/config/manager/kustomization.yaml",
+        "antrea.git/multicluster/config/overlays/leader-global/kustomization.yaml",
+        "antrea.git/multicluster/config/overlays/leader-ns/kustomization.yaml",
+        "antrea.git/multicluster/config/overlays/member/kustomization.yaml",
+        "antrea.git/multicluster/config/rbac/kustomization.yaml",
+        "antrea.git/multicluster/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "antrea.git/build/charts/antrea/Chart.yaml",
+        "antrea.git/build/charts/flow-aggregator/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 27,
+      "rootCount": 0,
+      "subFolderCount": 27,
+      "filepaths": [
+        "antrea.git/build/charts/antrea/templates/configmap.yaml",
+        "antrea.git/build/charts/antrea/templates/agent/serviceaccount.yaml",
+        "antrea.git/build/charts/antrea/templates/antctl/serviceaccount.yaml",
+        "antrea.git/build/charts/antrea/templates/controller/apiservices.yaml",
+        "antrea.git/build/charts/antrea/templates/controller/deployment.yaml",
+        "antrea.git/build/charts/antrea/templates/controller/service.yaml",
+        "antrea.git/build/charts/antrea/templates/controller/serviceaccount.yaml",
+        "antrea.git/build/charts/antrea/templates/simulator/configmap.yaml",
+        "antrea.git/build/charts/antrea/templates/whereabouts/serviceaccount.yaml",
+        "antrea.git/build/charts/flow-aggregator/templates/configmap.yaml",
+        "antrea.git/build/charts/flow-aggregator/templates/deployment.yaml",
+        "antrea.git/build/charts/flow-aggregator/templates/service.yaml",
+        "antrea.git/build/charts/flow-aggregator/templates/serviceaccount.yaml",
+        "antrea.git/build/yamls/octant/base/deployment.yml",
+        "antrea.git/build/yamls/octant/base/service.yml",
+        "antrea.git/multicluster/config/crd/k8smcs/multicluster.x-k8s.io_serviceexports.yaml",
+        "antrea.git/multicluster/config/crd/k8smcs/multicluster.x-k8s.io_serviceimports.yaml",
+        "antrea.git/multicluster/config/overlays/leader-ns/member_cluster_serviceaccount.yaml",
+        "antrea.git/multicluster/config/overlays/leader-ns/service_account.yaml",
+        "antrea.git/multicluster/config/overlays/member/service_account.yaml",
+        "antrea.git/multicluster/config/rbac/auth_proxy_service.yaml",
+        "antrea.git/multicluster/config/rbac/service_account.yaml",
+        "antrea.git/multicluster/config/samples/multicluster_v1_serviceexports.yaml",
+        "antrea.git/multicluster/config/samples/multicluster_v1_serviceimports.yaml",
+        "antrea.git/multicluster/config/webhook/service.yaml",
+        "antrea.git/multicluster/test/yamls/test-east-serviceexport.yml",
+        "antrea.git/multicluster/test/yamls/test-west-serviceexport.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "antrea.git/hack/terraform/eks/main.tf",
+        "antrea.git/hack/terraform/eks/outputs.tf",
+        "antrea.git/hack/terraform/eks/variables.tf"
+      ]
     }
   },
   "info": {

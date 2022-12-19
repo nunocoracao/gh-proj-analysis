@@ -1,23 +1,63 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 9,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 9,
-      "filepaths": [
-        "emissary.git/builder/Dockerfile",
-        "emissary.git/docker/base-envoy/Dockerfile",
-        "emissary.git/docker/base-envoy/Dockerfile.stripped",
-        "emissary.git/docker/base-pip/Dockerfile",
-        "emissary.git/docker/base-python/Dockerfile",
-        "emissary.git/docker/test-auth/Dockerfile",
-        "emissary.git/docker/test-http/Dockerfile",
-        "emissary.git/docker/test-shadow/Dockerfile",
-        "emissary.git/docker/test-stats/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "emissary.git/.github/workflows/publish-chart.yml",
+        "emissary.git/charts/emissary-ingress/Chart.yaml.in"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "emissary.git/charts/emissary-ingress/ci.in/14-deployment-labels.yaml",
+        "emissary.git/charts/emissary-ingress/templates/admin-service.yaml",
+        "emissary.git/charts/emissary-ingress/templates/deployment-canary.yaml",
+        "emissary.git/charts/emissary-ingress/templates/deployment.yaml",
+        "emissary.git/charts/emissary-ingress/templates/service-canary.yaml",
+        "emissary.git/charts/emissary-ingress/templates/service.yaml",
+        "emissary.git/charts/emissary-ingress/templates/serviceaccount.yaml",
+        "emissary.git/charts/emissary-ingress/templates/servicemonitor.yaml",
+        "emissary.git/docs/yaml/ambassador/ambassador-istio-configmap.yaml",
+        "emissary.git/docs/yaml/ambassador/ambassador-service.yaml",
+        "emissary.git/python/tests/integration/manifests/backend_service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

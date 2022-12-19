@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "pokeapi.git/Resources/docker/app/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -20,6 +18,56 @@
         "pokeapi.git/docker-compose.yml",
         "pokeapi.git/Resources/compose/docker-compose-prod-graphql.yml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "pokeapi.git/Resources/k8s/kustomize/base/kustomization.yaml",
+        "pokeapi.git/Resources/k8s/kustomize/staging/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "pokeapi.git/Resources/k8s/kustomize/base/config/haproxy-ingress-configmap.yaml",
+        "pokeapi.git/Resources/k8s/kustomize/base/deployments/default-deployment.yaml",
+        "pokeapi.git/Resources/k8s/kustomize/base/deployments/graphql-deployment.yaml",
+        "pokeapi.git/Resources/k8s/kustomize/base/deployments/pokeapi-deployment.yaml",
+        "pokeapi.git/Resources/k8s/kustomize/base/deployments/postgres-deployment.yaml",
+        "pokeapi.git/Resources/k8s/kustomize/base/deployments/redis-deployment.yaml",
+        "pokeapi.git/Resources/k8s/kustomize/base/services/default-service.yaml",
+        "pokeapi.git/Resources/k8s/kustomize/base/services/graphql-service.yaml",
+        "pokeapi.git/Resources/k8s/kustomize/base/services/pokeapi-service.yaml",
+        "pokeapi.git/Resources/k8s/kustomize/base/services/postgres-service.yaml",
+        "pokeapi.git/Resources/k8s/kustomize/base/services/redis-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

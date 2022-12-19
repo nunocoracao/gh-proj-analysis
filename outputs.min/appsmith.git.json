@@ -1,17 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
-      "rootCount": 1,
-      "subFolderCount": 4,
-      "filepaths": [
-        "appsmith.git/Dockerfile",
-        "appsmith.git/app/client/Dockerfile",
-        "appsmith.git/app/rts/Dockerfile",
-        "appsmith.git/app/server/Dockerfile",
-        "appsmith.git/deploy/heroku/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -25,6 +19,49 @@
         "appsmith.git/deploy/aws_ami/docker-compose.yml",
         "appsmith.git/deploy/docker/docker-compose.yml",
         "appsmith.git/deploy/template/docker-compose.yml.sh"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "appsmith.git/deploy/helm/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "appsmith.git/deploy/helm/templates/configMap.yaml",
+        "appsmith.git/deploy/helm/templates/service.yaml",
+        "appsmith.git/deploy/helm/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "appsmith.git/deploy/packer/template.json.pkr.hcl"
       ]
     }
   },

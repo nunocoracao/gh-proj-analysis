@@ -1,16 +1,63 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "sloth.git/docker/dev/Dockerfile",
-        "sloth.git/docker/prod/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "sloth.git/deploy/kubernetes/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "sloth.git/deploy/kubernetes/helm/sloth/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "sloth.git/deploy/kubernetes/helm/sloth/crds/sloth.slok.dev_prometheusservicelevels.yaml",
+        "sloth.git/deploy/kubernetes/helm/sloth/templates/configmap.yaml",
+        "sloth.git/deploy/kubernetes/helm/sloth/templates/deployment.yaml",
+        "sloth.git/deploy/kubernetes/helm/sloth/templates/service-account.yaml",
+        "sloth.git/deploy/kubernetes/helm/sloth/tests/testdata/output/configmap_slo_config.yaml",
+        "sloth.git/deploy/kubernetes/helm/sloth/tests/testdata/output/deployment_custom.yaml",
+        "sloth.git/deploy/kubernetes/helm/sloth/tests/testdata/output/deployment_custom_no_extras.yaml",
+        "sloth.git/deploy/kubernetes/helm/sloth/tests/testdata/output/deployment_custom_slo_config.yaml",
+        "sloth.git/deploy/kubernetes/helm/sloth/tests/testdata/output/deployment_default.yaml",
+        "sloth.git/pkg/kubernetes/gen/crd/sloth.slok.dev_prometheusservicelevels.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

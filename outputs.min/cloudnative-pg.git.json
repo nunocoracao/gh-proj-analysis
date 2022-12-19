@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "cloudnative-pg.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -15,6 +13,71 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "cloudnative-pg.git/config/certmanager/kustomization.yaml",
+        "cloudnative-pg.git/config/crd/kustomization.yaml",
+        "cloudnative-pg.git/config/default/kustomization.yaml",
+        "cloudnative-pg.git/config/helm/kustomization.yaml",
+        "cloudnative-pg.git/config/manager/kustomization.yaml",
+        "cloudnative-pg.git/config/manifests/kustomization.yaml",
+        "cloudnative-pg.git/config/prometheus/kustomization.yaml",
+        "cloudnative-pg.git/config/rbac/kustomization.yaml",
+        "cloudnative-pg.git/config/webhook/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "cloudnative-pg.git/config/rbac/auth_proxy_service.yaml",
+        "cloudnative-pg.git/config/webhook/service.yaml",
+        "cloudnative-pg.git/docs/src/samples/cluster-expose-service.yaml",
+        "cloudnative-pg.git/docs/src/samples/monitoring/grafana-configmap.yaml",
+        "cloudnative-pg.git/tests/e2e/fixtures/cluster_microservice/cluster_microservice.yaml",
+        "cloudnative-pg.git/tests/e2e/fixtures/configmap-support/configmap.yaml",
+        "cloudnative-pg.git/tests/e2e/fixtures/initdb/cluster_post_init_configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "cloudnative-pg.git/hack/e2e/rke-ec2/interface.tf",
+        "cloudnative-pg.git/hack/e2e/rke-ec2/provider.tf",
+        "cloudnative-pg.git/hack/e2e/rke-ec2/rke.tf",
+        "cloudnative-pg.git/hack/e2e/rke-ec2/versions.tf",
+        "cloudnative-pg.git/hack/e2e/rke-ec2/aws/ami.tf",
+        "cloudnative-pg.git/hack/e2e/rke-ec2/aws/iam.tf",
+        "cloudnative-pg.git/hack/e2e/rke-ec2/aws/keys.tf",
+        "cloudnative-pg.git/hack/e2e/rke-ec2/aws/main.tf",
+        "cloudnative-pg.git/hack/e2e/rke-ec2/aws/nodes.tf",
+        "cloudnative-pg.git/hack/e2e/rke-ec2/aws/outputs.tf",
+        "cloudnative-pg.git/hack/e2e/rke-ec2/aws/variables.tf"
+      ]
     }
   },
   "info": {

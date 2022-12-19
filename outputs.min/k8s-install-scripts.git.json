@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 3,
-      "filepaths": [
-        "k8s-install-scripts.git/demo/web/src/main/docker/Dockerfile",
-        "k8s-install-scripts.git/yaml/rabbitmq/cluster/docker/Dockerfile",
-        "k8s-install-scripts.git/yaml/redis/redis-sentinel/image/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -19,6 +15,60 @@
       "filepaths": [
         "k8s-install-scripts.git/demo/web/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "k8s-install-scripts.git/demo/kubernetes/mysql-service.yaml",
+        "k8s-install-scripts.git/demo/kubernetes/redis-deployment.yaml",
+        "k8s-install-scripts.git/demo/kubernetes/redis-service.yaml",
+        "k8s-install-scripts.git/demo/kubernetes/web-deployment.yaml",
+        "k8s-install-scripts.git/demo/kubernetes/web-service.yaml",
+        "k8s-install-scripts.git/yaml/efk/es-service.yaml",
+        "k8s-install-scripts.git/yaml/efk/kibana-service.yaml",
+        "k8s-install-scripts.git/yaml/example/service-frontend.yaml",
+        "k8s-install-scripts.git/yaml/example/service-redis-master.yaml",
+        "k8s-install-scripts.git/yaml/example/service-redis-slave.yaml",
+        "k8s-install-scripts.git/yaml/glusterfs/glusterfs-service.yaml",
+        "k8s-install-scripts.git/yaml/ingress-nginx/app-deployment.yaml",
+        "k8s-install-scripts.git/yaml/ingress-nginx/app-service.yaml",
+        "k8s-install-scripts.git/yaml/ingress-nginx/default-backend-deployment.yaml",
+        "k8s-install-scripts.git/yaml/ingress-nginx/default-backend-service.yaml",
+        "k8s-install-scripts.git/yaml/ingress-nginx/nginx-ingress-controller-deployment.yaml",
+        "k8s-install-scripts.git/yaml/ingress-nginx/nginx-ingress-controller-service.yaml",
+        "k8s-install-scripts.git/yaml/storage-class/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

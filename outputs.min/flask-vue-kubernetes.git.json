@@ -1,16 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 4,
-      "filepaths": [
-        "flask-vue-kubernetes.git/services/client/Dockerfile",
-        "flask-vue-kubernetes.git/services/client/Dockerfile-minikube",
-        "flask-vue-kubernetes.git/services/db/Dockerfile",
-        "flask-vue-kubernetes.git/services/server/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -20,6 +15,48 @@
       "filepaths": [
         "flask-vue-kubernetes.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "flask-vue-kubernetes.git/kubernetes/flask-deployment.yml",
+        "flask-vue-kubernetes.git/kubernetes/flask-service.yml",
+        "flask-vue-kubernetes.git/kubernetes/postgres-deployment.yml",
+        "flask-vue-kubernetes.git/kubernetes/postgres-service.yml",
+        "flask-vue-kubernetes.git/kubernetes/vue-deployment.yml",
+        "flask-vue-kubernetes.git/kubernetes/vue-service.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

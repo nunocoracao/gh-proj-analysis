@@ -1,22 +1,59 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 8,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 8,
-      "filepaths": [
-        "containerized-data-importer.git/hack/build/docker/builder/Dockerfile",
-        "containerized-data-importer.git/hack/ci/Dockerfile.ci",
-        "containerized-data-importer.git/vendor/github.com/docker/distribution/Dockerfile",
-        "containerized-data-importer.git/vendor/github.com/nxadm/tail/Dockerfile",
-        "containerized-data-importer.git/vendor/github.com/openshift/api/Dockerfile.build",
-        "containerized-data-importer.git/vendor/github.com/vmware/govmomi/Dockerfile.govc",
-        "containerized-data-importer.git/vendor/github.com/vmware/govmomi/Dockerfile.vcsim",
-        "containerized-data-importer.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "containerized-data-importer.git/cluster-up/cluster/kind-1.22-sriov/sriov-components/manifests/kustomization.yaml",
+        "containerized-data-importer.git/cluster-up/cluster/kind-1.22-sriov/sriov-components/manifests/multus/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "containerized-data-importer.git/vendor/github.com/openshift/api/helm/v1beta1/0000_10-helm-chart-repository.crd.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "containerized-data-importer.git/cluster-sync/nfs/nfs-service.yaml",
+        "containerized-data-importer.git/manifests/example/cert-configmap.yaml",
+        "containerized-data-importer.git/manifests/example/vddk-configmap.yaml",
+        "containerized-data-importer.git/vendor/github.com/openshift/api/operator/v1/0000_50_service-ca-operator_02_crd.yaml",
+        "containerized-data-importer.git/vendor/github.com/openshift/api/sharedresource/v1alpha1/0000_10_sharedconfigmap.crd.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,16 +1,63 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
-      "rootCount": 1,
-      "subFolderCount": 1,
-      "filepaths": [
-        "kube-resource-report.git/Dockerfile",
-        "kube-resource-report.git/sample-report/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kube-resource-report.git/deploy/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kube-resource-report.git/unsupported/chart/kube-resource-report/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "kube-resource-report.git/deploy/configmap.yaml",
+        "kube-resource-report.git/deploy/deployment.yaml",
+        "kube-resource-report.git/deploy/service.yaml",
+        "kube-resource-report.git/sample-report/deploy/deployment.yaml",
+        "kube-resource-report.git/sample-report/deploy/service.yaml",
+        "kube-resource-report.git/unsupported/chart/kube-resource-report/templates/configmap-nginx.yaml",
+        "kube-resource-report.git/unsupported/chart/kube-resource-report/templates/configmap.yaml",
+        "kube-resource-report.git/unsupported/chart/kube-resource-report/templates/deployment.yaml",
+        "kube-resource-report.git/unsupported/chart/kube-resource-report/templates/service.yaml",
+        "kube-resource-report.git/unsupported/chart/kube-resource-report/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,23 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 11,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 11,
-      "filepaths": [
-        "amplication.git/ee/packages/amplication-git-pull-service/Dockerfile",
-        "amplication.git/ee/packages/amplication-git-push-webhook-service/Dockerfile",
-        "amplication.git/packages/amplication-build-manager/Dockerfile",
-        "amplication.git/packages/amplication-client/Dockerfile",
-        "amplication.git/packages/amplication-data-service-generator/Dockerfile",
-        "amplication.git/packages/amplication-data-service-generator/src/admin/static/Dockerfile",
-        "amplication.git/packages/amplication-data-service-generator/src/server/static/Dockerfile",
-        "amplication.git/packages/amplication-git-pull-request-service/Dockerfile",
-        "amplication.git/packages/amplication-prisma-db/prisma/Dockerfile",
-        "amplication.git/packages/amplication-server/Dockerfile",
-        "amplication.git/packages/amplication-storage-gateway/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -29,6 +17,73 @@
         "amplication.git/packages/amplication-data-service-generator/src/server/docker-compose/docker-compose.db.template.yml",
         "amplication.git/packages/amplication-data-service-generator/src/server/docker-compose/docker-compose.template.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "amplication.git/helm/charts/amplication/Chart.yaml",
+        "amplication.git/helm/charts/base/Chart.yaml",
+        "amplication.git/helm/charts/dsg-runner-infra/Chart.yaml",
+        "amplication.git/helm/charts/dsg-runner-infra/charts/amplication-build-manager/Chart.yaml",
+        "amplication.git/helm/charts/infra/Chart.yaml",
+        "amplication.git/helm/charts/services/amplication-client/Chart.yaml",
+        "amplication.git/helm/charts/services/amplication-git-pull-request-service/Chart.yaml",
+        "amplication.git/helm/charts/services/amplication-git-pull-service/Chart.yaml",
+        "amplication.git/helm/charts/services/amplication-git-push-webhook-service/Chart.yaml",
+        "amplication.git/helm/charts/services/amplication-server/Chart.yaml",
+        "amplication.git/helm/charts/services/amplication-storage-gateway/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "amplication.git/helm/charts/dsg-runner-infra/charts/amplication-build-manager/templates/configmap.yaml",
+        "amplication.git/helm/charts/dsg-runner-infra/charts/amplication-build-manager/templates/deployment.yaml",
+        "amplication.git/helm/charts/dsg-runner-infra/charts/amplication-build-manager/templates/service.yaml",
+        "amplication.git/helm/charts/services/amplication-client/templates/configmap.yaml",
+        "amplication.git/helm/charts/services/amplication-client/templates/deployment.yaml",
+        "amplication.git/helm/charts/services/amplication-client/templates/service.yaml",
+        "amplication.git/helm/charts/services/amplication-git-pull-request-service/templates/configmap.yaml",
+        "amplication.git/helm/charts/services/amplication-git-pull-request-service/templates/deployment.yaml",
+        "amplication.git/helm/charts/services/amplication-git-pull-service/templates/configmap.yaml",
+        "amplication.git/helm/charts/services/amplication-git-pull-service/templates/deployment.yaml",
+        "amplication.git/helm/charts/services/amplication-git-push-webhook-service/templates/configmap.yaml",
+        "amplication.git/helm/charts/services/amplication-git-push-webhook-service/templates/deployment.yaml",
+        "amplication.git/helm/charts/services/amplication-git-push-webhook-service/templates/service.yaml",
+        "amplication.git/helm/charts/services/amplication-server/templates/configmap.yaml",
+        "amplication.git/helm/charts/services/amplication-server/templates/deployment.yaml",
+        "amplication.git/helm/charts/services/amplication-server/templates/service.yaml",
+        "amplication.git/helm/charts/services/amplication-storage-gateway/templates/configmap.yaml",
+        "amplication.git/helm/charts/services/amplication-storage-gateway/templates/deployment.yaml",
+        "amplication.git/helm/charts/services/amplication-storage-gateway/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "redis-commander.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -17,6 +15,54 @@
       "filepaths": [
         "redis-commander.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "redis-commander.git/.github/workflows/chart-test.yml",
+        "redis-commander.git/k8s/helm-chart/redis-commander/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "redis-commander.git/k8s/helm-chart/redis-commander/templates/deployment.yaml",
+        "redis-commander.git/k8s/helm-chart/redis-commander/templates/service.yaml",
+        "redis-commander.git/k8s/helm-chart/redis-commander/templates/serviceaccount.yaml",
+        "redis-commander.git/k8s/redis/deployment-with-password.yaml",
+        "redis-commander.git/k8s/redis/deployment.yaml",
+        "redis-commander.git/k8s/redis/service.yaml",
+        "redis-commander.git/k8s/redis-commander/deployment-password-protected-redis.yaml",
+        "redis-commander.git/k8s/redis-commander/deployment.yaml",
+        "redis-commander.git/k8s/redis-commander/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

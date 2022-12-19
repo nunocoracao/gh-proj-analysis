@@ -2,20 +2,65 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 7,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 7,
+      "subFolderCount": 1,
       "filepaths": [
-        "kube-fledged.git/build/Dockerfile.controller",
-        "kube-fledged.git/build/Dockerfile.controller_dev",
-        "kube-fledged.git/build/Dockerfile.cri_client",
-        "kube-fledged.git/build/Dockerfile.webhook_server",
-        "kube-fledged.git/build/Dockerfile.webhook_server_dev",
-        "kube-fledged.git/deploy/kubefledged-operator/build/Dockerfile",
         "kube-fledged.git/hack/boilerplate/boilerplate.Dockerfile.txt"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "kube-fledged.git/deploy/kubefledged-operator/deploy/crds/charts.helm.kubefledged.io_kubefledgeds_crd.yaml",
+        "kube-fledged.git/deploy/kubefledged-operator/deploy/crds/charts.helm.kubefledged.io_v1alpha2_kubefledged_cr.yaml",
+        "kube-fledged.git/deploy/kubefledged-operator/helm-charts/kubefledged/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "kube-fledged.git/deploy/kubefledged-deployment-controller.yaml",
+        "kube-fledged.git/deploy/kubefledged-deployment-webhook-server.yaml",
+        "kube-fledged.git/deploy/kubefledged-service-webhook-server.yaml",
+        "kube-fledged.git/deploy/kubefledged-serviceaccount-controller.yaml",
+        "kube-fledged.git/deploy/kubefledged-serviceaccount-webhook-server.yaml",
+        "kube-fledged.git/deploy/kubefledged-operator/deploy/service_account.yaml",
+        "kube-fledged.git/deploy/kubefledged-operator/helm-charts/kubefledged/templates/deployment-controller.yaml",
+        "kube-fledged.git/deploy/kubefledged-operator/helm-charts/kubefledged/templates/deployment-webhook-server.yaml",
+        "kube-fledged.git/deploy/kubefledged-operator/helm-charts/kubefledged/templates/service-webhook-server.yaml",
+        "kube-fledged.git/deploy/kubefledged-operator/helm-charts/kubefledged/templates/serviceaccount-controller.yaml",
+        "kube-fledged.git/deploy/kubefledged-operator/helm-charts/kubefledged/templates/serviceaccount-webhook-server.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

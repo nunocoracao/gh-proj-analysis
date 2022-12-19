@@ -1,14 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "homelab.git/metal/roles/pxe_server/files/dnsmasq/Dockerfile",
-        "homelab.git/metal/roles/pxe_server/files/http/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -17,6 +14,89 @@
       "subFolderCount": 1,
       "filepaths": [
         "homelab.git/metal/roles/pxe_server/files/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "homelab.git/.ci/kustomization.yaml",
+        "homelab.git/.ci/tasks/kustomization.yaml",
+        "homelab.git/platform/tekton-pipelines/kustomization.yaml",
+        "homelab.git/platform/zerotier/kustomization.yaml",
+        "homelab.git/system/k8up-operator/kustomization.yaml",
+        "homelab.git/system/system-upgrade/kustomization.yaml",
+        "homelab.git/system/system-upgrade/k3s/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 23,
+      "rootCount": 0,
+      "subFolderCount": 23,
+      "filepaths": [
+        "homelab.git/apps/hajimari/Chart.yaml",
+        "homelab.git/apps/jellyfin/Chart.yaml",
+        "homelab.git/apps/matrix/Chart.yaml",
+        "homelab.git/apps/paperless/Chart.yaml",
+        "homelab.git/apps/seafile/Chart.yaml",
+        "homelab.git/bootstrap/argocd/Chart.yaml",
+        "homelab.git/bootstrap/root/Chart.yaml",
+        "homelab.git/platform/dex/Chart.yaml",
+        "homelab.git/platform/external-secrets/Chart.yaml",
+        "homelab.git/platform/gitea/Chart.yaml",
+        "homelab.git/platform/renovate/Chart.yaml",
+        "homelab.git/platform/trow/Chart.yaml",
+        "homelab.git/platform/vault/Chart.yaml",
+        "homelab.git/system/cert-manager/Chart.yaml",
+        "homelab.git/system/cloudflared/Chart.yaml",
+        "homelab.git/system/descheduler/Chart.yaml",
+        "homelab.git/system/external-dns/Chart.yaml",
+        "homelab.git/system/ingress-nginx/Chart.yaml",
+        "homelab.git/system/kured/Chart.yaml",
+        "homelab.git/system/loki/Chart.yaml",
+        "homelab.git/system/longhorn-system/Chart.yaml",
+        "homelab.git/system/metallb-system/Chart.yaml",
+        "homelab.git/system/monitoring-system/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "homelab.git/metal/roles/metallb_config/templates/configmap.yaml.j2",
+        "homelab.git/platform/tekton-pipelines/serviceaccount.yaml",
+        "homelab.git/platform/zerotier/deployment.yaml",
+        "homelab.git/system/longhorn-system/templates/servicemonitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "homelab.git/external/main.tf",
+        "homelab.git/external/terraform.tfvars.j2",
+        "homelab.git/external/variables.tf",
+        "homelab.git/external/versions.tf",
+        "homelab.git/external/modules/cloudflare/main.tf",
+        "homelab.git/external/modules/cloudflare/variables.tf",
+        "homelab.git/external/modules/cloudflare/versions.tf",
+        "homelab.git/external/modules/zerotier/main.tf",
+        "homelab.git/external/modules/zerotier/variables.tf",
+        "homelab.git/external/modules/zerotier/versions.tf"
       ]
     }
   },

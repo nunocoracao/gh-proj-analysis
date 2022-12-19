@@ -1,16 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 3,
-      "subFolderCount": 1,
-      "filepaths": [
-        "podinfo.git/Dockerfile",
-        "podinfo.git/Dockerfile.base",
-        "podinfo.git/Dockerfile.xx",
-        "podinfo.git/.github/actions/release-notes/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -20,6 +15,77 @@
       "filepaths": [
         "podinfo.git/otel/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "podinfo.git/deploy/bases/backend/kustomization.yaml",
+        "podinfo.git/deploy/bases/cache/kustomization.yaml",
+        "podinfo.git/deploy/bases/frontend/kustomization.yaml",
+        "podinfo.git/deploy/overlays/dev/kustomization.yaml",
+        "podinfo.git/deploy/overlays/production/kustomization.yaml",
+        "podinfo.git/deploy/overlays/staging/kustomization.yaml",
+        "podinfo.git/kustomize/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "podinfo.git/charts/podinfo/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 25,
+      "rootCount": 0,
+      "subFolderCount": 25,
+      "filepaths": [
+        "podinfo.git/charts/podinfo/templates/deployment.yaml",
+        "podinfo.git/charts/podinfo/templates/service.yaml",
+        "podinfo.git/charts/podinfo/templates/serviceaccount.yaml",
+        "podinfo.git/charts/podinfo/templates/servicemonitor.yaml",
+        "podinfo.git/charts/podinfo/templates/redis/deployment.yaml",
+        "podinfo.git/charts/podinfo/templates/redis/service.yaml",
+        "podinfo.git/charts/podinfo/templates/tests/service.yaml",
+        "podinfo.git/deploy/bases/backend/deployment.yaml",
+        "podinfo.git/deploy/bases/backend/service.yaml",
+        "podinfo.git/deploy/bases/cache/deployment.yaml",
+        "podinfo.git/deploy/bases/cache/service.yaml",
+        "podinfo.git/deploy/bases/frontend/deployment.yaml",
+        "podinfo.git/deploy/bases/frontend/service.yaml",
+        "podinfo.git/deploy/secure/backend/deployment.yaml",
+        "podinfo.git/deploy/secure/backend/service.yaml",
+        "podinfo.git/deploy/secure/common/service-account.yaml",
+        "podinfo.git/deploy/secure/frontend/deployment.yaml",
+        "podinfo.git/deploy/secure/frontend/service.yaml",
+        "podinfo.git/deploy/webapp/backend/deployment.yaml",
+        "podinfo.git/deploy/webapp/backend/service.yaml",
+        "podinfo.git/deploy/webapp/common/service-account.yaml",
+        "podinfo.git/deploy/webapp/frontend/deployment.yaml",
+        "podinfo.git/deploy/webapp/frontend/service.yaml",
+        "podinfo.git/kustomize/deployment.yaml",
+        "podinfo.git/kustomize/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

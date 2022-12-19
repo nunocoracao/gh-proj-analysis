@@ -1,28 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 16,
-      "rootCount": 1,
-      "subFolderCount": 15,
-      "filepaths": [
-        "featureform.git/Dockerfile",
-        "featureform.git/api/Dockerfile",
-        "featureform.git/charts/data_loader/Dockerfile",
-        "featureform.git/coordinator/Dockerfile",
-        "featureform.git/coordinator/scheduletest/Dockerfile",
-        "featureform.git/dashboard/Dockerfile",
-        "featureform.git/docs/quickstart_scripts/Dockerfile",
-        "featureform.git/embeddinghub/Dockerfile",
-        "featureform.git/embeddinghub/test-metrics/Dockerfile",
-        "featureform.git/embeddinghub/test-metrics/prometheus/Dockerfile",
-        "featureform.git/metadata/Dockerfile",
-        "featureform.git/metadata/dashboard/Dockerfile",
-        "featureform.git/metrics/Dockerfile",
-        "featureform.git/provider/scripts/k8s/Dockerfile",
-        "featureform.git/runner/Dockerfile",
-        "featureform.git/serving/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -31,6 +14,107 @@
       "subFolderCount": 1,
       "filepaths": [
         "featureform.git/embeddinghub/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "featureform.git/charts/featureform/Chart.yaml",
+        "featureform.git/charts/featureform/charts/api-server/Chart.yaml",
+        "featureform.git/charts/featureform/charts/coodinator/Chart.yaml",
+        "featureform.git/charts/featureform/charts/dashboard/Chart.yaml",
+        "featureform.git/charts/featureform/charts/dashboard-metadata/Chart.yaml",
+        "featureform.git/charts/featureform/charts/feature-server/Chart.yaml",
+        "featureform.git/charts/featureform/charts/ingress/Chart.yaml",
+        "featureform.git/charts/featureform/charts/metadata/Chart.yaml",
+        "featureform.git/charts/featureform/charts/prometheus/Chart.yaml",
+        "featureform.git/charts/featureform/charts/typesense/Chart.yaml",
+        "featureform.git/charts/quickstart/Chart.yaml",
+        "featureform.git/charts/quickstart/charts/postgres/Chart.yaml",
+        "featureform.git/charts/quickstart/charts/redis/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 26,
+      "rootCount": 0,
+      "subFolderCount": 26,
+      "filepaths": [
+        "featureform.git/charts/featureform/charts/api-server/templates/deployment.yaml",
+        "featureform.git/charts/featureform/charts/api-server/templates/service.yaml",
+        "featureform.git/charts/featureform/charts/coodinator/templates/deployment.yaml",
+        "featureform.git/charts/featureform/charts/coodinator/templates/service.yaml",
+        "featureform.git/charts/featureform/charts/coodinator/templates/serviceaccount.yaml",
+        "featureform.git/charts/featureform/charts/dashboard/templates/configmap.yaml",
+        "featureform.git/charts/featureform/charts/dashboard/templates/deployment.yaml",
+        "featureform.git/charts/featureform/charts/dashboard/templates/service.yaml",
+        "featureform.git/charts/featureform/charts/dashboard-metadata/templates/deployment.yaml",
+        "featureform.git/charts/featureform/charts/dashboard-metadata/templates/service.yaml",
+        "featureform.git/charts/featureform/charts/dashboard-metadata/templates/serviceaccount.yaml",
+        "featureform.git/charts/featureform/charts/feature-server/templates/deployment.yaml",
+        "featureform.git/charts/featureform/charts/feature-server/templates/service.yaml",
+        "featureform.git/charts/featureform/charts/metadata/templates/deployment.yaml",
+        "featureform.git/charts/featureform/charts/metadata/templates/service.yaml",
+        "featureform.git/charts/featureform/charts/prometheus/templates/deployment.yaml",
+        "featureform.git/charts/featureform/charts/prometheus/templates/service.yaml",
+        "featureform.git/charts/featureform/charts/typesense/templates/deployment.yaml",
+        "featureform.git/charts/featureform/charts/typesense/templates/service.yaml",
+        "featureform.git/charts/featureform/templates/serviceaccount.yaml",
+        "featureform.git/charts/quickstart/charts/postgres/templates/deployment.yaml",
+        "featureform.git/charts/quickstart/charts/postgres/templates/service.yaml",
+        "featureform.git/charts/quickstart/charts/postgres/templates/serviceaccount.yaml",
+        "featureform.git/charts/quickstart/charts/redis/templates/deployment.yaml",
+        "featureform.git/charts/quickstart/charts/redis/templates/service.yaml",
+        "featureform.git/charts/quickstart/charts/redis/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 24,
+      "rootCount": 0,
+      "subFolderCount": 24,
+      "filepaths": [
+        "featureform.git/terraform/aws/main.tf",
+        "featureform.git/terraform/aws/outputs.tf",
+        "featureform.git/terraform/aws/cluster/eks-cluster.tf",
+        "featureform.git/terraform/aws/cluster/elasticache.tf",
+        "featureform.git/terraform/aws/cluster/kubernetes.tf",
+        "featureform.git/terraform/aws/cluster/outputs.tf",
+        "featureform.git/terraform/aws/cluster/rds.tf",
+        "featureform.git/terraform/aws/cluster/security-groups.tf",
+        "featureform.git/terraform/aws/cluster/versions.tf",
+        "featureform.git/terraform/aws/cluster/vpc.tf",
+        "featureform.git/terraform/gcp/featureform/featureform.tf",
+        "featureform.git/terraform/gcp/featureform/featureform_quickstart.tf",
+        "featureform.git/terraform/gcp/featureform/terraform.auto.tfvars",
+        "featureform.git/terraform/gcp/featureform/variable.tf",
+        "featureform.git/terraform/gcp/featureform/versions.tf",
+        "featureform.git/terraform/gcp/gcp_services/bigquery.tf",
+        "featureform.git/terraform/gcp/gcp_services/firestore.tf",
+        "featureform.git/terraform/gcp/gcp_services/gke.tf",
+        "featureform.git/terraform/gcp/gcp_services/outputs.tf",
+        "featureform.git/terraform/gcp/gcp_services/storage.tf",
+        "featureform.git/terraform/gcp/gcp_services/terraform.auto.tfvars",
+        "featureform.git/terraform/gcp/gcp_services/variable.tf",
+        "featureform.git/terraform/gcp/gcp_services/versions.tf",
+        "featureform.git/terraform/gcp/gcp_services/vpc.tf"
       ]
     }
   },

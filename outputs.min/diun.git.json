@@ -2,20 +2,18 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 10,
-      "rootCount": 1,
-      "subFolderCount": 9,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
       "filepaths": [
-        "diun.git/Dockerfile",
-        "diun.git/docs/providers/dockerfile.md",
         "diun.git/hack/docs.Dockerfile",
         "diun.git/hack/gen.Dockerfile",
         "diun.git/hack/lint.Dockerfile",
         "diun.git/hack/vendor.Dockerfile",
         "diun.git/internal/model/provider_dockerfile.go",
-        "diun.git/internal/provider/dockerfile",
-        "diun.git/pkg/dockerfile",
-        "diun.git/test/dockerfile1"
+        "diun.git/pkg/dockerfile/fixtures/empty.Dockerfile",
+        "diun.git/pkg/dockerfile/fixtures/invalid.Dockerfile",
+        "diun.git/pkg/dockerfile/fixtures/valid.Dockerfile"
       ]
     },
     "composefile": {
@@ -24,6 +22,43 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 1,
+      "subFolderCount": 0,
+      "filepaths": [
+        "diun.git/docker-bake.hcl"
+      ]
     }
   },
   "info": {

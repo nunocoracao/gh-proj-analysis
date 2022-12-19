@@ -1,16 +1,70 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 2,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 2,
-      "filepaths": [
-        "camel-k.git/build/Dockerfile",
-        "camel-k.git/build/Dockerfile.arch"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "camel-k.git/config/crd/kustomization.yaml",
+        "camel-k.git/config/manager/kustomization.yaml",
+        "camel-k.git/config/manifests/kustomization.yaml",
+        "camel-k.git/config/prometheus/kustomization.yaml",
+        "camel-k.git/config/rbac/kustomization.yaml",
+        "camel-k.git/config/rbac/openshift/kustomization.yaml",
+        "camel-k.git/config/samples/kustomization.yaml",
+        "camel-k.git/config/scorecard/kustomization.yaml",
+        "camel-k.git/install/example/kustomization.yaml",
+        "camel-k.git/install/operator/kustomization.yaml",
+        "camel-k.git/install/platform/kustomization.yaml",
+        "camel-k.git/install/setup/kustomization.yaml",
+        "camel-k.git/install/setup-cluster/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "camel-k.git/helm/camel-k/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "camel-k.git/config/manager/operator-deployment.yaml",
+        "camel-k.git/config/manager/operator-service-account.yaml",
+        "camel-k.git/config/manifests/bases/camel-k.clusterserviceversion.yaml",
+        "camel-k.git/helm/camel-k/templates/operator-service-account.yaml",
+        "camel-k.git/resources/builder/builder-service-account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

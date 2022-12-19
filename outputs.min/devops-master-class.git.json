@@ -1,19 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 7,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 7,
-      "filepaths": [
-        "devops-master-class.git/jenkins/currency-exchange-microservice/Dockerfile",
-        "devops-master-class.git/kubernetes/01-hello-world-rest-api/Dockerfile",
-        "devops-master-class.git/projects/hello-world/hello-world-java/Dockerfile",
-        "devops-master-class.git/projects/hello-world/hello-world-nodejs/Dockerfile",
-        "devops-master-class.git/projects/hello-world/hello-world-python/Dockerfile",
-        "devops-master-class.git/projects/microservices/01-currency-exchange-microservice-basic/Dockerfile",
-        "devops-master-class.git/projects/microservices/02-currency-conversion-microservice-basic/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -23,6 +15,83 @@
       "filepaths": [
         "devops-master-class.git/jenkins/docker-compose.yml",
         "devops-master-class.git/projects/microservices/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "devops-master-class.git/kubernetes/01-hello-world-rest-api/backup/01-deployment-original.yaml",
+        "devops-master-class.git/kubernetes/01-hello-world-rest-api/backup/02-deployment-cleanedup.yaml",
+        "devops-master-class.git/kubernetes/01-hello-world-rest-api/backup/03-deployment-multiple-deployments.yaml",
+        "devops-master-class.git/projects/microservices/01-currency-exchange-microservice-basic/configuration/kubernetes/deployment.yaml",
+        "devops-master-class.git/projects/microservices/01-currency-exchange-microservice-basic/pipeline-backups/03-playing-with-environment-deployment.yml",
+        "devops-master-class.git/projects/microservices/02-currency-conversion-microservice-basic/00-configmap-currency-conversion.yaml",
+        "devops-master-class.git/projects/microservices/02-currency-conversion-microservice-basic/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 33,
+      "rootCount": 0,
+      "subFolderCount": 33,
+      "filepaths": [
+        "devops-master-class.git/projects/microservices/01-currency-exchange-microservice-basic/configuration/iaac/aws/kubernetes/main.tf",
+        "devops-master-class.git/projects/microservices/01-currency-exchange-microservice-basic/configuration/iaac/azure/backend/main.tf",
+        "devops-master-class.git/projects/microservices/01-currency-exchange-microservice-basic/configuration/iaac/azure/backend/outputs.tf",
+        "devops-master-class.git/projects/microservices/01-currency-exchange-microservice-basic/configuration/iaac/azure/backend/variables.tf",
+        "devops-master-class.git/projects/microservices/01-currency-exchange-microservice-basic/configuration/iaac/azure/kubernetes/main.tf",
+        "devops-master-class.git/projects/microservices/01-currency-exchange-microservice-basic/configuration/iaac/azure/kubernetes/outputs.tf",
+        "devops-master-class.git/projects/microservices/01-currency-exchange-microservice-basic/configuration/iaac/azure/kubernetes/variables.tf",
+        "devops-master-class.git/terraform/backup/01-terraform-basics/iam.tfplan",
+        "devops-master-class.git/terraform/backup/01-terraform-basics/main.tf",
+        "devops-master-class.git/terraform/backup/01-terraform-basics/outputs.tf",
+        "devops-master-class.git/terraform/backup/02-more-terraform-basics/main.tf",
+        "devops-master-class.git/terraform/backup/02-more-terraform-basics/terraform.tfvars",
+        "devops-master-class.git/terraform/backup/03-lists-and-sets/main.tf",
+        "devops-master-class.git/terraform/backup/04-maps/main.tf",
+        "devops-master-class.git/terraform/backup/05-ec2-instances/data-providers.tf",
+        "devops-master-class.git/terraform/backup/05-ec2-instances/main.tf",
+        "devops-master-class.git/terraform/backup/05-ec2-instances/outputs.tf",
+        "devops-master-class.git/terraform/backup/05-ec2-instances/variables.tf",
+        "devops-master-class.git/terraform/backup/06-ec2-with-elb/data-providers.tf",
+        "devops-master-class.git/terraform/backup/06-ec2-with-elb/main.tf",
+        "devops-master-class.git/terraform/backup/06-ec2-with-elb/outputs.tf",
+        "devops-master-class.git/terraform/backup/06-ec2-with-elb/variables.tf",
+        "devops-master-class.git/terraform/backup/07-backend-state/backend-state/main.tf",
+        "devops-master-class.git/terraform/backup/07-backend-state/users/main.tf",
+        "devops-master-class.git/terraform/backup/07-backend-state/users/outputs.tf",
+        "devops-master-class.git/terraform/backup/08-modules/dev/users/main.tf",
+        "devops-master-class.git/terraform/backup/08-modules/qa/users/main.tf",
+        "devops-master-class.git/terraform/backup/08-modules/terraform-modules/users/main.tf",
+        "devops-master-class.git/terraform/backup/08-modules/terraform-modules/users/outputs.tf",
+        "devops-master-class.git/terraform/backup/09-multiple-ec2-instances/data-providers.tf",
+        "devops-master-class.git/terraform/backup/09-multiple-ec2-instances/main.tf",
+        "devops-master-class.git/terraform/backup/09-multiple-ec2-instances/outputs.tf",
+        "devops-master-class.git/terraform/backup/09-multiple-ec2-instances/variables.tf"
       ]
     }
   },

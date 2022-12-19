@@ -1,15 +1,68 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "manageiq.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "manageiq.git/product/charts/layouts/daily_util_charts.yaml",
+        "manageiq.git/product/charts/layouts/ts_util_charts.yaml",
+        "manageiq.git/product/dashboard/widgets/chart_guest_os_information_any_os.yaml",
+        "manageiq.git/product/dashboard/widgets/chart_hosts_summary_by_version.yaml",
+        "manageiq.git/product/dashboard/widgets/chart_number_of_nodes_per_cpu_cores.yaml",
+        "manageiq.git/product/dashboard/widgets/chart_pods_per_ready.yaml",
+        "manageiq.git/product/dashboard/widgets/chart_server_availability.yaml",
+        "manageiq.git/product/dashboard/widgets/chart_server_health.yaml",
+        "manageiq.git/product/dashboard/widgets/chart_vendor_and_guest_os.yaml",
+        "manageiq.git/product/dashboard/widgets/chart_virtual_infrastructure_platforms.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "manageiq.git/product/charts/layouts/daily_perf_charts/ContainerService.yaml",
+        "manageiq.git/product/charts/layouts/hourly_perf_charts/ContainerService.yaml",
+        "manageiq.git/product/reports/110_Configuration Management - Hosts/015_Host - ESX Services.yaml",
+        "manageiq.git/product/reports/110_Configuration Management - Hosts/016_Host - ESX Service Console Packages.yaml",
+        "manageiq.git/spec/fixtures/files/import_service_dialog.yml",
+        "manageiq.git/spec/fixtures/files/dialogs/service_dialog_symlink",
+        "manageiq.git/spec/fixtures/files/dialogs/service_dialogs/service_seed_test.yaml",
+        "manageiq.git/spec/fixtures/files/dialogs/service_dialogs/service_seed_test.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

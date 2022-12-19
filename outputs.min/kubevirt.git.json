@@ -1,18 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 6,
-      "filepaths": [
-        "kubevirt.git/hack/builder/Dockerfile",
-        "kubevirt.git/hack/ci/Dockerfile.ci",
-        "kubevirt.git/tests/Dockerfile",
-        "kubevirt.git/vendor/github.com/onsi/gomega/Dockerfile",
-        "kubevirt.git/vendor/golang.org/x/net/http2/Dockerfile",
-        "kubevirt.git/vendor/mvdan.cc/sh/v3/cmd/shfmt/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -22,6 +15,47 @@
       "filepaths": [
         "kubevirt.git/vendor/github.com/onsi/gomega/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "kubevirt.git/cluster-up/cluster/kind-1.23-sriov/sriov-components/manifests/kustomization.yaml",
+        "kubevirt.git/cluster-up/cluster/kind-1.23-sriov/sriov-components/manifests/multus/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "kubevirt.git/manifests/release/olm/bundle/kubevirtoperator.vVERSION.clusterserviceversion.yaml.in",
+        "kubevirt.git/vendor/github.com/openshift/api/operator/v1/0000_50_service-ca-operator_02_crd.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

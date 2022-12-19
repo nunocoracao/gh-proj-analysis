@@ -2,23 +2,14 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 20,
-      "rootCount": 1,
-      "subFolderCount": 19,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
       "filepaths": [
-        "m3.git/Dockerfile",
-        "m3.git/docker/docs/Dockerfile",
-        "m3.git/docker/grafana/Dockerfile",
-        "m3.git/docker/m3aggregator/Dockerfile",
         "m3.git/docker/m3aggregator/development.Dockerfile",
-        "m3.git/docker/m3coordinator/Dockerfile",
         "m3.git/docker/m3coordinator/development.Dockerfile",
-        "m3.git/docker/m3dbnode/Dockerfile",
-        "m3.git/docker/m3dbnode/Dockerfile-setcap",
         "m3.git/docker/m3dbnode/development.Dockerfile",
-        "m3.git/docker/m3query/Dockerfile",
         "m3.git/docker/m3query/development.Dockerfile",
-        "m3.git/docker/sysctl-setter/Dockerfile",
         "m3.git/scripts/thriftgen.Dockerfile",
         "m3.git/scripts/comparator/m3comparator.Dockerfile",
         "m3.git/scripts/comparator/m3query.Dockerfile",
@@ -55,6 +46,80 @@
         "m3.git/scripts/docker-integration-tests/repair/docker-compose.yml",
         "m3.git/scripts/docker-integration-tests/replication/docker-compose.yml",
         "m3.git/scripts/docker-integration-tests/simple_v2_batch_apis/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 33,
+      "rootCount": 0,
+      "subFolderCount": 33,
+      "filepaths": [
+        "m3.git/kube/m3dbnode-configmap.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/prometheus-servicemonitor-coordinator.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/prometheus-servicemonitor-dbnode.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/prometheus-servicemonitor-promremotebench.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/0prometheus-operator-0servicemonitorCustomResourceDefinition.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/0prometheus-operator-deployment.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/0prometheus-operator-service.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/0prometheus-operator-serviceAccount.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/0prometheus-operator-serviceMonitor.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/grafana-deployment.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/grafana-service.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/grafana-serviceAccount.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/grafana-serviceMonitor.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/kube-state-metrics-deployment.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/kube-state-metrics-service.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/kube-state-metrics-serviceAccount.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/kube-state-metrics-serviceMonitor.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/node-exporter-service.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/node-exporter-serviceAccount.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/node-exporter-serviceMonitor.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-adapter-apiService.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-adapter-configMap.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-adapter-deployment.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-adapter-service.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-adapter-serviceAccount.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-service.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-serviceAccount.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-serviceMonitor.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-serviceMonitorApiserver.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-serviceMonitorCoreDNS.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-serviceMonitorKubeControllerManager.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-serviceMonitorKubeScheduler.yaml",
+        "m3.git/scripts/vagrant/provision/manifests/kube-prometheus/prometheus-serviceMonitorKubelet.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "m3.git/kube/terraform/main.tf",
+        "m3.git/kube/terraform/examples/gcp/gce-fast.tf",
+        "m3.git/kube/terraform/examples/gcp/main.tf",
+        "m3.git/kube/terraform/examples/gcp/variables.tf"
       ]
     }
   },

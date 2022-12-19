@@ -1,15 +1,57 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "ml-hub.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "ml-hub.git/helmchart/mlhub/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "ml-hub.git/helmchart/mlhub/templates/hub/configmap.yaml",
+        "ml-hub.git/helmchart/mlhub/templates/hub/deployment.yaml",
+        "ml-hub.git/helmchart/mlhub/templates/hub/service.yaml",
+        "ml-hub.git/helmchart/mlhub/templates/hub/user-configmap.yaml",
+        "ml-hub.git/helmchart/mlhub/templates/proxy/deployment.yaml",
+        "ml-hub.git/helmchart/mlhub/templates/proxy/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

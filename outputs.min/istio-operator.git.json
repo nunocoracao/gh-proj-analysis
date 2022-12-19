@@ -1,15 +1,93 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "istio-operator.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "istio-operator.git/config/certmanager/kustomization.yaml",
+        "istio-operator.git/config/crd/kustomization.yaml",
+        "istio-operator.git/config/default/kustomization.yaml",
+        "istio-operator.git/config/manager/kustomization.yaml",
+        "istio-operator.git/config/prometheus/kustomization.yaml",
+        "istio-operator.git/config/rbac/kustomization.yaml",
+        "istio-operator.git/config/webhook/kustomization.yaml",
+        "istio-operator.git/internal/assets/manifests/base/kustomization.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-discovery/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "istio-operator.git/deploy/charts/istio-operator/Chart.yaml",
+        "istio-operator.git/internal/assets/manifests/base/Chart.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-cni/Chart.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-discovery/Chart.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-meshexpansion/Chart.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-meshgateway/Chart.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-sidecar-injector/Chart.yaml",
+        "istio-operator.git/internal/assets/manifests/resource-sync-rule/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 25,
+      "rootCount": 0,
+      "subFolderCount": 25,
+      "filepaths": [
+        "istio-operator.git/config/rbac/auth_proxy_service.yaml",
+        "istio-operator.git/config/samples/servicemesh_v1alpha1_istiocontrolplane.yaml",
+        "istio-operator.git/config/samples/servicemesh_v1alpha1_istiomesh.yaml",
+        "istio-operator.git/config/samples/servicemesh_v1alpha1_istiomeshgateway.yaml",
+        "istio-operator.git/config/webhook/service.yaml",
+        "istio-operator.git/deploy/charts/istio-operator/templates/authproxy-service.yaml",
+        "istio-operator.git/deploy/charts/istio-operator/templates/operator-deployment.yaml",
+        "istio-operator.git/deploy/charts/istio-operator/templates/operator-service.yaml",
+        "istio-operator.git/internal/assets/manifests/base/templates/services.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-cni/templates/configmap-cni.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-cni/templates/serviceaccount.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-discovery/templates/configmap-jwks.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-discovery/templates/configmap.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-discovery/templates/deployment.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-discovery/templates/istiod-injector-configmap.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-discovery/templates/reader-serviceaccount.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-discovery/templates/service.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-discovery/templates/serviceaccount.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-meshgateway/templates/deployment.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-meshgateway/templates/service-ext.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-meshgateway/templates/service.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-meshgateway/templates/serviceaccount.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-sidecar-injector/templates/deployment.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-sidecar-injector/templates/service.yaml",
+        "istio-operator.git/internal/assets/manifests/istio-sidecar-injector/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

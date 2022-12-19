@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
-      "rootCount": 1,
-      "subFolderCount": 2,
-      "filepaths": [
-        "pv-migrate.git/Dockerfile",
-        "pv-migrate.git/docker/rsync/Dockerfile",
-        "pv-migrate.git/docker/sshd/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -17,6 +13,53 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "pv-migrate.git/helm/pv-migrate/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "pv-migrate.git/helm/pv-migrate/templates/rsync/serviceaccount.yaml",
+        "pv-migrate.git/helm/pv-migrate/templates/sshd/deployment.yaml",
+        "pv-migrate.git/helm/pv-migrate/templates/sshd/service.yaml",
+        "pv-migrate.git/helm/pv-migrate/templates/sshd/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "pv-migrate.git/test/terraform/.terraform.lock.hcl",
+        "pv-migrate.git/test/terraform/gcp.tf",
+        "pv-migrate.git/test/terraform/terraform.tfvars",
+        "pv-migrate.git/test/terraform/variables.tf"
+      ]
     }
   },
   "info": {

@@ -1,15 +1,75 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "clusternet.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "clusternet.git/deploy/hub/apps.clusternet.io_helmcharts.yaml",
+        "clusternet.git/deploy/templates/helm-chart-private-repo.yaml",
+        "clusternet.git/examples/oci/oci-chart-mysql.yaml",
+        "clusternet.git/examples/replication-scheduling/helm-chart-mysql.yaml",
+        "clusternet.git/examples/scheduling-with-nfd/day0/helm-chart-nfd.yaml",
+        "clusternet.git/manifests/crds/apps.clusternet.io_helmcharts.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "clusternet.git/deploy/agent/clusternet_agent_deployment.yaml",
+        "clusternet.git/deploy/agent/multicluster.x-k8s.io_serviceexports.yaml",
+        "clusternet.git/deploy/agent/multicluster.x-k8s.io_serviceimports.yaml",
+        "clusternet.git/deploy/hub/clusternet_hub_apiservice.yaml",
+        "clusternet.git/deploy/hub/clusternet_hub_deployment.yaml",
+        "clusternet.git/deploy/hub/multicluster.x-k8s.io_serviceexports.yaml",
+        "clusternet.git/deploy/hub/multicluster.x-k8s.io_serviceimports.yaml",
+        "clusternet.git/deploy/scheduler/clusternet_scheduler_deployment.yaml",
+        "clusternet.git/examples/dynamic-dividing-scheduling/nginx-deployment.yaml",
+        "clusternet.git/examples/replication-scheduling/nginx-deployment.yaml",
+        "clusternet.git/examples/scheduling-group/nginx-deployment.yaml",
+        "clusternet.git/examples/scheduling-with-mcs-api/service-import.yaml",
+        "clusternet.git/examples/scheduling-with-mcs-api/scheduling/nginx-deployment.yaml",
+        "clusternet.git/examples/scheduling-with-mcs-api/scheduling/service-export.yaml",
+        "clusternet.git/examples/scheduling-with-nfd/day1/nginx-deployment.yaml",
+        "clusternet.git/examples/static-dividing-scheduling/nginx-deployment.yaml",
+        "clusternet.git/manifests/crds/multicluster.x-k8s.io_serviceexports.yaml",
+        "clusternet.git/manifests/crds/multicluster.x-k8s.io_serviceimports.yaml",
+        "clusternet.git/manifests/samples/cluster_serviceaccount_token.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

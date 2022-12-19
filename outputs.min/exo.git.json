@@ -1,27 +1,71 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 4,
-      "filepaths": [
-        "exo.git/examples/django-compose/Dockerfile",
-        "exo.git/examples/docker-build/Dockerfile",
-        "exo.git/test/image/fixtures/basic-dockerfile",
-        "exo.git/test/image/fixtures/simple-example/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
-      "count": 4,
+      "count": 5,
       "rootCount": 0,
-      "subFolderCount": 4,
+      "subFolderCount": 5,
       "filepaths": [
         "exo.git/examples/compose-host-resolution/docker-compose.yml",
         "exo.git/examples/django-compose/docker-compose.yml",
         "exo.git/examples/docker-build/compose.yml",
-        "exo.git/examples/tests/ray-compose.dev.yml"
+        "exo.git/examples/tests/ray-compose.dev.yml",
+        "exo.git/test/image/fixtures/basic-dockerfile/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 1,
+      "subFolderCount": 11,
+      "filepaths": [
+        "exo.git/exo.hcl",
+        "exo.git/examples/simple-manifest/exo.hcl",
+        "exo.git/internal/core/api/kernel.josh.hcl",
+        "exo.git/internal/core/api/lifecycle.josh.hcl",
+        "exo.git/internal/core/api/workspace.josh.hcl",
+        "exo.git/internal/core/state/api/store.josh.hcl",
+        "exo.git/internal/eventd/api/store.josh.hcl",
+        "exo.git/internal/task/api/store.josh.hcl",
+        "exo.git/test/image/fixtures/basic-exo-hcl/exo.hcl",
+        "exo.git/test/image/fixtures/simple-example/exo.hcl",
+        "exo.git/test/image/fixtures/start-counter/exo.hcl",
+        "exo.git/test/image/fixtures/two-containers/exo.hcl"
       ]
     }
   },

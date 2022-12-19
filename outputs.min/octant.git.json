@@ -1,17 +1,68 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 3,
-      "filepaths": [
-        "octant.git/vendor/github.com/docker/distribution/Dockerfile",
-        "octant.git/vendor/github.com/pelletier/go-toml/Dockerfile",
-        "octant.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "octant.git/examples/resources/deployment.yaml",
+        "octant.git/examples/resources/kuard-with-configmap-secret.yaml",
+        "octant.git/internal/modules/overview/testdata/configmap-1.yaml",
+        "octant.git/internal/modules/overview/testdata/deployment.yaml",
+        "octant.git/internal/objectstatus/testdata/apiservice_ok.yaml",
+        "octant.git/internal/objectstatus/testdata/apiservice_unavailable.yaml",
+        "octant.git/internal/objectstatus/testdata/apiservice_unknown.yaml",
+        "octant.git/internal/objectstatus/testdata/deployment_no_replicas.yaml",
+        "octant.git/internal/objectstatus/testdata/deployment_not_available.yaml",
+        "octant.git/internal/objectstatus/testdata/deployment_ok.yaml",
+        "octant.git/internal/objectstatus/testdata/ingress_multiple_port_service.yaml",
+        "octant.git/internal/objectstatus/testdata/ingress_single_service.yaml",
+        "octant.git/internal/objectstatus/testdata/service_external.yaml",
+        "octant.git/internal/objectstatus/testdata/service_multiple_port_service.yaml",
+        "octant.git/internal/objectstatus/testdata/service_my-service.yaml",
+        "octant.git/internal/objectstatus/testdata/service_ok.yaml",
+        "octant.git/internal/objectstatus/testdata/service_single_service.yaml",
+        "octant.git/internal/objectstatus/testdata/service_wrong_port.yaml",
+        "octant.git/internal/util/kubernetes/testdata/deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

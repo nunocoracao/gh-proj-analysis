@@ -2,18 +2,11 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 8,
+      "count": 1,
       "rootCount": 1,
-      "subFolderCount": 7,
+      "subFolderCount": 0,
       "filepaths": [
-        "novu.git/.gitpod.dockerfile",
-        "novu.git/.devcontainer/Dockerfile",
-        "novu.git/apps/api/Dockerfile",
-        "novu.git/apps/web/Dockerfile",
-        "novu.git/apps/webhook/Dockerfile",
-        "novu.git/apps/widget/Dockerfile",
-        "novu.git/apps/ws/Dockerfile",
-        "novu.git/libs/embed/Dockerfile"
+        "novu.git/.gitpod.dockerfile"
       ]
     },
     "composefile": {
@@ -28,6 +21,55 @@
         "novu.git/docker/local/development/docker-compose.development.yml",
         "novu.git/docker/local/development/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "novu.git/docker/kubernetes/kustomize/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "novu.git/docker/kubernetes/kustomize/api-deployment.yaml",
+        "novu.git/docker/kubernetes/kustomize/api-service.yaml",
+        "novu.git/docker/kubernetes/kustomize/embed-deployment.yaml",
+        "novu.git/docker/kubernetes/kustomize/embed-service.yaml",
+        "novu.git/docker/kubernetes/kustomize/redis-deployment.yaml",
+        "novu.git/docker/kubernetes/kustomize/web-deployment.yaml",
+        "novu.git/docker/kubernetes/kustomize/web-service.yaml",
+        "novu.git/docker/kubernetes/kustomize/widget-deployment.yaml",
+        "novu.git/docker/kubernetes/kustomize/widget-service.yaml",
+        "novu.git/docker/kubernetes/kustomize/ws-deployment.yaml",
+        "novu.git/docker/kubernetes/kustomize/ws-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

@@ -1,17 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 5,
-      "filepaths": [
-        "spring-cloud-dataflow.git/src/docker/uaa/Dockerfile",
-        "spring-cloud-dataflow.git/src/grafana/influxdb/docker/grafana/Dockerfile",
-        "spring-cloud-dataflow.git/src/grafana/prometheus/docker/grafana/Dockerfile",
-        "spring-cloud-dataflow.git/src/grafana/prometheus/docker/prometheus-local/Dockerfile",
-        "spring-cloud-dataflow.git/src/templates/add-deps/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -56,6 +50,102 @@
         "spring-cloud-dataflow.git/src/templates/docker-compose/docker-compose-zipkin.yml",
         "spring-cloud-dataflow.git/src/templates/docker-compose/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 60,
+      "rootCount": 0,
+      "subFolderCount": 60,
+      "filepaths": [
+        "spring-cloud-dataflow.git/.github/workflows/fix-deployment-files.yml",
+        "spring-cloud-dataflow.git/spring-cloud-dataflow-server-core/src/test/resources/org/springframework/cloud/dataflow/server/service/impl/DefaultStreamServiceIntegrationTests-deployManifest.yml",
+        "spring-cloud-dataflow.git/spring-cloud-dataflow-server-core/src/test/resources/org/springframework/cloud/dataflow/server/service/impl/DefaultStreamServiceIntegrationTests-install.yml",
+        "spring-cloud-dataflow.git/spring-cloud-dataflow-server-core/src/test/resources/org/springframework/cloud/dataflow/server/service/impl/DefaultStreamServiceIntegrationTests-rollbackManifest.yml",
+        "spring-cloud-dataflow.git/spring-cloud-dataflow-server-core/src/test/resources/org/springframework/cloud/dataflow/server/service/impl/DefaultStreamServiceIntegrationTests-upgradeManifest.yml",
+        "spring-cloud-dataflow.git/spring-cloud-dataflow-server-core/src/test/resources/org/springframework/cloud/dataflow/server/service/impl/DefaultStreamServiceTests-rollbackManifest.yml",
+        "spring-cloud-dataflow.git/spring-cloud-dataflow-server-core/src/test/resources/org/springframework/cloud/dataflow/server/service/impl/DefaultStreamServiceUpdateTests-update.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/dataflow-deployment.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/dataflow-service-account.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/skipper-deployment.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/binder/_ytt_lib/rabbitmq/rabbitmq-deployment.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/db/_ytt_lib/mariadb/mariadb-deployment.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/db/_ytt_lib/postgres/postgres-deployment.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/monitoring/_ytt_lib/grafana/grafana-configmap.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/monitoring/_ytt_lib/grafana/grafana-deployment.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/monitoring/_ytt_lib/prometheus/prometheus-configmap.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/monitoring/_ytt_lib/prometheus/prometheus-deployment.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/monitoring/_ytt_lib/prometheus/prometheus-serviceaccount.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/monitoring/_ytt_lib/prometheus-rsocket-proxy/prometheus-rsocket-proxy-deployment.yml",
+        "spring-cloud-dataflow.git/src/carvel/config/monitoring/_ytt_lib/prometheus-rsocket-proxy/prometheus-rsocket-proxy-service-account.yml",
+        "spring-cloud-dataflow.git/src/kubernetes/grafana/grafana-configmap.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/grafana/grafana-deployment.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/grafana/grafana-service.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/kafka/kafka-deployment.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/kafka/kafka-zk-deployment.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/mariadb/mariadb-deployment.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/prometheus/prometheus-configmap.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/prometheus/prometheus-deployment.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/prometheus/prometheus-service.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/prometheus/prometheus-serviceaccount.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/prometheus-proxy/prometheus-proxy-deployment.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/prometheus-proxy/prometheus-proxy-service.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/prometheus-proxy/prometheus-proxy-serviceaccount.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/rabbitmq/rabbitmq-deployment.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/server/server-deployment-debug.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/server/server-deployment.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/server/service-account.yaml",
+        "spring-cloud-dataflow.git/src/kubernetes/skipper/skipper-deployment.yaml",
+        "spring-cloud-dataflow.git/src/local/k8s/metallb-configmap.yaml",
+        "spring-cloud-dataflow.git/src/local/k8s/server-deployment-pro.yaml",
+        "spring-cloud-dataflow.git/src/local/k8s/server-deployment.yaml",
+        "spring-cloud-dataflow.git/src/local/k8s/skipper-deployment.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/grafana/grafana-configmap.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/grafana/grafana-deployment.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/grafana/grafana-service.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/kafka/kafka-deployment.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/kafka/kafka-zk-deployment.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/mariadb/mariadb-deployment.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/prometheus/prometheus-configmap.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/prometheus/prometheus-deployment.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/prometheus/prometheus-service.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/prometheus/prometheus-serviceaccount.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/prometheus-proxy/prometheus-proxy-deployment.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/prometheus-proxy/prometheus-proxy-service.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/prometheus-proxy/prometheus-proxy-serviceaccount.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/rabbitmq/rabbitmq-deployment.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/server/server-deployment-debug.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/server/server-deployment.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/server/service-account.yaml",
+        "spring-cloud-dataflow.git/src/templates/kubernetes/skipper/skipper-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

@@ -1,20 +1,57 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
-      "rootCount": 3,
-      "subFolderCount": 3,
-      "filepaths": [
-        "loopback4-example-shopping.git/Dockerfile.monorepo",
-        "loopback4-example-shopping.git/Dockerfile.recommender",
-        "loopback4-example-shopping.git/Dockerfile.shopping",
-        "loopback4-example-shopping.git/openshift/Dockerfile.monorepo",
-        "loopback4-example-shopping.git/openshift/Dockerfile.recommender",
-        "loopback4-example-shopping.git/openshift/Dockerfile.shopping"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "loopback4-example-shopping.git/kubernetes/shopping-app/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "loopback4-example-shopping.git/kubernetes/shopping-app/templates/recommender-grpc-deployment.yaml",
+        "loopback4-example-shopping.git/kubernetes/shopping-app/templates/recommender-grpc-service.yaml",
+        "loopback4-example-shopping.git/kubernetes/shopping-app/templates/recommender-rest-deployment.yaml",
+        "loopback4-example-shopping.git/kubernetes/shopping-app/templates/recommender-rest-service.yaml",
+        "loopback4-example-shopping.git/kubernetes/shopping-app/templates/shopping-deployment.yaml",
+        "loopback4-example-shopping.git/kubernetes/shopping-app/templates/shopping-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

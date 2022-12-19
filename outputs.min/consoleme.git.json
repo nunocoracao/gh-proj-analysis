@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "consoleme.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -21,6 +19,80 @@
         "consoleme.git/docker-compose-dockerhub.yaml",
         "consoleme.git/docker-compose-test.yaml",
         "consoleme.git/docker-compose.yaml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "consoleme.git/helm/consoleme/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 16,
+      "rootCount": 0,
+      "subFolderCount": 16,
+      "filepaths": [
+        "consoleme.git/helm/consoleme/templates/configmap-auth-alb.yaml",
+        "consoleme.git/helm/consoleme/templates/configmap-auth-header.yaml",
+        "consoleme.git/helm/consoleme/templates/configmap-auth-oidc.yaml",
+        "consoleme.git/helm/consoleme/templates/configmap-auth-saml.yaml",
+        "consoleme.git/helm/consoleme/templates/configmap-base.yaml",
+        "consoleme.git/helm/consoleme/templates/configmap-dynamo.yaml",
+        "consoleme.git/helm/consoleme/templates/configmap-organization.yaml",
+        "consoleme.git/helm/consoleme/templates/configmap-redis.yaml",
+        "consoleme.git/helm/consoleme/templates/configmap.yaml",
+        "consoleme.git/helm/consoleme/templates/deployment-celery-worker.yaml",
+        "consoleme.git/helm/consoleme/templates/deployment-celery.yaml",
+        "consoleme.git/helm/consoleme/templates/deployment-consoleme.yaml",
+        "consoleme.git/helm/consoleme/templates/deployment-dynamodb.yaml",
+        "consoleme.git/helm/consoleme/templates/service-consoleme.yaml",
+        "consoleme.git/helm/consoleme/templates/service-dynamodb.yaml",
+        "consoleme.git/helm/consoleme/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "consoleme.git/terraform/central-account/.terraform.lock.hcl",
+        "consoleme.git/terraform/central-account/acm.tf",
+        "consoleme.git/terraform/central-account/data.tf",
+        "consoleme.git/terraform/central-account/dynamodb.tf",
+        "consoleme.git/terraform/central-account/iam.tf",
+        "consoleme.git/terraform/central-account/iam_example_roles.tf",
+        "consoleme.git/terraform/central-account/iam_spoke_roles.tf",
+        "consoleme.git/terraform/central-account/labels.tf",
+        "consoleme.git/terraform/central-account/lb.tf",
+        "consoleme.git/terraform/central-account/main.tf",
+        "consoleme.git/terraform/central-account/network.tf",
+        "consoleme.git/terraform/central-account/outputs.tf",
+        "consoleme.git/terraform/central-account/s3.tf",
+        "consoleme.git/terraform/central-account/security_group.tf",
+        "consoleme.git/terraform/central-account/terraform.tf",
+        "consoleme.git/terraform/central-account/terraform.tfvars.example",
+        "consoleme.git/terraform/central-account/variables.tf",
+        "consoleme.git/terraform/spoke-accounts/iam.tf",
+        "consoleme.git/terraform/spoke-accounts/main.tf"
       ]
     }
   },

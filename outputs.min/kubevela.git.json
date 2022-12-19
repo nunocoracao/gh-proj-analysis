@@ -1,20 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 8,
-      "rootCount": 4,
-      "subFolderCount": 4,
-      "filepaths": [
-        "kubevela.git/Dockerfile",
-        "kubevela.git/Dockerfile.apiserver",
-        "kubevela.git/Dockerfile.cli",
-        "kubevela.git/Dockerfile.e2e",
-        "kubevela.git/docs/examples/argo/Dockerfile",
-        "kubevela.git/docs/examples/testapp/Dockerfile",
-        "kubevela.git/runtime/rollout/Dockerfile",
-        "kubevela.git/runtime/rollout/e2e/Dockerfile.e2e"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -22,6 +13,95 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kubevela.git/config/crd/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "kubevela.git/.github/workflows/chart.yml",
+        "kubevela.git/charts/vela-core/Chart.yaml",
+        "kubevela.git/charts/vela-minimal/Chart.yaml",
+        "kubevela.git/docs/examples/helm-module/helm-chart-app.yaml",
+        "kubevela.git/docs/examples/helm-module/webapp-chart-cd.yaml",
+        "kubevela.git/docs/examples/helm-module/webapp-chart-wd.yaml",
+        "kubevela.git/e2e/addon/mock/testdata/fluxcd/resources/crds/helm-chart.yaml",
+        "kubevela.git/legacy/charts/vela-core-legacy/Chart.yaml",
+        "kubevela.git/pkg/addon/testdata/example/Chart.yaml",
+        "kubevela.git/pkg/addon/testdata/example-legacy/Chart.yaml",
+        "kubevela.git/references/cli/test-data/addon/sample/Chart.yaml",
+        "kubevela.git/runtime/rollout/charts/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 36,
+      "rootCount": 0,
+      "subFolderCount": 36,
+      "filepaths": [
+        "kubevela.git/charts/vela-core/templates/admission-webhooks/webhookService.yaml",
+        "kubevela.git/charts/vela-core/templates/admission-webhooks/job-patch/serviceaccount.yaml",
+        "kubevela.git/charts/vela-core/templates/defwithtemplate/collect-service-endpoints.yaml",
+        "kubevela.git/charts/vela-core/templates/defwithtemplate/configmap.yaml",
+        "kubevela.git/charts/vela-core/templates/defwithtemplate/export-service.yaml",
+        "kubevela.git/charts/vela-core/templates/defwithtemplate/service-account.yaml",
+        "kubevela.git/charts/vela-core/templates/defwithtemplate/service-binding.yaml",
+        "kubevela.git/charts/vela-core/templates/defwithtemplate/webservice.yaml",
+        "kubevela.git/charts/vela-core/templates/velaql/component-service.yaml",
+        "kubevela.git/charts/vela-minimal/templates/admission-webhooks/webhookService.yaml",
+        "kubevela.git/charts/vela-minimal/templates/admission-webhooks/job-patch/serviceaccount.yaml",
+        "kubevela.git/charts/vela-minimal/templates/defwithtemplate/collect-service-endpoints.yaml",
+        "kubevela.git/charts/vela-minimal/templates/defwithtemplate/configmap.yaml",
+        "kubevela.git/charts/vela-minimal/templates/defwithtemplate/export-service.yaml",
+        "kubevela.git/charts/vela-minimal/templates/defwithtemplate/service-account.yaml",
+        "kubevela.git/charts/vela-minimal/templates/defwithtemplate/service-binding.yaml",
+        "kubevela.git/charts/vela-minimal/templates/defwithtemplate/webservice.yaml",
+        "kubevela.git/docs/examples/core-definitions/component/webservice.yaml",
+        "kubevela.git/docs/examples/definition-revision/webservice-v2.yaml",
+        "kubevela.git/legacy/charts/vela-core-legacy/crds/core.oam.dev_appdeployments.yaml",
+        "kubevela.git/pkg/apiserver/domain/service/testdata/webservice.yaml",
+        "kubevela.git/pkg/controller/core.oam.dev/v1alpha2/core/components/componentdefinition/test-data/webservice-cd.yaml",
+        "kubevela.git/pkg/definition/testdata/default-component-webservice-v1.yaml",
+        "kubevela.git/pkg/definition/testdata/default-component-webservice-v2.yaml",
+        "kubevela.git/pkg/velaql/providers/query/testdata/machinelearning.seldon.io_seldondeployments.yaml",
+        "kubevela.git/test/e2e-apiserver-test/testdata/component-schema-webservice.yaml",
+        "kubevela.git/test/e2e-apiserver-test/testdata/component-service-view.yaml",
+        "kubevela.git/test/e2e-multicluster-test/testdata/app/app-collect-service-endpoint-and-export.yaml",
+        "kubevela.git/test/e2e-multicluster-test/testdata/app/standalone/configmap-1.yaml",
+        "kubevela.git/test/e2e-multicluster-test/testdata/app/standalone/configmap-2.yaml",
+        "kubevela.git/test/e2e-multicluster-test/testdata/app/standalone/deployment-busybox.yaml",
+        "kubevela.git/test/e2e-multicluster-test/testdata/app/standalone/deployment.yaml",
+        "kubevela.git/test/e2e-multicluster-test/testdata/kube/service.yaml",
+        "kubevela.git/test/e2e-multicluster-test/testdata/kube/data/configmap.yaml",
+        "kubevela.git/test/e2e-test/testdata/definition/replica-webservice.yaml",
+        "kubevela.git/vela-templates/definitions/usage-examples/application-with-configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kubevela.git/references/cli/test-data/redis.tf"
+      ]
     }
   },
   "info": {

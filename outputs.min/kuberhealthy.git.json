@@ -1,34 +1,60 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 20,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 20,
-      "filepaths": [
-        "kuberhealthy.git/clients/js/example/Dockerfile",
-        "kuberhealthy.git/clients/python/Dockerfile",
-        "kuberhealthy.git/cmd/ami-check/Dockerfile",
-        "kuberhealthy.git/cmd/cronjob-checker/Dockerfile",
-        "kuberhealthy.git/cmd/daemonset-check/Dockerfile",
-        "kuberhealthy.git/cmd/deployment-check/Dockerfile",
-        "kuberhealthy.git/cmd/dns-resolution-check/Dockerfile",
-        "kuberhealthy.git/cmd/http-check/Dockerfile",
-        "kuberhealthy.git/cmd/http-content-check/Dockerfile",
-        "kuberhealthy.git/cmd/image-download-check/Dockerfile",
-        "kuberhealthy.git/cmd/kiam-check/Dockerfile",
-        "kuberhealthy.git/cmd/kuberhealthy/Dockerfile",
-        "kuberhealthy.git/cmd/namespace-pod-check/Dockerfile",
-        "kuberhealthy.git/cmd/network-connection-check/Dockerfile",
-        "kuberhealthy.git/cmd/pod-restarts-check/Dockerfile",
-        "kuberhealthy.git/cmd/pod-status-check/Dockerfile",
-        "kuberhealthy.git/cmd/resource-quota-check/Dockerfile",
-        "kuberhealthy.git/cmd/ssl-expiry-check/Dockerfile",
-        "kuberhealthy.git/cmd/ssl-handshake-check/Dockerfile",
-        "kuberhealthy.git/cmd/test-check/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kuberhealthy.git/deploy/helm/kuberhealthy/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "kuberhealthy.git/.github/workflows/build-latest-deployment-check.yml",
+        "kuberhealthy.git/cmd/deployment-check/deployment-check.yaml",
+        "kuberhealthy.git/deploy/servicemonitor.yaml",
+        "kuberhealthy.git/deploy/helm/kuberhealthy/templates/configmap.yaml",
+        "kuberhealthy.git/deploy/helm/kuberhealthy/templates/deployment.yaml",
+        "kuberhealthy.git/deploy/helm/kuberhealthy/templates/khcheck-deployment.yaml",
+        "kuberhealthy.git/deploy/helm/kuberhealthy/templates/service.yaml",
+        "kuberhealthy.git/deploy/helm/kuberhealthy/templates/serviceaccount.yaml",
+        "kuberhealthy.git/deploy/helm/kuberhealthy/templates/servicemonitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

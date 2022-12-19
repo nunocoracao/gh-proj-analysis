@@ -1,27 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 15,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 15,
-      "filepaths": [
-        "otoroshi.git/clients/sidecar/Dockerfile",
-        "otoroshi.git/clients/sidecar/Dockerfile-init",
-        "otoroshi.git/clients/sidecar/Dockerfile-init-alp",
-        "otoroshi.git/clients/tcp-udp-tunnel-client/Dockerfile",
-        "otoroshi.git/connectors/clevercloud/Dockerfile",
-        "otoroshi.git/connectors/kubernetes/Dockerfile",
-        "otoroshi.git/connectors/rancher/Dockerfile",
-        "otoroshi.git/demos/basic-setup/basic-app/Dockerfile",
-        "otoroshi.git/demos/service-mesh/config-server/Dockerfile",
-        "otoroshi.git/demos/service-mesh/service-1/Dockerfile",
-        "otoroshi.git/demos/service-mesh/service-2/Dockerfile",
-        "otoroshi.git/demos/service-mesh/service-3/Dockerfile",
-        "otoroshi.git/demos/service-mesh/service-frontend/Dockerfile",
-        "otoroshi.git/docker/build/Dockerfile",
-        "otoroshi.git/docker/dev/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -38,6 +22,64 @@
         "otoroshi.git/otoroshi/docker-compose.yml",
         "otoroshi.git/scripts/tools/docker-compose-test.yml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "otoroshi.git/kubernetes/kustomize/base/kustomization.yaml",
+        "otoroshi.git/kubernetes/kustomize/overlays/cluster/kustomization.yaml",
+        "otoroshi.git/kubernetes/kustomize/overlays/cluster-baremetal/kustomization.yaml",
+        "otoroshi.git/kubernetes/kustomize/overlays/cluster-baremetal-daemonset/kustomization.yaml",
+        "otoroshi.git/kubernetes/kustomize/overlays/simple/kustomization.yaml",
+        "otoroshi.git/kubernetes/kustomize/overlays/simple-baremetal/kustomization.yaml",
+        "otoroshi.git/kubernetes/kustomize/overlays/simple-baremetal-daemonset/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "otoroshi.git/kubernetes/helm/otoroshi/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "otoroshi.git/archives/manual_1_4_x/src/main/paradox/snippets/crds/service-descriptor.yaml",
+        "otoroshi.git/clients/sidecar/deployment.yaml",
+        "otoroshi.git/docs/devmanual/snippets/crds/service-descriptor.yaml",
+        "otoroshi.git/docs/manual/snippets/crds/service-descriptor.yaml",
+        "otoroshi.git/kubernetes/helm/otoroshi/templates/deployment.yaml",
+        "otoroshi.git/kubernetes/kustomize/overlays/cluster/deployment.yaml",
+        "otoroshi.git/kubernetes/kustomize/overlays/cluster-baremetal/deployment.yaml",
+        "otoroshi.git/kubernetes/kustomize/overlays/cluster-baremetal-daemonset/deployment.yaml",
+        "otoroshi.git/kubernetes/kustomize/overlays/simple/deployment.yaml",
+        "otoroshi.git/kubernetes/kustomize/overlays/simple-baremetal/deployment.yaml",
+        "otoroshi.git/kubernetes/kustomize/overlays/simple-baremetal-daemonset/deployment.yaml",
+        "otoroshi.git/manual/src/main/paradox/snippets/crds/service-descriptor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

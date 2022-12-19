@@ -1,18 +1,61 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 2,
-      "subFolderCount": 2,
-      "filepaths": [
-        "spark-on-k8s-operator.git/Dockerfile",
-        "spark-on-k8s-operator.git/Dockerfile.rh",
-        "spark-on-k8s-operator.git/hack/api-docs/Dockerfile",
-        "spark-on-k8s-operator.git/spark-docker/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "spark-on-k8s-operator.git/manifest/crds/kustomization.yaml",
+        "spark-on-k8s-operator.git/manifest/spark-application-rbac/kustomization.yaml",
+        "spark-on-k8s-operator.git/manifest/spark-operator-install/kustomization.yaml",
+        "spark-on-k8s-operator.git/manifest/spark-operator-with-webhook-install/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "spark-on-k8s-operator.git/charts/spark-operator-chart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "spark-on-k8s-operator.git/charts/spark-operator-chart/templates/deployment.yaml",
+        "spark-on-k8s-operator.git/charts/spark-operator-chart/templates/serviceaccount.yaml",
+        "spark-on-k8s-operator.git/charts/spark-operator-chart/templates/spark-serviceaccount.yaml",
+        "spark-on-k8s-operator.git/charts/spark-operator-chart/templates/webhook-service.yaml",
+        "spark-on-k8s-operator.git/examples/spark-pi-configmap.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

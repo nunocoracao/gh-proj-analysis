@@ -1,21 +1,87 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 7,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 7,
-      "filepaths": [
-        "service-catalog.git/build/build-image/Dockerfile",
-        "service-catalog.git/build/service-catalog/Dockerfile",
-        "service-catalog.git/contrib/build/healthcheck/Dockerfile",
-        "service-catalog.git/contrib/build/test-broker/Dockerfile",
-        "service-catalog.git/contrib/build/user-broker/Dockerfile",
-        "service-catalog.git/vendor/github.com/hpcloud/tail/Dockerfile",
-        "service-catalog.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "service-catalog.git/charts/catalog/Chart.yaml",
+        "service-catalog.git/charts/healthcheck/Chart.yaml",
+        "service-catalog.git/charts/test-broker/Chart.yaml",
+        "service-catalog.git/charts/ups-broker/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 33,
+      "rootCount": 0,
+      "subFolderCount": 33,
+      "filepaths": [
+        "service-catalog.git/charts/catalog/templates/controller-manager-deployment.yaml",
+        "service-catalog.git/charts/catalog/templates/controller-manager-service.yaml",
+        "service-catalog.git/charts/catalog/templates/serviceaccounts.yaml",
+        "service-catalog.git/charts/catalog/templates/webhook-deployment.yaml",
+        "service-catalog.git/charts/catalog/templates/webhook-service.yaml",
+        "service-catalog.git/charts/catalog/templates/crds/clusterservicebroker.yaml",
+        "service-catalog.git/charts/catalog/templates/crds/clusterserviceclass.yaml",
+        "service-catalog.git/charts/catalog/templates/crds/clusterserviceplan.yaml",
+        "service-catalog.git/charts/catalog/templates/crds/servicebinding.yaml",
+        "service-catalog.git/charts/catalog/templates/crds/servicebroker.yaml",
+        "service-catalog.git/charts/catalog/templates/crds/serviceclass.yaml",
+        "service-catalog.git/charts/catalog/templates/crds/serviceinstance.yaml",
+        "service-catalog.git/charts/catalog/templates/crds/serviceplan.yaml",
+        "service-catalog.git/charts/healthcheck/templates/healthcheck-deployment.yaml",
+        "service-catalog.git/charts/healthcheck/templates/healthcheck-service.yaml",
+        "service-catalog.git/charts/healthcheck/templates/serviceaccounts.yaml",
+        "service-catalog.git/charts/test-broker/templates/broker-deployment.yaml",
+        "service-catalog.git/charts/test-broker/templates/broker-service.yaml",
+        "service-catalog.git/charts/ups-broker/templates/broker-deployment.yaml",
+        "service-catalog.git/charts/ups-broker/templates/broker-service.yaml",
+        "service-catalog.git/contrib/examples/crds/clusterservicebroker.yaml",
+        "service-catalog.git/contrib/examples/crds/clusterserviceclass.yaml",
+        "service-catalog.git/contrib/examples/crds/clusterserviceplan.yaml",
+        "service-catalog.git/contrib/examples/crds/servicebroker.yaml",
+        "service-catalog.git/contrib/examples/crds/serviceclass.yaml",
+        "service-catalog.git/contrib/examples/crds/serviceplan.yaml",
+        "service-catalog.git/contrib/examples/walkthrough/ups-clusterservicebroker.yaml",
+        "service-catalog.git/contrib/examples/walkthrough/ups-servicebroker.yaml",
+        "service-catalog.git/contrib/examples/walkthrough/test-broker/test-clusterservicebroker.yaml",
+        "service-catalog.git/contrib/examples/walkthrough/test-broker/test-servicebroker.yaml",
+        "service-catalog.git/docsite/_data/service-plan-defaults.yml",
+        "service-catalog.git/docsite/_data/glossary/service-broker.yaml",
+        "service-catalog.git/docsite/_data/glossary/service-catalog.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

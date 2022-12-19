@@ -1,15 +1,69 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "gitops-engine.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "gitops-engine.git/agent/manifests/base/kustomization.yaml",
+        "gitops-engine.git/agent/manifests/cluster-install/kustomization.yaml",
+        "gitops-engine.git/agent/manifests/namespace-install/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 16,
+      "rootCount": 0,
+      "subFolderCount": 16,
+      "filepaths": [
+        "gitops-engine.git/agent/manifests/namespace-install/gitops-agent-deployment-overlay.yaml",
+        "gitops-engine.git/pkg/diff/testdata/smd-service-config-2-ports.yaml",
+        "gitops-engine.git/pkg/diff/testdata/smd-service-config-ports.yaml",
+        "gitops-engine.git/pkg/diff/testdata/smd-service-config.yaml",
+        "gitops-engine.git/pkg/diff/testdata/smd-service-live-with-type.yaml",
+        "gitops-engine.git/pkg/diff/testdata/smd-service-live.yaml",
+        "gitops-engine.git/pkg/health/testdata/apiservice-v1-false.yaml",
+        "gitops-engine.git/pkg/health/testdata/apiservice-v1-true.yaml",
+        "gitops-engine.git/pkg/health/testdata/apiservice-v1beta1-false.yaml",
+        "gitops-engine.git/pkg/health/testdata/apiservice-v1beta1-true.yaml",
+        "gitops-engine.git/pkg/health/testdata/deployment-degraded.yaml",
+        "gitops-engine.git/pkg/health/testdata/deployment-progressing.yaml",
+        "gitops-engine.git/pkg/health/testdata/deployment-suspended.yaml",
+        "gitops-engine.git/pkg/health/testdata/knative-service.yaml",
+        "gitops-engine.git/pkg/utils/kube/testdata/appsdeployment.yaml",
+        "gitops-engine.git/pkg/utils/kube/testdata/extensionsdeployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

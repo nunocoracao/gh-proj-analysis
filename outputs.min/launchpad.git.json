@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 1,
-      "filepaths": [
-        "launchpad.git/docker/custom-image/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -60,6 +58,62 @@
         "launchpad.git/docker/wikijs/docker-compose.yml",
         "launchpad.git/docker/wireguard/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "launchpad.git/demos/flux-demo/clusters/home/flux-system/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "launchpad.git/kubernetes/traefik2-k3s-rancher/config/traefik-chart-values.yml",
+        "launchpad.git/kubernetes/traefik2-k3s-rancher/config-ingress-route/traefik-chart-values.yml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "launchpad.git/demos/flux-demo/clusters/home/default/nginx/deployment.yml",
+        "launchpad.git/demos/flux-demo/clusters/home/default/nginx/service.yml",
+        "launchpad.git/demos/flux-demo/clusters/home/default/redis/deployment.yml",
+        "launchpad.git/kubernetes/cloudflare/deployment.yaml",
+        "launchpad.git/kubernetes/nextcloud/deployment.yaml",
+        "launchpad.git/kubernetes/nextcloud/service.yml",
+        "launchpad.git/kubernetes/pterodactyl/panel/deployment.yaml",
+        "launchpad.git/kubernetes/pterodactyl/panel/service.yml",
+        "launchpad.git/kubernetes/pterodactyl/panel/node/service.yml",
+        "launchpad.git/kubernetes/traefik-cert-manager/nginx/deployment.yaml",
+        "launchpad.git/kubernetes/traefik-cert-manager/nginx/service.yaml",
+        "launchpad.git/kubernetes/traefik2-k3s-rancher/config-ingress-route/kubernetes/deployment.yml",
+        "launchpad.git/kubernetes/traefik2-k3s-rancher/config-ingress-route/kubernetes/service.yml",
+        "launchpad.git/kubernetes/uptime-kuma/deployment.yaml",
+        "launchpad.git/kubernetes/uptime-kuma/service.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

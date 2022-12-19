@@ -1,18 +1,71 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 1,
-      "subFolderCount": 3,
-      "filepaths": [
-        "kubeeye.git/Dockerfile",
-        "kubeeye.git/plugins/kubebench/Dockerfile",
-        "kubeeye.git/plugins/kubehunter/Dockerfile",
-        "kubeeye.git/plugins/kubescapeplugin/Dockerfile"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "kubeeye.git/config/crd/kustomization.yaml",
+        "kubeeye.git/config/default/kustomization.yaml",
+        "kubeeye.git/config/manager/kustomization.yaml",
+        "kubeeye.git/config/manifests/kustomization.yaml",
+        "kubeeye.git/config/prometheus/kustomization.yaml",
+        "kubeeye.git/config/rbac/kustomization.yaml",
+        "kubeeye.git/config/samples/kustomization.yaml",
+        "kubeeye.git/config/scorecard/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "kubeeye.git/deploy/charts/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "kubeeye.git/config/rbac/auth_proxy_service.yaml",
+        "kubeeye.git/config/rbac/service_account.yaml",
+        "kubeeye.git/deploy/charts/templates/deployment.yaml",
+        "kubeeye.git/deploy/charts/templates/manager-configmap.yaml",
+        "kubeeye.git/deploy/charts/templates/service.yaml",
+        "kubeeye.git/deploy/charts/templates/serviceaccount.yaml",
+        "kubeeye.git/plugins/kubebench/cfg/ack-1.0/managedservices.yaml",
+        "kubeeye.git/plugins/kubebench/cfg/aks-1.0/managedservices.yaml",
+        "kubeeye.git/plugins/kubebench/cfg/eks-1.0.1/managedservices.yaml",
+        "kubeeye.git/plugins/kubebench/cfg/gke-1.0/managedservices.yaml",
+        "kubeeye.git/plugins/kubebench/cfg/gke-1.2.0/managedservices.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

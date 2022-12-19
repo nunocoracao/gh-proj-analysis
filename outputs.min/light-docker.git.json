@@ -1,28 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 16,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 16,
-      "filepaths": [
-        "light-docker.git/elasticsearch/Dockerfile",
-        "light-docker.git/email-mysql/Dockerfile",
-        "light-docker.git/hybrid-services/Dockerfile",
-        "light-docker.git/kafka/Dockerfile",
-        "light-docker.git/kibana/Dockerfile",
-        "light-docker.git/light-codegen/Dockerfile",
-        "light-docker.git/light-proxy/aws-lambda/Dockerfile",
-        "light-docker.git/logstash/Dockerfile",
-        "light-docker.git/mariadb/Dockerfile",
-        "light-docker.git/mysql/Dockerfile",
-        "light-docker.git/postgres/Dockerfile",
-        "light-docker.git/prometheus/Dockerfile",
-        "light-docker.git/swagger-bundler/Dockerfile",
-        "light-docker.git/tram-cdcserver/Dockerfile",
-        "light-docker.git/tram-oracle-cdcserver/Dockerfile",
-        "light-docker.git/zookeeper/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -62,6 +45,95 @@
         "light-docker.git/docker-compose-zookeeper-kafka.yml",
         "light-docker.git/email-mysql/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 53,
+      "rootCount": 0,
+      "subFolderCount": 53,
+      "filepaths": [
+        "light-docker.git/controller/service.yml",
+        "light-docker.git/hybrid-services/config/service.yml",
+        "light-docker.git/light-oauth2/mariadb/config/oauth2-client/service.yml",
+        "light-docker.git/light-oauth2/mariadb/config/oauth2-code/service.yml",
+        "light-docker.git/light-oauth2/mariadb/config/oauth2-key/service.yml",
+        "light-docker.git/light-oauth2/mariadb/config/oauth2-provider/service.yml",
+        "light-docker.git/light-oauth2/mariadb/config/oauth2-refresh-token/service.yml",
+        "light-docker.git/light-oauth2/mariadb/config/oauth2-service/oauth_service.yml",
+        "light-docker.git/light-oauth2/mariadb/config/oauth2-service/service.yml",
+        "light-docker.git/light-oauth2/mariadb/config/oauth2-token/service.yml",
+        "light-docker.git/light-oauth2/mariadb/config/oauth2-user/service.yml",
+        "light-docker.git/light-oauth2/mysql/config/oauth2-client/service.yml",
+        "light-docker.git/light-oauth2/mysql/config/oauth2-code/service.yml",
+        "light-docker.git/light-oauth2/mysql/config/oauth2-key/service.yml",
+        "light-docker.git/light-oauth2/mysql/config/oauth2-provider/service.yml",
+        "light-docker.git/light-oauth2/mysql/config/oauth2-refresh-token/service.yml",
+        "light-docker.git/light-oauth2/mysql/config/oauth2-service/oauth_service.yml",
+        "light-docker.git/light-oauth2/mysql/config/oauth2-service/service.yml",
+        "light-docker.git/light-oauth2/mysql/config/oauth2-token/service.yml",
+        "light-docker.git/light-oauth2/mysql/config/oauth2-user/service.yml",
+        "light-docker.git/light-oauth2/oracle/config/oauth2-client/service.yml",
+        "light-docker.git/light-oauth2/oracle/config/oauth2-code/service.yml",
+        "light-docker.git/light-oauth2/oracle/config/oauth2-key/service.yml",
+        "light-docker.git/light-oauth2/oracle/config/oauth2-provider/service.yml",
+        "light-docker.git/light-oauth2/oracle/config/oauth2-refresh-token/service.yml",
+        "light-docker.git/light-oauth2/oracle/config/oauth2-service/oauth_service.yml",
+        "light-docker.git/light-oauth2/oracle/config/oauth2-service/service.yml",
+        "light-docker.git/light-oauth2/oracle/config/oauth2-token/service.yml",
+        "light-docker.git/light-oauth2/oracle/config/oauth2-user/service.yml",
+        "light-docker.git/light-oauth2/postgres/config/oauth2-client/service.yml",
+        "light-docker.git/light-oauth2/postgres/config/oauth2-code/service.yml",
+        "light-docker.git/light-oauth2/postgres/config/oauth2-key/service.yml",
+        "light-docker.git/light-oauth2/postgres/config/oauth2-provider/service.yml",
+        "light-docker.git/light-oauth2/postgres/config/oauth2-refresh-token/service.yml",
+        "light-docker.git/light-oauth2/postgres/config/oauth2-service/oauth_service.yml",
+        "light-docker.git/light-oauth2/postgres/config/oauth2-service/service.yml",
+        "light-docker.git/light-oauth2/postgres/config/oauth2-token/service.yml",
+        "light-docker.git/light-oauth2/postgres/config/oauth2-user/service.yml",
+        "light-docker.git/light-oauth2/sqlserver/config/oauth2-client/service.yml",
+        "light-docker.git/light-oauth2/sqlserver/config/oauth2-code/service.yml",
+        "light-docker.git/light-oauth2/sqlserver/config/oauth2-key/service.yml",
+        "light-docker.git/light-oauth2/sqlserver/config/oauth2-provider/service.yml",
+        "light-docker.git/light-oauth2/sqlserver/config/oauth2-refresh-token/service.yml",
+        "light-docker.git/light-oauth2/sqlserver/config/oauth2-service/oauth_service.yml",
+        "light-docker.git/light-oauth2/sqlserver/config/oauth2-service/service.yml",
+        "light-docker.git/light-oauth2/sqlserver/config/oauth2-token/service.yml",
+        "light-docker.git/light-oauth2/sqlserver/config/oauth2-user/service.yml",
+        "light-docker.git/light-proxy/swagger/config/service.yml",
+        "light-docker.git/test2/reference/service.yml",
+        "light-docker.git/tokenization/config/service.yml",
+        "light-docker.git/tram-cdcserver/config/service.yml",
+        "light-docker.git/tram-oracle-cdcserver/config/service.yml",
+        "light-docker.git/tram-oracle-cdcserver/config2/service.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

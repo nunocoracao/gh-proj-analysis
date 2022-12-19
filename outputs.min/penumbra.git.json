@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
-      "rootCount": 3,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "penumbra.git/Dockerfile",
-        "penumbra.git/Dockerfile.dev",
-        "penumbra.git/Dockerfile.old"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -21,6 +17,74 @@
         "penumbra.git/docker-compose.override.yml",
         "penumbra.git/docker-compose.prod.yml",
         "penumbra.git/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "penumbra.git/deployments/helm/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "penumbra.git/deployments/helm/templates/fn-deployments.yaml",
+        "penumbra.git/deployments/helm/templates/val-deployments.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 27,
+      "rootCount": 0,
+      "subFolderCount": 27,
+      "filepaths": [
+        "penumbra.git/deployments/networks/testnet/.terraform.lock.hcl",
+        "penumbra.git/deployments/networks/testnet/cluster.tf",
+        "penumbra.git/deployments/networks/testnet/main.tf",
+        "penumbra.git/deployments/networks/testnet/providers.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/gcs/main.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/gcs/outputs.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/gcs/providers.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/gcs/variables.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/project/services/main.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/project/services/outputs.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/project/services/providers.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/project/services/variables.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/terraform_state/main.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/terraform_state/outputs.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/terraform_state/providers.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/terraform_state/variables.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/terraform_state/chain/locals.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/terraform_state/chain/main.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/terraform_state/chain/outputs.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/terraform_state/chain/providers.tf",
+        "penumbra.git/deployments/terraform/modules/gcp/terraform_state/chain/variables.tf",
+        "penumbra.git/deployments/terraform/modules/node/v1/gke.tf",
+        "penumbra.git/deployments/terraform/modules/node/v1/main.tf",
+        "penumbra.git/deployments/terraform/modules/node/v1/outputs.tf",
+        "penumbra.git/deployments/terraform/modules/node/v1/providers.tf",
+        "penumbra.git/deployments/terraform/modules/node/v1/variables.tf",
+        "penumbra.git/deployments/terraform/modules/node/v1/vpc.tf"
       ]
     }
   },

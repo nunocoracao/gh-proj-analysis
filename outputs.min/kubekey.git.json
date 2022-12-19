@@ -2,23 +2,86 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 10,
-      "rootCount": 1,
-      "subFolderCount": 9,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
       "filepaths": [
-        "kubekey.git/Dockerfile",
-        "kubekey.git/hack/gen-repository-iso/dockerfile.almalinux90",
-        "kubekey.git/hack/gen-repository-iso/dockerfile.centos7",
-        "kubekey.git/hack/gen-repository-iso/dockerfile.debian10",
-        "kubekey.git/hack/gen-repository-iso/dockerfile.debian9",
-        "kubekey.git/hack/gen-repository-iso/dockerfile.ubuntu1604",
-        "kubekey.git/hack/gen-repository-iso/dockerfile.ubuntu1804",
-        "kubekey.git/hack/gen-repository-iso/dockerfile.ubuntu2004",
-        "kubekey.git/hack/gen-repository-iso/dockerfile.ubuntu2204",
         "kubekey.git/scripts/ci-lint-dockerfiles.sh"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 28,
+      "rootCount": 0,
+      "subFolderCount": 28,
+      "filepaths": [
+        "kubekey.git/bootstrap/k3s/config/certmanager/kustomization.yaml",
+        "kubekey.git/bootstrap/k3s/config/crd/kustomization.yaml",
+        "kubekey.git/bootstrap/k3s/config/default/kustomization.yaml",
+        "kubekey.git/bootstrap/k3s/config/manager/kustomization.yaml",
+        "kubekey.git/bootstrap/k3s/config/rbac/kustomization.yaml",
+        "kubekey.git/bootstrap/k3s/config/samples/kustomization.yaml",
+        "kubekey.git/bootstrap/k3s/config/scorecard/kustomization.yaml",
+        "kubekey.git/bootstrap/k3s/config/webhook/kustomization.yaml",
+        "kubekey.git/config/certmanager/kustomization.yaml",
+        "kubekey.git/config/crd/kustomization.yaml",
+        "kubekey.git/config/default/kustomization.yaml",
+        "kubekey.git/config/manager/kustomization.yaml",
+        "kubekey.git/config/manifests/kustomization.yaml",
+        "kubekey.git/config/prometheus/kustomization.yaml",
+        "kubekey.git/config/rbac/kustomization.yaml",
+        "kubekey.git/config/samples/kustomization.yaml",
+        "kubekey.git/config/scorecard/kustomization.yaml",
+        "kubekey.git/config/webhook/kustomization.yaml",
+        "kubekey.git/controlplane/k3s/config/certmanager/kustomization.yaml",
+        "kubekey.git/controlplane/k3s/config/crd/kustomization.yaml",
+        "kubekey.git/controlplane/k3s/config/default/kustomization.yaml",
+        "kubekey.git/controlplane/k3s/config/manager/kustomization.yaml",
+        "kubekey.git/controlplane/k3s/config/rbac/kustomization.yaml",
+        "kubekey.git/controlplane/k3s/config/samples/kustomization.yaml",
+        "kubekey.git/controlplane/k3s/config/scorecard/kustomization.yaml",
+        "kubekey.git/controlplane/k3s/config/webhook/kustomization.yaml",
+        "kubekey.git/test/e2e/data/infrastructure-kubekey/v1beta1/cluster-template/kustomization.yaml",
+        "kubekey.git/test/e2e/data/k3s/v1beta1/cluster-template/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "kubekey.git/bootstrap/k3s/config/rbac/service_account.yaml",
+        "kubekey.git/bootstrap/k3s/config/webhook/service.yaml",
+        "kubekey.git/config/rbac/auth_proxy_service.yaml",
+        "kubekey.git/config/rbac/service_account.yaml",
+        "kubekey.git/config/webhook/service.yaml",
+        "kubekey.git/controlplane/k3s/config/rbac/service_account.yaml",
+        "kubekey.git/controlplane/k3s/config/webhook/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

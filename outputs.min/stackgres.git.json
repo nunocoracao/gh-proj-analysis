@@ -1,25 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 13,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 13,
-      "filepaths": [
-        "stackgres.git/stackgres-k8s/ci/build/Dockerfile-builder",
-        "stackgres.git/stackgres-k8s/ci/build/Dockerfile-ci",
-        "stackgres.git/stackgres-k8s/src/admin-ui/docker/Dockerfile",
-        "stackgres.git/stackgres-k8s/src/api-web/src/main/docker/Dockerfile.jvm",
-        "stackgres.git/stackgres-k8s/src/api-web/src/main/docker/Dockerfile.native",
-        "stackgres.git/stackgres-k8s/src/cluster-controller/src/main/docker/Dockerfile.jvm",
-        "stackgres.git/stackgres-k8s/src/cluster-controller/src/main/docker/Dockerfile.native",
-        "stackgres.git/stackgres-k8s/src/distributedlogs-controller/src/main/docker/Dockerfile.jvm",
-        "stackgres.git/stackgres-k8s/src/distributedlogs-controller/src/main/docker/Dockerfile.native",
-        "stackgres.git/stackgres-k8s/src/jobs/src/main/docker/Dockerfile.jvm",
-        "stackgres.git/stackgres-k8s/src/jobs/src/main/docker/Dockerfile.native",
-        "stackgres.git/stackgres-k8s/src/operator/src/main/docker/Dockerfile.jvm",
-        "stackgres.git/stackgres-k8s/src/operator/src/main/docker/Dockerfile.native"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -27,6 +13,73 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-cluster/Chart.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 17,
+      "rootCount": 0,
+      "subFolderCount": 17,
+      "filepaths": [
+        "stackgres.git/stackgres-k8s/e2e/spec/prometheus-no-service-monitor.values.yaml",
+        "stackgres.git/stackgres-k8s/e2e/spec/previous/1.0/spec/prometheus-no-service-monitor.values.yaml",
+        "stackgres.git/stackgres-k8s/e2e/spec/previous/1.1/spec/prometheus-no-service-monitor.values.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/extensions-cache-configmap.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/extensions-cache-service-account.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/extensions-cache-service.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/grafana-dashboard-configmap.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/init-service-account.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/operator-deployment.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/operator-nginx-configmap.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/operator-service.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/service-account.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/webapi-deployment.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/webapi-nginx-configmap.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/webapi-service-account.yaml",
+        "stackgres.git/stackgres-k8s/install/helm/stackgres-operator/templates/webapi-service.yaml",
+        "stackgres.git/stackgres-k8s/src/api-web/src/main/swagger/schemas/ConfigMapDto.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "stackgres.git/doc/demo/terraform/main.tf",
+        "stackgres.git/doc/demo/terraform/output.tf",
+        "stackgres.git/doc/demo/terraform/variables.tf",
+        "stackgres.git/doc/demo/terraform/version.tf",
+        "stackgres.git/doc/demo/terraform/modules/cloud/aws/aws.tf",
+        "stackgres.git/doc/demo/terraform/modules/cloud/aws/variables.tf",
+        "stackgres.git/doc/demo/terraform/modules/cloud/azure/azure.tf",
+        "stackgres.git/doc/demo/terraform/modules/cloud/azure/variables.tf",
+        "stackgres.git/doc/demo/terraform/modules/cloud/gcp/gcp.tf",
+        "stackgres.git/doc/demo/terraform/modules/cloud/gcp/variables.tf"
+      ]
     }
   },
   "info": {

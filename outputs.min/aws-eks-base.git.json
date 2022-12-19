@@ -1,18 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 6,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 6,
-      "filepaths": [
-        "aws-eks-base.git/docker/aws-eks-utils/Dockerfile",
-        "aws-eks-base.git/docker/elasticsearch/Dockerfile",
-        "aws-eks-base.git/docker/postgresql-backups/Dockerfile",
-        "aws-eks-base.git/docker/postgresql-exporter-script/Dockerfile",
-        "aws-eks-base.git/docker/terraform-utils/Dockerfile",
-        "aws-eks-base.git/docker/wordpress/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -20,6 +13,122 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "aws-eks-base.git/helm-charts/certificate/Chart.yaml",
+        "aws-eks-base.git/helm-charts/cluster-issuer/Chart.yaml",
+        "aws-eks-base.git/helm-charts/elk/Chart.yaml",
+        "aws-eks-base.git/helm-charts/pg-exporter-user/Chart.yaml",
+        "aws-eks-base.git/helm-charts/postgresql-backups/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "aws-eks-base.git/examples/echoserver-deployment.yaml",
+        "aws-eks-base.git/examples/wordpress-deployment-external-secrets.yml",
+        "aws-eks-base.git/examples/wordpress-deployment.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 70,
+      "rootCount": 0,
+      "subFolderCount": 70,
+      "filepaths": [
+        "aws-eks-base.git/terraform/layer1-aws/aws-acm.tf",
+        "aws-eks-base.git/terraform/layer1-aws/aws-cis-benchmark-alerts.tf",
+        "aws-eks-base.git/terraform/layer1-aws/aws-cloudtrail.tf",
+        "aws-eks-base.git/terraform/layer1-aws/aws-eks.tf",
+        "aws-eks-base.git/terraform/layer1-aws/aws-pritunl.tf",
+        "aws-eks-base.git/terraform/layer1-aws/aws-r53.tf",
+        "aws-eks-base.git/terraform/layer1-aws/aws-vpc.tf",
+        "aws-eks-base.git/terraform/layer1-aws/demo.tfvars.example",
+        "aws-eks-base.git/terraform/layer1-aws/locals.tf",
+        "aws-eks-base.git/terraform/layer1-aws/main.tf",
+        "aws-eks-base.git/terraform/layer1-aws/outputs.tf",
+        "aws-eks-base.git/terraform/layer1-aws/providers.tf",
+        "aws-eks-base.git/terraform/layer1-aws/variables.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/aws-sm-secrets.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/demo.tfvars.example",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-aws-loadbalancer-controller.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-aws-node-termination-handler.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-cert-manager.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-cluster-autoscaler.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-elk.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-external-dns.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-external-secrets.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-fargate.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-gitlab-runner.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-ingress-nginx-controller.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-istio.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-keda.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-kube-prometheus-stack.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-loki-stack.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-prometheus-operator-crds.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-reloader.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-storageclass.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-tigera-operator.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/eks-victoria-metrics-k8s-stack.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/locals.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/main.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/outputs.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/providers.tf",
+        "aws-eks-base.git/terraform/layer2-k8s/variables.tf",
+        "aws-eks-base.git/terraform/modules/aws-iam-eks-trusted/main.tf",
+        "aws-eks-base.git/terraform/modules/aws-iam-eks-trusted/outputs.tf",
+        "aws-eks-base.git/terraform/modules/aws-iam-eks-trusted/variables.tf",
+        "aws-eks-base.git/terraform/modules/aws-iam-user-with-policy/iam-user.tf",
+        "aws-eks-base.git/terraform/modules/aws-iam-user-with-policy/outputs.tf",
+        "aws-eks-base.git/terraform/modules/aws-iam-user-with-policy/variables.tf",
+        "aws-eks-base.git/terraform/modules/aws-pritunl/ami.tf",
+        "aws-eks-base.git/terraform/modules/aws-pritunl/backup.tf",
+        "aws-eks-base.git/terraform/modules/aws-pritunl/efs.tf",
+        "aws-eks-base.git/terraform/modules/aws-pritunl/iam.tf",
+        "aws-eks-base.git/terraform/modules/aws-pritunl/main.tf",
+        "aws-eks-base.git/terraform/modules/aws-pritunl/output.tf",
+        "aws-eks-base.git/terraform/modules/aws-pritunl/security_groups.tf",
+        "aws-eks-base.git/terraform/modules/aws-pritunl/variables.tf",
+        "aws-eks-base.git/terraform/modules/aws-wafv2-top-10-owasp-rules/main.tf",
+        "aws-eks-base.git/terraform/modules/aws-wafv2-top-10-owasp-rules/outputs.tf",
+        "aws-eks-base.git/terraform/modules/aws-wafv2-top-10-owasp-rules/variables.tf",
+        "aws-eks-base.git/terraform/modules/eks-kubernetes-namespace/limitrange.tf",
+        "aws-eks-base.git/terraform/modules/eks-kubernetes-namespace/main.tf",
+        "aws-eks-base.git/terraform/modules/eks-kubernetes-namespace/network-policy.tf",
+        "aws-eks-base.git/terraform/modules/eks-kubernetes-namespace/output.tf",
+        "aws-eks-base.git/terraform/modules/eks-kubernetes-namespace/resourcequota.tf",
+        "aws-eks-base.git/terraform/modules/eks-kubernetes-namespace/variables.tf",
+        "aws-eks-base.git/terraform/modules/self-signed-certificate/main.tf",
+        "aws-eks-base.git/terraform/modules/self-signed-certificate/outputs.tf",
+        "aws-eks-base.git/terraform/modules/self-signed-certificate/variables.tf",
+        "aws-eks-base.git/terragrunt/terragrunt.hcl",
+        "aws-eks-base.git/terragrunt/demo/us-east-1/aws-base/.terraform.lock.hcl",
+        "aws-eks-base.git/terragrunt/demo/us-east-1/aws-base/terragrunt.hcl",
+        "aws-eks-base.git/terragrunt/demo/us-east-1/k8s-addons/.terraform.lock.hcl",
+        "aws-eks-base.git/terragrunt/demo/us-east-1/k8s-addons/terragrunt.hcl"
+      ]
     }
   },
   "info": {

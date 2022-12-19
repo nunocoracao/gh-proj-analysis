@@ -2,26 +2,14 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 16,
+      "count": 4,
       "rootCount": 0,
-      "subFolderCount": 16,
+      "subFolderCount": 4,
       "filepaths": [
-        "weaver-dlt-interoperability.git/core/drivers/corda-driver/Dockerfile.local",
-        "weaver-dlt-interoperability.git/core/drivers/corda-driver/Dockerfile.remote",
         "weaver-dlt-interoperability.git/core/drivers/fabric-driver/fabricDriver.dockerfile",
         "weaver-dlt-interoperability.git/core/drivers/fabric-driver/fabricDriver.dockerfile.local",
         "weaver-dlt-interoperability.git/core/identity-management/iin-agent/iinagent.Dockerfile",
-        "weaver-dlt-interoperability.git/core/identity-management/iin-agent/iinagent.local.Dockerfile",
-        "weaver-dlt-interoperability.git/core/network/fabric-interop-cc/Dockerfile",
-        "weaver-dlt-interoperability.git/core/relay/Dockerfile",
-        "weaver-dlt-interoperability.git/core/relay/Dockerfile.client",
-        "weaver-dlt-interoperability.git/core/relay/Dockerfile.driver",
-        "weaver-dlt-interoperability.git/core/relay/Dockerfile.server",
-        "weaver-dlt-interoperability.git/samples/corda/corda-simple-application/Dockerfile",
-        "weaver-dlt-interoperability.git/samples/fabric/fabric-cli/Dockerfile",
-        "weaver-dlt-interoperability.git/samples/fabric/simplestate/Dockerfile",
-        "weaver-dlt-interoperability.git/samples/fabric/simplestatewithacl/Dockerfile",
-        "weaver-dlt-interoperability.git/tests/network-setups/test/fabric/chaincode/sacc/Dockerfile"
+        "weaver-dlt-interoperability.git/core/identity-management/iin-agent/iinagent.local.Dockerfile"
       ]
     },
     "composefile": {
@@ -45,6 +33,85 @@
         "weaver-dlt-interoperability.git/tests/network-setups/fabric/dev/docker/docker-compose-test-net.yaml",
         "weaver-dlt-interoperability.git/tests/network-setups/test/fabric/chaincode/sacc/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/config-maps/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/corda-net/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/deploycc/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-ca/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-ca/charts/postgresdb/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-channel/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-cli/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-network/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-nodes/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay/charts/relay-dummy-driver/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay/charts/relay-server/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay-one/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/test/fabric/charts/buildcc/Chart.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/test/fabric/charts/deploycc/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 27,
+      "rootCount": 0,
+      "subFolderCount": 27,
+      "filepaths": [
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/corda-net/templates/service.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/deploycc/templates/deployment.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/deploycc/templates/service.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-ca/charts/postgresdb/templates/postgres-service.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-ca/templates/ca-deployment.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-ca/templates/ca-service.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-ca/templates/orderer-ca-deployment.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-ca/templates/orderer-ca-service.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-cli/templates/configmap.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-cli/templates/deployment.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-nodes/templates/orderer-deployment.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-nodes/templates/orderer-service.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-nodes/templates/peer-deployment.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/fabric-nodes/templates/peer-service.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay/charts/relay-dummy-driver/templates/dummy-driver-deployment.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay/charts/relay-dummy-driver/templates/dummy-driver-service.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay/charts/relay-server/templates/server-configmap.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay/charts/relay-server/templates/server-deployment.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay/charts/relay-server/templates/server-service.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay-one/templates/driver-configmap.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay-one/templates/relay-deployment.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay-one/templates/relay-service.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/shared/charts/relay-one/templates/server-configmap.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/test/fabric/charts/deploycc/bkp/configMap.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/test/fabric/charts/deploycc/templates/deployment.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/test/fabric/charts/deploycc/templates/service.yaml",
+        "weaver-dlt-interoperability.git/tests/network-setups/test/fabric/k8s/postgres-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

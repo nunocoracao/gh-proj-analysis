@@ -2,14 +2,10 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 36,
+      "count": 32,
       "rootCount": 0,
-      "subFolderCount": 36,
+      "subFolderCount": 32,
       "filepaths": [
-        "pai.git/contrib/api-stress-test/build/docker/dockerfile",
-        "pai.git/contrib/ca-customize-resource/docker/dockerfile",
-        "pai.git/contrib/hived-config-adapter/Dockerfile",
-        "pai.git/examples/Dockerfiles",
         "pai.git/src/alert-manager/build/alert-handler.common.dockerfile",
         "pai.git/src/alert-manager/build/cert-expiration-checker.common.dockerfile",
         "pai.git/src/alert-manager/build/cluster-utilization.common.dockerfile",
@@ -52,6 +48,94 @@
       "filepaths": [
         "pai.git/src/pylon/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 52,
+      "rootCount": 0,
+      "subFolderCount": 52,
+      "filepaths": [
+        "pai.git/contrib/aks-engine/templates/services-configuration.yaml.j2",
+        "pai.git/contrib/api-stress-test/roles/generate/templates/services-configuration.yaml",
+        "pai.git/contrib/kubespray/quick-start/services-configuration.yaml.template",
+        "pai.git/deployment/clusterObjectModel/test/data/configuration-duplicate-hostname/services-configuration.yaml",
+        "pai.git/deployment/clusterObjectModel/test/data/configuration-none-overwrite/services-configuration.yaml",
+        "pai.git/deployment/clusterObjectModel/test/data/configuration-overwrite/services-configuration.yaml",
+        "pai.git/deployment/clusterObjectModel/test/data/configuration-template-generate/services-configuration.yaml",
+        "pai.git/deployment/clusterObjectModel/test/data/forward_compatibility_data/after-convert-service-configuration.yaml",
+        "pai.git/deployment/clusterObjectModel/test/data/forward_compatibility_data/service-configuration.yaml",
+        "pai.git/deployment/k8sPaiLibrary/template/dashboard-deployment.yaml.template",
+        "pai.git/deployment/k8sPaiLibrary/template/dashboard-service.yaml.template",
+        "pai.git/deployment/quick-start/services-configuration.yaml.template",
+        "pai.git/examples/cluster-configuration/services-configuration.yaml",
+        "pai.git/src/alert-manager/deploy/alert-manager-configmap.yaml.template",
+        "pai.git/src/alert-manager/deploy/alert-manager-deployment.yaml.template",
+        "pai.git/src/alert-manager/deploy/service.yaml",
+        "pai.git/src/cluster-configuration/deploy/service.yaml",
+        "pai.git/src/database-controller/deploy/service.yaml",
+        "pai.git/src/device-plugin/deploy/service.yaml",
+        "pai.git/src/docker-cache/deploy/docker-cache-service.yaml.template",
+        "pai.git/src/docker-cache/deploy/service.yaml",
+        "pai.git/src/dshuttle-csi/deploy/service.yaml",
+        "pai.git/src/dshuttle-master/deploy/dshuttle-service.yaml.template",
+        "pai.git/src/dshuttle-master/deploy/service.yaml",
+        "pai.git/src/dshuttle-worker/deploy/service.yaml",
+        "pai.git/src/fluentd/deploy/service.yaml",
+        "pai.git/src/frameworkcontroller/deploy/service.yaml",
+        "pai.git/src/grafana/deploy/service.yaml",
+        "pai.git/src/hivedscheduler/deploy/hivedscheduler-service.yaml.template",
+        "pai.git/src/hivedscheduler/deploy/service.yaml",
+        "pai.git/src/internal-storage/deploy/service.yaml",
+        "pai.git/src/job-exporter/deploy/service.yaml",
+        "pai.git/src/k8s-dashboard/deploy/service.yaml",
+        "pai.git/src/log-manager/deploy/service.yaml",
+        "pai.git/src/marketplace-db/deploy/service.yaml",
+        "pai.git/src/marketplace-restserver/deploy/service.yaml",
+        "pai.git/src/marketplace-webportal/deploy/service.yaml",
+        "pai.git/src/node-exporter/deploy/service.yaml",
+        "pai.git/src/openpai-runtime/deploy/service.yaml",
+        "pai.git/src/postgresql/deploy/service.yaml",
+        "pai.git/src/prometheus/deploy/prometheus-configmap.yaml.template",
+        "pai.git/src/prometheus/deploy/prometheus-deployment.yaml.template",
+        "pai.git/src/prometheus/deploy/service.yaml",
+        "pai.git/src/prometheus-pushgateway/deploy/service.yaml",
+        "pai.git/src/pylon/deploy/service.yaml",
+        "pai.git/src/rest-server/deploy/service.yaml",
+        "pai.git/src/storage-manager/deploy/service.yaml",
+        "pai.git/src/watchdog/deploy/service.yaml",
+        "pai.git/src/webportal/deploy/service.yaml",
+        "pai.git/subprojects/frameworklauncher/yarn/src/test/resources/TestExpects/ServiceDescriptor.yml",
+        "pai.git/subprojects/frameworklauncher/yarn/src/test/resources/TestExpects/ServiceStatus.yml",
+        "pai.git/subprojects/frameworklauncher/yarn/src/test/resources/TestExpects/UpdateDataDeploymentVersionRequest.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

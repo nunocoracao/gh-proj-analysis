@@ -1,17 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 5,
-      "filepaths": [
-        "microcks.git/minions/async/src/main/docker/Dockerfile.jvm",
-        "microcks.git/minions/async/src/main/docker/Dockerfile.native",
-        "microcks.git/webapp/src/main/docker/Dockerfile",
-        "microcks.git/webapp/src/main/docker/fabric8-ubi/Dockerfile",
-        "microcks.git/webapp/src/main/docker/ubi/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -32,6 +26,52 @@
         "microcks.git/minions/async/rabbitmq-docker-compose.yml",
         "microcks.git/minions/async/redpanda-docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "microcks.git/install/kubernetes/microcks/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "microcks.git/commons/util/src/test/resources/io/github/microcks/util/asyncapi/account-service-asyncapi.yaml",
+        "microcks.git/commons/util/src/test/resources/io/github/microcks/util/asyncapi/account-service-ref-asyncapi.yaml",
+        "microcks.git/commons/util/src/test/resources/io/github/microcks/util/asyncapi/account-service-ref-ref-asyncapi.yaml",
+        "microcks.git/install/kubernetes/microcks/templates/configmap.yaml",
+        "microcks.git/install/kubernetes/microcks/templates/deployment.yaml",
+        "microcks.git/install/kubernetes/microcks/templates/service.yaml",
+        "microcks.git/samples/HelloService.metadata.yml",
+        "microcks.git/webapp/src/test/resources/io/github/microcks/util/asyncapi/account-service-asyncapi.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

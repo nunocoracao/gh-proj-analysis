@@ -2,38 +2,11 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 28,
-      "rootCount": 3,
-      "subFolderCount": 25,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
       "filepaths": [
-        "trivy.git/Dockerfile",
-        "trivy.git/Dockerfile.canary",
-        "trivy.git/Dockerfile.protoc",
-        "trivy.git/docs/build/Dockerfile",
-        "trivy.git/docs/docs/advanced/container/embed-in-dockerfile.md",
-        "trivy.git/examples/misconf/custom-data/configs/Dockerfile",
-        "trivy.git/examples/misconf/custom-policy/dockerfile",
-        "trivy.git/examples/misconf/go-testing/configs/Dockerfile.allowed",
-        "trivy.git/examples/misconf/go-testing/configs/Dockerfile.denied",
-        "trivy.git/examples/misconf/mixed/configs/Dockerfile",
-        "trivy.git/examples/misconf/namespace-exception/configs/Dockerfile",
-        "trivy.git/integration/testdata/dockerfile-custom-policies.json.golden",
-        "trivy.git/integration/testdata/dockerfile-namespace-exception.json.golden",
-        "trivy.git/integration/testdata/dockerfile-rule-exception.json.golden",
-        "trivy.git/integration/testdata/dockerfile.json.golden",
-        "trivy.git/integration/testdata/dockerfile_file_pattern.json.golden",
-        "trivy.git/integration/testdata/fixtures/fs/dockerfile",
-        "trivy.git/integration/testdata/fixtures/fs/dockerfile_file_pattern",
-        "trivy.git/integration/testdata/fixtures/fs/custom-policy/Dockerfile",
-        "trivy.git/integration/testdata/fixtures/fs/namespace-exception/Dockerfile",
-        "trivy.git/integration/testdata/fixtures/fs/rule-exception/Dockerfile",
-        "trivy.git/pkg/fanal/analyzer/buildinfo/dockerfile.go",
-        "trivy.git/pkg/fanal/analyzer/buildinfo/dockerfile_test.go",
-        "trivy.git/pkg/fanal/analyzer/buildinfo/testdata/dockerfile",
-        "trivy.git/pkg/fanal/analyzer/config/dockerfile",
-        "trivy.git/pkg/fanal/artifact/local/testdata/misconfig/dockerfile",
-        "trivy.git/pkg/fanal/external/testdata/allow/Dockerfile",
-        "trivy.git/pkg/fanal/external/testdata/deny/Dockerfile"
+        "trivy.git/docs/docs/advanced/container/embed-in-dockerfile.md"
       ]
     },
     "composefile": {
@@ -43,6 +16,75 @@
       "subFolderCount": 1,
       "filepaths": [
         "trivy.git/examples/misconf/custom-policy/docker-compose/configs/docker-compose.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "trivy.git/.github/workflows/publish-chart.yaml",
+        "trivy.git/helm/trivy/Chart.yaml",
+        "trivy.git/integration/testdata/fixtures/fs/helm_badname/Chart.yaml",
+        "trivy.git/integration/testdata/fixtures/fs/helm_testchart/Chart.yaml",
+        "trivy.git/pkg/fanal/analyzer/config/helm/testdata/Chart.yaml",
+        "trivy.git/pkg/fanal/analyzer/config/helm/testdata/testchart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "trivy.git/examples/misconf/combine/configs/deployment.yaml",
+        "trivy.git/examples/misconf/combine/configs/service.yaml",
+        "trivy.git/examples/misconf/custom-policy/kubernetes/configs/deployment.yaml",
+        "trivy.git/examples/misconf/mixed/configs/deployment.yaml",
+        "trivy.git/examples/misconf/namespace-exception/configs/deployment.yaml",
+        "trivy.git/examples/misconf/rule-exception/configs/deployment-allow.yaml",
+        "trivy.git/examples/misconf/rule-exception/configs/deployment-deny.yaml",
+        "trivy.git/helm/trivy/templates/configmap.yaml",
+        "trivy.git/helm/trivy/templates/service.yaml",
+        "trivy.git/helm/trivy/templates/serviceaccount.yaml",
+        "trivy.git/integration/testdata/fixtures/fs/helm_testchart/templates/deployment.yaml",
+        "trivy.git/integration/testdata/fixtures/fs/helm_testchart/templates/service.yaml",
+        "trivy.git/integration/testdata/fixtures/fs/helm_testchart/templates/serviceaccount.yaml",
+        "trivy.git/pkg/fanal/analyzer/config/helm/testdata/testchart/templates/deployment.yml",
+        "trivy.git/pkg/fanal/analyzer/config/helm/testdata/testchart/templates/service.yaml",
+        "trivy.git/pkg/fanal/analyzer/config/helm/testdata/testchart/templates/serviceaccount.yaml",
+        "trivy.git/pkg/fanal/analyzer/config/yaml/testdata/deployment.yaml",
+        "trivy.git/pkg/fanal/analyzer/config/yaml/testdata/deployment_deny.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "trivy.git/examples/misconf/custom-policy/hcl/configs/config.hcl",
+        "trivy.git/examples/misconf/mixed/configs/main.tf",
+        "trivy.git/examples/misconf/mixed/configs/variables.tf",
+        "trivy.git/pkg/fanal/artifact/local/testdata/misconfig/terraform/multiple-failures/src/main.tf",
+        "trivy.git/pkg/fanal/artifact/local/testdata/misconfig/terraform/multiple-failures/src/more.tf",
+        "trivy.git/pkg/fanal/artifact/local/testdata/misconfig/terraform/passed/src/main.tf",
+        "trivy.git/pkg/fanal/artifact/local/testdata/misconfig/terraform/single-failure/src/main.tf"
       ]
     }
   },

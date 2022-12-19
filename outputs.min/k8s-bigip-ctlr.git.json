@@ -2,20 +2,12 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 10,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 10,
+      "subFolderCount": 2,
       "filepaths": [
-        "k8s-bigip-ctlr.git/build-tools/Dockerfile.attribution",
-        "k8s-bigip-ctlr.git/build-tools/Dockerfile.debian",
-        "k8s-bigip-ctlr.git/build-tools/Dockerfile.debug",
-        "k8s-bigip-ctlr.git/build-tools/Dockerfile.ubi",
         "k8s-bigip-ctlr.git/build-tools/crdcodegen.Dockerfile",
-        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/Dockerfile",
-        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/bundle.Dockerfile",
-        "k8s-bigip-ctlr.git/vendor/github.com/nxadm/tail/Dockerfile",
-        "k8s-bigip-ctlr.git/vendor/github.com/onsi/gomega/Dockerfile",
-        "k8s-bigip-ctlr.git/vendor/golang.org/x/net/http2/Dockerfile"
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/bundle.Dockerfile"
       ]
     },
     "composefile": {
@@ -26,6 +18,115 @@
       "filepaths": [
         "k8s-bigip-ctlr.git/vendor/github.com/onsi/gomega/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/config/crd/kustomization.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/config/default/kustomization.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/config/manager/kustomization.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/config/manifests/kustomization.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/config/prometheus/kustomization.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/config/rbac/kustomization.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/config/samples/kustomization.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/config/scorecard/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "k8s-bigip-ctlr.git/helm-charts/demo-web-app/Chart.yaml",
+        "k8s-bigip-ctlr.git/helm-charts/f5-bigip-ctlr/Chart.yaml",
+        "k8s-bigip-ctlr.git/helm-charts/f5-bigip-ingress/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 60,
+      "rootCount": 0,
+      "subFolderCount": 60,
+      "filepaths": [
+        "k8s-bigip-ctlr.git/docs/config_examples/NodePortLocal/deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/NodePortLocal/service.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/NodePortLocal/configmap/configmap.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/NodePortLocal/configmap/deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/NodePortLocal/configmap/service.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/appsExample/SecuredApp/openshift-secured-deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/appsExample/SecuredApp/secured-deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/appsExample/SecuredApp/secured-service.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/appsExample/TCPApp/openshift-tcp-deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/appsExample/TCPApp/tcp-deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/appsExample/TCPApp/tcp-service.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/appsExample/UDPApp/openshift-udp-deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/appsExample/UDPApp/udp-deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/appsExample/UDPApp/udp-service.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/appsExample/UnSecuredApp/openshift-unsecured-deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/appsExample/UnSecuredApp/unsecured-deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/appsExample/UnSecuredApp/unsecured-service.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/cccl-configmap/example-vs-resource-udp.configmap.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/cccl-configmap/example-vs-resource.configmap.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/override-configmap/sample-override-bot-defense-profile-configmap.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/override-configmap/sample-override-dos-profile-configmap.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/override-configmap/sample-override-pool-members-configmap.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/override-configmap/sample-override-virtual-configmap.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/override-configmap/sample-override-waf-profile-configmap.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/override-configmap/sample-waf-policy-configmap.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/user-defined-configmap/sample-tenant-filtering-configmap.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/user-defined-configmap/sample-waf-configmap.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/user-defined-configmap/deployments/f5-hello-world-deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/user-defined-configmap/deployments/f5-hello-world-service.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/user-defined-configmap/hubmode-configmap/deployments/f5-hello-world-deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/configmap/user-defined-configmap/hubmode-configmap/deployments/f5-hello-world-service.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/customResource/Policy/extended-configmap-routes-with-policy.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/customResource/Policy/serviceTypeLB-with-policy.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/customResource/TransportServer/ts-with-service-address.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/customResource/VirtualServer/MultiPortServices/service.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/customResource/VirtualServer/virtual-with-aservice-address/example-service-address-with-virtual.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/customResource/serviceTypeLB/example-service-type-lb.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/customResource/serviceTypeLB/healthMonitor-serviceTypeLB.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/customResource/serviceTypeLB/multiport-serviceTypeLB.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/ingress/sample-headless-service-ingress.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/ingress/single-service-ingress.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/ingress/single-service-namedport-ingress.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/ingress/single-service-tls-ingress-2.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/ingress/single-service-tls-ingress.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/ingress/networkingV1/sample-headless-service-ingress.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/ingress/networkingV1/single-service-ingress.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/ingress/networkingV1/single-service-namedport-ingress.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/ingress/networkingV1/single-service-tls-ingress-2.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/ingress/networkingV1/single-service-tls-ingress.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/next-gen-routes/deployment/deployment-pod-with-livenessprobe.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/routes/sample-route-deployment.yaml",
+        "k8s-bigip-ctlr.git/docs/config_examples/routes/sample-route-service.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/bundle/manifests/f5-bigip-ctlr-operator-controller-manager-metrics-service_v1_service.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/bundle/manifests/f5-bigip-ctlr-operator-manager-config_v1_configmap.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/bundle/manifests/f5-bigip-ctlr-operator.clusterserviceversion.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/config/manifests/bases/f5-bigip-ctlr-operator.clusterserviceversion.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/config/rbac/auth_proxy_service.yaml",
+        "k8s-bigip-ctlr.git/f5-bigip-ctlr-operator/config/rbac/service_account.yaml",
+        "k8s-bigip-ctlr.git/helm-charts/demo-web-app/templates/service.yaml",
+        "k8s-bigip-ctlr.git/helm-charts/f5-bigip-ctlr/templates/f5-bigip-ctlr-serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

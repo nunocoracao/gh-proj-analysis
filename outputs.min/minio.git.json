@@ -1,19 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 7,
-      "rootCount": 7,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "minio.git/Dockerfile",
-        "minio.git/Dockerfile.cicd",
-        "minio.git/Dockerfile.dev",
-        "minio.git/Dockerfile.hotfix",
-        "minio.git/Dockerfile.release",
-        "minio.git/Dockerfile.release.fips",
-        "minio.git/Dockerfile.scratch"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -24,6 +16,50 @@
         "minio.git/buildscripts/upgrade-tests/compose.yml",
         "minio.git/docs/orchestration/docker-compose/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "minio.git/helm/minio/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 0,
+      "subFolderCount": 6,
+      "filepaths": [
+        "minio.git/helm/minio/templates/configmap.yaml",
+        "minio.git/helm/minio/templates/console-service.yaml",
+        "minio.git/helm/minio/templates/deployment.yaml",
+        "minio.git/helm/minio/templates/service.yaml",
+        "minio.git/helm/minio/templates/serviceaccount.yaml",
+        "minio.git/helm/minio/templates/servicemonitor.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

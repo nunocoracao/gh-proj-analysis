@@ -1,17 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 5,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 5,
-      "filepaths": [
-        "budibase.git/hosting/proxy/Dockerfile",
-        "budibase.git/hosting/single/Dockerfile",
-        "budibase.git/packages/server/Dockerfile",
-        "budibase.git/packages/server/scripts/integrations/mssql/data/Dockerfile",
-        "budibase.git/packages/worker/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -31,6 +25,56 @@
         "budibase.git/packages/server/scripts/integrations/service-vehicles/docker-compose.yml",
         "budibase.git/qa-core/docker-compose.yaml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "budibase.git/charts/budibase/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "budibase.git/charts/budibase/templates/app-service-deployment.yaml",
+        "budibase.git/charts/budibase/templates/app-service-service.yaml",
+        "budibase.git/charts/budibase/templates/minio-service-deployment.yaml",
+        "budibase.git/charts/budibase/templates/minio-service-service.yaml",
+        "budibase.git/charts/budibase/templates/proxy-service-deployment.yaml",
+        "budibase.git/charts/budibase/templates/proxy-service-service.yaml",
+        "budibase.git/charts/budibase/templates/redis-service-deployment.yaml",
+        "budibase.git/charts/budibase/templates/redis-service-service.yaml",
+        "budibase.git/charts/budibase/templates/service.yaml",
+        "budibase.git/charts/budibase/templates/serviceaccount.yaml",
+        "budibase.git/charts/budibase/templates/worker-service-deployment.yaml",
+        "budibase.git/charts/budibase/templates/worker-service-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

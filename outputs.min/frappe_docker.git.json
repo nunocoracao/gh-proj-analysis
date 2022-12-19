@@ -2,16 +2,12 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 6,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 6,
+      "subFolderCount": 2,
       "filepaths": [
         "frappe_docker.git/custom_app/backend.Dockerfile",
-        "frappe_docker.git/custom_app/frontend.Dockerfile",
-        "frappe_docker.git/images/bench/Dockerfile",
-        "frappe_docker.git/images/nginx/Dockerfile",
-        "frappe_docker.git/images/socketio/Dockerfile",
-        "frappe_docker.git/images/worker/Dockerfile"
+        "frappe_docker.git/custom_app/frontend.Dockerfile"
       ]
     },
     "composefile": {
@@ -39,6 +35,44 @@
         "frappe_docker.git/overrides/compose.redis.yaml",
         "frappe_docker.git/tests/compose.ci-erpnext.yaml",
         "frappe_docker.git/tests/compose.ci.yaml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 1,
+      "subFolderCount": 1,
+      "filepaths": [
+        "frappe_docker.git/docker-bake.hcl",
+        "frappe_docker.git/custom_app/docker-bake.hcl"
       ]
     }
   },

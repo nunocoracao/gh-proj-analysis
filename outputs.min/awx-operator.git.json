@@ -1,15 +1,69 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "awx-operator.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 9,
+      "rootCount": 0,
+      "subFolderCount": 9,
+      "filepaths": [
+        "awx-operator.git/config/crd/kustomization.yaml",
+        "awx-operator.git/config/default/kustomization.yaml",
+        "awx-operator.git/config/manager/kustomization.yaml",
+        "awx-operator.git/config/manifests/kustomization.yaml",
+        "awx-operator.git/config/prometheus/kustomization.yaml",
+        "awx-operator.git/config/rbac/kustomization.yaml",
+        "awx-operator.git/config/samples/kustomization.yaml",
+        "awx-operator.git/config/scorecard/kustomization.yaml",
+        "awx-operator.git/config/testing/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "awx-operator.git/.helm/starter/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "awx-operator.git/ansible/instantiate-awx-deployment.yml",
+        "awx-operator.git/config/manifests/bases/awx-operator.clusterserviceversion.yaml",
+        "awx-operator.git/config/rbac/auth_proxy_service.yaml",
+        "awx-operator.git/config/rbac/service_account.yaml",
+        "awx-operator.git/roles/installer/tasks/scale_down_deployment.yml",
+        "awx-operator.git/roles/installer/templates/deployments/deployment.yaml.j2",
+        "awx-operator.git/roles/installer/templates/networking/service.yaml.j2",
+        "awx-operator.git/roles/installer/templates/rbac/service_account.yaml.j2"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

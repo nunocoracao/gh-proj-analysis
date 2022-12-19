@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 3,
-      "filepaths": [
-        "terraform-provider-helm.git/vendor/github.com/docker/distribution/Dockerfile",
-        "terraform-provider-helm.git/vendor/github.com/rubenv/sql-migrate/Dockerfile",
-        "terraform-provider-helm.git/vendor/golang.org/x/net/http2/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -17,6 +13,74 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "terraform-provider-helm.git/helm/testdata/charts/broken-chart/Chart.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/dependency-bar/Chart.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/dependency-foo/Chart.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/failed-deploy/Chart.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/kube-version/Chart.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/test-chart/Chart.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/test-chart-v2/Chart.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/umbrella-chart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "terraform-provider-helm.git/helm/testdata/charts/broken-chart/templates/service.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/dependency-bar/templates/deployment.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/dependency-bar/templates/service.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/dependency-bar/templates/serviceaccount.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/dependency-foo/templates/deployment.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/dependency-foo/templates/service.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/dependency-foo/templates/serviceaccount.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/failed-deploy/templates/service.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/kube-version/templates/deployment.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/test-chart/templates/configmaps.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/test-chart/templates/deployment.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/test-chart/templates/service.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/test-chart/templates/serviceaccount.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/test-chart-v2/templates/deployment.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/test-chart-v2/templates/service.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/test-chart-v2/templates/serviceaccount.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/umbrella-chart/templates/deployment.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/umbrella-chart/templates/service.yaml",
+        "terraform-provider-helm.git/helm/testdata/charts/umbrella-chart/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "terraform-provider-helm.git/.release/release-metadata.hcl",
+        "terraform-provider-helm.git/helm/test-infra/gke/main.tf",
+        "terraform-provider-helm.git/vendor/github.com/docker/distribution/docker-bake.hcl"
+      ]
     }
   },
   "info": {

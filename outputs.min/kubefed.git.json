@@ -2,15 +2,72 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 2,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 2,
+      "subFolderCount": 1,
       "filepaths": [
-        "kubefed.git/images/kubefed/Dockerfile",
         "kubefed.git/third-party/k8s.io/repo-infra/verify/boilerplate/boilerplate.Dockerfile.txt"
       ]
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "kubefed.git/charts/kubefed/Chart.yaml",
+        "kubefed.git/charts/kubefed/charts/controllermanager/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 19,
+      "rootCount": 0,
+      "subFolderCount": 19,
+      "filepaths": [
+        "kubefed.git/charts/kubefed/charts/controllermanager/templates/deployments.yaml",
+        "kubefed.git/charts/kubefed/charts/controllermanager/templates/service.yaml",
+        "kubefed.git/charts/kubefed/charts/controllermanager/templates/serviceaccounts.yaml",
+        "kubefed.git/config/enabletypedirectives/configmaps.yaml",
+        "kubefed.git/config/enabletypedirectives/deployments.apps.yaml",
+        "kubefed.git/config/enabletypedirectives/serviceaccounts.yaml",
+        "kubefed.git/config/enabletypedirectives/services.yaml",
+        "kubefed.git/example/sample1/configmap.yaml",
+        "kubefed.git/example/sample1/deployment.yaml",
+        "kubefed.git/example/sample1/federatedconfigmap.yaml",
+        "kubefed.git/example/sample1/federateddeployment.yaml",
+        "kubefed.git/example/sample1/federatedservice.yaml",
+        "kubefed.git/example/sample1/federatedserviceaccount.yaml",
+        "kubefed.git/example/sample1/service.yaml",
+        "kubefed.git/example/scheduling/federateddeployment-rsp.yaml",
+        "kubefed.git/test/common/fixtures/configmaps.yaml",
+        "kubefed.git/test/common/fixtures/deployments.apps.yaml",
+        "kubefed.git/test/common/fixtures/serviceaccounts.yaml",
+        "kubefed.git/test/common/fixtures/services.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

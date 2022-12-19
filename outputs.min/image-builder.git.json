@@ -2,18 +2,11 @@
   "results": {
     "dockerfile": {
       "exist": true,
-      "count": 8,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 8,
+      "subFolderCount": 1,
       "filepaths": [
-        "image-builder.git/images/capi/Dockerfile",
-        "image-builder.git/images/capi/kubevirt-Dockerfile",
-        "image-builder.git/images/kube-deploy/container-image/images/buster-aws/Dockerfile",
-        "image-builder.git/images/kube-deploy/container-image/images/buster-base/Dockerfile",
-        "image-builder.git/images/kube-deploy/container-image/images/buster-gce/Dockerfile",
-        "image-builder.git/images/kube-deploy/container-image/images/buster-qemu/Dockerfile",
-        "image-builder.git/images/kube-deploy/container-image/tools/images/container-to-raw/Dockerfile",
-        "image-builder.git/images/kube-deploy/imagebuilder/Dockerfile"
+        "image-builder.git/images/capi/kubevirt-Dockerfile"
       ]
     },
     "composefile": {
@@ -22,6 +15,48 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "image-builder.git/images/capi/packer/goss/goss-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "image-builder.git/images/capi/packer/nutanix/config.pkr.hcl",
+        "image-builder.git/images/kube-deploy/container-image/cloud/aws-test/instance.tf",
+        "image-builder.git/images/kube-deploy/container-image/cloud/aws-upload/uploader.tf",
+        "image-builder.git/images/kube-deploy/container-image/cloud/gce-test/instance.tf"
+      ]
     }
   },
   "info": {

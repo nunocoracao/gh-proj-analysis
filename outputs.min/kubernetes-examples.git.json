@@ -1,15 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 3,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 3,
-      "filepaths": [
-        "kubernetes-examples.git/container-image-scanning/Dockerfile",
-        "kubernetes-examples.git/custom_resource_definition/mikestestapi/Dockerfile",
-        "kubernetes-examples.git/openshift/buildconfig/dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": false,
@@ -17,6 +13,75 @@
       "rootCount": 0,
       "subFolderCount": 0,
       "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 12,
+      "rootCount": 0,
+      "subFolderCount": 12,
+      "filepaths": [
+        "kubernetes-examples.git/clusters/minikube/flux-system/kustomization.yaml",
+        "kubernetes-examples.git/clusters/my-cluster/podinfo-kustomization.yaml",
+        "kubernetes-examples.git/clusters/my-cluster/flux-system/kustomization.yaml",
+        "kubernetes-examples.git/custom_resource_definition/mikestestapi/config/crd/kustomization.yaml",
+        "kubernetes-examples.git/custom_resource_definition/mikestestapi/config/default/kustomization.yaml",
+        "kubernetes-examples.git/custom_resource_definition/mikestestapi/config/manager/kustomization.yaml",
+        "kubernetes-examples.git/custom_resource_definition/mikestestapi/config/prometheus/kustomization.yaml",
+        "kubernetes-examples.git/custom_resource_definition/mikestestapi/config/rbac/kustomization.yaml",
+        "kubernetes-examples.git/kustomize/base/kustomization.yaml",
+        "kubernetes-examples.git/kustomize/overlays/dev/kustomization.yaml",
+        "kubernetes-examples.git/kustomize/overlays/prod/kustomization.yaml",
+        "kubernetes-examples.git/kustomize/overlays/staging/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 15,
+      "rootCount": 0,
+      "subFolderCount": 15,
+      "filepaths": [
+        "kubernetes-examples.git/Troubleshooting/deployment.yaml",
+        "kubernetes-examples.git/codify-k8s-manifest/cdk8s/nginxdeployment/dist/nginxdeployment.k8s.yaml",
+        "kubernetes-examples.git/custom_resource_definition/mikestestapi/config/rbac/auth_proxy_service.yaml",
+        "kubernetes-examples.git/custom_resource_definition/mikestestapi/config/rbac/service_account.yaml",
+        "kubernetes-examples.git/ingress-controller/Platform9/deployment.yaml",
+        "kubernetes-examples.git/ingress-controller/aks/deployment.yaml",
+        "kubernetes-examples.git/ingress-controller/minikube/deployment.yaml",
+        "kubernetes-examples.git/ingress-controller/nginx-ingress/deployment.yaml",
+        "kubernetes-examples.git/kubernetes-testing/kubescore/deployment.yaml",
+        "kubernetes-examples.git/kubernetes-testing/kubetest/deployment.yaml",
+        "kubernetes-examples.git/kustomize/base/deployment.yaml",
+        "kubernetes-examples.git/kustomize/base/service.yaml",
+        "kubernetes-examples.git/readiness-probe/deployment.yaml",
+        "kubernetes-examples.git/serviceaccounts/createserviceaccount.yaml",
+        "kubernetes-examples.git/serviceaccounts/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "kubernetes-examples.git/k8s-the-hard-way/azure-vms/main.tf",
+        "kubernetes-examples.git/k8s-the-hard-way/azure-vms/variables.tf",
+        "kubernetes-examples.git/k8s-the-hard-way/load-balancer-ip/main.tf",
+        "kubernetes-examples.git/k8s-the-hard-way/load-balancer-ip/variables.tf"
+      ]
     }
   },
   "info": {

@@ -1,13 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 1,
-      "rootCount": 1,
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
       "subFolderCount": 0,
-      "filepaths": [
-        "clickvisual.git/Dockerfile"
-      ]
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -20,6 +18,55 @@
         "clickvisual.git/docker-compose.m1.yml",
         "clickvisual.git/docker-compose.yml"
       ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "clickvisual.git/data/helm/clickvisual/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "clickvisual.git/data/helm/clickvisual/templates/configmap.yaml",
+        "clickvisual.git/data/helm/clickvisual/templates/deployment.yaml",
+        "clickvisual.git/data/helm/clickvisual/templates/service.yaml",
+        "clickvisual.git/data/k8s/prometheus/alertmanager-configmap.yaml",
+        "clickvisual.git/data/k8s/prometheus/alertmanager-deployment.yaml",
+        "clickvisual.git/data/k8s/prometheus/alertmanager-service.yaml",
+        "clickvisual.git/data/k8s/prometheus/prom2click-deployment.yaml",
+        "clickvisual.git/data/k8s/prometheus/prom2click-service.yaml",
+        "clickvisual.git/data/k8s/prometheus/prometheus-configmap.yaml",
+        "clickvisual.git/data/k8s/prometheus/prometheus-deployment.yaml",
+        "clickvisual.git/data/k8s/prometheus/prometheus-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     }
   },
   "info": {

@@ -1,23 +1,61 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 9,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 9,
-      "filepaths": [
-        "brigade.git/v2/apiserver/Dockerfile",
-        "brigade.git/v2/artemis/Dockerfile",
-        "brigade.git/v2/git-initializer/Dockerfile",
-        "brigade.git/v2/git-initializer-windows/Dockerfile",
-        "brigade.git/v2/logger/Dockerfile",
-        "brigade.git/v2/logger-windows/Dockerfile",
-        "brigade.git/v2/observer/Dockerfile",
-        "brigade.git/v2/scheduler/Dockerfile",
-        "brigade.git/v2/worker/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "brigade.git/charts/brigade/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 10,
+      "rootCount": 0,
+      "subFolderCount": 10,
+      "filepaths": [
+        "brigade.git/charts/brigade/templates/deployments.yaml",
+        "brigade.git/charts/brigade/templates/apiserver/service-account.yaml",
+        "brigade.git/charts/brigade/templates/apiserver/service.yaml",
+        "brigade.git/charts/brigade/templates/artemis/internal-service.yaml",
+        "brigade.git/charts/brigade/templates/artemis/primary-service.yaml",
+        "brigade.git/charts/brigade/templates/artemis/secondary-service.yaml",
+        "brigade.git/charts/brigade/templates/artemis/service.yaml",
+        "brigade.git/charts/brigade/templates/logger/service-account.yaml",
+        "brigade.git/charts/brigade/templates/observer/service-account.yaml",
+        "brigade.git/charts/brigade/templates/scheduler/service-account.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

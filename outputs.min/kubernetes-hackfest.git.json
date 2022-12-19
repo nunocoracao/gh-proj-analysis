@@ -1,34 +1,69 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 20,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 20,
-      "filepaths": [
-        "kubernetes-hackfest.git/.devcontainer/Dockerfile",
-        "kubernetes-hackfest.git/app/data-api/Dockerfile",
-        "kubernetes-hackfest.git/app/data-updater/Dockerfile",
-        "kubernetes-hackfest.git/app/flights-api/Dockerfile",
-        "kubernetes-hackfest.git/app/quakes-api/Dockerfile",
-        "kubernetes-hackfest.git/app/sample-go/Dockerfile",
-        "kubernetes-hackfest.git/app/service-tracker-ui/Dockerfile",
-        "kubernetes-hackfest.git/app/weather-api/Dockerfile",
-        "kubernetes-hackfest.git/app-experimental/auth-api/Dockerfile",
-        "kubernetes-hackfest.git/app-experimental/br-load/Dockerfile",
-        "kubernetes-hackfest.git/app-experimental/cache-api/Dockerfile",
-        "kubernetes-hackfest.git/app-experimental/cache-api-old/Dockerfile",
-        "kubernetes-hackfest.git/app-experimental/data-api/Dockerfile",
-        "kubernetes-hackfest.git/app-experimental/flights-api/Dockerfile",
-        "kubernetes-hackfest.git/app-experimental/kube-api/Dockerfile",
-        "kubernetes-hackfest.git/app-experimental/load-test-artillery/Dockerfile",
-        "kubernetes-hackfest.git/app-experimental/open-sky-adapter-api/Dockerfile",
-        "kubernetes-hackfest.git/app-experimental/open-sky-cronjob/Dockerfile",
-        "kubernetes-hackfest.git/labs/best-practices/appdev/data-api/Dockerfile",
-        "kubernetes-hackfest.git/labs/best-practices/appdev/flights-api/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "kubernetes-hackfest.git/charts/data-api/Chart.yaml",
+        "kubernetes-hackfest.git/charts/flights-api/Chart.yaml",
+        "kubernetes-hackfest.git/charts/quakes-api/Chart.yaml",
+        "kubernetes-hackfest.git/charts/service-tracker-ui/Chart.yaml",
+        "kubernetes-hackfest.git/charts/weather-api/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 14,
+      "rootCount": 0,
+      "subFolderCount": 14,
+      "filepaths": [
+        "kubernetes-hackfest.git/charts/data-api/templates/deployment.yaml",
+        "kubernetes-hackfest.git/charts/data-api/templates/service.yaml",
+        "kubernetes-hackfest.git/charts/flights-api/templates/deployment.yaml",
+        "kubernetes-hackfest.git/charts/flights-api/templates/service.yaml",
+        "kubernetes-hackfest.git/charts/mongo/mongodb-deployment.yaml",
+        "kubernetes-hackfest.git/charts/quakes-api/templates/deployment.yaml",
+        "kubernetes-hackfest.git/charts/quakes-api/templates/service.yaml",
+        "kubernetes-hackfest.git/charts/service-tracker-ui/templates/deployment.yaml",
+        "kubernetes-hackfest.git/charts/service-tracker-ui/templates/service.yaml",
+        "kubernetes-hackfest.git/charts/weather-api/templates/deployment.yaml",
+        "kubernetes-hackfest.git/charts/weather-api/templates/service.yaml",
+        "kubernetes-hackfest.git/labs/aci/service-tracker-ui.yaml",
+        "kubernetes-hackfest.git/labs/monitoring-logging/prometheus-grafana/prom-graf-servicemonitor.yaml",
+        "kubernetes-hackfest.git/labs/networking/ingress/service-tracker-ingress.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

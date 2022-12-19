@@ -1,18 +1,80 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 4,
-      "rootCount": 2,
-      "subFolderCount": 2,
-      "filepaths": [
-        "node-feature-discovery.git/Dockerfile",
-        "node-feature-discovery.git/Dockerfile_generator",
-        "node-feature-discovery.git/demo/docker-images/Dockerfile-CloverLeaf",
-        "node-feature-discovery.git/demo/docker-images/Dockerfile-PARSEC"
-      ]
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 21,
+      "rootCount": 0,
+      "subFolderCount": 21,
+      "filepaths": [
+        "node-feature-discovery.git/deployment/base/master/kustomization.yaml",
+        "node-feature-discovery.git/deployment/base/master-worker-combined/kustomization.yaml",
+        "node-feature-discovery.git/deployment/base/nfd-crds/kustomization.yaml",
+        "node-feature-discovery.git/deployment/base/noderesourcetopologies-crd/kustomization.yaml",
+        "node-feature-discovery.git/deployment/base/rbac/kustomization.yaml",
+        "node-feature-discovery.git/deployment/base/rbac-topologyupdater/kustomization.yaml",
+        "node-feature-discovery.git/deployment/base/topologyupdater-daemonset/kustomization.yaml",
+        "node-feature-discovery.git/deployment/base/worker-daemonset/kustomization.yaml",
+        "node-feature-discovery.git/deployment/base/worker-job/kustomization.yaml",
+        "node-feature-discovery.git/deployment/components/common/kustomization.yaml",
+        "node-feature-discovery.git/deployment/components/topology-updater/kustomization.yaml",
+        "node-feature-discovery.git/deployment/components/topology-updater-config/kustomization.yaml",
+        "node-feature-discovery.git/deployment/components/worker-config/kustomization.yaml",
+        "node-feature-discovery.git/deployment/overlays/default/kustomization.yaml",
+        "node-feature-discovery.git/deployment/overlays/default-combined/kustomization.yaml",
+        "node-feature-discovery.git/deployment/overlays/default-job/kustomization.yaml",
+        "node-feature-discovery.git/deployment/overlays/master-worker-topologyupdater/kustomization.yaml",
+        "node-feature-discovery.git/deployment/overlays/prune/kustomization.yaml",
+        "node-feature-discovery.git/deployment/overlays/samples/cert-manager/kustomization.yaml",
+        "node-feature-discovery.git/deployment/overlays/samples/custom-rules/kustomization.yaml",
+        "node-feature-discovery.git/deployment/overlays/topologyupdater/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "node-feature-discovery.git/deployment/helm/node-feature-discovery/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "node-feature-discovery.git/deployment/base/master/master-deployment.yaml",
+        "node-feature-discovery.git/deployment/base/master/master-service.yaml",
+        "node-feature-discovery.git/deployment/base/rbac/master-serviceaccount.yaml",
+        "node-feature-discovery.git/deployment/base/rbac/worker-serviceaccount.yaml",
+        "node-feature-discovery.git/deployment/base/rbac-topologyupdater/topologyupdater-serviceaccount.yaml",
+        "node-feature-discovery.git/deployment/helm/node-feature-discovery/templates/service.yaml",
+        "node-feature-discovery.git/deployment/helm/node-feature-discovery/templates/serviceaccount.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

@@ -1,42 +1,67 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 28,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 28,
-      "filepaths": [
-        "contrib.git/ansible/roles/kubernetes-addons/files/common/python-image/Dockerfile",
-        "contrib.git/ansible/roles/opencontrail/templates/Dockerfile.debian.j2",
-        "contrib.git/ansible/roles/opencontrail/templates/Dockerfile.redhat.j2",
-        "contrib.git/continuousdelivery/Dockerfile",
-        "contrib.git/diurnal/Dockerfile",
-        "contrib.git/election/Dockerfile",
-        "contrib.git/election/client/nodejs/Dockerfile",
-        "contrib.git/election/vendor/golang.org/x/net/http2/Dockerfile",
-        "contrib.git/exec-healthz/Dockerfile.in",
-        "contrib.git/flannel-server/Dockerfile",
-        "contrib.git/for-demos/proxy-to-service/Dockerfile",
-        "contrib.git/images/haproxy/Dockerfile",
-        "contrib.git/ingress/echoheaders/Dockerfile",
-        "contrib.git/ingress/echoheaders-redirect/Dockerfile",
-        "contrib.git/keepalived-vip/Dockerfile",
-        "contrib.git/keepalived-vip/build/Dockerfile",
-        "contrib.git/keepalived-vip/vendor/golang.org/x/net/http2/Dockerfile",
-        "contrib.git/node-perf-dash/Dockerfile",
-        "contrib.git/peer-finder/Dockerfile",
-        "contrib.git/rescheduler/Dockerfile",
-        "contrib.git/rescheduler/vendor/golang.org/x/net/http2/Dockerfile",
-        "contrib.git/scale-demo/aggregator/Dockerfile",
-        "contrib.git/scale-demo/nginx/Dockerfile",
-        "contrib.git/scale-demo/vegeta/Dockerfile",
-        "contrib.git/service-loadbalancer/Dockerfile",
-        "contrib.git/startup-script/Dockerfile",
-        "contrib.git/statefulsets/kafka/Dockerfile",
-        "contrib.git/statefulsets/zookeeper/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 18,
+      "rootCount": 0,
+      "subFolderCount": 18,
+      "filepaths": [
+        "contrib.git/ansible/roles/flannel/tasks/systemd-service.yml",
+        "contrib.git/ansible/roles/flannel/tasks/upstart-service.yml",
+        "contrib.git/ansible/roles/kubernetes-addons/templates/cluster-logging/es-service.yaml.j2",
+        "contrib.git/ansible/roles/kubernetes-addons/templates/cluster-logging/kibana-service.yaml.j2",
+        "contrib.git/ansible/roles/kubernetes-addons/templates/cluster-monitoring/grafana-service.yaml.j2",
+        "contrib.git/ansible/roles/kubernetes-addons/templates/cluster-monitoring/heapster-service.yaml.j2",
+        "contrib.git/ansible/roles/kubernetes-addons/templates/cluster-monitoring/influxdb-service.yaml.j2",
+        "contrib.git/ansible/roles/kubernetes-addons/templates/kube-ui/dashboard-service.yaml.j2",
+        "contrib.git/ansible/roles/opencontrail/tasks/masters-services.yml",
+        "contrib.git/continuousdelivery/kubeyaml/myserviceexample.yaml",
+        "contrib.git/ingress/controllers/nginx/examples/proxy-protocol/nginx-configmap.yaml",
+        "contrib.git/ingress/controllers/nginx/examples/tcp/tcp-configmap-example.yaml",
+        "contrib.git/ingress/controllers/nginx/examples/udp/udp-configmap-example.yaml",
+        "contrib.git/keepalived-vip/vip-configmap.yaml",
+        "contrib.git/micro-demos/deployments/deployment.yaml",
+        "contrib.git/micro-demos/services/service.yaml",
+        "contrib.git/node-perf-dash/node-perf-dash-deployment.yaml",
+        "contrib.git/node-perf-dash/node-perf-dash-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
       "exist": false,
       "count": 0,
       "rootCount": 0,

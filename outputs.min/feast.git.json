@@ -1,23 +1,11 @@
 {
   "results": {
     "dockerfile": {
-      "exist": true,
-      "count": 11,
+      "exist": false,
+      "count": 0,
       "rootCount": 0,
-      "subFolderCount": 11,
-      "filepaths": [
-        "feast.git/java/infra/docker/feature-server/Dockerfile",
-        "feast.git/java/infra/docker/feature-server/Dockerfile.dev",
-        "feast.git/java/serving/src/test/resources/docker-compose/feast10/Dockerfile",
-        "feast.git/sdk/python/feast/infra/feature_servers/aws_lambda/Dockerfile",
-        "feast.git/sdk/python/feast/infra/feature_servers/gcp_cloudrun/Dockerfile",
-        "feast.git/sdk/python/feast/infra/feature_servers/multicloud/Dockerfile",
-        "feast.git/sdk/python/feast/infra/feature_servers/multicloud/Dockerfile.dev",
-        "feast.git/sdk/python/feast/infra/materialization/aws_lambda/Dockerfile",
-        "feast.git/sdk/python/feast/infra/materialization/contrib/bytewax/Dockerfile",
-        "feast.git/sdk/python/feast/infra/transformation_servers/Dockerfile",
-        "feast.git/ui/docker/Dockerfile"
-      ]
+      "subFolderCount": 0,
+      "filepaths": []
     },
     "composefile": {
       "exist": true,
@@ -26,6 +14,81 @@
       "subFolderCount": 1,
       "filepaths": [
         "feast.git/java/serving/src/test/resources/docker-compose/docker-compose-redis-it.yml"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "feast.git/infra/charts/feast/Chart.yaml",
+        "feast.git/infra/charts/feast/charts/feature-server/Chart.yaml",
+        "feast.git/infra/charts/feast/charts/transformation-service/Chart.yaml",
+        "feast.git/infra/charts/feast-feature-server/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 7,
+      "rootCount": 0,
+      "subFolderCount": 7,
+      "filepaths": [
+        "feast.git/infra/charts/feast/charts/feature-server/templates/configmap.yaml",
+        "feast.git/infra/charts/feast/charts/feature-server/templates/deployment.yaml",
+        "feast.git/infra/charts/feast/charts/feature-server/templates/service.yaml",
+        "feast.git/infra/charts/feast/charts/transformation-service/templates/deployment.yaml",
+        "feast.git/infra/charts/feast/charts/transformation-service/templates/service.yaml",
+        "feast.git/infra/charts/feast-feature-server/templates/deployment.yaml",
+        "feast.git/infra/charts/feast-feature-server/templates/service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 26,
+      "rootCount": 0,
+      "subFolderCount": 26,
+      "filepaths": [
+        "feast.git/infra/terraform/aws/eks.tf",
+        "feast.git/infra/terraform/aws/emr.tf",
+        "feast.git/infra/terraform/aws/helm.tf",
+        "feast.git/infra/terraform/aws/iam.tf",
+        "feast.git/infra/terraform/aws/msk.tf",
+        "feast.git/infra/terraform/aws/online_store.tf",
+        "feast.git/infra/terraform/aws/outputs.tf",
+        "feast.git/infra/terraform/aws/rds.tf",
+        "feast.git/infra/terraform/aws/s3.tf",
+        "feast.git/infra/terraform/aws/variables.tf",
+        "feast.git/infra/terraform/azure/aks.tf",
+        "feast.git/infra/terraform/azure/helm.tf",
+        "feast.git/infra/terraform/azure/kafka.tf",
+        "feast.git/infra/terraform/azure/provider.tf",
+        "feast.git/infra/terraform/azure/redis.tf",
+        "feast.git/infra/terraform/azure/sparkop.tf",
+        "feast.git/infra/terraform/azure/storage.tf",
+        "feast.git/infra/terraform/azure/variables.tf",
+        "feast.git/infra/terraform/azure/vnet.tf",
+        "feast.git/infra/terraform/gcp/dataproc.tf",
+        "feast.git/infra/terraform/gcp/feast.tf",
+        "feast.git/infra/terraform/gcp/gke.tf",
+        "feast.git/infra/terraform/gcp/iam.tf",
+        "feast.git/infra/terraform/gcp/online_store.tf",
+        "feast.git/infra/terraform/gcp/provider.tf",
+        "feast.git/infra/terraform/gcp/variables.tf"
       ]
     }
   },
