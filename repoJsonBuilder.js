@@ -4,6 +4,12 @@ const githubSearchRepos = require('./src/ghCrawler.js');
 var utils = require('./src/utils');
 
 var searchQueries = [
+    'cmake',
+    'make',
+    'shell',
+    'react',
+    'vue',
+    'algorithm',
     'network',
     'persistence',
     'crawler',

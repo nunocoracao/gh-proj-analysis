@@ -1,0 +1,148 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 6,
+      "rootCount": 1,
+      "subFolderCount": 5,
+      "filepaths": [
+        "cloud-custodian.git/Dockerfile",
+        "cloud-custodian.git/tools/c7n_mailer/Dockerfile",
+        "cloud-custodian.git/tools/c7n_org/Dockerfile",
+        "cloud-custodian.git/tools/c7n_policystream/Dockerfile",
+        "cloud-custodian.git/tools/dev/docker_tox_linux/Dockerfile",
+        "cloud-custodian.git/tools/dev/docker_tox_windows/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "cloud-custodian.git/.devcontainer/devcontainer.json"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "cloud-custodian.git/tools/ops/azure/container-host/chart/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "cloud-custodian.git/tools/ops/azure/container-host/chart/templates/deployments.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 55,
+      "rootCount": 0,
+      "subFolderCount": 55,
+      "filepaths": [
+        "cloud-custodian.git/tests/terraform/aws_asg/main.tf",
+        "cloud-custodian.git/tests/terraform/aws_asg_update/main.tf",
+        "cloud-custodian.git/tests/terraform/aws_code_build_vpc/codebuild_project.tf",
+        "cloud-custodian.git/tests/terraform/aws_code_build_vpc/security_group.tf",
+        "cloud-custodian.git/tests/terraform/aws_code_build_vpc/vpc.tf",
+        "cloud-custodian.git/tests/terraform/aws_lambda_check_permissions/main.tf",
+        "cloud-custodian.git/tests/terraform/aws_s3_encryption_audit/main.tf",
+        "cloud-custodian.git/tests/terraform/cloudtrail_fail_include_management_events/main.tf",
+        "cloud-custodian.git/tests/terraform/cloudtrail_fail_log_metric_filter/main.tf",
+        "cloud-custodian.git/tests/terraform/cloudtrail_fail_log_metric_filter_no_alarm/main.tf",
+        "cloud-custodian.git/tests/terraform/cloudtrail_fail_log_metric_filter_no_sns/main.tf",
+        "cloud-custodian.git/tests/terraform/cloudtrail_success_include_management_events/main.tf",
+        "cloud-custodian.git/tests/terraform/cloudtrail_success_log_metric_filter/main.tf",
+        "cloud-custodian.git/tests/terraform/ec2_stop_protection_disabled/ami.tf",
+        "cloud-custodian.git/tests/terraform/ec2_stop_protection_disabled/main.tf",
+        "cloud-custodian.git/tests/terraform/ec2_stop_protection_disabled/network.tf",
+        "cloud-custodian.git/tests/terraform/ec2_stop_protection_enabled/ami.tf",
+        "cloud-custodian.git/tests/terraform/ec2_stop_protection_enabled/main.tf",
+        "cloud-custodian.git/tests/terraform/ec2_stop_protection_enabled/network.tf",
+        "cloud-custodian.git/tests/terraform/eks_nodegroup_delete/eks-nodegroup.tf",
+        "cloud-custodian.git/tests/terraform/eks_nodegroup_delete/main.tf",
+        "cloud-custodian.git/tests/terraform/eks_nodegroup_delete/network.tf",
+        "cloud-custodian.git/tests/terraform/eks_nodegroup_delete/providers.tf",
+        "cloud-custodian.git/tests/terraform/elasticsearch_cross_cluster_search_connections/main.tf",
+        "cloud-custodian.git/tests/terraform/event_bridge_bus/main.tf",
+        "cloud-custodian.git/tests/terraform/iam_delete_certificate/cert.tf",
+        "cloud-custodian.git/tests/terraform/iam_role_delete/lambda.tf",
+        "cloud-custodian.git/tests/terraform/iam_role_delete/role.tf",
+        "cloud-custodian.git/tests/terraform/iam_user/user.tf",
+        "cloud-custodian.git/tests/terraform/iam_user_group/group.tf",
+        "cloud-custodian.git/tests/terraform/log_delete/main.tf",
+        "cloud-custodian.git/tests/terraform/route53_hostedzone_delete/main.tf",
+        "cloud-custodian.git/tests/terraform/s3_access_point/main.tf",
+        "cloud-custodian.git/tests/terraform/s3_ownership/main.tf",
+        "cloud-custodian.git/tests/terraform/s3_tag/main.tf",
+        "cloud-custodian.git/tests/terraform/sqs_delete/main.tf",
+        "cloud-custodian.git/tests/terraform/sqs_remove_matched/main.tf",
+        "cloud-custodian.git/tests/terraform/sqs_set_encryption/main.tf",
+        "cloud-custodian.git/tests/terraform/tag_action_filter_call/ami.tf",
+        "cloud-custodian.git/tests/terraform/tag_action_filter_call/main.tf",
+        "cloud-custodian.git/tests/terraform/tag_action_filter_call/network.tf",
+        "cloud-custodian.git/tests/terraform/vpc_flow_logs/main.tf",
+        "cloud-custodian.git/tools/c7n_gcp/tests/terraform/pubsub_subscription/main.tf",
+        "cloud-custodian.git/tools/c7n_gcp/tests/terraform/pubsub_topic/main.tf",
+        "cloud-custodian.git/tools/c7n_terraform/tests_terraform/data/aws-complete/atlantis.tf",
+        "cloud-custodian.git/tools/c7n_terraform/tests_terraform/data/aws-complete/locals.tf",
+        "cloud-custodian.git/tools/c7n_terraform/tests_terraform/data/aws-complete/output.tf",
+        "cloud-custodian.git/tools/c7n_terraform/tests_terraform/data/aws-complete/provider.tf",
+        "cloud-custodian.git/tools/c7n_terraform/tests_terraform/data/aws-complete/s3.tf",
+        "cloud-custodian.git/tools/c7n_terraform/tests_terraform/data/aws-complete/vars.tf",
+        "cloud-custodian.git/tools/c7n_terraform/tests_terraform/data/aws-s3-bucket/locals.tf",
+        "cloud-custodian.git/tools/c7n_terraform/tests_terraform/data/aws-s3-bucket/s3.tf",
+        "cloud-custodian.git/tools/c7n_terraform/tests_terraform/data/aws-s3-bucket/vars.tf",
+        "cloud-custodian.git/tools/c7n_terraform/tests_terraform/data/tfjson-tf/tf/main.tf",
+        "cloud-custodian.git/tools/c7n_terraform/tests_terraform/data/tfjson-tf/tfjson/main.tf.json"
+      ]
+    }
+  },
+  "info": {
+    "id": 52837350,
+    "name": "cloud-custodian",
+    "full_name": "cloud-custodian/cloud-custodian",
+    "owner": {
+      "login": "cloud-custodian",
+      "html_url": "https://github.com/cloud-custodian",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/cloud-custodian/cloud-custodian",
+    "description": "Rules engine for cloud security, cost optimization, and governance, DSL in yaml for policies to query, filter, and take actions on resources",
+    "url": "https://api.github.com/repos/cloud-custodian/cloud-custodian",
+    "clone_url": "https://github.com/cloud-custodian/cloud-custodian.git",
+    "homepage": "https://cloudcustodian.io",
+    "size": 371688,
+    "stargazers_count": 4571,
+    "watchers_count": 4571,
+    "language": "Python"
+  }
+}

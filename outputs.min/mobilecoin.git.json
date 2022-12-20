@@ -1,0 +1,153 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "mobilecoin.git/.internal-ci/docker/Dockerfile.bootstrap-tools",
+        "mobilecoin.git/.internal-ci/docker/Dockerfile.fog-ledger",
+        "mobilecoin.git/.internal-ci/docker/Dockerfile.fog-test-client",
+        "mobilecoin.git/.internal-ci/docker/Dockerfile.fogingest",
+        "mobilecoin.git/.internal-ci/docker/Dockerfile.fogreport",
+        "mobilecoin.git/.internal-ci/docker/Dockerfile.fogview",
+        "mobilecoin.git/.internal-ci/docker/Dockerfile.go-grpc-gateway",
+        "mobilecoin.git/.internal-ci/docker/Dockerfile.mobilecoind",
+        "mobilecoin.git/.internal-ci/docker/Dockerfile.node_hw",
+        "mobilecoin.git/.internal-ci/docker/Dockerfile.runtime-base",
+        "mobilecoin.git/.internal-ci/docker/Dockerfile.watcher",
+        "mobilecoin.git/ops/Dockerfile-consensus",
+        "mobilecoin.git/ops/Dockerfile-mobilecoind"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 11,
+      "rootCount": 0,
+      "subFolderCount": 11,
+      "filepaths": [
+        "mobilecoin.git/.internal-ci/helm/consensus-node/Chart.yaml",
+        "mobilecoin.git/.internal-ci/helm/consensus-node-config/Chart.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-ingest/Chart.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-ingest-config/Chart.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services/Chart.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services-config/Chart.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-test-client/Chart.yaml",
+        "mobilecoin.git/.internal-ci/helm/mc-core-common-config/Chart.yaml",
+        "mobilecoin.git/.internal-ci/helm/mc-core-dev-env-setup/Chart.yaml",
+        "mobilecoin.git/.internal-ci/helm/mobilecoind/Chart.yaml",
+        "mobilecoin.git/.internal-ci/helm/watcher/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 47,
+      "rootCount": 0,
+      "subFolderCount": 47,
+      "filepaths": [
+        "mobilecoin.git/.internal-ci/helm/consensus-node/templates/gateway-deployment.yaml",
+        "mobilecoin.git/.internal-ci/helm/consensus-node/templates/gateway-service.yaml",
+        "mobilecoin.git/.internal-ci/helm/consensus-node/templates/node-deployment.yaml",
+        "mobilecoin.git/.internal-ci/helm/consensus-node/templates/node-service.yaml",
+        "mobilecoin.git/.internal-ci/helm/consensus-node/templates/node-servicemonitor.yaml",
+        "mobilecoin.git/.internal-ci/helm/consensus-node-config/templates/node-config-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/consensus-node-config/templates/node-network-config-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/consensus-node-config/templates/node-tokens-config-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-ingest/templates/fog-ingest-service.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-ingest/templates/supervisord-admin-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-ingest/templates/supervisord-daemon-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-ingest/templates/supervisord-fog-ingest-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-ingest/templates/supervisord-sgx-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-ingest/templates/toolbox-deployment.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-ingest-config/templates/fog-ingest-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-ingest-config/templates/fog-recovery-postgresql-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services/templates/fog-ledger-service.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services/templates/fog-report-deployment.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services/templates/fog-report-service.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services/templates/fog-view-deployment.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services/templates/fog-view-service.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services/templates/supervisord-admin-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services/templates/supervisord-daemon-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services/templates/supervisord-fog-ledger-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services/templates/supervisord-fog-report-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services/templates/supervisord-fog-view-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services/templates/supervisord-sgx-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services-config/templates/fog-ledger-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services-config/templates/fog-public-fqdn-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services-config/templates/fog-recovery-reader-0-postgresql-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services-config/templates/fog-report-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-services-config/templates/fog-view-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-test-client/templates/fog-test-client-deployment.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-test-client/templates/fog-test-client-service.yaml",
+        "mobilecoin.git/.internal-ci/helm/fog-test-client/templates/fog-test-client-serviceMonitor.yaml",
+        "mobilecoin.git/.internal-ci/helm/mc-core-common-config/templates/fog-supervisord-mobilecoind-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/mc-core-common-config/templates/mobilecoin-network-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/mc-core-common-config/templates/mobilecoind-supervisord-mobilecoind-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/mc-core-common-config/templates/sentry-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/mobilecoind/templates/mobilecoind-deployment.yaml",
+        "mobilecoin.git/.internal-ci/helm/mobilecoind/templates/mobilecoind-json-service.yaml",
+        "mobilecoin.git/.internal-ci/helm/mobilecoind/templates/mobilecoind-service.yaml",
+        "mobilecoin.git/.internal-ci/helm/mobilecoind/templates/supervisord-daemon-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/mobilecoind/templates/supervisord-mobilecoind-json-configmap.yaml",
+        "mobilecoin.git/.internal-ci/helm/watcher/templates/watcher-deployment.yaml",
+        "mobilecoin.git/.internal-ci/helm/watcher/templates/watcher-service.yaml",
+        "mobilecoin.git/deploy/01-node-services.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "info": {
+    "id": 254463038,
+    "name": "mobilecoin",
+    "full_name": "mobilecoinfoundation/mobilecoin",
+    "owner": {
+      "login": "mobilecoinfoundation",
+      "html_url": "https://github.com/mobilecoinfoundation",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/mobilecoinfoundation/mobilecoin",
+    "description": "Private payments for mobile devices.",
+    "url": "https://api.github.com/repos/mobilecoinfoundation/mobilecoin",
+    "clone_url": "https://github.com/mobilecoinfoundation/mobilecoin.git",
+    "homepage": null,
+    "size": 21985,
+    "stargazers_count": 1103,
+    "watchers_count": 1103,
+    "language": "Rust"
+  }
+}
