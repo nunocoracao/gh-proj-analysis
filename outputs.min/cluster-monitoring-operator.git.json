@@ -1,0 +1,158 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 1,
+      "subFolderCount": 2,
+      "filepaths": [
+        "cluster-monitoring-operator.git/Dockerfile",
+        "cluster-monitoring-operator.git/examples/example-app/Dockerfile",
+        "cluster-monitoring-operator.git/vendor/golang.org/x/net/http2/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "cluster-monitoring-operator.git/vendor/github.com/openshift/api/helm/v1beta1/0000_10-helm-chart-repository.crd.yaml",
+        "cluster-monitoring-operator.git/vendor/github.com/openshift/api/helm/v1beta1/0000_10-project-helm-chart-repository.crd.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 71,
+      "rootCount": 0,
+      "subFolderCount": 71,
+      "filepaths": [
+        "cluster-monitoring-operator.git/assets/admission-webhook/deployment.yaml",
+        "cluster-monitoring-operator.git/assets/admission-webhook/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/admission-webhook/service.yaml",
+        "cluster-monitoring-operator.git/assets/alertmanager/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/alertmanager/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/alertmanager/service.yaml",
+        "cluster-monitoring-operator.git/assets/alertmanager-user-workload/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/alertmanager-user-workload/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/alertmanager-user-workload/service.yaml",
+        "cluster-monitoring-operator.git/assets/cluster-monitoring-operator/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/control-plane/service-monitor-etcd.yaml",
+        "cluster-monitoring-operator.git/assets/control-plane/service-monitor-kubelet-resource-metrics.yaml",
+        "cluster-monitoring-operator.git/assets/control-plane/service-monitor-kubelet.yaml",
+        "cluster-monitoring-operator.git/assets/kube-state-metrics/deployment.yaml",
+        "cluster-monitoring-operator.git/assets/kube-state-metrics/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/kube-state-metrics/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/kube-state-metrics/service.yaml",
+        "cluster-monitoring-operator.git/assets/node-exporter/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/node-exporter/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/node-exporter/service.yaml",
+        "cluster-monitoring-operator.git/assets/openshift-state-metrics/deployment.yaml",
+        "cluster-monitoring-operator.git/assets/openshift-state-metrics/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/openshift-state-metrics/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/openshift-state-metrics/service.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-adapter/api-service.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-adapter/config-map-dedicated-service-monitors.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-adapter/configmap-audit-profiles.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-adapter/configmap-prometheus.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-adapter/deployment.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-adapter/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-adapter/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-adapter/service.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-k8s/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-k8s/service-monitor-thanos-sidecar.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-k8s/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-k8s/service-thanos-sidecar.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-k8s/service.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-operator/deployment.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-operator/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-operator/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-operator/service.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-operator-user-workload/deployment.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-operator-user-workload/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-operator-user-workload/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-operator-user-workload/service.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-user-workload/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-user-workload/service-monitor-thanos-sidecar.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-user-workload/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-user-workload/service-thanos-sidecar.yaml",
+        "cluster-monitoring-operator.git/assets/prometheus-user-workload/service.yaml",
+        "cluster-monitoring-operator.git/assets/telemeter-client/deployment.yaml",
+        "cluster-monitoring-operator.git/assets/telemeter-client/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/telemeter-client/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/telemeter-client/service.yaml",
+        "cluster-monitoring-operator.git/assets/thanos-querier/deployment.yaml",
+        "cluster-monitoring-operator.git/assets/thanos-querier/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/thanos-querier/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/thanos-querier/service.yaml",
+        "cluster-monitoring-operator.git/assets/thanos-ruler/service-account.yaml",
+        "cluster-monitoring-operator.git/assets/thanos-ruler/service-monitor.yaml",
+        "cluster-monitoring-operator.git/assets/thanos-ruler/service.yaml",
+        "cluster-monitoring-operator.git/examples/cluster-monitoring-configmap.yaml",
+        "cluster-monitoring-operator.git/examples/experiments/prometheus-k8s-service-monitor-etcd.yaml",
+        "cluster-monitoring-operator.git/examples/user-workload/configmap.yaml",
+        "cluster-monitoring-operator.git/hack/uwm_setup_files/example-app-service-monitor.yaml",
+        "cluster-monitoring-operator.git/manifests/0000_50_cluster-monitoring-operator_00_0servicemonitor-custom-resource-definition.yaml",
+        "cluster-monitoring-operator.git/manifests/0000_50_cluster-monitoring-operator_03-service.yaml",
+        "cluster-monitoring-operator.git/manifests/0000_50_cluster-monitoring-operator_05-deployment-ibm-cloud-managed.yaml",
+        "cluster-monitoring-operator.git/manifests/0000_50_cluster-monitoring-operator_05-deployment.yaml",
+        "cluster-monitoring-operator.git/vendor/github.com/openshift/api/operator/v1/0000_50_service-ca-operator_02_crd.yaml",
+        "cluster-monitoring-operator.git/vendor/github.com/openshift/api/sharedresource/v1alpha1/0000_10_sharedconfigmap.crd.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "info": {
+    "id": 129151239,
+    "name": "cluster-monitoring-operator",
+    "full_name": "openshift/cluster-monitoring-operator",
+    "owner": {
+      "login": "openshift",
+      "html_url": "https://github.com/openshift",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/openshift/cluster-monitoring-operator",
+    "description": "Manage the OpenShift monitoring stack",
+    "url": "https://api.github.com/repos/openshift/cluster-monitoring-operator",
+    "clone_url": "https://github.com/openshift/cluster-monitoring-operator.git",
+    "homepage": null,
+    "size": 59658,
+    "stargazers_count": 212,
+    "watchers_count": 212,
+    "language": "Go"
+  }
+}

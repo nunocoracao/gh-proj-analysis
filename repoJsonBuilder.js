@@ -4,7 +4,22 @@ const githubSearchRepos = require('./src/ghCrawler.js');
 var utils = require('./src/utils');
 
 var searchQueries = [
-    /*'Cloud Foundation',
+    'emulator',
+    'oem',
+    'note',
+    'social',
+    'chat',
+    'wasm',
+    'web assembly',
+    'wasi',
+    'script',
+    'shell',
+    'qa',
+    'test',
+    'mobi',
+    'podman',
+    'rancher',
+    'Cloud Foundation',
     'cncf',
     'cluster',
     'cloud',
@@ -23,7 +38,7 @@ var searchQueries = [
     'infra',
     'PaaS',
     'IaaS',
-    'digital ocean',*/
+    'digital ocean',
     'heroku',
     'distributed',
     'parallel',

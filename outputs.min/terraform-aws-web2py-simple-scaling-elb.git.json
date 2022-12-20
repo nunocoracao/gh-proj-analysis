@@ -1,0 +1,119 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/Dockerfile",
+        "terraform-aws-web2py-simple-scaling-elb.git/loadtest/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 36,
+      "rootCount": 0,
+      "subFolderCount": 36,
+      "filepaths": [
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/cloud/db.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/cloud/outputs.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/cloud/provider.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/cloud/security_groups.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/cloud/variables.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/cloud/vpc.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/common/networking.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/common/provider.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/common/security_groups.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/common/user_data.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/common/variables.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/migration_instance/main.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/migration_instance/networking.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/migration_instance/outputs.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/migration_instance/provider.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/migration_instance/security_groups.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/migration_instance/user_data.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/migration_instance/variables.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/template_instance/main.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/template_instance/networking.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/template_instance/outputs.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/template_instance/provider.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/template_instance/security_groups.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/template_instance/user_data.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/ec2/template_instance/variables.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/elb/alarms.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/elb/asg.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/elb/instance_template.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/elb/launch_config.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/elb/main.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/elb/networking.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/elb/outputs.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/elb/provider.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/elb/scaling_policy.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/elb/security_groups.tf",
+        "terraform-aws-web2py-simple-scaling-elb.git/cloud/src/elb/variables.tf"
+      ]
+    }
+  },
+  "info": {
+    "id": 267794042,
+    "name": "terraform-aws-web2py-simple-scaling-elb",
+    "full_name": "myiremark/terraform-aws-web2py-simple-scaling-elb",
+    "owner": {
+      "login": "myiremark",
+      "html_url": "https://github.com/myiremark",
+      "type": "User"
+    },
+    "html_url": "https://github.com/myiremark/terraform-aws-web2py-simple-scaling-elb",
+    "description": "Proof of concept implementation of a sample terraform aws web2py application template that can be performant and modified easily by people new to both terraform and web2py. Demonstrates an introduction to the concepts of Infrastructure as Code and python/web2py application deployment and scaling. It is also designed to stay as much as possible within the free tier of AWS resources. Handles > 3K requests per sec for trivial endpoints with remote postgres database interaction at 99.99% success rate. Configurable for high availability.",
+    "url": "https://api.github.com/repos/myiremark/terraform-aws-web2py-simple-scaling-elb",
+    "clone_url": "https://github.com/myiremark/terraform-aws-web2py-simple-scaling-elb.git",
+    "homepage": "",
+    "size": 51,
+    "stargazers_count": 2,
+    "watchers_count": 2,
+    "language": "HCL"
+  }
+}

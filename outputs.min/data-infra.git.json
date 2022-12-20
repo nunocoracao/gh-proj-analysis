@@ -1,0 +1,157 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 13,
+      "rootCount": 0,
+      "subFolderCount": 13,
+      "filepaths": [
+        "data-infra.git/.devcontainer/Dockerfile",
+        "data-infra.git/airflow/Dockerfile",
+        "data-infra.git/ci/image/Dockerfile",
+        "data-infra.git/images/dask/Dockerfile",
+        "data-infra.git/images/jupyter-singleuser/Dockerfile",
+        "data-infra.git/jobs/gtfs-aggregator-checker/Dockerfile",
+        "data-infra.git/jobs/gtfs-rt-parser/Dockerfile",
+        "data-infra.git/jobs/gtfs-rt-parser-v2/Dockerfile",
+        "data-infra.git/jobs/gtfs-schedule-validator/Dockerfile",
+        "data-infra.git/services/gtfs-rt-archive/Dockerfile",
+        "data-infra.git/services/gtfs-rt-archiver-v3/Dockerfile",
+        "data-infra.git/warehouse/Dockerfile",
+        "data-infra.git/warehouse/Dockerfile.local"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "data-infra.git/airflow/docker-compose.yaml",
+        "data-infra.git/services/gtfs-rt-archive/docker-compose.yml",
+        "data-infra.git/services/gtfs-rt-archiver-v3/docker-compose.yml"
+      ]
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "data-infra.git/.devcontainer/devcontainer.json"
+      ]
+    },
+    "kustomize": {
+      "exist": true,
+      "count": 14,
+      "rootCount": 0,
+      "subFolderCount": 14,
+      "filepaths": [
+        "data-infra.git/kubernetes/apps/manifests/airflow-jobs/kustomization.yaml",
+        "data-infra.git/kubernetes/apps/manifests/gtfs-rt-archive/kustomization.yaml",
+        "data-infra.git/kubernetes/apps/manifests/gtfs-rt-archiver-v3/kustomization.yaml",
+        "data-infra.git/kubernetes/apps/manifests/sftp-server/kustomization.yaml",
+        "data-infra.git/kubernetes/apps/overlays/base-sftp-ingest-elavon/kustomization.yaml",
+        "data-infra.git/kubernetes/apps/overlays/dev-sftp-ingest-elavon/kustomization.yaml",
+        "data-infra.git/kubernetes/apps/overlays/gtfs-rt-archive-preprod/kustomization.yaml",
+        "data-infra.git/kubernetes/apps/overlays/gtfs-rt-archive-prod/kustomization.yaml",
+        "data-infra.git/kubernetes/apps/overlays/gtfs-rt-archive-release/kustomization.yaml",
+        "data-infra.git/kubernetes/apps/overlays/gtfs-rt-archiver-v3-prod/kustomization.yaml",
+        "data-infra.git/kubernetes/apps/overlays/gtfs-rt-archiver-v3-release/kustomization.yaml",
+        "data-infra.git/kubernetes/apps/overlays/gtfs-rt-archiver-v3-test/kustomization.yaml",
+        "data-infra.git/kubernetes/apps/overlays/prod-sftp-ingest-elavon/kustomization.yaml",
+        "data-infra.git/kubernetes/system/kustomization.yaml"
+      ]
+    },
+    "helm": {
+      "exist": true,
+      "count": 5,
+      "rootCount": 0,
+      "subFolderCount": 5,
+      "filepaths": [
+        "data-infra.git/kubernetes/apps/charts/dask/Chart.yaml",
+        "data-infra.git/kubernetes/apps/charts/jupyterhub/Chart.yaml",
+        "data-infra.git/kubernetes/apps/charts/metabase/Chart.yaml",
+        "data-infra.git/kubernetes/apps/charts/postgresql-backup/Chart.yaml",
+        "data-infra.git/kubernetes/apps/charts/sentry/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 27,
+      "rootCount": 0,
+      "subFolderCount": 27,
+      "filepaths": [
+        "data-infra.git/.github/workflows/service-build.yml",
+        "data-infra.git/.github/workflows/service-release-candidate.yml",
+        "data-infra.git/.github/workflows/service-release-channel.yml",
+        "data-infra.git/airflow/dags/airtable_loader_v2/california_transit_gtfs_service_data.yml",
+        "data-infra.git/airflow/dags/airtable_loader_v2/california_transit_services.yml",
+        "data-infra.git/airflow/dags/airtable_loader_v2/transit_tech_stacks_relationships_service_components.yml",
+        "data-infra.git/airflow/dags/airtable_loader_v2/transit_tech_stacks_service_components.yml",
+        "data-infra.git/airflow/dags/airtable_loader_v2/transit_tech_stacks_services.yml",
+        "data-infra.git/airflow/dags/create_external_tables/airtable/external_airtable_california_transit_gtfs_service_data.yml",
+        "data-infra.git/airflow/dags/create_external_tables/airtable/external_airtable_california_transit_services.yml",
+        "data-infra.git/airflow/dags/create_external_tables/airtable/external_airtable_transit_tech_stacks_relationships_service_components.yml",
+        "data-infra.git/airflow/dags/create_external_tables/airtable/external_airtable_transit_tech_stacks_service_components.yml",
+        "data-infra.git/airflow/dags/create_external_tables/airtable/external_airtable_transit_tech_stacks_services.yml",
+        "data-infra.git/airflow/dags/create_external_tables/gtfs_rt_v1/rt_service_alerts.yml",
+        "data-infra.git/airflow/dags/create_external_tables/gtfs_rt_v1/rt_service_alerts_outcomes.yml",
+        "data-infra.git/airflow/dags/create_external_tables/gtfs_rt_v1/rt_service_alerts_validations.yml",
+        "data-infra.git/airflow/dags/create_external_tables/gtfs_rt_v1/rt_service_alerts_validations_outcomes.yml",
+        "data-infra.git/airflow/dags/create_external_tables/gtfs_rt_v2/rt_v2_service_alerts.yml",
+        "data-infra.git/airflow/dags/create_external_tables/gtfs_rt_v2/rt_v2_service_alerts_outcomes.yml",
+        "data-infra.git/airflow/dags/create_external_tables/gtfs_rt_v2/rt_v2_service_alerts_validation_notices.yml",
+        "data-infra.git/airflow/dags/create_external_tables/gtfs_rt_v2/rt_v2_service_alerts_validation_outcomes.yml",
+        "data-infra.git/airflow/dags/parse_and_validate_rt/parse_rt_service_alerts.yml",
+        "data-infra.git/airflow/dags/parse_and_validate_rt/validate_rt_service_alerts.yml",
+        "data-infra.git/airflow/dags/parse_and_validate_rt_v2/parse_rt_service_alerts.yml",
+        "data-infra.git/airflow/dags/parse_and_validate_rt_v2/validate_rt_service_alerts.yml",
+        "data-infra.git/kubernetes/apps/manifests/sftp-server/intranet-service.yaml",
+        "data-infra.git/kubernetes/apps/overlays/prod-sftp-ingest-elavon/internet-service.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 8,
+      "rootCount": 0,
+      "subFolderCount": 8,
+      "filepaths": [
+        "data-infra.git/iac/terraform/deployments/gcp-components/.terraform.lock.hcl",
+        "data-infra.git/iac/terraform/deployments/gcp-components/terraform.tf",
+        "data-infra.git/iac/terraform/deployments/gcp-components/vars.tf",
+        "data-infra.git/iac/terraform/targets/dev/gcp-components/target.tfbackend",
+        "data-infra.git/iac/terraform/targets/dev/gcp-components/target.tfvars",
+        "data-infra.git/iac/terraform/targets/local/gcp-components/target.tfvars",
+        "data-infra.git/iac/terraform/targets/prod/gcp-components/target.tfbackend",
+        "data-infra.git/iac/terraform/targets/prod/gcp-components/target.tfvars"
+      ]
+    }
+  },
+  "info": {
+    "id": 313393628,
+    "name": "data-infra",
+    "full_name": "cal-itp/data-infra",
+    "owner": {
+      "login": "cal-itp",
+      "html_url": "https://github.com/cal-itp",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/cal-itp/data-infra",
+    "description": "Cal-ITP data infrastructure",
+    "url": "https://api.github.com/repos/cal-itp/data-infra",
+    "clone_url": "https://github.com/cal-itp/data-infra.git",
+    "homepage": "https://docs.calitp.org/data-infra",
+    "size": 51994,
+    "stargazers_count": 18,
+    "watchers_count": 18,
+    "language": "Python"
+  }
+}

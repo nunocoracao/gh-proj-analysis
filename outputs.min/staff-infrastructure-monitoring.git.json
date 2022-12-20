@@ -1,0 +1,153 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "staff-infrastructure-monitoring.git/test/docker-compose.yml"
+      ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 71,
+      "rootCount": 7,
+      "subFolderCount": 64,
+      "filepaths": [
+        "staff-infrastructure-monitoring.git/.terraform.lock.hcl",
+        "staff-infrastructure-monitoring.git/main.tf",
+        "staff-infrastructure-monitoring.git/outputs.tf",
+        "staff-infrastructure-monitoring.git/s3-buckets.tf",
+        "staff-infrastructure-monitoring.git/terraform.tfvars.example",
+        "staff-infrastructure-monitoring.git/variables.tf",
+        "staff-infrastructure-monitoring.git/versions.tf",
+        "staff-infrastructure-monitoring.git/database/.terraform.lock.hcl",
+        "staff-infrastructure-monitoring.git/database/database.tf",
+        "staff-infrastructure-monitoring.git/database/main.tf",
+        "staff-infrastructure-monitoring.git/database/outputs.tf",
+        "staff-infrastructure-monitoring.git/database/terraform.tfvars.example",
+        "staff-infrastructure-monitoring.git/database/variables.tf",
+        "staff-infrastructure-monitoring.git/database/versions.tf",
+        "staff-infrastructure-monitoring.git/modules/blackbox_exporter/load_balancer.tf",
+        "staff-infrastructure-monitoring.git/modules/blackbox_exporter/outputs.tf",
+        "staff-infrastructure-monitoring.git/modules/blackbox_exporter/repository.tf",
+        "staff-infrastructure-monitoring.git/modules/blackbox_exporter/security_groups.tf",
+        "staff-infrastructure-monitoring.git/modules/blackbox_exporter/service.tf",
+        "staff-infrastructure-monitoring.git/modules/blackbox_exporter/variables.tf",
+        "staff-infrastructure-monitoring.git/modules/cloudwatch_exporter/iam.tf",
+        "staff-infrastructure-monitoring.git/modules/cloudwatch_exporter/outputs.tf",
+        "staff-infrastructure-monitoring.git/modules/cloudwatch_exporter/variables.tf",
+        "staff-infrastructure-monitoring.git/modules/grafana/alarm.tf",
+        "staff-infrastructure-monitoring.git/modules/grafana/certificate.tf",
+        "staff-infrastructure-monitoring.git/modules/grafana/db_subnet_group.tf",
+        "staff-infrastructure-monitoring.git/modules/grafana/domain.tf",
+        "staff-infrastructure-monitoring.git/modules/grafana/email.tf",
+        "staff-infrastructure-monitoring.git/modules/grafana/iam.tf",
+        "staff-infrastructure-monitoring.git/modules/grafana/load_balancer.tf",
+        "staff-infrastructure-monitoring.git/modules/grafana/outputs.tf",
+        "staff-infrastructure-monitoring.git/modules/grafana/security_groups.tf",
+        "staff-infrastructure-monitoring.git/modules/grafana/service.tf",
+        "staff-infrastructure-monitoring.git/modules/grafana/sns_topic.tf",
+        "staff-infrastructure-monitoring.git/modules/grafana/variables.tf",
+        "staff-infrastructure-monitoring.git/modules/label/main.tf",
+        "staff-infrastructure-monitoring.git/modules/label/outputs.tf",
+        "staff-infrastructure-monitoring.git/modules/label/variables.tf",
+        "staff-infrastructure-monitoring.git/modules/monitoring_platform/cluster.tf",
+        "staff-infrastructure-monitoring.git/modules/monitoring_platform/eks.tf",
+        "staff-infrastructure-monitoring.git/modules/monitoring_platform/eks_policies.tf",
+        "staff-infrastructure-monitoring.git/modules/monitoring_platform/logging.tf",
+        "staff-infrastructure-monitoring.git/modules/monitoring_platform/network.tf",
+        "staff-infrastructure-monitoring.git/modules/monitoring_platform/outputs.tf",
+        "staff-infrastructure-monitoring.git/modules/monitoring_platform/policies.tf",
+        "staff-infrastructure-monitoring.git/modules/monitoring_platform/route53_resolver.tf",
+        "staff-infrastructure-monitoring.git/modules/monitoring_platform/security_group.tf",
+        "staff-infrastructure-monitoring.git/modules/monitoring_platform/transit_gateway_attachment.tf",
+        "staff-infrastructure-monitoring.git/modules/monitoring_platform/variables.tf",
+        "staff-infrastructure-monitoring.git/modules/prometheus/iam.tf",
+        "staff-infrastructure-monitoring.git/modules/prometheus/load_balancer.tf",
+        "staff-infrastructure-monitoring.git/modules/prometheus/outputs.tf",
+        "staff-infrastructure-monitoring.git/modules/prometheus/repository.tf",
+        "staff-infrastructure-monitoring.git/modules/prometheus/security_groups.tf",
+        "staff-infrastructure-monitoring.git/modules/prometheus/service.tf",
+        "staff-infrastructure-monitoring.git/modules/prometheus/variables.tf",
+        "staff-infrastructure-monitoring.git/modules/s3_bucket/main.tf",
+        "staff-infrastructure-monitoring.git/modules/s3_bucket/outputs.tf",
+        "staff-infrastructure-monitoring.git/modules/s3_bucket/variables.tf",
+        "staff-infrastructure-monitoring.git/modules/snmp_exporter/load_balancer.tf",
+        "staff-infrastructure-monitoring.git/modules/snmp_exporter/outputs.tf",
+        "staff-infrastructure-monitoring.git/modules/snmp_exporter/repository.tf",
+        "staff-infrastructure-monitoring.git/modules/snmp_exporter/security_groups.tf",
+        "staff-infrastructure-monitoring.git/modules/snmp_exporter/service.tf",
+        "staff-infrastructure-monitoring.git/modules/snmp_exporter/variables.tf",
+        "staff-infrastructure-monitoring.git/modules/test_bastion/bastion.tf",
+        "staff-infrastructure-monitoring.git/modules/test_bastion/routing.tf",
+        "staff-infrastructure-monitoring.git/modules/test_bastion/security_groups.tf",
+        "staff-infrastructure-monitoring.git/modules/test_bastion/ssh.tf",
+        "staff-infrastructure-monitoring.git/modules/test_bastion/ssm.tf",
+        "staff-infrastructure-monitoring.git/modules/test_bastion/variables.tf"
+      ]
+    }
+  },
+  "info": {
+    "id": 292248754,
+    "name": "staff-infrastructure-monitoring",
+    "full_name": "ministryofjustice/staff-infrastructure-monitoring",
+    "owner": {
+      "login": "ministryofjustice",
+      "html_url": "https://github.com/ministryofjustice",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/ministryofjustice/staff-infrastructure-monitoring",
+    "description": "Terraform module that deploys infrastructure for our monitoring solution including Grafana and Prometheus, etc.",
+    "url": "https://api.github.com/repos/ministryofjustice/staff-infrastructure-monitoring",
+    "clone_url": "https://github.com/ministryofjustice/staff-infrastructure-monitoring.git",
+    "homepage": "https://ministryofjustice.github.io/cloud-operations/#cloud-operations",
+    "size": 636,
+    "stargazers_count": 7,
+    "watchers_count": 7,
+    "language": "HCL"
+  }
+}

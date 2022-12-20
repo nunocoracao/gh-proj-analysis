@@ -1,0 +1,140 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "RestAirline.git/src/Booking/RestAirline.Booking.Api/Dockerfile",
+        "RestAirline.git/src/FlightAvailability/RestAirline.FlightAvailability.Api/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "RestAirline.git/docker-compose/docker-compose-dev.override.yml",
+        "RestAirline.git/docker-compose/docker-compose-dev.yml",
+        "RestAirline.git/docker-compose/docker-compose.override.yml",
+        "RestAirline.git/docker-compose/docker-compose.yml"
+      ]
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "RestAirline.git/k8s/helm/booking-api/Chart.yaml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 0,
+      "subFolderCount": 4,
+      "filepaths": [
+        "RestAirline.git/k8s/helm/booking-api/templates/configmap.yaml",
+        "RestAirline.git/k8s/helm/booking-api/templates/deployment.yaml",
+        "RestAirline.git/k8s/helm/booking-api/templates/service.yaml",
+        "RestAirline.git/k8s/temp-will-delete-soon/mssql/sql-deployment.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 45,
+      "rootCount": 0,
+      "subFolderCount": 45,
+      "filepaths": [
+        "RestAirline.git/terraform/00-s3-state/dev.auto.tfvars",
+        "RestAirline.git/terraform/00-s3-state/main.tf",
+        "RestAirline.git/terraform/00-s3-state/outputs.tf",
+        "RestAirline.git/terraform/00-s3-state/terraform.tfstate",
+        "RestAirline.git/terraform/00-s3-state/terraform.tfstate.backup",
+        "RestAirline.git/terraform/00-s3-state/variables.tf",
+        "RestAirline.git/terraform/01-vpc/dev.auto.tfvars",
+        "RestAirline.git/terraform/01-vpc/main.tf",
+        "RestAirline.git/terraform/01-vpc/outputs.tf",
+        "RestAirline.git/terraform/01-vpc/variables.tf",
+        "RestAirline.git/terraform/02-keypair/dev.auto.tfvars",
+        "RestAirline.git/terraform/02-keypair/main.tf",
+        "RestAirline.git/terraform/02-keypair/outputs.tf",
+        "RestAirline.git/terraform/02-keypair/variables.tf",
+        "RestAirline.git/terraform/03-bastion/dev.auto.tfvars",
+        "RestAirline.git/terraform/03-bastion/main.tf",
+        "RestAirline.git/terraform/03-bastion/outputs.tf",
+        "RestAirline.git/terraform/03-bastion/variables.tf",
+        "RestAirline.git/terraform/04-ecr/dev.auto.tfvars",
+        "RestAirline.git/terraform/04-ecr/main.tf",
+        "RestAirline.git/terraform/04-ecr/outputs.tf",
+        "RestAirline.git/terraform/04-ecr/variables.tf",
+        "RestAirline.git/terraform/05-eks/dev.auto.tfvars",
+        "RestAirline.git/terraform/05-eks/errored.tfstate",
+        "RestAirline.git/terraform/05-eks/main.tf",
+        "RestAirline.git/terraform/05-eks/outputs.tf",
+        "RestAirline.git/terraform/05-eks/security-groups.tf",
+        "RestAirline.git/terraform/05-eks/variables.tf",
+        "RestAirline.git/terraform/06-api-gateway/dev.auto.tfvars",
+        "RestAirline.git/terraform/06-api-gateway/main.tf",
+        "RestAirline.git/terraform/06-api-gateway/outputs.tf",
+        "RestAirline.git/terraform/06-api-gateway/variables.tf",
+        "RestAirline.git/terraform/06-api-gateway/vpclink.tf",
+        "RestAirline.git/terraform/07-cloud-front/dev.auto.tfvars",
+        "RestAirline.git/terraform/07-cloud-front/main.tf",
+        "RestAirline.git/terraform/07-cloud-front/outputs.tf",
+        "RestAirline.git/terraform/07-cloud-front/variables.tf",
+        "RestAirline.git/terraform/elasticsearch/dev.auto.tfvars",
+        "RestAirline.git/terraform/elasticsearch/main.tf",
+        "RestAirline.git/terraform/elasticsearch/outputs.tf",
+        "RestAirline.git/terraform/elasticsearch/variables.tf",
+        "RestAirline.git/terraform/mongoDB/dev.auto.tfvars",
+        "RestAirline.git/terraform/mongoDB/main.tf",
+        "RestAirline.git/terraform/mongoDB/outputs.tf",
+        "RestAirline.git/terraform/mongoDB/variables.tf"
+      ]
+    }
+  },
+  "info": {
+    "id": 133215266,
+    "name": "RestAirline",
+    "full_name": "twzhangyang/RestAirline",
+    "owner": {
+      "login": "twzhangyang",
+      "html_url": "https://github.com/twzhangyang",
+      "type": "User"
+    },
+    "html_url": "https://github.com/twzhangyang/RestAirline",
+    "description": "DDD+CQRS+EventSourcing+Hypermedia API+ASP.NET Core 3.1+Masstransit+terraform+docker+k8s",
+    "url": "https://api.github.com/repos/twzhangyang/RestAirline",
+    "clone_url": "https://github.com/twzhangyang/RestAirline.git",
+    "homepage": "",
+    "size": 695,
+    "stargazers_count": 312,
+    "watchers_count": 312,
+    "language": "C#"
+  }
+}
