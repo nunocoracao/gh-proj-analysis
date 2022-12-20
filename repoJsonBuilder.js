@@ -4,6 +4,10 @@ const githubSearchRepos = require('./src/ghCrawler.js');
 var utils = require('./src/utils');
 
 var searchQueries = [
+    'network',
+    'persistence',
+    'crawler',
+    'spider',
     'emulator',
     'oem',
     'note',

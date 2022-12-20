@@ -135,7 +135,7 @@ module.exports = {
             var temp = this.validateStruct(data.struct)
             validations.dockerfiles = validations.dockerfiles.concat(temp.dockerfiles)
             validations.composefiles = validations.composefiles.concat(temp.composefiles)
-            validations.devcontainer = validations.devcontainer.concat(temp.composefiles)
+            validations.devcontainer = validations.devcontainer.concat(temp.devcontainer)
             validations.kustomize = validations.kustomize.concat(temp.kustomize)
             validations.helm = validations.helm.concat(temp.helm)
             validations.k8s = validations.k8s.concat(temp.k8s)
@@ -234,6 +234,7 @@ module.exports = {
                 var temp = this.validateStruct(struct[i].children)
                 validations.dockerfiles = validations.dockerfiles.concat(temp.dockerfiles)
                 validations.composefiles = validations.composefiles.concat(temp.composefiles)
+                validations.devcontainer = validations.devcontainer.concat(temp.devcontainer)
                 validations.kustomize = validations.kustomize.concat(temp.kustomize)
                 validations.helm = validations.helm.concat(temp.helm)
                 validations.k8s = validations.k8s.concat(temp.k8s)
@@ -287,6 +288,7 @@ module.exports = {
                     !struct[i].name.match(/.*\.tfrecord/i) &&
                     !struct[i].name.match(/.*\.tfm/i)) {
                     struct[i].isTerraform = true
+                    struct[i].isDockerfile = false
                 } else {
                     struct[i].isTerraform = false
                 }
