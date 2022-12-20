@@ -33,18 +33,24 @@
       "filepaths": []
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 2,
+      "filepaths": [
+        "aks-terraform-helm.git/chart/Chart.yaml",
+        "aks-terraform-helm.git/infrastructure/charts/letsencrypt/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 2,
+      "filepaths": [
+        "aks-terraform-helm.git/chart/templates/deployment_example.yaml",
+        "aks-terraform-helm.git/chart/templates/service_example.yaml"
+      ]
     },
     "backstage": {
       "exist": false,
@@ -54,11 +60,19 @@
       "filepaths": []
     },
     "terraform": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 7,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 7,
+      "filepaths": [
+        "aks-terraform-helm.git/infrastructure/main_aks.tf",
+        "aks-terraform-helm.git/infrastructure/main_app.tf",
+        "aks-terraform-helm.git/infrastructure/main_common.tf",
+        "aks-terraform-helm.git/infrastructure/main_ingress.tf",
+        "aks-terraform-helm.git/infrastructure/output.tf",
+        "aks-terraform-helm.git/infrastructure/terraform.tfvars.template",
+        "aks-terraform-helm.git/infrastructure/variables.tf"
+      ]
     }
   },
   "info": {

@@ -30,11 +30,20 @@
       "filepaths": []
     },
     "kustomize": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 8,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 8,
+      "filepaths": [
+        "argocd-operator.git/config/crd/kustomization.yaml",
+        "argocd-operator.git/config/default/kustomization.yaml",
+        "argocd-operator.git/config/manager/kustomization.yaml",
+        "argocd-operator.git/config/manifests/kustomization.yaml",
+        "argocd-operator.git/config/prometheus/kustomization.yaml",
+        "argocd-operator.git/config/rbac/kustomization.yaml",
+        "argocd-operator.git/config/samples/kustomization.yaml",
+        "argocd-operator.git/config/scorecard/kustomization.yaml"
+      ]
     },
     "helm": {
       "exist": false,
@@ -44,11 +53,52 @@
       "filepaths": []
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 40,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 40,
+      "filepaths": [
+        "argocd-operator.git/bundle/manifests/argocd-operator-controller-manager-metrics-service_v1_service.yaml",
+        "argocd-operator.git/bundle/manifests/argocd-operator-manager-config_v1_configmap.yaml",
+        "argocd-operator.git/bundle/manifests/argocd-operator.clusterserviceversion.yaml",
+        "argocd-operator.git/config/manifests/bases/argocd-operator.clusterserviceversion.yaml",
+        "argocd-operator.git/config/rbac/auth_proxy_service.yaml",
+        "argocd-operator.git/config/rbac/service_account.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.0.11/argocd-operator.v0.0.11.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.0.12/argocd-operator.v0.0.12.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.0.13/argocd-operator.v0.0.13.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.0.14/argocd-operator.v0.0.14.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.0.15/argocd-operator.v0.0.15.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.0.2/argocd-operator.v0.0.2.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.0.3/argocd-operator.v0.0.3.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.0.4/argocd-operator.v0.0.4.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.0.5/argocd-operator.v0.0.5.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.0.6/argocd-operator.v0.0.6.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.0.8/argocd-operator.v0.0.8.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.0.9/argocd-operator.v0.0.9.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.1.0/argocd-operator-controller-manager-metrics-service_v1_service.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.1.0/argocd-operator-manager-config_v1_configmap.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.1.0/argocd-operator.v0.1.0.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.2.0/argocd-operator-controller-manager-metrics-service_v1_service.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.2.0/argocd-operator-manager-config_v1_configmap.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.2.0/argocd-operator.v0.2.0.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.2.1/argocd-operator-controller-manager-metrics-service_v1_service.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.2.1/argocd-operator-manager-config_v1_configmap.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.2.1/argocd-operator.v0.2.1.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.3.0/argocd-operator-controller-manager-metrics-service_v1_service.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.3.0/argocd-operator-manager-config_v1_configmap.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.3.0/argocd-operator.v0.3.0.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.4.0/argocd-operator-controller-manager-metrics-service_v1_service.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.4.0/argocd-operator-manager-config_v1_configmap.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.4.0/argocd-operator.v0.4.0.clusterserviceversion.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.5.0/argocd-operator-controller-manager-metrics-service_v1_service.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.5.0/argocd-operator-manager-config_v1_configmap.yaml",
+        "argocd-operator.git/deploy/olm-catalog/argocd-operator/0.5.0/argocd-operator.v0.5.0.clusterserviceversion.yaml",
+        "argocd-operator.git/tests/k8s/1-014_validate_parallelism_limit/02-check-deployment.yaml",
+        "argocd-operator.git/tests/k8s/1-014_validate_parallelism_limit/04-check-deployment.yaml",
+        "argocd-operator.git/tests/k8s/1-014_validate_parallelism_limit/06-check-deployment.yaml",
+        "argocd-operator.git/tests/k8s/1-018_validate_extra_config/03-update-configmap.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

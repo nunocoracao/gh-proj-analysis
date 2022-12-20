@@ -1,0 +1,138 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "kolla-ansible.git/releasenotes/notes/dockerfile-customizations-26981ebefe3b710b.yaml",
+        "kolla-ansible.git/releasenotes/notes/etcd-dockerfile-69b8bfc1df4bb2ab.yaml"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 55,
+      "rootCount": 0,
+      "subFolderCount": 55,
+      "filepaths": [
+        "kolla-ansible.git/ansible/roles/aodh/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/barbican/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/blazar/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/ceilometer/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/cinder/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/cloudkitty/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/cyborg/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/designate/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/freezer/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/glance/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/glance/tasks/stop_service.yml",
+        "kolla-ansible.git/ansible/roles/gnocchi/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/hacluster/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/heat/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/horizon/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/ironic/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/keystone/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/magnum/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/manila/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/mariadb/tasks/restart_services.yml",
+        "kolla-ansible.git/ansible/roles/masakari/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/mistral/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/murano/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/neutron/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/nova/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/nova-cell/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/octavia/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/placement/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/prechecks/tasks/service_checks.yml",
+        "kolla-ansible.git/ansible/roles/rabbitmq/tasks/restart_services.yml",
+        "kolla-ansible.git/ansible/roles/sahara/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/senlin/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/solum/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/tacker/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/trove/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/vitrage/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/watcher/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/ansible/roles/zun/tasks/bootstrap_service.yml",
+        "kolla-ansible.git/contrib/demos/magnum/redis-kube/redis-sentinel-service.yaml",
+        "kolla-ansible.git/releasenotes/notes/add-firewalld-rules-based-on-enabled-services-96dd418219953a05.yaml",
+        "kolla-ansible.git/releasenotes/notes/add-new-senlin-services-b53a9dc26453f947.yaml",
+        "kolla-ansible.git/releasenotes/notes/deprecate-monasca-log-metrics-service-d558015f1cf426df.yaml",
+        "kolla-ansible.git/releasenotes/notes/disable-nova-legacy-service-2571d7a4bf30e08f.yaml",
+        "kolla-ansible.git/releasenotes/notes/disable-ntp-service-fdcaj9daa5169b06.yaml",
+        "kolla-ansible.git/releasenotes/notes/encrypt-additional-services-backend-haproxy-29467a9771e99917.yaml",
+        "kolla-ansible.git/releasenotes/notes/haproxy-custom-services-c6bc343d162a8990.yaml",
+        "kolla-ansible.git/releasenotes/notes/haproxy-service-backend-weight-e4a908f732a37b42.yaml",
+        "kolla-ansible.git/releasenotes/notes/mistral-fix-wrong-service-type-72ff772fc7cf0b82.yaml",
+        "kolla-ansible.git/releasenotes/notes/neutron-log-service-plugin-049ce93906386435.yaml",
+        "kolla-ansible.git/releasenotes/notes/octavia-create-service-auth-project-aa38b12ebb601777.yaml",
+        "kolla-ansible.git/releasenotes/notes/remove-ceilometer-useless-service-4e210ddc1c48ac48.yaml",
+        "kolla-ansible.git/releasenotes/notes/split-haproxy-config-by-service-90c2d89de1829e8a.yaml",
+        "kolla-ansible.git/releasenotes/notes/stop-per-service-85a996bb2751ed52.yaml",
+        "kolla-ansible.git/releasenotes/notes/support-disabling-monasca-alerting-service-92d49ead068447f8.yaml",
+        "kolla-ansible.git/releasenotes/notes/support-haproxy-service-override-85bcc4d3c0af6cf2.yaml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "info": {
+    "id": 73831397,
+    "name": "kolla-ansible",
+    "full_name": "openstack/kolla-ansible",
+    "owner": {
+      "login": "openstack",
+      "html_url": "https://github.com/openstack",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/openstack/kolla-ansible",
+    "description": "Ansible deployment of the Kolla containers. Mirror of code maintained at opendev.org.",
+    "url": "https://api.github.com/repos/openstack/kolla-ansible",
+    "clone_url": "https://github.com/openstack/kolla-ansible.git",
+    "homepage": "https://opendev.org/openstack/kolla-ansible",
+    "size": 27264,
+    "stargazers_count": 541,
+    "watchers_count": 541,
+    "language": "Jinja"
+  }
+}
