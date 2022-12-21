@@ -1,0 +1,112 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 4,
+      "rootCount": 1,
+      "subFolderCount": 3,
+      "filepaths": [
+        "epiphany.git/Dockerfile",
+        "epiphany.git/.devcontainer/Dockerfile",
+        "epiphany.git/docs/design-docs/modularization/cpt-tests/modules/AzureInfrastructure/Dockerfile",
+        "epiphany.git/docs/design-docs/modularization/cpt-tests/modules/BareMetalKafka/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "devcontainer": {
+      "exist": true,
+      "count": 1,
+      "rootCount": 0,
+      "subFolderCount": 1,
+      "filepaths": [
+        "epiphany.git/.devcontainer/devcontainer.json"
+      ]
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": true,
+      "count": 3,
+      "rootCount": 0,
+      "subFolderCount": 3,
+      "filepaths": [
+        "epiphany.git/ansible/playbooks/roles/filebeat/templates/custom-chart-values.yml.j2",
+        "epiphany.git/ansible/playbooks/roles/keycloak/templates/dynamic-chart-values.yml.j2",
+        "epiphany.git/schema/common/defaults/configuration/helm-charts.yml"
+      ]
+    },
+    "k8s": {
+      "exist": true,
+      "count": 21,
+      "rootCount": 0,
+      "subFolderCount": 21,
+      "filepaths": [
+        "epiphany.git/ansible/playbooks/roles/applications/templates/pgbouncer/01-configmaps.yml.j2",
+        "epiphany.git/ansible/playbooks/roles/applications/templates/pgbouncer/02-service.yml.j2",
+        "epiphany.git/ansible/playbooks/roles/applications/templates/pgbouncer/03-deployment.yml.j2",
+        "epiphany.git/ansible/playbooks/roles/applications/templates/pgpool/02-configmaps.yml.j2",
+        "epiphany.git/ansible/playbooks/roles/applications/templates/pgpool/03-service.yml.j2",
+        "epiphany.git/ansible/playbooks/roles/applications/templates/pgpool/04-deployment.yml.j2",
+        "epiphany.git/ansible/playbooks/roles/filebeat/tasks/install-filebeat-as-system-service.yml",
+        "epiphany.git/ansible/playbooks/roles/kafka_exporter/tasks/upgrade/verify-service-definition.yml",
+        "epiphany.git/ansible/playbooks/roles/kubernetes_master/files/coredns-configmap.yml",
+        "epiphany.git/ansible/playbooks/roles/kubernetes_master/files/coredns-deployment-patch.yml",
+        "epiphany.git/ansible/playbooks/roles/kubernetes_master/tasks/utils/get-deployment-images.yml",
+        "epiphany.git/ansible/playbooks/roles/kubernetes_master/tasks/utils/get-images-from-deployment-template.yml",
+        "epiphany.git/ansible/playbooks/roles/node_exporter/tasks/apply/system-service.yml",
+        "epiphany.git/ansible/playbooks/roles/node_exporter/tasks/upgrade/system-service.yml",
+        "epiphany.git/ansible/playbooks/roles/postgresql/tasks/upgrade/extensions/replication/pg-new/start-and-enable-service.yml",
+        "epiphany.git/ansible/playbooks/roles/postgresql/tasks/upgrade/nodes/common/switch-to-new-pg-service.yml",
+        "epiphany.git/ansible/playbooks/roles/prometheus/tasks/upgrade/start-services.yml",
+        "epiphany.git/ansible/playbooks/roles/prometheus/tasks/upgrade/stop-services.yml",
+        "epiphany.git/ansible/playbooks/roles/upgrade/tasks/kubernetes/reconfigure-auth-service-app.yml",
+        "epiphany.git/ansible/playbooks/roles/upgrade/tasks/kubernetes/upgrade-cni-plugin-deployment.yml",
+        "epiphany.git/tools/development/k8s/memory/generate_load/memory-stress-deployments.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "info": {
+    "id": 164668263,
+    "name": "epiphany",
+    "full_name": "epiphany-platform/epiphany",
+    "owner": {
+      "login": "epiphany-platform",
+      "html_url": "https://github.com/epiphany-platform",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/epiphany-platform/epiphany",
+    "description": "Cloud and on-premises automation for Kubernetes centered industrial grade solutions.",
+    "url": "https://api.github.com/repos/epiphany-platform/epiphany",
+    "clone_url": "https://github.com/epiphany-platform/epiphany.git",
+    "homepage": "",
+    "size": 10831,
+    "stargazers_count": 123,
+    "watchers_count": 123,
+    "language": "Python"
+  }
+}

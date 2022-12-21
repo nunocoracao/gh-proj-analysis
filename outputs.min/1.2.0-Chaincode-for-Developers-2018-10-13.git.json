@@ -1,0 +1,79 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    }
+  },
+  "info": {
+    "id": 157599652,
+    "name": "1.2.0-Chaincode-for-Developers-2018-10-13",
+    "full_name": "chantxu09231/1.2.0-Chaincode-for-Developers-2018-10-13",
+    "owner": {
+      "login": "chantxu09231",
+      "html_url": "https://github.com/chantxu09231",
+      "type": "User"
+    },
+    "html_url": "https://github.com/chantxu09231/1.2.0-Chaincode-for-Developers-2018-10-13",
+    "description": "$ sudo apt-get update; sudo apt-get upgrade  $ sudo apt-get install curl; sudo apt-get install git    $ curl -fsSL https://get.docker.com/ | sh $ sudo vi /etc/default/docker  (新增一行)     DOCKER_OPTS=\"$DOCKER_OPTS -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock --api-cors-header='*'\" $ sudo service docker restart $ sudo usermod -aG docker slim  $ sudo login  $ sudo apt-get install python-pip  $ sudo pip install docker-compose==1.14.0 $ cd /home/slim/ $ curl -sSL http://bit.ly/2ysbOFE | bash -s 1.2.0 $ export PATH=/home/slim/fabric-samples/bin:$PATH $ ls ~/fabric-samples/bin    configtxgen    discover              idemixgen    configtxlator  fabric-ca-client      orderer    cryptogen      get-docker-images.sh  peer $ docker images |grep 1.2.0  // one channel multiple chaincode $ cd  ~/fabric-samples/chaincode-docker-devmode //myc.tx  orderer.block (已事先安裝) $ docker-compose -f docker-compose-simple.yaml up -d  $ docker exec -it chaincode bash -c \"stty cols 1024 && bash\" (執行 chaincode) # cd sacc/go # go build   (編譯 chaincode) # CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=mycc:0 ./go &  // open the second terminal  $ cd ~/fabric-samples/chaincode-docker-devmode $ docker exec -it cli bash -c  \"stty cols 1024 && bash\" # peer chaincode install -p chaincodedev/chaincode/sacc/go -n mycc -v 0 //chaincode receive transaction proposal args # peer chaincode instantiate -n mycc -v 0 -c '{\"Args\":[\"a\",\"10\"]}' -C myc # peer chaincode invoke -n mycc -c '{\"Args\":[\"set\", \"a\", \"20\"]}' -C myc # peer chaincode invoke -n mycc -c '{\"Args\":[\"get\",\"a\"]}' -C myc     payload:\"20\"  shim interface  $ls /opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/shim  chaincode.go     inprocstream_test.go  response.go  ext              interfaces.go         shim_test.go  handler.go       mockstub.go  inprocstream.go  mockstub_test.go  // open the second terminal $ docker exec -it cli bash -c \"stty cols 1024 && bash\" # peer chaincode install -p chaincodedev/chaincode/chaincode_example02/go -n mycc1 -v 0 # peer chaincode instantiate -n mycc1 -v 0 -c '{\"Args\":[\"init\",\"a\",\"100\",\"b\",\"200\"]}' -C myc # peer chaincode invoke -n mycc1 -c '{\"Args\":[\"invoke\",\"a\",\"b\",\"10\"]}' -C myc # peer chaincode invoke -n mycc1 -c '{\"Args\":[\"query\",\"a\"]}' -C myc    payload:\"90\"  // Build & start the chaincode for first terminal $ docker exec -it chaincode bash # cd  marbles02/go # go build # CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=mycc2:0 ./go &    (the third chaincode id mycc2) # ps aux    ./sacc/go    ./chaincode_example02/go    ./marbles02/go  / open the  second terminal $ docker exec -it cli bash -c \"stty cols 1024 && bash\" # peer chaincode install -p chaincodedev/chaincode/marbles02/go -n mycc2 -v 0 # peer chaincode instantiate -n mycc2 -v 0 -c '{\"Args\":[\"init\"]}' -C myc # peer chaincode invoke -n mycc2 -c  '{\"Args\":[\"initMarble\",\"marble1\",\"blue\",\"35\",\"tom\"]}' -C myc    (建立 marble1) # peer chaincode invoke -n mycc2 -c '{\"Args\":[\"initMarble\",\"marble2\",\"red\",\"50\",\"tom\"]}' -C myc    (建立 marble2)       # peer chaincode invoke -n mycc2 -c '{\"Args\":[\"initMarble\",\"marble3\",\"blue\",\"70\",\"tom\"]}' -C myc   (建立 marble3) //將 marble2 擁有者轉移至 jerry  # peer chaincode invoke -n mycc2 -c '{\"Args\":[\"transferMarble\",\"marble2\",\"jerry\"]}' -C myc //驗證轉移是否成功 # peer chaincode invoke -n mycc2 -c '{\"Args\":[\"readMarble\",\"marble2\"]}' -C myc  / 對指定顏色之 mable 轉換 owner # peer chaincode invoke -n mycc2 -c '{\"Args\":[\"transferMarblesBasedOnColor\",\"blue\",\"jerry\"]}' -C myc  (指定藍色 marble 之 owner 為 jerry) // 驗證 marble3  (marble=blue) owner 已轉為 jerry # peer chaincode invoke -n mycc2 -c '{\"Args\":[\"readMarble\",\"marble3\"]}' -C myc     {\\\"docType\\\":\\\"marble\\\",\\\"name\\\":\\\"marble3\\\",\\\"color\\\":\\\"blue\\\",\\\"size\\\":70,\\\"owner\\\":\\\"jerry\\\"}  // 查詢 marble1, marble2, marble3  # peer chaincode invoke -C myc  -n mycc2 -c '{\"Args\":[\"getMarblesByRange\",\"marble1\",\"marble4\"]}'  //刪除 marble1 # peer chaincode invoke -n mycc2 -c  '{\"Args\":[\"delete\",\"marble1\"]}'  -C myc //驗證 marble1 是否刪除 # peer chaincode invoke -n mycc2 -c '{\"Args\":[\"readMarble\",\"marble1\"]}' -C myc   // Build & start the chaincode for first terminal $ docker exec -it chaincode bash -c \"stty cols 1024 && bash\" # cd fabcar/go # go build # CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=mycc3:0 ./go & (the second chaincode id mycc3)   // open the second terminal $ docker exec -it cli bash -c \"stty cols 1024 && bash\" # peer chaincode install -n mycc3 -v 0 -p chaincodedev/chaincode/fabcar/go # peer chaincode instantiate -n mycc3 -v 0 -c '{\"Args\":[\"\"]}' -C myc # peer chaincode invoke -n mycc3 -c '{\"function\":\"initLedger\",\"Args\":[\"\"]}' -C myc # peer chaincode invoke -n mycc3 -c '{\"function\":\"queryAllCars\",\"Args\":[\"\"]}' -C myc    $  docker rm -f $(docker ps -a -q) // 回至第 6 頁  linux 文字編輯器 vi , pico , nano 刪除佔用本機 port  的行程 $sudo netstat -pna |grep  xxxx   (xxxx:port number) tcp  0   0 0.0.0.0:xxxx  0.0.0.0:* LISTEN  ****/node $kill -9 **** 清除 all container $ docker rm -f $(docker ps -a -q) 清除 all images $docker rmi -f $(docker images -a -q)  // ctl + alt+ F1 (終端機介面) ctl + alt+ F7 (視窗介面)   https://github.com/hyperledger/fabric/blob/master/docs/source/peer-chaincode-devmode.rst https://media.readthedocs.org/pdf/hyperledger-fabric/latest/hyperledger-fabric.pdf https://hyperledger-fabric.readthedocs.io/en/release-1.2/configtx.html https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html https://godoc.org/github.com/hyperledger/fabric/core/chaincode/shim   https://github.com/kigichang/golang  (Go 語言) http://man.linuxde.net/nano https://pws.niu.edu.tw/~ttlee/linux.101.1/14.ppt  (nano 編輯器) http://linux.vbird.org/linux_basic/0310vi/0310vi.php  (vi 編輯器) http://wuhsiublog.blogspot.com/2017/02/virtualboxwindows-10puttyubuntusshnat.html  (SSH 連線 NAT mode) https://ithelp.ithome.com.tw/users/20079210/ironman/721 (初學 Golang 30 天) https://blog.csdn.net/TripleS_X/article/details/80550401 (chaincode 開發範例)   https://openhome.cc/Gossip/Go/Testing.html (Go 測試套件) //HyperLedger Fabric chaincode (for go) 開發及測試範例  https://blog.csdn.net/TripleS_X/article/details/80550401 https://github.com/mh4u/chaincode_demo",
+    "url": "https://api.github.com/repos/chantxu09231/1.2.0-Chaincode-for-Developers-2018-10-13",
+    "clone_url": "https://github.com/chantxu09231/1.2.0-Chaincode-for-Developers-2018-10-13.git",
+    "homepage": null,
+    "size": 0,
+    "stargazers_count": 2,
+    "watchers_count": 2,
+    "language": null
+  }
+}

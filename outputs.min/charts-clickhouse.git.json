@@ -17,11 +17,13 @@
       "filepaths": []
     },
     "devcontainer": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 1,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 1,
+      "filepaths": [
+        "charts-clickhouse.git/.devcontainer/devcontainer.json"
+      ]
     },
     "kustomize": {
       "exist": false,
@@ -31,18 +33,71 @@
       "filepaths": []
     },
     "helm": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 2,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 2,
+      "filepaths": [
+        "charts-clickhouse.git/.github/workflows/release-chart.yml",
+        "charts-clickhouse.git/charts/posthog/Chart.yaml"
+      ]
     },
     "k8s": {
-      "exist": false,
-      "count": 0,
+      "exist": true,
+      "count": 49,
       "rootCount": 0,
-      "subFolderCount": 0,
-      "filepaths": []
+      "subFolderCount": 49,
+      "filepaths": [
+        "charts-clickhouse.git/.github/workflows/test-amazon-web-services-install.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/cronjob-backup-configmap.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/events-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/events-service.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/pgbouncer-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/pgbouncer-service.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/plugins-async-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/plugins-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/plugins-exports-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/plugins-ingestion-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/plugins-jobs-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/plugins-scheduler-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/serviceaccount.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/web-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/web-service.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/worker-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/clickhouse-operator/configmap.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/clickhouse-operator/deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/clickhouse-operator/service.yaml",
+        "charts-clickhouse.git/charts/posthog/templates/clickhouse-operator/serviceaccount.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/events-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/events-service.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/pgbouncer-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/pgbouncer-service.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/plugins-async-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/plugins-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/plugins-exports-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/plugins-ingestion-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/plugins-jobs-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/plugins-scheduler-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/web-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/web-deployments.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/web-service.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/worker-deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/__snapshot__/pgbouncer-deployment.yaml.snap",
+        "charts-clickhouse.git/charts/posthog/tests/clickhouse-operator/configmap.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/clickhouse-operator/deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/clickhouse-operator/service.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/clickhouse-operator/serviceaccount.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/clickhouse-operator/__snapshot__/configmap.yaml.snap",
+        "charts-clickhouse.git/charts/posthog/tests/clickhouse-operator/__snapshot__/deployment.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/clickhouse-operator/__snapshot__/deployment.yaml.snap",
+        "charts-clickhouse.git/charts/posthog/tests/clickhouse-operator/__snapshot__/service.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/clickhouse-operator/__snapshot__/service.yaml.snap",
+        "charts-clickhouse.git/charts/posthog/tests/clickhouse-operator/__snapshot__/serviceaccount.yaml",
+        "charts-clickhouse.git/charts/posthog/tests/clickhouse-operator/__snapshot__/serviceaccount.yaml.snap",
+        "charts-clickhouse.git/ci/values/amazon_web_services.yaml",
+        "charts-clickhouse.git/ci/values/kubetest/test_clickhouse_service_loadbalancer.yaml",
+        "charts-clickhouse.git/ci/values/kubetest/test_clickhouse_service_nodeport.yaml"
+      ]
     },
     "backstage": {
       "exist": false,

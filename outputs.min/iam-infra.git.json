@@ -1,0 +1,162 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": true,
+      "count": 2,
+      "rootCount": 0,
+      "subFolderCount": 2,
+      "filepaths": [
+        "iam-infra.git/dockerfiles/fluentd-mozdef/Dockerfile",
+        "iam-infra.git/dockerfiles/graylog-oidc-proxy/Dockerfile"
+      ]
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": true,
+      "count": 16,
+      "rootCount": 0,
+      "subFolderCount": 16,
+      "filepaths": [
+        "iam-infra.git/kubernetes/prod/us-west-2/ark/10-deployment-kube2iam.yaml",
+        "iam-infra.git/kubernetes/prod/us-west-2/graylog/21-fluentd-mozdef-configmap.yml",
+        "iam-infra.git/kubernetes/prod/us-west-2/ingress-controller-global/service-l4.yaml",
+        "iam-infra.git/kubernetes/prod/us-west-2/monitoring/01-crd-servicemonitor.yml",
+        "iam-infra.git/kubernetes/prod/us-west-2/monitoring/18-kubelet-servicemonitor.yml",
+        "iam-infra.git/kubernetes/prod/us-west-2/monitoring/25-grafana-deployment.yaml",
+        "iam-infra.git/kubernetes/prod/us-west-2/monitoring/30-coredns-service-monitor.yml",
+        "iam-infra.git/kubernetes/prod/us-west-2/monitoring/30-ingress-controller-service-monitor.yml",
+        "iam-infra.git/kubernetes/prod/us-west-2/monitoring/50-cloudwatch-exporter-configmap.yml",
+        "iam-infra.git/kubernetes/prod/us-west-2/monitoring/dashboards/grafana-dashboard-k8s-deployments.yml",
+        "iam-infra.git/kubernetes/stage/us-west-2/monitoring/01-crd-servicemonitor.yml",
+        "iam-infra.git/kubernetes/stage/us-west-2/monitoring/10-prometheus-operator-deployment.yml",
+        "iam-infra.git/kubernetes/stage/us-west-2/monitoring/18-kubelet-servicemonitor.yml",
+        "iam-infra.git/kubernetes/stage/us-west-2/monitoring/25-grafana-deployment.yaml",
+        "iam-infra.git/kubernetes/stage/us-west-2/monitoring/30-ingress-servicemonitor.yml",
+        "iam-infra.git/kubernetes/stage/us-west-2/monitoring/dashboards/grafana-dashboard-k8s-deployments.yml"
+      ]
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 62,
+      "rootCount": 0,
+      "subFolderCount": 62,
+      "filepaths": [
+        "iam-infra.git/terraform/global/audisp-json/data.tf",
+        "iam-infra.git/terraform/global/audisp-json/provider.tf",
+        "iam-infra.git/terraform/global/audisp-json/s3.tf",
+        "iam-infra.git/terraform/global/codebuild/auth0-deploy/auth0-deploy.tf",
+        "iam-infra.git/terraform/global/codebuild/auth0-deploy/provider.tf",
+        "iam-infra.git/terraform/global/codebuild/auth0-deploy/versions.tf",
+        "iam-infra.git/terraform/global/codebuild/auth0-deploy/modules/ci/main.tf",
+        "iam-infra.git/terraform/global/codebuild/auth0-deploy/modules/ci/variables.tf",
+        "iam-infra.git/terraform/global/codebuild/auth0-deploy/modules/ci/versions.tf",
+        "iam-infra.git/terraform/global/codebuild/dino-park/main.tf",
+        "iam-infra.git/terraform/global/codebuild/dino-park/provider.tf",
+        "iam-infra.git/terraform/global/codebuild/dino-park/modules/sites/dino-park-dev-tools/main.tf",
+        "iam-infra.git/terraform/global/codebuild/dino-park/modules/sites/dino-park-front-end/main.tf",
+        "iam-infra.git/terraform/global/codebuild/dino-park/modules/sites/dino-park-mozillians/main.tf",
+        "iam-infra.git/terraform/global/codebuild/dino-park/modules/sites/dino-park-search/main.tf",
+        "iam-infra.git/terraform/global/codebuild/dino-park/modules/sites/dino-tree/main.tf",
+        "iam-infra.git/terraform/global/codebuild/dino-park/modules/sites/graylog/main.tf",
+        "iam-infra.git/terraform/global/codebuild/sso-dashboard/data.tf",
+        "iam-infra.git/terraform/global/codebuild/sso-dashboard/main.tf",
+        "iam-infra.git/terraform/global/codebuild/sso-dashboard/outputs.tf",
+        "iam-infra.git/terraform/global/codebuild/sso-dashboard/provider.tf",
+        "iam-infra.git/terraform/global/codebuild/sso-dashboard/variables.tf",
+        "iam-infra.git/terraform/global/codebuild/template/data.tf",
+        "iam-infra.git/terraform/global/codebuild/template/main.tf",
+        "iam-infra.git/terraform/global/codebuild/template/outputs.tf",
+        "iam-infra.git/terraform/global/codebuild/template/provider.tf",
+        "iam-infra.git/terraform/global/codebuild/template/variables.tf",
+        "iam-infra.git/terraform/global/itsre/data.tf",
+        "iam-infra.git/terraform/global/itsre/main.tf",
+        "iam-infra.git/terraform/global/itsre/provider.tf",
+        "iam-infra.git/terraform/prod/us-west-2/.terraform.lock.hcl",
+        "iam-infra.git/terraform/prod/us-west-2/cis.tf",
+        "iam-infra.git/terraform/prod/us-west-2/cloudwatch-exporter.tf",
+        "iam-infra.git/terraform/prod/us-west-2/data.tf",
+        "iam-infra.git/terraform/prod/us-west-2/dinopark-prod.tf",
+        "iam-infra.git/terraform/prod/us-west-2/dinopark-test.tf",
+        "iam-infra.git/terraform/prod/us-west-2/ecr.tf",
+        "iam-infra.git/terraform/prod/us-west-2/eks.tf",
+        "iam-infra.git/terraform/prod/us-west-2/graylog.tf",
+        "iam-infra.git/terraform/prod/us-west-2/iam.tf",
+        "iam-infra.git/terraform/prod/us-west-2/mozdef.tf",
+        "iam-infra.git/terraform/prod/us-west-2/outputs.tf",
+        "iam-infra.git/terraform/prod/us-west-2/provider.tf",
+        "iam-infra.git/terraform/prod/us-west-2/ses.tf",
+        "iam-infra.git/terraform/prod/us-west-2/ssm-agent.tf",
+        "iam-infra.git/terraform/prod/us-west-2/variables.tf",
+        "iam-infra.git/terraform/prod/us-west-2/velero.tf",
+        "iam-infra.git/terraform/prod/us-west-2/versions.tf",
+        "iam-infra.git/terraform/prod/us-west-2/vpc.tf",
+        "iam-infra.git/terraform/stage/us-west-2/.terraform.lock.hcl",
+        "iam-infra.git/terraform/stage/us-west-2/data.tf",
+        "iam-infra.git/terraform/stage/us-west-2/eks.tf",
+        "iam-infra.git/terraform/stage/us-west-2/graylog.tf",
+        "iam-infra.git/terraform/stage/us-west-2/iam.tf",
+        "iam-infra.git/terraform/stage/us-west-2/outputs.tf",
+        "iam-infra.git/terraform/stage/us-west-2/provider.tf",
+        "iam-infra.git/terraform/stage/us-west-2/route53.tf",
+        "iam-infra.git/terraform/stage/us-west-2/ses.tf",
+        "iam-infra.git/terraform/stage/us-west-2/ssm-agent.tf",
+        "iam-infra.git/terraform/stage/us-west-2/variables.tf",
+        "iam-infra.git/terraform/stage/us-west-2/versions.tf",
+        "iam-infra.git/terraform/stage/us-west-2/vpc.tf"
+      ]
+    }
+  },
+  "info": {
+    "id": 137941069,
+    "name": "iam-infra",
+    "full_name": "mozilla-iam/iam-infra",
+    "owner": {
+      "login": "mozilla-iam",
+      "html_url": "https://github.com/mozilla-iam",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/mozilla-iam/iam-infra",
+    "description": "This repo contains the resources and configuration needed to create the Mozilla IAM infrastructure",
+    "url": "https://api.github.com/repos/mozilla-iam/iam-infra",
+    "clone_url": "https://github.com/mozilla-iam/iam-infra.git",
+    "homepage": "",
+    "size": 823,
+    "stargazers_count": 13,
+    "watchers_count": 13,
+    "language": "HCL"
+  }
+}
