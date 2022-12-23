@@ -1,0 +1,140 @@
+{
+  "results": {
+    "dockerfile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "composefile": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "devcontainer": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "kustomize": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "helm": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "k8s": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "backstage": {
+      "exist": false,
+      "count": 0,
+      "rootCount": 0,
+      "subFolderCount": 0,
+      "filepaths": []
+    },
+    "terraform": {
+      "exist": true,
+      "count": 60,
+      "rootCount": 3,
+      "subFolderCount": 57,
+      "filepaths": [
+        "iam-vulnerable.git/main.tf",
+        "iam-vulnerable.git/terraform.tfvars.example",
+        "iam-vulnerable.git/variables.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc-AssumeRole.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc-cloudFormationUpdateStack.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc-codeBuildCreateProjectPassRole.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc-ec2InstanceConnect.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc-sageMakerCreateNotebookPassRole.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc-sageMakerCreatePresignedNotebookURL.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc-sageMakerCreateProcessingJob.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc-sageMakerCreateTrainingJob.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc-ssmSendCommand.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc-ssmStartSession.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc1-CreateNewPolicyVersion.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc10-PutUserPolicy.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc11-PutGroupPolicy.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc12-PutRolePolicy.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc13-AddUserToGroup.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc14-UpdatingAssumeRolePolicy.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc15-PassExistingRoleToNewLambdaThenInvoke.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc16-PassRoleToNewLambdaThenTriggerWithNewDynamo.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc17-EditExistingLambdaFunctionWithRole.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc18-PassExistingRoleToNewGlueDevEndpoint.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc19-UpdateExistingGlueDevEndpoint.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc2-SetExistingDefaultPolicyVersion.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc20-PassExistingRoleToCloudFormation.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc21-PassExistingRoleToNewDataPipeline.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc3-CreateEC2WithExistingIP.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc4-CreateAccessKey.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc5-CreateLoginProfile.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc6-UpdateLoginProfile.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc7-AttachUserPolicy.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc8-AttachGroupPolicy.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/privesc9-AttachRolePolicy.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/service-linked-role-common.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/sre.tf",
+        "iam-vulnerable.git/modules/free-resources/privesc-paths/variables.tf",
+        "iam-vulnerable.git/modules/free-resources/tool-testing/fn1-privesc3-multiple-policies.tf",
+        "iam-vulnerable.git/modules/free-resources/tool-testing/fn2-ExploitableResourceConstraint.tf",
+        "iam-vulnerable.git/modules/free-resources/tool-testing/fn3-ExploitableConditionConstraint.tf",
+        "iam-vulnerable.git/modules/free-resources/tool-testing/fn4-ExploitableNotAction.tf",
+        "iam-vulnerable.git/modules/free-resources/tool-testing/fp1-allow-and-deny-same-policy.tf",
+        "iam-vulnerable.git/modules/free-resources/tool-testing/fp2-allow-and-deny-multiple-policies.tf",
+        "iam-vulnerable.git/modules/free-resources/tool-testing/fp3-deny.tf",
+        "iam-vulnerable.git/modules/free-resources/tool-testing/fp4-NonExploitableResourceConstraint.tf",
+        "iam-vulnerable.git/modules/free-resources/tool-testing/fp5-NonExploitableConditionConstraint.tf",
+        "iam-vulnerable.git/modules/free-resources/tool-testing/privesc-permissive-role-trust.tf",
+        "iam-vulnerable.git/modules/free-resources/tool-testing/variables.tf",
+        "iam-vulnerable.git/modules/non-free-resources/cloudformation/cloudformation.tf",
+        "iam-vulnerable.git/modules/non-free-resources/cloudformation/variables.tf",
+        "iam-vulnerable.git/modules/non-free-resources/ec2/ec2.tf",
+        "iam-vulnerable.git/modules/non-free-resources/ec2/variables.tf",
+        "iam-vulnerable.git/modules/non-free-resources/elasticbeanstalk/elasticbeanstalk.tf",
+        "iam-vulnerable.git/modules/non-free-resources/elasticbeanstalk/variables.tf",
+        "iam-vulnerable.git/modules/non-free-resources/glue/glue.tf",
+        "iam-vulnerable.git/modules/non-free-resources/glue/variables.tf",
+        "iam-vulnerable.git/modules/non-free-resources/lambda/lambda.tf",
+        "iam-vulnerable.git/modules/non-free-resources/lambda/variables.tf",
+        "iam-vulnerable.git/modules/non-free-resources/sagemaker/sagemaker.tf",
+        "iam-vulnerable.git/modules/non-free-resources/sagemaker/variables.tf"
+      ]
+    }
+  },
+  "info": {
+    "id": 344529392,
+    "name": "iam-vulnerable",
+    "full_name": "BishopFox/iam-vulnerable",
+    "owner": {
+      "login": "BishopFox",
+      "html_url": "https://github.com/BishopFox",
+      "type": "Organization"
+    },
+    "html_url": "https://github.com/BishopFox/iam-vulnerable",
+    "description": "Use Terraform to create your own vulnerable by design AWS IAM privilege escalation playground.",
+    "url": "https://api.github.com/repos/BishopFox/iam-vulnerable",
+    "clone_url": "https://github.com/BishopFox/iam-vulnerable.git",
+    "homepage": "https://labs.bishopfox.com/tech-blog/iam-vulnerable-an-aws-iam-privilege-escalation-playground",
+    "size": 74,
+    "stargazers_count": 304,
+    "watchers_count": 304,
+    "language": "HCL"
+  }
+}
