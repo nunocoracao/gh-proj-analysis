@@ -5,6 +5,8 @@ var repos = utils.readRepoFile()
 
 console.log('Scanning ' + repos.length + ' repos')
 
+var total_repos = 0
+
 function buildStep(item, info) {
     return {
         repo: item,
@@ -29,9 +31,11 @@ function buildStep(item, info) {
 
 var actionList = []
 for (var i in repos) {
+    total_repos++
     var step = buildStep(repos[i].clone_url, repos[i])
     actionList.push(step)
 }
+console.log(total_repos)
 
 smoother.start(actionList, () => {
     console.log('end')

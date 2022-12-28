@@ -42,7 +42,7 @@ module.exports = {
 
     cloneRepo: function (repoUrl, callback, skipCallback) {
         var repoTokens = repoUrl.split("/")
-        var repoName = repoTokens[repoTokens.length - 1]
+        var repoName = repoTokens[repoTokens.length - 2] + '_' + repoTokens[repoTokens.length - 1]
         var path = TEMP_DIR + repoName
 
         if (fs.existsSync(path)) {
@@ -63,7 +63,7 @@ module.exports = {
 
     deleteRepo: function (repoUrl) {
         var repoTokens = repoUrl.split("/")
-        var repoName = repoTokens[repoTokens.length - 1]
+        var repoName = repoTokens[repoTokens.length - 2] + '_' + repoTokens[repoTokens.length - 1]
         var path = TEMP_DIR + repoName
 
         if (fs.existsSync(path)) {
@@ -73,7 +73,7 @@ module.exports = {
 
     alreadyProcessed: function (repoUrl) {
         var repoTokens = repoUrl.split("/")
-        var repoName = repoTokens[repoTokens.length - 1]
+        var repoName = repoTokens[repoTokens.length - 2] + '_' + repoTokens[repoTokens.length - 1]
         var path = OUTPUT_DIR + repoName + '.json'
 
         if (fs.existsSync(path)) {
@@ -105,12 +105,12 @@ module.exports = {
 
     minifyOutputs: function () {
         fs.readdirSync(OUTPUT_DIR).forEach(file => {
-            //if (!fs.existsSync(OUTPUT_MIN_DIR + file)) {
+            if (!fs.existsSync(OUTPUT_MIN_DIR + file)) {
                 this.print('minifying file: ' + file)
                 var data = JSON.parse(fs.readFileSync(OUTPUT_DIR + file))
                 delete data.struct
                 fs.writeFileSync(OUTPUT_MIN_DIR + file, JSON.stringify(data, null, 2))
-            //}
+            }
         })
 
     },
