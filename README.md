@@ -15,3 +15,8 @@ node minifyOutputs.js --node-args="--max_old_space_size=8192" &&\
 node validate.js --node-args="--max_old_space_size=8192" &&\
 node processFinalResults.js --node-args="--max_old_space_size=8192"
 ```
+
+```bash
+node minifyOutputs.js --node-args="--max_old_space_size=8192" &&\
+node processFinalResults.js --node-args="--max_old_space_size=8192"
+```
